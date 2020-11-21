@@ -40,7 +40,10 @@
     "noResults": "No Results",
     "externalWindow": "Open in external window",
     "lostConnection": "You have lost connection with the server.",
-    "serverStatus": "Server Status"
+    "serverStatus": "Server Status",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export"
   },
   "sideMenu": {
     "buttons": {
@@ -296,8 +299,8 @@
       "newLookup": "New Lookup",
       "refresh": "Refresh",
       "nameSearch": "Name Search",
-      "first":"First Name",
-      "last":"Last Name",
+      "first": "First Name",
+      "last": "Last Name",
       "mi": "Middle Initial",
       "plateSearch": "Plate Search",
       "plate": "License Plate",
@@ -485,9 +488,9 @@
         "detatchConfirm": "Are you sure you would like to detatch from this call?"
       },
       "statusOptions": {
-        "pending":"Pending",
-        "active":"Active",
-        "closed":"Closed"
+        "pending": "Pending",
+        "active": "Active",
+        "closed": "Closed"
       },
       "originOptions": {
         "caller": "Caller",
@@ -634,7 +637,7 @@
       "customizationDisabled": "Community customization is not included with your version.",
       "info": {
         "communityInfo": "Community Info",
-        "communityId":"Community ID",
+        "communityId": "Community ID",
         "name": "Name",
         "subtitle": "Subtitle",
         "website": "Website",
@@ -809,6 +812,8 @@
       "penalCodeAbout": "This WebHook will be sent when an admin adds, edits or removed a penal code.",
       "apiRequest": "API Request",
       "apiRequestAbout": "This WebHook will be sent when an API request is sent.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
       "errors": {
         "maxWebhooks": "Error: You have reached your community's limit of webhooks:"
       }
@@ -844,7 +849,9 @@
       "joined": "Joined",
       "permissions": "Permissions",
       "lastLogin": "Last Login",
-      "apiIds": "API IDs"
+      "apiIds": "API IDs",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Existing Custom Record Types",
@@ -855,6 +862,8 @@
       "addPremadeSection": "Add Premade Section",
       "recordSections": "Record Sections",
       "newField": "New Field",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
       "sectionLabel": "Section Label",
       "lookupPreviewAbout": "Show field value in lookup table preview",
       "supervisorAbout": "Restrict field to supervisors only",
@@ -885,12 +894,12 @@
         "lawReport": "Law Report"
       },
       "errors": {
-        "maxCiv": "ERROR: Custom RECORD types can not have more than 3 searchable civilian sections.",
-        "maxVeh": "ERROR: Custom RECORD types can not have more than 3 searchable vehicle= sections.",
-        "noCivOrVeh": "ERROR: All custom RECORD types must contain a civilian or vehicle section in order to be searchable!",
-        "noStatus": "ERROR: This record type MUST have ONE custom type 'status' field.",
-        "noCiv": "ERROR: This record type MUST have ONE character field.",
-        "oneCivAndOneVeh": "ERROR: This record type MUST have ONE character field and ONE vehicle field."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field."
       },
       "remove": {
         "removeType": "Remove Record Type",
@@ -957,7 +966,9 @@
         "tooltipLabel": "This is the field description",
         "tooltipColumn": "This is the name of the column in your database table containing this field's data.",
         "tooltipTable": "This is the name of the SQL table this data column is found in.",
-        "tooltipCharacterColumn": "This is the name of the unique character ID column in your table. Generally this contains the Steam Hex."
+        "tooltipCharacterColumn": "This is the name of the unique character ID column in your table. Generally this contains the Steam Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name."
       }
     },
     "penal": {
@@ -966,8 +977,8 @@
       "editPenal": "Edit Penal Code",
       "code": "Code",
       "title": "Title",
-      "chargeType":"Charge Type",
-      "bondType":"Bond Type",
+      "chargeType": "Charge Type",
+      "bondType": "Bond Type",
       "bondAmount": "Bond/Fine Amount",
       "jailTime": "Jail Time",
       "confirmRemove": "Are you sure you want to remove this penal code?",
@@ -1014,7 +1025,7 @@
       "toggles": {
         "editIdent": "Edit Identifier",
         "editOtherIdent": "Edit Other's Ident.",
-        "selfDispatch":"Self Dispatch",
+        "selfDispatch": "Self Dispatch",
         "supervisor": "Supervisor"
       },
       "confirmKick": "Are you sure you want to kick",

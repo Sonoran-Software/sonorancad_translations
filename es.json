@@ -40,7 +40,9 @@
     "noResults": "No hay resultados",
     "externalWindow": "Abrir una Ventana Externa",
     "lostConnection": "Ha perdido la conexión con el servidor.",
-    "serverStatus": "Estado del servidor"
+    "serverStatus": "Estado del servidor",
+    "import": "Importar",
+    "importPrompt": "Pegue el contenido JSON"
   },
   "sideMenu": {
     "buttons": {
@@ -296,8 +298,8 @@
       "newLookup": "Nueva Búsqueda",
       "refresh": "Actualizar",
       "nameSearch": "Buscar Nombre",
-      "first":"Nombre",
-      "last":"Apellido",
+      "first": "Nombre",
+      "last": "Apellido",
       "mi": "Segundo Nombre",
       "plateSearch": "Buscar Matricula",
       "plate": "Matricula",
@@ -485,9 +487,9 @@
         "detatchConfirm": "¿Está seguro de que desea despegar de esta llamada?"
       },
       "statusOptions": {
-        "pending":"Pendiente",
-        "active":"Activo",
-        "closed":"Cerrado"
+        "pending": "Pendiente",
+        "active": "Activo",
+        "closed": "Cerrado"
       },
       "originOptions": {
         "caller": "Comunicante",
@@ -634,7 +636,7 @@
       "customizationDisabled": "La personalización de la comunidad no está incluida con su versión.",
       "info": {
         "communityInfo": "Información de la comunidad",
-        "communityId":"ID de comunidad",
+        "communityId": "ID de comunidad",
         "name": "Nombre",
         "subtitle": "Subtitulos",
         "website": "Sitio Web",
@@ -777,7 +779,7 @@
       "emergencyAbout": "Estos webhooks están relacionados con los servicios de emergencia.",
       "unitPanic": "Unidad en Pánico",
       "unitPanicAbout": "Este WebHook se enviará cuando una unidad cambie a su estado de PÁNICO. ",
-       "dispatch": "Centreal",
+      "dispatch": "Centreal",
       "dispatchAbout": "Este WebHook se enviará cuando se agregue o modifique una llamada de despacho.",
       "policeRecord": "Registros Policiales",
       "policeRecordAbout": "Este WebHook se enviará cuando se agregue, modifique o elimine un registro policial.",
@@ -809,6 +811,8 @@
       "penalCodeAbout": "Este WebHook se enviará cuando un administrador agregue, edite o elimine un código penal.",
       "apiRequest": "Solicitud de API",
       "apiRequestAbout": "Este WebHook se enviará cuando se envíe una solicitud de API.",
+      "signal": "Señal",
+      "signalAbout": "Este webhook se enviará cuando haya una señal en vigor.",
       "errors": {
         "maxWebhooks": "Error: Has alcanzado el límite de webhooks de tu comunidad.:"
       }
@@ -844,7 +848,9 @@
       "joined": "Unido",
       "permissions": "Permisos",
       "lastLogin": "Último Inicio de Sesión",
-      "apiIds": "API ID"
+      "apiIds": "API ID",
+      "purge": "Purga inactivo",
+      "purgeConfirm": "¿Está seguro de que desea purgar todas las cuentas de usuario inactivas? (30 dias)"
     },
     "customRecords": {
       "existingHeader": "Tipos de registros personalizados existentes",
@@ -966,8 +972,8 @@
       "editPenal": "Editar Código Penal",
       "code": "Código",
       "title": "Título",
-      "chargeType":"Tipo de Cargo",
-      "bondType":"Tipo de Fianza/Multa",
+      "chargeType": "Tipo de Cargo",
+      "bondType": "Tipo de Fianza/Multa",
       "bondAmount": "Monto de Fianza/Multa",
       "jailTime": "Tiempo de Prisión",
       "confirmRemove": "¿Está seguro de que desea eliminar este Código?",
@@ -1014,7 +1020,7 @@
       "toggles": {
         "editIdent": "Editar Identificador",
         "editOtherIdent": "Editar el ident. de otro",
-        "selfDispatch":"Autodespacho",
+        "selfDispatch": "Autodespacho",
         "supervisor": "Supervisor"
       },
       "confirmKick": "¿Estás seguro de que quieres patear?",
