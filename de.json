@@ -40,7 +40,10 @@
     "noResults": "Keine Ergebnisse",
     "externalWindow": "In externen Fenster öffnen",
     "lostConnection": "Du hast die Verbindung mit dem Server verloren.",
-    "serverStatus": "Serverstatus"
+    "serverStatus": "Serverstatus",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export"
   },
   "sideMenu": {
     "buttons": {
@@ -809,6 +812,8 @@
       "penalCodeAbout": "Dieser WebHook wird gesendet, wenn ein Admin das Strafgesetzbuch hinzufügt, modifiziert oder entfernt.",
       "apiRequest": "API Request",
       "apiRequestAbout": "Dieser WebHook wird gesendet, wenn ein API request gesendet wird.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
       "errors": {
         "maxWebhooks": "Fehler: Du hast die maximale Anzahl an Discord-Webhooks deiner Community erreicht:"
       }
@@ -844,7 +849,9 @@
       "joined": "Beigetreten",
       "permissions": "Berechtigungen",
       "lastLogin": "Letzter Login",
-      "apiIds": "API IDs"
+      "apiIds": "API IDs",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Existierende eigene Berichtsarten",
@@ -855,6 +862,8 @@
       "addPremadeSection": "Vorgefertigten Abschnitt hinzufügen",
       "recordSections": "Berichtsabschnitte",
       "newField": "Neues Feld",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
       "sectionLabel": "Abschnittstitel",
       "lookupPreviewAbout": "Zeige Feldwert in Suchvorschau",
       "supervisorAbout": "Beschränke Feld auf Vorgesetzte",
@@ -885,12 +894,12 @@
         "lawReport": "Gesetzesbericht"
       },
       "errors": {
-        "maxCiv": "Fehler: Eigene BERICHTSarten können nicht mehr als 3 suchbare Charakterabschnitte haben.",
-        "maxVeh": "Fehler: Eigene BERICHTSarten können nicht mehr als 3 suchbare Fahrzeugabschnitte haben.",
-        "noCivOrVeh": "Fehler: Alle eigenen BERICHTSarten müssen mindestens einen Charakterabschnitt oder Fahrzeugabschnitt haben, um suchbar zu sein!",
-        "noStatus": "Fehler: Diese Berichtsart MUSS EIN eigenes 'Status' Feld haben.",
-        "noCiv": "Fehler: Diese Berichtsart MUSS EIN Charakterfeld haben.",
-        "oneCivAndOneVeh": "Fehler: Diese Berichtsart MUSS EIN Charakterfeld und EIN Fahrzeugfeld haben."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field."
       },
       "remove": {
         "removeType": "Berichtsart entfernen",
@@ -957,7 +966,9 @@
         "tooltipLabel": "Dies ist die Feldbeschreibung",
         "tooltipColumn": "Dies ist der Name der Spalte in deiner Datenbanktabelle, die diese Felddaten beinhaltet.",
         "tooltipTable": "Dies ist der Name der SQL-Tabelle, in der diese Datenspalte gefunden werden kann.",
-        "tooltipCharacterColumn": "Dies ist der Name der einzigartigen Charakter-ID-Spalte in deiner Tabelle. Normalerweise enthält dies die Steam-Hex."
+        "tooltipCharacterColumn": "Dies ist der Name der einzigartigen Charakter-ID-Spalte in deiner Tabelle. Normalerweise enthält dies die Steam-Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name."
       }
     },
     "penal": {

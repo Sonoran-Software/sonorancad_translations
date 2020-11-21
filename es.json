@@ -40,7 +40,10 @@
     "noResults": "No hay resultados",
     "externalWindow": "Abrir una Ventana Externa",
     "lostConnection": "Ha perdido la conexión con el servidor.",
-    "serverStatus": "Estado del servidor"
+    "serverStatus": "Estado del servidor",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export"
   },
   "sideMenu": {
     "buttons": {
@@ -296,8 +299,8 @@
       "newLookup": "Nueva Búsqueda",
       "refresh": "Actualizar",
       "nameSearch": "Buscar Nombre",
-      "first":"Nombre",
-      "last":"Apellido",
+      "first": "Nombre",
+      "last": "Apellido",
       "mi": "Segundo Nombre",
       "plateSearch": "Buscar Matricula",
       "plate": "Matricula",
@@ -485,9 +488,9 @@
         "detatchConfirm": "¿Está seguro de que desea despegar de esta llamada?"
       },
       "statusOptions": {
-        "pending":"Pendiente",
-        "active":"Activo",
-        "closed":"Cerrado"
+        "pending": "Pendiente",
+        "active": "Activo",
+        "closed": "Cerrado"
       },
       "originOptions": {
         "caller": "Comunicante",
@@ -634,7 +637,7 @@
       "customizationDisabled": "La personalización de la comunidad no está incluida con su versión.",
       "info": {
         "communityInfo": "Información de la comunidad",
-        "communityId":"ID de comunidad",
+        "communityId": "ID de comunidad",
         "name": "Nombre",
         "subtitle": "Subtitulos",
         "website": "Sitio Web",
@@ -777,7 +780,7 @@
       "emergencyAbout": "Estos webhooks están relacionados con los servicios de emergencia.",
       "unitPanic": "Unidad en Pánico",
       "unitPanicAbout": "Este WebHook se enviará cuando una unidad cambie a su estado de PÁNICO. ",
-       "dispatch": "Centreal",
+      "dispatch": "Centreal",
       "dispatchAbout": "Este WebHook se enviará cuando se agregue o modifique una llamada de despacho.",
       "policeRecord": "Registros Policiales",
       "policeRecordAbout": "Este WebHook se enviará cuando se agregue, modifique o elimine un registro policial.",
@@ -809,6 +812,8 @@
       "penalCodeAbout": "Este WebHook se enviará cuando un administrador agregue, edite o elimine un código penal.",
       "apiRequest": "Solicitud de API",
       "apiRequestAbout": "Este WebHook se enviará cuando se envíe una solicitud de API.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
       "errors": {
         "maxWebhooks": "Error: Has alcanzado el límite de webhooks de tu comunidad.:"
       }
@@ -844,7 +849,9 @@
       "joined": "Unido",
       "permissions": "Permisos",
       "lastLogin": "Último Inicio de Sesión",
-      "apiIds": "API ID"
+      "apiIds": "API ID",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Tipos de registros personalizados existentes",
@@ -855,6 +862,8 @@
       "addPremadeSection": "Agregar sección pre existente",
       "recordSections": "Sección de Registros",
       "newField": "Nuevo campo",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
       "sectionLabel": "Etiqueta de Sección",
       "lookupPreviewAbout": "Mostrar el valor del campo en la vista previa de la tabla de búsqueda",
       "supervisorAbout": "Restringir el campo solo para los supervisores",
@@ -885,12 +894,12 @@
         "lawReport": "Informe de Ley"
       },
       "errors": {
-        "maxCiv": "ERROR: Los tipos de REGISTRO personalizado no pueden tener más de 3 secciones civiles en las que se pueden realizar búsquedas.",
-        "maxVeh": "ERROR: Los tipos de REGISTRO personalizados no pueden tener más de 3 vehículos de búsqueda = secciones.",
-        "noCivOrVeh": "ERROR: ¡Todos los tipos de REGISTRO personalizados deben contener una sección de vehículos o civiles para poder realizar búsquedas!",
-        "noStatus": "ERROR: Este tipo de registro DEBE tener UN campo de 'estado' de tipo personalizado.",
-        "noCiv": "ERROR: Este tipo de registro DEBE tener UN campo de carácter.",
-        "oneCivAndOneVeh": "ERROR: Este tipo de registro DEBE tener UN campo de carácter y UN campo de vehículo."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field."
       },
       "remove": {
         "removeType": "Eliminar Tipo de Registro",
@@ -957,7 +966,9 @@
         "tooltipLabel": "Esta es la descripción del campo",
         "tooltipColumn": "Este es el nombre de la columna en la tabla de su base de datos que contiene los datos de este campo.",
         "tooltipTable": "Este es el nombre de la tabla SQL en la que se encuentra esta columna de datos.",
-        "tooltipCharacterColumn": "Este es el nombre de la columna de ID de personaje único en su tabla. Generalmente, contiene el Steam Hex."
+        "tooltipCharacterColumn": "Este es el nombre de la columna de ID de personaje único en su tabla. Generalmente, contiene el Steam Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name."
       }
     },
     "penal": {
@@ -966,8 +977,8 @@
       "editPenal": "Editar Código Penal",
       "code": "Código",
       "title": "Título",
-      "chargeType":"Tipo de Cargo",
-      "bondType":"Tipo de Fianza/Multa",
+      "chargeType": "Tipo de Cargo",
+      "bondType": "Tipo de Fianza/Multa",
       "bondAmount": "Monto de Fianza/Multa",
       "jailTime": "Tiempo de Prisión",
       "confirmRemove": "¿Está seguro de que desea eliminar este Código?",
@@ -1014,7 +1025,7 @@
       "toggles": {
         "editIdent": "Editar Identificador",
         "editOtherIdent": "Editar el ident. de otro",
-        "selfDispatch":"Autodespacho",
+        "selfDispatch": "Autodespacho",
         "supervisor": "Supervisor"
       },
       "confirmKick": "¿Estás seguro de que quieres patear?",

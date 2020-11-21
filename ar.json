@@ -40,7 +40,10 @@
     "noResults": "لايوجد نتائج",
     "externalWindow": "فتح ف ي نافذة اخرى",
     "lostConnection": "لقد فقد الأتصال بالسيرفر",
-    "serverStatus": "حالة السيرفر"
+    "serverStatus": "حالة السيرفر",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export"
   },
   "sideMenu": {
     "buttons": {
@@ -809,6 +812,8 @@
       "penalCodeAbout": "سيتم إرسال ويب هوك هذا عندما يضيف المسؤول أو يعدل أو يزيل قانون عقوبات.",
       "apiRequest": "طلب اي بي اي",
       "apiRequestAbout": "سيتم إرسال ويب هوك هذا عند إرسال طلب اي بي اي.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
       "errors": {
         "maxWebhooks": "خطأ: لقد وصلت إلى الحد الأقصى لعدد رسائل الويب الخاصة بالمنتدى:"
       }
@@ -844,7 +849,9 @@
       "joined": "الدخول",
       "permissions": "الصلاحيات",
       "lastLogin": "أخر ظهور",
-      "apiIds": "اي دي ستيم"
+      "apiIds": "اي دي ستيم",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "أنواع السجلات المخصصة الموجودة",
@@ -855,6 +862,8 @@
       "addPremadeSection": "إضافة قسم مسبق الصنع",
       "recordSections": "أقسام التسجيل",
       "newField": "حقل جديد",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
       "sectionLabel": "تسمية القسم",
       "lookupPreviewAbout": "إظهار قيمة الحقل في معاينة جدول البحث",
       "supervisorAbout": "قصر المجال على المشرفين فقط",
@@ -885,12 +894,12 @@
         "lawReport": "تقرير القانون"
       },
       "errors": {
-        "maxCiv": "خطأ: لا يمكن أن تحتوي أنواع السجلات المخصصة على أكثر من 3 أقسام مدنية قابلة للبحث.",
-        "maxVeh": "خطأ: لا يمكن أن تحتوي أنواع السجلات المخصصة على أكثر من 3 مركبات قابلة للبحث = أقسام.",
-        "noCivOrVeh": "خطأ: يجب أن تحتوي جميع أنواع السجلات المخصصة على قسم مدني أو قسم للمركبة حتى يمكن البحث فيها!",
-        "noStatus": "خطأ: يجب أن يحتوي نوع السجل هذا على حقل 'حالة' من النوع المخصص.",
-        "noCiv": "خطأ: يجب أن يحتوي نوع السجل هذا على حقل حرف واحد.",
-        "oneCivAndOneVeh": "خطأ: يجب أن يحتوي نوع السجل هذا على حقل حرف واحد وحقل سيارة واحد."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field."
       },
       "remove": {
         "removeType": "إزالة نوع السجل",
@@ -957,7 +966,9 @@
         "tooltipLabel": "هذا هو وصف الحقل",
         "tooltipColumn": "هذا هو اسم العمود في جدول قاعدة البيانات الذي يحتوي على بيانات هذا الحقل.",
         "tooltipTable": "هذا هو اسم جدول إس كيو إل الذي يوجد فيه عمود البيانات هذا.",
-        "tooltipCharacterColumn": "هذا هو اسم عمود معرف الحرف الفريد في جدولك. بشكل عام يحتوي هذا على ستيم هكس."
+        "tooltipCharacterColumn": "هذا هو اسم عمود معرف الحرف الفريد في جدولك. بشكل عام يحتوي هذا على ستيم هكس.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name."
       }
     },
     "penal": {

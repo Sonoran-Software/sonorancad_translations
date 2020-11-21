@@ -40,7 +40,10 @@
     "noResults": "Brak wyników",
     "externalWindow": "Otwórz w nowym oknie",
     "lostConnection": "Straciłeś połączenie z serwerem",
-    "serverStatus": "Status serwera"
+    "serverStatus": "Status serwera",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export"
   },
   "sideMenu": {
     "buttons": {
@@ -296,8 +299,8 @@
       "newLookup": "Nowe wyszukanie",
       "refresh": "Odśwież",
       "nameSearch": "Szukanie Osoby",
-      "first":"Imię",
-      "last":"Nazwisko",
+      "first": "Imię",
+      "last": "Nazwisko",
       "mi": "Drugie Imię",
       "plateSearch": "Szukanie Pojazdu",
       "plate": "Numer rejestracyjny",
@@ -485,9 +488,9 @@
         "detatchConfirm": "Jesteś pewny, że chcesz odłączyć od tego wezwania?"
       },
       "statusOptions": {
-        "pending":"Oczekuje",
-        "active":"Aktywne",
-        "closed":"Zamknięte"
+        "pending": "Oczekuje",
+        "active": "Aktywne",
+        "closed": "Zamknięte"
       },
       "originOptions": {
         "caller": "Dzwoniący",
@@ -634,7 +637,7 @@
       "customizationDisabled": "Dostosowywanie nie jest zawarte w Twojej wersji.",
       "info": {
         "communityInfo": "Informacje o Społeczności",
-        "communityId":"ID Społeczności",
+        "communityId": "ID Społeczności",
         "name": "Nazwa",
         "subtitle": "Podtytuł",
         "website": "Strona Internetowa",
@@ -809,6 +812,8 @@
       "penalCodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kodeks karny.",
       "apiRequest": "Prośba API",
       "apiRequestAbout": "Ten WebHook zostanie wysłany jeśli poproszono o API.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
       "errors": {
         "maxWebhooks": "Błąd: Osiągnąłeś limit webkooków dla Twojej społeczności:"
       }
@@ -844,7 +849,9 @@
       "joined": "Dołączył",
       "permissions": "Pozwolenia",
       "lastLogin": "Ostatnie Logowanie",
-      "apiIds": "API ID"
+      "apiIds": "API ID",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Istniejące Typy Niestandardowych Rejestrów",
@@ -855,6 +862,8 @@
       "addPremadeSection": "Dodaj Gotową Sekcje",
       "recordSections": "Sekcje Rejestrów",
       "newField": "Nowe Pole",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
       "sectionLabel": "Etykieta Sekcji",
       "lookupPreviewAbout": "Pokaż wartość pola w tabeli wyszukiwania",
       "supervisorAbout": "Ogranicz pole jedynie dla supervisorów",
@@ -885,12 +894,12 @@
         "lawReport": "Raporty Prawników"
       },
       "errors": {
-        "maxCiv": "BŁĄD: Niestandardowe typy REJESTRÓW nie mogą mieć więcej niż 3 sekcje cywilów.",
-        "maxVeh": "BŁĄD: Niestandardowe typy REJESTRÓW nie mogą mieć więcej niż 3 sekcje pojazdów.",
-        "noCivOrVeh": "BŁĄD: Wszystkie niestandardowe typy REJESTRÓW muszą zawierać sekcje cywilów lub pojazdów aby były wyszukiwalne!",
-        "noStatus": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole 'status'.",
-        "noCiv": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole cywilów.",
-        "oneCivAndOneVeh": "BŁĄD: Ten typ rejestrów MUSI mieć JEDNO pole cywilów oraz JEDNO pole pojazdów."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field."
       },
       "remove": {
         "removeType": "Usuń Typ Rejestrów",
@@ -957,7 +966,9 @@
         "tooltipLabel": "To jest pole opisu",
         "tooltipColumn": "To jest nazwa kolumny Twojej tabeli bazy danych zawierajacej dane tego pola.",
         "tooltipTable": "To jest nazwa tabeli bazy danych, w której znajduje się ta kolumna danych.",
-        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex."
+        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name."
       }
     },
     "penal": {
@@ -966,8 +977,8 @@
       "editPenal": "Edytuj Kod Karny",
       "code": "Kod",
       "title": "Tytuł",
-      "chargeType":"Rodzaj Pobrania Opłaty",
-      "bondType":"Rodzaj Poświadczenia",
+      "chargeType": "Rodzaj Pobrania Opłaty",
+      "bondType": "Rodzaj Poświadczenia",
       "bondAmount": "Kwota Mandatu / Poświadczenia",
       "jailTime": "Czas Więzienia",
       "confirmRemove": "Jesteś pewny, że chcesz usunąć ten kod?",
@@ -1014,7 +1025,7 @@
       "toggles": {
         "editIdent": "Edycja Kryptonimu",
         "editOtherIdent": "Edycja Kryptonimów Innych Jednostek.",
-        "selfDispatch":"Samodzielny Dyspozytor",
+        "selfDispatch": "Samodzielny Dyspozytor",
         "supervisor": "Supervisor"
       },
       "confirmKick": "Jesteś pewny, że chcesz wyrzucić",
