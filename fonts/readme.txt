@@ -1,0 +1,1 @@
+ S:\repos\cad_translations\fonts\fontgen.sh .\chinese.msyh.ttf .\Roboto-Regular.ttf
