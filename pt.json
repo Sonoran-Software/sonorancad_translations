@@ -983,14 +983,14 @@
       },
       "errors": {
         "maxCiv": "ERRO: Os tipos de REGISTO personalizado não podem conter mais de 3 secções civis onde se podem realizar buscas.",
-        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "minCiv": "ERROR: Este tipo de registo não possui campos de caracteres pesquisáveis suficientes. (Campos com um UID de 'primeiro' e 'último')",
         "maxVeh": "ERRO: Os tipos de REGISTO personalizados não podem conter mais de 3 veículos de buscas = secciones.",
-        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
-        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
-        "minStatus": "ERROR: This record type must have ONE custom type 'status' field.",
-        "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'",
-        "noPreviewedFields": "ERROR: This record template has no fields enabled for preview.",
-        "noName": "ERROR: This record template has no name set."
+        "minVeh": "ERROR: Este tipo de registo não possui campos de veículo pesquisáveis suficientes. (Campos com um UID de 'placa')",
+        "maxStatus": "ERRO: este tipo de registo tem muitos campos de 'status' de tipo personalizado.",
+        "minStatus": "ERRO: Este tipo de registo deve ter UM campo de 'status' de tipo personalizado.",
+        "noStatusField": "ERRO: Este tipo de registo deve ter UM campo personalizado com o UID de 'status'",
+        "noPreviewedFields": "ERRO: este modelo de registo não possui campos habilitados para visualização.",
+        "noName": "ERROR: Este modelo de registo não possui um nome definido."
       },
       "remove": {
         "removeType": "Eliminar Tipo de Registo",
@@ -1017,11 +1017,14 @@
       "staticOnly": "Apenas URL Estático",
       "staticOnlyAbout": "Se o seu modo de jogo não for compatível com o recurso Mapa ao vivo, você pode especificar um site com um mapa do seu jogo.",
       "mapType": "Tipo de mapa",
+      "uploadCustomMap": "Carregar mapa personalizado",
       "server": "Servidor",
       "ip": "IP",
       "websiteUrl": "URL de Site",
       "mapPort": "Porta do Mapa",
-      "listenerPort": "Porta de Escuta",
+      "gamePort": "Porta do jogo",
+      "differingOutboundIp": "IP de saída diferente",
+      "outboundIp": "IP de saída",
       "saveAndDeploy": "Guardar e Implementar",
       "dbSync": {
         "dbSyncHeader": "Sincronização de Base de Dados",
@@ -1050,6 +1053,7 @@
         "characterMappingColumn": "Coluna de Personagem",
         "customMapAbout": "Este é um campo de mapeamento da Base de Dados personalizado proporcionado pelo editor de registos.",
         "columnName": "Nome de Coluna",
+        "externalKey": "Chave Externa",
         "jsonKey": "Chave JSON",
         "jsonColumn": "Coluna JSON",
         "jsonColumnAbout": "Se esta coluna é do tipo JSON, pode especificar a chave JSON.",
@@ -1058,10 +1062,16 @@
         "tooltipColumn": "Este é o nome da coluna na tabela da sua base de dados que contem os dados deste campo.",
         "tooltipTable": "Este é o nome da tabela SQL onde se encontra esta coluna de dados.",
         "tooltipCharacterColumn": "Este é o nome da coluna de ID único do civil na sua tabela. Geralmente, contem o Steam Hex."
+        "fieldMapId": "ID de mapeamento de campo",
+        "fieldMapIdAbout": "Esse ID ajuda a mapear campos em uma seção de caractere personalizado para outros registros e distingue quais campos contêm termos de pesquisa, como nome e sobrenome.",
+        "friendlyMapping": "Mapeamento Amigavel",
+        "tooltipFriendlyMapping": "Isso permite mapear valores comuns de banco de dados para valores de IU mais amigáveis.",
+        "friendlyMappingExample": "Ex: 'drive_license' -> 'Driver's License'",
+        "dbValue": "Valor da Base de Dados",
+        "friendlyValue": "Valor Amigavel"
       }
     },
     "penal": {
-      "penalCodes": "Código Penal",
       "createNewPenal": "Criar Novo Código Penal",
       "editPenal": "Editar Código Penal",
       "code": "Código",
@@ -1087,7 +1097,6 @@
     },
     "10Codes": {
       "action": "Ação",
-      "10Codes": "Códigos 10",
       "code": "Código"
     },
     "permissions": {
@@ -1106,6 +1115,7 @@
       "emsAdvanced": "EMS - Avançado",
       "fireAdvanced": "Bombeiro - Avançado",
       "dmvRecords": "Registos do DVM",
+      "modifyStreetSigns": "Modificar sinais de trânsito",
       "lawRecords": "Registos Legais",
       "adminAccess": "Acesso de administrador",
       "kickUser": "Expulsar Utilizador",
@@ -1130,18 +1140,14 @@
       "errors": {
         "duplicateKey": "Erro: Já existe uma chave duplicada com este nome!"
       }
+    },
+    "addresses": {
+      "addresses": "Endereços"
+    },
+    "logs": {
+      "logs": "Logs",
+      "log": "Log",
+      "time": "Tempo"
     }
   }
 } 
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
