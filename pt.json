@@ -112,26 +112,26 @@
       "bodycam": "Bodycam"
       "confirmReset": "Tem a certeza que pretende apagar as suas configurações?",
       "lighting": "Iluminação",
-      "addFrame": "Add Frame",
-      "addBulb": "Add Bulb",
+      "addFrame": "Adicionar moldura",
+      "addBulb": "Adicionar lâmpada",
       "delay": "Delay",
-      "scanForBulbs": "Scan for Bulbs",
-      "bulbType": "Bulb Type",
+      "scanForBulbs": "Procurar por lâmpadas",
+      "bulbType": "Tipo de lânpada",
       "scan": "Scan",
-      "manualIp": "Manual IP (Optional)"
+      "manualIp": "Manual IP (Opcional)"
     }
   },
   "taskbar": {
-    "system": "System",
-    "newWindow": "New Window",
-    "pinToTaskbar": "Pin to taskbar",
-    "unpinFromTaskbar": "Unpin from taskbar",
-    "taskbarPosition": "Taskbar Position",
-    "tabCustomization": "Tab Customization",
-    "displayTabIcons": "Display Tab Icons",
-    "displayTabLabels": "Display Tab Labels",
-    "layoutCustomization": "Layout Customization",
-    "startMenu": "Start Menu"
+    "system": "Sistema",
+    "newWindow": "Nova Janela",
+    "pinToTaskbar": "Colocar na barra de tarefas",
+    "unpinFromTaskbar": "Retirar da barra de tarefas",
+    "taskbarPosition": "Posição da barra de tarefas",
+    "tabCustomization": "Costumizar TAB",
+    "displayTabIcons": "Mostrar icons TAB",
+    "displayTabLabels": "Mostrar nomes no TAB",
+    "layoutCustomization": "Costumização de Layout",
+    "startMenu": "Menu Inicial"
   },
   "login": {
     "buttons": {
@@ -221,14 +221,10 @@
       "username": "Nome de Utilizador",
       "emailPreferences": "Preferências de Email",
       "changePassword": "Mudar Password",
-      "newPassword": "Nova Password",
-      "confirmPassword": "Confirmar Password",
-      "emailMe": "Quero receber noticias importantes, atualizações e promoções."
+      "emailMe": "Quero receber anuncios importantes, updates e promoções no email."
     },
     "buttons": {
-      "changePassword": "Mudar password",
       "subscriptions": "Subscrições",
-      "deleteAccount": "Eliminar Conta"
     },
     "errors": {
       "passwordLength": "Erro: Sua password deve ter mais de 5 caracteres!",
@@ -238,37 +234,17 @@
   },
   "payment": {
     "text": {
-      "paymentCenter": "Central de Pagamento",
-      "confirmCancel1": "Tem certeza que deseja cancelar esta subscrição?",
-      "confirmCancel2": "A sua subscrição continuará válida até a data de término, não será feita mais nenhuma cobrança automaticamente. ",
-      "cancelSubscription": "Cancelar Subscrição",
-      "confirmPurchase": "Tem a certeza que pretende efetuar estas subscrição?",
-      "totalDue": "Total Vencido",
-      "currentPlan": "Plano Atual",
-      "updateBilling": "Atualizar Informação de Pagamento",
-      "updateCard": "Atualizar Cartão",
-      "updateSubscription": "Atualizar Subscrição",
-      "confirmUpdate": "Tem a certeza que pretende modificar a sua subscrição?",
-      "nextDate": "Próxima Data de Faturação",
-      "nextAmount": "Próximo Valor Faturado",
-      "purchaseAgreement1": "Concordo",
-      "purchaseAgreement2": "Termos de Serviço",
-      "purchaseAgreement3": "Política de Privacidade",
-      "purchaseAgreement4": "e Concordo com a compra.",
+      "setCommunityId": "Definir ID de comunidade",
       "newSubscription": "Subscrição Nova",
-      "subtotal": "Subtotal",
-      "Discount": "Desconto",
-      "activeSubscriptions": "Subscrições Ativas",
-      "canceledSubscriptions": "Subscrições Canceladas",
-      "invoices": "Faturas",
-      "incompleteWarning": "Se a sua subscrição aparece como INCOMPLETA, clique em 'Ver' na fatura para completar a compra. Geralmente tem que ver com informações erradas ou que no coincidem.",
-      "percentOff": "% Desconto"
+      "bundleAndSave": "Agrupar e salvar",
+      "serversEmail": "Email da conta dos servidores Sonoran",
+      "serverIp": "Server IP",
+      "bundleExplain": "Economize 30% todos os meses ao comprar um VPS dos Servidores Sonoran."
     },
     "labels": {
       "plan": "Planos",
       "startDate": "Data de Inicio",
-      "discordUsername": "Nome de Discord",
-      "coupon": "Código Promocional",
+      "endDate": "Data de Fim",
       "starter": "Starter",
       "standard": "Standard",
       "plus": "Plus",
@@ -277,10 +253,6 @@
     "buttons": {
       "purchase": "Comprar Subscrição",
       "comparePlans": "Comparar um Plano"
-    },
-    "errors": {
-      "missingId": "Erro: Por Favor verifique o campo de: ID da comunidade!",
-      "paymentSuccess": "Subscrição ativa com sucesso!"
     }
   },
   "communityMenu": {
@@ -352,6 +324,9 @@
   "police": {
     "lookup": {
       "lookup": "Procurar",
+      "sendToUnits": "Enviar para a(s) unidade(s)",
+      "partial": "Parcial",
+      "exact": "Exato",
       "reportsHeader": "Relatório",
       "identifier": "Identificador",
       "id": "ID do Registo",
@@ -392,7 +367,8 @@
       },
       "alerts": {
         "emptySearch": "Erro: Pesquisa vazia!"
-      }
+      },
+      "getOwner": "Obter proprietário"
     },
     "records": {
       "general": {
@@ -407,7 +383,9 @@
         "removeRecord": "Eliminar Registo",
         "pdf": "PDF",
         "applyForDmv": "Solicitar Registo",
-        "noCustomTypes": "Sem tipo de registo: adicione-os em Admin> Personalização> Registos personalizados",
+        "copyLink": "Copiar link do registo",
+        "pasteLink": "Colar link do registo",
+        "noCustomTypes": "Nenhum tipo de registro: adicione-os em Admin> Personalização> Registos personalizados",
         "status": {
           "active": "ATIVO",
           "closed": "FECHADO",
@@ -419,7 +397,8 @@
           "requiredField": "Erro: Campo obrigatório",
           "nameOrPlate": "Erro: Este registo deve conter o nome de um civil ou o número de matrícula para ser registado!",
           "noName": "Erro: Este registo deve conter o nome de um civil para ser registado!",
-          "noPlate": "Erro: Este registo deve conter um matricula para ser registado!"
+          "noPlate": "Erro: Este registo deve conter um matricula para ser registado!",
+       	  "noCopiedLink": "Error: You do not have a record link copied!"
         }
       },
       "agency": {
@@ -430,7 +409,7 @@
         "observingOfficer": "Unidade Primária",
         "location": "Localização",
         "zip": "Código Postal",
-        "badge": "# Distintivo"
+        "badge": "Distintivo #"
       },
       "getCiv": {
         "characterSearch": "Pesquisa de Personagem",
@@ -440,7 +419,7 @@
         "vehicleSearch": "Pesquisa de Veículos"
       },
       "narrative": {
-        "narrative": "Narrativa"
+        "narrative": "narrativa"
       },
       "charges": {
         "charges": "Multas",
@@ -451,7 +430,7 @@
         "counts": "Quantidade",
         "titleCode": "Titulo, Código",
         "bondType": "Tipo de Fiança",
-        "bondFineAmount": "Montante da Fiança",
+        "bondFineAmount": "Montante da Fiança/Multa",
         "jailTime": "Tempo de Prisão"
       },
       "speed": {
@@ -517,6 +496,7 @@
     },
     "callEditor": {
       "newDispatch": "Novo Operador",
+      "savedTypes": "Tipos salvos",
       "dispatch": "Central",
       "callViewer": "Visor Chamadas",
       "createCall": "Criar Chamada",
@@ -539,6 +519,7 @@
       "note": "Notas",
       "addNote": "Adicionar Nota",
       "dispatchRecord": "Registo Despacho",
+      "trackPrimary": "Rastrear Unidade Primária (GPS)",
       "confirmations": {
         "close1": "Você definiu o status da chamada para FECHADA.",
         "close2": "Tem certeza de que deseja encerrar esta chamada?",
@@ -606,14 +587,22 @@
       "records": "Registos",
       "bolo": "BOLO",
       "liveMap": "Mapa em Direto",
-      "10Codes": "Códigos 10",
-      "penalCodes": "Código Penal",
       "quickLinks": "Links Rápidos",
       "signal": "Sinal",
       "activeUnits": "Unidades Ativas",
       "activeCalls": "Chamadas Ativas",
       "emergencyCalls": "Chamadas de emergência",
       "panic": "Pânico"
+      "file": "Ficheiro(s)",
+      "toneBoard": "Quadro de tons",
+      "playTo": "Ativar para",
+      "streetSigns": "Sinais de transito"
+    },
+    "timers": {
+      "timers": "Temporizador",
+      "newTimer": "Novo Temporizador",
+      "attachments": "Anexos",
+      "clearAttachment": "apagar Anexos"
     },
     "signal": {
       "signal": "Sinal",
@@ -641,6 +630,8 @@
     },
     "units": {
       "activeUnits": "Unidades Ativas",
+      "dispatchersShown": "Central Visivel",
+      "dispatchersHidden": "Central Invisivel",
       "addToCall": "Adicionar a chamada",
       "addToGroup": "Adicionar a Grupo",
       "newGroup": "Novo Grupo",
@@ -653,6 +644,27 @@
       "createGroup": "Criar Grupo",
       "group": "Grupo",
       "units": "Unidades"
+    },
+    "notes": {
+      "notepad": "Bloco de Notas",
+      "title": "Titulo",
+      "notes": "Notas"
+    },
+    "command": {
+      "commandLine": "Linha de Comandos",
+      "create": "Criar",
+      "close": "Fechar",
+      "attach": "Anexar",
+      "detach": "Retirar Anexo",
+      "view": "Ver",
+      "clear": "Limpar",
+      "status": "Status",
+      "note": "Nota",
+      "savedCallType": "Tipo de chamada salvo",
+      "unit": "Unidade",
+      "postal": "Postal",
+      "callId": "ID Chamada",
+      "unitStatus": "Status da unidade"
     }
   },
   "admin": {
@@ -662,9 +674,8 @@
       "advanced": "Avançado",
       "permissionKeys": "Chave de Acesso",
       "departments": "Departamentos",
-      "10Codes": "Códigos 10",
-      "penalCodes": "Código Penal",
       "customRecords": "Registos Personalizados",
+      "logs": "Logs",
       "inGameIntegration": "Integração com o Jogo",
       "discordIntegration": "Integração com o Discord",
       "limits": "Limites",
@@ -683,8 +694,6 @@
       "changeHeader": "Mudar o ID de comunidade",
       "changeSubtext1": "Os proprietários da comunidade podem solicitar um novo ID da comunidade.",
       "changeSubtext2": "Todos os usuários CAD devem fazer logout e login novamente para evitar problemas.",
-      "changeWarning1": "Se a sua comunidade tiver uma assinatura ativa, ela será rebaixada para a versão GRATUITA.",
-      "changeWarning2": "Você precisará atualizar o ID da comunidade na central de pagamento, selecionando 'Modificar' na assinatura ativa.",
       "existingId": "ID existente",
       "newId": "Novo ID",
       "requestChange": "Solicitar alteração" 
@@ -707,6 +716,10 @@
       "geo": {
         "geographicalSettings": "Configuração geográfica",
         "geoSubtext": "Especifique a localização geográfica da sua comunidade para mudar a tradução dos sistemas no seu CAD."
+        "emergencyCode": "Código de EmergÊncia",
+        "penalCodeName": "Nome do código penal",
+        "tenCodeName": "Nome Cod-10",
+        "currencyDelimiter": "Delimitador de moeda"
       },
       "unitStatus": {
         "unitStatusCodes": "Códigos de status da unidade",
@@ -718,10 +731,6 @@
       },
       "customLogin": {
         "customLoginPage": "Página de inicio de sessão personalizada",
-        "subtext1": "Este URL mostra a página de inicio de sessão personalizada da sua comunidade.",
-        "subtext2": "Nosso recurso HTML pode ser hospedado em seu próprio nome de domínio personalizado, para exibir sua página de login personalizada em seu próprio domínio.",
-        "subtext3": "Para instalar, basta colar o URL abaixo na página HTML e hospedá-lo no seu domínio.",
-        "downloadResource": "Descarregar Recurso",
         "url": "URL"
       },
       "quickLinks": {
@@ -731,6 +740,14 @@
         "label": "Etiqueta",
         "link": "Link",
         "color": "Cor"
+      },
+        "notificationTones": {
+        "notificationTones": "Tons de Notificação",
+        "newDispatch": "Novo Despacho",
+        "dispatchUpdated": "Despacho atualizado",
+        "dispatchClosed": "Despacho Fechado",
+        "statusChange": "Status Alterado",
+        "dispatchNote": "Nota de Despacho"
       },
       "emails": {
         "customEmails": "Emails personalizados da comunidade",
@@ -769,14 +786,20 @@
         "description": "Descrição"
       },
       "flags": {
-        "flagTypes": "Tipos de alertas",
-        "subtext1": "Personaliza os tipos de alertas de registo da tua comunidade abaixo!",
-        "newFlag": "Novo alerta"
+        "lookupTypes": "Tipos de pesquisa",
+        "customRecordFieldId": "ID do campo de registo personalizado"
       },
       "errors": {
         "serverLimit1": "Erro: A Tua comunidade só pode conter",
         "serverLimit2": "servidores!",
         "serverMinimum": "Erro: Deves ter pelo menos um servidor!"
+      },
+      "discordRpc": {
+        "info1": "Os utilizadores de desktop exibem um botão de convite no Discord. Isso pode ser vinculado ao seu aplicativo CAD ou CMS.",
+        "discordRichPresence": "Discord Rich Presence",
+        "clientId": "Client ID",
+        "iconName": "Icon Name",
+        "btn2Failure": "Erro: Sem o Pro, o botão #2 pode direcionar os usuários apenas para um convite do Sonoran CAD ou Sonoran CMS."
       }
     },
     "department": {
@@ -871,6 +894,9 @@
       "penalCodeAbout": "Este WebHook será enviado quando um administrador adicione, modifique ou elimine um código penal.",
       "apiRequest": "Pedidos de API",
       "apiRequestAbout": "Este WebHook será enviado quando for enviado um pedido da API.",
+      "signal": "Sinal",
+      "signalAbout": "Este webhook será enviado quando um sinal estiver ativo.",
+      "toneBoardAbout": "Este webhook será enviado quando um tom for reproduzido por um despachante",
       "errors": {
         "maxWebhooks": "Erro: Alcançaste o limite de webhooks da tua comunidade.:"
       }
@@ -907,6 +933,8 @@
       "permissions": "Permissões",
       "lastLogin": "Último Inicio de Sessão",
       "apiIds": "API ID"
+      "purge": "Purgar Inativo",
+      "purgeConfirm": "Tem certeza de que deseja limpar todas as contas de usuário inativas? (30 dias)"
     },
     "customRecords": {
       "existingHeader": "Tipos de registos personalizados existentes",
@@ -917,10 +945,16 @@
       "addPremadeSection": "Adicionar secção pré-existente",
       "recordSections": "Secção de Registos",
       "newField": "Novo campo",
+      "searchCivs": "Procurar Civis",
+      "searchVehicles": "Procurar Veiculos",
+      "enableDuplicate": "Habilitar Duplicado",
+      "duplicateSection": "Duplicar Secção",
       "sectionLabel": "Etiqueta de Secção",
       "lookupPreviewAbout": "Mostrar o valor do campo na visualização da tabela de pesquisa",
       "supervisorAbout": "Restringir o campo apenas para os supervisores",
       "requiredAbout": "Campo obrigatório",
+      "uniqueField": "Campo unico",
+      "readOnly": "Somente leitura",
       "newValue": "Novo valor",
       "reverseMap": "Reverter Mapa",
       "enableMapping": "Habilitar Mapeamento",
@@ -930,6 +964,7 @@
       "name": "Nome",
       "mask": "Mascara",
       "label": "Etiqueta",
+      "width": "Largura",
       "dbMap": "Sincronizar Mapa com Base de Dados",
       "recordTypes": {
         "warrant": "Prisão",
@@ -948,11 +983,14 @@
       },
       "errors": {
         "maxCiv": "ERRO: Os tipos de REGISTO personalizado não podem conter mais de 3 secções civis onde se podem realizar buscas.",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
         "maxVeh": "ERRO: Os tipos de REGISTO personalizados não podem conter mais de 3 veículos de buscas = secciones.",
-        "noCivOrVeh": "ERRO: Todos os tipos de REGISTO personalizados devem conter uma secção de veículos ou civis para poder realizar buscas!",
-        "noStatus": "ERRO: Este tipo de registo DEVE conter UM campo de 'estado' do tipo personalizado.",
-        "noCiv": "ERRO: Este tipo de registo DEVE conter UM campo de carácter.",
-        "oneCivAndOneVeh": "ERRO: Este tipo de registo DEVE conter UM campo de carácter e UM campo de veículo."
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field.",
+        "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'",
+        "noPreviewedFields": "ERROR: This record template has no fields enabled for preview.",
+        "noName": "ERROR: This record template has no name set."
       },
       "remove": {
         "removeType": "Eliminar Tipo de Registo",
