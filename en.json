@@ -20,8 +20,8 @@
     "id": "ID",
     "apply": "Apply",
     "status": "Status",
-    "imageUploader": "Image Uploader (5MB Max)",
-    "uploadImage": "Upload Image",
+    "uploader": "Upload (5MB Max)",
+    "upload": "Upload",
     "remove": "Remove",
     "enabled": "Enabled",
     "activeServer": "Active Server",
@@ -40,7 +40,19 @@
     "noResults": "No Results",
     "externalWindow": "Open in external window",
     "lostConnection": "You have lost connection with the server.",
-    "serverStatus": "Server Status"
+    "serverStatus": "Server Status",
+    "import": "Import",
+    "importPrompt": "Paste in the JSON content",
+    "export": "Export",
+    "learnMore": "Learn More",
+    "copy": "Copy",
+    "icon": "Icon",
+    "test": "Test",
+    "start": "Start",
+    "pause": "Pause",
+    "errors": {
+      "limitReached": "Error: max limit reached"
+    }
   },
   "sideMenu": {
     "buttons": {
@@ -54,7 +66,8 @@
       "myAccount": "My Account",
       "goFullscreen": "Go Fullscreen",
       "exitFullscreen": "Exit Fullscreen",
-      "disclaimer": "By accessing or using Sonoran CAD you agree to our terms and conditions and privacy policy."
+      "disclaimer": "By accessing or using Sonoran CAD you agree to our terms and conditions and privacy policy.",
+      "menu": "Menu"
     }
   },
   "settings": {
@@ -64,12 +77,61 @@
     "language": "Language",
     "voice": "Voice",
     "apiIdDisable": "You must be logged into a community to set your API ID",
+    "secretDisable": "You must be logged into a community to retrieve your Secret ID",
     "hotkeys": "Hotkeys",
     "hotkeyDisable": "Hotkeys are not enabled with the free version",
     "prefix": "Prefix",
     "panic": "Panic",
-    "id1": "ID #1",
-    "id2": "ID #2"
+    "lockWindow": "Lock Window",
+    "unlockWindow": "Unlock Window",
+    "quickResize": "Quick Resize",
+    "exitResize": "Exit Resize",
+    "classicLayout": "Classic Layout",
+    "resetLayout": "Reset Layout",
+    "bringToTop": "Bring to Top",
+    "showHide": "Show/Hide",
+    "overlay": {
+      "streamOverlay": "Stream Overlay",
+      "credentials": "Credentials",
+      "configuration": "Configuration",
+      "twitchLogs": "Twitch Logs",
+      "twitchConfig": "Twitch Config",
+      "refreshPayment": "Refresh Payment",
+      "channel": "Channel",
+      "oauthToken": "OAuth Token",
+      "obsTextFiles": "OBS Txt Files",
+      "unitUpdates": "Unit Updates",
+      "callUpdates": "Call Updates",
+      "twitch": "Twitch",
+      "txtFiles": "TXT Files",
+      "fileName": "File Name",
+      "field": "Field",
+      "customTextFiles": "Custom Text Files",
+      "dataKeys": "Data Keys",
+      "events": "Events",
+      "bodycam": "Bodycam",
+      "confirmReset": "Are you sure you wish to reset your config?",
+      "lighting": "Lighting",
+      "addFrame": "Add Frame",
+      "addBulb": "Add Bulb",
+      "delay": "Delay",
+      "scanForBulbs": "Scan for Bulbs",
+      "bulbType": "Bulb Type",
+      "scan": "Scan",
+      "manualIp": "Manual IP (Optional)"
+    }
+  },
+  "taskbar": {
+    "system": "System",
+    "newWindow": "New Window",
+    "pinToTaskbar": "Pin to taskbar",
+    "unpinFromTaskbar": "Unpin from taskbar",
+    "taskbarPosition": "Taskbar Position",
+    "tabCustomization": "Tab Customization",
+    "displayTabIcons": "Display Tab Icons",
+    "displayTabLabels": "Display Tab Labels",
+    "layoutCustomization": "Layout Customization",
+    "startMenu": "Start Menu"
   },
   "login": {
     "buttons": {
@@ -158,15 +220,11 @@
       "email": "Email",
       "username": "Username",
       "emailPreferences": "Email Preferences",
-      "changePassword": "Change Password",
-      "newPassword": "New Password",
       "confirmPassword": "Confirm Password",
       "emailMe": "Email me important announcements, updates, and promotions."
     },
     "buttons": {
-      "changePassword": "Change Password",
-      "subscriptions": "Subscriptions",
-      "deleteAccount": "Delete Account"
+      "subscriptions": "Subscriptions"
     },
     "errors": {
       "passwordLength": "Error: Your password must be greater than 5 characters!",
@@ -176,37 +234,17 @@
   },
   "payment": {
     "text": {
-      "paymentCenter": "Payment Center",
-      "confirmCancel1": "Are you sure you want to cancel this subscription?",
-      "confirmCancel2": "Your subscription will still be valid until the end date, but your card will not be auto-charged.",
-      "cancelSubscription": "Cancel Subscription",
-      "confirmPurchase": "Are you sure you want to purchase this subscription?",
-      "totalDue": "Total Due Today",
-      "currentPlan": "Current Plan",
-      "updateBilling": "Update Billing Information",
-      "updateCard": "Update Card",
-      "updateSubscription": "Update Subscription",
-      "confirmUpdate": "Are you sure you want to modify your subscription?",
-      "nextDate": "Next Billing Date",
-      "nextAmount": "Next Billing Amount",
-      "purchaseAgreement1": "I agree to the",
-      "purchaseAgreement2": "Terms of Service",
-      "purchaseAgreement3": "Privacy Policy",
-      "purchaseAgreement4": "and Purchase Agreement.",
+      "setCommunityId": "Set Community ID",
       "newSubscription": "New Subscription",
-      "subtotal": "Subtotal",
-      "Discount": "Discount",
-      "activeSubscriptions": "Active Subscriptions",
-      "canceledSubscriptions": "Canceled Subscriptions",
-      "invoices": "Invoices",
-      "incompleteWarning": "If your subscription is listed as INCOMPLETE, please click 'View' on the open invoice to complete the purchase. This often has to do with information not matching exactly.",
-      "percentOff": "% Off"
+      "bundleAndSave": "Bundle and Save",
+      "serversEmail": "Sonoran Servers Account Email",
+      "serverIp": "Server IP",
+      "bundleExplain": "Save 30% every month when you purchase a VPS from Sonoran Servers."
     },
     "labels": {
       "plan": "Plan",
       "startDate": "Start Date",
-      "discordUsername": "Discord Username",
-      "coupon": "Coupon Code",
+      "endDate": "End Date",
       "starter": "Starter",
       "standard": "Standard",
       "plus": "Plus",
@@ -215,10 +253,6 @@
     "buttons": {
       "purchase": "Purchase Subscription",
       "comparePlans": "Compare Plans"
-    },
-    "errors": {
-      "missingId": "Error: Please fill out the community ID field!",
-      "paymentSuccess": "Your subscription has been successfully started!"
     }
   },
   "communityMenu": {
@@ -290,14 +324,17 @@
   "police": {
     "lookup": {
       "lookup": "Lookup",
+      "sendToUnits": "Send to Unit(s)",
+      "partial": "Partial",
+      "exact": "Exact",
       "reportsHeader": "Reports",
       "identifier": "Identifier",
       "id": "Record ID",
       "newLookup": "New Lookup",
       "refresh": "Refresh",
       "nameSearch": "Name Search",
-      "first":"First Name",
-      "last":"Last Name",
+      "first": "First Name",
+      "last": "Last Name",
       "mi": "Middle Initial",
       "plateSearch": "Plate Search",
       "plate": "License Plate",
@@ -330,7 +367,8 @@
       },
       "alerts": {
         "emptySearch": "Error: Empty search!"
-      }
+      },
+      "getOwner": "Get Owner"
     },
     "records": {
       "general": {
@@ -345,6 +383,8 @@
         "removeRecord": "Remove Record",
         "pdf": "PDF",
         "applyForDmv": "Apply for DMV Record",
+        "copyLink": "Copy Record Link",
+        "pasteLink": "Paste Record Link",
         "noCustomTypes": "No Record Types: Add them in Admin > Customization > Custom Records",
         "status": {
           "active": "ACTIVE",
@@ -357,7 +397,8 @@
           "requiredField": "Error: Required field",
           "nameOrPlate": "Error: This record must have a civilian's name or vehicle plate number to be searched!",
           "noName": "Error: This record must have a civilian's name to be searched!",
-          "noPlate": "Error: This record must have a vehicle plate to be searched!"
+          "noPlate": "Error: This record must have a vehicle plate to be searched!",
+          "noCopiedLink": "Error: You do not have a record link copied!"
         }
       },
       "agency": {
@@ -455,6 +496,7 @@
     },
     "callEditor": {
       "newDispatch": "New Dispatch",
+      "savedTypes": "Saved Types",
       "dispatch": "Dispatch",
       "callViewer": "Call Viewer",
       "createCall": "Create Call",
@@ -477,6 +519,7 @@
       "note": "Note",
       "addNote": "Add Note",
       "dispatchRecord": "Dispatch Record",
+      "trackPrimary": "Track Primary Unit (GPS)",
       "confirmations": {
         "close1": "You have set the call status to CLOSED.",
         "close2": "Are you sure you would like to close this call?",
@@ -485,9 +528,9 @@
         "detatchConfirm": "Are you sure you would like to detatch from this call?"
       },
       "statusOptions": {
-        "pending":"Pending",
-        "active":"Active",
-        "closed":"Closed"
+        "pending": "Pending",
+        "active": "Active",
+        "closed": "Closed"
       },
       "originOptions": {
         "caller": "Caller",
@@ -544,14 +587,22 @@
       "records": "Records",
       "bolo": "BOLO",
       "liveMap": "Live Map",
-      "10Codes": "10-Codes",
-      "penalCodes": "Penal Codes",
       "quickLinks": "Quick Links",
       "signal": "Signal",
       "activeUnits": "Active Units",
       "activeCalls": "Active Calls",
       "emergencyCalls": "Emergency Calls",
-      "panic": "Panic"
+      "panic": "Panic",
+      "file": "File(s)",
+      "toneBoard": "Tone Board",
+      "playTo": "Play To",
+      "streetSigns": "Street Signs"
+    },
+    "timers": {
+      "timers": "Timers",
+      "newTimer": "New Timer",
+      "attachments": "Attachments",
+      "clearAttachment": "Clear Attachment"
     },
     "signal": {
       "signal": "Signal",
@@ -579,6 +630,8 @@
     },
     "units": {
       "activeUnits": "Active Units",
+      "dispatchersShown": "Dispatchers Shown",
+      "dispatchersHidden": "Dispatchers Hidden",
       "addToCall": "Add to Call",
       "addToGroup": "Add to Group",
       "newGroup": "New Group",
@@ -591,6 +644,27 @@
       "createGroup": "Create Group",
       "group": "Group",
       "units": "Units"
+    },
+    "notes": {
+      "notepad": "Notepad",
+      "title": "Title",
+      "notes": "Notes"
+    },
+    "command": {
+      "commandLine": "Command Line",
+      "create": "Create",
+      "close": "Close",
+      "attach": "Attach",
+      "detach": "Detach",
+      "view": "View",
+      "clear": "Clear",
+      "status": "Status",
+      "note": "Note",
+      "savedCallType": "Saved Call Type",
+      "unit": "Unit",
+      "postal": "Postal",
+      "callId": "Call ID",
+      "unitStatus": "Unit Status"
     }
   },
   "admin": {
@@ -600,9 +674,8 @@
       "advanced": "Advanced",
       "permissionKeys": "Permission Keys",
       "departments": "Departments",
-      "10Codes": "10-Codes",
-      "penalCodes": "Penal Codes",
       "customRecords": "Custom Records",
+      "logs": "Logs",
       "inGameIntegration": "In-Game Integration",
       "discordIntegration": "Discord Integration",
       "limits": "Limits",
@@ -621,8 +694,6 @@
       "changeHeader": "Change your Community ID",
       "changeSubtext1": "Community owners can request a new community ID.",
       "changeSubtext2": "All users in the CAD will need to log out and back in to avoid issues.",
-      "changeWarning1": "If your community has an active subscription, your community will be downgraded to the FREE version.",
-      "changeWarning2": "You will need to update the community ID in the payment center, by selecting \"Modify\" on the active subscription.",
       "existingId": "Existing ID",
       "newId": "New ID",
       "requestChange": "Request Change"
@@ -634,7 +705,7 @@
       "customizationDisabled": "Community customization is not included with your version.",
       "info": {
         "communityInfo": "Community Info",
-        "communityId":"Community ID",
+        "communityId": "Community ID",
         "name": "Name",
         "subtitle": "Subtitle",
         "website": "Website",
@@ -644,7 +715,11 @@
       },
       "geo": {
         "geographicalSettings": "Geographical Settings",
-        "geoSubtext": "Specify your community's geographical location to change the wording of systems in your CAD."
+        "geoSubtext": "Cutomize wording in accordance with your community's geographical location.",
+        "emergencyCode": "Emergency Code",
+        "penalCodeName": "Penal Code Name",
+        "tenCodeName": "Ten Code Name",
+        "currencyDelimiter": "Currency Delimiter"
       },
       "unitStatus": {
         "unitStatusCodes": "Unit Status Codes",
@@ -656,10 +731,6 @@
       },
       "customLogin": {
         "customLoginPage": "Custom Login Page",
-        "subtext1": "This URL displays your community's custom login page.",
-        "subtext2": "Our HTML resource can be hosted on your own custom domain name, to display your custom login page on your own domain.",
-        "subtext3": "To install, simply paste the URL below into the HTML page and host it on your domain.",
-        "downloadResource": "Download Resource",
         "url": "URL"
       },
       "quickLinks": {
@@ -669,6 +740,14 @@
         "label": "Label",
         "link": "Link",
         "color": "Color"
+      },
+      "notificationTones": {
+        "notificationTones": "Notification Tones",
+        "newDispatch": "New Dispatch",
+        "dispatchUpdated": "Dispatch Updated",
+        "dispatchClosed": "Dispatch Closed",
+        "statusChange": "Status Change",
+        "dispatchNote": "Dispatch Note"
       },
       "emails": {
         "customEmails": "Custom Community Emails",
@@ -706,15 +785,21 @@
         "name": "Name",
         "description": "Description"
       },
-      "flags": {
-        "flagTypes": "Flag Types",
-        "subtext1": "Customize your community record flag types below!",
-        "newFlag": "New Flag"
+      "lookupTypes": {
+        "lookupTypes": "Lookup Types",
+        "customRecordFieldId": "Custom Record Field ID"
       },
       "errors": {
         "serverLimit1": "Error: Your community is limited to",
         "serverLimit2": "servers!",
         "serverMinimum": "Error: You must have at least one server!"
+      },
+      "discordRpc": {
+        "info1": "Desktop users display an invite button in Discord. This can be linked to your CAD or CMS application.",
+        "discordRichPresence": "Discord Rich Presence",
+        "clientId": "Client ID",
+        "iconName": "Icon Name",
+        "btn2Failure": "Error: Without Pro, button #2 may only direct users to a Sonoran CAD or Sonoran CMS invite."
       }
     },
     "department": {
@@ -809,6 +894,9 @@
       "penalCodeAbout": "This WebHook will be sent when an admin adds, edits or removed a penal code.",
       "apiRequest": "API Request",
       "apiRequestAbout": "This WebHook will be sent when an API request is sent.",
+      "signal": "Signal",
+      "signalAbout": "This webhook will be sent when a signal is in effect.",
+      "toneBoardAbout": "This webhook will be sent when a tone is played by a dispatcher",
       "errors": {
         "maxWebhooks": "Error: You have reached your community's limit of webhooks:"
       }
@@ -844,7 +932,9 @@
       "joined": "Joined",
       "permissions": "Permissions",
       "lastLogin": "Last Login",
-      "apiIds": "API IDs"
+      "apiIds": "API IDs",
+      "purge": "Purge Inactive",
+      "purgeConfirm": "Are you sure you want to purge all inactive user accounts? (30 Days)"
     },
     "customRecords": {
       "existingHeader": "Existing Custom Record Types",
@@ -855,10 +945,16 @@
       "addPremadeSection": "Add Premade Section",
       "recordSections": "Record Sections",
       "newField": "New Field",
+      "searchCivs": "Search Civilians",
+      "searchVehicles": "Search Vehicles",
+      "enableDuplicate": "Enable Duplicate",
+      "duplicateSection": "Duplicate Section",
       "sectionLabel": "Section Label",
       "lookupPreviewAbout": "Show field value in lookup table preview",
       "supervisorAbout": "Restrict field to supervisors only",
       "requiredAbout": "Required Field",
+      "uniqueField": "Unique Field",
+      "readOnly": "Read Only",
       "newValue": "New Value",
       "reverseMap": "Reverse Map",
       "enableMapping": "Enable Mapping",
@@ -868,6 +964,7 @@
       "name": "Name",
       "mask": "Mask",
       "label": "Label",
+      "width": "Width",
       "dbMap": "DB Sync Mapping",
       "recordTypes": {
         "warrant": "Warrant",
@@ -885,12 +982,15 @@
         "lawReport": "Law Report"
       },
       "errors": {
-        "maxCiv": "ERROR: Custom RECORD types can not have more than 3 searchable civilian sections.",
-        "maxVeh": "ERROR: Custom RECORD types can not have more than 3 searchable vehicle= sections.",
-        "noCivOrVeh": "ERROR: All custom RECORD types must contain a civilian or vehicle section in order to be searchable!",
-        "noStatus": "ERROR: This record type MUST have ONE custom type 'status' field.",
-        "noCiv": "ERROR: This record type MUST have ONE character field.",
-        "oneCivAndOneVeh": "ERROR: This record type MUST have ONE character field and ONE vehicle field."
+        "maxCiv": "ERROR: This record type has too many searchable civilian sections. (Fields with UID of 'first' and 'last')",
+        "minCiv": "ERROR: This record type does not have enough searchable character fields. (Fields with a UID of 'first' and 'last')",
+        "maxVeh": "ERROR: This record type has too many searchable vehicle sections. (Fields with UID of 'plate')",
+        "minVeh": "ERROR: This record type does not have enough searchable vehicle fields. (Fields with a UID of 'plate')",
+        "maxStatus": "ERROR: This record type has too many custom type 'status' fields.",
+        "minStatus": "ERROR: This record type must have ONE custom type 'status' field.",
+        "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'",
+        "noPreviewedFields": "ERROR: This record template has no fields enabled for preview.",
+        "noName": "ERROR: This record template has no name set."
       },
       "remove": {
         "removeType": "Remove Record Type",
@@ -917,11 +1017,14 @@
       "staticOnly": "Static URL Only",
       "staticOnlyAbout": "If your game mode is not compatible with the Live Map resource, you can specify a website with a map of your game on it instead.",
       "mapType": "Map Type",
+      "uploadCustomMap": "Upload Custom Map",
       "server": "Server",
       "ip": "IP",
       "websiteUrl": "Website URL",
       "mapPort": "Map Port",
-      "listenerPort": "Listener Port",
+      "gamePort": "Game Port",
+      "differingOutboundIp": "Differing Outbound IP",
+      "outboundIp": "Outbound IP",
       "saveAndDeploy": "Save and Deploy",
       "dbSync": {
         "dbSyncHeader": "Database Sync",
@@ -950,6 +1053,7 @@
         "characterMappingColumn": "Character Mapping Column",
         "customMapAbout": "This is a custom DB Sync mapping field provided by your custom record editor.",
         "columnName": "Column Name",
+        "externalKey": "External Key",
         "jsonKey": "JSON Key",
         "jsonColumn": "JSON Column",
         "jsonColumnAbout": "If this column is a JSON datatype, you can specify the JSON key.",
@@ -957,17 +1061,23 @@
         "tooltipLabel": "This is the field description",
         "tooltipColumn": "This is the name of the column in your database table containing this field's data.",
         "tooltipTable": "This is the name of the SQL table this data column is found in.",
-        "tooltipCharacterColumn": "This is the name of the unique character ID column in your table. Generally this contains the Steam Hex."
+        "tooltipCharacterColumn": "This is the name of the unique character ID column in your table. Generally this contains the Steam Hex.",
+        "fieldMapId": "Field Mapping ID",
+        "fieldMapIdAbout": "This ID helps maps fields in a custom character section to other records and distinguishes what fields contain search terms like the first and last name.",
+        "friendlyMapping": "Friendly Mapping",
+        "tooltipFriendlyMapping": "This allows you to map common DB values to more friendly UI values.",
+        "friendlyMappingExample": "Ex: 'drive_license' -> 'Driver's License'",
+        "dbValue": "Database Value",
+        "friendlyValue": "Friendly Value"
       }
     },
     "penal": {
-      "penalCodes": "Penal Codes",
       "createNewPenal": "Create New Penal Code",
       "editPenal": "Edit Penal Code",
       "code": "Code",
       "title": "Title",
-      "chargeType":"Charge Type",
-      "bondType":"Bond Type",
+      "chargeType": "Charge Type",
+      "bondType": "Bond Type",
       "bondAmount": "Bond/Fine Amount",
       "jailTime": "Jail Time",
       "confirmRemove": "Are you sure you want to remove this penal code?",
@@ -987,7 +1097,6 @@
     },
     "10Codes": {
       "action": "Action",
-      "10Codes": "10-Codes",
       "code": "Code"
     },
     "permissions": {
@@ -1006,6 +1115,7 @@
       "emsAdvanced": "EMS - Advanced",
       "fireAdvanced": "Fire - Advanced",
       "dmvRecords": "DMV Records",
+      "modifyStreetSigns": "Modify Street Signs",
       "lawRecords": "Law Records",
       "adminAccess": "Admin Access",
       "kickUser": "Kick User",
@@ -1014,7 +1124,7 @@
       "toggles": {
         "editIdent": "Edit Identifier",
         "editOtherIdent": "Edit Other's Ident.",
-        "selfDispatch":"Self Dispatch",
+        "selfDispatch": "Self Dispatch",
         "supervisor": "Supervisor"
       },
       "confirmKick": "Are you sure you want to kick",
@@ -1030,6 +1140,14 @@
       "errors": {
         "duplicateKey": "Error: A duplicate key already exists with this name!"
       }
+    },
+    "addresses": {
+      "addresses": "Addresses"
+    },
+    "logs": {
+      "logs": "Logs",
+      "log": "Log",
+      "time": "Time"
     }
   }
 }
