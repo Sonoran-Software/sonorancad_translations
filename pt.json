@@ -51,6 +51,10 @@
     "test": "Teste",
     "start": "Iniciar",
     "pause": "Pausar",
+    "range": "Range",
+    "equal": "Equal",
+    "notEqual": "Not Equal",
+    "contains": "Contains",
     "errors": {
       "limitReached": "Erro: Limite Máximo atingido"
     }
@@ -386,6 +390,7 @@
         "applyForDmv": "Solicitar Registo",
         "copyLink": "Copiar link do registo",
         "pasteLink": "Colar link do registo",
+        "linkTitle": "Link Title",
         "noCustomTypes": "Nenhum tipo de registro: adicione-os em Admin> Personalização> Registos personalizados",
         "status": {
           "active": "ATIVO",
@@ -399,7 +404,7 @@
           "nameOrPlate": "Erro: Este registo deve conter o nome de um civil ou o número de matrícula para ser registado!",
           "noName": "Erro: Este registo deve conter o nome de um civil para ser registado!",
           "noPlate": "Erro: Este registo deve conter um matricula para ser registado!",
-       	  "noCopiedLink": "Error: You do not have a record link copied!"
+          "noCopiedLink": "Error: You do not have a record link copied!"
         }
       },
       "agency": {
@@ -942,6 +947,10 @@
       "recordEditor": "Editor de Registos",
       "recordTypeName": "Nome do tipo de registo",
       "type": "Tipo",
+      "resyncPreview": {
+        "resyncPreview": "Resync Preview Fields",
+        "confirm": "This will manually update all prior records to ensure previewed fields match your latest record template. This action maintains a 10 minute cooldown."
+      },
       "addCustomSection": "Adicionar Secção Personalizada",
       "addPremadeSection": "Adicionar secção pré-existente",
       "recordSections": "Secção de Registos",
@@ -968,6 +977,11 @@
       "width": "Largura",
       "dbMap": "Sincronizar Mapa com Base de Dados",
       "dependency": "Dependency",
+      "dependencyInfo": {
+        "infoEqual": "Display if field value equals:",
+        "infoNotEqual": "Display if field value does not equal:",
+        "infoContains": "Display if field value contains one or more:"
+      },
       "recordTypes": {
         "warrant": "Prisão",
         "bolo": "BOLO",
