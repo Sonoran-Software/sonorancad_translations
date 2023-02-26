@@ -46,7 +46,7 @@
     "export": "Eksporter",
     "learnMore": "Lær mer",
     "copy": "Kopier",
-    "paste": "Paste",
+    "paste": "Lim inn",
     "icon": "Ikon",
     "test": "Test",
     "start": "Start",
@@ -296,7 +296,7 @@
       "aka": "Alias",
       "residence": "Bostedsadresse",
       "zip": "Postkode",
-      "occupation": "Arbeid",
+      "occupation": "Yrke",
       "height": "Høyde",
       "weight": "Vekt",
       "skin": "Hudfarge",
@@ -335,16 +335,16 @@
       "exact": "Eksakt",
       "reportsHeader": "Rapporter",
       "identifier": "Enhetsinformasjon",
-      "id": "Saks ID",
+      "id": "Saksnummer",
       "newLookup": "Nytt søk",
-      "refresh": "Oppfrisk",
+      "refresh": "Oppdater",
       "nameSearch": "Søk på navn",
       "first": "Fornavn",
       "last": "Etternavn",
       "mi": "Mellomnavn",
       "plateSearch": "Skiltsøk",
       "plate": "Registreringsnummer",
-      "agency": "Byrå",
+      "agency": "Etat",
       "department": "Avdeling",
       "unit": "Enhet",
       "civilians": "Sivile",
@@ -426,12 +426,12 @@
         "vehicleSearch": "Kjøretøyssøk"
       },
       "narrative": {
-        "narrative": "fortelling"
+        "narrative": "Forløp"
       },
       "charges": {
-        "charges": "Siktelser",
-        "charge": "Siktelse",
-        "chargeNumber": "Siktelsesnummer ",
+        "charges": "Tiltaler",
+        "charge": "Ny tiltale",
+        "chargeNumber": "Saksnummer ",
         "fineTotal": "Bot Sum",
         "chargeType": "Siktelsestype",
         "counts": "Antall",
@@ -455,8 +455,8 @@
       "status": {
         "status": "Status",
         "dateSubmitted": "Dato sendt inn",
-        "supervisorSignature": "Nærmeste leders Signatur",
-        "observingSignature": "Hovedenhets Signatur"
+        "supervisorSignature": "Nærmeste leders signatur",
+        "observingSignature": "Hovedenhets signatur"
       },
       "vehicle": {
         "vehicleInformation": "Kjøretøysinformasjon",
@@ -474,11 +474,11 @@
           "offroad": "Offroad",
           "marine": "Vannfarkost",
           "motorcycle": "Motorsykkel",
-          "aircraft": "Fly/helikopter"
+          "aircraft": "Luftfartøy"
         }
       },
       "arrest": {
-        "arrestInformation": "Arrestasjonsinformasjon",
+        "arrestInformation": "Pågripelsesinformasjon",
         "weapons": "Våpen",
         "arrestType": "Arrestasjonstype",
         "probationaryOfficer": "Prøveløslatelsesoffiser"
@@ -721,19 +721,19 @@
         "subtitle": "Undertittel",
         "website": "Nettsted",
         "discord": "Discord",
-        "voiceCommand": "Stemmestyrt kommando keyword",
+        "voiceCommand": "Stemmestyrt kommando",
         "timezone": "Tidssone"
       },
       "geo": {
         "geographicalSettings": "Geografiske innstillinger",
         "geoSubtext": "Tilpass ordlyden i samsvar med lokalsamfunnets geografiske beliggenhet.",
         "emergencyCode": "Emergency Code",
-        "penalCodeName": "Penal Code Name",
+        "penalCodeName": "Lovbrudd",
         "tenCodeName": "Ten Code Name",
-        "currencyDelimiter": "Currency Delimiter"
+        "currencyDelimiter": "Valutta"
       },
       "unitStatus": {
-        "unitStatusCodes": "Enhets status",
+        "unitStatusCodes": "Status",
         "busy": "Opptatt",
         "unavailable": "Utilgjengelig",
         "available": "Ledig",
@@ -741,7 +741,7 @@
         "onScene": "Fremme"
       },
       "customLogin": {
-        "customLoginPage": "Egen login side",
+        "customLoginPage": "Egen loginside",
         "url": "URL"
       },
       "quickLinks": {
@@ -758,7 +758,7 @@
         "dispatchUpdated": "Oppdrag oppdatert",
         "dispatchClosed": "Oppdrag avsluttet",
         "statusChange": "Status endring",
-        "dispatchNote": "Ny operatør merknad"
+        "dispatchNote": "Ny operatørmerknad"
       },
       "emails": {
         "customEmails": "Tilpassede samfunnseposter",
@@ -814,8 +814,8 @@
       }
     },
     "department": {
-      "agencies": "Byrå",
-      "agency": "Byrå",
+      "agencies": "Etater",
+      "agency": "Etat",
       "departments": "Avdelinger",
       "department": "Avdeling",
       "subdivisions": "Underavdeling",
@@ -823,13 +823,13 @@
       "description": "Beskrivelse",
       "abbreviation": "Alias",
       "address": "Adresse",
-      "zip": "Postkode",
+      "zip": "Postnummer",
       "errors": {
         "generalLimit1": "Feil: Samfunnet er begrenset til",
-        "agencyLimit2": "byrå!",
+        "agencyLimit2": "etat!",
         "departmentLimit2": "avdelinger per distrikt!",
         "subdivisionLimit2": "underavdelinger per avdeling",
-        "agencyExists": "Feil: Et byrå med dette navnet eksisterer allerede!",
+        "agencyExists": "Feil: En etat med dette navnet eksisterer allerede!",
         "districtExists": "Feil: Et distrikt med dette navnet eksisterer allerede!",
         "departmentExists": "Feil: En avdeling med dette navnet eksisterer allerede!",
         "subdivisionExists": "Feil: Et underavdeling med dette navnet eksisterer allerede!"
@@ -840,7 +840,7 @@
         "name": "Avdelingsnavn",
         "abbreviation": "Alias",
         "address": "Adresse",
-        "zip": "Postkode",
+        "zip": "Postnummer",
         "confirmRemove1": "Er du sikker på at du vil fjerne avdelingen?",
         "confirmRemove2": "Avdelingen og alle underavdelinger blir slettet."
       },
@@ -990,7 +990,7 @@
       "recordTypes": {
         "warrant": "Etterlysning",
         "bolo": "BOLO",
-        "license": "lisens",
+        "license": "førerkort",
         "vehicleRegistration": "Registreringsnummer",
         "policeRecord": "Politisak",
         "policeReport": "Politirapport",
