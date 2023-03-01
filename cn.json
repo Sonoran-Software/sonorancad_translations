@@ -51,10 +51,10 @@
     "test": "测试",
     "start": "开始",
     "pause": "暂停",
-    "range": "Range",
-    "equal": "Equal",
-    "notEqual": "Not Equal",
-    "contains": "Contains",
+    "range": "范围",
+    "equal": "相等",
+    "notEqual": "不相等",
+    "contains": "包含",
     "errors": {
       "limitReached": "错误：已达到最大限制"
     }
@@ -82,9 +82,9 @@
     "language": "语言",
     "voice": "语音",
     "apiIdDisable": "你必须登录到社区才能设置API ID",
-    "secretDisable": "你必须登陆倒社区才能获取你的Secret ID",
+    "secretDisable": "你必须登陆到社区才能获取你的Secret ID",
     "hotkeys": "自定义按键",
-    "hotkeyDisable": "免费版无法使用自定义按键设置",
+    "hotkeyDisable": "免费版本社区无法使用自定义按键设置",
     "prefix": "前缀",
     "panic": "紧急状况",
     "lockWindow": "锁定窗口",
@@ -115,7 +115,7 @@
       "dataKeys": "数据键",
       "events": "事件",
       "bodycam": "记录仪",
-      "confirmReset": "你确定要重置？",
+      "confirmReset": "你确定要重置配置吗？",
       "lighting": "灯光",
       "addFrame": "添加框架",
       "addBulb": "添加灯泡",
@@ -194,7 +194,7 @@
       "createText": "注册新的社区CAD供其他人加入！",
       "helpCommunityId1": "您的社区ID是您的社区的唯一的身份认证。这是用户将用来登录您个人CAD系统的凭证。",
       "helpCommunityId2": "一般情况下，这会您的社区的缩写。",
-      "helpCommunityId3": "例如：安宁守护者服务器 - ID：GOPDOJ",
+      "helpCommunityId3": "例如：San Andreas State DOJRP - ID：SASDOJ",
       "helpCommunityName": "您的社区名称是您的角色扮演社区的公共名称。",
       "helpCommunityWebsite": "您的社区网站是您的论坛，论坛或其他网站的URL。该字段是可选项。",
       "confirmLeave1": "您确定要离开此社区吗？",
@@ -391,7 +391,7 @@
         "applyForDmv": "申请车管局备案",
         "copyLink": "复制记录链接",
         "pasteLink": "粘贴记录链接",
-        "linkTitle": "Link Title",
+        "linkTitle": "链接标题",
         "noCustomTypes": "无记录类型：请在管理员>自定义>自定义记录中进行添加",
         "status": {
           "active": "正在处理",
@@ -413,7 +413,7 @@
         "agencyName": "机构名称",
         "recordNum": "记录编号",
         "date": "日期",
-        "observingOfficer": "观察员",
+        "observingOfficer": "现场警员",
         "location": "地址",
         "zip": "邮政编码",
         "badge": "警号"
@@ -456,7 +456,7 @@
         "status": "状态",
         "dateSubmitted": "提交日期",
         "supervisorSignature": "主管签名",
-        "observingSignature": "观察员签名"
+        "observingSignature": "现场警员签名"
       },
       "vehicle": {
         "vehicleInformation": "车辆信息",
@@ -504,7 +504,7 @@
     },
     "callEditor": {
       "newDispatch": "新建调度",
-      "savedTypes": "Saved Types",
+      "savedTypes": "保存此呼叫类型",
       "dispatch": "调度",
       "callViewer": "浏览呼叫",
       "createCall": "创建呼叫",
@@ -520,7 +520,7 @@
       "address": "地址",
       "postal": "邮政编码",
       "callTitle": "呼叫标题",
-      "code": "10-Code代码",
+      "code": "Code",
       "primaryUnit": "主处理单位",
       "callDescription": "呼叫描述",
       "callNotes": "呼叫备注",
@@ -662,20 +662,20 @@
       "notes": "Notes"
     },
     "command": {
-      "commandLine": "Command Line",
-      "create": "Create",
-      "close": "Close",
-      "attach": "Attach",
-      "detach": "Detach",
-      "view": "View",
-      "clear": "Clear",
-      "status": "Status",
-      "note": "Note",
-      "savedCallType": "Saved Call Type",
-      "unit": "Unit",
-      "postal": "Postal",
-      "callId": "Call ID",
-      "unitStatus": "Unit Status"
+      "commandLine": "命令行",
+      "create": "创建",
+      "close": "关闭",
+      "attach": "附加",
+      "detach": "脱离",
+      "view": "查看",
+      "clear": "清除",
+      "status": "状态",
+      "note": "备注",
+      "savedCallType": "保存此呼叫类型",
+      "unit": "单位",
+      "postal": "坐标",
+      "callId": "呼叫 ID",
+      "unitStatus": "单位状态"
     }
   },
   "admin": {
@@ -721,7 +721,7 @@
         "subtitle": "子名称",
         "website": "官方网站",
         "discord": "Discord",
-        "voiceCommand": "呼号关键字",
+        "voiceCommand": "语音指令关键字",
         "timezone": "时区"
       },
       "geo": {
@@ -953,8 +953,8 @@
       "recordTypeName": "记录类型名称",
       "type": "类型",
       "resyncPreview": {
-        "resyncPreview": "Resync Preview Fields",
-        "confirm": "This will manually update all prior records to ensure previewed fields match your latest record template. This action maintains a 10 minute cooldown."
+        "resyncPreview": "重新同步字段",
+        "confirm": "这将手动更新所有以前的记录，以确保预览的字段与最新的记录模板匹配。此操作需要10分钟的冷却时间。"
       },
       "addCustomSection": "添加自定义节",
       "addPremadeSection": "添加预设节",
@@ -981,11 +981,11 @@
       "label": "标签",
       "width": "宽度",
       "dbMap": "数据库同步映射",
-      "dependency": "Dependency",
+      "dependency": "依赖",
       "dependencyInfo": {
-        "infoEqual": "Display if field value equals:",
-        "infoNotEqual": "Display if field value does not equal:",
-        "infoContains": "Display if field value contains one or more:"
+        "infoEqual": "显示字段值是否等于：",
+        "infoNotEqual": "显示字段值是否不等于：",
+        "infoContains": "如果字段值包含一个或多个："
       },
       "recordTypes": {
         "warrant": "通缉令",
