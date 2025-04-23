@@ -36,7 +36,7 @@
     "noResults": "Ingen resultater",
     "externalWindow": "Åpne i eksternt vindu",
     "lostConnection": "Du har mistet tilkoblingen til serveren.",
-    "serverStatus": "Server Status",
+    "serverStatus": "Serverstatus",
     "import": "Importer",
     "importPrompt": "Lim inn i JSON",
     "export": "Eksporter",
@@ -47,12 +47,12 @@
     "test": "Test",
     "start": "Start",
     "pause": "Pause",
-    "range": "Range",
-    "equal": "Equal",
-    "notEqual": "Not Equal",
-    "contains": "Contains",
+    "range": "Rekkevidde",
+    "equal": "Lik",
+    "notEqual": "Ikke lik",
+    "contains": "Inneholder",
     "errors": {
-      "limitReached": "Error: max limit reached"
+      "limitReached": "Feil: maksgrense nådd"
     }
   },
   "sideMenu": {
@@ -92,14 +92,14 @@
     "bringToTop": "Flytt frem",
     "showHide": "Vis/gjem",
     "overlay": {
-      "streamOverlay": "Stream Overlay",
+      "streamOverlay": "Strømoverlegg",
       "credentials": "Akkreditering",
       "configuration": "Innstillinger",
       "twitchLogs": "Twitch logg",
       "twitchConfig": "Twitch innstillinger",
       "refreshPayment": "Oppfrisk betaling",
       "channel": "Kanal",
-      "oauthToken": "OAuth Token",
+      "oauthToken": "OAuth-token",
       "obsTextFiles": "OBS Tekst filer",
       "unitUpdates": "Enhetsoppdateringer",
       "callUpdates": "Oppdragsoppdateringer",
@@ -110,7 +110,7 @@
       "customTextFiles": "Tilpassede tekstfiler",
       "dataKeys": "Data nøkler",
       "events": "Hendelser",
-      "bodycam": "Bodycam",
+      "bodycam": "Kroppskamera",
       "confirmReset": "Er du sikker på at du ønsker å tilbakestille innstillingene?",
       "lighting": "Lys",
       "addFrame": "Legg til bilde",
@@ -156,7 +156,7 @@
     "buttons": {
       "myCommunities": "Mine samfunn",
       "joinCommunity": "Bli med i Samfunn",
-      "discover": "Discover",
+      "discover": "Oppdag",
       "leaveCommunity": "Forlat Samfunn",
       "createCommunity": "Opprett Samfunn",
       "My Account": "Brukerinnstilligner"
@@ -222,7 +222,7 @@
       "newSubscription": "Nytt abonnement",
       "bundleAndSave": "Pakke og lagre",
       "serversEmail": "Sonoran Servers Bruker Epost",
-      "serverIp": "Server IP",
+      "serverIp": "Server-IP",
       "bundleExplain": "Spar 30% hver måned når du kjøper en VPS fra Sonoran Servers."
     },
     "labels": {
@@ -231,15 +231,15 @@
       "endDate": "Slutt dato",
       "starter": "Starter",
       "standard": "Standard",
-      "plus": "Plus",
+      "plus": "Pluss",
       "pro": "Pro",
-      "expertInstallation": "Expert Installation"
+      "expertInstallation": "Ekspertinstallasjon"
     },
     "buttons": {
       "purchase": "Kjøp abonnement",
       "comparePlans": "Sammenlign planer",
-      "oneTimePurchases": "One-Time Purchases",
-      "amount": "Amount"
+      "oneTimePurchases": "Engangskjøp",
+      "amount": "Mengde"
     }
   },
   "communityMenu": {
@@ -365,7 +365,7 @@
         "applyForDmv": "Søk etter SVV sak",
         "copyLink": "Kopier sakslenke",
         "pasteLink": "Lim inn sakslenke",
-        "linkTitle": "Link Title",
+        "linkTitle": "Lenketittel",
         "noCustomTypes": "Ingen sakstyper: Legg dem til i Admin > Tilpasning > Tilpassede saker",
         "status": {
           "active": "AKTIV",
@@ -410,7 +410,7 @@
         "chargeType": "Siktelsestype",
         "counts": "Antall",
         "titleCode": "Tittel, Kode",
-        "bondType": "Bond Type",
+        "bondType": "Obligasjonstype",
         "bondFineAmount": "Forelegg sum",
         "jailTime": "Fengselstid"
       },
@@ -473,7 +473,7 @@
       "errors": {
         "noRecordTypes": "Ingen sakstyper: Legg dem til i Admin  > Tilpasning  > Tilpassede saker",
         "noReportTypes": "Ingen rapporttyper: Legg dem til i Admin  > Tilpasning  > Tilpassede rapporter",
-        "syncEnabledFeatDisabled": "This feature is not compatible with database sync"
+        "syncEnabledFeatDisabled": "Denne funksjonen er ikke kompatibel med databasesynkronisering"
       }
     },
     "callEditor": {
@@ -542,11 +542,11 @@
       "priority": "Prioritet",
       "columns": {
         "callId": "Oppdrags id",
-        "10Code": "10-Code",
+        "10Code": "10-Kode",
         "callTitle": "Oppdragstittel",
         "address": "Adresse",
         "units": "Enheter",
-        "status": "Status"
+        "status": "i18n key: no.json, phrase: Status"
       }
     },
     "emergencyCall": {
@@ -580,17 +580,17 @@
       "file": "Fil(er)",
       "toneBoard": "Utalarmeringstoner",
       "playTo": "Spill av til",
-      "repeat": "Repeat",
-      "seconds": "Seconds",
-      "count": "Count",
+      "repeat": "Gjenta",
+      "seconds": "Sekunder",
+      "count": "Telle",
       "streetSigns": "Trafikkskilt",
       "bodyCam": "Kroppskamera"
     },
     "timers": {
-      "timers": "Timers",
-      "newTimer": "New Timer",
-      "attachments": "Attachments",
-      "clearAttachment": "Clear Attachment"
+      "timers": "Tidtakere",
+      "newTimer": "Ny tidtaker",
+      "attachments": "Vedlegg",
+      "clearAttachment": "Fjern vedlegg"
     },
     "signal": {
       "signal": "Signal",
@@ -634,25 +634,25 @@
       "units": "Enheter"
     },
     "notes": {
-      "notepad": "Notepad",
-      "title": "Title",
-      "notes": "Notes"
+      "notepad": "Notisblokk",
+      "title": "Tittel",
+      "notes": "Notater"
     },
     "command": {
-      "commandLine": "Command Line",
-      "create": "Create",
-      "close": "Close",
-      "attach": "Attach",
-      "detach": "Detach",
-      "view": "View",
-      "clear": "Clear",
+      "commandLine": "Kommandolinje",
+      "create": "Opprett",
+      "close": "Lukk",
+      "attach": "Legg ved",
+      "detach": "Fjern vedlegg",
+      "view": "Vis",
+      "clear": "Fjern",
       "status": "Status",
-      "note": "Note",
-      "savedCallType": "Saved Call Type",
-      "unit": "Unit",
-      "postal": "Postal",
-      "callId": "Call ID",
-      "unitStatus": "Unit Status"
+      "note": "Notat",
+      "savedCallType": "Lagret anropstype",
+      "unit": "Enhet",
+      "postal": "Postnummer",
+      "callId": "Anrops-ID",
+      "unitStatus": "Enhetsstatus"
     }
   },
   "admin": {
@@ -704,9 +704,9 @@
       "geo": {
         "geographicalSettings": "Geografiske innstillinger",
         "geoSubtext": "Tilpass ordlyden i samsvar med lokalsamfunnets geografiske beliggenhet.",
-        "emergencyCode": "Emergency Code",
+        "emergencyCode": "Nødkode",
         "penalCodeName": "Lovbrudd",
-        "tenCodeName": "Ten Code Name",
+        "tenCodeName": "Ti-kodenavn",
         "currencyDelimiter": "Valutta"
       },
       "unitStatus": {
@@ -726,7 +726,7 @@
         "newLink": "Ny link",
         "deleteLink": "Slett link",
         "label": "Merkelapp",
-        "link": "Link",
+        "link": "Lenke",
         "color": "Farge"
       },
       "notificationTones": {
@@ -744,7 +744,7 @@
         "viewTemplate": "Se mal",
         "header": "Overskrift",
         "subheader": "Underoverskrift",
-        "body": "Body",
+        "body": "Innhold",
         "resetPassword": "Tilbakestill passord",
         "emailTemplate": "Epostmal"
       },
@@ -920,7 +920,7 @@
       "joined": "Ble med",
       "permissions": "Tilganger",
       "lastLogin": "Sist sett",
-      "apiIds": "API IDs",
+      "apiIds": "API-ID-er",
       "purge": "Slett inaktive",
       "purgeConfirm": "Er du sikker på at du vil slette alle inaktive brukerkontoer? (30 dager)"
     },
@@ -930,7 +930,7 @@
       "recordTypeName": "Sakstype navn",
       "type": "Type",
       "resyncPreview": {
-        "resyncPreview": "Resync Preview Fields",
+        "resyncPreview": "Synkroniser forhåndsvisningsfelt på nytt",
         "confirm": "Dette vil oppdatere alle tidligere saker manuelt for å påse at alle felt er like med siste mal. Denne handlingen har en nedkjøling på 10 minutter"
       },
       "addCustomSection": "Legg til tilpasset seksjon",
@@ -946,23 +946,23 @@
       "supervisorAbout": "Begrens felt til veiledere",
       "requiredAbout": "Påkrevd felt",
       "uniqueField": "Unikt felt",
-      "readOnly": "Read Only",
+      "readOnly": "Kun lesing",
       "newValue": "Ny verdi",
-      "reverseMap": "Reverse Map",
-      "enableMapping": "Enable Mapping",
+      "reverseMap": "Reverser kart",
+      "enableMapping": "Aktiver kartlegging",
       "lookupPreview": "Forhåndsvis søk",
       "recordPreview": "Forhåndsvis sak",
       "actions": "Handlinger",
       "name": "Navn",
-      "mask": "Mask",
+      "mask": "Maske",
       "label": "Merkelapp",
       "width": "Bredde",
-      "dbMap": "DB Sync Mapping",
-      "dependency": "Dependency",
+      "dbMap": "DB-synkroniseringskartlegging",
+      "dependency": "Avhengighet",
       "dependencyInfo": {
-        "infoEqual": "Display if field value equals:",
-        "infoNotEqual": "Display if field value does not equal:",
-        "infoContains": "Display if field value contains one or more:"
+        "infoEqual": "Vis hvis feltverdien er lik:",
+        "infoNotEqual": "Vis hvis feltverdien ikke er lik:",
+        "infoContains": "Vis hvis feltverdien inneholder én eller flere:"
       },
       "recordTypes": {
         "warrant": "Etterlysning",
@@ -996,13 +996,13 @@
       }
     },
     "integration": {
-      "apiHeader": "Web API",
+      "apiHeader": "Web-API",
       "apiSubheader": "Sonoran CAD's Web API lar deg oppdatere enhetslokaliseringer i sanntid, bytte enhetens panikk-status, generere et nødanrop og mer alt fra spillet!",
       "resources": "Ressurser",
       "apiKey": "API nøkkel",
       "changeApiKey": "Endre API nøkkel",
       "apiDocs": "API Dokumentasjon",
-      "luaPlugins": "LUA Plugins",
+      "luaPlugins": "LUA-plugins",
       "confirmKeyChange1": "Er du sikker på at du vil generere en ny API nøkkel?",
       "confirmKeyChange2": "Du må oppdatere API -nøkkelen i alle plugin- eller API -konfigurasjoner!",
       "liveMapHeader": "Serverhendelser og integrert live -kart",
@@ -1037,22 +1037,22 @@
         "testConnection": "Test tilkobling",
         "saveCredentials": "Lagre tilkoblingsdetaljer",
         "type": "Type",
-        "host": "Host/Address",
+        "host": "Vert/Adresse",
         "port": "Port",
         "database": "Database",
         "username": "Brukernavn",
         "password": "Passord",
-        "characterMapping": "Character Mapping",
-        "licenseMapping": "License Mapping",
-        "vehicleMapping": "Vehicle Mapping",
-        "testMapping": "Test Mapping",
-        "saveMapping": "Save Mapping Config",
+        "characterMapping": "Tegnkartlegging",
+        "licenseMapping": "Lisenskartlegging",
+        "vehicleMapping": "Kjøretøykartlegging",
+        "testMapping": "Testkartlegging",
+        "saveMapping": "Lagre kartleggingskonfigurasjon",
         "tableName": "Tabellnavn",
-        "characterMappingColumn": "Character Mapping Column",
-        "customMapAbout": "This is a custom DB Sync mapping field provided by your custom record editor.",
+        "characterMappingColumn": "Tegnkartleggingskolonne",
+        "customMapAbout": "Dette er et tilpasset DB-synkroniseringskartleggingsfelt levert av din tilpassede postredigerer.",
         "columnName": "Kolonnenavn",
         "externalKey": "Ekstern nøkkel",
-        "jsonKey": "JSON Key",
+        "jsonKey": "JSON-nøkkel",
         "jsonColumn": "JSON Kolonne",
         "jsonColumnAbout": "Hvis denne kolonnen er en JSON -datatype, kan du angi JSON -nøkkelen.",
         "label": "Merkelapp",
@@ -1060,7 +1060,7 @@
         "tooltipColumn": "Dette er navnet på kolonnen i databasetabellen som inneholder dataene i dette feltet.",
         "tooltipTable": "Dette er navnet på SQL -tabellen som denne datakolonnen finnes i.",
         "tooltipCharacterColumn": "Dette er navnet på den unike tegn -ID -kolonnen i tabellen. Vanligvis inneholder denne Steam Hex.",
-        "fieldMapId": "Field Mapping ID",
+        "fieldMapId": "Feltkartleggings-ID",
         "fieldMapIdAbout": "Denne ID -en hjelper deg med å kartlegge felt i en egendefinert tegnseksjon til andre poster og skiller hvilke felt som inneholder søkeord som for- og etternavn.",
         "friendlyMapping": "Leservennlig Mapping",
         "tooltipFriendlyMapping": "Dette lar deg tilordne vanlige DB -verdier til mer vennlige brukergrensesnittverdier.",
@@ -1145,9 +1145,9 @@
       "addresses": "Adresser"
     },
     "logs": {
-      "logs": "Logs",
-      "log": "Log",
-      "time": "Time"
+      "logs": "Logger",
+      "log": "Logg",
+      "time": "Tid"
     }
   },
   "stationAlert": {
