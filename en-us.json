@@ -53,6 +53,30 @@
     "contains": "Contains",
     "errors": {
       "limitReached": "Error: max limit reached"
+    },
+    "back": "Back",
+    "continue": "Continue",
+    "message": "Message",
+    "disabled": "Disabled",
+    "dbSyncRecordWarning": "This is a Database Sync record and can only be modified with Database Merge enabled.",
+    "noImageSelected": "No Image Selected",
+    "rateLimit": "Rate Limit",
+    "sessionExpired": "Session Expired",
+    "loading": "Loading",
+    "lostSignal": "Lost Signal",
+    "csv": "CSV",
+    "json": "JSON",
+    "addRow": "Add Row",
+    "deleteRow": "Delete Row",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "versionDisplay": {
+      "title": "Notice: Outdated Version",
+      "description": "NOTICE: It looks like you're on an outdated version of Sonoran CAD.",
+      "updateReminder": "Be sure to update your application for the latest features, changes, and fixes!",
+      "currentVersion": "Your version: {version}",
+      "latestVersion": "Latest version: {latestVersion}"
     }
   },
   "sideMenu": {
@@ -120,8 +144,24 @@
       "scanForBulbs": "Scan for Bulbs",
       "bulbType": "Bulb Type",
       "scan": "Scan",
-      "manualIp": "Manual IP (Optional)"
-    }
+      "manualIp": "Manual IP (Optional)",
+      "fontEditor": "Font Editor",
+      "exampleText": "Example Text",
+      "font": "Font",
+      "color": "Color",
+      "fontSize": "Font Size",
+      "fontWeight": "Font Weight:",
+      "philipsHue": "Philips Hue",
+      "wyzeColor": "Wyze Color",
+      "goveeWifi": "Govee WiFi",
+      "goveeBluetooth": "Govee Bluetooth",
+      "wyzeKeyId": "Wyze Key ID",
+      "wyzeApiKey": "Wyze API Key",
+      "createWyzeKey": "Create Wyze Key"
+    },
+    "apiIdLabel": "API ID:",
+    "accountSecretId": "Account Secret ID:",
+    "showAdvanced": "Show Advanced"
   },
   "taskbar": {
     "system": "System",
@@ -221,7 +261,8 @@
       "bundleAndSave": "Bundle and Save",
       "serversEmail": "Sonoran Servers Account Email",
       "serverIp": "Server IP",
-      "bundleExplain": "Save 30% every month when you purchase a VPS from Sonoran Servers."
+      "bundleExplain": "Save 30% every month when you purchase a VPS from Sonoran Servers.",
+      "save25": "Save 25%"
     },
     "labels": {
       "plan": "Plan",
@@ -231,7 +272,9 @@
       "standard": "Standard",
       "plus": "Plus",
       "pro": "Pro",
-      "expertInstallation": "Expert Installation"
+      "expertInstallation": "Expert Installation",
+      "quarterly": "Quarterly",
+      "monthly": "Monthly"
     },
     "buttons": {
       "purchase": "Purchase Subscription",
@@ -346,7 +389,8 @@
       "alerts": {
         "emptySearch": "Error: Empty search!"
       },
-      "getOwner": "Get Owner"
+      "getOwner": "Get Owner",
+      "flags": "Flags:"
     },
     "records": {
       "general": {
@@ -380,7 +424,8 @@
           "noName": "Error: This record must have a civilian's name to be searched!",
           "noPlate": "Error: This record must have a vehicle plate to be searched!",
           "noCopiedLink": "Error: You do not have a record link copied!"
-        }
+        },
+        "pdfUpgrade": "PDF records require the Standard version or higher."
       },
       "agency": {
         "agencyInformation": "Agency Information",
@@ -530,6 +575,14 @@
         "noPriority": "Error: This call does not have a priority set!",
         "noTitle": "Error: This call does not have a title set!",
         "attachedAlready": "Error: You are already attached to a call!"
+      },
+      "webhooks": {
+        "action": "Action",
+        "enabled": "Enabled",
+        "status": "Status",
+        "attached": "Attached",
+        "detached": "Detached",
+        "closed": "Closed"
       }
     },
     "callList": {
@@ -592,7 +645,10 @@
       "timers": "Timers",
       "newTimer": "New Timer",
       "attachments": "Attachments",
-      "clearAttachment": "Clear Attachment"
+      "clearAttachment": "Clear Attachment",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds"
     },
     "signal": {
       "signal": "Signal",
@@ -655,6 +711,34 @@
       "postal": "Postal",
       "callId": "Call ID",
       "unitStatus": "Unit Status"
+    },
+    "callouts": {
+      "calloutLabel": "Callout",
+      "availableWeapons": "Available Weapons",
+      "pedFallbackAction": "Ped Fallback Action",
+      "fallbackTooltip": "Default action if none of the below actions occur.",
+      "chanceToFlee": "Chance to Flee from Player",
+      "chanceToObtainWeapons": "Chance to Obtain Weapons",
+      "chanceToAttack": "Chance to Attack Player",
+      "chanceToSurrender": "Chance to Surrender"
+    },
+    "diagram": {
+      "itemOptions": "Item Options",
+      "shortcutO": "SHORTCUT: O",
+      "moveLayerUp": "Move Layer Up (Shift = Top)",
+      "shortcutUp": "SHORTCUT: (SHIFT) Up Arrow",
+      "moveLayerDown": "Move Layer Down (Shift = Bottom)",
+      "shortcutDown": "SHORTCUT: (SHIFT) Down Arrow",
+      "lockUnlockSelected": "Lock/Unlock Selected",
+      "shortcutLock": "SHORTCUT: L",
+      "groupUngroupSelected": "Group/Ungroup Selected (SHIFT + CLICK)",
+      "shortcutGroup": "SHORTCUT: G",
+      "undo": "Undo",
+      "shortcutUndo": "SHORTCUT: CTRL + Z",
+      "redo": "Redo",
+      "shortcutRedo": "SHORTCUT: CTRL + SHIFT + Z",
+      "deleteSelected": "Delete Selected",
+      "shortcutDelete": "SHORTCUT: DELETE"
     }
   },
   "CustomDomain": {
@@ -667,7 +751,9 @@
     "configureYourDnsRecord": "Configure your DNS record",
     "saveYourCommunitesCustomDomain": "Save your community's custom domain",
     "setCustomDomain": "Set Custom Domain",
-    "copiedToClipboard": "Copied to clipboard!"
+    "copiedToClipboard": "Copied to clipboard!",
+    "cname": "CNAME",
+    "txt": "TXT"
   },
   "admin": {
     "general": {
@@ -1012,7 +1098,8 @@
       "remove": {
         "removeType": "Remove Record Type",
         "confirmRemove": "Are you sure you would like to remove this record type?"
-      }
+      },
+      "notApplicable": "N/A"
     },
     "integration": {
       "apiHeader": "Web API",
@@ -1088,6 +1175,48 @@
         "friendlyMappingExample": "Ex: 'drive_license' -> 'Driver's License'",
         "dbValue": "Database Value",
         "friendlyValue": "Friendly Value"
+      },
+      "fivemTab": "FiveM",
+      "videoTutorial": "Video Tutorial",
+      "availableMaps": "Available Maps",
+      "customMapImagesLabel": "Custom Map Images (30MB/each Max)",
+      "fivem": {
+        "downloadInstallTitle": "Download & Install",
+        "configureResourceTitle": "Configure Resource",
+        "configureServerTitle": "Configure Server",
+        "welcomeTitle": "Welcome",
+        "configureFeaturesTitle": "Configure Features",
+        "rocketNode": {
+          "gamePanelPurchaseTitle": "Game Panel Purchase",
+          "purchaseServer": "Purchase a FiveM Game Server from Rocket Node",
+          "couponPrefix": "Use Coupon Code",
+          "couponSuffix": "for 20% off.",
+          "accessPanel": "Access the game server's panel.",
+          "navigateInstaller": "On the Rocket Node game panel, navigate to",
+          "selectCad": "Select CAD and click to copy/paste the ID and key below.",
+          "installSonoran": "Click Install Sonoran on the Rocket Node panel.",
+          "resourceAccess": "Once the installation is complete, you can access the resource files in the File Manager.",
+          "navigateFolder": "Navigate to the resources > [sonorancad] > sonorancad > configuration folder.",
+          "submoduleDocs": "You can learn more about submodule configuration here.",
+          "couponCode": "SONORAN",
+          "maskedKey": "********************",
+          "configurationLabel": "Configuration",
+          "installerLabel": "Sonoran Installer",
+          "fileManager": "File Manager"
+        },
+        "manual": {
+          "welcomeDescription": "Follow this tutorial to install the FiveM resource on your server!",
+          "downloadButton": "Download Sonoran CAD for FiveM",
+          "extractResource": "Once downloaded, extract the [sonorancad] folder to your server's resources folder.",
+          "configureResource": "Open sonorancad/configuration/config.json to configure the resource.",
+          "preconfiguredNotice": "The resource will already have the communityID and apiKey pre-configured.",
+          "additionalOptions": "You can learn more about the other configuration options here.",
+          "addToServerCfg": "Add the following to your server.cfg:",
+          "restartComplete": "And once you restart your server, you're done! Check the docs out for enabling and using each feature.",
+          "seeDocs": "See the Docs",
+          "configComment": "# Start the sonorancad resource and other bundled resources",
+          "configExec": "exec @sonorancad/sonorancad.cfg"
+        }
       }
     },
     "penal": {
@@ -1167,6 +1296,9 @@
       "logs": "Logs",
       "log": "Log",
       "time": "Time"
+    },
+    "helpPermissions": {
+      "permissionsGuide": "Permissions Guide"
     }
   },
   "stationAlert": {
@@ -1176,6 +1308,8 @@
     "sendMessage": "Send Message",
     "makeSelection": "Make a Selection",
     "toneBoard": "Tone Board",
-    "stationTone": "Station Tone"
+    "stationTone": "Station Tone",
+    "message": "Message",
+    "tone": "Tone"
   }
 }
