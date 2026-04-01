@@ -1260,15 +1260,26 @@
           "confirmRemove2": "This agency and all contained departments and subdivisions will be removed!"
         }
       },
-      "modifySubdivision": {
-        "createNewSub": "Create New Subdivision",
-        "editSub": "Edit Subdivision",
-        "name": "Subdivision Name",
-        "description": "Description",
-        "confirmRemove": "Are you sure you want to remove this subdivision?"
-      }
-    },
-    "webhooks": {
+        "modifySubdivision": {
+          "createNewSub": "Create New Subdivision",
+          "editSub": "Edit Subdivision",
+          "name": "Subdivision Name",
+          "description": "Description",
+          "confirmRemove": "Are you sure you want to remove this subdivision?"
+        },
+        "persistentGroups": {
+          "title": "Persistent Unit Groups",
+          "hint": "These groups always appear in dispatch, even when no units are assigned.",
+          "empty": "No persistent groups configured.",
+          "groupName": "Group Name",
+          "maxUnits": "Max Units",
+          "maxUnitsHint": "Optional",
+          "badge": "Persistent Group",
+          "noUnits": "No Units in Group",
+          "limitReached": "Error: '{group}' can only hold {max} unit(s) at one time."
+        }
+      },
+      "webhooks": {
       "modified": "Modified",
       "removed": "Removed",
       "headerText": "Sonoran CAD Discord Integration",
