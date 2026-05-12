@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Підписки"
     },
+    "delete": {
+      "title": "Видалити обліковий запис?"
+    },
     "labels": {
       "confirmPassword": "Підтвердіть пароль",
       "email": "Електронна пошта",
@@ -102,9 +105,13 @@
         "lookupTypes": "Типи пошуку",
         "noFieldSelected": "Поле не вибрано",
         "noRecordTemplates": "Шаблони записів із полями, які можна зіставити, недоступні.",
+        "rangeDisabled": "Діапазон вимкнено",
         "rangeSearch": "Пошук за діапазоном",
         "recordField": "Поле запису",
+        "reindexRecords": "Переіндексувати всі записи",
         "reindexRecordsConfirmTitle": "Переіндексувати всі записи",
+        "reindexRecordsHelp": "Повторно зберігає поля індексу пошуку для наявних записів, щоб користувацькі типи пошуку використовували ваші останні зіставлення полів.",
+        "sectionFallback": "Розділ {index}",
         "selectRecordFieldDescription": "Виберіть шаблон запису, розгорніть розділ і натисніть поле, щоб зіставити його.",
         "width": "Ширина"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Додати опцію",
+        "codeName": "Назва коду",
+        "conditionsInOrder": "Умови (в порядку)",
+        "maskHint": "Приклад: (###) ###-####",
         "newCodeId": "Новий код ID",
+        "order": "Порядок",
         "question": "Питання",
         "searchCodes": "Пошук кодів",
+        "tabs": {
+          "questions": "Питання"
+        },
         "value": "Значення"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Ім'я",
       "newField": "Нове поле",
       "newValue": "Нове значення",
+      "placeholderAbout": "Необов’язковий допоміжний текст, що показується в порожньому полі до введення значення.",
       "readOnly": "Тільки для читання",
       "recordEditor": "Редактор записів",
       "recordPreview": "Попередній перегляд запису",
@@ -248,6 +263,7 @@
       "department": "Відділ",
       "departments": "Відділи",
       "description": "Опис",
+      "editorSubtitle": "Керуйте агентствами, відділами та підвідділами.",
       "errors": {
         "agencyExists": "Помилка: Агентство з такою назвою вже існує!",
         "agencyLimit2": "агентств!",
@@ -286,6 +302,9 @@
         "name": "Назва підрозділу"
       },
       "name": "Ім'я",
+      "persistentGroups": {
+        "groupName": "Ім'я Групи"
+      },
       "subdivisions": "Підрозділи",
       "zip": "Поштовий індекс"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Увімкнути карту",
       "erlc": {
         "civilianRegistrationsHeader": "Реєстрації цивільних транспортних засобів",
+        "notifyNever": "Ніколи",
+        "notifyOnlyOnFailure": "Лише при помилці",
+        "trafficStopDescriptionHint": "Підтримує користувацькі змінні.",
         "trafficStopMaxRadiusHint": "Якщо найближчий транспортний засіб далі за це, виклики зупинки трафіку повертаються до введення номера або без відомостей про транспортний засіб.",
         "trafficStopVariablePlate": "Перший аргумент команди, коли було надано номерний знак."
       },
@@ -370,10 +392,14 @@
       "fivem": {
         "configureResourceTitle": "Налаштувати ресурс",
         "manual": {
-          "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси"
+          "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси",
+          "downloadButton": "Завантажити Sonoran CAD для FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Після завершення встановлення ви можете отримати доступ до файлів ресурсу у файловому менеджері.",
+          "selectCad": "Виберіть CAD і натисніть, щоб скопіювати/вставити ID і ключ нижче.",
+          "submoduleDocs": "Докладніше про налаштування підмодулів можна дізнатися тут."
         }
       },
       "gamePort": "Порт гри",
@@ -605,6 +631,7 @@
     "export": "Експорт",
     "externalWindow": "У зовнішнє вікно",
     "failed": "Відмовлено",
+    "field": "Поле",
     "help": "Допомога",
     "icon": "Значок",
     "id": "ідентифікатор",
@@ -624,11 +651,14 @@
     "paste": "Вставити",
     "pause": "Пауза",
     "range": "Діапазон",
+    "rateLimit": "Ліміт запитів",
     "refresh": "Оновити",
     "remove": "Видалити",
     "reset": "Скинути",
+    "s": "s",
     "save": "Зберегти",
     "search": "Знайти",
+    "seconds": "Секунди",
     "serverStatus": "Статус Серверу",
     "start": "Почати",
     "status": "Статус",
@@ -691,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Переглянути документацію",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Чи підходить це для малих або зростаючих спільнот?"
+              },
+              "features": {
+                "answer": "Інтеграція FiveM включає підтримку живої карти, інструменти bodycam, синхронізацію бази даних і розширюваний набір офіційних плагінів для глибших внутрішньоігрових робочих процесів."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Попередній перегляд інтеграції Sonoran CAD x FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "Офіційні підмодулі розширюють Sonoran CAD на решту стеку вашого сервера FiveM."
+            },
+            "sync": {
+              "infoCopy": "Підключайте ігрові ідентичності, транспортні засоби та записи, щоб ваш CAD залишався синхронізованим із активністю сервера."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Створюйте захопливі виклики NPC і гравців, які надходять безпосередньо в диспетчерську з структурованими CAD-даними."
+              },
+              "ers": {
+                "title": "Аварійне Радіо"
+              },
               "pagers": {
                 "description": "Надсилайте цільові сповіщення на пейджери з диспетчерської активності, щоб підрозділи одразу отримували потрібну інформацію.",
                 "previewTitle": "Попередній перегляд плагіна Pagers",
@@ -747,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Метрики інтеграції heartbeat:",
     "topServersHeartbeat": "Топ-25 серверів (Heartbeat)"
   },
   "payment": {
@@ -809,6 +865,7 @@
       "createCall": "Створити Виклик",
       "dispatch": "Повідомлення",
       "dispatchRecord": "Запис Повідомлення",
+      "emergencyCallsShown": "Показані екстрені виклики",
       "errors": {
         "attachedAlready": "Помилка: Ви вже приєднані до виклику!",
         "noOrigin": "Помилка: Цей виклик не має встановленого походження!",
@@ -843,6 +900,7 @@
       },
       "trackPrimary": "Відстеження Головного Юніта (GPS)",
       "units": "Юніти",
+      "unitStatusAttachedHint": "Коли підрозділ прикріплено до виклику, оновіть його статус.",
       "unitStatusClosedHint": "Коли виклик закрито, оновіть статус усіх прикріплених підрозділів.",
       "updateCall": "Оновити Виклик",
       "webhooks": {
@@ -870,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Виклик",
-      "chanceToAttack": "Шанс напасти на гравця"
+      "chanceToAttack": "Шанс напасти на гравця",
+      "chanceToObtainWeapons": "Ймовірність отримати зброю"
     },
     "chat": {
       "justYou": "Лише ви",
-      "online": "Онлайн"
+      "noThreads": "Поки що немає активних розмов.",
+      "online": "Онлайн",
+      "ttsIncomingTooltip": "Озвучувати вхідні повідомлення чату"
     },
     "command": {
       "attach": "Прикріпити",
@@ -893,8 +954,10 @@
       "view": "Переглянути"
     },
     "diagram": {
+      "lockUnlockSelected": "Заблокувати/розблокувати вибране",
       "moveLayerDown": "Перемістити шар вниз (Shift = внизу)",
       "shortcutLock": "СКОРОЧЕННЯ: L",
+      "shortcutUndo": "СКОРОЧЕННЯ: CTRL + Z",
       "shortcutUp": "СКОРОЧЕННЯ: (SHIFT) Стрілка вгору"
     },
     "emergencyCall": {
@@ -951,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Зменшити розмір мітки"
+        "decreaseBlipSize": "Зменшити розмір мітки",
+        "dragAndDrop": "(Перетягування і скидання)"
       }
     },
     "lookup": {
@@ -1006,6 +1070,10 @@
       "notepad": "Блокнот",
       "notes": "Нотатки",
       "title": "Назва"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Відповідь",
+      "autoImportToCallEditorTooltip": "Автоімпорт у редактор дзвінків ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1077,6 +1145,7 @@
         "noCustomTypes": "Немає записів цього типу: Додайте їх через Admin > Customization > Custom Records",
         "pasteLink": "Вставити посилання на запис",
         "pdf": "PDF",
+        "printInGame": "Друк у грі",
         "recordType": "Тип Запису",
         "removeRecord": "Видалити Запис",
         "saveRecord": "Зберегти Запис",
@@ -1148,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Вкладення",
+      "automationLabelCountDown": "Автоматизація: Статус {status} {seconds} Секунд",
       "automationLabelCountUp": "Автоматизація: Статус {status} Відлік вгору",
       "clearAttachment": "Очистити вкладення",
       "newTimer": "Новий таймер",
@@ -1156,9 +1226,12 @@
     "unitEditor": {
       "agency": "Агентство",
       "aop": "Зона патрулювання",
+      "bodycamShadowRecording": "Тіньовий запис",
+      "bodycamVolume": "Гучність  ",
       "confirmRemove": "Ви впевнені, що хочете видалити Ідентифікатор?",
       "department": "Департамент",
       "departments": "Департаменти",
+      "electronBodycamOpenPermissions": "Дозволи на відкриття",
       "electronBodycamPermissionWarning": "Для запису bodycam потрібен дозвіл macOS на запис екрана. Увімкніть його в Системних параметрах, потім повністю завершіть роботу й знову відкрийте Sonoran CAD.",
       "group": "Група",
       "location": "Місцезнаходження",
@@ -1243,9 +1316,12 @@
     "exitResize": "Закінчити Переміщення",
     "helpImprove": "Допомога з перекладом!",
     "hotkeyDisable": "Гарячі клавіші не доступні в безкоштовній версії",
+    "hotkeyRecording": "Запис...",
     "hotkeys": "Гарячі клавіші",
     "language": "Мова",
+    "languageKorean": "Корейська/한국어",
     "lockWindow": "Закріпити Вікно",
+    "microphoneStt": "Мікрофон (STT)",
     "overlay": {
       "addBulb": "Додати лампу",
       "addFrame": "Додати кадр",
@@ -1262,6 +1338,7 @@
       "events": "Події",
       "field": "Поле",
       "fileName": "Ім'я файлу",
+      "fontEditor": "Редактор шрифтів",
       "goveeWifi": "Govee WiFi",
       "lighting": "Освітлення",
       "manualIp": "Ручний IP (необов'язкове)",
@@ -1283,20 +1360,31 @@
     "resetLayout": "Скинути Розташування",
     "secretDisable": "Ви повинні приєднатися до спільноти, щоб отримати Secret ID",
     "settings": "Настройки",
+    "showAdvanced": "Показати розширені",
     "showHide": "Показати/Сховати",
     "systemDefaultMicrophone": "Мікрофон за замовчуванням системи",
     "theme": {
       "bgImageFit": {
         "contain": "Вмістити (Підігнати всередину)"
       },
+      "bgImagePosition": {
+        "left": "Ліворуч"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Акцент 2",
-        "inverseText": "Інверсний текст"
-      }
+        "accent3": "Акцент 3",
+        "accent3Text": "Текст Акценту 3",
+        "background": "Фон",
+        "inverseText": "Інверсний текст",
+        "primaryText": "Основний текст"
+      },
+      "saveTheme": "Зберегти тему"
     },
+    "trafficStopDispatchHotkey": "Зупинка транспорту",
     "unlockWindow": "Відкріпити Вікно",
     "voice": "Голос озвучки",
     "volume": "Звук"
@@ -1319,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "зробіть вибір",
+    "message": "Повідомлення",
     "sendAlert": "надіслатиСповіщення",
     "sendMessage": "надіслати повідомлення",
     "stationAlert": "станційне сповіщення",
     "stationTone": "станціяТон",
+    "tone": "Тон",
     "toneBoard": "тональна дошка",
     "updateDoors": "оновитиДвері"
   },
@@ -1332,6 +1422,7 @@
     "layoutCustomization": "Налаштування макета",
     "newWindow": "Нове Вікно",
     "pinToTaskbar": "Закріпити в панелі завдань",
+    "previousDesktop": "Попередній робочий стіл",
     "startMenu": "Меню запуску",
     "system": "Система",
     "tabCustomization": "Налаштування вкладки",

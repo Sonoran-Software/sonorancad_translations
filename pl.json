@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Subskrypcje"
     },
+    "delete": {
+      "title": "Usunąć konto?"
+    },
     "labels": {
       "confirmPassword": "Potwierdź hasło",
       "email": "E-mail",
@@ -102,9 +105,13 @@
         "lookupTypes": "Typy wyszukiwania",
         "noFieldSelected": "Nie wybrano pola",
         "noRecordTemplates": "Brak dostępnych szablonów rekordów z polami do mapowania.",
+        "rangeDisabled": "Zakres wyłączony",
         "rangeSearch": "Wyszukiwanie zakresu",
         "recordField": "Pole rekordu",
+        "reindexRecords": "Ponownie indeksuj wszystkie rekordy",
         "reindexRecordsConfirmTitle": "Ponownie indeksuj wszystkie rekordy",
+        "reindexRecordsHelp": "Ponownie zapisuje pola indeksu wyszukiwania dla istniejących rekordów, aby niestandardowe typy wyszukiwania używały najnowszych mapowań pól.",
+        "sectionFallback": "Sekcja {index}",
         "selectRecordFieldDescription": "Wybierz szablon rekordu, rozwiń sekcję i kliknij pole, aby je przypisać.",
         "width": "Szerokość"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Dodaj opcję",
+        "codeName": "Nazwa kodu",
+        "conditionsInOrder": "Warunki (w kolejności)",
+        "maskHint": "Przykład: (###) ###-####",
         "newCodeId": "Nowe ID kodu",
+        "order": "Zamówienie",
         "question": "Pytanie",
         "searchCodes": "Szukaj kodów",
+        "tabs": {
+          "questions": "Pytania"
+        },
         "value": "Wartość"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Nazwa",
       "newField": "Nowe Pole",
       "newValue": "Nowa Wartość",
+      "placeholderAbout": "Opcjonalny tekst pomocniczy wyświetlany w pustym polu przed wpisaniem wartości.",
       "readOnly": "Tylko do odczytu",
       "recordEditor": "Edytor Rejestrów",
       "recordPreview": "Podgląd Wyszukiwania",
@@ -248,6 +263,7 @@
       "department": "Departament",
       "departments": "Departamenty",
       "description": "Opis",
+      "editorSubtitle": "Zarządzaj agencjami, działami i poddziałami.",
       "errors": {
         "agencyExists": "Błąd: Agencja o tej nazwie już istnieje!",
         "agencyLimit2": "agencje!",
@@ -286,6 +302,9 @@
         "name": "Nazwa Dywizji"
       },
       "name": "Nazwa",
+      "persistentGroups": {
+        "groupName": "Nazwa Grupy"
+      },
       "subdivisions": "Dywizje",
       "zip": "Kod Pocztowy"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Włącz Mape",
       "erlc": {
         "civilianRegistrationsHeader": "Rejestracje cywilne",
+        "notifyNever": "Nigdy",
+        "notifyOnlyOnFailure": "Tylko przy niepowodzeniu",
+        "trafficStopDescriptionHint": "Obsługuje niestandardowe zmienne.",
         "trafficStopMaxRadiusHint": "Jeśli najbliższy pojazd jest dalej niż to, wywołania zatrzymania ruchu wracają do wpisu tablicy rejestracyjnej lub pomijają szczegóły pojazdu.",
         "trafficStopVariablePlate": "Pierwszy argument polecenia, gdy podano tablicę rejestracyjną."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "Pobierz Sonoran CAD dla FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Po zakończeniu instalacji możesz uzyskać dostęp do plików zasobu w Menedżerze plików.",
+          "selectCad": "Wybierz CAD i kliknij, aby skopiować/wkleić ID i klucz poniżej.",
+          "submoduleDocs": "Więcej informacji o konfiguracji podmodułu znajdziesz tutaj."
         }
       },
       "gamePort": "Port gry",
@@ -606,6 +631,7 @@
     "export": "Eksportuj",
     "externalWindow": "Otwórz w nowym oknie",
     "failed": "Nieudane",
+    "field": "Pole",
     "help": "Pomoc",
     "icon": "Ikona",
     "id": "ID",
@@ -625,11 +651,14 @@
     "paste": "Wklej",
     "pause": "Wstrzymaj",
     "range": "Zasięg",
+    "rateLimit": "Limit szybkości",
     "refresh": "Odśwież",
     "remove": "Usuń",
     "reset": "Resetuj",
+    "s": "s",
     "save": "Zapisz",
     "search": "Szukaj",
+    "seconds": "Sekundy",
     "serverStatus": "Status serwera",
     "start": "Startuj",
     "status": "Status",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Zobacz dokumentację",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Czy to jest odpowiednie dla małych lub rozwijających się społeczności?"
+              },
+              "features": {
+                "answer": "Integracja FiveM obejmuje obsługę mapy na żywo, narzędzia bodycam, synchronizację bazy danych oraz rozwijający się zestaw oficjalnych wtyczek do głębszych przepływów pracy w grze."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Podgląd integracji Sonoran CAD x FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "Oficjalne podmoduły rozszerzają Sonoran CAD na resztę stosu serwera FiveM."
+            },
+            "sync": {
+              "infoCopy": "Połącz tożsamości w grze, pojazdy i rekordy, aby Twój CAD był zgodny z aktywnością serwera."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Twórz immersyjne wezwania NPC i graczy, które trafiają bezpośrednio do dyspozytorni z uporządkowanymi danymi CAD."
+              },
+              "ers": {
+                "title": "Radio alarmowe"
+              },
               "pagers": {
                 "description": "Dostarczaj ukierunkowane powiadomienia pagera na podstawie aktywności dyspozytorskiej, aby jednostki od razu otrzymywały właściwe informacje.",
                 "previewTitle": "Podgląd wtyczki Pagers",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Metryki integracji Heartbeat:",
     "topServersHeartbeat": "Top 25 serwerów (Heartbeat)"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "Stwórz Wezwanie",
       "dispatch": "Wezwanie",
       "dispatchRecord": "Zgłoszenie dyspozytorskie",
+      "emergencyCallsShown": "Wyświetlone Połączenia Alarmowe",
       "errors": {
         "attachedAlready": "Błąd: Jesteś już dodany do tego wezwania!",
         "noOrigin": "Błąd: To wezwanie nie ma ustawionego pochodzenia!",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "Śledź jednostkę podstawową (GPS)",
       "units": "Jednostki",
+      "unitStatusAttachedHint": "Gdy jednostka zostanie dołączona do zgłoszenia, zaktualizuj jej status.",
       "unitStatusClosedHint": "Gdy zgłoszenie zostanie zamknięte, zaktualizuj status wszystkich dołączonych jednostek.",
       "updateCall": "Zaktualizuj Wezwanie",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Zgłoszenie",
-      "chanceToAttack": "Szansa na atak na gracza"
+      "chanceToAttack": "Szansa na atak na gracza",
+      "chanceToObtainWeapons": "Szansa na zdobycie broni"
     },
     "chat": {
       "justYou": "Tylko Ty",
-      "online": "Online"
+      "noThreads": "Brak aktywnych rozmów.",
+      "online": "Online",
+      "ttsIncomingTooltip": "Odczytuj na głos przychodzące wiadomości na czacie"
     },
     "command": {
       "attach": "Dołącz",
@@ -894,8 +954,10 @@
       "view": "Widok"
     },
     "diagram": {
+      "lockUnlockSelected": "Zablokuj/Odblokuj zaznaczone",
       "moveLayerDown": "Przesuń warstwę w dół (Shift = dół)",
       "shortcutLock": "SKRÓT: L",
+      "shortcutUndo": "SKRÓT: CTRL + Z",
       "shortcutUp": "SKRÓT: (SHIFT) Strzałka w górę"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Zmniejsz rozmiar znacznika"
+        "decreaseBlipSize": "Zmniejsz rozmiar znacznika",
+        "dragAndDrop": "(Przeciągnij i upuść)"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "Notatnik",
       "notes": "Notatki",
       "title": "Tytuł"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Odpowiedź",
+      "autoImportToCallEditorTooltip": "Automatyczny import do edytora połączeń ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "Brak rodzaji rejestrów: Dodaj je tutaj Administrator > Dostosowywanie > Niestandardowe Rejestry",
         "pasteLink": "Wklej link do rekordu",
         "pdf": "PDF",
+        "printInGame": "Drukuj w grze",
         "recordType": "Typ Rejestru",
         "removeRecord": "Usuń Rejestr",
         "saveRecord": "Zapisz Rejestr",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Załączniki",
+      "automationLabelCountDown": "Automatyzacja: Status {status} {seconds} sekund",
       "automationLabelCountUp": "Automatyzacja: Status {status} Liczenie w górę",
       "clearAttachment": "Wyczyść załącznik",
       "newTimer": "Nowy timer",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "Agencja",
       "aop": "Obszar Gry",
+      "bodycamShadowRecording": "Nagrywanie w tle",
+      "bodycamVolume": "Głośność  ",
       "confirmRemove": "Jesteś pewny, że chcesz usunąć kryptonim?",
       "department": "Departament",
       "departments": "Departamenty",
+      "electronBodycamOpenPermissions": "Uprawnienia otwierania",
       "electronBodycamPermissionWarning": "Do rejestrowania bodycam wymagane jest uprawnienie do nagrywania ekranu w macOS. Włącz je w Ustawieniach systemowych, a następnie całkowicie zamknij i ponownie otwórz Sonoran CAD.",
       "group": "Grupa",
       "location": "Lokalizacja",
@@ -1244,9 +1316,12 @@
     "exitResize": "Zakończ zmianę rozmiaru",
     "helpImprove": "Pomóż ulepszyć to tłumaczenie",
     "hotkeyDisable": "Skróty klawiszowe są niedostępne w bezpłatnej wersji",
+    "hotkeyRecording": "Nagrywanie...",
     "hotkeys": "Skróty klawiszowe",
     "language": "Język",
+    "languageKorean": "Koreański/한국어",
     "lockWindow": "Zablokuj okno",
+    "microphoneStt": "Mikrofon (STT)",
     "overlay": {
       "addBulb": "Dodaj żarówkę",
       "addFrame": "Dodaj ramkę",
@@ -1263,6 +1338,7 @@
       "events": "Wydarzenia",
       "field": "Pole",
       "fileName": "Nazwa pliku",
+      "fontEditor": "Edytor czcionek",
       "goveeWifi": "Govee WiFi",
       "lighting": "Oświetlenie",
       "manualIp": "Manual IP(Dodatkowe)",
@@ -1284,20 +1360,31 @@
     "resetLayout": "Zresetuj układ",
     "secretDisable": "Musisz być zalogowany do społeczności, aby uzyskać swój Sekretny ID",
     "settings": "Ustawienia",
+    "showAdvanced": "Pokaż zaawansowane",
     "showHide": "Pokaż/Ukryj",
     "systemDefaultMicrophone": "Domyślny mikrofon systemu",
     "theme": {
       "bgImageFit": {
         "contain": "Zawiera (dopasuj do wnętrza)"
       },
+      "bgImagePosition": {
+        "left": "Lewo"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Akcent 2",
-        "inverseText": "Odwrócony tekst"
-      }
+        "accent3": "Akcent 3",
+        "accent3Text": "Tekst akcentu 3",
+        "background": "Tło",
+        "inverseText": "Odwrócony tekst",
+        "primaryText": "Tekst główny"
+      },
+      "saveTheme": "Zapisz motyw"
     },
+    "trafficStopDispatchHotkey": "Zatrzymanie ruchu",
     "unlockWindow": "Odblokuj okno",
     "voice": "Głos",
     "volume": "Głośność"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "wybierz",
+    "message": "wiadomość",
     "sendAlert": "wyślij alert",
     "sendMessage": "wiadomośćWyślij",
     "stationAlert": "powiadomienieStacji",
     "stationTone": "stacjaTon",
+    "tone": "Ton",
     "toneBoard": "tonPanel",
     "updateDoors": "zaktualizujDrzwi"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "Dostosowanie układu",
     "newWindow": "Nowe okno",
     "pinToTaskbar": "Przypnij do paska zadań",
+    "previousDesktop": "Poprzedni pulpit",
     "startMenu": "Menu startowe",
     "system": "System",
     "tabCustomization": "Dopasowywanie zakładki",

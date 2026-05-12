@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Abonelikler"
     },
+    "delete": {
+      "title": "Hesabı Sil?"
+    },
     "labels": {
       "confirmPassword": "Şifreyi Onayla",
       "email": "E-posta",
@@ -102,9 +105,13 @@
         "lookupTypes": "Arama Türleri",
         "noFieldSelected": "Alan Seçilmedi",
         "noRecordTemplates": "Eşlenebilir alanlara sahip kayıt şablonu yok.",
+        "rangeDisabled": "Aralık Devre Dışı",
         "rangeSearch": "Aralık Arama",
         "recordField": "Kayıt Alanı",
+        "reindexRecords": "Tüm Kayıtları Yeniden Dizinle",
         "reindexRecordsConfirmTitle": "Tüm Kayıtları Yeniden Dizinle",
+        "reindexRecordsHelp": "Mevcut kayıtlar için arama dizini alanlarını yeniden kaydeder, böylece özel arama türleri en son alan eşlemelerinizi kullanır.",
+        "sectionFallback": "Bölüm {index}",
         "selectRecordFieldDescription": "Bir kayıt şablonu seçin, bir bölümü genişletin ve eşlemek için bir alana tıklayın.",
         "width": "Genişlik"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Seçenek Ekle",
+        "codeName": "Kod Adı",
+        "conditionsInOrder": "Koşullar (sırayla)",
+        "maskHint": "Örnek: (###) ###-####",
         "newCodeId": "Yeni Kod Kimliği",
+        "order": "Sırala",
         "question": "Soru",
         "searchCodes": "Kodları Ara",
+        "tabs": {
+          "questions": "Sorular"
+        },
         "value": "Değer"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "İsim",
       "newField": "Yeni alan",
       "newValue": "Yeni değer",
+      "placeholderAbout": "Bir değer girilmeden önce boş alanda gösterilen isteğe bağlı yardımcı metin.",
       "readOnly": "Sadece oku",
       "recordEditor": "Kayıt Düzenleyici",
       "recordPreview": "Kayıt Önizlemesi",
@@ -248,6 +263,7 @@
       "department": "Departman",
       "departments": "Bölümler",
       "description": "Tanım",
+      "editorSubtitle": "Ajansları, departmanları ve alt departmanları yönetin.",
       "errors": {
         "agencyExists": "Hata: Bu isimde bir ajans zaten mevcut!",
         "agencyLimit2": "ajanslar!",
@@ -286,6 +302,9 @@
         "name": "Alt Bölüm Adı"
       },
       "name": "İsim",
+      "persistentGroups": {
+        "groupName": "Grup ismi"
+      },
       "subdivisions": "Alt bölümler",
       "zip": "Posta kodu"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Haritayı Etkinleştir",
       "erlc": {
         "civilianRegistrationsHeader": "Sivil Kayıtlar",
+        "notifyNever": "Asla",
+        "notifyOnlyOnFailure": "Yalnızca Hata Durumunda",
+        "trafficStopDescriptionHint": "Özel değişkenleri destekler.",
         "trafficStopMaxRadiusHint": "En yakın araç bundan daha uzaktaysa, trafik durdurma çağrıları plaka girişine geri döner veya araç ayrıntılarını atlar.",
         "trafficStopVariablePlate": "Plaka sağlandığında ilk komut argümanı."
       },
@@ -370,10 +392,14 @@
       "fivem": {
         "configureResourceTitle": "Kaynağı Yapılandır",
         "manual": {
-          "configComment": "# Sonorancad kaynağını ve diğer birlikte paketlenmiş kaynakları başlatın"
+          "configComment": "# Sonorancad kaynağını ve diğer birlikte paketlenmiş kaynakları başlatın",
+          "downloadButton": "FiveM için Sonoran CAD'yi İndir"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Kurulum tamamlandıktan sonra, kaynak dosyalarına Dosya Yöneticisi'nden erişebilirsiniz.",
+          "selectCad": "CAD'yi seçin ve aşağıdaki kimlik ve anahtarı kopyalayıp/yapıştırmak için tıklayın.",
+          "submoduleDocs": "Alt modül yapılandırması hakkında daha fazla bilgiyi burada öğrenebilirsiniz."
         }
       },
       "gamePort": "Oyun Bağlantı Noktası",
@@ -605,6 +631,7 @@
     "export": "İhracat",
     "externalWindow": "Harici pencerede aç",
     "failed": "Başarısız ",
+    "field": "Alan",
     "help": "Yardım",
     "icon": "Simge",
     "id": "Kimlik",
@@ -624,11 +651,14 @@
     "paste": "Yapıştır",
     "pause": "Duraklat",
     "range": "Menzil",
+    "rateLimit": "Hız Sınırı",
     "refresh": "Yenile",
     "remove": "Sil",
     "reset": "Sıfırla",
+    "s": "s",
     "save": "Kaydet",
     "search": "Ara",
+    "seconds": "Saniye",
     "serverStatus": "Sunucu durumu",
     "start": "Başlangıç",
     "status": "Durum",
@@ -691,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Belgeleri Görüntüle",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Bu küçük veya büyüyen topluluklar için uygun mu?"
+              },
+              "features": {
+                "answer": "FiveM entegrasyonu canlı harita desteği, bodycam araçları, veritabanı eşitlemesi ve daha derin oyun içi iş akışları için genişleyen bir resmi eklenti seti içerir."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM entegrasyon önizlemesi"
           },
+          "modules": {
+            "plugins": {
+              "description": "Resmi alt modüller, Sonoran CAD'i FiveM sunucu yığınınızın geri kalanına genişletir."
+            },
+            "sync": {
+              "infoCopy": "Oyun içi kimlikleri, araçları ve kayıtları bağlayın, böylece CAD'niz sunucu etkinliğiyle uyumlu kalsın."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Doğrudan dispatch'e yapılandırılmış CAD verileriyle aktarılan sürükleyici NPC ve oyuncu çağrıları oluşturun."
+              },
+              "ers": {
+                "title": "Acil radyo"
+              },
               "pagers": {
                 "description": "Sevk faaliyetinden hedefli telsiz bildirimleri gönderin, böylece birimler doğru bilgiyi hemen alsın.",
                 "previewTitle": "Çağrı Cihazları eklentisi önizlemesi",
@@ -747,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Heartbeat Entegrasyon Metrikleri:",
     "topServersHeartbeat": "En İyi 25 Sunucu (Heartbeat)"
   },
   "payment": {
@@ -809,6 +865,7 @@
       "createCall": "Çağrı Oluştur",
       "dispatch": "Sevk etmek",
       "dispatchRecord": "Sevk Kaydı",
+      "emergencyCallsShown": "Gösterilen acil çağrılar",
       "errors": {
         "attachedAlready": "Hata: Zaten bir aramaya bağlısınız!",
         "noOrigin": "Hata: Bu çağrının başlangıç ​​noktası ayarı yok!",
@@ -843,6 +900,7 @@
       },
       "trackPrimary": "Birincil Üniteyi Takip Et (GPS)",
       "units": "Birimler",
+      "unitStatusAttachedHint": "Bir birim bir çağrıya eklendiğinde, durumunu güncelleyin.",
       "unitStatusClosedHint": "Bir çağrı kapatıldığında, bağlı tüm birimlerin durumunu güncelleyin.",
       "updateCall": "Aramayı Güncelle",
       "webhooks": {
@@ -870,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "İhbar",
-      "chanceToAttack": "Oyuncuya Saldırma Şansı"
+      "chanceToAttack": "Oyuncuya Saldırma Şansı",
+      "chanceToObtainWeapons": "Silah Elde Etme Şansı"
     },
     "chat": {
       "justYou": "Sadece Sen",
-      "online": "Çevrimiçi"
+      "noThreads": "Henüz aktif konuşma yok.",
+      "online": "Çevrimiçi",
+      "ttsIncomingTooltip": "Gelen sohbet mesajlarını yüksek sesle oku"
     },
     "command": {
       "attach": "Eklemek",
@@ -893,8 +954,10 @@
       "view": "Görüş"
     },
     "diagram": {
+      "lockUnlockSelected": "Seçilenleri Kilitle/Kilidi Aç",
       "moveLayerDown": "Katmanı Aşağı Taşı (Shift = Alt)",
       "shortcutLock": "KISAYOL: L",
+      "shortcutUndo": "KISAYOL: CTRL + Z",
       "shortcutUp": "KISAYOL: (SHIFT) Yukarı Ok"
     },
     "emergencyCall": {
@@ -951,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Blip boyutunu azalt"
+        "decreaseBlipSize": "Blip boyutunu azalt",
+        "dragAndDrop": "(Sürükle ve Bırak)"
       }
     },
     "lookup": {
@@ -1006,6 +1070,10 @@
       "notepad": "Not Defteri",
       "notes": "Notlar",
       "title": "Başlık"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Cevap",
+      "autoImportToCallEditorTooltip": "Çağrı düzenleyicisine otomatik içe aktar ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1077,6 +1145,7 @@
         "noCustomTypes": "Kayıt Yok Türleri: Bunları Yönetici > Özelleştirme > Özel Kayıtlar'a ekleyin",
         "pasteLink": "Kayıt Bağlantısını Yapıştır",
         "pdf": "PDF'ler",
+        "printInGame": "Oyunda Yazdır",
         "recordType": "Kayıt tipi",
         "removeRecord": "Kaydı Kaldır",
         "saveRecord": "Kaydı Kaydet",
@@ -1148,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Ekler",
+      "automationLabelCountDown": "Otomasyon: Durum {status} {seconds} Saniye",
       "automationLabelCountUp": "Otomasyon: Durum {status} Artış",
       "clearAttachment": "Eki Temizle",
       "newTimer": "Yeni Zamanlayıcı",
@@ -1156,9 +1226,12 @@
     "unitEditor": {
       "agency": "Ajans",
       "aop": "AOP",
+      "bodycamShadowRecording": "Gizli Kayıt",
+      "bodycamVolume": "Ses Seviyesi  ",
       "confirmRemove": "Tanımlayıcıyı kaldırmak istediğinizden emin misiniz?",
       "department": "Departman",
       "departments": "Bölümler",
+      "electronBodycamOpenPermissions": "Açma İzinleri",
       "electronBodycamPermissionWarning": "Bodycam kaydı için macOS Ekran Kaydı izni gereklidir. Bunu Sistem Ayarları'nda etkinleştirin, ardından Sonoran CAD'yi tamamen kapatıp yeniden açın.",
       "group": "Grup",
       "location": "Konum",
@@ -1243,9 +1316,12 @@
     "exitResize": "Yeniden Boyutlandırmadan Çık",
     "helpImprove": "Bu çevirilerin iyileştirilmesine yardımcı olun",
     "hotkeyDisable": "Ücretsiz sürümde kısayol tuşları etkin değil",
+    "hotkeyRecording": "Kayıt alınıyor...",
     "hotkeys": "Kısayol tuşları",
     "language": "Dil",
+    "languageKorean": "Korece/한국어",
     "lockWindow": "Pencereyi Kilitle",
+    "microphoneStt": "Mikrofon (STT)",
     "overlay": {
       "addBulb": "Ampul Ekle",
       "addFrame": "Çerçeve ekle",
@@ -1262,6 +1338,7 @@
       "events": "Olaylar",
       "field": "Alan",
       "fileName": "Dosya adı",
+      "fontEditor": "Yazı Tipi Düzenleyici",
       "goveeWifi": "Govee WiFi",
       "lighting": "Aydınlatma",
       "manualIp": "Manuel IP (İsteğe bağlı)",
@@ -1283,20 +1360,31 @@
     "resetLayout": "Düzeni Sıfırla",
     "secretDisable": "Gizli Kimliğinizi almak için bir topluluğa giriş yapmalısınız",
     "settings": "Ayarlar",
+    "showAdvanced": "Gelişmişi Göster",
     "showHide": "Göster/Gizle",
     "systemDefaultMicrophone": "Sistem varsayılan mikrofonu",
     "theme": {
       "bgImageFit": {
         "contain": "Sığdır (İçine sığdır)"
       },
+      "bgImagePosition": {
+        "left": "Sol"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Vurgu 2",
-        "inverseText": "Ters Metin"
-      }
+        "accent3": "Vurgu 3",
+        "accent3Text": "Vurgu 3 Metin",
+        "background": "Arka Plan",
+        "inverseText": "Ters Metin",
+        "primaryText": "Birincil Metin"
+      },
+      "saveTheme": "Temayı Kaydet"
     },
+    "trafficStopDispatchHotkey": "Trafik Durdurma",
     "unlockWindow": "Pencerenin Kilidini Aç",
     "voice": "Ses",
     "volume": "Ses Seviyesi"
@@ -1319,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "Şeçim Yap",
+    "message": "Mesaj",
     "sendAlert": "Uyarı Gönder",
     "sendMessage": "Mesaj Gönder",
     "stationAlert": "İstasyon Ayarlarları",
     "stationTone": "İstasyon Tonu",
+    "tone": "Ton",
     "toneBoard": "Ton Menüsü",
     "updateDoors": "Kapıları Güncelle"
   },
@@ -1332,6 +1422,7 @@
     "layoutCustomization": "Düzen Özelleştirme",
     "newWindow": "Yeni Pencere",
     "pinToTaskbar": "Görev çubuğuna sabitle",
+    "previousDesktop": "Önceki Masaüstü",
     "startMenu": "Başlangıç ​​menüsü",
     "system": "Sistem",
     "tabCustomization": "Sekme Özelleştirme",

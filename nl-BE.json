@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Abonnementen"
     },
+    "delete": {
+      "title": "Account verwijderen?"
+    },
     "labels": {
       "confirmPassword": "Bevestig wachtwoord",
       "email": "E-mail",
@@ -102,9 +105,13 @@
         "lookupTypes": "Opzoek types",
         "noFieldSelected": "Geen veld geselecteerd",
         "noRecordTemplates": "Er zijn geen recordsjablonen met koppelbare velden beschikbaar.",
+        "rangeDisabled": "Bereik uitgeschakeld",
         "rangeSearch": "Bereikzoekopdracht",
         "recordField": "Documentveld",
+        "reindexRecords": "Herindexeer alle records",
         "reindexRecordsConfirmTitle": "Herindexeer alle records",
+        "reindexRecordsHelp": "Slaat de indexvelden van de opzoeklijst opnieuw op voor bestaande records zodat aangepaste zoektypes uw nieuwste veldtoewijzingen gebruiken.",
+        "sectionFallback": "Sectie {index}",
         "selectRecordFieldDescription": "Kies een recordsjabloon, breid een sectie uit en klik op een veld om het toe te wijzen.",
         "width": "Breedte"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Optie toevoegen",
+        "codeName": "Codenaam",
+        "conditionsInOrder": "Voorwaarden (in volgorde)",
+        "maskHint": "Voorbeeld: (###) ###-####",
         "newCodeId": "Nieuw code-ID",
+        "order": "Bestelling",
         "question": "Vraag",
         "searchCodes": "Zoek codes",
+        "tabs": {
+          "questions": "Vragen"
+        },
         "value": "Waarde"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Naam",
       "newField": "Nieuw Veld",
       "newValue": "Nieuwe Waarde",
+      "placeholderAbout": "Optionele helptekst die wordt weergegeven in het lege veld voordat een waarde wordt ingevoerd.",
       "readOnly": "Alleen lezen",
       "recordEditor": "Verslag Editor",
       "recordPreview": "Voorbeeldverslag",
@@ -248,6 +263,7 @@
       "department": "Departement",
       "departments": "Departementen",
       "description": "Beschrijving",
+      "editorSubtitle": "Beheer agentschappen, afdelingen en subafdelingen.",
       "errors": {
         "agencyExists": "Error: Een agentschap met deze naam bestaat al!",
         "agencyLimit2": "agentschappen!",
@@ -286,6 +302,9 @@
         "name": "Subdivisie Naam"
       },
       "name": "naam",
+      "persistentGroups": {
+        "groupName": "Groep naam"
+      },
       "subdivisions": "Subdivisies",
       "zip": "Postcode"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Kaart inschakelen",
       "erlc": {
         "civilianRegistrationsHeader": "Burgerregistraties",
+        "notifyNever": "Nooit",
+        "notifyOnlyOnFailure": "Alleen bij mislukking",
+        "trafficStopDescriptionHint": "Ondersteunt aangepaste variabelen.",
         "trafficStopMaxRadiusHint": "Als het dichtstbijzijnde voertuig verder weg is dan dit, vallen traffic stop-oproepen terug op de nummerplaatinvoer of worden voertuigdetails weggelaten.",
         "trafficStopVariablePlate": "Het eerste command-argument wanneer een nummerplaat werd opgegeven."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "Download Sonoran CAD voor FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Zodra de installatie voltooid is, kunt u de bronbestanden openen in de bestandsbeheerder.",
+          "selectCad": "Selecteer CAD en klik om de ID en sleutel hieronder te kopiëren/plakken.",
+          "submoduleDocs": "Je kunt hier meer leren over submoduleconfiguratie."
         }
       },
       "gamePort": "Game Poort",
@@ -606,6 +631,7 @@
     "export": "Exporteer",
     "externalWindow": "Open in externe pagina",
     "failed": "Mislukt",
+    "field": "Veld",
     "help": "Hulp",
     "icon": "Icoon",
     "id": "ID",
@@ -625,11 +651,13 @@
     "paste": "Plak",
     "pause": "Pauzeer",
     "range": "Bereik",
+    "rateLimit": "Rate limiet",
     "refresh": "Vernieuwen",
     "remove": "Verwijder",
     "reset": "Resetten",
     "save": "Sla op",
     "search": "Zoek op",
+    "seconds": "Seconden",
     "serverStatus": "Serverstatus",
     "start": "Starten",
     "status": "Status",
@@ -692,11 +720,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Bekijk docs",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Is dit geschikt voor kleine of groeiende gemeenschappen?"
+              },
+              "features": {
+                "answer": "De FiveM-integratie omvat livekaartondersteuning, bodycamtools, databasesynchronisatie en een groeiende reeks officiële plugins voor diepere in-game workflows."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM-integratievoorbeeld"
           },
+          "modules": {
+            "plugins": {
+              "description": "Officiële submodules breiden Sonoran CAD uit over de rest van je FiveM-serverstack."
+            },
+            "sync": {
+              "infoCopy": "Koppel in-game identiteiten, voertuigen en dossiers zodat je CAD afgestemd blijft op serveractiviteit."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Maak meeslepende NPC- en spelersoproepen die rechtstreeks doorstromen naar dispatch met gestructureerde CAD-gegevens."
+              },
+              "ers": {
+                "title": "Noodradio"
+              },
               "pagers": {
                 "description": "Stuur gerichte pagernotificaties op basis van dispatchactiviteit, zodat eenheden meteen de juiste informatie krijgen.",
                 "previewTitle": "Voorvertoning van de Pagers-plugin",
@@ -748,6 +801,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Heartbeat-integratiemetrics:",
     "topServersHeartbeat": "Top 25 servers (heartbeat)"
   },
   "payment": {
@@ -810,6 +864,7 @@
       "createCall": "Maak een Melding",
       "dispatch": "Dispatch",
       "dispatchRecord": "Dispatch documten",
+      "emergencyCallsShown": "Noodmeldingen getoond",
       "errors": {
         "attachedAlready": "Error: Je bent al bezig met deze melding!",
         "noOrigin": "Error: Deze melding heeft geen oorsprong!",
@@ -844,6 +899,7 @@
       },
       "trackPrimary": "Track eerste eenheid (GPS)",
       "units": "Eenheden",
+      "unitStatusAttachedHint": "Wanneer een eenheid aan een oproep is gekoppeld, werk hun status bij.",
       "unitStatusClosedHint": "Wanneer een oproep is afgesloten, werk de status van alle gekoppelde eenheden bij.",
       "updateCall": "Update Melding",
       "webhooks": {
@@ -871,11 +927,14 @@
     },
     "callouts": {
       "calloutLabel": "Melding",
-      "chanceToAttack": "Kans om speler aan te vallen"
+      "chanceToAttack": "Kans om speler aan te vallen",
+      "chanceToObtainWeapons": "Kans om wapens te bemachtigen"
     },
     "chat": {
       "justYou": "Alleen jij",
-      "online": "Online"
+      "noThreads": "Nog geen actieve gesprekken.",
+      "online": "Online",
+      "ttsIncomingTooltip": "Lees inkomende chatberichten hardop voor"
     },
     "command": {
       "attach": "Bijvoegen",
@@ -894,8 +953,10 @@
       "view": "Bekijk"
     },
     "diagram": {
+      "lockUnlockSelected": "Vergrendelen/Ontgrendelen geselecteerde",
       "moveLayerDown": "Laag naar beneden verplaatsen (Shift = onderaan)",
       "shortcutLock": "SNELTOETS: L",
+      "shortcutUndo": "SNELTOETS: CTRL + Z",
       "shortcutUp": "SNELTOETS: (SHIFT) pijl omhoog"
     },
     "emergencyCall": {
@@ -952,7 +1013,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Verklein blipgrootte"
+        "decreaseBlipSize": "Verklein blipgrootte",
+        "dragAndDrop": "(Slepen en neerzetten)"
       }
     },
     "lookup": {
@@ -1007,6 +1069,10 @@
       "notepad": "Notitieblok",
       "notes": "Notities",
       "title": "Titel"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Antwoord",
+      "autoImportToCallEditorTooltip": "Automatisch importeren naar belleditor ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1144,7 @@
         "noCustomTypes": "Geen type documenten: Voeg ze toe in Admin > Personaliseren > custom Documenten",
         "pasteLink": "Plak link",
         "pdf": "PDF",
+        "printInGame": "Afdrukken in de game",
         "recordType": "Document type",
         "removeRecord": "Verwijderd document",
         "saveRecord": "Sla document op",
@@ -1149,6 +1216,7 @@
     },
     "timers": {
       "attachments": "Bijlagen",
+      "automationLabelCountDown": "Automatisering: Status {status} {seconds} Seconden",
       "automationLabelCountUp": "Automatisering: Status {status} Omhoog tellen",
       "clearAttachment": "Verwijder Bijlagen",
       "newTimer": "Nieuwe Timer",
@@ -1157,9 +1225,12 @@
     "unitEditor": {
       "agency": "Agentschap",
       "aop": "Patrouille Gebied",
+      "bodycamShadowRecording": "Verborgen opname",
+      "bodycamVolume": "Volume  ",
       "confirmRemove": "Ben je zeker dat je je identificatie wilt verwijderen?",
       "department": "Departement",
       "departments": "Departementen",
+      "electronBodycamOpenPermissions": "Open machtigingen",
       "electronBodycamPermissionWarning": "macOS-schermopname-toestemming is vereist voor bodycam-opname. Schakel deze in bij Systeeminstellingen, sluit daarna Sonoran CAD volledig af en open het opnieuw.",
       "group": "Groep",
       "location": "Locatie",
@@ -1244,9 +1315,12 @@
     "exitResize": "Verlaat aanpassen",
     "helpImprove": "Help mee met de vertalingen",
     "hotkeyDisable": "Sneltoetsen zijn niet inbegrepen met de gratis versie",
+    "hotkeyRecording": "Opname...",
     "hotkeys": "Sneltoetsen",
     "language": "Taal",
+    "languageKorean": "Koreaans/한국어",
     "lockWindow": "Venster vastzetten",
+    "microphoneStt": "Microfoon (STT)",
     "overlay": {
       "addBulb": "Voeg een lamp toe",
       "addFrame": "Voeg een frame toe",
@@ -1263,6 +1337,7 @@
       "events": "Gebeurtenissen",
       "field": "Veld",
       "fileName": "Bestandsnaam",
+      "fontEditor": "Lettertype-editor",
       "goveeWifi": "Govee WiFi",
       "lighting": "Belichting",
       "manualIp": "Manueel IP (Optioneel)",
@@ -1284,20 +1359,31 @@
     "resetLayout": "Reset layout",
     "secretDisable": "Je moet in een community zijn ingelogd om je Scret ID te bekijken",
     "settings": "Instellingen",
+    "showAdvanced": "Toon geavanceerde opties",
     "showHide": "Toon/verberg",
     "systemDefaultMicrophone": "Standaardmicrofoon van het systeem",
     "theme": {
       "bgImageFit": {
         "contain": "Bevatten (Binnen passend)"
       },
+      "bgImagePosition": {
+        "left": "Links"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Accent 2",
-        "inverseText": "Inversieve tekst"
-      }
+        "accent3": "Accent 3",
+        "accent3Text": "Accent 3-tekst",
+        "background": "Achtergrond",
+        "inverseText": "Inversieve tekst",
+        "primaryText": "Primaire tekst"
+      },
+      "saveTheme": "Thema opslaan"
     },
+    "trafficStopDispatchHotkey": "Verkeersstop",
     "unlockWindow": "Venster losmaken",
     "voice": "Spraak",
     "volume": "Volume"
@@ -1320,10 +1406,12 @@
   },
   "stationAlert": {
     "makeSelection": "selectieMaken",
+    "message": "bericht",
     "sendAlert": "stuurAlert",
     "sendMessage": "berichtVerzenden",
     "stationAlert": "stationAlert",
     "stationTone": "stationstoon",
+    "tone": "Toon",
     "toneBoard": "toonBoard",
     "updateDoors": "updateDeuren"
   },
@@ -1333,6 +1421,7 @@
     "layoutCustomization": "Layout aanpassingen",
     "newWindow": "Nieuw venster",
     "pinToTaskbar": "Pin aan taakbalk",
+    "previousDesktop": "Vorige bureaublad",
     "startMenu": "Startmenu",
     "system": "Systeem",
     "tabCustomization": "Tab aanpassingen",

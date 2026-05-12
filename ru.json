@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Подписки"
     },
+    "delete": {
+      "title": "Удалить аккаунт?"
+    },
     "labels": {
       "confirmPassword": "Подтвердить Пароль",
       "email": "Электронная Почта",
@@ -102,9 +105,13 @@
         "lookupTypes": "Типы поиска",
         "noFieldSelected": "Поле не выбрано",
         "noRecordTemplates": "Шаблоны записей с сопоставляемыми полями отсутствуют.",
+        "rangeDisabled": "Диапазон отключен",
         "rangeSearch": "Поиск по диапазону",
         "recordField": "Поле записи",
+        "reindexRecords": "Переиндексировать все записи",
         "reindexRecordsConfirmTitle": "Переиндексировать все записи",
+        "reindexRecordsHelp": "Повторно сохраняет поля индекса справочника для существующих записей, чтобы пользовательские типы поиска использовали ваши последние сопоставления полей.",
+        "sectionFallback": "Раздел {index}",
         "selectRecordFieldDescription": "Выберите шаблон записи, разверните раздел и нажмите на поле, чтобы сопоставить его.",
         "width": "Ширина"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Добавить вариант",
+        "codeName": "Название кода",
+        "conditionsInOrder": "Условия (по порядку)",
+        "maskHint": "Пример: (###) ###-####",
         "newCodeId": "Новый Code ID",
+        "order": "Порядок",
         "question": "Вопрос",
         "searchCodes": "Поиск кодов",
+        "tabs": {
+          "questions": "Вопросы"
+        },
         "value": "Значение"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Имя",
       "newField": "Новое поле",
       "newValue": "Новое значение",
+      "placeholderAbout": "Необязательный вспомогательный текст, отображаемый в пустом поле до ввода значения.",
       "readOnly": "Только для чтения",
       "recordEditor": "Редактор записей",
       "recordPreview": "Предварительный просмотр записи",
@@ -248,6 +263,7 @@
       "department": "Департамент",
       "departments": "Департаменты",
       "description": "Описание",
+      "editorSubtitle": "Управляйте агентствами, отделами и подотделами.",
       "errors": {
         "agencyExists": "Ошибка: агентство с таким именем уже существует!",
         "agencyLimit2": "агентств!",
@@ -286,6 +302,9 @@
         "name": "Название подразделения"
       },
       "name": "Имя",
+      "persistentGroups": {
+        "groupName": "Имя Группы"
+      },
       "subdivisions": "Подразделения",
       "zip": "Почтовый индекс"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Включить карту",
       "erlc": {
         "civilianRegistrationsHeader": "Регистрации гражданских",
+        "notifyNever": "Никогда",
+        "notifyOnlyOnFailure": "Только при сбое",
+        "trafficStopDescriptionHint": "Поддерживает пользовательские переменные.",
         "trafficStopMaxRadiusHint": "Если ближайшее транспортное средство дальше этого расстояния, вызовы остановки движения переключаются на ввод номера или без сведений о транспортном средстве.",
         "trafficStopVariablePlate": "Первый аргумент команды, когда был указан номерной знак."
       },
@@ -370,10 +392,14 @@
       "fivem": {
         "configureResourceTitle": "Настроить ресурс",
         "manual": {
-          "configComment": "# Запустите ресурс sonorancad и другие встроенные ресурсы"
+          "configComment": "# Запустите ресурс sonorancad и другие встроенные ресурсы",
+          "downloadButton": "Скачать Sonoran CAD для FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "После завершения установки вы сможете получить доступ к файлам ресурса в File Manager.",
+          "selectCad": "Выберите CAD и нажмите, чтобы скопировать/вставить ID и ключ ниже.",
+          "submoduleDocs": "Подробнее о настройке субмодуля можно узнать здесь."
         }
       },
       "gamePort": "Игровой порт",
@@ -605,6 +631,7 @@
     "export": "Экспорт",
     "externalWindow": "Открыть во внешнем окне",
     "failed": "Отказанно",
+    "field": "Поле",
     "help": "Помощь",
     "icon": "Значок",
     "id": "ИД",
@@ -624,11 +651,14 @@
     "paste": "Вставить",
     "pause": "Пауза",
     "range": "Диапазон",
+    "rateLimit": "Ограничение скорости",
     "refresh": "Обновить",
     "remove": "Удалить",
     "reset": "Сбросить",
+    "s": "s",
     "save": "Сохранить",
     "search": "Найти",
+    "seconds": "Секунды",
     "serverStatus": "Статус Сервера",
     "start": "Начать",
     "status": "Статус",
@@ -691,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Просмотр документации",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Подходит ли это для небольших или растущих сообществ?"
+              },
+              "features": {
+                "answer": "Интеграция FiveM включает поддержку живой карты, инструменты bodycam, синхронизацию базы данных и расширяющийся набор официальных плагинов для более глубоких внутриигровых рабочих процессов."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Предпросмотр интеграции Sonoran CAD x FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "Официальные подмодули расширяют Sonoran CAD на остальную часть стека вашего FiveM-сервера."
+            },
+            "sync": {
+              "infoCopy": "Связывайте игровые идентификаторы, транспорт и записи, чтобы ваш CAD оставался синхронизированным с активностью сервера."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Создавайте иммерсивные вызовы NPC и игроков, которые напрямую поступают в диспетчерскую с структурированными CAD-данными."
+              },
+              "ers": {
+                "title": "Экстренное радио"
+              },
               "pagers": {
                 "description": "Доставляйте целевые уведомления на пейджер из диспетчерской активности, чтобы подразделения сразу получали нужную информацию.",
                 "previewTitle": "Предпросмотр плагина Pagers",
@@ -747,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Метрики интеграции Heartbeat:",
     "topServersHeartbeat": "Топ 25 серверов (Heartbeat)"
   },
   "payment": {
@@ -809,6 +865,7 @@
       "createCall": "Создать Вызов",
       "dispatch": "Донесение",
       "dispatchRecord": "Запись к Донесению",
+      "emergencyCallsShown": "Показаны экстренные вызовы",
       "errors": {
         "attachedAlready": "Ошибка: вы уже присоединены к вызову!",
         "noOrigin": "Ошибка: у этого вызова не установлен источник!",
@@ -843,6 +900,7 @@
       },
       "trackPrimary": "Дорога к Главному Юниту (GPS)",
       "units": "Юнит",
+      "unitStatusAttachedHint": "Когда подразделение прикреплено к вызову, обновите их статус.",
       "unitStatusClosedHint": "Когда вызов закрыт, обновите статус всех прикреплённых подразделений.",
       "updateCall": "Обновить Вызов",
       "webhooks": {
@@ -870,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Вызов",
-      "chanceToAttack": "Шанс атаковать игрока"
+      "chanceToAttack": "Шанс атаковать игрока",
+      "chanceToObtainWeapons": "Шанс получить оружие"
     },
     "chat": {
       "justYou": "Только вы",
-      "online": "В сети"
+      "noThreads": "Активных разговоров пока нет.",
+      "online": "В сети",
+      "ttsIncomingTooltip": "Озвучивать входящие сообщения чата"
     },
     "command": {
       "attach": "Прикрепить",
@@ -893,8 +954,10 @@
       "view": "Просмотр"
     },
     "diagram": {
+      "lockUnlockSelected": "Заблокировать/разблокировать выбранное",
       "moveLayerDown": "Переместить слой вниз (Shift = вниз)",
       "shortcutLock": "ЯРЛЫК: L",
+      "shortcutUndo": "ЯРЛЫК: CTRL + Z",
       "shortcutUp": "СОКРАЩЕНИЕ: (SHIFT) Стрелка вверх"
     },
     "emergencyCall": {
@@ -951,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Уменьшить размер метки"
+        "decreaseBlipSize": "Уменьшить размер метки",
+        "dragAndDrop": "(Перетащите и отпустите)"
       }
     },
     "lookup": {
@@ -1006,6 +1070,10 @@
       "notepad": "Блокнот",
       "notes": "Заметки",
       "title": "Название"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Ответ",
+      "autoImportToCallEditorTooltip": "Автоимпорт в редактор вызова ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1077,6 +1145,7 @@
         "noCustomTypes": "Нет записей этого типа: Добвьте их с помощью Admin > Customization > Custom Records",
         "pasteLink": "Вставить ссылку на запись",
         "pdf": "PDF",
+        "printInGame": "Печать в игре",
         "recordType": "Тип Записи",
         "removeRecord": "Удалить Запись",
         "saveRecord": "Сохранить Запись",
@@ -1148,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Вложения",
+      "automationLabelCountDown": "Автоматизация: Статус {status} {seconds} Секунд",
       "automationLabelCountUp": "Автоматизация: Статус {status} Счёт вверх",
       "clearAttachment": "Очистить вложение",
       "newTimer": "Новый таймер",
@@ -1156,9 +1226,12 @@
     "unitEditor": {
       "agency": "Агентство",
       "aop": "АОР",
+      "bodycamShadowRecording": "Скрытая запись",
+      "bodycamVolume": "Громкость  ",
       "confirmRemove": "Вы уверены, что хотите удалить Индетификатор?",
       "department": "Департамент",
       "departments": "Департаменты",
+      "electronBodycamOpenPermissions": "Разрешения на открытие",
       "electronBodycamPermissionWarning": "Для захвата bodycam требуется разрешение macOS на запись экрана. Включите его в Системных настройках, затем полностью закройте и снова откройте Sonoran CAD.",
       "group": "Группа",
       "location": "Местоположение",
@@ -1243,9 +1316,12 @@
     "exitResize": "Закончить Перемещение",
     "helpImprove": "Помогите нам с переводом!",
     "hotkeyDisable": "Горячие клавиши не доступны в бесплатной версии",
+    "hotkeyRecording": "Запись...",
     "hotkeys": "Горячие клавиши",
     "language": "Язык",
+    "languageKorean": "Корейский/한국어",
     "lockWindow": "Закрепить Окно",
+    "microphoneStt": "Микрофон (STT)",
     "overlay": {
       "addBulb": "Добавить лампочку",
       "addFrame": "Добавить кадр",
@@ -1262,6 +1338,7 @@
       "events": "События",
       "field": "Поле",
       "fileName": "Имя файла",
+      "fontEditor": "Редактор шрифтов",
       "goveeWifi": "Govee WiFi",
       "lighting": "Освещение",
       "manualIp": "Ручной IP (необязательно)",
@@ -1283,20 +1360,31 @@
     "resetLayout": "Сбросить Расположение",
     "secretDisable": "Вы должны присоединиться к сообществу чтобы получить ваш Secret ID",
     "settings": "Настройки",
+    "showAdvanced": "Показать дополнительные параметры",
     "showHide": "Показать/Скрыть",
     "systemDefaultMicrophone": "Микрофон по умолчанию системы",
     "theme": {
       "bgImageFit": {
         "contain": "Вписать (по размеру)"
       },
+      "bgImagePosition": {
+        "left": "Слева"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Акцент 2",
-        "inverseText": "Инверсный текст"
-      }
+        "accent3": "Акцент 3",
+        "accent3Text": "Текст акцента 3",
+        "background": "Фон",
+        "inverseText": "Инверсный текст",
+        "primaryText": "Основной текст"
+      },
+      "saveTheme": "Сохранить тему"
     },
+    "trafficStopDispatchHotkey": "Остановка транспорта",
     "unlockWindow": "Открепить Окно",
     "voice": "Голос озвучки",
     "volume": "Звук"
@@ -1319,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "Сделайте выбор",
+    "message": "Сообщение",
     "sendAlert": "отправить оповещение",
     "sendMessage": "отправитьСообщение",
     "stationAlert": "СтанционноеОповещение",
     "stationTone": "СтанцияТон",
+    "tone": "Тон",
     "toneBoard": "Тональная доска",
     "updateDoors": "обновитьДвери"
   },
@@ -1332,6 +1422,7 @@
     "layoutCustomization": "Настройка макета",
     "newWindow": "Новое Окно",
     "pinToTaskbar": "Закрепить в таскбаре",
+    "previousDesktop": "Предыдущий рабочий стол",
     "startMenu": "Меню «Пуск»",
     "system": "Система",
     "tabCustomization": "Настройка вкладки",

@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Abos"
     },
+    "delete": {
+      "title": "Konto löschen?"
+    },
     "labels": {
       "confirmPassword": "Passwort bestätigen",
       "email": "E-Mail",
@@ -102,9 +105,13 @@
         "lookupTypes": "Suchtypen",
         "noFieldSelected": "Kein Feld ausgewählt",
         "noRecordTemplates": "Keine Vorlagen für Datensätze mit zuordnbaren Feldern sind verfügbar.",
+        "rangeDisabled": "Bereich deaktiviert",
         "rangeSearch": "Bereichssuche",
         "recordField": "Datensatzfeld",
+        "reindexRecords": "Alle Datensätze neu indizieren",
         "reindexRecordsConfirmTitle": "Alle Datensätze neu indizieren",
+        "reindexRecordsHelp": "Speichert die Lookup-Index-Felder für vorhandene Datensätze erneut, damit benutzerdefinierte Suchtypen Ihre neuesten Feldzuordnungen verwenden.",
+        "sectionFallback": "Abschnitt {index}",
         "selectRecordFieldDescription": "Wählen Sie eine Datensatzvorlage aus, erweitern Sie einen Abschnitt und klicken Sie auf ein Feld, um es zuzuordnen.",
         "width": "Breite"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Option hinzufügen",
+        "codeName": "Code-Name",
+        "conditionsInOrder": "Bedingungen (in Reihenfolge)",
+        "maskHint": "Beispiel: (###) ###-####",
         "newCodeId": "Neue Code-ID",
+        "order": "Reihenfolge",
         "question": "Frage",
         "searchCodes": "Codes suchen",
+        "tabs": {
+          "questions": "Fragen"
+        },
         "value": "Wert"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Name",
       "newField": "Neues Feld",
       "newValue": "Neuer Wert",
+      "placeholderAbout": "Optionaler Hilfetext, der im leeren Feld angezeigt wird, bevor ein Wert eingegeben wird.",
       "readOnly": "Nur lesen",
       "recordEditor": "Berichtseditor",
       "recordPreview": "Berichtsvorschau",
@@ -248,6 +263,7 @@
       "department": "Behörde",
       "departments": "Behörden",
       "description": "Beschreibung",
+      "editorSubtitle": "Agenturen, Abteilungen und Unterabteilungen verwalten.",
       "errors": {
         "agencyExists": "Fehler: Ein Bereich mit diesem Namen existiert bereits!",
         "agencyLimit2": "Bereiche beschränkt!",
@@ -286,6 +302,9 @@
         "name": "Abteilungsname"
       },
       "name": "Name",
+      "persistentGroups": {
+        "groupName": "Gruppenname"
+      },
       "subdivisions": "Abteilungen",
       "zip": "Postleitzahl"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Karte aktivieren",
       "erlc": {
         "civilianRegistrationsHeader": "Zivile Registrierungen",
+        "notifyNever": "Nie",
+        "notifyOnlyOnFailure": "Nur bei Fehlern",
+        "trafficStopDescriptionHint": "Unterstützt benutzerdefinierte Variablen.",
         "trafficStopMaxRadiusHint": "Wenn das nächstgelegene Fahrzeug weiter entfernt ist, greifen Verkehrsstopp-Anrufe auf die Kennzeicheneingabe zurück oder lassen Fahrzeugdetails weg.",
         "trafficStopVariablePlate": "Das erste Befehlsargument, wenn ein Kennzeichen angegeben wurde."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "Sonoran CAD für FiveM herunterladen"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Sobald die Installation abgeschlossen ist, können Sie im Dateimanager auf die Ressourcendateien zugreifen.",
+          "selectCad": "CAD auswählen und klicken, um die ID und den Schlüssel unten zu kopieren/einzufügen.",
+          "submoduleDocs": "Hier kannst du mehr über die Submodulkonfiguration erfahren."
         }
       },
       "gamePort": "Spielport",
@@ -606,6 +631,7 @@
     "export": "Exportieren",
     "externalWindow": "In externen Fenster öffnen",
     "failed": "Fehlgeschlagen",
+    "field": "Feld",
     "help": "Hilfe",
     "icon": "Symbol",
     "id": "ID",
@@ -625,11 +651,14 @@
     "paste": "Einfügen",
     "pause": "Pause",
     "range": "Bereich",
+    "rateLimit": "Rate-Limit",
     "refresh": "Neuladen",
     "remove": "Entfernen",
     "reset": "Zurücksetzen",
+    "s": "s",
     "save": "Speichern",
     "search": "Suchen",
+    "seconds": "Sekunden",
     "serverStatus": "Serverstatus",
     "start": "Starten",
     "status": "Status",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Doku anzeigen",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Ist das für kleine oder wachsende Communities geeignet?"
+              },
+              "features": {
+                "answer": "Die FiveM-Integration umfasst Live-Kartenunterstützung, Bodycam-Tools, Datenbanksynchronisierung und eine wachsende Auswahl offizieller Plugins für tiefere In-Game-Workflows."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM Integrationsvorschau"
           },
+          "modules": {
+            "plugins": {
+              "description": "Offizielle Submodule erweitern Sonoran CAD über den Rest deines FiveM-Server-Stacks hinweg."
+            },
+            "sync": {
+              "infoCopy": "Verbinde In-Game-Identitäten, Fahrzeuge und Aufzeichnungen, damit dein CAD mit der Serveraktivität synchron bleibt."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Erstelle immersive NPC- und Spieler-Callouts, die direkt mit strukturierten CAD-Daten in den Dispatch einfließen."
+              },
+              "ers": {
+                "title": "Notfunkradio"
+              },
               "pagers": {
                 "description": "Senden Sie gezielte Pager-Benachrichtigungen aus der Einsatzaktivität, damit Einheiten sofort die richtigen Informationen erhalten.",
                 "previewTitle": "Pager-Plugin-Vorschau",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Heartbeat-Integrationsmetriken:",
     "topServersHeartbeat": "Top 25 Server (Heartbeat)"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "Einsatz erstellen",
       "dispatch": "Einsatz",
       "dispatchRecord": "Leitstelleneintrag",
+      "emergencyCallsShown": "Angezeigte Notrufe",
       "errors": {
         "attachedAlready": "Fehler: Du bist bereits einem Einsatz zugeteilt!",
         "noOrigin": "Fehler: Dieser Einsatz hat keine Herkunft gesetzt!",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "Primäre Einheit verfolgen (GPS)",
       "units": "Einheiten",
+      "unitStatusAttachedHint": "Wenn eine Einheit einem Einsatz zugeordnet wird, aktualisiere ihren Status.",
       "unitStatusClosedHint": "Wenn ein Einsatz geschlossen wird, aktualisiere den Status aller zugehörigen Einheiten.",
       "updateCall": "Einsatz aktualisieren",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Einsatz",
-      "chanceToAttack": "Chance, den Spieler anzugreifen"
+      "chanceToAttack": "Chance, den Spieler anzugreifen",
+      "chanceToObtainWeapons": "Chance, Waffen zu erhalten"
     },
     "chat": {
       "justYou": "Nur du",
-      "online": "Online"
+      "noThreads": "Noch keine aktiven Unterhaltungen.",
+      "online": "Online",
+      "ttsIncomingTooltip": "Eingehende Chat-Nachrichten vorlesen"
     },
     "command": {
       "attach": "Anhängen",
@@ -894,8 +954,10 @@
       "view": "Anzeigen"
     },
     "diagram": {
+      "lockUnlockSelected": "Ausgewählte sperren/entsperren",
       "moveLayerDown": "Ebene nach unten verschieben (Umschalt = Unten)",
       "shortcutLock": "TASTATURKÜRZEL: L",
+      "shortcutUndo": "TASTATURKÜRZEL: STRG + Z",
       "shortcutUp": "TASTENKOMBINATION: (UMSCHALT) Pfeil nach oben"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Blipgröße verringern"
+        "decreaseBlipSize": "Blipgröße verringern",
+        "dragAndDrop": "(Drag-and-Drop)"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "Notizblock",
       "notes": "Notizen",
       "title": "Titel"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Antwort",
+      "autoImportToCallEditorTooltip": "Automatisch in den Anrufeditor importieren ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "Keine Eintragsarten: Füge sie unter Admin > Anpassung > Eigene Einträge hinzu",
         "pasteLink": "Datensatzlink einfügen",
         "pdf": "PDF",
+        "printInGame": "Im Spiel drucken",
         "recordType": "Eintragsart",
         "removeRecord": "Eintrag entfernen",
         "saveRecord": "Eintrag speichern",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Anhänge",
+      "automationLabelCountDown": "Automatisierung: Status {status} {seconds} Sekunden",
       "automationLabelCountUp": "Automatisierung: Status {status} Zählung hoch",
       "clearAttachment": "Anhang löschen",
       "newTimer": "Neuer Timer",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "Bereich",
       "aop": "AOP",
+      "bodycamShadowRecording": "Schattenaufzeichnung",
+      "bodycamVolume": "Lautstärke  ",
       "confirmRemove": "Bist du sicher, dass du diese Kennung löschen möchtest?",
       "department": "Behörde",
       "departments": "Behörden",
+      "electronBodycamOpenPermissions": "Offene Berechtigungen",
       "electronBodycamPermissionWarning": "Die macOS-Bildschirmaufnahme-Berechtigung ist für die Bodycam-Aufnahme erforderlich. Aktiviere sie in den Systemeinstellungen und beende Sonoran CAD dann vollständig und öffne es erneut.",
       "group": "Gruppe",
       "location": "Ort",
@@ -1244,9 +1316,12 @@
     "exitResize": "Größenänderung beenden",
     "helpImprove": "Hilf diese Übersetzungen zu verbessern",
     "hotkeyDisable": "Hotkeys sind in der kostenlosen Version nicht verfügbar",
+    "hotkeyRecording": "Aufzeichnung...",
     "hotkeys": "Tastenkürzel",
     "language": "Sprache",
+    "languageKorean": "Korean/한국어",
     "lockWindow": "Fenster sperren",
+    "microphoneStt": "Mikrofon (STT)",
     "overlay": {
       "addBulb": "Glühbirne hinzufügen",
       "addFrame": "Rahmen hinzufügen",
@@ -1263,6 +1338,7 @@
       "events": "Ereignisse",
       "field": "Feld",
       "fileName": "Dateiname",
+      "fontEditor": "Schrifteditor",
       "goveeWifi": "Govee WLAN",
       "lighting": "Beleuchtung",
       "manualIp": "Manuelle IP (optional)",
@@ -1284,20 +1360,31 @@
     "resetLayout": "Layout zurücksetzen",
     "secretDisable": "Sie müssen in einer Community angemeldet sein, um Ihre Secret ID abzurufen",
     "settings": "Einstellungen",
+    "showAdvanced": "Erweitert anzeigen",
     "showHide": "Anzeigen/Verstecken",
     "systemDefaultMicrophone": "Systemstandardmikrofon",
     "theme": {
       "bgImageFit": {
         "contain": "Einpassen (Innen anpassen)"
       },
+      "bgImagePosition": {
+        "left": "Links"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Akzent 2",
-        "inverseText": "Inverser Text"
-      }
+        "accent3": "Akzent 3",
+        "accent3Text": "Akzent 3 Text",
+        "background": "Hintergrund",
+        "inverseText": "Inverser Text",
+        "primaryText": "Primärtext"
+      },
+      "saveTheme": "Design speichern"
     },
+    "trafficStopDispatchHotkey": "Verkehrsstopp",
     "unlockWindow": "Fenster entsperren",
     "voice": "Stimme",
     "volume": "Lautstärke"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "AuswahlTreffen",
+    "message": "Nachricht",
     "sendAlert": "Alarm senden",
     "sendMessage": "Nachricht senden",
     "stationAlert": "Stationswarnung",
     "stationTone": "Stationssignal",
+    "tone": "Ton",
     "toneBoard": "Klangtafel",
     "updateDoors": "updateDoors"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "Layout-Anpassung",
     "newWindow": "Neues Fenster",
     "pinToTaskbar": "An Taskleiste anheften",
+    "previousDesktop": "Vorheriger Desktop",
     "startMenu": "Startmenü",
     "system": "System",
     "tabCustomization": "Tab-Anpassung",

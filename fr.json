@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Abonnements"
     },
+    "delete": {
+      "title": "Supprimer le compte?"
+    },
     "labels": {
       "confirmPassword": "Confirmer le mot de passe",
       "email": "Email",
@@ -102,9 +105,13 @@
         "lookupTypes": "Types de dossier",
         "noFieldSelected": "Aucun champ sélectionné",
         "noRecordTemplates": "Aucun modèle d’enregistrement avec des champs mappables n’est disponible.",
+        "rangeDisabled": "Plage désactivée",
         "rangeSearch": "Recherche par plage",
         "recordField": "Champ d'enregistrement",
+        "reindexRecords": "Réindexer tous les enregistrements",
         "reindexRecordsConfirmTitle": "Réindexer tous les enregistrements",
+        "reindexRecordsHelp": "Enregistre à nouveau les champs d'index de recherche pour les enregistrements existants afin que les types de recherche personnalisés utilisent vos dernières correspondances de champs.",
+        "sectionFallback": "Section {index}",
         "selectRecordFieldDescription": "Choisissez un modèle d'enregistrement, développez une section et cliquez sur un champ pour le mapper.",
         "width": "Largeur"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Ajouter une option",
+        "codeName": "Nom du code",
+        "conditionsInOrder": "Conditions (dans l’ordre)",
+        "maskHint": "Exemple: (###) ###-####",
         "newCodeId": "Nouvel identifiant de code",
+        "order": "Ordre",
         "question": "Question",
         "searchCodes": "Rechercher des codes",
+        "tabs": {
+          "questions": "Questions"
+        },
         "value": "Valeur"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Nom",
       "newField": "Nouveau champ",
       "newValue": "Nouvelle valeur",
+      "placeholderAbout": "Texte d'aide facultatif affiché dans le champ vide avant la saisie d'une valeur.",
       "readOnly": "Lecture seulement",
       "recordEditor": "Éditeur d'arrestation",
       "recordPreview": "Aperçu du rapport d'arrestation",
@@ -248,6 +263,7 @@
       "department": "Département",
       "departments": "Départements",
       "description": "Description",
+      "editorSubtitle": "Gérer les agences, les départements et les sous-départements.",
       "errors": {
         "agencyExists": "Erreur : Un service portant ce nom existe déjà !",
         "agencyLimit2": "Service!",
@@ -286,6 +302,9 @@
         "name": "Nom de la sous-division"
       },
       "name": "Nom",
+      "persistentGroups": {
+        "groupName": "Nom du groupe"
+      },
       "subdivisions": "Sous divisions",
       "zip": "Code postal"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Activier la carte",
       "erlc": {
         "civilianRegistrationsHeader": "Immatriculations civiles",
+        "notifyNever": "Jamais",
+        "notifyOnlyOnFailure": "Uniquement en cas d'échec",
+        "trafficStopDescriptionHint": "Prend en charge les variables personnalisées.",
         "trafficStopMaxRadiusHint": "Si le véhicule le plus proche est plus loin que cela, les appels d'arrêt de circulation reviennent à la saisie de la plaque ou omettent les détails du véhicule.",
         "trafficStopVariablePlate": "Le premier argument de commande lorsqu’une plaque a été fournie."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "Télécharger Sonoran CAD pour FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Une fois l'installation terminée, vous pouvez accéder aux fichiers de la ressource dans le gestionnaire de fichiers.",
+          "selectCad": "Sélectionnez CAD et cliquez pour copier/coller l'ID et la clé ci-dessous.",
+          "submoduleDocs": "Vous pouvez en savoir plus sur la configuration des sous-modules ici."
         }
       },
       "gamePort": "Port du jeu",
@@ -606,6 +631,7 @@
     "export": "Exporter",
     "externalWindow": "Ouvrir dans une fenêtre externe",
     "failed": "Échec",
+    "field": "champ",
     "help": "Aide",
     "icon": "Icône",
     "id": "ID",
@@ -625,11 +651,14 @@
     "paste": "Coller",
     "pause": "Pause",
     "range": "Rayon",
+    "rateLimit": "Limite de débit",
     "refresh": "Actualiser",
     "remove": "Retirer",
     "reset": "Réinitialiser",
+    "s": "s",
     "save": "Sauvegarder",
     "search": "Rechercher",
+    "seconds": "Secondes",
     "serverStatus": "Statut du serveur",
     "start": "Début",
     "status": "Statut",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Voir la documentation",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "Cela convient-il aux petites communautés ou aux communautés en croissance ?"
+              },
+              "features": {
+                "answer": "L’intégration FiveM inclut la prise en charge de la carte en direct, des outils de bodycam, la synchronisation de la base de données et un ensemble croissant de plugins officiels pour des flux de travail plus approfondis en jeu."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Aperçu de l'intégration Sonoran CAD x FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "Les sous-modules officiels étendent Sonoran CAD à l'ensemble du reste de votre pile de serveur FiveM."
+            },
+            "sync": {
+              "infoCopy": "Connectez les identités en jeu, les véhicules et les dossiers pour que votre CAD reste synchronisé avec l'activité du serveur."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Créez des signalements immersifs pour PNJ et joueurs qui alimentent directement le dispatch avec des données CAD structurées."
+              },
+              "ers": {
+                "title": "Radio d'urgence"
+              },
               "pagers": {
                 "description": "Diffusez des notifications de pager ciblées à partir de l’activité de dispatch afin que les unités reçoivent immédiatement les bonnes informations.",
                 "previewTitle": "Aperçu du plugin Pagers",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Métriques d'intégration Heartbeat:",
     "topServersHeartbeat": "Top 25 serveurs (heartbeat)"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "Créer une carte d'appel",
       "dispatch": "Répartiteur",
       "dispatchRecord": "Rapport du répartiteur",
+      "emergencyCallsShown": "Appels d'urgence affichés",
       "errors": {
         "attachedAlready": "Erreur : Vous avez déjà rejoint un appel !",
         "noOrigin": "Erreur : cet appel n'a pas d'origine d'appel définie !",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "Suivre l'unité primaire (GPS)",
       "units": "Unités",
+      "unitStatusAttachedHint": "Lorsqu'une unité est attachée à un appel, mettez à jour son statut.",
       "unitStatusClosedHint": "Lorsqu'un appel est clôturé, mettez à jour le statut de toutes les unités attachées.",
       "updateCall": "Mettre à jour une carte d'appel",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Intervention",
-      "chanceToAttack": "Chance d'attaquer le joueur"
+      "chanceToAttack": "Chance d'attaquer le joueur",
+      "chanceToObtainWeapons": "Chance d'obtenir des armes"
     },
     "chat": {
       "justYou": "Juste vous",
-      "online": "En ligne"
+      "noThreads": "Aucune conversation active pour le moment.",
+      "online": "En ligne",
+      "ttsIncomingTooltip": "Lire à voix haute les messages entrants du chat"
     },
     "command": {
       "attach": "Attacher",
@@ -894,8 +954,10 @@
       "view": "Voir"
     },
     "diagram": {
+      "lockUnlockSelected": "Verrouiller/Déverrouiller la sélection",
       "moveLayerDown": "Déplacer le calque vers le bas (Shift = Bas)",
       "shortcutLock": "RACCOURCI: L",
+      "shortcutUndo": "RACCOURCI: CTRL + Z",
       "shortcutUp": "RACCOURCI: (SHIFT) Flèche vers le haut"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Réduire la taille du blip"
+        "decreaseBlipSize": "Réduire la taille du blip",
+        "dragAndDrop": "(Glisser-déposer)"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "Bloc note",
       "notes": "Notes",
       "title": "Titre"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Réponse",
+      "autoImportToCallEditorTooltip": "Importation automatique vers l'éditeur d'appel ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "Aucun type d'enregistrement : Ajoutez-les dans Admin > Personnalisation > Personnaliser les dossiers",
         "pasteLink": "Coller le lien du dossier",
         "pdf": "PDF",
+        "printInGame": "Imprimer en jeu",
         "recordType": "Type de dossier",
         "removeRecord": "Supprimer le dossier",
         "saveRecord": "Sauvegarder le dossier",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Pièces jointes",
+      "automationLabelCountDown": "Automatisation: Statut {status} {seconds} secondes",
       "automationLabelCountUp": "Automatisation: Statut {status} Décompte croissant",
       "clearAttachment": "Effacer la pièce jointe",
       "newTimer": "Nouvelle minuterie",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "Service",
       "aop": "Zone de patrouille",
+      "bodycamShadowRecording": "Enregistrement furtif",
+      "bodycamVolume": "Volume  ",
       "confirmRemove": "Voulez-vous vraiment supprimer l'identité ?",
       "department": "département",
       "departments": "Départements",
+      "electronBodycamOpenPermissions": "Ouvrir les autorisations",
       "electronBodycamPermissionWarning": "L’autorisation d’enregistrement de l’écran macOS est requise pour la capture bodycam. Activez-la dans Réglages Système, puis quittez complètement et rouvrez Sonoran CAD.",
       "group": "Groupe",
       "location": "Position",
@@ -1244,9 +1316,12 @@
     "exitResize": "Sortir du redimensionnement",
     "helpImprove": "Aider à améliorer ces traductions",
     "hotkeyDisable": "Les raccourcis clavier ne sont pas activés avec la version gratuite",
+    "hotkeyRecording": "Enregistrement...",
     "hotkeys": "Raccourcis clavier",
     "language": "Langue",
+    "languageKorean": "Coréen/한국어",
     "lockWindow": "Verrouiller la fenêtre",
+    "microphoneStt": "Microphone (STT)",
     "overlay": {
       "addBulb": "Ajouter une ampoule",
       "addFrame": "Ajouter un cadre",
@@ -1263,6 +1338,7 @@
       "events": "Événements",
       "field": "champs de données",
       "fileName": "Nom du fichier",
+      "fontEditor": "Éditeur de police",
       "goveeWifi": "Govee WiFi",
       "lighting": "Éclairage",
       "manualIp": "IP manuelle (facultatif)",
@@ -1284,20 +1360,31 @@
     "resetLayout": "Rétablir la disposition",
     "secretDisable": "Vous devez être connecté à une communauté pour récupérer votre ID secret",
     "settings": "Paramètres",
+    "showAdvanced": "Afficher les options avancées",
     "showHide": "Afficher/Masquer",
     "systemDefaultMicrophone": "Microphone par défaut du système",
     "theme": {
       "bgImageFit": {
         "contain": "Contenir (Ajuster à l’intérieur)"
       },
+      "bgImagePosition": {
+        "left": "Gauche"
+      },
       "bgImageScale": {
-        "p150": "150 %"
+        "p150": "150 %",
+        "p75": "75 %"
       },
       "colors": {
         "accent2": "Accent 2",
-        "inverseText": "Texte inverse"
-      }
+        "accent3": "Accent 3",
+        "accent3Text": "Texte accent 3",
+        "background": "Arrière-plan",
+        "inverseText": "Texte inverse",
+        "primaryText": "Texte principal"
+      },
+      "saveTheme": "Enregistrer le thème"
     },
+    "trafficStopDispatchHotkey": "Arrêt de la circulation",
     "unlockWindow": "Déverouiller la fenêtre",
     "voice": "Voix",
     "volume": "Volume"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "faireSélection",
+    "message": "Message",
     "sendAlert": "envoyerAlerte",
     "sendMessage": "envoyerMessage",
     "stationAlert": "alerteStation",
     "stationTone": "tonalitéDeStation",
+    "tone": "Ton",
     "toneBoard": "tableau des tons",
     "updateDoors": "mettre à jour les portes"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "Personnalisation de la mise en page",
     "newWindow": "Nouvelle fenêtre",
     "pinToTaskbar": "Epingler à la barre des tâches",
+    "previousDesktop": "Bureau précédent",
     "startMenu": "Menu démarrer",
     "system": "Système",
     "tabCustomization": "Personnalisation des onglets",

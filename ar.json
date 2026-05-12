@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "الإشتراكات"
     },
+    "delete": {
+      "title": "حذف الحساب؟"
+    },
     "labels": {
       "confirmPassword": "تأكيد كلمة المرور",
       "email": "البريد الإلكتروني",
@@ -102,9 +105,13 @@
         "lookupTypes": "أنواع البحث",
         "noFieldSelected": "لم يتم تحديد حقل",
         "noRecordTemplates": "لا توجد قوالب سجلات ذات حقول قابلة للربط متاحة.",
+        "rangeDisabled": "النطاق معطّل",
         "rangeSearch": "بحث النطاق",
         "recordField": "حقل السجل",
+        "reindexRecords": "إعادة فهرسة جميع السجلات",
         "reindexRecordsConfirmTitle": "إعادة فهرسة جميع السجلات",
+        "reindexRecordsHelp": "يعيد حفظ حقول فهرس البحث للسجلات الموجودة بحيث تستخدم أنواع البحث المخصصة أحدث تعيينات الحقول لديك.",
+        "sectionFallback": "القسم {index}",
         "selectRecordFieldDescription": "اختر قالب سجل، ووسّع قسمًا، ثم انقر حقلًا لربطه.",
         "width": "العرض"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "إضافة خيار",
+        "codeName": "اسم الشفرة",
+        "conditionsInOrder": "الشروط (بالترتيب)",
+        "maskHint": "مثال: (###) ###-####",
         "newCodeId": "معرّف الكود الجديد",
+        "order": "ترتيب",
         "question": "سؤال",
         "searchCodes": "بحث الرموز",
+        "tabs": {
+          "questions": "أسئلة"
+        },
         "value": "قيمة"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "الأسم",
       "newField": "حقل جديد",
       "newValue": "قيمة جديدة",
+      "placeholderAbout": "نص مساعدة اختياري يظهر في الحقل الفارغ قبل إدخال قيمة.",
       "readOnly": "للقراءة فقط",
       "recordEditor": "محرر التسجيل",
       "recordPreview": "معاينة السجل",
@@ -248,6 +263,7 @@
       "department": "القسم",
       "departments": "الأقسام",
       "description": "الوصف",
+      "editorSubtitle": "إدارة الوكالات، والأقسام، والأقسام الفرعية.",
       "errors": {
         "agencyExists": "خطأ: وكالة بهذا الاسم موجودة بالفعل!",
         "agencyLimit2": "وكالات!",
@@ -286,6 +302,9 @@
         "name": "اسم التقسيم الفرعي"
       },
       "name": "االأسم",
+      "persistentGroups": {
+        "groupName": "رمز الدورية"
+      },
       "subdivisions": "القطاعات والاقسام الفرعية",
       "zip": "الرمز البريدي"
     },
@@ -363,6 +382,9 @@
       "enableMap": "تمكين الخريطة",
       "erlc": {
         "civilianRegistrationsHeader": "تسجيلات المدنيين",
+        "notifyNever": "أبدًا",
+        "notifyOnlyOnFailure": "فقط عند الفشل",
+        "trafficStopDescriptionHint": "يدعم المتغيرات المخصصة.",
         "trafficStopMaxRadiusHint": "إذا كانت أقرب مركبة أبعد من هذا، فستعود مكالمات إيقاف المرور إلى إدخال اللوحة أو ستحذف تفاصيل المركبة.",
         "trafficStopVariablePlate": "أول وسيط للأمر عند توفير لوحة."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "تحميل Sonoran CAD لـ FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "بمجرد اكتمال التثبيت، يمكنك الوصول إلى ملفات المورد في مدير الملفات.",
+          "selectCad": "حدد CAD وانقر لنسخ/لصق المعرّف والمفتاح أدناه.",
+          "submoduleDocs": "يمكنك معرفة المزيد عن إعدادات الوحدة الفرعية هنا."
         }
       },
       "gamePort": "منفذ اللعبة",
@@ -606,6 +631,7 @@
     "export": "تصدير",
     "externalWindow": "فتح ف ي نافذة اخرى",
     "failed": "فشل",
+    "field": "حقل",
     "help": "مساعدة",
     "icon": "أيقونة",
     "id": "ايدي",
@@ -625,11 +651,14 @@
     "paste": "الصق",
     "pause": "توقف مؤقت",
     "range": "المدى",
+    "rateLimit": "حد المعدل",
     "refresh": "تحديث",
     "remove": "إزالة",
     "reset": "إعادة تعيين",
+    "s": "s",
     "save": "حفظ",
     "search": "بحث",
+    "seconds": "ثوانٍ",
     "serverStatus": "حالة السيرفر",
     "start": "ابدأ",
     "status": "الحالة",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "عرض المستندات",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "هل هذا مناسب للمجتمعات الصغيرة أو المتنامية؟"
+              },
+              "features": {
+                "answer": "يتضمن تكامل FiveM دعم الخريطة المباشرة، وأدوات bodycam، ومزامنة قاعدة البيانات، ومجموعة متنامية من الإضافات الرسمية لسير عمل أعمق داخل اللعبة."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "معاينة تكامل Sonoran CAD مع FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "توسّع الوحدات الفرعية الرسمية Sonoran CAD عبر بقية حزمة خادم FiveM الخاصة بك."
+            },
+            "sync": {
+              "infoCopy": "اربط الهويات داخل اللعبة والمركبات والسجلات حتى يظل CAD متوافقًا مع نشاط الخادم."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "أنشئ نداءات غامرة للـ NPC واللاعبين تتدفق مباشرة إلى التوزيع مع بيانات CAD منظمة."
+              },
+              "ers": {
+                "title": "إذاعة الطوارئ"
+              },
               "pagers": {
                 "description": "أرسل إشعارات البيجر المستهدفة من نشاط الإرسال بحيث تتلقى الوحدات المعلومات الصحيحة فورًا.",
                 "previewTitle": "معاينة إضافة Pagers",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "مقاييس تكامل نبضات القلب:",
     "topServersHeartbeat": "أفضل 25 خادمًا (نبض القلب)"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "انشاء بلاغ جديد",
       "dispatch": "عمليات",
       "dispatchRecord": "سجل العمليات",
+      "emergencyCallsShown": "بلاغات الطوارئ المعروضة",
       "errors": {
         "attachedAlready": "خطأ: أنت متصل بالفعل ببلاغ!",
         "noOrigin": "خطأ: هذا الاستدعاء ليس له مجموعة أصل!",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "تتبع الوحدة الأساسية (GPS)",
       "units": "الوحدات",
+      "unitStatusAttachedHint": "عندما يتم إرفاق وحدة بمكالمة، حدّث حالتها.",
       "unitStatusClosedHint": "عندما يتم إغلاق مكالمة، حدّث حالة جميع الوحدات المرفقة.",
       "updateCall": "تحديث بيانات البلاغ",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "استدعاء",
-      "chanceToAttack": "فرصة لمهاجمة اللاعب"
+      "chanceToAttack": "فرصة لمهاجمة اللاعب",
+      "chanceToObtainWeapons": "فرصة الحصول على الأسلحة"
     },
     "chat": {
       "justYou": "أنت فقط",
-      "online": "متصل"
+      "noThreads": "لا توجد محادثات نشطة بعد.",
+      "online": "متصل",
+      "ttsIncomingTooltip": "قراءة رسائل الدردشة الواردة بصوت عالٍ"
     },
     "command": {
       "attach": "إرفاق",
@@ -894,8 +954,10 @@
       "view": "عرض"
     },
     "diagram": {
+      "lockUnlockSelected": "قفل/إلغاء قفل المحدد",
       "moveLayerDown": "نقل الطبقة إلى الأسفل (Shift = الأسفل)",
       "shortcutLock": "اختصار: L",
+      "shortcutUndo": "اختصار: CTRL + Z",
       "shortcutUp": "اختصار: (SHIFT) سهم لأعلى"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "تقليل حجم العلامة"
+        "decreaseBlipSize": "تقليل حجم العلامة",
+        "dragAndDrop": "(السحب والإفلات)"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "المفكرة",
       "notes": "ملاحظات",
       "title": "العنوان"
+    },
+    "rapidIQForm": {
+      "answerColumn": "إجابة",
+      "autoImportToCallEditorTooltip": "الاستيراد التلقائي إلى محرر المكالمات ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "لا توجد أنواع سجلات: قم بإضافتها في الادارة> التخصيص> السجلات المخصصة",
         "pasteLink": "لصق رابط السجل",
         "pdf": "بي دي إف",
+        "printInGame": "طباعة داخل اللعبة",
         "recordType": "نوع السجل",
         "removeRecord": "حذف السجل",
         "saveRecord": "حفظ السجل",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "المرفقات",
+      "automationLabelCountDown": "الأتمتة: الحالة {status} {seconds} ثانية",
       "automationLabelCountUp": "الأتمتة: الحالة {status} زيادة تصاعدية",
       "clearAttachment": "مسح المرفق",
       "newTimer": "مؤقت جديد",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "القطاع",
       "aop": "المدينة",
+      "bodycamShadowRecording": "التسجيل الخفي",
+      "bodycamVolume": "الصوت  ",
       "confirmRemove": "هل أنت متأكد من رغبتك بحذف بطاقة التعريف ؟",
       "department": "القسم",
       "departments": "الاقسام",
+      "electronBodycamOpenPermissions": "فتح الأذونات",
       "electronBodycamPermissionWarning": "يلزم إذن تسجيل الشاشة في macOS لالتقاط كاميرا الجسم. فعِّله في إعدادات النظام، ثم أنهِ Sonoran CAD بالكامل وأعِد فتحه.",
       "group": "الدورية",
       "location": "منطقة الدورية",
@@ -1244,9 +1316,12 @@
     "exitResize": "خروج تغيير الحجم",
     "helpImprove": "ساعد في تطوير الترجمة للغتك",
     "hotkeyDisable": "لا تتوفر ميزة الاختصارات بالنسخه المجانية",
+    "hotkeyRecording": "التسجيل...",
     "hotkeys": "الأختصارات",
     "language": "اللغات",
+    "languageKorean": "الكورية/한국어",
     "lockWindow": "قفل النافذة",
+    "microphoneStt": "الميكروفون (STT)",
     "overlay": {
       "addBulb": "أضف لمبة",
       "addFrame": "أضف إطار",
@@ -1263,6 +1338,7 @@
       "events": "الفعاليات",
       "field": "حقل",
       "fileName": "اسم الملف",
+      "fontEditor": "محرر الخط",
       "goveeWifi": "جوفي واي فاي",
       "lighting": "الإضاءة",
       "manualIp": "عنوان IP يدوي (اختياري)",
@@ -1284,20 +1360,31 @@
     "resetLayout": "إعادة تعيين التخطيط",
     "secretDisable": "يجب أن تكون مسجلاً في مجتمع لاسترداد معرفك السري",
     "settings": "الإعدادات",
+    "showAdvanced": "إظهار الإضافات",
     "showHide": "عرض/إخفاء",
     "systemDefaultMicrophone": "الميكروفون الافتراضي للنظام",
     "theme": {
       "bgImageFit": {
         "contain": "احتواء (ملاءمة داخلية)"
       },
+      "bgImagePosition": {
+        "left": "يسار"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "اللون البارز 2",
-        "inverseText": "النص المعكوس"
-      }
+        "accent3": "اللون البارز 3",
+        "accent3Text": "نص اللون البارز 3",
+        "background": "الخلفية",
+        "inverseText": "النص المعكوس",
+        "primaryText": "النص الأساسي"
+      },
+      "saveTheme": "حفظ النسق"
     },
+    "trafficStopDispatchHotkey": "إيقاف المرور",
     "unlockWindow": "افتح النافذة",
     "voice": "الصوت",
     "volume": "الصوت"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "حدد الاختيار",
+    "message": "رسالة",
     "sendAlert": "إرسال تنبيه",
     "sendMessage": "إرسال رسالة",
     "stationAlert": "تنبيه المحطة",
     "stationTone": "محطة الرنة",
+    "tone": "النغمة",
     "toneBoard": "لوحة النغمة",
     "updateDoors": "تحديث الأبواب"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "تخصيص التخطيط",
     "newWindow": "نافذة جديدة",
     "pinToTaskbar": "تثبيت في شريط المهام",
+    "previousDesktop": "سطح المكتب السابق",
     "startMenu": "قائمة البداية",
     "system": "النظام",
     "tabCustomization": "تخصيص التبويب",

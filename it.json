@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "Iscriviti"
     },
+    "delete": {
+      "title": "Elimina account?"
+    },
     "labels": {
       "confirmPassword": "Conferma Password",
       "email": "Email",
@@ -102,9 +105,13 @@
         "lookupTypes": "Tipi di ricerca",
         "noFieldSelected": "Nessun campo selezionato",
         "noRecordTemplates": "Non sono disponibili modelli di record con campi mappabili.",
+        "rangeDisabled": "Intervallo disabilitato",
         "rangeSearch": "Ricerca per intervallo",
         "recordField": "Campo record",
+        "reindexRecords": "Reindicizza tutti i record",
         "reindexRecordsConfirmTitle": "Reindicizza tutti i record",
+        "reindexRecordsHelp": "Riscrive i campi dell'indice di ricerca per i record esistenti, così i tipi di ricerca personalizzati usano le tue mappature dei campi più recenti.",
+        "sectionFallback": "Sezione {index}",
         "selectRecordFieldDescription": "Scegli un modello di record, espandi una sezione e fai clic su un campo per mapparlo.",
         "width": "Larghezza"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "Aggiungi opzione",
+        "codeName": "Nome Codice",
+        "conditionsInOrder": "Condizioni (in ordine)",
+        "maskHint": "Esempio: (###) ###-####",
         "newCodeId": "Nuovo ID codice",
+        "order": "Ordine",
         "question": "Domanda",
         "searchCodes": "Cerca codici",
+        "tabs": {
+          "questions": "Domande"
+        },
         "value": "Valore"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "Nome",
       "newField": "Nuovo campo",
       "newValue": "Nuovo valore",
+      "placeholderAbout": "Testo di supporto facoltativo mostrato nel campo vuoto prima dell'inserimento di un valore.",
       "readOnly": "Sola lettura",
       "recordEditor": "Modifica Documenti",
       "recordPreview": "Anteprima Documento",
@@ -248,6 +263,7 @@
       "department": "Dipartmento",
       "departments": "Dipartmenti",
       "description": "Descrizione",
+      "editorSubtitle": "Gestisci agenzie, reparti e sottoreparti.",
       "errors": {
         "agencyExists": "Errore: esiste già un'agenzia con questo nome!",
         "agencyLimit2": "agenzie!",
@@ -286,6 +302,9 @@
         "name": "Nome Suddivisione"
       },
       "name": "Nome",
+      "persistentGroups": {
+        "groupName": "Nome Gruppo"
+      },
       "subdivisions": "Suddivisione",
       "zip": "CAP"
     },
@@ -363,6 +382,9 @@
       "enableMap": "Abilita mappa",
       "erlc": {
         "civilianRegistrationsHeader": "Immatricolazioni civili",
+        "notifyNever": "Mai",
+        "notifyOnlyOnFailure": "Solo in caso di errore",
+        "trafficStopDescriptionHint": "Supporta variabili personalizzate.",
         "trafficStopMaxRadiusHint": "Se il veicolo più vicino è più lontano di questo, le chiamate di fermata del traffico ricorrono all'inserimento della targa o omettono i dettagli del veicolo.",
         "trafficStopVariablePlate": "Il primo argomento del comando quando era stata fornita una targa."
       },
@@ -374,7 +396,10 @@
           "downloadButton": "Scarica Sonoran CAD per FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "Una volta completata l'installazione, puoi accedere ai file della risorsa nel File Manager.",
+          "selectCad": "Seleziona CAD e fai clic per copiare/incollare l'ID e la chiave qui sotto.",
+          "submoduleDocs": "Puoi saperne di più sulla configurazione del sottomodulo qui."
         }
       },
       "gamePort": "Porta di gioco",
@@ -606,6 +631,7 @@
     "export": "Esporta",
     "externalWindow": "Apri in una finestra esterna",
     "failed": "Faillito",
+    "field": "Campo",
     "help": "Aiuto",
     "icon": "Icona",
     "id": "ID",
@@ -625,11 +651,14 @@
     "paste": "Incolla",
     "pause": "Pausa",
     "range": "Intervallo",
+    "rateLimit": "Limite di velocità",
     "refresh": "Aggiorna",
     "remove": "Rimuovi",
     "reset": "Resetta",
+    "s": "s",
     "save": "Salva",
     "search": "Cerca",
+    "seconds": "Secondi",
     "serverStatus": "Stato Server",
     "start": "Avvia",
     "status": "Stato",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "Visualizza documentazione",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "È adatto per comunità piccole o in crescita?"
+              },
+              "features": {
+                "answer": "L'integrazione FiveM include supporto alla mappa in tempo reale, strumenti bodycam, sincronizzazione del database e un set in espansione di plugin ufficiali per flussi di lavoro di gioco più approfonditi."
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Anteprima integrazione Sonoran CAD x FiveM"
           },
+          "modules": {
+            "plugins": {
+              "description": "I sottomoduli ufficiali estendono Sonoran CAD al resto del tuo stack server FiveM."
+            },
+            "sync": {
+              "infoCopy": "Collega identità di gioco, veicoli e registri così che il tuo CAD resti allineato con l'attività del server."
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "Crea chiamate immersive per NPC e giocatori che confluiscono direttamente nel dispatch con dati CAD strutturati."
+              },
+              "ers": {
+                "title": "Radio di emergenza"
+              },
               "pagers": {
                 "description": "Invia notifiche pager mirate dall'attività di dispatch così le unità ricevono subito le informazioni giuste.",
                 "previewTitle": "Anteprima plugin Pagers",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "Metriche integrazione heartbeat:",
     "topServersHeartbeat": "Top 25 server (Heartbeat)"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "Crea chiamata",
       "dispatch": "Centralino",
       "dispatchRecord": "Rapporto chiamata di emergenza",
+      "emergencyCallsShown": "Chiamate di emergenza mostrate",
       "errors": {
         "attachedAlready": "Errore: sei già allegato a una chiamata!",
         "noOrigin": "Errore: questa chiamata non ha un'origine impostata!",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "Traccia unità primaria (GPS)",
       "units": "Unità",
+      "unitStatusAttachedHint": "Quando un'unità è collegata a una chiamata, aggiorna il loro stato.",
       "unitStatusClosedHint": "Quando una chiamata è chiusa, aggiorna lo stato di tutte le unità collegate.",
       "updateCall": "Carica chiamata",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "Chiamata",
-      "chanceToAttack": "Possibilità di Attaccare il Giocatore"
+      "chanceToAttack": "Possibilità di Attaccare il Giocatore",
+      "chanceToObtainWeapons": "Possibilità di ottenere armi"
     },
     "chat": {
       "justYou": "Solo tu",
-      "online": "Online"
+      "noThreads": "Nessuna conversazione attiva ancora.",
+      "online": "Online",
+      "ttsIncomingTooltip": "Leggi ad alta voce i messaggi in arrivo della chat"
     },
     "command": {
       "attach": "Allega",
@@ -894,8 +954,10 @@
       "view": "Visualizza"
     },
     "diagram": {
+      "lockUnlockSelected": "Blocca/Sblocca selezionati",
       "moveLayerDown": "Sposta livello in basso (Shift = In basso)",
       "shortcutLock": "SCORCIATOIA: L",
+      "shortcutUndo": "SCORCIATOIA: CTRL + Z",
       "shortcutUp": "SCORCIATOIA: Freccia su (MAIUSC)"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "Riduci dimensione blip"
+        "decreaseBlipSize": "Riduci dimensione blip",
+        "dragAndDrop": "(Trascina e rilascia)"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "Blocco note",
       "notes": "Note",
       "title": "Titolo"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Risposta",
+      "autoImportToCallEditorTooltip": "Importazione automatica nell'editor delle chiamate ({state})"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "Nessun tipo di registrazione: aggiungili in Amministrazione> Personalizzazione> Registrazione personalizzati",
         "pasteLink": "Incolla link del registro",
         "pdf": "PDF",
+        "printInGame": "Stampa in gioco",
         "recordType": "Tipo di registro",
         "removeRecord": "Rimuovi Registro",
         "saveRecord": "Salva Registro",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "Allegati",
+      "automationLabelCountDown": "Automazione: Stato {status} {seconds} Secondi",
       "automationLabelCountUp": "Automazione: Stato {status} Conteggio crescente",
       "clearAttachment": "Ripulisci allegati",
       "newTimer": "Nuovo Timer",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "Agenzia",
       "aop": "AOP",
+      "bodycamShadowRecording": "Registrazione in ombra",
+      "bodycamVolume": "Volume  ",
       "confirmRemove": "Sei sicuro di voler rimuovere l'identità",
       "department": "Dipartimento",
       "departments": "Dipartimenti",
+      "electronBodycamOpenPermissions": "Autorizzazioni aperte",
       "electronBodycamPermissionWarning": "È richiesta l'autorizzazione di registrazione schermo di macOS per l'acquisizione della bodycam. Abilitala in Impostazioni di Sistema, poi esci completamente e riapri Sonoran CAD.",
       "group": "Gruppo",
       "location": "Luogo",
@@ -1244,9 +1316,12 @@
     "exitResize": "Chiudi ridimensionamento",
     "helpImprove": "Aiutaci a migliorare queste traduzioni",
     "hotkeyDisable": "I tasti di scelta rapida non sono abilitati con la versione gratuita",
+    "hotkeyRecording": "Registrazione...",
     "hotkeys": "Tasti di scelta rapida",
     "language": "Lingua",
+    "languageKorean": "Coreano/한국어",
     "lockWindow": "Blocca finestra",
+    "microphoneStt": "Microfono (STT)",
     "overlay": {
       "addBulb": "Aggiungi lampadina",
       "addFrame": "Aggiungi cornice",
@@ -1263,6 +1338,7 @@
       "events": "Eventi",
       "field": "Campo",
       "fileName": "Nome del file",
+      "fontEditor": "Editor dei font",
       "goveeWifi": "Govee WiFi",
       "lighting": "Illuminazione",
       "manualIp": "IP manuale (opzionale)",
@@ -1284,20 +1360,31 @@
     "resetLayout": "Resetta Layout",
     "secretDisable": "Devi essere connesso a una community per recuperare il tuo ID segreto.",
     "settings": "Impostazioni",
+    "showAdvanced": "Mostra avanzate",
     "showHide": "Mostra/Nascondi",
     "systemDefaultMicrophone": "Microfono predefinito del sistema",
     "theme": {
       "bgImageFit": {
         "contain": "Contieni (Adatta all'interno)"
       },
+      "bgImagePosition": {
+        "left": "Sinistra"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "Colore accento 2",
-        "inverseText": "Testo inverso"
-      }
+        "accent3": "Colore accento 3",
+        "accent3Text": "Testo colore accento 3",
+        "background": "Sfondo",
+        "inverseText": "Testo inverso",
+        "primaryText": "Testo principale"
+      },
+      "saveTheme": "Salva tema"
     },
+    "trafficStopDispatchHotkey": "Blocco del traffico",
     "unlockWindow": "Sblocca finestra",
     "voice": "Voce",
     "volume": "Volume"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "seleziona",
+    "message": "Messaggio",
     "sendAlert": "invioAvviso",
     "sendMessage": "invia messaggio",
     "stationAlert": "allertaStazione",
     "stationTone": "segnaleStazione",
+    "tone": "Tono",
     "toneBoard": "toneBoard",
     "updateDoors": "aggiornaPorte"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "Personalizzazione del layout",
     "newWindow": "Nuova finestra",
     "pinToTaskbar": "Aggiungi alla barra delle applicazioni",
+    "previousDesktop": "Desktop precedente",
     "startMenu": "Menu Start",
     "system": "Sistema",
     "tabCustomization": "Personalizzazione scheda",

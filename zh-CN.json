@@ -3,6 +3,9 @@
     "buttons": {
       "subscriptions": "订阅内容"
     },
+    "delete": {
+      "title": "删除账户？"
+    },
     "labels": {
       "confirmPassword": "确认密码",
       "email": "电子邮件",
@@ -102,9 +105,13 @@
         "lookupTypes": "查询类型",
         "noFieldSelected": "未选择字段",
         "noRecordTemplates": "没有可用的具有可映射字段的记录模板。",
+        "rangeDisabled": "范围已禁用",
         "rangeSearch": "范围搜索",
         "recordField": "记录字段",
+        "reindexRecords": "重新索引所有记录",
         "reindexRecordsConfirmTitle": "重新索引所有记录",
+        "reindexRecordsHelp": "重新保存现有记录的查找索引字段，以便自定义搜索类型使用你最新的字段映射。",
+        "sectionFallback": "部分 {index}",
         "selectRecordFieldDescription": "选择一个记录模板，展开一个部分，然后点击一个字段进行映射。",
         "width": "宽度"
       },
@@ -133,9 +140,16 @@
       },
       "rapidIQEditor": {
         "addOption": "添加选项",
+        "codeName": "代码名称",
+        "conditionsInOrder": "条件（按顺序）",
+        "maskHint": "示例：(###) ###-####",
         "newCodeId": "新代码 ID",
+        "order": "顺序",
         "question": "问题",
         "searchCodes": "搜索代码",
+        "tabs": {
+          "questions": "问题"
+        },
         "value": "值"
       },
       "restrictions": {
@@ -202,6 +216,7 @@
       "name": "名称",
       "newField": "新字段",
       "newValue": "新数据",
+      "placeholderAbout": "可选的辅助文本，在输入值之前显示在空字段中。",
       "readOnly": "只读",
       "recordEditor": "记录编辑器",
       "recordPreview": "预览记录",
@@ -248,6 +263,7 @@
       "department": "部门",
       "departments": "部门",
       "description": "描述",
+      "editorSubtitle": "管理机构、部门和子部门。",
       "errors": {
         "agencyExists": "错误：使用此名称的机构已经存在！",
         "agencyLimit2": "机构！",
@@ -286,6 +302,9 @@
         "name": "子部门名称"
       },
       "name": "名称",
+      "persistentGroups": {
+        "groupName": "小组名称"
+      },
       "subdivisions": "子部门",
       "zip": "邮政编码"
     },
@@ -363,6 +382,9 @@
       "enableMap": "启用地图",
       "erlc": {
         "civilianRegistrationsHeader": "平民注册",
+        "notifyNever": "从不",
+        "notifyOnlyOnFailure": "仅在失败时",
+        "trafficStopDescriptionHint": "支持自定义变量。",
         "trafficStopMaxRadiusHint": "如果最近的车辆距离超过此值，交通拦截呼叫将回退到车牌输入或省略车辆详情。",
         "trafficStopVariablePlate": "提供车牌时的第一个命令参数。"
       },
@@ -374,7 +396,10 @@
           "downloadButton": "下载 Sonoran CAD 用于 FiveM"
         },
         "rocketNode": {
-          "maskedKey": "********************"
+          "maskedKey": "********************",
+          "resourceAccess": "安装完成后，您可以在 文件 管理器 中访问资源文件。",
+          "selectCad": "选择 CAD 并点击以下复制/粘贴 ID 和 key。",
+          "submoduleDocs": "你可以在这里了解有关子模块配置的更多信息。"
         }
       },
       "gamePort": "游戏端口",
@@ -606,6 +631,7 @@
     "export": "输出",
     "externalWindow": "在外部窗中打开",
     "failed": "失败",
+    "field": "区域",
     "help": "帮助",
     "icon": "图标",
     "id": "身份证号",
@@ -625,11 +651,14 @@
     "paste": "粘贴",
     "pause": "暂停",
     "range": "范围",
+    "rateLimit": "速率限制",
     "refresh": "刷新",
     "remove": "移除",
     "reset": "重设",
+    "s": "s",
     "save": "保存",
     "search": "搜索",
+    "seconds": "秒",
     "serverStatus": "服务器状态",
     "start": "开始",
     "status": "状态",
@@ -692,11 +721,36 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "ctaDocs": "查看文档",
+          "faq": {
+            "items": {
+              "community": {
+                "question": "这适合小型或正在成长的社区吗？"
+              },
+              "features": {
+                "answer": "FiveM 集成包括实时地图支持、执法记录仪工具、数据库同步，以及一组不断扩展的官方插件，用于更深入的游戏内工作流程。"
+              }
+            }
+          },
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM 集成预览"
           },
+          "modules": {
+            "plugins": {
+              "description": "官方子模块将 Sonoran CAD 扩展到你的 FiveM 服务器堆栈的其余部分。"
+            },
+            "sync": {
+              "infoCopy": "连接游戏内身份、车辆和记录，让您的 CAD 与服务器活动保持同步。"
+            }
+          },
           "submodules": {
             "items": {
+              "callers": {
+                "description": "创建沉浸式 NPC 和玩家呼叫，以结构化 CAD 数据直接推送到调度系统。"
+              },
+              "ers": {
+                "title": "紧急无线电"
+              },
               "pagers": {
                 "description": "根据调度活动发送定向传呼通知，让单位立即获取正确信息。",
                 "previewTitle": "寻呼机插件预览",
@@ -748,6 +802,7 @@
     }
   },
   "management": {
+    "heartbeatMetrics": "心跳集成指标:",
     "topServersHeartbeat": "前25个服务器（心跳）"
   },
   "payment": {
@@ -810,6 +865,7 @@
       "createCall": "创建呼叫",
       "dispatch": "调度",
       "dispatchRecord": "调度记录",
+      "emergencyCallsShown": "显示的紧急呼叫",
       "errors": {
         "attachedAlready": "错误：您已经在响应其他呼叫了！",
         "noOrigin": "错误：此呼叫未设置类型！",
@@ -844,6 +900,7 @@
       },
       "trackPrimary": "追踪主处理单位（GPS）",
       "units": "单位",
+      "unitStatusAttachedHint": "单位附加到通话时，更新其状态。",
       "unitStatusClosedHint": "通话关闭时，更新所有附加单位的状态。",
       "updateCall": "更新呼叫",
       "webhooks": {
@@ -871,11 +928,14 @@
     },
     "callouts": {
       "calloutLabel": "出警",
-      "chanceToAttack": "攻击玩家的几率"
+      "chanceToAttack": "攻击玩家的几率",
+      "chanceToObtainWeapons": "获取武器的几率"
     },
     "chat": {
       "justYou": "只有你",
-      "online": "在线"
+      "noThreads": "暂无活跃会话。",
+      "online": "在线",
+      "ttsIncomingTooltip": "朗读收到的聊天消息"
     },
     "command": {
       "attach": "附加",
@@ -894,8 +954,10 @@
       "view": "查看"
     },
     "diagram": {
+      "lockUnlockSelected": "锁定/解锁所选项",
       "moveLayerDown": "下移图层（Shift = 底部）",
       "shortcutLock": "快捷键：L",
+      "shortcutUndo": "快捷键：CTRL + Z",
       "shortcutUp": "快捷键：(SHIFT) 上箭头"
     },
     "emergencyCall": {
@@ -952,7 +1014,8 @@
     },
     "liveMap": {
       "toolbar": {
-        "decreaseBlipSize": "减小标记大小"
+        "decreaseBlipSize": "减小标记大小",
+        "dragAndDrop": "（拖放）"
       }
     },
     "lookup": {
@@ -1007,6 +1070,10 @@
       "notepad": "记事本",
       "notes": "笔记",
       "title": "标题"
+    },
+    "rapidIQForm": {
+      "answerColumn": "回答",
+      "autoImportToCallEditorTooltip": "自动导入到通话编辑器（{state}）"
     },
     "recordCenter": {
       "errors": {
@@ -1078,6 +1145,7 @@
         "noCustomTypes": "无记录类型：请在管理员>自定义>自定义记录中进行添加",
         "pasteLink": "粘贴记录链接",
         "pdf": "PDF",
+        "printInGame": "游戏内打印",
         "recordType": "记录种类",
         "removeRecord": "移除记录",
         "saveRecord": "保存记录",
@@ -1149,6 +1217,7 @@
     },
     "timers": {
       "attachments": "附件",
+      "automationLabelCountDown": "自动化：状态 {status} {seconds} 秒",
       "automationLabelCountUp": "自动化：状态 {status} 计数上升",
       "clearAttachment": "清除附件",
       "newTimer": "新计时器",
@@ -1157,9 +1226,12 @@
     "unitEditor": {
       "agency": "机构",
       "aop": "AOP",
+      "bodycamShadowRecording": "隐蔽录制",
+      "bodycamVolume": "音量  ",
       "confirmRemove": "确定要删除身份信息吗？",
       "department": "部门",
       "departments": "部门",
+      "electronBodycamOpenPermissions": "开启权限",
       "electronBodycamPermissionWarning": "录制执法记录仪需要 macOS 屏幕录制权限。请在系统设置中启用，然后完全退出并重新打开 Sonoran CAD。",
       "group": "小组",
       "location": "地点",
@@ -1244,9 +1316,12 @@
     "exitResize": "退出缩放",
     "helpImprove": "帮助改进翻译",
     "hotkeyDisable": "免费版本社区无法使用自定义按键设置",
+    "hotkeyRecording": "录制...",
     "hotkeys": "自定义按键",
     "language": "语言",
+    "languageKorean": "韩语/한국어",
     "lockWindow": "锁定窗口",
+    "microphoneStt": "麦克风（STT）",
     "overlay": {
       "addBulb": "添加灯泡",
       "addFrame": "添加框架",
@@ -1263,6 +1338,7 @@
       "events": "事件",
       "field": "区域",
       "fileName": "文件名",
+      "fontEditor": "字体编辑器",
       "goveeWifi": "Govee WiFi",
       "lighting": "灯光",
       "manualIp": "手动设置IP (可选）",
@@ -1284,20 +1360,31 @@
     "resetLayout": "重置布局",
     "secretDisable": "你必须登陆到社区才能获取你的Secret ID",
     "settings": "设置",
+    "showAdvanced": "显示进阶",
     "showHide": "显示/隐藏",
     "systemDefaultMicrophone": "系统默认麦克风",
     "theme": {
       "bgImageFit": {
         "contain": "包含（适应内部）"
       },
+      "bgImagePosition": {
+        "left": "左"
+      },
       "bgImageScale": {
-        "p150": "150%"
+        "p150": "150%",
+        "p75": "75%"
       },
       "colors": {
         "accent2": "强调色 2",
-        "inverseText": "反色文本"
-      }
+        "accent3": "强调色 3",
+        "accent3Text": "强调色 3 文本",
+        "background": "背景",
+        "inverseText": "反色文本",
+        "primaryText": "主要文本"
+      },
+      "saveTheme": "保存主题"
     },
+    "trafficStopDispatchHotkey": "拦截交通",
     "unlockWindow": "解锁窗口",
     "voice": "语音",
     "volume": "音量"
@@ -1320,10 +1407,12 @@
   },
   "stationAlert": {
     "makeSelection": "做出选择",
+    "message": "消息",
     "sendAlert": "发送警报",
     "sendMessage": "发送消息",
     "stationAlert": "站点警报",
     "stationTone": "站台音调",
+    "tone": "语气",
     "toneBoard": "语音板",
     "updateDoors": "更新门"
   },
@@ -1333,6 +1422,7 @@
     "layoutCustomization": "自定义布局",
     "newWindow": "新窗口",
     "pinToTaskbar": "固定至任务栏",
+    "previousDesktop": "上一个桌面",
     "startMenu": "开始菜单",
     "system": "系统",
     "tabCustomization": "自定义标签页",
