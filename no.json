@@ -1,681 +1,35 @@
 {
-  "common": {
-    "communityId": "Samfunnsid",
-    "cancel": "Avbryt",
-    "maximize": "Utvid",
-    "minimize": "Minimer",
-    "close": "Lukk",
-    "search": "Søk",
-    "help": "Hjelp",
-    "new": "Ny ",
-    "add": "Legg til",
-    "edit": "Rediger",
-    "modify": "Endre",
-    "save": "Lagre",
-    "confirm": "Bekreft",
-    "reset": "Tilbakestill",
-    "undo": "Angre",
-    "actions": "Handlinger",
-    "id": "ID",
-    "status": "Status",
-    "uploader": "Last opp (Maks 5MB)",
-    "upload": "Last opp",
-    "remove": "Fjern",
-    "enabled": "Påskrudd",
-    "activeServer": "Aktiv server",
-    "success": "Vellykket",
-    "failed": "Mislykkes",
-    "tutorial": "Brukerveileding",
-    "tutorials": "Brukerveiledinger",
-    "refresh": "Oppdater",
-    "autoSort": "Automatisk sortering",
-    "type": "Type",
-    "itemsPerPage": "Gjenstander per side",
-    "noData": "Ingen data",
-    "noResults": "Ingen resultater",
-    "externalWindow": "Åpne i eksternt vindu",
-    "lostConnection": "Du har mistet tilkoblingen til serveren.",
-    "serverStatus": "Serverstatus",
-    "import": "Importer",
-    "importPrompt": "Lim inn i JSON",
-    "export": "Eksporter",
-    "learnMore": "Lær mer",
-    "copy": "Kopier",
-    "paste": "Lim inn",
-    "icon": "Ikon",
-    "test": "Test",
-    "start": "Start",
-    "pause": "Pause",
-    "range": "Rekkevidde",
-    "equal": "Lik",
-    "notEqual": "Ikke lik",
-    "contains": "Inneholder",
-    "errors": {
-      "limitReached": "Feil: maksgrense nådd"
-    }
-  },
-  "sideMenu": {
-    "buttons": {
-      "settings": "Innstillinger",
-      "login": "Pålogging",
-      "logout": "Logg ut",
-      "communityMenu": "Samfunnsmeny",
-      "switchCommunities": "Endre samfunn",
-      "downloads": "Nedlastinger",
-      "tutorials": "Brukerveiledninger",
-      "myAccount": "Brukerinnstillinger",
-      "goFullscreen": "Fullskjerm",
-      "exitFullscreen": "Lukk Fullskjerm",
-      "disclaimer": "Ved å få tilgang til eller bruke Sonoran CAD godtar du våre vilkår og betingelser og personvernerklæring.",
-      "menu": "Meny"
-    }
-  },
-  "settings": {
-    "settings": "Innstillinger",
-    "volume": "Volum",
-    "helpImprove": "Hjelp oss med å forbedre oversettelsene",
-    "language": "Språk",
-    "voice": "Stemme/Voice",
-    "apiIdDisable": "Du må være innlogget i et samfunn for å sette din API id.",
-    "secretDisable": "Du må være innlogget i et samfunn for å hente din Secret ID.",
-    "hotkeys": "Hurtigtaster",
-    "hotkeyDisable": "Hurtigtaster er ikke tilgjengelig for gratisversjonen.",
-    "prefix": "Prefiks",
-    "panic": "Panikknapp",
-    "lockWindow": "Lås vindu",
-    "unlockWindow": "Lås opp vindu",
-    "quickResize": "Endre størrelse",
-    "exitResize": "Avbryt endring av størrelse",
-    "classicLayout": "Klassisk oppsett",
-    "resetLayout": "Reset oppsett",
-    "bringToTop": "Flytt frem",
-    "showHide": "Vis/gjem",
-    "overlay": {
-      "streamOverlay": "Strømoverlegg",
-      "credentials": "Akkreditering",
-      "configuration": "Innstillinger",
-      "twitchLogs": "Twitch logg",
-      "twitchConfig": "Twitch innstillinger",
-      "refreshPayment": "Oppfrisk betaling",
-      "channel": "Kanal",
-      "oauthToken": "OAuth-token",
-      "obsTextFiles": "OBS Tekst filer",
-      "unitUpdates": "Enhetsoppdateringer",
-      "callUpdates": "Oppdragsoppdateringer",
-      "twitch": "Twitch",
-      "txtFiles": "TXT filer",
-      "fileName": "Filnavn",
-      "field": "Felt",
-      "customTextFiles": "Tilpassede tekstfiler",
-      "dataKeys": "Data nøkler",
-      "events": "Hendelser",
-      "bodycam": "Kroppskamera",
-      "confirmReset": "Er du sikker på at du ønsker å tilbakestille innstillingene?",
-      "lighting": "Lys",
-      "addFrame": "Legg til bilde",
-      "addBulb": "Legg til lyspære",
-      "delay": "Forsinkelse",
-      "scanForBulbs": "Søk etter lyspærer",
-      "bulbType": "Lyspæretype",
-      "scan": "Søk",
-      "manualIp": "Manuell IP (valgfritt)"
-    }
-  },
-  "taskbar": {
-    "system": "System",
-    "newWindow": "Nytt vindu",
-    "pinToTaskbar": "Fest til oppgavebar",
-    "unpinFromTaskbar": "Fjern festing til oppgavebar",
-    "taskbarPosition": "Oppgavebar posisjon",
-    "tabCustomization": "Taskbar Innstillinger",
-    "displayTabIcons": "Vis taskbar ikoner",
-    "displayTabLabels": "Vis taskbar beskrivelse",
-    "layoutCustomization": "Oppsettsinnstillinger",
-    "startMenu": "Startmeny"
-  },
-  "login": {
-    "buttons": {
-      "login": "Logg inn",
-      "forgot": "Glemt passord?",
-      "create": "Opprett bruker",
-      "cancel": "Kanseller",
-      "staySignedIn": "Forbli pålogget",
-      "switchCommunities": "Bytt samfunn"
-    },
-    "labels": {
-      "email": "Epost",
-      "username": "Brukernavn",
-      "password": "Passord",
-      "confirmPassword": "Bekreft passord",
-      "emailPreferences": "Epostinnstillinger",
-      "resetPassword": "Tilbakestill passord"
-    }
-  },
-  "selectionPage": {
-    "buttons": {
-      "myCommunities": "Dashboard",
-      "joinCommunity": "Bli med i Samfunn",
-      "discover": "Oppdag",
-      "leaveCommunity": "Forlat Samfunn",
-      "createCommunity": "Opprett Samfunn",
-      "My Account": "Brukerinnstilligner"
-    },
-    "labels": {
-      "communityName": "Samfunnsnavn",
-      "website": "Nettsted (Valgfritt)"
-    },
-    "text": {
-      "joinHeader": "Bli med i et Samfunn",
-      "joinText": "Bli med i en eksisterende CAD!",
-      "createHeader": "CAD registrering",
-      "createText": "Registrer en ny samfunns CAD slik at andre kan bli med!",
-      "helpCommunityId1": "Samfunns IDen din er en unik identifikator for fellesskapet ditt. Dette er hva brukerne vil bruke til å logge på din spesifikke CAD.",
-      "helpCommunityId2": "Vanligvis er det forkortelsen for samfunnet ditt.",
-      "helpCommunityId3": "For eksempel: Arizona Serious Roleplay - ID: AZSRP",
-      "helpCommunityName": "Ditt samfunnsnavn er det offentlige navnet på rollespillsamfunnet.",
-      "helpCommunityWebsite": "Samfunnsnettstedet ditt er nettadressen til forumet, Discord eller et annet nettsted. Dette feltet er VALGFRITT og er ikke påkrevd!",
-      "confirmLeave1": "Er du sikker på at du vil forlate dette samfunnet?",
-      "confirmLeave2": "Kontoen din og alle dataene på denne CADen blir fjernet!",
-      "communityNotFound": "Ingen samfunn funnet",
-      "helpCommunityIdFindHeader": "Hvor finner jeg samfunns IDen min?",
-      "helpCommunityIdFind1": "Du må kontakte et medlem eller en administrator for spillmiljøet ditt.",
-      "helpCommunityIdFind2": "De vil gi deg den spesifikke samfunns IDen for CADen."
-    },
-    "tooltips": {
-      "leaveCommunity": "Forlat dette samfunnet",
-      "owner": "Du eier dette samfunnet",
-      "search": "Søk etter Sonoran CAD samfunn",
-      "register": "Registrer din Sonoran CAD",
-      "joinHelp": "Usikker på hva du skal gjøre?",
-      "joinThis": "Bli med i denne samfunns CADen",
-      "join": "Bli med"
-    },
-    "errors": {
-      "noCommunityID": "Feil: Skriv inn en samfunns ID!",
-      "communityIdLength": "Feil: Samfunns IDen din må inneholde mellom 1 og 50 tegn!",
-      "communityIdCharacters": "Feil: Samfunns IDen kan bare inneholde bokstaver, tall, understreker og streker!",
-      "communityNameLength": "Feil: Samfunnsnavnet ditt må være mellom 1 og 50 tegn!"
-    }
-  },
   "account": {
-    "labels": {
-      "myAccount": "Min bruker",
-      "email": "Epost",
-      "username": "Brukernavn",
-      "emailPreferences": "Epostinnstillinger",
-      "confirmPassword": "Bekreft passord",
-      "emailMe": "Send meg viktige kunngjøringer, oppdateringer og tilbud."
-    },
     "buttons": {
       "subscriptions": "Abonnementer"
-    }
-  },
-  "payment": {
-    "text": {
-      "setCommunityId": "Sett Samfunns ID",
-      "newSubscription": "Nytt abonnement",
-      "bundleAndSave": "Pakke og lagre",
-      "serversEmail": "Sonoran Servers Bruker Epost",
-      "serverIp": "Server-IP",
-      "bundleExplain": "Spar 30% hver måned når du kjøper en VPS fra Sonoran Servers."
     },
     "labels": {
-      "plan": "Plan",
-      "startDate": "Start dato",
-      "endDate": "Slutt dato",
-      "starter": "Starter",
-      "standard": "Standard",
-      "plus": "Pluss",
-      "pro": "Pro",
-      "expertInstallation": "Ekspertinstallasjon"
-    },
-    "buttons": {
-      "purchase": "Kjøp abonnement",
-      "comparePlans": "Pricing",
-      "oneTimePurchases": "Engangskjøp",
-      "amount": "Mengde",
-      "openBillingPortal": "Open Billing Portal"
-    }
-  },
-  "communityMenu": {
-    "buttons": {
-      "civilian": "Sivil",
-      "dmv": "Statens Vegvesen",
-      "law": "Jurist",
-      "police": "Politi",
-      "fire": "Brann",
-      "ems": "Ambulanse",
-      "dispatch": "Operasjonssentralen",
-      "admin": "Admin",
-      "discord": "Discord",
-      "website": "Nettside",
-      "setDefault": "Sett standard samfunn"
-    },
-    "labels": {
-      "permissionKey": "Tilgangsnøkkel"
-    }
-  },
-  "civilian": {
-    "buttons": {
-      "newCharacter": "Ny karakter",
-      "editCharacter": "Rediger karakter",
-      "records": "Rulleblad",
-      "dmv": "Statens Vegvesen"
-    },
-    "characterEditor": {
-      "first": "Fornavn",
-      "last": "Etternavn",
-      "mi": "Mellomnavn",
-      "dob": "Fødselsdato",
-      "age": "Alder",
-      "sex": "Kjønn",
-      "aka": "Alias",
-      "residence": "Bostedsadresse",
-      "zip": "Postkode",
-      "occupation": "Yrke",
-      "height": "Høyde",
-      "weight": "Vekt",
-      "skin": "Hudfarge",
-      "hair": "Hårfarge",
-      "eye": "Øyefarge",
-      "emergencyContact": "Nødkontakt",
-      "relationship": "Forhold",
-      "contactNumber": "Telefonnummer",
-      "image": "Bilde",
-      "addCharacter": "Legg til karakter",
-      "saveCharacter": "Lagre karakter",
-      "removeCharacter": "Slett karakter",
-      "createNewCharacter": "Lag ny karakter",
-      "editExistingCharacter": "Rediger karakter",
-      "confirmRemove": "Er du sikker på at du vil slette denne karakteren?"
-    },
-    "labels": {
-      "selectedCharacter": "Valgt karakter"
-    },
-    "errors": {
-      "maxCharacters": "Feil: Du har nådd samfunnets maksgrense for antall karakterer."
-    }
-  },
-  "police": {
-    "lookup": {
-      "lookup": "Søk",
-      "sendToUnits": "Send til enhet(er).",
-      "partial": "Delvis",
-      "exact": "Eksakt",
-      "reportsHeader": "Rapporter",
-      "identifier": "Enhetsinformasjon",
-      "id": "Saksnummer",
-      "newLookup": "Nytt søk",
-      "refresh": "Oppdater",
-      "nameSearch": "Søk på navn",
-      "first": "Fornavn",
-      "last": "Etternavn",
-      "mi": "Mellomnavn",
-      "plateSearch": "Skiltsøk",
-      "plate": "Registreringsnummer",
-      "agency": "Etat",
-      "department": "Avdeling",
-      "unit": "Enhet",
-      "civilians": "Sivile",
-      "records": "Saker",
-      "noRecordsFound": "Ingen saker funnet",
-      "recordsPerPage": "Saker per side",
-      "recordsNoData": "Ingen saker tilgjengelig",
-      "recordsNoResults": "Ingen saker funnet",
-      "statuses": {
-        "active": "Aktiv",
-        "inactive": "Inaktiv",
-        "closed": "Lukket"
-      },
-      "columns": {
-        "name": "Navn",
-        "plate": "Skiltnummer",
-        "charges": "Siktelser",
-        "flags": "Merknader",
-        "date": "Dato",
-        "status": "Status",
-        "type": "Type",
-        "expiration": "Utgår",
-        "first": "Fornavn",
-        "last": "Etternavn",
-        "mi": "Mellomnavn"
-      },
-      "alerts": {
-        "emptySearch": "Feil: Tomt søk!"
-      },
-      "getOwner": "Hent eier"
-    },
-    "records": {
-      "general": {
-        "records": "Saker",
-        "reports": "Rapporter"
-      },
-      "editor": {
-        "recordType": "Sakstype",
-        "dmvType": "Statens Vegvesen type",
-        "addRecord": "Ny sak",
-        "saveRecord": "Lagre sak",
-        "removeRecord": "Fjern sak",
-        "pdf": "PDF",
-        "applyForDmv": "Søk etter SVV sak",
-        "copyLink": "Kopier sakslenke",
-        "pasteLink": "Lim inn sakslenke",
-        "linkTitle": "Lenketittel",
-        "noCustomTypes": "Ingen sakstyper: Legg dem til i Admin > Tilpasning > Tilpassede saker",
-        "status": {
-          "active": "AKTIV",
-          "closed": "LUKKET",
-          "pending": "PÅGÅENDE",
-          "approved": "GODKJENT",
-          "rejected": "AVSLÅTT"
-        },
-        "errors": {
-          "requiredField": "Feil: Påkrevd felt!",
-          "nameOrPlate": "Feil: Denne saken må ha en borgers navn eller et registreringsnummer for å søkes opp.",
-          "noName": "Feil: Denne saken må ha en borgers navn for å søkes opp.",
-          "noPlate": "Feil: Denne saken må ha et registreringsnummer for å søkes opp.",
-          "noCopiedLink": "Feil: Du har ikke en sakslenke kopiert."
-        }
-      },
-      "agency": {
-        "agencyInformation": "Byrå informasjon",
-        "agencyName": "Byrå navn",
-        "recordNum": "Saksnummer",
-        "date": "Dato",
-        "observingOfficer": "Hovedenhet",
-        "location": "Posisjon",
-        "zip": "Postkode",
-        "badge": "Tjenestenummer"
-      },
-      "getCiv": {
-        "characterSearch": "Karaktersøk",
-        "civilianInfo": "Borgerinformasjon"
-      },
-      "getVeh": {
-        "vehicleSearch": "Kjøretøyssøk"
-      },
-      "narrative": {
-        "narrative": "Forløp"
-      },
-      "charges": {
-        "charges": "Tiltaler",
-        "charge": "Ny tiltale",
-        "chargeNumber": "Saksnummer ",
-        "fineTotal": "Bot Sum",
-        "chargeType": "Siktelsestype",
-        "counts": "Antall",
-        "titleCode": "Tittel, Kode",
-        "bondType": "Obligasjonstype",
-        "bondFineAmount": "Forelegg sum",
-        "jailTime": "Fengselstid"
-      },
-      "speed": {
-        "citationInformation": "Foreleggsinformasjon",
-        "vehicleSpeed": "Kjøretøyshastighet",
-        "speedLimit": "Fartsgrense",
-        "paceType": "Hastighetstype",
-        "courtDate": "Rettsdato",
-        "courtTime": "Rettsklokkeslett",
-        "fine": "Forelegg",
-        "pace": "Fart",
-        "radar": "Radar",
-        "other": "Annet"
-      },
-      "status": {
-        "status": "Status",
-        "dateSubmitted": "Dato sendt inn",
-        "supervisorSignature": "Nærmeste leders signatur",
-        "observingSignature": "Hovedenhets signatur"
-      },
-      "vehicle": {
-        "vehicleInformation": "Kjøretøysinformasjon",
-        "type": "Kjøretøystype",
-        "plate": "Registreringsnummer",
-        "make": "Merke",
-        "model": "Modell",
-        "color": "Farge",
-        "year": "Årsmodell",
-        "types": {
-          "sedan": "Sedan",
-          "coupe": "Kupe",
-          "suv": "SUV",
-          "truck": "Lastebil",
-          "offroad": "Offroad",
-          "marine": "Vannfarkost",
-          "motorcycle": "Motorsykkel",
-          "aircraft": "Luftfartøy"
-        }
-      },
-      "arrest": {
-        "arrestInformation": "Pågripelsesinformasjon",
-        "weapons": "Våpen",
-        "arrestType": "Arrestasjonstype",
-        "probationaryOfficer": "Prøveløslatelsesoffiser"
-      }
-    },
-    "recordCenter": {
-      "myFiles": "Mine filer",
-      "newReport": "Ny rapport",
-      "newRecord": "Ny sak",
-      "supervisorPanel": "Veileder Panel",
-      "pendingRecords": "Ventende saker",
-      "filesAwaitingApproval": "Filer som venter godkjenning",
-      "pendingFiles": "Ventende filer",
-      "noReportsForSuper": "Ingen rapporter som krever veilederhandlinger",
-      "noReportsFound": "Ingen rapporter funnet",
-      "noRecordsForSuper": "Ingen saker som krever veilederhandlinger",
-      "noRecordsFound": "Ingen saker funnet",
-      "errors": {
-        "noRecordTypes": "Ingen sakstyper: Legg dem til i Admin  > Tilpasning  > Tilpassede saker",
-        "noReportTypes": "Ingen rapporttyper: Legg dem til i Admin  > Tilpasning  > Tilpassede rapporter",
-        "syncEnabledFeatDisabled": "Denne funksjonen er ikke kompatibel med databasesynkronisering"
-      }
-    },
-    "callEditor": {
-      "newDispatch": "Nytt oppdrag",
-      "savedTypes": "Lagrede oppdrag",
-      "dispatch": "Utalarmer",
-      "callViewer": "Oppdragsvisning",
-      "createCall": "Opprett oppdrag",
-      "updateCall": "Oppdater oppdrag",
-      "clearEditor": "Rydd tekstredigerer",
-      "selfDispatch": "Egen utalarmering",
-      "selfClear": "Gå ut fra oppdrag",
-      "units": "Enheter",
-      "callOrigin": "Oppdragsopphav",
-      "callStatus": "Oppdragsstatus",
-      "priority": "Prioritet",
-      "block": "Område",
-      "address": "Adresse",
-      "postal": "Postkode",
-      "callTitle": "Oppdragstittel",
-      "code": "Respons",
-      "primaryUnit": "Ledende enhet",
-      "callDescription": "Oppdragsbeskrivelse",
-      "callNotes": "Oppdragsmerknader",
-      "note": "Merknad",
-      "addNote": "Ny merknad",
-      "dispatchRecord": "Oppdragsforhistorie",
-      "trackPrimary": "Spor opp ledende enhet (GPS)",
-      "confirmations": {
-        "close1": "Du har satt oppdragsstatus som AVSLUTTET",
-        "close2": "Er du sikker på at du vil avslutte oppdraget?",
-        "close3": "Dette oppdraget og all data vil bli fjernet!",
-        "detatch": "Fjern",
-        "detatchConfirm": "Er du sikker på at du vil fjerne deg selv fra oppdraget?"
-      },
-      "statusOptions": {
-        "pending": "Pågående",
-        "active": "Aktive",
-        "closed": "Avsluttet"
-      },
-      "originOptions": {
-        "caller": "Innringer",
-        "radioDispatch": "Over samband",
-        "observed": "Observert",
-        "walkUp": "Involvert"
-      },
-      "errors": {
-        "unitAlreadyOnCall": "Feil: Denne enheten er allerede knyttet til oppdraget!",
-        "noOrigin": "Feil: Dette oppdraget har ikke et opphav satt",
-        "noStatus": "Feil: Oppdraget har ikke fått en status",
-        "noPriority": "Feil: Oppdraget har ikke fått en prioritet",
-        "noTitle": "Feil: Oppdraget har ikke fått en tittel",
-        "attachedAlready": "Feil: Du er allerede tilknyttet et oppdrag!"
-      },
-      "nearestUnits": "Nærmeste enheter",
-      "nearestStations": "Nærmeste stasjoner"
-    },
-    "callList": {
-      "activeCalls": "Aktive oppdrag",
-      "callHistory": "Historiske oppdrag",
-      "editCall": "Rediger oppdrag",
-      "attachToCall": "Tilknytt oppdrag",
-      "previewCall": "Forhåndsvis oppdrag",
-      "closeCall": "Lukk oppdrag",
-      "printCall": "Print oppdrag",
-      "priority": "Prioritet",
-      "columns": {
-        "callId": "Oppdrags id",
-        "10Code": "10-Kode",
-        "callTitle": "Oppdragstittel",
-        "address": "Adresse",
-        "units": "Enheter",
-        "status": "i18n key: no.json, phrase: Status"
-      }
-    },
-    "emergencyCall": {
-      "emergencyCall": "Nødanrop",
-      "emergency": "Nødstilfelle",
-      "civil": "Sivil",
-      "calls": "Anrop",
-      "caller": "Innringer",
-      "location": "Posisjon",
-      "description": "Beskrivelse",
-      "removeAll": "Fjern alle aktive nødanrop",
-      "openInEditor": "Åpne anrop i oppdragsredigering",
-      "removeCall": "Fjern oppdrag",
-      "removeAllCalls": "Fjern alle oppdrag",
-      "confirmRemoveAll": "Er du sikker på at du vil lukke alle aktive anrop?",
-      "mergeToCallEditor": "Slå sammen til ringeredigerer"
-    },
-    "header": {
-      "signalEffect1": "Signal",
-      "signalEffect2": "er i kraft",
-      "activeServer": "Aktiv server",
-      "lookup": "Søk",
-      "records": "Saker",
-      "bolo": "Hold utkikk",
-      "liveMap": "Enhetskart",
-      "quickLinks": "Nyttige lenker",
-      "signal": "Signal",
-      "activeUnits": "Aktive enheter",
-      "activeCalls": "Aktive oppdrag",
-      "emergencyCalls": "Nødanrop",
-      "panic": "Panikknapp",
-      "file": "Fil(er)",
-      "toneBoard": "Utalarmeringstoner",
-      "playTo": "Spill av til",
-      "repeat": "Gjenta",
-      "seconds": "Sekunder",
-      "count": "Telle",
-      "streetSigns": "Trafikkskilt",
-      "bodyCam": "Kroppskamera",
-    "bodycamViewer": {
-      "singleCam": "Single Cam",
-      "allCams": "All Cams",
-      "switchToSingle": "Switch to single bodycam view",
-      "switchToAll": "Switch to all bodycams view",
-      "screens": "Screens",
-      "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
-      "live": "Live"
-    }
-  },
-  "timers": {
-      "timers": "Tidtakere",
-      "newTimer": "Ny tidtaker",
-      "attachments": "Vedlegg",
-      "clearAttachment": "Fjern vedlegg"
-    },
-    "signal": {
-      "signal": "Signal",
-      "initiate": "Aktiver Signal",
-      "modify": "Modifiser Signal",
-      "clear": "Fjern Signal"
-    },
-    "unitEditor": {
-      "modifyIdentifier": "Rediger kallesignal",
-      "unitNumber": "Kallesignal",
-      "name": "Navn",
-      "rank": "Grad",
-      "status": "Status",
-      "location": "Posisjon",
-      "aop": "Fokusområde",
-      "agency": "Byrå",
-      "group": "Gruppe",
-      "departments": "Avdelinger",
-      "department": "Avdeling",
-      "subdivisions": "Divisjon",
-      "subdivision": "Underdivisjon",
-      "units": "Enheter",
-      "switchIdentifier": "Bytt kallesignal",
-      "confirmRemove": "Er du sikker på at du vil fjerne kallesignalet?"
-    },
-    "units": {
-      "activeUnits": "Aktive enheter",
-      "dispatchersShown": "Vis operatører",
-      "dispatchersHidden": "Skjul operatører",
-      "addToCall": "Legg til i oppdrag",
-      "addToGroup": "Legg til i gruppe",
-      "newGroup": "Ny gruppe",
-      "editUnit": "Rediger enhet",
-      "togglePanic": "Toggle panikkstatus",
-      "kickUnit": "Fjern enhet",
-      "activeGroups": "Aktive grupper",
-      "unitGroups": "Enhetsgrupper",
-      "groupName": "Gruppenavn",
-      "createGroup": "Opprett gruppe",
-      "group": "Gruppe",
-      "units": "Enheter"
-    },
-    "notes": {
-      "notepad": "Notisblokk",
-      "title": "Tittel",
-      "notes": "Notater"
-    },
-    "command": {
-      "commandLine": "Kommandolinje",
-      "create": "Opprett",
-      "close": "Lukk",
-      "attach": "Legg ved",
-      "detach": "Fjern vedlegg",
-      "view": "Vis",
-      "clear": "Fjern",
-      "status": "Status",
-      "note": "Notat",
-      "savedCallType": "Lagret anropstype",
-      "unit": "Enhet",
-      "postal": "Postnummer",
-      "callId": "Anrops-ID",
-      "unitStatus": "Enhetsstatus"
+      "confirmPassword": "Bekreft passord",
+      "email": "Epost",
+      "emailMe": "Send meg viktige kunngjøringer, oppdateringer og tilbud.",
+      "emailPreferences": "Epostinnstillinger",
+      "myAccount": "Min bruker",
+      "username": "Brukernavn"
     }
   },
   "admin": {
-    "general": {
-      "accounts": "Brukere",
-      "customization": "Tilpasning",
-      "advanced": "Avansert",
-      "permissionKeys": "Tilgangsnøkler",
-      "departments": "Avdelinger",
-      "customRecords": "Tilpassede saker",
-      "logs": "Logger",
-      "inGameIntegration": "In-Game integrasjon",
-      "discordIntegration": "Discord integrasjon",
-      "limits": "Begrensinger",
-      "wipeRecords": "Fjern saker",
-      "transferOrDelete": "Overfør eller slett CAD",
-      "changeCommunityId": "Endre community ID",
-      "authenticate": "Autentiser"
+    "10Codes": {
+      "action": "Handling",
+      "code": "Kode"
+    },
+    "accounts": {
+      "apiIds": "API-ID-er",
+      "joined": "Ble med",
+      "lastLogin": "Sist sett",
+      "permissions": "Tilganger",
+      "purge": "Slett inaktive",
+      "purgeConfirm": "Er du sikker på at du vil slette alle inaktive brukerkontoer? (30 dager)",
+      "status": "Status",
+      "userAccounts": "Brukere",
+      "username": "Brukernavn"
+    },
+    "addresses": {
+      "addresses": "Adresser"
     },
     "authenticate": {
       "authHeader": "Autentiser CAD -eierskapet ditt",
@@ -692,501 +46,1147 @@
       "requestChange": "Forespørr endring"
     },
     "customization": {
+      "customizationDisabled": "Samfunnstilpasning er ikke inkludert i din versjon.",
       "customizationHeader": "Sonoran CAD Samfunns tilpasning",
       "customizationSubtext1": "Samfunns informasjon ",
       "customizationSubtext2": "Tilpass ditt samfunnsnavn, logo og mer!",
-      "customizationDisabled": "Samfunnstilpasning er ikke inkludert i din versjon.",
-      "info": {
-        "communityInfo": "Samfunnsinformasjon",
-        "communityId": "Samfunns ID",
-        "name": "Navn",
-        "subtitle": "Undertittel",
-        "website": "Nettsted",
-        "discord": "Discord",
-        "voiceCommand": "Stemmestyrt kommando",
-        "timezone": "Tidssone"
-      },
-      "geo": {
-        "geographicalSettings": "Geografiske innstillinger",
-        "geoSubtext": "Tilpass ordlyden i samsvar med lokalsamfunnets geografiske beliggenhet.",
-        "emergencyCode": "Nødkode",
-        "penalCodeName": "Lovbrudd",
-        "tenCodeName": "Ti-kodenavn",
-        "currencyDelimiter": "Valutta"
-      },
-      "unitStatus": {
-        "unitStatusCodes": "Status",
-        "busy": "Opptatt",
-        "unavailable": "Utilgjengelig",
-        "available": "Ledig",
-        "enroute": "Rykker ut",
-        "onScene": "Fremme"
-      },
       "customLogin": {
         "customLoginPage": "Egen loginside",
         "url": "URL"
       },
-      "quickLinks": {
-        "quickLinks": "Nyttige linker",
-        "newLink": "Ny link",
-        "deleteLink": "Slett link",
-        "label": "Merkelapp",
-        "link": "Lenke",
-        "color": "Farge"
-      },
-      "notificationTones": {
-        "notificationTones": "Varslertoner",
-        "newDispatch": "Nytt oppdrag",
-        "dispatchUpdated": "Oppdrag oppdatert",
-        "dispatchClosed": "Oppdrag avsluttet",
-        "statusChange": "Status endring",
-        "dispatchNote": "Ny operatørmerknad"
+      "discordRpc": {
+        "btn2Failure": "Feil: Uten Pro, vil knapp 2 kun linke til Sonoran CAD.",
+        "clientId": "Klient ID",
+        "discordRichPresence": "i18n key: no.json, phrase: Discord Rich Presence",
+        "iconName": "Ikonnavn",
+        "info1": "Desktop brukere viser en invitasjonslink i Discord, denne kan linke til din CAD eller nettsted."
       },
       "emails": {
-        "customEmails": "Tilpassede samfunnseposter",
-        "subtext1": "Tilpass epostene brukerne dine mottar når de oppretter en konto eller tilbakestiller passordet fra den egendefinerte påloggingsskjermen.",
         "accountRegistration": "Brukerregistering",
-        "viewTemplate": "Se mal",
-        "header": "Overskrift",
-        "subheader": "Underoverskrift",
         "body": "Innhold",
+        "customEmails": "Tilpassede samfunnseposter",
+        "emailTemplate": "Epostmal",
+        "header": "Overskrift",
         "resetPassword": "Tilbakestill passord",
-        "emailTemplate": "Epostmal"
-      },
-      "pageColors": {
-        "customPageColors": "Tilpass sidefarge",
-        "loginPageBkg": "Påloggingsside bakgrunn",
-        "setToDefault": "Sett til standard farge",
-        "menuPageBkg": "Menyside bakgrunn"
-      },
-      "restrictions": {
-        "userAccountRestrictions": "Brukerrestriksjoner",
-        "subtext1": "Sonoran CAD lar deg begrense mengden sivile karakterer, lisenser og kjøretøyregistreringer hver enkelt brukerkonto kan opprette.",
-        "maxCivilians": "Maks karakterer",
-        "maxLicenses": "Maks lisenser *",
-        "maxRegistrations": "Maks kjøretøysregistreringer *",
-        "note": "* Disse grensene gjelder IKKE for lokalsamfunn der Databasesynkronisering er aktivert."
-      },
-      "otherCustomization": "Andre tilpasninger",
-      "servers": {
-        "servers": "Servere",
-        "subtext1": "Har samfunnet ditt flere servere?",
-        "subtext2": "Sonoran CAD lar deg skille online -enheter og sende mellom flere servere mens du fortsatt deler de samme sakene.",
-        "subtext3": "Samfunnet ditt støtter opptil",
-        "subtext4": "servere",
-        "newServer": "Ny server",
-        "name": "Navn",
-        "description": "Beskrivelse"
-      },
-      "lookupTypes": {
-        "lookupTypes": "Søk typer",
-        "customRecordFieldId": "Tilpasset saksid felt"
+        "subheader": "Underoverskrift",
+        "subtext1": "Tilpass epostene brukerne dine mottar når de oppretter en konto eller tilbakestiller passordet fra den egendefinerte påloggingsskjermen.",
+        "viewTemplate": "Se mal"
       },
       "errors": {
         "serverLimit1": "Feil: Samfunnet ditt er begrenset til",
         "serverLimit2": "servere!",
         "serverMinimum": "Feil: Du må ha minst en server!"
       },
-      "discordRpc": {
-        "info1": "Desktop brukere viser en invitasjonslink i Discord, denne kan linke til din CAD eller nettsted.",
-        "discordRichPresence": "i18n key: no.json, phrase: Discord Rich Presence",
-        "clientId": "Klient ID",
-        "iconName": "Ikonnavn",
-        "btn2Failure": "Feil: Uten Pro, vil knapp 2 kun linke til Sonoran CAD."
+      "geo": {
+        "currencyDelimiter": "Valutta",
+        "emergencyCode": "Nødkode",
+        "geographicalSettings": "Geografiske innstillinger",
+        "geoSubtext": "Tilpass ordlyden i samsvar med lokalsamfunnets geografiske beliggenhet.",
+        "penalCodeName": "Lovbrudd",
+        "tenCodeName": "Ti-kodenavn"
+      },
+      "info": {
+        "communityId": "Samfunns ID",
+        "communityInfo": "Samfunnsinformasjon",
+        "discord": "Discord",
+        "name": "Navn",
+        "subtitle": "Undertittel",
+        "timezone": "Tidssone",
+        "voiceCommand": "Stemmestyrt kommando",
+        "website": "Nettsted"
+      },
+      "lookupTypes": {
+        "customRecordFieldId": "Tilpasset saksid felt",
+        "lookupTypes": "Søk typer"
+      },
+      "notificationTones": {
+        "dispatchClosed": "Oppdrag avsluttet",
+        "dispatchNote": "Ny operatørmerknad",
+        "dispatchUpdated": "Oppdrag oppdatert",
+        "newDispatch": "Nytt oppdrag",
+        "notificationTones": "Varslertoner",
+        "statusChange": "Status endring"
+      },
+      "otherCustomization": "Andre tilpasninger",
+      "pageColors": {
+        "customPageColors": "Tilpass sidefarge",
+        "loginPageBkg": "Påloggingsside bakgrunn",
+        "menuPageBkg": "Menyside bakgrunn",
+        "setToDefault": "Sett til standard farge"
+      },
+      "quickLinks": {
+        "color": "Farge",
+        "deleteLink": "Slett link",
+        "label": "Merkelapp",
+        "link": "Lenke",
+        "newLink": "Ny link",
+        "quickLinks": "Nyttige linker"
+      },
+      "restrictions": {
+        "maxCivilians": "Maks karakterer",
+        "maxLicenses": "Maks lisenser *",
+        "maxRegistrations": "Maks kjøretøysregistreringer *",
+        "note": "* Disse grensene gjelder IKKE for lokalsamfunn der Databasesynkronisering er aktivert.",
+        "subtext1": "Sonoran CAD lar deg begrense mengden sivile karakterer, lisenser og kjøretøyregistreringer hver enkelt brukerkonto kan opprette.",
+        "userAccountRestrictions": "Brukerrestriksjoner"
+      },
+      "servers": {
+        "description": "Beskrivelse",
+        "name": "Navn",
+        "newServer": "Ny server",
+        "servers": "Servere",
+        "subtext1": "Har samfunnet ditt flere servere?",
+        "subtext2": "Sonoran CAD lar deg skille online -enheter og sende mellom flere servere mens du fortsatt deler de samme sakene.",
+        "subtext3": "Samfunnet ditt støtter opptil",
+        "subtext4": "servere"
+      },
+      "unitStatus": {
+        "available": "Ledig",
+        "busy": "Opptatt",
+        "enroute": "Rykker ut",
+        "onScene": "Fremme",
+        "unavailable": "Utilgjengelig",
+        "unitStatusCodes": "Status"
       }
     },
-    "department": {
-      "agencies": "Etater",
-      "agency": "Etat",
-      "departments": "Avdelinger",
-      "department": "Avdeling",
-      "subdivisions": "Underavdeling",
+    "customRecords": {
+      "actions": "Handlinger",
+      "addCustomSection": "Legg til tilpasset seksjon",
+      "addPremadeSection": "Legg til en ferdig seksjon",
+      "dbMap": "DB-synkroniseringskartlegging",
+      "dependency": "Avhengighet",
+      "dependencyInfo": {
+        "infoContains": "Vis hvis feltverdien inneholder én eller flere:",
+        "infoEqual": "Vis hvis feltverdien er lik:",
+        "infoNotEqual": "Vis hvis feltverdien ikke er lik:"
+      },
+      "duplicateSection": "Dupliser seksjon",
+      "enableDuplicate": "Tillatt duplikat",
+      "enableMapping": "Aktiver kartlegging",
+      "enforceFormatting": "Håndhev formatering for tekstfelt.",
+      "errors": {
+        "maxCiv": "Feil: Denne sakstypen har for mange søkbare sivilseksjoner (Felt med UID av 'fornavn' og 'etternavn')",
+        "maxStatus": "Feil: Denne sakstypen har for mange 'status' felt.",
+        "maxVeh": "Feil: Denne sakstypen har for mange søkbare registreringsnummerseksjoner (Felt med UID 'registeringsnummer')",
+        "minCiv": "Feil: Denne sakstypen har for få søkbare sivilseksjoner (Felt med UID av 'fornavn' og 'etternavn')",
+        "minStatus": "Feil: Denne sakstypen må ha minst ett 'status' felt.",
+        "minVeh": "Feil: Denne sakstypen har for få registeringsnummerseksjoner (Felt med UID 'registeringsnummer')",
+        "noName": "Feil: Du må gi sakstypen et navn...",
+        "noPreviewedFields": "Feil: Denne sakstypen har ingen forhåndsvisbare felt.",
+        "noStatusField": "Feil: Denne sakstypen må ha minst ett 'status' felt"
+      },
+      "existingHeader": "Eksisterende tilpassede sakstyper",
+      "label": "Merkelapp",
+      "lookupPreview": "Forhåndsvis søk",
+      "lookupPreviewAbout": "Vis feltverdi i oppslagstabellforhåndsvisningen",
+      "mask": "Maske",
+      "maskAlphaNumeric": "X: Alfanumerisk",
+      "maskNumber": "#: Nummer",
+      "maskText": "S: A-Å Bokstav",
       "name": "Navn",
-      "description": "Beskrivelse",
+      "newField": "Nytt felt",
+      "newValue": "Ny verdi",
+      "readOnly": "Kun lesing",
+      "recordEditor": "Saksredaktør",
+      "recordPreview": "Forhåndsvis sak",
+      "recordSections": "Saksseksjon",
+      "recordTypeName": "Sakstype navn",
+      "recordTypes": {
+        "bolo": "BOLO",
+        "dmvRecord": "Statens Vegvesen sak",
+        "fireRecord": "Brannsak",
+        "fireReport": "Brannrapport",
+        "lawRecord": "Juristsak",
+        "lawReport": "Juristrapport",
+        "license": "førerkort",
+        "medicalRecord": "Ambulansejournal",
+        "medicalReport": "Helsetilsynsrapport",
+        "policeRecord": "Politisak",
+        "policeReport": "Politirapport",
+        "vehicleRegistration": "Registreringsnummer",
+        "warrant": "Etterlysning"
+      },
+      "remove": {
+        "confirmRemove": "Er du sikker på at du vil slette denne sakstypen?",
+        "removeType": "Fjern sakstype"
+      },
+      "requiredAbout": "Påkrevd felt",
+      "resyncPreview": {
+        "confirm": "Dette vil oppdatere alle tidligere saker manuelt for å påse at alle felt er like med siste mal. Denne handlingen har en nedkjøling på 10 minutter",
+        "resyncPreview": "Synkroniser forhåndsvisningsfelt på nytt"
+      },
+      "reverseMap": "Reverser kart",
+      "searchCivs": "Søk etter borger",
+      "searchVehicles": "Søk på kjøretøy",
+      "sectionLabel": "Seksjons merkelapp",
+      "supervisorAbout": "Begrens felt til veiledere",
+      "type": "Type",
+      "uniqueField": "Unikt felt",
+      "width": "Bredde"
+    },
+    "department": {
       "abbreviation": "Alias",
       "address": "Adresse",
-      "zip": "Postnummer",
+      "agencies": "Etater",
+      "agency": "Etat",
+      "department": "Avdeling",
+      "departments": "Avdelinger",
+      "description": "Beskrivelse",
       "errors": {
-        "generalLimit1": "Feil: Samfunnet er begrenset til",
-        "agencyLimit2": "etat!",
-        "departmentLimit2": "avdelinger per distrikt!",
-        "subdivisionLimit2": "underavdelinger per avdeling",
         "agencyExists": "Feil: En etat med dette navnet eksisterer allerede!",
-        "districtExists": "Feil: Et distrikt med dette navnet eksisterer allerede!",
+        "agencyLimit2": "etat!",
         "departmentExists": "Feil: En avdeling med dette navnet eksisterer allerede!",
-        "subdivisionExists": "Feil: Et underavdeling med dette navnet eksisterer allerede!"
-      },
-      "modifyDepartment": {
-        "createNewDepartment": "Opprett ny avdeling",
-        "editDepartment": "Rediger avdeling",
-        "name": "Avdelingsnavn",
-        "abbreviation": "Alias",
-        "address": "Adresse",
-        "zip": "Postnummer",
-        "confirmRemove1": "Er du sikker på at du vil fjerne avdelingen?",
-        "confirmRemove2": "Avdelingen og alle underavdelinger blir slettet."
+        "departmentLimit2": "avdelinger per distrikt!",
+        "districtExists": "Feil: Et distrikt med dette navnet eksisterer allerede!",
+        "generalLimit1": "Feil: Samfunnet er begrenset til",
+        "subdivisionExists": "Feil: Et underavdeling med dette navnet eksisterer allerede!",
+        "subdivisionLimit2": "underavdelinger per avdeling"
       },
       "modifyAgency": {
         "createNewAgency": "Lag ny etat",
+        "description": "Beskrivelse",
         "editAgency": "Rediger etat",
         "name": "Etatsnavn",
-        "description": "Beskrivelse",
         "remove": {
           "confirmRemove1": "Er du sikker på at du vil fjerne denne etaten?",
           "confirmRemove2": "Etaten og alle avdelinger og underavdelinger blir fjernet!"
         }
       },
+      "modifyDepartment": {
+        "abbreviation": "Alias",
+        "address": "Adresse",
+        "confirmRemove1": "Er du sikker på at du vil fjerne avdelingen?",
+        "confirmRemove2": "Avdelingen og alle underavdelinger blir slettet.",
+        "createNewDepartment": "Opprett ny avdeling",
+        "editDepartment": "Rediger avdeling",
+        "name": "Avdelingsnavn",
+        "zip": "Postnummer"
+      },
       "modifySubdivision": {
+        "confirmRemove": "Er du sikker på at du vil slette denne underavdelingen?",
         "createNewSub": "Opprett ny underavdeling",
-        "editSub": "Rediger underavdeling",
-        "name": "Underavdelingsnavn",
         "description": "Beskrivelse",
-        "confirmRemove": "Er du sikker på at du vil slette denne underavdelingen?"
-      }
-    },
-    "webhooks": {
-      "modified": "Redigert",
-      "removed": "Fjernet",
-      "headerText": "Sonoran CAD Discord integrasjon",
-      "subtext1": "Sonoran CAD Discord integrering lar deg motta varsler direkte til Discord -serveren.",
-      "subtext2": "Bare aktiver og spesifiser en Discord WebHook URL for de ønskede feltene nedenfor.",
-      "emergencyWebhooks": "Nødetat Webhooks",
-      "about": "Om",
-      "emergencyAbout": "Disse webkrokene er knyttet til nødetater.",
-      "unitPanic": "Enhetspanikk",
-      "unitPanicAbout": "Denne WebHook vil bli sendt når en enhet utløser panikknapp",
-      "dispatch": "Oppdrag",
-      "dispatchAbout": "Denne WebHook vil bli sendt når et oppdrag legges til eller endres.",
-      "policeRecord": "Politi",
-      "policeRecordAbout": "Denne WebHook vil bli sendt når en politisak er lagt til, endret eller fjernet.",
-      "medicalRecord": "Helse",
-      "medicalRecordAbout": "Denne WebHook vil bli sendt når en journal legges til, endres eller fjernes.",
-      "fireRecord": "Brann",
-      "fireRecordAbout": "Denne WebHook vil bli sendt når en brannrekord legges til, endres eller fjernes.",
-      "bolo": "BOLO",
-      "boloAbout": "Denne WebHook sendes når en BOLO legges til eller endres.",
-      "emergencyCall": "Nødanrop",
-      "emergencyCallAbout": "Denne WebHook vil bli sendt når en nødanrop mottas.",
-      "civilianWebhooks": "Sivil",
-      "civilianWebhooksAbout": "Disse WebHooks er knyttet til sivile tjenester.",
-      "character": "Karaktermodifisering",
-      "characterAbout": "Denne WebHook vil bli sendt når en sivil karakter legges til, endres eller fjernes.",
-      "dmv": "Statens Vegvesen",
-      "dmvAbout": "Denne WebHook sendes når en DMV -post legges til, endres eller fjernes.",
-      "law": "Jurist",
-      "lawAbout": "Denne WebHook vil bli sendt når en lovpost legges til, endres eller fjernes.",
-      "adminWebhooks": "Administrator Webhooks",
-      "adminWebhooksAbout": "Disse webhooks er adminrelaterte.",
-      "accountPermissions": "Bruker tilganger",
-      "accountPermissionsAbout": "Denne WebHook vil bli sendt når en administrator endrer en brukerkontos tillatelser.",
-      "departmentStructure": "Avdelingsstruktur",
-      "departmentStructureAbout": "Denne WebHook vil bli sendt når en administrator oppdaterer avdelingsstrukturen.",
-      "10Code": "10-koder",
-      "10CodeAbout": "Denne WebHook vil bli sendt når en administrator legger til, redigerer eller fjerner en 10-kode.",
-      "penalCode": "Straffeloven endret",
-      "penalCodeAbout": "Denne WebHook vil bli sendt når en administrator legger til, redigerer eller fjerner en straffekode.",
-      "apiRequest": "API forespørsel",
-      "apiRequestAbout": "Denne WebHook sendes når en API -forespørsel sendes.",
-      "signal": "Signal",
-      "signalAbout": "Denne webhook vil bli sendt når et signal er i kraft.",
-      "toneBoardAbout": "Denne webhook vil bli sendt når en tone spilles av avsenderen",
-      "errors": {
-        "maxWebhooks": "Feil: Du har nådd ditt samfunns maksgrense på webhooks:"
-      }
-    },
-    "limits": {
-      "limitsHeader": "Sonoran CAD Samfunnsbegrensninger",
-      "upgradeYourCad": "Oppgrader din CAD",
-      "version": "Versjon",
-      "expiration": "Utgår"
-    },
-    "remove": {
-      "removeWarning1": "Hvis du fjerner eller overfører kortet ditt, avbryter du IKKE noe aktivt samfunnsabonnement.",
-      "removeWarning2": "Du kan kansellere eller overføre abonnementet ditt til et annet fellesskap i betalingssenteret.",
-      "transferHeader": "Overfør Sonoran CAD",
-      "transferSubtext": "Du må være samfunns/CAD -eieren for å overføre denne CAD -en. Overføringsprosessen krever e -postbekreftelse.",
-      "transferCad": "Overfør CAD",
-      "transferCadTo": "Overfør CAD til",
-      "removeHeader": "Slett din Sonoran CAD",
-      "removeSubtext": "Du må være samfunns/CAD -eieren for å fjerne denne CAD -en. Fjerningsprosessen krever e -postbekreftelse.",
-      "removeCad": "Slett CAD"
-    },
-    "wipeRecords": {
-      "wipeHeader": "Slett samfunnets saker",
-      "wipeSubtext1": "Samfunnseiere kan fjerne alle lagrede saker etter type.",
-      "wipeSubtext2": "Velg typen nedenfor for å fjerne alt.",
-      "confirmWipe1": "Er du sikker på at du vil fjerne all saker",
-      "confirmWipe2": "Denne handlingen kan ikke angres!"
-    },
-    "accounts": {
-      "userAccounts": "Brukere",
-      "username": "Brukernavn",
-      "status": "Status",
-      "joined": "Ble med",
-      "permissions": "Tilganger",
-      "lastLogin": "Sist sett",
-      "apiIds": "API-ID-er",
-      "purge": "Slett inaktive",
-      "purgeConfirm": "Er du sikker på at du vil slette alle inaktive brukerkontoer? (30 dager)"
-    },
-    "customRecords": {
-      "existingHeader": "Eksisterende tilpassede sakstyper",
-      "recordEditor": "Saksredaktør",
-      "recordTypeName": "Sakstype navn",
-      "type": "Type",
-      "resyncPreview": {
-        "resyncPreview": "Synkroniser forhåndsvisningsfelt på nytt",
-        "confirm": "Dette vil oppdatere alle tidligere saker manuelt for å påse at alle felt er like med siste mal. Denne handlingen har en nedkjøling på 10 minutter"
+        "editSub": "Rediger underavdeling",
+        "name": "Underavdelingsnavn"
       },
-      "addCustomSection": "Legg til tilpasset seksjon",
-      "addPremadeSection": "Legg til en ferdig seksjon",
-      "recordSections": "Saksseksjon",
-      "newField": "Nytt felt",
-      "searchCivs": "Søk etter borger",
-      "searchVehicles": "Søk på kjøretøy",
-      "enableDuplicate": "Tillatt duplikat",
-      "duplicateSection": "Dupliser seksjon",
-      "sectionLabel": "Seksjons merkelapp",
-      "lookupPreviewAbout": "Vis feltverdi i oppslagstabellforhåndsvisningen",
-      "supervisorAbout": "Begrens felt til veiledere",
-      "requiredAbout": "Påkrevd felt",
-      "uniqueField": "Unikt felt",
-      "readOnly": "Kun lesing",
-      "newValue": "Ny verdi",
-      "reverseMap": "Reverser kart",
-      "enableMapping": "Aktiver kartlegging",
-      "lookupPreview": "Forhåndsvis søk",
-      "recordPreview": "Forhåndsvis sak",
-      "actions": "Handlinger",
       "name": "Navn",
-      "mask": "Maske",
-      "label": "Merkelapp",
-      "width": "Bredde",
-      "dbMap": "DB-synkroniseringskartlegging",
-      "dependency": "Avhengighet",
-      "dependencyInfo": {
-        "infoEqual": "Vis hvis feltverdien er lik:",
-        "infoNotEqual": "Vis hvis feltverdien ikke er lik:",
-        "infoContains": "Vis hvis feltverdien inneholder én eller flere:"
-      },
-      "recordTypes": {
-        "warrant": "Etterlysning",
-        "bolo": "BOLO",
-        "license": "førerkort",
-        "vehicleRegistration": "Registreringsnummer",
-        "policeRecord": "Politisak",
-        "policeReport": "Politirapport",
-        "medicalRecord": "Ambulansejournal",
-        "medicalReport": "Helsetilsynsrapport",
-        "fireRecord": "Brannsak",
-        "fireReport": "Brannrapport",
-        "dmvRecord": "Statens Vegvesen sak",
-        "lawRecord": "Juristsak",
-        "lawReport": "Juristrapport"
-      },
-      "errors": {
-        "maxCiv": "Feil: Denne sakstypen har for mange søkbare sivilseksjoner (Felt med UID av 'fornavn' og 'etternavn')",
-        "minCiv": "Feil: Denne sakstypen har for få søkbare sivilseksjoner (Felt med UID av 'fornavn' og 'etternavn')",
-        "maxVeh": "Feil: Denne sakstypen har for mange søkbare registreringsnummerseksjoner (Felt med UID 'registeringsnummer')",
-        "minVeh": "Feil: Denne sakstypen har for få registeringsnummerseksjoner (Felt med UID 'registeringsnummer')",
-        "maxStatus": "Feil: Denne sakstypen har for mange 'status' felt.",
-        "minStatus": "Feil: Denne sakstypen må ha minst ett 'status' felt.",
-        "noStatusField": "Feil: Denne sakstypen må ha minst ett 'status' felt",
-        "noPreviewedFields": "Feil: Denne sakstypen har ingen forhåndsvisbare felt.",
-        "noName": "Feil: Du må gi sakstypen et navn..."
-      },
-      "remove": {
-        "removeType": "Fjern sakstype",
-        "confirmRemove": "Er du sikker på at du vil slette denne sakstypen?"
-      },
-      "enforceFormatting": "Håndhev formatering for tekstfelt.",
-      "maskNumber": "#: Nummer",
-      "maskText": "S: A-Å Bokstav",
-      "maskAlphaNumeric": "X: Alfanumerisk"
+      "subdivisions": "Underavdeling",
+      "zip": "Postnummer"
+    },
+    "general": {
+      "accounts": "Brukere",
+      "advanced": "Avansert",
+      "authenticate": "Autentiser",
+      "changeCommunityId": "Endre community ID",
+      "customization": "Tilpasning",
+      "customRecords": "Tilpassede saker",
+      "departments": "Avdelinger",
+      "discordIntegration": "Discord integrasjon",
+      "inGameIntegration": "In-Game integrasjon",
+      "limits": "Begrensinger",
+      "logs": "Logger",
+      "permissionKeys": "Tilgangsnøkler",
+      "transferOrDelete": "Overfør eller slett CAD",
+      "wipeRecords": "Fjern saker"
     },
     "integration": {
-      "apiHeader": "Web-API",
-      "apiSubheader": "Sonoran CAD's Web API lar deg oppdatere enhetslokaliseringer i sanntid, bytte enhetens panikk-status, generere et nødanrop og mer alt fra spillet!",
-      "resources": "Ressurser",
-      "apiKey": "API nøkkel",
-      "changeApiKey": "Endre API nøkkel",
       "apiDocs": "API Dokumentasjon",
-      "luaPlugins": "LUA-plugins",
+      "apiHeader": "Web-API",
+      "apiKey": "API nøkkel",
+      "apiSubheader": "Sonoran CAD's Web API lar deg oppdatere enhetslokaliseringer i sanntid, bytte enhetens panikk-status, generere et nødanrop og mer alt fra spillet!",
+      "changeApiKey": "Endre API nøkkel",
+      "configureAndDeploy": "Konfigurer og distribuer",
       "confirmKeyChange1": "Er du sikker på at du vil generere en ny API nøkkel?",
       "confirmKeyChange2": "Du må oppdatere API -nøkkelen i alle plugin- eller API -konfigurasjoner!",
-      "liveMapHeader": "Serverhendelser og integrert live -kart",
-      "liveMapSubtext1": "Sonoran CAD's live kartkonfigurasjon kan du øyeblikkelig konfigurere fellesskapets tilpassede integrerte live -kart, vi håndterer til og med hosting!",
-      "liveMapSubtext2": "Sonoran CAD skyver også hendelsesdata til den konfigurerte lytterporten.",
-      "mapTutorial": "Kart brukerveiledning",
-      "eventDocumentation": "Event dokumentasjon",
-      "configureAndDeploy": "Konfigurer og distribuer",
-      "enableMap": "Aktiver kart",
-      "staticOnly": "Bare statisk URL",
-      "staticOnlyAbout": "Hvis spillmodusen din ikke er kompatibel med Live Map -ressursen, kan du i stedet angi et nettsted med et kart over spillet ditt.",
-      "mapType": "Karttype",
-      "uploadCustomMap": "Last opp tilpasset kart",
-      "server": "Server",
-      "ip": "IP",
-      "websiteUrl": "Nettsted URL",
-      "mapPort": "Kart port",
-      "gamePort": "Spill Port",
-      "differingOutboundIp": "Ulike utgående IP",
-      "outboundIp": "Utgående IP",
-      "saveAndDeploy": "Lagre og distribuer",
       "dbSync": {
+        "characterMapping": "Tegnkartlegging",
+        "characterMappingColumn": "Tegnkartleggingskolonne",
+        "columnName": "Kolonnenavn",
+        "connectionCredentials": "SQL Tilkoblingsdetaljer",
+        "customMapAbout": "Dette er et tilpasset DB-synkroniseringskartleggingsfelt levert av din tilpassede postredigerer.",
+        "database": "Database",
         "dbSyncHeader": "Database Synkronisering",
         "dbSyncSubtext1": "Sonoran CAD's Database Synkronisering lar deg trekke tegn, lisenser og kjøretøyregistreringer direkte fra databasen i spillet til CAD-en din.",
         "dbSyncSubtext2": "Bare spesifiser databasens SQL -tilkoblingsstreng og kartlegg tabellene og feltene til Sonoran CAD.",
         "dbSyncSubtext3": "Alle RØDE felt er obligatoriske. Hvis du ikke har en datakolonne for et valgfritt felt, lar du den stå tom.",
-        "connectionCredentials": "SQL Tilkoblingsdetaljer",
+        "dbValue": "Database verdi",
         "description": "Beskrivelse",
         "descriptionCredentials": "Dette er SQL -tilkoblingsdetaljene til spilldatabasen din.",
-        "enableDbSync": "Aktiver Databasesynkronisering",
         "enableDbMerge": "Aktiver Database fletting",
-        "testConnection": "Test tilkobling",
-        "saveCredentials": "Lagre tilkoblingsdetaljer",
-        "type": "Type",
-        "host": "Vert/Adresse",
-        "port": "Port",
-        "database": "Database",
-        "username": "Brukernavn",
-        "password": "Passord",
-        "characterMapping": "Tegnkartlegging",
-        "licenseMapping": "Lisenskartlegging",
-        "vehicleMapping": "Kjøretøykartlegging",
-        "testMapping": "Testkartlegging",
-        "saveMapping": "Lagre kartleggingskonfigurasjon",
-        "tableName": "Tabellnavn",
-        "characterMappingColumn": "Tegnkartleggingskolonne",
-        "customMapAbout": "Dette er et tilpasset DB-synkroniseringskartleggingsfelt levert av din tilpassede postredigerer.",
-        "columnName": "Kolonnenavn",
+        "enableDbSync": "Aktiver Databasesynkronisering",
         "externalKey": "Ekstern nøkkel",
-        "jsonKey": "JSON-nøkkel",
-        "jsonColumn": "JSON Kolonne",
-        "jsonColumnAbout": "Hvis denne kolonnen er en JSON -datatype, kan du angi JSON -nøkkelen.",
-        "label": "Merkelapp",
-        "tooltipLabel": "Dette er feltbeskrivelsen",
-        "tooltipColumn": "Dette er navnet på kolonnen i databasetabellen som inneholder dataene i dette feltet.",
-        "tooltipTable": "Dette er navnet på SQL -tabellen som denne datakolonnen finnes i.",
-        "tooltipCharacterColumn": "Dette er navnet på den unike tegn -ID -kolonnen i tabellen. Vanligvis inneholder denne Steam Hex.",
         "fieldMapId": "Feltkartleggings-ID",
         "fieldMapIdAbout": "Denne ID -en hjelper deg med å kartlegge felt i en egendefinert tegnseksjon til andre poster og skiller hvilke felt som inneholder søkeord som for- og etternavn.",
         "friendlyMapping": "Leservennlig Mapping",
-        "tooltipFriendlyMapping": "Dette lar deg tilordne vanlige DB -verdier til mer vennlige brukergrensesnittverdier.",
         "friendlyMappingExample": "Feks: 'drive_license' -> 'Driver's License'",
-        "dbValue": "Database verdi",
-        "friendlyValue": "Leservennlig verdi"
+        "friendlyValue": "Leservennlig verdi",
+        "host": "Vert/Adresse",
+        "jsonColumn": "JSON Kolonne",
+        "jsonColumnAbout": "Hvis denne kolonnen er en JSON -datatype, kan du angi JSON -nøkkelen.",
+        "jsonKey": "JSON-nøkkel",
+        "label": "Merkelapp",
+        "licenseMapping": "Lisenskartlegging",
+        "password": "Passord",
+        "port": "Port",
+        "saveCredentials": "Lagre tilkoblingsdetaljer",
+        "saveMapping": "Lagre kartleggingskonfigurasjon",
+        "tableName": "Tabellnavn",
+        "testConnection": "Test tilkobling",
+        "testMapping": "Testkartlegging",
+        "tooltipCharacterColumn": "Dette er navnet på den unike tegn -ID -kolonnen i tabellen. Vanligvis inneholder denne Steam Hex.",
+        "tooltipColumn": "Dette er navnet på kolonnen i databasetabellen som inneholder dataene i dette feltet.",
+        "tooltipFriendlyMapping": "Dette lar deg tilordne vanlige DB -verdier til mer vennlige brukergrensesnittverdier.",
+        "tooltipLabel": "Dette er feltbeskrivelsen",
+        "tooltipTable": "Dette er navnet på SQL -tabellen som denne datakolonnen finnes i.",
+        "type": "Type",
+        "username": "Brukernavn",
+        "vehicleMapping": "Kjøretøykartlegging"
       },
+      "differingOutboundIp": "Ulike utgående IP",
+      "enableMap": "Aktiver kart",
+      "eventDocumentation": "Event dokumentasjon",
+      "gamePort": "Spill Port",
+      "ip": "IP",
+      "liveMapHeader": "Serverhendelser og integrert live -kart",
+      "liveMapSubtext1": "Sonoran CAD's live kartkonfigurasjon kan du øyeblikkelig konfigurere fellesskapets tilpassede integrerte live -kart, vi håndterer til og med hosting!",
+      "liveMapSubtext2": "Sonoran CAD skyver også hendelsesdata til den konfigurerte lytterporten.",
+      "luaPlugins": "LUA-plugins",
+      "manualInstalltion": "Manuell installasjon",
+      "mapPort": "Kart port",
+      "mapTutorial": "Kart brukerveiledning",
+      "mapType": "Karttype",
       "oneClickInstallation": "Ett-klikks installasjon",
-      "manualInstalltion": "Manuell installasjon"
+      "outboundIp": "Utgående IP",
+      "resources": "Ressurser",
+      "saveAndDeploy": "Lagre og distribuer",
+      "server": "Server",
+      "staticOnly": "Bare statisk URL",
+      "staticOnlyAbout": "Hvis spillmodusen din ikke er kompatibel med Live Map -ressursen, kan du i stedet angi et nettsted med et kart over spillet ditt.",
+      "uploadCustomMap": "Last opp tilpasset kart",
+      "websiteUrl": "Nettsted URL"
+    },
+    "limits": {
+      "expiration": "Utgår",
+      "limitsHeader": "Sonoran CAD Samfunnsbegrensninger",
+      "upgradeYourCad": "Oppgrader din CAD",
+      "version": "Versjon"
+    },
+    "logs": {
+      "log": "Logg",
+      "logs": "Logger",
+      "time": "Tid"
     },
     "penal": {
-      "createNewPenal": "Lag ny straffelov",
-      "editPenal": "Rediger straffelov",
-      "code": "Kode",
-      "title": "Tittel",
-      "chargeType": "Straffetype",
-      "bondType": "Obligasjonstype",
-      "bondAmount": "Foreleggssum",
-      "jailTime": "Fengselstid",
-      "confirmRemove": "Er du sikker på at du vil fjerne denne straffeloven?",
-      "errors": {
-        "exists": "Feil: En duplisert straffelov eksisterer allerede!",
-        "duplicate": "Feil: Du kan ikke sette straffeloven til en som allerede eksisterer!",
-        "notFound": "Feil: Straffekode som skal fjernes kan ikke bli funnet!"
-      },
-      "chargeTypes": "Siktelsestyper",
       "autoSort": "Auto Sorter",
+      "bondAmount": "Foreleggssum",
+      "bondType": "Obligasjonstype",
       "bondTypes": "Obligasjon Types",
+      "chargeType": "Straffetype",
+      "chargeTypes": "Siktelsestyper",
+      "code": "Kode",
       "columns": {
         "action": "Handling",
-        "charge": "Siktelse",
-        "bond": "Obligasjon"
-      }
-    },
-    "10Codes": {
-      "action": "Handling",
-      "code": "Kode"
+        "bond": "Obligasjon",
+        "charge": "Siktelse"
+      },
+      "confirmRemove": "Er du sikker på at du vil fjerne denne straffeloven?",
+      "createNewPenal": "Lag ny straffelov",
+      "editPenal": "Rediger straffelov",
+      "errors": {
+        "duplicate": "Feil: Du kan ikke sette straffeloven til en som allerede eksisterer!",
+        "exists": "Feil: En duplisert straffelov eksisterer allerede!",
+        "notFound": "Feil: Straffekode som skal fjernes kan ikke bli funnet!"
+      },
+      "jailTime": "Fengselstid",
+      "title": "Tittel"
     },
     "permissions": {
-      "permissionKeys": "Tilgangsnøkler",
-      "permissionKey": "Tilgangsnøkkel",
-      "key": "Nøkkel",
-      "permissions": "Tilganger",
-      "accountManagement": "Brukeradministrasjon",
-      "permissionsGuide": "Veiledning til tilganger",
-      "keyName": "Nøkkelnavn",
       "account": "Bruker",
-      "joined": "Ble med",
-      "pagePermissions": "Sidetilganger",
-      "unitGeneral": "Enhet - Generel",
-      "policeAdvanced": "Politi - Avansert",
-      "emsAdvanced": "Helse - Avansert",
-      "fireAdvanced": "Brann - Avansert",
-      "dmvRecords": "SVV Saker",
-      "modifyStreetSigns": "Redigere trafikkskilt",
-      "lawRecords": "Juristsaker",
+      "accountManagement": "Brukeradministrasjon",
       "adminAccess": "Admin tilgang",
-      "kickUser": "Spark bruker",
+      "ban": "utestenge",
       "banUser": "Utesteng bruker",
+      "confirmBan": "Er du sikker på at du vil",
+      "confirmKick": "Er du sikker på at du vil sparke",
+      "confirmRemoveKey": "Er du sikker på at du vil fjerne denne tilgangsnøkkelen?",
+      "dmvRecords": "SVV Saker",
+      "emsAdvanced": "Helse - Avansert",
+      "errors": {
+        "duplicateKey": "Feil: En lik nøkkel eksisterer allerede!"
+      },
+      "fireAdvanced": "Brann - Avansert",
+      "joined": "Ble med",
+      "key": "Nøkkel",
+      "keyName": "Nøkkelnavn",
+      "kickUser": "Spark bruker",
+      "lawRecords": "Juristsaker",
+      "modifyStreetSigns": "Redigere trafikkskilt",
+      "pagePermissions": "Sidetilganger",
+      "permissionKey": "Tilgangsnøkkel",
+      "permissionKeys": "Tilgangsnøkler",
+      "permissions": "Tilganger",
+      "permissionsGuide": "Veiledning til tilganger",
+      "policeAdvanced": "Politi - Avansert",
       "revokeBan": "Opphev utestengelse",
+      "status": {
+        "active": "AKTIV",
+        "banned": "UTESTENGT",
+        "pending": "VENTER"
+      },
       "toggles": {
         "editIdent": "Rediger kallesignal",
         "editOtherIdent": "Redigere andres kallesignal",
         "selfDispatch": "Knytte seg selv til oppdrag",
         "supervisor": "Veileder"
       },
-      "confirmKick": "Er du sikker på at du vil sparke",
-      "confirmBan": "Er du sikker på at du vil",
-      "confirmRemoveKey": "Er du sikker på at du vil fjerne denne tilgangsnøkkelen?",
-      "ban": "utestenge",
       "unban": "oppheve utestengelse",
-      "status": {
-        "pending": "VENTER",
-        "active": "AKTIV",
-        "banned": "UTESTENGT"
-      },
+      "unitGeneral": "Enhet - Generel"
+    },
+    "remove": {
+      "removeCad": "Slett CAD",
+      "removeHeader": "Slett din Sonoran CAD",
+      "removeSubtext": "Du må være samfunns/CAD -eieren for å fjerne denne CAD -en. Fjerningsprosessen krever e -postbekreftelse.",
+      "removeWarning1": "Hvis du fjerner eller overfører kortet ditt, avbryter du IKKE noe aktivt samfunnsabonnement.",
+      "removeWarning2": "Du kan kansellere eller overføre abonnementet ditt til et annet fellesskap i betalingssenteret.",
+      "transferCad": "Overfør CAD",
+      "transferCadTo": "Overfør CAD til",
+      "transferHeader": "Overfør Sonoran CAD",
+      "transferSubtext": "Du må være samfunns/CAD -eieren for å overføre denne CAD -en. Overføringsprosessen krever e -postbekreftelse."
+    },
+    "webhooks": {
+      "10Code": "10-koder",
+      "10CodeAbout": "Denne WebHook vil bli sendt når en administrator legger til, redigerer eller fjerner en 10-kode.",
+      "about": "Om",
+      "accountPermissions": "Bruker tilganger",
+      "accountPermissionsAbout": "Denne WebHook vil bli sendt når en administrator endrer en brukerkontos tillatelser.",
+      "adminWebhooks": "Administrator Webhooks",
+      "adminWebhooksAbout": "Disse webhooks er adminrelaterte.",
+      "apiRequest": "API forespørsel",
+      "apiRequestAbout": "Denne WebHook sendes når en API -forespørsel sendes.",
+      "bolo": "BOLO",
+      "boloAbout": "Denne WebHook sendes når en BOLO legges til eller endres.",
+      "character": "Karaktermodifisering",
+      "characterAbout": "Denne WebHook vil bli sendt når en sivil karakter legges til, endres eller fjernes.",
+      "civilianWebhooks": "Sivil",
+      "civilianWebhooksAbout": "Disse WebHooks er knyttet til sivile tjenester.",
+      "departmentStructure": "Avdelingsstruktur",
+      "departmentStructureAbout": "Denne WebHook vil bli sendt når en administrator oppdaterer avdelingsstrukturen.",
+      "dispatch": "Oppdrag",
+      "dispatchAbout": "Denne WebHook vil bli sendt når et oppdrag legges til eller endres.",
+      "dmv": "Statens Vegvesen",
+      "dmvAbout": "Denne WebHook sendes når en DMV -post legges til, endres eller fjernes.",
+      "emergencyAbout": "Disse webkrokene er knyttet til nødetater.",
+      "emergencyCall": "Nødanrop",
+      "emergencyCallAbout": "Denne WebHook vil bli sendt når en nødanrop mottas.",
+      "emergencyWebhooks": "Nødetat Webhooks",
       "errors": {
-        "duplicateKey": "Feil: En lik nøkkel eksisterer allerede!"
+        "maxWebhooks": "Feil: Du har nådd ditt samfunns maksgrense på webhooks:"
+      },
+      "fireRecord": "Brann",
+      "fireRecordAbout": "Denne WebHook vil bli sendt når en brannrekord legges til, endres eller fjernes.",
+      "headerText": "Sonoran CAD Discord integrasjon",
+      "law": "Jurist",
+      "lawAbout": "Denne WebHook vil bli sendt når en lovpost legges til, endres eller fjernes.",
+      "medicalRecord": "Helse",
+      "medicalRecordAbout": "Denne WebHook vil bli sendt når en journal legges til, endres eller fjernes.",
+      "modified": "Redigert",
+      "penalCode": "Straffeloven endret",
+      "penalCodeAbout": "Denne WebHook vil bli sendt når en administrator legger til, redigerer eller fjerner en straffekode.",
+      "policeRecord": "Politi",
+      "policeRecordAbout": "Denne WebHook vil bli sendt når en politisak er lagt til, endret eller fjernet.",
+      "removed": "Fjernet",
+      "signal": "Signal",
+      "signalAbout": "Denne webhook vil bli sendt når et signal er i kraft.",
+      "subtext1": "Sonoran CAD Discord integrering lar deg motta varsler direkte til Discord -serveren.",
+      "subtext2": "Bare aktiver og spesifiser en Discord WebHook URL for de ønskede feltene nedenfor.",
+      "toneBoardAbout": "Denne webhook vil bli sendt når en tone spilles av avsenderen",
+      "unitPanic": "Enhetspanikk",
+      "unitPanicAbout": "Denne WebHook vil bli sendt når en enhet utløser panikknapp"
+    },
+    "wipeRecords": {
+      "confirmWipe1": "Er du sikker på at du vil fjerne all saker",
+      "confirmWipe2": "Denne handlingen kan ikke angres!",
+      "wipeHeader": "Slett samfunnets saker",
+      "wipeSubtext1": "Samfunnseiere kan fjerne alle lagrede saker etter type.",
+      "wipeSubtext2": "Velg typen nedenfor for å fjerne alt."
+    }
+  },
+  "civilian": {
+    "buttons": {
+      "dmv": "Statens Vegvesen",
+      "editCharacter": "Rediger karakter",
+      "newCharacter": "Ny karakter",
+      "records": "Rulleblad"
+    },
+    "characterEditor": {
+      "addCharacter": "Legg til karakter",
+      "age": "Alder",
+      "aka": "Alias",
+      "confirmRemove": "Er du sikker på at du vil slette denne karakteren?",
+      "contactNumber": "Telefonnummer",
+      "createNewCharacter": "Lag ny karakter",
+      "dob": "Fødselsdato",
+      "editExistingCharacter": "Rediger karakter",
+      "emergencyContact": "Nødkontakt",
+      "eye": "Øyefarge",
+      "first": "Fornavn",
+      "hair": "Hårfarge",
+      "height": "Høyde",
+      "image": "Bilde",
+      "last": "Etternavn",
+      "mi": "Mellomnavn",
+      "occupation": "Yrke",
+      "relationship": "Forhold",
+      "removeCharacter": "Slett karakter",
+      "residence": "Bostedsadresse",
+      "saveCharacter": "Lagre karakter",
+      "sex": "Kjønn",
+      "skin": "Hudfarge",
+      "weight": "Vekt",
+      "zip": "Postkode"
+    },
+    "errors": {
+      "maxCharacters": "Feil: Du har nådd samfunnets maksgrense for antall karakterer."
+    },
+    "labels": {
+      "selectedCharacter": "Valgt karakter"
+    }
+  },
+  "common": {
+    "actions": "Handlinger",
+    "activeServer": "Aktiv server",
+    "add": "Legg til",
+    "autoSort": "Automatisk sortering",
+    "cancel": "Avbryt",
+    "close": "Lukk",
+    "communityId": "Samfunnsid",
+    "confirm": "Bekreft",
+    "contains": "Inneholder",
+    "copy": "Kopier",
+    "edit": "Rediger",
+    "enabled": "Påskrudd",
+    "equal": "Lik",
+    "errors": {
+      "limitReached": "Feil: maksgrense nådd"
+    },
+    "export": "Eksporter",
+    "externalWindow": "Åpne i eksternt vindu",
+    "failed": "Mislykkes",
+    "help": "Hjelp",
+    "icon": "Ikon",
+    "id": "ID",
+    "import": "Importer",
+    "importPrompt": "Lim inn i JSON",
+    "itemsPerPage": "Gjenstander per side",
+    "learnMore": "Lær mer",
+    "lostConnection": "Du har mistet tilkoblingen til serveren.",
+    "maximize": "Utvid",
+    "minimize": "Minimer",
+    "modify": "Endre",
+    "new": "Ny ",
+    "noData": "Ingen data",
+    "noResults": "Ingen resultater",
+    "notEqual": "Ikke lik",
+    "paste": "Lim inn",
+    "pause": "Pause",
+    "range": "Rekkevidde",
+    "refresh": "Oppdater",
+    "remove": "Fjern",
+    "reset": "Tilbakestill",
+    "save": "Lagre",
+    "search": "Søk",
+    "serverStatus": "Serverstatus",
+    "start": "Start",
+    "status": "Status",
+    "success": "Vellykket",
+    "test": "Test",
+    "tutorial": "Brukerveileding",
+    "tutorials": "Brukerveiledinger",
+    "type": "Type",
+    "undo": "Angre",
+    "upload": "Last opp",
+    "uploader": "Last opp (Maks 5MB)"
+  },
+  "communityMenu": {
+    "buttons": {
+      "admin": "Admin",
+      "civilian": "Sivil",
+      "discord": "Discord",
+      "dispatch": "Operasjonssentralen",
+      "dmv": "Statens Vegvesen",
+      "ems": "Ambulanse",
+      "fire": "Brann",
+      "law": "Jurist",
+      "police": "Politi",
+      "setDefault": "Sett standard samfunn",
+      "website": "Nettside"
+    },
+    "labels": {
+      "permissionKey": "Tilgangsnøkkel"
+    }
+  },
+  "homepage": {
+    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
+    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
+    "heroTitle": "The #1 Dispatch Platform for Gaming",
+    "integrateButton": "Integrate",
+    "integrations": {
+      "erlc": {
+        "description": "Official ER:LC in-game integration with live map and more.",
+        "name": "ER:LC"
+      },
+      "fivem": {
+        "description": "Official FiveM resource with dozens of deep integration points.",
+        "name": "FiveM"
       }
     },
-    "addresses": {
-      "addresses": "Adresser"
+    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "startToday": "Start Today",
+    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
+    "welcomeHeadline": "Welcome to Sonoran CAD!",
+    "welcomeTitle": "Welcome"
+  },
+  "login": {
+    "buttons": {
+      "cancel": "Kanseller",
+      "create": "Opprett bruker",
+      "forgot": "Glemt passord?",
+      "login": "Logg inn",
+      "staySignedIn": "Forbli pålogget",
+      "switchCommunities": "Bytt samfunn"
     },
-    "logs": {
-      "logs": "Logger",
-      "log": "Logg",
-      "time": "Tid"
+    "labels": {
+      "confirmPassword": "Bekreft passord",
+      "email": "Epost",
+      "emailPreferences": "Epostinnstillinger",
+      "password": "Passord",
+      "resetPassword": "Tilbakestill passord",
+      "username": "Brukernavn"
+    }
+  },
+  "payment": {
+    "buttons": {
+      "amount": "Mengde",
+      "comparePlans": "Pricing",
+      "oneTimePurchases": "Engangskjøp",
+      "openBillingPortal": "Open Billing Portal",
+      "purchase": "Kjøp abonnement"
+    },
+    "labels": {
+      "endDate": "Slutt dato",
+      "expertInstallation": "Ekspertinstallasjon",
+      "plan": "Plan",
+      "plus": "Pluss",
+      "pro": "Pro",
+      "standard": "Standard",
+      "startDate": "Start dato",
+      "starter": "Starter"
+    },
+    "text": {
+      "bundleAndSave": "Pakke og lagre",
+      "bundleExplain": "Spar 30% hver måned når du kjøper en VPS fra Sonoran Servers.",
+      "newSubscription": "Nytt abonnement",
+      "serverIp": "Server-IP",
+      "serversEmail": "Sonoran Servers Bruker Epost",
+      "setCommunityId": "Sett Samfunns ID"
+    }
+  },
+  "police": {
+    "callEditor": {
+      "addNote": "Ny merknad",
+      "address": "Adresse",
+      "block": "Område",
+      "callDescription": "Oppdragsbeskrivelse",
+      "callNotes": "Oppdragsmerknader",
+      "callOrigin": "Oppdragsopphav",
+      "callStatus": "Oppdragsstatus",
+      "callTitle": "Oppdragstittel",
+      "callViewer": "Oppdragsvisning",
+      "clearEditor": "Rydd tekstredigerer",
+      "code": "Respons",
+      "confirmations": {
+        "close1": "Du har satt oppdragsstatus som AVSLUTTET",
+        "close2": "Er du sikker på at du vil avslutte oppdraget?",
+        "close3": "Dette oppdraget og all data vil bli fjernet!",
+        "detatch": "Fjern",
+        "detatchConfirm": "Er du sikker på at du vil fjerne deg selv fra oppdraget?"
+      },
+      "createCall": "Opprett oppdrag",
+      "dispatch": "Utalarmer",
+      "dispatchRecord": "Oppdragsforhistorie",
+      "errors": {
+        "attachedAlready": "Feil: Du er allerede tilknyttet et oppdrag!",
+        "noOrigin": "Feil: Dette oppdraget har ikke et opphav satt",
+        "noPriority": "Feil: Oppdraget har ikke fått en prioritet",
+        "noStatus": "Feil: Oppdraget har ikke fått en status",
+        "noTitle": "Feil: Oppdraget har ikke fått en tittel",
+        "unitAlreadyOnCall": "Feil: Denne enheten er allerede knyttet til oppdraget!"
+      },
+      "nearestStations": "Nærmeste stasjoner",
+      "nearestUnits": "Nærmeste enheter",
+      "newDispatch": "Nytt oppdrag",
+      "note": "Merknad",
+      "originOptions": {
+        "caller": "Innringer",
+        "observed": "Observert",
+        "radioDispatch": "Over samband",
+        "walkUp": "Involvert"
+      },
+      "postal": "Postkode",
+      "primaryUnit": "Ledende enhet",
+      "priority": "Prioritet",
+      "savedTypes": "Lagrede oppdrag",
+      "selfClear": "Gå ut fra oppdrag",
+      "selfDispatch": "Egen utalarmering",
+      "statusOptions": {
+        "active": "Aktive",
+        "closed": "Avsluttet",
+        "pending": "Pågående"
+      },
+      "trackPrimary": "Spor opp ledende enhet (GPS)",
+      "units": "Enheter",
+      "updateCall": "Oppdater oppdrag"
+    },
+    "callList": {
+      "activeCalls": "Aktive oppdrag",
+      "attachToCall": "Tilknytt oppdrag",
+      "callHistory": "Historiske oppdrag",
+      "closeCall": "Lukk oppdrag",
+      "columns": {
+        "10Code": "10-Kode",
+        "address": "Adresse",
+        "callId": "Oppdrags id",
+        "callTitle": "Oppdragstittel",
+        "status": "i18n key: no.json, phrase: Status",
+        "units": "Enheter"
+      },
+      "editCall": "Rediger oppdrag",
+      "previewCall": "Forhåndsvis oppdrag",
+      "printCall": "Print oppdrag",
+      "priority": "Prioritet"
+    },
+    "command": {
+      "attach": "Legg ved",
+      "callId": "Anrops-ID",
+      "clear": "Fjern",
+      "close": "Lukk",
+      "commandLine": "Kommandolinje",
+      "create": "Opprett",
+      "detach": "Fjern vedlegg",
+      "note": "Notat",
+      "postal": "Postnummer",
+      "savedCallType": "Lagret anropstype",
+      "status": "Status",
+      "unit": "Enhet",
+      "unitStatus": "Enhetsstatus",
+      "view": "Vis"
+    },
+    "emergencyCall": {
+      "caller": "Innringer",
+      "calls": "Anrop",
+      "civil": "Sivil",
+      "confirmRemoveAll": "Er du sikker på at du vil lukke alle aktive anrop?",
+      "description": "Beskrivelse",
+      "emergency": "Nødstilfelle",
+      "emergencyCall": "Nødanrop",
+      "location": "Posisjon",
+      "mergeToCallEditor": "Slå sammen til ringeredigerer",
+      "openInEditor": "Åpne anrop i oppdragsredigering",
+      "removeAll": "Fjern alle aktive nødanrop",
+      "removeAllCalls": "Fjern alle oppdrag",
+      "removeCall": "Fjern oppdrag"
+    },
+    "header": {
+      "activeCalls": "Aktive oppdrag",
+      "activeServer": "Aktiv server",
+      "activeUnits": "Aktive enheter",
+      "bodyCam": "Kroppskamera",
+      "bodycamViewer": {
+        "allCams": "All Cams",
+        "live": "Live",
+        "screens": "Screens",
+        "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
+        "singleCam": "Single Cam",
+        "switchToAll": "Switch to all bodycams view",
+        "switchToSingle": "Switch to single bodycam view"
+      },
+      "bolo": "Hold utkikk",
+      "count": "Telle",
+      "emergencyCalls": "Nødanrop",
+      "file": "Fil(er)",
+      "liveMap": "Enhetskart",
+      "lookup": "Søk",
+      "panic": "Panikknapp",
+      "playTo": "Spill av til",
+      "quickLinks": "Nyttige lenker",
+      "records": "Saker",
+      "repeat": "Gjenta",
+      "seconds": "Sekunder",
+      "signal": "Signal",
+      "signalEffect1": "Signal",
+      "signalEffect2": "er i kraft",
+      "streetSigns": "Trafikkskilt",
+      "toneBoard": "Utalarmeringstoner"
+    },
+    "lookup": {
+      "agency": "Etat",
+      "alerts": {
+        "emptySearch": "Feil: Tomt søk!"
+      },
+      "civilians": "Sivile",
+      "columns": {
+        "charges": "Siktelser",
+        "date": "Dato",
+        "expiration": "Utgår",
+        "first": "Fornavn",
+        "flags": "Merknader",
+        "last": "Etternavn",
+        "mi": "Mellomnavn",
+        "name": "Navn",
+        "plate": "Skiltnummer",
+        "status": "Status",
+        "type": "Type"
+      },
+      "department": "Avdeling",
+      "exact": "Eksakt",
+      "first": "Fornavn",
+      "getOwner": "Hent eier",
+      "id": "Saksnummer",
+      "identifier": "Enhetsinformasjon",
+      "last": "Etternavn",
+      "lookup": "Søk",
+      "mi": "Mellomnavn",
+      "nameSearch": "Søk på navn",
+      "newLookup": "Nytt søk",
+      "noRecordsFound": "Ingen saker funnet",
+      "partial": "Delvis",
+      "plate": "Registreringsnummer",
+      "plateSearch": "Skiltsøk",
+      "records": "Saker",
+      "recordsNoData": "Ingen saker tilgjengelig",
+      "recordsNoResults": "Ingen saker funnet",
+      "recordsPerPage": "Saker per side",
+      "refresh": "Oppdater",
+      "reportsHeader": "Rapporter",
+      "sendToUnits": "Send til enhet(er).",
+      "statuses": {
+        "active": "Aktiv",
+        "closed": "Lukket",
+        "inactive": "Inaktiv"
+      },
+      "unit": "Enhet"
+    },
+    "notes": {
+      "notepad": "Notisblokk",
+      "notes": "Notater",
+      "title": "Tittel"
+    },
+    "recordCenter": {
+      "errors": {
+        "noRecordTypes": "Ingen sakstyper: Legg dem til i Admin  > Tilpasning  > Tilpassede saker",
+        "noReportTypes": "Ingen rapporttyper: Legg dem til i Admin  > Tilpasning  > Tilpassede rapporter",
+        "syncEnabledFeatDisabled": "Denne funksjonen er ikke kompatibel med databasesynkronisering"
+      },
+      "filesAwaitingApproval": "Filer som venter godkjenning",
+      "myFiles": "Mine filer",
+      "newRecord": "Ny sak",
+      "newReport": "Ny rapport",
+      "noRecordsForSuper": "Ingen saker som krever veilederhandlinger",
+      "noRecordsFound": "Ingen saker funnet",
+      "noReportsForSuper": "Ingen rapporter som krever veilederhandlinger",
+      "noReportsFound": "Ingen rapporter funnet",
+      "pendingFiles": "Ventende filer",
+      "pendingRecords": "Ventende saker",
+      "supervisorPanel": "Veileder Panel"
+    },
+    "records": {
+      "agency": {
+        "agencyInformation": "Byrå informasjon",
+        "agencyName": "Byrå navn",
+        "badge": "Tjenestenummer",
+        "date": "Dato",
+        "location": "Posisjon",
+        "observingOfficer": "Hovedenhet",
+        "recordNum": "Saksnummer",
+        "zip": "Postkode"
+      },
+      "arrest": {
+        "arrestInformation": "Pågripelsesinformasjon",
+        "arrestType": "Arrestasjonstype",
+        "probationaryOfficer": "Prøveløslatelsesoffiser",
+        "weapons": "Våpen"
+      },
+      "charges": {
+        "bondFineAmount": "Forelegg sum",
+        "bondType": "Obligasjonstype",
+        "charge": "Ny tiltale",
+        "chargeNumber": "Saksnummer ",
+        "charges": "Tiltaler",
+        "chargeType": "Siktelsestype",
+        "counts": "Antall",
+        "fineTotal": "Bot Sum",
+        "jailTime": "Fengselstid",
+        "titleCode": "Tittel, Kode"
+      },
+      "editor": {
+        "addRecord": "Ny sak",
+        "applyForDmv": "Søk etter SVV sak",
+        "copyLink": "Kopier sakslenke",
+        "dmvType": "Statens Vegvesen type",
+        "errors": {
+          "nameOrPlate": "Feil: Denne saken må ha en borgers navn eller et registreringsnummer for å søkes opp.",
+          "noCopiedLink": "Feil: Du har ikke en sakslenke kopiert.",
+          "noName": "Feil: Denne saken må ha en borgers navn for å søkes opp.",
+          "noPlate": "Feil: Denne saken må ha et registreringsnummer for å søkes opp.",
+          "requiredField": "Feil: Påkrevd felt!"
+        },
+        "linkTitle": "Lenketittel",
+        "noCustomTypes": "Ingen sakstyper: Legg dem til i Admin > Tilpasning > Tilpassede saker",
+        "pasteLink": "Lim inn sakslenke",
+        "pdf": "PDF",
+        "recordType": "Sakstype",
+        "removeRecord": "Fjern sak",
+        "saveRecord": "Lagre sak",
+        "status": {
+          "active": "AKTIV",
+          "approved": "GODKJENT",
+          "closed": "LUKKET",
+          "pending": "PÅGÅENDE",
+          "rejected": "AVSLÅTT"
+        }
+      },
+      "general": {
+        "records": "Saker",
+        "reports": "Rapporter"
+      },
+      "getCiv": {
+        "characterSearch": "Karaktersøk",
+        "civilianInfo": "Borgerinformasjon"
+      },
+      "getVeh": {
+        "vehicleSearch": "Kjøretøyssøk"
+      },
+      "narrative": {
+        "narrative": "Forløp"
+      },
+      "speed": {
+        "citationInformation": "Foreleggsinformasjon",
+        "courtDate": "Rettsdato",
+        "courtTime": "Rettsklokkeslett",
+        "fine": "Forelegg",
+        "other": "Annet",
+        "pace": "Fart",
+        "paceType": "Hastighetstype",
+        "radar": "Radar",
+        "speedLimit": "Fartsgrense",
+        "vehicleSpeed": "Kjøretøyshastighet"
+      },
+      "status": {
+        "dateSubmitted": "Dato sendt inn",
+        "observingSignature": "Hovedenhets signatur",
+        "status": "Status",
+        "supervisorSignature": "Nærmeste leders signatur"
+      },
+      "vehicle": {
+        "color": "Farge",
+        "make": "Merke",
+        "model": "Modell",
+        "plate": "Registreringsnummer",
+        "type": "Kjøretøystype",
+        "types": {
+          "aircraft": "Luftfartøy",
+          "coupe": "Kupe",
+          "marine": "Vannfarkost",
+          "motorcycle": "Motorsykkel",
+          "offroad": "Offroad",
+          "sedan": "Sedan",
+          "suv": "SUV",
+          "truck": "Lastebil"
+        },
+        "vehicleInformation": "Kjøretøysinformasjon",
+        "year": "Årsmodell"
+      }
+    },
+    "signal": {
+      "clear": "Fjern Signal",
+      "initiate": "Aktiver Signal",
+      "modify": "Modifiser Signal",
+      "signal": "Signal"
+    },
+    "timers": {
+      "attachments": "Vedlegg",
+      "clearAttachment": "Fjern vedlegg",
+      "newTimer": "Ny tidtaker",
+      "timers": "Tidtakere"
+    },
+    "unitEditor": {
+      "agency": "Byrå",
+      "aop": "Fokusområde",
+      "confirmRemove": "Er du sikker på at du vil fjerne kallesignalet?",
+      "department": "Avdeling",
+      "departments": "Avdelinger",
+      "group": "Gruppe",
+      "location": "Posisjon",
+      "modifyIdentifier": "Rediger kallesignal",
+      "name": "Navn",
+      "rank": "Grad",
+      "status": "Status",
+      "subdivision": "Underdivisjon",
+      "subdivisions": "Divisjon",
+      "switchIdentifier": "Bytt kallesignal",
+      "unitNumber": "Kallesignal",
+      "units": "Enheter"
+    },
+    "units": {
+      "activeGroups": "Aktive grupper",
+      "activeUnits": "Aktive enheter",
+      "addToCall": "Legg til i oppdrag",
+      "addToGroup": "Legg til i gruppe",
+      "createGroup": "Opprett gruppe",
+      "dispatchersHidden": "Skjul operatører",
+      "dispatchersShown": "Vis operatører",
+      "editUnit": "Rediger enhet",
+      "group": "Gruppe",
+      "groupName": "Gruppenavn",
+      "kickUnit": "Fjern enhet",
+      "newGroup": "Ny gruppe",
+      "togglePanic": "Toggle panikkstatus",
+      "unitGroups": "Enhetsgrupper",
+      "units": "Enheter"
+    }
+  },
+  "selectionPage": {
+    "buttons": {
+      "createCommunity": "Opprett Samfunn",
+      "discover": "Oppdag",
+      "joinCommunity": "Bli med i Samfunn",
+      "leaveCommunity": "Forlat Samfunn",
+      "My Account": "Brukerinnstilligner",
+      "myCommunities": "Dashboard"
+    },
+    "errors": {
+      "communityIdCharacters": "Feil: Samfunns IDen kan bare inneholde bokstaver, tall, understreker og streker!",
+      "communityIdLength": "Feil: Samfunns IDen din må inneholde mellom 1 og 50 tegn!",
+      "communityNameLength": "Feil: Samfunnsnavnet ditt må være mellom 1 og 50 tegn!",
+      "noCommunityID": "Feil: Skriv inn en samfunns ID!"
+    },
+    "labels": {
+      "communityName": "Samfunnsnavn",
+      "website": "Nettsted (Valgfritt)"
+    },
+    "text": {
+      "communityNotFound": "Ingen samfunn funnet",
+      "confirmLeave1": "Er du sikker på at du vil forlate dette samfunnet?",
+      "confirmLeave2": "Kontoen din og alle dataene på denne CADen blir fjernet!",
+      "createHeader": "CAD registrering",
+      "createText": "Registrer en ny samfunns CAD slik at andre kan bli med!",
+      "helpCommunityId1": "Samfunns IDen din er en unik identifikator for fellesskapet ditt. Dette er hva brukerne vil bruke til å logge på din spesifikke CAD.",
+      "helpCommunityId2": "Vanligvis er det forkortelsen for samfunnet ditt.",
+      "helpCommunityId3": "For eksempel: Arizona Serious Roleplay - ID: AZSRP",
+      "helpCommunityIdFind1": "Du må kontakte et medlem eller en administrator for spillmiljøet ditt.",
+      "helpCommunityIdFind2": "De vil gi deg den spesifikke samfunns IDen for CADen.",
+      "helpCommunityIdFindHeader": "Hvor finner jeg samfunns IDen min?",
+      "helpCommunityName": "Ditt samfunnsnavn er det offentlige navnet på rollespillsamfunnet.",
+      "helpCommunityWebsite": "Samfunnsnettstedet ditt er nettadressen til forumet, Discord eller et annet nettsted. Dette feltet er VALGFRITT og er ikke påkrevd!",
+      "joinHeader": "Bli med i et Samfunn",
+      "joinText": "Bli med i en eksisterende CAD!"
+    },
+    "tooltips": {
+      "join": "Bli med",
+      "joinHelp": "Usikker på hva du skal gjøre?",
+      "joinThis": "Bli med i denne samfunns CADen",
+      "leaveCommunity": "Forlat dette samfunnet",
+      "owner": "Du eier dette samfunnet",
+      "register": "Registrer din Sonoran CAD",
+      "search": "Søk etter Sonoran CAD samfunn"
+    }
+  },
+  "settings": {
+    "apiIdDisable": "Du må være innlogget i et samfunn for å sette din API id.",
+    "bringToTop": "Flytt frem",
+    "classicLayout": "Klassisk oppsett",
+    "exitResize": "Avbryt endring av størrelse",
+    "helpImprove": "Hjelp oss med å forbedre oversettelsene",
+    "hotkeyDisable": "Hurtigtaster er ikke tilgjengelig for gratisversjonen.",
+    "hotkeys": "Hurtigtaster",
+    "language": "Språk",
+    "lockWindow": "Lås vindu",
+    "overlay": {
+      "addBulb": "Legg til lyspære",
+      "addFrame": "Legg til bilde",
+      "bodycam": "Kroppskamera",
+      "bulbType": "Lyspæretype",
+      "callUpdates": "Oppdragsoppdateringer",
+      "channel": "Kanal",
+      "configuration": "Innstillinger",
+      "confirmReset": "Er du sikker på at du ønsker å tilbakestille innstillingene?",
+      "credentials": "Akkreditering",
+      "customTextFiles": "Tilpassede tekstfiler",
+      "dataKeys": "Data nøkler",
+      "delay": "Forsinkelse",
+      "events": "Hendelser",
+      "field": "Felt",
+      "fileName": "Filnavn",
+      "lighting": "Lys",
+      "manualIp": "Manuell IP (valgfritt)",
+      "oauthToken": "OAuth-token",
+      "obsTextFiles": "OBS Tekst filer",
+      "refreshPayment": "Oppfrisk betaling",
+      "scan": "Søk",
+      "scanForBulbs": "Søk etter lyspærer",
+      "streamOverlay": "Strømoverlegg",
+      "twitch": "Twitch",
+      "twitchConfig": "Twitch innstillinger",
+      "twitchLogs": "Twitch logg",
+      "txtFiles": "TXT filer",
+      "unitUpdates": "Enhetsoppdateringer"
+    },
+    "panic": "Panikknapp",
+    "prefix": "Prefiks",
+    "quickResize": "Endre størrelse",
+    "resetLayout": "Reset oppsett",
+    "secretDisable": "Du må være innlogget i et samfunn for å hente din Secret ID.",
+    "settings": "Innstillinger",
+    "showHide": "Vis/gjem",
+    "unlockWindow": "Lås opp vindu",
+    "voice": "Stemme/Voice",
+    "volume": "Volum"
+  },
+  "sideMenu": {
+    "buttons": {
+      "communityMenu": "Samfunnsmeny",
+      "disclaimer": "Ved å få tilgang til eller bruke Sonoran CAD godtar du våre vilkår og betingelser og personvernerklæring.",
+      "downloads": "Nedlastinger",
+      "exitFullscreen": "Lukk Fullskjerm",
+      "goFullscreen": "Fullskjerm",
+      "login": "Pålogging",
+      "logout": "Logg ut",
+      "menu": "Meny",
+      "myAccount": "Brukerinnstillinger",
+      "settings": "Innstillinger",
+      "switchCommunities": "Endre samfunn",
+      "tutorials": "Brukerveiledninger"
     }
   },
   "stationAlert": {
-    "stationAlert": "stasjonVarsel",
-    "updateDoors": "oppdaterDører",
+    "makeSelection": "foretaValg",
     "sendAlert": "sendVarsel",
     "sendMessage": "sendeMelding",
-    "makeSelection": "foretaValg",
+    "stationAlert": "stasjonVarsel",
+    "stationTone": "stasjonsTone",
     "toneBoard": "tavleテーブル",
-    "stationTone": "stasjonsTone"
+    "updateDoors": "oppdaterDører"
   },
-  "homepage": {
-    "heroTitle": "The #1 Dispatch Platform for Gaming",
-    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
-    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
-    "startToday": "Start Today",
-    "integrateButton": "Integrate",
-    "welcomeTitle": "Welcome",
-    "welcomeHeadline": "Welcome to Sonoran CAD!",
-    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
-    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
-    "integrations": {
-      "fivem": {
-        "name": "FiveM",
-        "description": "Official FiveM resource with dozens of deep integration points."
-      },
-      "erlc": {
-        "name": "ER:LC",
-        "description": "Official ER:LC in-game integration with live map and more."
-      }
-    }
+  "taskbar": {
+    "displayTabIcons": "Vis taskbar ikoner",
+    "displayTabLabels": "Vis taskbar beskrivelse",
+    "layoutCustomization": "Oppsettsinnstillinger",
+    "newWindow": "Nytt vindu",
+    "pinToTaskbar": "Fest til oppgavebar",
+    "startMenu": "Startmeny",
+    "system": "System",
+    "tabCustomization": "Taskbar Innstillinger",
+    "taskbarPosition": "Oppgavebar posisjon",
+    "unpinFromTaskbar": "Fjern festing til oppgavebar"
   }
 }

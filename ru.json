@@ -1,681 +1,35 @@
 {
-  "common": {
-    "communityId": "ID Сообщества",
-    "cancel": "Отмена",
-    "maximize": "Развернуть",
-    "minimize": "Свернуть",
-    "close": "Закрыть",
-    "search": "Найти",
-    "help": "Помощь",
-    "new": "Новый",
-    "add": "Добавить",
-    "edit": "Редактировать",
-    "modify": "Модифицировать",
-    "save": "Сохранить",
-    "confirm": "Подтвердить",
-    "reset": "Сбросить",
-    "undo": "Отменить",
-    "actions": "Действия",
-    "id": "ИД",
-    "status": "Статус",
-    "uploader": "Загрузит изображение (5МБ Максимум)",
-    "upload": "Загрузить",
-    "remove": "Удалить",
-    "enabled": "Включен",
-    "activeServer": "Активный Сервер",
-    "success": "Успешно",
-    "failed": "Отказанно",
-    "tutorial": "Обучение",
-    "tutorials": "Учебные Пособия",
-    "refresh": "Обновить",
-    "autoSort": "Автоматическая Сортировка",
-    "type": "Тип",
-    "itemsPerPage": "Пунктов на странице",
-    "noData": "Нет Данных",
-    "noResults": "Нет Результатов",
-    "externalWindow": "Открыть во внешнем окне",
-    "lostConnection": "Вы потеряли связь с сервером",
-    "serverStatus": "Статус Сервера",
-    "import": "Импорт",
-    "importPrompt": "Вставьте содержимое JSON",
-    "export": "Экспорт",
-    "learnMore": "Узнать Больше",
-    "copy": "Копировать",
-    "paste": "Вставить",
-    "icon": "Значок",
-    "test": "Тестировать",
-    "start": "Начать",
-    "pause": "Пауза",
-    "range": "Диапазон",
-    "equal": "Равно",
-    "notEqual": "Не равно",
-    "contains": "Содержит",
-    "errors": {
-      "limitReached": "Ошибка: достигнут максимальный предел"
-    }
-  },
-  "sideMenu": {
-    "buttons": {
-      "settings": "Настройки",
-      "login": "Войти",
-      "logout": "Выйти",
-      "communityMenu": "Меню Сообществ",
-      "switchCommunities": "Сменить Сообщество",
-      "downloads": "Загрузки",
-      "tutorials": "Учебные Пособия",
-      "myAccount": "Мой Аккаунт",
-      "goFullscreen": "Запустить в полном экране",
-      "exitFullscreen": "Выйти из полноэкранного режима",
-      "disclaimer": "Перед тем, как использоввать Sonoran CAD вы соглашаетесь с условиями пользования и политикой конфидециальности.",
-      "menu": "Меню"
-    }
-  },
-  "settings": {
-    "settings": "Настройки",
-    "volume": "Звук",
-    "helpImprove": "Помогите нам с переводом!",
-    "language": "Язык",
-    "voice": "Голос озвучки",
-    "apiIdDisable": "Вы должны присоедениться к сообществу, чтобы ввести API ID",
-    "secretDisable": "Вы должны присоединиться к сообществу чтобы получить ваш Secret ID",
-    "hotkeys": "Горячие клавиши",
-    "hotkeyDisable": "Горячие клавиши не доступны в бесплатной версии",
-    "prefix": "Кнопка Префикса",
-    "panic": "Кнопка Паники",
-    "lockWindow": "Закрепить Окно",
-    "unlockWindow": "Открепить Окно",
-    "quickResize": "Быстрое Перемещение",
-    "exitResize": "Закончить Перемещение",
-    "classicLayout": "Классическое Расположение",
-    "resetLayout": "Сбросить Расположение",
-    "bringToTop": "Вывести поверх окон",
-    "showHide": "Показать/Скрыть",
-    "overlay": {
-      "streamOverlay": "Оверлей потока",
-      "credentials": "Учётные данные",
-      "configuration": "Конфигурация",
-      "twitchLogs": "Логи Twitch",
-      "twitchConfig": "Конфигурация Twitch",
-      "refreshPayment": "Обновить платёж",
-      "channel": "Канал",
-      "oauthToken": "OAuth токен",
-      "obsTextFiles": "OBS текстовые файлы",
-      "unitUpdates": "Обновления подразделений",
-      "callUpdates": "Обновления вызовов",
-      "twitch": "Twitch",
-      "txtFiles": "TXT файлы",
-      "fileName": "Имя файла",
-      "field": "Поле",
-      "customTextFiles": "Пользовательские текстовые файлы",
-      "dataKeys": "Ключи данных",
-      "events": "События",
-      "bodycam": "Нагрудная камера",
-      "confirmReset": "Вы уверены, что хотите сбросить конфигурацию?",
-      "lighting": "Освещение",
-      "addFrame": "Добавить кадр",
-      "addBulb": "Добавить лампочку",
-      "delay": "Задержка",
-      "scanForBulbs": "Сканировать для обнаружения лампочек",
-      "bulbType": "Тип лампочки",
-      "scan": "Сканировать",
-      "manualIp": "Ручной IP (необязательно)"
-    }
-  },
-  "taskbar": {
-    "system": "Система",
-    "newWindow": "Новое Окно",
-    "pinToTaskbar": "Закрепить в таскбаре",
-    "unpinFromTaskbar": "Открепить от таскбара",
-    "taskbarPosition": "Позиция таскбара",
-    "tabCustomization": "Настройка вкладки",
-    "displayTabIcons": "Показать значки вкладок",
-    "displayTabLabels": "Показать метки вкладок",
-    "layoutCustomization": "Настройка макета",
-    "startMenu": "Меню «Пуск»"
-  },
-  "login": {
-    "buttons": {
-      "login": "Войти",
-      "forgot": "Забыли Пароль",
-      "create": "Создать Аккаунт",
-      "cancel": "Отмена",
-      "staySignedIn": "Оставаться в системе",
-      "switchCommunities": "Сменить сообщество"
-    },
-    "labels": {
-      "email": "Эл. почта",
-      "username": "Имя Пользователя",
-      "password": "Пароля",
-      "confirmPassword": "Подтверждение пароля",
-      "emailPreferences": "Настройки электронной почты",
-      "resetPassword": "Сбросить Пароль"
-    }
-  },
-  "selectionPage": {
-    "buttons": {
-      "myCommunities": "Dashboard",
-      "joinCommunity": "Присоедениться к сообществу.",
-      "discover": "Обнаружить",
-      "leaveCommunity": "Покинуть Сообщество",
-      "createCommunity": "Создать Сообщество",
-      "My Account": "Мой Аккаунт"
-    },
-    "labels": {
-      "communityName": "Название Сообщества",
-      "website": "Веб-Сайт (Опционально)"
-    },
-    "text": {
-      "joinHeader": "Присоединиться к сообществу",
-      "joinText": "Присоединиться к CAD сообщества!",
-      "createHeader": "Регистрация CAD",
-      "createText": "Зарегистрируйте новое сообщество CAD, чтобы к нему могли присоединиться другие!",
-      "helpCommunityId1": "ID вашего сообщества является его уникальным идентификатором. Пользователи будут использовать его для присоединения к вашему сообществу.",
-      "helpCommunityId2": "Обычно, это аббревиатура вашего сообщества.",
-      "helpCommunityId3": "Пример: Arizona Serious Roleplay - ID: AZSRP",
-      "helpCommunityName": "Название вашего сообщества является публичным именем вашего RP сообщества.",
-      "helpCommunityWebsite": "Веб сайт вашего сообщества это URL вашего сайта, форума или дискорда. Данное поле является дополнительным и может не заполняться",
-      "confirmLeave1": "Вы действительно желаете покинуть это сообщество??",
-      "confirmLeave2": "Ваш аккаунт и все связанные с ним данные будет удален из этой базы данных!",
-      "communityNotFound": "Сообщество не найдено",
-      "helpCommunityIdFindHeader": "Где я могу найти ID сообщества?",
-      "helpCommunityIdFind1": "Вы должны связаться с владельцем или администратором данного игрового сообщества.",
-      "helpCommunityIdFind2": "Они дадут вам специальный ID сообщества для их CAD."
-    },
-    "tooltips": {
-      "leaveCommunity": "Покинуть это сообщество.",
-      "owner": "Вы Владелец этого сообщества",
-      "search": "Искать сообщество в Sonoran CAD ",
-      "register": "Регистрация вашегоSonoran CAD",
-      "joinHelp": "Не уверены что делать?",
-      "joinThis": "Присоеденится к этому CAD.",
-      "join": "Присоеденится"
-    },
-    "errors": {
-      "noCommunityID": "Ошибка: Пожалусйта укажите ID сообщества!",
-      "communityIdLength": "Ошибка: В ID вашего сообщества должно быть от 1 до 50 знаков!",
-      "communityIdCharacters": "Ошибка: ID Вашего сообщества может содержать только буквы, цифры, нижние подчеркивания и тире!",
-      "communityNameLength": "Ошибка: Имя вашего сообщество должно содержать от 1 до 50 знаков!"
-    }
-  },
   "account": {
-    "labels": {
-      "myAccount": "Мой Аккаунт",
-      "email": "Электронная Почта",
-      "username": "Имя Пользователя",
-      "emailPreferences": "Настройка Электронной почты",
-      "confirmPassword": "Подтвердить Пароль",
-      "emailMe": "Присылать мне на почту важные объявления, сведенья об обновлениях и промоакциях."
-    },
     "buttons": {
       "subscriptions": "Подписки"
-    }
-  },
-  "payment": {
-    "text": {
-      "setCommunityId": "Задать ID Сообщества",
-      "newSubscription": "Новые подписки",
-      "bundleAndSave": "Комплектуйте и экономьте",
-      "serversEmail": "Электронная почта учетной записи Sonoran Servers",
-      "serverIp": "IP Сервера",
-      "bundleExplain": "Экономьте 30% каждый месяц, покупая VPS от Sonoran Servers."
     },
     "labels": {
-      "plan": "План",
-      "startDate": "Дата Начала",
-      "endDate": "Дата Окончания",
-      "starter": "Начальный",
-      "standard": "Стандартный",
-      "plus": "Увеличенный",
-      "pro": "Профисиональный",
-      "expertInstallation": "Экспертная установка"
-    },
-    "buttons": {
-      "purchase": "Приобрести Подписку",
-      "comparePlans": "Pricing",
-      "oneTimePurchases": "Одноразовые покупки",
-      "amount": "Сумма",
-      "openBillingPortal": "Open Billing Portal"
-    }
-  },
-  "communityMenu": {
-    "buttons": {
-      "civilian": "Гражданские",
-      "dmv": "Общая База Данных",
-      "law": "Судебная система",
-      "police": "Полицейский Департамент",
-      "fire": "Пожарный Департамент",
-      "ems": "Экстренная Медицинская Служба",
-      "dispatch": "Диспетчер",
-      "admin": "Администрация",
-      "discord": "Discord",
-      "website": "Вебсайт",
-      "setDefault": "Сделать Сообществом по Умолчанию"
-    },
-    "labels": {
-      "permissionKey": "Ключ Доступа"
-    }
-  },
-  "civilian": {
-    "buttons": {
-      "newCharacter": "Новый Персонаж",
-      "editCharacter": "Редактировать Персонажа",
-      "records": "Записи",
-      "dmv": "База Данных"
-    },
-    "characterEditor": {
-      "first": "Имя",
-      "last": "Фамилия",
-      "mi": "Инициал Отчества",
-      "dob": "Дата Рождения",
-      "age": "Возраст",
-      "sex": "Пол",
-      "aka": "Известен как (в узких кругах), прозвище",
-      "residence": "Место Жительства",
-      "zip": "Почтовый Индекс",
-      "occupation": "Место работы",
-      "height": "Рост",
-      "weight": "Вес",
-      "skin": "Цвет Кожи",
-      "hair": "Цвет Волос",
-      "eye": "Цвет Глаз",
-      "emergencyContact": "Экстренный номер для связи",
-      "relationship": "Отношения",
-      "contactNumber": "Контактный номер",
-      "image": "Изображение",
-      "addCharacter": "Добавить Персонажа",
-      "saveCharacter": "Сохранить Персонажа",
-      "removeCharacter": "Удалить Персонажа",
-      "createNewCharacter": "Создать нового персонажа",
-      "editExistingCharacter": "Редактировать Персонажа",
-      "confirmRemove": "Вы уверены, что хотите удалить персонажа?"
-    },
-    "labels": {
-      "selectedCharacter": "Выбранный персонаж"
-    },
-    "errors": {
-      "maxCharacters": "Ошибка: Вы достигли максимального количества персонажей для Сообщества"
-    }
-  },
-  "police": {
-    "lookup": {
-      "lookup": "Поиск",
-      "sendToUnits": "Отправить в подразделение(я)",
-      "partial": "Частичный",
-      "exact": "Точный",
-      "reportsHeader": "Рапорт",
-      "identifier": "Идентификатор",
-      "id": "ID Записи",
-      "newLookup": "Новый Поиск",
-      "refresh": "Обновить",
-      "nameSearch": "Поиск По Имени",
-      "first": "Имя",
-      "last": "Фамилия",
-      "mi": "Инициал Отчества",
-      "plateSearch": "Поиск по Номеру (Т.С)",
-      "plate": "Номерной Знак",
-      "agency": "Агенство",
-      "department": "Департамент",
-      "unit": "Юнит",
-      "civilians": "Гражданские",
-      "records": "Записи",
-      "noRecordsFound": "Не обнаружено записей",
-      "recordsPerPage": "Записей на странице",
-      "recordsNoData": "Нет доступных записей",
-      "recordsNoResults": "Не найдено записей",
-      "statuses": {
-        "active": "Активный",
-        "inactive": "Не активный",
-        "closed": "Закрытый"
-      },
-      "columns": {
-        "name": "Имя",
-        "plate": "Номер",
-        "charges": "Обвинения",
-        "flags": "Метки",
-        "date": "Дата",
-        "status": "Статус",
-        "type": "Тип",
-        "expiration": "Истечение",
-        "first": "Имя",
-        "last": "Фамилия",
-        "mi": "Инициал Отчества"
-      },
-      "alerts": {
-        "emptySearch": "Ошибка: Поиск Пуст!"
-      },
-      "getOwner": "Стать Владельцем"
-    },
-    "records": {
-      "general": {
-        "records": "Записи",
-        "reports": "Доклады"
-      },
-      "editor": {
-        "recordType": "Тип Записи",
-        "dmvType": "Тип Базы Данных",
-        "addRecord": "Добавить Запись",
-        "saveRecord": "Сохранить Запись",
-        "removeRecord": "Удалить Запись",
-        "pdf": "PDF",
-        "applyForDmv": "Принять для записи в Базу Данных",
-        "copyLink": "Скопировать ссылку на запись",
-        "pasteLink": "Вставить ссылку на запись",
-        "linkTitle": "Название ссылки",
-        "noCustomTypes": "Нет записей этого типа: Добвьте их с помощью Admin > Customization > Custom Records",
-        "status": {
-          "active": "АКТИВНЫЙ",
-          "closed": "ЗАКРЫТЫЙ",
-          "pending": "PАССМАТРИВАЕМЫЙ",
-          "approved": "ОДОБРЕННЫЙ",
-          "rejected": "ОТОЗВАННЫЙ"
-        },
-        "errors": {
-          "requiredField": "Ошибка: Обязательное поле",
-          "nameOrPlate": "Ошибка: В этой записи должно быть имя гражданского или номерной знак транспортного средства, подлежащего поиску!",
-          "noName": "Ошибка: В этой записи должно быть имя гражданского, которого надо найти",
-          "noPlate": "Ошибка: В этой записи должен быть номер транспортного средства, который вы хотите найти!",
-          "noCopiedLink": "Ошибка: у вас не скопирована ссылка на запись!"
-        }
-      },
-      "agency": {
-        "agencyInformation": "Информация Об Агентстве",
-        "agencyName": "Название Агентства",
-        "recordNum": "Запись #",
-        "date": "Дата",
-        "observingOfficer": "Наблюдательный Юнит",
-        "location": "Местоположение",
-        "zip": "Почтовый Индекс",
-        "badge": "Значок #"
-      },
-      "getCiv": {
-        "characterSearch": "Поиск персонажа",
-        "civilianInfo": "Гражданская информация"
-      },
-      "getVeh": {
-        "vehicleSearch": "Поиск Транспортного Средства"
-      },
-      "narrative": {
-        "narrative": "Описание"
-      },
-      "charges": {
-        "charges": "Обвинения",
-        "charge": "Обвинение",
-        "chargeNumber": "Обвинение #",
-        "fineTotal": "Сумма Штрафа",
-        "chargeType": "Тип Обвинения",
-        "counts": "Значение",
-        "titleCode": "Название, Код",
-        "bondType": "Тип Наказания",
-        "bondFineAmount": "Наказание/Штраф Сумма.",
-        "jailTime": "Время в заключении."
-      },
-      "speed": {
-        "citationInformation": "Информация для Цитирования",
-        "vehicleSpeed": "Скорость Транспортного Средства",
-        "speedLimit": "Скоростной Лимит",
-        "paceType": "Превышение",
-        "courtDate": "Дата Нарушения",
-        "courtTime": "Дата Время",
-        "fine": "Штраф",
-        "pace": "Превышение",
-        "radar": "Радар",
-        "other": "Прочее"
-      },
-      "status": {
-        "status": "Статус",
-        "dateSubmitted": "Дата Публикации",
-        "supervisorSignature": "Супервайзер/Судья Подпись",
-        "observingSignature": "Подпись Наблюдающего Подпись"
-      },
-      "vehicle": {
-        "vehicleInformation": "Информация о Транспортном Средстве",
-        "type": "Тип Транспортного Средства",
-        "plate": "Номерной Знак",
-        "make": "Марка",
-        "model": "Модель",
-        "color": "Цвет",
-        "year": "Год Выпуска",
-        "types": {
-          "sedan": "Седан",
-          "coupe": "Купе",
-          "suv": "SUV/Внедорожник",
-          "truck": "Грузовой Автомобиль",
-          "offroad": "Вездеход",
-          "marine": "Морской Транспорт",
-          "motorcycle": "Мотоцикл",
-          "aircraft": "Воздушный транспорт"
-        }
-      },
-      "arrest": {
-        "arrestInformation": "Информация об Аресте",
-        "weapons": "Оружие",
-        "arrestType": "Тип Ареста",
-        "probationaryOfficer": "Офицер на Испытательном Сроке"
-      }
-    },
-    "recordCenter": {
-      "myFiles": "Мои Файлы",
-      "newReport": "Новый Доклад",
-      "newRecord": "Новая Запись",
-      "supervisorPanel": "Панель Супервайзер",
-      "pendingRecords": "Рассматриваемые Записи",
-      "filesAwaitingApproval": "Фаилы, ожидающие подтверждения.",
-      "pendingFiles": "Рассматриваемые Фаилы",
-      "noReportsForSuper": "Нет отсчетов, требующих подтверждения Супервайзера",
-      "noReportsFound": "Не обнаружено Докладов",
-      "noRecordsForSuper": "Нет Записей, требующих подтверждения Супервайзера",
-      "noRecordsFound": "Не обнаружено Записей",
-      "errors": {
-        "noRecordTypes": "Нет Типов Записей: Добавьте их в Admin > Customization > Custom Records",
-        "noReportTypes": "Нет Типов Докладов: Добавьте их в Admin > Customization > Custom Records",
-        "syncEnabledFeatDisabled": "Эта функция несовместима с синхронизацией базы данных"
-      }
-    },
-    "callEditor": {
-      "newDispatch": "Новое Донесение",
-      "savedTypes": "Сохраненные типы",
-      "dispatch": "Донесение",
-      "callViewer": "Просмотре Вызовов",
-      "createCall": "Создать Вызов",
-      "updateCall": "Обновить Вызов",
-      "clearEditor": "Очистить Редактор",
-      "selfDispatch": "Самостоятельная отправка",
-      "selfClear": "Открепиться",
-      "units": "Юнит",
-      "callOrigin": "Позвонивший",
-      "callStatus": "Статус Звонка",
-      "priority": "Приоритет",
-      "block": "Блок",
-      "address": "Адрес",
-      "postal": "Пост",
-      "callTitle": "Название Вызова",
-      "code": "Код",
-      "primaryUnit": "Главный Юнит",
-      "callDescription": "Описание Вызова",
-      "callNotes": "Примечание к Вызову",
-      "note": "Примечание",
-      "addNote": "Добавить Примечание",
-      "dispatchRecord": "Запись к Донесению",
-      "trackPrimary": "Дорога к Главному Юниту (GPS)",
-      "confirmations": {
-        "close1": "Вы установили статус вызова 'Закрыто'.",
-        "close2": "Вы уверены, что хотите закрыть этот вызов?",
-        "close3": "Этот вызов и все данные будут удалены!",
-        "detatch": "Открепиться",
-        "detatchConfirm": "Вы уверены, что хотите открепиться от вызова?"
-      },
-      "statusOptions": {
-        "pending": "Рассматриваемый",
-        "active": "Активный",
-        "closed": "Закрытый"
-      },
-      "originOptions": {
-        "caller": "Звонивший",
-        "radioDispatch": "Радио диспетчеризация",
-        "observed": "Наблюдаемый",
-        "walkUp": "Подходящий"
-      },
-      "errors": {
-        "unitAlreadyOnCall": "Ошибка: это подразделение уже на вызове!",
-        "noOrigin": "Ошибка: у этого вызова не установлен источник!",
-        "noStatus": "Ошибка: у этого вызова не установлен статус!",
-        "noPriority": "Ошибка: у этого вызова не установлена приоритетность!",
-        "noTitle": "Ошибка: у этого вызова не установлено название!",
-        "attachedAlready": "Ошибка: вы уже присоединены к вызову!"
-      },
-      "nearestUnits": "Ближайшие подразделения",
-      "nearestStations": "Ближайшие станции"
-    },
-    "callList": {
-      "activeCalls": "Активные Вызовы",
-      "callHistory": "История Вызовов",
-      "editCall": "Редактировать Вызовы",
-      "attachToCall": "Присоеденить к вызову",
-      "previewCall": "Превью Вызова",
-      "closeCall": "Закрыть Вызов",
-      "printCall": "Распечатать Вызов",
-      "priority": "Приоритет",
-      "columns": {
-        "callId": "ID звонка",
-        "10Code": "10-Код",
-        "callTitle": "Название Вызова",
-        "address": "Адрес",
-        "units": "Юниты",
-        "status": "Статусы"
-      }
-    },
-    "emergencyCall": {
-      "emergencyCall": "Экстренный Вызов",
-      "emergency": "Чрезвычайная ситуация",
-      "civil": "Гражданский",
-      "calls": "Вызовы",
-      "caller": "Звонивший",
-      "location": "Местоположение",
-      "description": "Описание",
-      "removeAll": "Удалить все активные экстренные вызовы",
-      "openInEditor": "Открыть в Редакторе Вызовов",
-      "removeCall": "Удалить Вызов",
-      "removeAllCalls": "Удалить все Вызовы",
-      "confirmRemoveAll": "Вы уверены, что хотите закрыть все активные вызовы?",
-      "mergeToCallEditor": "Объединить с Редактором Вызовов"
-    },
-    "header": {
-      "signalEffect1": "Сигнал",
-      "signalEffect2": "Активный",
-      "activeServer": "Активный Сервер",
-      "lookup": "Поиск",
-      "records": "Записи",
-      "bolo": "БОЛО",
-      "liveMap": "ЖИВАЯ КАРТА",
-      "quickLinks": "Быстрые Ссылки",
-      "signal": "Сигнал",
-      "activeUnits": "Активные Юниты",
-      "activeCalls": "Активные Вызовы",
-      "emergencyCalls": "Экстренные Вызовы",
-      "panic": "Паника",
-      "file": "Файл(ы)",
-      "toneBoard": "Тоновая панель",
-      "playTo": "Воспроизвести в",
-      "repeat": "Повторить",
-      "seconds": "Секунды",
-      "count": "Количество",
-      "streetSigns": "Уличные знаки",
-      "bodyCam": "Нагрудная камера",
-    "bodycamViewer": {
-      "singleCam": "Single Cam",
-      "allCams": "All Cams",
-      "switchToSingle": "Switch to single bodycam view",
-      "switchToAll": "Switch to all bodycams view",
-      "screens": "Screens",
-      "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
-      "live": "Live"
-    }
-  },
-  "timers": {
-      "timers": "Таймеры",
-      "newTimer": "Новый таймер",
-      "attachments": "Вложения",
-      "clearAttachment": "Очистить вложение"
-    },
-    "signal": {
-      "signal": "Сигнал",
-      "initiate": "Инициировать Сигнал",
-      "modify": "Модифицировать Сигнал",
-      "clear": "Очистить Сигнал"
-    },
-    "unitEditor": {
-      "modifyIdentifier": "Изменить Индентификатор",
-      "unitNumber": "Номер Юнита",
-      "name": "Имя",
-      "rank": "Ранг",
-      "status": "Статус",
-      "location": "Местоположение",
-      "aop": "АОР",
-      "agency": "Агентство",
-      "group": "Группа",
-      "departments": "Департаменты",
-      "department": "Департамент",
-      "subdivisions": "Подразделения",
-      "subdivision": "Подразделение",
-      "units": "Юниты",
-      "switchIdentifier": "Сменить Индетификатор",
-      "confirmRemove": "Вы уверены, что хотите удалить Индетификатор?"
-    },
-    "units": {
-      "activeUnits": "Активные Юниты",
-      "dispatchersShown": "Диспетчеры Показаны",
-      "dispatchersHidden": "Диспетчеры Скрыты",
-      "addToCall": "Добавить к Вызову",
-      "addToGroup": "Добавить к Группе",
-      "newGroup": "Новая Группа",
-      "editUnit": "Редактировать Юнит",
-      "togglePanic": "Переключатель Паники",
-      "kickUnit": "Кикнуть Юнита",
-      "activeGroups": "Активные Группы",
-      "unitGroups": "Группы Юнитов",
-      "groupName": "Имя Группы",
-      "createGroup": "Создать Группы",
-      "group": "Группа",
-      "units": "Юниты"
-    },
-    "notes": {
-      "notepad": "Блокнот",
-      "title": "Название",
-      "notes": "Заметки"
-    },
-    "command": {
-      "commandLine": "Командная Строка",
-      "create": "Создать",
-      "close": "Закрыть",
-      "attach": "Прикрепить",
-      "detach": "Открепить",
-      "view": "Просмотр",
-      "clear": "Очистить",
-      "status": "Статус",
-      "note": "Заметка",
-      "savedCallType": "Сохраненный тип вызова",
-      "unit": "Подразделение",
-      "postal": "Почтовый индекс",
-      "callId": "ID вызова",
-      "unitStatus": "Статус подразделения"
+      "confirmPassword": "Подтвердить Пароль",
+      "email": "Электронная Почта",
+      "emailMe": "Присылать мне на почту важные объявления, сведенья об обновлениях и промоакциях.",
+      "emailPreferences": "Настройка Электронной почты",
+      "myAccount": "Мой Аккаунт",
+      "username": "Имя Пользователя"
     }
   },
   "admin": {
-    "general": {
-      "accounts": "Аккаунты",
-      "customization": "Кастомизация",
-      "advanced": "Дополнительно",
-      "permissionKeys": "Ключи Привелегий",
-      "departments": "Департаменты",
-      "customRecords": "Настраеваемые Записи",
-      "logs": "Логи",
-      "inGameIntegration": "Внутриигровые Интеграции",
-      "discordIntegration": "Дискорд Интеграции",
-      "limits": "Лимиты",
-      "wipeRecords": "Стереть Запись",
-      "transferOrDelete": "Передача или Удаление CAD",
-      "changeCommunityId": "Сменить ID сообщества",
-      "authenticate": "Проверка Подлинности"
+    "10Codes": {
+      "action": "Действия",
+      "code": "Закон"
+    },
+    "accounts": {
+      "apiIds": "API Идентификаторы",
+      "joined": "Присоединился",
+      "lastLogin": "Последний вход",
+      "permissions": "Разрешения",
+      "purge": "Удалить неактивных",
+      "purgeConfirm": "Вы уверены, что хотите удалить все неактивные учетные записи пользователей? (30 дней)",
+      "status": "Статус",
+      "userAccounts": "Учетные записи пользователей",
+      "username": "Имя пользователя"
+    },
+    "addresses": {
+      "addresses": "Адреса"
     },
     "authenticate": {
       "authHeader": "Проверка подлинности Владения CAD ",
@@ -692,501 +46,1147 @@
       "requestChange": "Запрос на изменение"
     },
     "customization": {
+      "customizationDisabled": "Настройка вашего сообщества не подходит к вашей версии",
       "customizationHeader": "Настройка сообщества CAD Sonoran",
       "customizationSubtext1": "Информационное сообщество",
       "customizationSubtext2": "Меняйте в вашем сообществе Имя, Лого и многое другое!",
-      "customizationDisabled": "Настройка вашего сообщества не подходит к вашей версии",
-      "info": {
-        "communityInfo": "Информация о сообществе.",
-        "communityId": "ID Сообщества",
-        "name": "Имя",
-        "subtitle": "Подзаголовок",
-        "website": "Веб-Сайт",
-        "discord": "Дискорд",
-        "voiceCommand": "Ключевое слово Голосовой Команды",
-        "timezone": "Часовой Пояс"
-      },
-      "geo": {
-        "geographicalSettings": "Географические условия",
-        "geoSubtext": "Specify your community's geographical location to change the wording of systems in your CAD.",
-        "emergencyCode": "Код экстренной ситуации",
-        "penalCodeName": "Название уголовного кодекса",
-        "tenCodeName": "Название кода десятичных сигналов",
-        "currencyDelimiter": "Разделитель валюты"
-      },
-      "unitStatus": {
-        "unitStatusCodes": "Коды Статусов Юнитов",
-        "busy": "Занят",
-        "unavailable": "Не доступен",
-        "available": "Доступен",
-        "enroute": "В пути",
-        "onScene": "На сцене"
-      },
       "customLogin": {
         "customLoginPage": "Кастомная страница Входа",
         "url": "URL"
       },
-      "quickLinks": {
-        "quickLinks": "Быстрые Ссылки",
-        "newLink": "Новая Ссылка",
-        "deleteLink": "Удалить Ссылку",
-        "label": "Название",
-        "link": "Ссылка",
-        "color": "Цвет"
-      },
-      "notificationTones": {
-        "notificationTones": "Тоны уведомлений",
-        "newDispatch": "Новое диспетчерское задание",
-        "dispatchUpdated": "Диспетчерское задание обновлено",
-        "dispatchClosed": "Диспетчерское задание закрыто",
-        "statusChange": "Изменение статуса",
-        "dispatchNote": "Записка диспетчера"
+      "discordRpc": {
+        "btn2Failure": "Ошибка: без Pro кнопка №2 может направлять пользователей только на приглашение Sonoran CAD или Sonoran CMS.",
+        "clientId": "ID клиента",
+        "discordRichPresence": "Богатое присутствие в Discord",
+        "iconName": "Имя значка",
+        "info1": "Для пользователей настольных компьютеров отображается кнопка приглашения в Discord. Это может быть связано с вашим приложением CAD или CMS."
       },
       "emails": {
-        "customEmails": "Пользовательские электронные письма сообщества",
-        "subtext1": "Настройте электронные письма, которые получают пользователи при создании учетной записи или сбросе пароля с вашего пользовательского экрана входа.",
         "accountRegistration": "Регистрация учетной записи",
-        "viewTemplate": "Просмотреть шаблон",
-        "header": "Заголовок",
-        "subheader": "Подзаголовок",
         "body": "Содержимое",
+        "customEmails": "Пользовательские электронные письма сообщества",
+        "emailTemplate": "Шаблон электронной почты",
+        "header": "Заголовок",
         "resetPassword": "Сброс пароля",
-        "emailTemplate": "Шаблон электронной почты"
-      },
-      "pageColors": {
-        "customPageColors": "Пользовательские цвета страницы",
-        "loginPageBkg": "Фон страницы входа",
-        "setToDefault": "Установить цвет по умолчанию",
-        "menuPageBkg": "Фон страницы меню"
-      },
-      "restrictions": {
-        "userAccountRestrictions": "Ограничения учетной записи пользователя",
-        "subtext1": "Sonoran CAD allows you to limit the amount of civilian characters, licenses, and vehicle registrations every individual user account can create.",
-        "maxCivilians": "Максимум персонажей гражданских",
-        "maxLicenses": "Максимум лицензий гражданских *",
-        "maxRegistrations": "Максимум регистраций транспортных средств гражданских *",
-        "note": "* Эти ограничения НЕ применяются к сообществам с включенной синхронизацией базы данных."
-      },
-      "otherCustomization": "Другие функции настройки",
-      "servers": {
-        "servers": "Серверы",
-        "subtext1": "Ваше сообщество использует несколько серверов?",
-        "subtext2": "Sonoran CAD позволяет разделять онлайн-подразделения и диспетчеризацию между несколькими серверами, при этом используя одни и те же записи.",
-        "subtext3": "Ваше сообщество в настоящее время может поддерживать до",
-        "subtext4": "серверов.",
-        "newServer": "Новый сервер",
-        "name": "Имя",
-        "description": "Описание"
-      },
-      "lookupTypes": {
-        "lookupTypes": "Типы поиска",
-        "customRecordFieldId": "ID пользовательского поля записи"
+        "subheader": "Подзаголовок",
+        "subtext1": "Настройте электронные письма, которые получают пользователи при создании учетной записи или сбросе пароля с вашего пользовательского экрана входа.",
+        "viewTemplate": "Просмотреть шаблон"
       },
       "errors": {
         "serverLimit1": "Ошибка: вашему сообществу доступно только",
         "serverLimit2": "серверов!",
         "serverMinimum": "Ошибка: у вас должен быть хотя бы один сервер!"
       },
-      "discordRpc": {
-        "info1": "Для пользователей настольных компьютеров отображается кнопка приглашения в Discord. Это может быть связано с вашим приложением CAD или CMS.",
-        "discordRichPresence": "Богатое присутствие в Discord",
-        "clientId": "ID клиента",
-        "iconName": "Имя значка",
-        "btn2Failure": "Ошибка: без Pro кнопка №2 может направлять пользователей только на приглашение Sonoran CAD или Sonoran CMS."
+      "geo": {
+        "currencyDelimiter": "Разделитель валюты",
+        "emergencyCode": "Код экстренной ситуации",
+        "geographicalSettings": "Географические условия",
+        "geoSubtext": "Specify your community's geographical location to change the wording of systems in your CAD.",
+        "penalCodeName": "Название уголовного кодекса",
+        "tenCodeName": "Название кода десятичных сигналов"
+      },
+      "info": {
+        "communityId": "ID Сообщества",
+        "communityInfo": "Информация о сообществе.",
+        "discord": "Дискорд",
+        "name": "Имя",
+        "subtitle": "Подзаголовок",
+        "timezone": "Часовой Пояс",
+        "voiceCommand": "Ключевое слово Голосовой Команды",
+        "website": "Веб-Сайт"
+      },
+      "lookupTypes": {
+        "customRecordFieldId": "ID пользовательского поля записи",
+        "lookupTypes": "Типы поиска"
+      },
+      "notificationTones": {
+        "dispatchClosed": "Диспетчерское задание закрыто",
+        "dispatchNote": "Записка диспетчера",
+        "dispatchUpdated": "Диспетчерское задание обновлено",
+        "newDispatch": "Новое диспетчерское задание",
+        "notificationTones": "Тоны уведомлений",
+        "statusChange": "Изменение статуса"
+      },
+      "otherCustomization": "Другие функции настройки",
+      "pageColors": {
+        "customPageColors": "Пользовательские цвета страницы",
+        "loginPageBkg": "Фон страницы входа",
+        "menuPageBkg": "Фон страницы меню",
+        "setToDefault": "Установить цвет по умолчанию"
+      },
+      "quickLinks": {
+        "color": "Цвет",
+        "deleteLink": "Удалить Ссылку",
+        "label": "Название",
+        "link": "Ссылка",
+        "newLink": "Новая Ссылка",
+        "quickLinks": "Быстрые Ссылки"
+      },
+      "restrictions": {
+        "maxCivilians": "Максимум персонажей гражданских",
+        "maxLicenses": "Максимум лицензий гражданских *",
+        "maxRegistrations": "Максимум регистраций транспортных средств гражданских *",
+        "note": "* Эти ограничения НЕ применяются к сообществам с включенной синхронизацией базы данных.",
+        "subtext1": "Sonoran CAD allows you to limit the amount of civilian characters, licenses, and vehicle registrations every individual user account can create.",
+        "userAccountRestrictions": "Ограничения учетной записи пользователя"
+      },
+      "servers": {
+        "description": "Описание",
+        "name": "Имя",
+        "newServer": "Новый сервер",
+        "servers": "Серверы",
+        "subtext1": "Ваше сообщество использует несколько серверов?",
+        "subtext2": "Sonoran CAD позволяет разделять онлайн-подразделения и диспетчеризацию между несколькими серверами, при этом используя одни и те же записи.",
+        "subtext3": "Ваше сообщество в настоящее время может поддерживать до",
+        "subtext4": "серверов."
+      },
+      "unitStatus": {
+        "available": "Доступен",
+        "busy": "Занят",
+        "enroute": "В пути",
+        "onScene": "На сцене",
+        "unavailable": "Не доступен",
+        "unitStatusCodes": "Коды Статусов Юнитов"
       }
     },
-    "department": {
-      "agencies": "Агентства",
-      "agency": "Агентство",
-      "departments": "Департаменты",
-      "department": "Департамент",
-      "subdivisions": "Подразделения",
+    "customRecords": {
+      "actions": "Действия",
+      "addCustomSection": "Добавить пользовательский раздел",
+      "addPremadeSection": "Добавить готовый раздел",
+      "dbMap": "Картирование синхронизации базы данных",
+      "dependency": "Зависимость",
+      "dependencyInfo": {
+        "infoContains": "Отображать, если значение поля содержит один или несколько:",
+        "infoEqual": "Отображать, если значение поля равно:",
+        "infoNotEqual": "Отображать, если значение поля не равно:"
+      },
+      "duplicateSection": "Дублировать раздел",
+      "enableDuplicate": "Включить дубликат",
+      "enableMapping": "Включить картографию",
+      "enforceFormatting": "Принудительное форматирование для текстовых полей.",
+      "errors": {
+        "maxCiv": "ОШИБКА: у этого типа записи слишком много поисковых разделов для гражданских лиц. (Поля с UID 'first' и 'last')",
+        "maxStatus": "ОШИБКА: у этого типа записи слишком много пользовательских полей типа 'status'.",
+        "maxVeh": "ОШИБКА: у этого типа записи слишком много поисковых разделов для транспортных средств. (Поля с UID 'plate')",
+        "minCiv": "ОШИБКА: у этого типа записи недостаточно поисковых полей для персонажа. (Поля с UID 'first' и 'last')",
+        "minStatus": "ОШИБКА: у этого типа записи должно быть ОДНО пользовательское поле типа 'status'.",
+        "minVeh": "ОШИБКА: у этого типа записи недостаточно поисковых полей для транспортных средств. (Поля с UID 'plate')",
+        "noName": "ОШИБКА: для этого шаблона записи не задано название.",
+        "noPreviewedFields": "ОШИБКА: в этом шаблоне записи нет полей, включенных для предварительного просмотра.",
+        "noStatusField": "ОШИБКА: этот тип записи должен иметь ОДНО пользовательское поле с UID 'status'"
+      },
+      "existingHeader": "Существующие пользовательские типы записей",
+      "label": "Метка",
+      "lookupPreview": "Предварительный просмотр поиска",
+      "lookupPreviewAbout": "Показать значение поля в предварительном просмотре таблицы поиска",
+      "mask": "Маска",
+      "maskAlphaNumeric": "X: Буквенно-цифровой",
+      "maskNumber": "№: Номер",
+      "maskText": "С: Буква A-Z",
       "name": "Имя",
-      "description": "Описание",
+      "newField": "Новое поле",
+      "newValue": "Новое значение",
+      "readOnly": "Только для чтения",
+      "recordEditor": "Редактор записей",
+      "recordPreview": "Предварительный просмотр записи",
+      "recordSections": "Разделы записи",
+      "recordTypeName": "Название типа записи",
+      "recordTypes": {
+        "bolo": "BOLO (Будьте начеку)",
+        "dmvRecord": "Запись DMV",
+        "fireRecord": "Пожарная запись",
+        "fireReport": "Отчет о пожаре",
+        "lawRecord": "Юридическая запись",
+        "lawReport": "Юридический отчёт",
+        "license": "лицензия",
+        "medicalRecord": "Медицинская Запись",
+        "medicalReport": "Медицинский Доклад",
+        "policeRecord": "Полицейская Запись",
+        "policeReport": "Полицейский Доклад",
+        "vehicleRegistration": "Регистрация транспортного средства",
+        "warrant": "Ордер"
+      },
+      "remove": {
+        "confirmRemove": "Вы уверены, что хотите удалить этот тип записи?",
+        "removeType": "Удалить тип записи"
+      },
+      "requiredAbout": "Обязательное поле",
+      "resyncPreview": {
+        "confirm": "Это вручную обновит все предыдущие записи, чтобы гарантировать соответствие отображаемых полей вашему последнему шаблону записи. Этот процесс выводит таймаут в 10 минут.",
+        "resyncPreview": "Ресинхронизировать поля предварительного просмотра"
+      },
+      "reverseMap": "Обратная карта",
+      "searchCivs": "Искать гражданских",
+      "searchVehicles": "Искать транспортные средства",
+      "sectionLabel": "Метка раздела",
+      "supervisorAbout": "Ограничить доступ к полю только для супервайзеров",
+      "type": "Тип",
+      "uniqueField": "Уникальное поле",
+      "width": "Ширина"
+    },
+    "department": {
       "abbreviation": "Сокращение",
       "address": "Адрес",
-      "zip": "Почтовый индекс",
+      "agencies": "Агентства",
+      "agency": "Агентство",
+      "department": "Департамент",
+      "departments": "Департаменты",
+      "description": "Описание",
       "errors": {
-        "generalLimit1": "Ошибка: ваше сообщество ограничено количеством",
-        "agencyLimit2": "агентств!",
-        "departmentLimit2": "отделов на район!",
-        "subdivisionLimit2": "подразделений на отдел!",
         "agencyExists": "Ошибка: агентство с таким именем уже существует!",
-        "districtExists": "Ошибка: район с таким названием уже существует!",
+        "agencyLimit2": "агентств!",
         "departmentExists": "Ошибка: отдел с таким названием уже существует!",
-        "subdivisionExists": "Ошибка: подразделение с таким названием уже существует!"
-      },
-      "modifyDepartment": {
-        "createNewDepartment": "Создать новый отдел",
-        "editDepartment": "Редактировать отдел",
-        "name": "Название отдела",
-        "abbreviation": "Аббревиатура",
-        "address": "Адрес",
-        "zip": "Почтовый индекс",
-        "confirmRemove1": "Вы уверены, что хотите удалить этот отдел?",
-        "confirmRemove2": "Этот отдел и все содержащиеся в нем подразделения будут удалены!"
+        "departmentLimit2": "отделов на район!",
+        "districtExists": "Ошибка: район с таким названием уже существует!",
+        "generalLimit1": "Ошибка: ваше сообщество ограничено количеством",
+        "subdivisionExists": "Ошибка: подразделение с таким названием уже существует!",
+        "subdivisionLimit2": "подразделений на отдел!"
       },
       "modifyAgency": {
         "createNewAgency": "Создать новое агентство",
+        "description": "Описание",
         "editAgency": "Редактировать агентство",
         "name": "Название агентства",
-        "description": "Описание",
         "remove": {
           "confirmRemove1": "Вы уверены, что хотите удалить это агентство?",
           "confirmRemove2": "Это агентство и все содержащиеся в нем отделы и подразделения будут удалены!"
         }
       },
+      "modifyDepartment": {
+        "abbreviation": "Аббревиатура",
+        "address": "Адрес",
+        "confirmRemove1": "Вы уверены, что хотите удалить этот отдел?",
+        "confirmRemove2": "Этот отдел и все содержащиеся в нем подразделения будут удалены!",
+        "createNewDepartment": "Создать новый отдел",
+        "editDepartment": "Редактировать отдел",
+        "name": "Название отдела",
+        "zip": "Почтовый индекс"
+      },
       "modifySubdivision": {
+        "confirmRemove": "Вы уверены, что хотите удалить это подразделение?",
         "createNewSub": "Создать новое подразделение",
-        "editSub": "Редактировать подразделение",
-        "name": "Название подразделения",
         "description": "Описание",
-        "confirmRemove": "Вы уверены, что хотите удалить это подразделение?"
-      }
-    },
-    "webhooks": {
-      "modified": "Изменено",
-      "removed": "Удалено",
-      "headerText": "Интеграция Discord с Sonoran CAD",
-      "subtext1": "Интеграция Discord с Sonoran CAD позволяет получать оповещения напрямую на ваш сервер Discord.",
-      "subtext2": "Просто включите и укажите URL WebHook Discord для нужных полей ниже.",
-      "emergencyWebhooks": "Чрезвычайные Webhooks",
-      "about": "О программе",
-      "emergencyAbout": "Эти вебхуки относятся к службам экстренной помощи.",
-      "unitPanic": "Паника подразделения",
-      "unitPanicAbout": "Этот WebHook будет отправлен, когда подразделение переключит свой статус на PANIC.",
-      "dispatch": "Диспетчеризация",
-      "dispatchAbout": "Этот WebHook будет отправлен, когда вызов диспетчера будет добавлен или изменен.",
-      "policeRecord": "Полицейский протокол",
-      "policeRecordAbout": "Этот WebHook будет отправлен, когда полицейский протокол будет добавлен, изменен или удален.",
-      "medicalRecord": "Медицинская запись",
-      "medicalRecordAbout": "Этот WebHook будет отправлен, когда медицинская запись будет добавлена, изменена или удалена.",
-      "fireRecord": "Пожарная запись",
-      "fireRecordAbout": "Этот WebHook будет отправлен, когда пожарная запись будет добавлена, изменена или удалена.",
-      "bolo": "БОЛО",
-      "boloAbout": "Этот WebHook будет отправлен, когда BOLO будет добавлен или изменен.",
-      "emergencyCall": "Экстренный вызов",
-      "emergencyCallAbout": "Этот WebHook будет отправлен, когда поступит экстренный вызов.",
-      "civilianWebhooks": "Гражданские Webhooks",
-      "civilianWebhooksAbout": "Эти WebHooks связаны с гражданскими услугами.",
-      "character": "Изменение персонажа",
-      "characterAbout": "Этот WebHook будет отправлен, когда гражданский персонаж будет добавлен, изменен или удален.",
-      "dmv": "Запись DMV",
-      "dmvAbout": "Этот WebHook будет отправлен, когда запись DMV будет добавлена, изменена или удалена.",
-      "law": "Юридическая запись",
-      "lawAbout": "Этот WebHook будет отправлен, когда юридическая запись будет добавлена, изменена или удалена.",
-      "adminWebhooks": "Вебхуки администратора",
-      "adminWebhooksAbout": "Эти WebHook'и связаны с административными услугами.",
-      "accountPermissions": "Разрешения учетной записи",
-      "accountPermissionsAbout": "Этот WebHook будет отправлен, когда администратор изменяет разрешения учетной записи пользователя.",
-      "departmentStructure": "Структура отдела",
-      "departmentStructureAbout": "Этот WebHook будет отправлен, когда администратор обновляет структуру отдела.",
-      "10Code": "10-код изменен",
-      "10CodeAbout": "Этот WebHook будет отправлен, когда администратор добавит, изменит или удалит 10-код.",
-      "penalCode": "Уголовный кодекс изменён",
-      "penalCodeAbout": "Этот WebHook будет отправлен, когда администратор добавит, изменит или удалит уголовный кодекс.",
-      "apiRequest": "Запрос API",
-      "apiRequestAbout": "Этот WebHook будет отправлен при отправке запроса API.",
-      "signal": "Сигнал",
-      "signalAbout": "Этот WebHook будет отправлен, когда сигнал будет активирован.",
-      "toneBoardAbout": "Этот WebHook будет отправлен, когда диспетчер запускает тональный сигнал.",
-      "errors": {
-        "maxWebhooks": "Ошибка: вы достигли предела вебхуков для вашего сообщества:"
-      }
-    },
-    "limits": {
-      "limitsHeader": "Ограничения сообщества Sonoran CAD",
-      "upgradeYourCad": "Обновите ваш CAD",
-      "version": "Версия",
-      "expiration": "Срок действия"
-    },
-    "remove": {
-      "removeWarning1": "Удаление или перенос вашего CAD НЕ отменяет никаких активных подписок сообщества.",
-      "removeWarning2": "Вы можете отменить или передать свою подписку другому сообществу в платежном центре.",
-      "transferHeader": "Перенос вашего Sonoran CAD",
-      "transferSubtext": "Вы должны быть владельцем сообщества/CAD, чтобы передать этот CAD. Процесс передачи потребует проверки по электронной почте.",
-      "transferCad": "Передать CAD",
-      "transferCadTo": "Передать CAD к",
-      "removeHeader": "Удалить ваш Sonoran CAD",
-      "removeSubtext": "Вы должны быть владельцем сообщества/CAD, чтобы удалить этот CAD. Процесс удаления потребует проверки по электронной почте.",
-      "removeCad": "Удалить CAD"
-    },
-    "wipeRecords": {
-      "wipeHeader": "Очистить записи вашего сообщества",
-      "wipeSubtext1": "Владельцы сообществ могут удалить все сохраненные записи по типу.",
-      "wipeSubtext2": "Выберите тип ниже, чтобы удалить все.",
-      "confirmWipe1": "Вы уверены, что хотите удалить все записи типа",
-      "confirmWipe2": "Это действие нельзя отменить!"
-    },
-    "accounts": {
-      "userAccounts": "Учетные записи пользователей",
-      "username": "Имя пользователя",
-      "status": "Статус",
-      "joined": "Присоединился",
-      "permissions": "Разрешения",
-      "lastLogin": "Последний вход",
-      "apiIds": "API Идентификаторы",
-      "purge": "Удалить неактивных",
-      "purgeConfirm": "Вы уверены, что хотите удалить все неактивные учетные записи пользователей? (30 дней)"
-    },
-    "customRecords": {
-      "existingHeader": "Существующие пользовательские типы записей",
-      "recordEditor": "Редактор записей",
-      "recordTypeName": "Название типа записи",
-      "type": "Тип",
-      "resyncPreview": {
-        "resyncPreview": "Ресинхронизировать поля предварительного просмотра",
-        "confirm": "Это вручную обновит все предыдущие записи, чтобы гарантировать соответствие отображаемых полей вашему последнему шаблону записи. Этот процесс выводит таймаут в 10 минут."
+        "editSub": "Редактировать подразделение",
+        "name": "Название подразделения"
       },
-      "addCustomSection": "Добавить пользовательский раздел",
-      "addPremadeSection": "Добавить готовый раздел",
-      "recordSections": "Разделы записи",
-      "newField": "Новое поле",
-      "searchCivs": "Искать гражданских",
-      "searchVehicles": "Искать транспортные средства",
-      "enableDuplicate": "Включить дубликат",
-      "duplicateSection": "Дублировать раздел",
-      "sectionLabel": "Метка раздела",
-      "lookupPreviewAbout": "Показать значение поля в предварительном просмотре таблицы поиска",
-      "supervisorAbout": "Ограничить доступ к полю только для супервайзеров",
-      "requiredAbout": "Обязательное поле",
-      "uniqueField": "Уникальное поле",
-      "readOnly": "Только для чтения",
-      "newValue": "Новое значение",
-      "reverseMap": "Обратная карта",
-      "enableMapping": "Включить картографию",
-      "lookupPreview": "Предварительный просмотр поиска",
-      "recordPreview": "Предварительный просмотр записи",
-      "actions": "Действия",
       "name": "Имя",
-      "mask": "Маска",
-      "label": "Метка",
-      "width": "Ширина",
-      "dbMap": "Картирование синхронизации базы данных",
-      "dependency": "Зависимость",
-      "dependencyInfo": {
-        "infoEqual": "Отображать, если значение поля равно:",
-        "infoNotEqual": "Отображать, если значение поля не равно:",
-        "infoContains": "Отображать, если значение поля содержит один или несколько:"
-      },
-      "recordTypes": {
-        "warrant": "Ордер",
-        "bolo": "BOLO (Будьте начеку)",
-        "license": "лицензия",
-        "vehicleRegistration": "Регистрация транспортного средства",
-        "policeRecord": "Полицейская Запись",
-        "policeReport": "Полицейский Доклад",
-        "medicalRecord": "Медицинская Запись",
-        "medicalReport": "Медицинский Доклад",
-        "fireRecord": "Пожарная запись",
-        "fireReport": "Отчет о пожаре",
-        "dmvRecord": "Запись DMV",
-        "lawRecord": "Юридическая запись",
-        "lawReport": "Юридический отчёт"
-      },
-      "errors": {
-        "maxCiv": "ОШИБКА: у этого типа записи слишком много поисковых разделов для гражданских лиц. (Поля с UID 'first' и 'last')",
-        "minCiv": "ОШИБКА: у этого типа записи недостаточно поисковых полей для персонажа. (Поля с UID 'first' и 'last')",
-        "maxVeh": "ОШИБКА: у этого типа записи слишком много поисковых разделов для транспортных средств. (Поля с UID 'plate')",
-        "minVeh": "ОШИБКА: у этого типа записи недостаточно поисковых полей для транспортных средств. (Поля с UID 'plate')",
-        "maxStatus": "ОШИБКА: у этого типа записи слишком много пользовательских полей типа 'status'.",
-        "minStatus": "ОШИБКА: у этого типа записи должно быть ОДНО пользовательское поле типа 'status'.",
-        "noStatusField": "ОШИБКА: этот тип записи должен иметь ОДНО пользовательское поле с UID 'status'",
-        "noPreviewedFields": "ОШИБКА: в этом шаблоне записи нет полей, включенных для предварительного просмотра.",
-        "noName": "ОШИБКА: для этого шаблона записи не задано название."
-      },
-      "remove": {
-        "removeType": "Удалить тип записи",
-        "confirmRemove": "Вы уверены, что хотите удалить этот тип записи?"
-      },
-      "enforceFormatting": "Принудительное форматирование для текстовых полей.",
-      "maskNumber": "№: Номер",
-      "maskText": "С: Буква A-Z",
-      "maskAlphaNumeric": "X: Буквенно-цифровой"
+      "subdivisions": "Подразделения",
+      "zip": "Почтовый индекс"
+    },
+    "general": {
+      "accounts": "Аккаунты",
+      "advanced": "Дополнительно",
+      "authenticate": "Проверка Подлинности",
+      "changeCommunityId": "Сменить ID сообщества",
+      "customization": "Кастомизация",
+      "customRecords": "Настраеваемые Записи",
+      "departments": "Департаменты",
+      "discordIntegration": "Дискорд Интеграции",
+      "inGameIntegration": "Внутриигровые Интеграции",
+      "limits": "Лимиты",
+      "logs": "Логи",
+      "permissionKeys": "Ключи Привелегий",
+      "transferOrDelete": "Передача или Удаление CAD",
+      "wipeRecords": "Стереть Запись"
     },
     "integration": {
-      "apiHeader": "Веб API",
-      "apiSubheader": "Веб API Sonoran CAD позволяет обновлять местоположения подразделений в реальном времени, переключать статус PANIC подразделения, генерировать вызов 911 и многое другое прямо из игры!",
-      "resources": "Ресурсы",
-      "apiKey": "API ключ",
-      "changeApiKey": "Изменить API ключ",
       "apiDocs": "Документация по API",
-      "luaPlugins": "LUA плагины",
+      "apiHeader": "Веб API",
+      "apiKey": "API ключ",
+      "apiSubheader": "Веб API Sonoran CAD позволяет обновлять местоположения подразделений в реальном времени, переключать статус PANIC подразделения, генерировать вызов 911 и многое другое прямо из игры!",
+      "changeApiKey": "Изменить API ключ",
+      "configureAndDeploy": "Настроить и развернуть",
       "confirmKeyChange1": "Вы уверены, что хотите сгенерировать новый API ключ?",
       "confirmKeyChange2": "Вам потребуется обновить ваш API ключ во всех конфигурациях плагинов или API!",
-      "liveMapHeader": "Серверные события и интегрированная живая карта",
-      "liveMapSubtext1": "Конфигурация живой карты Sonoran CAD позволяет вам мгновенно настроить пользовательскую интегрированную живую карту вашего сообщества, мы даже занимаемся хостингом!",
-      "liveMapSubtext2": "Sonoran CAD также отправляет данные о событиях на настроенный вами порт прослушивания.",
-      "mapTutorial": "Руководство по карте",
-      "eventDocumentation": "Документация по событиям",
-      "configureAndDeploy": "Настроить и развернуть",
-      "enableMap": "Включить карту",
-      "staticOnly": "Только статический URL",
-      "staticOnlyAbout": "Если ваш игровой режим несовместим с ресурсом живой карты, вместо этого вы можете указать веб-сайт с картой вашей игры.",
-      "mapType": "Тип карты",
-      "uploadCustomMap": "Загрузить пользовательскую карту",
-      "server": "Сервер",
-      "ip": "IP",
-      "websiteUrl": "URL веб-сайта",
-      "mapPort": "Порт карты",
-      "gamePort": "Игровой порт",
-      "differingOutboundIp": "Отличающийся исходящий IP",
-      "outboundIp": "Исходящий IP",
-      "saveAndDeploy": "Сохранить и развернуть",
       "dbSync": {
+        "characterMapping": "Картирование персонажа",
+        "characterMappingColumn": "Столбец картирования персонажа",
+        "columnName": "Название столбца",
+        "connectionCredentials": "Учётные данные подключения SQL",
+        "customMapAbout": "Это пользовательское поле картирования синхронизации базы данных, предоставленное вашим редактором пользовательских записей.",
+        "database": "База данных",
         "dbSyncHeader": "Синхронизация базы данных",
         "dbSyncSubtext1": "Синхронизация базы данных Sonoran CAD позволяет загружать персонажей, лицензии и регистрации транспортных средств напрямую из вашей игровой базы данных в CAD.",
         "dbSyncSubtext2": "Просто укажите строку подключения SQL для вашей базы данных и сопоставьте ваши таблицы и поля с Sonoran CAD.",
         "dbSyncSubtext3": "Все поля, выделенные красным цветом, обязательны для заполнения. Если у вас нет столбца данных для необязательного поля, просто оставьте его пустым.",
-        "connectionCredentials": "Учётные данные подключения SQL",
+        "dbValue": "Значение базы данных",
         "description": "Описание",
         "descriptionCredentials": "Это детали подключения SQL к вашей игровой базе данных.",
-        "enableDbSync": "Включить синхронизацию базы данных",
         "enableDbMerge": "Включить объединение базы данных",
-        "testConnection": "Тестировать соединение",
-        "saveCredentials": "Сохранить учетные данные подключения",
-        "type": "Тип",
-        "host": "Хост/Адрес",
-        "port": "Порт",
-        "database": "База данных",
-        "username": "Имя пользователя",
-        "password": "Пароль",
-        "characterMapping": "Картирование персонажа",
-        "licenseMapping": "Картирование лицензии",
-        "vehicleMapping": "Картирование транспортного средства",
-        "testMapping": "Тестовое картографирование",
-        "saveMapping": "Сохранить конфигурацию картографирования",
-        "tableName": "Название таблицы",
-        "characterMappingColumn": "Столбец картирования персонажа",
-        "customMapAbout": "Это пользовательское поле картирования синхронизации базы данных, предоставленное вашим редактором пользовательских записей.",
-        "columnName": "Название столбца",
+        "enableDbSync": "Включить синхронизацию базы данных",
         "externalKey": "Внешний ключ",
-        "jsonKey": "Ключ JSON",
-        "jsonColumn": "Столбец JSON",
-        "jsonColumnAbout": "Если этот столбец имеет тип данных JSON, вы можете указать ключ JSON.",
-        "label": "Метка",
-        "tooltipLabel": "Это описание поля",
-        "tooltipColumn": "Это название столбца в вашей таблице базы данных, содержащего данные этого поля.",
-        "tooltipTable": "Это название таблицы SQL, в которой находится этот столбец данных.",
-        "tooltipCharacterColumn": "Это название столбца с уникальным идентификатором персонажа в вашей таблице. Обычно он содержит шестнадцатеричный Steam ID.",
         "fieldMapId": "ID картографирования поля",
         "fieldMapIdAbout": "Этот идентификатор помогает сопоставлять поля в пользовательском разделе персонажа с другими записями и различать, какие поля содержат поисковые термины, такие как имя и фамилия.",
         "friendlyMapping": "Удобное картографирование",
-        "tooltipFriendlyMapping": "Это позволяет сопоставлять общие значения базы данных с более удобными значениями пользовательского интерфейса.",
         "friendlyMappingExample": "Пример: 'drive_license' -> 'Водительское удостоверение'",
-        "dbValue": "Значение базы данных",
-        "friendlyValue": "Удобное значение"
+        "friendlyValue": "Удобное значение",
+        "host": "Хост/Адрес",
+        "jsonColumn": "Столбец JSON",
+        "jsonColumnAbout": "Если этот столбец имеет тип данных JSON, вы можете указать ключ JSON.",
+        "jsonKey": "Ключ JSON",
+        "label": "Метка",
+        "licenseMapping": "Картирование лицензии",
+        "password": "Пароль",
+        "port": "Порт",
+        "saveCredentials": "Сохранить учетные данные подключения",
+        "saveMapping": "Сохранить конфигурацию картографирования",
+        "tableName": "Название таблицы",
+        "testConnection": "Тестировать соединение",
+        "testMapping": "Тестовое картографирование",
+        "tooltipCharacterColumn": "Это название столбца с уникальным идентификатором персонажа в вашей таблице. Обычно он содержит шестнадцатеричный Steam ID.",
+        "tooltipColumn": "Это название столбца в вашей таблице базы данных, содержащего данные этого поля.",
+        "tooltipFriendlyMapping": "Это позволяет сопоставлять общие значения базы данных с более удобными значениями пользовательского интерфейса.",
+        "tooltipLabel": "Это описание поля",
+        "tooltipTable": "Это название таблицы SQL, в которой находится этот столбец данных.",
+        "type": "Тип",
+        "username": "Имя пользователя",
+        "vehicleMapping": "Картирование транспортного средства"
       },
+      "differingOutboundIp": "Отличающийся исходящий IP",
+      "enableMap": "Включить карту",
+      "eventDocumentation": "Документация по событиям",
+      "gamePort": "Игровой порт",
+      "ip": "IP",
+      "liveMapHeader": "Серверные события и интегрированная живая карта",
+      "liveMapSubtext1": "Конфигурация живой карты Sonoran CAD позволяет вам мгновенно настроить пользовательскую интегрированную живую карту вашего сообщества, мы даже занимаемся хостингом!",
+      "liveMapSubtext2": "Sonoran CAD также отправляет данные о событиях на настроенный вами порт прослушивания.",
+      "luaPlugins": "LUA плагины",
+      "manualInstalltion": "Ручная установка",
+      "mapPort": "Порт карты",
+      "mapTutorial": "Руководство по карте",
+      "mapType": "Тип карты",
       "oneClickInstallation": "Установка в один клик",
-      "manualInstalltion": "Ручная установка"
+      "outboundIp": "Исходящий IP",
+      "resources": "Ресурсы",
+      "saveAndDeploy": "Сохранить и развернуть",
+      "server": "Сервер",
+      "staticOnly": "Только статический URL",
+      "staticOnlyAbout": "Если ваш игровой режим несовместим с ресурсом живой карты, вместо этого вы можете указать веб-сайт с картой вашей игры.",
+      "uploadCustomMap": "Загрузить пользовательскую карту",
+      "websiteUrl": "URL веб-сайта"
+    },
+    "limits": {
+      "expiration": "Срок действия",
+      "limitsHeader": "Ограничения сообщества Sonoran CAD",
+      "upgradeYourCad": "Обновите ваш CAD",
+      "version": "Версия"
+    },
+    "logs": {
+      "log": "Журнал",
+      "logs": "Логи",
+      "time": "Время"
     },
     "penal": {
-      "createNewPenal": "Создать новое законодательство ",
-      "editPenal": "Редактировать законодательство",
-      "code": "Статья",
-      "title": "Заголовок",
-      "chargeType": "Тип Обвинения",
-      "bondType": "Тип Наказания",
-      "bondAmount": "Наказание/Штраф Amount",
-      "jailTime": "Время Заключения",
-      "confirmRemove": "Вы уверены, что хотите удалить эту статью?",
-      "errors": {
-        "exists": "Ошибка: Дубликат Законодательства уже существует!",
-        "duplicate": "Ошибка: Вы не можете установить тот Кодекс, который уже установлен!",
-        "notFound": "Ошибка: Не удалось снять Законодательный Кодекс!"
-      },
-      "chargeTypes": "Тип Обвинения",
       "autoSort": "Авто Сортировка",
+      "bondAmount": "Наказание/Штраф Amount",
+      "bondType": "Тип Наказания",
       "bondTypes": "Тип Наказания",
+      "chargeType": "Тип Обвинения",
+      "chargeTypes": "Тип Обвинения",
+      "code": "Статья",
       "columns": {
         "action": "Действие",
-        "charge": "Статья",
-        "bond": "Наказание"
-      }
-    },
-    "10Codes": {
-      "action": "Действия",
-      "code": "Закон"
+        "bond": "Наказание",
+        "charge": "Статья"
+      },
+      "confirmRemove": "Вы уверены, что хотите удалить эту статью?",
+      "createNewPenal": "Создать новое законодательство ",
+      "editPenal": "Редактировать законодательство",
+      "errors": {
+        "duplicate": "Ошибка: Вы не можете установить тот Кодекс, который уже установлен!",
+        "exists": "Ошибка: Дубликат Законодательства уже существует!",
+        "notFound": "Ошибка: Не удалось снять Законодательный Кодекс!"
+      },
+      "jailTime": "Время Заключения",
+      "title": "Заголовок"
     },
     "permissions": {
-      "permissionKeys": "Ключи Привелегии",
-      "permissionKey": "Ключ Привелегии",
-      "key": "Ключ",
-      "permissions": "Разрешения",
-      "accountManagement": "Управление Учетными Записями",
-      "permissionsGuide": "Руководство по привелегиям",
-      "keyName": "Имя ключа",
       "account": "Аккаунт",
-      "joined": "Присоеденен",
-      "pagePermissions": "Разрешение на страницу",
-      "unitGeneral": "Юнит - Общее",
-      "policeAdvanced": "Полиция - Продвинутый",
-      "emsAdvanced": "EMS - Продвинутый",
-      "fireAdvanced": "FD - Продвинутый",
-      "dmvRecords": "Записи Отдела Транспортных Средств",
-      "modifyStreetSigns": "Изменить уличные знаки",
-      "lawRecords": "Law Записи",
+      "accountManagement": "Управление Учетными Записями",
       "adminAccess": "Администраторский доступ",
-      "kickUser": "Кикнуть Пользователя",
+      "ban": "Блокировка",
       "banUser": "Заблокировать Пользователя",
+      "confirmBan": "Вы уверены в этом?",
+      "confirmKick": "Вы уверены, что хотите изгнать?",
+      "confirmRemoveKey": "Вы уверены, что хотите убрать ключь этой привелегии?",
+      "dmvRecords": "Записи Отдела Транспортных Средств",
+      "emsAdvanced": "EMS - Продвинутый",
+      "errors": {
+        "duplicateKey": "Ошибка: Дубликат ключа с таким именем уже существует!"
+      },
+      "fireAdvanced": "FD - Продвинутый",
+      "joined": "Присоеденен",
+      "key": "Ключ",
+      "keyName": "Имя ключа",
+      "kickUser": "Кикнуть Пользователя",
+      "lawRecords": "Law Записи",
+      "modifyStreetSigns": "Изменить уличные знаки",
+      "pagePermissions": "Разрешение на страницу",
+      "permissionKey": "Ключ Привелегии",
+      "permissionKeys": "Ключи Привелегии",
+      "permissions": "Разрешения",
+      "permissionsGuide": "Руководство по привелегиям",
+      "policeAdvanced": "Полиция - Продвинутый",
       "revokeBan": "Отменить Блокировку",
+      "status": {
+        "active": "АКТИВНЫЙ",
+        "banned": "ЗАБЛОКИРОВАННЫЙ",
+        "pending": "РАССМАТРИВАЕМЫЙ"
+      },
       "toggles": {
         "editIdent": "Изменить Индификатор",
         "editOtherIdent": "Отредактировать Личность Другого",
         "selfDispatch": "Открепиться от вызова",
         "supervisor": "Супервайзер"
       },
-      "confirmKick": "Вы уверены, что хотите изгнать?",
-      "confirmBan": "Вы уверены в этом?",
-      "confirmRemoveKey": "Вы уверены, что хотите убрать ключь этой привелегии?",
-      "ban": "Блокировка",
       "unban": "Разблокировка",
-      "status": {
-        "pending": "РАССМАТРИВАЕМЫЙ",
-        "active": "АКТИВНЫЙ",
-        "banned": "ЗАБЛОКИРОВАННЫЙ"
-      },
+      "unitGeneral": "Юнит - Общее"
+    },
+    "remove": {
+      "removeCad": "Удалить CAD",
+      "removeHeader": "Удалить ваш Sonoran CAD",
+      "removeSubtext": "Вы должны быть владельцем сообщества/CAD, чтобы удалить этот CAD. Процесс удаления потребует проверки по электронной почте.",
+      "removeWarning1": "Удаление или перенос вашего CAD НЕ отменяет никаких активных подписок сообщества.",
+      "removeWarning2": "Вы можете отменить или передать свою подписку другому сообществу в платежном центре.",
+      "transferCad": "Передать CAD",
+      "transferCadTo": "Передать CAD к",
+      "transferHeader": "Перенос вашего Sonoran CAD",
+      "transferSubtext": "Вы должны быть владельцем сообщества/CAD, чтобы передать этот CAD. Процесс передачи потребует проверки по электронной почте."
+    },
+    "webhooks": {
+      "10Code": "10-код изменен",
+      "10CodeAbout": "Этот WebHook будет отправлен, когда администратор добавит, изменит или удалит 10-код.",
+      "about": "О программе",
+      "accountPermissions": "Разрешения учетной записи",
+      "accountPermissionsAbout": "Этот WebHook будет отправлен, когда администратор изменяет разрешения учетной записи пользователя.",
+      "adminWebhooks": "Вебхуки администратора",
+      "adminWebhooksAbout": "Эти WebHook'и связаны с административными услугами.",
+      "apiRequest": "Запрос API",
+      "apiRequestAbout": "Этот WebHook будет отправлен при отправке запроса API.",
+      "bolo": "БОЛО",
+      "boloAbout": "Этот WebHook будет отправлен, когда BOLO будет добавлен или изменен.",
+      "character": "Изменение персонажа",
+      "characterAbout": "Этот WebHook будет отправлен, когда гражданский персонаж будет добавлен, изменен или удален.",
+      "civilianWebhooks": "Гражданские Webhooks",
+      "civilianWebhooksAbout": "Эти WebHooks связаны с гражданскими услугами.",
+      "departmentStructure": "Структура отдела",
+      "departmentStructureAbout": "Этот WebHook будет отправлен, когда администратор обновляет структуру отдела.",
+      "dispatch": "Диспетчеризация",
+      "dispatchAbout": "Этот WebHook будет отправлен, когда вызов диспетчера будет добавлен или изменен.",
+      "dmv": "Запись DMV",
+      "dmvAbout": "Этот WebHook будет отправлен, когда запись DMV будет добавлена, изменена или удалена.",
+      "emergencyAbout": "Эти вебхуки относятся к службам экстренной помощи.",
+      "emergencyCall": "Экстренный вызов",
+      "emergencyCallAbout": "Этот WebHook будет отправлен, когда поступит экстренный вызов.",
+      "emergencyWebhooks": "Чрезвычайные Webhooks",
       "errors": {
-        "duplicateKey": "Ошибка: Дубликат ключа с таким именем уже существует!"
+        "maxWebhooks": "Ошибка: вы достигли предела вебхуков для вашего сообщества:"
+      },
+      "fireRecord": "Пожарная запись",
+      "fireRecordAbout": "Этот WebHook будет отправлен, когда пожарная запись будет добавлена, изменена или удалена.",
+      "headerText": "Интеграция Discord с Sonoran CAD",
+      "law": "Юридическая запись",
+      "lawAbout": "Этот WebHook будет отправлен, когда юридическая запись будет добавлена, изменена или удалена.",
+      "medicalRecord": "Медицинская запись",
+      "medicalRecordAbout": "Этот WebHook будет отправлен, когда медицинская запись будет добавлена, изменена или удалена.",
+      "modified": "Изменено",
+      "penalCode": "Уголовный кодекс изменён",
+      "penalCodeAbout": "Этот WebHook будет отправлен, когда администратор добавит, изменит или удалит уголовный кодекс.",
+      "policeRecord": "Полицейский протокол",
+      "policeRecordAbout": "Этот WebHook будет отправлен, когда полицейский протокол будет добавлен, изменен или удален.",
+      "removed": "Удалено",
+      "signal": "Сигнал",
+      "signalAbout": "Этот WebHook будет отправлен, когда сигнал будет активирован.",
+      "subtext1": "Интеграция Discord с Sonoran CAD позволяет получать оповещения напрямую на ваш сервер Discord.",
+      "subtext2": "Просто включите и укажите URL WebHook Discord для нужных полей ниже.",
+      "toneBoardAbout": "Этот WebHook будет отправлен, когда диспетчер запускает тональный сигнал.",
+      "unitPanic": "Паника подразделения",
+      "unitPanicAbout": "Этот WebHook будет отправлен, когда подразделение переключит свой статус на PANIC."
+    },
+    "wipeRecords": {
+      "confirmWipe1": "Вы уверены, что хотите удалить все записи типа",
+      "confirmWipe2": "Это действие нельзя отменить!",
+      "wipeHeader": "Очистить записи вашего сообщества",
+      "wipeSubtext1": "Владельцы сообществ могут удалить все сохраненные записи по типу.",
+      "wipeSubtext2": "Выберите тип ниже, чтобы удалить все."
+    }
+  },
+  "civilian": {
+    "buttons": {
+      "dmv": "База Данных",
+      "editCharacter": "Редактировать Персонажа",
+      "newCharacter": "Новый Персонаж",
+      "records": "Записи"
+    },
+    "characterEditor": {
+      "addCharacter": "Добавить Персонажа",
+      "age": "Возраст",
+      "aka": "Известен как (в узких кругах), прозвище",
+      "confirmRemove": "Вы уверены, что хотите удалить персонажа?",
+      "contactNumber": "Контактный номер",
+      "createNewCharacter": "Создать нового персонажа",
+      "dob": "Дата Рождения",
+      "editExistingCharacter": "Редактировать Персонажа",
+      "emergencyContact": "Экстренный номер для связи",
+      "eye": "Цвет Глаз",
+      "first": "Имя",
+      "hair": "Цвет Волос",
+      "height": "Рост",
+      "image": "Изображение",
+      "last": "Фамилия",
+      "mi": "Инициал Отчества",
+      "occupation": "Место работы",
+      "relationship": "Отношения",
+      "removeCharacter": "Удалить Персонажа",
+      "residence": "Место Жительства",
+      "saveCharacter": "Сохранить Персонажа",
+      "sex": "Пол",
+      "skin": "Цвет Кожи",
+      "weight": "Вес",
+      "zip": "Почтовый Индекс"
+    },
+    "errors": {
+      "maxCharacters": "Ошибка: Вы достигли максимального количества персонажей для Сообщества"
+    },
+    "labels": {
+      "selectedCharacter": "Выбранный персонаж"
+    }
+  },
+  "common": {
+    "actions": "Действия",
+    "activeServer": "Активный Сервер",
+    "add": "Добавить",
+    "autoSort": "Автоматическая Сортировка",
+    "cancel": "Отмена",
+    "close": "Закрыть",
+    "communityId": "ID Сообщества",
+    "confirm": "Подтвердить",
+    "contains": "Содержит",
+    "copy": "Копировать",
+    "edit": "Редактировать",
+    "enabled": "Включен",
+    "equal": "Равно",
+    "errors": {
+      "limitReached": "Ошибка: достигнут максимальный предел"
+    },
+    "export": "Экспорт",
+    "externalWindow": "Открыть во внешнем окне",
+    "failed": "Отказанно",
+    "help": "Помощь",
+    "icon": "Значок",
+    "id": "ИД",
+    "import": "Импорт",
+    "importPrompt": "Вставьте содержимое JSON",
+    "itemsPerPage": "Пунктов на странице",
+    "learnMore": "Узнать Больше",
+    "lostConnection": "Вы потеряли связь с сервером",
+    "maximize": "Развернуть",
+    "minimize": "Свернуть",
+    "modify": "Модифицировать",
+    "new": "Новый",
+    "noData": "Нет Данных",
+    "noResults": "Нет Результатов",
+    "notEqual": "Не равно",
+    "paste": "Вставить",
+    "pause": "Пауза",
+    "range": "Диапазон",
+    "refresh": "Обновить",
+    "remove": "Удалить",
+    "reset": "Сбросить",
+    "save": "Сохранить",
+    "search": "Найти",
+    "serverStatus": "Статус Сервера",
+    "start": "Начать",
+    "status": "Статус",
+    "success": "Успешно",
+    "test": "Тестировать",
+    "tutorial": "Обучение",
+    "tutorials": "Учебные Пособия",
+    "type": "Тип",
+    "undo": "Отменить",
+    "upload": "Загрузить",
+    "uploader": "Загрузит изображение (5МБ Максимум)"
+  },
+  "communityMenu": {
+    "buttons": {
+      "admin": "Администрация",
+      "civilian": "Гражданские",
+      "discord": "Discord",
+      "dispatch": "Диспетчер",
+      "dmv": "Общая База Данных",
+      "ems": "Экстренная Медицинская Служба",
+      "fire": "Пожарный Департамент",
+      "law": "Судебная система",
+      "police": "Полицейский Департамент",
+      "setDefault": "Сделать Сообществом по Умолчанию",
+      "website": "Вебсайт"
+    },
+    "labels": {
+      "permissionKey": "Ключ Доступа"
+    }
+  },
+  "homepage": {
+    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
+    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
+    "heroTitle": "The #1 Dispatch Platform for Gaming",
+    "integrateButton": "Integrate",
+    "integrations": {
+      "erlc": {
+        "description": "Official ER:LC in-game integration with live map and more.",
+        "name": "ER:LC"
+      },
+      "fivem": {
+        "description": "Official FiveM resource with dozens of deep integration points.",
+        "name": "FiveM"
       }
     },
-    "addresses": {
-      "addresses": "Адреса"
+    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "startToday": "Start Today",
+    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
+    "welcomeHeadline": "Welcome to Sonoran CAD!",
+    "welcomeTitle": "Welcome"
+  },
+  "login": {
+    "buttons": {
+      "cancel": "Отмена",
+      "create": "Создать Аккаунт",
+      "forgot": "Забыли Пароль",
+      "login": "Войти",
+      "staySignedIn": "Оставаться в системе",
+      "switchCommunities": "Сменить сообщество"
     },
-    "logs": {
-      "logs": "Логи",
-      "log": "Журнал",
-      "time": "Время"
+    "labels": {
+      "confirmPassword": "Подтверждение пароля",
+      "email": "Эл. почта",
+      "emailPreferences": "Настройки электронной почты",
+      "password": "Пароля",
+      "resetPassword": "Сбросить Пароль",
+      "username": "Имя Пользователя"
+    }
+  },
+  "payment": {
+    "buttons": {
+      "amount": "Сумма",
+      "comparePlans": "Pricing",
+      "oneTimePurchases": "Одноразовые покупки",
+      "openBillingPortal": "Open Billing Portal",
+      "purchase": "Приобрести Подписку"
+    },
+    "labels": {
+      "endDate": "Дата Окончания",
+      "expertInstallation": "Экспертная установка",
+      "plan": "План",
+      "plus": "Увеличенный",
+      "pro": "Профисиональный",
+      "standard": "Стандартный",
+      "startDate": "Дата Начала",
+      "starter": "Начальный"
+    },
+    "text": {
+      "bundleAndSave": "Комплектуйте и экономьте",
+      "bundleExplain": "Экономьте 30% каждый месяц, покупая VPS от Sonoran Servers.",
+      "newSubscription": "Новые подписки",
+      "serverIp": "IP Сервера",
+      "serversEmail": "Электронная почта учетной записи Sonoran Servers",
+      "setCommunityId": "Задать ID Сообщества"
+    }
+  },
+  "police": {
+    "callEditor": {
+      "addNote": "Добавить Примечание",
+      "address": "Адрес",
+      "block": "Блок",
+      "callDescription": "Описание Вызова",
+      "callNotes": "Примечание к Вызову",
+      "callOrigin": "Позвонивший",
+      "callStatus": "Статус Звонка",
+      "callTitle": "Название Вызова",
+      "callViewer": "Просмотре Вызовов",
+      "clearEditor": "Очистить Редактор",
+      "code": "Код",
+      "confirmations": {
+        "close1": "Вы установили статус вызова 'Закрыто'.",
+        "close2": "Вы уверены, что хотите закрыть этот вызов?",
+        "close3": "Этот вызов и все данные будут удалены!",
+        "detatch": "Открепиться",
+        "detatchConfirm": "Вы уверены, что хотите открепиться от вызова?"
+      },
+      "createCall": "Создать Вызов",
+      "dispatch": "Донесение",
+      "dispatchRecord": "Запись к Донесению",
+      "errors": {
+        "attachedAlready": "Ошибка: вы уже присоединены к вызову!",
+        "noOrigin": "Ошибка: у этого вызова не установлен источник!",
+        "noPriority": "Ошибка: у этого вызова не установлена приоритетность!",
+        "noStatus": "Ошибка: у этого вызова не установлен статус!",
+        "noTitle": "Ошибка: у этого вызова не установлено название!",
+        "unitAlreadyOnCall": "Ошибка: это подразделение уже на вызове!"
+      },
+      "nearestStations": "Ближайшие станции",
+      "nearestUnits": "Ближайшие подразделения",
+      "newDispatch": "Новое Донесение",
+      "note": "Примечание",
+      "originOptions": {
+        "caller": "Звонивший",
+        "observed": "Наблюдаемый",
+        "radioDispatch": "Радио диспетчеризация",
+        "walkUp": "Подходящий"
+      },
+      "postal": "Пост",
+      "primaryUnit": "Главный Юнит",
+      "priority": "Приоритет",
+      "savedTypes": "Сохраненные типы",
+      "selfClear": "Открепиться",
+      "selfDispatch": "Самостоятельная отправка",
+      "statusOptions": {
+        "active": "Активный",
+        "closed": "Закрытый",
+        "pending": "Рассматриваемый"
+      },
+      "trackPrimary": "Дорога к Главному Юниту (GPS)",
+      "units": "Юнит",
+      "updateCall": "Обновить Вызов"
+    },
+    "callList": {
+      "activeCalls": "Активные Вызовы",
+      "attachToCall": "Присоеденить к вызову",
+      "callHistory": "История Вызовов",
+      "closeCall": "Закрыть Вызов",
+      "columns": {
+        "10Code": "10-Код",
+        "address": "Адрес",
+        "callId": "ID звонка",
+        "callTitle": "Название Вызова",
+        "status": "Статусы",
+        "units": "Юниты"
+      },
+      "editCall": "Редактировать Вызовы",
+      "previewCall": "Превью Вызова",
+      "printCall": "Распечатать Вызов",
+      "priority": "Приоритет"
+    },
+    "command": {
+      "attach": "Прикрепить",
+      "callId": "ID вызова",
+      "clear": "Очистить",
+      "close": "Закрыть",
+      "commandLine": "Командная Строка",
+      "create": "Создать",
+      "detach": "Открепить",
+      "note": "Заметка",
+      "postal": "Почтовый индекс",
+      "savedCallType": "Сохраненный тип вызова",
+      "status": "Статус",
+      "unit": "Подразделение",
+      "unitStatus": "Статус подразделения",
+      "view": "Просмотр"
+    },
+    "emergencyCall": {
+      "caller": "Звонивший",
+      "calls": "Вызовы",
+      "civil": "Гражданский",
+      "confirmRemoveAll": "Вы уверены, что хотите закрыть все активные вызовы?",
+      "description": "Описание",
+      "emergency": "Чрезвычайная ситуация",
+      "emergencyCall": "Экстренный Вызов",
+      "location": "Местоположение",
+      "mergeToCallEditor": "Объединить с Редактором Вызовов",
+      "openInEditor": "Открыть в Редакторе Вызовов",
+      "removeAll": "Удалить все активные экстренные вызовы",
+      "removeAllCalls": "Удалить все Вызовы",
+      "removeCall": "Удалить Вызов"
+    },
+    "header": {
+      "activeCalls": "Активные Вызовы",
+      "activeServer": "Активный Сервер",
+      "activeUnits": "Активные Юниты",
+      "bodyCam": "Нагрудная камера",
+      "bodycamViewer": {
+        "allCams": "All Cams",
+        "live": "Live",
+        "screens": "Screens",
+        "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
+        "singleCam": "Single Cam",
+        "switchToAll": "Switch to all bodycams view",
+        "switchToSingle": "Switch to single bodycam view"
+      },
+      "bolo": "БОЛО",
+      "count": "Количество",
+      "emergencyCalls": "Экстренные Вызовы",
+      "file": "Файл(ы)",
+      "liveMap": "ЖИВАЯ КАРТА",
+      "lookup": "Поиск",
+      "panic": "Паника",
+      "playTo": "Воспроизвести в",
+      "quickLinks": "Быстрые Ссылки",
+      "records": "Записи",
+      "repeat": "Повторить",
+      "seconds": "Секунды",
+      "signal": "Сигнал",
+      "signalEffect1": "Сигнал",
+      "signalEffect2": "Активный",
+      "streetSigns": "Уличные знаки",
+      "toneBoard": "Тоновая панель"
+    },
+    "lookup": {
+      "agency": "Агенство",
+      "alerts": {
+        "emptySearch": "Ошибка: Поиск Пуст!"
+      },
+      "civilians": "Гражданские",
+      "columns": {
+        "charges": "Обвинения",
+        "date": "Дата",
+        "expiration": "Истечение",
+        "first": "Имя",
+        "flags": "Метки",
+        "last": "Фамилия",
+        "mi": "Инициал Отчества",
+        "name": "Имя",
+        "plate": "Номер",
+        "status": "Статус",
+        "type": "Тип"
+      },
+      "department": "Департамент",
+      "exact": "Точный",
+      "first": "Имя",
+      "getOwner": "Стать Владельцем",
+      "id": "ID Записи",
+      "identifier": "Идентификатор",
+      "last": "Фамилия",
+      "lookup": "Поиск",
+      "mi": "Инициал Отчества",
+      "nameSearch": "Поиск По Имени",
+      "newLookup": "Новый Поиск",
+      "noRecordsFound": "Не обнаружено записей",
+      "partial": "Частичный",
+      "plate": "Номерной Знак",
+      "plateSearch": "Поиск по Номеру (Т.С)",
+      "records": "Записи",
+      "recordsNoData": "Нет доступных записей",
+      "recordsNoResults": "Не найдено записей",
+      "recordsPerPage": "Записей на странице",
+      "refresh": "Обновить",
+      "reportsHeader": "Рапорт",
+      "sendToUnits": "Отправить в подразделение(я)",
+      "statuses": {
+        "active": "Активный",
+        "closed": "Закрытый",
+        "inactive": "Не активный"
+      },
+      "unit": "Юнит"
+    },
+    "notes": {
+      "notepad": "Блокнот",
+      "notes": "Заметки",
+      "title": "Название"
+    },
+    "recordCenter": {
+      "errors": {
+        "noRecordTypes": "Нет Типов Записей: Добавьте их в Admin > Customization > Custom Records",
+        "noReportTypes": "Нет Типов Докладов: Добавьте их в Admin > Customization > Custom Records",
+        "syncEnabledFeatDisabled": "Эта функция несовместима с синхронизацией базы данных"
+      },
+      "filesAwaitingApproval": "Фаилы, ожидающие подтверждения.",
+      "myFiles": "Мои Файлы",
+      "newRecord": "Новая Запись",
+      "newReport": "Новый Доклад",
+      "noRecordsForSuper": "Нет Записей, требующих подтверждения Супервайзера",
+      "noRecordsFound": "Не обнаружено Записей",
+      "noReportsForSuper": "Нет отсчетов, требующих подтверждения Супервайзера",
+      "noReportsFound": "Не обнаружено Докладов",
+      "pendingFiles": "Рассматриваемые Фаилы",
+      "pendingRecords": "Рассматриваемые Записи",
+      "supervisorPanel": "Панель Супервайзер"
+    },
+    "records": {
+      "agency": {
+        "agencyInformation": "Информация Об Агентстве",
+        "agencyName": "Название Агентства",
+        "badge": "Значок #",
+        "date": "Дата",
+        "location": "Местоположение",
+        "observingOfficer": "Наблюдательный Юнит",
+        "recordNum": "Запись #",
+        "zip": "Почтовый Индекс"
+      },
+      "arrest": {
+        "arrestInformation": "Информация об Аресте",
+        "arrestType": "Тип Ареста",
+        "probationaryOfficer": "Офицер на Испытательном Сроке",
+        "weapons": "Оружие"
+      },
+      "charges": {
+        "bondFineAmount": "Наказание/Штраф Сумма.",
+        "bondType": "Тип Наказания",
+        "charge": "Обвинение",
+        "chargeNumber": "Обвинение #",
+        "charges": "Обвинения",
+        "chargeType": "Тип Обвинения",
+        "counts": "Значение",
+        "fineTotal": "Сумма Штрафа",
+        "jailTime": "Время в заключении.",
+        "titleCode": "Название, Код"
+      },
+      "editor": {
+        "addRecord": "Добавить Запись",
+        "applyForDmv": "Принять для записи в Базу Данных",
+        "copyLink": "Скопировать ссылку на запись",
+        "dmvType": "Тип Базы Данных",
+        "errors": {
+          "nameOrPlate": "Ошибка: В этой записи должно быть имя гражданского или номерной знак транспортного средства, подлежащего поиску!",
+          "noCopiedLink": "Ошибка: у вас не скопирована ссылка на запись!",
+          "noName": "Ошибка: В этой записи должно быть имя гражданского, которого надо найти",
+          "noPlate": "Ошибка: В этой записи должен быть номер транспортного средства, который вы хотите найти!",
+          "requiredField": "Ошибка: Обязательное поле"
+        },
+        "linkTitle": "Название ссылки",
+        "noCustomTypes": "Нет записей этого типа: Добвьте их с помощью Admin > Customization > Custom Records",
+        "pasteLink": "Вставить ссылку на запись",
+        "pdf": "PDF",
+        "recordType": "Тип Записи",
+        "removeRecord": "Удалить Запись",
+        "saveRecord": "Сохранить Запись",
+        "status": {
+          "active": "АКТИВНЫЙ",
+          "approved": "ОДОБРЕННЫЙ",
+          "closed": "ЗАКРЫТЫЙ",
+          "pending": "PАССМАТРИВАЕМЫЙ",
+          "rejected": "ОТОЗВАННЫЙ"
+        }
+      },
+      "general": {
+        "records": "Записи",
+        "reports": "Доклады"
+      },
+      "getCiv": {
+        "characterSearch": "Поиск персонажа",
+        "civilianInfo": "Гражданская информация"
+      },
+      "getVeh": {
+        "vehicleSearch": "Поиск Транспортного Средства"
+      },
+      "narrative": {
+        "narrative": "Описание"
+      },
+      "speed": {
+        "citationInformation": "Информация для Цитирования",
+        "courtDate": "Дата Нарушения",
+        "courtTime": "Дата Время",
+        "fine": "Штраф",
+        "other": "Прочее",
+        "pace": "Превышение",
+        "paceType": "Превышение",
+        "radar": "Радар",
+        "speedLimit": "Скоростной Лимит",
+        "vehicleSpeed": "Скорость Транспортного Средства"
+      },
+      "status": {
+        "dateSubmitted": "Дата Публикации",
+        "observingSignature": "Подпись Наблюдающего Подпись",
+        "status": "Статус",
+        "supervisorSignature": "Супервайзер/Судья Подпись"
+      },
+      "vehicle": {
+        "color": "Цвет",
+        "make": "Марка",
+        "model": "Модель",
+        "plate": "Номерной Знак",
+        "type": "Тип Транспортного Средства",
+        "types": {
+          "aircraft": "Воздушный транспорт",
+          "coupe": "Купе",
+          "marine": "Морской Транспорт",
+          "motorcycle": "Мотоцикл",
+          "offroad": "Вездеход",
+          "sedan": "Седан",
+          "suv": "SUV/Внедорожник",
+          "truck": "Грузовой Автомобиль"
+        },
+        "vehicleInformation": "Информация о Транспортном Средстве",
+        "year": "Год Выпуска"
+      }
+    },
+    "signal": {
+      "clear": "Очистить Сигнал",
+      "initiate": "Инициировать Сигнал",
+      "modify": "Модифицировать Сигнал",
+      "signal": "Сигнал"
+    },
+    "timers": {
+      "attachments": "Вложения",
+      "clearAttachment": "Очистить вложение",
+      "newTimer": "Новый таймер",
+      "timers": "Таймеры"
+    },
+    "unitEditor": {
+      "agency": "Агентство",
+      "aop": "АОР",
+      "confirmRemove": "Вы уверены, что хотите удалить Индетификатор?",
+      "department": "Департамент",
+      "departments": "Департаменты",
+      "group": "Группа",
+      "location": "Местоположение",
+      "modifyIdentifier": "Изменить Индентификатор",
+      "name": "Имя",
+      "rank": "Ранг",
+      "status": "Статус",
+      "subdivision": "Подразделение",
+      "subdivisions": "Подразделения",
+      "switchIdentifier": "Сменить Индетификатор",
+      "unitNumber": "Номер Юнита",
+      "units": "Юниты"
+    },
+    "units": {
+      "activeGroups": "Активные Группы",
+      "activeUnits": "Активные Юниты",
+      "addToCall": "Добавить к Вызову",
+      "addToGroup": "Добавить к Группе",
+      "createGroup": "Создать Группы",
+      "dispatchersHidden": "Диспетчеры Скрыты",
+      "dispatchersShown": "Диспетчеры Показаны",
+      "editUnit": "Редактировать Юнит",
+      "group": "Группа",
+      "groupName": "Имя Группы",
+      "kickUnit": "Кикнуть Юнита",
+      "newGroup": "Новая Группа",
+      "togglePanic": "Переключатель Паники",
+      "unitGroups": "Группы Юнитов",
+      "units": "Юниты"
+    }
+  },
+  "selectionPage": {
+    "buttons": {
+      "createCommunity": "Создать Сообщество",
+      "discover": "Обнаружить",
+      "joinCommunity": "Присоедениться к сообществу.",
+      "leaveCommunity": "Покинуть Сообщество",
+      "My Account": "Мой Аккаунт",
+      "myCommunities": "Dashboard"
+    },
+    "errors": {
+      "communityIdCharacters": "Ошибка: ID Вашего сообщества может содержать только буквы, цифры, нижние подчеркивания и тире!",
+      "communityIdLength": "Ошибка: В ID вашего сообщества должно быть от 1 до 50 знаков!",
+      "communityNameLength": "Ошибка: Имя вашего сообщество должно содержать от 1 до 50 знаков!",
+      "noCommunityID": "Ошибка: Пожалусйта укажите ID сообщества!"
+    },
+    "labels": {
+      "communityName": "Название Сообщества",
+      "website": "Веб-Сайт (Опционально)"
+    },
+    "text": {
+      "communityNotFound": "Сообщество не найдено",
+      "confirmLeave1": "Вы действительно желаете покинуть это сообщество??",
+      "confirmLeave2": "Ваш аккаунт и все связанные с ним данные будет удален из этой базы данных!",
+      "createHeader": "Регистрация CAD",
+      "createText": "Зарегистрируйте новое сообщество CAD, чтобы к нему могли присоединиться другие!",
+      "helpCommunityId1": "ID вашего сообщества является его уникальным идентификатором. Пользователи будут использовать его для присоединения к вашему сообществу.",
+      "helpCommunityId2": "Обычно, это аббревиатура вашего сообщества.",
+      "helpCommunityId3": "Пример: Arizona Serious Roleplay - ID: AZSRP",
+      "helpCommunityIdFind1": "Вы должны связаться с владельцем или администратором данного игрового сообщества.",
+      "helpCommunityIdFind2": "Они дадут вам специальный ID сообщества для их CAD.",
+      "helpCommunityIdFindHeader": "Где я могу найти ID сообщества?",
+      "helpCommunityName": "Название вашего сообщества является публичным именем вашего RP сообщества.",
+      "helpCommunityWebsite": "Веб сайт вашего сообщества это URL вашего сайта, форума или дискорда. Данное поле является дополнительным и может не заполняться",
+      "joinHeader": "Присоединиться к сообществу",
+      "joinText": "Присоединиться к CAD сообщества!"
+    },
+    "tooltips": {
+      "join": "Присоеденится",
+      "joinHelp": "Не уверены что делать?",
+      "joinThis": "Присоеденится к этому CAD.",
+      "leaveCommunity": "Покинуть это сообщество.",
+      "owner": "Вы Владелец этого сообщества",
+      "register": "Регистрация вашегоSonoran CAD",
+      "search": "Искать сообщество в Sonoran CAD "
+    }
+  },
+  "settings": {
+    "apiIdDisable": "Вы должны присоедениться к сообществу, чтобы ввести API ID",
+    "bringToTop": "Вывести поверх окон",
+    "classicLayout": "Классическое Расположение",
+    "exitResize": "Закончить Перемещение",
+    "helpImprove": "Помогите нам с переводом!",
+    "hotkeyDisable": "Горячие клавиши не доступны в бесплатной версии",
+    "hotkeys": "Горячие клавиши",
+    "language": "Язык",
+    "lockWindow": "Закрепить Окно",
+    "overlay": {
+      "addBulb": "Добавить лампочку",
+      "addFrame": "Добавить кадр",
+      "bodycam": "Нагрудная камера",
+      "bulbType": "Тип лампочки",
+      "callUpdates": "Обновления вызовов",
+      "channel": "Канал",
+      "configuration": "Конфигурация",
+      "confirmReset": "Вы уверены, что хотите сбросить конфигурацию?",
+      "credentials": "Учётные данные",
+      "customTextFiles": "Пользовательские текстовые файлы",
+      "dataKeys": "Ключи данных",
+      "delay": "Задержка",
+      "events": "События",
+      "field": "Поле",
+      "fileName": "Имя файла",
+      "lighting": "Освещение",
+      "manualIp": "Ручной IP (необязательно)",
+      "oauthToken": "OAuth токен",
+      "obsTextFiles": "OBS текстовые файлы",
+      "refreshPayment": "Обновить платёж",
+      "scan": "Сканировать",
+      "scanForBulbs": "Сканировать для обнаружения лампочек",
+      "streamOverlay": "Оверлей потока",
+      "twitch": "Twitch",
+      "twitchConfig": "Конфигурация Twitch",
+      "twitchLogs": "Логи Twitch",
+      "txtFiles": "TXT файлы",
+      "unitUpdates": "Обновления подразделений"
+    },
+    "panic": "Кнопка Паники",
+    "prefix": "Кнопка Префикса",
+    "quickResize": "Быстрое Перемещение",
+    "resetLayout": "Сбросить Расположение",
+    "secretDisable": "Вы должны присоединиться к сообществу чтобы получить ваш Secret ID",
+    "settings": "Настройки",
+    "showHide": "Показать/Скрыть",
+    "unlockWindow": "Открепить Окно",
+    "voice": "Голос озвучки",
+    "volume": "Звук"
+  },
+  "sideMenu": {
+    "buttons": {
+      "communityMenu": "Меню Сообществ",
+      "disclaimer": "Перед тем, как использоввать Sonoran CAD вы соглашаетесь с условиями пользования и политикой конфидециальности.",
+      "downloads": "Загрузки",
+      "exitFullscreen": "Выйти из полноэкранного режима",
+      "goFullscreen": "Запустить в полном экране",
+      "login": "Войти",
+      "logout": "Выйти",
+      "menu": "Меню",
+      "myAccount": "Мой Аккаунт",
+      "settings": "Настройки",
+      "switchCommunities": "Сменить Сообщество",
+      "tutorials": "Учебные Пособия"
     }
   },
   "stationAlert": {
-    "stationAlert": "СтанционноеОповещение",
-    "updateDoors": "обновитьДвери",
+    "makeSelection": "Сделайте выбор",
     "sendAlert": "отправить оповещение",
     "sendMessage": "отправитьСообщение",
-    "makeSelection": "Сделайте выбор",
+    "stationAlert": "СтанционноеОповещение",
+    "stationTone": "СтанцияТон",
     "toneBoard": "Тональная доска",
-    "stationTone": "СтанцияТон"
+    "updateDoors": "обновитьДвери"
   },
-  "homepage": {
-    "heroTitle": "The #1 Dispatch Platform for Gaming",
-    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
-    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
-    "startToday": "Start Today",
-    "integrateButton": "Integrate",
-    "welcomeTitle": "Welcome",
-    "welcomeHeadline": "Welcome to Sonoran CAD!",
-    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
-    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
-    "integrations": {
-      "fivem": {
-        "name": "FiveM",
-        "description": "Official FiveM resource with dozens of deep integration points."
-      },
-      "erlc": {
-        "name": "ER:LC",
-        "description": "Official ER:LC in-game integration with live map and more."
-      }
-    }
+  "taskbar": {
+    "displayTabIcons": "Показать значки вкладок",
+    "displayTabLabels": "Показать метки вкладок",
+    "layoutCustomization": "Настройка макета",
+    "newWindow": "Новое Окно",
+    "pinToTaskbar": "Закрепить в таскбаре",
+    "startMenu": "Меню «Пуск»",
+    "system": "Система",
+    "tabCustomization": "Настройка вкладки",
+    "taskbarPosition": "Позиция таскбара",
+    "unpinFromTaskbar": "Открепить от таскбара"
   }
 }
