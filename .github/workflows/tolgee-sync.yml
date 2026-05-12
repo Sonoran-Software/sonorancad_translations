@@ -60,7 +60,13 @@ jobs:
           if [ -n "${TOLGEE_API_URL:-}" ]; then
             api_url_args=(--api-url "$TOLGEE_API_URL")
           fi
-          tolgee "${api_url_args[@]}" branch "$TOLGEE_BRANCH" \
+
+          echo "Using Tolgee API URL: ${TOLGEE_API_URL:-https://app.tolgee.io}"
+          echo "Using Tolgee project ID: $TOLGEE_PROJECT_ID"
+
+          tolgee branch "$TOLGEE_BRANCH" \
+            "${api_url_args[@]}" \
+            --api-key "$TOLGEE_API_KEY" \
             --project-id "$TOLGEE_PROJECT_ID" \
             --origin master || true
         env:
@@ -75,10 +81,12 @@ jobs:
           if [ -n "${TOLGEE_API_URL:-}" ]; then
             api_url_args=(--api-url "$TOLGEE_API_URL")
           fi
-          tolgee "${api_url_args[@]}" push \
+          tolgee push \
+            "${api_url_args[@]}" \
+            --api-key "$TOLGEE_API_KEY" \
             --branch "$TOLGEE_BRANCH" \
             --project-id "$TOLGEE_PROJECT_ID" \
-            --files-template "./{languageTag}.json" \
+            --files-template "{languageTag}.json" \
             --force-mode OVERRIDE
         env:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
@@ -94,7 +102,9 @@ jobs:
           fi
 
           for attempt in 1 2 3 4 5 6 7 8 9 10; do
-            tolgee "${api_url_args[@]}" pull \
+            tolgee pull \
+              "${api_url_args[@]}" \
+              --api-key "$TOLGEE_API_KEY" \
               --branch "$TOLGEE_BRANCH" \
               --project-id "$TOLGEE_PROJECT_ID" \
               --path . \
