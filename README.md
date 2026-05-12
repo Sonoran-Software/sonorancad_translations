@@ -8,10 +8,12 @@ Translations are updated with additional app releases.
 
 The `staging` branch syncs with Tolgee through GitHub Actions:
 
-1. Push `en-US.json` changes to `staging`.
-2. The Tolgee Sync workflow pushes source strings to the Tolgee `staging` branch.
-3. The workflow polls Tolgee for translated JSON files and commits any updates back to `staging`.
+1. Push `en.json` source changes to `staging`.
+2. The Tolgee Sync workflow pushes only `en.json` to Tolgee.
+3. The workflow pulls translated JSON files from Tolgee and commits any updates back to `staging`.
 4. The `sc2_quasar` promote-staging workflow fast-forwards this repo's `master` branch from `staging`.
+
+Add new target languages in Tolgee. The next workflow run will pull them into this repo as `{languageTag}.json`.
 
 Required GitHub secrets:
 

@@ -52,89 +52,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Ensure Tolgee languages exist
-        run: |
-          set -euo pipefail
-          node <<'NODE'
-          const apiUrl = (process.env.TOLGEE_API_URL || 'https://app.tolgee.io').replace(/\/$/, '');
-          const projectId = process.env.TOLGEE_PROJECT_ID;
-          const apiKey = process.env.TOLGEE_API_KEY;
-
-          const requiredLanguages = [
-            { tag: 'ar', name: 'Arabic', originalName: 'العربية', flagEmoji: '🇸🇦' },
-            { tag: 'de', name: 'German', originalName: 'Deutsch', flagEmoji: '🇩🇪' },
-            { tag: 'en-US', name: 'English (United States)', originalName: 'English (United States)', flagEmoji: '🇺🇸' },
-            { tag: 'es', name: 'Spanish', originalName: 'Español', flagEmoji: '🇪🇸' },
-            { tag: 'fr', name: 'French', originalName: 'Français', flagEmoji: '🇫🇷' },
-            { tag: 'it', name: 'Italian', originalName: 'Italiano', flagEmoji: '🇮🇹' },
-            { tag: 'ko-KR', name: 'Korean', originalName: '한국어', flagEmoji: '🇰🇷' },
-            { tag: 'nl-BE', name: 'Dutch (Belgium)', originalName: 'Nederlands (België)', flagEmoji: '🇧🇪' },
-            { tag: 'no', name: 'Norwegian', originalName: 'Norsk', flagEmoji: '🇳🇴' },
-            { tag: 'pl', name: 'Polish', originalName: 'Polski', flagEmoji: '🇵🇱' },
-            { tag: 'pt', name: 'Portuguese', originalName: 'Português', flagEmoji: '🇵🇹' },
-            { tag: 'ru', name: 'Russian', originalName: 'Русский', flagEmoji: '🇷🇺' },
-            { tag: 'tr', name: 'Turkish', originalName: 'Türkçe', flagEmoji: '🇹🇷' },
-            { tag: 'uk', name: 'Ukrainian', originalName: 'Українська', flagEmoji: '🇺🇦' },
-            { tag: 'zh-CN', name: 'Chinese (Simplified)', originalName: '简体中文', flagEmoji: '🇨🇳' },
-            { tag: 'zh-TW', name: 'Chinese (Traditional)', originalName: '繁體中文', flagEmoji: '🇹🇼' }
-          ];
-
-          const request = async (url, options = {}) => {
-            const response = await fetch(url, {
-              ...options,
-              headers: {
-                'X-API-Key': apiKey,
-                'Content-Type': 'application/json',
-                ...(options.headers || {})
-              }
-            });
-            const text = await response.text();
-            let body;
-            try {
-              body = text ? JSON.parse(text) : null;
-            } catch {
-              body = text;
-            }
-            if (!response.ok) {
-              throw new Error(`${options.method || 'GET'} ${url} failed: ${response.status} ${JSON.stringify(body)}`);
-            }
-            return body;
-          };
-
-          const listUrl = `${apiUrl}/v2/projects/${projectId}/languages?size=500`;
-          const languagesResponse = await request(listUrl);
-          const existing = new Set((languagesResponse?._embedded?.languages || languagesResponse?.content || [])
-            .map(language => language.tag)
-            .filter(Boolean));
-
-          console.log(`Existing Tolgee languages: ${Array.from(existing).sort().join(', ') || '(none)'}`);
-
-          for (const language of requiredLanguages) {
-            if (existing.has(language.tag)) {
-              continue;
-            }
-
-            console.log(`Creating Tolgee language: ${language.tag}`);
-            try {
-              await request(`${apiUrl}/v2/projects/${projectId}/languages`, {
-                method: 'POST',
-                body: JSON.stringify(language)
-              });
-              existing.add(language.tag);
-            } catch (error) {
-              if (String(error.message).includes('LANGUAGE_ALREADY_EXISTS')) {
-                existing.add(language.tag);
-                continue;
-              }
-              throw error;
-            }
-          }
-          NODE
-        env:
-          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
-          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
-          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
-
       - name: Push source strings to Tolgee
         run: |
           set -euo pipefail
@@ -163,20 +80,10 @@ jobs:
             api_url_args=(--api-url "$TOLGEE_API_URL")
           fi
 
-          for attempt in 1 2 3 4 5 6 7 8 9 10; do
-            tolgee pull \
-              "${api_url_args[@]}" \
-              --api-key "$TOLGEE_API_KEY" \
-              --project-id "$TOLGEE_PROJECT_ID"
-
-            if ! git diff --quiet -- "*.json"; then
-              echo "Tolgee changes detected on attempt $attempt."
-              exit 0
-            fi
-
-            echo "No Tolgee changes detected on attempt $attempt."
-            sleep 30
-          done
+          tolgee pull \
+            "${api_url_args[@]}" \
+            --api-key "$TOLGEE_API_KEY" \
+            --project-id "$TOLGEE_PROJECT_ID"
         env:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
           TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
