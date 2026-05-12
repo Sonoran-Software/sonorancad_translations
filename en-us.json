@@ -55,6 +55,9 @@
     "export": "Export",
     "exportAll": "Export All",
     "learnMore": "Learn More",
+    "open": "Open",
+    "download": "Download",
+    "ok": "OK",
     "copy": "Copy",
     "paste": "Paste",
     "icon": "Icon",
@@ -67,7 +70,8 @@
     "notEqual": "Not Equal",
     "contains": "Contains",
     "errors": {
-      "limitReached": "Error: max limit reached"
+      "limitReached": "Error: max limit reached",
+      "notFound": "Sorry, nothing here..."
     },
     "back": "Back",
     "continue": "Continue",
@@ -95,6 +99,33 @@
       "latestVersion": "Latest version: {latestVersion}"
     }
   },
+  "downloads": {
+    "desktopBanner": "Download our Windows Desktop Application!",
+    "desktopAndMobileBanner": "Download our Windows desktop and mobile applications!"
+  },
+  "development": {
+    "banner": "Development Testing Version - Not for Production Use",
+    "title": "Development Testing",
+    "message": "This is a free development version of Sonoran CAD and is not intended for production use.",
+    "understand": "I Understand"
+  },
+  "promotion": {
+    "title": "Promotion",
+    "newPromotion": "New Promotion",
+    "dontShowAgain": "Don't Show Me Again"
+  },
+  "management": {
+    "heartbeatMetrics": "Heartbeat Integration Metrics:",
+    "node": "Node",
+    "users": "Users",
+    "currentPlayersLastHour": "Current Players (Last 1 Hour)",
+    "totalServersLastHour": "Total Servers (Last 1 Hour)",
+    "topServersHeartbeat": "Top 25 Servers (Heartbeat)",
+    "password": "Management Password",
+    "updateDb": "Update DB",
+    "playerCount": "Player Count",
+    "lastUpdated": "Last Updated"
+  },
   "sideMenu": {
     "buttons": {
       "settings": "Settings",
@@ -116,6 +147,7 @@
     "volume": "Volume",
     "helpImprove": "Help improve these translations",
     "language": "Language",
+    "languageKorean": "Korean/한국어",
     "voice": "Voice",
     "microphone": "Microphone",
     "microphoneStt": "Microphone (STT)",
@@ -171,7 +203,10 @@
       "scanForBulbs": "Scan for Bulbs",
       "bulbType": "Bulb Type",
       "scan": "Scan",
+      "stopScanning": "Stop Scanning",
       "manualIp": "Manual IP (Optional)",
+      "dataStorage": "Data Storage",
+      "streamAdBanner": "Check out our livestream overlay and Twitch bot!",
       "fontEditor": "Font Editor",
       "exampleText": "Example Text",
       "font": "Font",
@@ -324,6 +359,11 @@
         "submitFailed": "Unable to link this code right now. Please try again.",
         "community": "Unable to determine the community for this link."
       }
+    },
+    "newVisitor": {
+      "title": "Welcome",
+      "heading": "Welcome to Sonoran CAD!",
+      "description": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!"
     }
   },
   "selectionPage": {
@@ -411,7 +451,15 @@
       "pro": "Pro",
       "expertInstallation": "Expert Installation",
       "quarterly": "Quarterly",
-      "monthly": "Monthly"
+      "monthly": "Monthly",
+      "sonoranOne": "Sonoran One",
+      "bundleDiscount": "Bundle Discount",
+      "noSubscriptionsAvailable": "No subscriptions available",
+      "noSubscriptionsFound": "No subscriptions found",
+      "subscriptionsPerPage": "Subscriptions per page",
+      "noChargesAvailable": "No charges available",
+      "noChargesFound": "No charges found",
+      "chargesPerPage": "Charges per page"
     },
     "buttons": {
       "purchase": "Purchase Subscription",
@@ -419,6 +467,11 @@
       "oneTimePurchases": "One-Time Purchases",
       "amount": "Amount",
       "openBillingPortal": "Open Billing Portal"
+    },
+    "pricing": {
+      "title": "Upgrade Subscription Pricing",
+      "howToPurchase": "How to Purchase",
+      "description": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!"
     }
   },
   "communityMenu": {
@@ -437,6 +490,9 @@
     },
     "labels": {
       "permissionKey": "Permission Key"
+    },
+    "text": {
+      "noPermissions": "No Permissions"
     }
   },
   "civilian": {
@@ -444,7 +500,8 @@
       "newCharacter": "New Character",
       "editCharacter": "Edit Character",
       "records": "Records",
-      "dmv": "DMV"
+      "dmv": "DMV",
+      "autoRegister": "Auto Register"
     },
     "erlcAutoRegister": "ER:LC Auto Registration",
     "characterEditor": {
@@ -705,6 +762,15 @@
       "addNote": "Add Note",
       "dispatchRecord": "Dispatch Record",
       "trackPrimary": "Track Primary Unit (GPS)",
+      "automations": "Automations",
+      "callAttachmentAutoStatus": "Call Attachment Auto-Status",
+      "unitStatusAttached": "Unit Status: Attached",
+      "unitStatusAttachedHint": "When a unit is attached to a call, update their status.",
+      "unitStatusDetached": "Unit Status: Detached",
+      "unitStatusDetachedHint": "When a unit is detached from a call, update their status.",
+      "unitStatusClosed": "Unit Status: Closed",
+      "unitStatusClosedHint": "When a call is closed, update the status of all attached units.",
+      "unitStatusTimers": "Unit Status: Timers",
       "confirmations": {
         "close1": "You have set the call status to CLOSED.",
         "close2": "Are you sure you would like to close this call?",
@@ -821,7 +887,16 @@
       "switchToAll": "Switch to all bodycams view",
       "screens": "Screens",
       "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
-      "live": "Live"
+      "live": "Live",
+      "indicatorAlt": "Bodycam indicator",
+      "startRecording": "Start Recording",
+      "stopRecording": "Stop Recording {duration}",
+      "uploadingClip": "Uploading clip..."
+    },
+    "bodycamRecordings": {
+      "searchRecordings": "Search recordings",
+      "noneFound": "No bodycam recordings found.",
+      "selectRecordingPrompt": "Select a recording to preview it."
     },
     "liveMap": {
       "toolbar": {
@@ -1234,6 +1309,13 @@
       },
       "rapidIQEditor": {
         "headerHelp": "Configure RapidIQ questions, response options, codes, and flow rules.",
+        "stats": {
+          "questions": "Questions",
+          "defaults": "Defaults",
+          "codes": "Codes",
+          "flows": "Flows"
+        },
+        "validationErrors": "Validation Errors",
         "tabs": {
           "defaults": "Default Path",
           "questions": "Questions",
@@ -1243,7 +1325,35 @@
         "defaultsHelp": "Pick the default opening question order.",
         "questionsHelp": "Create and edit each question. Use choices for fast selections, or text/number/address for typed answers.",
         "codesHelp": "Manage response codes. Code ID is used in flows and Code Name is shown to dispatch.",
-        "flowsHelp": "Build routing logic with ordered conditions. Each flow ends with one result code."
+        "flowsHelp": "Build routing logic with ordered conditions. Each flow ends with one result code.",
+        "defaultQuestions": "Default Questions",
+        "defaultQuestionsHint": "Select which questions are in the default path.",
+        "order": "Order",
+        "searchQuestions": "Search Questions",
+        "addQuestion": "Add Question",
+        "questionText": "Question Text",
+        "questionType": "Question Type",
+        "maskOptional": "Mask (Optional)",
+        "maskHint": "Example: (###) ###-####",
+        "options": "Options",
+        "value": "Value",
+        "label": "Label",
+        "addOption": "Add Option",
+        "selectQuestionPrompt": "Select or add a question to edit.",
+        "searchCodes": "Search Codes",
+        "newCodeId": "New Code ID",
+        "newCodeName": "New Code Name",
+        "addCode": "Add Code",
+        "codeName": "Code Name",
+        "searchFlows": "Search Flows",
+        "addFlow": "Add Flow",
+        "resultCode": "Result Code",
+        "flowPreview": "Flow Preview",
+        "conditionsInOrder": "Conditions (in order)",
+        "question": "Question",
+        "operator": "Operator",
+        "addCondition": "Add Condition",
+        "selectFlowPrompt": "Select a flow to edit or add a new one."
       }
     },
     "department": {
@@ -1252,6 +1362,8 @@
       "departments": "Departments",
       "department": "Department",
       "subdivisions": "Subdivisions",
+      "editorTitle": "Department Editor",
+      "editorSubtitle": "Manage agencies, departments, and sub-departments.",
       "name": "Name",
       "description": "Description",
       "abbreviation": "Abbreviation",

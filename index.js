@@ -13,6 +13,7 @@ import tn from './tc.json';
 import tr from './tr.json';
 import nlBe from './nl-be.json';
 import ua from './ua.json';
+import koKR from './ko-KR.json';
 
 /* eslint-disable quote-props */
 export default {
@@ -31,4 +32,5 @@ export default {
   'tr': tr, // Turkish
   'ua': ua, // Ukrainian
   'nl-be': nlBe, // Dutch (Belgium)
+  'ko-KR': koKR, // Korean
 };
