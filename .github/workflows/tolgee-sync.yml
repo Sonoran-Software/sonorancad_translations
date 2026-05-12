@@ -1,0 +1,129 @@
+name: Tolgee Sync
+
+on:
+  push:
+    branches:
+      - staging
+    paths:
+      - "*.json"
+      - ".github/workflows/tolgee-sync.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tolgee-sync-staging
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    env:
+      TOLGEE_BRANCH: staging
+      TOLGEE_LANGUAGE_SOURCE: en-us
+    steps:
+      - name: Checkout staging
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Tolgee CLI
+        run: npm install --global @tolgee/cli
+
+      - name: Validate Tolgee secrets
+        run: |
+          set -euo pipefail
+          : "${TOLGEE_API_KEY:?TOLGEE_API_KEY secret is required}"
+          : "${TOLGEE_PROJECT_ID:?TOLGEE_PROJECT_ID secret is required}"
+        env:
+          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Ensure Tolgee staging branch exists
+        run: |
+          set -euo pipefail
+          api_url_args=()
+          if [ -n "${TOLGEE_API_URL:-}" ]; then
+            api_url_args=(--api-url "$TOLGEE_API_URL")
+          fi
+          tolgee "${api_url_args[@]}" branch "$TOLGEE_BRANCH" \
+            --project-id "$TOLGEE_PROJECT_ID" \
+            --origin master || true
+        env:
+          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+
+      - name: Push source strings to Tolgee
+        run: |
+          set -euo pipefail
+          api_url_args=()
+          if [ -n "${TOLGEE_API_URL:-}" ]; then
+            api_url_args=(--api-url "$TOLGEE_API_URL")
+          fi
+          tolgee "${api_url_args[@]}" push \
+            --branch "$TOLGEE_BRANCH" \
+            --project-id "$TOLGEE_PROJECT_ID" \
+            --files-template "./{languageTag}.json" \
+            --languages "$TOLGEE_LANGUAGE_SOURCE" \
+            --force-mode OVERRIDE
+        env:
+          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+
+      - name: Pull translated strings from Tolgee
+        run: |
+          set -euo pipefail
+          api_url_args=()
+          if [ -n "${TOLGEE_API_URL:-}" ]; then
+            api_url_args=(--api-url "$TOLGEE_API_URL")
+          fi
+
+          for attempt in 1 2 3 4 5 6 7 8 9 10; do
+            tolgee "${api_url_args[@]}" pull \
+              --branch "$TOLGEE_BRANCH" \
+              --project-id "$TOLGEE_PROJECT_ID" \
+              --path . \
+              --file-structure-template "{languageTag}.json" \
+              --states TRANSLATED REVIEWED
+
+            if ! git diff --quiet -- "*.json"; then
+              echo "Tolgee changes detected on attempt $attempt."
+              exit 0
+            fi
+
+            echo "No Tolgee changes detected on attempt $attempt."
+            sleep 30
+          done
+        env:
+          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+
+      - name: Commit Tolgee updates
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- "*.json"; then
+            echo "No translation file changes to commit."
+            exit 0
+          fi
+
+          git add *.json
+          git commit -m "chore: sync translations from Tolgee"
+          git push origin HEAD:staging
