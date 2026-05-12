@@ -24,7 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TOLGEE_BRANCH: staging
-      TOLGEE_LANGUAGE_SOURCE: en-us
     steps:
       - name: Checkout staging
         uses: actions/checkout@v4
@@ -80,7 +79,6 @@ jobs:
             --branch "$TOLGEE_BRANCH" \
             --project-id "$TOLGEE_PROJECT_ID" \
             --files-template "./{languageTag}.json" \
-            --languages "$TOLGEE_LANGUAGE_SOURCE" \
             --force-mode OVERRIDE
         env:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
