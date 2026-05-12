@@ -15,6 +15,8 @@ The `staging` branch syncs with Tolgee through GitHub Actions:
 
 Add new target languages in Tolgee. The next workflow run will pull them into this repo as `{languageTag}.json`.
 
+To seed Tolgee from the existing translated JSON files, manually run the Tolgee Sync workflow with `import_existing_translations` set to `true`. Normal scheduled and push-triggered runs only push `en.json`.
+
 Required GitHub secrets:
 
 - `TOLGEE_API_KEY`
