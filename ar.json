@@ -96,8 +96,15 @@
         "website": "الموقع الإلكتروني"
       },
       "lookupTypes": {
+        "configTitle": "تكوين نوع البحث",
         "customRecordFieldId": "معرف حقل السجل المخصص",
-        "lookupTypes": "أنواع البحث"
+        "fieldMappingIdValue": "معرّف ربط الحقول: {id}",
+        "lookupTypes": "أنواع البحث",
+        "noFieldSelected": "لم يتم تحديد حقل",
+        "rangeSearch": "بحث النطاق",
+        "recordField": "حقل السجل",
+        "selectRecordFieldDescription": "اختر قالب سجل، ووسّع قسمًا، ثم انقر حقلًا لربطه.",
+        "width": "العرض"
       },
       "notificationTones": {
         "dispatchClosed": "تم إغلاق الإرسال",
@@ -121,6 +128,13 @@
         "link": "الرابط",
         "newLink": "رابط جديد",
         "quickLinks": "روابط سريعة"
+      },
+      "rapidIQEditor": {
+        "addOption": "إضافة خيار",
+        "newCodeId": "معرّف الكود الجديد",
+        "question": "سؤال",
+        "searchCodes": "بحث الرموز",
+        "value": "قيمة"
       },
       "restrictions": {
         "maxCivilians": "أقصى عدد من الشخصيات المدنية",
@@ -298,6 +312,7 @@
       "configureAndDeploy": "تكوين ونشر",
       "confirmKeyChange1": "هل أنت متأكد أنك تريد إنشاء مفتاح API جديد؟",
       "confirmKeyChange2": "سوف تحتاج إلى تحديث مفتاح API الخاص بك في جميع المكونات الإضافية أو تكوينات API!",
+      "customMapImagesLabel": "صور الخرائط المخصصة (30 ميجابايت/للكل كحد أقصى)",
       "dbSync": {
         "characterMapping": "تعيين الأحرف",
         "characterMappingColumn": "عمود تعيين الأحرف",
@@ -344,7 +359,18 @@
       },
       "differingOutboundIp": "عنوان IP صادر مختلف",
       "enableMap": "تمكين الخريطة",
+      "erlc": {
+        "trafficStopVariablePlate": "أول وسيط للأمر عندما تم توفير لوحة."
+      },
       "eventDocumentation": "توثيق الحدث",
+      "fivem": {
+        "manual": {
+          "configComment": "# ابدأ مورد sonorancad والموارد المجمعة الأخرى"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "منفذ اللعبة",
       "ip": "عنوان IP",
       "liveMapHeader": "أحداث الخادم وخريطة حية متكاملة",
@@ -556,6 +582,7 @@
     "actions": "أجراءات",
     "activeServer": "خادم نشط",
     "add": "إضافة",
+    "attach": "إرفاق",
     "autoSort": "فرز تلقائي",
     "cancel": "الغاء",
     "close": "إغلاق",
@@ -587,6 +614,7 @@
     "noData": "لايوجد معلومات",
     "noResults": "لايوجد نتائج",
     "notEqual": "غير متساوٍ",
+    "on": "تشغيل",
     "paste": "الصق",
     "pause": "توقف مؤقت",
     "range": "المدى",
@@ -625,6 +653,10 @@
       "permissionKey": "رقم التصريح"
     }
   },
+  "CustomDomain": {
+    "content": "المحتوى",
+    "setCustomDomain": "تعيين نطاق مخصص"
+  },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
     "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
@@ -633,10 +665,33 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "ctaDocs": "عرض المستندات",
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "نعم، تكامل ER:LC متاح بالكامل في النسخة المجانية من Sonoran CAD. الخطط المدفوعة مطلوبة فقط إذا كنت تريد إضافة المزيد من حسابات المستخدمين أو توسيع مجتمعك، لكن جميع ميزات ER:LC الأساسية تعمل دون ترقية."
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "meta": {
+            "twitterImageAlt": "معاينة تكامل Sonoran CAD مع FiveM"
+          },
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "معاينة إضافة Pagers",
+                "title": "الاستدعاءات"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -645,6 +700,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "إنفيرنو بيجر"
   },
   "login": {
     "buttons": {
@@ -662,7 +720,21 @@
       "password": "كلمة المرور",
       "resetPassword": "إعادة ضبط كلمة المرور",
       "username": "اسم المستخدم"
+    },
+    "linkAuth": {
+      "errors": {
+        "invalidCode": "يرجى إدخال رمز صالح مكوّن من 4 أحرف."
+      },
+      "idPageDescription": "أدخل الرمز المكون من 4 أحرف من داخل اللعبة.",
+      "idPageVerifying": "جارٍ التحقق من الرمز...",
+      "success": "تم ربط تسجيل الدخول. يمكنك العودة إلى النافذة المضمنة الأصلية الآن."
+    },
+    "newVisitor": {
+      "description": "تعرّف على المزيد حول نظام ملحقات التكامل في Sonoran CAD، والخريطة الحية المخصصة، ووظيفة مزامنة قاعدة البيانات، وتطبيقات iOS/Android، والمزيد!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "أفضل 25 خادمًا (نبض القلب)"
   },
   "payment": {
     "buttons": {
@@ -682,6 +754,9 @@
       "startDate": "تاريخ البدء",
       "starter": "بدائي"
     },
+    "pricing": {
+      "howToPurchase": "كيفية الشراء"
+    },
     "text": {
       "bundleAndSave": "حزمة وتوفير",
       "bundleExplain": "احفظ 30% كل شهر عند شراء VPS من Sonoran Servers.",
@@ -692,6 +767,9 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "لم يتم العثور على تسجيلات كاميرا الجسم."
+    },
     "callEditor": {
       "addNote": "إضافة ملاحظة",
       "address": "العنوان بالتفصيل",
@@ -743,9 +821,16 @@
         "closed": "مغلق",
         "pending": "معلق"
       },
+      "statusTimers": {
+        "countup": "العد التصاعدي"
+      },
       "trackPrimary": "تتبع الوحدة الأساسية (GPS)",
       "units": "الوحدات",
-      "updateCall": "تحديث بيانات البلاغ"
+      "unitStatusClosedHint": "عندما يتم إغلاق البلاغ، حدّث حالة جميع الوحدات المرفقة.",
+      "updateCall": "تحديث بيانات البلاغ",
+      "webhooks": {
+        "detached": "فصل"
+      }
     },
     "callList": {
       "activeCalls": "البلاغات الفعالة",
@@ -765,6 +850,13 @@
       "printCall": "طباعة البلاغ",
       "priority": "الأولوية"
     },
+    "callouts": {
+      "calloutLabel": "استدعاء",
+      "chanceToAttack": "فرصة لمهاجمة اللاعب"
+    },
+    "chat": {
+      "online": "متصل"
+    },
     "command": {
       "attach": "إرفاق",
       "callId": "معرف المكالمة",
@@ -780,6 +872,10 @@
       "unit": "الوحدة",
       "unitStatus": "حالة الوحدة",
       "view": "عرض"
+    },
+    "diagram": {
+      "moveLayerDown": "نقل الطبقة إلى أسفل (Shift = أسفل)",
+      "shortcutUp": "الاختصار: (SHIFT) سهم لأعلى"
     },
     "emergencyCall": {
       "caller": "المتصل",
@@ -827,6 +923,16 @@
       "signalEffect2": "مفعله الأن",
       "streetSigns": "لافتات الشوارع",
       "toneBoard": "لوحة النغمات"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "٩١١"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "تقليل حجم العلامة"
+      }
     },
     "lookup": {
       "agency": "القطاع",
@@ -939,6 +1045,12 @@
           "noName": "خطأ: يجب أن يحتوي هذا السجل على اسم مدني ليتم البحث عنه!",
           "noPlate": "خطأ: يجب أن يحتوي هذا السجل على لوحة مركبة ليتم البحث عنها!",
           "requiredField": "خطأ: حقل مطلوب"
+        },
+        "history": {
+          "action": {
+            "add": "تمت إضافة السجل",
+            "edit": "تم تعديل السجل"
+          }
         },
         "linkTitle": "عنوان الرابط",
         "noCustomTypes": "لا توجد أنواع سجلات: قم بإضافتها في الادارة> التخصيص> السجلات المخصصة",
@@ -1127,6 +1239,7 @@
       "events": "الفعاليات",
       "field": "حقل",
       "fileName": "اسم الملف",
+      "goveeWifi": "جوفي واي فاي",
       "lighting": "الإضاءة",
       "manualIp": "عنوان IP يدوي (اختياري)",
       "oauthToken": "رمز OAuth",
@@ -1148,6 +1261,15 @@
     "secretDisable": "يجب أن تكون مسجلاً في مجتمع لاسترداد معرفك السري",
     "settings": "الإعدادات",
     "showHide": "عرض/إخفاء",
+    "systemDefaultMicrophone": "الميكروفون الافتراضي للنظام",
+    "theme": {
+      "bgImageFit": {
+        "contain": "احتواء (ملاءمة داخلية)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      }
+    },
     "unlockWindow": "افتح النافذة",
     "voice": "الصوت",
     "volume": "الصوت"
