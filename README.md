@@ -20,6 +20,6 @@ Required GitHub secrets:
 - `TOLGEE_API_KEY`
 - `TOLGEE_PROJECT_ID`
 
-Optional GitHub variable:
+Optional GitHub variable or secret:
 
 - `TOLGEE_API_URL` for self-hosted Tolgee instances.

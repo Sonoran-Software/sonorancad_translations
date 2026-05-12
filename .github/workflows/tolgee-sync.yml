@@ -70,7 +70,7 @@ jobs:
         env:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
           TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
-          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL || secrets.TOLGEE_API_URL }}
 
       - name: Pull translated strings from Tolgee
         run: |
@@ -87,7 +87,7 @@ jobs:
         env:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
           TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
-          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL || secrets.TOLGEE_API_URL }}
 
       - name: Commit Tolgee updates
         run: |
