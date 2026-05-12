@@ -96,10 +96,16 @@
         "website": "İnternet sitesi"
       },
       "lookupTypes": {
+        "configTitle": "Arama Türü Yapılandırması",
         "customRecordFieldId": "Özel Kayıt Alanı Kimliği",
         "fieldMappingIdValue": "Alan Eşleme Kimliği: {id}",
         "lookupTypes": "Arama Türleri",
+        "noFieldSelected": "Alan Seçilmedi",
+        "noRecordTemplates": "Eşlenebilir alanlara sahip kayıt şablonu yok.",
+        "rangeSearch": "Aralık Arama",
         "recordField": "Kayıt Alanı",
+        "reindexRecordsConfirmTitle": "Tüm Kayıtları Yeniden Dizinle",
+        "selectRecordFieldDescription": "Bir kayıt şablonu seçin, bir bölümü genişletin ve eşlemek için bir alana tıklayın.",
         "width": "Genişlik"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "Seçenek Ekle",
         "newCodeId": "Yeni Kod Kimliği",
         "question": "Soru",
-        "searchCodes": "Kodları Ara"
+        "searchCodes": "Kodları Ara",
+        "value": "Değer"
       },
       "restrictions": {
         "maxCivilians": "Maksimum Sivil Karakter",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "Yapılandırın ve Dağıtın",
       "confirmKeyChange1": "Yeni bir API anahtarı oluşturmak istediğinizden emin misiniz?",
       "confirmKeyChange2": "Tüm eklenti veya API yapılandırmalarında API anahtarınızı güncellemeniz gerekecektir!",
+      "customMapImagesLabel": "Özel Harita Görselleri (her biri en fazla 30MB)",
       "dbSync": {
         "characterMapping": "Karakter Eşleme",
         "characterMappingColumn": "Karakter Eşleme Sütunu",
@@ -353,8 +361,14 @@
       },
       "differingOutboundIp": "Farklı Giden IP",
       "enableMap": "Haritayı Etkinleştir",
+      "erlc": {
+        "civilianRegistrationsHeader": "Sivil Kayıtlar",
+        "trafficStopMaxRadiusHint": "En yakın araç bundan daha uzaktaysa, trafik durdurma çağrıları plaka girişine geri döner veya araç ayrıntılarını atlar.",
+        "trafficStopVariablePlate": "Plaka sağlandığında ilk komut argümanı."
+      },
       "eventDocumentation": "Etkinlik Dokümantasyonu",
       "fivem": {
+        "configureResourceTitle": "Kaynağı Yapılandır",
         "manual": {
           "configComment": "# Sonorancad kaynağını ve diğer birlikte paketlenmiş kaynakları başlatın"
         },
@@ -573,6 +587,7 @@
     "actions": "Eylemler",
     "activeServer": "Aktif Sunucu",
     "add": "Ekle",
+    "attach": "Eklemek",
     "autoSort": "Otomatik Sıralama",
     "cancel": "Iptal Et",
     "close": "Kapat",
@@ -580,6 +595,7 @@
     "confirm": "Onayla",
     "contains": "İçerir",
     "copy": "Kopyala",
+    "deleteRow": "Satırı Sil",
     "edit": "Düzenle",
     "enabled": "Etkinleştir",
     "equal": "Eşit",
@@ -644,7 +660,8 @@
     }
   },
   "CustomDomain": {
-    "content": "İçerik"
+    "content": "İçerik",
+    "setCustomDomain": "Özel Alan Adını Ayarla"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +672,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "Belgeleri Görüntüle",
           "faq": {
             "items": {
               "free": {
                 "answer": "Evet, ER:LC entegrasyonu Sonoran CAD'in ücretsiz sürümünde tamamen kullanılabilir. Ücretli planlar yalnızca daha fazla kullanıcı hesabı eklemek veya topluluğunuzu büyütmek istiyorsanız gerekir, ancak tüm temel ER:LC özellikleri yükseltme yapmadan çalışır."
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "3D Canlı Harita Önizlemesi"
             }
           }
         },
@@ -668,9 +691,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Sonoran CAD x FiveM entegrasyon önizlemesi"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "Sevk faaliyetinden hedefli telsiz bildirimleri gönderin, böylece birimler doğru bilgiyi hemen alsın.",
                 "previewTitle": "Çağrı Cihazları eklentisi önizlemesi",
                 "title": "Çağrı cihazları"
               }
@@ -685,6 +712,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Inferno Pager"
   },
   "login": {
     "buttons": {
@@ -704,12 +734,20 @@
       "username": "Kullanıcı adı"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "Lütfen geçerli 4 karakterli bir kod girin."
+      },
+      "idPageDescription": "Oyun içindeki 4 karakterli kodu girin.",
+      "idPageTitle": "Bağlantı Kodunu Girin",
       "idPageVerifying": "Kod doğrulanıyor...",
       "success": "Giriş bağlandı. Şimdi orijinal gömülü pencereye geri dönebilirsiniz."
     },
     "newVisitor": {
       "description": "Sonoran CAD'in entegrasyon eklenti sistemi, özel canlı haritası, veritabanı senkronizasyon işlevselliği, iOS/Android uygulamaları ve daha fazlası hakkında daha fazla bilgi edinin!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "En İyi 25 Sunucu (Heartbeat)"
   },
   "payment": {
     "buttons": {
@@ -725,6 +763,7 @@
       "plan": "Plan",
       "plus": "Artı",
       "pro": "Profesyonel",
+      "quarterly": "Üç Aylık",
       "standard": "Standart",
       "startDate": "Başlangıç ​​tarihi",
       "starter": "Başlangıç"
@@ -742,6 +781,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "Bodycam kaydı bulunamadı."
+    },
+    "bodycamViewer": {
+      "singleCam": "Tek Kamera"
+    },
     "callEditor": {
       "addNote": "Not ekle",
       "address": "Adres",
@@ -793,9 +838,17 @@
         "closed": "Kapalı",
         "pending": "Askıda olması"
       },
+      "statusTimers": {
+        "countup": "Sayımı Artır"
+      },
       "trackPrimary": "Birincil Üniteyi Takip Et (GPS)",
       "units": "Birimler",
-      "updateCall": "Aramayı Güncelle"
+      "unitStatusClosedHint": "Bir çağrı kapatıldığında, bağlı tüm birimlerin durumunu güncelleyin.",
+      "updateCall": "Aramayı Güncelle",
+      "webhooks": {
+        "detached": "Ayrıldı",
+        "enabled": "Etkinleştir"
+      }
     },
     "callList": {
       "activeCalls": "Aktif Aramalar",
@@ -815,6 +868,14 @@
       "printCall": "Aramayı Yazdır",
       "priority": "Öncelik"
     },
+    "callouts": {
+      "calloutLabel": "İhbar",
+      "chanceToAttack": "Oyuncuya Saldırma Şansı"
+    },
+    "chat": {
+      "justYou": "Sadece Sen",
+      "online": "Çevrimiçi"
+    },
     "command": {
       "attach": "Eklemek",
       "callId": "Çağrı kimliği",
@@ -830,6 +891,11 @@
       "unit": "Birim",
       "unitStatus": "Ünite Durumu",
       "view": "Görüş"
+    },
+    "diagram": {
+      "moveLayerDown": "Katmanı Aşağı Taşı (Shift = Alt)",
+      "shortcutLock": "KISAYOL: L",
+      "shortcutUp": "KISAYOL: (SHIFT) Yukarı Ok"
     },
     "emergencyCall": {
       "caller": "Arayan",
@@ -877,6 +943,16 @@
       "signalEffect2": "yürürlükte",
       "streetSigns": "Sokak işaretleri",
       "toneBoard": "Ton Kurulu"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Blip boyutunu azalt"
+      }
     },
     "lookup": {
       "agency": "Ajans",
@@ -992,8 +1068,10 @@
         },
         "history": {
           "action": {
+            "add": "Kayıt Eklendi",
             "edit": "Kayıt Düzenlendi"
-          }
+          },
+          "noFieldChanges": "Bu kayıtta alan değerleri değişmedi."
         },
         "linkTitle": "Bağlantı Başlığı",
         "noCustomTypes": "Kayıt Yok Türleri: Bunları Yönetici > Özelleştirme > Özel Kayıtlar'a ekleyin",
@@ -1070,6 +1148,7 @@
     },
     "timers": {
       "attachments": "Ekler",
+      "automationLabelCountUp": "Otomasyon: Durum {status} Artış",
       "clearAttachment": "Eki Temizle",
       "newTimer": "Yeni Zamanlayıcı",
       "timers": "Zamanlayıcılar"
@@ -1080,6 +1159,7 @@
       "confirmRemove": "Tanımlayıcıyı kaldırmak istediğinizden emin misiniz?",
       "department": "Departman",
       "departments": "Bölümler",
+      "electronBodycamPermissionWarning": "Bodycam kaydı için macOS Ekran Kaydı izni gereklidir. Bunu Sistem Ayarları'nda etkinleştirin, ardından Sonoran CAD'yi tamamen kapatıp yeniden açın.",
       "group": "Grup",
       "location": "Konum",
       "modifyIdentifier": "Tanımlayıcıyı Değiştir",
@@ -1182,6 +1262,7 @@
       "events": "Olaylar",
       "field": "Alan",
       "fileName": "Dosya adı",
+      "goveeWifi": "Govee WiFi",
       "lighting": "Aydınlatma",
       "manualIp": "Manuel IP (İsteğe bağlı)",
       "oauthToken": "OAuth Jetonu",
@@ -1203,9 +1284,17 @@
     "secretDisable": "Gizli Kimliğinizi almak için bir topluluğa giriş yapmalısınız",
     "settings": "Ayarlar",
     "showHide": "Göster/Gizle",
+    "systemDefaultMicrophone": "Sistem varsayılan mikrofonu",
     "theme": {
       "bgImageFit": {
         "contain": "Sığdır (İçine sığdır)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "Vurgu 2",
+        "inverseText": "Ters Metin"
       }
     },
     "unlockWindow": "Pencerenin Kilidini Aç",

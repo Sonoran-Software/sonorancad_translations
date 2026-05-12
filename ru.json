@@ -96,10 +96,16 @@
         "website": "Веб-Сайт"
       },
       "lookupTypes": {
+        "configTitle": "Конфигурация типа поиска",
         "customRecordFieldId": "ID пользовательского поля записи",
         "fieldMappingIdValue": "ID картографирования поля: {id}",
         "lookupTypes": "Типы поиска",
+        "noFieldSelected": "Поле не выбрано",
+        "noRecordTemplates": "Шаблоны записей с сопоставляемыми полями отсутствуют.",
+        "rangeSearch": "Поиск по диапазону",
         "recordField": "Поле записи",
+        "reindexRecordsConfirmTitle": "Переиндексировать все записи",
+        "selectRecordFieldDescription": "Выберите шаблон записи, разверните раздел и нажмите на поле, чтобы сопоставить его.",
         "width": "Ширина"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "Добавить вариант",
         "newCodeId": "Новый Code ID",
         "question": "Вопрос",
-        "searchCodes": "Поиск кодов"
+        "searchCodes": "Поиск кодов",
+        "value": "Значение"
       },
       "restrictions": {
         "maxCivilians": "Максимум персонажей гражданских",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "Настроить и развернуть",
       "confirmKeyChange1": "Вы уверены, что хотите сгенерировать новый API ключ?",
       "confirmKeyChange2": "Вам потребуется обновить ваш API ключ во всех конфигурациях плагинов или API!",
+      "customMapImagesLabel": "Пользовательские изображения карты (до 30 МБ каждое)",
       "dbSync": {
         "characterMapping": "Картирование персонажа",
         "characterMappingColumn": "Столбец картирования персонажа",
@@ -353,8 +361,14 @@
       },
       "differingOutboundIp": "Отличающийся исходящий IP",
       "enableMap": "Включить карту",
+      "erlc": {
+        "civilianRegistrationsHeader": "Регистрации гражданских",
+        "trafficStopMaxRadiusHint": "Если ближайшее транспортное средство дальше этого расстояния, вызовы остановки движения переключаются на ввод номера или без сведений о транспортном средстве.",
+        "trafficStopVariablePlate": "Первый аргумент команды, когда был указан номерной знак."
+      },
       "eventDocumentation": "Документация по событиям",
       "fivem": {
+        "configureResourceTitle": "Настроить ресурс",
         "manual": {
           "configComment": "# Запустите ресурс sonorancad и другие встроенные ресурсы"
         },
@@ -573,6 +587,7 @@
     "actions": "Действия",
     "activeServer": "Активный Сервер",
     "add": "Добавить",
+    "attach": "Прикрепить",
     "autoSort": "Автоматическая Сортировка",
     "cancel": "Отмена",
     "close": "Закрыть",
@@ -580,6 +595,7 @@
     "confirm": "Подтвердить",
     "contains": "Содержит",
     "copy": "Копировать",
+    "deleteRow": "Удалить строку",
     "edit": "Редактировать",
     "enabled": "Включен",
     "equal": "Равно",
@@ -644,7 +660,8 @@
     }
   },
   "CustomDomain": {
-    "content": "Контент"
+    "content": "Контент",
+    "setCustomDomain": "Установить собственный домен"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +672,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "Просмотр документации",
           "faq": {
             "items": {
               "free": {
                 "answer": "Да, интеграция ER:LC полностью доступна в бесплатной версии Sonoran CAD. Платные планы нужны только если вы хотите добавить больше учетных записей пользователей или масштабировать свое сообщество, но все основные функции ER:LC работают без обновления."
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "Предпросмотр живой 3D-карты"
             }
           }
         },
@@ -668,9 +691,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Предпросмотр интеграции Sonoran CAD x FiveM"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "Доставляйте целевые уведомления на пейджер из диспетчерской активности, чтобы подразделения сразу получали нужную информацию.",
                 "previewTitle": "Предпросмотр плагина Pagers",
                 "title": "Пейджеры"
               }
@@ -685,6 +712,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Инферно Пейджер"
   },
   "login": {
     "buttons": {
@@ -704,12 +734,20 @@
       "username": "Имя Пользователя"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "Введите действительный код из 4 символов."
+      },
+      "idPageDescription": "Введите 4-значный код из игры.",
+      "idPageTitle": "Введите код ссылки",
       "idPageVerifying": "Проверка кода...",
       "success": "Вход привязан. Теперь вы можете вернуться в исходное встроенное окно."
     },
     "newVisitor": {
       "description": "Узнайте больше о системе плагинов интеграции Sonoran CAD, настраиваемой живой карте, функции синхронизации базы данных, приложениях для iOS/Android и многом другом!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "Топ 25 серверов (Heartbeat)"
   },
   "payment": {
     "buttons": {
@@ -725,6 +763,7 @@
       "plan": "План",
       "plus": "Увеличенный",
       "pro": "Профисиональный",
+      "quarterly": "Ежеквартально",
       "standard": "Стандартный",
       "startDate": "Дата Начала",
       "starter": "Начальный"
@@ -742,6 +781,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "Не найдено записей с нательных камер."
+    },
+    "bodycamViewer": {
+      "singleCam": "Одна камера"
+    },
     "callEditor": {
       "addNote": "Добавить Примечание",
       "address": "Адрес",
@@ -793,9 +838,17 @@
         "closed": "Закрытый",
         "pending": "Рассматриваемый"
       },
+      "statusTimers": {
+        "countup": "Счёт вверх"
+      },
       "trackPrimary": "Дорога к Главному Юниту (GPS)",
       "units": "Юнит",
-      "updateCall": "Обновить Вызов"
+      "unitStatusClosedHint": "Когда вызов закрыт, обновите статус всех прикреплённых подразделений.",
+      "updateCall": "Обновить Вызов",
+      "webhooks": {
+        "detached": "Откреплено",
+        "enabled": "Включен"
+      }
     },
     "callList": {
       "activeCalls": "Активные Вызовы",
@@ -815,6 +868,14 @@
       "printCall": "Распечатать Вызов",
       "priority": "Приоритет"
     },
+    "callouts": {
+      "calloutLabel": "Вызов",
+      "chanceToAttack": "Шанс атаковать игрока"
+    },
+    "chat": {
+      "justYou": "Только вы",
+      "online": "В сети"
+    },
     "command": {
       "attach": "Прикрепить",
       "callId": "ID вызова",
@@ -830,6 +891,11 @@
       "unit": "Подразделение",
       "unitStatus": "Статус подразделения",
       "view": "Просмотр"
+    },
+    "diagram": {
+      "moveLayerDown": "Переместить слой вниз (Shift = вниз)",
+      "shortcutLock": "ЯРЛЫК: L",
+      "shortcutUp": "СОКРАЩЕНИЕ: (SHIFT) Стрелка вверх"
     },
     "emergencyCall": {
       "caller": "Звонивший",
@@ -877,6 +943,16 @@
       "signalEffect2": "Активный",
       "streetSigns": "Уличные знаки",
       "toneBoard": "Тоновая панель"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Уменьшить размер метки"
+      }
     },
     "lookup": {
       "agency": "Агенство",
@@ -992,8 +1068,10 @@
         },
         "history": {
           "action": {
+            "add": "Запись добавлена",
             "edit": "Запись отредактирована"
-          }
+          },
+          "noFieldChanges": "Значения полей в этой записи не изменились."
         },
         "linkTitle": "Название ссылки",
         "noCustomTypes": "Нет записей этого типа: Добвьте их с помощью Admin > Customization > Custom Records",
@@ -1070,6 +1148,7 @@
     },
     "timers": {
       "attachments": "Вложения",
+      "automationLabelCountUp": "Автоматизация: Статус {status} Счёт вверх",
       "clearAttachment": "Очистить вложение",
       "newTimer": "Новый таймер",
       "timers": "Таймеры"
@@ -1080,6 +1159,7 @@
       "confirmRemove": "Вы уверены, что хотите удалить Индетификатор?",
       "department": "Департамент",
       "departments": "Департаменты",
+      "electronBodycamPermissionWarning": "Для захвата bodycam требуется разрешение macOS на запись экрана. Включите его в Системных настройках, затем полностью закройте и снова откройте Sonoran CAD.",
       "group": "Группа",
       "location": "Местоположение",
       "modifyIdentifier": "Изменить Индентификатор",
@@ -1182,6 +1262,7 @@
       "events": "События",
       "field": "Поле",
       "fileName": "Имя файла",
+      "goveeWifi": "Govee WiFi",
       "lighting": "Освещение",
       "manualIp": "Ручной IP (необязательно)",
       "oauthToken": "OAuth токен",
@@ -1203,9 +1284,17 @@
     "secretDisable": "Вы должны присоединиться к сообществу чтобы получить ваш Secret ID",
     "settings": "Настройки",
     "showHide": "Показать/Скрыть",
+    "systemDefaultMicrophone": "Микрофон по умолчанию системы",
     "theme": {
       "bgImageFit": {
         "contain": "Вписать (по размеру)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "Акцент 2",
+        "inverseText": "Инверсный текст"
       }
     },
     "unlockWindow": "Открепить Окно",

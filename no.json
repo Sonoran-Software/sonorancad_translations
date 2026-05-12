@@ -96,10 +96,16 @@
         "website": "Nettsted"
       },
       "lookupTypes": {
+        "configTitle": "Konfigurasjon av søketype",
         "customRecordFieldId": "Tilpasset saksid felt",
         "fieldMappingIdValue": "Feltkartleggings-ID: {id}",
         "lookupTypes": "Søk typer",
+        "noFieldSelected": "Ingen felt valgt",
+        "noRecordTemplates": "Ingen maler for poster med felter som kan tilordnes, er tilgjengelige.",
+        "rangeSearch": "Områdesøk",
         "recordField": "Saksfelt",
+        "reindexRecordsConfirmTitle": "Reindekser alle poster",
+        "selectRecordFieldDescription": "Velg en postmal, utvid en seksjon, og klikk et felt for å mappe det.",
         "width": "Bredde"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "Legg til alternativ",
         "newCodeId": "Ny kode-ID",
         "question": "Spørsmål",
-        "searchCodes": "Søkekoder"
+        "searchCodes": "Søkekoder",
+        "value": "Verdi"
       },
       "restrictions": {
         "maxCivilians": "Maks karakterer",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "Konfigurer og distribuer",
       "confirmKeyChange1": "Er du sikker på at du vil generere en ny API nøkkel?",
       "confirmKeyChange2": "Du må oppdatere API -nøkkelen i alle plugin- eller API -konfigurasjoner!",
+      "customMapImagesLabel": "Egendefinerte kartbilder (30 MB per stk. maks)",
       "dbSync": {
         "characterMapping": "Tegnkartlegging",
         "characterMappingColumn": "Tegnkartleggingskolonne",
@@ -353,10 +361,17 @@
       },
       "differingOutboundIp": "Ulike utgående IP",
       "enableMap": "Aktiver kart",
+      "erlc": {
+        "civilianRegistrationsHeader": "Sivile registreringer",
+        "trafficStopMaxRadiusHint": "Hvis det nærmeste kjøretøyet er lenger unna enn dette, går trafikkstoppanrop tilbake til skiltregistreringen eller utelater kjøretøydetaljer.",
+        "trafficStopVariablePlate": "Det første kommandolinjeargumentet når en registreringsplate ble oppgitt."
+      },
       "eventDocumentation": "Event dokumentasjon",
       "fivem": {
+        "configureResourceTitle": "Konfigurer ressurs",
         "manual": {
-          "configComment": "# Start sonorancad-ressursen og andre medfølgende ressurser"
+          "configComment": "# Start sonorancad-ressursen og andre medfølgende ressurser",
+          "downloadButton": "Last ned Sonoran CAD for FiveM"
         },
         "rocketNode": {
           "maskedKey": "********************"
@@ -573,6 +588,7 @@
     "actions": "Handlinger",
     "activeServer": "Aktiv server",
     "add": "Legg til",
+    "attach": "Legg ved",
     "autoSort": "Automatisk sortering",
     "cancel": "Avbryt",
     "close": "Lukk",
@@ -580,6 +596,7 @@
     "confirm": "Bekreft",
     "contains": "Inneholder",
     "copy": "Kopier",
+    "deleteRow": "Slett rad",
     "edit": "Rediger",
     "enabled": "Påskrudd",
     "equal": "Lik",
@@ -644,7 +661,8 @@
     }
   },
   "CustomDomain": {
-    "content": "Innhold"
+    "content": "Innhold",
+    "setCustomDomain": "Angi egendefinert domene"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +673,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "Vis dokumentasjon",
           "faq": {
             "items": {
               "free": {
                 "answer": "Ja, ER:LC-integrasjonen er fullt tilgjengelig i gratisversjonen av Sonoran CAD. Betalte planer trengs bare hvis du vil legge til flere brukerkontoer eller skalere fellesskapet ditt, men alle kjernefunksjonene for ER:LC fungerer uten oppgradering."
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "3D Live kartforhåndsvisning"
             }
           }
         },
@@ -668,9 +692,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Sonoran CAD x FiveM integrasjonsforhåndsvisning"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "Lever målrettede pager-varsler fra dispatch-aktivitet slik at enhetene får riktig informasjon umiddelbart.",
                 "previewTitle": "Forhåndsvisning av Pagers-plugin",
                 "title": "Personsøkere"
               }
@@ -685,6 +713,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Inferno Pager"
   },
   "login": {
     "buttons": {
@@ -704,12 +735,20 @@
       "username": "Brukernavn"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "Vennligst skriv inn en gyldig kode med 4 tegn."
+      },
+      "idPageDescription": "Skriv inn den 4-tegns koden fra spillet.",
+      "idPageTitle": "Skriv inn lenkekode",
       "idPageVerifying": "Verifiserer kode...",
       "success": "Innlogging koblet. Du kan gå tilbake til det opprinnelige innebygde vinduet nå."
     },
     "newVisitor": {
       "description": "Lær mer om Sonoran CADs integrasjonsplugin-system, tilpasset live-kart, funksjonalitet for databasesynkronisering, iOS/Android-apper og mer!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "Topp 25 servere (heartbeat)"
   },
   "payment": {
     "buttons": {
@@ -725,6 +764,7 @@
       "plan": "Plan",
       "plus": "Pluss",
       "pro": "Pro",
+      "quarterly": "Kvartalsvis",
       "standard": "Standard",
       "startDate": "Start dato",
       "starter": "Starter"
@@ -742,6 +782,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "Ingen kroppskamerainnspillinger funnet."
+    },
+    "bodycamViewer": {
+      "singleCam": "Ett kamera"
+    },
     "callEditor": {
       "addNote": "Ny merknad",
       "address": "Adresse",
@@ -793,9 +839,17 @@
         "closed": "Avsluttet",
         "pending": "Pågående"
       },
+      "statusTimers": {
+        "countup": "Tell opp"
+      },
       "trackPrimary": "Spor opp ledende enhet (GPS)",
       "units": "Enheter",
-      "updateCall": "Oppdater oppdrag"
+      "unitStatusClosedHint": "Når en sak er avsluttet, oppdater statusen til alle tilknyttede enheter.",
+      "updateCall": "Oppdater oppdrag",
+      "webhooks": {
+        "detached": "Frakoblet",
+        "enabled": "Påskrudd"
+      }
     },
     "callList": {
       "activeCalls": "Aktive oppdrag",
@@ -815,6 +869,14 @@
       "printCall": "Print oppdrag",
       "priority": "Prioritet"
     },
+    "callouts": {
+      "calloutLabel": "Utrykning",
+      "chanceToAttack": "Sjansen for å angripe spiller"
+    },
+    "chat": {
+      "justYou": "Bare deg",
+      "online": "På nett"
+    },
     "command": {
       "attach": "Legg ved",
       "callId": "Anrops-ID",
@@ -830,6 +892,11 @@
       "unit": "Enhet",
       "unitStatus": "Enhetsstatus",
       "view": "Vis"
+    },
+    "diagram": {
+      "moveLayerDown": "Flytt lag ned (Shift = nederst)",
+      "shortcutLock": "SNARVEI: L",
+      "shortcutUp": "SNARVEI: (SHIFT) Pil opp"
     },
     "emergencyCall": {
       "caller": "Innringer",
@@ -877,6 +944,16 @@
       "signalEffect2": "er i kraft",
       "streetSigns": "Trafikkskilt",
       "toneBoard": "Utalarmeringstoner"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Mindre blipstørrelse"
+      }
     },
     "lookup": {
       "agency": "Etat",
@@ -992,8 +1069,10 @@
         },
         "history": {
           "action": {
+            "add": "Sak lagt til",
             "edit": "Sak redigert"
-          }
+          },
+          "noFieldChanges": "Ingen feltverdier ble endret i denne oppføringen."
         },
         "linkTitle": "Lenketittel",
         "noCustomTypes": "Ingen sakstyper: Legg dem til i Admin > Tilpasning > Tilpassede saker",
@@ -1070,6 +1149,7 @@
     },
     "timers": {
       "attachments": "Vedlegg",
+      "automationLabelCountUp": "Automatisering: Status {status} Tell opp",
       "clearAttachment": "Fjern vedlegg",
       "newTimer": "Ny tidtaker",
       "timers": "Tidtakere"
@@ -1080,6 +1160,7 @@
       "confirmRemove": "Er du sikker på at du vil fjerne kallesignalet?",
       "department": "Avdeling",
       "departments": "Avdelinger",
+      "electronBodycamPermissionWarning": "macOS-tillatelse for skjermopptak er nødvendig for bodycam-opptak. Aktiver den i Systeminnstillinger, og avslutt deretter Sonoran CAD helt og åpne det på nytt.",
       "group": "Gruppe",
       "location": "Posisjon",
       "modifyIdentifier": "Rediger kallesignal",
@@ -1182,6 +1263,7 @@
       "events": "Hendelser",
       "field": "Felt",
       "fileName": "Filnavn",
+      "goveeWifi": "Govee WiFi",
       "lighting": "Lys",
       "manualIp": "Manuell IP (valgfritt)",
       "oauthToken": "OAuth-token",
@@ -1207,6 +1289,13 @@
     "theme": {
       "bgImageFit": {
         "contain": "Tilpass (passer inni)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "Aksent 2",
+        "inverseText": "Omvendt tekst"
       }
     },
     "unlockWindow": "Lås opp vindu",

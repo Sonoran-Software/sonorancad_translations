@@ -96,13 +96,15 @@
         "website": "الموقع الإلكتروني"
       },
       "lookupTypes": {
-        "configTitle": "تكوين نوع البحث",
+        "configTitle": "إعدادات نوع البحث",
         "customRecordFieldId": "معرف حقل السجل المخصص",
         "fieldMappingIdValue": "معرّف ربط الحقول: {id}",
         "lookupTypes": "أنواع البحث",
         "noFieldSelected": "لم يتم تحديد حقل",
+        "noRecordTemplates": "لا توجد قوالب سجلات ذات حقول قابلة للربط متاحة.",
         "rangeSearch": "بحث النطاق",
         "recordField": "حقل السجل",
+        "reindexRecordsConfirmTitle": "إعادة فهرسة جميع السجلات",
         "selectRecordFieldDescription": "اختر قالب سجل، ووسّع قسمًا، ثم انقر حقلًا لربطه.",
         "width": "العرض"
       },
@@ -360,12 +362,16 @@
       "differingOutboundIp": "عنوان IP صادر مختلف",
       "enableMap": "تمكين الخريطة",
       "erlc": {
-        "trafficStopVariablePlate": "أول وسيط للأمر عندما تم توفير لوحة."
+        "civilianRegistrationsHeader": "تسجيلات المدنيين",
+        "trafficStopMaxRadiusHint": "إذا كانت أقرب مركبة أبعد من هذا، فستعود مكالمات إيقاف المرور إلى إدخال اللوحة أو ستحذف تفاصيل المركبة.",
+        "trafficStopVariablePlate": "أول وسيط للأمر عند توفير لوحة."
       },
       "eventDocumentation": "توثيق الحدث",
       "fivem": {
+        "configureResourceTitle": "تهيئة المورد",
         "manual": {
-          "configComment": "# ابدأ مورد sonorancad والموارد المجمعة الأخرى"
+          "configComment": "# ابدأ مورد sonorancad والموارد المجمعة الأخرى",
+          "downloadButton": "تحميل Sonoran CAD لـ FiveM"
         },
         "rocketNode": {
           "maskedKey": "********************"
@@ -590,6 +596,7 @@
     "confirm": "تأكيد",
     "contains": "يحتوي على",
     "copy": "نسخ",
+    "deleteRow": "حذف الصف",
     "edit": "تعديل",
     "enabled": "ممكن",
     "equal": "مساوٍ",
@@ -673,6 +680,11 @@
                 "answer": "نعم، تكامل ER:LC متاح بالكامل في النسخة المجانية من Sonoran CAD. الخطط المدفوعة مطلوبة فقط إذا كنت تريد إضافة المزيد من حسابات المستخدمين أو توسيع مجتمعك، لكن جميع ميزات ER:LC الأساسية تعمل دون ترقية."
               }
             }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "معاينة خريطة مباشرة ثلاثية الأبعاد"
+            }
           }
         },
         "name": "ER:LC"
@@ -686,6 +698,7 @@
           "submodules": {
             "items": {
               "pagers": {
+                "description": "أرسل إشعارات البيجر المستهدفة من نشاط الإرسال بحيث تتلقى الوحدات المعلومات الصحيحة فورًا.",
                 "previewTitle": "معاينة إضافة Pagers",
                 "title": "الاستدعاءات"
               }
@@ -726,6 +739,7 @@
         "invalidCode": "يرجى إدخال رمز صالح مكوّن من 4 أحرف."
       },
       "idPageDescription": "أدخل الرمز المكون من 4 أحرف من داخل اللعبة.",
+      "idPageTitle": "أدخل رمز الرابط",
       "idPageVerifying": "جارٍ التحقق من الرمز...",
       "success": "تم ربط تسجيل الدخول. يمكنك العودة إلى النافذة المضمنة الأصلية الآن."
     },
@@ -750,6 +764,7 @@
       "plan": "الخطة",
       "plus": "بلس",
       "pro": "برو",
+      "quarterly": "ربع سنوي",
       "standard": "اساسي",
       "startDate": "تاريخ البدء",
       "starter": "بدائي"
@@ -769,6 +784,9 @@
   "police": {
     "bodycamRecordings": {
       "noneFound": "لم يتم العثور على تسجيلات كاميرا الجسم."
+    },
+    "bodycamViewer": {
+      "singleCam": "كاميرا واحدة"
     },
     "callEditor": {
       "addNote": "إضافة ملاحظة",
@@ -822,14 +840,15 @@
         "pending": "معلق"
       },
       "statusTimers": {
-        "countup": "العد التصاعدي"
+        "countup": "العدّ التصاعدي"
       },
       "trackPrimary": "تتبع الوحدة الأساسية (GPS)",
       "units": "الوحدات",
-      "unitStatusClosedHint": "عندما يتم إغلاق البلاغ، حدّث حالة جميع الوحدات المرفقة.",
+      "unitStatusClosedHint": "عندما يتم إغلاق مكالمة، حدّث حالة جميع الوحدات المرفقة.",
       "updateCall": "تحديث بيانات البلاغ",
       "webhooks": {
-        "detached": "فصل"
+        "detached": "فصل",
+        "enabled": "ممكن"
       }
     },
     "callList": {
@@ -855,6 +874,7 @@
       "chanceToAttack": "فرصة لمهاجمة اللاعب"
     },
     "chat": {
+      "justYou": "أنت فقط",
       "online": "متصل"
     },
     "command": {
@@ -874,8 +894,9 @@
       "view": "عرض"
     },
     "diagram": {
-      "moveLayerDown": "نقل الطبقة إلى أسفل (Shift = أسفل)",
-      "shortcutUp": "الاختصار: (SHIFT) سهم لأعلى"
+      "moveLayerDown": "نقل الطبقة إلى الأسفل (Shift = الأسفل)",
+      "shortcutLock": "اختصار: L",
+      "shortcutUp": "اختصار: (SHIFT) سهم لأعلى"
     },
     "emergencyCall": {
       "caller": "المتصل",
@@ -1050,7 +1071,8 @@
           "action": {
             "add": "تمت إضافة السجل",
             "edit": "تم تعديل السجل"
-          }
+          },
+          "noFieldChanges": "لم تتغير قيم الحقول في هذا السجل."
         },
         "linkTitle": "عنوان الرابط",
         "noCustomTypes": "لا توجد أنواع سجلات: قم بإضافتها في الادارة> التخصيص> السجلات المخصصة",
@@ -1127,6 +1149,7 @@
     },
     "timers": {
       "attachments": "المرفقات",
+      "automationLabelCountUp": "الأتمتة: الحالة {status} زيادة تصاعدية",
       "clearAttachment": "مسح المرفق",
       "newTimer": "مؤقت جديد",
       "timers": "المؤقتات"
@@ -1137,6 +1160,7 @@
       "confirmRemove": "هل أنت متأكد من رغبتك بحذف بطاقة التعريف ؟",
       "department": "القسم",
       "departments": "الاقسام",
+      "electronBodycamPermissionWarning": "يلزم إذن تسجيل الشاشة في macOS لالتقاط كاميرا الجسم. فعِّله في إعدادات النظام، ثم أنهِ Sonoran CAD بالكامل وأعِد فتحه.",
       "group": "الدورية",
       "location": "منطقة الدورية",
       "modifyIdentifier": "تعريف الوحدة",
@@ -1268,6 +1292,10 @@
       },
       "bgImageScale": {
         "p150": "150%"
+      },
+      "colors": {
+        "accent2": "اللون البارز 2",
+        "inverseText": "النص المعكوس"
       }
     },
     "unlockWindow": "افتح النافذة",

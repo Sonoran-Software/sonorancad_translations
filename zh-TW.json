@@ -96,10 +96,16 @@
         "website": "官方網站"
       },
       "lookupTypes": {
+        "configTitle": "搜尋類型配置",
         "customRecordFieldId": "自定義記錄表ID",
         "fieldMappingIdValue": "欄位對映 ID: {id}",
         "lookupTypes": "查詢型別",
+        "noFieldSelected": "未選擇欄位",
+        "noRecordTemplates": "沒有可供對應欄位的記錄範本。",
+        "rangeSearch": "範圍搜尋",
         "recordField": "記錄欄位",
+        "reindexRecordsConfirmTitle": "重新索引所有記錄",
+        "selectRecordFieldDescription": "選擇一個記錄範本，展開一個區段，然後按一下欄位以進行對應。",
         "width": "寬度"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "新增選項",
         "newCodeId": "新 Code ID",
         "question": "問題",
-        "searchCodes": "搜尋代碼"
+        "searchCodes": "搜尋代碼",
+        "value": "資料"
       },
       "restrictions": {
         "maxCivilians": "最高市民上限",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "配置並部署",
       "confirmKeyChange1": "確定要申請新的API金鑰嗎？",
       "confirmKeyChange2": "您需要在所有外掛或API配置中更新您的API金鑰！",
+      "customMapImagesLabel": "自訂地圖圖片（每個最大 30MB）",
       "dbSync": {
         "characterMapping": "市民資訊對映",
         "characterMappingColumn": "市民資訊列對映",
@@ -353,10 +361,17 @@
       },
       "differingOutboundIp": "不同的出站IP",
       "enableMap": "啟用地圖",
+      "erlc": {
+        "civilianRegistrationsHeader": "平民註冊",
+        "trafficStopMaxRadiusHint": "如果最近的車輛距離超過此值，攔車呼叫將回退為車牌輸入或省略車輛詳細資訊。",
+        "trafficStopVariablePlate": "提供車牌時的第一個指令引數。"
+      },
       "eventDocumentation": "事件記錄",
       "fivem": {
+        "configureResourceTitle": "設定資源",
         "manual": {
-          "configComment": "# 啟動 sonorancad 資源和其他捆綁資源"
+          "configComment": "# 啟動 sonorancad 資源和其他捆綁資源",
+          "downloadButton": "下載 Sonoran CAD 以用於 FiveM"
         },
         "rocketNode": {
           "maskedKey": "********************"
@@ -573,6 +588,7 @@
     "actions": "操作",
     "activeServer": "活躍中的伺服器",
     "add": "新增",
+    "attach": "附加",
     "autoSort": "自動排序",
     "cancel": "取消",
     "close": "關閉",
@@ -580,6 +596,7 @@
     "confirm": "確認",
     "contains": "包含",
     "copy": "複製",
+    "deleteRow": "刪除列",
     "edit": "編輯",
     "enabled": "啟用",
     "equal": "等於",
@@ -644,7 +661,8 @@
     }
   },
   "CustomDomain": {
-    "content": "內容"
+    "content": "內容",
+    "setCustomDomain": "設定 自訂 網域"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +673,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "查看文件",
           "faq": {
             "items": {
               "free": {
                 "answer": "是，ER:LC 整合在 Sonoran CAD 免費版中完全可用。只有當你想新增更多使用者帳號或擴展你的社群時，才需要付費方案，但所有核心 ER:LC 功能都可在不升級的情況下使用。"
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "3D 即時地圖預覽"
             }
           }
         },
@@ -668,9 +692,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Sonoran CAD x FiveM 整合預覽"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "從派遣活動傳送有針對性的尋呼機通知，讓單位立即取得正確資訊。",
                 "previewTitle": "Pagers 插件預覽",
                 "title": "呼叫器"
               }
@@ -685,6 +713,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Inferno Pager"
   },
   "login": {
     "buttons": {
@@ -704,12 +735,20 @@
       "username": "使用者名稱"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "請輸入有效的 4 字元代碼。"
+      },
+      "idPageDescription": "輸入遊戲內的 4 位代碼。",
+      "idPageTitle": "輸入連結代碼",
       "idPageVerifying": "驗證中...",
       "success": "登入已連結。您現在可以返回原始嵌入視窗。"
     },
     "newVisitor": {
       "description": "了解更多關於 Sonoran CAD 的整合外掛系統、即時地圖、資料庫同步功能、iOS/Android 應用程式等！"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "前 25 名伺服器（心跳）"
   },
   "payment": {
     "buttons": {
@@ -725,6 +764,7 @@
       "plan": "套餐",
       "plus": "高階版",
       "pro": "專業版",
+      "quarterly": "每季",
       "standard": "標準版",
       "startDate": "開始日期",
       "starter": "基礎版"
@@ -742,6 +782,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "未找到行車記錄器錄影。"
+    },
+    "bodycamViewer": {
+      "singleCam": "單一攝影機"
+    },
     "callEditor": {
       "addNote": "新增備註",
       "address": "地址",
@@ -793,9 +839,17 @@
         "closed": "關閉",
         "pending": "掛起"
       },
+      "statusTimers": {
+        "countup": "計數向上"
+      },
       "trackPrimary": "追蹤主處理單位（GPS）",
       "units": "單位",
-      "updateCall": "更新呼叫"
+      "unitStatusClosedHint": "當通話結束時，更新所有已附加單位的狀態。",
+      "updateCall": "更新呼叫",
+      "webhooks": {
+        "detached": "脫離",
+        "enabled": "啟用"
+      }
     },
     "callList": {
       "activeCalls": "活躍呼叫",
@@ -815,6 +869,14 @@
       "printCall": "列印呼叫",
       "priority": "優先順序"
     },
+    "callouts": {
+      "calloutLabel": "通報",
+      "chanceToAttack": "攻擊玩家機率"
+    },
+    "chat": {
+      "justYou": "只有你",
+      "online": "線上"
+    },
     "command": {
       "attach": "響應",
       "callId": "呼叫ID",
@@ -830,6 +892,11 @@
       "unit": "單位",
       "unitStatus": "單位狀態",
       "view": "查看"
+    },
+    "diagram": {
+      "moveLayerDown": "下移圖層（Shift = 底部）",
+      "shortcutLock": "快捷鍵: L",
+      "shortcutUp": "快捷鍵：（SHIFT）向上箭頭"
     },
     "emergencyCall": {
       "caller": "報警人",
@@ -877,6 +944,16 @@
       "signalEffect2": "已生效",
       "streetSigns": "街道標識",
       "toneBoard": "音效面板"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "縮小標記大小"
+      }
     },
     "lookup": {
       "agency": "機構",
@@ -992,8 +1069,10 @@
         },
         "history": {
           "action": {
+            "add": "記錄已新增",
             "edit": "記錄已編輯"
-          }
+          },
+          "noFieldChanges": "此項目中沒有欄位值變更。"
         },
         "linkTitle": "鏈接主題",
         "noCustomTypes": "無記錄型別：請在管理員>自定義>自定義記錄中進行新增",
@@ -1070,6 +1149,7 @@
     },
     "timers": {
       "attachments": "附件",
+      "automationLabelCountUp": "自動化：狀態 {status} 計數上升",
       "clearAttachment": "清除附件",
       "newTimer": "新計時器",
       "timers": "計時器"
@@ -1080,6 +1160,7 @@
       "confirmRemove": "確定要刪除身份資訊嗎？",
       "department": "部門",
       "departments": "部門",
+      "electronBodycamPermissionWarning": "bodycam 擷取需要 macOS 螢幕錄製權限。請在系統設定中啟用，然後完全結束並重新開啟 Sonoran CAD。",
       "group": "小組",
       "location": "地點",
       "modifyIdentifier": "編輯員警身份",
@@ -1182,6 +1263,7 @@
       "events": "事件",
       "field": "區域",
       "fileName": "檔名",
+      "goveeWifi": "Govee WiFi",
       "lighting": "燈光",
       "manualIp": "手動設定IP (可選）",
       "oauthToken": "OAuth令牌",
@@ -1207,6 +1289,13 @@
     "theme": {
       "bgImageFit": {
         "contain": "包含（適合內部）"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "重點色 2",
+        "inverseText": "反向文字"
       }
     },
     "unlockWindow": "解鎖視窗",

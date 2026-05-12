@@ -96,10 +96,16 @@
         "website": "Site"
       },
       "lookupTypes": {
+        "configTitle": "Configuração do Tipo de Pesquisa",
         "customRecordFieldId": "ID de Campo de Registro Personalizado",
         "fieldMappingIdValue": "ID de mapeamento de campo: {id}",
         "lookupTypes": "Tipos de Pesquisa",
+        "noFieldSelected": "Nenhum campo selecionado",
+        "noRecordTemplates": "Não há modelos de registro com campos mapeáveis disponíveis.",
+        "rangeSearch": "Pesquisa por intervalo",
         "recordField": "Campo de Registo",
+        "reindexRecordsConfirmTitle": "Reindexar Todos os Registros",
+        "selectRecordFieldDescription": "Escolha um modelo de registro, expanda uma seção e clique em um campo para mapeá-lo.",
         "width": "Largura"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "Adicionar opção",
         "newCodeId": "Novo ID de código",
         "question": "Pergunta",
-        "searchCodes": "Procurar Códigos"
+        "searchCodes": "Procurar Códigos",
+        "value": "Valor"
       },
       "restrictions": {
         "maxCivilians": "Máximo de civis",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "Configurar e Implementar",
       "confirmKeyChange1": "Tens a certeza que pretendes gerar uma nova chave da API?",
       "confirmKeyChange2": "Deverá atualizar a sua chave API em todos os complementos ou configurações de API!",
+      "customMapImagesLabel": "Imagens de mapa personalizadas (30 MB cada máx)",
       "dbSync": {
         "characterMapping": "Mapeamento de Civis",
         "characterMappingColumn": "Coluna de Personagem",
@@ -353,8 +361,14 @@
       },
       "differingOutboundIp": "IP de saída diferente",
       "enableMap": "Ativar Mapa",
+      "erlc": {
+        "civilianRegistrationsHeader": "Registos civis",
+        "trafficStopMaxRadiusHint": "Se o veículo mais próximo estiver mais longe do que isso, as chamadas de parada de trânsito recorrem à introdução da placa ou omitem os detalhes do veículo.",
+        "trafficStopVariablePlate": "O primeiro argumento do comando quando uma placa foi fornecida."
+      },
       "eventDocumentation": "Documentação de Eventos",
       "fivem": {
+        "configureResourceTitle": "Configurar Recurso",
         "manual": {
           "configComment": "# Inicie o recurso sonorancad e outros recursos incluídos"
         },
@@ -573,6 +587,7 @@
     "actions": "Ações",
     "activeServer": "Servidor Ativo",
     "add": "Adicionar",
+    "attach": "Anexar",
     "autoSort": "Organização Automática",
     "cancel": "Cancelar",
     "close": "Fechar",
@@ -580,6 +595,7 @@
     "confirm": "Confirmar",
     "contains": "Contém",
     "copy": "Copiar",
+    "deleteRow": "Eliminar linha",
     "edit": "Editar",
     "enabled": "Ativado",
     "equal": "Igual",
@@ -644,7 +660,8 @@
     }
   },
   "CustomDomain": {
-    "content": "Conteúdo"
+    "content": "Conteúdo",
+    "setCustomDomain": "Definir Domínio Personalizado"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +672,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "Ver Docs",
           "faq": {
             "items": {
               "free": {
                 "answer": "Sim, a integração ER:LC está totalmente disponível na versão gratuita do Sonoran CAD. Os planos pagos só são necessários se você quiser adicionar mais contas de usuário ou expandir sua comunidade, mas todos os recursos principais do ER:LC funcionam sem fazer upgrade."
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "Pré-visualização do Mapa Ao Vivo 3D"
             }
           }
         },
@@ -668,9 +691,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Pré-visualização da integração Sonoran CAD x FiveM"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "Envie notificações de pager direcionadas a partir da atividade de despacho para que as unidades recebam as informações certas imediatamente.",
                 "previewTitle": "Pré-visualização do plugin Pagers",
                 "title": "Pagers"
               }
@@ -685,6 +712,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Inferno Pager"
   },
   "login": {
     "buttons": {
@@ -704,12 +734,20 @@
       "username": "Nome de Utilizador"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "Introduza um código válido de 4 caracteres."
+      },
+      "idPageDescription": "Digite o código de 4 caracteres do jogo.",
+      "idPageTitle": "Introduza o código do link",
       "idPageVerifying": "Verificando código...",
       "success": "Login vinculado. Você pode voltar para a janela incorporada original agora."
     },
     "newVisitor": {
       "description": "Saiba mais sobre o sistema de plugins de integração do Sonoran CAD, mapa ao vivo personalizado, funcionalidade de sincronização de banco de dados, apps iOS/Android e muito mais!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "Top 25 Servidores (Heartbeat)"
   },
   "payment": {
     "buttons": {
@@ -725,6 +763,7 @@
       "plan": "Planos",
       "plus": "Mais",
       "pro": "Pro",
+      "quarterly": "Trimestral",
       "standard": "Padrão",
       "startDate": "Data de Inicio",
       "starter": "Inicial"
@@ -742,6 +781,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "Nenhuma gravação da bodycam encontrada."
+    },
+    "bodycamViewer": {
+      "singleCam": "Câmara única"
+    },
     "callEditor": {
       "addNote": "Adicionar Nota",
       "address": "Morada",
@@ -793,9 +838,17 @@
         "closed": "Fechado",
         "pending": "Pendente"
       },
+      "statusTimers": {
+        "countup": "Contagem crescente"
+      },
       "trackPrimary": "Rastrear Unidade Primária (GPS)",
       "units": "Unidades",
-      "updateCall": "Atualizar Chamada"
+      "unitStatusClosedHint": "Quando uma chamada é encerrada, atualize o status de todas as unidades anexadas.",
+      "updateCall": "Atualizar Chamada",
+      "webhooks": {
+        "detached": "Retirado",
+        "enabled": "Ativado"
+      }
     },
     "callList": {
       "activeCalls": "Chamadas Ativas",
@@ -815,6 +868,14 @@
       "printCall": "Imprimir chamada",
       "priority": "Prioridade"
     },
+    "callouts": {
+      "calloutLabel": "Chamada",
+      "chanceToAttack": "Chance de Atacar Jogador"
+    },
+    "chat": {
+      "justYou": "Só Você",
+      "online": "Online"
+    },
     "command": {
       "attach": "Anexar",
       "callId": "ID Chamada",
@@ -830,6 +891,11 @@
       "unit": "Unidade",
       "unitStatus": "Status da unidade",
       "view": "Ver"
+    },
+    "diagram": {
+      "moveLayerDown": "Mover camada para baixo (Shift = Inferior)",
+      "shortcutLock": "ATALHO: L",
+      "shortcutUp": "ATALHO: (SHIFT) Seta para cima"
     },
     "emergencyCall": {
       "caller": "Chamador",
@@ -877,6 +943,16 @@
       "signalEffect2": "está em vigor",
       "streetSigns": "Sinais de transito",
       "toneBoard": "Quadro de tons"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Diminuir tamanho do blip"
+      }
     },
     "lookup": {
       "agency": "Agência",
@@ -992,8 +1068,10 @@
         },
         "history": {
           "action": {
+            "add": "Registo Adicionado",
             "edit": "Registo Editado"
-          }
+          },
+          "noFieldChanges": "Nenhum valor de campo foi alterado nesta entrada."
         },
         "linkTitle": "Título do Link",
         "noCustomTypes": "Nenhum tipo de registro: adicione-os em Admin> Personalização> Registos personalizados",
@@ -1070,6 +1148,7 @@
     },
     "timers": {
       "attachments": "Anexos",
+      "automationLabelCountUp": "Automação: Status {status} Contagem crescente",
       "clearAttachment": "apagar Anexos",
       "newTimer": "Novo Temporizador",
       "timers": "Temporizador"
@@ -1080,6 +1159,7 @@
       "confirmRemove": "Tem a certeza de que deseja remover o identificador?",
       "department": "Departamento",
       "departments": "Departamentos",
+      "electronBodycamPermissionWarning": "É necessária a permissão de Gravação de Ecrã do macOS para a captura da bodycam. Ative-a em Definições do Sistema e, depois, feche totalmente e reabra o Sonoran CAD.",
       "group": "Grupo",
       "location": "Localização",
       "modifyIdentifier": "Modificar Identificador",
@@ -1182,6 +1262,7 @@
       "events": "Eventos",
       "field": "Campo",
       "fileName": "Nome do Ficheiro",
+      "goveeWifi": "Govee WiFi",
       "lighting": "Iluminação",
       "manualIp": "Manual IP (Opcional)",
       "oauthToken": "Token OAuth",
@@ -1203,9 +1284,17 @@
     "secretDisable": "Deve estar logado numa comunidade para configurar o Secret ID",
     "settings": "Ajustes",
     "showHide": "Mostrar/Esconder",
+    "systemDefaultMicrophone": "Microfone padrão do sistema",
     "theme": {
       "bgImageFit": {
         "contain": "Conter (Ajustar dentro)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "Realce 2",
+        "inverseText": "Texto inverso"
       }
     },
     "unlockWindow": "Desbloquear Janela",

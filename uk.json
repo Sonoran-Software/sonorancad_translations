@@ -96,10 +96,16 @@
         "website": "Вебсайт"
       },
       "lookupTypes": {
+        "configTitle": "Конфігурація типу пошуку",
         "customRecordFieldId": "Ідентифікатор спеціального поля запису",
         "fieldMappingIdValue": "Ідентифікатор відображення поля: {id}",
         "lookupTypes": "Типи пошуку",
+        "noFieldSelected": "Поле не вибрано",
+        "noRecordTemplates": "Шаблони записів із полями, які можна зіставити, недоступні.",
+        "rangeSearch": "Пошук за діапазоном",
         "recordField": "Поле запису",
+        "reindexRecordsConfirmTitle": "Переіндексувати всі записи",
+        "selectRecordFieldDescription": "Виберіть шаблон запису, розгорніть розділ і натисніть поле, щоб зіставити його.",
         "width": "Ширина"
       },
       "notificationTones": {
@@ -129,7 +135,8 @@
         "addOption": "Додати опцію",
         "newCodeId": "Новий код ID",
         "question": "Питання",
-        "searchCodes": "Пошук кодів"
+        "searchCodes": "Пошук кодів",
+        "value": "Значення"
       },
       "restrictions": {
         "maxCivilians": "Максимальна кількість цивільних персонажів",
@@ -307,6 +314,7 @@
       "configureAndDeploy": "Налаштування та розгортання",
       "confirmKeyChange1": "Ви впевнені, що хочете згенерувати новий ключ API?",
       "confirmKeyChange2": "Вам необхідно буде оновити ваш ключ API у всіх конфігураціях плагінів або API!",
+      "customMapImagesLabel": "Користувацькі зображення карти (30 МБ/кожне макс)",
       "dbSync": {
         "characterMapping": "Відображення персонажів",
         "characterMappingColumn": "Стовпець відображення персонажів",
@@ -353,8 +361,14 @@
       },
       "differingOutboundIp": "Відмінна вихідна IP адреса",
       "enableMap": "Увімкнути карту",
+      "erlc": {
+        "civilianRegistrationsHeader": "Реєстрації цивільних транспортних засобів",
+        "trafficStopMaxRadiusHint": "Якщо найближчий транспортний засіб далі за це, виклики зупинки трафіку повертаються до введення номера або без відомостей про транспортний засіб.",
+        "trafficStopVariablePlate": "Перший аргумент команди, коли було надано номерний знак."
+      },
       "eventDocumentation": "Документація по подіям",
       "fivem": {
+        "configureResourceTitle": "Налаштувати ресурс",
         "manual": {
           "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси"
         },
@@ -573,6 +587,7 @@
     "actions": "Дії",
     "activeServer": "Активний Сервер",
     "add": "Додати",
+    "attach": "Прикріпити",
     "autoSort": "Автоматичне сортування",
     "cancel": "Відміна",
     "close": "Закрити",
@@ -580,6 +595,7 @@
     "confirm": "Підтвердити",
     "contains": "Містить",
     "copy": "Копіювати",
+    "deleteRow": "Видалити рядок",
     "edit": "Редагувати",
     "enabled": "Включений",
     "equal": "Рівний",
@@ -644,7 +660,8 @@
     }
   },
   "CustomDomain": {
-    "content": "Вміст"
+    "content": "Вміст",
+    "setCustomDomain": "Встановити власний домен"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -655,11 +672,17 @@
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
+          "ctaDocs": "Переглянути документацію",
           "faq": {
             "items": {
               "free": {
                 "answer": "Так, інтеграція ER:LC повністю доступна у безкоштовній версії Sonoran CAD. Платні плани потрібні лише якщо ви хочете додати більше облікових записів користувачів або масштабувати свою спільноту, але всі основні функції ER:LC працюють без оновлення."
               }
+            }
+          },
+          "modules": {
+            "map": {
+              "previewTitle": "3D Live Map Preview"
             }
           }
         },
@@ -668,9 +691,13 @@
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
+          "meta": {
+            "twitterImageAlt": "Попередній перегляд інтеграції Sonoran CAD x FiveM"
+          },
           "submodules": {
             "items": {
               "pagers": {
+                "description": "Надсилайте цільові сповіщення на пейджери з диспетчерської активності, щоб підрозділи одразу отримували потрібну інформацію.",
                 "previewTitle": "Попередній перегляд плагіна Pagers",
                 "title": "Пейджери"
               }
@@ -685,6 +712,9 @@
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
     "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "infernoPager": "Inferno Pager"
   },
   "login": {
     "buttons": {
@@ -704,12 +734,20 @@
       "username": "Ім'я Користувача"
     },
     "linkAuth": {
+      "errors": {
+        "invalidCode": "Будь ласка, введіть дійсний 4-символьний код."
+      },
+      "idPageDescription": "Введіть 4-символьний код із гри.",
+      "idPageTitle": "Введіть код посилання",
       "idPageVerifying": "Перевіряємо код...",
       "success": "Вхід пов’язано. Тепер ви можете повернутися до початкового вбудованого вікна."
     },
     "newVisitor": {
       "description": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!"
     }
+  },
+  "management": {
+    "topServersHeartbeat": "Топ-25 серверів (Heartbeat)"
   },
   "payment": {
     "buttons": {
@@ -725,6 +763,7 @@
       "plan": "План",
       "plus": "Плюс",
       "pro": "Про",
+      "quarterly": "Щоквартально",
       "standard": "Стандартний",
       "startDate": "Дата початку",
       "starter": "Стартовий"
@@ -742,6 +781,12 @@
     }
   },
   "police": {
+    "bodycamRecordings": {
+      "noneFound": "Записів боді-камер не знайдено."
+    },
+    "bodycamViewer": {
+      "singleCam": "Одна камера"
+    },
     "callEditor": {
       "addNote": "Додати Примітку",
       "address": "Адреса",
@@ -793,9 +838,17 @@
         "closed": "Закритий",
         "pending": "На розгляді"
       },
+      "statusTimers": {
+        "countup": "Підрахунок"
+      },
       "trackPrimary": "Відстеження Головного Юніта (GPS)",
       "units": "Юніти",
-      "updateCall": "Оновити Виклик"
+      "unitStatusClosedHint": "Коли виклик закрито, оновіть статус усіх прикріплених підрозділів.",
+      "updateCall": "Оновити Виклик",
+      "webhooks": {
+        "detached": "Відкріплено",
+        "enabled": "Увімкнено"
+      }
     },
     "callList": {
       "activeCalls": "Активні Виклики",
@@ -815,6 +868,14 @@
       "printCall": "Роздрукувати Виклик",
       "priority": "Пріоритет"
     },
+    "callouts": {
+      "calloutLabel": "Виклик",
+      "chanceToAttack": "Шанс напасти на гравця"
+    },
+    "chat": {
+      "justYou": "Лише ви",
+      "online": "Онлайн"
+    },
     "command": {
       "attach": "Прикріпити",
       "callId": "Ідентифікатор виклику",
@@ -830,6 +891,11 @@
       "unit": "Підрозділ",
       "unitStatus": "Статус підрозділу",
       "view": "Переглянути"
+    },
+    "diagram": {
+      "moveLayerDown": "Перемістити шар вниз (Shift = внизу)",
+      "shortcutLock": "СКОРОЧЕННЯ: L",
+      "shortcutUp": "СКОРОЧЕННЯ: (SHIFT) Стрілка вгору"
     },
     "emergencyCall": {
       "caller": "Дзвінок",
@@ -877,6 +943,16 @@
       "signalEffect2": "Активний",
       "streetSigns": "Дорожні знаки",
       "toneBoard": "Панель тонів"
+    },
+    "liveMap3d": {
+      "blip": {
+        "emergency": "911"
+      }
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Зменшити розмір мітки"
+      }
     },
     "lookup": {
       "agency": "Агентство",
@@ -992,8 +1068,10 @@
         },
         "history": {
           "action": {
+            "add": "Запис Додано",
             "edit": "Запис відредаговано"
-          }
+          },
+          "noFieldChanges": "У цьому записі значення полів не змінено."
         },
         "linkTitle": "Назва посилання",
         "noCustomTypes": "Немає записів цього типу: Додайте їх через Admin > Customization > Custom Records",
@@ -1070,6 +1148,7 @@
     },
     "timers": {
       "attachments": "Вкладення",
+      "automationLabelCountUp": "Автоматизація: Статус {status} Відлік вгору",
       "clearAttachment": "Очистити вкладення",
       "newTimer": "Новий таймер",
       "timers": "Таймери"
@@ -1080,6 +1159,7 @@
       "confirmRemove": "Ви впевнені, що хочете видалити Ідентифікатор?",
       "department": "Департамент",
       "departments": "Департаменти",
+      "electronBodycamPermissionWarning": "Для запису bodycam потрібен дозвіл macOS на запис екрана. Увімкніть його в Системних параметрах, потім повністю завершіть роботу й знову відкрийте Sonoran CAD.",
       "group": "Група",
       "location": "Місцезнаходження",
       "modifyIdentifier": "Змінити Ідентифікатор",
@@ -1182,6 +1262,7 @@
       "events": "Події",
       "field": "Поле",
       "fileName": "Ім'я файлу",
+      "goveeWifi": "Govee WiFi",
       "lighting": "Освітлення",
       "manualIp": "Ручний IP (необов'язкове)",
       "oauthToken": "OAuth-токен",
@@ -1203,9 +1284,17 @@
     "secretDisable": "Ви повинні приєднатися до спільноти, щоб отримати Secret ID",
     "settings": "Настройки",
     "showHide": "Показати/Сховати",
+    "systemDefaultMicrophone": "Мікрофон за замовчуванням системи",
     "theme": {
       "bgImageFit": {
         "contain": "Вмістити (Підігнати всередину)"
+      },
+      "bgImageScale": {
+        "p150": "150%"
+      },
+      "colors": {
+        "accent2": "Акцент 2",
+        "inverseText": "Інверсний текст"
       }
     },
     "unlockWindow": "Відкріпити Вікно",
