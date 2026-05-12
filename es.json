@@ -97,7 +97,10 @@
       },
       "lookupTypes": {
         "customRecordFieldId": "ID de campo de registro personalizado",
-        "lookupTypes": "Tipos de búsqueda"
+        "fieldMappingIdValue": "ID de mapeo de campo: {id}",
+        "lookupTypes": "Tipos de búsqueda",
+        "recordField": "Campo de registro",
+        "width": "Ancho"
       },
       "notificationTones": {
         "dispatchClosed": "Despacho cerrado",
@@ -121,6 +124,12 @@
         "link": "Enlace",
         "newLink": "Nuevo enlace",
         "quickLinks": "Enlaces rápidos"
+      },
+      "rapidIQEditor": {
+        "addOption": "Añadir opción",
+        "newCodeId": "Nuevo ID de código",
+        "question": "Pregunta",
+        "searchCodes": "Buscar códigos"
       },
       "restrictions": {
         "maxCivilians": "Personajes civiles máximos",
@@ -345,6 +354,14 @@
       "differingOutboundIp": "IP saliente diferente",
       "enableMap": "Habilitar mapa",
       "eventDocumentation": "Documentación de eventos",
+      "fivem": {
+        "manual": {
+          "configComment": "# Inicia el recurso sonorancad y otros recursos incluidos"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "Puerto del juego",
       "ip": "IP",
       "liveMapHeader": "Eventos del servidor y mapa en vivo integrado",
@@ -637,10 +654,29 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "Sí, la integración de ER:LC está totalmente disponible en la versión gratuita de Sonoran CAD. Los planes de pago solo son necesarios si quieres añadir más cuentas de usuario o ampliar tu comunidad, pero todas las funciones principales de ER:LC funcionan sin actualizar."
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "Vista previa del complemento Pagers",
+                "title": "Buscapersonas"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -666,6 +702,13 @@
       "password": "Contraseña",
       "resetPassword": "Restablecer Contraseña.",
       "username": "Nombre de Usuario"
+    },
+    "linkAuth": {
+      "idPageVerifying": "Verificando código...",
+      "success": "Inicio de sesión vinculado. Ya puedes volver a la ventana incrustada original."
+    },
+    "newVisitor": {
+      "description": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!"
     }
   },
   "payment": {
@@ -947,6 +990,11 @@
           "noPlate": "Error: ¡Este registro debe tener una matricula para ser registrado!",
           "requiredField": "Error: Campo requerido"
         },
+        "history": {
+          "action": {
+            "edit": "Registro editado"
+          }
+        },
         "linkTitle": "Título de enlace",
         "noCustomTypes": "Sin tipos de registro: agréguelos en Admin> Personalización> Registros personalizados",
         "pasteLink": "Pegar enlace de registro",
@@ -1155,6 +1203,11 @@
     "secretDisable": "Debes iniciar sesión en una comunidad para conseguir su ID secreto.",
     "settings": "Ajustes",
     "showHide": "Mostrar/Ocultar",
+    "theme": {
+      "bgImageFit": {
+        "contain": "Contener (Ajustar dentro)"
+      }
+    },
     "unlockWindow": "Abrir ventana",
     "voice": "Voz",
     "volume": "Volumen"

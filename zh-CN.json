@@ -97,7 +97,10 @@
       },
       "lookupTypes": {
         "customRecordFieldId": "自定义记录表ID",
-        "lookupTypes": "查询类型"
+        "fieldMappingIdValue": "字段映射 ID: {id}",
+        "lookupTypes": "查询类型",
+        "recordField": "记录字段",
+        "width": "宽度"
       },
       "notificationTones": {
         "dispatchClosed": "调度结束",
@@ -121,6 +124,12 @@
         "link": "链接",
         "newLink": "新链接",
         "quickLinks": "快速链接"
+      },
+      "rapidIQEditor": {
+        "addOption": "添加选项",
+        "newCodeId": "新代码 ID",
+        "question": "问题",
+        "searchCodes": "搜索代码"
       },
       "restrictions": {
         "maxCivilians": "最高市民上限",
@@ -345,6 +354,14 @@
       "differingOutboundIp": "不同的出站IP",
       "enableMap": "启用地图",
       "eventDocumentation": "事件记录",
+      "fivem": {
+        "manual": {
+          "configComment": "# 启动 sonorancad 资源和其他捆绑资源"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "游戏端口",
       "ip": "IP",
       "liveMapHeader": "服务器事件和集成实时地图",
@@ -637,10 +654,29 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "是，ER:LC 集成在 Sonoran CAD 的免费版本中完全可用。只有在你想添加更多用户账户或扩展你的社区时才需要付费方案，但所有核心 ER:LC 功能都无需升级即可使用。"
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "寻呼机插件预览",
+                "title": "寻呼机"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -666,6 +702,13 @@
       "password": "密码",
       "resetPassword": "重设密码",
       "username": "使用者名称"
+    },
+    "linkAuth": {
+      "idPageVerifying": "正在验证代码...",
+      "success": "登录已关联。您现在可以返回到原始嵌入窗口。"
+    },
+    "newVisitor": {
+      "description": "了解有关 Sonoran CAD 的集成插件系统、自定义实时地图、数据库同步功能、iOS/Android 应用等更多信息！"
     }
   },
   "payment": {
@@ -1160,6 +1203,12 @@
     "secretDisable": "你必须登陆到社区才能获取你的Secret ID",
     "settings": "设置",
     "showHide": "显示/隐藏",
+    "systemDefaultMicrophone": "系统默认麦克风",
+    "theme": {
+      "bgImageFit": {
+        "contain": "包含（适应内部）"
+      }
+    },
     "unlockWindow": "解锁窗口",
     "voice": "语音",
     "volume": "音量"

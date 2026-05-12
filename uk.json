@@ -97,7 +97,10 @@
       },
       "lookupTypes": {
         "customRecordFieldId": "Ідентифікатор спеціального поля запису",
-        "lookupTypes": "Типи пошуку"
+        "fieldMappingIdValue": "Ідентифікатор відображення поля: {id}",
+        "lookupTypes": "Типи пошуку",
+        "recordField": "Поле запису",
+        "width": "Ширина"
       },
       "notificationTones": {
         "dispatchClosed": "Диспетчерське повідомлення закрито",
@@ -121,6 +124,12 @@
         "link": "Посилання",
         "newLink": "Нове посилання",
         "quickLinks": "Швидкі посилання"
+      },
+      "rapidIQEditor": {
+        "addOption": "Додати опцію",
+        "newCodeId": "Новий код ID",
+        "question": "Питання",
+        "searchCodes": "Пошук кодів"
       },
       "restrictions": {
         "maxCivilians": "Максимальна кількість цивільних персонажів",
@@ -345,6 +354,14 @@
       "differingOutboundIp": "Відмінна вихідна IP адреса",
       "enableMap": "Увімкнути карту",
       "eventDocumentation": "Документація по подіям",
+      "fivem": {
+        "manual": {
+          "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "Порт гри",
       "ip": "IP",
       "liveMapHeader": "Серверні події та інтегрована жива карта",
@@ -637,10 +654,29 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "Так, інтеграція ER:LC повністю доступна у безкоштовній версії Sonoran CAD. Платні плани потрібні лише якщо ви хочете додати більше облікових записів користувачів або масштабувати свою спільноту, але всі основні функції ER:LC працюють без оновлення."
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "Попередній перегляд плагіна Pagers",
+                "title": "Пейджери"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -666,6 +702,13 @@
       "password": "Пароль",
       "resetPassword": "Скинути Пароль",
       "username": "Ім'я Користувача"
+    },
+    "linkAuth": {
+      "idPageVerifying": "Перевіряємо код...",
+      "success": "Вхід пов’язано. Тепер ви можете повернутися до початкового вбудованого вікна."
+    },
+    "newVisitor": {
+      "description": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!"
     }
   },
   "payment": {
@@ -947,6 +990,11 @@
           "noPlate": "Помилка: Запис повинен містити номер транспортного засобу!",
           "requiredField": "Помилка: Обов'язкове поле"
         },
+        "history": {
+          "action": {
+            "edit": "Запис відредаговано"
+          }
+        },
         "linkTitle": "Назва посилання",
         "noCustomTypes": "Немає записів цього типу: Додайте їх через Admin > Customization > Custom Records",
         "pasteLink": "Вставити посилання на запис",
@@ -1155,6 +1203,11 @@
     "secretDisable": "Ви повинні приєднатися до спільноти, щоб отримати Secret ID",
     "settings": "Настройки",
     "showHide": "Показати/Сховати",
+    "theme": {
+      "bgImageFit": {
+        "contain": "Вмістити (Підігнати всередину)"
+      }
+    },
     "unlockWindow": "Відкріпити Вікно",
     "voice": "Голос озвучки",
     "volume": "Звук"

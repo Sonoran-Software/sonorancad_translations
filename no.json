@@ -97,7 +97,10 @@
       },
       "lookupTypes": {
         "customRecordFieldId": "Tilpasset saksid felt",
-        "lookupTypes": "Søk typer"
+        "fieldMappingIdValue": "Feltkartleggings-ID: {id}",
+        "lookupTypes": "Søk typer",
+        "recordField": "Saksfelt",
+        "width": "Bredde"
       },
       "notificationTones": {
         "dispatchClosed": "Oppdrag avsluttet",
@@ -121,6 +124,12 @@
         "link": "Lenke",
         "newLink": "Ny link",
         "quickLinks": "Nyttige linker"
+      },
+      "rapidIQEditor": {
+        "addOption": "Legg til alternativ",
+        "newCodeId": "Ny kode-ID",
+        "question": "Spørsmål",
+        "searchCodes": "Søkekoder"
       },
       "restrictions": {
         "maxCivilians": "Maks karakterer",
@@ -345,6 +354,14 @@
       "differingOutboundIp": "Ulike utgående IP",
       "enableMap": "Aktiver kart",
       "eventDocumentation": "Event dokumentasjon",
+      "fivem": {
+        "manual": {
+          "configComment": "# Start sonorancad-ressursen og andre medfølgende ressurser"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "Spill Port",
       "ip": "IP",
       "liveMapHeader": "Serverhendelser og integrert live -kart",
@@ -637,10 +654,29 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "Ja, ER:LC-integrasjonen er fullt tilgjengelig i gratisversjonen av Sonoran CAD. Betalte planer trengs bare hvis du vil legge til flere brukerkontoer eller skalere fellesskapet ditt, men alle kjernefunksjonene for ER:LC fungerer uten oppgradering."
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "Forhåndsvisning av Pagers-plugin",
+                "title": "Personsøkere"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -666,6 +702,13 @@
       "password": "Passord",
       "resetPassword": "Tilbakestill passord",
       "username": "Brukernavn"
+    },
+    "linkAuth": {
+      "idPageVerifying": "Verifiserer kode...",
+      "success": "Innlogging koblet. Du kan gå tilbake til det opprinnelige innebygde vinduet nå."
+    },
+    "newVisitor": {
+      "description": "Lær mer om Sonoran CADs integrasjonsplugin-system, tilpasset live-kart, funksjonalitet for databasesynkronisering, iOS/Android-apper og mer!"
     }
   },
   "payment": {
@@ -947,6 +990,11 @@
           "noPlate": "Feil: Denne saken må ha et registreringsnummer for å søkes opp.",
           "requiredField": "Feil: Påkrevd felt!"
         },
+        "history": {
+          "action": {
+            "edit": "Sak redigert"
+          }
+        },
         "linkTitle": "Lenketittel",
         "noCustomTypes": "Ingen sakstyper: Legg dem til i Admin > Tilpasning > Tilpassede saker",
         "pasteLink": "Lim inn sakslenke",
@@ -1155,6 +1203,12 @@
     "secretDisable": "Du må være innlogget i et samfunn for å hente din Secret ID.",
     "settings": "Innstillinger",
     "showHide": "Vis/gjem",
+    "systemDefaultMicrophone": "Systemmikrofon som standard",
+    "theme": {
+      "bgImageFit": {
+        "contain": "Tilpass (passer inni)"
+      }
+    },
     "unlockWindow": "Lås opp vindu",
     "voice": "Stemme/Voice",
     "volume": "Volum"

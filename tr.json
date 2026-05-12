@@ -97,7 +97,10 @@
       },
       "lookupTypes": {
         "customRecordFieldId": "Özel Kayıt Alanı Kimliği",
-        "lookupTypes": "Arama Türleri"
+        "fieldMappingIdValue": "Alan Eşleme Kimliği: {id}",
+        "lookupTypes": "Arama Türleri",
+        "recordField": "Kayıt Alanı",
+        "width": "Genişlik"
       },
       "notificationTones": {
         "dispatchClosed": "Gönderim Kapatıldı",
@@ -121,6 +124,12 @@
         "link": "Bağlantı",
         "newLink": "Yeni Bağlantı",
         "quickLinks": "Hızlı Linkler"
+      },
+      "rapidIQEditor": {
+        "addOption": "Seçenek Ekle",
+        "newCodeId": "Yeni Kod Kimliği",
+        "question": "Soru",
+        "searchCodes": "Kodları Ara"
       },
       "restrictions": {
         "maxCivilians": "Maksimum Sivil Karakter",
@@ -345,6 +354,14 @@
       "differingOutboundIp": "Farklı Giden IP",
       "enableMap": "Haritayı Etkinleştir",
       "eventDocumentation": "Etkinlik Dokümantasyonu",
+      "fivem": {
+        "manual": {
+          "configComment": "# Sonorancad kaynağını ve diğer birlikte paketlenmiş kaynakları başlatın"
+        },
+        "rocketNode": {
+          "maskedKey": "********************"
+        }
+      },
       "gamePort": "Oyun Bağlantı Noktası",
       "ip": "IP",
       "liveMapHeader": "Sunucu Etkinlikleri ve Entegre Canlı Harita",
@@ -637,10 +654,29 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "faq": {
+            "items": {
+              "free": {
+                "answer": "Evet, ER:LC entegrasyonu Sonoran CAD'in ücretsiz sürümünde tamamen kullanılabilir. Ücretli planlar yalnızca daha fazla kullanıcı hesabı eklemek veya topluluğunuzu büyütmek istiyorsanız gerekir, ancak tüm temel ER:LC özellikleri yükseltme yapmadan çalışır."
+              }
+            }
+          }
+        },
         "name": "ER:LC"
       },
       "fivem": {
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "submodules": {
+            "items": {
+              "pagers": {
+                "previewTitle": "Çağrı Cihazları eklentisi önizlemesi",
+                "title": "Çağrı cihazları"
+              }
+            }
+          }
+        },
         "name": "FiveM"
       }
     },
@@ -666,6 +702,13 @@
       "password": "Şifre",
       "resetPassword": "Şifreyi yenile",
       "username": "Kullanıcı adı"
+    },
+    "linkAuth": {
+      "idPageVerifying": "Kod doğrulanıyor...",
+      "success": "Giriş bağlandı. Şimdi orijinal gömülü pencereye geri dönebilirsiniz."
+    },
+    "newVisitor": {
+      "description": "Sonoran CAD'in entegrasyon eklenti sistemi, özel canlı haritası, veritabanı senkronizasyon işlevselliği, iOS/Android uygulamaları ve daha fazlası hakkında daha fazla bilgi edinin!"
     }
   },
   "payment": {
@@ -947,6 +990,11 @@
           "noPlate": "Hata: Bu kaydın aranabilmesi için araç plakasının olması gerekiyor!",
           "requiredField": "Hata: Zorunlu alan"
         },
+        "history": {
+          "action": {
+            "edit": "Kayıt Düzenlendi"
+          }
+        },
         "linkTitle": "Bağlantı Başlığı",
         "noCustomTypes": "Kayıt Yok Türleri: Bunları Yönetici > Özelleştirme > Özel Kayıtlar'a ekleyin",
         "pasteLink": "Kayıt Bağlantısını Yapıştır",
@@ -1155,6 +1203,11 @@
     "secretDisable": "Gizli Kimliğinizi almak için bir topluluğa giriş yapmalısınız",
     "settings": "Ayarlar",
     "showHide": "Göster/Gizle",
+    "theme": {
+      "bgImageFit": {
+        "contain": "Sığdır (İçine sığdır)"
+      }
+    },
     "unlockWindow": "Pencerenin Kilidini Aç",
     "voice": "Ses",
     "volume": "Ses Seviyesi"
