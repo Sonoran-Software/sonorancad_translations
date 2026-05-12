@@ -4,6 +4,7 @@
       "subscriptions": "Подписки"
     },
     "delete": {
+      "failure": "Не удалось удалить ваш аккаунт.",
       "title": "Удалить аккаунт?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Конфигурация типа поиска",
         "customRecordFieldId": "ID пользовательского поля записи",
+        "fieldMappingIdHelp": "Выберите пользовательское поле записи, которое будет использоваться для этого поиска.",
         "fieldMappingIdValue": "ID картографирования поля: {id}",
         "lookupTypes": "Типы поиска",
         "noFieldSelected": "Поле не выбрано",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Переиндексировать все записи",
         "reindexRecordsHelp": "Повторно сохраняет поля индекса справочника для существующих записей, чтобы пользовательские типы поиска использовали ваши последние сопоставления полей.",
         "sectionFallback": "Раздел {index}",
+        "selectField": "Выберите поле",
         "selectRecordFieldDescription": "Выберите шаблон записи, разверните раздел и нажмите на поле, чтобы сопоставить его.",
         "width": "Ширина"
       },
@@ -148,6 +151,7 @@
         "question": "Вопрос",
         "searchCodes": "Поиск кодов",
         "tabs": {
+          "defaults": "Путь по умолчанию",
           "questions": "Вопросы"
         },
         "value": "Значение"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Только при сбое",
         "trafficStopDescriptionHint": "Поддерживает пользовательские переменные.",
         "trafficStopMaxRadiusHint": "Если ближайшее транспортное средство дальше этого расстояния, вызовы остановки движения переключаются на ввод номера или без сведений о транспортном средстве.",
+        "trafficStopVariableCopied": "Переменная скопирована в буфер обмена",
         "trafficStopVariablePlate": "Первый аргумент команды, когда был указан номерной знак."
       },
       "eventDocumentation": "Документация по событиям",
       "fivem": {
+        "configureFeaturesTitle": "Настроить функции",
         "configureResourceTitle": "Настроить ресурс",
         "manual": {
           "configComment": "# Запустите ресурс sonorancad и другие встроенные ресурсы",
           "downloadButton": "Скачать Sonoran CAD для FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran Installer",
           "maskedKey": "********************",
           "resourceAccess": "После завершения установки вы сможете получить доступ к файлам ресурса в File Manager.",
           "selectCad": "Выберите CAD и нажмите, чтобы скопировать/вставить ID и ключ ниже.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "Интеграция FiveM включает поддержку живой карты, инструменты bodycam, синхронизацию базы данных и расширяющийся набор официальных плагинов для более глубоких внутриигровых рабочих процессов."
+              },
+              "setup": {
+                "question": "Сколько времени занимает настройка интеграции?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Имя Пользователя"
     },
     "linkAuth": {
+      "codeLabel": "4-значный код",
       "errors": {
         "invalidCode": "Введите действительный код из 4 символов."
       },
       "idPageDescription": "Введите 4-значный код из игры.",
       "idPageTitle": "Введите код ссылки",
       "idPageVerifying": "Проверка кода...",
-      "success": "Вход привязан. Теперь вы можете вернуться в исходное встроенное окно."
+      "success": "Вход привязан. Теперь вы можете вернуться в исходное встроенное окно.",
+      "title": "Выберите способ входа"
     },
     "newVisitor": {
       "description": "Узнайте больше о системе плагинов интеграции Sonoran CAD, настраиваемой живой карте, функции синхронизации базы данных, приложениях для iOS/Android и многом другом!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Комплектуйте и экономьте",
       "bundleExplain": "Экономьте 30% каждый месяц, покупая VPS от Sonoran Servers.",
       "newSubscription": "Новые подписки",
+      "save25": "Сэкономьте 25%",
       "serverIp": "IP Сервера",
       "serversEmail": "Электронная почта учетной записи Sonoran Servers",
       "setCommunityId": "Задать ID Сообщества"
@@ -847,6 +860,7 @@
       "addNote": "Добавить Примечание",
       "address": "Адрес",
       "block": "Блок",
+      "callAttachmentAutoStatus": "Авто-статус вложения вызова",
       "callDescription": "Описание Вызова",
       "callNotes": "Примечание к Вызову",
       "callOrigin": "Позвонивший",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Когда вызов закрыт, обновите статус всех прикреплённых подразделений.",
       "updateCall": "Обновить Вызов",
       "webhooks": {
+        "closed": "Закрытый",
         "detached": "Откреплено",
         "enabled": "Включен"
       }
@@ -935,6 +950,8 @@
       "justYou": "Только вы",
       "noThreads": "Активных разговоров пока нет.",
       "online": "В сети",
+      "recipientsHint": "Выберите онлайн-подразделения, чтобы начать или продолжить чат.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Озвучивать входящие сообщения чата"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "ЗНАК"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Печать в игре",
         "recordType": "Тип Записи",
         "removeRecord": "Удалить Запись",
+        "saveAsDraft": "Сохранить как черновик",
         "saveRecord": "Сохранить Запись",
         "status": {
           "active": "АКТИВНЫЙ",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Классическое Расположение",
     "exitResize": "Закончить Перемещение",
     "helpImprove": "Помогите нам с переводом!",
+    "hotkeyCombination": "Комбинация",
     "hotkeyDisable": "Горячие клавиши не доступны в бесплатной версии",
     "hotkeyRecording": "Запись...",
     "hotkeys": "Горячие клавиши",
@@ -1364,10 +1384,12 @@
     "showHide": "Показать/Скрыть",
     "systemDefaultMicrophone": "Микрофон по умолчанию системы",
     "theme": {
+      "backgroundImageScale": "Масштаб фонового изображения",
       "bgImageFit": {
         "contain": "Вписать (по размеру)"
       },
       "bgImagePosition": {
+        "center": "По центру",
         "left": "Слева"
       },
       "bgImageScale": {

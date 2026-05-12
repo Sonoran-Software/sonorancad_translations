@@ -4,6 +4,7 @@
       "subscriptions": "訂閱內容"
     },
     "delete": {
+      "failure": "無法刪除您的賬戶。",
       "title": "刪除賬戶？"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "搜尋類型配置",
         "customRecordFieldId": "自定義記錄表ID",
+        "fieldMappingIdHelp": "選擇將用於此搜尋的自訂記錄欄位。",
         "fieldMappingIdValue": "欄位對映 ID: {id}",
         "lookupTypes": "查詢型別",
         "noFieldSelected": "未選擇欄位",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "重新索引所有記錄",
         "reindexRecordsHelp": "重新儲存現有記錄的查找索引欄位，讓自訂搜尋類型使用您最新的欄位對應。",
         "sectionFallback": "區段 {index}",
+        "selectField": "選擇欄位",
         "selectRecordFieldDescription": "選擇一個記錄範本，展開一個區段，然後按一下欄位以進行對應。",
         "width": "寬度"
       },
@@ -148,6 +151,7 @@
         "question": "問題",
         "searchCodes": "搜尋代碼",
         "tabs": {
+          "defaults": "預設路徑",
           "questions": "問題"
         },
         "value": "資料"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "僅在失敗時",
         "trafficStopDescriptionHint": "支援自訂變數。",
         "trafficStopMaxRadiusHint": "如果最近的車輛距離超過此值，攔車呼叫將回退為車牌輸入或省略車輛詳細資訊。",
+        "trafficStopVariableCopied": "變數已複製到剪貼簿",
         "trafficStopVariablePlate": "提供車牌時的第一個指令引數。"
       },
       "eventDocumentation": "事件記錄",
       "fivem": {
+        "configureFeaturesTitle": "設定功能",
         "configureResourceTitle": "設定資源",
         "manual": {
           "configComment": "# 啟動 sonorancad 資源和其他捆綁資源",
           "downloadButton": "下載 Sonoran CAD 以用於 FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran 安裝程式",
           "maskedKey": "********************",
           "resourceAccess": "安裝完成後，您可以在檔案管理器中存取資源檔案。",
           "selectCad": "選擇 CAD 並點擊以下複製／貼上 ID 和金鑰。",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "FiveM 整合包含即時地圖支援、bodycam 工具、資料庫同步，以及不斷擴充的官方插件集合，可支援更深入的遊戲內工作流程。"
+              },
+              "setup": {
+                "question": "設定此整合需要多久？"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "使用者名稱"
     },
     "linkAuth": {
+      "codeLabel": "4 字元驗證碼",
       "errors": {
         "invalidCode": "請輸入有效的 4 字元代碼。"
       },
       "idPageDescription": "輸入遊戲內的 4 位代碼。",
       "idPageTitle": "輸入連結代碼",
       "idPageVerifying": "驗證中...",
-      "success": "登入已連結。您現在可以返回原始嵌入視窗。"
+      "success": "登入已連結。您現在可以返回原始嵌入視窗。",
+      "title": "選擇您的登入方式"
     },
     "newVisitor": {
       "description": "了解更多關於 Sonoran CAD 的整合外掛系統、即時地圖、資料庫同步功能、iOS/Android 應用程式等！"
@@ -831,6 +843,7 @@
       "bundleAndSave": "捆綁並儲存",
       "bundleExplain": "從Sonoran伺服器購買VPS時，每月可節省30％。",
       "newSubscription": "新訂閱",
+      "save25": "儲存 25%",
       "serverIp": "伺服器IP",
       "serversEmail": "Sonoran伺服器帳戶電子郵件",
       "setCommunityId": "設定社群ID"
@@ -847,6 +860,7 @@
       "addNote": "新增備註",
       "address": "地址",
       "block": "街區",
+      "callAttachmentAutoStatus": "通話附件自動狀態",
       "callDescription": "呼叫描述",
       "callNotes": "呼叫備註",
       "callOrigin": "呼叫型別",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "當通話結束時，更新所有已附加單位的狀態。",
       "updateCall": "更新呼叫",
       "webhooks": {
+        "closed": "關閉",
         "detached": "脫離",
         "enabled": "啟用"
       }
@@ -935,6 +950,8 @@
       "justYou": "只有你",
       "noThreads": "尚無進行中的對話。",
       "online": "線上",
+      "recipientsHint": "選擇線上單位以開始或繼續聊天。",
+      "ttsIncomingLink": "{sender}。{label}",
       "ttsIncomingTooltip": "朗讀傳入聊天訊息"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "標誌"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "遊戲內列印",
         "recordType": "記錄種類",
         "removeRecord": "移除記錄",
+        "saveAsDraft": "儲存為草稿",
         "saveRecord": "儲存記錄",
         "status": {
           "active": "正在處理",
@@ -1315,6 +1334,7 @@
     "classicLayout": "經典佈局",
     "exitResize": "退出縮放",
     "helpImprove": "幫助改進翻譯",
+    "hotkeyCombination": "組合",
     "hotkeyDisable": "免費版無法使用自定義按鍵設定",
     "hotkeyRecording": "錄音中...",
     "hotkeys": "自定義按鍵",
@@ -1364,10 +1384,12 @@
     "showHide": "顯示/隱藏",
     "systemDefaultMicrophone": "系統預設麥克風",
     "theme": {
+      "backgroundImageScale": "背景圖片縮放",
       "bgImageFit": {
         "contain": "包含（適合內部）"
       },
       "bgImagePosition": {
+        "center": "置中",
         "left": "左"
       },
       "bgImageScale": {

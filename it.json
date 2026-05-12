@@ -4,6 +4,7 @@
       "subscriptions": "Iscriviti"
     },
     "delete": {
+      "failure": "Impossibile eliminare il tuo account.",
       "title": "Elimina account?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Configurazione del tipo di ricerca",
         "customRecordFieldId": "ID campo record personalizzato",
+        "fieldMappingIdHelp": "Seleziona il campo del record personalizzato che verrà usato per questa ricerca.",
         "fieldMappingIdValue": "ID mappatura campo: {id}",
         "lookupTypes": "Tipi di ricerca",
         "noFieldSelected": "Nessun campo selezionato",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Reindicizza tutti i record",
         "reindexRecordsHelp": "Riscrive i campi dell'indice di ricerca per i record esistenti, così i tipi di ricerca personalizzati usano le tue mappature dei campi più recenti.",
         "sectionFallback": "Sezione {index}",
+        "selectField": "Seleziona campo",
         "selectRecordFieldDescription": "Scegli un modello di record, espandi una sezione e fai clic su un campo per mapparlo.",
         "width": "Larghezza"
       },
@@ -148,6 +151,7 @@
         "question": "Domanda",
         "searchCodes": "Cerca codici",
         "tabs": {
+          "defaults": "Percorso predefinito",
           "questions": "Domande"
         },
         "value": "Valore"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Solo in caso di errore",
         "trafficStopDescriptionHint": "Supporta variabili personalizzate.",
         "trafficStopMaxRadiusHint": "Se il veicolo più vicino è più lontano di questo, le chiamate di fermata del traffico ricorrono all'inserimento della targa o omettono i dettagli del veicolo.",
+        "trafficStopVariableCopied": "Variabile copiata negli appunti",
         "trafficStopVariablePlate": "Il primo argomento del comando quando era stata fornita una targa."
       },
       "eventDocumentation": "Documentazione dell'evento",
       "fivem": {
+        "configureFeaturesTitle": "Configura funzionalità",
         "configureResourceTitle": "Configura risorsa",
         "manual": {
           "configComment": "# Avvia la risorsa sonorancad e le altre risorse incluse",
           "downloadButton": "Scarica Sonoran CAD per FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Installatore Sonoran",
           "maskedKey": "********************",
           "resourceAccess": "Una volta completata l'installazione, puoi accedere ai file della risorsa nel File Manager.",
           "selectCad": "Seleziona CAD e fai clic per copiare/incollare l'ID e la chiave qui sotto.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "L'integrazione FiveM include supporto alla mappa in tempo reale, strumenti bodycam, sincronizzazione del database e un set in espansione di plugin ufficiali per flussi di lavoro di gioco più approfonditi."
+              },
+              "setup": {
+                "question": "Quanto tempo ci vuole per configurare l'integrazione?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Nome utente"
     },
     "linkAuth": {
+      "codeLabel": "codice di 4 caratteri",
       "errors": {
         "invalidCode": "Inserisci un codice valido di 4 caratteri."
       },
       "idPageDescription": "Inserisci il codice di 4 caratteri dal gioco.",
       "idPageTitle": "Inserisci codice link",
       "idPageVerifying": "Verifica del codice...",
-      "success": "Accesso collegato. Puoi tornare alla finestra incorporata originale ora."
+      "success": "Accesso collegato. Puoi tornare alla finestra incorporata originale ora.",
+      "title": "Scegli il tuo metodo di accesso"
     },
     "newVisitor": {
       "description": "Scopri di più sul sistema di plugin di integrazione di Sonoran CAD, sulla mappa live personalizzata, sulla funzionalità di sincronizzazione del database, sulle app iOS/Android e altro ancora!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Raggruppa e risparmia",
       "bundleExplain": "Risparmia il 30% ogni mese quando acquisti un VPS da Sonoran Servers.",
       "newSubscription": "Nuova iscrizione",
+      "save25": "Risparmia il 25%",
       "serverIp": "IP del server",
       "serversEmail": "Email account Sonoran Servers",
       "setCommunityId": "Imposta ID comunità"
@@ -847,6 +860,7 @@
       "addNote": "Aggiungi Note",
       "address": "Indirizzo",
       "block": "Località",
+      "callAttachmentAutoStatus": "Stato automatico allegato chiamata",
       "callDescription": "Descrizione Chiamata",
       "callNotes": "Note sulle chiamate",
       "callOrigin": "Origine Chiamata",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Quando una chiamata è chiusa, aggiorna lo stato di tutte le unità collegate.",
       "updateCall": "Carica chiamata",
       "webhooks": {
+        "closed": "Chiuso",
         "detached": "Staccato",
         "enabled": "Abilitata"
       }
@@ -935,6 +950,8 @@
       "justYou": "Solo tu",
       "noThreads": "Nessuna conversazione attiva ancora.",
       "online": "Online",
+      "recipientsHint": "Seleziona le unità online per iniziare o continuare una chat.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Leggi ad alta voce i messaggi in arrivo della chat"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "SEGNALE"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Stampa in gioco",
         "recordType": "Tipo di registro",
         "removeRecord": "Rimuovi Registro",
+        "saveAsDraft": "Salva come bozza",
         "saveRecord": "Salva Registro",
         "status": {
           "active": "IN CORSO",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Layout Classico",
     "exitResize": "Chiudi ridimensionamento",
     "helpImprove": "Aiutaci a migliorare queste traduzioni",
+    "hotkeyCombination": "Combinazione",
     "hotkeyDisable": "I tasti di scelta rapida non sono abilitati con la versione gratuita",
     "hotkeyRecording": "Registrazione...",
     "hotkeys": "Tasti di scelta rapida",
@@ -1364,10 +1384,12 @@
     "showHide": "Mostra/Nascondi",
     "systemDefaultMicrophone": "Microfono predefinito del sistema",
     "theme": {
+      "backgroundImageScale": "Scala immagine di sfondo",
       "bgImageFit": {
         "contain": "Contieni (Adatta all'interno)"
       },
       "bgImagePosition": {
+        "center": "Centro",
         "left": "Sinistra"
       },
       "bgImageScale": {

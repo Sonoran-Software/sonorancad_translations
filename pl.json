@@ -4,6 +4,7 @@
       "subscriptions": "Subskrypcje"
     },
     "delete": {
+      "failure": "Nie udało się usunąć konta.",
       "title": "Usunąć konto?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Konfiguracja typu wyszukiwania",
         "customRecordFieldId": "ID niestandardowego pola rekordu",
+        "fieldMappingIdHelp": "Wybierz niestandardowe pole rekordu, które będzie używane do tego wyszukiwania.",
         "fieldMappingIdValue": "ID mapowania pola: {id}",
         "lookupTypes": "Typy wyszukiwania",
         "noFieldSelected": "Nie wybrano pola",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Ponownie indeksuj wszystkie rekordy",
         "reindexRecordsHelp": "Ponownie zapisuje pola indeksu wyszukiwania dla istniejących rekordów, aby niestandardowe typy wyszukiwania używały najnowszych mapowań pól.",
         "sectionFallback": "Sekcja {index}",
+        "selectField": "Wybierz pole",
         "selectRecordFieldDescription": "Wybierz szablon rekordu, rozwiń sekcję i kliknij pole, aby je przypisać.",
         "width": "Szerokość"
       },
@@ -148,6 +151,7 @@
         "question": "Pytanie",
         "searchCodes": "Szukaj kodów",
         "tabs": {
+          "defaults": "Domyślna ścieżka",
           "questions": "Pytania"
         },
         "value": "Wartość"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Tylko przy niepowodzeniu",
         "trafficStopDescriptionHint": "Obsługuje niestandardowe zmienne.",
         "trafficStopMaxRadiusHint": "Jeśli najbliższy pojazd jest dalej niż to, wywołania zatrzymania ruchu wracają do wpisu tablicy rejestracyjnej lub pomijają szczegóły pojazdu.",
+        "trafficStopVariableCopied": "Zmienna skopiowana do schowka",
         "trafficStopVariablePlate": "Pierwszy argument polecenia, gdy podano tablicę rejestracyjną."
       },
       "eventDocumentation": "Dokumentacja W6darzeń",
       "fivem": {
+        "configureFeaturesTitle": "Skonfiguruj funkcje",
         "configureResourceTitle": "Konfiguruj zasób",
         "manual": {
           "configComment": "# Uruchom zasób sonorancad i inne dołączone zasoby",
           "downloadButton": "Pobierz Sonoran CAD dla FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Instalator Sonoran",
           "maskedKey": "********************",
           "resourceAccess": "Po zakończeniu instalacji możesz uzyskać dostęp do plików zasobu w Menedżerze plików.",
           "selectCad": "Wybierz CAD i kliknij, aby skopiować/wkleić ID i klucz poniżej.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "Integracja FiveM obejmuje obsługę mapy na żywo, narzędzia bodycam, synchronizację bazy danych oraz rozwijający się zestaw oficjalnych wtyczek do głębszych przepływów pracy w grze."
+              },
+              "setup": {
+                "question": "Jak długo trwa skonfigurowanie integracji?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Nazwa Użytkownika"
     },
     "linkAuth": {
+      "codeLabel": "4-znakowy kod",
       "errors": {
         "invalidCode": "Wprowadź prawidłowy 4-znakowy kod."
       },
       "idPageDescription": "Wpisz 4-znakowy kod z gry.",
       "idPageTitle": "Wprowadź kod linku",
       "idPageVerifying": "Weryfikowanie kodu...",
-      "success": "Logowanie połączone. Możesz teraz wrócić do oryginalnego osadzonego okna."
+      "success": "Logowanie połączone. Możesz teraz wrócić do oryginalnego osadzonego okna.",
+      "title": "Wybierz metodę logowania"
     },
     "newVisitor": {
       "description": "Dowiedz się więcej o systemie wtyczek integracyjnych Sonoran CAD, niestandardowej mapie na żywo, funkcji synchronizacji bazy danych, aplikacjach iOS/Android i nie tylko!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Pakiet i oszczędzaj",
       "bundleExplain": "Oszczędzaj 30% każdego miesiąca, gdy kupujesz VPS od Sonoran Servers.",
       "newSubscription": "Nowa Subskrypcja",
+      "save25": "Zapisz 25%",
       "serverIp": "IP Serwera",
       "serversEmail": "Email konta Sonoran Servers",
       "setCommunityId": "Ustaw ID społeczności"
@@ -847,6 +860,7 @@
       "addNote": "Dodaj Notatkę",
       "address": "Adres",
       "block": "Numer Bloku",
+      "callAttachmentAutoStatus": "Automatyczny status załącznika połączenia",
       "callDescription": "Opis Wezwania",
       "callNotes": "Notatki do Wezwania",
       "callOrigin": "Pochodzenie Wezwania",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Gdy zgłoszenie zostanie zamknięte, zaktualizuj status wszystkich dołączonych jednostek.",
       "updateCall": "Zaktualizuj Wezwanie",
       "webhooks": {
+        "closed": "Zamknięte",
         "detached": "Odłączono",
         "enabled": "Włączone"
       }
@@ -935,6 +950,8 @@
       "justYou": "Tylko Ty",
       "noThreads": "Brak aktywnych rozmów.",
       "online": "Online",
+      "recipientsHint": "Wybierz jednostki online, aby rozpocząć lub kontynuować czat.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Odczytuj na głos przychodzące wiadomości na czacie"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "999"
+        "emergency": "999",
+        "sign": "ZNAK"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Drukuj w grze",
         "recordType": "Typ Rejestru",
         "removeRecord": "Usuń Rejestr",
+        "saveAsDraft": "Zapisz jako wersję roboczą",
         "saveRecord": "Zapisz Rejestr",
         "status": {
           "active": "AKTYWNE",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Klasyczny układ",
     "exitResize": "Zakończ zmianę rozmiaru",
     "helpImprove": "Pomóż ulepszyć to tłumaczenie",
+    "hotkeyCombination": "Kombinacja",
     "hotkeyDisable": "Skróty klawiszowe są niedostępne w bezpłatnej wersji",
     "hotkeyRecording": "Nagrywanie...",
     "hotkeys": "Skróty klawiszowe",
@@ -1364,10 +1384,12 @@
     "showHide": "Pokaż/Ukryj",
     "systemDefaultMicrophone": "Domyślny mikrofon systemu",
     "theme": {
+      "backgroundImageScale": "Skala obrazu tła",
       "bgImageFit": {
         "contain": "Zawiera (dopasuj do wnętrza)"
       },
       "bgImagePosition": {
+        "center": "Wyśrodkowane",
         "left": "Lewo"
       },
       "bgImageScale": {

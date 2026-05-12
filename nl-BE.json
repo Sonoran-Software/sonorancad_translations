@@ -4,6 +4,7 @@
       "subscriptions": "Abonnementen"
     },
     "delete": {
+      "failure": "Je account kon niet worden verwijderd.",
       "title": "Account verwijderen?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Zoektypeconfiguratie",
         "customRecordFieldId": "Custom document ID",
+        "fieldMappingIdHelp": "Selecteer het aangepaste veld van het record dat voor deze zoekopdracht zal worden gebruikt.",
         "fieldMappingIdValue": "Veldtoewijzing-ID: {id}",
         "lookupTypes": "Opzoek types",
         "noFieldSelected": "Geen veld geselecteerd",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Herindexeer alle records",
         "reindexRecordsHelp": "Slaat de indexvelden van de opzoeklijst opnieuw op voor bestaande records zodat aangepaste zoektypes uw nieuwste veldtoewijzingen gebruiken.",
         "sectionFallback": "Sectie {index}",
+        "selectField": "Selecteer veld",
         "selectRecordFieldDescription": "Kies een recordsjabloon, breid een sectie uit en klik op een veld om het toe te wijzen.",
         "width": "Breedte"
       },
@@ -148,6 +151,7 @@
         "question": "Vraag",
         "searchCodes": "Zoek codes",
         "tabs": {
+          "defaults": "Standaardpad",
           "questions": "Vragen"
         },
         "value": "Waarde"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Alleen bij mislukking",
         "trafficStopDescriptionHint": "Ondersteunt aangepaste variabelen.",
         "trafficStopMaxRadiusHint": "Als het dichtstbijzijnde voertuig verder weg is dan dit, vallen traffic stop-oproepen terug op de nummerplaatinvoer of worden voertuigdetails weggelaten.",
+        "trafficStopVariableCopied": "Variabele gekopieerd naar klembord",
         "trafficStopVariablePlate": "Het eerste command-argument wanneer een nummerplaat werd opgegeven."
       },
       "eventDocumentation": "Event Documentatie",
       "fivem": {
+        "configureFeaturesTitle": "Functies configureren",
         "configureResourceTitle": "Resource configureren",
         "manual": {
           "configComment": "# Start de sonorancad-resource en andere gebundelde resources",
           "downloadButton": "Download Sonoran CAD voor FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran-installatieprogramma",
           "maskedKey": "********************",
           "resourceAccess": "Zodra de installatie voltooid is, kunt u de bronbestanden openen in de bestandsbeheerder.",
           "selectCad": "Selecteer CAD en klik om de ID en sleutel hieronder te kopiëren/plakken.",
@@ -728,6 +735,9 @@
               },
               "features": {
                 "answer": "De FiveM-integratie omvat livekaartondersteuning, bodycamtools, databasesynchronisatie en een groeiende reeks officiële plugins voor diepere in-game workflows."
+              },
+              "setup": {
+                "question": "Hoe lang duurt het om de integratie in te stellen?"
               }
             }
           },
@@ -788,13 +798,15 @@
       "username": "Gebruikersnaam"
     },
     "linkAuth": {
+      "codeLabel": "4-tekencode",
       "errors": {
         "invalidCode": "Voer een geldige code van 4 tekens in."
       },
       "idPageDescription": "Voer de code van 4 tekens in uit de game.",
       "idPageTitle": "Voer linkcode in",
       "idPageVerifying": "Code wordt gecontroleerd...",
-      "success": "Aanmelding gekoppeld. U kunt nu terugkeren naar het oorspronkelijke ingesloten venster."
+      "success": "Aanmelding gekoppeld. U kunt nu terugkeren naar het oorspronkelijke ingesloten venster.",
+      "title": "Kies uw inlogmethode"
     },
     "newVisitor": {
       "description": "Lees meer over Sonoran CAD's integratie-plugin-systeem, aangepaste live map, database-synchronisatiefunctie, iOS/Android-apps en meer!"
@@ -830,6 +842,7 @@
       "bundleAndSave": "Neem een bundel en bespaar",
       "bundleExplain": "Bespaar 30% elke maand wanneer je een VPS van Sonoran Servers huurt.",
       "newSubscription": "Nieuw abonnement",
+      "save25": "Bespaar 25%",
       "serverIp": "Server-IP",
       "serversEmail": "Sonoran Servers account-e-mail",
       "setCommunityId": "Stel Community ID in"
@@ -846,6 +859,7 @@
       "addNote": "Notitie Toevoegen",
       "address": "Adres",
       "block": "Blok nummer",
+      "callAttachmentAutoStatus": "Automatische status van oproepbijlage",
       "callDescription": "Melding Beschrijving",
       "callNotes": "Melding Notities",
       "callOrigin": "Afkomst melding",
@@ -903,6 +917,7 @@
       "unitStatusClosedHint": "Wanneer een oproep is afgesloten, werk de status van alle gekoppelde eenheden bij.",
       "updateCall": "Update Melding",
       "webhooks": {
+        "closed": "Gesloten",
         "detached": "Losgekoppeld",
         "enabled": "Ingeschakeld"
       }
@@ -934,6 +949,8 @@
       "justYou": "Alleen jij",
       "noThreads": "Nog geen actieve gesprekken.",
       "online": "Online",
+      "recipientsHint": "Selecteer online eenheden om een chat te starten of voort te zetten.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Lees inkomende chatberichten hardop voor"
     },
     "command": {
@@ -1008,7 +1025,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "BORD"
       }
     },
     "liveMap": {
@@ -1147,6 +1165,7 @@
         "printInGame": "Afdrukken in de game",
         "recordType": "Document type",
         "removeRecord": "Verwijderd document",
+        "saveAsDraft": "Opslaan als concept",
         "saveRecord": "Sla document op",
         "status": {
           "active": "ACTIEF",
@@ -1314,6 +1333,7 @@
     "classicLayout": "Klassieke layout",
     "exitResize": "Verlaat aanpassen",
     "helpImprove": "Help mee met de vertalingen",
+    "hotkeyCombination": "Combinatie",
     "hotkeyDisable": "Sneltoetsen zijn niet inbegrepen met de gratis versie",
     "hotkeyRecording": "Opname...",
     "hotkeys": "Sneltoetsen",
@@ -1363,10 +1383,12 @@
     "showHide": "Toon/verberg",
     "systemDefaultMicrophone": "Standaardmicrofoon van het systeem",
     "theme": {
+      "backgroundImageScale": "Schaal achtergrondafbeelding",
       "bgImageFit": {
         "contain": "Bevatten (Binnen passend)"
       },
       "bgImagePosition": {
+        "center": "Midden",
         "left": "Links"
       },
       "bgImageScale": {

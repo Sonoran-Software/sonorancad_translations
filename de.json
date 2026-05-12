@@ -4,6 +4,7 @@
       "subscriptions": "Abos"
     },
     "delete": {
+      "failure": "Löschen Ihres Kontos fehlgeschlagen.",
       "title": "Konto löschen?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Konfiguration des Suchtyps",
         "customRecordFieldId": "Benutzerdefinierte Datensatzfeld-ID",
+        "fieldMappingIdHelp": "Wählen Sie das benutzerdefinierte Datensatzfeld aus, das für diese Suche verwendet wird.",
         "fieldMappingIdValue": "Feld-Mapping-ID: {id}",
         "lookupTypes": "Suchtypen",
         "noFieldSelected": "Kein Feld ausgewählt",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Alle Datensätze neu indizieren",
         "reindexRecordsHelp": "Speichert die Lookup-Index-Felder für vorhandene Datensätze erneut, damit benutzerdefinierte Suchtypen Ihre neuesten Feldzuordnungen verwenden.",
         "sectionFallback": "Abschnitt {index}",
+        "selectField": "Feld auswählen",
         "selectRecordFieldDescription": "Wählen Sie eine Datensatzvorlage aus, erweitern Sie einen Abschnitt und klicken Sie auf ein Feld, um es zuzuordnen.",
         "width": "Breite"
       },
@@ -148,6 +151,7 @@
         "question": "Frage",
         "searchCodes": "Codes suchen",
         "tabs": {
+          "defaults": "Standardpfad",
           "questions": "Fragen"
         },
         "value": "Wert"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Nur bei Fehlern",
         "trafficStopDescriptionHint": "Unterstützt benutzerdefinierte Variablen.",
         "trafficStopMaxRadiusHint": "Wenn das nächstgelegene Fahrzeug weiter entfernt ist, greifen Verkehrsstopp-Anrufe auf die Kennzeicheneingabe zurück oder lassen Fahrzeugdetails weg.",
+        "trafficStopVariableCopied": "Variable in die Zwischenablage kopiert",
         "trafficStopVariablePlate": "Das erste Befehlsargument, wenn ein Kennzeichen angegeben wurde."
       },
       "eventDocumentation": "Event Dokumentation",
       "fivem": {
+        "configureFeaturesTitle": "Funktionen konfigurieren",
         "configureResourceTitle": "Ressource konfigurieren",
         "manual": {
           "configComment": "# Starten Sie die sonorancad-Ressource und andere gebündelte Ressourcen",
           "downloadButton": "Sonoran CAD für FiveM herunterladen"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran-Installer",
           "maskedKey": "********************",
           "resourceAccess": "Sobald die Installation abgeschlossen ist, können Sie im Dateimanager auf die Ressourcendateien zugreifen.",
           "selectCad": "CAD auswählen und klicken, um die ID und den Schlüssel unten zu kopieren/einzufügen.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "Die FiveM-Integration umfasst Live-Kartenunterstützung, Bodycam-Tools, Datenbanksynchronisierung und eine wachsende Auswahl offizieller Plugins für tiefere In-Game-Workflows."
+              },
+              "setup": {
+                "question": "Wie lange dauert es, die Integration einzurichten?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Benutzername"
     },
     "linkAuth": {
+      "codeLabel": "4-stelliger Code",
       "errors": {
         "invalidCode": "Bitte geben Sie einen gültigen 4-stelligen Code ein."
       },
       "idPageDescription": "Gib den 4-stelligen Code aus dem Spiel ein.",
       "idPageTitle": "Link-Code eingeben",
       "idPageVerifying": "Code wird überprüft...",
-      "success": "Login verknüpft. Sie können jetzt zum ursprünglichen eingebetteten Fenster zurückkehren."
+      "success": "Login verknüpft. Sie können jetzt zum ursprünglichen eingebetteten Fenster zurückkehren.",
+      "title": "Wählen Sie Ihre Anmeldemethode"
     },
     "newVisitor": {
       "description": "Erfahren Sie mehr über das Integrations-Plugin-System von Sonoran CAD, die benutzerdefinierte Live-Karte, die Datenbanksynchronisierungsfunktion, iOS-/Android-Apps und mehr!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Bündeln und sparen",
       "bundleExplain": "Sparen Sie jeden Monat 30 %, wenn Sie ein VPS von Sonoran Servers kaufen.",
       "newSubscription": "Neues Abo",
+      "save25": "25% sparen",
       "serverIp": "Server-IP",
       "serversEmail": "Sonoran Servers-Konto-E-Mail",
       "setCommunityId": "Community-ID festlegen"
@@ -847,6 +860,7 @@
       "addNote": "Notiz hinzufügen",
       "address": "Adresse",
       "block": "Blockieren",
+      "callAttachmentAutoStatus": "Anhangs-Autostatus des Anrufs",
       "callDescription": "Einsatzbeschreibung",
       "callNotes": "Einsatznotizen",
       "callOrigin": "Einsatzherkunft",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Wenn ein Einsatz geschlossen wird, aktualisiere den Status aller zugehörigen Einheiten.",
       "updateCall": "Einsatz aktualisieren",
       "webhooks": {
+        "closed": "Geschlossen",
         "detached": "Getrennt",
         "enabled": "Aktiviert"
       }
@@ -935,6 +950,8 @@
       "justYou": "Nur du",
       "noThreads": "Noch keine aktiven Unterhaltungen.",
       "online": "Online",
+      "recipientsHint": "Wähle Online-Einheiten aus, um einen Chat zu starten oder fortzusetzen.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Eingehende Chat-Nachrichten vorlesen"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "ZEICHEN"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Im Spiel drucken",
         "recordType": "Eintragsart",
         "removeRecord": "Eintrag entfernen",
+        "saveAsDraft": "Als Entwurf speichern",
         "saveRecord": "Eintrag speichern",
         "status": {
           "active": "AKTIV",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Klassisches Layout",
     "exitResize": "Größenänderung beenden",
     "helpImprove": "Hilf diese Übersetzungen zu verbessern",
+    "hotkeyCombination": "Kombination",
     "hotkeyDisable": "Hotkeys sind in der kostenlosen Version nicht verfügbar",
     "hotkeyRecording": "Aufzeichnung...",
     "hotkeys": "Tastenkürzel",
@@ -1364,10 +1384,12 @@
     "showHide": "Anzeigen/Verstecken",
     "systemDefaultMicrophone": "Systemstandardmikrofon",
     "theme": {
+      "backgroundImageScale": "Skalierung des Hintergrundbilds",
       "bgImageFit": {
         "contain": "Einpassen (Innen anpassen)"
       },
       "bgImagePosition": {
+        "center": "Zentriert",
         "left": "Links"
       },
       "bgImageScale": {

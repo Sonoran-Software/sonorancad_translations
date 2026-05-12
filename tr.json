@@ -4,6 +4,7 @@
       "subscriptions": "Abonelikler"
     },
     "delete": {
+      "failure": "Hesabınız silinemedi.",
       "title": "Hesabı Sil?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Arama Türü Yapılandırması",
         "customRecordFieldId": "Özel Kayıt Alanı Kimliği",
+        "fieldMappingIdHelp": "Bu arama için kullanılacak özel kayıt alanını seçin.",
         "fieldMappingIdValue": "Alan Eşleme Kimliği: {id}",
         "lookupTypes": "Arama Türleri",
         "noFieldSelected": "Alan Seçilmedi",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Tüm Kayıtları Yeniden Dizinle",
         "reindexRecordsHelp": "Mevcut kayıtlar için arama dizini alanlarını yeniden kaydeder, böylece özel arama türleri en son alan eşlemelerinizi kullanır.",
         "sectionFallback": "Bölüm {index}",
+        "selectField": "Alan Seçin",
         "selectRecordFieldDescription": "Bir kayıt şablonu seçin, bir bölümü genişletin ve eşlemek için bir alana tıklayın.",
         "width": "Genişlik"
       },
@@ -148,6 +151,7 @@
         "question": "Soru",
         "searchCodes": "Kodları Ara",
         "tabs": {
+          "defaults": "Varsayılan Yol",
           "questions": "Sorular"
         },
         "value": "Değer"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Yalnızca Hata Durumunda",
         "trafficStopDescriptionHint": "Özel değişkenleri destekler.",
         "trafficStopMaxRadiusHint": "En yakın araç bundan daha uzaktaysa, trafik durdurma çağrıları plaka girişine geri döner veya araç ayrıntılarını atlar.",
+        "trafficStopVariableCopied": "Değişken panoya kopyalandı",
         "trafficStopVariablePlate": "Plaka sağlandığında ilk komut argümanı."
       },
       "eventDocumentation": "Etkinlik Dokümantasyonu",
       "fivem": {
+        "configureFeaturesTitle": "Özellikleri Yapılandır",
         "configureResourceTitle": "Kaynağı Yapılandır",
         "manual": {
           "configComment": "# Sonorancad kaynağını ve diğer birlikte paketlenmiş kaynakları başlatın",
           "downloadButton": "FiveM için Sonoran CAD'yi İndir"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran Yükleyici",
           "maskedKey": "********************",
           "resourceAccess": "Kurulum tamamlandıktan sonra, kaynak dosyalarına Dosya Yöneticisi'nden erişebilirsiniz.",
           "selectCad": "CAD'yi seçin ve aşağıdaki kimlik ve anahtarı kopyalayıp/yapıştırmak için tıklayın.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "FiveM entegrasyonu canlı harita desteği, bodycam araçları, veritabanı eşitlemesi ve daha derin oyun içi iş akışları için genişleyen bir resmi eklenti seti içerir."
+              },
+              "setup": {
+                "question": "Entegrasyonu kurmak ne kadar sürer?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Kullanıcı adı"
     },
     "linkAuth": {
+      "codeLabel": "4 karakterli kod",
       "errors": {
         "invalidCode": "Lütfen geçerli 4 karakterli bir kod girin."
       },
       "idPageDescription": "Oyun içindeki 4 karakterli kodu girin.",
       "idPageTitle": "Bağlantı Kodunu Girin",
       "idPageVerifying": "Kod doğrulanıyor...",
-      "success": "Giriş bağlandı. Şimdi orijinal gömülü pencereye geri dönebilirsiniz."
+      "success": "Giriş bağlandı. Şimdi orijinal gömülü pencereye geri dönebilirsiniz.",
+      "title": "Giriş Yönteminizi Seçin"
     },
     "newVisitor": {
       "description": "Sonoran CAD'in entegrasyon eklenti sistemi, özel canlı haritası, veritabanı senkronizasyon işlevselliği, iOS/Android uygulamaları ve daha fazlası hakkında daha fazla bilgi edinin!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Paketle ve Kaydet",
       "bundleExplain": "Sonoran Sunucularından VPS satın aldığınızda her ay %30 tasarruf edin.",
       "newSubscription": "Yeni Abonelik",
+      "save25": "%25 kaydet",
       "serverIp": "Sunucu IP'si",
       "serversEmail": "Sonoran Sunucuları Hesap E-postası",
       "setCommunityId": "Topluluk Kimliğini Ayarla"
@@ -847,6 +860,7 @@
       "addNote": "Not ekle",
       "address": "Adres",
       "block": "Engellemek",
+      "callAttachmentAutoStatus": "Çağrı Ek Eş Durum",
       "callDescription": "Çağrı Açıklaması",
       "callNotes": "Çağrı Notları",
       "callOrigin": "Çağrı Kaynağı",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Bir çağrı kapatıldığında, bağlı tüm birimlerin durumunu güncelleyin.",
       "updateCall": "Aramayı Güncelle",
       "webhooks": {
+        "closed": "Kapalı",
         "detached": "Ayrıldı",
         "enabled": "Etkinleştir"
       }
@@ -935,6 +950,8 @@
       "justYou": "Sadece Sen",
       "noThreads": "Henüz aktif konuşma yok.",
       "online": "Çevrimiçi",
+      "recipientsHint": "Çevrimiçi birimleri seçerek sohbet başlatın veya sürdürün.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Gelen sohbet mesajlarını yüksek sesle oku"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "İşaret"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Oyunda Yazdır",
         "recordType": "Kayıt tipi",
         "removeRecord": "Kaydı Kaldır",
+        "saveAsDraft": "Taslak Olarak Kaydet",
         "saveRecord": "Kaydı Kaydet",
         "status": {
           "active": "AKTİF",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Klasik Düzen",
     "exitResize": "Yeniden Boyutlandırmadan Çık",
     "helpImprove": "Bu çevirilerin iyileştirilmesine yardımcı olun",
+    "hotkeyCombination": "Kombinasyon",
     "hotkeyDisable": "Ücretsiz sürümde kısayol tuşları etkin değil",
     "hotkeyRecording": "Kayıt alınıyor...",
     "hotkeys": "Kısayol tuşları",
@@ -1364,10 +1384,12 @@
     "showHide": "Göster/Gizle",
     "systemDefaultMicrophone": "Sistem varsayılan mikrofonu",
     "theme": {
+      "backgroundImageScale": "Arka Plan Görüntüsü Ölçeği",
       "bgImageFit": {
         "contain": "Sığdır (İçine sığdır)"
       },
       "bgImagePosition": {
+        "center": "Merkez",
         "left": "Sol"
       },
       "bgImageScale": {

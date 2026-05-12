@@ -4,6 +4,7 @@
       "subscriptions": "Suscripciones"
     },
     "delete": {
+      "failure": "No se pudo eliminar tu cuenta.",
       "title": "¿Eliminar cuenta?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Configuración del tipo de búsqueda",
         "customRecordFieldId": "ID de campo de registro personalizado",
+        "fieldMappingIdHelp": "Selecciona el campo de registro personalizado que se usará para esta búsqueda.",
         "fieldMappingIdValue": "ID de mapeo de campo: {id}",
         "lookupTypes": "Tipos de búsqueda",
         "noFieldSelected": "Ningún campo seleccionado",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Reindexar todos los registros",
         "reindexRecordsHelp": "Vuelve a guardar los campos del índice de búsqueda para los registros existentes para que los tipos de búsqueda personalizados usen tus asignaciones de campos más recientes.",
         "sectionFallback": "Sección {index}",
+        "selectField": "Seleccionar campo",
         "selectRecordFieldDescription": "Elige una plantilla de registro, despliega una sección y haz clic en un campo para asignarlo.",
         "width": "Ancho"
       },
@@ -148,6 +151,7 @@
         "question": "Pregunta",
         "searchCodes": "Buscar códigos",
         "tabs": {
+          "defaults": "Ruta predeterminada",
           "questions": "Preguntas"
         },
         "value": "Valor"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Solo en caso de fallo",
         "trafficStopDescriptionHint": "Admite variables personalizadas.",
         "trafficStopMaxRadiusHint": "Si el vehículo más cercano está más lejos que esto, las llamadas de parada de tráfico recurren a la entrada de matrícula o omiten los detalles del vehículo.",
+        "trafficStopVariableCopied": "Variable copiada al portapapeles",
         "trafficStopVariablePlate": "El primer argumento del comando cuando se proporcionó una matrícula."
       },
       "eventDocumentation": "Documentación de eventos",
       "fivem": {
+        "configureFeaturesTitle": "Configurar funciones",
         "configureResourceTitle": "Configurar recurso",
         "manual": {
           "configComment": "# Inicia el recurso sonorancad y otros recursos incluidos",
           "downloadButton": "Descargar Sonoran CAD para FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Instalador de Sonoran",
           "maskedKey": "********************",
           "resourceAccess": "Una vez que la instalación se complete, puedes acceder a los archivos del recurso en el Administrador de archivos.",
           "selectCad": "Seleccione CAD y haga clic para copiar/pegar el ID y la clave a continuación.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "La integración de FiveM incluye compatibilidad con mapa en vivo, herramientas de bodycam, sincronización de base de datos y un conjunto en expansión de plugins oficiales para flujos de trabajo más profundos dentro del juego."
+              },
+              "setup": {
+                "question": "¿Cuánto tiempo lleva configurar la integración?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Nombre de Usuario"
     },
     "linkAuth": {
+      "codeLabel": "código de 4 caracteres",
       "errors": {
         "invalidCode": "Por favor, introduzca un código válido de 4 caracteres."
       },
       "idPageDescription": "Introduce el código de 4 caracteres del juego.",
       "idPageTitle": "Ingresar código de enlace",
       "idPageVerifying": "Verificando código...",
-      "success": "Inicio de sesión vinculado. Ya puedes volver a la ventana incrustada original."
+      "success": "Inicio de sesión vinculado. Ya puedes volver a la ventana incrustada original.",
+      "title": "Elige tu método de inicio de sesión"
     },
     "newVisitor": {
       "description": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Agrupe y ahorre",
       "bundleExplain": "Ahorre 30% cada mes cuando compre un VPS de Sonoran Servers",
       "newSubscription": "Suscripción Nueva",
+      "save25": "Ahorra 25%",
       "serverIp": "IP de servidor",
       "serversEmail": "Correo electrónico de Sonoran Servers",
       "setCommunityId": "Establecer ID de la comunidad"
@@ -847,6 +860,7 @@
       "addNote": "Añadir nota",
       "address": "Dirección",
       "block": "Bloquear",
+      "callAttachmentAutoStatus": "Estado automático del adjunto de llamada",
       "callDescription": "Descripción de llamada",
       "callNotes": "Notas de llamada",
       "callOrigin": "Origen de llamada",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Cuando se cierra una llamada, actualiza el estado de todas las unidades adjuntas.",
       "updateCall": "Actualizar llamada",
       "webhooks": {
+        "closed": "Cerrado",
         "detached": "Desconectado",
         "enabled": "Habilitado"
       }
@@ -935,6 +950,8 @@
       "justYou": "Solo tú",
       "noThreads": "Aún no hay conversaciones activas.",
       "online": "En línea",
+      "recipientsHint": "Selecciona unidades en línea para iniciar o continuar un chat.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Leer en voz alta los mensajes entrantes del chat"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "SEÑAL"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Imprimir en el juego",
         "recordType": "Tipo Registro",
         "removeRecord": "Eliminar Registro",
+        "saveAsDraft": "Guardar como borrador",
         "saveRecord": "Guardar Registro",
         "status": {
           "active": "ACTIVO",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Disposición clásico",
     "exitResize": "Salir de cambio de tamaño",
     "helpImprove": "Ayude a mejorar las traducciones",
+    "hotkeyCombination": "Combinación",
     "hotkeyDisable": "Las teclas de acceso rápido no están disponibles en la versión gratuita",
     "hotkeyRecording": "Grabando...",
     "hotkeys": "Teclas de acceso rápido",
@@ -1364,10 +1384,12 @@
     "showHide": "Mostrar/Ocultar",
     "systemDefaultMicrophone": "Micrófono predeterminado del sistema",
     "theme": {
+      "backgroundImageScale": "Escala de imagen de fondo",
       "bgImageFit": {
         "contain": "Contener (Ajustar dentro)"
       },
       "bgImagePosition": {
+        "center": "Centro",
         "left": "Izquierda"
       },
       "bgImageScale": {

@@ -4,6 +4,7 @@
       "subscriptions": "Abonnements"
     },
     "delete": {
+      "failure": "Impossible de supprimer votre compte.",
       "title": "Supprimer le compte?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Configuration du type de recherche",
         "customRecordFieldId": "ID de champ de dossier personnalisé",
+        "fieldMappingIdHelp": "Sélectionnez le champ d'enregistrement personnalisé qui sera utilisé pour cette recherche.",
         "fieldMappingIdValue": "ID de mappage de champ: {id}",
         "lookupTypes": "Types de dossier",
         "noFieldSelected": "Aucun champ sélectionné",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Réindexer tous les enregistrements",
         "reindexRecordsHelp": "Enregistre à nouveau les champs d'index de recherche pour les enregistrements existants afin que les types de recherche personnalisés utilisent vos dernières correspondances de champs.",
         "sectionFallback": "Section {index}",
+        "selectField": "Sélectionner un champ",
         "selectRecordFieldDescription": "Choisissez un modèle d'enregistrement, développez une section et cliquez sur un champ pour le mapper.",
         "width": "Largeur"
       },
@@ -148,6 +151,7 @@
         "question": "Question",
         "searchCodes": "Rechercher des codes",
         "tabs": {
+          "defaults": "Chemin par défaut",
           "questions": "Questions"
         },
         "value": "Valeur"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Uniquement en cas d'échec",
         "trafficStopDescriptionHint": "Prend en charge les variables personnalisées.",
         "trafficStopMaxRadiusHint": "Si le véhicule le plus proche est plus loin que cela, les appels d'arrêt de circulation reviennent à la saisie de la plaque ou omettent les détails du véhicule.",
+        "trafficStopVariableCopied": "Variable copiée dans le presse-papiers",
         "trafficStopVariablePlate": "Le premier argument de commande lorsqu’une plaque a été fournie."
       },
       "eventDocumentation": "Documentation de l'événement",
       "fivem": {
+        "configureFeaturesTitle": "Configurer les fonctionnalités",
         "configureResourceTitle": "Configurer la ressource",
         "manual": {
           "configComment": "# Démarrez la ressource sonorancad et les autres ressources fournies",
           "downloadButton": "Télécharger Sonoran CAD pour FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Installateur Sonoran",
           "maskedKey": "********************",
           "resourceAccess": "Une fois l'installation terminée, vous pouvez accéder aux fichiers de la ressource dans le gestionnaire de fichiers.",
           "selectCad": "Sélectionnez CAD et cliquez pour copier/coller l'ID et la clé ci-dessous.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "L’intégration FiveM inclut la prise en charge de la carte en direct, des outils de bodycam, la synchronisation de la base de données et un ensemble croissant de plugins officiels pour des flux de travail plus approfondis en jeu."
+              },
+              "setup": {
+                "question": "Combien de temps faut-il pour configurer l'intégration ?"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "Nom d'utilisateur"
     },
     "linkAuth": {
+      "codeLabel": "code à 4 caractères",
       "errors": {
         "invalidCode": "Veuillez saisir un code valide de 4 caractères."
       },
       "idPageDescription": "Entrez le code à 4 caractères du jeu.",
       "idPageTitle": "Saisir le code du lien",
       "idPageVerifying": "Vérification du code...",
-      "success": "Connexion liée. Vous pouvez revenir à la fenêtre intégrée d'origine maintenant."
+      "success": "Connexion liée. Vous pouvez revenir à la fenêtre intégrée d'origine maintenant.",
+      "title": "Choisissez votre méthode de connexion"
     },
     "newVisitor": {
       "description": "En savoir plus sur le système de plugins d'intégration de Sonoran CAD, la carte en direct personnalisée, la synchronisation de la base de données, les applications iOS/Android, et plus encore !"
@@ -831,6 +843,7 @@
       "bundleAndSave": "Bundle et sauvegarde",
       "bundleExplain": "Économisez 30 % chaque mois lorsque vous achetez un VPS auprès de Sonoran Servers.",
       "newSubscription": "Nouvel abonnement",
+      "save25": "Économisez 25%",
       "serverIp": "IP du serveur",
       "serversEmail": "Courriel du compte des serveurs Sonoran",
       "setCommunityId": "Définir l’ID de la communauté"
@@ -847,6 +860,7 @@
       "addNote": "Ajouter la note",
       "address": "Addresse",
       "block": "Arrondissement",
+      "callAttachmentAutoStatus": "Statut automatique de la pièce jointe de l'appel",
       "callDescription": "Description de l'appel",
       "callNotes": "Notes relative à l'appel",
       "callOrigin": "Origine de l'appel",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "Lorsqu'un appel est clôturé, mettez à jour le statut de toutes les unités attachées.",
       "updateCall": "Mettre à jour une carte d'appel",
       "webhooks": {
+        "closed": "Fermé",
         "detached": "Détaché",
         "enabled": "Activé"
       }
@@ -935,6 +950,8 @@
       "justYou": "Juste vous",
       "noThreads": "Aucune conversation active pour le moment.",
       "online": "En ligne",
+      "recipientsHint": "Sélectionnez des unités en ligne pour démarrer ou continuer une conversation.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Lire à voix haute les messages entrants du chat"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "SIGN"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "Imprimer en jeu",
         "recordType": "Type de dossier",
         "removeRecord": "Supprimer le dossier",
+        "saveAsDraft": "Enregistrer en tant que brouillon",
         "saveRecord": "Sauvegarder le dossier",
         "status": {
           "active": "ACTIF",
@@ -1315,6 +1334,7 @@
     "classicLayout": "Disposition classique",
     "exitResize": "Sortir du redimensionnement",
     "helpImprove": "Aider à améliorer ces traductions",
+    "hotkeyCombination": "Combinaison",
     "hotkeyDisable": "Les raccourcis clavier ne sont pas activés avec la version gratuite",
     "hotkeyRecording": "Enregistrement...",
     "hotkeys": "Raccourcis clavier",
@@ -1364,10 +1384,12 @@
     "showHide": "Afficher/Masquer",
     "systemDefaultMicrophone": "Microphone par défaut du système",
     "theme": {
+      "backgroundImageScale": "Échelle de l'image d'arrière-plan",
       "bgImageFit": {
         "contain": "Contenir (Ajuster à l’intérieur)"
       },
       "bgImagePosition": {
+        "center": "Centre",
         "left": "Gauche"
       },
       "bgImageScale": {

@@ -4,6 +4,7 @@
       "subscriptions": "订阅内容"
     },
     "delete": {
+      "failure": "删除你的账户失败。",
       "title": "删除账户？"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "搜索类型配置",
         "customRecordFieldId": "自定义记录表ID",
+        "fieldMappingIdHelp": "选择将用于此搜索的自定义记录字段。",
         "fieldMappingIdValue": "字段映射 ID: {id}",
         "lookupTypes": "查询类型",
         "noFieldSelected": "未选择字段",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "重新索引所有记录",
         "reindexRecordsHelp": "重新保存现有记录的查找索引字段，以便自定义搜索类型使用你最新的字段映射。",
         "sectionFallback": "部分 {index}",
+        "selectField": "选择字段",
         "selectRecordFieldDescription": "选择一个记录模板，展开一个部分，然后点击一个字段进行映射。",
         "width": "宽度"
       },
@@ -148,6 +151,7 @@
         "question": "问题",
         "searchCodes": "搜索代码",
         "tabs": {
+          "defaults": "默认路径",
           "questions": "问题"
         },
         "value": "值"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "仅在失败时",
         "trafficStopDescriptionHint": "支持自定义变量。",
         "trafficStopMaxRadiusHint": "如果最近的车辆距离超过此值，交通拦截呼叫将回退到车牌输入或省略车辆详情。",
+        "trafficStopVariableCopied": "变量已复制到剪贴板",
         "trafficStopVariablePlate": "提供车牌时的第一个命令参数。"
       },
       "eventDocumentation": "事件记录",
       "fivem": {
+        "configureFeaturesTitle": "配置功能",
         "configureResourceTitle": "配置资源",
         "manual": {
           "configComment": "# 启动 sonorancad 资源和其他捆绑资源",
           "downloadButton": "下载 Sonoran CAD 用于 FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran 安装程序",
           "maskedKey": "********************",
           "resourceAccess": "安装完成后，您可以在 文件 管理器 中访问资源文件。",
           "selectCad": "选择 CAD 并点击以下复制/粘贴 ID 和 key。",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "FiveM 集成包括实时地图支持、执法记录仪工具、数据库同步，以及一组不断扩展的官方插件，用于更深入的游戏内工作流程。"
+              },
+              "setup": {
+                "question": "设置集成需要多长时间？"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "使用者名称"
     },
     "linkAuth": {
+      "codeLabel": "4位字符代码",
       "errors": {
         "invalidCode": "请输入有效的 4 个字符代码。"
       },
       "idPageDescription": "输入游戏内的 4 位字符代码。",
       "idPageTitle": "输入链接代码",
       "idPageVerifying": "正在验证代码...",
-      "success": "登录已关联。您现在可以返回到原始嵌入窗口。"
+      "success": "登录已关联。您现在可以返回到原始嵌入窗口。",
+      "title": "选择你的登录方式"
     },
     "newVisitor": {
       "description": "了解有关 Sonoran CAD 的集成插件系统、自定义实时地图、数据库同步功能、iOS/Android 应用等更多信息！"
@@ -831,6 +843,7 @@
       "bundleAndSave": "捆绑并保存",
       "bundleExplain": "从Sonoran服务器购买VPS时，每月可节省30％。",
       "newSubscription": "新订阅",
+      "save25": "节省 25%",
       "serverIp": "服务器IP",
       "serversEmail": "Sonoran服务器帐户电子邮件",
       "setCommunityId": "设置社区ID"
@@ -847,6 +860,7 @@
       "addNote": "添加备注",
       "address": "地址",
       "block": "街区",
+      "callAttachmentAutoStatus": "通话附件自动状态",
       "callDescription": "呼叫描述",
       "callNotes": "呼叫备注",
       "callOrigin": "呼叫类型",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "通话关闭时，更新所有附加单位的状态。",
       "updateCall": "更新呼叫",
       "webhooks": {
+        "closed": "关闭",
         "detached": "已脱离",
         "enabled": "启用"
       }
@@ -935,6 +950,8 @@
       "justYou": "只有你",
       "noThreads": "暂无活跃会话。",
       "online": "在线",
+      "recipientsHint": "选择在线单位以开始或继续聊天。",
+      "ttsIncomingLink": "{sender}。{label}",
       "ttsIncomingTooltip": "朗读收到的聊天消息"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "标志"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "游戏内打印",
         "recordType": "记录种类",
         "removeRecord": "移除记录",
+        "saveAsDraft": "另存为草稿",
         "saveRecord": "保存记录",
         "status": {
           "active": "正在处理",
@@ -1315,6 +1334,7 @@
     "classicLayout": "经典布局",
     "exitResize": "退出缩放",
     "helpImprove": "帮助改进翻译",
+    "hotkeyCombination": "组合",
     "hotkeyDisable": "免费版本社区无法使用自定义按键设置",
     "hotkeyRecording": "录制...",
     "hotkeys": "自定义按键",
@@ -1364,10 +1384,12 @@
     "showHide": "显示/隐藏",
     "systemDefaultMicrophone": "系统默认麦克风",
     "theme": {
+      "backgroundImageScale": "背景图像缩放",
       "bgImageFit": {
         "contain": "包含（适应内部）"
       },
       "bgImagePosition": {
+        "center": "居中",
         "left": "左"
       },
       "bgImageScale": {

@@ -4,6 +4,7 @@
       "subscriptions": "Abonnementer"
     },
     "delete": {
+      "failure": "Kunne ikke slette brukerkontoen din.",
       "title": "Slette brukerkonto?"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "Konfigurasjon av søketype",
         "customRecordFieldId": "Tilpasset saksid felt",
+        "fieldMappingIdHelp": "Velg det egendefinerte feltet som vil bli brukt for dette søket.",
         "fieldMappingIdValue": "Feltkartleggings-ID: {id}",
         "lookupTypes": "Søk typer",
         "noFieldSelected": "Ingen felt valgt",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "Reindekser alle poster",
         "reindexRecordsHelp": "Lagrer oppslagsindeksfeltene på nytt for eksisterende poster, slik at egendefinerte søketyper bruker de nyeste feltkoblingene dine.",
         "sectionFallback": "Seksjon {index}",
+        "selectField": "Velg felt",
         "selectRecordFieldDescription": "Velg en postmal, utvid en seksjon, og klikk et felt for å mappe det.",
         "width": "Bredde"
       },
@@ -148,6 +151,7 @@
         "question": "Spørsmål",
         "searchCodes": "Søkekoder",
         "tabs": {
+          "defaults": "Standardsti",
           "questions": "Spørsmål"
         },
         "value": "Verdi"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "Bare ved feil",
         "trafficStopDescriptionHint": "Støtter egendefinerte variabler.",
         "trafficStopMaxRadiusHint": "Hvis det nærmeste kjøretøyet er lenger unna enn dette, går trafikkstoppanrop tilbake til skiltregistreringen eller utelater kjøretøydetaljer.",
+        "trafficStopVariableCopied": "Variabel kopiert til utklippstavlen",
         "trafficStopVariablePlate": "Det første kommandolinjeargumentet når en registreringsplate ble oppgitt."
       },
       "eventDocumentation": "Event dokumentasjon",
       "fivem": {
+        "configureFeaturesTitle": "Konfigurer funksjoner",
         "configureResourceTitle": "Konfigurer ressurs",
         "manual": {
           "configComment": "# Start sonorancad-ressursen og andre medfølgende ressurser",
           "downloadButton": "Last ned Sonoran CAD for FiveM"
         },
         "rocketNode": {
+          "installerLabel": "Sonoran-installasjonsprogram",
           "maskedKey": "********************",
           "resourceAccess": "Når installasjonen er fullført, kan du få tilgang til ressursfilene i filbehandleren.",
           "selectCad": "Velg CAD og klikk for å kopiere/lime inn ID-en og nøkkelen nedenfor.",
@@ -728,6 +735,9 @@
               },
               "features": {
                 "answer": "FiveM-integrasjonen inkluderer støtte for livekart, bodycam-verktøy, databasesynkronisering og et voksende sett med offisielle plugins for dypere arbeidsflyter i spillet."
+              },
+              "setup": {
+                "question": "Hvor lang tid tar det å sette opp integrasjonen?"
               }
             }
           },
@@ -788,13 +798,15 @@
       "username": "Brukernavn"
     },
     "linkAuth": {
+      "codeLabel": "4-tegnskode",
       "errors": {
         "invalidCode": "Vennligst skriv inn en gyldig kode med 4 tegn."
       },
       "idPageDescription": "Skriv inn den 4-tegns koden fra spillet.",
       "idPageTitle": "Skriv inn lenkekode",
       "idPageVerifying": "Verifiserer kode...",
-      "success": "Innlogging koblet. Du kan gå tilbake til det opprinnelige innebygde vinduet nå."
+      "success": "Innlogging koblet. Du kan gå tilbake til det opprinnelige innebygde vinduet nå.",
+      "title": "Velg påloggingsmetode"
     },
     "newVisitor": {
       "description": "Lær mer om Sonoran CADs integrasjonsplugin-system, tilpasset live-kart, funksjonalitet for databasesynkronisering, iOS/Android-apper og mer!"
@@ -830,6 +842,7 @@
       "bundleAndSave": "Pakke og lagre",
       "bundleExplain": "Spar 30% hver måned når du kjøper en VPS fra Sonoran Servers.",
       "newSubscription": "Nytt abonnement",
+      "save25": "Spar 25%",
       "serverIp": "Server-IP",
       "serversEmail": "Sonoran Servers Bruker Epost",
       "setCommunityId": "Sett Samfunns ID"
@@ -846,6 +859,7 @@
       "addNote": "Ny merknad",
       "address": "Adresse",
       "block": "Område",
+      "callAttachmentAutoStatus": "Auto-status for samtalevedlegg",
       "callDescription": "Oppdragsbeskrivelse",
       "callNotes": "Oppdragsmerknader",
       "callOrigin": "Oppdragsopphav",
@@ -903,6 +917,7 @@
       "unitStatusClosedHint": "Når en sak er avsluttet, oppdater statusen til alle tilknyttede enheter.",
       "updateCall": "Oppdater oppdrag",
       "webhooks": {
+        "closed": "Avsluttet",
         "detached": "Frakoblet",
         "enabled": "Påskrudd"
       }
@@ -934,6 +949,8 @@
       "justYou": "Bare deg",
       "noThreads": "Ingen aktive samtaler ennå.",
       "online": "På nett",
+      "recipientsHint": "Velg enheter som er på nett for å starte eller fortsette en chat.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "Les innkommende chatmeldinger høyt"
     },
     "command": {
@@ -1008,7 +1025,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "911"
+        "emergency": "911",
+        "sign": "SKILT"
       }
     },
     "liveMap": {
@@ -1147,6 +1165,7 @@
         "printInGame": "Skriv ut i spillet",
         "recordType": "Sakstype",
         "removeRecord": "Fjern sak",
+        "saveAsDraft": "Lagre som utkast",
         "saveRecord": "Lagre sak",
         "status": {
           "active": "AKTIV",
@@ -1314,6 +1333,7 @@
     "classicLayout": "Klassisk oppsett",
     "exitResize": "Avbryt endring av størrelse",
     "helpImprove": "Hjelp oss med å forbedre oversettelsene",
+    "hotkeyCombination": "Tastkombinasjon",
     "hotkeyDisable": "Hurtigtaster er ikke tilgjengelig for gratisversjonen.",
     "hotkeyRecording": "Opptak...",
     "hotkeys": "Hurtigtaster",
@@ -1363,10 +1383,12 @@
     "showHide": "Vis/gjem",
     "systemDefaultMicrophone": "Systemmikrofon som standard",
     "theme": {
+      "backgroundImageScale": "Skala for bakgrunnsbilde",
       "bgImageFit": {
         "contain": "Tilpass (passer inni)"
       },
       "bgImagePosition": {
+        "center": "Sentrer",
         "left": "Venstre"
       },
       "bgImageScale": {

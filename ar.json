@@ -4,6 +4,7 @@
       "subscriptions": "الإشتراكات"
     },
     "delete": {
+      "failure": "فشل حذف حسابك.",
       "title": "حذف الحساب؟"
     },
     "labels": {
@@ -101,6 +102,7 @@
       "lookupTypes": {
         "configTitle": "إعدادات نوع البحث",
         "customRecordFieldId": "معرف حقل السجل المخصص",
+        "fieldMappingIdHelp": "حدد حقل السجل المخصص الذي سيُستخدم لهذا البحث.",
         "fieldMappingIdValue": "معرّف ربط الحقول: {id}",
         "lookupTypes": "أنواع البحث",
         "noFieldSelected": "لم يتم تحديد حقل",
@@ -112,6 +114,7 @@
         "reindexRecordsConfirmTitle": "إعادة فهرسة جميع السجلات",
         "reindexRecordsHelp": "يعيد حفظ حقول فهرس البحث للسجلات الموجودة بحيث تستخدم أنواع البحث المخصصة أحدث تعيينات الحقول لديك.",
         "sectionFallback": "القسم {index}",
+        "selectField": "اختر حقل",
         "selectRecordFieldDescription": "اختر قالب سجل، ووسّع قسمًا، ثم انقر حقلًا لربطه.",
         "width": "العرض"
       },
@@ -148,6 +151,7 @@
         "question": "سؤال",
         "searchCodes": "بحث الرموز",
         "tabs": {
+          "defaults": "المسار الافتراضي",
           "questions": "أسئلة"
         },
         "value": "قيمة"
@@ -386,16 +390,19 @@
         "notifyOnlyOnFailure": "فقط عند الفشل",
         "trafficStopDescriptionHint": "يدعم المتغيرات المخصصة.",
         "trafficStopMaxRadiusHint": "إذا كانت أقرب مركبة أبعد من هذا، فستعود مكالمات إيقاف المرور إلى إدخال اللوحة أو ستحذف تفاصيل المركبة.",
+        "trafficStopVariableCopied": "تم نسخ المتغير إلى الحافظة",
         "trafficStopVariablePlate": "أول وسيط للأمر عند توفير لوحة."
       },
       "eventDocumentation": "توثيق الحدث",
       "fivem": {
+        "configureFeaturesTitle": "تكوين الميزات",
         "configureResourceTitle": "تهيئة المورد",
         "manual": {
           "configComment": "# ابدأ مورد sonorancad والموارد المجمعة الأخرى",
           "downloadButton": "تحميل Sonoran CAD لـ FiveM"
         },
         "rocketNode": {
+          "installerLabel": "مثبّت Sonoran",
           "maskedKey": "********************",
           "resourceAccess": "بمجرد اكتمال التثبيت، يمكنك الوصول إلى ملفات المورد في مدير الملفات.",
           "selectCad": "حدد CAD وانقر لنسخ/لصق المعرّف والمفتاح أدناه.",
@@ -729,6 +736,9 @@
               },
               "features": {
                 "answer": "يتضمن تكامل FiveM دعم الخريطة المباشرة، وأدوات bodycam، ومزامنة قاعدة البيانات، ومجموعة متنامية من الإضافات الرسمية لسير عمل أعمق داخل اللعبة."
+              },
+              "setup": {
+                "question": "كم من الوقت يستغرق إعداد التكامل؟"
               }
             }
           },
@@ -789,13 +799,15 @@
       "username": "اسم المستخدم"
     },
     "linkAuth": {
+      "codeLabel": "رمز من 4 أحرف",
       "errors": {
         "invalidCode": "يرجى إدخال رمز صالح مكوّن من 4 أحرف."
       },
       "idPageDescription": "أدخل الرمز المكون من 4 أحرف من داخل اللعبة.",
       "idPageTitle": "أدخل رمز الرابط",
       "idPageVerifying": "جارٍ التحقق من الرمز...",
-      "success": "تم ربط تسجيل الدخول. يمكنك العودة إلى النافذة المضمنة الأصلية الآن."
+      "success": "تم ربط تسجيل الدخول. يمكنك العودة إلى النافذة المضمنة الأصلية الآن.",
+      "title": "اختر طريقة تسجيل الدخول"
     },
     "newVisitor": {
       "description": "تعرّف على المزيد حول نظام ملحقات التكامل في Sonoran CAD، والخريطة الحية المخصصة، ووظيفة مزامنة قاعدة البيانات، وتطبيقات iOS/Android، والمزيد!"
@@ -831,6 +843,7 @@
       "bundleAndSave": "حزمة وتوفير",
       "bundleExplain": "احفظ 30% كل شهر عند شراء VPS من Sonoran Servers.",
       "newSubscription": "اشتراك جديد",
+      "save25": "حفظ 25%",
       "serverIp": "عنوان خادم",
       "serversEmail": "بريد حساب Sonoran Servers الإلكتروني",
       "setCommunityId": "تعيين معرف المجتمع"
@@ -847,6 +860,7 @@
       "addNote": "إضافة ملاحظة",
       "address": "العنوان بالتفصيل",
       "block": "المنطقة",
+      "callAttachmentAutoStatus": "الحالة التلقائية لمرفق المكالمة",
       "callDescription": "وصف البلاغ",
       "callNotes": "الملاحظات",
       "callOrigin": "آليه التبليغ",
@@ -904,6 +918,7 @@
       "unitStatusClosedHint": "عندما يتم إغلاق مكالمة، حدّث حالة جميع الوحدات المرفقة.",
       "updateCall": "تحديث بيانات البلاغ",
       "webhooks": {
+        "closed": "مغلق",
         "detached": "فصل",
         "enabled": "ممكن"
       }
@@ -935,6 +950,8 @@
       "justYou": "أنت فقط",
       "noThreads": "لا توجد محادثات نشطة بعد.",
       "online": "متصل",
+      "recipientsHint": "اختر الوحدات المتصلة بالإنترنت لبدء محادثة أو مواصلتها.",
+      "ttsIncomingLink": "{sender}. {label}",
       "ttsIncomingTooltip": "قراءة رسائل الدردشة الواردة بصوت عالٍ"
     },
     "command": {
@@ -1009,7 +1026,8 @@
     },
     "liveMap3d": {
       "blip": {
-        "emergency": "٩١١"
+        "emergency": "٩١١",
+        "sign": "إشارة"
       }
     },
     "liveMap": {
@@ -1148,6 +1166,7 @@
         "printInGame": "طباعة داخل اللعبة",
         "recordType": "نوع السجل",
         "removeRecord": "حذف السجل",
+        "saveAsDraft": "حفظ كمسودة",
         "saveRecord": "حفظ السجل",
         "status": {
           "active": "نشط",
@@ -1315,6 +1334,7 @@
     "classicLayout": "تخطيط كلاسيكي",
     "exitResize": "خروج تغيير الحجم",
     "helpImprove": "ساعد في تطوير الترجمة للغتك",
+    "hotkeyCombination": "مجموعة مفاتيح",
     "hotkeyDisable": "لا تتوفر ميزة الاختصارات بالنسخه المجانية",
     "hotkeyRecording": "التسجيل...",
     "hotkeys": "الأختصارات",
@@ -1364,10 +1384,12 @@
     "showHide": "عرض/إخفاء",
     "systemDefaultMicrophone": "الميكروفون الافتراضي للنظام",
     "theme": {
+      "backgroundImageScale": "مقياس صورة الخلفية",
       "bgImageFit": {
         "contain": "احتواء (ملاءمة داخلية)"
       },
       "bgImagePosition": {
+        "center": "توسيط",
         "left": "يسار"
       },
       "bgImageScale": {
