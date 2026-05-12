@@ -22,8 +22,6 @@ jobs:
   sync:
     if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    env:
-      TOLGEE_BRANCH: staging
     steps:
       - name: Checkout staging
         uses: actions/checkout@v4
@@ -53,7 +51,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Ensure Tolgee staging branch exists
+      - name: Push source strings to Tolgee
         run: |
           set -euo pipefail
           api_url_args=()
@@ -64,27 +62,9 @@ jobs:
           echo "Using Tolgee API URL: ${TOLGEE_API_URL:-https://app.tolgee.io}"
           echo "Using Tolgee project ID: $TOLGEE_PROJECT_ID"
 
-          tolgee branch "$TOLGEE_BRANCH" \
-            "${api_url_args[@]}" \
-            --api-key "$TOLGEE_API_KEY" \
-            --project-id "$TOLGEE_PROJECT_ID" \
-            --origin master || true
-        env:
-          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
-          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
-          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL }}
-
-      - name: Push source strings to Tolgee
-        run: |
-          set -euo pipefail
-          api_url_args=()
-          if [ -n "${TOLGEE_API_URL:-}" ]; then
-            api_url_args=(--api-url "$TOLGEE_API_URL")
-          fi
           tolgee push \
             "${api_url_args[@]}" \
             --api-key "$TOLGEE_API_KEY" \
-            --branch "$TOLGEE_BRANCH" \
             --project-id "$TOLGEE_PROJECT_ID" \
             --files-template "{languageTag}.json" \
             --force-mode OVERRIDE
@@ -105,7 +85,6 @@ jobs:
             tolgee pull \
               "${api_url_args[@]}" \
               --api-key "$TOLGEE_API_KEY" \
-              --branch "$TOLGEE_BRANCH" \
               --project-id "$TOLGEE_PROJECT_ID" \
               --path . \
               --file-structure-template "{languageTag}.json" \
