@@ -89,6 +89,9 @@
         "penalCodeName": "法典名稱",
         "tenCodeName": "10-Code程式碼名稱"
       },
+      "infernoPagers": {
+        "invalidMessage": "錯誤：Inferno 編輯器傳送了無效的頁面節點資料。"
+      },
       "info": {
         "communityId": "社群ID",
         "communityInfo": "社群資訊",
@@ -102,11 +105,18 @@
       "lookupTypes": {
         "configTitle": "搜尋類型配置",
         "customRecordFieldId": "自定義記錄表ID",
+        "dropdownOptions": "下拉式選項",
         "fieldMappingIdHelp": "選擇將用於此搜尋的自訂記錄欄位。",
         "fieldMappingIdValue": "欄位對映 ID: {id}",
+        "fieldsCount": "{count} 個欄位",
+        "fieldTypeFallback": "區域",
         "lookupTypes": "查詢型別",
+        "mask": "掩碼",
+        "newLookup": "新的查詢",
         "noFieldSelected": "未選擇欄位",
         "noRecordTemplates": "沒有可供對應欄位的記錄範本。",
+        "optional": "可選項",
+        "previewTitle": "{name} 預覽",
         "rangeDisabled": "範圍已停用",
         "rangeSearch": "範圍搜尋",
         "recordField": "記錄欄位",
@@ -144,12 +154,19 @@
       "rapidIQEditor": {
         "addOption": "新增選項",
         "codeName": "程式碼名稱",
+        "codesHelp": "管理回應代碼。Code ID 用於流程中，Code Name 顯示於派發。",
         "conditionsInOrder": "條件（依順序）",
+        "flowsHelp": "使用有序條件建立路由邏輯。每個流程都會以一個結果代碼結束。",
+        "label": "標籤",
         "maskHint": "範例: (###) ###-####",
         "newCodeId": "新 Code ID",
+        "options": "選項",
         "order": "排序",
         "question": "問題",
         "searchCodes": "搜尋代碼",
+        "stats": {
+          "flows": "流程"
+        },
         "tabs": {
           "defaults": "預設路徑",
           "questions": "問題"
@@ -386,6 +403,9 @@
       "enableMap": "啟用地圖",
       "erlc": {
         "civilianRegistrationsHeader": "平民註冊",
+        "emergencyCallCommand": "911 指令",
+        "notifyAlways": "始終",
+        "notifyAlwaysTooltip": "指令處理後，玩家將一律收到私人訊息。",
         "notifyNever": "永不",
         "notifyOnlyOnFailure": "僅在失敗時",
         "trafficStopDescriptionHint": "支援自訂變數。",
@@ -393,12 +413,15 @@
         "trafficStopVariableCopied": "變數已複製到剪貼簿",
         "trafficStopVariablePlate": "提供車牌時的第一個指令引數。"
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "事件記錄",
       "fivem": {
         "configureFeaturesTitle": "設定功能",
         "configureResourceTitle": "設定資源",
+        "downloadInstallTitle": "下載與安裝",
         "manual": {
           "configComment": "# 啟動 sonorancad 資源和其他捆綁資源",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "下載 Sonoran CAD 以用於 FiveM"
         },
         "rocketNode": {
@@ -648,12 +671,14 @@
     "learnMore": "更多資訊",
     "lostConnection": "您與伺服器斷開連線。",
     "maximize": "最大化",
+    "min": "最小",
     "minimize": "最小化",
     "modify": "修改",
     "new": "新的",
     "noData": "無資料",
     "noResults": "無結果",
     "notEqual": "不等於",
+    "off": "關閉",
     "on": "開啟",
     "paste": "黏貼",
     "pause": "暫停",
@@ -669,6 +694,7 @@
     "serverStatus": "伺服器狀態",
     "start": "開始",
     "status": "狀態",
+    "stop": "停止",
     "success": "成功",
     "test": "測試",
     "tutorial": "教學",
@@ -676,7 +702,10 @@
     "type": "型別",
     "undo": "撤銷",
     "upload": "上傳圖片",
-    "uploader": "圖片上傳（最大5MB）"
+    "uploader": "圖片上傳（最大5MB）",
+    "versionDisplay": {
+      "updateReminder": "請務必更新您的應用程式，以獲得最新功能、變更與修正！"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +726,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "選擇您的網域名稱",
     "content": "內容",
     "setCustomDomain": "設定 自訂 網域"
   },
@@ -710,6 +740,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "查看文件",
+          "ctaPrimary": "立即註冊",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +748,16 @@
               }
             }
           },
+          "meta": {
+            "description": "適用於 ER:LC 的免費 CAD，具備 3D 即時地圖、隨身攝影機、緊急呼叫、角色工具，以及遊戲內疊加層支援。",
+            "keywords": "ER:LC CAD，免費的 ER:LC CAD，ERLC CAD，Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "3D 即時地圖預覽"
+            },
+            "overlay": {
+              "previewTitle": "遊戲內覆蓋層預覽"
             }
           }
         },
@@ -738,14 +776,23 @@
                 "answer": "FiveM 整合包含即時地圖支援、bodycam 工具、資料庫同步，以及不斷擴充的官方插件集合，可支援更深入的遊戲內工作流程。"
               },
               "setup": {
+                "answer": "大多數伺服器都能在幾分鐘內設定好基本資源。安裝資源，加入你的社群 ID 和 API 金鑰，重新啟動伺服器，然後啟用你想要的功能。",
                 "question": "設定此整合需要多久？"
               }
             }
           },
+          "faqKicker": "支援協定",
+          "faqTitlePrimary": "常見問題",
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM 整合預覽"
           },
           "modules": {
+            "bodycam": {
+              "title": "即時 記錄儀"
+            },
+            "map": {
+              "infoTitle": "3D 地圖"
+            },
             "plugins": {
               "description": "官方子模組將 Sonoran CAD 延伸至你的 FiveM 伺服器堆疊的其他部分。"
             },
@@ -759,6 +806,8 @@
                 "description": "建立沉浸式 NPC 與玩家呼叫，直接以結構化 CAD 資料送入派遣。"
               },
               "ers": {
+                "description": "在你的伺服器與 Sonoran CAD 之間橋接無線電工作流程，以便在事件處理期間更快速協調。",
+                "previewTitle": "緊急電台外掛預覽",
                 "title": "緊急電台"
               },
               "pagers": {
@@ -810,10 +859,12 @@
       "title": "選擇您的登入方式"
     },
     "newVisitor": {
-      "description": "了解更多關於 Sonoran CAD 的整合外掛系統、即時地圖、資料庫同步功能、iOS/Android 應用程式等！"
+      "description": "了解更多關於 Sonoran CAD 的整合外掛系統、即時地圖、資料庫同步功能、iOS/Android 應用程式等！",
+      "title": "歡迎"
     }
   },
   "management": {
+    "currentPlayersLastHour": "目前玩家數（過去 1 小時）",
     "heartbeatMetrics": "心跳整合指標：",
     "topServersHeartbeat": "前 25 名伺服器（心跳）"
   },
@@ -826,6 +877,7 @@
       "purchase": "申購"
     },
     "labels": {
+      "bundleDiscount": "組合折扣",
       "endDate": "結束日期",
       "expertInstallation": "專家安裝",
       "plan": "套餐",
@@ -834,10 +886,12 @@
       "quarterly": "每季",
       "standard": "標準版",
       "startDate": "開始日期",
-      "starter": "基礎版"
+      "starter": "基礎版",
+      "subscriptionsPerPage": "每頁訂閱內容"
     },
     "pricing": {
-      "howToPurchase": "如何購買"
+      "howToPurchase": "如何購買",
+      "title": "升級 訂閱 定價"
     },
     "text": {
       "bundleAndSave": "捆綁並儲存",
@@ -854,7 +908,9 @@
       "noneFound": "未找到行車記錄器錄影。"
     },
     "bodycamViewer": {
-      "singleCam": "單一攝影機"
+      "allCams": "所有攝影機",
+      "singleCam": "單一攝影機",
+      "startRecording": "開始錄音"
     },
     "callEditor": {
       "addNote": "新增備註",
@@ -899,6 +955,7 @@
         "walkUp": "警局內報案"
       },
       "postal": "郵政編碼",
+      "previousCall": "上一通話（左箭頭）",
       "primaryUnit": "主處理單位",
       "priority": "優先順序",
       "savedTypes": "已保存的類型",
@@ -916,6 +973,7 @@
       "units": "單位",
       "unitStatusAttachedHint": "當單位附加到通話時，更新其狀態。",
       "unitStatusClosedHint": "當通話結束時，更新所有已附加單位的狀態。",
+      "unitStatusTimers": "單位狀態：計時器",
       "updateCall": "更新呼叫",
       "webhooks": {
         "closed": "關閉",
@@ -944,15 +1002,19 @@
     "callouts": {
       "calloutLabel": "通報",
       "chanceToAttack": "攻擊玩家機率",
-      "chanceToObtainWeapons": "取得武器機率"
+      "chanceToObtainWeapons": "取得武器機率",
+      "chanceToSurrender": "投降機會"
     },
     "chat": {
+      "emptySelection": "選擇一個或多個在線單位以開始聊天。",
       "justYou": "只有你",
+      "linkPreview": "[連結] {label}",
       "noThreads": "尚無進行中的對話。",
       "online": "線上",
       "recipientsHint": "選擇線上單位以開始或繼續聊天。",
       "ttsIncomingLink": "{sender}。{label}",
-      "ttsIncomingTooltip": "朗讀傳入聊天訊息"
+      "ttsIncomingTooltip": "朗讀傳入聊天訊息",
+      "unableToSend": "目前無法傳送聊天。"
     },
     "command": {
       "attach": "響應",
@@ -973,6 +1035,7 @@
     "diagram": {
       "lockUnlockSelected": "鎖定/解除鎖定所選項目",
       "moveLayerDown": "下移圖層（Shift = 底部）",
+      "shortcutDelete": "快捷鍵: DELETE",
       "shortcutLock": "快捷鍵: L",
       "shortcutUndo": "快捷鍵: CTRL + Z",
       "shortcutUp": "快捷鍵：（SHIFT）向上箭頭"
@@ -997,6 +1060,7 @@
       "activeServer": "當前伺服器",
       "activeUnits": "活躍單位",
       "bodyCam": "Cámara Corporal",
+      "bodyCamRecordings": "身體攝影機錄影",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1090,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "調度呼叫",
         "emergency": "911",
+        "newCallout": "新通報",
         "sign": "標誌"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "縮小標記大小",
-        "dragAndDrop": "（拖放）"
+        "dragAndDrop": "（拖放）",
+        "mapMode": "地圖模式"
       }
     },
     "lookup": {
@@ -1157,6 +1224,7 @@
             "add": "記錄已新增",
             "edit": "記錄已編輯"
           },
+          "before": "之前",
           "noFieldChanges": "此項目中沒有欄位值變更。"
         },
         "linkTitle": "鏈接主題",
@@ -1239,7 +1307,9 @@
       "automationLabelCountDown": "自動化：狀態 {status} {seconds} 秒",
       "automationLabelCountUp": "自動化：狀態 {status} 計數上升",
       "clearAttachment": "清除附件",
+      "minutes": "分鐘",
       "newTimer": "新計時器",
+      "seconds": "秒",
       "timers": "計時器"
     },
     "unitEditor": {
@@ -1250,6 +1320,7 @@
       "confirmRemove": "確定要刪除身份資訊嗎？",
       "department": "部門",
       "departments": "部門",
+      "effects": "效果",
       "electronBodycamOpenPermissions": "開啟許可權",
       "electronBodycamPermissionWarning": "bodycam 擷取需要 macOS 螢幕錄製權限。請在系統設定中啟用，然後完全結束並重新開啟 Sonoran CAD。",
       "group": "小組",
@@ -1341,6 +1412,7 @@
     "language": "語言",
     "languageKorean": "韓國語/한국어",
     "lockWindow": "鎖定視窗",
+    "microphoneNumbered": "麥克風 {index}",
     "microphoneStt": "麥克風（STT）",
     "overlay": {
       "addBulb": "新增燈泡",
@@ -1354,11 +1426,14 @@
       "credentials": "證書",
       "customTextFiles": "自定義文字檔案",
       "dataKeys": "資料鍵",
+      "dataStorage": "資料儲存",
       "delay": "延遲",
       "events": "事件",
       "field": "區域",
       "fileName": "檔名",
       "fontEditor": "字型編輯器",
+      "fontSize": "字型大小",
+      "fontWeight": "字體粗細:",
       "goveeWifi": "Govee WiFi",
       "lighting": "燈光",
       "manualIp": "手動設定IP (可選）",
@@ -1367,12 +1442,16 @@
       "refreshPayment": "重新整理交易",
       "scan": "掃描",
       "scanForBulbs": "掃描燈泡",
+      "streamAdBanner": "查看我們的直播疊加層和 Twitch 機器人！",
       "streamOverlay": "直播遮蔽",
       "twitch": "Twitch",
       "twitchConfig": "Twitch配置",
       "twitchLogs": "Twitch記錄",
       "txtFiles": "文字檔案",
-      "unitUpdates": "單位更新"
+      "unitUpdates": "單位更新",
+      "wyzeApiKey": "Wyze API 金鑰",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "Wyze 金鑰 ID"
     },
     "panic": "緊急狀況",
     "prefix": "字首",
@@ -1384,13 +1463,16 @@
     "showHide": "顯示/隱藏",
     "systemDefaultMicrophone": "系統預設麥克風",
     "theme": {
+      "backgroundImageFit": "背景圖片適應",
+      "backgroundImagePosition": "背景圖片位置",
       "backgroundImageScale": "背景圖片縮放",
       "bgImageFit": {
         "contain": "包含（適合內部）"
       },
       "bgImagePosition": {
         "center": "置中",
-        "left": "左"
+        "left": "左",
+        "right": "右"
       },
       "bgImageScale": {
         "p150": "150%",

@@ -89,6 +89,9 @@
         "penalCodeName": "Назва кримінального кодексу",
         "tenCodeName": "Назва десяткодексу"
       },
+      "infernoPagers": {
+        "invalidMessage": "Помилка: Редактор Inferno надіслав недійсні дані вузла пейджера."
+      },
       "info": {
         "communityId": "Ідентифікатор спільноти",
         "communityInfo": "Інформація про спільноту",
@@ -102,11 +105,17 @@
       "lookupTypes": {
         "configTitle": "Конфігурація типу пошуку",
         "customRecordFieldId": "Ідентифікатор спеціального поля запису",
+        "dropdownOptions": "Параметри спадного списку",
         "fieldMappingIdHelp": "Виберіть користувацьке поле запису, яке буде використано для цього пошуку.",
         "fieldMappingIdValue": "Ідентифікатор відображення поля: {id}",
+        "fieldsCount": "{count} полів",
+        "fieldTypeFallback": "Поле",
         "lookupTypes": "Типи пошуку",
+        "newLookup": "Новий Пошук",
         "noFieldSelected": "Поле не вибрано",
         "noRecordTemplates": "Шаблони записів із полями, які можна зіставити, недоступні.",
+        "optional": "Необов'язкове",
+        "previewTitle": "Попередній перегляд {name}",
         "rangeDisabled": "Діапазон вимкнено",
         "rangeSearch": "Пошук за діапазоном",
         "recordField": "Поле запису",
@@ -144,12 +153,19 @@
       "rapidIQEditor": {
         "addOption": "Додати опцію",
         "codeName": "Назва коду",
+        "codesHelp": "Керувати кодами відповідей. ID коду використовується в потоках, а Назва коду відображається для призначення.",
         "conditionsInOrder": "Умови (в порядку)",
+        "flowsHelp": "Створюйте логіку маршрутизації з упорядкованими умовами. Кожен потік завершується одним кодом результату.",
+        "label": "Мітка",
         "maskHint": "Приклад: (###) ###-####",
         "newCodeId": "Новий код ID",
+        "options": "Параметри",
         "order": "Порядок",
         "question": "Питання",
         "searchCodes": "Пошук кодів",
+        "stats": {
+          "flows": "Потоки"
+        },
         "tabs": {
           "defaults": "Шлях за замовчуванням",
           "questions": "Питання"
@@ -386,6 +402,9 @@
       "enableMap": "Увімкнути карту",
       "erlc": {
         "civilianRegistrationsHeader": "Реєстрації цивільних транспортних засобів",
+        "emergencyCallCommand": "Команда 911",
+        "notifyAlways": "Завжди",
+        "notifyAlwaysTooltip": "Після обробки команди гравець завжди отримуватиме приватне повідомлення.",
         "notifyNever": "Ніколи",
         "notifyOnlyOnFailure": "Лише при помилці",
         "trafficStopDescriptionHint": "Підтримує користувацькі змінні.",
@@ -393,12 +412,15 @@
         "trafficStopVariableCopied": "Змінну скопійовано в буфер обміну",
         "trafficStopVariablePlate": "Перший аргумент команди, коли було надано номерний знак."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "Документація по подіям",
       "fivem": {
         "configureFeaturesTitle": "Налаштувати функції",
         "configureResourceTitle": "Налаштувати ресурс",
+        "downloadInstallTitle": "Завантажити й встановити",
         "manual": {
           "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "Завантажити Sonoran CAD для FiveM"
         },
         "rocketNode": {
@@ -648,12 +670,14 @@
     "learnMore": "Дізнатись Більше",
     "lostConnection": "Втрата зв'язку",
     "maximize": "Розгорнути",
+    "min": "Хв",
     "minimize": "Згорнути",
     "modify": "Модифікувати",
     "new": "Новий",
     "noData": "Немає даних",
     "noResults": "Немає результатів",
     "notEqual": "Не дорівнює",
+    "off": "Вимкнено",
     "on": "Увімкнено",
     "paste": "Вставити",
     "pause": "Пауза",
@@ -669,6 +693,7 @@
     "serverStatus": "Статус Серверу",
     "start": "Почати",
     "status": "Статус",
+    "stop": "Стоп",
     "success": "Успішно",
     "test": "Тест",
     "tutorial": "Інструкції",
@@ -676,7 +701,10 @@
     "type": "Тип",
     "undo": "Відмінити",
     "upload": "Загрузити",
-    "uploader": "Загрузити зображення (5МБ Максимум)"
+    "uploader": "Загрузити зображення (5МБ Максимум)",
+    "versionDisplay": {
+      "updateReminder": "Обов’язково оновіть свій застосунок, щоб отримати найновіші функції, зміни та виправлення!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +725,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "Виберіть своє доменне ім'я",
     "content": "Вміст",
     "setCustomDomain": "Встановити власний домен"
   },
@@ -710,6 +739,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "Переглянути документацію",
+          "ctaPrimary": "Зареєструйтеся сьогодні",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +747,16 @@
               }
             }
           },
+          "meta": {
+            "description": "Безкоштовний CAD для ER:LC з 3D живою картою, bodycam, екстреними викликами, інструментами для персонажа та підтримкою внутрішньоігрового оверлею.",
+            "keywords": "ER:LC CAD, безкоштовний CAD для ER:LC, ERLC CAD, Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "3D Live Map Preview"
+            },
+            "overlay": {
+              "previewTitle": "Попередній перегляд внутрішньоігрового оверлею"
             }
           }
         },
@@ -738,14 +775,23 @@
                 "answer": "Інтеграція FiveM включає підтримку живої карти, інструменти bodycam, синхронізацію бази даних і розширюваний набір офіційних плагінів для глибших внутрішньоігрових робочих процесів."
               },
               "setup": {
+                "answer": "Більшість серверів можуть налаштувати базовий ресурс за кілька хвилин. Встановіть ресурс, додайте свій ID спільноти та API-ключ, перезапустіть сервер, а потім увімкніть потрібні вам функції.",
                 "question": "Скільки часу потрібно, щоб налаштувати інтеграцію?"
               }
             }
           },
+          "faqKicker": "Протоколи підтримки",
+          "faqTitlePrimary": "Поширені запитання",
           "meta": {
             "twitterImageAlt": "Попередній перегляд інтеграції Sonoran CAD x FiveM"
           },
           "modules": {
+            "bodycam": {
+              "title": "Жива нагрудна камера"
+            },
+            "map": {
+              "infoTitle": "3D-карта"
+            },
             "plugins": {
               "description": "Офіційні підмодулі розширюють Sonoran CAD на решту стеку вашого сервера FiveM."
             },
@@ -759,6 +805,8 @@
                 "description": "Створюйте захопливі виклики NPC і гравців, які надходять безпосередньо в диспетчерську з структурованими CAD-даними."
               },
               "ers": {
+                "description": "Об’єднайте радіопроцеси між вашим сервером і Sonoran CAD для швидшої координації під час активних інцидентів.",
+                "previewTitle": "Попередній перегляд плагіна Аварійного Радіо",
                 "title": "Аварійне Радіо"
               },
               "pagers": {
@@ -810,10 +858,12 @@
       "title": "Оберіть спосіб входу"
     },
     "newVisitor": {
-      "description": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!"
+      "description": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!",
+      "title": "Ласкаво просимо"
     }
   },
   "management": {
+    "currentPlayersLastHour": "Поточні гравці (за останню 1 годину)",
     "heartbeatMetrics": "Метрики інтеграції heartbeat:",
     "topServersHeartbeat": "Топ-25 серверів (Heartbeat)"
   },
@@ -826,6 +876,7 @@
       "purchase": "Придбати підписку"
     },
     "labels": {
+      "bundleDiscount": "Знижка на пакет",
       "endDate": "Дата закінчення",
       "expertInstallation": "Експертна установка",
       "plan": "План",
@@ -834,10 +885,12 @@
       "quarterly": "Щоквартально",
       "standard": "Стандартний",
       "startDate": "Дата початку",
-      "starter": "Стартовий"
+      "starter": "Стартовий",
+      "subscriptionsPerPage": "Підписок на сторінку"
     },
     "pricing": {
-      "howToPurchase": "Як придбати"
+      "howToPurchase": "Як придбати",
+      "title": "Оновити ціни підписки"
     },
     "text": {
       "bundleAndSave": "Пакет і збереження",
@@ -854,7 +907,9 @@
       "noneFound": "Записів боді-камер не знайдено."
     },
     "bodycamViewer": {
-      "singleCam": "Одна камера"
+      "allCams": "Усі камери",
+      "singleCam": "Одна камера",
+      "startRecording": "Почати запис"
     },
     "callEditor": {
       "addNote": "Додати Примітку",
@@ -899,6 +954,7 @@
         "walkUp": "Особистий Виклик"
       },
       "postal": "Поштова Зона",
+      "previousCall": "Попередній виклик (ліва стрілка)",
       "primaryUnit": "Головний Юніт",
       "priority": "Пріоритет",
       "savedTypes": "Збережені Типи",
@@ -916,6 +972,7 @@
       "units": "Юніти",
       "unitStatusAttachedHint": "Коли підрозділ прикріплено до виклику, оновіть його статус.",
       "unitStatusClosedHint": "Коли виклик закрито, оновіть статус усіх прикріплених підрозділів.",
+      "unitStatusTimers": "Статус підрозділу: Таймери",
       "updateCall": "Оновити Виклик",
       "webhooks": {
         "closed": "Закритий",
@@ -944,15 +1001,19 @@
     "callouts": {
       "calloutLabel": "Виклик",
       "chanceToAttack": "Шанс напасти на гравця",
-      "chanceToObtainWeapons": "Ймовірність отримати зброю"
+      "chanceToObtainWeapons": "Ймовірність отримати зброю",
+      "chanceToSurrender": "Шанс здатися"
     },
     "chat": {
+      "emptySelection": "Виберіть один або кілька онлайн-підрозділів, щоб почати чат.",
       "justYou": "Лише ви",
+      "linkPreview": "[Посилання] {label}",
       "noThreads": "Поки що немає активних розмов.",
       "online": "Онлайн",
       "recipientsHint": "Виберіть онлайн-підрозділи, щоб почати або продовжити чат.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "Озвучувати вхідні повідомлення чату"
+      "ttsIncomingTooltip": "Озвучувати вхідні повідомлення чату",
+      "unableToSend": "Наразі не вдається надіслати чат."
     },
     "command": {
       "attach": "Прикріпити",
@@ -973,6 +1034,7 @@
     "diagram": {
       "lockUnlockSelected": "Заблокувати/розблокувати вибране",
       "moveLayerDown": "Перемістити шар вниз (Shift = внизу)",
+      "shortcutDelete": "СКОРОЧЕННЯ: DELETE",
       "shortcutLock": "СКОРОЧЕННЯ: L",
       "shortcutUndo": "СКОРОЧЕННЯ: CTRL + Z",
       "shortcutUp": "СКОРОЧЕННЯ: (SHIFT) Стрілка вгору"
@@ -997,6 +1059,7 @@
       "activeServer": "Активний Сервер",
       "activeUnits": "Активні Юніти",
       "bodyCam": "Нагрудна камера",
+      "bodyCamRecordings": "Записи боді-камер",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1089,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "ВИКЛИК ДИСПЕТЧЕРУ",
         "emergency": "911",
+        "newCallout": "НОВИЙ ВИКЛИК",
         "sign": "ЗНАК"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "Зменшити розмір мітки",
-        "dragAndDrop": "(Перетягування і скидання)"
+        "dragAndDrop": "(Перетягування і скидання)",
+        "mapMode": "Режим карти"
       }
     },
     "lookup": {
@@ -1157,6 +1223,7 @@
             "add": "Запис Додано",
             "edit": "Запис відредаговано"
           },
+          "before": "До",
           "noFieldChanges": "У цьому записі значення полів не змінено."
         },
         "linkTitle": "Назва посилання",
@@ -1239,7 +1306,9 @@
       "automationLabelCountDown": "Автоматизація: Статус {status} {seconds} Секунд",
       "automationLabelCountUp": "Автоматизація: Статус {status} Відлік вгору",
       "clearAttachment": "Очистити вкладення",
+      "minutes": "Хвилини",
       "newTimer": "Новий таймер",
+      "seconds": "Секунди",
       "timers": "Таймери"
     },
     "unitEditor": {
@@ -1250,6 +1319,7 @@
       "confirmRemove": "Ви впевнені, що хочете видалити Ідентифікатор?",
       "department": "Департамент",
       "departments": "Департаменти",
+      "effects": "Ефекти",
       "electronBodycamOpenPermissions": "Дозволи на відкриття",
       "electronBodycamPermissionWarning": "Для запису bodycam потрібен дозвіл macOS на запис екрана. Увімкніть його в Системних параметрах, потім повністю завершіть роботу й знову відкрийте Sonoran CAD.",
       "group": "Група",
@@ -1341,6 +1411,7 @@
     "language": "Мова",
     "languageKorean": "Корейська/한국어",
     "lockWindow": "Закріпити Вікно",
+    "microphoneNumbered": "Мікрофон {index}",
     "microphoneStt": "Мікрофон (STT)",
     "overlay": {
       "addBulb": "Додати лампу",
@@ -1354,11 +1425,14 @@
       "credentials": "Облікові дані",
       "customTextFiles": "Користувацькі текстові файли",
       "dataKeys": "Ключі даних",
+      "dataStorage": "Сховище даних",
       "delay": "Затримка",
       "events": "Події",
       "field": "Поле",
       "fileName": "Ім'я файлу",
       "fontEditor": "Редактор шрифтів",
+      "fontSize": "Розмір шрифту",
+      "fontWeight": "Товщина шрифту:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Освітлення",
       "manualIp": "Ручний IP (необов'язкове)",
@@ -1367,12 +1441,16 @@
       "refreshPayment": "Оновити платіж",
       "scan": "Сканувати",
       "scanForBulbs": "Сканувати лампи",
+      "streamAdBanner": "Перегляньте наше накладання для прямого ефіру та Twitch-бота!",
       "streamOverlay": "Накладення потоку",
       "twitch": "Twitch",
       "twitchConfig": "Конфігурація Twitch",
       "twitchLogs": "Логи Twitch",
       "txtFiles": "TXT файли",
-      "unitUpdates": "Оновлення підрозділу"
+      "unitUpdates": "Оновлення підрозділу",
+      "wyzeApiKey": "Ключ API Wyze",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "ID ключа Wyze"
     },
     "panic": "Кнопка Паніки",
     "prefix": "Кнопка Префіксу",
@@ -1384,13 +1462,16 @@
     "showHide": "Показати/Сховати",
     "systemDefaultMicrophone": "Мікрофон за замовчуванням системи",
     "theme": {
+      "backgroundImageFit": "Підігнання фоновому зображенню",
+      "backgroundImagePosition": "Позиція фонового зображення",
       "backgroundImageScale": "Масштаб фоновому зображенню",
       "bgImageFit": {
         "contain": "Вмістити (Підігнати всередину)"
       },
       "bgImagePosition": {
         "center": "По центру",
-        "left": "Ліворуч"
+        "left": "Ліворуч",
+        "right": "Праворуч"
       },
       "bgImageScale": {
         "p150": "150%",

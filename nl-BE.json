@@ -89,6 +89,9 @@
         "penalCodeName": "Strafwetboek naam",
         "tenCodeName": "Melding Naam"
       },
+      "infernoPagers": {
+        "invalidMessage": "Fout: De Inferno-editor heeft ongeldige paginaknooppuntgegevens verzonden."
+      },
       "info": {
         "communityId": "Community-ID",
         "communityInfo": "Community-info",
@@ -102,11 +105,18 @@
       "lookupTypes": {
         "configTitle": "Zoektypeconfiguratie",
         "customRecordFieldId": "Custom document ID",
+        "dropdownOptions": "Keuzelijstopties",
         "fieldMappingIdHelp": "Selecteer het aangepaste veld van het record dat voor deze zoekopdracht zal worden gebruikt.",
         "fieldMappingIdValue": "Veldtoewijzing-ID: {id}",
+        "fieldsCount": "{count} velden",
+        "fieldTypeFallback": "Veld",
         "lookupTypes": "Opzoek types",
+        "mask": "Masker",
+        "newLookup": "Nieuwe opzoeking",
         "noFieldSelected": "Geen veld geselecteerd",
         "noRecordTemplates": "Er zijn geen recordsjablonen met koppelbare velden beschikbaar.",
+        "optional": "Optioneel",
+        "previewTitle": "Voorbeeld van {name}",
         "rangeDisabled": "Bereik uitgeschakeld",
         "rangeSearch": "Bereikzoekopdracht",
         "recordField": "Documentveld",
@@ -144,12 +154,19 @@
       "rapidIQEditor": {
         "addOption": "Optie toevoegen",
         "codeName": "Codenaam",
+        "codesHelp": "Beheer antwoordcodes. Code-ID wordt gebruikt in flows en Code Naam wordt getoond aan dispatch.",
         "conditionsInOrder": "Voorwaarden (in volgorde)",
+        "flowsHelp": "Bouw routeringslogica met geordende voorwaarden. Elke flow eindigt met één resultaatcode.",
+        "label": "Label",
         "maskHint": "Voorbeeld: (###) ###-####",
         "newCodeId": "Nieuw code-ID",
+        "options": "Opties",
         "order": "Bestelling",
         "question": "Vraag",
         "searchCodes": "Zoek codes",
+        "stats": {
+          "flows": "Flows"
+        },
         "tabs": {
           "defaults": "Standaardpad",
           "questions": "Vragen"
@@ -386,6 +403,9 @@
       "enableMap": "Kaart inschakelen",
       "erlc": {
         "civilianRegistrationsHeader": "Burgerregistraties",
+        "emergencyCallCommand": "911-commando",
+        "notifyAlways": "Altijd",
+        "notifyAlwaysTooltip": "De speler ontvangt altijd een privébericht nadat het commando is verwerkt.",
         "notifyNever": "Nooit",
         "notifyOnlyOnFailure": "Alleen bij mislukking",
         "trafficStopDescriptionHint": "Ondersteunt aangepaste variabelen.",
@@ -393,12 +413,15 @@
         "trafficStopVariableCopied": "Variabele gekopieerd naar klembord",
         "trafficStopVariablePlate": "Het eerste command-argument wanneer een nummerplaat werd opgegeven."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "Event Documentatie",
       "fivem": {
         "configureFeaturesTitle": "Functies configureren",
         "configureResourceTitle": "Resource configureren",
+        "downloadInstallTitle": "Downloaden & installeren",
         "manual": {
           "configComment": "# Start de sonorancad-resource en andere gebundelde resources",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "Download Sonoran CAD voor FiveM"
         },
         "rocketNode": {
@@ -648,12 +671,14 @@
     "learnMore": "Meer leren",
     "lostConnection": "Je verloor connectie met de server.",
     "maximize": "Maximaliseer",
+    "min": "Min",
     "minimize": "Minimaliseer",
     "modify": "Pas aan",
     "new": "Nieuw",
     "noData": "Geen data",
     "noResults": "Geen resultaat",
     "notEqual": "Niet gelijk aan",
+    "off": "Uit",
     "on": "Aan",
     "paste": "Plak",
     "pause": "Pauzeer",
@@ -668,6 +693,7 @@
     "serverStatus": "Serverstatus",
     "start": "Starten",
     "status": "Status",
+    "stop": "Stop",
     "success": "Succesvol",
     "test": "Test",
     "tutorial": "Handleiding",
@@ -675,7 +701,10 @@
     "type": "Type",
     "undo": "Verwijder aanpassingen",
     "upload": "Uploaden",
-    "uploader": "Uploaden (5MB Max)"
+    "uploader": "Uploaden (5MB Max)",
+    "versionDisplay": {
+      "updateReminder": "Zorg ervoor dat u uw toepassing bijwerkt voor de nieuwste functies, wijzigingen en oplossingen!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -696,6 +725,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "Kies je domeinnaam",
     "content": "Inhoud",
     "setCustomDomain": "Aangepast domein instellen"
   },
@@ -709,6 +739,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "Bekijk docs",
+          "ctaPrimary": "Schrijf je vandaag nog in",
           "faq": {
             "items": {
               "free": {
@@ -716,9 +747,16 @@
               }
             }
           },
+          "meta": {
+            "description": "Gratis CAD voor ER:LC met 3D-livekaart, bodycam, noodoproepen, karaktertools en ondersteuning voor in-game overlay.",
+            "keywords": "ER:LC CAD, gratis CAD voor ER:LC, ERLC CAD, Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "3D Live Kaartvoorbeeld"
+            },
+            "overlay": {
+              "previewTitle": "Voorvertoning van overlay in de game"
             }
           }
         },
@@ -737,14 +775,23 @@
                 "answer": "De FiveM-integratie omvat livekaartondersteuning, bodycamtools, databasesynchronisatie en een groeiende reeks officiële plugins voor diepere in-game workflows."
               },
               "setup": {
+                "answer": "De meeste servers kunnen de basisresource in een paar minuten configureren. Installeer de resource, voeg je community-ID en API-sleutel toe, herstart de server en schakel daarna de functies in die je wilt.",
                 "question": "Hoe lang duurt het om de integratie in te stellen?"
               }
             }
           },
+          "faqKicker": "Ondersteuningsprotocollen",
+          "faqTitlePrimary": "Veelgestelde vragen",
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM-integratievoorbeeld"
           },
           "modules": {
+            "bodycam": {
+              "title": "Live Bodycam"
+            },
+            "map": {
+              "infoTitle": "3D-kaart"
+            },
             "plugins": {
               "description": "Officiële submodules breiden Sonoran CAD uit over de rest van je FiveM-serverstack."
             },
@@ -758,6 +805,8 @@
                 "description": "Maak meeslepende NPC- en spelersoproepen die rechtstreeks doorstromen naar dispatch met gestructureerde CAD-gegevens."
               },
               "ers": {
+                "description": "Koppel radiowerkstromen tussen je server en Sonoran CAD voor snellere coördinatie tijdens actieve incidenten.",
+                "previewTitle": "Voorbeeld van noodradioplugin",
                 "title": "Noodradio"
               },
               "pagers": {
@@ -809,10 +858,12 @@
       "title": "Kies uw inlogmethode"
     },
     "newVisitor": {
-      "description": "Lees meer over Sonoran CAD's integratie-plugin-systeem, aangepaste live map, database-synchronisatiefunctie, iOS/Android-apps en meer!"
+      "description": "Lees meer over Sonoran CAD's integratie-plugin-systeem, aangepaste live map, database-synchronisatiefunctie, iOS/Android-apps en meer!",
+      "title": "Welkom"
     }
   },
   "management": {
+    "currentPlayersLastHour": "Spelers momenteel (Laatste 1 uur)",
     "heartbeatMetrics": "Heartbeat-integratiemetrics:",
     "topServersHeartbeat": "Top 25 servers (heartbeat)"
   },
@@ -825,6 +876,7 @@
       "purchase": "Neem een abonnement"
     },
     "labels": {
+      "bundleDiscount": "Bundelkorting",
       "endDate": "Eind datum",
       "expertInstallation": "Installatie door experts",
       "plan": "Type abonnement",
@@ -833,10 +885,12 @@
       "quarterly": "Driemaandelijks",
       "standard": "Standaard",
       "startDate": "Startdatum",
-      "starter": "Starter"
+      "starter": "Starter",
+      "subscriptionsPerPage": "Abonnementen per pagina"
     },
     "pricing": {
-      "howToPurchase": "Hoe aankopen"
+      "howToPurchase": "Hoe aankopen",
+      "title": "Upgrade abonnementsprijzen"
     },
     "text": {
       "bundleAndSave": "Neem een bundel en bespaar",
@@ -853,7 +907,9 @@
       "noneFound": "Geen bodycamopnames gevonden."
     },
     "bodycamViewer": {
-      "singleCam": "Enkele camera"
+      "allCams": "Alle camera's",
+      "singleCam": "Enkele camera",
+      "startRecording": "Opname starten"
     },
     "callEditor": {
       "addNote": "Notitie Toevoegen",
@@ -898,6 +954,7 @@
         "walkUp": "Naartoe gewandeld"
       },
       "postal": "Postcode",
+      "previousCall": "Vorige oproep (Pijl links)",
       "primaryUnit": "Eerste eenheid",
       "priority": "Prioriteit",
       "savedTypes": "Opgeslagen types",
@@ -915,6 +972,7 @@
       "units": "Eenheden",
       "unitStatusAttachedHint": "Wanneer een eenheid aan een oproep is gekoppeld, werk hun status bij.",
       "unitStatusClosedHint": "Wanneer een oproep is afgesloten, werk de status van alle gekoppelde eenheden bij.",
+      "unitStatusTimers": "Eenheid Status: Timers",
       "updateCall": "Update Melding",
       "webhooks": {
         "closed": "Gesloten",
@@ -943,15 +1001,19 @@
     "callouts": {
       "calloutLabel": "Melding",
       "chanceToAttack": "Kans om speler aan te vallen",
-      "chanceToObtainWeapons": "Kans om wapens te bemachtigen"
+      "chanceToObtainWeapons": "Kans om wapens te bemachtigen",
+      "chanceToSurrender": "Kans om zich over te geven"
     },
     "chat": {
+      "emptySelection": "Selecteer een of meer online eenheden om te beginnen chatten.",
       "justYou": "Alleen jij",
+      "linkPreview": "[Link] {label}",
       "noThreads": "Nog geen actieve gesprekken.",
       "online": "Online",
       "recipientsHint": "Selecteer online eenheden om een chat te starten of voort te zetten.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "Lees inkomende chatberichten hardop voor"
+      "ttsIncomingTooltip": "Lees inkomende chatberichten hardop voor",
+      "unableToSend": "Chat kan momenteel niet worden verzonden."
     },
     "command": {
       "attach": "Bijvoegen",
@@ -972,6 +1034,7 @@
     "diagram": {
       "lockUnlockSelected": "Vergrendelen/Ontgrendelen geselecteerde",
       "moveLayerDown": "Laag naar beneden verplaatsen (Shift = onderaan)",
+      "shortcutDelete": "SNELTOETS: DELETE",
       "shortcutLock": "SNELTOETS: L",
       "shortcutUndo": "SNELTOETS: CTRL + Z",
       "shortcutUp": "SNELTOETS: (SHIFT) pijl omhoog"
@@ -996,6 +1059,7 @@
       "activeServer": "Actieve Server",
       "activeUnits": "Actieve Eenheden",
       "bodyCam": "Bodycam",
+      "bodyCamRecordings": "Bodycamopnames",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1025,14 +1089,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "MELDING DOORSTUREN",
         "emergency": "911",
+        "newCallout": "NIEUWE MELDING",
         "sign": "BORD"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "Verklein blipgrootte",
-        "dragAndDrop": "(Slepen en neerzetten)"
+        "dragAndDrop": "(Slepen en neerzetten)",
+        "mapMode": "Kaartmodus"
       }
     },
     "lookup": {
@@ -1156,6 +1223,7 @@
             "add": "Document toegevoegd",
             "edit": "Verslag bewerkt"
           },
+          "before": "Voor",
           "noFieldChanges": "Geen veldwaarden gewijzigd in dit item."
         },
         "linkTitle": "Link titel",
@@ -1238,7 +1306,9 @@
       "automationLabelCountDown": "Automatisering: Status {status} {seconds} Seconden",
       "automationLabelCountUp": "Automatisering: Status {status} Omhoog tellen",
       "clearAttachment": "Verwijder Bijlagen",
+      "minutes": "Minuten",
       "newTimer": "Nieuwe Timer",
+      "seconds": "Seconden",
       "timers": "Timers"
     },
     "unitEditor": {
@@ -1249,6 +1319,7 @@
       "confirmRemove": "Ben je zeker dat je je identificatie wilt verwijderen?",
       "department": "Departement",
       "departments": "Departementen",
+      "effects": "Effecten",
       "electronBodycamOpenPermissions": "Open machtigingen",
       "electronBodycamPermissionWarning": "macOS-schermopname-toestemming is vereist voor bodycam-opname. Schakel deze in bij Systeeminstellingen, sluit daarna Sonoran CAD volledig af en open het opnieuw.",
       "group": "Groep",
@@ -1340,6 +1411,7 @@
     "language": "Taal",
     "languageKorean": "Koreaans/한국어",
     "lockWindow": "Venster vastzetten",
+    "microphoneNumbered": "Microfoon {index}",
     "microphoneStt": "Microfoon (STT)",
     "overlay": {
       "addBulb": "Voeg een lamp toe",
@@ -1353,11 +1425,14 @@
       "credentials": "Login gegevens",
       "customTextFiles": "Custom tekst bestanden",
       "dataKeys": "Datasleutels",
+      "dataStorage": "Gegevensopslag",
       "delay": "Vertraging",
       "events": "Gebeurtenissen",
       "field": "Veld",
       "fileName": "Bestandsnaam",
       "fontEditor": "Lettertype-editor",
+      "fontSize": "Tekengrootte",
+      "fontWeight": "Lettertypegewicht:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Belichting",
       "manualIp": "Manueel IP (Optioneel)",
@@ -1366,12 +1441,16 @@
       "refreshPayment": "Ververs betalingen",
       "scan": "Scannen",
       "scanForBulbs": "Scan voor lampen",
+      "streamAdBanner": "Bekijk onze livestream-overlay en Twitch-bot!",
       "streamOverlay": "Stream-overlay",
       "twitch": "Twitch",
       "twitchConfig": "Twitch instellingen",
       "twitchLogs": "Twitch-logs",
       "txtFiles": "TXT Bestanden",
-      "unitUpdates": "Eenheid updates"
+      "unitUpdates": "Eenheid updates",
+      "wyzeApiKey": "Wyze API-sleutel",
+      "wyzeColor": "Wyze Kleur",
+      "wyzeKeyId": "Wyze-sleutel-ID"
     },
     "panic": "Noodknop",
     "prefix": "Voorvoegsel",
@@ -1383,13 +1462,16 @@
     "showHide": "Toon/verberg",
     "systemDefaultMicrophone": "Standaardmicrofoon van het systeem",
     "theme": {
+      "backgroundImageFit": "Passend maken achtergrondafbeelding",
+      "backgroundImagePosition": "Positie achtergrondafbeelding",
       "backgroundImageScale": "Schaal achtergrondafbeelding",
       "bgImageFit": {
         "contain": "Bevatten (Binnen passend)"
       },
       "bgImagePosition": {
         "center": "Midden",
-        "left": "Links"
+        "left": "Links",
+        "right": "Rechts"
       },
       "bgImageScale": {
         "p150": "150%",

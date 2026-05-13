@@ -89,6 +89,9 @@
         "penalCodeName": "Lovbrudd",
         "tenCodeName": "Ti-kodenavn"
       },
+      "infernoPagers": {
+        "invalidMessage": "Feil: Inferno-redigereren sendte ugyldige pagernodedata."
+      },
       "info": {
         "communityId": "Samfunns ID",
         "communityInfo": "Samfunnsinformasjon",
@@ -102,11 +105,17 @@
       "lookupTypes": {
         "configTitle": "Konfigurasjon av søketype",
         "customRecordFieldId": "Tilpasset saksid felt",
+        "dropdownOptions": "Nedtrekksalternativer",
         "fieldMappingIdHelp": "Velg det egendefinerte feltet som vil bli brukt for dette søket.",
         "fieldMappingIdValue": "Feltkartleggings-ID: {id}",
+        "fieldsCount": "{count} felt",
+        "fieldTypeFallback": "Felt",
         "lookupTypes": "Søk typer",
+        "newLookup": "Nytt søk",
         "noFieldSelected": "Ingen felt valgt",
         "noRecordTemplates": "Ingen maler for poster med felter som kan tilordnes, er tilgjengelige.",
+        "optional": "Valgfritt",
+        "previewTitle": "{name} Forhåndsvisning",
         "rangeDisabled": "Område deaktivert",
         "rangeSearch": "Områdesøk",
         "recordField": "Saksfelt",
@@ -144,12 +153,19 @@
       "rapidIQEditor": {
         "addOption": "Legg til alternativ",
         "codeName": "Kodenavn",
+        "codesHelp": "Administrer svarskoder. Kode-ID brukes i flyter og kodenavn vises for fordeling.",
         "conditionsInOrder": "Betingelser (i rekkefølge)",
+        "flowsHelp": "Bygg rutelogikk med ordnede betingelser. Hver flyt ender med én resultatkode.",
+        "label": "Merkelapp",
         "maskHint": "Eksempel: (###) ###-####",
         "newCodeId": "Ny kode-ID",
+        "options": "Alternativer",
         "order": "Rekkefølge",
         "question": "Spørsmål",
         "searchCodes": "Søkekoder",
+        "stats": {
+          "flows": "Flyter"
+        },
         "tabs": {
           "defaults": "Standardsti",
           "questions": "Spørsmål"
@@ -386,6 +402,9 @@
       "enableMap": "Aktiver kart",
       "erlc": {
         "civilianRegistrationsHeader": "Sivile registreringer",
+        "emergencyCallCommand": "911-kommando",
+        "notifyAlways": "Alltid",
+        "notifyAlwaysTooltip": "Spilleren vil alltid motta en privat melding etter at kommandoen er behandlet.",
         "notifyNever": "Aldri",
         "notifyOnlyOnFailure": "Bare ved feil",
         "trafficStopDescriptionHint": "Støtter egendefinerte variabler.",
@@ -393,12 +412,15 @@
         "trafficStopVariableCopied": "Variabel kopiert til utklippstavlen",
         "trafficStopVariablePlate": "Det første kommandolinjeargumentet når en registreringsplate ble oppgitt."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "Event dokumentasjon",
       "fivem": {
         "configureFeaturesTitle": "Konfigurer funksjoner",
         "configureResourceTitle": "Konfigurer ressurs",
+        "downloadInstallTitle": "Last ned og installer",
         "manual": {
           "configComment": "# Start sonorancad-ressursen og andre medfølgende ressurser",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "Last ned Sonoran CAD for FiveM"
         },
         "rocketNode": {
@@ -648,12 +670,14 @@
     "learnMore": "Lær mer",
     "lostConnection": "Du har mistet tilkoblingen til serveren.",
     "maximize": "Utvid",
+    "min": "Min",
     "minimize": "Minimer",
     "modify": "Endre",
     "new": "Ny ",
     "noData": "Ingen data",
     "noResults": "Ingen resultater",
     "notEqual": "Ikke lik",
+    "off": "Av",
     "on": "På",
     "paste": "Lim inn",
     "pause": "Pause",
@@ -668,6 +692,7 @@
     "serverStatus": "Serverstatus",
     "start": "Start",
     "status": "Status",
+    "stop": "Stopp",
     "success": "Vellykket",
     "test": "Test",
     "tutorial": "Brukerveileding",
@@ -675,7 +700,10 @@
     "type": "Type",
     "undo": "Angre",
     "upload": "Last opp",
-    "uploader": "Last opp (Maks 5MB)"
+    "uploader": "Last opp (Maks 5MB)",
+    "versionDisplay": {
+      "updateReminder": "Sørg for å oppdatere applikasjonen din for de nyeste funksjonene, endringene og feilrettingene!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -696,6 +724,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "Velg domenenavnet ditt",
     "content": "Innhold",
     "setCustomDomain": "Angi egendefinert domene"
   },
@@ -709,6 +738,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "Vis dokumentasjon",
+          "ctaPrimary": "Registrer deg i dag",
           "faq": {
             "items": {
               "free": {
@@ -716,9 +746,16 @@
               }
             }
           },
+          "meta": {
+            "description": "Gratis CAD for ER:LC med 3D-kart i sanntid, kroppskamera, nødoppkall, karakterverktøy og støtte for overlegg i spillet.",
+            "keywords": "ER:LC CAD, gratis CAD for ER:LC, ERLC CAD, Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "3D Live kartforhåndsvisning"
+            },
+            "overlay": {
+              "previewTitle": "Forhåndsvisning av spilloverlegg"
             }
           }
         },
@@ -737,14 +774,23 @@
                 "answer": "FiveM-integrasjonen inkluderer støtte for livekart, bodycam-verktøy, databasesynkronisering og et voksende sett med offisielle plugins for dypere arbeidsflyter i spillet."
               },
               "setup": {
+                "answer": "De fleste servere kan få basisressursen konfigurert på noen få minutter. Installer ressursen, legg til fellesskaps-IDen og API-nøkkelen din, start serveren på nytt, og aktiver deretter funksjonene du vil ha.",
                 "question": "Hvor lang tid tar det å sette opp integrasjonen?"
               }
             }
           },
+          "faqKicker": "Støtteprotokoller",
+          "faqTitlePrimary": "Ofte stilte spørsmål",
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM integrasjonsforhåndsvisning"
           },
           "modules": {
+            "bodycam": {
+              "title": "Direkte kroppskamera"
+            },
+            "map": {
+              "infoTitle": "3D-kart"
+            },
             "plugins": {
               "description": "Offisielle undermoduler utvider Sonoran CAD på resten av FiveM-serverstakken din."
             },
@@ -758,6 +804,8 @@
                 "description": "Lag oppslukende NPC- og spillerutrykninger som går direkte inn i dispatch med strukturert CAD-data."
               },
               "ers": {
+                "description": "Koble radioworkflows mellom serveren din og Sonoran CAD for raskere koordinering under aktive hendelser.",
+                "previewTitle": "Forhåndsvisning av nødradio-plugin",
                 "title": "Nødradio"
               },
               "pagers": {
@@ -809,10 +857,12 @@
       "title": "Velg påloggingsmetode"
     },
     "newVisitor": {
-      "description": "Lær mer om Sonoran CADs integrasjonsplugin-system, tilpasset live-kart, funksjonalitet for databasesynkronisering, iOS/Android-apper og mer!"
+      "description": "Lær mer om Sonoran CADs integrasjonsplugin-system, tilpasset live-kart, funksjonalitet for databasesynkronisering, iOS/Android-apper og mer!",
+      "title": "Velkommen"
     }
   },
   "management": {
+    "currentPlayersLastHour": "Nåværende spillere (siste 1 time)",
     "heartbeatMetrics": "Integrasjonsmålinger for hjerteslag:",
     "topServersHeartbeat": "Topp 25 servere (heartbeat)"
   },
@@ -825,6 +875,7 @@
       "purchase": "Kjøp abonnement"
     },
     "labels": {
+      "bundleDiscount": "Pakkrabatt",
       "endDate": "Slutt dato",
       "expertInstallation": "Ekspertinstallasjon",
       "plan": "Plan",
@@ -833,10 +884,12 @@
       "quarterly": "Kvartalsvis",
       "standard": "Standard",
       "startDate": "Start dato",
-      "starter": "Starter"
+      "starter": "Starter",
+      "subscriptionsPerPage": "Abonnementer per side"
     },
     "pricing": {
-      "howToPurchase": "Hvordan kjøpe"
+      "howToPurchase": "Hvordan kjøpe",
+      "title": "Oppgrader abonnementspriser"
     },
     "text": {
       "bundleAndSave": "Pakke og lagre",
@@ -853,7 +906,9 @@
       "noneFound": "Ingen kroppskamerainnspillinger funnet."
     },
     "bodycamViewer": {
-      "singleCam": "Ett kamera"
+      "allCams": "Alle kameraer",
+      "singleCam": "Ett kamera",
+      "startRecording": "Start opptak"
     },
     "callEditor": {
       "addNote": "Ny merknad",
@@ -898,6 +953,7 @@
         "walkUp": "Involvert"
       },
       "postal": "Postkode",
+      "previousCall": "Forrige samtale (venstre pil)",
       "primaryUnit": "Ledende enhet",
       "priority": "Prioritet",
       "savedTypes": "Lagrede oppdrag",
@@ -915,6 +971,7 @@
       "units": "Enheter",
       "unitStatusAttachedHint": "Når en enhet er knyttet til en sak, oppdater statusen deres.",
       "unitStatusClosedHint": "Når en sak er avsluttet, oppdater statusen til alle tilknyttede enheter.",
+      "unitStatusTimers": "Enhetsstatus: Tidtakere",
       "updateCall": "Oppdater oppdrag",
       "webhooks": {
         "closed": "Avsluttet",
@@ -943,15 +1000,19 @@
     "callouts": {
       "calloutLabel": "Utrykning",
       "chanceToAttack": "Sjansen for å angripe spiller",
-      "chanceToObtainWeapons": "Sjansen for å få tak i våpen"
+      "chanceToObtainWeapons": "Sjansen for å få tak i våpen",
+      "chanceToSurrender": "Mulighet til å overgi seg"
     },
     "chat": {
+      "emptySelection": "Velg én eller flere enheter på nett for å begynne å chatte.",
       "justYou": "Bare deg",
+      "linkPreview": "[Lenke] {label}",
       "noThreads": "Ingen aktive samtaler ennå.",
       "online": "På nett",
       "recipientsHint": "Velg enheter som er på nett for å starte eller fortsette en chat.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "Les innkommende chatmeldinger høyt"
+      "ttsIncomingTooltip": "Les innkommende chatmeldinger høyt",
+      "unableToSend": "Kan ikke sende chatten nå."
     },
     "command": {
       "attach": "Legg ved",
@@ -972,6 +1033,7 @@
     "diagram": {
       "lockUnlockSelected": "Lås/opphev lås for valgte",
       "moveLayerDown": "Flytt lag ned (Shift = nederst)",
+      "shortcutDelete": "SNARVEI: DELETE",
       "shortcutLock": "SNARVEI: L",
       "shortcutUndo": "SNARVEI: CTRL + Z",
       "shortcutUp": "SNARVEI: (SHIFT) Pil opp"
@@ -996,6 +1058,7 @@
       "activeServer": "Aktiv server",
       "activeUnits": "Aktive enheter",
       "bodyCam": "Kroppskamera",
+      "bodyCamRecordings": "Kroppskamerainnspillinger",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1025,14 +1088,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "UTALARMERING",
         "emergency": "911",
+        "newCallout": "NY UTRYKNING",
         "sign": "SKILT"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "Mindre blipstørrelse",
-        "dragAndDrop": "(Dra-og-slipp)"
+        "dragAndDrop": "(Dra-og-slipp)",
+        "mapMode": "Kartmodus"
       }
     },
     "lookup": {
@@ -1156,6 +1222,7 @@
             "add": "Sak lagt til",
             "edit": "Sak redigert"
           },
+          "before": "Før",
           "noFieldChanges": "Ingen feltverdier ble endret i denne oppføringen."
         },
         "linkTitle": "Lenketittel",
@@ -1238,7 +1305,9 @@
       "automationLabelCountDown": "Automatisering: Status {status} {seconds} sekunder",
       "automationLabelCountUp": "Automatisering: Status {status} Tell opp",
       "clearAttachment": "Fjern vedlegg",
+      "minutes": "Minutter",
       "newTimer": "Ny tidtaker",
+      "seconds": "Sekunder",
       "timers": "Tidtakere"
     },
     "unitEditor": {
@@ -1249,6 +1318,7 @@
       "confirmRemove": "Er du sikker på at du vil fjerne kallesignalet?",
       "department": "Avdeling",
       "departments": "Avdelinger",
+      "effects": "Effekter",
       "electronBodycamOpenPermissions": "Åpne tilganger",
       "electronBodycamPermissionWarning": "macOS-tillatelse for skjermopptak er nødvendig for bodycam-opptak. Aktiver den i Systeminnstillinger, og avslutt deretter Sonoran CAD helt og åpne det på nytt.",
       "group": "Gruppe",
@@ -1340,6 +1410,7 @@
     "language": "Språk",
     "languageKorean": "Koreansk/한국어",
     "lockWindow": "Lås vindu",
+    "microphoneNumbered": "Mikrofon {index}",
     "microphoneStt": "Mikrofon (STT)",
     "overlay": {
       "addBulb": "Legg til lyspære",
@@ -1353,11 +1424,14 @@
       "credentials": "Akkreditering",
       "customTextFiles": "Tilpassede tekstfiler",
       "dataKeys": "Data nøkler",
+      "dataStorage": "Datalagring",
       "delay": "Forsinkelse",
       "events": "Hendelser",
       "field": "Felt",
       "fileName": "Filnavn",
       "fontEditor": "Skriftredigerer",
+      "fontSize": "Skriftstørrelse",
+      "fontWeight": "Fontvekt:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Lys",
       "manualIp": "Manuell IP (valgfritt)",
@@ -1366,12 +1440,16 @@
       "refreshPayment": "Oppfrisk betaling",
       "scan": "Søk",
       "scanForBulbs": "Søk etter lyspærer",
+      "streamAdBanner": "Sjekk ut vårt livestream-overlegg og Twitch-bot!",
       "streamOverlay": "Strømoverlegg",
       "twitch": "Twitch",
       "twitchConfig": "Twitch innstillinger",
       "twitchLogs": "Twitch logg",
       "txtFiles": "TXT filer",
-      "unitUpdates": "Enhetsoppdateringer"
+      "unitUpdates": "Enhetsoppdateringer",
+      "wyzeApiKey": "Wyze API-nøkkel",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "Wyze-nøkkel-ID"
     },
     "panic": "Panikknapp",
     "prefix": "Prefiks",
@@ -1383,13 +1461,16 @@
     "showHide": "Vis/gjem",
     "systemDefaultMicrophone": "Systemmikrofon som standard",
     "theme": {
+      "backgroundImageFit": "Tilpasning for bakgrunnsbilde",
+      "backgroundImagePosition": "Posisjon for bakgrunnsbilde",
       "backgroundImageScale": "Skala for bakgrunnsbilde",
       "bgImageFit": {
         "contain": "Tilpass (passer inni)"
       },
       "bgImagePosition": {
         "center": "Sentrer",
-        "left": "Venstre"
+        "left": "Venstre",
+        "right": "Høyre"
       },
       "bgImageScale": {
         "p150": "150%",

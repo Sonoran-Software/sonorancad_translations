@@ -89,6 +89,9 @@
         "penalCodeName": "Nome do código penal",
         "tenCodeName": "Nome Cod-10"
       },
+      "infernoPagers": {
+        "invalidMessage": "Erro: O editor Inferno enviou dados inválidos do nó do pager."
+      },
       "info": {
         "communityId": "ID da comunidade",
         "communityInfo": "Informações da comunidade",
@@ -102,11 +105,17 @@
       "lookupTypes": {
         "configTitle": "Configuração do Tipo de Pesquisa",
         "customRecordFieldId": "ID de Campo de Registro Personalizado",
+        "dropdownOptions": "Opções do menu suspenso",
         "fieldMappingIdHelp": "Selecione o campo de registro personalizado que será usado para esta pesquisa.",
         "fieldMappingIdValue": "ID de mapeamento de campo: {id}",
+        "fieldsCount": "{count} campos",
+        "fieldTypeFallback": "Campo",
         "lookupTypes": "Tipos de Pesquisa",
+        "newLookup": "Nova Procura",
         "noFieldSelected": "Nenhum campo selecionado",
         "noRecordTemplates": "Não há modelos de registro com campos mapeáveis disponíveis.",
+        "optional": "Opcional",
+        "previewTitle": "Pré-visualização de {name}",
         "rangeDisabled": "Intervalo desativado",
         "rangeSearch": "Pesquisa por intervalo",
         "recordField": "Campo de Registo",
@@ -144,12 +153,19 @@
       "rapidIQEditor": {
         "addOption": "Adicionar opção",
         "codeName": "Nome do código",
+        "codesHelp": "Gerir códigos de resposta. O ID do código é usado em fluxos e o Nome do código é mostrado para envio.",
         "conditionsInOrder": "Condições (em ordem)",
+        "flowsHelp": "Crie lógica de roteamento com condições ordenadas. Cada fluxo termina com um código de resultado.",
+        "label": "Etiqueta",
         "maskHint": "Exemplo: (###) ###-####",
         "newCodeId": "Novo ID de código",
+        "options": "Opções",
         "order": "Ordem",
         "question": "Pergunta",
         "searchCodes": "Procurar Códigos",
+        "stats": {
+          "flows": "Fluxos"
+        },
         "tabs": {
           "defaults": "Caminho Padrão",
           "questions": "Perguntas"
@@ -386,6 +402,9 @@
       "enableMap": "Ativar Mapa",
       "erlc": {
         "civilianRegistrationsHeader": "Registos civis",
+        "emergencyCallCommand": "Comando 911",
+        "notifyAlways": "Sempre",
+        "notifyAlwaysTooltip": "O jogador sempre receberá uma mensagem privada após o comando ser processado.",
         "notifyNever": "Nunca",
         "notifyOnlyOnFailure": "Apenas em caso de falha",
         "trafficStopDescriptionHint": "Suporta variáveis personalizadas.",
@@ -393,12 +412,15 @@
         "trafficStopVariableCopied": "Variável copiada para a área de transferência",
         "trafficStopVariablePlate": "O primeiro argumento do comando quando uma placa foi fornecida."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "Documentação de Eventos",
       "fivem": {
         "configureFeaturesTitle": "Configurar recursos",
         "configureResourceTitle": "Configurar Recurso",
+        "downloadInstallTitle": "Baixar e Instalar",
         "manual": {
           "configComment": "# Inicie o recurso sonorancad e outros recursos incluídos",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "Baixar Sonoran CAD para FiveM"
         },
         "rocketNode": {
@@ -648,12 +670,14 @@
     "learnMore": "Saber Mais",
     "lostConnection": "Perdeste a conexão com o servidor.",
     "maximize": "Maximizar",
+    "min": "Mín",
     "minimize": "Minimizar",
     "modify": "Modificar",
     "new": "Novo",
     "noData": "Sem dados",
     "noResults": "No existem resultados",
     "notEqual": "Diferente",
+    "off": "Desativado",
     "on": "Ligado",
     "paste": "Colar",
     "pause": "Pausar",
@@ -669,6 +693,7 @@
     "serverStatus": "Estado do servidor",
     "start": "Iniciar",
     "status": "Estado",
+    "stop": "Parar",
     "success": "Completo",
     "test": "Teste",
     "tutorial": "Tutorial",
@@ -676,7 +701,10 @@
     "type": "Tipo",
     "undo": "Desfazer",
     "upload": "Carregar Imagem",
-    "uploader": "Upload de Imagens (Máximo: 5MB)"
+    "uploader": "Upload de Imagens (Máximo: 5MB)",
+    "versionDisplay": {
+      "updateReminder": "Não deixe de atualizar sua aplicação para obter os recursos, alterações e correções mais recentes!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +725,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "Escolha o nome do seu domínio",
     "content": "Conteúdo",
     "setCustomDomain": "Definir Domínio Personalizado"
   },
@@ -710,6 +739,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "Ver Docs",
+          "ctaPrimary": "Inscreva-se hoje",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +747,16 @@
               }
             }
           },
+          "meta": {
+            "description": "CAD gratuito para ER:LC com mapa 3D em tempo real, bodycam, chamadas de emergência, ferramentas de personagem e suporte a sobreposição no jogo.",
+            "keywords": "ER:LC CAD, CAD grátis para ER:LC, ERLC CAD, Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "Pré-visualização do Mapa Ao Vivo 3D"
+            },
+            "overlay": {
+              "previewTitle": "Pré-visualização da Sobreposição no Jogo"
             }
           }
         },
@@ -738,14 +775,23 @@
                 "answer": "A integração FiveM inclui suporte a mapa ao vivo, ferramentas de bodycam, sincronização de banco de dados e um conjunto crescente de plugins oficiais para fluxos de trabalho mais profundos no jogo."
               },
               "setup": {
+                "answer": "A maioria dos servidores pode ter o recurso base configurado em alguns minutos. Instale o recurso, adicione o ID da sua comunidade e a chave da API, reinicie o servidor e depois ative os recursos que você deseja.",
                 "question": "Quanto tempo leva para configurar a integração?"
               }
             }
           },
+          "faqKicker": "Protocolos de Suporte",
+          "faqTitlePrimary": "Perguntas frequentes",
           "meta": {
             "twitterImageAlt": "Pré-visualização da integração Sonoran CAD x FiveM"
           },
           "modules": {
+            "bodycam": {
+              "title": "Bodycam ao vivo"
+            },
+            "map": {
+              "infoTitle": "Mapa 3D"
+            },
             "plugins": {
               "description": "Submódulos oficiais estendem o Sonoran CAD pelo restante da sua stack de servidor FiveM."
             },
@@ -759,6 +805,8 @@
                 "description": "Crie chamados imersivos de NPC e jogador que alimentam diretamente o despacho com dados CAD estruturados."
               },
               "ers": {
+                "description": "Conecte os fluxos de trabalho de rádio entre o seu servidor e o Sonoran CAD para uma coordenação mais rápida durante incidentes ativos.",
+                "previewTitle": "Pré-visualização do plugin Rádio de Emergência",
                 "title": "Rádio de Emergência"
               },
               "pagers": {
@@ -810,10 +858,12 @@
       "title": "Escolha seu método de login"
     },
     "newVisitor": {
-      "description": "Saiba mais sobre o sistema de plugins de integração do Sonoran CAD, mapa ao vivo personalizado, funcionalidade de sincronização de banco de dados, apps iOS/Android e muito mais!"
+      "description": "Saiba mais sobre o sistema de plugins de integração do Sonoran CAD, mapa ao vivo personalizado, funcionalidade de sincronização de banco de dados, apps iOS/Android e muito mais!",
+      "title": "Bem-vindo"
     }
   },
   "management": {
+    "currentPlayersLastHour": "Jogadores Atuais (Última 1 Hora)",
     "heartbeatMetrics": "Métricas de integração do heartbeat:",
     "topServersHeartbeat": "Top 25 Servidores (Heartbeat)"
   },
@@ -826,6 +876,7 @@
       "purchase": "Comprar Subscrição"
     },
     "labels": {
+      "bundleDiscount": "Desconto do pacote",
       "endDate": "Data de Fim",
       "expertInstallation": "Instalação especializada",
       "plan": "Planos",
@@ -834,10 +885,12 @@
       "quarterly": "Trimestral",
       "standard": "Padrão",
       "startDate": "Data de Inicio",
-      "starter": "Inicial"
+      "starter": "Inicial",
+      "subscriptionsPerPage": "Subscrições por página"
     },
     "pricing": {
-      "howToPurchase": "Como Comprar"
+      "howToPurchase": "Como Comprar",
+      "title": "Atualizar preços da assinatura"
     },
     "text": {
       "bundleAndSave": "Agrupar e salvar",
@@ -854,7 +907,9 @@
       "noneFound": "Nenhuma gravação da bodycam encontrada."
     },
     "bodycamViewer": {
-      "singleCam": "Câmara única"
+      "allCams": "Todas as câmaras",
+      "singleCam": "Câmara única",
+      "startRecording": "Iniciar gravação"
     },
     "callEditor": {
       "addNote": "Adicionar Nota",
@@ -899,6 +954,7 @@
         "walkUp": "A Pé"
       },
       "postal": "Postal",
+      "previousCall": "Chamada Anterior (Seta Esquerda)",
       "primaryUnit": "Unidade Primária",
       "priority": "Prioridade",
       "savedTypes": "Tipos salvos",
@@ -916,6 +972,7 @@
       "units": "Unidades",
       "unitStatusAttachedHint": "Quando uma unidade é anexada a uma chamada, atualize seu status.",
       "unitStatusClosedHint": "Quando uma chamada é encerrada, atualize o status de todas as unidades anexadas.",
+      "unitStatusTimers": "Status da unidade: Temporizadores",
       "updateCall": "Atualizar Chamada",
       "webhooks": {
         "closed": "Fechado",
@@ -944,15 +1001,19 @@
     "callouts": {
       "calloutLabel": "Chamada",
       "chanceToAttack": "Chance de Atacar Jogador",
-      "chanceToObtainWeapons": "Chance de Obter Armas"
+      "chanceToObtainWeapons": "Chance de Obter Armas",
+      "chanceToSurrender": "Chance de Render-se"
     },
     "chat": {
+      "emptySelection": "Selecione uma ou mais unidades online para começar a conversar.",
       "justYou": "Só Você",
+      "linkPreview": "[Link] {label}",
       "noThreads": "Ainda não há conversas ativas.",
       "online": "Online",
       "recipientsHint": "Selecione unidades online para iniciar ou continuar um chat.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "Ler mensagens de chat recebidas em voz alta"
+      "ttsIncomingTooltip": "Ler mensagens de chat recebidas em voz alta",
+      "unableToSend": "Não foi possível enviar o chat agora."
     },
     "command": {
       "attach": "Anexar",
@@ -973,6 +1034,7 @@
     "diagram": {
       "lockUnlockSelected": "Bloquear/Desbloquear Selecionados",
       "moveLayerDown": "Mover camada para baixo (Shift = Inferior)",
+      "shortcutDelete": "ATALHO: DELETE",
       "shortcutLock": "ATALHO: L",
       "shortcutUndo": "ATALHO: CTRL + Z",
       "shortcutUp": "ATALHO: (SHIFT) Seta para cima"
@@ -997,6 +1059,7 @@
       "activeServer": "Servidor Ativo",
       "activeUnits": "Unidades Ativas",
       "bodyCam": "Câmera Corporal",
+      "bodyCamRecordings": "Gravações da bodycam",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1089,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "CHAMADA DE DESPACHO",
         "emergency": "911",
+        "newCallout": "NOVA CHAMADA",
         "sign": "SINAL"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "Diminuir tamanho do blip",
-        "dragAndDrop": "(Arrastar e soltar)"
+        "dragAndDrop": "(Arrastar e soltar)",
+        "mapMode": "Modo de mapa"
       }
     },
     "lookup": {
@@ -1157,6 +1223,7 @@
             "add": "Registo Adicionado",
             "edit": "Registo Editado"
           },
+          "before": "Antes",
           "noFieldChanges": "Nenhum valor de campo foi alterado nesta entrada."
         },
         "linkTitle": "Título do Link",
@@ -1239,7 +1306,9 @@
       "automationLabelCountDown": "Automação: Status {status} {seconds} Segundos",
       "automationLabelCountUp": "Automação: Status {status} Contagem crescente",
       "clearAttachment": "apagar Anexos",
+      "minutes": "Minutos",
       "newTimer": "Novo Temporizador",
+      "seconds": "Segundos",
       "timers": "Temporizador"
     },
     "unitEditor": {
@@ -1250,6 +1319,7 @@
       "confirmRemove": "Tem a certeza de que deseja remover o identificador?",
       "department": "Departamento",
       "departments": "Departamentos",
+      "effects": "Efeitos",
       "electronBodycamOpenPermissions": "Permissões de abertura",
       "electronBodycamPermissionWarning": "É necessária a permissão de Gravação de Ecrã do macOS para a captura da bodycam. Ative-a em Definições do Sistema e, depois, feche totalmente e reabra o Sonoran CAD.",
       "group": "Grupo",
@@ -1341,6 +1411,7 @@
     "language": "Idioma",
     "languageKorean": "Coreano/한국어",
     "lockWindow": "Bloquear Janela",
+    "microphoneNumbered": "Microfone {index}",
     "microphoneStt": "Microfone (STT)",
     "overlay": {
       "addBulb": "Adicionar lâmpada",
@@ -1354,11 +1425,14 @@
       "credentials": "Credênciais",
       "customTextFiles": "Ficheiros de texto customizados",
       "dataKeys": "Chaves de dados",
+      "dataStorage": "Armazenamento de Dados",
       "delay": "Atraso",
       "events": "Eventos",
       "field": "Campo",
       "fileName": "Nome do Ficheiro",
       "fontEditor": "Editor de fonte",
+      "fontSize": "Tamanho da fonte",
+      "fontWeight": "Peso da fonte:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Iluminação",
       "manualIp": "Manual IP (Opcional)",
@@ -1367,12 +1441,16 @@
       "refreshPayment": "Atualizar pagamento",
       "scan": "Digitalizar",
       "scanForBulbs": "Procurar por lâmpadas",
+      "streamAdBanner": "Confira nossa sobreposição de livestream e bot do Twitch!",
       "streamOverlay": "Sobreposição da Stream",
       "twitch": "Twitch",
       "twitchConfig": "Configuração da Twitch",
       "twitchLogs": "Logs da Twitch",
       "txtFiles": "Ficheiros TXT",
-      "unitUpdates": "Atualizações da Unidade"
+      "unitUpdates": "Atualizações da Unidade",
+      "wyzeApiKey": "Chave API Wyze",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "ID da Chave Wyze"
     },
     "panic": "Pânico",
     "prefix": "Prefixo",
@@ -1384,13 +1462,16 @@
     "showHide": "Mostrar/Esconder",
     "systemDefaultMicrophone": "Microfone padrão do sistema",
     "theme": {
+      "backgroundImageFit": "Ajuste da imagem de fundo",
+      "backgroundImagePosition": "Posição da imagem de fundo",
       "backgroundImageScale": "Escala da imagem de fundo",
       "bgImageFit": {
         "contain": "Conter (Ajustar dentro)"
       },
       "bgImagePosition": {
         "center": "Centro",
-        "left": "Esquerda"
+        "left": "Esquerda",
+        "right": "Direita"
       },
       "bgImageScale": {
         "p150": "150%",

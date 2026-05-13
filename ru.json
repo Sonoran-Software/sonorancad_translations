@@ -89,6 +89,9 @@
         "penalCodeName": "Название уголовного кодекса",
         "tenCodeName": "Название кода десятичных сигналов"
       },
+      "infernoPagers": {
+        "invalidMessage": "Ошибка: редактор Inferno отправил недопустимые данные узла pager."
+      },
       "info": {
         "communityId": "ID Сообщества",
         "communityInfo": "Информация о сообществе.",
@@ -102,11 +105,17 @@
       "lookupTypes": {
         "configTitle": "Конфигурация типа поиска",
         "customRecordFieldId": "ID пользовательского поля записи",
+        "dropdownOptions": "Параметры выпадающего списка",
         "fieldMappingIdHelp": "Выберите пользовательское поле записи, которое будет использоваться для этого поиска.",
         "fieldMappingIdValue": "ID картографирования поля: {id}",
+        "fieldsCount": "{count} полей",
+        "fieldTypeFallback": "Поле",
         "lookupTypes": "Типы поиска",
+        "newLookup": "Новый Поиск",
         "noFieldSelected": "Поле не выбрано",
         "noRecordTemplates": "Шаблоны записей с сопоставляемыми полями отсутствуют.",
+        "optional": "Необязательно",
+        "previewTitle": "Предпросмотр {name}",
         "rangeDisabled": "Диапазон отключен",
         "rangeSearch": "Поиск по диапазону",
         "recordField": "Поле записи",
@@ -144,12 +153,19 @@
       "rapidIQEditor": {
         "addOption": "Добавить вариант",
         "codeName": "Название кода",
+        "codesHelp": "Управляйте кодами ответов. ID кода используется в сценариях, а название кода отображается в dispatch.",
         "conditionsInOrder": "Условия (по порядку)",
+        "flowsHelp": "Создавайте логику маршрутизации с упорядоченными условиями. Каждый поток завершается одним кодом результата.",
+        "label": "Метка",
         "maskHint": "Пример: (###) ###-####",
         "newCodeId": "Новый Code ID",
+        "options": "Параметры",
         "order": "Порядок",
         "question": "Вопрос",
         "searchCodes": "Поиск кодов",
+        "stats": {
+          "flows": "Потоки"
+        },
         "tabs": {
           "defaults": "Путь по умолчанию",
           "questions": "Вопросы"
@@ -386,6 +402,9 @@
       "enableMap": "Включить карту",
       "erlc": {
         "civilianRegistrationsHeader": "Регистрации гражданских",
+        "emergencyCallCommand": "Команда 911",
+        "notifyAlways": "Всегда",
+        "notifyAlwaysTooltip": "Игрок всегда будет получать личное сообщение после обработки команды.",
         "notifyNever": "Никогда",
         "notifyOnlyOnFailure": "Только при сбое",
         "trafficStopDescriptionHint": "Поддерживает пользовательские переменные.",
@@ -393,12 +412,15 @@
         "trafficStopVariableCopied": "Переменная скопирована в буфер обмена",
         "trafficStopVariablePlate": "Первый аргумент команды, когда был указан номерной знак."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "Документация по событиям",
       "fivem": {
         "configureFeaturesTitle": "Настроить функции",
         "configureResourceTitle": "Настроить ресурс",
+        "downloadInstallTitle": "Скачать и установить",
         "manual": {
           "configComment": "# Запустите ресурс sonorancad и другие встроенные ресурсы",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "Скачать Sonoran CAD для FiveM"
         },
         "rocketNode": {
@@ -648,12 +670,14 @@
     "learnMore": "Узнать Больше",
     "lostConnection": "Вы потеряли связь с сервером",
     "maximize": "Развернуть",
+    "min": "Мин",
     "minimize": "Свернуть",
     "modify": "Модифицировать",
     "new": "Новый",
     "noData": "Нет Данных",
     "noResults": "Нет Результатов",
     "notEqual": "Не равно",
+    "off": "Выкл",
     "on": "Вкл",
     "paste": "Вставить",
     "pause": "Пауза",
@@ -669,6 +693,7 @@
     "serverStatus": "Статус Сервера",
     "start": "Начать",
     "status": "Статус",
+    "stop": "Стоп",
     "success": "Успешно",
     "test": "Тестировать",
     "tutorial": "Обучение",
@@ -676,7 +701,10 @@
     "type": "Тип",
     "undo": "Отменить",
     "upload": "Загрузить",
-    "uploader": "Загрузит изображение (5МБ Максимум)"
+    "uploader": "Загрузит изображение (5МБ Максимум)",
+    "versionDisplay": {
+      "updateReminder": "Не забудьте обновить приложение, чтобы получить последние функции, изменения и исправления!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +725,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "Выберите имя вашего домена",
     "content": "Контент",
     "setCustomDomain": "Установить собственный домен"
   },
@@ -710,6 +739,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "Просмотр документации",
+          "ctaPrimary": "Зарегистрируйтесь сегодня",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +747,16 @@
               }
             }
           },
+          "meta": {
+            "description": "Бесплатный CAD для ER:LC с живой 3D-картой, bodycam, экстренными вызовами, инструментами для персонажа и поддержкой внутриигрового оверлея.",
+            "keywords": "ER:LC CAD, бесплатный CAD для ER:LC, ERLC CAD, Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "Предпросмотр живой 3D-карты"
+            },
+            "overlay": {
+              "previewTitle": "Предпросмотр внутриигрового оверлея"
             }
           }
         },
@@ -738,14 +775,23 @@
                 "answer": "Интеграция FiveM включает поддержку живой карты, инструменты bodycam, синхронизацию базы данных и расширяющийся набор официальных плагинов для более глубоких внутриигровых рабочих процессов."
               },
               "setup": {
+                "answer": "Большинство серверов могут настроить базовый ресурс за несколько минут. Установите ресурс, добавьте ID вашего сообщества и API-ключ, перезапустите сервер, а затем включите нужные вам функции.",
                 "question": "Сколько времени занимает настройка интеграции?"
               }
             }
           },
+          "faqKicker": "Протоколы поддержки",
+          "faqTitlePrimary": "Часто задаваемые",
           "meta": {
             "twitterImageAlt": "Предпросмотр интеграции Sonoran CAD x FiveM"
           },
           "modules": {
+            "bodycam": {
+              "title": "Нагрудная камера в прямом эфире"
+            },
+            "map": {
+              "infoTitle": "3D-карта"
+            },
             "plugins": {
               "description": "Официальные подмодули расширяют Sonoran CAD на остальную часть стека вашего FiveM-сервера."
             },
@@ -759,6 +805,8 @@
                 "description": "Создавайте иммерсивные вызовы NPC и игроков, которые напрямую поступают в диспетчерскую с структурированными CAD-данными."
               },
               "ers": {
+                "description": "Свяжите радиорабочие процессы между вашим сервером и Sonoran CAD для более быстрой координации во время активных инцидентов.",
+                "previewTitle": "Предварительный просмотр плагина экстренного радио",
                 "title": "Экстренное радио"
               },
               "pagers": {
@@ -810,10 +858,12 @@
       "title": "Выберите способ входа"
     },
     "newVisitor": {
-      "description": "Узнайте больше о системе плагинов интеграции Sonoran CAD, настраиваемой живой карте, функции синхронизации базы данных, приложениях для iOS/Android и многом другом!"
+      "description": "Узнайте больше о системе плагинов интеграции Sonoran CAD, настраиваемой живой карте, функции синхронизации базы данных, приложениях для iOS/Android и многом другом!",
+      "title": "Добро пожаловать"
     }
   },
   "management": {
+    "currentPlayersLastHour": "Текущие игроки (за последний 1 час)",
     "heartbeatMetrics": "Метрики интеграции Heartbeat:",
     "topServersHeartbeat": "Топ 25 серверов (Heartbeat)"
   },
@@ -826,6 +876,7 @@
       "purchase": "Приобрести Подписку"
     },
     "labels": {
+      "bundleDiscount": "Скидка на набор",
       "endDate": "Дата Окончания",
       "expertInstallation": "Экспертная установка",
       "plan": "План",
@@ -834,10 +885,12 @@
       "quarterly": "Ежеквартально",
       "standard": "Стандартный",
       "startDate": "Дата Начала",
-      "starter": "Начальный"
+      "starter": "Начальный",
+      "subscriptionsPerPage": "Подписок на страницу"
     },
     "pricing": {
-      "howToPurchase": "Как купить"
+      "howToPurchase": "Как купить",
+      "title": "Цены на обновление подписки"
     },
     "text": {
       "bundleAndSave": "Комплектуйте и экономьте",
@@ -854,7 +907,9 @@
       "noneFound": "Не найдено записей с нательных камер."
     },
     "bodycamViewer": {
-      "singleCam": "Одна камера"
+      "allCams": "Все камеры",
+      "singleCam": "Одна камера",
+      "startRecording": "Начать запись"
     },
     "callEditor": {
       "addNote": "Добавить Примечание",
@@ -899,6 +954,7 @@
         "walkUp": "Подходящий"
       },
       "postal": "Пост",
+      "previousCall": "Предыдущий звонок (стрелка влево)",
       "primaryUnit": "Главный Юнит",
       "priority": "Приоритет",
       "savedTypes": "Сохраненные типы",
@@ -916,6 +972,7 @@
       "units": "Юнит",
       "unitStatusAttachedHint": "Когда подразделение прикреплено к вызову, обновите их статус.",
       "unitStatusClosedHint": "Когда вызов закрыт, обновите статус всех прикреплённых подразделений.",
+      "unitStatusTimers": "Статус подразделения: Таймеры",
       "updateCall": "Обновить Вызов",
       "webhooks": {
         "closed": "Закрытый",
@@ -944,15 +1001,19 @@
     "callouts": {
       "calloutLabel": "Вызов",
       "chanceToAttack": "Шанс атаковать игрока",
-      "chanceToObtainWeapons": "Шанс получить оружие"
+      "chanceToObtainWeapons": "Шанс получить оружие",
+      "chanceToSurrender": "Шанс сдаться"
     },
     "chat": {
+      "emptySelection": "Выберите один или несколько онлайн-отрядов, чтобы начать чат.",
       "justYou": "Только вы",
+      "linkPreview": "[Ссылка] {label}",
       "noThreads": "Активных разговоров пока нет.",
       "online": "В сети",
       "recipientsHint": "Выберите онлайн-подразделения, чтобы начать или продолжить чат.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "Озвучивать входящие сообщения чата"
+      "ttsIncomingTooltip": "Озвучивать входящие сообщения чата",
+      "unableToSend": "Не удается отправить чат сейчас."
     },
     "command": {
       "attach": "Прикрепить",
@@ -973,6 +1034,7 @@
     "diagram": {
       "lockUnlockSelected": "Заблокировать/разблокировать выбранное",
       "moveLayerDown": "Переместить слой вниз (Shift = вниз)",
+      "shortcutDelete": "ЯРЛЫК: DELETE",
       "shortcutLock": "ЯРЛЫК: L",
       "shortcutUndo": "ЯРЛЫК: CTRL + Z",
       "shortcutUp": "СОКРАЩЕНИЕ: (SHIFT) Стрелка вверх"
@@ -997,6 +1059,7 @@
       "activeServer": "Активный Сервер",
       "activeUnits": "Активные Юниты",
       "bodyCam": "Нагрудная камера",
+      "bodyCamRecordings": "Записи с нательной камеры",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1089,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "ВЫЗОВ ДИСПЕТЧЕРА",
         "emergency": "911",
+        "newCallout": "НОВЫЙ ВЫЗОВ",
         "sign": "ЗНАК"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "Уменьшить размер метки",
-        "dragAndDrop": "(Перетащите и отпустите)"
+        "dragAndDrop": "(Перетащите и отпустите)",
+        "mapMode": "Режим карты"
       }
     },
     "lookup": {
@@ -1157,6 +1223,7 @@
             "add": "Запись добавлена",
             "edit": "Запись отредактирована"
           },
+          "before": "До",
           "noFieldChanges": "Значения полей в этой записи не изменились."
         },
         "linkTitle": "Название ссылки",
@@ -1239,7 +1306,9 @@
       "automationLabelCountDown": "Автоматизация: Статус {status} {seconds} Секунд",
       "automationLabelCountUp": "Автоматизация: Статус {status} Счёт вверх",
       "clearAttachment": "Очистить вложение",
+      "minutes": "Минуты",
       "newTimer": "Новый таймер",
+      "seconds": "Секунды",
       "timers": "Таймеры"
     },
     "unitEditor": {
@@ -1250,6 +1319,7 @@
       "confirmRemove": "Вы уверены, что хотите удалить Индетификатор?",
       "department": "Департамент",
       "departments": "Департаменты",
+      "effects": "Эффекты",
       "electronBodycamOpenPermissions": "Разрешения на открытие",
       "electronBodycamPermissionWarning": "Для захвата bodycam требуется разрешение macOS на запись экрана. Включите его в Системных настройках, затем полностью закройте и снова откройте Sonoran CAD.",
       "group": "Группа",
@@ -1341,6 +1411,7 @@
     "language": "Язык",
     "languageKorean": "Корейский/한국어",
     "lockWindow": "Закрепить Окно",
+    "microphoneNumbered": "Микрофон {index}",
     "microphoneStt": "Микрофон (STT)",
     "overlay": {
       "addBulb": "Добавить лампочку",
@@ -1354,11 +1425,14 @@
       "credentials": "Учётные данные",
       "customTextFiles": "Пользовательские текстовые файлы",
       "dataKeys": "Ключи данных",
+      "dataStorage": "Хранение данных",
       "delay": "Задержка",
       "events": "События",
       "field": "Поле",
       "fileName": "Имя файла",
       "fontEditor": "Редактор шрифтов",
+      "fontSize": "Размер шрифта",
+      "fontWeight": "Начертание шрифта:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Освещение",
       "manualIp": "Ручной IP (необязательно)",
@@ -1367,12 +1441,16 @@
       "refreshPayment": "Обновить платёж",
       "scan": "Сканировать",
       "scanForBulbs": "Сканировать для обнаружения лампочек",
+      "streamAdBanner": "Посмотрите наш оверлей для прямой трансляции и бота Twitch!",
       "streamOverlay": "Оверлей потока",
       "twitch": "Twitch",
       "twitchConfig": "Конфигурация Twitch",
       "twitchLogs": "Логи Twitch",
       "txtFiles": "TXT файлы",
-      "unitUpdates": "Обновления подразделений"
+      "unitUpdates": "Обновления подразделений",
+      "wyzeApiKey": "API-ключ Wyze",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "ID ключа Wyze"
     },
     "panic": "Кнопка Паники",
     "prefix": "Кнопка Префикса",
@@ -1384,13 +1462,16 @@
     "showHide": "Показать/Скрыть",
     "systemDefaultMicrophone": "Микрофон по умолчанию системы",
     "theme": {
+      "backgroundImageFit": "Подгонка фонового изображения",
+      "backgroundImagePosition": "Положение фонового изображения",
       "backgroundImageScale": "Масштаб фонового изображения",
       "bgImageFit": {
         "contain": "Вписать (по размеру)"
       },
       "bgImagePosition": {
         "center": "По центру",
-        "left": "Слева"
+        "left": "Слева",
+        "right": "Справа"
       },
       "bgImageScale": {
         "p150": "150%",

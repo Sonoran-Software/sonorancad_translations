@@ -89,6 +89,9 @@
         "penalCodeName": "法典名称",
         "tenCodeName": "10-Code代码名称"
       },
+      "infernoPagers": {
+        "invalidMessage": "错误：Inferno 编辑器发送了无效的分页器节点数据。"
+      },
       "info": {
         "communityId": "社区ID",
         "communityInfo": "社区信息",
@@ -102,11 +105,18 @@
       "lookupTypes": {
         "configTitle": "搜索类型配置",
         "customRecordFieldId": "自定义记录表ID",
+        "dropdownOptions": "下拉选项",
         "fieldMappingIdHelp": "选择将用于此搜索的自定义记录字段。",
         "fieldMappingIdValue": "字段映射 ID: {id}",
+        "fieldsCount": "{count} 个字段",
+        "fieldTypeFallback": "区域",
         "lookupTypes": "查询类型",
+        "mask": "掩码",
+        "newLookup": "新的查询",
         "noFieldSelected": "未选择字段",
         "noRecordTemplates": "没有可用的具有可映射字段的记录模板。",
+        "optional": "可选项",
+        "previewTitle": "{name} 预览",
         "rangeDisabled": "范围已禁用",
         "rangeSearch": "范围搜索",
         "recordField": "记录字段",
@@ -144,12 +154,19 @@
       "rapidIQEditor": {
         "addOption": "添加选项",
         "codeName": "代码名称",
+        "codesHelp": "管理响应代码。代码 ID 用于流程，代码名称显示在分发中。",
         "conditionsInOrder": "条件（按顺序）",
+        "flowsHelp": "使用有序条件构建路由逻辑。每个流程都以一个结果代码结束。",
+        "label": "标签",
         "maskHint": "示例：(###) ###-####",
         "newCodeId": "新代码 ID",
+        "options": "选项",
         "order": "顺序",
         "question": "问题",
         "searchCodes": "搜索代码",
+        "stats": {
+          "flows": "流程"
+        },
         "tabs": {
           "defaults": "默认路径",
           "questions": "问题"
@@ -386,6 +403,9 @@
       "enableMap": "启用地图",
       "erlc": {
         "civilianRegistrationsHeader": "平民注册",
+        "emergencyCallCommand": "911 指挥",
+        "notifyAlways": "始终",
+        "notifyAlwaysTooltip": "命令处理后，玩家将始终收到一条私信。",
         "notifyNever": "从不",
         "notifyOnlyOnFailure": "仅在失败时",
         "trafficStopDescriptionHint": "支持自定义变量。",
@@ -393,12 +413,15 @@
         "trafficStopVariableCopied": "变量已复制到剪贴板",
         "trafficStopVariablePlate": "提供车牌时的第一个命令参数。"
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "事件记录",
       "fivem": {
         "configureFeaturesTitle": "配置功能",
         "configureResourceTitle": "配置资源",
+        "downloadInstallTitle": "下载 & 安装",
         "manual": {
           "configComment": "# 启动 sonorancad 资源和其他捆绑资源",
+          "configExec": "执行 {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "下载 Sonoran CAD 用于 FiveM"
         },
         "rocketNode": {
@@ -648,12 +671,14 @@
     "learnMore": "更多信息",
     "lostConnection": "您与服务器断开连接。",
     "maximize": "最大化",
+    "min": "最小",
     "minimize": "最小化",
     "modify": "修改",
     "new": "新的",
     "noData": "无数据",
     "noResults": "无结果",
     "notEqual": "不相等",
+    "off": "关闭",
     "on": "开",
     "paste": "粘贴",
     "pause": "暂停",
@@ -669,6 +694,7 @@
     "serverStatus": "服务器状态",
     "start": "开始",
     "status": "状态",
+    "stop": "停止",
     "success": "成功",
     "test": "测试",
     "tutorial": "教学",
@@ -676,7 +702,10 @@
     "type": "类型",
     "undo": "撤销",
     "upload": "上传图片",
-    "uploader": "图片上传（最大5MB）"
+    "uploader": "图片上传（最大5MB）",
+    "versionDisplay": {
+      "updateReminder": "请务必更新您的应用程序，以获取最新功能、变更和修复！"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +726,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "选择你的域名",
     "content": "内容",
     "setCustomDomain": "设置自定义域名"
   },
@@ -710,6 +740,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "查看文档",
+          "ctaPrimary": "立即注册",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +748,16 @@
               }
             }
           },
+          "meta": {
+            "description": "适用于 ER:LC 的免费 CAD，支持 3D 实时地图、执法记录仪、紧急呼叫、角色工具和游戏内覆盖层。",
+            "keywords": "ER:LC CAD，ER:LC 的免费 CAD，ERLC CAD，Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "3D 实时地图预览"
+            },
+            "overlay": {
+              "previewTitle": "游戏内悬浮层预览"
             }
           }
         },
@@ -738,14 +776,23 @@
                 "answer": "FiveM 集成包括实时地图支持、执法记录仪工具、数据库同步，以及一组不断扩展的官方插件，用于更深入的游戏内工作流程。"
               },
               "setup": {
+                "answer": "大多数服务器可以在几分钟内配置好基础资源。安装资源，添加你的社区 ID 和 API 密钥，重启服务器，然后启用你想要的功能。",
                 "question": "设置集成需要多长时间？"
               }
             }
           },
+          "faqKicker": "支持协议",
+          "faqTitlePrimary": "常见问题",
           "meta": {
             "twitterImageAlt": "Sonoran CAD x FiveM 集成预览"
           },
           "modules": {
+            "bodycam": {
+              "title": "实时记录仪"
+            },
+            "map": {
+              "infoTitle": "3D 地图"
+            },
             "plugins": {
               "description": "官方子模块将 Sonoran CAD 扩展到你的 FiveM 服务器堆栈的其余部分。"
             },
@@ -759,6 +806,8 @@
                 "description": "创建沉浸式 NPC 和玩家呼叫，以结构化 CAD 数据直接推送到调度系统。"
               },
               "ers": {
+                "description": "在您的服务器和 Sonoran CAD 之间桥接无线电工作流，以便在紧急事件期间更快协调。",
+                "previewTitle": "紧急无线电插件预览",
                 "title": "紧急无线电"
               },
               "pagers": {
@@ -810,10 +859,12 @@
       "title": "选择你的登录方式"
     },
     "newVisitor": {
-      "description": "了解有关 Sonoran CAD 的集成插件系统、自定义实时地图、数据库同步功能、iOS/Android 应用等更多信息！"
+      "description": "了解有关 Sonoran CAD 的集成插件系统、自定义实时地图、数据库同步功能、iOS/Android 应用等更多信息！",
+      "title": "欢迎"
     }
   },
   "management": {
+    "currentPlayersLastHour": "过去 1 小时当前玩家",
     "heartbeatMetrics": "心跳集成指标:",
     "topServersHeartbeat": "前25个服务器（心跳）"
   },
@@ -826,6 +877,7 @@
       "purchase": "申购"
     },
     "labels": {
+      "bundleDiscount": "捆绑折扣",
       "endDate": "结束日期",
       "expertInstallation": "专家安装",
       "plan": "套餐",
@@ -834,10 +886,12 @@
       "quarterly": "每季度",
       "standard": "标准版",
       "startDate": "开始日期",
-      "starter": "基础版"
+      "starter": "基础版",
+      "subscriptionsPerPage": "每页订阅内容"
     },
     "pricing": {
-      "howToPurchase": "如何购买"
+      "howToPurchase": "如何购买",
+      "title": "升级订阅定价"
     },
     "text": {
       "bundleAndSave": "捆绑并保存",
@@ -854,7 +908,9 @@
       "noneFound": "未找到执法记录仪录像。"
     },
     "bodycamViewer": {
-      "singleCam": "单摄像头"
+      "allCams": "全部摄像头",
+      "singleCam": "单摄像头",
+      "startRecording": "开始录制"
     },
     "callEditor": {
       "addNote": "添加备注",
@@ -899,6 +955,7 @@
         "walkUp": "警局内报案"
       },
       "postal": "邮政编码",
+      "previousCall": "上一个通话（左箭头）",
       "primaryUnit": "主处理单位",
       "priority": "优先级",
       "savedTypes": "保存此呼叫类型",
@@ -916,6 +973,7 @@
       "units": "单位",
       "unitStatusAttachedHint": "单位附加到通话时，更新其状态。",
       "unitStatusClosedHint": "通话关闭时，更新所有附加单位的状态。",
+      "unitStatusTimers": "单位状态：计时器",
       "updateCall": "更新呼叫",
       "webhooks": {
         "closed": "关闭",
@@ -944,15 +1002,19 @@
     "callouts": {
       "calloutLabel": "出警",
       "chanceToAttack": "攻击玩家的几率",
-      "chanceToObtainWeapons": "获取武器的几率"
+      "chanceToObtainWeapons": "获取武器的几率",
+      "chanceToSurrender": "投降机会"
     },
     "chat": {
+      "emptySelection": "选择一个或多个在线单位开始聊天。",
       "justYou": "只有你",
+      "linkPreview": "[链接] {label}",
       "noThreads": "暂无活跃会话。",
       "online": "在线",
       "recipientsHint": "选择在线单位以开始或继续聊天。",
       "ttsIncomingLink": "{sender}。{label}",
-      "ttsIncomingTooltip": "朗读收到的聊天消息"
+      "ttsIncomingTooltip": "朗读收到的聊天消息",
+      "unableToSend": "暂时无法发送聊天。"
     },
     "command": {
       "attach": "附加",
@@ -973,6 +1035,7 @@
     "diagram": {
       "lockUnlockSelected": "锁定/解锁所选项",
       "moveLayerDown": "下移图层（Shift = 底部）",
+      "shortcutDelete": "快捷键：DELETE",
       "shortcutLock": "快捷键：L",
       "shortcutUndo": "快捷键：CTRL + Z",
       "shortcutUp": "快捷键：(SHIFT) 上箭头"
@@ -997,6 +1060,7 @@
       "activeServer": "当前服务器",
       "activeUnits": "活跃单位",
       "bodyCam": "车载摄像头",
+      "bodyCamRecordings": "执法记录仪录像",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1090,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "调度呼叫",
         "emergency": "911",
+        "newCallout": "新出警",
         "sign": "标志"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "减小标记大小",
-        "dragAndDrop": "（拖放）"
+        "dragAndDrop": "（拖放）",
+        "mapMode": "地图模式"
       }
     },
     "lookup": {
@@ -1157,6 +1224,7 @@
             "add": "记录已添加",
             "edit": "记录已编辑"
           },
+          "before": "之前",
           "noFieldChanges": "此条目中没有字段值变更。"
         },
         "linkTitle": "链接标题",
@@ -1239,7 +1307,9 @@
       "automationLabelCountDown": "自动化：状态 {status} {seconds} 秒",
       "automationLabelCountUp": "自动化：状态 {status} 计数上升",
       "clearAttachment": "清除附件",
+      "minutes": "分钟",
       "newTimer": "新计时器",
+      "seconds": "秒",
       "timers": "计时器"
     },
     "unitEditor": {
@@ -1250,6 +1320,7 @@
       "confirmRemove": "确定要删除身份信息吗？",
       "department": "部门",
       "departments": "部门",
+      "effects": "效果",
       "electronBodycamOpenPermissions": "开启权限",
       "electronBodycamPermissionWarning": "录制执法记录仪需要 macOS 屏幕录制权限。请在系统设置中启用，然后完全退出并重新打开 Sonoran CAD。",
       "group": "小组",
@@ -1341,6 +1412,7 @@
     "language": "语言",
     "languageKorean": "韩语/한국어",
     "lockWindow": "锁定窗口",
+    "microphoneNumbered": "麦克风 {index}",
     "microphoneStt": "麦克风（STT）",
     "overlay": {
       "addBulb": "添加灯泡",
@@ -1354,11 +1426,14 @@
       "credentials": "证书",
       "customTextFiles": "自定义文本文件",
       "dataKeys": "数据键",
+      "dataStorage": "数据存储",
       "delay": "延迟",
       "events": "事件",
       "field": "区域",
       "fileName": "文件名",
       "fontEditor": "字体编辑器",
+      "fontSize": "字体大小",
+      "fontWeight": "字体粗细:",
       "goveeWifi": "Govee WiFi",
       "lighting": "灯光",
       "manualIp": "手动设置IP (可选）",
@@ -1367,12 +1442,16 @@
       "refreshPayment": "刷新交易",
       "scan": "扫描",
       "scanForBulbs": "扫描灯泡",
+      "streamAdBanner": "查看我们的直播覆盖层和 Twitch 机器人！",
       "streamOverlay": "直播遮蔽",
       "twitch": "Twitch",
       "twitchConfig": "Twitch配置",
       "twitchLogs": "Twitch记录",
       "txtFiles": "文本文件",
-      "unitUpdates": "单位更新"
+      "unitUpdates": "单位更新",
+      "wyzeApiKey": "Wyze API密钥",
+      "wyzeColor": "Wyze 颜色",
+      "wyzeKeyId": "Wyze 密钥 ID"
     },
     "panic": "紧急状况",
     "prefix": "前缀",
@@ -1384,13 +1463,16 @@
     "showHide": "显示/隐藏",
     "systemDefaultMicrophone": "系统默认麦克风",
     "theme": {
+      "backgroundImageFit": "背景图像适配",
+      "backgroundImagePosition": "背景图像位置",
       "backgroundImageScale": "背景图像缩放",
       "bgImageFit": {
         "contain": "包含（适应内部）"
       },
       "bgImagePosition": {
         "center": "居中",
-        "left": "左"
+        "left": "左",
+        "right": "右"
       },
       "bgImageScale": {
         "p150": "150%",

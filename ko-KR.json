@@ -94,7 +94,7 @@
       "infernoPagers": {
         "description": "긴급 서비스 호출기 라우팅에 사용되는 호출기 노드 트리를 관리합니다.",
         "infernoPagers": "인페르노 호출기",
-        "invalidMessage": "오류: Inferno 편집기가 잘못된 호출기 노드 데이터를 보냈습니다.",
+        "invalidMessage": "오류: Inferno 편집기가 잘못된 pager 노드 데이터를 보냈습니다.",
         "loading": "내장된 Inferno 편집기는 현재 호출기 구성을 자동으로 로드하고 동기화합니다."
       },
       "info": {
@@ -140,11 +140,11 @@
         "noFieldsConfigured": "아직 구성된 필드가 없습니다.",
         "noFieldSelected": "선택한 필드가 없습니다.",
         "noRecordTemplates": "매핑 가능한 필드가 있는 레코드 템플릿이 없습니다.",
-        "optional": "선택 과목",
+        "optional": "선택 사항",
         "placeholder": "자리 표시자",
         "preview": "시사",
         "previewHelp": "이 미리보기는 이 검색 유형이 사용자 조회 창에 어떻게 나타나는지 보여줍니다.",
-        "previewTitle": "{name} 미리보기",
+        "previewTitle": "{name} 시사",
         "rangeDisabled": "범위 비활성화",
         "rangeEnabled": "범위 활성화",
         "rangeSearch": "범위 찾다",
@@ -194,13 +194,13 @@
         "addOption": "옵션 추가",
         "addQuestion": "질문 추가",
         "codeName": "코드명",
-        "codesHelp": "응답 코드를 관리합니다. 코드 ID은 흐름에 사용되며 코드 이름은 디스패치에 표시됩니다.",
+        "codesHelp": "응답 코드 관리. Code ID는 플로우에서 사용되고 Code Name은 디스패치에 표시됩니다.",
         "conditionsInOrder": "조건 (순서대로)",
         "defaultQuestions": "기본 질문",
         "defaultQuestionsHint": "기본 경로에 있는 질문을 선택합니다.",
         "defaultsHelp": "기본 질문 시작 순서를 선택하세요.",
         "flowPreview": "흐름 미리보기",
-        "flowsHelp": "순서가 지정된 조건으로 라우팅 논리를 구축합니다. 각 흐름은 하나의 결과 코드로 끝납니다.",
+        "flowsHelp": "정렬된 조건으로 라우팅 로직을 구축하세요. 각 플로우는 하나의 결과 코드로 끝납니다.",
         "headerHelp": "RapidIQ 질문, 응답 옵션, 코드 및 흐름 규칙을 구성합니다.",
         "label": "상표",
         "maskHint": "예시: (###) ###-####",
@@ -489,12 +489,12 @@
         "commandHint": "이 명령을 비활성화하려면 비워 두십시오.",
         "customRobloxMap": "사용자 정의 Roblox 지도",
         "customRobloxMapProTooltip": "사용자 정의 Roblox 맵은 Pro에서만 지원됩니다.",
-        "emergencyCallCommand": "911 명령",
+        "emergencyCallCommand": "911 커맨드",
         "emergencyCallsHeader": "긴급전화",
         "header": "ER:LC 통합",
         "liveMapAbout": "라이브 맵은 유닛 위치, 차체 카메라, 비상 호출, 파견 호출 등이 포함된 대화형 2D 및 3D 게임 맵을 제공합니다.",
-        "notifyAlways": "언제나",
-        "notifyAlwaysTooltip": "플레이어는 명령이 처리된 후 항상 개인 메시지를 받게 됩니다.",
+        "notifyAlways": "항상",
+        "notifyAlwaysTooltip": "플레이어는 명령이 처리된 후 항상 비공개 메시지를 받게 됩니다.",
         "notifyMode": "플레이어에게 알림",
         "notifyNever": "절대 안 함",
         "notifyNeverTooltip": "플레이어는 이 명령에 대한 비공개 메시지를 받지 않습니다.",
@@ -839,7 +839,7 @@
     "noImageSelected": "선택한 이미지가 없습니다.",
     "noResults": "결과 없음",
     "notEqual": "같지 않음",
-    "off": "끄다",
+    "off": "끔",
     "ok": "OK",
     "on": "켬",
     "open": "열려 있는",
@@ -859,7 +859,7 @@
     "sessionExpired": "세션이 만료되었습니다",
     "start": "시작",
     "status": "상태",
-    "stop": "멈추다",
+    "stop": "중지",
     "success": "성공",
     "test": "시험",
     "tutorial": "지도 시간",
@@ -873,7 +873,7 @@
       "description": "알림: Sonoran CAD의 오래된 버전을 사용하고 있는 것 같습니다.",
       "latestVersion": "최신 버전: {latestVersion}",
       "title": "공지: 오래된 버전",
-      "updateReminder": "최신 기능, 변경 사항 및 수정 사항을 보려면 애플리케이션을 업데이트하세요!"
+      "updateReminder": "최신 기능, 변경 사항, 수정 사항을 위해 애플리케이션을 업데이트하세요!"
     }
   },
   "communityMenu": {
@@ -898,7 +898,7 @@
     }
   },
   "CustomDomain": {
-    "chooseYourDomainName": "도메인 이름을 선택하세요",
+    "chooseYourDomainName": "도메인 이름 선택",
     "cname": "CNAME",
     "communityID": "커뮤니티 ID",
     "configureYourDnsRecord": "DNS 레코드 구성",
@@ -963,7 +963,7 @@
           "headlinePrimary": "최고의 CAD",
           "kicker": "무료이며 빠르며 완전히 통합되었습니다.",
           "meta": {
-            "description": "3D 라이브 지도, 바디캠, 긴급 통화, 캐릭터 도구 및 게임 내 오버레이 지원 기능을 갖춘 ER:LC용 무료 CAD입니다.",
+            "description": "3D 라이브 지도, 바디캠, 긴급 호출, 캐릭터 도구, 게임 내 오버레이 지원이 있는 ER:LC용 무료 CAD.",
             "keywords": "ER:LC CAD, ER:LC에 대한 무료 CAD, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC 통합",
             "title": "ER:LC에 대한 무료 CAD | Sonoran CAD",
@@ -1028,7 +1028,7 @@
                 "question": "FiveM 통합은 무료로 사용할 수 있나요?"
               },
               "setup": {
-                "answer": "대부분의 서버는 몇 분 안에 기본 리소스를 구성할 수 있습니다. 리소스를 설치하고 커뮤니티 ID 및 API 키를 추가하고 서버를 다시 시작한 다음 원하는 기능을 활성화하십시오.",
+                "answer": "대부분의 서버는 기본 리소스를 몇 분 안에 설정할 수 있습니다. 리소스를 설치하고, 커뮤니티 ID와 API 키를 추가한 다음, 서버를 다시 시작하고, 원하는 기능을 활성화하세요.",
                 "question": "통합을 설정하는 데 시간이 얼마나 걸리나요?"
               }
             }
@@ -1081,7 +1081,7 @@
                 "title": "맞춤 발신자"
               },
               "ers": {
-                "description": "활성 사고가 발생하는 동안 더 빠른 조정을 위해 서버와 Sonoran CAD 사이의 무선 작업 흐름을 브리지합니다.",
+                "description": "서버와 Sonoran CAD 사이에서 무전 업무 흐름을 연결해 활성 사건 중 더 빠른 조율을 지원합니다.",
                 "previewTitle": "비상 라디오 플러그인 미리보기",
                 "title": "비상 라디오"
               },
@@ -1190,7 +1190,7 @@
     "robloxLinkBannerTitle": "Roblox 계정 링크 필요"
   },
   "management": {
-    "currentPlayersLastHour": "현재 플레이어(지난 1시간)",
+    "currentPlayersLastHour": "현재 플레이어 (지난 1시간)",
     "heartbeatMetrics": "Heartbeat 통합 메트릭:",
     "lastUpdated": "마지막 업데이트",
     "node": "마디",
@@ -1210,7 +1210,7 @@
       "purchase": "구독 구매"
     },
     "labels": {
-      "bundleDiscount": "묶음할인",
+      "bundleDiscount": "번들 할인",
       "chargesPerPage": "페이지당 요금",
       "endDate": "종료일",
       "expertInstallation": "전문가 설치",
@@ -1232,7 +1232,7 @@
     "pricing": {
       "description": "Sonoran CAD의 유료 구독을 통해 새로운 통합 기능 활성화, 사용자 정의 활성화, 제한 제거 등을 수행할 수 있습니다!",
       "howToPurchase": "구매 방법",
-      "title": "업그레이드 구독 가격"
+      "title": "구독 요금제 업그레이드"
     },
     "text": {
       "bundleAndSave": "묶음으로 저장하기",
@@ -1251,7 +1251,7 @@
       "selectRecordingPrompt": "미리 보려면 녹음을 선택하세요."
     },
     "bodycamViewer": {
-      "allCams": "모든 캠",
+      "allCams": "모든 카메라",
       "indicatorAlt": "바디캠 표시기",
       "live": "살다",
       "screens": "스크린",
@@ -1371,7 +1371,7 @@
       "chanceToAttack": "플레이어를 공격할 확률",
       "chanceToFlee": "플레이어로부터 도망칠 확률",
       "chanceToObtainWeapons": "무기를 획득할 확률",
-      "chanceToSurrender": "항복할 기회",
+      "chanceToSurrender": "항복 기회",
       "fallbackTooltip": "아래 조치 중 아무 것도 발생하지 않는 경우 기본 조치입니다.",
       "pedFallbackAction": "Ped 대체 작업"
     },
@@ -1380,11 +1380,11 @@
       "attachedRecord": "첨부기록",
       "composerHint": "텍스트를 보내려면 Ctrl/Cmd+Enter를 사용하세요. 먼저 기록이나 통화 링크를 복사하여 채팅에 붙여넣으세요.",
       "conversations": "대화",
-      "emptySelection": "채팅을 시작하려면 하나 이상의 온라인 유닛을 선택하세요.",
+      "emptySelection": "채팅을 시작하려면 온라인 유닛을 하나 이상 선택하세요.",
       "emptyThread": "이 채팅에는 아직 메시지가 없습니다.",
       "groupLabel": "그룹: {group}",
       "justYou": "나만",
-      "linkPreview": "[링크] {label}",
+      "linkPreview": "[Link] {label}",
       "message": "메시지",
       "noMessages": "아직 메시지가 없습니다",
       "noThreads": "아직 활성 대화가 없습니다.",
@@ -1483,9 +1483,9 @@
       "blip": {
         "custom": "CUSTOM",
         "default": "BLIP",
-        "dispatchCall": "DISPATCH CALL",
+        "dispatchCall": "파견 통화",
         "emergency": "911",
-        "newCallout": "NEW CALLOUT",
+        "newCallout": "새 콜아웃",
         "sign": "표지",
         "station": "STATION",
         "unit": "UNIT"
@@ -1648,7 +1648,7 @@
           },
           "after": "후에",
           "apiUser": "API",
-          "before": "전에",
+          "before": "이전",
           "changedBy": "변경한 사람",
           "loadError": "오류: 기록 기록을 로드하지 못했습니다.",
           "noFieldChanges": "이 항목에서 변경된 필드 값이 없습니다."
@@ -1896,7 +1896,7 @@
       "credentials": "신임장",
       "customTextFiles": "사용자 정의 텍스트 파일",
       "dataKeys": "데이터 키",
-      "dataStorage": "데이터 저장",
+      "dataStorage": "데이터 저장소",
       "delay": "지연",
       "events": "이벤트",
       "exampleText": "예시 텍스트",
@@ -1904,7 +1904,7 @@
       "fileName": "파일 이름",
       "font": "세례반",
       "fontEditor": "글꼴 편집기",
-      "fontSize": "글꼴 크기",
+      "fontSize": "글자 크기",
       "fontWeight": "글꼴 두께:",
       "goveeBluetooth": "Govee Bluetooth",
       "goveeWifi": "Govee WiFi",
@@ -1917,7 +1917,7 @@
       "scan": "주사",
       "scanForBulbs": "전구 스캔",
       "stopScanning": "스캔 중지",
-      "streamAdBanner": "실시간 스트리밍 오버레이와 Twitch 봇을 확인해 보세요!",
+      "streamAdBanner": "우리 라이브스트림 오버레이와 Twitch 봇을 확인해 보세요!",
       "streamOverlay": "스트림 오버레이",
       "twitch": "Twitch",
       "twitchConfig": "Twitch 구성",

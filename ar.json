@@ -4,6 +4,7 @@
       "subscriptions": "الإشتراكات"
     },
     "delete": {
+      "confirm": "حذف الحساب",
       "failure": "فشل حذف حسابك.",
       "title": "حذف الحساب؟"
     },
@@ -89,6 +90,9 @@
         "penalCodeName": "اسم القانون الجزائي",
         "tenCodeName": "اسم شفرة العشرات"
       },
+      "infernoPagers": {
+        "invalidMessage": "خطأ: أرسل محرر Inferno بيانات عقدة صفحة غير صالحة."
+      },
       "info": {
         "communityId": "معرف المجتمع",
         "communityInfo": "معلومات المجتمع",
@@ -102,11 +106,18 @@
       "lookupTypes": {
         "configTitle": "إعدادات نوع البحث",
         "customRecordFieldId": "معرف حقل السجل المخصص",
+        "dropdownOptions": "خيارات القائمة المنسدلة",
         "fieldMappingIdHelp": "حدد حقل السجل المخصص الذي سيُستخدم لهذا البحث.",
         "fieldMappingIdValue": "معرّف ربط الحقول: {id}",
+        "fieldsCount": "{count} حقل",
+        "fieldTypeFallback": "حقل",
         "lookupTypes": "أنواع البحث",
+        "mask": "قناع",
+        "newLookup": "بحث جديد",
         "noFieldSelected": "لم يتم تحديد حقل",
         "noRecordTemplates": "لا توجد قوالب سجلات ذات حقول قابلة للربط متاحة.",
+        "optional": "اختياري",
+        "previewTitle": "معاينة {name}",
         "rangeDisabled": "النطاق معطّل",
         "rangeSearch": "بحث النطاق",
         "recordField": "حقل السجل",
@@ -144,12 +155,19 @@
       "rapidIQEditor": {
         "addOption": "إضافة خيار",
         "codeName": "اسم الشفرة",
+        "codesHelp": "إدارة رموز الاستجابة. يُستخدم معرّف الرمز في التدفقات، ويظهر اسم الرمز للإرسال.",
         "conditionsInOrder": "الشروط (بالترتيب)",
+        "flowsHelp": "أنشئ منطق التوجيه بشروط مرتبة. ينتهي كل تدفق برمز نتيجة واحد.",
+        "label": "التسمية",
         "maskHint": "مثال: (###) ###-####",
         "newCodeId": "معرّف الكود الجديد",
+        "options": "الخيارات",
         "order": "ترتيب",
         "question": "سؤال",
         "searchCodes": "بحث الرموز",
+        "stats": {
+          "flows": "التدفقات"
+        },
         "tabs": {
           "defaults": "المسار الافتراضي",
           "questions": "أسئلة"
@@ -386,6 +404,9 @@
       "enableMap": "تمكين الخريطة",
       "erlc": {
         "civilianRegistrationsHeader": "تسجيلات المدنيين",
+        "emergencyCallCommand": "أمر 911",
+        "notifyAlways": "دائمًا",
+        "notifyAlwaysTooltip": "سيتلقى اللاعب دائمًا رسالة خاصة بعد معالجة الأمر.",
         "notifyNever": "أبدًا",
         "notifyOnlyOnFailure": "فقط عند الفشل",
         "trafficStopDescriptionHint": "يدعم المتغيرات المخصصة.",
@@ -393,12 +414,15 @@
         "trafficStopVariableCopied": "تم نسخ المتغير إلى الحافظة",
         "trafficStopVariablePlate": "أول وسيط للأمر عند توفير لوحة."
       },
+      "erlcTab": "ER:LC",
       "eventDocumentation": "توثيق الحدث",
       "fivem": {
         "configureFeaturesTitle": "تكوين الميزات",
         "configureResourceTitle": "تهيئة المورد",
+        "downloadInstallTitle": "تنزيل وتثبيت",
         "manual": {
           "configComment": "# ابدأ مورد sonorancad والموارد المجمعة الأخرى",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "downloadButton": "تحميل Sonoran CAD لـ FiveM"
         },
         "rocketNode": {
@@ -648,12 +672,14 @@
     "learnMore": "اعرف المزيد",
     "lostConnection": "لقد فقد الأتصال بالسيرفر",
     "maximize": "تحقيق أقصى قدر",
+    "min": "الحد الأدنى",
     "minimize": "تصغير",
     "modify": "تعديل",
     "new": "جديد",
     "noData": "لايوجد معلومات",
     "noResults": "لايوجد نتائج",
     "notEqual": "غير متساوٍ",
+    "off": "إيقاف",
     "on": "تشغيل",
     "paste": "الصق",
     "pause": "توقف مؤقت",
@@ -669,6 +695,7 @@
     "serverStatus": "حالة السيرفر",
     "start": "ابدأ",
     "status": "الحالة",
+    "stop": "إيقاف",
     "success": "نجاح",
     "test": "اختبار",
     "tutorial": "كتيب التعليمات",
@@ -676,7 +703,10 @@
     "type": "النوع",
     "undo": "تراجع",
     "upload": "رفع صورة",
-    "uploader": "الحد الأقصى للحجم 5 ميقابايت"
+    "uploader": "الحد الأقصى للحجم 5 ميقابايت",
+    "versionDisplay": {
+      "updateReminder": "تأكد من تحديث تطبيقك للحصول على أحدث الميزات والتغييرات والإصلاحات!"
+    }
   },
   "communityMenu": {
     "buttons": {
@@ -697,6 +727,7 @@
     }
   },
   "CustomDomain": {
+    "chooseYourDomainName": "اختر اسم النطاق الخاص بك",
     "content": "المحتوى",
     "setCustomDomain": "تعيين نطاق مخصص"
   },
@@ -710,6 +741,7 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "landing": {
           "ctaDocs": "عرض المستندات",
+          "ctaPrimary": "اشترك اليوم",
           "faq": {
             "items": {
               "free": {
@@ -717,9 +749,16 @@
               }
             }
           },
+          "meta": {
+            "description": "برنامج CAD مجاني لـ ER:LC مع خريطة حية ثلاثية الأبعاد، وكاميرا الجسم، ومكالمات الطوارئ، وأدوات الشخصية، ودعم التراكب داخل اللعبة.",
+            "keywords": "ER:LC CAD، CAD مجاني لـ ER:LC، ERLC CAD، Sonoran CAD"
+          },
           "modules": {
             "map": {
               "previewTitle": "معاينة خريطة مباشرة ثلاثية الأبعاد"
+            },
+            "overlay": {
+              "previewTitle": "معاينة تراكب داخل اللعبة"
             }
           }
         },
@@ -738,14 +777,23 @@
                 "answer": "يتضمن تكامل FiveM دعم الخريطة المباشرة، وأدوات bodycam، ومزامنة قاعدة البيانات، ومجموعة متنامية من الإضافات الرسمية لسير عمل أعمق داخل اللعبة."
               },
               "setup": {
+                "answer": "يمكن لمعظم الخوادم إعداد المورد الأساسي في بضع دقائق. ثبّت المورد، وأضف معرف مجتمعك ومفتاح API، وأعد تشغيل الخادم، ثم فعّل الميزات التي تريدها.",
                 "question": "كم من الوقت يستغرق إعداد التكامل؟"
               }
             }
           },
+          "faqKicker": "بروتوكولات الدعم",
+          "faqTitlePrimary": "الأسئلة الشائعة",
           "meta": {
             "twitterImageAlt": "معاينة تكامل Sonoran CAD مع FiveM"
           },
           "modules": {
+            "bodycam": {
+              "title": "كاميرا الجسم المباشرة"
+            },
+            "map": {
+              "infoTitle": "خريطة ثلاثية الأبعاد"
+            },
             "plugins": {
               "description": "توسّع الوحدات الفرعية الرسمية Sonoran CAD عبر بقية حزمة خادم FiveM الخاصة بك."
             },
@@ -759,6 +807,8 @@
                 "description": "أنشئ نداءات غامرة للـ NPC واللاعبين تتدفق مباشرة إلى التوزيع مع بيانات CAD منظمة."
               },
               "ers": {
+                "description": "اربط سير عمل الراديو بين خادمك وSonoran CAD لتنسيق أسرع أثناء الحوادث النشطة.",
+                "previewTitle": "معاينة إضافة إذاعة الطوارئ",
                 "title": "إذاعة الطوارئ"
               },
               "pagers": {
@@ -810,10 +860,12 @@
       "title": "اختر طريقة تسجيل الدخول"
     },
     "newVisitor": {
-      "description": "تعرّف على المزيد حول نظام ملحقات التكامل في Sonoran CAD، والخريطة الحية المخصصة، ووظيفة مزامنة قاعدة البيانات، وتطبيقات iOS/Android، والمزيد!"
+      "description": "تعرّف على المزيد حول نظام ملحقات التكامل في Sonoran CAD، والخريطة الحية المخصصة، ووظيفة مزامنة قاعدة البيانات، وتطبيقات iOS/Android، والمزيد!",
+      "title": "مرحبًا"
     }
   },
   "management": {
+    "currentPlayersLastHour": "اللاعبون الحاليون (آخر ساعة واحدة)",
     "heartbeatMetrics": "مقاييس تكامل نبضات القلب:",
     "topServersHeartbeat": "أفضل 25 خادمًا (نبض القلب)"
   },
@@ -826,6 +878,7 @@
       "purchase": "شراء الأشتراك"
     },
     "labels": {
+      "bundleDiscount": "خصم الحزمة",
       "endDate": "تاريخ الانتهاء",
       "expertInstallation": "تثبيت احترافي",
       "plan": "الخطة",
@@ -834,10 +887,12 @@
       "quarterly": "ربع سنوي",
       "standard": "اساسي",
       "startDate": "تاريخ البدء",
-      "starter": "بدائي"
+      "starter": "بدائي",
+      "subscriptionsPerPage": "الإشتراكات لكل صفحة"
     },
     "pricing": {
-      "howToPurchase": "كيفية الشراء"
+      "howToPurchase": "كيفية الشراء",
+      "title": "ترقية تسعير الاشتراك"
     },
     "text": {
       "bundleAndSave": "حزمة وتوفير",
@@ -854,7 +909,9 @@
       "noneFound": "لم يتم العثور على تسجيلات كاميرا الجسم."
     },
     "bodycamViewer": {
-      "singleCam": "كاميرا واحدة"
+      "allCams": "جميع الكاميرات",
+      "singleCam": "كاميرا واحدة",
+      "startRecording": "بدء التسجيل"
     },
     "callEditor": {
       "addNote": "إضافة ملاحظة",
@@ -899,6 +956,7 @@
         "walkUp": "مشاه"
       },
       "postal": "الرمز البريدي",
+      "previousCall": "المكالمة السابقة (سهم لليسار)",
       "primaryUnit": "المستجيب الأول",
       "priority": "الأولوية",
       "savedTypes": "أنواع المحفوظات",
@@ -916,6 +974,7 @@
       "units": "الوحدات",
       "unitStatusAttachedHint": "عندما يتم إرفاق وحدة بمكالمة، حدّث حالتها.",
       "unitStatusClosedHint": "عندما يتم إغلاق مكالمة، حدّث حالة جميع الوحدات المرفقة.",
+      "unitStatusTimers": "حالة الوحدة: المؤقتات",
       "updateCall": "تحديث بيانات البلاغ",
       "webhooks": {
         "closed": "مغلق",
@@ -944,15 +1003,19 @@
     "callouts": {
       "calloutLabel": "استدعاء",
       "chanceToAttack": "فرصة لمهاجمة اللاعب",
-      "chanceToObtainWeapons": "فرصة الحصول على الأسلحة"
+      "chanceToObtainWeapons": "فرصة الحصول على الأسلحة",
+      "chanceToSurrender": "فرصة للاستسلام"
     },
     "chat": {
+      "emptySelection": "اختر وحدةً واحدة أو أكثر متصلة لبدء الدردشة.",
       "justYou": "أنت فقط",
+      "linkPreview": "[الرابط] {label}",
       "noThreads": "لا توجد محادثات نشطة بعد.",
       "online": "متصل",
       "recipientsHint": "اختر الوحدات المتصلة بالإنترنت لبدء محادثة أو مواصلتها.",
       "ttsIncomingLink": "{sender}. {label}",
-      "ttsIncomingTooltip": "قراءة رسائل الدردشة الواردة بصوت عالٍ"
+      "ttsIncomingTooltip": "قراءة رسائل الدردشة الواردة بصوت عالٍ",
+      "unableToSend": "تعذّر إرسال الدردشة الآن."
     },
     "command": {
       "attach": "إرفاق",
@@ -973,6 +1036,7 @@
     "diagram": {
       "lockUnlockSelected": "قفل/إلغاء قفل المحدد",
       "moveLayerDown": "نقل الطبقة إلى الأسفل (Shift = الأسفل)",
+      "shortcutDelete": "اختصار: DELETE",
       "shortcutLock": "اختصار: L",
       "shortcutUndo": "اختصار: CTRL + Z",
       "shortcutUp": "اختصار: (SHIFT) سهم لأعلى"
@@ -997,6 +1061,7 @@
       "activeServer": "سيرفر نشط",
       "activeUnits": "الوحدات المتاحة",
       "bodyCam": "كاميرا الجسم",
+      "bodyCamRecordings": "تسجيلات كاميرا الجسم",
       "bodycamViewer": {
         "allCams": "All Cams",
         "live": "Live",
@@ -1026,14 +1091,17 @@
     },
     "liveMap3d": {
       "blip": {
+        "dispatchCall": "إرسال بلاغ",
         "emergency": "٩١١",
+        "newCallout": "استدعاء جديد",
         "sign": "إشارة"
       }
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "تقليل حجم العلامة",
-        "dragAndDrop": "(السحب والإفلات)"
+        "dragAndDrop": "(السحب والإفلات)",
+        "mapMode": "وضع الخريطة"
       }
     },
     "lookup": {
@@ -1157,6 +1225,7 @@
             "add": "تمت إضافة السجل",
             "edit": "تم تعديل السجل"
           },
+          "before": "قبل",
           "noFieldChanges": "لم تتغير قيم الحقول في هذا السجل."
         },
         "linkTitle": "عنوان الرابط",
@@ -1239,7 +1308,9 @@
       "automationLabelCountDown": "الأتمتة: الحالة {status} {seconds} ثانية",
       "automationLabelCountUp": "الأتمتة: الحالة {status} زيادة تصاعدية",
       "clearAttachment": "مسح المرفق",
+      "minutes": "دقائق",
       "newTimer": "مؤقت جديد",
+      "seconds": "ثوانٍ",
       "timers": "المؤقتات"
     },
     "unitEditor": {
@@ -1250,6 +1321,7 @@
       "confirmRemove": "هل أنت متأكد من رغبتك بحذف بطاقة التعريف ؟",
       "department": "القسم",
       "departments": "الاقسام",
+      "effects": "التأثيرات",
       "electronBodycamOpenPermissions": "فتح الأذونات",
       "electronBodycamPermissionWarning": "يلزم إذن تسجيل الشاشة في macOS لالتقاط كاميرا الجسم. فعِّله في إعدادات النظام، ثم أنهِ Sonoran CAD بالكامل وأعِد فتحه.",
       "group": "الدورية",
@@ -1341,6 +1413,7 @@
     "language": "اللغات",
     "languageKorean": "الكورية/한국어",
     "lockWindow": "قفل النافذة",
+    "microphoneNumbered": "الميكروفون {index}",
     "microphoneStt": "الميكروفون (STT)",
     "overlay": {
       "addBulb": "أضف لمبة",
@@ -1354,11 +1427,14 @@
       "credentials": "بيانات الاعتماد",
       "customTextFiles": "ملفات النص المخصصة",
       "dataKeys": "مفاتيح البيانات",
+      "dataStorage": "تخزين البيانات",
       "delay": "تأخير",
       "events": "الفعاليات",
       "field": "حقل",
       "fileName": "اسم الملف",
       "fontEditor": "محرر الخط",
+      "fontSize": "حجم الخط",
+      "fontWeight": "وزن الخط:",
       "goveeWifi": "جوفي واي فاي",
       "lighting": "الإضاءة",
       "manualIp": "عنوان IP يدوي (اختياري)",
@@ -1367,12 +1443,16 @@
       "refreshPayment": "تحديث الدفع",
       "scan": "مسح",
       "scanForBulbs": "ابحث عن المصابيح",
+      "streamAdBanner": "اطّلع على تراكب البث المباشر وروبوت Twitch الخاص بنا!",
       "streamOverlay": "تراكب البث",
       "twitch": "Twitch",
       "twitchConfig": "تكوين Twitch",
       "twitchLogs": "سجلات Twitch",
       "txtFiles": "ملفات TXT",
-      "unitUpdates": "تحديثات الوحدة"
+      "unitUpdates": "تحديثات الوحدة",
+      "wyzeApiKey": "مفتاح API لـ Wyze",
+      "wyzeColor": "وايز لون",
+      "wyzeKeyId": "معرّف مفتاح Wyze"
     },
     "panic": "زر الذعر",
     "prefix": "اختصار",
@@ -1384,13 +1464,16 @@
     "showHide": "عرض/إخفاء",
     "systemDefaultMicrophone": "الميكروفون الافتراضي للنظام",
     "theme": {
+      "backgroundImageFit": "ملاءمة صورة الخلفية",
+      "backgroundImagePosition": "موضع صورة الخلفية",
       "backgroundImageScale": "مقياس صورة الخلفية",
       "bgImageFit": {
         "contain": "احتواء (ملاءمة داخلية)"
       },
       "bgImagePosition": {
         "center": "توسيط",
-        "left": "يسار"
+        "left": "يسار",
+        "right": "اليمين"
       },
       "bgImageScale": {
         "p150": "150%",
