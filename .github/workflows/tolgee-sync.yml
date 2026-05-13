@@ -1,4 +1,4 @@
-name: Tolgee Sync
+﻿name: Tolgee Sync
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
     paths:
       - "*.json"
       - ".tolgeerc"
+      - ".tolgeerc.import-all.json"
       - ".github/workflows/tolgee-sync.yml"
   workflow_dispatch:
     inputs:
@@ -61,6 +62,98 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Ensure Tolgee language tags
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          import fs from 'node:fs';
+
+          const apiUrl = (process.env.TOLGEE_API_URL || 'https://app.tolgee.io').replace(/\/$/, '');
+          const configPath = process.env.IMPORT_EXISTING_TRANSLATIONS === 'true'
+            ? '.tolgeerc.import-all.json'
+            : '.tolgeerc';
+          const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+          const required = (config.push.files || [])
+            .map(file => file.language)
+            .filter(Boolean);
+          const languageMetadata = {
+            ar: { name: 'Arabic', originalName: 'Arabic', flagEmoji: 'SA' },
+            cs: { name: 'Czech', originalName: 'Cestina', flagEmoji: 'CZ' },
+            da: { name: 'Danish', originalName: 'Dansk', flagEmoji: 'DK' },
+            de: { name: 'German', originalName: 'Deutsch', flagEmoji: 'DE' },
+            en: { name: 'English', originalName: 'English', flagEmoji: 'US' },
+            'en-US': { name: 'English (United States)', originalName: 'English (United States)', flagEmoji: 'US' },
+            es: { name: 'Spanish', originalName: 'Espanol', flagEmoji: 'ES' },
+            'es-ES': { name: 'Spanish (Spain)', originalName: 'Espanol (Espana)', flagEmoji: 'ES' },
+            fi: { name: 'Finnish', originalName: 'Suomi', flagEmoji: 'FI' },
+            fr: { name: 'French', originalName: 'Francais', flagEmoji: 'FR' },
+            it: { name: 'Italian', originalName: 'Italiano', flagEmoji: 'IT' },
+            ja: { name: 'Japanese', originalName: 'Japanese', flagEmoji: 'JP' },
+            ko: { name: 'Korean', originalName: 'Korean', flagEmoji: 'KR' },
+            'ko-KR': { name: 'Korean (South Korea)', originalName: 'Korean (South Korea)', flagEmoji: 'KR' },
+            nl: { name: 'Dutch', originalName: 'Nederlands', flagEmoji: 'NL' },
+            'nl-BE': { name: 'Dutch (Belgium)', originalName: 'Nederlands (Belgie)', flagEmoji: 'BE' },
+            no: { name: 'Norwegian', originalName: 'Norsk', flagEmoji: 'NO' },
+            pl: { name: 'Polish', originalName: 'Polski', flagEmoji: 'PL' },
+            pt: { name: 'Portuguese', originalName: 'Portugues', flagEmoji: 'PT' },
+            ru: { name: 'Russian', originalName: 'Russian', flagEmoji: 'RU' },
+            sv: { name: 'Swedish', originalName: 'Svenska', flagEmoji: 'SE' },
+            tr: { name: 'Turkish', originalName: 'Turkce', flagEmoji: 'TR' },
+            uk: { name: 'Ukrainian', originalName: 'Ukrainian', flagEmoji: 'UA' },
+            zh: { name: 'Chinese', originalName: 'Chinese', flagEmoji: 'CN' },
+            'zh-CN': { name: 'Chinese (Simplified)', originalName: 'Chinese (Simplified)', flagEmoji: 'CN' },
+            'zh-TW': { name: 'Chinese (Traditional)', originalName: 'Chinese (Traditional)', flagEmoji: 'TW' }
+          };
+
+          const request = async (url, options = {}) => {
+            const response = await fetch(url, {
+              ...options,
+              headers: {
+                'X-API-Key': process.env.TOLGEE_API_KEY,
+                'Content-Type': 'application/json',
+                ...(options.headers || {})
+              }
+            });
+            const text = await response.text();
+            let body;
+            try {
+              body = text ? JSON.parse(text) : null;
+            } catch {
+              body = text;
+            }
+            if (!response.ok) {
+              throw new Error(`${options.method || 'GET'} ${url} failed: ${response.status} ${JSON.stringify(body)}`);
+            }
+            return body;
+          };
+
+          const body = await request(`${apiUrl}/v2/projects/${process.env.TOLGEE_PROJECT_ID}/languages?size=500`);
+          const languages = body?._embedded?.languages || body?.content || [];
+          const existing = new Set(languages.map(language => language.tag).filter(Boolean));
+
+          console.log(`Tolgee languages: ${Array.from(existing).sort().join(', ') || '(none)'}`);
+          console.log(`Required by ${configPath}: ${required.join(', ')}`);
+
+          for (const tag of required) {
+            if (existing.has(tag)) continue;
+
+            const metadata = languageMetadata[tag] || { name: tag, originalName: tag, flagEmoji: 'UN' };
+            console.log(`Creating Tolgee language: ${tag}`);
+            await request(`${apiUrl}/v2/projects/${process.env.TOLGEE_PROJECT_ID}/languages`, {
+              method: 'POST',
+              body: JSON.stringify({ tag, ...metadata })
+            });
+            existing.add(tag);
+          }
+
+          console.log(`Tolgee languages after sync: ${Array.from(existing).sort().join(', ')}`);
+          NODE
+        env:
+          TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
+          TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
+          TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL || secrets.TOLGEE_API_URL }}
+          IMPORT_EXISTING_TRANSLATIONS: ${{ inputs.import_existing_translations || 'false' }}
+
       - name: Push source strings to Tolgee
         run: |
           set -euo pipefail
@@ -68,6 +161,7 @@ jobs:
           if [ -n "${TOLGEE_API_URL:-}" ]; then
             api_url_args=(--api-url "$TOLGEE_API_URL")
           fi
+          echo "Import existing translations: ${IMPORT_EXISTING_TRANSLATIONS:-false}"
           config_args=()
           if [ "${IMPORT_EXISTING_TRANSLATIONS:-false}" = "true" ]; then
             config_args=(--config .tolgeerc.import-all.json)
@@ -85,7 +179,7 @@ jobs:
           TOLGEE_API_KEY: ${{ secrets.TOLGEE_API_KEY }}
           TOLGEE_PROJECT_ID: ${{ secrets.TOLGEE_PROJECT_ID }}
           TOLGEE_API_URL: ${{ vars.TOLGEE_API_URL || secrets.TOLGEE_API_URL }}
-          IMPORT_EXISTING_TRANSLATIONS: ${{ github.event.inputs.import_existing_translations || 'false' }}
+          IMPORT_EXISTING_TRANSLATIONS: ${{ inputs.import_existing_translations || 'false' }}
 
       - name: Pull translated strings from Tolgee
         run: |
