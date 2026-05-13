@@ -1,681 +1,41 @@
 {
-  "common": {
-    "communityId": "ID Społeczności",
-    "cancel": "Anuluj",
-    "maximize": "Maksymalizuj",
-    "minimize": "Minimalizuj",
-    "close": "Zamknij",
-    "search": "Szukaj",
-    "help": "Pomoc",
-    "new": "Nowy",
-    "add": "Dodaj",
-    "edit": "Edytuj",
-    "modify": "Modyfikuj",
-    "save": "Zapisz",
-    "confirm": "Zatwierdź",
-    "reset": "Resetuj",
-    "undo": "Cofnij",
-    "actions": "Działania",
-    "id": "ID",
-    "status": "Status",
-    "uploader": "Przesyłanie (Max 5MB)",
-    "upload": "Prześlij",
-    "remove": "Usuń",
-    "enabled": "Włączone",
-    "activeServer": "Aktywne serwery",
-    "success": "Sukces",
-    "failed": "Nieudane",
-    "tutorial": "Samouczek",
-    "tutorials": "Samouczki",
-    "refresh": "Odśwież",
-    "autoSort": "Automatyczne Sortowanie",
-    "type": "Typ",
-    "itemsPerPage": "Przedmiotów na stronę",
-    "noData": "Brak danych",
-    "noResults": "Brak wyników",
-    "externalWindow": "Otwórz w nowym oknie",
-    "lostConnection": "Straciłeś połączenie z serwerem",
-    "serverStatus": "Status serwera",
-    "import": "Importuj",
-    "importPrompt": "Wklej treść JSON",
-    "export": "Eksportuj",
-    "learnMore": "Dowiedz się więcej",
-    "copy": "Kopiuj",
-    "paste": "Wklej",
-    "icon": "Ikona",
-    "test": "Testuj",
-    "start": "Startuj",
-    "pause": "Wstrzymaj",
-    "range": "Zasięg",
-    "equal": "Równe",
-    "notEqual": "Nie równe",
-    "contains": "Zawiera",
-    "errors": {
-      "limitReached": "Error: limit osiągnięty"
-    }
-  },
-  "sideMenu": {
-    "buttons": {
-      "settings": "Ustawienia",
-      "login": "Zaloguj się",
-      "logout": "Wyloguj się",
-      "communityMenu": "Menu Społeczności",
-      "switchCommunities": "Zmień Społeczność",
-      "downloads": "Pliki do pobrania",
-      "tutorials": "Samouczki",
-      "myAccount": "Moje konto",
-      "goFullscreen": "Włącz tryb pełnoekranowy",
-      "exitFullscreen": "Wyłącz tryb pełnoekranowy",
-      "disclaimer": "Uzyskując dostęp lub korzystając z SonoranCAD, akceptujesz nasze warunki i zasady oraz politykę prywatności.",
-      "menu": "Menu"
-    }
-  },
-  "settings": {
-    "settings": "Ustawienia",
-    "volume": "Głośność",
-    "helpImprove": "Pomóż ulepszyć to tłumaczenie",
-    "language": "Język",
-    "voice": "Głos",
-    "apiIdDisable": "Musisz być zalogowany do społeczności aby ustawić swoje API ID",
-    "secretDisable": "Musisz być zalogowany do społeczności, aby uzyskać swój Sekretny ID",
-    "hotkeys": "Skróty klawiszowe",
-    "hotkeyDisable": "Skróty klawiszowe są niedostępne w bezpłatnej wersji",
-    "prefix": "Prefiks",
-    "panic": "Panika",
-    "lockWindow": "Zablokuj okno",
-    "unlockWindow": "Odblokuj okno",
-    "quickResize": "Szybka zmiana rozmiaru",
-    "exitResize": "Zakończ zmianę rozmiaru",
-    "classicLayout": "Klasyczny układ",
-    "resetLayout": "Zresetuj układ",
-    "bringToTop": "Przenieś na górę",
-    "showHide": "Pokaż/Ukryj",
-    "overlay": {
-      "streamOverlay": "Nakładka strumieniowa",
-      "credentials": "Poświadczenia",
-      "configuration": "Konfiguracja",
-      "twitchLogs": "Logi Twitch",
-      "twitchConfig": "Konfiguracja Twitch",
-      "refreshPayment": "Odśwież płatność",
-      "channel": "Kanał",
-      "oauthToken": "Token OAuth",
-      "obsTextFiles": "Pliki tekstowe OBS",
-      "unitUpdates": "Aktualizacje jednostki",
-      "callUpdates": "Aktualizacje zgłoszeń",
-      "twitch": "Twitch",
-      "txtFiles": "Plik tekstowy",
-      "fileName": "Nazwa pliku",
-      "field": "Pole",
-      "customTextFiles": "Niestandardowe pliki tekstowe",
-      "dataKeys": "Klucze Danych",
-      "events": "Wydarzenia",
-      "bodycam": "Kamera nasobna",
-      "confirmReset": "Czy napewno chcesz zresetować konfigurację?",
-      "lighting": "Oświetlenie",
-      "addFrame": "Dodaj ramkę",
-      "addBulb": "Dodaj żarówkę",
-      "delay": "Opóźnienie",
-      "scanForBulbs": "Skanuj w poszukiwaniu żarówek",
-      "bulbType": "Typ żarówki",
-      "scan": "Skan",
-      "manualIp": "Manual IP(Dodatkowe)"
-    }
-  },
-  "taskbar": {
-    "system": "System",
-    "newWindow": "Nowe okno",
-    "pinToTaskbar": "Przypnij do paska zadań",
-    "unpinFromTaskbar": "Odepnij od paska zadań",
-    "taskbarPosition": "Pozycja paska zadań",
-    "tabCustomization": "Dopasowywanie zakładki",
-    "displayTabIcons": "Wyświelt ikony zakładek",
-    "displayTabLabels": "Wyświetl nazwy zakładek",
-    "layoutCustomization": "Dostosowanie układu",
-    "startMenu": "Menu startowe"
-  },
-  "login": {
-    "buttons": {
-      "login": "Zaloguj się",
-      "forgot": "Zapomniałem hasła",
-      "create": "Stwórz konto",
-      "cancel": "Anuluj",
-      "staySignedIn": "Niewylogowuj mnie",
-      "switchCommunities": "Zmień Społeczność"
-    },
-    "labels": {
-      "email": "E-mail",
-      "username": "Nazwa Użytkownika",
-      "password": "Hasło",
-      "confirmPassword": "Potwierdź Hasło",
-      "emailPreferences": "Preferencje dotyczące poczty email",
-      "resetPassword": "Zresetuj Hasło"
-    }
-  },
-  "selectionPage": {
-    "buttons": {
-      "myCommunities": "Dashboard",
-      "joinCommunity": "Dołącz do Społeczności",
-      "discover": "Odkrywaj",
-      "leaveCommunity": "Opuść Społeczność",
-      "createCommunity": "Stwórz Społeczność",
-      "My Account": "Moje Konto"
-    },
-    "labels": {
-      "communityName": "Nazwa Społeczności",
-      "website": "Strona internetowa (Opcjonalnie)"
-    },
-    "text": {
-      "joinHeader": "Dołącz do społeczności",
-      "joinText": "Dołącz do istniejącej społeczności systemu CAD!",
-      "createHeader": "Rejestracja systemu CAD",
-      "createText": "Zarejestruj nową społeczność CAD, aby inni mogli do niej dołączyć!",
-      "helpCommunityId1": "ID Twojej społeczności jest unikatowym identyfikatorem Twojej społeczności. To jest to, czego użytkownik będzie używał do logowania się do konkretnego systemu CAD.",
-      "helpCommunityId2": "Zazwyczaj jest to skrót Twojej społeczności.",
-      "helpCommunityId3": "NP: Real Life RolePlay - ID: RLRP",
-      "helpCommunityName": "Nazwa Twojej społeczności to publiczna nazwa Twojej społeczności roleplay.",
-      "helpCommunityWebsite": "Strona internetowa Twojej społeczności to link do forum, discorda lub innej strony. To pole jest OPCJONALNE i nie jest wymagane!",
-      "confirmLeave1": "Jesteś pewien, że chcesz opuścić tę Społeczność?",
-      "confirmLeave2": "Twoje konto oraz wszelkie dane z tej społeczności zostaną usunięte!",
-      "communityNotFound": "Nie znaleziono społeczności",
-      "helpCommunityIdFindHeader": "Gdzie znajdę ID Społeczności?",
-      "helpCommunityIdFind1": "Musisz się skontaktować z członkami lub Administracją Twojej społeczności graczy.",
-      "helpCommunityIdFind2": "Otrzymasz od nich konkretne ID Społeczności dla swojego systemu CAD."
-    },
-    "tooltips": {
-      "leaveCommunity": "Opuść tę Społeczność.",
-      "owner": "Jesteś właścicielem tej Społeczności.",
-      "search": "Szukaj społeczności SonranCAD",
-      "register": "Zarejestruj swój SonranCAD",
-      "joinHelp": "Nie wiesz co zrobić?",
-      "joinThis": "Dołącz do tej społeczności.",
-      "join": "Dołącz"
-    },
-    "errors": {
-      "noCommunityID": "Błąd: Proszę wpisz ID Społeczności!",
-      "communityIdLength": "Błąd: ID Społeczności musi mieć między 1 a 50 znaków!",
-      "communityIdCharacters": "Błąd: ID Twojej społeczności może zawierać tylko litery, cyfry, podkreślenia oraz myślniki!",
-      "communityNameLength": "Błąd: Nazwa Twojej społeczności musi mieć jednym 1 a 50 znaków!"
-    }
-  },
   "account": {
-    "labels": {
-      "myAccount": "Moje konto",
-      "email": "E-mail",
-      "username": "Nazwa użytkownika",
-      "emailPreferences": "Preferencje Email",
-      "confirmPassword": "Potwierdź hasło",
-      "emailMe": "Informuj mnie mailowo o ważnych ogłoszeniach, aktualizacjach oraz promocjach."
-    },
     "buttons": {
       "subscriptions": "Subskrypcje"
-    }
-  },
-  "payment": {
-    "text": {
-      "setCommunityId": "Ustaw ID społeczności",
-      "newSubscription": "Nowa Subskrypcja",
-      "bundleAndSave": "Pakiet i oszczędzaj",
-      "serversEmail": "Email konta Sonoran Servers",
-      "serverIp": "IP Serwera",
-      "bundleExplain": "Oszczędzaj 30% każdego miesiąca, gdy kupujesz VPS od Sonoran Servers."
+    },
+    "delete": {
+      "confirm": "Usunąć konto",
+      "failure": "Nie udało się usunąć konta.",
+      "message": "Czy na pewno chcesz usunąć swoje konto i bezpowrotnie utracić wszystkie powiązane dane?",
+      "title": "Usunąć konto?"
     },
     "labels": {
-      "plan": "Plan",
-      "startDate": "Data rozpoczęcia",
-      "starter": "Pakiet początkowy",
-      "standard": "Standardowy",
-      "plus": "Plus",
-      "pro": "Pro",
-      "expertInstallation": "Profesjonalny montaż",
-      "endDate": "Data zakończenia"
-    },
-    "buttons": {
-      "purchase": "Kup Subskrypcje",
-      "comparePlans": "Pricing",
-      "oneTimePurchases": "Zakupy jednorazowe",
-      "amount": "Kwota",
-      "openBillingPortal": "Open Billing Portal"
-    }
-  },
-  "communityMenu": {
-    "buttons": {
-      "civilian": "Cywil",
-      "dmv": "DMV",
-      "law": "Prawnik",
-      "police": "Policja",
-      "fire": "Straż Pożarna",
-      "ems": "Pogotowie Ratunkowe",
-      "dispatch": "Dyspozytor",
-      "admin": "Administrator",
-      "discord": "Discord",
-      "website": "Strona Internetowa",
-      "setDefault": "Ustaw domyślną społeczność"
-    },
-    "labels": {
-      "permissionKey": "Klucz Uprawnień"
-    }
-  },
-  "civilian": {
-    "buttons": {
-      "newCharacter": "Nowa Postać",
-      "editCharacter": "Edytuj Postać",
-      "records": "Baza Danych",
-      "dmv": "DMV"
-    },
-    "characterEditor": {
-      "first": "Imię",
-      "last": "Nazwisko",
-      "mi": "Drugie Imię",
-      "dob": "Data Urodzenia",
-      "age": "Wiek",
-      "sex": "Płeć",
-      "aka": "Znany również jako (Pseudonim / Przezwisko / Poprzednie Nazwisko itp)",
-      "residence": "Miejsce zamieszkania",
-      "zip": "Kod Pocztowy",
-      "occupation": "Zawód",
-      "height": "Wzrost",
-      "weight": "Waga",
-      "skin": "Odcień skóry",
-      "hair": "Kolor włosów",
-      "eye": "Kolor oczu",
-      "emergencyContact": "Kontakt w nagłych wypadkach",
-      "relationship": "Związek",
-      "contactNumber": "Numer kontaktowy",
-      "image": "Zdjęcie",
-      "addCharacter": "Dodaj Postać",
-      "saveCharacter": "Zapisz Postać",
-      "removeCharacter": "Ustaw Postać",
-      "createNewCharacter": "Stwórz nową postać",
-      "editExistingCharacter": "Edytuj postać",
-      "confirmRemove": "Jesteś pewny, że chcesz usunąć tę postać?"
-    },
-    "labels": {
-      "selectedCharacter": "Wybierz postać"
-    },
-    "errors": {
-      "maxCharacters": "Błąd: Osiągnąłeś maksymalną liczbę postaci dla Twojej społeczności"
-    }
-  },
-  "police": {
-    "lookup": {
-      "lookup": "Wyszukiwanie",
-      "sendToUnits": "Wyślij do jednostki (jednostek)",
-      "partial": "Częściowy",
-      "exact": "Dokładny",
-      "reportsHeader": "Raporty",
-      "identifier": "Kryptonim",
-      "id": "ID Rejestru",
-      "newLookup": "Nowe wyszukanie",
-      "refresh": "Odśwież",
-      "nameSearch": "Szukanie Osoby",
-      "first": "Imię",
-      "last": "Nazwisko",
-      "mi": "Drugie Imię",
-      "plateSearch": "Szukanie Pojazdu",
-      "plate": "Numer rejestracyjny",
-      "agency": "Agencja",
-      "department": "Departament",
-      "unit": "Jednostka",
-      "civilians": "Cywile",
-      "records": "Rejestry",
-      "noRecordsFound": "Nie znaleziono rejestru",
-      "recordsPerPage": "Rejestrów na stronę",
-      "recordsNoData": "Brak dostępnych rejestrów",
-      "recordsNoResults": "Nie znaleziono rejestrów",
-      "statuses": {
-        "active": "Aktywne",
-        "inactive": "Nieaktywne",
-        "closed": "Zamknięte"
-      },
-      "columns": {
-        "name": "Imię",
-        "plate": "Rejestracja",
-        "charges": "Przewinienia",
-        "flags": "Flagi",
-        "date": "Data",
-        "status": "Status",
-        "type": "Typ",
-        "expiration": "Wygasa",
-        "first": "Imię",
-        "last": "Nazwisko",
-        "mi": "Drugie Imię"
-      },
-      "alerts": {
-        "emptySearch": "Błąd: Puste Wyszukanie!"
-      },
-      "getOwner": "Uzyskaj właściciela"
-    },
-    "records": {
-      "general": {
-        "records": "Rejestry",
-        "reports": "Raporty"
-      },
-      "editor": {
-        "recordType": "Typ Rejestru",
-        "dmvType": "Typ DMV",
-        "addRecord": "Dodaj Rejestr",
-        "saveRecord": "Zapisz Rejestr",
-        "removeRecord": "Usuń Rejestr",
-        "pdf": "PDF",
-        "applyForDmv": "Ubiegaj się o dostęp do Rejestrów DMV",
-        "copyLink": "Kopiuj link do rekordu",
-        "pasteLink": "Wklej link do rekordu",
-        "linkTitle": "Tytuł linku",
-        "noCustomTypes": "Brak rodzaji rejestrów: Dodaj je tutaj Administrator > Dostosowywanie > Niestandardowe Rejestry",
-        "status": {
-          "active": "AKTYWNE",
-          "closed": "ZAMKNIĘTE",
-          "pending": "OCZEKUJE",
-          "approved": "ZATWIERDZONE",
-          "rejected": "ODRZUCONE"
-        },
-        "errors": {
-          "requiredField": "Błąd: Wymagane Pole",
-          "nameOrPlate": "Błąd: Ten rejestr wymaga dodania cywila lub pojazdu!",
-          "noName": "Błąd: Ten rejestr wymaga dodania cywila!",
-          "noPlate": "Błąd: Ten rejestr wymaga dodania pojazdu!",
-          "noCopiedLink": "Błąd: Nie masz skopiowanego linku do rekordu!"
-        }
-      },
-      "agency": {
-        "agencyInformation": "Informacje o Agencji",
-        "agencyName": "Nazwa Agencji",
-        "recordNum": "Numer Rejestru",
-        "date": "Data",
-        "observingOfficer": "Jednostka Obserwacyjna",
-        "location": "Lokalizacja",
-        "zip": "Kod Pocztowy",
-        "badge": "Numer Odznaki"
-      },
-      "getCiv": {
-        "characterSearch": "Wyszukiwanie cywila",
-        "civilianInfo": "Informacje o cywilu"
-      },
-      "getVeh": {
-        "vehicleSearch": "Wyszukiwanie pojazdu"
-      },
-      "narrative": {
-        "narrative": "Narracja"
-      },
-      "charges": {
-        "charges": "Przewinienia",
-        "charge": "Przewinienie",
-        "chargeNumber": "Numer przewinienia",
-        "fineTotal": "Łączna kwota",
-        "chargeType": "Rodzaj przewinienia",
-        "counts": "Liczby",
-        "titleCode": "Tytuł, Kod",
-        "bondType": "Rodzaj poświadczenia",
-        "bondFineAmount": "Poświadczenie/Kwota",
-        "jailTime": "Czas więzienia"
-      },
-      "speed": {
-        "citationInformation": "Informacje o mandacie",
-        "vehicleSpeed": "Prędkość pojazdu",
-        "speedLimit": "Dozwolona prędkość",
-        "paceType": "Rodzaj Pomiaru",
-        "courtDate": "Data Pomiaru",
-        "courtTime": "Czas Pomiaru",
-        "fine": "Kwota",
-        "pace": "Tempo",
-        "radar": "Radar",
-        "other": "Inne"
-      },
-      "status": {
-        "status": "Status",
-        "dateSubmitted": "Data Przesłania",
-        "supervisorSignature": "Podpis Supervisora/Sędziego",
-        "observingSignature": "Podpis Oficera"
-      },
-      "vehicle": {
-        "vehicleInformation": "Informacje o pojeździe",
-        "type": "Typ pojazdu",
-        "plate": "Rejestracja",
-        "make": "Marka",
-        "model": "Model",
-        "color": "Kolor",
-        "year": "Rocznik",
-        "types": {
-          "sedan": "Sedan",
-          "coupe": "Coupé",
-          "suv": "SUV",
-          "truck": "Ciężarówka",
-          "offroad": "Terenowy",
-          "marine": "Łódź",
-          "motorcycle": "Motocykl",
-          "aircraft": "Samolot"
-        }
-      },
-      "arrest": {
-        "arrestInformation": "Informacje o aresztowaniu",
-        "weapons": "Broń(e)",
-        "arrestType": "Rodzaj aresztowania",
-        "probationaryOfficer": "Oficer dokonujący aresztowania"
-      }
-    },
-    "recordCenter": {
-      "myFiles": "Moje Pliki",
-      "newReport": "Nowy Raport",
-      "newRecord": "Nowy Rejestr",
-      "supervisorPanel": "Panel Supervisora",
-      "pendingRecords": "Oczekujące rejestry",
-      "filesAwaitingApproval": "Pliki oczekujące zatwierdzenia",
-      "pendingFiles": "Oczekujące Pliki",
-      "noReportsForSuper": "Żadne raporty nie wymagają akcji supervisora",
-      "noReportsFound": "Nie znaleziono raportów",
-      "noRecordsForSuper": "Żadne rejestry nie wymagają akcji supervisora",
-      "noRecordsFound": "Nie znaleziono rejestrów",
-      "errors": {
-        "noRecordTypes": "Brak typów rejestrów: Dodaj je w Administrator > Dostosowywanie > Niestandardowe Rejestry",
-        "noReportTypes": "Brak typów raportów: Dodaj je w Administrator > Dostosowywanie > Niestandardowe Rejestry",
-        "syncEnabledFeatDisabled": "Ta funkcja nie jest kompatybilna z synchronizacją bazy danych"
-      }
-    },
-    "callEditor": {
-      "newDispatch": "Nowe Wezwanie",
-      "savedTypes": "Zapisane typy",
-      "dispatch": "Wezwanie",
-      "callViewer": "Podgląd Wezwanie",
-      "createCall": "Stwórz Wezwanie",
-      "updateCall": "Zaktualizuj Wezwanie",
-      "clearEditor": "Wyczyść Edytor",
-      "selfDispatch": "Samodzielny Dyspozytor",
-      "selfClear": "Samodzielne Czyszczenie",
-      "units": "Jednostki",
-      "callOrigin": "Pochodzenie Wezwania",
-      "callStatus": "Status Wezwania",
-      "priority": "Priorytet",
-      "block": "Numer Bloku",
-      "address": "Adres",
-      "postal": "Kod Pocztowy",
-      "callTitle": "Tytuł Wezwania",
-      "code": "Kod",
-      "primaryUnit": "Główna Jednostka",
-      "callDescription": "Opis Wezwania",
-      "callNotes": "Notatki do Wezwania",
-      "note": "Notatka",
-      "addNote": "Dodaj Notatkę",
-      "dispatchRecord": "Zgłoszenie dyspozytorskie",
-      "trackPrimary": "Śledź jednostkę podstawową (GPS)",
-      "confirmations": {
-        "close1": "Ustawiłeś status wezwania na ZAMKNIĘTE.",
-        "close2": "Jesteś pewny, że chcesz zamknąć to wezwanie?",
-        "close3": "To wezwanie oraz wszelkie dane zostaną usunięte!",
-        "detatch": "Odłącz",
-        "detatchConfirm": "Jesteś pewny, że chcesz odłączyć od tego wezwania?"
-      },
-      "statusOptions": {
-        "pending": "Oczekuje",
-        "active": "Aktywne",
-        "closed": "Zamknięte"
-      },
-      "originOptions": {
-        "caller": "Dzwoniący",
-        "radioDispatch": "Radiowo (Dyspozytor)",
-        "observed": "Zaobserwowane",
-        "walkUp": "Podejście"
-      },
-      "errors": {
-        "unitAlreadyOnCall": "Błąd: Ta jednostka jest już dodana do tego wezwania!",
-        "noOrigin": "Błąd: To wezwanie nie ma ustawionego pochodzenia!",
-        "noStatus": "Błąd: To wezwanie nie ma ustawionego statusu!",
-        "noPriority": "Błąd: To wezwanie nie ma ustawionego priorytetu!",
-        "noTitle": "Błąd: To wezwanie nie ma ustawionego tytułu!",
-        "attachedAlready": "Błąd: Jesteś już dodany do tego wezwania!"
-      },
-      "nearestUnits": "Najbliższe jednostki",
-      "nearestStations": "Najbliższe stacje"
-    },
-    "callList": {
-      "activeCalls": "Aktywne Wezwania",
-      "callHistory": "Historia Wezwań",
-      "editCall": "Edytuj Wezwanue",
-      "attachToCall": "Dołącz do Wezwania",
-      "previewCall": "Podgląd Wezwania",
-      "closeCall": "Zamknij Wezwanie",
-      "printCall": "Wydrukuj Wezwanie",
-      "priority": "Priorytet",
-      "columns": {
-        "callId": "ID Wezwania",
-        "10Code": "Kod Dziesiątkowy",
-        "callTitle": "Tytuł Wezwania",
-        "address": "Adres",
-        "units": "Jednostki",
-        "status": "Status"
-      }
-    },
-    "emergencyCall": {
-      "emergencyCall": "Połączenie Alarmowe",
-      "emergency": "Nagły wypadek",
-      "civil": "Cywil",
-      "calls": "Wezwania",
-      "caller": "Dzwoniący",
-      "location": "Lokalizacja",
-      "description": "Opis",
-      "removeAll": "Usuń wszystkie aktywne wezwania",
-      "openInEditor": "Otwórz wezwanie w edytorze",
-      "removeCall": "Usuń Wezwanie",
-      "removeAllCalls": "Usuń wszystkie wezwania",
-      "confirmRemoveAll": "Jesteś pewny, że chcesz zamknąć wszystkie aktywne wezwania?",
-      "mergeToCallEditor": "Scalaj do Edytora Połączeń"
-    },
-    "header": {
-      "signalEffect1": "Sygnał",
-      "signalEffect2": "w toku",
-      "activeServer": "Aktywne Serwery",
-      "lookup": "Wyszukiwanie",
-      "records": "Rejestry",
-      "bolo": "BOLO",
-      "liveMap": "Mapa na żywo",
-      "quickLinks": "Szybkie Linki",
-      "signal": "Sygnał",
-      "activeUnits": "Aktywne Jednostki",
-      "activeCalls": "Aktywne Wezwania",
-      "emergencyCalls": "Połączenia Alarmowe",
-      "panic": "Panika",
-      "file": "Plik(i)",
-      "toneBoard": "Tablica tonów",
-      "playTo": "Odtwórz dla",
-      "repeat": "Powtórz",
-      "seconds": "Sekundy",
-      "count": "Liczba",
-      "streetSigns": "Znaki drogowe",
-      "bodyCam": "Kamera ciała",
-    "bodycamViewer": {
-      "singleCam": "Single Cam",
-      "allCams": "All Cams",
-      "switchToSingle": "Switch to single bodycam view",
-      "switchToAll": "Switch to all bodycams view",
-      "screens": "Screens",
-      "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
-      "live": "Live"
-    }
-  },
-  "timers": {
-      "timers": "Timery",
-      "newTimer": "Nowy timer",
-      "attachments": "Załączniki",
-      "clearAttachment": "Wyczyść załącznik"
-    },
-    "signal": {
-      "signal": "Sygnał",
-      "initiate": "Zainicjuj Sygnał",
-      "modify": "Edytuj Sygnał",
-      "clear": "Wyczyść Sygnał"
-    },
-    "unitEditor": {
-      "modifyIdentifier": "Edytuj Kryptonim",
-      "unitNumber": "Kryptonim Jednostki",
-      "name": "Imię i Nazwisko",
-      "rank": "Ranga",
-      "status": "Status",
-      "location": "Lokalizacja",
-      "aop": "Obszar Gry",
-      "agency": "Agencja",
-      "group": "Grupa",
-      "departments": "Departamenty",
-      "department": "Departament",
-      "subdivisions": "Dywizje",
-      "subdivision": "Dywizja",
-      "units": "Jednostki",
-      "switchIdentifier": "Zmień Kryptonim",
-      "confirmRemove": "Jesteś pewny, że chcesz usunąć kryptonim?"
-    },
-    "units": {
-      "activeUnits": "Aktywne Jednostki",
-      "dispatchersShown": "Pokazani dyspozytorzy",
-      "dispatchersHidden": "Ukryci dyspozytorzy",
-      "addToCall": "Dodaj do wezwania",
-      "addToGroup": "Dodaj do grupy",
-      "newGroup": "Nowa Grupa",
-      "editUnit": "Edytuj Jednostkę",
-      "togglePanic": "Włącz Panic",
-      "kickUnit": "Wyrzuć Jednostkę",
-      "activeGroups": "Aktywne Grupy",
-      "unitGroups": "Grupy Jednostek",
-      "groupName": "Nazwa Grupy",
-      "createGroup": "Stwórz Grupę",
-      "group": "Grupa",
-      "units": "Jednostki"
-    },
-    "notes": {
-      "notepad": "Notatnik",
-      "title": "Tytuł",
-      "notes": "Notatki"
-    },
-    "command": {
-      "commandLine": "Wiersz poleceń",
-      "create": "Utwórz",
-      "close": "Zamknij",
-      "attach": "Dołącz",
-      "detach": "Odłącz",
-      "view": "Widok",
-      "clear": "Wyczyść",
-      "status": "Status",
-      "note": "Notatka",
-      "savedCallType": "Zapisany typ zgłoszenia",
-      "unit": "Jednostka",
-      "postal": "Kod pocztowy",
-      "callId": "ID zgłoszenia",
-      "unitStatus": "Status jednostki"
+      "confirmPassword": "Potwierdź hasło",
+      "email": "E-mail",
+      "emailMe": "Informuj mnie mailowo o ważnych ogłoszeniach, aktualizacjach oraz promocjach.",
+      "emailPreferences": "Preferencje Email",
+      "myAccount": "Moje konto",
+      "username": "Nazwa użytkownika"
     }
   },
   "admin": {
-    "general": {
-      "accounts": "Konta",
-      "customization": "Dostosowywanie",
-      "advanced": "Zaawansowane",
-      "permissionKeys": "Klucze Uprawnień",
-      "departments": "Departamenty",
-      "customRecords": "Niestandardowe Rejestry",
-      "logs": "Logi",
-      "inGameIntegration": "Integracja w grze",
-      "discordIntegration": "Integracja z Discordem",
-      "limits": "Limity",
-      "wipeRecords": "Czyszczę Rejestrów",
-      "transferOrDelete": "Oddaj lub usuń Społeczność",
-      "changeCommunityId": "Zmień ID Społeczności",
-      "authenticate": "Uwierzytelnianie"
+    "10Codes": {
+      "action": "Akcja",
+      "code": "Kod"
+    },
+    "accounts": {
+      "apiIds": "API ID",
+      "joined": "Dołączył",
+      "lastLogin": "Ostatnie Logowanie",
+      "permissions": "Pozwolenia",
+      "purge": "Wyczyść nieaktywne",
+      "purgeConfirm": "Czy na pewno chcesz wyczyścić wszystkie nieaktywne konta użytkowników? (30 dni)",
+      "status": "Status",
+      "userAccounts": "Konta Użytkowników",
+      "username": "Nazwa Użytkownika"
+    },
+    "addresses": {
+      "addresses": "Adresy"
     },
     "authenticate": {
       "authHeader": "Uwierzytelnij, że jesteś właścicielem systemu CAD",
@@ -692,501 +52,2055 @@
       "requestChange": "Poproś o zmianę"
     },
     "customization": {
+      "customizationDisabled": "Dostosowywanie nie jest zawarte w Twojej wersji.",
       "customizationHeader": "Dostosowywanie Społeczności SonranCAD",
       "customizationSubtext1": "Informacje o Społeczności",
       "customizationSubtext2": "Dostosuj nazwę swojej społeczności, logo i wiele więcej!",
-      "customizationDisabled": "Dostosowywanie nie jest zawarte w Twojej wersji.",
-      "info": {
-        "communityInfo": "Informacje o Społeczności",
-        "communityId": "ID Społeczności",
-        "name": "Nazwa",
-        "subtitle": "Podtytuł",
-        "website": "Strona Internetowa",
-        "discord": "Discord",
-        "voiceCommand": "Słowo Kluczowe Poleceń Głosowych",
-        "timezone": "Strefa Czasowa"
-      },
-      "geo": {
-        "geographicalSettings": "Ustawienia Geograficzne",
-        "geoSubtext": "Określ położenie geograficzne swojej społeczności, aby zmienić sformułowanie słów i systemów CAD.",
-        "emergencyCode": "Kod alarmowy",
-        "penalCodeName": "Nazwa kodeksu karnego",
-        "tenCodeName": "Nazwa kodu dziesiętnego",
-        "currencyDelimiter": "Separator waluty"
-      },
-      "unitStatus": {
-        "unitStatusCodes": "Statusy Jednostek",
-        "busy": "Zajęty",
-        "unavailable": "Niedostępny",
-        "available": "Dostępny",
-        "enroute": "W drodze",
-        "onScene": "Na miejscu"
-      },
       "customLogin": {
         "customLoginPage": "Niestandardowa Strona Logowania",
         "url": "URL"
       },
-      "quickLinks": {
-        "quickLinks": "Szybkie Linki",
-        "newLink": "Nowy Link",
-        "deleteLink": "Usuń Link",
-        "label": "Etykieta",
-        "link": "Link",
-        "color": "Kolor"
-      },
-      "notificationTones": {
-        "notificationTones": "Tonu powiadomień",
-        "newDispatch": "Nowe zgłoszenie dyspozytorskie",
-        "dispatchUpdated": "Aktualizacja zgłoszenia dyspozytorskiego",
-        "dispatchClosed": "Zgłoszenie dyspozytorskie zamknięte",
-        "statusChange": "Zmiana statusu",
-        "dispatchNote": "Notatka dyspozytorska"
+      "discordRpc": {
+        "btn2Failure": "Błąd: Bez wersji Pro, przycisk nr 2 może kierować użytkowników tylko do zaproszenia Sonoran CAD lub Sonoran CMS.",
+        "clientId": "ID klienta",
+        "discordRichPresence": "Discord Rich Presence",
+        "iconName": "Nazwa ikony",
+        "info1": "Użytkownicy komputerów stacjonarnych wyświetlają przycisk zaproszenia w Discord. To może być powiązane z twoją aplikacją CAD lub CMS."
       },
       "emails": {
-        "customEmails": "Niestandardowe Emaile",
-        "subtext1": "Dostosuj emaile, które otrzymają Twoi użytkownicy kiedy utworzą konto lub będą resetowali swoje hasło z Twojej niestandardowej strony logowania.",
         "accountRegistration": "Rejestracja konta",
-        "viewTemplate": "Podgląd Szablonu",
-        "header": "Nagłówek",
-        "subheader": "Podtytuł",
         "body": "Treść",
+        "customEmails": "Niestandardowe Emaile",
+        "emailTemplate": "Szablon Emaila",
+        "header": "Nagłówek",
         "resetPassword": "Resetuj Hasło",
-        "emailTemplate": "Szablon Emaila"
-      },
-      "pageColors": {
-        "customPageColors": "Niestandardowe Kolory Stron",
-        "loginPageBkg": "Tło Strony Logowania",
-        "setToDefault": "Ustaw Domyślny Kolor",
-        "menuPageBkg": "Tło Srony Głównej"
-      },
-      "restrictions": {
-        "userAccountRestrictions": "Ograniczenia Kont Urzytkowników",
-        "subtext1": "SonoranCAD pozwala Tobie na ustawienie limitu ilości postaci, licencji, rejestracji pojazdów na każde z kont użytkowników, które użytkownik może posiadać.",
-        "maxCivilians": "Maksymalna ilość postaci *",
-        "maxLicenses": "Maksymalna ilość licencji *",
-        "maxRegistrations": "Maksymalna ilość zarejestrowanych pojazdów *",
-        "note": "* Te limity NIE SĄ AKTYWNE jeśli włączysz synchronizacje z bazą danych."
-      },
-      "otherCustomization": "Inne Funkcje Dostosowania",
-      "servers": {
-        "servers": "Serwery",
-        "subtext1": "Czy Twoja społeczność używa wielu serwerów?",
-        "subtext2": "SonoranCAD pozwala Tobie oddzielenie aktywnych jednostek oraz dyspozytorów między wieloma serwerami zachowując te same rejestry.",
-        "subtext3": "Twoja społeczność może obecnie obsługiwać do",
-        "subtext4": "serwerów.",
-        "newServer": "Nowy serwer",
-        "name": "Nazwa",
-        "description": "Opis"
-      },
-      "lookupTypes": {
-        "lookupTypes": "Typy wyszukiwania",
-        "customRecordFieldId": "ID niestandardowego pola rekordu"
+        "subheader": "Podtytuł",
+        "subtext1": "Dostosuj emaile, które otrzymają Twoi użytkownicy kiedy utworzą konto lub będą resetowali swoje hasło z Twojej niestandardowej strony logowania.",
+        "viewTemplate": "Podgląd Szablonu"
       },
       "errors": {
         "serverLimit1": "Błąd: Twoja społeczność posiada limit do",
         "serverLimit2": "serwerów!",
         "serverMinimum": "Błąd: Musisz posiadać przynajmniej jeden serwer!"
       },
-      "discordRpc": {
-        "info1": "Użytkownicy komputerów stacjonarnych wyświetlają przycisk zaproszenia w Discord. To może być powiązane z twoją aplikacją CAD lub CMS.",
-        "discordRichPresence": "Discord Rich Presence",
-        "clientId": "ID klienta",
-        "iconName": "Nazwa ikony",
-        "btn2Failure": "Błąd: Bez wersji Pro, przycisk nr 2 może kierować użytkowników tylko do zaproszenia Sonoran CAD lub Sonoran CMS."
+      "geo": {
+        "currencyDelimiter": "Separator waluty",
+        "emergencyCode": "Kod alarmowy",
+        "geographicalSettings": "Ustawienia Geograficzne",
+        "geoSubtext": "Określ położenie geograficzne swojej społeczności, aby zmienić sformułowanie słów i systemów CAD.",
+        "penalCodeName": "Nazwa kodeksu karnego",
+        "tenCodeName": "Nazwa kodu dziesiętnego"
+      },
+      "infernoPagers": {
+        "description": "Zarządzaj drzewem węzłów pagera używanym do trasowania pagerów służb ratunkowych.",
+        "infernoPagers": "Inferno Pagers",
+        "invalidMessage": "Błąd: Edytor Inferno wysłał nieprawidłowe dane węzła pagera.",
+        "loading": "Osadzony edytor Inferno załaduje i automatycznie zsynchronizuje Twoją bieżącą konfigurację pagera."
+      },
+      "info": {
+        "communityId": "ID Społeczności",
+        "communityInfo": "Informacje o Społeczności",
+        "discord": "Discord",
+        "name": "Nazwa",
+        "subtitle": "Podtytuł",
+        "timezone": "Strefa Czasowa",
+        "voiceCommand": "Słowo Kluczowe Poleceń Głosowych",
+        "website": "Strona Internetowa"
+      },
+      "lookupTypes": {
+        "addField": "Dodaj pole",
+        "addSearchType": "Dodaj typ wyszukiwania",
+        "advancedFields": "Pola zaawansowane",
+        "advancedFieldsDescription": "Obsługiwane typy pól: tekst, liczba, lista rozwijana i adres.",
+        "advancedMode": "Zaawansowane",
+        "basicMode": "Podstawowy",
+        "configDescription": "Konfiguruj proste wyszukiwania z jednym polem wejściowym lub twórz zaawansowane wyszukiwania z wieloma polami.",
+        "configTitle": "Konfiguracja typu wyszukiwania",
+        "customRecordFieldId": "ID niestandardowego pola rekordu",
+        "displayName": "Nazwa wyświetlana",
+        "dropdownOptions": "Opcje listy rozwijanej",
+        "dropdownOptionsHelp": "Naciśnij Enter, aby dodać każdą opcję.",
+        "fieldFallback": "Pole {index}",
+        "fieldLabel": "Etykieta pola",
+        "fieldMappingId": "ID mapowania pola",
+        "fieldMappingIdHelp": "Wybierz niestandardowe pole rekordu, które będzie używane do tego wyszukiwania.",
+        "fieldMappingIdValue": "ID mapowania pola: {id}",
+        "fieldsCount": "{count} pól",
+        "fieldTypeAddress": "Adres",
+        "fieldTypeDropdown": "Lista rozwijana",
+        "fieldTypeFallback": "Pole",
+        "fieldTypeNumber": "Numer",
+        "fieldTypeText": "Tekst",
+        "inputMask": "Maska wejściowa",
+        "lookupTypes": "Typy wyszukiwania",
+        "mappableFieldsCount": "{count} mapowalnych pól",
+        "mask": "Maska",
+        "newField": "Nowe Pole",
+        "newLookup": "Nowe wyszukanie",
+        "noFieldsConfigured": "Nie skonfigurowano jeszcze żadnych pól.",
+        "noFieldSelected": "Nie wybrano pola",
+        "noRecordTemplates": "Brak dostępnych szablonów rekordów z polami do mapowania.",
+        "optional": "Opcjonalnie",
+        "placeholder": "Miejsce na tekst",
+        "preview": "Podgląd",
+        "previewHelp": "Ten podgląd pokazuje, jak ten typ wyszukiwania będzie wyglądać w oknie wyszukiwania dla użytkowników.",
+        "previewTitle": "Podgląd {name}",
+        "rangeDisabled": "Zakres wyłączony",
+        "rangeEnabled": "Zakres włączony",
+        "rangeSearch": "Wyszukiwanie zakresu",
+        "rangeSearchHelp": "Umożliwia użytkownikowi wprowadzenie zarówno wartości minimalnej, jak i maksymalnej podczas wyszukiwania.",
+        "recordField": "Pole rekordu",
+        "reindexRecords": "Ponownie indeksuj wszystkie rekordy",
+        "reindexRecordsConfirmMessage": "To ponownie zindeksuje istniejące rekordy dla Twoich bieżących niestandardowych typów wyszukiwania. Może to zająć trochę czasu i można to uruchomić tylko raz na 12 godzin.",
+        "reindexRecordsConfirmTitle": "Ponownie indeksuj wszystkie rekordy",
+        "reindexRecordsHelp": "Ponownie zapisuje pola indeksu wyszukiwania dla istniejących rekordów, aby niestandardowe typy wyszukiwania używały najnowszych mapowań pól.",
+        "required": "Wymagane",
+        "requirement": "Wymaganie",
+        "searchTypeFallback": "Typ wyszukiwania {index}",
+        "sectionFallback": "Sekcja {index}",
+        "selectField": "Wybierz pole",
+        "selectRecordField": "Wybierz pole rekordu",
+        "selectRecordFieldDescription": "Wybierz szablon rekordu, rozwiń sekcję i kliknij pole, aby je przypisać.",
+        "width": "Szerokość",
+        "widthHelp": "Określa, jak szeroko to pole wyszukiwania wyświetla się w oknie wyszukiwania. Kliknij ikonę Podgląd, aby zobaczyć, jak będzie wyświetlane."
+      },
+      "notificationTones": {
+        "dispatchClosed": "Zgłoszenie dyspozytorskie zamknięte",
+        "dispatchNote": "Notatka dyspozytorska",
+        "dispatchUpdated": "Aktualizacja zgłoszenia dyspozytorskiego",
+        "newDispatch": "Nowe zgłoszenie dyspozytorskie",
+        "notificationTones": "Tonu powiadomień",
+        "statusChange": "Zmiana statusu"
+      },
+      "otherCustomization": "Inne Funkcje Dostosowania",
+      "pageColors": {
+        "customPageColors": "Niestandardowe Kolory Stron",
+        "loginPageBkg": "Tło Strony Logowania",
+        "menuPageBkg": "Tło Srony Głównej",
+        "setToDefault": "Ustaw Domyślny Kolor"
+      },
+      "quickLinks": {
+        "color": "Kolor",
+        "deleteLink": "Usuń Link",
+        "label": "Etykieta",
+        "link": "Link",
+        "newLink": "Nowy Link",
+        "quickLinks": "Szybkie Linki"
+      },
+      "rapidIQEditor": {
+        "addCode": "Dodaj kod",
+        "addCondition": "Dodaj warunek",
+        "addFlow": "Dodaj przepływ",
+        "addOption": "Dodaj opcję",
+        "addQuestion": "Dodaj pytanie",
+        "codeName": "Nazwa kodu",
+        "codesHelp": "Zarządzaj kodami odpowiedzi. ID kodu jest używane w przepływach, a nazwa kodu jest wyświetlana do przypisania.",
+        "conditionsInOrder": "Warunki (w kolejności)",
+        "defaultQuestions": "Domyślne pytania",
+        "defaultQuestionsHint": "Wybierz, które pytania są w domyślnej ścieżce.",
+        "defaultsHelp": "Wybierz domyślną kolejność pytań otwierających.",
+        "flowPreview": "Podgląd przepływu",
+        "flowsHelp": "Buduj logikę routingu z uporządkowanymi warunkami. Każdy przepływ kończy się jednym kodem wyniku.",
+        "headerHelp": "Skonfiguruj pytania RapidIQ, opcje odpowiedzi, kody i reguły przepływu.",
+        "label": "Etykieta",
+        "maskHint": "Przykład: (###) ###-####",
+        "maskOptional": "Maska(Opcjonalnie)",
+        "newCodeId": "Nowe ID kodu",
+        "newCodeName": "Nowa nazwa kodu",
+        "operator": "Operator",
+        "options": "Opcje",
+        "order": "Zamówienie",
+        "question": "Pytanie",
+        "questionsHelp": "Twórz i edytuj każde pytanie. Używaj opcji wyboru do szybkich selekcji lub tekstu/liczby/adresu dla odpowiedzi wpisywanych.",
+        "questionText": "Tekst pytania",
+        "questionType": "Typ pytania",
+        "resultCode": "Kod wyniku",
+        "searchCodes": "Szukaj kodów",
+        "searchFlows": "Szukaj przepływów",
+        "searchQuestions": "Szukaj pytań",
+        "selectFlowPrompt": "Wybierz przepływ do edycji lub dodaj nowy.",
+        "selectQuestionPrompt": "Wybierz pytanie do edycji lub dodaj nowe.",
+        "stats": {
+          "codes": "Kody",
+          "defaults": "Domyślne",
+          "flows": "Przepływy",
+          "questions": "Pytania"
+        },
+        "tabs": {
+          "codes": "Kody",
+          "defaults": "Domyślna ścieżka",
+          "flows": "Przepływy",
+          "questions": "Pytania"
+        },
+        "validationErrors": "Błędy walidacji",
+        "value": "Wartość"
+      },
+      "restrictions": {
+        "maxCivilians": "Maksymalna ilość postaci *",
+        "maxLicenses": "Maksymalna ilość licencji *",
+        "maxRegistrations": "Maksymalna ilość zarejestrowanych pojazdów *",
+        "note": "* Te limity NIE SĄ AKTYWNE jeśli włączysz synchronizacje z bazą danych.",
+        "subtext1": "SonoranCAD pozwala Tobie na ustawienie limitu ilości postaci, licencji, rejestracji pojazdów na każde z kont użytkowników, które użytkownik może posiadać.",
+        "userAccountRestrictions": "Ograniczenia Kont Urzytkowników"
+      },
+      "servers": {
+        "description": "Opis",
+        "name": "Nazwa",
+        "newServer": "Nowy serwer",
+        "servers": "Serwery",
+        "subtext1": "Czy Twoja społeczność używa wielu serwerów?",
+        "subtext2": "SonoranCAD pozwala Tobie oddzielenie aktywnych jednostek oraz dyspozytorów między wieloma serwerami zachowując te same rejestry.",
+        "subtext3": "Twoja społeczność może obecnie obsługiwać do",
+        "subtext4": "serwerów."
+      },
+      "unitStatus": {
+        "available": "Dostępny",
+        "busy": "Zajęty",
+        "enroute": "W drodze",
+        "onScene": "Na miejscu",
+        "unavailable": "Niedostępny",
+        "unitStatusCodes": "Statusy Jednostek"
       }
     },
-    "department": {
-      "agencies": "Agencje",
-      "agency": "Agencja",
-      "departments": "Departamenty",
-      "department": "Departament",
-      "subdivisions": "Dywizje",
+    "customRecords": {
+      "actions": "Akcje",
+      "addCustomSection": "Dodaj Niestandardową Sekcje",
+      "addPremadeSection": "Dodaj Gotową Sekcje",
+      "dbMap": "Mapowanie Bazy Danych",
+      "dependency": "Zależność",
+      "dependencyInfo": {
+        "infoContains": "Wyświetl, jeśli wartość pola zawiera jeden lub więcej:",
+        "infoEqual": "Wyświetl, jeśli wartość pola jest równa:",
+        "infoNotEqual": "Wyświetl, jeśli wartość pola nie jest równa:"
+      },
+      "duplicateSection": "Duplikuj sekcję",
+      "enableDuplicate": "Włącz duplikację",
+      "enableMapping": "Włącz Mapowanie",
+      "enforceFormatting": "Wymusz formatowanie pól tekstowych.",
+      "errors": {
+        "maxCiv": "BŁĄD: Ten typ rekordu ma zbyt wiele przeszukiwalnych sekcji cywilnych. (Pola z UID 'first' i 'last')",
+        "maxStatus": "BŁĄD: Ten typ rekordu ma zbyt wiele niestandardowych pól typu 'status'.",
+        "maxVeh": "BŁĄD: Ten typ rekordu ma zbyt wiele przeszukiwalnych sekcji pojazdów. (Pola z UID 'plate')",
+        "minCiv": "BŁĄD: Ten typ rekordu nie ma wystarczającej liczby wyszukiwalnych pól postaci. (Pola z UID 'first' i 'last')",
+        "minStatus": "BŁĄD: Ten typ rekordu musi mieć JEDNO pole niestandardowego typu 'status'.",
+        "minVeh": "BŁĄD: Ten typ rekordu nie ma wystarczającej liczby przeszukiwalnych pól pojazdów. (Pola z UID 'plate')",
+        "noName": "BŁĄD: Ten szablon rekordu nie ma ustawionej nazwy.",
+        "noPreviewedFields": "BŁĄD: Ten szablon rekordu nie ma włączonych pól do podglądu.",
+        "noStatusField": "BŁĄD: Ten typ rekordu musi mieć JEDNO niestandardowe pole z UID 'status'."
+      },
+      "existingHeader": "Istniejące Typy Niestandardowych Rejestrów",
+      "label": "Etykieta",
+      "lookupPreview": "Podgląd Wyszukiwania",
+      "lookupPreviewAbout": "Pokaż wartość pola w tabeli wyszukiwania",
+      "mask": "Maska",
+      "maskAlphaNumeric": "X: Alfanumeryczny",
+      "maskNumber": "#: Numer",
+      "maskText": "S: Litera A-Z",
       "name": "Nazwa",
-      "description": "Opis",
+      "newField": "Nowe Pole",
+      "newValue": "Nowa Wartość",
+      "notApplicable": "N/D",
+      "placeholder": "Placeholder",
+      "placeholderAbout": "Opcjonalny tekst pomocniczy wyświetlany w pustym polu przed wpisaniem wartości.",
+      "readOnly": "Tylko do odczytu",
+      "recordEditor": "Edytor Rejestrów",
+      "recordPreview": "Podgląd Wyszukiwania",
+      "recordSections": "Sekcje Rejestrów",
+      "recordTypeName": "Nazwa Typów Rejestrów",
+      "recordTypes": {
+        "bolo": "BOLO",
+        "dmvRecord": "Rejestry DMV",
+        "fireRecord": "Rejestry Straży Pożarnej",
+        "fireReport": "Raporty Straży Pożarnej",
+        "lawRecord": "Rejestry Prawników",
+        "lawReport": "Raporty Prawników",
+        "license": "licencja",
+        "medicalRecord": "Rejestry Medyczne",
+        "medicalReport": "Raporty Medyczne",
+        "policeRecord": "Rejestry Policyjne",
+        "policeReport": "Raporty Policyjne",
+        "vehicleRegistration": "Rejestracja Pojazdu",
+        "warrant": "Poszukiwany"
+      },
+      "remove": {
+        "confirmRemove": "Czy jesteś pewny, że chcesz usunąć ten typ rejestrów?",
+        "removeType": "Usuń Typ Rejestrów"
+      },
+      "requiredAbout": "Pole Wymagane",
+      "resyncPreview": {
+        "confirm": "To ręcznie zaktualizuje wszystkie wcześniejsze rekordy, aby upewnić się, że wyświetlane pola odpowiadają twojemu najnowszemu szablonowi rekordu. Ta akcja ma 10-minutowy czas odnawiania.",
+        "resyncPreview": "Ponownie synchronizuj pola podglądu"
+      },
+      "reverseMap": "Odwróć Mapę",
+      "searchCivs": "Szukaj cywili",
+      "searchVehicles": "Szukaj pojazdów",
+      "sectionLabel": "Etykieta Sekcji",
+      "supervisorAbout": "Ogranicz pole jedynie dla supervisorów",
+      "type": "Typ",
+      "uniqueField": "Unikalne pole",
+      "width": "Szerokość"
+    },
+    "department": {
       "abbreviation": "Skrót",
       "address": "Adres",
-      "zip": "Kod Pocztowy",
+      "agencies": "Agencje",
+      "agency": "Agencja",
+      "department": "Departament",
+      "departments": "Departamenty",
+      "description": "Opis",
+      "editorSubtitle": "Zarządzaj agencjami, działami i poddziałami.",
+      "editorTitle": "Edytor Departamentu",
       "errors": {
-        "generalLimit1": "Błąd: Twoja społeczność posiada limit na",
-        "agencyLimit2": "agencje!",
-        "departmentLimit2": "departamenów na dzielnice!",
-        "subdivisionLimit2": "dywizji na deparatment!",
         "agencyExists": "Błąd: Agencja o tej nazwie już istnieje!",
-        "districtExists": "Błąd: Dzielnica z tą nazwą już istnieje!",
+        "agencyLimit2": "agencje!",
         "departmentExists": "Błąd: Departament z tą nazwą już istnieje!",
-        "subdivisionExists": "Błąd: Dywizja z tą nazwą już istnieje!"
-      },
-      "modifyDepartment": {
-        "createNewDepartment": "Stwórz Nowy Departament",
-        "editDepartment": "Edytuj Departament",
-        "name": "Nazwa Departamentu",
-        "abbreviation": "Skrót",
-        "address": "Adres",
-        "zip": "Kod Pocztowy",
-        "confirmRemove1": "Jesteś pewny, że chcesz usunąć ten departament?",
-        "confirmRemove2": "Ten departament oraz wszystkie zawarte w nim dywizje zostaną usunięte!"
+        "departmentLimit2": "departamenów na dzielnice!",
+        "districtExists": "Błąd: Dzielnica z tą nazwą już istnieje!",
+        "generalLimit1": "Błąd: Twoja społeczność posiada limit na",
+        "subdivisionExists": "Błąd: Dywizja z tą nazwą już istnieje!",
+        "subdivisionLimit2": "dywizji na deparatment!"
       },
       "modifyAgency": {
         "createNewAgency": "Stwórz Nową Agencje",
+        "description": "Opis",
         "editAgency": "Edytuj Agencje",
         "name": "Nazwa Agencji",
-        "description": "Opis",
         "remove": {
           "confirmRemove1": "Jesteś pewny, że chcesz usunąć tę agencje?",
           "confirmRemove2": "Ta agencja oraz wszystkie zawarte w niej departamenty oraz dywizje zostaną usunięte!"
         }
       },
+      "modifyDepartment": {
+        "abbreviation": "Skrót",
+        "address": "Adres",
+        "confirmRemove1": "Jesteś pewny, że chcesz usunąć ten departament?",
+        "confirmRemove2": "Ten departament oraz wszystkie zawarte w nim dywizje zostaną usunięte!",
+        "createNewDepartment": "Stwórz Nowy Departament",
+        "editDepartment": "Edytuj Departament",
+        "name": "Nazwa Departamentu",
+        "zip": "Kod Pocztowy"
+      },
       "modifySubdivision": {
+        "confirmRemove": "Jesteś pewny, że chcesz usunąć tę dywizje?",
         "createNewSub": "Stwórz Nową Dywizje",
-        "editSub": "Edytuj Dywizje",
-        "name": "Nazwa Dywizji",
         "description": "Opis",
-        "confirmRemove": "Jesteś pewny, że chcesz usunąć tę dywizje?"
-      }
-    },
-    "webhooks": {
-      "modified": "Zmodyfikowany",
-      "removed": "Usunięty",
-      "headerText": "Integracja SonoranCAD z Discordem",
-      "subtext1": "Integracja SonoranCAD z Discordem pozwala Tobie na otrzymywane powiadomień bezpośrednio na Twój serwer Discord.",
-      "subtext2": "Po prostu włącz i określ link WebHooka z Discorda do przeznaczonych pól poniżej.",
-      "emergencyWebhooks": "Służby Ratunkowe",
-      "about": "O Webhooku",
-      "emergencyAbout": "Te webhooki są związane z służbami ratunkowymi.",
-      "unitPanic": "Jednostka włączyła Panic Buttona",
-      "unitPanicAbout": "Ten WebHook zostanie wysłany jeśli jednostka załączy swój PANIC BUTTON.",
-      "dispatch": "Dyspozytor",
-      "dispatchAbout": "Ten WebHook zostanie wysłany jeśli zostanie dodane nowe wezwanie lub jedno z istniejących zostanie zmodyfikowane.",
-      "policeRecord": "Rejestry Policji",
-      "policeRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord policyjny, jeden z istniejących zmodyfikowany lub usunięty.",
-      "medicalRecord": "Rejestry Medyczne",
-      "medicalRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord medyczny, jeden z istniejących zmodyfikowany lub usunięty.",
-      "fireRecord": "Rejestry Straży Pożarnej",
-      "fireRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord straży pożarnej, jeden z istniejących zmodyfikowany lub usunięty.",
-      "bolo": "BOLO",
-      "boloAbout": "Ten WebHook zostanie wysłany jeśli zostanie dodane lub zmodyfikowane BOLO.",
-      "emergencyCall": "Połączenie Alarmowe",
-      "emergencyCallAbout": "Ten WebHook zostanie wysłany jeśli ktoś wyśle połączenie alarmowe.",
-      "civilianWebhooks": "Cywil",
-      "civilianWebhooksAbout": "Te WebHooki są związane z operacjami cywilów.",
-      "character": "Zedytowano Postać",
-      "characterAbout": "Ten WebHook zostanie wysłany jeśli postać cywila zostanie dodana, zedytiwana lub usunięta.",
-      "dmv": "Rejestry DMV",
-      "dmvAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord DMV, jeden z istniejących zmodyfikowany lub usunięty.",
-      "law": "Rejestry Strony Prawnej",
-      "lawAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord dla prawników, jeden z istniejących zmodyfikowany lub usunięty.",
-      "adminWebhooks": "Administracyjne",
-      "adminWebhooksAbout": "Te WebHooki są związane z dzialaniami administracyjnymi.",
-      "accountPermissions": "Uprawnienia Konta",
-      "accountPermissionsAbout": "Ten WebHook zostanie wysłany jeśli administrator zmieni uprawnienia konta.",
-      "departmentStructure": "Struktura Departamentu",
-      "departmentStructureAbout": "Ten WebHook zostanie wysłany jeśli administrator zmieni strukturę departamentu.",
-      "10Code": "Modyfikacja kodów dziesiątkowych",
-      "10CodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kod dziesiątkowy.",
-      "penalCode": "Modyfikacja Kodeksu Karnego",
-      "penalCodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kodeks karny.",
-      "apiRequest": "Prośba API",
-      "apiRequestAbout": "Ten WebHook zostanie wysłany jeśli poproszono o API.",
-      "signal": "Sygnał",
-      "signalAbout": "Ten webhook zostanie wysłany, gdy sygnał będzie obowiązywał.",
-      "toneBoardAbout": "Ten webhook zostanie wysłany, gdy dyspozytor odtworzy ton.",
-      "errors": {
-        "maxWebhooks": "Błąd: Osiągnąłeś limit webkooków dla Twojej społeczności:"
-      }
-    },
-    "limits": {
-      "limitsHeader": "Limity Społeczności SonoranCAD",
-      "upgradeYourCad": "Ulepsz Swój System CAD",
-      "version": "Wersja",
-      "expiration": "Wygaśnięcie"
-    },
-    "remove": {
-      "removeWarning1": "Usunięcie lub oddanie systemu CAD NIE ANULUJE aktywnej subskrypcji społeczności.",
-      "removeWarning2": "Możesz anulować lub przenieść Twoją subskrypcje na inną społeczność w centrum płatności.",
-      "transferHeader": "Przenieś swój SonoranCAD",
-      "transferSubtext": "Musisz być właścicielem społeczności / systemu CAD aby go przenieść. Proces przeniesienia wymaga weryfikacji adresu email.",
-      "transferCad": "Przenieś SystemCAD",
-      "transferCadTo": "Przenieś SystemCAD do",
-      "removeHeader": "Usuń swój SonoranCAD",
-      "removeSubtext": "Musisz być właścicielem społeczności / systemu CAD aby go usunąć. Proces usunięcia wymaga weryfikacji adresu email.",
-      "removeCad": "Usuń System CAD"
-    },
-    "wipeRecords": {
-      "wipeHeader": "Wyczyść Rejestry Społeczności",
-      "wipeSubtext1": "Właściciel Społeczności może usunąć wszystkie zapisane rejestry według typu.",
-      "wipeSubtext2": "Wybierz typ poniżej aby usunąć wszystkie.",
-      "confirmWipe1": "Jesteś pewny, że chcesz usunąć wszystkie rejestry tego typu?",
-      "confirmWipe2": "Tej akcji nie można cofnąć!"
-    },
-    "accounts": {
-      "userAccounts": "Konta Użytkowników",
-      "username": "Nazwa Użytkownika",
-      "status": "Status",
-      "joined": "Dołączył",
-      "permissions": "Pozwolenia",
-      "lastLogin": "Ostatnie Logowanie",
-      "apiIds": "API ID",
-      "purge": "Wyczyść nieaktywne",
-      "purgeConfirm": "Czy na pewno chcesz wyczyścić wszystkie nieaktywne konta użytkowników? (30 dni)"
-    },
-    "customRecords": {
-      "existingHeader": "Istniejące Typy Niestandardowych Rejestrów",
-      "recordEditor": "Edytor Rejestrów",
-      "recordTypeName": "Nazwa Typów Rejestrów",
-      "type": "Typ",
-      "resyncPreview": {
-        "resyncPreview": "Ponownie synchronizuj pola podglądu",
-        "confirm": "To ręcznie zaktualizuje wszystkie wcześniejsze rekordy, aby upewnić się, że wyświetlane pola odpowiadają twojemu najnowszemu szablonowi rekordu. Ta akcja ma 10-minutowy czas odnawiania."
+        "editSub": "Edytuj Dywizje",
+        "name": "Nazwa Dywizji"
       },
-      "addCustomSection": "Dodaj Niestandardową Sekcje",
-      "addPremadeSection": "Dodaj Gotową Sekcje",
-      "recordSections": "Sekcje Rejestrów",
-      "newField": "Nowe Pole",
-      "searchCivs": "Szukaj cywili",
-      "searchVehicles": "Szukaj pojazdów",
-      "enableDuplicate": "Włącz duplikację",
-      "duplicateSection": "Duplikuj sekcję",
-      "sectionLabel": "Etykieta Sekcji",
-      "lookupPreviewAbout": "Pokaż wartość pola w tabeli wyszukiwania",
-      "supervisorAbout": "Ogranicz pole jedynie dla supervisorów",
-      "requiredAbout": "Pole Wymagane",
-      "uniqueField": "Unikalne pole",
-      "readOnly": "Tylko do odczytu",
-      "newValue": "Nowa Wartość",
-      "reverseMap": "Odwróć Mapę",
-      "enableMapping": "Włącz Mapowanie",
-      "lookupPreview": "Podgląd Wyszukiwania",
-      "recordPreview": "Podgląd Wyszukiwania",
-      "actions": "Akcje",
       "name": "Nazwa",
-      "mask": "Maska",
-      "label": "Etykieta",
-      "width": "Szerokość",
-      "dbMap": "Mapowanie Bazy Danych",
-      "dependency": "Zależność",
-      "dependencyInfo": {
-        "infoEqual": "Wyświetl, jeśli wartość pola jest równa:",
-        "infoNotEqual": "Wyświetl, jeśli wartość pola nie jest równa:",
-        "infoContains": "Wyświetl, jeśli wartość pola zawiera jeden lub więcej:"
+      "persistentGroups": {
+        "badge": "Grupa stała",
+        "empty": "Nie skonfigurowano trwałych grup.",
+        "groupName": "Nazwa Grupy",
+        "hint": "Te grupy zawsze pojawiają się w dyspozycji, nawet gdy nie przypisano żadnych jednostek.",
+        "limitReached": "Błąd: '{group}' może jednocześnie zawierać tylko {max} jednostkę/jednostki.",
+        "maxUnits": "Maksymalna liczba jednostek",
+        "maxUnitsHint": "Opcjonalnie",
+        "noUnits": "Brak jednostek w grupie",
+        "title": "Stałe Grupy Jednostek"
       },
-      "recordTypes": {
-        "warrant": "Poszukiwany",
-        "bolo": "BOLO",
-        "license": "licencja",
-        "vehicleRegistration": "Rejestracja Pojazdu",
-        "policeRecord": "Rejestry Policyjne",
-        "policeReport": "Raporty Policyjne",
-        "medicalRecord": "Rejestry Medyczne",
-        "medicalReport": "Raporty Medyczne",
-        "fireRecord": "Rejestry Straży Pożarnej",
-        "fireReport": "Raporty Straży Pożarnej",
-        "dmvRecord": "Rejestry DMV",
-        "lawRecord": "Rejestry Prawników",
-        "lawReport": "Raporty Prawników"
-      },
-      "errors": {
-        "maxCiv": "BŁĄD: Ten typ rekordu ma zbyt wiele przeszukiwalnych sekcji cywilnych. (Pola z UID 'first' i 'last')",
-        "minCiv": "BŁĄD: Ten typ rekordu nie ma wystarczającej liczby wyszukiwalnych pól postaci. (Pola z UID 'first' i 'last')",
-        "maxVeh": "BŁĄD: Ten typ rekordu ma zbyt wiele przeszukiwalnych sekcji pojazdów. (Pola z UID 'plate')",
-        "minVeh": "BŁĄD: Ten typ rekordu nie ma wystarczającej liczby przeszukiwalnych pól pojazdów. (Pola z UID 'plate')",
-        "maxStatus": "BŁĄD: Ten typ rekordu ma zbyt wiele niestandardowych pól typu 'status'.",
-        "minStatus": "BŁĄD: Ten typ rekordu musi mieć JEDNO pole niestandardowego typu 'status'.",
-        "noStatusField": "BŁĄD: Ten typ rekordu musi mieć JEDNO niestandardowe pole z UID 'status'.",
-        "noPreviewedFields": "BŁĄD: Ten szablon rekordu nie ma włączonych pól do podglądu.",
-        "noName": "BŁĄD: Ten szablon rekordu nie ma ustawionej nazwy."
-      },
-      "remove": {
-        "removeType": "Usuń Typ Rejestrów",
-        "confirmRemove": "Czy jesteś pewny, że chcesz usunąć ten typ rejestrów?"
-      },
-      "enforceFormatting": "Wymusz formatowanie pól tekstowych.",
-      "maskNumber": "#: Numer",
-      "maskText": "S: Litera A-Z",
-      "maskAlphaNumeric": "X: Alfanumeryczny"
+      "subdivisions": "Dywizje",
+      "zip": "Kod Pocztowy"
+    },
+    "general": {
+      "accounts": "Konta",
+      "advanced": "Zaawansowane",
+      "authenticate": "Uwierzytelnianie",
+      "changeCommunityId": "Zmień ID Społeczności",
+      "customization": "Dostosowywanie",
+      "customRecords": "Niestandardowe Rejestry",
+      "departments": "Departamenty",
+      "desktops": "Pulpity",
+      "discordIntegration": "Integracja z Discordem",
+      "documentation": "Dokumentacja",
+      "identifiers": "Kryptonimy",
+      "inGameIntegration": "Integracja w grze",
+      "limits": "Limity",
+      "logs": "Logi",
+      "permissionKeys": "Klucze Uprawnień",
+      "transferOrDelete": "Oddaj lub usuń Społeczność",
+      "wipeRecords": "Czyszczę Rejestrów"
+    },
+    "helpPermissions": {
+      "permissionsGuide": "Przewodnik po Uprawnieniach"
     },
     "integration": {
-      "apiHeader": "Web API",
-      "apiSubheader": "Web API SonoranCAD pozwala Tobie na aktualizacje lokalizacji jednostek w czasie rzeczywistym, włączanie statusu paniki (pannic button), generowanie wezwań alarmowych 911 / 112, oraz wiele więcej bezpośrednio w grze!",
-      "resources": "Zasoby",
-      "apiKey": "Klucz API",
-      "changeApiKey": "Zmień Klucz API",
       "apiDocs": "Dokumenty API",
-      "luaPlugins": "Wtyczki LUA",
+      "apiHeader": "Web API",
+      "apiKey": "Klucz API",
+      "apiSubheader": "Web API SonoranCAD pozwala Tobie na aktualizacje lokalizacji jednostek w czasie rzeczywistym, włączanie statusu paniki (pannic button), generowanie wezwań alarmowych 911 / 112, oraz wiele więcej bezpośrednio w grze!",
+      "availableMaps": "Dostępne mapy",
+      "changeApiKey": "Zmień Klucz API",
+      "configureAndDeploy": "Skonfiguruj i Wdróź",
       "confirmKeyChange1": "Jesteś pewny, że chcesz wygenerować nowy klucz API?",
       "confirmKeyChange2": "Będziesz musiał zaktualizować swój klucz API we wszystkich wtyczkach lub konfiguracji API!",
-      "liveMapHeader": "Wydarzenia Serwerowe oraz Integracja Mapy Na Żywo",
-      "liveMapSubtext1": "Mapa Na Żywo SonoranCAD pozwala Tobie natychmiast skonfigurować mapę dla Twojej Społeczności, my zajmiemy się hostingiem!",
-      "liveMapSubtext2": "Sonoran CAD również wysyła dane zdarzenia do skonfigurowanego portu odbiornika.",
-      "mapTutorial": "Poradnik dla Mapy",
-      "eventDocumentation": "Dokumentacja W6darzeń",
-      "configureAndDeploy": "Skonfiguruj i Wdróź",
-      "enableMap": "Włącz Mape",
-      "staticOnly": "Link do Statycznej Mapy",
-      "staticOnlyAbout": "Jeśli tryb Twojej gry nie jest kompatybilny z zasobami mapy na żywo, możesz podać link do mapy Twojej gry.",
-      "mapType": "Typ Mapy",
-      "uploadCustomMap": "Prześlij niestandardową mapę",
-      "server": "Serwer",
-      "ip": "IP",
-      "websiteUrl": "Link Strony Internetowej",
-      "mapPort": "Port Port",
-      "gamePort": "Port gry",
-      "differingOutboundIp": "Różny zewnętrzny IP",
-      "outboundIp": "Zewnętrzny IP",
-      "saveAndDeploy": "Zapisz i Wdróż",
+      "customMapImagesLabel": "Niestandardowe obrazy map (maks. 30 MB/szt.)",
       "dbSync": {
+        "characterMapping": "Mapowanie Postaci",
+        "characterMappingColumn": "Kolumna Mapowania Postaci Mapping Column",
+        "columnName": "Nazwa Kolumny",
+        "connectionCredentials": "Poświadczenia Połączenia",
+        "customMapAbout": "To jest niestandardowe pole mapowania synchronizacji bazy danych, dostarczony przez edytor Twoich niestandardowych rejestrów.",
+        "database": "Nazwa Bazy Danych",
         "dbSyncHeader": "Synchronizacja z Bazą Danych",
         "dbSyncSubtext1": "Synchronizacja SonoranCAD z Bazą Danych pozwala Tobie na automatyczną aktualizację postaci, licencji oraz zarejestrowanych pojazdów bezpośrednio z bazy danych Twojej gry do systemu CAD.",
         "dbSyncSubtext2": "Po prostu skonfiguruj dane bazy danych oraz podaj nazwy tabel, kolumn oraz pól do SonoranCAD.",
         "dbSyncSubtext3": "WSZYSTKIE CZERWONE pola są wymagane. Jeśli nie masz kolumny danych dla pola opcjonalnego, po prostu zostaw je puste.",
-        "connectionCredentials": "Poświadczenia Połączenia",
+        "dbValue": "Wartość bazy danych",
         "description": "Opis",
         "descriptionCredentials": "To jest opis połączenia dla bazy danych Twojej gry.",
-        "enableDbSync": "Włącz Synchronizacje Bazy Danych",
         "enableDbMerge": "Włącz Nadpisywanie Bazy Danych",
-        "testConnection": "Testuj Połączenie",
-        "saveCredentials": "Zapisz Poświadczenia Połączenia",
-        "type": "Typ",
-        "host": "Host/Adres",
-        "port": "Port",
-        "database": "Nazwa Bazy Danych",
-        "username": "Nazwa Użytkownika",
-        "password": "Hasło",
-        "characterMapping": "Mapowanie Postaci",
-        "licenseMapping": "Mapowanie Licencji",
-        "vehicleMapping": "Mapowanie Pojazdów",
-        "testMapping": "Testuj Mapiwanie",
-        "saveMapping": "Zapisz Ustawienia Mapowania",
-        "tableName": "Nazwa Tabeli",
-        "characterMappingColumn": "Kolumna Mapowania Postaci Mapping Column",
-        "customMapAbout": "To jest niestandardowe pole mapowania synchronizacji bazy danych, dostarczony przez edytor Twoich niestandardowych rejestrów.",
-        "columnName": "Nazwa Kolumny",
+        "enableDbSync": "Włącz Synchronizacje Bazy Danych",
+        "enableDbSyncLookupBoth": "Uwzględnij rekordy CAD API w wyszukiwaniach DB Sync",
         "externalKey": "Klucz zewnętrzny",
-        "jsonKey": "Klucz JSON",
-        "jsonColumn": "Kolumna JSON",
-        "jsonColumnAbout": "Jeśli ta kolumna to typ JSON, możesz określić klucz JSON.",
-        "label": "Etykieta",
-        "tooltipLabel": "To jest pole opisu",
-        "tooltipColumn": "To jest nazwa kolumny Twojej tabeli bazy danych zawierajacej dane tego pola.",
-        "tooltipTable": "To jest nazwa tabeli bazy danych, w której znajduje się ta kolumna danych.",
-        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex.",
         "fieldMapId": "ID mapowania pola",
         "fieldMapIdAbout": "Ten ID pomaga mapować pola w niestandardowej sekcji postaci do innych rekordów i określa, które pola zawierają terminy wyszukiwania, takie jak imię i nazwisko.",
         "friendlyMapping": "Przyjazne mapowanie",
-        "tooltipFriendlyMapping": "To pozwala mapować wspólne wartości DB na bardziej przyjazne wartości interfejsu użytkownika.",
         "friendlyMappingExample": "Np: 'drive_license' -> 'Prawo jazdy'",
-        "dbValue": "Wartość bazy danych",
-        "friendlyValue": "Przyjazna wartość"
+        "friendlyValue": "Przyjazna wartość",
+        "host": "Host/Adres",
+        "jsonColumn": "Kolumna JSON",
+        "jsonColumnAbout": "Jeśli ta kolumna to typ JSON, możesz określić klucz JSON.",
+        "jsonKey": "Klucz JSON",
+        "label": "Etykieta",
+        "licenseMapping": "Mapowanie Licencji",
+        "password": "Hasło",
+        "port": "Port",
+        "saveCredentials": "Zapisz Poświadczenia Połączenia",
+        "saveMapping": "Zapisz Ustawienia Mapowania",
+        "tableName": "Nazwa Tabeli",
+        "testConnection": "Testuj Połączenie",
+        "testMapping": "Testuj Mapiwanie",
+        "tooltipCharacterColumn": "To jest nazwa unikatowego ID postaci z Twojej tabeli. Zazwyczaj zawiera Steam Hex.",
+        "tooltipColumn": "To jest nazwa kolumny Twojej tabeli bazy danych zawierajacej dane tego pola.",
+        "tooltipFriendlyMapping": "To pozwala mapować wspólne wartości DB na bardziej przyjazne wartości interfejsu użytkownika.",
+        "tooltipLabel": "To jest pole opisu",
+        "tooltipTable": "To jest nazwa tabeli bazy danych, w której znajduje się ta kolumna danych.",
+        "type": "Typ",
+        "username": "Nazwa Użytkownika",
+        "vehicleMapping": "Mapowanie Pojazdów"
       },
+      "differingOutboundIp": "Różny zewnętrzny IP",
+      "enableMap": "Włącz Mape",
+      "erlc": {
+        "apiKey": "Klucz API ER:LC",
+        "apiKeyHint": "Wklej nowy klucz, aby zastąpić zapisane wartość.",
+        "civilianRegistrationsHeader": "Rejestracje cywilne",
+        "commandHint": "Pozostaw puste, aby wyłączyć to polecenie.",
+        "customRobloxMap": "Niestandardowa mapa Roblox",
+        "customRobloxMapProTooltip": "Niestandardowe mapy Roblox są obsługiwane tylko w planie Pro.",
+        "emergencyCallCommand": "Dowodzenie 911",
+        "emergencyCallsHeader": "Połączenia Alarmowe",
+        "header": "Integracja ER:LC",
+        "liveMapAbout": "Mapa na żywo oferuje interaktywną mapę gry 2D i 3D z lokalizacjami jednostek, kamerami nasobnymi, zgłoszeniami alarmowymi, zgłoszeniami dyspozytorskimi i nie tylko.",
+        "notifyAlways": "Zawsze",
+        "notifyAlwaysTooltip": "Gracz zawsze otrzyma prywatną wiadomość po przetworzeniu polecenia.",
+        "notifyMode": "Powiadom gracza",
+        "notifyNever": "Nigdy",
+        "notifyNeverTooltip": "Gracz nie otrzyma prywatnej wiadomości dla tego polecenia.",
+        "notifyOnlyOnFailure": "Tylko przy niepowodzeniu",
+        "notifyOnlyOnFailureTooltip": "Gracz otrzyma prywatną wiadomość tylko wtedy, gdy polecenie się nie powiedzie.",
+        "officialRobloxMap": "Oficjalna mapa ER:LC",
+        "registerCommand": "Polecenie rejestracji",
+        "tempRegisterCommand": "Tymczasowe polecenie rejestracji",
+        "trafficStopCommand": "Polecenie zatrzymania ruchu",
+        "trafficStopDefaultTenCode": "Domyślny kod dziesiątkowy",
+        "trafficStopDefaultTenCodeHint": "Używane do zgłoszeń zatrzymania ruchu. Zostaw tutaj swój preferowany kod.",
+        "trafficStopDescription": "Opis zgłoszenia",
+        "trafficStopDescriptionHeader": "Opis i kod 10",
+        "trafficStopDescriptionHint": "Obsługuje niestandardowe zmienne.",
+        "trafficStopMaxRadius": "Maksymalny promień pobliskiego pojazdu",
+        "trafficStopMaxRadiusHint": "Jeśli najbliższy pojazd jest dalej niż to, wywołania zatrzymania ruchu wracają do wpisu tablicy rejestracyjnej lub pomijają szczegóły pojazdu.",
+        "trafficStopsHeader": "Zatrzymania ruchu",
+        "trafficStopVariableBuildingNumber": "Aktualny numer budynku z ER:LC.",
+        "trafficStopVariableCopied": "Zmienna skopiowana do schowka",
+        "trafficStopVariablePicker": "Podgląd zmiennych szablonu",
+        "trafficStopVariablePickerHint": "Kliknij dowolną zmienną, aby skopiować ją do schowka.",
+        "trafficStopVariablePickerTitle": "Zmienne zatrzymania ruchu",
+        "trafficStopVariablePlate": "Pierwszy argument polecenia, gdy podano tablicę rejestracyjną.",
+        "trafficStopVariablePostalCode": "Obecny kod pocztowy funkcjonariusza.",
+        "trafficStopVariableStreetName": "Aktualna nazwa ulicy z ER:LC.",
+        "trafficStopVariableVehicleColorName": "Nazwa koloru pojazdu najbliższego lub dopasowanego.",
+        "trafficStopVariableVehicleName": "Nazwa najbliższego lub dopasowanego pojazdu.",
+        "trafficStopVariableVehiclePlate": "Rozwiązana tablica rejestracyjna pojazdu z ręcznego wpisu, pobliskiego pojazdu ER:LC lub pasującej rejestracji CAD.",
+        "vehicleRegistrationsHeader": "Rejestracje Pojazdów"
+      },
+      "erlcTab": "ER:LC",
+      "eventDocumentation": "Dokumentacja W6darzeń",
+      "fivem": {
+        "configureFeaturesTitle": "Skonfiguruj funkcje",
+        "configureResourceTitle": "Konfiguruj zasób",
+        "configureServerTitle": "Konfiguruj serwer",
+        "downloadInstallTitle": "Pobierz i zainstaluj",
+        "manual": {
+          "additionalOptions": "Więcej informacji o innych opcjach konfiguracji znajdziesz tutaj.",
+          "addToServerCfg": "Dodaj następujące do pliku server.cfg:",
+          "configComment": "# Uruchom zasób sonorancad i inne dołączone zasoby",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
+          "configureResource": "Otwórz sonorancad/configuration/config.json, aby skonfigurować zasób.",
+          "downloadButton": "Pobierz Sonoran CAD dla FiveM",
+          "extractResource": "Po pobraniu rozpakuj folder [sonorancad] do folderu resources na swoim serwerze.",
+          "preconfiguredNotice": "Zasób będzie już mieć wstępnie skonfigurowane communityID i apiKey.",
+          "restartComplete": "A gdy już uruchomisz ponownie swój serwer, gotowe! Sprawdź dokumentację, aby włączyć i używać każdej funkcji.",
+          "seeDocs": "Zobacz dokumentację",
+          "welcomeDescription": "Postępuj zgodnie z tym samouczkiem, aby zainstalować zasób FiveM na swoim serwerze!"
+        },
+        "rocketNode": {
+          "accessPanel": "Uzyskaj dostęp do panelu serwera gry.",
+          "configurationLabel": "Konfiguracja",
+          "couponCode": "SONORAN",
+          "couponPrefix": "Użyj kodu kuponu",
+          "couponSuffix": "na 20% zniżki.",
+          "fileManager": "Menedżer plików",
+          "gamePanelPurchaseTitle": "Zakup Panelu Gry",
+          "installerLabel": "Instalator Sonoran",
+          "installSonoran": "Kliknij Zainstaluj Sonoran w panelu Rocket Node.",
+          "maskedKey": "********************",
+          "navigateFolder": "Przejdź do folderu resources > [sonorancad] > sonorancad > configuration.",
+          "navigateInstaller": "W panelu gry Rocket Node przejdź do",
+          "purchaseServer": "Kup serwer gry FiveM od Rocket Node",
+          "resourceAccess": "Po zakończeniu instalacji możesz uzyskać dostęp do plików zasobu w Menedżerze plików.",
+          "selectCad": "Wybierz CAD i kliknij, aby skopiować/wkleić ID i klucz poniżej.",
+          "submoduleDocs": "Więcej informacji o konfiguracji podmodułu znajdziesz tutaj."
+        },
+        "welcomeTitle": "Witamy"
+      },
+      "fivemTab": "FiveM",
+      "gamePort": "Port gry",
+      "ip": "IP",
+      "liveMapHeader": "Wydarzenia Serwerowe oraz Integracja Mapy Na Żywo",
+      "liveMapSubtext1": "Mapa Na Żywo SonoranCAD pozwala Tobie natychmiast skonfigurować mapę dla Twojej Społeczności, my zajmiemy się hostingiem!",
+      "liveMapSubtext2": "Sonoran CAD również wysyła dane zdarzenia do skonfigurowanego portu odbiornika.",
+      "luaPlugins": "Wtyczki LUA",
+      "manualInstalltion": "Ręczna instalacja",
+      "mapPort": "Port Port",
+      "mapTutorial": "Poradnik dla Mapy",
+      "mapType": "Typ Mapy",
       "oneClickInstallation": "Instalacja jednym kliknięciem",
-      "manualInstalltion": "Ręczna instalacja"
+      "outboundIp": "Zewnętrzny IP",
+      "resources": "Zasoby",
+      "saveAndDeploy": "Zapisz i Wdróż",
+      "server": "Serwer",
+      "staticOnly": "Link do Statycznej Mapy",
+      "staticOnlyAbout": "Jeśli tryb Twojej gry nie jest kompatybilny z zasobami mapy na żywo, możesz podać link do mapy Twojej gry.",
+      "uploadCustomMap": "Prześlij niestandardową mapę",
+      "videoTutorial": "Samouczek wideo",
+      "websiteUrl": "Link Strony Internetowej"
+    },
+    "limits": {
+      "expiration": "Wygaśnięcie",
+      "limitsHeader": "Limity Społeczności SonoranCAD",
+      "upgradeYourCad": "Ulepsz Swój System CAD",
+      "version": "Wersja"
+    },
+    "logs": {
+      "log": "Dziennik",
+      "logs": "Logi",
+      "time": "Czas"
     },
     "penal": {
-      "createNewPenal": "Dodaj Nowy Kod Karny",
-      "editPenal": "Edytuj Kod Karny",
-      "code": "Kod",
-      "title": "Tytuł",
-      "chargeType": "Rodzaj Pobrania Opłaty",
-      "bondType": "Rodzaj Poświadczenia",
-      "bondAmount": "Kwota Mandatu / Poświadczenia",
-      "jailTime": "Czas Więzienia",
-      "confirmRemove": "Jesteś pewny, że chcesz usunąć ten kod?",
-      "errors": {
-        "exists": "Błąd: Ten Kod Jarny juz istnieje!",
-        "duplicate": "Błąd: Nie możesz ustawić Kodu Karnrgo na taki, który już istnieje!",
-        "notFound": "Błąd: Kod Karny do usunięcia nie znaleziony!"
-      },
-      "chargeTypes": "Rodzaj Pobrania Opłaty",
       "autoSort": "Automatyczne Sortowanie",
+      "bondAmount": "Kwota Mandatu / Poświadczenia",
+      "bondType": "Rodzaj Poświadczenia",
       "bondTypes": "Rodzaj Poświadczenia",
+      "chargeType": "Rodzaj Pobrania Opłaty",
+      "chargeTypes": "Rodzaj Pobrania Opłaty",
+      "code": "Kod",
       "columns": {
         "action": "Akcja",
-        "charge": "Pobranie Opłaty",
-        "bond": "Poświadczenie"
-      }
-    },
-    "10Codes": {
-      "action": "Akcja",
-      "code": "Kod"
+        "bond": "Poświadczenie",
+        "charge": "Pobranie Opłaty"
+      },
+      "confirmRemove": "Jesteś pewny, że chcesz usunąć ten kod?",
+      "createNewPenal": "Dodaj Nowy Kod Karny",
+      "editPenal": "Edytuj Kod Karny",
+      "errors": {
+        "duplicate": "Błąd: Nie możesz ustawić Kodu Karnrgo na taki, który już istnieje!",
+        "exists": "Błąd: Ten Kod Jarny juz istnieje!",
+        "notFound": "Błąd: Kod Karny do usunięcia nie znaleziony!"
+      },
+      "jailTime": "Czas Więzienia",
+      "title": "Tytuł"
     },
     "permissions": {
-      "permissionKeys": "Klucze Uprawnień",
-      "permissionKey": "Klucz Uprawnienia",
-      "key": "Klucz",
-      "permissions": "Uprawnienia",
-      "accountManagement": "Zarządzanie Kontem",
-      "permissionsGuide": "Przewodnik po Uprawnieniach",
-      "keyName": "Nazwa Klucza",
       "account": "Konto",
-      "joined": "Dołączył",
-      "pagePermissions": "Uprawnienia Strony",
-      "unitGeneral": "Jednostki - Ogólne",
-      "policeAdvanced": "Policja - Zaawansowane",
-      "emsAdvanced": "Pogotowie Ratunkowe - Zaawansowane",
-      "fireAdvanced": "Straż Pożarna - Zaawansowane",
-      "dmvRecords": "Rejestry DMV",
-      "modifyStreetSigns": "Modyfikuj znaki drogowe",
-      "lawRecords": "Rejestry Prawników",
+      "accountManagement": "Zarządzanie Kontem",
       "adminAccess": "Dostęp Administacyjny",
-      "kickUser": "Wyrzuć Użytkownika",
+      "ban": "ban",
       "banUser": "Zbanuj Użytkownika",
+      "confirmBan": "Jesteś pewny, że chcesz",
+      "confirmKick": "Jesteś pewny, że chcesz wyrzucić",
+      "confirmRemoveKey": "Jesteś pewny, że chcesz usunąć ten klucz uprawnień?",
+      "dmvRecords": "Rejestry DMV",
+      "emsAdvanced": "Pogotowie Ratunkowe - Zaawansowane",
+      "errors": {
+        "duplicateKey": "Błąd: Klucz o tej nazwie już istnieje!"
+      },
+      "fireAdvanced": "Straż Pożarna - Zaawansowane",
+      "joined": "Dołączył",
+      "key": "Klucz",
+      "keyName": "Nazwa Klucza",
+      "kickUser": "Wyrzuć Użytkownika",
+      "lawRecords": "Rejestry Prawników",
+      "modifyStreetSigns": "Modyfikuj znaki drogowe",
+      "pagePermissions": "Uprawnienia Strony",
+      "permissionKey": "Klucz Uprawnienia",
+      "permissionKeys": "Klucze Uprawnień",
+      "permissions": "Uprawnienia",
+      "permissionsGuide": "Przewodnik po Uprawnieniach",
+      "policeAdvanced": "Policja - Zaawansowane",
       "revokeBan": "Odbanuj",
+      "status": {
+        "active": "AKTYWNE",
+        "banned": "ZBANOWANE",
+        "pending": "OCZEKUJE"
+      },
       "toggles": {
         "editIdent": "Edycja Kryptonimu",
         "editOtherIdent": "Edycja Kryptonimów Innych Jednostek.",
         "selfDispatch": "Samodzielny Dyspozytor",
         "supervisor": "Nadzorca"
       },
-      "confirmKick": "Jesteś pewny, że chcesz wyrzucić",
-      "confirmBan": "Jesteś pewny, że chcesz",
-      "confirmRemoveKey": "Jesteś pewny, że chcesz usunąć ten klucz uprawnień?",
-      "ban": "ban",
       "unban": "odbanowanie",
-      "status": {
-        "pending": "OCZEKUJE",
-        "active": "AKTYWNE",
-        "banned": "ZBANOWANE"
-      },
+      "unitGeneral": "Jednostki - Ogólne"
+    },
+    "remove": {
+      "removeCad": "Usuń System CAD",
+      "removeHeader": "Usuń swój SonoranCAD",
+      "removeSubtext": "Musisz być właścicielem społeczności / systemu CAD aby go usunąć. Proces usunięcia wymaga weryfikacji adresu email.",
+      "removeWarning1": "Usunięcie lub oddanie systemu CAD NIE ANULUJE aktywnej subskrypcji społeczności.",
+      "removeWarning2": "Możesz anulować lub przenieść Twoją subskrypcje na inną społeczność w centrum płatności.",
+      "transferCad": "Przenieś SystemCAD",
+      "transferCadTo": "Przenieś SystemCAD do",
+      "transferHeader": "Przenieś swój SonoranCAD",
+      "transferSubtext": "Musisz być właścicielem społeczności / systemu CAD aby go przenieść. Proces przeniesienia wymaga weryfikacji adresu email."
+    },
+    "webhooks": {
+      "10Code": "Modyfikacja kodów dziesiątkowych",
+      "10CodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kod dziesiątkowy.",
+      "about": "O Webhooku",
+      "accountPermissions": "Uprawnienia Konta",
+      "accountPermissionsAbout": "Ten WebHook zostanie wysłany jeśli administrator zmieni uprawnienia konta.",
+      "adminWebhooks": "Administracyjne",
+      "adminWebhooksAbout": "Te WebHooki są związane z dzialaniami administracyjnymi.",
+      "apiRequest": "Prośba API",
+      "apiRequestAbout": "Ten WebHook zostanie wysłany jeśli poproszono o API.",
+      "bolo": "BOLO",
+      "boloAbout": "Ten WebHook zostanie wysłany jeśli zostanie dodane lub zmodyfikowane BOLO.",
+      "character": "Zedytowano Postać",
+      "characterAbout": "Ten WebHook zostanie wysłany jeśli postać cywila zostanie dodana, zedytiwana lub usunięta.",
+      "civilianWebhooks": "Cywil",
+      "civilianWebhooksAbout": "Te WebHooki są związane z operacjami cywilów.",
+      "departmentStructure": "Struktura Departamentu",
+      "departmentStructureAbout": "Ten WebHook zostanie wysłany jeśli administrator zmieni strukturę departamentu.",
+      "dispatch": "Dyspozytor",
+      "dispatchAbout": "Ten WebHook zostanie wysłany jeśli zostanie dodane nowe wezwanie lub jedno z istniejących zostanie zmodyfikowane.",
+      "dmv": "Rejestry DMV",
+      "dmvAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord DMV, jeden z istniejących zmodyfikowany lub usunięty.",
+      "emergencyAbout": "Te webhooki są związane z służbami ratunkowymi.",
+      "emergencyCall": "Połączenie Alarmowe",
+      "emergencyCallAbout": "Ten WebHook zostanie wysłany jeśli ktoś wyśle połączenie alarmowe.",
+      "emergencyWebhooks": "Służby Ratunkowe",
       "errors": {
-        "duplicateKey": "Błąd: Klucz o tej nazwie już istnieje!"
+        "maxWebhooks": "Błąd: Osiągnąłeś limit webkooków dla Twojej społeczności:"
+      },
+      "fireRecord": "Rejestry Straży Pożarnej",
+      "fireRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord straży pożarnej, jeden z istniejących zmodyfikowany lub usunięty.",
+      "headerText": "Integracja SonoranCAD z Discordem",
+      "law": "Rejestry Strony Prawnej",
+      "lawAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord dla prawników, jeden z istniejących zmodyfikowany lub usunięty.",
+      "medicalRecord": "Rejestry Medyczne",
+      "medicalRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord medyczny, jeden z istniejących zmodyfikowany lub usunięty.",
+      "modified": "Zmodyfikowany",
+      "penalCode": "Modyfikacja Kodeksu Karnego",
+      "penalCodeAbout": "Ten WebHook zostanie wysłany jeśli administrator doda, zedytuje lub usunie kodeks karny.",
+      "policeRecord": "Rejestry Policji",
+      "policeRecordAbout": "Ten WebHook zostanie wysłany jeśli zostanie stworzony nowy rekord policyjny, jeden z istniejących zmodyfikowany lub usunięty.",
+      "removed": "Usunięty",
+      "signal": "Sygnał",
+      "signalAbout": "Ten webhook zostanie wysłany, gdy sygnał będzie obowiązywał.",
+      "subtext1": "Integracja SonoranCAD z Discordem pozwala Tobie na otrzymywane powiadomień bezpośrednio na Twój serwer Discord.",
+      "subtext2": "Po prostu włącz i określ link WebHooka z Discorda do przeznaczonych pól poniżej.",
+      "toneBoardAbout": "Ten webhook zostanie wysłany, gdy dyspozytor odtworzy ton.",
+      "unitPanic": "Jednostka włączyła Panic Buttona",
+      "unitPanicAbout": "Ten WebHook zostanie wysłany jeśli jednostka załączy swój PANIC BUTTON."
+    },
+    "wipeRecords": {
+      "confirmWipe1": "Jesteś pewny, że chcesz usunąć wszystkie rejestry tego typu?",
+      "confirmWipe2": "Tej akcji nie można cofnąć!",
+      "wipeHeader": "Wyczyść Rejestry Społeczności",
+      "wipeSubtext1": "Właściciel Społeczności może usunąć wszystkie zapisane rejestry według typu.",
+      "wipeSubtext2": "Wybierz typ poniżej aby usunąć wszystkie."
+    }
+  },
+  "bodycamRecordings": {
+    "open": "Otwórz",
+    "refresh": "Odśwież"
+  },
+  "calleditor": {
+    "unitStatus": "Status jednostki:"
+  },
+  "civilian": {
+    "buttons": {
+      "autoRegister": "Auto rejestracja",
+      "dmv": "DMV",
+      "editCharacter": "Edytuj Postać",
+      "newCharacter": "Nowa Postać",
+      "records": "Baza Danych"
+    },
+    "characterEditor": {
+      "addCharacter": "Dodaj Postać",
+      "age": "Wiek",
+      "aka": "Znany również jako (Pseudonim / Przezwisko / Poprzednie Nazwisko itp)",
+      "confirmRemove": "Jesteś pewny, że chcesz usunąć tę postać?",
+      "contactNumber": "Numer kontaktowy",
+      "createNewCharacter": "Stwórz nową postać",
+      "dob": "Data Urodzenia",
+      "editExistingCharacter": "Edytuj postać",
+      "emergencyContact": "Kontakt w nagłych wypadkach",
+      "eye": "Kolor oczu",
+      "first": "Imię",
+      "hair": "Kolor włosów",
+      "height": "Wzrost",
+      "image": "Zdjęcie",
+      "last": "Nazwisko",
+      "mi": "Drugie Imię",
+      "occupation": "Zawód",
+      "relationship": "Związek",
+      "removeCharacter": "Ustaw Postać",
+      "residence": "Miejsce zamieszkania",
+      "saveCharacter": "Zapisz Postać",
+      "sex": "Płeć",
+      "skin": "Odcień skóry",
+      "weight": "Waga",
+      "zip": "Kod Pocztowy"
+    },
+    "erlcAutoRegister": "Automatyczna rejestracja ER:LC",
+    "errors": {
+      "maxCharacters": "Błąd: Osiągnąłeś maksymalną liczbę postaci dla Twojej społeczności"
+    },
+    "labels": {
+      "selectedCharacter": "Wybierz postać"
+    }
+  },
+  "common": {
+    "actions": "Działania",
+    "activeServer": "Aktywne serwery",
+    "add": "Dodaj",
+    "addRow": "Dodaj wiersz",
+    "attach": "Dołącz",
+    "attachToCall": "Dołącz do Wezwania (Enter)",
+    "autoSort": "Automatyczne Sortowanie",
+    "back": "Wstecz",
+    "cancel": "Anuluj",
+    "clear": "Wyczyść",
+    "close": "Zamknij",
+    "communityId": "ID Społeczności",
+    "confirm": "Zatwierdź",
+    "contains": "Zawiera",
+    "continue": "Kontynuuj",
+    "copy": "Kopiuj",
+    "csv": "CSV",
+    "dbSyncRecordWarning": "To jest rekord synchronizacji bazy danych i można go modyfikować tylko przy włączonym Database Merge.",
+    "deleteRow": "Usuń wiersz",
+    "detach": "Odłącz",
+    "detachFromCall": "Odepnij od połączenia (Enter)",
+    "disabled": "Wyłączone",
+    "dismiss": "Zamknij",
+    "download": "Pobierz",
+    "edit": "Edytuj",
+    "enabled": "Włączone",
+    "equal": "Równe",
+    "errors": {
+      "limitReached": "Error: limit osiągnięty",
+      "notFound": "Przepraszamy, nic tutaj nie ma..."
+    },
+    "export": "Eksportuj",
+    "exportAll": "Eksportuj wszystko",
+    "externalWindow": "Otwórz w nowym oknie",
+    "failed": "Nieudane",
+    "field": "Pole",
+    "help": "Pomoc",
+    "history": "Historia",
+    "hours": "Godziny",
+    "icon": "Ikona",
+    "id": "ID",
+    "import": "Importuj",
+    "importPrompt": "Wklej treść JSON",
+    "itemsPerPage": "Przedmiotów na stronę",
+    "json": "JSON",
+    "learnMore": "Dowiedz się więcej",
+    "link": "Link",
+    "loading": "Ładowanie",
+    "lostConnection": "Straciłeś połączenie z serwerem",
+    "lostSignal": "Utracony sygnał",
+    "max": "Maks",
+    "maximize": "Maksymalizuj",
+    "message": "wiadomość",
+    "min": "Min",
+    "minimize": "Minimalizuj",
+    "minutes": "Minuty",
+    "modify": "Modyfikuj",
+    "new": "Nowy",
+    "noData": "Brak danych",
+    "noImageSelected": "Nie wybrano obrazu",
+    "noResults": "Brak wyników",
+    "notEqual": "Nie równe",
+    "off": "Wyłączone",
+    "ok": "OK",
+    "on": "Wł.",
+    "open": "Otwórz",
+    "paste": "Wklej",
+    "pause": "Wstrzymaj",
+    "range": "Zasięg",
+    "rateLimit": "Limit szybkości",
+    "refresh": "Odśwież",
+    "remove": "Usuń",
+    "reset": "Resetuj",
+    "s": "s",
+    "save": "Zapisz",
+    "search": "Szukaj",
+    "searchOnMap": "Szukaj na mapie",
+    "seconds": "Sekundy",
+    "serverStatus": "Status serwera",
+    "sessionExpired": "Sesja wygasła",
+    "start": "Startuj",
+    "status": "Status",
+    "stop": "Stop",
+    "success": "Sukces",
+    "test": "Testuj",
+    "tutorial": "Samouczek",
+    "tutorials": "Samouczki",
+    "type": "Typ",
+    "undo": "Cofnij",
+    "upload": "Prześlij",
+    "uploader": "Przesyłanie (Max 5MB)",
+    "versionDisplay": {
+      "currentVersion": "Twoja wersja: {version}",
+      "description": "UWAGA: Wygląda na to, że używasz nieaktualnej wersji Sonoran CAD.",
+      "latestVersion": "Najnowsza wersja: {latestVersion}",
+      "title": "Uwaga: Nieaktualna wersja",
+      "updateReminder": "Pamiętaj, aby zaktualizować aplikację, aby korzystać z najnowszych funkcji, zmian i poprawek!"
+    }
+  },
+  "communityMenu": {
+    "buttons": {
+      "admin": "Administrator",
+      "civilian": "Cywil",
+      "discord": "Discord",
+      "dispatch": "Dyspozytor",
+      "dmv": "DMV",
+      "ems": "Pogotowie Ratunkowe",
+      "fire": "Straż Pożarna",
+      "law": "Prawnik",
+      "police": "Policja",
+      "setDefault": "Ustaw domyślną społeczność",
+      "website": "Strona Internetowa"
+    },
+    "labels": {
+      "permissionKey": "Klucz Uprawnień"
+    },
+    "text": {
+      "noPermissions": "Brak uprawnień"
+    }
+  },
+  "CustomDomain": {
+    "chooseYourDomainName": "Wybierz nazwę swojej domeny",
+    "cname": "CNAME",
+    "communityID": "ID Społeczności",
+    "configureYourDnsRecord": "Skonfiguruj rekord DNS",
+    "content": "Treść",
+    "copiedToClipboard": "Skopiowano do schowka!",
+    "name": "Nazwa",
+    "placeholderExampleDomain": "cad.example.com",
+    "saveYourCommunitesCustomDomain": "Zapisz niestandardową domenę swojej społeczności",
+    "setCustomDomain": "Ustaw własną domenę",
+    "txt": "TXT",
+    "youMustOwnYourDomainName": "Musisz posiadać własną domenę, aby skonfigurować domenę niestandardową."
+  },
+  "desktopOverlay": {
+    "overlayOpacity": "Krycie nakładki"
+  },
+  "development": {
+    "banner": "Wersja testowa rozwojowa - Nie do użytku produkcyjnego",
+    "message": "To jest bezpłatna wersja rozwojowa Sonoran CAD i nie jest przeznaczona do użytku produkcyjnego.",
+    "title": "Testowanie deweloperskie",
+    "understand": "Rozumiem"
+  },
+  "downloads": {
+    "desktopAndMobileBanner": "Pobierz nasze aplikacje desktopowe i mobilne na Windows!",
+    "desktopBanner": "Pobierz naszą aplikację desktopową na Windows!"
+  },
+  "error404": {
+    "goBack": "Wróć"
+  },
+  "homepage": {
+    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
+    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
+    "heroTitle": "The #1 Dispatch Platform for Gaming",
+    "integrateButton": "Integrate",
+    "integrations": {
+      "erlc": {
+        "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "ctaDocs": "Zobacz dokumentację",
+          "ctaPrimary": "Zarejestruj się dziś",
+          "faq": {
+            "items": {
+              "best": {
+                "answer": "Sonoran CAD to najbardziej zaawansowany i najczęściej używany system CAD dla społeczności graczy, w tym ER:LC. Dzięki pełnej integracji z ER:LC dostępnej w darmowym planie, Twoja społeczność może działać w kilka minut.",
+                "question": "Czy Sonoran CAD to najlepszy CAD dla ER:LC?"
+              },
+              "community": {
+                "answer": "Oczywiście. Darmowy plan jest idealny dla małych i średnich społeczności, oferując pełną funkcjonalność ER:LC bez ograniczeń. Możesz później przejść na wyższy plan, jeśli Twój serwer się rozrośnie i będzie potrzebował dodatkowych kont lub funkcji.",
+                "question": "Czy to jest odpowiednie dla małych lub rozwijających się społeczności?"
+              },
+              "features": {
+                "answer": "Integracja obejmuje pełny zestaw funkcji czasu rzeczywistego, takich jak:\n- Mapa 3D na żywo ze śledzeniem gracza i jednostek\n- Automatyczna synchronizacja połączeń 911\n- Automatyzacja zatrzymań drogowych i skrót klawiszowy\n- Automatyzacja czytnika tablic i skrót klawiszowy\n- Automatyzacja tworzenia pojazdów i postaci\n- i wiele więcej",
+                "question": "Jakie funkcje są zawarte w integracji ER:LC?"
+              },
+              "free": {
+                "answer": "Tak, integracja ER:LC jest w pełni dostępna w darmowej wersji Sonoran CAD. Płatne plany są potrzebne tylko wtedy, gdy chcesz dodać więcej kont użytkowników lub rozbudować swoją społeczność, ale wszystkie podstawowe funkcje ER:LC działają bez aktualizacji.",
+                "question": "Czy integracja ER:LC jest darmowa w użyciu?"
+              },
+              "setup": {
+                "answer": "Konfiguracja zwykle zajmuje mniej niż 10 minut. Wystarczy wygenerować klucz API ER:LC, wkleić go do Sonoran CAD i wkleić nasz adres URL webhooka w menu serwera ER:LC. Nie jest wymagane kodowanie ani zaawansowana konfiguracja.",
+                "question": "Jak długo trwa skonfigurowanie integracji?"
+              }
+            }
+          },
+          "faqKicker": "Protokoły wsparcia",
+          "faqTitleAccent": "Pytania",
+          "faqTitlePrimary": "Najczęściej zadawane",
+          "headlineAccent": "dla ER:LC",
+          "headlinePrimary": "Najlepszy CAD",
+          "kicker": "Darmowy, szybki, w pełni zintegrowany",
+          "meta": {
+            "description": "Darmowy CAD dla ER:LC z mapą 3D na żywo, bodycamem, połączeniami alarmowymi, narzędziami postaci i obsługą nakładki w grze.",
+            "keywords": "ER:LC CAD, darmowy CAD dla ER:LC, ERLC CAD, Sonoran CAD",
+            "ogImageAlt": "Integracja Sonoran CAD z ER:LC",
+            "title": "Darmowy CAD dla ER:LC | Sonoran CAD",
+            "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
+          },
+          "modules": {
+            "bodycam": {
+              "infoCopy": "Nagrywaj materiał z bodycam w grze do odtwarzania i analizy.",
+              "infoTitle": "Nagrywanie",
+              "previewTitle": "Podgląd bodycamu na żywo",
+              "title": "Na żywo z kamery nasobnej"
+            },
+            "character": {
+              "infoCopy": "Generuj postacie automatycznie, bez konieczności logowania do CAD.",
+              "infoTitle": "Polecenia w grze",
+              "previewTitle": "Podgląd tworzenia postaci",
+              "title": "Tworzenie postaci"
+            },
+            "emergency": {
+              "infoCopy": "Wysyłaj alarmowe zgłoszenia w grze do dyspozytorów, wyświetlane na mapie.",
+              "infoTitle": "Aplikacja 911",
+              "previewTitle": "Podgląd Połączeń Alarmowych",
+              "title": "Połączenia Alarmowe"
+            },
+            "map": {
+              "infoCopy": "Dowodź jednostkami i skanuj miasto za pomocą immersyjnej, trójwymiarowej mapy na żywo.",
+              "infoTitle": "Mapa 3D",
+              "previewTitle": "Podgląd mapy 3D na żywo",
+              "title": "Mapa 3D na żywo"
+            },
+            "overlay": {
+              "infoCopy": "Wyświetlaj bieżące informacje o dyspozycji bez opuszczania rozgrywki.",
+              "infoTitle": "Nakładka w grze",
+              "previewTitle": "Podgląd nakładki w grze",
+              "title": "Nakładka w grze"
+            }
+          }
+        },
+        "name": "ER:LC"
+      },
+      "fivem": {
+        "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "ctaDocs": "Zobacz dokumentację",
+          "ctaPrimary": "Zarejestruj się dziś",
+          "faq": {
+            "items": {
+              "best": {
+                "answer": "Sonoran CAD został zaprojektowany specjalnie dla społeczności graczy i oferuje jeden z najgłębszych dostępnych stosów integracji z FiveM, z oficjalnymi narzędziami zbudowanymi wokół rzeczywistych procesów dyspozytorskich i ewidencyjnych.",
+                "question": "Czy Sonoran CAD to najlepszy CAD dla FiveM?"
+              },
+              "community": {
+                "answer": "Tak. Darmowy plan dobrze sprawdza się w mniejszych społecznościach, a Sonoran CAD może skalować się wraz z większymi jednostkami, gdy Twój serwer dodaje więcej użytkowników, funkcji i złożoności operacyjnej.",
+                "question": "Czy to jest odpowiednie dla małych lub rozwijających się społeczności?"
+              },
+              "features": {
+                "answer": "Integracja FiveM obejmuje obsługę mapy na żywo, narzędzia bodycam, synchronizację bazy danych oraz rozwijający się zestaw oficjalnych wtyczek do głębszych przepływów pracy w grze.",
+                "question": "Jakie funkcje są zawarte w integracji FiveM?"
+              },
+              "free": {
+                "answer": "Tak. Podstawowa integracja FiveM w Sonoran CAD jest dostępna w darmowym planie, więc społeczności mogą zacząć bez płacenia za podstawowy przepływ pracy.",
+                "question": "Czy integracja FiveM jest darmowa w użyciu?"
+              },
+              "setup": {
+                "answer": "Większość serwerów może skonfigurować podstawowy zasób w kilka minut. Zainstaluj zasób, dodaj swój identyfikator społeczności i klucz API, uruchom ponownie serwer, a następnie włącz funkcje, których chcesz używać.",
+                "question": "Jak długo trwa skonfigurowanie integracji?"
+              }
+            }
+          },
+          "faqKicker": "Protokoły wsparcia",
+          "faqTitleAccent": "Pytania",
+          "faqTitlePrimary": "Najczęściej zadawane pytania",
+          "headlineAccent": "dla FiveM",
+          "headlinePrimary": "Najlepszy CAD",
+          "kicker": "Darmowy, szybki, w pełni zintegrowany",
+          "meta": {
+            "description": "Darmowe CAD dla FiveM z mapą na żywo, bodycamem, synchronizacją bazy danych i oficjalnym wsparciem wtyczek dla głęboko zintegrowanych serwerów roleplay.",
+            "keywords": "FiveM CAD, darmowy CAD do FiveM, Sonoran CAD, dyspozytor FiveM, CAD do odgrywania ról FiveM",
+            "ogImageAlt": "Integracja Sonoran CAD z FiveM",
+            "title": "Darmowy CAD dla FiveM | Sonoran CAD",
+            "twitterImageAlt": "Podgląd integracji Sonoran CAD x FiveM"
+          },
+          "modules": {
+            "bodycam": {
+              "infoCopy": "Przeglądaj incydenty z zsynchronizowanym materiałem z kamery nasobnej bezpośrednio połączonym z Twoimi procesami CAD.",
+              "infoTitle": "Nagrywanie",
+              "previewTitle": "Podgląd bodycamu FiveM",
+              "title": "Na żywo z kamery nasobnej"
+            },
+            "map": {
+              "infoCopy": "Śledź jednostki, monitoruj zgłoszenia i koordynuj sceny za pomocą mapy na żywo stworzonej dla aktywnych społeczności FiveM.",
+              "infoTitle": "Mapa 3D",
+              "previewTitle": "Podgląd mapy FiveM na żywo",
+              "title": "Mapa na żywo"
+            },
+            "plugins": {
+              "description": "Oficjalne podmoduły rozszerzają Sonoran CAD na resztę stosu serwera FiveM.",
+              "infoCopy": "Wdrażaj specjalnie stworzone wtyczki dla dzwoniących, znaków, pagerów, stacji i nie tylko bez przebudowywania swojego przepływu pracy.",
+              "infoTitle": "Integracje serwera",
+              "previewTitle": "Podgląd ekosystemu wtyczek FiveM",
+              "title": "Ekosystem wtyczek"
+            },
+            "sync": {
+              "infoCopy": "Połącz tożsamości w grze, pojazdy i rekordy, aby Twój CAD był zgodny z aktywnością serwera.",
+              "infoTitle": "Synchronizacja Danych",
+              "previewTitle": "Podgląd synchronizacji bazy danych FiveM",
+              "title": "Synchronizacja Bazy Danych"
+            }
+          },
+          "submodules": {
+            "items": {
+              "callers": {
+                "description": "Twórz immersyjne wezwania NPC i graczy, które trafiają bezpośrednio do dyspozytorni z uporządkowanymi danymi CAD.",
+                "previewTitle": "Podgląd wtyczki niestandardowych dzwoniących",
+                "title": "Niestandardowi dzwoniący"
+              },
+              "ers": {
+                "description": "Połącz przepływy pracy radia między twoim serwerem a Sonoran CAD, aby szybciej koordynować działania podczas aktywnych incydentów.",
+                "previewTitle": "Podgląd wtyczki radio alarmowe",
+                "title": "Radio alarmowe"
+              },
+              "pagers": {
+                "description": "Dostarczaj ukierunkowane powiadomienia pagera na podstawie aktywności dyspozytorskiej, aby jednostki od razu otrzymywały właściwe informacje.",
+                "previewTitle": "Podgląd wtyczki Pagers",
+                "title": "Pagery"
+              },
+              "printer": {
+                "description": "Drukuj raporty i informacje pomocnicze w grze dla departamentów, które chcą namacalnych przekazań scen.",
+                "previewTitle": "Podgląd wtyczki Printer",
+                "title": "Drukarka"
+              },
+              "signs": {
+                "description": "Zarządzaj dynamicznymi znakami ulicznymi i komunikatami drogowymi za pomocą narzędzi opartych na CAD, stworzonych do scen roleplay.",
+                "previewTitle": "Podgląd wtyczki znaków ulicznych",
+                "title": "Znaki drogowe"
+              },
+              "station": {
+                "description": "Wyzwalaj tony stacji, działania drzwi i komunikaty alertów z wydarzeń CAD, aby utrzymać załogi w synchronizacji.",
+                "previewTitle": "Podgląd wtyczki alertów stacji",
+                "title": "Alertowanie stacji"
+              }
+            },
+            "title": "Oficjalne integracje"
+          }
+        },
+        "name": "FiveM"
       }
     },
-    "addresses": {
-      "addresses": "Adresy"
+    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "startToday": "Start Today",
+    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
+    "welcomeHeadline": "Welcome to Sonoran CAD!",
+    "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "addresses": "Adresy",
+    "addressesHint": "Wybierz jeden lub więcej adresów pagera routowanego.",
+    "body": "Treść strony",
+    "importCurrentCallUnits": "Dołącz jednostki z bieżącego połączenia",
+    "infernoPager": "Inferno Pager",
+    "invalidPlayers": "Identyfikatory graczy muszą być liczbami całkowitymi oddzielonymi przecinkami.",
+    "messageRequired": "Wpisz treść strony przed wysłaniem.",
+    "nature": "Natura strony",
+    "noAddresses": "Nie skonfigurowano adresów pagera Inferno do stronicowania.",
+    "playerIds": "Jednostki",
+    "playerIdsHint": "Opcjonalne jednostki online do bezpośredniego wywołania.",
+    "selectionRequired": "Wybierz co najmniej jeden adres lub jednostkę.",
+    "sendPage": "Wyślij stronę",
+    "unitsTooltip": "Możesz też przeciągnąć i upuścić tutaj aktywne wywołanie dispatch, aby dodać jego dołączone jednostki."
+  },
+  "login": {
+    "buttons": {
+      "cancel": "Anuluj",
+      "create": "Stwórz konto",
+      "forgot": "Zapomniałem hasła",
+      "login": "Zaloguj się",
+      "staySignedIn": "Niewylogowuj mnie",
+      "switchCommunities": "Zmień Społeczność"
     },
-    "logs": {
-      "logs": "Logi",
-      "log": "Dziennik",
-      "time": "Czas"
+    "close": "Zamknij",
+    "labels": {
+      "confirmPassword": "Potwierdź Hasło",
+      "email": "E-mail",
+      "emailPreferences": "Preferencje dotyczące poczty email",
+      "password": "Hasło",
+      "resetPassword": "Zresetuj Hasło",
+      "username": "Nazwa Użytkownika"
+    },
+    "learnMoreAboutSonoranCADSIntegrationPluginSystemCustomLiveMa": "Dowiedz się więcej o systemie wtyczek integracyjnych Sonoran CAD, niestandardowej mapie na żywo, funkcji synchronizacji bazy danych, aplikacjach iOS/Android i nie tylko!",
+    "linkAuth": {
+      "codeLabel": "4-znakowy kod",
+      "description": "Logowanie przez Apple i Discord musi zostać ukończone poza osadzoną ramką.",
+      "errors": {
+        "auth": "Twoja sesja logowania jest brakująca lub wygasła. Zaloguj się ponownie.",
+        "community": "Nie można określić społeczności dla tego linku.",
+        "createFailed": "Nie można teraz utworzyć kodu linku. Spróbuj ponownie.",
+        "expired": "Nieprawidłowy lub wygasły kod linku.",
+        "invalidCode": "Wprowadź prawidłowy 4-znakowy kod.",
+        "submitFailed": "Nie można teraz powiązać tego kodu. Spróbuj ponownie."
+      },
+      "idPageBackToMenu": "Wróć do menu",
+      "idPageDescription": "Wpisz 4-znakowy kod z gry.",
+      "idPageSuccessDescription": "Twoje konto w grze jest teraz połączone.",
+      "idPageSuccessTitle": "Połączenie ukończone",
+      "idPageTitle": "Wprowadź kod linku",
+      "idPageVerifying": "Weryfikowanie kodu...",
+      "linkPageDescription": "Zaloguj się na swoje konto, a następnie wpisz 4-znakowy kod pokazany w osadzonym oknie logowania.",
+      "linkPageTitle": "Połącz logowanie osadzone",
+      "openLink": "Otwórz stronę linku",
+      "scanPrompt": "Zeskanuj, aby otworzyć na telefonie",
+      "stepOneDescription": "Użyj aparatu, aby zeskanować kod QR.",
+      "stepOneTitle": "Otwórz link na swoim telefonie lub tablecie",
+      "stepTwoDescription": "Wpisz ten 4-znakowy kod po otwarciu linku.",
+      "stepTwoTitle": "Otwórz link w przeglądarce",
+      "submit": "Link Zaloguj się",
+      "success": "Logowanie połączone. Możesz teraz wrócić do oryginalnego osadzonego okna.",
+      "title": "Wybierz metodę logowania",
+      "visit": "Otwórz",
+      "waiting": "Oczekiwanie na powiązanie tego kodu"
+    },
+    "newVisitor": {
+      "description": "Dowiedz się więcej o systemie wtyczek integracyjnych Sonoran CAD, niestandardowej mapie na żywo, funkcji synchronizacji bazy danych, aplikacjach iOS/Android i nie tylko!",
+      "heading": "Witamy w Sonoran CAD!",
+      "title": "Witamy"
+    },
+    "robloxLinkBannerTitle": "Wymagane połączenie konta Roblox",
+    "welcome": "Witamy",
+    "welcomeToSonoranCAD": "Welcome to Sonoran CAD!",
+    "withApple": "z Apple",
+    "withDiscord": "z Discordem",
+    "withSonoran": "z Sonoran"
+  },
+  "management": {
+    "currentPlayersLastHour": "Aktualni gracze (ostatnia 1 godzina)",
+    "currentPlayersLastHour2": "Aktualni gracze (ostatnia 1 godzina):",
+    "heartbeatMetrics": "Metryki integracji Heartbeat:",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "node": "Węzeł",
+    "node2": "Węzeł:",
+    "password": "Hasło administracyjne",
+    "playerCount": "Liczba graczy",
+    "topServersHeartbeat": "Top 25 serwerów (Heartbeat)",
+    "totalServersLastHour": "Łączna liczba serwerów (ostatnia 1 godzina)",
+    "totalServersLastHour2": "Łączna liczba serwerów (ostatnia 1 godzina):",
+    "updateDb": "zaktualizujBazęDanych",
+    "users": "Użytkownicy",
+    "users2": "Użytkownicy:"
+  },
+  "menu": {
+    "discovery": "Odkrywanie"
+  },
+  "payment": {
+    "buttons": {
+      "amount": "Kwota",
+      "comparePlans": "Pricing",
+      "oneTimePurchases": "Zakupy jednorazowe",
+      "openBillingPortal": "Open Billing Portal",
+      "purchase": "Kup Subskrypcje"
+    },
+    "labels": {
+      "bundleDiscount": "Rabat pakietowy",
+      "chargesPerPage": "Przewinienia na stronę",
+      "endDate": "Data zakończenia",
+      "expertInstallation": "Profesjonalny montaż",
+      "monthly": "Miesięcznie",
+      "noChargesAvailable": "Brak dostępnych opłat",
+      "noChargesFound": "Nie znaleziono opłat",
+      "noSubscriptionsAvailable": "Brak dostępnych subskrypcji",
+      "noSubscriptionsFound": "Nie znaleziono subskrypcji",
+      "plan": "Plan",
+      "plus": "Plus",
+      "pro": "Pro",
+      "quarterly": "Kwartalnie",
+      "sonoranOne": "Sonoran One",
+      "standard": "Standardowy",
+      "startDate": "Data rozpoczęcia",
+      "starter": "Pakiet początkowy",
+      "subscriptionsPerPage": "Subskrypcje na stronę"
+    },
+    "pricing": {
+      "description": "Płatne subskrypcje Sonoran CAD pozwalają włączyć nowe funkcje integracji, umożliwić dostosowanie, usunąć limity i wiele więcej!",
+      "howToPurchase": "Jak kupić",
+      "title": "Aktualizacja cen subskrypcji"
+    },
+    "text": {
+      "bundleAndSave": "Pakiet i oszczędzaj",
+      "bundleExplain": "Oszczędzaj 30% każdego miesiąca, gdy kupujesz VPS od Sonoran Servers.",
+      "newSubscription": "Nowa Subskrypcja",
+      "save25": "Zapisz 25%",
+      "serverIp": "IP Serwera",
+      "serversEmail": "Email konta Sonoran Servers",
+      "setCommunityId": "Ustaw ID społeczności"
+    }
+  },
+  "police": {
+    "bodycamRecordings": {
+      "noneFound": "Nie znaleziono nagrań z kamer nasobnych.",
+      "searchRecordings": "Szukaj nagrań",
+      "selectRecordingPrompt": "Wybierz nagranie, aby je wyświetlić."
+    },
+    "bodycamViewer": {
+      "allCams": "Wszystkie kamery",
+      "indicatorAlt": "Wskaźnik kamerki nasobnej",
+      "live": "Na żywo",
+      "screens": "Ekrany",
+      "screensAvailable": "Dostępne ekrany: {visible} / {total} (Strona {page} z {pages})",
+      "singleCam": "Pojedyncza kamera",
+      "startRecording": "Rozpocznij nagrywanie",
+      "stopRecording": "Zatrzymaj nagrywanie {duration}",
+      "switchToAll": "Przełącz na widok wszystkich kamer nasobnych",
+      "switchToSingle": "Przełącz na widok pojedynczej kamery nasobnej",
+      "uploadingClip": "Przesyłanie klipu..."
+    },
+    "callEditor": {
+      "addNote": "Dodaj Notatkę",
+      "address": "Adres",
+      "automations": "Automatyzacje",
+      "block": "Numer Bloku",
+      "callAttachmentAutoStatus": "Automatyczny status załącznika połączenia",
+      "callDescription": "Opis Wezwania",
+      "callNotes": "Notatki do Wezwania",
+      "callOrigin": "Pochodzenie Wezwania",
+      "callStatus": "Status Wezwania",
+      "callTitle": "Tytuł Wezwania",
+      "callViewer": "Podgląd Wezwanie",
+      "clearEditor": "Wyczyść Edytor",
+      "code": "Kod",
+      "confirmations": {
+        "close1": "Ustawiłeś status wezwania na ZAMKNIĘTE.",
+        "close2": "Jesteś pewny, że chcesz zamknąć to wezwanie?",
+        "close3": "To wezwanie oraz wszelkie dane zostaną usunięte!",
+        "detatch": "Odłącz",
+        "detatchConfirm": "Jesteś pewny, że chcesz odłączyć od tego wezwania?"
+      },
+      "createCall": "Stwórz Wezwanie",
+      "dispatch": "Wezwanie",
+      "dispatchCallsOnly": "Tylko wezwania dyspozytorskie",
+      "dispatchRecord": "Zgłoszenie dyspozytorskie",
+      "emergencyCallsShown": "Wyświetlone Połączenia Alarmowe",
+      "errors": {
+        "attachedAlready": "Błąd: Jesteś już dodany do tego wezwania!",
+        "noOrigin": "Błąd: To wezwanie nie ma ustawionego pochodzenia!",
+        "noPriority": "Błąd: To wezwanie nie ma ustawionego priorytetu!",
+        "noStatus": "Błąd: To wezwanie nie ma ustawionego statusu!",
+        "noTitle": "Błąd: To wezwanie nie ma ustawionego tytułu!",
+        "unitAlreadyOnCall": "Błąd: Ta jednostka jest już dodana do tego wezwania!"
+      },
+      "nearestStations": "Najbliższe stacje",
+      "nearestUnits": "Najbliższe jednostki",
+      "newDispatch": "Nowe Wezwanie",
+      "nextCall": "Następne wezwanie (strzałka w prawo)",
+      "note": "Notatka",
+      "openRapidIQ": "Otwórz RapidIQ",
+      "originOptions": {
+        "caller": "Dzwoniący",
+        "observed": "Zaobserwowane",
+        "radioDispatch": "Radiowo (Dyspozytor)",
+        "walkUp": "Podejście"
+      },
+      "postal": "Kod Pocztowy",
+      "previousCall": "Poprzednie połączenie (Strzałka w lewo)",
+      "primaryUnit": "Główna Jednostka",
+      "priority": "Priorytet",
+      "savedTypes": "Zapisane typy",
+      "selfClear": "Samodzielne Czyszczenie",
+      "selfDispatch": "Samodzielny Dyspozytor",
+      "selfDispatchUnavailable": "Nie masz uprawnień do korzystania z samodzielnego wysyłania.",
+      "statusOptions": {
+        "active": "Aktywne",
+        "closed": "Zamknięte",
+        "pending": "Oczekuje"
+      },
+      "statusTimers": {
+        "countdown": "Odliczanie",
+        "countup": "Zliczanie w górę",
+        "descCountdown": "Gdy status jednostki jest ustawiony na {status}, uruchom timer odliczający w dół.",
+        "descCountup": "Gdy status jednostki jest ustawiony na {status}, uruchom timer odliczający w górę."
+      },
+      "trackPrimary": "Śledź jednostkę podstawową (GPS)",
+      "units": "Jednostki",
+      "unitStatusAttached": "Status jednostki: podłączona",
+      "unitStatusAttachedHint": "Gdy jednostka zostanie dołączona do zgłoszenia, zaktualizuj jej status.",
+      "unitStatusClosed": "Status jednostki: Zamknięty",
+      "unitStatusClosedHint": "Gdy zgłoszenie zostanie zamknięte, zaktualizuj status wszystkich dołączonych jednostek.",
+      "unitStatusDetached": "Status jednostki: odłączona",
+      "unitStatusDetachedHint": "Gdy jednostka zostanie odłączona od zgłoszenia, zaktualizuj jej status.",
+      "unitStatusTimers": "Status jednostki: liczniki czasu",
+      "updateCall": "Zaktualizuj Wezwanie",
+      "webhooks": {
+        "action": "Akcja",
+        "attached": "Dołączony",
+        "closed": "Zamknięte",
+        "detached": "Odłączono",
+        "enabled": "Włączone",
+        "status": "Status"
+      }
+    },
+    "callList": {
+      "activeCalls": "Aktywne Wezwania",
+      "attachToCall": "Dołącz do Wezwania",
+      "callHistory": "Historia Wezwań",
+      "closeCall": "Zamknij Wezwanie",
+      "columns": {
+        "10Code": "Kod Dziesiątkowy",
+        "address": "Adres",
+        "callId": "ID Wezwania",
+        "callTitle": "Tytuł Wezwania",
+        "status": "Status",
+        "units": "Jednostki"
+      },
+      "editCall": "Edytuj Wezwanue",
+      "previewCall": "Podgląd Wezwania",
+      "printCall": "Wydrukuj Wezwanie",
+      "priority": "Priorytet"
+    },
+    "callouts": {
+      "availableWeapons": "Dostępna broń",
+      "calloutLabel": "Zgłoszenie",
+      "chanceToAttack": "Szansa na atak na gracza",
+      "chanceToFlee": "Szansa na ucieczkę od gracza",
+      "chanceToObtainWeapons": "Szansa na zdobycie broni",
+      "chanceToSurrender": "Szansa na poddanie się",
+      "fallbackTooltip": "Domyślne działanie, jeśli nie wystąpi żadne z poniższych działań.",
+      "pedFallbackAction": "Działanie awaryjne pieszego"
+    },
+    "chat": {
+      "allOnlineUnits": "Wszystkie jednostki online",
+      "attachedRecord": "Dołączony zapis",
+      "composerHint": "Użyj Ctrl/Cmd+Enter, aby wysłać tekst. Skopiuj rekord lub link do połączenia, aby wkleić go do czatu.",
+      "conversations": "Rozmowy",
+      "emptySelection": "Wybierz jedną lub więcej jednostek online, aby rozpocząć czat.",
+      "emptyThread": "Brak wiadomości dla tego czatu.",
+      "groupLabel": "Grupa: {group}",
+      "justYou": "Tylko Ty",
+      "linkPreview": "[Link] {label}",
+      "message": "wiadomość",
+      "noMessages": "Brak wiadomości",
+      "noThreads": "Brak aktywnych rozmów.",
+      "offline": "Offline",
+      "offlineRecipientsHint": "Usuń odbiorców offline przed wysłaniem nowej wiadomości.",
+      "online": "Online",
+      "openLinkedRecord": "Otwórz powiązany rekord",
+      "recipients": "Odbiorcy",
+      "recipientsHint": "Wybierz jednostki online, aby rozpocząć lub kontynuować czat.",
+      "sendLinkedRecord": "Wyślij powiązany rekord",
+      "sessionNotice": "Tylko na żywo. Odświeżenie usuwa historię czatu.",
+      "ttsIncomingLink": "{sender}. {label}",
+      "ttsIncomingText": "{sender}. {message}",
+      "ttsIncomingTooltip": "Odczytuj na głos przychodzące wiadomości na czacie",
+      "ttsToggle": "Przełącz tekst na mowę",
+      "unableToSend": "Nie można teraz wysłać czatu.",
+      "unitFallback": "Jednostka {id}",
+      "you": "Ty"
+    },
+    "command": {
+      "attach": "Dołącz",
+      "callId": "ID zgłoszenia",
+      "clear": "Wyczyść",
+      "close": "Zamknij",
+      "commandLine": "Wiersz poleceń",
+      "create": "Utwórz",
+      "detach": "Odłącz",
+      "note": "Notatka",
+      "postal": "Kod pocztowy",
+      "savedCallType": "Zapisany typ zgłoszenia",
+      "status": "Status",
+      "unit": "Jednostka",
+      "unitStatus": "Status jednostki",
+      "view": "Widok"
+    },
+    "diagram": {
+      "deleteSelected": "Usuń zaznaczone",
+      "groupUngroupSelected": "Grupuj/Rozgrupuj zaznaczone (SHIFT + CLICK)",
+      "itemOptions": "Opcje elementu",
+      "lockUnlockSelected": "Zablokuj/Odblokuj zaznaczone",
+      "moveLayerDown": "Przesuń warstwę w dół (Shift = dół)",
+      "moveLayerUp": "Przesuń warstwę w górę (Shift = góra)",
+      "redo": "Ponów",
+      "shortcutDelete": "SKRÓT: DELETE",
+      "shortcutDown": "SKRÓT: (SHIFT) Strzałka w dół",
+      "shortcutGroup": "SKRÓT: G",
+      "shortcutLock": "SKRÓT: L",
+      "shortcutO": "SKRÓT: O",
+      "shortcutRedo": "SKRÓT: CTRL + SHIFT + Z",
+      "shortcutUndo": "SKRÓT: CTRL + Z",
+      "shortcutUp": "SKRÓT: (SHIFT) Strzałka w górę",
+      "undo": "Cofnij"
+    },
+    "emergencyCall": {
+      "caller": "Dzwoniący",
+      "calls": "Wezwania",
+      "civil": "Cywil",
+      "confirmRemoveAll": "Jesteś pewny, że chcesz zamknąć wszystkie aktywne wezwania?",
+      "description": "Opis",
+      "emergency": "Nagły wypadek",
+      "emergencyCall": "Połączenie Alarmowe",
+      "location": "Lokalizacja",
+      "mergeToCallEditor": "Scalaj do Edytora Połączeń",
+      "openInEditor": "Otwórz wezwanie w edytorze",
+      "removeAll": "Usuń wszystkie aktywne wezwania",
+      "removeAllCalls": "Usuń wszystkie wezwania",
+      "removeCall": "Usuń Wezwanie"
+    },
+    "header": {
+      "activeCalls": "Aktywne Wezwania",
+      "activeServer": "Aktywne Serwery",
+      "activeUnits": "Aktywne Jednostki",
+      "bodyCam": "Kamera ciała",
+      "bodyCamRecordings": "Nagrania z kamery nasobnej",
+      "bodycamViewer": {
+        "allCams": "All Cams",
+        "live": "Live",
+        "screens": "Screens",
+        "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
+        "singleCam": "Single Cam",
+        "switchToAll": "Switch to all bodycams view",
+        "switchToSingle": "Switch to single bodycam view"
+      },
+      "bolo": "BOLO",
+      "chat": "Czat",
+      "count": "Liczba",
+      "emergencyCalls": "Połączenia Alarmowe",
+      "file": "Plik(i)",
+      "liveMap": "Mapa na żywo",
+      "lookup": "Wyszukiwanie",
+      "panic": "Panika",
+      "playTo": "Odtwórz dla",
+      "quickLinks": "Szybkie Linki",
+      "rapidIQ": "RapidIQ",
+      "records": "Rejestry",
+      "repeat": "Powtórz",
+      "seconds": "Sekundy",
+      "signal": "Sygnał",
+      "signalEffect1": "Sygnał",
+      "signalEffect2": "w toku",
+      "streetSigns": "Znaki drogowe",
+      "toneBoard": "Tablica tonów"
+    },
+    "liveMap3d": {
+      "blip": {
+        "custom": "NIESTANDARDOWY",
+        "default": "sygnał",
+        "dispatchCall": "WEZWANIE DYSPOZYTORSKIE",
+        "emergency": "999",
+        "newCallout": "NOWE ZGŁOSZENIE",
+        "sign": "ZNAK",
+        "station": "STACJA",
+        "unit": "JEDNOSTKA"
+      },
+      "controls": {
+        "camera": "Kamera",
+        "cycle": "Cykl",
+        "down": "DÓŁ",
+        "left": "LEWO",
+        "position": "Pozycja",
+        "right": "PRAWO",
+        "speed": "Prędkość",
+        "up": "GÓRA"
+      },
+      "followBlip": "Śledź",
+      "loadError": "Nie można wczytać terenu 3D: {reason}",
+      "speedDisplay": "{multiplier}x ({speed})",
+      "unknownError": "nieznany błąd"
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Zmniejsz rozmiar znacznika",
+        "dragAndDrop": "(Przeciągnij i upuść)",
+        "ersCallout": "Komunikat ERS (Przeciągnij i upuść)",
+        "increaseBlipSize": "Zwiększ rozmiar znacznika",
+        "mapMode": "Tryb mapy",
+        "zoomIn": "Powiększ",
+        "zoomOut": "Pomniejsz"
+      }
+    },
+    "lookup": {
+      "agency": "Agencja",
+      "alerts": {
+        "emptySearch": "Błąd: Puste Wyszukanie!"
+      },
+      "civilians": "Cywile",
+      "columns": {
+        "charges": "Przewinienia",
+        "date": "Data",
+        "expiration": "Wygasa",
+        "first": "Imię",
+        "flags": "Flagi",
+        "last": "Nazwisko",
+        "mi": "Drugie Imię",
+        "name": "Imię",
+        "plate": "Rejestracja",
+        "status": "Status",
+        "type": "Typ"
+      },
+      "department": "Departament",
+      "exact": "Dokładny",
+      "first": "Imię",
+      "flags": "Flagi:",
+      "getOwner": "Uzyskaj właściciela",
+      "id": "ID Rejestru",
+      "identifier": "Kryptonim",
+      "last": "Nazwisko",
+      "lookup": "Wyszukiwanie",
+      "mi": "Drugie Imię",
+      "nameSearch": "Szukanie Osoby",
+      "newLookup": "Nowe wyszukanie",
+      "noRecordsFound": "Nie znaleziono rejestru",
+      "partial": "Częściowy",
+      "plate": "Numer rejestracyjny",
+      "plateSearch": "Szukanie Pojazdu",
+      "records": "Rejestry",
+      "recordsNoData": "Brak dostępnych rejestrów",
+      "recordsNoResults": "Nie znaleziono rejestrów",
+      "recordsPerPage": "Rejestrów na stronę",
+      "refresh": "Odśwież",
+      "reportsHeader": "Raporty",
+      "sendToUnits": "Wyślij do jednostki (jednostek)",
+      "statuses": {
+        "active": "Aktywne",
+        "closed": "Zamknięte",
+        "inactive": "Nieaktywne"
+      },
+      "unit": "Jednostka"
+    },
+    "notes": {
+      "notepad": "Notatnik",
+      "notes": "Notatki",
+      "title": "Tytuł"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Odpowiedź",
+      "autoImportToCallEditorTooltip": "Automatyczny import do edytora połączeń ({state})",
+      "completedNoCard": "RapidIQ zakończone",
+      "copyResults": "Kopiuj pytania i odpowiedzi",
+      "copyResultsSuccess": "Pytania i odpowiedzi skopiowane",
+      "displayCardAtEndTooltip": "Wyświetl kartę na końcu ({state})",
+      "nextHotkey": "Następne pytanie (strzałka w prawo lub Enter)",
+      "previousHotkey": "Poprzednie pytanie (Strzałka w lewo)",
+      "questionColumn": "Pytanie"
+    },
+    "recordCenter": {
+      "errors": {
+        "noRecordTypes": "Brak typów rejestrów: Dodaj je w Administrator > Dostosowywanie > Niestandardowe Rejestry",
+        "noReportTypes": "Brak typów raportów: Dodaj je w Administrator > Dostosowywanie > Niestandardowe Rejestry",
+        "syncEnabledFeatDisabled": "Ta funkcja nie jest kompatybilna z synchronizacją bazy danych"
+      },
+      "filesAwaitingApproval": "Pliki oczekujące zatwierdzenia",
+      "myDrafts": "Moje szkice",
+      "myFiles": "Moje Pliki",
+      "newRecord": "Nowy Rejestr",
+      "newReport": "Nowy Raport",
+      "noRecordsForSuper": "Żadne rejestry nie wymagają akcji supervisora",
+      "noRecordsFound": "Nie znaleziono rejestrów",
+      "noReportsForSuper": "Żadne raporty nie wymagają akcji supervisora",
+      "noReportsFound": "Nie znaleziono raportów",
+      "pendingFiles": "Oczekujące Pliki",
+      "pendingRecords": "Oczekujące rejestry",
+      "supervisorPanel": "Panel Supervisora"
+    },
+    "records": {
+      "agency": {
+        "agencyInformation": "Informacje o Agencji",
+        "agencyName": "Nazwa Agencji",
+        "badge": "Numer Odznaki",
+        "date": "Data",
+        "location": "Lokalizacja",
+        "observingOfficer": "Jednostka Obserwacyjna",
+        "recordNum": "Numer Rejestru",
+        "zip": "Kod Pocztowy"
+      },
+      "arrest": {
+        "arrestInformation": "Informacje o aresztowaniu",
+        "arrestType": "Rodzaj aresztowania",
+        "probationaryOfficer": "Oficer dokonujący aresztowania",
+        "weapons": "Broń(e)"
+      },
+      "charges": {
+        "bondFineAmount": "Poświadczenie/Kwota",
+        "bondType": "Rodzaj poświadczenia",
+        "charge": "Przewinienie",
+        "chargeNumber": "Numer przewinienia",
+        "charges": "Przewinienia",
+        "chargeType": "Rodzaj przewinienia",
+        "counts": "Liczby",
+        "fineTotal": "Łączna kwota",
+        "jailTime": "Czas więzienia",
+        "titleCode": "Tytuł, Kod"
+      },
+      "editor": {
+        "addRecord": "Dodaj Rejestr",
+        "applyForDmv": "Ubiegaj się o dostęp do Rejestrów DMV",
+        "copyLink": "Kopiuj link do rekordu",
+        "dmvType": "Typ DMV",
+        "errors": {
+          "nameOrPlate": "Błąd: Ten rejestr wymaga dodania cywila lub pojazdu!",
+          "noCopiedLink": "Błąd: Nie masz skopiowanego linku do rekordu!",
+          "noName": "Błąd: Ten rejestr wymaga dodania cywila!",
+          "noPlate": "Błąd: Ten rejestr wymaga dodania pojazdu!",
+          "requiredField": "Błąd: Wymagane Pole"
+        },
+        "history": {
+          "action": {
+            "add": "Rejestr dodany",
+            "edit": "Rejestr Zmieniony"
+          },
+          "after": "Po",
+          "apiUser": "Web API",
+          "before": "Przed",
+          "changedBy": "Zmienił",
+          "loadError": "Błąd: Nie udało się załadować historii rekordu.",
+          "noFieldChanges": "W tym wpisie nie zmieniono żadnych wartości pól."
+        },
+        "linkTitle": "Tytuł linku",
+        "noCustomTypes": "Brak rodzaji rejestrów: Dodaj je tutaj Administrator > Dostosowywanie > Niestandardowe Rejestry",
+        "pasteLink": "Wklej link do rekordu",
+        "pdf": "PDF",
+        "printInGame": "Drukuj w grze",
+        "recordType": "Typ Rejestru",
+        "removeRecord": "Usuń Rejestr",
+        "saveAsDraft": "Zapisz jako wersję roboczą",
+        "saveRecord": "Zapisz Rejestr",
+        "status": {
+          "active": "AKTYWNE",
+          "approved": "ZATWIERDZONE",
+          "closed": "ZAMKNIĘTE",
+          "pending": "OCZEKUJE",
+          "rejected": "ODRZUCONE"
+        }
+      },
+      "general": {
+        "records": "Rejestry",
+        "reports": "Raporty"
+      },
+      "getCiv": {
+        "characterSearch": "Wyszukiwanie cywila",
+        "civilianInfo": "Informacje o cywilu"
+      },
+      "getVeh": {
+        "vehicleSearch": "Wyszukiwanie pojazdu"
+      },
+      "narrative": {
+        "narrative": "Narracja"
+      },
+      "speed": {
+        "citationInformation": "Informacje o mandacie",
+        "courtDate": "Data Pomiaru",
+        "courtTime": "Czas Pomiaru",
+        "fine": "Kwota",
+        "other": "Inne",
+        "pace": "Tempo",
+        "paceType": "Rodzaj Pomiaru",
+        "radar": "Radar",
+        "speedLimit": "Dozwolona prędkość",
+        "vehicleSpeed": "Prędkość pojazdu"
+      },
+      "status": {
+        "dateSubmitted": "Data Przesłania",
+        "observingSignature": "Podpis Oficera",
+        "status": "Status",
+        "supervisorSignature": "Podpis Supervisora/Sędziego"
+      },
+      "vehicle": {
+        "color": "Kolor",
+        "make": "Marka",
+        "model": "Model",
+        "plate": "Rejestracja",
+        "type": "Typ pojazdu",
+        "types": {
+          "aircraft": "Samolot",
+          "coupe": "Coupé",
+          "marine": "Łódź",
+          "motorcycle": "Motocykl",
+          "offroad": "Terenowy",
+          "sedan": "Sedan",
+          "suv": "SUV",
+          "truck": "Ciężarówka"
+        },
+        "vehicleInformation": "Informacje o pojeździe",
+        "year": "Rocznik"
+      }
+    },
+    "signal": {
+      "clear": "Wyczyść Sygnał",
+      "initiate": "Zainicjuj Sygnał",
+      "modify": "Edytuj Sygnał",
+      "signal": "Sygnał"
+    },
+    "timers": {
+      "attachments": "Załączniki",
+      "automationLabelCountDown": "Automatyzacja: Status {status} {seconds} sekund",
+      "automationLabelCountUp": "Automatyzacja: Status {status} Liczenie w górę",
+      "clearAttachment": "Wyczyść załącznik",
+      "hours": "Godziny",
+      "minutes": "Minuty",
+      "newTimer": "Nowy timer",
+      "seconds": "Sekundy",
+      "timers": "Timery"
+    },
+    "toneBoard": {
+      "speechToTextFailed": "Rozpoznawanie mowy nie powiodło się.",
+      "speechToTextNoMicrophone": "Nie wykryto mikrofonu.",
+      "speechToTextNoSpeech": "Nie wykryto mowy.",
+      "speechToTextNotAllowed": "Dostęp do mikrofonu został odrzucony.",
+      "speechToTextUnavailable": "Rozpoznawanie mowy jest teraz niedostępne.",
+      "textToSpeech": "Tekst na mowę"
+    },
+    "unitEditor": {
+      "agency": "Agencja",
+      "aop": "Obszar Gry",
+      "bodycamDisabled": "Kamera nasobna wyłączona",
+      "bodycamEnabled": "Kamera nasobna włączona",
+      "bodycamMaxDuration": "Maks. czas trwania",
+      "bodycamRepeatTone": "Powtórz ton",
+      "bodycamShadowRecording": "Nagrywanie w tle",
+      "bodycamSoundEffects": "Efekty dźwiękowe",
+      "bodycamTab": "Kamera nasobna",
+      "bodycamVolume": "Głośność  ",
+      "confirmRemove": "Jesteś pewny, że chcesz usunąć kryptonim?",
+      "department": "Departament",
+      "departments": "Departamenty",
+      "effects": "Efekty",
+      "electronBodycamHint": "Białe miganie? Spróbuj udostępnić cały ekran zamiast konkretnego okna aplikacji.",
+      "electronBodycamOpenPermissions": "Uprawnienia otwierania",
+      "electronBodycamPermissionWarning": "Do rejestrowania bodycam wymagane jest uprawnienie do nagrywania ekranu w macOS. Włącz je w Ustawieniach systemowych, a następnie całkowicie zamknij i ponownie otwórz Sonoran CAD.",
+      "electronBodycamSource": "Źródło kamery nasobnej",
+      "group": "Grupa",
+      "location": "Lokalizacja",
+      "modifyIdentifier": "Edytuj Kryptonim",
+      "modifyIdentifierTab": "Edytuj Kryptonim",
+      "name": "Imię i Nazwisko",
+      "overlay": "Nakładka",
+      "persistentGroup": "Grupa stała",
+      "persistentGroupFull": "Ta grupa jest pełna",
+      "persistentGroupHint": "Przypisz siebie do skonfigurowanej trwałej grupy.",
+      "persistentGroupUpdateFailed": "Nie można teraz zaktualizować grupy trwałej.",
+      "rank": "Ranga",
+      "status": "Status",
+      "subdivision": "Dywizja",
+      "subdivisions": "Dywizje",
+      "switchIdentifier": "Zmień Kryptonim",
+      "switchIdentifierTab": "Zmień Kryptonim",
+      "unitNumber": "Kryptonim Jednostki",
+      "units": "Jednostki"
+    },
+    "units": {
+      "activeGroups": "Aktywne Grupy",
+      "activeUnits": "Aktywne Jednostki",
+      "addToCall": "Dodaj do wezwania",
+      "addToGroup": "Dodaj do grupy",
+      "createGroup": "Stwórz Grupę",
+      "dispatchersHidden": "Ukryci dyspozytorzy",
+      "dispatchersShown": "Pokazani dyspozytorzy",
+      "editUnit": "Edytuj Jednostkę",
+      "group": "Grupa",
+      "groupName": "Nazwa Grupy",
+      "kickUnit": "Wyrzuć Jednostkę",
+      "newGroup": "Nowa Grupa",
+      "togglePanic": "Włącz Panic",
+      "unitGroups": "Grupy Jednostek",
+      "units": "Jednostki"
+    }
+  },
+  "pricing": {
+    "sonoranCADSPaidSubscriptionsAllowYouToEnableNewIntegrationFe": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!"
+  },
+  "promotion": {
+    "dontShowAgain": "Nie pokazuj mi tego ponownie",
+    "newPromotion": "Nowa promocja",
+    "title": "Promocja"
+  },
+  "rapidIQCustomization": {
+    "codes": "Kody:",
+    "defaults": "Domyślne:",
+    "flows": "Przepływy:",
+    "label": "Etykieta",
+    "question": "Pytanie",
+    "questions": "Pytania:"
+  },
+  "selectionPage": {
+    "buttons": {
+      "createCommunity": "Stwórz Społeczność",
+      "discover": "Odkrywaj",
+      "joinCommunity": "Dołącz do Społeczności",
+      "leaveCommunity": "Opuść Społeczność",
+      "My Account": "Moje Konto",
+      "myCommunities": "Dashboard"
+    },
+    "errors": {
+      "communityIdCharacters": "Błąd: ID Twojej społeczności może zawierać tylko litery, cyfry, podkreślenia oraz myślniki!",
+      "communityIdLength": "Błąd: ID Społeczności musi mieć między 1 a 50 znaków!",
+      "communityNameLength": "Błąd: Nazwa Twojej społeczności musi mieć jednym 1 a 50 znaków!",
+      "noCommunityID": "Błąd: Proszę wpisz ID Społeczności!"
+    },
+    "labels": {
+      "communityName": "Nazwa Społeczności",
+      "website": "Strona internetowa (Opcjonalnie)"
+    },
+    "text": {
+      "communityNotFound": "Nie znaleziono społeczności",
+      "confirmLeave1": "Jesteś pewien, że chcesz opuścić tę Społeczność?",
+      "confirmLeave2": "Twoje konto oraz wszelkie dane z tej społeczności zostaną usunięte!",
+      "createHeader": "Rejestracja systemu CAD",
+      "createText": "Zarejestruj nową społeczność CAD, aby inni mogli do niej dołączyć!",
+      "helpCommunityId1": "ID Twojej społeczności jest unikatowym identyfikatorem Twojej społeczności. To jest to, czego użytkownik będzie używał do logowania się do konkretnego systemu CAD.",
+      "helpCommunityId2": "Zazwyczaj jest to skrót Twojej społeczności.",
+      "helpCommunityId3": "NP: Real Life RolePlay - ID: RLRP",
+      "helpCommunityIdFind1": "Musisz się skontaktować z członkami lub Administracją Twojej społeczności graczy.",
+      "helpCommunityIdFind2": "Otrzymasz od nich konkretne ID Społeczności dla swojego systemu CAD.",
+      "helpCommunityIdFindHeader": "Gdzie znajdę ID Społeczności?",
+      "helpCommunityName": "Nazwa Twojej społeczności to publiczna nazwa Twojej społeczności roleplay.",
+      "helpCommunityWebsite": "Strona internetowa Twojej społeczności to link do forum, discorda lub innej strony. To pole jest OPCJONALNE i nie jest wymagane!",
+      "joinHeader": "Dołącz do społeczności",
+      "joinText": "Dołącz do istniejącej społeczności systemu CAD!"
+    },
+    "tooltips": {
+      "join": "Dołącz",
+      "joinHelp": "Nie wiesz co zrobić?",
+      "joinThis": "Dołącz do tej społeczności.",
+      "leaveCommunity": "Opuść tę Społeczność.",
+      "owner": "Jesteś właścicielem tej Społeczności.",
+      "register": "Zarejestruj swój SonranCAD",
+      "search": "Szukaj społeczności SonranCAD"
+    }
+  },
+  "settings": {
+    "accountSecretId": "ID tajnego konta:",
+    "accountTab": "Konto",
+    "apiIdDisable": "Musisz być zalogowany do społeczności aby ustawić swoje API ID",
+    "apiIdLabel": "ID API:",
+    "bringToTop": "Przenieś na górę",
+    "changeDesktop": "Zmień pulpit",
+    "classicLayout": "Klasyczny układ",
+    "desktopOverlayHotkey": "Nakładka pulpitu",
+    "erlcHotkeys": "Skróty klawiszowe ER:LC",
+    "exitResize": "Zakończ zmianę rozmiaru",
+    "generalTab": "Ogólne",
+    "helpImprove": "Pomóż ulepszyć to tłumaczenie",
+    "hotkeyClickToRecord": "Kliknij, aby nagrać",
+    "hotkeyClickToStop": "Kliknij, aby zatrzymać nagrywanie",
+    "hotkeyCombination": "Kombinacja",
+    "hotkeyDisable": "Skróty klawiszowe są niedostępne w bezpłatnej wersji",
+    "hotkeyDuplicateCleared": "Skrót {combo} był już przypisany do {action}. Poprzednie przypisanie zostało usunięte.",
+    "hotkeyRecorderHelp": "Kliknij pole kombinacji, aby rozpocząć lub zatrzymać nagrywanie. Kliknij pole prawym przyciskiem, aby wyczyścić skrót klawiszowy.",
+    "hotkeyRecording": "Nagrywanie...",
+    "hotkeys": "Skróty klawiszowe",
+    "hotkeyUnassigned": "Nieprzypisany",
+    "language": "Język",
+    "languageKorean": "Koreański/한국어",
+    "lockWindow": "Zablokuj okno",
+    "microphone": "Mikrofon",
+    "microphoneNumbered": "Mikrofon {index}",
+    "microphoneStt": "Mikrofon (STT)",
+    "overlay": {
+      "addBulb": "Dodaj żarówkę",
+      "addFrame": "Dodaj ramkę",
+      "bodycam": "Kamera nasobna",
+      "bulbType": "Typ żarówki",
+      "callUpdates": "Aktualizacje zgłoszeń",
+      "channel": "Kanał",
+      "color": "Kolor",
+      "configuration": "Konfiguracja",
+      "confirmReset": "Czy napewno chcesz zresetować konfigurację?",
+      "createWyzeKey": "Utwórz klucz Wyze",
+      "credentials": "Poświadczenia",
+      "customTextFiles": "Niestandardowe pliki tekstowe",
+      "dataKeys": "Klucze Danych",
+      "dataStorage": "Przechowywanie danych",
+      "delay": "Opóźnienie",
+      "events": "Wydarzenia",
+      "exampleText": "Tekst przykładowy",
+      "field": "Pole",
+      "fileName": "Nazwa pliku",
+      "font": "Czcionka",
+      "fontEditor": "Edytor czcionek",
+      "fontSize": "Rozmiar czcionki",
+      "fontWeight": "Grubość czcionki:",
+      "goveeBluetooth": "Govee Bluetooth",
+      "goveeWifi": "Govee WiFi",
+      "lighting": "Oświetlenie",
+      "manualIp": "Manual IP(Dodatkowe)",
+      "oauthToken": "Token OAuth",
+      "obsTextFiles": "Pliki tekstowe OBS",
+      "philipsHue": "Philips Hue",
+      "refreshPayment": "Odśwież płatność",
+      "scan": "Skan",
+      "scanForBulbs": "Skanuj w poszukiwaniu żarówek",
+      "stopScanning": "Zatrzymaj skanowanie",
+      "streamAdBanner": "Sprawdź naszą nakładkę livestreamu i bota Twitch!",
+      "streamOverlay": "Nakładka strumieniowa",
+      "twitch": "Twitch",
+      "twitchConfig": "Konfiguracja Twitch",
+      "twitchLogs": "Logi Twitch",
+      "txtFiles": "Plik tekstowy",
+      "unitUpdates": "Aktualizacje jednostki",
+      "wyzeApiKey": "Klucz API Wyze",
+      "wyzeColor": "Kolor Wyze",
+      "wyzeKeyId": "ID klucza Wyze"
+    },
+    "panic": "Panika",
+    "prefix": "Prefiks",
+    "previousMicrophoneUnavailable": "Wcześniej wybrany mikrofon (niedostępny)",
+    "quickResize": "Szybka zmiana rozmiaru",
+    "resetLayout": "Zresetuj układ",
+    "secretDisable": "Musisz być zalogowany do społeczności, aby uzyskać swój Sekretny ID",
+    "settings": "Ustawienia",
+    "showAdvanced": "Pokaż zaawansowane",
+    "showHide": "Pokaż/Ukryj",
+    "statusHotkeys": "Skróty statusów",
+    "systemDefaultMicrophone": "Domyślny mikrofon systemu",
+    "theme": {
+      "backgroundImage": "Obraz tła",
+      "backgroundImageFit": "Dopasowanie obrazu tła",
+      "backgroundImagePosition": "Pozycja obrazu tła",
+      "backgroundImageScale": "Skala obrazu tła",
+      "bgImageFit": {
+        "contain": "Zawiera (dopasuj do wnętrza)",
+        "cover": "Wypełnij (dopasuj i przytnij)",
+        "fill": "Wypełnij (Rozciągnij)",
+        "none": "Brak (oryginalny rozmiar)",
+        "scaleDown": "Zmniejsz"
+      },
+      "bgImagePosition": {
+        "bottom": "Dolny",
+        "bottomLeft": "Dolny lewy",
+        "bottomRight": "Prawy dolny",
+        "center": "Wyśrodkowane",
+        "left": "Lewo",
+        "right": "Prawo",
+        "top": "Góra",
+        "topLeft": "Lewy górny",
+        "topRight": "Prawy górny"
+      },
+      "bgImageScale": {
+        "p100": "100%",
+        "p125": "125%",
+        "p150": "150%",
+        "p200": "200%",
+        "p50": "50%",
+        "p75": "75%"
+      },
+      "colors": {
+        "accent1": "Akcent 1",
+        "accent1Text": "Tekst akcentu 1",
+        "accent2": "Akcent 2",
+        "accent2Text": "Tekst akcentu 2",
+        "accent3": "Akcent 3",
+        "accent3Text": "Tekst akcentu 3",
+        "background": "Tło",
+        "foreground": "Kolor pierwszoplanowy",
+        "foregroundLight": "Jasny kolor pierwszoplanowy",
+        "inverseText": "Odwrócony tekst",
+        "primary": "Główny",
+        "primaryFaded": "Przygaszony główny",
+        "primaryText": "Tekst główny",
+        "subtitleText": "Tekst podtytułu",
+        "titleText": "Tekst tytułu"
+      },
+      "confirmDeleteTheme": "Czy na pewno chcesz usunąć {themeName}?",
+      "dark": "Ciemny",
+      "deleteTheme": "Usuń motyw",
+      "enterThemeName": "Wpisz nazwę motywu",
+      "errors": {
+        "invalidFormat": "Nieprawidłowy format motywu."
+      },
+      "importedThemeName": "Zaimportowany motyw {index}",
+      "restoreDefaults": "Przywróć domyślne",
+      "saveTheme": "Zapisz motyw",
+      "themeColors": "Kolory motywu",
+      "themeName": "Nazwa motywu",
+      "uploadBackground": "Prześlij tło"
+    },
+    "trafficStopDispatchCode": "10-38",
+    "trafficStopDispatchHotkey": "Zatrzymanie ruchu",
+    "trafficStopDispatchTitle": "Zatrzymanie ruchu",
+    "trafficStopHotkey": "Czytnik tablic rejestracyjnych",
+    "unlockWindow": "Odblokuj okno",
+    "voice": "Głos",
+    "volume": "Głośność"
+  },
+  "sideMenu": {
+    "buttons": {
+      "communityMenu": "Menu Społeczności",
+      "disclaimer": "Uzyskując dostęp lub korzystając z SonoranCAD, akceptujesz nasze warunki i zasady oraz politykę prywatności.",
+      "downloads": "Pliki do pobrania",
+      "exitFullscreen": "Wyłącz tryb pełnoekranowy",
+      "goFullscreen": "Włącz tryb pełnoekranowy",
+      "login": "Zaloguj się",
+      "logout": "Wyloguj się",
+      "menu": "Menu",
+      "myAccount": "Moje konto",
+      "settings": "Ustawienia",
+      "switchCommunities": "Zmień Społeczność",
+      "tutorials": "Samouczki"
     }
   },
   "stationAlert": {
-    "stationAlert": "powiadomienieStacji",
-    "updateDoors": "zaktualizujDrzwi",
+    "makeSelection": "wybierz",
+    "message": "wiadomość",
     "sendAlert": "wyślij alert",
     "sendMessage": "wiadomośćWyślij",
-    "makeSelection": "wybierz",
+    "stationAlert": "powiadomienieStacji",
+    "stationTone": "stacjaTon",
+    "tone": "Ton",
     "toneBoard": "tonPanel",
-    "stationTone": "stacjaTon"
+    "updateDoors": "zaktualizujDrzwi"
   },
-  "homepage": {
-    "heroTitle": "The #1 Dispatch Platform for Gaming",
-    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
-    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
-    "startToday": "Start Today",
-    "integrateButton": "Integrate",
-    "welcomeTitle": "Welcome",
-    "welcomeHeadline": "Welcome to Sonoran CAD!",
-    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
-    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
-    "integrations": {
-      "fivem": {
-        "name": "FiveM",
-        "description": "Official FiveM resource with dozens of deep integration points."
-      },
-      "erlc": {
-        "name": "ER:LC",
-        "description": "Official ER:LC in-game integration with live map and more."
-      }
-    }
+  "taskbar": {
+    "close": "Zamknij",
+    "displayTabIcons": "Wyświelt ikony zakładek",
+    "displayTabLabels": "Wyświetl nazwy zakładek",
+    "layoutCustomization": "Dostosowanie układu",
+    "newWindow": "Nowe okno",
+    "nextDesktop": "Następny pulpit",
+    "pinToTaskbar": "Przypnij do paska zadań",
+    "previousDesktop": "Poprzedni pulpit",
+    "sonoranCADV": "Sonoran CAD v",
+    "startMenu": "Menu startowe",
+    "system": "System",
+    "tabCustomization": "Dopasowywanie zakładki",
+    "taskbarPosition": "Pozycja paska zadań",
+    "unpinFromTaskbar": "Odepnij od paska zadań"
+  },
+  "toneBoard": {
+    "playStack": "Odtwórz stos",
+    "stack": "Stos"
   }
 }

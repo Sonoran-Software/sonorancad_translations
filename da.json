@@ -1,0 +1,650 @@
+{
+  "account": {
+    "labels": {
+      "emailMe": "Send mig vigtige meddelelser, opdateringer og tilbud."
+    }
+  },
+  "admin": {
+    "accounts": {
+      "purge": "Ryd inaktive"
+    },
+    "authenticate": {
+      "authSubtext1": "Fællesskabs ejere kan anmode om en unik identifikationsnøgle for at bekræfte deres ejerskab."
+    },
+    "communityId": {
+      "changeHeader": "Skift dit Community ID",
+      "changeSubtext1": "Fællesskabsejere kan anmode om et nyt fællesskabs-ID.",
+      "requestChange": "Anmod om ændring"
+    },
+    "customization": {
+      "customizationHeader": "Fællesskabstilpasning",
+      "customLogin": {
+        "url": "URL"
+      },
+      "emails": {
+        "accountRegistration": "Kontoregistrering",
+        "subheader": "Underrubrik"
+      },
+      "errors": {
+        "serverLimit2": "servere!"
+      },
+      "geo": {
+        "geographicalSettings": "Geografiske indstillinger"
+      },
+      "info": {
+        "name": "Navn",
+        "website": "Websted"
+      },
+      "lookupTypes": {
+        "advancedFieldsDescription": "Understøttede felttyper: tekst, tal, rullemenu og adresse.",
+        "configTitle": "Konfiguration af søgetype",
+        "displayName": "Visningsnavn",
+        "dropdownOptions": "Rullelisteindstillinger",
+        "dropdownOptionsHelp": "Tryk på enter for at tilføje hver mulighed.",
+        "fieldFallback": "Felt {index}",
+        "fieldTypeDropdown": "Rulleliste",
+        "noFieldSelected": "Intet felt valgt",
+        "noRecordTemplates": "Ingen skabeloner til poster med felter, der kan mappes, er tilgængelige.",
+        "optional": "Valgfri",
+        "rangeDisabled": "Område deaktiveret",
+        "rangeEnabled": "Område aktiveret",
+        "reindexRecordsConfirmTitle": "Genindeksér alle poster",
+        "reindexRecordsHelp": "Gemmer opslagindeksfelterne igen for eksisterende poster, så brugerdefinerede søgetyper bruger dine seneste feltmappinger.",
+        "sectionFallback": "Sektion {index}",
+        "width": "Bredde"
+      },
+      "otherCustomization": "Andre tilpasningsfunktioner",
+      "pageColors": {
+        "menuPageBkg": "Menu-sidens baggrund"
+      },
+      "quickLinks": {
+        "quickLinks": "Hurtige links"
+      },
+      "rapidIQEditor": {
+        "addOption": "Tilføj mulighed",
+        "codesHelp": "Administrer svartkoder. Kode-ID bruges i flows, og kodenavn vises til dispatch.",
+        "defaultQuestions": "Standardspørgsmål",
+        "flowsHelp": "Byg routinglogik med ordnede betingelser. Hver flow slutter med en resultatkode.",
+        "maskHint": "Eksempel: (###) ###-####",
+        "newCodeId": "Ny kode-id",
+        "options": "Indstillinger",
+        "searchCodes": "Søg koder",
+        "tabs": {
+          "defaults": "Standardsti"
+        },
+        "value": "Værdi"
+      },
+      "servers": {
+        "newServer": "Ny server"
+      }
+    },
+    "customRecords": {
+      "actions": "Handlinger",
+      "dbMap": "DB-synkroniseringsmapping",
+      "dependencyInfo": {
+        "infoNotEqual": "Vises hvis feltværdien ikke er lig med:"
+      },
+      "duplicateSection": "Duplikér sektion",
+      "enableDuplicate": "Aktivér duplikat",
+      "readOnly": "Skrivebeskyttet",
+      "recordTypes": {
+        "fireRecord": "Brandregister",
+        "policeReport": "Politirapport",
+        "vehicleRegistration": "Køretøjsregistrering"
+      },
+      "sectionLabel": "Sektionslabel",
+      "width": "Bredde"
+    },
+    "department": {
+      "abbreviation": "Forkortelse",
+      "address": "Adresse",
+      "agencies": "Agenturer",
+      "errors": {
+        "departmentLimit2": "afdelinger pr. distrikt!",
+        "subdivisionExists": "Fejl: En underafdeling med dette navn findes allerede!"
+      },
+      "modifyAgency": {
+        "name": "Myndighedsnavn"
+      },
+      "persistentGroups": {
+        "groupName": "Gruppenavn"
+      },
+      "subdivisions": "Underafdelinger",
+      "zip": "Postnummer"
+    },
+    "general": {
+      "authenticate": "Godkend",
+      "customRecords": "Brugerdefinerede poster",
+      "discordIntegration": "Discord-integration",
+      "wipeRecords": "Slet poster"
+    },
+    "integration": {
+      "availableMaps": "Tilgængelige kort",
+      "dbSync": {
+        "columnName": "Kolonnenavn",
+        "customMapAbout": "Dette er et brugerdefineret DB Sync-mappingfelt leveret af din brugerdefinerede recordeditor.",
+        "dbSyncHeader": "Database-synkronisering",
+        "dbSyncSubtext1": "Sonoran CAD's Database Sync giver dig mulighed for at hente karakterer, licenser og køretøjsregistreringer direkte fra din in-game database til din CAD.",
+        "dbSyncSubtext2": "Angiv blot din databases SQL-forbindelsesstreng, og tilknyt dine tabeller og felter til Sonoran CAD.",
+        "dbSyncSubtext3": "Alle RED-felter er påkrævet. Hvis du ikke har en datakolonne til et valgfrit felt, så lad det blot være tomt.",
+        "dbValue": "Databaseværdi",
+        "fieldMapId": "Feltkortlægnings-ID",
+        "host": "Host/Adresse",
+        "jsonColumnAbout": "Hvis denne kolonne er en JSON-datatype, kan du angive JSON-nøglen.",
+        "testConnection": "Test forbindelse",
+        "tooltipCharacterColumn": "Dette er navnet på den unikke karakter-ID-kolonne i din tabel. Generelt indeholder denne Steam Hex."
+      },
+      "erlc": {
+        "civilianRegistrationsHeader": "Civile registreringer",
+        "notifyAlwaysTooltip": "Spilleren vil altid modtage en privat besked, efter at kommandoen er behandlet.",
+        "trafficStopDescriptionHint": "Understøtter brugerdefinerede variabler.",
+        "trafficStopMaxRadiusHint": "Hvis det nærmeste køretøj er længere væk end dette, falder trafikstopopkald tilbage til nummerpladeindtastningen eller udelader køretøjsoplysninger.",
+        "trafficStopVariableBuildingNumber": "Det aktuelle bygningsnummer fra ER:LC.",
+        "trafficStopVariableCopied": "Variabel kopieret til udklipsholderen",
+        "trafficStopVariablePlate": "Det første kommandoparameter, når en nummerplade blev angivet.",
+        "trafficStopVariableVehicleName": "Det nærmeste eller matchede køretøjsnavn."
+      },
+      "erlcTab": "ER:LC",
+      "fivem": {
+        "configureResourceTitle": "Konfigurer ressource",
+        "manual": {
+          "configComment": "# Start sonorancad-ressourcen og andre medfølgende ressourcer"
+        },
+        "rocketNode": {
+          "accessPanel": "Få adgang til spilserverens panel.",
+          "resourceAccess": "Når installationen er fuldført, kan du få adgang til ressourcefilerne i Filhåndtering.",
+          "selectCad": "Vælg CAD, og klik for at kopiere/indsætte ID'et og nøglen nedenfor."
+        }
+      },
+      "luaPlugins": "LUA-plugins",
+      "uploadCustomMap": "Upload brugerdefineret kort"
+    },
+    "limits": {
+      "expiration": "Udløb",
+      "limitsHeader": "Sonoran CAD fællesskabsgrænser",
+      "version": "Version"
+    },
+    "penal": {
+      "bondType": "Obligationstype",
+      "chargeType": "Gebyrtype",
+      "createNewPenal": "Opret ny straffelov",
+      "editPenal": "Rediger straffelov",
+      "errors": {
+        "duplicate": "Fejl: Du kan ikke indstille straffeloven til en, der allerede findes!"
+      },
+      "title": "Titel"
+    },
+    "permissions": {
+      "lawRecords": "Juridiske optegnelser",
+      "policeAdvanced": "Politi - Avanceret",
+      "status": {
+        "active": "AKTIV"
+      },
+      "toggles": {
+        "editOtherIdent": "Redigér andres ident."
+      }
+    },
+    "remove": {
+      "removeSubtext": "Du skal være community-/CAD-ejeren for at fjerne denne CAD. Fjernelsesprocessen kræver e-mailbekræftelse.",
+      "transferHeader": "Overfør din Sonoran CAD"
+    },
+    "webhooks": {
+      "accountPermissionsAbout": "Denne WebHook sendes, når en administrator ændrer en brugerkontos tilladelser.",
+      "adminWebhooks": "Administratorwebhooks",
+      "adminWebhooksAbout": "Disse WebHooks er knyttet til admin-tjenester.",
+      "apiRequestAbout": "Denne WebHook vil blive sendt, når en API-anmodning sendes.",
+      "character": "Tegnbearbejdning",
+      "civilianWebhooks": "Borger-webhooks",
+      "departmentStructureAbout": "Denne WebHook vil blive sendt, når en admin opdaterer afdelingsstrukturen.",
+      "emergencyAbout": "Disse webhooks er knyttet til nød-tjenester.",
+      "modified": "Ændret",
+      "policeRecordAbout": "Denne WebHook sendes, når en politiregistrering tilføjes, ændres eller fjernes.",
+      "signal": "Signal",
+      "subtext1": "Sonoran CAD Discord-integration giver dig mulighed for at modtage advarsler direkte til din Discord-server.",
+      "toneBoardAbout": "Denne webhook vil blive sendt, når en tone afspilles af en dispatcher",
+      "unitPanic": "Enhedspanik"
+    }
+  },
+  "calleditor": {
+    "unitStatus": "Enhedsstatus:"
+  },
+  "civilian": {
+    "buttons": {
+      "dmv": "Motorregistret",
+      "editCharacter": "Rediger karakter",
+      "records": "Poster"
+    },
+    "characterEditor": {
+      "addCharacter": "Tilføj karakter",
+      "age": "Alder",
+      "aka": "Også kendt som (aliasnavne)/tidligere navn(e)",
+      "saveCharacter": "Gem karakter",
+      "sex": "Køn"
+    }
+  },
+  "common": {
+    "actions": "Handlinger",
+    "close": "Luk",
+    "errors": {
+      "limitReached": "Fejl: maksimal grænse nået"
+    },
+    "export": "Eksporter",
+    "externalWindow": "Åbn i eksternt vindue",
+    "json": "JSON",
+    "learnMore": "Læs mere",
+    "lostConnection": "Du har mistet forbindelsen til serveren.",
+    "max": "Maks",
+    "minimize": "Minimer",
+    "modify": "Rediger",
+    "new": "Ny",
+    "rateLimit": "Hastighedsgrænse",
+    "refresh": "Opdater",
+    "s": "s",
+    "start": "Start",
+    "status": "Status",
+    "stop": "Stop",
+    "type": "Type",
+    "upload": "Upload"
+  },
+  "communityMenu": {
+    "buttons": {
+      "civilian": "Borger",
+      "dispatch": "Send",
+      "fire": "Tænd",
+      "police": "Politi",
+      "setDefault": "Angiv standardfællesskab"
+    }
+  },
+  "CustomDomain": {
+    "chooseYourDomainName": "Vælg dit domænenavn",
+    "content": "Indhold",
+    "copiedToClipboard": "Kopieret til udklipsholderen!",
+    "setCustomDomain": "Angiv brugerdefineret domæne"
+  },
+  "development": {
+    "message": "Dette er en gratis udviklingsversion af Sonoran CAD og er ikke beregnet til produktionsbrug."
+  },
+  "homepage": {
+    "integrations": {
+      "erlc": {
+        "description": "Officiel ER:LC-spilintegration med livekort og mere.",
+        "landing": {
+          "ctaDocs": "Se dokumentation",
+          "faq": {
+            "items": {
+              "community": {
+                "answer": "Absolut. Den gratis plan er ideel for små til mellemstore fællesskaber og tilbyder fuld ER:LC-funktionalitet uden begrænsninger. Du kan opgradere senere, hvis din server vokser og har brug for flere konti eller funktioner."
+              },
+              "features": {
+                "answer": "Integrationen inkluderer en komplet pakke af realtidsfunktioner såsom:\n- Live 3D-kort med sporing af spillere og enheder\n- Automatisk synkronisering af 911-opkald\n- Automatisering af trafikstop og genvejstast\n- Automatisering af pladenummerlæser og genvejstast\n- Automatisering af oprettelse af køretøjer og figurer\n- og meget mere"
+              }
+            }
+          },
+          "meta": {
+            "description": "Gratis CAD til ER:LC med 3D livekort, bodycam, nødopkald, karakterværktøjer og understøttelse af overlay i spillet."
+          },
+          "modules": {
+            "emergency": {
+              "title": "Nødopkald"
+            },
+            "map": {
+              "title": "3D Live-kort"
+            }
+          }
+        }
+      },
+      "fivem": {
+        "landing": {
+          "faqKicker": "Supportprotokoller",
+          "meta": {
+            "keywords": "FiveM CAD, gratis CAD til FiveM, Sonoran CAD, FiveM dispatch, FiveM rollespil CAD"
+          },
+          "modules": {
+            "bodycam": {
+              "title": "Live bodycam"
+            },
+            "map": {
+              "infoTitle": "3D-kort"
+            },
+            "plugins": {
+              "title": "Plugin-økosystem"
+            }
+          },
+          "submodules": {
+            "items": {
+              "callers": {
+                "description": "Opret fordybende NPC- og spillerudkald, der sendes direkte til dispatch med strukturerede CAD-data."
+              },
+              "ers": {
+                "previewTitle": "Forhåndsvisning af nødradio-plugin"
+              },
+              "pagers": {
+                "title": "Bippere"
+              }
+            }
+          }
+        }
+      }
+    },
+    "pricingDescription": "Sonoran CAD's betalte abonnementer giver dig mulighed for at aktivere nye integrationsfunktioner, aktivere tilpasning, fjerne begrænsninger og meget mere!",
+    "welcomeDescription": "Lær mere om Sonoran CAD's integrations-plugin-system, brugerdefinerede livekort, database-synkroniseringsfunktionalitet, iOS-/Android-apps og mere!"
+  },
+  "infernoPager": {
+    "messageRequired": "Indtast en sidetekst før du sender."
+  },
+  "login": {
+    "buttons": {
+      "forgot": "Glemt adgangskode"
+    },
+    "labels": {
+      "email": "E-mail",
+      "emailPreferences": "E-mailpræferencer",
+      "resetPassword": "Nulstil adgangskode"
+    },
+    "linkAuth": {
+      "linkPageDescription": "Log ind på din konto, og indtast derefter den 4-tegns kode, der vises i dit indlejrede loginsidevindue.",
+      "success": "Login linket. Du kan vende tilbage til det oprindelige indlejrede vindue nu."
+    },
+    "newVisitor": {
+      "description": "Lær mere om Sonoran CAD's integrations-plugin-system, brugerdefinerede livekort, database-synkroniseringsfunktionalitet, iOS-/Android-apps og mere!"
+    },
+    "welcome": "Velkommen"
+  },
+  "management": {
+    "currentPlayersLastHour2": "Nuværende spillere (sidste 1 time):",
+    "node2": "Node:",
+    "password": "Administrationsadgangskode"
+  },
+  "payment": {
+    "buttons": {
+      "purchase": "Køb abonnement"
+    },
+    "labels": {
+      "monthly": "Månedlig",
+      "noSubscriptionsAvailable": "Ingen abonnementer tilgængelige",
+      "standard": "Standard",
+      "subscriptionsPerPage": "Abonnementer pr. side"
+    },
+    "pricing": {
+      "title": "Opgrader abonnementspriser"
+    },
+    "text": {
+      "newSubscription": "Nyt abonnement",
+      "save25": "Spar 25%",
+      "serverIp": "Server-IP",
+      "serversEmail": "Sonoran Servers-konto e-mail"
+    }
+  },
+  "police": {
+    "bodycamViewer": {
+      "screensAvailable": "Tilgængelige skærme: {visible} / {total} (Side {page} af {pages})",
+      "singleCam": "Enkelt kamera",
+      "startRecording": "Start optagelse"
+    },
+    "callEditor": {
+      "callNotes": "Opkaldsnoter",
+      "callViewer": "Opkaldsvisning",
+      "confirmations": {
+        "close1": "Du har sat opkaldsstatus til LUKKET.",
+        "close3": "Denne samtale og alle data vil blive fjernet!"
+      },
+      "nearestStations": "Nærmeste stationer",
+      "originOptions": {
+        "walkUp": "Walk-up"
+      },
+      "postal": "Postnummer",
+      "previousCall": "Forrige opkald (venstre pil)",
+      "statusOptions": {
+        "active": "Aktiv"
+      },
+      "statusTimers": {
+        "descCountup": "Når en enheds status er sat til {status}, start en optællingstimer."
+      },
+      "unitStatusAttachedHint": "Når en enhed er tilknyttet et opkald, skal deres status opdateres.",
+      "unitStatusClosedHint": "Når et opkald er lukket, skal status for alle tilknyttede enheder opdateres.",
+      "unitStatusTimers": "Enhedsstatus: Timere",
+      "updateCall": "Opdater opkald",
+      "webhooks": {
+        "enabled": "Aktiveret",
+        "status": "Status"
+      }
+    },
+    "callList": {
+      "previewCall": "Forhåndsvis opkald",
+      "priority": "Prioritet"
+    },
+    "callouts": {
+      "fallbackTooltip": "Standardhandling, hvis ingen af nedenstående handlinger forekommer."
+    },
+    "chat": {
+      "justYou": "Kun dig",
+      "noThreads": "Ingen aktive samtaler endnu.",
+      "recipients": "Modtagere",
+      "recipientsHint": "Vælg online enheder for at starte eller fortsætte en chat.",
+      "ttsIncomingTooltip": "Læs indgående chatbeskeder højt",
+      "unableToSend": "Kan ikke sende chat lige nu."
+    },
+    "command": {
+      "clear": "Ryd",
+      "close": "Luk",
+      "commandLine": "Kommandolinje",
+      "detach": "Frakobl",
+      "savedCallType": "Gemt kaldetype"
+    },
+    "diagram": {
+      "shortcutUndo": "GENVEJ: CTRL + Z",
+      "shortcutUp": "GENVEJ: (SHIFT) Pil op"
+    },
+    "emergencyCall": {
+      "calls": "Opkald"
+    },
+    "header": {
+      "activeCalls": "Aktive opkald",
+      "activeUnits": "Aktive enheder",
+      "bodyCamRecordings": "Bodycam-optagelser",
+      "emergencyCalls": "Nødopkald",
+      "quickLinks": "Hurtige links",
+      "records": "Poster",
+      "signal": "Signal",
+      "toneBoard": "Toneboard"
+    },
+    "liveMap3d": {
+      "blip": {
+        "dispatchCall": "AFSENDE OPKALD"
+      },
+      "controls": {
+        "right": "HØJRE"
+      },
+      "speedDisplay": "{multiplier}x ({speed})"
+    },
+    "liveMap": {
+      "toolbar": {
+        "dragAndDrop": "(Træk og slip)",
+        "ersCallout": "ERS udrykning (Træk og slip)",
+        "mapMode": "Korttilstand",
+        "zoomIn": "Zoom ind"
+      }
+    },
+    "lookup": {
+      "columns": {
+        "expiration": "Udløb",
+        "name": "Navn",
+        "status": "Status"
+      },
+      "recordsNoData": "Ingen poster tilgængelige",
+      "refresh": "Opdater"
+    },
+    "recordCenter": {
+      "errors": {
+        "noRecordTypes": "Ingen posttyper: Tilføj dem i Admin > Tilpasning > Brugerdefinerede poster"
+      },
+      "newReport": "Ny rapport",
+      "noRecordsForSuper": "Ingen sager kræver lederhandlinger",
+      "noReportsFound": "Ingen rapporter fundet",
+      "supervisorPanel": "Tilsynspanel"
+    },
+    "records": {
+      "agency": {
+        "agencyName": "Myndighedsnavn",
+        "observingOfficer": "Observationsenhed"
+      },
+      "charges": {
+        "counts": "Forhold"
+      },
+      "editor": {
+        "errors": {
+          "nameOrPlate": "Fejl: Denne post skal have en civilpersons navn eller et køretøjs registreringsnummer for at blive søgt!",
+          "noCopiedLink": "Fejl: Du har ikke et kopieret postlink!"
+        },
+        "history": {
+          "noFieldChanges": "Ingen feltværdier blev ændret i denne post."
+        },
+        "pdf": "PDF",
+        "recordType": "Rapporttype",
+        "removeRecord": "Fjern post",
+        "saveAsDraft": "Gem som kladde",
+        "saveRecord": "Gem post",
+        "status": {
+          "approved": "GODKENDT",
+          "closed": "LUKKET",
+          "rejected": "AFVIST"
+        }
+      },
+      "general": {
+        "reports": "Rapporter"
+      },
+      "getCiv": {
+        "civilianInfo": "Borgeroplysninger"
+      },
+      "getVeh": {
+        "vehicleSearch": "Køretøjssøgning"
+      },
+      "narrative": {
+        "narrative": "fortælling"
+      },
+      "speed": {
+        "courtDate": "Retsdato",
+        "speedLimit": "Fartgrænse",
+        "vehicleSpeed": "Køretøjets hastighed"
+      },
+      "vehicle": {
+        "types": {
+          "aircraft": "Fly",
+          "coupe": "Coupé"
+        }
+      }
+    },
+    "signal": {
+      "initiate": "Initier signal"
+    },
+    "timers": {
+      "attachments": "Vedhæftninger",
+      "seconds": "Sekunder"
+    },
+    "toneBoard": {
+      "speechToTextNotAllowed": "Adgang til mikrofonen blev nægtet.",
+      "speechToTextUnavailable": "Talegenkendelse er ikke tilgængelig lige nu.",
+      "textToSpeech": "Tekst til tale"
+    },
+    "unitEditor": {
+      "bodycamShadowRecording": "Skjult optagelse",
+      "departments": "Afdelinger",
+      "effects": "Effekter",
+      "electronBodycamPermissionWarning": "macOS-skærmoptagelsestilladelse er påkrævet for bodycam-optagelse. Aktivér den i Systemindstillinger, og afslut derefter helt Sonoran CAD og åbn det igen.",
+      "overlay": "Overlay",
+      "status": "Status",
+      "subdivision": "Underafdeling",
+      "subdivisions": "Underafdelinger",
+      "switchIdentifier": "Skift identifikator"
+    },
+    "units": {
+      "editUnit": "Rediger enhed",
+      "groupName": "Gruppenavn"
+    }
+  },
+  "rapidIQCustomization": {
+    "codes": "Koder:",
+    "flows": "Flows:"
+  },
+  "selectionPage": {
+    "buttons": {
+      "createCommunity": "Opret fællesskab",
+      "discover": "Opdag"
+    },
+    "errors": {
+      "noCommunityID": "Fejl: Indtast venligst et fællesskabs-ID!"
+    },
+    "text": {
+      "createHeader": "CAD-registrering",
+      "helpCommunityId3": "F.eks. Arizona Serious Roleplay - ID: AZSRP",
+      "helpCommunityWebsite": "Dit fællesskabswebsted er URL'en til dine fora, discord eller andet websted. Dette felt er VALGFRIT og er ikke påkrævet!"
+    }
+  },
+  "settings": {
+    "accountSecretId": "Kontohemmeligheds-id:",
+    "exitResize": "Afslut ændring af størrelse",
+    "hotkeyCombination": "Kombination",
+    "languageKorean": "Koreansk/한국어",
+    "lockWindow": "Lås vindue",
+    "microphoneNumbered": "Mikrofon {index}",
+    "overlay": {
+      "addFrame": "Tilføj ramme",
+      "configuration": "Konfiguration",
+      "events": "Begivenheder",
+      "fontSize": "Skriftstørrelse",
+      "fontWeight": "Fontvægt:",
+      "goveeWifi": "Govee WiFi",
+      "lighting": "Belysning",
+      "streamAdBanner": "Tjek vores livestream-overlay og Twitch-bot ud!",
+      "streamOverlay": "Stream-overlay",
+      "wyzeApiKey": "Wyze API-nøgle",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "Wyze-nøgle-ID"
+    },
+    "prefix": "Præfiks",
+    "quickResize": "Hurtig ændring af størrelse",
+    "resetLayout": "Nulstil layout",
+    "statusHotkeys": "Statusgenveje",
+    "systemDefaultMicrophone": "Systemets standardmikrofon",
+    "theme": {
+      "backgroundImagePosition": "Baggrundsbilledets position",
+      "backgroundImageScale": "Baggrundsbilledets skalering",
+      "bgImageFit": {
+        "contain": "Indehold (Tilpas indeni)",
+        "cover": "Dæk (Fyld og beskær)"
+      },
+      "bgImagePosition": {
+        "bottomRight": "Nederst til højre"
+      },
+      "bgImageScale": {
+        "p75": "75%"
+      },
+      "colors": {
+        "accent2Text": "Accent 2-tekst",
+        "accent3Text": "Accent 3-tekst",
+        "inverseText": "Inverteret tekst",
+        "subtitleText": "Underteksttekst"
+      },
+      "enterThemeName": "Indtast et temnavn"
+    }
+  },
+  "sideMenu": {
+    "buttons": {
+      "disclaimer": "Ved at få adgang til eller bruge Sonoran CAD accepterer du vores vilkår og betingelser samt privatlivspolitik.",
+      "exitFullscreen": "Afslut fuldskærm",
+      "logout": "Log ud",
+      "settings": "Indstillinger"
+    }
+  },
+  "stationAlert": {
+    "stationAlert": "Stationsalarm",
+    "toneBoard": "Toneboard"
+  },
+  "taskbar": {
+    "displayTabIcons": "Vis fanebladeikoner",
+    "startMenu": "Startmenu",
+    "system": "System",
+    "taskbarPosition": "Proceslinjens placering",
+    "unpinFromTaskbar": "Fjern fastgørelse fra proceslinjen"
+  }
+}

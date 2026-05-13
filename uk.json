@@ -1,681 +1,41 @@
 {
-  "common": {
-    "communityId": "ID Спільноти",
-    "cancel": "Відміна",
-    "maximize": "Розгорнути",
-    "minimize": "Згорнути",
-    "close": "Закрити",
-    "search": "Знайти",
-    "help": "Допомога",
-    "new": "Новий",
-    "add": "Додати",
-    "edit": "Редагувати",
-    "modify": "Модифікувати",
-    "save": "Зберегти",
-    "confirm": "Підтвердити",
-    "reset": "Скинути",
-    "undo": "Відмінити",
-    "actions": "Дії",
-    "id": "ідентифікатор",
-    "status": "Статус",
-    "uploader": "Загрузити зображення (5МБ Максимум)",
-    "upload": "Загрузити",
-    "remove": "Видалити",
-    "enabled": "Включений",
-    "activeServer": "Активний Сервер",
-    "success": "Успішно",
-    "failed": "Відмовлено",
-    "tutorial": "Інструкції",
-    "tutorials": "Посібники",
-    "refresh": "Оновити",
-    "autoSort": "Автоматичне сортування",
-    "type": "Тип",
-    "itemsPerPage": "Пунктів на сторінці",
-    "noData": "Немає даних",
-    "noResults": "Немає результатів",
-    "externalWindow": "У зовнішнє вікно",
-    "lostConnection": "Втрата зв'язку",
-    "serverStatus": "Статус Серверу",
-    "import": "Імпорт",
-    "importPrompt": "Вставте JSON-вміст",
-    "export": "Експорт",
-    "learnMore": "Дізнатись Більше",
-    "copy": "Копіювати",
-    "paste": "Вставити",
-    "icon": "Значок",
-    "test": "Тест",
-    "start": "Почати",
-    "pause": "Пауза",
-    "range": "Діапазон",
-    "notEqual": "Не дорівнює",
-    "contains": "Містить",
-    "errors": {
-      "limitReached": "Помилка: досягнуто максимальної межі"
-    },
-    "equal": "Рівний"
-  },
-  "sideMenu": {
-    "buttons": {
-      "settings": "Настройки",
-      "login": "Увійти",
-      "logout": "Вийти",
-      "communityMenu": "Меню Спільноти",
-      "switchCommunities": "Змінити спільноту",
-      "downloads": "Загрузки",
-      "tutorials": "Посібники",
-      "myAccount": "Мій Акаунт",
-      "goFullscreen": "Запустити в повному екрані",
-      "exitFullscreen": "Вийти з повноекранного режиму",
-      "disclaimer": "Перед тем, как использоввать Sonoran CAD вы соглашаетесь с условиями пользования и политикой конфидециальности.",
-      "menu": "Меню"
-    }
-  },
-  "settings": {
-    "settings": "Настройки",
-    "volume": "Звук",
-    "helpImprove": "Допомога з перекладом!",
-    "language": "Мова",
-    "voice": "Голос озвучки",
-    "apiIdDisable": "Ви повинні приєднатися до спільноти, щоб ввести API ID",
-    "secretDisable": "Ви повинні приєднатися до спільноти, щоб отримати Secret ID",
-    "hotkeys": "Гарячі клавіші",
-    "hotkeyDisable": "Гарячі клавіші не доступні в безкоштовній версії",
-    "prefix": "Кнопка Префіксу",
-    "panic": "Кнопка Паніки",
-    "lockWindow": "Закріпити Вікно",
-    "unlockWindow": "Відкріпити Вікно",
-    "quickResize": "Швидке Переміщення",
-    "exitResize": "Закінчити Переміщення",
-    "classicLayout": "Класичне Розташування",
-    "resetLayout": "Скинути Розташування",
-    "bringToTop": "Вівести спереду вікон",
-    "showHide": "Показати/Сховати",
-    "overlay": {
-      "streamOverlay": "Накладення потоку",
-      "credentials": "Облікові дані",
-      "configuration": "Конфігурація",
-      "twitchLogs": "Логи Twitch",
-      "twitchConfig": "Конфігурація Twitch",
-      "refreshPayment": "Оновити платіж",
-      "channel": "Канал",
-      "oauthToken": "OAuth-токен",
-      "obsTextFiles": "OBS текстові файли",
-      "unitUpdates": "Оновлення підрозділу",
-      "callUpdates": "Оновлення викликів",
-      "twitch": "Twitch",
-      "txtFiles": "TXT файли",
-      "fileName": "Ім'я файлу",
-      "field": "Поле",
-      "customTextFiles": "Користувацькі текстові файли",
-      "dataKeys": "Ключі даних",
-      "events": "Події",
-      "bodycam": "Нагрудна камера",
-      "confirmReset": "Ви впевнені, що бажаєте скинути налаштування?",
-      "lighting": "Освітлення",
-      "addFrame": "Додати кадр",
-      "addBulb": "Додати лампу",
-      "delay": "Затримка",
-      "scanForBulbs": "Сканувати лампи",
-      "bulbType": "Тип лампи",
-      "scan": "Сканувати",
-      "manualIp": "Ручний IP (необов'язкове)"
-    }
-  },
-  "taskbar": {
-    "system": "Система",
-    "newWindow": "Нове Вікно",
-    "pinToTaskbar": "Закріпити в панелі завдань",
-    "unpinFromTaskbar": "Відкріпити від панелі завдань",
-    "taskbarPosition": "Позиція панелі завдань",
-    "tabCustomization": "Налаштування вкладки",
-    "displayTabIcons": "Відображати значки вкладок",
-    "displayTabLabels": "Відображати мітки вкладок",
-    "layoutCustomization": "Налаштування макета",
-    "startMenu": "Меню запуску"
-  },
-  "login": {
-    "buttons": {
-      "login": "Увійти",
-      "forgot": "Забули Пароль",
-      "create": "Створити Обліковий Запис",
-      "cancel": "Скасувати",
-      "staySignedIn": "Залишатися в системі",
-      "switchCommunities": "Змінити спільноту"
-    },
-    "labels": {
-      "email": "Електронна пошта",
-      "username": "Ім'я Користувача",
-      "password": "Пароль",
-      "confirmPassword": "Підтвердження пароля",
-      "emailPreferences": "Параметри електронної пошти",
-      "resetPassword": "Скинути Пароль"
-    }
-  },
-  "selectionPage": {
-    "buttons": {
-      "myCommunities": "Dashboard",
-      "joinCommunity": "Приєднатися до спільноти",
-      "discover": "Відкрити для себе",
-      "leaveCommunity": "Покинути Спільноту",
-      "createCommunity": "Створити Спільноту",
-      "My Account": "Мій Обліковий Запис"
-    },
-    "labels": {
-      "communityName": "Назва Спільноти",
-      "website": "Веб-Сайт (Опціонально)"
-    },
-    "text": {
-      "joinHeader": "Приєднатися до спільноти",
-      "joinText": "Приєднатися до CAD спільноти!",
-      "createHeader": "Реєстрація CAD",
-      "createText": "Зареєструйте нову спільноту CAD для приєднання інших!",
-      "helpCommunityId1": "ID вашої спільноти є її унікальним ідентифікатором. Користувачі будуть використовувати його для приєднання до вашої спільноти.",
-      "helpCommunityId2": "Зазвичай, це абревіатура вашої спільноти.",
-      "helpCommunityId3": "Приклад: Arizona Serious Roleplay - ID: AZSRP",
-      "helpCommunityName": "Назва вашої спільноти є публічним ім'ям вашої RP спільноти.",
-      "helpCommunityWebsite": "Веб-сайт вашої спільноти — це URL вашого сайту, форуму або Discord. Це поле є додатковим і може не заповнюватися",
-      "confirmLeave1": "Ви дійсно бажаєте покинути цю спільноту?",
-      "confirmLeave2": "Ваш обліковий запис і всі пов’язані з ним дані будуть видалені з цієї бази даних!",
-      "communityNotFound": "Спільноту не знайдено",
-      "helpCommunityIdFindHeader": "Де я можу знайти ID спільноти?",
-      "helpCommunityIdFind1": "Вам слід зв'язатися з власником або адміністратором цієї ігрової спільноти.",
-      "helpCommunityIdFind2": "Вони дадуть вам спеціальний ID спільноти для їхнього CAD."
-    },
-    "tooltips": {
-      "leaveCommunity": "Покинути цю спільноту.",
-      "owner": "Ви Власник цієї спільноти",
-      "search": "Шукати спільноту в Sonoran CAD",
-      "register": "Реєстрація вашого Sonoran CAD",
-      "joinHelp": "Не впевнені, що робити?",
-      "joinThis": "Приєднатися до цього CAD.",
-      "join": "Приєднатися"
-    },
-    "errors": {
-      "noCommunityID": "Помилка: Будь ласка, вкажіть ID спільноти!",
-      "communityIdLength": "Помилка: ID вашої спільноти повинен містити від 1 до 50 символів!",
-      "communityIdCharacters": "Помилка: ID вашої спільноти може містити лише літери, цифри, нижні підкреслення і тире!",
-      "communityNameLength": "Помилка: Назва вашої спільноти повинна містити від 1 до 50 символів!"
-    }
-  },
-  "police": {
-    "lookup": {
-      "lookup": "Пошук",
-      "sendToUnits": "Надіслати підрозділу(ам)",
-      "partial": "Частковий",
-      "exact": "Точний",
-      "reportsHeader": "Рапорт",
-      "identifier": "Ідентифікатор",
-      "id": "ID Запису",
-      "newLookup": "Новий Пошук",
-      "refresh": "Оновити",
-      "nameSearch": "Пошук За Іменем",
-      "first": "Ім'я",
-      "last": "Прізвище",
-      "mi": "Ініціал По Батькові",
-      "plateSearch": "Пошук За Номером (ТЗ)",
-      "plate": "Номерний Знак",
-      "agency": "Агентство",
-      "department": "Департамент",
-      "unit": "Юніт",
-      "civilians": "Громадяни",
-      "records": "Записи",
-      "noRecordsFound": "Записів не знайдено",
-      "recordsPerPage": "Записів на сторінці",
-      "recordsNoData": "Немає доступних записів",
-      "recordsNoResults": "Записи не знайдені",
-      "statuses": {
-        "active": "Активний",
-        "inactive": "Неактивний",
-        "closed": "Закритий"
-      },
-      "columns": {
-        "name": "Ім'я",
-        "plate": "Номер",
-        "charges": "Обвинувачення",
-        "flags": "Мітки",
-        "date": "Дата",
-        "status": "Статус",
-        "type": "Тип",
-        "expiration": "Закінчення",
-        "first": "Ім'я",
-        "last": "Прізвище",
-        "mi": "Ініціал По Батькові"
-      },
-      "alerts": {
-        "emptySearch": "Помилка: Пошук порожній!"
-      },
-      "getOwner": "Стати Власником"
-    },
-    "records": {
-      "general": {
-        "records": "Записи",
-        "reports": "Доповіді"
-      },
-      "editor": {
-        "recordType": "Тип Запису",
-        "dmvType": "Тип Бази Даних",
-        "addRecord": "Додати Запис",
-        "saveRecord": "Зберегти Запис",
-        "removeRecord": "Видалити Запис",
-        "pdf": "PDF",
-        "applyForDmv": "Зареєструвати в Базі Даних",
-        "copyLink": "Копіювати посилання на запис",
-        "pasteLink": "Вставити посилання на запис",
-        "linkTitle": "Назва посилання",
-        "noCustomTypes": "Немає записів цього типу: Додайте їх через Admin > Customization > Custom Records",
-        "status": {
-          "active": "АКТИВНИЙ",
-          "closed": "ЗАКРИТИЙ",
-          "pending": "НА РОЗГЛЯДІ",
-          "approved": "СХВАЛЕНИЙ",
-          "rejected": "ВІДХИЛЕНИЙ"
-        },
-        "errors": {
-          "requiredField": "Помилка: Обов'язкове поле",
-          "nameOrPlate": "Помилка: Запис повинен містити ім'я громадянина або номерний знак транспортного засобу!",
-          "noName": "Помилка: Запис повинен містити ім'я громадянина!",
-          "noPlate": "Помилка: Запис повинен містити номер транспортного засобу!",
-          "noCopiedLink": "Помилка: Ви не скопіювали посилання на запис!"
-        }
-      },
-      "agency": {
-        "agencyInformation": "Інформація про Агентство",
-        "agencyName": "Назва Агентства",
-        "recordNum": "Запис #",
-        "date": "Дата",
-        "observingOfficer": "Спостерігаючий Офіцер",
-        "location": "Місцезнаходження",
-        "zip": "Поштовий Індекс",
-        "badge": "Значок #"
-      },
-      "getCiv": {
-        "characterSearch": "Пошук персонажа",
-        "civilianInfo": "Громадянська інформація"
-      },
-      "getVeh": {
-        "vehicleSearch": "Пошук Транспортного Засобу"
-      },
-      "narrative": {
-        "narrative": "Опис"
-      },
-      "charges": {
-        "charges": "Обвинувачення",
-        "charge": "Обвинувачення",
-        "chargeNumber": "Обвинувачення #",
-        "fineTotal": "Загальна сума штрафу",
-        "chargeType": "Тип Обвинувачення",
-        "counts": "Кількість",
-        "titleCode": "Назва, Код",
-        "bondType": "Тип Покарання",
-        "bondFineAmount": "Покарання/Сума Штрафу",
-        "jailTime": "Термін Ув'язнення"
-      },
-      "speed": {
-        "citationInformation": "Інформація про штраф",
-        "vehicleSpeed": "Швидкість Транспортного Засобу",
-        "speedLimit": "Обмеження швидкості",
-        "paceType": "Перевищення",
-        "courtDate": "Дата Суду",
-        "courtTime": "Дата і Час",
-        "fine": "Штраф",
-        "pace": "Перевищення",
-        "radar": "Радар",
-        "other": "Інше"
-      },
-      "status": {
-        "status": "Статус",
-        "dateSubmitted": "Дата Подачі",
-        "supervisorSignature": "Підпис Керівника",
-        "observingSignature": "Підпис Спостерігаючого"
-      },
-      "vehicle": {
-        "vehicleInformation": "Інформація про Транспортний Засіб",
-        "type": "Тип Транспортного Засобу",
-        "plate": "Номерний Знак",
-        "make": "Марка",
-        "model": "Модель",
-        "color": "Колір",
-        "year": "Рік Випуску",
-        "types": {
-          "sedan": "Седан",
-          "coupe": "Купе",
-          "suv": "Позашляховик",
-          "truck": "Вантажівка",
-          "offroad": "Позашляховий",
-          "marine": "Морський Транспорт",
-          "motorcycle": "Мотоцикл",
-          "aircraft": "Повітряний Транспорт"
-        }
-      },
-      "arrest": {
-        "arrestInformation": "Інформація про Арешт",
-        "weapons": "Зброя",
-        "arrestType": "Тип Арешту",
-        "probationaryOfficer": "Офіцер на Випробувальному Терміні"
-      }
-    },
-    "recordCenter": {
-      "myFiles": "Мої Файли",
-      "newReport": "Новий Звіт",
-      "newRecord": "Новий Запис",
-      "supervisorPanel": "Панель Керівника",
-      "pendingRecords": "Записи на Розгляді",
-      "filesAwaitingApproval": "Файли, що очікують підтвердження.",
-      "pendingFiles": "Файли на Розгляді",
-      "noReportsForSuper": "Немає звітів, що потребують підтвердження Керівником",
-      "noReportsFound": "Звітів не знайдено",
-      "noRecordsForSuper": "Немає записів, що потребують підтвердження Керівником",
-      "noRecordsFound": "Записів не знайдено",
-      "errors": {
-        "noRecordTypes": "Немає Типів Записів: Додайте їх у Admin > Customization > Custom Records",
-        "noReportTypes": "Немає Типів Звітів: Додайте їх у Admin > Customization > Custom Records",
-        "syncEnabledFeatDisabled": "Ця функція несумісна із синхронізацією бази даних"
-      }
-    },
-    "callEditor": {
-      "newDispatch": "Нове Повідомлення",
-      "savedTypes": "Збережені Типи",
-      "dispatch": "Повідомлення",
-      "callViewer": "Перегляд Викликів",
-      "createCall": "Створити Виклик",
-      "updateCall": "Оновити Виклик",
-      "clearEditor": "Очистити Редактор",
-      "selfDispatch": "Самостійне Призначення",
-      "selfClear": "Від'єднатися",
-      "units": "Юніти",
-      "callOrigin": "Джерело Виклику",
-      "callStatus": "Статус Виклику",
-      "priority": "Пріоритет",
-      "block": "Блок",
-      "address": "Адреса",
-      "postal": "Поштова Зона",
-      "callTitle": "Назва Виклику",
-      "code": "Код",
-      "primaryUnit": "Головний Юніт",
-      "callDescription": "Опис Виклику",
-      "callNotes": "Примітки до Виклику",
-      "note": "Примітка",
-      "addNote": "Додати Примітку",
-      "dispatchRecord": "Запис Повідомлення",
-      "trackPrimary": "Відстеження Головного Юніта (GPS)",
-      "confirmations": {
-        "close1": "Ви встановили статус виклику 'Закрито'.",
-        "close2": "Ви впевнені, що хочете закрити цей виклик?",
-        "close3": "Цей виклик і всі дані будуть видалені!",
-        "detatch": "Від'єднатися",
-        "detatchConfirm": "Ви впевнені, що хочете від'єднатися від виклику?"
-      },
-      "statusOptions": {
-        "pending": "На розгляді",
-        "active": "Активний",
-        "closed": "Закритий"
-      },
-      "originOptions": {
-        "caller": "Дзвінок",
-        "radioDispatch": "Радіо Виклик",
-        "observed": "Спостереження",
-        "walkUp": "Особистий Виклик"
-      },
-      "errors": {
-        "unitAlreadyOnCall": "Помилка: Цей підрозділ вже на виклику!",
-        "noOrigin": "Помилка: Цей виклик не має встановленого походження!",
-        "noStatus": "Помилка: Цей виклик не має встановленого статусу!",
-        "noPriority": "Помилка: Цей виклик не має встановленого пріоритету!",
-        "noTitle": "Помилка: Цей виклик не має встановленої назви!",
-        "attachedAlready": "Помилка: Ви вже приєднані до виклику!"
-      },
-      "nearestUnits": "Найближчі підрозділи",
-      "nearestStations": "Найближчі станції"
-    },
-    "callList": {
-      "activeCalls": "Активні Виклики",
-      "callHistory": "Історія Викликів",
-      "editCall": "Редагувати Виклики",
-      "attachToCall": "Приєднатися до Виклику",
-      "previewCall": "Попередній Перегляд Виклику",
-      "closeCall": "Закрити Виклик",
-      "printCall": "Роздрукувати Виклик",
-      "priority": "Пріоритет",
-      "columns": {
-        "callId": "ID Виклику",
-        "10Code": "10-Код",
-        "callTitle": "Назва Виклику",
-        "address": "Адреса",
-        "units": "Юніти",
-        "status": "Статус"
-      }
-    },
-    "emergencyCall": {
-      "emergencyCall": "Екстрений Виклик",
-      "emergency": "Надзвичайна Ситуація",
-      "civil": "Громадянський",
-      "calls": "Виклики",
-      "caller": "Дзвінок",
-      "location": "Місцезнаходження",
-      "description": "Опис",
-      "removeAll": "Видалити всі активні екстрені виклики",
-      "openInEditor": "Відкрити в Редакторі Викликів",
-      "removeCall": "Видалити Виклик",
-      "removeAllCalls": "Видалити всі Виклики",
-      "confirmRemoveAll": "Ви впевнені, що хочете закрити всі активні виклики?",
-      "mergeToCallEditor": "Об'єднати з редактором дзвінків"
-    },
-    "header": {
-      "signalEffect1": "Сигнал",
-      "signalEffect2": "Активний",
-      "activeServer": "Активний Сервер",
-      "lookup": "Пошук",
-      "records": "Записи",
-      "bolo": "Орієнтування",
-      "liveMap": "Жива Карта",
-      "quickLinks": "Швидкі Посилання",
-      "signal": "Сигнал",
-      "activeUnits": "Активні Юніти",
-      "activeCalls": "Активні Виклики",
-      "emergencyCalls": "Екстрені Виклики",
-      "panic": "Паніка",
-      "file": "Файл(и)",
-      "toneBoard": "Панель тонів",
-      "playTo": "Відтворити до",
-      "repeat": "Повторити",
-      "seconds": "Секунди",
-      "count": "Кількість",
-      "streetSigns": "Дорожні знаки",
-      "bodyCam": "Нагрудна камера",
-    "bodycamViewer": {
-      "singleCam": "Single Cam",
-      "allCams": "All Cams",
-      "switchToSingle": "Switch to single bodycam view",
-      "switchToAll": "Switch to all bodycams view",
-      "screens": "Screens",
-      "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
-      "live": "Live"
-    }
-  },
-  "timers": {
-      "timers": "Таймери",
-      "newTimer": "Новий таймер",
-      "attachments": "Вкладення",
-      "clearAttachment": "Очистити вкладення"
-    },
-    "signal": {
-      "signal": "Сигнал",
-      "initiate": "Ініціювати Сигнал",
-      "modify": "Модифікувати Сигнал",
-      "clear": "Очистити Сигнал"
-    },
-    "unitEditor": {
-      "modifyIdentifier": "Змінити Ідентифікатор",
-      "unitNumber": "Номер Юніта",
-      "name": "Ім'я",
-      "rank": "Ранг",
-      "status": "Статус",
-      "location": "Місцезнаходження",
-      "aop": "Зона патрулювання",
-      "agency": "Агентство",
-      "group": "Група",
-      "departments": "Департаменти",
-      "department": "Департамент",
-      "subdivisions": "Підрозділи",
-      "subdivision": "Підрозділ",
-      "units": "Юніти",
-      "switchIdentifier": "Змінити Ідентифікатор",
-      "confirmRemove": "Ви впевнені, що хочете видалити Ідентифікатор?"
-    },
-    "units": {
-      "activeUnits": "Активні Юніти",
-      "dispatchersShown": "Диспетчери Показані",
-      "dispatchersHidden": "Диспетчери Приховані",
-      "addToCall": "Додати до Виклику",
-      "addToGroup": "Додати до Групи",
-      "newGroup": "Нова Група",
-      "editUnit": "Редагувати Юніт",
-      "togglePanic": "Перемикач Паніки",
-      "kickUnit": "Видалити Юніта",
-      "activeGroups": "Активні Групи",
-      "unitGroups": "Групи Юнітів",
-      "groupName": "Ім'я Групи",
-      "createGroup": "Створити Групу",
-      "group": "Група",
-      "units": "Юніти"
-    },
-    "notes": {
-      "notepad": "Блокнот",
-      "title": "Назва",
-      "notes": "Нотатки"
-    },
-    "command": {
-      "commandLine": "Командний Рядок",
-      "create": "Створити",
-      "close": "Закрити",
-      "attach": "Прикріпити",
-      "detach": "Відкріпити",
-      "view": "Переглянути",
-      "clear": "Очистити",
-      "status": "Статус",
-      "note": "Нотатка",
-      "savedCallType": "Збережений тип виклику",
-      "unit": "Підрозділ",
-      "postal": "Поштовий індекс",
-      "callId": "Ідентифікатор виклику",
-      "unitStatus": "Статус підрозділу"
-    }
-  },
   "account": {
-    "labels": {
-      "myAccount": "Мій акаунт",
-      "email": "Електронна пошта",
-      "username": "Ім'я користувача",
-      "emailPreferences": "Параметри електронної пошти",
-      "confirmPassword": "Підтвердіть пароль",
-      "emailMe": "Надсилати мені важливі повідомлення, оновлення та рекламні акції."
-    },
     "buttons": {
       "subscriptions": "Підписки"
-    }
-  },
-  "payment": {
-    "text": {
-      "setCommunityId": "Встановити ідентифікатор спільноти",
-      "newSubscription": "Нова підписка",
-      "bundleAndSave": "Пакет і збереження",
-      "serversEmail": "Електронна пошта акаунта Sonoran Servers",
-      "serverIp": "IP сервера",
-      "bundleExplain": "Заощаджуйте 30% щомісяця, купуючи VPS від Sonoran Servers."
+    },
+    "delete": {
+      "confirm": "Видалити обліковий запис",
+      "failure": "Не вдалося видалити ваш обліковий запис.",
+      "message": "Ви впевнені, що хочете видалити свій обліковий запис і назавжди втратити всі пов’язані дані?",
+      "title": "Видалити обліковий запис?"
     },
     "labels": {
-      "plan": "План",
-      "startDate": "Дата початку",
-      "endDate": "Дата закінчення",
-      "starter": "Стартовий",
-      "standard": "Стандартний",
-      "plus": "Плюс",
-      "pro": "Про",
-      "expertInstallation": "Експертна установка"
-    },
-    "buttons": {
-      "purchase": "Придбати підписку",
-      "comparePlans": "Pricing",
-      "oneTimePurchases": "Одноразові покупки",
-      "amount": "Сума",
-      "openBillingPortal": "Open Billing Portal"
-    }
-  },
-  "communityMenu": {
-    "buttons": {
-      "civilian": "Цивільний",
-      "dmv": "ДМВ",
-      "law": "Закон",
-      "police": "Поліція",
-      "fire": "Пожежна служба",
-      "ems": "ЕМС",
-      "dispatch": "Диспетчерський пункт",
-      "admin": "Адміністратор",
-      "discord": "Discord",
-      "website": "Вебсайт",
-      "setDefault": "Встановити спільноту за замовчуванням"
-    },
-    "labels": {
-      "permissionKey": "Ключ дозволу"
-    }
-  },
-  "civilian": {
-    "buttons": {
-      "newCharacter": "Новий персонаж",
-      "editCharacter": "Редагувати персонаж",
-      "records": "Записи",
-      "dmv": "ДМВ"
-    },
-    "characterEditor": {
-      "first": "Ім'я",
-      "last": "Прізвище",
-      "mi": "П.І. (по батькові)",
-      "dob": "Дата народження",
-      "age": "Вік",
-      "sex": "Стать",
-      "aka": "Також відомий як (псевдоніми)/колишні імена",
-      "residence": "Місце проживання",
-      "zip": "Поштовий індекс",
-      "occupation": "Професія",
-      "height": "Зріст",
-      "weight": "Вага",
-      "skin": "Відтінок шкіри",
-      "hair": "Колір волосся",
-      "eye": "Колір очей",
-      "emergencyContact": "Контакт на випадок надзвичайної ситуації",
-      "relationship": "Стосунки",
-      "contactNumber": "Контактний номер",
-      "image": "Зображення",
-      "addCharacter": "Додати персонажа",
-      "saveCharacter": "Зберегти персонажа",
-      "removeCharacter": "Видалити персонажа",
-      "createNewCharacter": "Створити нового персонажа",
-      "editExistingCharacter": "Редагувати персонажа",
-      "confirmRemove": "Ви впевнені, що хочете видалити цього персонажа?"
-    },
-    "labels": {
-      "selectedCharacter": "Вибраний персонаж"
-    },
-    "errors": {
-      "maxCharacters": "Помилка: Ви досягли максимального ліміту персонажів у вашій спільноті"
+      "confirmPassword": "Підтвердіть пароль",
+      "email": "Електронна пошта",
+      "emailMe": "Надсилати мені важливі повідомлення, оновлення та рекламні акції.",
+      "emailPreferences": "Параметри електронної пошти",
+      "myAccount": "Мій акаунт",
+      "username": "Ім'я користувача"
     }
   },
   "admin": {
-    "general": {
-      "accounts": "Акаунти",
-      "customization": "Налаштування",
-      "advanced": "Розширений",
-      "permissionKeys": "Ключі дозволів",
-      "departments": "Відділи",
-      "customRecords": "Налаштовані записи",
-      "logs": "Журнали",
-      "inGameIntegration": "Інтеграція в грі",
-      "discordIntegration": "Інтеграція Discord",
-      "limits": "Обмеження",
-      "wipeRecords": "Очистити записи",
-      "transferOrDelete": "Передати або видалити CAD",
-      "changeCommunityId": "Змінити ідентифікатор спільноти",
-      "authenticate": "Аутентифікувати"
+    "10Codes": {
+      "action": "Дія",
+      "code": "Код"
+    },
+    "accounts": {
+      "apiIds": "Ідентифікатори API",
+      "joined": "Приєднався",
+      "lastLogin": "Останній вхід",
+      "permissions": "Дозволи",
+      "purge": "Очистити неактивні",
+      "purgeConfirm": "Ви впевнені, що хочете очистити всі неактивні облікові записи користувачів? (30 днів)",
+      "status": "Статус",
+      "userAccounts": "Облікові записи користувачів",
+      "username": "Ім'я користувача"
+    },
+    "addresses": {
+      "addresses": "Адреси"
     },
     "authenticate": {
       "authHeader": "Аутентифікуйте ваше право власності на CAD",
@@ -692,501 +52,2055 @@
       "requestChange": "Запросити зміну"
     },
     "customization": {
+      "customizationDisabled": "Налаштування спільноти не включене у вашу версію.",
       "customizationHeader": "Налаштування спільноти",
       "customizationSubtext1": "Інформація про спільноту",
       "customizationSubtext2": "Налаштуйте ім'я, логотип вашої спільноти та інше!",
-      "customizationDisabled": "Налаштування спільноти не включене у вашу версію.",
-      "info": {
-        "communityInfo": "Інформація про спільноту",
-        "communityId": "Ідентифікатор спільноти",
-        "name": "Ім'я",
-        "subtitle": "Підзаголовок",
-        "website": "Вебсайт",
-        "discord": "Discord",
-        "voiceCommand": "Ключове слово голосової команди",
-        "timezone": "Часовий пояс"
-      },
-      "geo": {
-        "geographicalSettings": "Географічні налаштування",
-        "geoSubtext": "Налаштуйте формулювання відповідно до географічного розташування вашої спільноти.",
-        "emergencyCode": "Код екстреної ситуації",
-        "penalCodeName": "Назва кримінального кодексу",
-        "tenCodeName": "Назва десяткодексу",
-        "currencyDelimiter": "Роздільник валюти"
-      },
-      "unitStatus": {
-        "unitStatusCodes": "Коди статусу підрозділу",
-        "busy": "Зайнятий",
-        "unavailable": "Недоступний",
-        "available": "Доступний",
-        "enroute": "В дорозі",
-        "onScene": "На місці"
-      },
       "customLogin": {
         "customLoginPage": "Спеціальна сторінка входу",
         "url": "URL"
       },
-      "quickLinks": {
-        "quickLinks": "Швидкі посилання",
-        "newLink": "Нове посилання",
-        "deleteLink": "Видалити посилання",
-        "label": "Мітка",
-        "link": "Посилання",
-        "color": "Колір"
-      },
-      "notificationTones": {
-        "notificationTones": "Тони сповіщень",
-        "newDispatch": "Нове диспетчерське повідомлення",
-        "dispatchUpdated": "Диспетчерське повідомлення оновлено",
-        "dispatchClosed": "Диспетчерське повідомлення закрито",
-        "statusChange": "Зміна статусу",
-        "dispatchNote": "Примітка диспетчера"
+      "discordRpc": {
+        "btn2Failure": "Помилка: Без Pro кнопка №2 може лише перенаправляти користувачів на запрошення Sonoran CAD або Sonoran CMS.",
+        "clientId": "Ідентифікатор клієнта",
+        "discordRichPresence": "Rich Presence Discord",
+        "iconName": "Назва значка",
+        "info1": "Користувачі комп'ютерів відображають кнопку запрошення в Discord. Це можна зв'язати з вашим застосунком CAD або CMS."
       },
       "emails": {
-        "customEmails": "Спеціальні електронні листи спільноти",
-        "subtext1": "Налаштуйте електронні листи, які отримують ваші користувачі під час створення облікового запису або скидання пароля з вашого спеціального екрану входу.",
         "accountRegistration": "Реєстрація облікового запису",
-        "viewTemplate": "Переглянути шаблон",
-        "header": "Заголовок",
-        "subheader": "Підзаголовок",
         "body": "Тіло",
+        "customEmails": "Спеціальні електронні листи спільноти",
+        "emailTemplate": "Шаблон електронного листа",
+        "header": "Заголовок",
         "resetPassword": "Скинути пароль",
-        "emailTemplate": "Шаблон електронного листа"
-      },
-      "pageColors": {
-        "customPageColors": "Спеціальні кольори сторінки",
-        "loginPageBkg": "Фон сторінки входу",
-        "setToDefault": "Встановити стандартний колір",
-        "menuPageBkg": "Фон сторінки меню"
-      },
-      "restrictions": {
-        "userAccountRestrictions": "Обмеження облікових записів користувачів",
-        "subtext1": "Sonoran CAD дозволяє обмежити кількість цивільних осіб, яких може створити окремий обліковий запис користувача.",
-        "maxCivilians": "Максимальна кількість цивільних персонажів",
-        "maxLicenses": "Максимальна кількість цивільних ліцензій *",
-        "maxRegistrations": "Максимальна кількість реєстрацій цивільних транспортних засобів *",
-        "note": "* Ці обмеження не стосуються спільнот із увімкненою синхронізацією бази даних."
-      },
-      "otherCustomization": "Інші функції налаштування",
-      "servers": {
-        "servers": "Сервери",
-        "subtext1": "Чи використовує ваша спільнота декілька серверів?",
-        "subtext2": "Sonoran CAD дозволяє розділяти онлайн-одиниці та диспетчерські послуги між кількома серверами, при цьому зберігаючи спільний доступ до тих самих записів.",
-        "subtext3": "Ваша спільнота наразі може підтримувати до",
-        "subtext4": "серверів.",
-        "newServer": "Новий сервер",
-        "name": "Ім'я",
-        "description": "Опис"
-      },
-      "lookupTypes": {
-        "lookupTypes": "Типи пошуку",
-        "customRecordFieldId": "Ідентифікатор спеціального поля запису"
+        "subheader": "Підзаголовок",
+        "subtext1": "Налаштуйте електронні листи, які отримують ваші користувачі під час створення облікового запису або скидання пароля з вашого спеціального екрану входу.",
+        "viewTemplate": "Переглянути шаблон"
       },
       "errors": {
         "serverLimit1": "Помилка: Ваша спільнота обмежена до",
         "serverLimit2": "серверів!",
         "serverMinimum": "Помилка: У вас має бути принаймні один сервер!"
       },
-      "discordRpc": {
-        "info1": "Користувачі комп'ютерів відображають кнопку запрошення в Discord. Це можна зв'язати з вашим застосунком CAD або CMS.",
-        "discordRichPresence": "Rich Presence Discord",
-        "clientId": "Ідентифікатор клієнта",
-        "iconName": "Назва значка",
-        "btn2Failure": "Помилка: Без Pro кнопка №2 може лише перенаправляти користувачів на запрошення Sonoran CAD або Sonoran CMS."
+      "geo": {
+        "currencyDelimiter": "Роздільник валюти",
+        "emergencyCode": "Код екстреної ситуації",
+        "geographicalSettings": "Географічні налаштування",
+        "geoSubtext": "Налаштуйте формулювання відповідно до географічного розташування вашої спільноти.",
+        "penalCodeName": "Назва кримінального кодексу",
+        "tenCodeName": "Назва десяткодексу"
+      },
+      "infernoPagers": {
+        "description": "Керуйте деревом вузлів пейджера, що використовується для маршрутизації пейджера екстреної служби.",
+        "infernoPagers": "Inferno Pagers",
+        "invalidMessage": "Помилка: Редактор Inferno надіслав недійсні дані вузла пейджера.",
+        "loading": "Вбудований редактор Inferno автоматично завантажить і синхронізує вашу поточну конфігурацію pager."
+      },
+      "info": {
+        "communityId": "Ідентифікатор спільноти",
+        "communityInfo": "Інформація про спільноту",
+        "discord": "Discord",
+        "name": "Ім'я",
+        "subtitle": "Підзаголовок",
+        "timezone": "Часовий пояс",
+        "voiceCommand": "Ключове слово голосової команди",
+        "website": "Вебсайт"
+      },
+      "lookupTypes": {
+        "addField": "Додати поле",
+        "addSearchType": "Додати тип пошуку",
+        "advancedFields": "Розширені поля",
+        "advancedFieldsDescription": "Підтримувані типи полів: текст, число, випадаючий список і адреса.",
+        "advancedMode": "Розширений",
+        "basicMode": "Базовий",
+        "configDescription": "Налаштовуйте прості пошуки з одним полем введення або створюйте розширені пошуки з кількома полями.",
+        "configTitle": "Конфігурація типу пошуку",
+        "customRecordFieldId": "Ідентифікатор спеціального поля запису",
+        "displayName": "Ім'я для відображення",
+        "dropdownOptions": "Параметри спадного списку",
+        "dropdownOptionsHelp": "Натисніть Enter, щоб додати кожен варіант.",
+        "fieldFallback": "Поле {index}",
+        "fieldLabel": "Мітка поля",
+        "fieldMappingId": "Ідентифікатор відображення поля",
+        "fieldMappingIdHelp": "Виберіть користувацьке поле запису, яке буде використано для цього пошуку.",
+        "fieldMappingIdValue": "Ідентифікатор відображення поля: {id}",
+        "fieldsCount": "{count} полів",
+        "fieldTypeAddress": "Адреса",
+        "fieldTypeDropdown": "Випадний список",
+        "fieldTypeFallback": "Поле",
+        "fieldTypeNumber": "Номер",
+        "fieldTypeText": "Текст",
+        "inputMask": "Маска вводу",
+        "lookupTypes": "Типи пошуку",
+        "mappableFieldsCount": "{count} зіставлюваних полів",
+        "mask": "Маска",
+        "newField": "Нове поле",
+        "newLookup": "Новий Пошук",
+        "noFieldsConfigured": "Поля ще не налаштовано.",
+        "noFieldSelected": "Поле не вибрано",
+        "noRecordTemplates": "Шаблони записів із полями, які можна зіставити, недоступні.",
+        "optional": "Необов'язкове",
+        "placeholder": "Заповнювач",
+        "preview": "Попередній перегляд",
+        "previewHelp": "Цей попередній перегляд показує, як цей тип пошуку відображатиметься у вікні пошуку для користувачів.",
+        "previewTitle": "Попередній перегляд {name}",
+        "rangeDisabled": "Діапазон вимкнено",
+        "rangeEnabled": "Діапазон увімкнено",
+        "rangeSearch": "Пошук за діапазоном",
+        "rangeSearchHelp": "Дозволяє користувачу ввести як мінімальне, так і максимальне значення під час пошуку.",
+        "recordField": "Поле запису",
+        "reindexRecords": "Переіндексувати всі записи",
+        "reindexRecordsConfirmMessage": "Це переіндексує наявні записи для ваших поточних користувацьких типів пошуку. Це може зайняти деякий час, і це можна запускати лише раз на 12 годин.",
+        "reindexRecordsConfirmTitle": "Переіндексувати всі записи",
+        "reindexRecordsHelp": "Повторно зберігає поля індексу пошуку для наявних записів, щоб користувацькі типи пошуку використовували ваші останні зіставлення полів.",
+        "required": "Обов'язкове",
+        "requirement": "Вимога",
+        "searchTypeFallback": "Тип пошуку {index}",
+        "sectionFallback": "Розділ {index}",
+        "selectField": "Виберіть поле",
+        "selectRecordField": "Виберіть поле запису",
+        "selectRecordFieldDescription": "Виберіть шаблон запису, розгорніть розділ і натисніть поле, щоб зіставити його.",
+        "width": "Ширина",
+        "widthHelp": "Керує тим, наскільки широким відображається це поле пошуку у вікні пошуку. Натисніть піктограму попереднього перегляду, щоб побачити, як це буде відображатися."
+      },
+      "notificationTones": {
+        "dispatchClosed": "Диспетчерське повідомлення закрито",
+        "dispatchNote": "Примітка диспетчера",
+        "dispatchUpdated": "Диспетчерське повідомлення оновлено",
+        "newDispatch": "Нове диспетчерське повідомлення",
+        "notificationTones": "Тони сповіщень",
+        "statusChange": "Зміна статусу"
+      },
+      "otherCustomization": "Інші функції налаштування",
+      "pageColors": {
+        "customPageColors": "Спеціальні кольори сторінки",
+        "loginPageBkg": "Фон сторінки входу",
+        "menuPageBkg": "Фон сторінки меню",
+        "setToDefault": "Встановити стандартний колір"
+      },
+      "quickLinks": {
+        "color": "Колір",
+        "deleteLink": "Видалити посилання",
+        "label": "Мітка",
+        "link": "Посилання",
+        "newLink": "Нове посилання",
+        "quickLinks": "Швидкі посилання"
+      },
+      "rapidIQEditor": {
+        "addCode": "Додати код",
+        "addCondition": "Додати умову",
+        "addFlow": "Додати потік",
+        "addOption": "Додати опцію",
+        "addQuestion": "Додати питання",
+        "codeName": "Назва коду",
+        "codesHelp": "Керувати кодами відповідей. ID коду використовується в потоках, а Назва коду відображається для призначення.",
+        "conditionsInOrder": "Умови (в порядку)",
+        "defaultQuestions": "Типові питання",
+        "defaultQuestionsHint": "Виберіть, які запитання є в шляху за замовчуванням.",
+        "defaultsHelp": "Виберіть порядок запитань за замовчуванням під час відкриття.",
+        "flowPreview": "Попередній перегляд потоку",
+        "flowsHelp": "Створюйте логіку маршрутизації з упорядкованими умовами. Кожен потік завершується одним кодом результату.",
+        "headerHelp": "Налаштуйте питання RapidIQ, варіанти відповідей, коди та правила потоку.",
+        "label": "Мітка",
+        "maskHint": "Приклад: (###) ###-####",
+        "maskOptional": "Маска (необов'язкове)",
+        "newCodeId": "Новий код ID",
+        "newCodeName": "Нова назва коду",
+        "operator": "Оператор",
+        "options": "Параметри",
+        "order": "Порядок",
+        "question": "Питання",
+        "questionsHelp": "Створюйте й редагуйте кожне запитання. Використовуйте варіанти для швидкого вибору або текст/число/адресу для введених відповідей.",
+        "questionText": "Текст питання",
+        "questionType": "Тип питання",
+        "resultCode": "Код результату",
+        "searchCodes": "Пошук кодів",
+        "searchFlows": "Знайти потоки",
+        "searchQuestions": "Пошук питань",
+        "selectFlowPrompt": "Виберіть потік для редагування або додайте новий.",
+        "selectQuestionPrompt": "Виберіть або додайте питання для редагування.",
+        "stats": {
+          "codes": "Коди",
+          "defaults": "Значення за замовчуванням",
+          "flows": "Потоки",
+          "questions": "Питання"
+        },
+        "tabs": {
+          "codes": "Коди",
+          "defaults": "Шлях за замовчуванням",
+          "flows": "Потоки",
+          "questions": "Питання"
+        },
+        "validationErrors": "Помилки валідації",
+        "value": "Значення"
+      },
+      "restrictions": {
+        "maxCivilians": "Максимальна кількість цивільних персонажів",
+        "maxLicenses": "Максимальна кількість цивільних ліцензій *",
+        "maxRegistrations": "Максимальна кількість реєстрацій цивільних транспортних засобів *",
+        "note": "* Ці обмеження не стосуються спільнот із увімкненою синхронізацією бази даних.",
+        "subtext1": "Sonoran CAD дозволяє обмежити кількість цивільних осіб, яких може створити окремий обліковий запис користувача.",
+        "userAccountRestrictions": "Обмеження облікових записів користувачів"
+      },
+      "servers": {
+        "description": "Опис",
+        "name": "Ім'я",
+        "newServer": "Новий сервер",
+        "servers": "Сервери",
+        "subtext1": "Чи використовує ваша спільнота декілька серверів?",
+        "subtext2": "Sonoran CAD дозволяє розділяти онлайн-одиниці та диспетчерські послуги між кількома серверами, при цьому зберігаючи спільний доступ до тих самих записів.",
+        "subtext3": "Ваша спільнота наразі може підтримувати до",
+        "subtext4": "серверів."
+      },
+      "unitStatus": {
+        "available": "Доступний",
+        "busy": "Зайнятий",
+        "enroute": "В дорозі",
+        "onScene": "На місці",
+        "unavailable": "Недоступний",
+        "unitStatusCodes": "Коди статусу підрозділу"
       }
     },
-    "department": {
-      "agencies": "Агентства",
-      "agency": "Агентство",
-      "departments": "Відділи",
-      "department": "Відділ",
-      "subdivisions": "Підрозділи",
+    "customRecords": {
+      "actions": "Дії",
+      "addCustomSection": "Додати власний розділ",
+      "addPremadeSection": "Додати готовий розділ",
+      "dbMap": "Відображення синхронізації бази даних",
+      "dependency": "Залежність",
+      "dependencyInfo": {
+        "infoContains": "Відображати, якщо значення поля містить один або більше:",
+        "infoEqual": "Відображати, якщо значення поля дорівнює:",
+        "infoNotEqual": "Відображати, якщо значення поля не дорівнює:"
+      },
+      "duplicateSection": "Дублювати розділ",
+      "enableDuplicate": "Увімкнути дублювання",
+      "enableMapping": "Увімкнути відображення",
+      "enforceFormatting": "Вимагати форматування для текстових полів.",
+      "errors": {
+        "maxCiv": "ПОМИЛКА: Цей тип запису має надто багато розділів для пошуку цивільних. (Поля з UID \"first\" і \"last\")",
+        "maxStatus": "ПОМИЛКА: Цей тип запису містить надто багато власних полів типу \"статус\".",
+        "maxVeh": "ПОМИЛКА: Цей тип запису має надто багато розділів для пошуку транспортних засобів. (Поля з UID \"plate\")",
+        "minCiv": "ПОМИЛКА: Цей тип запису не має достатньо полів для пошуку персонажів. (Поля з UID \"first\" і \"last\")",
+        "minStatus": "ПОМИЛКА: Цей тип запису повинен мати ОДНЕ поле власного типу \"статус\".",
+        "minVeh": "ПОМИЛКА: Цей тип запису не має достатньо полів для пошуку транспортних засобів. (Поля з UID \"plate\")",
+        "noName": "ПОМИЛКА: Цей шаблон запису не має встановленого імені.",
+        "noPreviewedFields": "ПОМИЛКА: Цей шаблон запису не має полів, увімкнених для попереднього перегляду.",
+        "noStatusField": "ПОМИЛКА: Цей тип запису повинен мати ОДНЕ власне поле з UID \"status\""
+      },
+      "existingHeader": "Існуючі типи власних записів",
+      "label": "Мітка",
+      "lookupPreview": "Попередній перегляд пошуку",
+      "lookupPreviewAbout": "Показати значення поля в попередньому перегляді таблиці пошуку",
+      "mask": "Маска",
+      "maskAlphaNumeric": "X: Алфавітно-цифровий",
+      "maskNumber": "#: Номер",
+      "maskText": "S: Літера A-Z",
       "name": "Ім'я",
-      "description": "Опис",
+      "newField": "Нове поле",
+      "newValue": "Нове значення",
+      "notApplicable": "Н/Д",
+      "placeholder": "Заповнювач",
+      "placeholderAbout": "Необов’язковий допоміжний текст, що показується в порожньому полі до введення значення.",
+      "readOnly": "Тільки для читання",
+      "recordEditor": "Редактор записів",
+      "recordPreview": "Попередній перегляд запису",
+      "recordSections": "Розділи записів",
+      "recordTypeName": "Назва типу запису",
+      "recordTypes": {
+        "bolo": "BOLO",
+        "dmvRecord": "Запис DMV",
+        "fireRecord": "Пожежний запис",
+        "fireReport": "Пожежний звіт",
+        "lawRecord": "Судимість",
+        "lawReport": "Судовий звіт",
+        "license": "ліцензія",
+        "medicalRecord": "Медичний запис",
+        "medicalReport": "Медичний звіт",
+        "policeRecord": "Поліцейський запис",
+        "policeReport": "Поліцейський звіт",
+        "vehicleRegistration": "Реєстрація транспортного засобу",
+        "warrant": "Ордер"
+      },
+      "remove": {
+        "confirmRemove": "Ви впевнені, що хочете видалити цей тип запису?",
+        "removeType": "Видалити тип запису"
+      },
+      "requiredAbout": "Обов'язкове поле",
+      "resyncPreview": {
+        "confirm": "Це вручну оновить всі попередні записи, щоб переконатися, що поля попереднього перегляду відповідають вашому останньому шаблону запису. Ця дія має затримку в 10 хвилин.",
+        "resyncPreview": "Повторно синхронізувати поля попереднього перегляду"
+      },
+      "reverseMap": "Зворотна карта",
+      "searchCivs": "Пошук цивільних",
+      "searchVehicles": "Пошук транспортних засобів",
+      "sectionLabel": "Мітка розділу",
+      "supervisorAbout": "Обмежити поле лише для наглядачів",
+      "type": "Тип",
+      "uniqueField": "Унікальне поле",
+      "width": "Ширина"
+    },
+    "department": {
       "abbreviation": "Скорочення",
       "address": "Адреса",
-      "zip": "Поштовий індекс",
+      "agencies": "Агентства",
+      "agency": "Агентство",
+      "department": "Відділ",
+      "departments": "Відділи",
+      "description": "Опис",
+      "editorSubtitle": "Керуйте агентствами, відділами та підвідділами.",
+      "editorTitle": "Редактор відділу",
       "errors": {
-        "generalLimit1": "Помилка: Ваша спільнота обмежена до",
-        "agencyLimit2": "агентств!",
-        "departmentLimit2": "відділів на район!",
-        "subdivisionLimit2": "підрозділів на один відділ!",
         "agencyExists": "Помилка: Агентство з такою назвою вже існує!",
-        "districtExists": "Помилка: Район з такою назвою вже існує!",
+        "agencyLimit2": "агентств!",
         "departmentExists": "Помилка: Відділ з такою назвою вже існує!",
-        "subdivisionExists": "Помилка: Підрозділ з такою назвою вже існує!"
-      },
-      "modifyDepartment": {
-        "createNewDepartment": "Створити новий відділ",
-        "editDepartment": "Редагувати відділ",
-        "name": "Назва відділу",
-        "abbreviation": "Скорочення",
-        "address": "Адреса",
-        "zip": "Поштовий індекс",
-        "confirmRemove1": "Ви впевнені, що хочете видалити цей відділ?",
-        "confirmRemove2": "Цей відділ та всі підрозділи, що в нього входять, будуть видалені!"
+        "departmentLimit2": "відділів на район!",
+        "districtExists": "Помилка: Район з такою назвою вже існує!",
+        "generalLimit1": "Помилка: Ваша спільнота обмежена до",
+        "subdivisionExists": "Помилка: Підрозділ з такою назвою вже існує!",
+        "subdivisionLimit2": "підрозділів на один відділ!"
       },
       "modifyAgency": {
         "createNewAgency": "Створити нове агентство",
+        "description": "Опис",
         "editAgency": "Редагувати агентство",
         "name": "Назва агентства",
-        "description": "Опис",
         "remove": {
           "confirmRemove1": "Ви впевнені, що хочете видалити це агентство?",
           "confirmRemove2": "Це агентство та всі відділи та підрозділи, що в нього входять, будуть видалені!"
         }
       },
+      "modifyDepartment": {
+        "abbreviation": "Скорочення",
+        "address": "Адреса",
+        "confirmRemove1": "Ви впевнені, що хочете видалити цей відділ?",
+        "confirmRemove2": "Цей відділ та всі підрозділи, що в нього входять, будуть видалені!",
+        "createNewDepartment": "Створити новий відділ",
+        "editDepartment": "Редагувати відділ",
+        "name": "Назва відділу",
+        "zip": "Поштовий індекс"
+      },
       "modifySubdivision": {
+        "confirmRemove": "Ви впевнені, що хочете видалити цей підрозділ?",
         "createNewSub": "Створити новий підрозділ",
-        "editSub": "Редагувати підрозділ",
-        "name": "Назва підрозділу",
         "description": "Опис",
-        "confirmRemove": "Ви впевнені, що хочете видалити цей підрозділ?"
-      }
-    },
-    "webhooks": {
-      "modified": "Змінено",
-      "removed": "Видалено",
-      "headerText": "Інтеграція Sonoran CAD з Discord",
-      "subtext1": "Інтеграція Sonoran CAD з Discord дозволяє отримувати сповіщення безпосередньо на ваш сервер Discord.",
-      "subtext2": "Просто увімкніть і вкажіть URL WebHook для Discord для потрібних полів нижче.",
-      "emergencyWebhooks": "Екстрені вебхуки",
-      "about": "Про нас",
-      "emergencyAbout": "Ці вебхуки стосуються служб екстреної допомоги.",
-      "unitPanic": "Паніка підрозділу",
-      "unitPanicAbout": "Цей вебхук буде надіслано, коли підрозділ перемикає свій статус на ПАНІКА.",
-      "dispatch": "Диспетчерська служба",
-      "dispatchAbout": "Цей вебхук буде надіслано, коли додано або змінено диспетчерський виклик.",
-      "policeRecord": "Поліцейський запис",
-      "policeRecordAbout": "Цей вебхук буде надіслано, коли поліцейський запис додається, змінюється або видаляється.",
-      "medicalRecord": "Медичний запис",
-      "medicalRecordAbout": "Цей вебхук буде надіслано, коли медичний запис додається, змінюється або видаляється.",
-      "fireRecord": "Запис про пожежу",
-      "fireRecordAbout": "Цей вебхук буде надіслано, коли запис про пожежу додається, змінюється або видаляється.",
-      "bolo": "BOLO",
-      "boloAbout": "Цей вебхук буде надіслано, коли додається або змінюється BOLO.",
-      "emergencyCall": "Екстрений виклик",
-      "emergencyCallAbout": "Цей вебхук буде надіслано при отриманні екстреного виклику.",
-      "civilianWebhooks": "Вебхуки для цивільних",
-      "civilianWebhooksAbout": "Ці вебхуки стосуються цивільних послуг.",
-      "character": "Зміна персонажа",
-      "characterAbout": "Цей вебхук буде надіслано, коли цивільний персонаж додається, змінюється або видаляється.",
-      "dmv": "Запис DMV",
-      "dmvAbout": "Цей WebHook буде надіслано, коли запис DMV буде додано, змінено або видалено.",
-      "law": "Судимість",
-      "lawAbout": "Цей WebHook буде надіслано, коли запис судимості буде додано, змінено або видалено.",
-      "adminWebhooks": "Вебхуки адміністратора",
-      "adminWebhooksAbout": "Ці WebHook-и пов'язані з адміністративними послугами.",
-      "accountPermissions": "Дозволи облікового запису",
-      "accountPermissionsAbout": "Цей WebHook буде надіслано, коли адміністратор змінює дозволи облікового запису користувача.",
-      "departmentStructure": "Структура департаменту",
-      "departmentStructureAbout": "Цей WebHook буде надіслано, коли адміністратор оновлює структуру департаменту.",
-      "10Code": "Змінено код 10",
-      "10CodeAbout": "Цей WebHook буде надіслано, коли адміністратор додає, редагує або видаляє код 10.",
-      "penalCode": "Змінено кримінальний кодекс",
-      "penalCodeAbout": "Цей WebHook буде надіслано, коли адміністратор додає, редагує або видаляє кримінальний кодекс.",
-      "apiRequest": "Запит API",
-      "apiRequestAbout": "Цей WebHook буде надіслано, коли відправляється запит API.",
-      "signal": "Сигнал",
-      "signalAbout": "Цей WebHook буде надіслано, коли сигнал активний.",
-      "toneBoardAbout": "Цей WebHook буде надіслано, коли диспетчер відтворює тон.",
-      "errors": {
-        "maxWebhooks": "Помилка: Ви досягли ліміту вебхуків вашої спільноти:"
-      }
-    },
-    "limits": {
-      "limitsHeader": "Обмеження спільноти Sonoran CAD",
-      "upgradeYourCad": "Оновіть ваш CAD",
-      "version": "Версія",
-      "expiration": "Закінчення терміну дії"
-    },
-    "remove": {
-      "removeWarning1": "Видалення або передача вашого CAD НЕ скасовує жодну активну підписку спільноти.",
-      "removeWarning2": "Ви можете скасувати або передати свою підписку іншій спільноті в платіжному центрі.",
-      "transferHeader": "Передайте ваш Sonoran CAD",
-      "transferSubtext": "Ви повинні бути власником спільноти/CAD, щоб передати цей CAD. Процес передачі вимагатиме верифікації електронної пошти.",
-      "transferCad": "Передати CAD",
-      "transferCadTo": "Передати CAD до",
-      "removeHeader": "Видалити ваш Sonoran CAD",
-      "removeSubtext": "Ви повинні бути власником спільноти/CAD, щоб видалити цей CAD. Процес видалення вимагатиме верифікації електронної пошти.",
-      "removeCad": "Видалити CAD"
-    },
-    "wipeRecords": {
-      "wipeHeader": "Очистити записи вашої спільноти",
-      "wipeSubtext1": "Власники спільноти можуть видаляти всі збережені записи за типом.",
-      "wipeSubtext2": "Виберіть тип нижче, щоб видалити всі.",
-      "confirmWipe1": "Ви впевнені, що хочете видалити всі записи типу",
-      "confirmWipe2": "Цю дію не можна скасувати!"
-    },
-    "accounts": {
-      "userAccounts": "Облікові записи користувачів",
-      "username": "Ім'я користувача",
-      "status": "Статус",
-      "joined": "Приєднався",
-      "permissions": "Дозволи",
-      "lastLogin": "Останній вхід",
-      "apiIds": "Ідентифікатори API",
-      "purge": "Очистити неактивні",
-      "purgeConfirm": "Ви впевнені, що хочете очистити всі неактивні облікові записи користувачів? (30 днів)"
-    },
-    "customRecords": {
-      "existingHeader": "Існуючі типи власних записів",
-      "recordEditor": "Редактор записів",
-      "recordTypeName": "Назва типу запису",
-      "type": "Тип",
-      "resyncPreview": {
-        "resyncPreview": "Повторно синхронізувати поля попереднього перегляду",
-        "confirm": "Це вручну оновить всі попередні записи, щоб переконатися, що поля попереднього перегляду відповідають вашому останньому шаблону запису. Ця дія має затримку в 10 хвилин."
+        "editSub": "Редагувати підрозділ",
+        "name": "Назва підрозділу"
       },
-      "addCustomSection": "Додати власний розділ",
-      "addPremadeSection": "Додати готовий розділ",
-      "recordSections": "Розділи записів",
-      "newField": "Нове поле",
-      "searchCivs": "Пошук цивільних",
-      "searchVehicles": "Пошук транспортних засобів",
-      "enableDuplicate": "Увімкнути дублювання",
-      "duplicateSection": "Дублювати розділ",
-      "sectionLabel": "Мітка розділу",
-      "lookupPreviewAbout": "Показати значення поля в попередньому перегляді таблиці пошуку",
-      "supervisorAbout": "Обмежити поле лише для наглядачів",
-      "requiredAbout": "Обов'язкове поле",
-      "uniqueField": "Унікальне поле",
-      "readOnly": "Тільки для читання",
-      "newValue": "Нове значення",
-      "reverseMap": "Зворотна карта",
-      "enableMapping": "Увімкнути відображення",
-      "lookupPreview": "Попередній перегляд пошуку",
-      "recordPreview": "Попередній перегляд запису",
-      "actions": "Дії",
       "name": "Ім'я",
-      "mask": "Маска",
-      "label": "Мітка",
-      "width": "Ширина",
-      "dbMap": "Відображення синхронізації бази даних",
-      "dependency": "Залежність",
-      "dependencyInfo": {
-        "infoEqual": "Відображати, якщо значення поля дорівнює:",
-        "infoNotEqual": "Відображати, якщо значення поля не дорівнює:",
-        "infoContains": "Відображати, якщо значення поля містить один або більше:"
+      "persistentGroups": {
+        "badge": "Постійна група",
+        "empty": "Не налаштовано постійних груп.",
+        "groupName": "Ім'я Групи",
+        "hint": "Ці групи завжди відображаються в диспетчеризації, навіть якщо не призначено жодних підрозділів.",
+        "limitReached": "Помилка: '{group}' може містити лише {max} одиницю(ць) за один раз.",
+        "maxUnits": "Макс. юнітів",
+        "maxUnitsHint": "Необов'язкове",
+        "noUnits": "Немає підрозділів у групі",
+        "title": "Постійні групи юнітів"
       },
-      "recordTypes": {
-        "warrant": "Ордер",
-        "bolo": "BOLO",
-        "license": "ліцензія",
-        "vehicleRegistration": "Реєстрація транспортного засобу",
-        "policeRecord": "Поліцейський запис",
-        "policeReport": "Поліцейський звіт",
-        "medicalRecord": "Медичний запис",
-        "medicalReport": "Медичний звіт",
-        "fireRecord": "Пожежний запис",
-        "fireReport": "Пожежний звіт",
-        "dmvRecord": "Запис DMV",
-        "lawRecord": "Судимість",
-        "lawReport": "Судовий звіт"
-      },
-      "errors": {
-        "maxCiv": "ПОМИЛКА: Цей тип запису має надто багато розділів для пошуку цивільних. (Поля з UID \"first\" і \"last\")",
-        "minCiv": "ПОМИЛКА: Цей тип запису не має достатньо полів для пошуку персонажів. (Поля з UID \"first\" і \"last\")",
-        "maxVeh": "ПОМИЛКА: Цей тип запису має надто багато розділів для пошуку транспортних засобів. (Поля з UID \"plate\")",
-        "minVeh": "ПОМИЛКА: Цей тип запису не має достатньо полів для пошуку транспортних засобів. (Поля з UID \"plate\")",
-        "maxStatus": "ПОМИЛКА: Цей тип запису містить надто багато власних полів типу \"статус\".",
-        "minStatus": "ПОМИЛКА: Цей тип запису повинен мати ОДНЕ поле власного типу \"статус\".",
-        "noStatusField": "ПОМИЛКА: Цей тип запису повинен мати ОДНЕ власне поле з UID \"status\"",
-        "noPreviewedFields": "ПОМИЛКА: Цей шаблон запису не має полів, увімкнених для попереднього перегляду.",
-        "noName": "ПОМИЛКА: Цей шаблон запису не має встановленого імені."
-      },
-      "remove": {
-        "removeType": "Видалити тип запису",
-        "confirmRemove": "Ви впевнені, що хочете видалити цей тип запису?"
-      },
-      "enforceFormatting": "Вимагати форматування для текстових полів.",
-      "maskNumber": "#: Номер",
-      "maskText": "S: Літера A-Z",
-      "maskAlphaNumeric": "X: Алфавітно-цифровий"
+      "subdivisions": "Підрозділи",
+      "zip": "Поштовий індекс"
+    },
+    "general": {
+      "accounts": "Акаунти",
+      "advanced": "Розширений",
+      "authenticate": "Аутентифікувати",
+      "changeCommunityId": "Змінити ідентифікатор спільноти",
+      "customization": "Налаштування",
+      "customRecords": "Налаштовані записи",
+      "departments": "Відділи",
+      "desktops": "Робочі столи",
+      "discordIntegration": "Інтеграція Discord",
+      "documentation": "Документація",
+      "identifiers": "Ідентифікатори",
+      "inGameIntegration": "Інтеграція в грі",
+      "limits": "Обмеження",
+      "logs": "Журнали",
+      "permissionKeys": "Ключі дозволів",
+      "transferOrDelete": "Передати або видалити CAD",
+      "wipeRecords": "Очистити записи"
+    },
+    "helpPermissions": {
+      "permissionsGuide": "Посібник з дозволів"
     },
     "integration": {
-      "apiHeader": "Веб API",
-      "oneClickInstallation": "Одноклікова установка",
-      "manualInstalltion": "Ручна установка",
-      "apiSubheader": "Веб API Sonoran CAD дозволяє оновлювати місцезнаходження підрозділів у реальному часі, перемикати статус ПАНІКИ підрозділу, створювати виклик 911 і багато іншого прямо з гри!",
-      "resources": "Ресурси",
-      "apiKey": "Ключ API",
-      "changeApiKey": "Змінити ключ API",
       "apiDocs": "Документація API",
-      "luaPlugins": "Плагіни LUA",
+      "apiHeader": "Веб API",
+      "apiKey": "Ключ API",
+      "apiSubheader": "Веб API Sonoran CAD дозволяє оновлювати місцезнаходження підрозділів у реальному часі, перемикати статус ПАНІКИ підрозділу, створювати виклик 911 і багато іншого прямо з гри!",
+      "availableMaps": "Доступні карти",
+      "changeApiKey": "Змінити ключ API",
+      "configureAndDeploy": "Налаштування та розгортання",
       "confirmKeyChange1": "Ви впевнені, що хочете згенерувати новий ключ API?",
       "confirmKeyChange2": "Вам необхідно буде оновити ваш ключ API у всіх конфігураціях плагінів або API!",
-      "liveMapHeader": "Серверні події та інтегрована жива карта",
-      "liveMapSubtext1": "Конфігурація живої карти Sonoran CAD дозволяє миттєво налаштувати власну інтегровану живу карту вашої спільноти, ми навіть забезпечуємо хостинг!",
-      "liveMapSubtext2": "Sonoran CAD також передає дані подій на ваш налаштований порт слухача.",
-      "mapTutorial": "Посібник з карти",
-      "eventDocumentation": "Документація по подіям",
-      "configureAndDeploy": "Налаштування та розгортання",
-      "enableMap": "Увімкнути карту",
-      "staticOnly": "Лише статичний URL",
-      "staticOnlyAbout": "Якщо ваш ігровий режим несумісний з ресурсом живої карти, ви можете вказати вебсайт з картою вашої гри.",
-      "mapType": "Тип карти",
-      "uploadCustomMap": "Завантажити власну карту",
-      "server": "Сервер",
-      "ip": "IP",
-      "websiteUrl": "URL вебсайту",
-      "mapPort": "Порт карти",
-      "gamePort": "Порт гри",
-      "differingOutboundIp": "Відмінна вихідна IP адреса",
-      "outboundIp": "Вихідна IP адреса",
-      "saveAndDeploy": "Зберегти та розгорнути",
+      "customMapImagesLabel": "Користувацькі зображення карти (30 МБ/кожне макс)",
       "dbSync": {
+        "characterMapping": "Відображення персонажів",
+        "characterMappingColumn": "Стовпець відображення персонажів",
+        "columnName": "Назва стовпця",
+        "connectionCredentials": "Облікові дані підключення SQL",
+        "customMapAbout": "Це власне поле відображення синхронізації бази даних, надане вашим власним редактором записів.",
+        "database": "База даних",
         "dbSyncHeader": "Синхронізація бази даних",
         "dbSyncSubtext1": "Синхронізація бази даних Sonoran CAD дозволяє отримувати персонажів, ліцензії та реєстрації транспортних засобів безпосередньо з вашої ігрової бази даних у ваш CAD.",
         "dbSyncSubtext2": "Просто вкажіть рядок підключення SQL вашої бази даних і відобразіть ваші таблиці та поля в Sonoran CAD.",
         "dbSyncSubtext3": "Усі червоні поля є обов'язковими. Якщо у вас немає стовпця даних для додаткового поля, просто залиште його порожнім.",
-        "connectionCredentials": "Облікові дані підключення SQL",
+        "dbValue": "Значення бази даних",
         "description": "Опис",
         "descriptionCredentials": "Це деталі підключення SQL до вашої ігрової бази даних.",
-        "enableDbSync": "Увімкнути синхронізацію бази даних",
         "enableDbMerge": "Увімкнути об'єднання бази даних",
-        "testConnection": "Перевірити підключення",
-        "saveCredentials": "Зберегти облікові дані підключення",
-        "type": "Тип",
-        "host": "Хост/Адреса",
-        "port": "Порт",
-        "database": "База даних",
-        "username": "Ім'я користувача",
-        "password": "Пароль",
-        "characterMapping": "Відображення персонажів",
-        "licenseMapping": "Відображення ліцензій",
-        "vehicleMapping": "Відображення транспортних засобів",
-        "testMapping": "Перевірити відображення",
-        "saveMapping": "Зберегти конфігурацію відображення",
-        "tableName": "Назва таблиці",
-        "characterMappingColumn": "Стовпець відображення персонажів",
-        "customMapAbout": "Це власне поле відображення синхронізації бази даних, надане вашим власним редактором записів.",
-        "columnName": "Назва стовпця",
+        "enableDbSync": "Увімкнути синхронізацію бази даних",
+        "enableDbSyncLookupBoth": "Включати записи CAD API в пошуки DB Sync",
         "externalKey": "Зовнішній ключ",
-        "jsonKey": "Ключ JSON",
-        "jsonColumn": "Стовпець JSON",
-        "jsonColumnAbout": "Якщо цей стовпець має тип даних JSON, ви можете вказати ключ JSON.",
-        "label": "Мітка",
-        "tooltipLabel": "Це опис поля",
-        "tooltipColumn": "Це назва стовпця в таблиці вашої бази даних, що містить дані для цього поля.",
-        "tooltipTable": "Це назва SQL-таблиці, в якій знаходиться цей стовпець даних.",
-        "tooltipCharacterColumn": "Це назва стовпця унікального ідентифікатора персонажа у вашій таблиці. Як правило, це містить Steam Hex.",
         "fieldMapId": "Ідентифікатор відображення поля",
         "fieldMapIdAbout": "Цей ідентифікатор допомагає відобразити поля в призначеному для користувача розділі персонажів до інших записів і визначити, які поля містять пошукові запити, такі як ім'я та прізвище.",
         "friendlyMapping": "Дружнє відображення",
-        "tooltipFriendlyMapping": "Це дозволяє зіставляти загальні значення бази даних з більш зрозумілими значеннями інтерфейсу користувача.",
         "friendlyMappingExample": "Приклад: 'drive_license' -> 'Водійські права'",
-        "dbValue": "Значення бази даних",
-        "friendlyValue": "Зрозуміле значення"
-      }
+        "friendlyValue": "Зрозуміле значення",
+        "host": "Хост/Адреса",
+        "jsonColumn": "Стовпець JSON",
+        "jsonColumnAbout": "Якщо цей стовпець має тип даних JSON, ви можете вказати ключ JSON.",
+        "jsonKey": "Ключ JSON",
+        "label": "Мітка",
+        "licenseMapping": "Відображення ліцензій",
+        "password": "Пароль",
+        "port": "Порт",
+        "saveCredentials": "Зберегти облікові дані підключення",
+        "saveMapping": "Зберегти конфігурацію відображення",
+        "tableName": "Назва таблиці",
+        "testConnection": "Перевірити підключення",
+        "testMapping": "Перевірити відображення",
+        "tooltipCharacterColumn": "Це назва стовпця унікального ідентифікатора персонажа у вашій таблиці. Як правило, це містить Steam Hex.",
+        "tooltipColumn": "Це назва стовпця в таблиці вашої бази даних, що містить дані для цього поля.",
+        "tooltipFriendlyMapping": "Це дозволяє зіставляти загальні значення бази даних з більш зрозумілими значеннями інтерфейсу користувача.",
+        "tooltipLabel": "Це опис поля",
+        "tooltipTable": "Це назва SQL-таблиці, в якій знаходиться цей стовпець даних.",
+        "type": "Тип",
+        "username": "Ім'я користувача",
+        "vehicleMapping": "Відображення транспортних засобів"
+      },
+      "differingOutboundIp": "Відмінна вихідна IP адреса",
+      "enableMap": "Увімкнути карту",
+      "erlc": {
+        "apiKey": "Ключ API ER:LC",
+        "apiKeyHint": "Вставте новий ключ, щоб замінити збережене значення.",
+        "civilianRegistrationsHeader": "Реєстрації цивільних транспортних засобів",
+        "commandHint": "Залиште порожнім, щоб вимкнути цю команду.",
+        "customRobloxMap": "Користувацька карта Roblox",
+        "customRobloxMapProTooltip": "Користувацькі карти Roblox підтримуються лише на Pro.",
+        "emergencyCallCommand": "Команда 911",
+        "emergencyCallsHeader": "Екстрені Виклики",
+        "header": "Інтеграція ER:LC",
+        "liveMapAbout": "Жива мапа пропонує інтерактивну 2D і 3D мапу гри з розташуванням підрозділів, бодікамерами, екстреними викликами, диспетчерськими викликами та іншим.",
+        "notifyAlways": "Завжди",
+        "notifyAlwaysTooltip": "Після обробки команди гравець завжди отримуватиме приватне повідомлення.",
+        "notifyMode": "Сповіщати гравця",
+        "notifyNever": "Ніколи",
+        "notifyNeverTooltip": "Гравець не отримуватиме приватне повідомлення для цієї команди.",
+        "notifyOnlyOnFailure": "Лише при помилці",
+        "notifyOnlyOnFailureTooltip": "Гравець отримуватиме приватне повідомлення лише якщо команда не виконається.",
+        "officialRobloxMap": "Офіційна мапа ER:LC",
+        "registerCommand": "Команда реєстрації",
+        "tempRegisterCommand": "Тимчасова команда реєстрації",
+        "trafficStopCommand": "Команда зупинки транспорту",
+        "trafficStopDefaultTenCode": "Стандартний 10-код",
+        "trafficStopDefaultTenCodeHint": "Використовується для викликів диспетчеризації під час зупинки руху. Залиште тут свій бажаний код.",
+        "trafficStopDescription": "Опис відправлення",
+        "trafficStopDescriptionHeader": "Опис і 10-код",
+        "trafficStopDescriptionHint": "Підтримує користувацькі змінні.",
+        "trafficStopMaxRadius": "Максимальний радіус найближчого транспортного засобу",
+        "trafficStopMaxRadiusHint": "Якщо найближчий транспортний засіб далі за це, виклики зупинки трафіку повертаються до введення номера або без відомостей про транспортний засіб.",
+        "trafficStopsHeader": "Зупинки транспорту",
+        "trafficStopVariableBuildingNumber": "Поточний номер будівлі з ER:LC.",
+        "trafficStopVariableCopied": "Змінну скопійовано в буфер обміну",
+        "trafficStopVariablePicker": "Переглянути змінні шаблону",
+        "trafficStopVariablePickerHint": "Натисніть на будь-яку змінну, щоб скопіювати її в буфер обміну.",
+        "trafficStopVariablePickerTitle": "Змінні зупинки транспорту",
+        "trafficStopVariablePlate": "Перший аргумент команди, коли було надано номерний знак.",
+        "trafficStopVariablePostalCode": "Поточний поштовий індекс офіцера.",
+        "trafficStopVariableStreetName": "Поточна назва вулиці з ER:LC.",
+        "trafficStopVariableVehicleColorName": "Найближча або відповідна назва кольору транспортного засобу.",
+        "trafficStopVariableVehicleName": "Найближча або відповідна назва транспортного засобу.",
+        "trafficStopVariableVehiclePlate": "Розпізнаний номерний знак транспортного засобу з ручного введення, найближчого транспортного засобу ER:LC або відповідної реєстрації CAD.",
+        "vehicleRegistrationsHeader": "Реєстрації транспортних засобів"
+      },
+      "erlcTab": "ER:LC",
+      "eventDocumentation": "Документація по подіям",
+      "fivem": {
+        "configureFeaturesTitle": "Налаштувати функції",
+        "configureResourceTitle": "Налаштувати ресурс",
+        "configureServerTitle": "Налаштувати сервер",
+        "downloadInstallTitle": "Завантажити й встановити",
+        "manual": {
+          "additionalOptions": "Докладніше про інші параметри налаштування можна дізнатися тут.",
+          "addToServerCfg": "Додайте таке до server.cfg:",
+          "configComment": "# Запустіть ресурс sonorancad та інші вбудовані ресурси",
+          "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
+          "configureResource": "Відкрийте sonorancad/configuration/config.json, щоб налаштувати ресурс.",
+          "downloadButton": "Завантажити Sonoran CAD для FiveM",
+          "extractResource": "Після завантаження розпакуйте теку [sonorancad] до теки resources вашого сервера.",
+          "preconfiguredNotice": "У ресурсу вже буде попередньо налаштовано communityID та apiKey.",
+          "restartComplete": "І після перезапуску сервера все готово! Ознайомтеся з документацією, щоб увімкнути та використовувати кожну функцію.",
+          "seeDocs": "Переглянути документацію",
+          "welcomeDescription": "Скористайтеся цим посібником, щоб установити ресурс FiveM на ваш сервер!"
+        },
+        "rocketNode": {
+          "accessPanel": "Отримайте доступ до панелі ігрового сервера.",
+          "configurationLabel": "Конфігурація",
+          "couponCode": "SONORAN",
+          "couponPrefix": "Використайте код купона",
+          "couponSuffix": "зі знижкою 20%.",
+          "fileManager": "Файловий менеджер",
+          "gamePanelPurchaseTitle": "Придбання ігрової панелі",
+          "installerLabel": "Інсталятор Sonoran",
+          "installSonoran": "Натисніть Встановити Sonoran на панелі Rocket Node.",
+          "maskedKey": "********************",
+          "navigateFolder": "Перейдіть до папки resources > [sonorancad] > sonorancad > configuration.",
+          "navigateInstaller": "У ігровій панелі Rocket Node перейдіть до",
+          "purchaseServer": "Придбайте ігровий сервер FiveM у Rocket Node",
+          "resourceAccess": "Після завершення встановлення ви можете отримати доступ до файлів ресурсу у файловому менеджері.",
+          "selectCad": "Виберіть CAD і натисніть, щоб скопіювати/вставити ID і ключ нижче.",
+          "submoduleDocs": "Докладніше про налаштування підмодулів можна дізнатися тут."
+        },
+        "welcomeTitle": "Ласкаво просимо"
+      },
+      "fivemTab": "FiveM",
+      "gamePort": "Порт гри",
+      "ip": "IP",
+      "liveMapHeader": "Серверні події та інтегрована жива карта",
+      "liveMapSubtext1": "Конфігурація живої карти Sonoran CAD дозволяє миттєво налаштувати власну інтегровану живу карту вашої спільноти, ми навіть забезпечуємо хостинг!",
+      "liveMapSubtext2": "Sonoran CAD також передає дані подій на ваш налаштований порт слухача.",
+      "luaPlugins": "Плагіни LUA",
+      "manualInstalltion": "Ручна установка",
+      "mapPort": "Порт карти",
+      "mapTutorial": "Посібник з карти",
+      "mapType": "Тип карти",
+      "oneClickInstallation": "Одноклікова установка",
+      "outboundIp": "Вихідна IP адреса",
+      "resources": "Ресурси",
+      "saveAndDeploy": "Зберегти та розгорнути",
+      "server": "Сервер",
+      "staticOnly": "Лише статичний URL",
+      "staticOnlyAbout": "Якщо ваш ігровий режим несумісний з ресурсом живої карти, ви можете вказати вебсайт з картою вашої гри.",
+      "uploadCustomMap": "Завантажити власну карту",
+      "videoTutorial": "Відеоінструкції",
+      "websiteUrl": "URL вебсайту"
+    },
+    "limits": {
+      "expiration": "Закінчення терміну дії",
+      "limitsHeader": "Обмеження спільноти Sonoran CAD",
+      "upgradeYourCad": "Оновіть ваш CAD",
+      "version": "Версія"
+    },
+    "logs": {
+      "log": "Журнал",
+      "logs": "Журнали",
+      "time": "Час"
     },
     "penal": {
-      "createNewPenal": "Створити новий кримінальний кодекс",
-      "editPenal": "Редагувати кримінальний кодекс",
-      "code": "Код",
-      "title": "Назва",
-      "chargeType": "Тип звинувачення",
-      "bondType": "Тип застави",
-      "bondAmount": "Сума застави/штрафу",
-      "jailTime": "Тюремний термін",
-      "confirmRemove": "Ви впевнені, що хочете видалити цей кримінальний кодекс?",
-      "errors": {
-        "exists": "Помилка: Дублікат кримінального кодексу вже існує!",
-        "duplicate": "Помилка: Ви не можете встановити кримінальний кодекс, який вже існує!",
-        "notFound": "Помилка: Кримінальний кодекс для видалення не знайдено!"
-      },
-      "chargeTypes": "Типи звинувачень",
       "autoSort": "Автоматичне сортування",
+      "bondAmount": "Сума застави/штрафу",
+      "bondType": "Тип застави",
       "bondTypes": "Типи застав",
+      "chargeType": "Тип звинувачення",
+      "chargeTypes": "Типи звинувачень",
+      "code": "Код",
       "columns": {
         "action": "Дія",
-        "charge": "Звинувачення",
-        "bond": "Застава"
-      }
-    },
-    "10Codes": {
-      "action": "Дія",
-      "code": "Код"
+        "bond": "Застава",
+        "charge": "Звинувачення"
+      },
+      "confirmRemove": "Ви впевнені, що хочете видалити цей кримінальний кодекс?",
+      "createNewPenal": "Створити новий кримінальний кодекс",
+      "editPenal": "Редагувати кримінальний кодекс",
+      "errors": {
+        "duplicate": "Помилка: Ви не можете встановити кримінальний кодекс, який вже існує!",
+        "exists": "Помилка: Дублікат кримінального кодексу вже існує!",
+        "notFound": "Помилка: Кримінальний кодекс для видалення не знайдено!"
+      },
+      "jailTime": "Тюремний термін",
+      "title": "Назва"
     },
     "permissions": {
-      "permissionKeys": "Ключі дозволів",
-      "permissionKey": "Ключ дозволу",
-      "key": "Ключ",
-      "permissions": "Дозволи",
-      "accountManagement": "Управління обліковими записами",
-      "permissionsGuide": "Посібник з дозволів",
-      "keyName": "Назва ключа",
       "account": "Обліковий запис",
-      "joined": "Приєднався",
-      "pagePermissions": "Дозволи сторінки",
-      "unitGeneral": "Підрозділ - Загальне",
-      "policeAdvanced": "Поліція - Розширене",
-      "emsAdvanced": "Швидка допомога - Розширене",
-      "fireAdvanced": "Пожежна служба - Розширене",
-      "dmvRecords": "Записи DMV",
-      "modifyStreetSigns": "Змінити дорожні знаки",
-      "lawRecords": "Судимості",
+      "accountManagement": "Управління обліковими записами",
       "adminAccess": "Адміністративний доступ",
-      "kickUser": "Видалити користувача",
+      "ban": "заборонити",
       "banUser": "Заборонити користувачу",
+      "confirmBan": "Ви впевнені, що хочете",
+      "confirmKick": "Ви впевнені, що хочете видалити",
+      "confirmRemoveKey": "Ви впевнені, що хочете видалити цей ключ дозволу?",
+      "dmvRecords": "Записи DMV",
+      "emsAdvanced": "Швидка допомога - Розширене",
+      "errors": {
+        "duplicateKey": "Помилка: Ключ з цим ім'ям вже існує!"
+      },
+      "fireAdvanced": "Пожежна служба - Розширене",
+      "joined": "Приєднався",
+      "key": "Ключ",
+      "keyName": "Назва ключа",
+      "kickUser": "Видалити користувача",
+      "lawRecords": "Судимості",
+      "modifyStreetSigns": "Змінити дорожні знаки",
+      "pagePermissions": "Дозволи сторінки",
+      "permissionKey": "Ключ дозволу",
+      "permissionKeys": "Ключі дозволів",
+      "permissions": "Дозволи",
+      "permissionsGuide": "Посібник з дозволів",
+      "policeAdvanced": "Поліція - Розширене",
       "revokeBan": "Скасувати заборону",
+      "status": {
+        "active": "АКТИВНИЙ",
+        "banned": "ЗАБОРОНЕНО",
+        "pending": "В ОЧІКУВАННІ"
+      },
       "toggles": {
         "editIdent": "Редагувати ідентифікатор",
         "editOtherIdent": "Редагувати ідентифік. інших",
         "selfDispatch": "Самодиспетчеризація",
         "supervisor": "Наглядач"
       },
-      "confirmKick": "Ви впевнені, що хочете видалити",
-      "confirmBan": "Ви впевнені, що хочете",
-      "confirmRemoveKey": "Ви впевнені, що хочете видалити цей ключ дозволу?",
-      "ban": "заборонити",
       "unban": "скасувати заборону",
-      "status": {
-        "pending": "В ОЧІКУВАННІ",
-        "active": "АКТИВНИЙ",
-        "banned": "ЗАБОРОНЕНО"
-      },
+      "unitGeneral": "Підрозділ - Загальне"
+    },
+    "remove": {
+      "removeCad": "Видалити CAD",
+      "removeHeader": "Видалити ваш Sonoran CAD",
+      "removeSubtext": "Ви повинні бути власником спільноти/CAD, щоб видалити цей CAD. Процес видалення вимагатиме верифікації електронної пошти.",
+      "removeWarning1": "Видалення або передача вашого CAD НЕ скасовує жодну активну підписку спільноти.",
+      "removeWarning2": "Ви можете скасувати або передати свою підписку іншій спільноті в платіжному центрі.",
+      "transferCad": "Передати CAD",
+      "transferCadTo": "Передати CAD до",
+      "transferHeader": "Передайте ваш Sonoran CAD",
+      "transferSubtext": "Ви повинні бути власником спільноти/CAD, щоб передати цей CAD. Процес передачі вимагатиме верифікації електронної пошти."
+    },
+    "webhooks": {
+      "10Code": "Змінено код 10",
+      "10CodeAbout": "Цей WebHook буде надіслано, коли адміністратор додає, редагує або видаляє код 10.",
+      "about": "Про нас",
+      "accountPermissions": "Дозволи облікового запису",
+      "accountPermissionsAbout": "Цей WebHook буде надіслано, коли адміністратор змінює дозволи облікового запису користувача.",
+      "adminWebhooks": "Вебхуки адміністратора",
+      "adminWebhooksAbout": "Ці WebHook-и пов'язані з адміністративними послугами.",
+      "apiRequest": "Запит API",
+      "apiRequestAbout": "Цей WebHook буде надіслано, коли відправляється запит API.",
+      "bolo": "BOLO",
+      "boloAbout": "Цей вебхук буде надіслано, коли додається або змінюється BOLO.",
+      "character": "Зміна персонажа",
+      "characterAbout": "Цей вебхук буде надіслано, коли цивільний персонаж додається, змінюється або видаляється.",
+      "civilianWebhooks": "Вебхуки для цивільних",
+      "civilianWebhooksAbout": "Ці вебхуки стосуються цивільних послуг.",
+      "departmentStructure": "Структура департаменту",
+      "departmentStructureAbout": "Цей WebHook буде надіслано, коли адміністратор оновлює структуру департаменту.",
+      "dispatch": "Диспетчерська служба",
+      "dispatchAbout": "Цей вебхук буде надіслано, коли додано або змінено диспетчерський виклик.",
+      "dmv": "Запис DMV",
+      "dmvAbout": "Цей WebHook буде надіслано, коли запис DMV буде додано, змінено або видалено.",
+      "emergencyAbout": "Ці вебхуки стосуються служб екстреної допомоги.",
+      "emergencyCall": "Екстрений виклик",
+      "emergencyCallAbout": "Цей вебхук буде надіслано при отриманні екстреного виклику.",
+      "emergencyWebhooks": "Екстрені вебхуки",
       "errors": {
-        "duplicateKey": "Помилка: Ключ з цим ім'ям вже існує!"
+        "maxWebhooks": "Помилка: Ви досягли ліміту вебхуків вашої спільноти:"
+      },
+      "fireRecord": "Запис про пожежу",
+      "fireRecordAbout": "Цей вебхук буде надіслано, коли запис про пожежу додається, змінюється або видаляється.",
+      "headerText": "Інтеграція Sonoran CAD з Discord",
+      "law": "Судимість",
+      "lawAbout": "Цей WebHook буде надіслано, коли запис судимості буде додано, змінено або видалено.",
+      "medicalRecord": "Медичний запис",
+      "medicalRecordAbout": "Цей вебхук буде надіслано, коли медичний запис додається, змінюється або видаляється.",
+      "modified": "Змінено",
+      "penalCode": "Змінено кримінальний кодекс",
+      "penalCodeAbout": "Цей WebHook буде надіслано, коли адміністратор додає, редагує або видаляє кримінальний кодекс.",
+      "policeRecord": "Поліцейський запис",
+      "policeRecordAbout": "Цей вебхук буде надіслано, коли поліцейський запис додається, змінюється або видаляється.",
+      "removed": "Видалено",
+      "signal": "Сигнал",
+      "signalAbout": "Цей WebHook буде надіслано, коли сигнал активний.",
+      "subtext1": "Інтеграція Sonoran CAD з Discord дозволяє отримувати сповіщення безпосередньо на ваш сервер Discord.",
+      "subtext2": "Просто увімкніть і вкажіть URL WebHook для Discord для потрібних полів нижче.",
+      "toneBoardAbout": "Цей WebHook буде надіслано, коли диспетчер відтворює тон.",
+      "unitPanic": "Паніка підрозділу",
+      "unitPanicAbout": "Цей вебхук буде надіслано, коли підрозділ перемикає свій статус на ПАНІКА."
+    },
+    "wipeRecords": {
+      "confirmWipe1": "Ви впевнені, що хочете видалити всі записи типу",
+      "confirmWipe2": "Цю дію не можна скасувати!",
+      "wipeHeader": "Очистити записи вашої спільноти",
+      "wipeSubtext1": "Власники спільноти можуть видаляти всі збережені записи за типом.",
+      "wipeSubtext2": "Виберіть тип нижче, щоб видалити всі."
+    }
+  },
+  "bodycamRecordings": {
+    "open": "Відкрити",
+    "refresh": "Оновити"
+  },
+  "calleditor": {
+    "unitStatus": "Статус підрозділу:"
+  },
+  "civilian": {
+    "buttons": {
+      "autoRegister": "Автореєстрація",
+      "dmv": "ДМВ",
+      "editCharacter": "Редагувати персонаж",
+      "newCharacter": "Новий персонаж",
+      "records": "Записи"
+    },
+    "characterEditor": {
+      "addCharacter": "Додати персонажа",
+      "age": "Вік",
+      "aka": "Також відомий як (псевдоніми)/колишні імена",
+      "confirmRemove": "Ви впевнені, що хочете видалити цього персонажа?",
+      "contactNumber": "Контактний номер",
+      "createNewCharacter": "Створити нового персонажа",
+      "dob": "Дата народження",
+      "editExistingCharacter": "Редагувати персонажа",
+      "emergencyContact": "Контакт на випадок надзвичайної ситуації",
+      "eye": "Колір очей",
+      "first": "Ім'я",
+      "hair": "Колір волосся",
+      "height": "Зріст",
+      "image": "Зображення",
+      "last": "Прізвище",
+      "mi": "П.І. (по батькові)",
+      "occupation": "Професія",
+      "relationship": "Стосунки",
+      "removeCharacter": "Видалити персонажа",
+      "residence": "Місце проживання",
+      "saveCharacter": "Зберегти персонажа",
+      "sex": "Стать",
+      "skin": "Відтінок шкіри",
+      "weight": "Вага",
+      "zip": "Поштовий індекс"
+    },
+    "erlcAutoRegister": "Автоматична реєстрація ER:LC",
+    "errors": {
+      "maxCharacters": "Помилка: Ви досягли максимального ліміту персонажів у вашій спільноті"
+    },
+    "labels": {
+      "selectedCharacter": "Вибраний персонаж"
+    }
+  },
+  "common": {
+    "actions": "Дії",
+    "activeServer": "Активний Сервер",
+    "add": "Додати",
+    "addRow": "Додати рядок",
+    "attach": "Прикріпити",
+    "attachToCall": "Приєднатися до Виклику (Enter)",
+    "autoSort": "Автоматичне сортування",
+    "back": "Назад",
+    "cancel": "Відміна",
+    "clear": "Очистити",
+    "close": "Закрити",
+    "communityId": "ID Спільноти",
+    "confirm": "Підтвердити",
+    "contains": "Містить",
+    "continue": "Продовжити",
+    "copy": "Копіювати",
+    "csv": "CSV",
+    "dbSyncRecordWarning": "Це запис синхронізації бази даних, і його можна змінити лише з увімкненим Database Merge.",
+    "deleteRow": "Видалити рядок",
+    "detach": "Відкріпити",
+    "detachFromCall": "Від’єднатися від дзвінка (Enter)",
+    "disabled": "Вимкнено",
+    "dismiss": "Закрити",
+    "download": "Завантажити",
+    "edit": "Редагувати",
+    "enabled": "Включений",
+    "equal": "Рівний",
+    "errors": {
+      "limitReached": "Помилка: досягнуто максимальної межі",
+      "notFound": "Вибачте, тут нічого немає..."
+    },
+    "export": "Експорт",
+    "exportAll": "Експортувати все",
+    "externalWindow": "У зовнішнє вікно",
+    "failed": "Відмовлено",
+    "field": "Поле",
+    "help": "Допомога",
+    "history": "Історія",
+    "hours": "Години",
+    "icon": "Значок",
+    "id": "ідентифікатор",
+    "import": "Імпорт",
+    "importPrompt": "Вставте JSON-вміст",
+    "itemsPerPage": "Пунктів на сторінці",
+    "json": "JSON",
+    "learnMore": "Дізнатись Більше",
+    "link": "Посилання",
+    "loading": "Завантаження",
+    "lostConnection": "Втрата зв'язку",
+    "lostSignal": "Втрата сигналу",
+    "max": "Макс",
+    "maximize": "Розгорнути",
+    "message": "Повідомлення",
+    "min": "Хв",
+    "minimize": "Згорнути",
+    "minutes": "Хвилини",
+    "modify": "Модифікувати",
+    "new": "Новий",
+    "noData": "Немає даних",
+    "noImageSelected": "Зображення не вибрано",
+    "noResults": "Немає результатів",
+    "notEqual": "Не дорівнює",
+    "off": "Вимкнено",
+    "ok": "ОК",
+    "on": "Увімкнено",
+    "open": "Відкрити",
+    "paste": "Вставити",
+    "pause": "Пауза",
+    "range": "Діапазон",
+    "rateLimit": "Ліміт запитів",
+    "refresh": "Оновити",
+    "remove": "Видалити",
+    "reset": "Скинути",
+    "s": "s",
+    "save": "Зберегти",
+    "search": "Знайти",
+    "searchOnMap": "Знайти на мапі",
+    "seconds": "Секунди",
+    "serverStatus": "Статус Серверу",
+    "sessionExpired": "Сеанс завершено",
+    "start": "Почати",
+    "status": "Статус",
+    "stop": "Стоп",
+    "success": "Успішно",
+    "test": "Тест",
+    "tutorial": "Інструкції",
+    "tutorials": "Посібники",
+    "type": "Тип",
+    "undo": "Відмінити",
+    "upload": "Загрузити",
+    "uploader": "Загрузити зображення (5МБ Максимум)",
+    "versionDisplay": {
+      "currentVersion": "Ваша версія: {version}",
+      "description": "УВАГА: Схоже, ви використовуєте застарілу версію Sonoran CAD.",
+      "latestVersion": "Остання версія: {latestVersion}",
+      "title": "Увага: Застаріла версія",
+      "updateReminder": "Обов’язково оновіть свій застосунок, щоб отримати найновіші функції, зміни та виправлення!"
+    }
+  },
+  "communityMenu": {
+    "buttons": {
+      "admin": "Адміністратор",
+      "civilian": "Цивільний",
+      "discord": "Discord",
+      "dispatch": "Диспетчерський пункт",
+      "dmv": "ДМВ",
+      "ems": "ЕМС",
+      "fire": "Пожежна служба",
+      "law": "Закон",
+      "police": "Поліція",
+      "setDefault": "Встановити спільноту за замовчуванням",
+      "website": "Вебсайт"
+    },
+    "labels": {
+      "permissionKey": "Ключ дозволу"
+    },
+    "text": {
+      "noPermissions": "Немає дозволів"
+    }
+  },
+  "CustomDomain": {
+    "chooseYourDomainName": "Виберіть своє доменне ім'я",
+    "cname": "CNAME",
+    "communityID": "ID спільноти",
+    "configureYourDnsRecord": "Налаштуйте ваш DNS-запис",
+    "content": "Вміст",
+    "copiedToClipboard": "Скопійовано в буфер обміну!",
+    "name": "Ім'я",
+    "placeholderExampleDomain": "cad.example.com",
+    "saveYourCommunitesCustomDomain": "Збережіть власний домен вашої спільноти",
+    "setCustomDomain": "Встановити власний домен",
+    "txt": "TXT",
+    "youMustOwnYourDomainName": "Ви повинні володіти своїм доменом, щоб налаштувати власний домен."
+  },
+  "desktopOverlay": {
+    "overlayOpacity": "Непрозорість накладення"
+  },
+  "development": {
+    "banner": "Версія для тестування розробки - не для виробничого використання",
+    "message": "Це безкоштовна розробницька версія Sonoran CAD і не призначена для використання в продуктивному середовищі.",
+    "title": "Тестування розробки",
+    "understand": "Я розумію"
+  },
+  "downloads": {
+    "desktopAndMobileBanner": "Завантажте наші настільний і мобільний застосунки для Windows!",
+    "desktopBanner": "Завантажте наш настільний застосунок для Windows!"
+  },
+  "error404": {
+    "goBack": "Повернутися назад"
+  },
+  "homepage": {
+    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
+    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
+    "heroTitle": "The #1 Dispatch Platform for Gaming",
+    "integrateButton": "Integrate",
+    "integrations": {
+      "erlc": {
+        "description": "Official ER:LC in-game integration with live map and more.",
+        "landing": {
+          "ctaDocs": "Переглянути документацію",
+          "ctaPrimary": "Зареєструйтеся сьогодні",
+          "faq": {
+            "items": {
+              "best": {
+                "answer": "Sonoran CAD — це найсучасніша та найпоширеніша система CAD для ігрових спільнот, зокрема ER:LC. Завдяки повній інтеграції з ER:LC, доступній у безкоштовному плані, ваша спільнота зможе запрацювати за лічені хвилини.",
+                "question": "Чи Sonoran CAD — це найкращий CAD для ER:LC?"
+              },
+              "community": {
+                "answer": "Безумовно. Безкоштовний план ідеально підходить для малих і середніх спільнот, пропонуючи повну функціональність ER:LC без обмежень. Ви зможете оновити план пізніше, якщо ваш сервер виросте і потребуватиме додаткових облікових записів або функцій.",
+                "question": "Чи підходить це для малих або зростаючих спільнот?"
+              },
+              "features": {
+                "answer": "Інтеграція включає повний набір функцій у реальному часі, таких як:\n- Жива 3D-карта з відстеженням гравців і підрозділів\n- Автоматичне синхронізування дзвінків 911\n- Автоматизація зупинки транспорту та гаряча клавіша\n- Автоматизація зчитувача номерних знаків та гаряча клавіша\n- Автоматизація створення транспортних засобів і персонажів\n- і багато іншого",
+                "question": "Які функції включено до інтеграції ER:LC?"
+              },
+              "free": {
+                "answer": "Так, інтеграція ER:LC повністю доступна у безкоштовній версії Sonoran CAD. Платні плани потрібні лише якщо ви хочете додати більше облікових записів користувачів або масштабувати свою спільноту, але всі основні функції ER:LC працюють без оновлення.",
+                "question": "Чи безкоштовна інтеграція ER:LC для використання?"
+              },
+              "setup": {
+                "answer": "Налаштування зазвичай займає менше ніж 10 хвилин. Просто згенеруйте свій ключ API ER:LC, вставте його в Sonoran CAD і вставте нашу URL-адресу вебхука в меню сервера ER:LC. Ніякого кодування чи складного налаштування не потрібно.",
+                "question": "Скільки часу потрібно, щоб налаштувати інтеграцію?"
+              }
+            }
+          },
+          "faqKicker": "Протоколи підтримки",
+          "faqTitleAccent": "Питання",
+          "faqTitlePrimary": "Поширені запитання",
+          "headlineAccent": "для ER:LC",
+          "headlinePrimary": "Найкращий CAD",
+          "kicker": "Безкоштовно, швидко, повністю інтегровано",
+          "meta": {
+            "description": "Безкоштовний CAD для ER:LC з 3D живою картою, bodycam, екстреними викликами, інструментами для персонажа та підтримкою внутрішньоігрового оверлею.",
+            "keywords": "ER:LC CAD, безкоштовний CAD для ER:LC, ERLC CAD, Sonoran CAD",
+            "ogImageAlt": "Інтеграція Sonoran CAD з ER:LC",
+            "title": "Безкоштовний CAD для ER:LC | Sonoran CAD",
+            "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
+          },
+          "modules": {
+            "bodycam": {
+              "infoCopy": "Записуйте ігрові кадри з бодікамери для повторного перегляду та аналізу.",
+              "infoTitle": "Запис",
+              "previewTitle": "Попередній перегляд живої нагрудної камери",
+              "title": "Жива нагрудна камера"
+            },
+            "character": {
+              "infoCopy": "Створюйте персонажів автоматично, вхід у CAD не потрібен.",
+              "infoTitle": "Команди в грі",
+              "previewTitle": "Попередній перегляд створення персонажа",
+              "title": "Створення персонажа"
+            },
+            "emergency": {
+              "infoCopy": "Надсилайте внутрішньоігрові екстрені виклики диспетчерам, що відображаються на мапі.",
+              "infoTitle": "Додаток 911",
+              "previewTitle": "Попередній перегляд екстрених викликів",
+              "title": "Екстрені Виклики"
+            },
+            "map": {
+              "infoCopy": "Керуйте підрозділами та скануйте місто за допомогою захопливої живої 3D-карти.",
+              "infoTitle": "3D-карта",
+              "previewTitle": "3D Live Map Preview",
+              "title": "3D Жива Карта"
+            },
+            "overlay": {
+              "infoCopy": "Переглядайте інформацію про диспетчеризацію в реальному часі, не виходячи з гри.",
+              "infoTitle": "Внутрішньоігрове накладення",
+              "previewTitle": "Попередній перегляд внутрішньоігрового оверлею",
+              "title": "Внутрішньоігрове накладення"
+            }
+          }
+        },
+        "name": "ER:LC"
+      },
+      "fivem": {
+        "description": "Official FiveM resource with dozens of deep integration points.",
+        "landing": {
+          "ctaDocs": "Переглянути документацію",
+          "ctaPrimary": "Зареєструйтеся сьогодні",
+          "faq": {
+            "items": {
+              "best": {
+                "answer": "Sonoran CAD створено спеціально для ігрових спільнот і він пропонує один із найглибших стеків інтеграції FiveM, з офіційними інструментами, побудованими навколо реальних процесів диспетчеризації та обліку.",
+                "question": "Чи Sonoran CAD — це найкращий CAD для FiveM?"
+              },
+              "community": {
+                "answer": "Так. Безкоштовний тариф добре підходить для невеликих спільнот, а Sonoran CAD може масштабуватися для більших підрозділів, коли ваш сервер додає більше користувачів, функцій і операційної складності.",
+                "question": "Чи підходить це для малих або зростаючих спільнот?"
+              },
+              "features": {
+                "answer": "Інтеграція FiveM включає підтримку живої карти, інструменти bodycam, синхронізацію бази даних і розширюваний набір офіційних плагінів для глибших внутрішньоігрових робочих процесів.",
+                "question": "Які функції включено до інтеграції FiveM?"
+              },
+              "free": {
+                "answer": "Так. Основна інтеграція FiveM від Sonoran CAD доступна в безплатному плані, тож спільноти можуть почати без оплати за базовий робочий процес.",
+                "question": "Чи безкоштовна інтеграція FiveM для використання?"
+              },
+              "setup": {
+                "answer": "Більшість серверів можуть налаштувати базовий ресурс за кілька хвилин. Встановіть ресурс, додайте свій ID спільноти та API-ключ, перезапустіть сервер, а потім увімкніть потрібні вам функції.",
+                "question": "Скільки часу потрібно, щоб налаштувати інтеграцію?"
+              }
+            }
+          },
+          "faqKicker": "Протоколи підтримки",
+          "faqTitleAccent": "Питання",
+          "faqTitlePrimary": "Поширені запитання",
+          "headlineAccent": "для FiveM",
+          "headlinePrimary": "Найкращий CAD",
+          "kicker": "Безкоштовно, швидко, повністю інтегровано",
+          "meta": {
+            "description": "Безкоштовний CAD для FiveM з живою картою, бодікамерою, синхронізацією з базою даних і офіційною підтримкою плагінів для глибоко інтегрованих рольових серверів.",
+            "keywords": "FiveM CAD, безкоштовний CAD для FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
+            "ogImageAlt": "Інтеграція Sonoran CAD з FiveM",
+            "title": "Безкоштовний CAD для FiveM | Sonoran CAD",
+            "twitterImageAlt": "Попередній перегляд інтеграції Sonoran CAD x FiveM"
+          },
+          "modules": {
+            "bodycam": {
+              "infoCopy": "Переглядайте інциденти із синхронізованими записами бодікамери, прив’язаними безпосередньо до ваших CAD-робочих процесів.",
+              "infoTitle": "Запис",
+              "previewTitle": "Попередній перегляд bodycam FiveM",
+              "title": "Жива нагрудна камера"
+            },
+            "map": {
+              "infoCopy": "Відстежуйте підрозділи, моніторте виклики та координуйте сцени за допомогою живої карти, створеної для активних спільнот FiveM.",
+              "infoTitle": "3D-карта",
+              "previewTitle": "Попередній перегляд живої карти FiveM",
+              "title": "Жива Карта"
+            },
+            "plugins": {
+              "description": "Офіційні підмодулі розширюють Sonoran CAD на решту стеку вашого сервера FiveM.",
+              "infoCopy": "Розгортайте спеціально створені плагіни для абонентів, табличок, пейджерів, станцій та іншого без перебудови робочого процесу.",
+              "infoTitle": "Інтеграції сервера",
+              "previewTitle": "Прев’ю екосистеми плагінів FiveM",
+              "title": "Екосистема плагінів"
+            },
+            "sync": {
+              "infoCopy": "Підключайте ігрові ідентичності, транспортні засоби та записи, щоб ваш CAD залишався синхронізованим із активністю сервера.",
+              "infoTitle": "Синхронізація даних",
+              "previewTitle": "Попередній перегляд синхронізації бази даних FiveM",
+              "title": "Синхронізація бази даних"
+            }
+          },
+          "submodules": {
+            "items": {
+              "callers": {
+                "description": "Створюйте захопливі виклики NPC і гравців, які надходять безпосередньо в диспетчерську з структурованими CAD-даними.",
+                "previewTitle": "Попередній перегляд плагіна Власні виклики",
+                "title": "Власні виклики"
+              },
+              "ers": {
+                "description": "Об’єднайте радіопроцеси між вашим сервером і Sonoran CAD для швидшої координації під час активних інцидентів.",
+                "previewTitle": "Попередній перегляд плагіна Аварійного Радіо",
+                "title": "Аварійне Радіо"
+              },
+              "pagers": {
+                "description": "Надсилайте цільові сповіщення на пейджери з диспетчерської активності, щоб підрозділи одразу отримували потрібну інформацію.",
+                "previewTitle": "Попередній перегляд плагіна Pagers",
+                "title": "Пейджери"
+              },
+              "printer": {
+                "description": "Друкуйте записи та супровідну інформацію в грі для підрозділів, які хочуть відчутних переданих матеріалів із місця події.",
+                "previewTitle": "Попередній перегляд плагіна Printer",
+                "title": "Принтер"
+              },
+              "signs": {
+                "description": "Керуйте динамічними вуличними знаками та дорожніми повідомленнями з інструментів на базі CAD, створених для рольплей-сцен.",
+                "previewTitle": "Попередній перегляд плагіна дорожніх знаків",
+                "title": "Дорожні знаки"
+              },
+              "station": {
+                "description": "Запускайте сигнали станції, дії дверей і сповіщення про тривогу з CAD-подій, щоб підтримувати синхронізацію екіпажів.",
+                "previewTitle": "Попередній перегляд плагіна сповіщень Station",
+                "title": "станційне сповіщення"
+              }
+            },
+            "title": "Офіційні інтеграції"
+          }
+        },
+        "name": "FiveM"
       }
     },
-    "addresses": {
-      "addresses": "Адреси"
+    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "startToday": "Start Today",
+    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
+    "welcomeHeadline": "Welcome to Sonoran CAD!",
+    "welcomeTitle": "Welcome"
+  },
+  "infernoPager": {
+    "addresses": "Адреси",
+    "addressesHint": "Виберіть одну або кілька адрес пейджера маршрутизації.",
+    "body": "Тіло сторінки",
+    "importCurrentCallUnits": "Приєднати одиниці з поточного виклику",
+    "infernoPager": "Inferno Pager",
+    "invalidPlayers": "Ідентифікатори гравців мають бути цілими числами, розділеними комами.",
+    "messageRequired": "Введіть текст сторінки перед надсиланням.",
+    "nature": "Природа сторінки",
+    "noAddresses": "Немає налаштованих адрес пейджера Inferno для пагінації.",
+    "playerIds": "Юніти",
+    "playerIdsHint": "Необов'язкові онлайн-одиниці для прямої пагінації.",
+    "selectionRequired": "Виберіть щонайменше одну адресу або підрозділ.",
+    "sendPage": "Надіслати сторінку",
+    "unitsTooltip": "Ви також можете перетягнути сюди активний виклик диспетчеризації, щоб додати його прикріплені одиниці."
+  },
+  "login": {
+    "buttons": {
+      "cancel": "Скасувати",
+      "create": "Створити Обліковий Запис",
+      "forgot": "Забули Пароль",
+      "login": "Увійти",
+      "staySignedIn": "Залишатися в системі",
+      "switchCommunities": "Змінити спільноту"
     },
-    "logs": {
-      "logs": "Журнали",
-      "log": "Журнал",
-      "time": "Час"
+    "close": "Закрити",
+    "labels": {
+      "confirmPassword": "Підтвердження пароля",
+      "email": "Електронна пошта",
+      "emailPreferences": "Параметри електронної пошти",
+      "password": "Пароль",
+      "resetPassword": "Скинути Пароль",
+      "username": "Ім'я Користувача"
+    },
+    "learnMoreAboutSonoranCADSIntegrationPluginSystemCustomLiveMa": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!",
+    "linkAuth": {
+      "codeLabel": "4-символьний код",
+      "description": "Вхід через Apple і Discord потрібно завершити поза вбудованим фреймом.",
+      "errors": {
+        "auth": "Ваша сесія входу відсутня або термін її дії закінчився. Будь ласка, увійдіть знову.",
+        "community": "Неможливо визначити спільноту для цього посилання.",
+        "createFailed": "Наразі не вдається створити код посилання. Будь ласка, спробуйте ще раз.",
+        "expired": "Недійсний або прострочений код посилання.",
+        "invalidCode": "Будь ласка, введіть дійсний 4-символьний код.",
+        "submitFailed": "Наразі не вдається прив’язати цей код. Будь ласка, спробуйте ще раз."
+      },
+      "idPageBackToMenu": "Назад до меню",
+      "idPageDescription": "Введіть 4-символьний код із гри.",
+      "idPageSuccessDescription": "Ваш ігровий обліковий запис тепер пов’язано.",
+      "idPageSuccessTitle": "Підключення завершено",
+      "idPageTitle": "Введіть код посилання",
+      "idPageVerifying": "Перевіряємо код...",
+      "linkPageDescription": "Увійдіть у свій обліковий запис, потім введіть 4-символьний код, показаний у вбудованому вікні входу.",
+      "linkPageTitle": "Вбудований вхід за посиланням",
+      "openLink": "Відкрити сторінку посилання",
+      "scanPrompt": "Скануйте, щоб відкрити на телефоні",
+      "stepOneDescription": "Скористайтеся камерою, щоб сканувати QR-код.",
+      "stepOneTitle": "Відкрийте посилання на телефоні або планшеті",
+      "stepTwoDescription": "Введіть цей 4-символьний код після відкриття посилання.",
+      "stepTwoTitle": "Відкрийте посилання у своєму браузері",
+      "submit": "Увійти за посиланням",
+      "success": "Вхід пов’язано. Тепер ви можете повернутися до початкового вбудованого вікна.",
+      "title": "Оберіть спосіб входу",
+      "visit": "Відкрити",
+      "waiting": "Очікування прив’язки цього коду"
+    },
+    "newVisitor": {
+      "description": "Дізнайтеся більше про систему плагінів інтеграції Sonoran CAD, спеціальну live map, функцію синхронізації бази даних, додатки для iOS/Android та інше!",
+      "heading": "Ласкаво просимо до Sonoran CAD!",
+      "title": "Ласкаво просимо"
+    },
+    "robloxLinkBannerTitle": "Потрібно прив’язати обліковий запис Roblox",
+    "welcome": "Ласкаво просимо",
+    "welcomeToSonoranCAD": "Welcome to Sonoran CAD!",
+    "withApple": "через Apple",
+    "withDiscord": "через Discord",
+    "withSonoran": "з Sonoran"
+  },
+  "management": {
+    "currentPlayersLastHour": "Поточні гравці (за останню 1 годину)",
+    "currentPlayersLastHour2": "Поточні гравці (за останню 1 годину):",
+    "heartbeatMetrics": "Метрики інтеграції heartbeat:",
+    "lastUpdated": "Останнє оновлення",
+    "node": "Вузол",
+    "node2": "Вузол:",
+    "password": "Пароль керування",
+    "playerCount": "Кількість гравців",
+    "topServersHeartbeat": "Топ-25 серверів (Heartbeat)",
+    "totalServersLastHour": "Усього серверів (за останню 1 годину)",
+    "totalServersLastHour2": "Усього серверів (за останню 1 годину):",
+    "updateDb": "оновити БД",
+    "users": "Користувачі",
+    "users2": "Користувачі:"
+  },
+  "menu": {
+    "discovery": "Відкриття"
+  },
+  "payment": {
+    "buttons": {
+      "amount": "Сума",
+      "comparePlans": "Pricing",
+      "oneTimePurchases": "Одноразові покупки",
+      "openBillingPortal": "Open Billing Portal",
+      "purchase": "Придбати підписку"
+    },
+    "labels": {
+      "bundleDiscount": "Знижка на пакет",
+      "chargesPerPage": "Обвинувачення на сторінку",
+      "endDate": "Дата закінчення",
+      "expertInstallation": "Експертна установка",
+      "monthly": "Щомісячно",
+      "noChargesAvailable": "Нарахувань немає",
+      "noChargesFound": "Платежів не знайдено",
+      "noSubscriptionsAvailable": "Немає доступних підписок",
+      "noSubscriptionsFound": "Підписок не знайдено",
+      "plan": "План",
+      "plus": "Плюс",
+      "pro": "Про",
+      "quarterly": "Щоквартально",
+      "sonoranOne": "Sonoran One",
+      "standard": "Стандартний",
+      "startDate": "Дата початку",
+      "starter": "Стартовий",
+      "subscriptionsPerPage": "Підписок на сторінку"
+    },
+    "pricing": {
+      "description": "Платні підписки Sonoran CAD дозволяють вам увімкнути нові функції інтеграції, налаштування, зняти обмеження та багато іншого!",
+      "howToPurchase": "Як придбати",
+      "title": "Оновити ціни підписки"
+    },
+    "text": {
+      "bundleAndSave": "Пакет і збереження",
+      "bundleExplain": "Заощаджуйте 30% щомісяця, купуючи VPS від Sonoran Servers.",
+      "newSubscription": "Нова підписка",
+      "save25": "Зберегти 25%",
+      "serverIp": "IP сервера",
+      "serversEmail": "Електронна пошта акаунта Sonoran Servers",
+      "setCommunityId": "Встановити ідентифікатор спільноти"
+    }
+  },
+  "police": {
+    "bodycamRecordings": {
+      "noneFound": "Записів боді-камер не знайдено.",
+      "searchRecordings": "Пошук записів",
+      "selectRecordingPrompt": "Виберіть запис, щоб переглянути його."
+    },
+    "bodycamViewer": {
+      "allCams": "Усі камери",
+      "indicatorAlt": "Індикатор боді-камери",
+      "live": "Живий",
+      "screens": "Екрани",
+      "screensAvailable": "Доступні екрани: {visible} / {total} (Сторінка {page} з {pages})",
+      "singleCam": "Одна камера",
+      "startRecording": "Почати запис",
+      "stopRecording": "Зупинити запис {duration}",
+      "switchToAll": "Перейти до перегляду всіх бодікамер",
+      "switchToSingle": "Перейти до перегляду однієї бодікамери",
+      "uploadingClip": "Завантаження кліпу..."
+    },
+    "callEditor": {
+      "addNote": "Додати Примітку",
+      "address": "Адреса",
+      "automations": "Автоматизації",
+      "block": "Блок",
+      "callAttachmentAutoStatus": "Автостатус вкладення дзвінка",
+      "callDescription": "Опис Виклику",
+      "callNotes": "Примітки до Виклику",
+      "callOrigin": "Джерело Виклику",
+      "callStatus": "Статус Виклику",
+      "callTitle": "Назва Виклику",
+      "callViewer": "Перегляд Викликів",
+      "clearEditor": "Очистити Редактор",
+      "code": "Код",
+      "confirmations": {
+        "close1": "Ви встановили статус виклику 'Закрито'.",
+        "close2": "Ви впевнені, що хочете закрити цей виклик?",
+        "close3": "Цей виклик і всі дані будуть видалені!",
+        "detatch": "Від'єднатися",
+        "detatchConfirm": "Ви впевнені, що хочете від'єднатися від виклику?"
+      },
+      "createCall": "Створити Виклик",
+      "dispatch": "Повідомлення",
+      "dispatchCallsOnly": "Лише виклики диспетчера",
+      "dispatchRecord": "Запис Повідомлення",
+      "emergencyCallsShown": "Показані екстрені виклики",
+      "errors": {
+        "attachedAlready": "Помилка: Ви вже приєднані до виклику!",
+        "noOrigin": "Помилка: Цей виклик не має встановленого походження!",
+        "noPriority": "Помилка: Цей виклик не має встановленого пріоритету!",
+        "noStatus": "Помилка: Цей виклик не має встановленого статусу!",
+        "noTitle": "Помилка: Цей виклик не має встановленої назви!",
+        "unitAlreadyOnCall": "Помилка: Цей підрозділ вже на виклику!"
+      },
+      "nearestStations": "Найближчі станції",
+      "nearestUnits": "Найближчі підрозділи",
+      "newDispatch": "Нове Повідомлення",
+      "nextCall": "Наступний виклик (Стрілка вправо)",
+      "note": "Примітка",
+      "openRapidIQ": "Відкрити RapidIQ",
+      "originOptions": {
+        "caller": "Дзвінок",
+        "observed": "Спостереження",
+        "radioDispatch": "Радіо Виклик",
+        "walkUp": "Особистий Виклик"
+      },
+      "postal": "Поштова Зона",
+      "previousCall": "Попередній виклик (ліва стрілка)",
+      "primaryUnit": "Головний Юніт",
+      "priority": "Пріоритет",
+      "savedTypes": "Збережені Типи",
+      "selfClear": "Від'єднатися",
+      "selfDispatch": "Самостійне Призначення",
+      "selfDispatchUnavailable": "У вас немає дозволу використовувати самостійне призначення.",
+      "statusOptions": {
+        "active": "Активний",
+        "closed": "Закритий",
+        "pending": "На розгляді"
+      },
+      "statusTimers": {
+        "countdown": "Зворотний відлік",
+        "countup": "Підрахунок",
+        "descCountdown": "Коли статус підрозділу встановлено на {status}, запустіть таймер зворотного відліку.",
+        "descCountup": "Коли статус підрозділу встановлено на {status}, запустіть таймер відліку вгору."
+      },
+      "trackPrimary": "Відстеження Головного Юніта (GPS)",
+      "units": "Юніти",
+      "unitStatusAttached": "Статус підрозділу: Підключено",
+      "unitStatusAttachedHint": "Коли підрозділ прикріплено до виклику, оновіть його статус.",
+      "unitStatusClosed": "Статус підрозділу: Закрито",
+      "unitStatusClosedHint": "Коли виклик закрито, оновіть статус усіх прикріплених підрозділів.",
+      "unitStatusDetached": "Статус підрозділу: Від'єднано",
+      "unitStatusDetachedHint": "Коли підрозділ від’єднано від виклику, оновіть його статус.",
+      "unitStatusTimers": "Статус підрозділу: Таймери",
+      "updateCall": "Оновити Виклик",
+      "webhooks": {
+        "action": "Дія",
+        "attached": "Долучено",
+        "closed": "Закритий",
+        "detached": "Відкріплено",
+        "enabled": "Увімкнено",
+        "status": "Статус"
+      }
+    },
+    "callList": {
+      "activeCalls": "Активні Виклики",
+      "attachToCall": "Приєднатися до Виклику",
+      "callHistory": "Історія Викликів",
+      "closeCall": "Закрити Виклик",
+      "columns": {
+        "10Code": "10-Код",
+        "address": "Адреса",
+        "callId": "ID Виклику",
+        "callTitle": "Назва Виклику",
+        "status": "Статус",
+        "units": "Юніти"
+      },
+      "editCall": "Редагувати Виклики",
+      "previewCall": "Попередній Перегляд Виклику",
+      "printCall": "Роздрукувати Виклик",
+      "priority": "Пріоритет"
+    },
+    "callouts": {
+      "availableWeapons": "Доступна зброя",
+      "calloutLabel": "Виклик",
+      "chanceToAttack": "Шанс напасти на гравця",
+      "chanceToFlee": "Шанс втекти від гравця",
+      "chanceToObtainWeapons": "Ймовірність отримати зброю",
+      "chanceToSurrender": "Шанс здатися",
+      "fallbackTooltip": "Дія за замовчуванням, якщо жодна з наведених нижче дій не відбудеться.",
+      "pedFallbackAction": "Дія запасного варіанту для пішохода"
+    },
+    "chat": {
+      "allOnlineUnits": "Усі онлайн-підрозділи",
+      "attachedRecord": "Долучений запис",
+      "composerHint": "Використовуйте Ctrl/Cmd+Enter, щоб надіслати текст. Спочатку скопіюйте запис або посилання на дзвінок, щоб вставити його в чат.",
+      "conversations": "Розмови",
+      "emptySelection": "Виберіть один або кілька онлайн-підрозділів, щоб почати чат.",
+      "emptyThread": "Для цього чату ще немає повідомлень.",
+      "groupLabel": "Група: {group}",
+      "justYou": "Лише ви",
+      "linkPreview": "[Посилання] {label}",
+      "message": "Повідомлення",
+      "noMessages": "Ще немає повідомлень",
+      "noThreads": "Поки що немає активних розмов.",
+      "offline": "Офлайн",
+      "offlineRecipientsHint": "Видаліть одержувачів, які не в мережі, перед надсиланням нового повідомлення.",
+      "online": "Онлайн",
+      "openLinkedRecord": "Відкрити пов’язаний запис",
+      "recipients": "Одержувачі",
+      "recipientsHint": "Виберіть онлайн-підрозділи, щоб почати або продовжити чат.",
+      "sendLinkedRecord": "Надіслати пов’язаний запис",
+      "sessionNotice": "Лише в прямому ефірі. Оновлення очищує історію чату.",
+      "ttsIncomingLink": "{sender}. {label}",
+      "ttsIncomingText": "{sender}. {message}",
+      "ttsIncomingTooltip": "Озвучувати вхідні повідомлення чату",
+      "ttsToggle": "Перемкнути текст у мовлення",
+      "unableToSend": "Наразі не вдається надіслати чат.",
+      "unitFallback": "Підрозділ {id}",
+      "you": "Ви"
+    },
+    "command": {
+      "attach": "Прикріпити",
+      "callId": "Ідентифікатор виклику",
+      "clear": "Очистити",
+      "close": "Закрити",
+      "commandLine": "Командний Рядок",
+      "create": "Створити",
+      "detach": "Відкріпити",
+      "note": "Нотатка",
+      "postal": "Поштовий індекс",
+      "savedCallType": "Збережений тип виклику",
+      "status": "Статус",
+      "unit": "Підрозділ",
+      "unitStatus": "Статус підрозділу",
+      "view": "Переглянути"
+    },
+    "diagram": {
+      "deleteSelected": "Видалити вибране",
+      "groupUngroupSelected": "Групувати/розгрупувати вибране (SHIFT + CLICK)",
+      "itemOptions": "Параметри елемента",
+      "lockUnlockSelected": "Заблокувати/розблокувати вибране",
+      "moveLayerDown": "Перемістити шар вниз (Shift = внизу)",
+      "moveLayerUp": "Перемістити шар вгору (Shift = Вгору)",
+      "redo": "Повторити",
+      "shortcutDelete": "СКОРОЧЕННЯ: DELETE",
+      "shortcutDown": "СКОРОЧЕННЯ: (SHIFT) Стрілка вниз",
+      "shortcutGroup": "СКОРОЧЕННЯ: G",
+      "shortcutLock": "СКОРОЧЕННЯ: L",
+      "shortcutO": "СКОРОЧЕННЯ: O",
+      "shortcutRedo": "СКОРОЧЕННЯ: CTRL + SHIFT + Z",
+      "shortcutUndo": "СКОРОЧЕННЯ: CTRL + Z",
+      "shortcutUp": "СКОРОЧЕННЯ: (SHIFT) Стрілка вгору",
+      "undo": "Відмінити"
+    },
+    "emergencyCall": {
+      "caller": "Дзвінок",
+      "calls": "Виклики",
+      "civil": "Громадянський",
+      "confirmRemoveAll": "Ви впевнені, що хочете закрити всі активні виклики?",
+      "description": "Опис",
+      "emergency": "Надзвичайна Ситуація",
+      "emergencyCall": "Екстрений Виклик",
+      "location": "Місцезнаходження",
+      "mergeToCallEditor": "Об'єднати з редактором дзвінків",
+      "openInEditor": "Відкрити в Редакторі Викликів",
+      "removeAll": "Видалити всі активні екстрені виклики",
+      "removeAllCalls": "Видалити всі Виклики",
+      "removeCall": "Видалити Виклик"
+    },
+    "header": {
+      "activeCalls": "Активні Виклики",
+      "activeServer": "Активний Сервер",
+      "activeUnits": "Активні Юніти",
+      "bodyCam": "Нагрудна камера",
+      "bodyCamRecordings": "Записи боді-камер",
+      "bodycamViewer": {
+        "allCams": "All Cams",
+        "live": "Live",
+        "screens": "Screens",
+        "screensAvailable": "Screens available: {visible} / {total} (Page {page} of {pages})",
+        "singleCam": "Single Cam",
+        "switchToAll": "Switch to all bodycams view",
+        "switchToSingle": "Switch to single bodycam view"
+      },
+      "bolo": "Орієнтування",
+      "chat": "Чат",
+      "count": "Кількість",
+      "emergencyCalls": "Екстрені Виклики",
+      "file": "Файл(и)",
+      "liveMap": "Жива Карта",
+      "lookup": "Пошук",
+      "panic": "Паніка",
+      "playTo": "Відтворити до",
+      "quickLinks": "Швидкі Посилання",
+      "rapidIQ": "RapidIQ",
+      "records": "Записи",
+      "repeat": "Повторити",
+      "seconds": "Секунди",
+      "signal": "Сигнал",
+      "signalEffect1": "Сигнал",
+      "signalEffect2": "Активний",
+      "streetSigns": "Дорожні знаки",
+      "toneBoard": "Панель тонів"
+    },
+    "liveMap3d": {
+      "blip": {
+        "custom": "ВЛАСНИЙ",
+        "default": "МІТКА",
+        "dispatchCall": "ВИКЛИК ДИСПЕТЧЕРУ",
+        "emergency": "911",
+        "newCallout": "НОВИЙ ВИКЛИК",
+        "sign": "ЗНАК",
+        "station": "СТАНЦІЯ",
+        "unit": "ЮНІТ"
+      },
+      "controls": {
+        "camera": "Камера",
+        "cycle": "Цикл",
+        "down": "ВНИЗ",
+        "left": "ЛІВОРУЧ",
+        "position": "Позиція",
+        "right": "ПРАВОРУЧ",
+        "speed": "Швидкість",
+        "up": "ВГОРУ"
+      },
+      "followBlip": "Слідкувати",
+      "loadError": "Не вдалося завантажити 3D-терен: {reason}",
+      "speedDisplay": "{multiplier}x ({speed})",
+      "unknownError": "невідома помилка"
+    },
+    "liveMap": {
+      "toolbar": {
+        "decreaseBlipSize": "Зменшити розмір мітки",
+        "dragAndDrop": "(Перетягування і скидання)",
+        "ersCallout": "Виклик ERS (Перетягування і скидання)",
+        "increaseBlipSize": "Збільшити розмір мітки",
+        "mapMode": "Режим карти",
+        "zoomIn": "Збільшити",
+        "zoomOut": "Зменшити масштаб"
+      }
+    },
+    "lookup": {
+      "agency": "Агентство",
+      "alerts": {
+        "emptySearch": "Помилка: Пошук порожній!"
+      },
+      "civilians": "Громадяни",
+      "columns": {
+        "charges": "Обвинувачення",
+        "date": "Дата",
+        "expiration": "Закінчення",
+        "first": "Ім'я",
+        "flags": "Мітки",
+        "last": "Прізвище",
+        "mi": "Ініціал По Батькові",
+        "name": "Ім'я",
+        "plate": "Номер",
+        "status": "Статус",
+        "type": "Тип"
+      },
+      "department": "Департамент",
+      "exact": "Точний",
+      "first": "Ім'я",
+      "flags": "Мітки:",
+      "getOwner": "Стати Власником",
+      "id": "ID Запису",
+      "identifier": "Ідентифікатор",
+      "last": "Прізвище",
+      "lookup": "Пошук",
+      "mi": "Ініціал По Батькові",
+      "nameSearch": "Пошук За Іменем",
+      "newLookup": "Новий Пошук",
+      "noRecordsFound": "Записів не знайдено",
+      "partial": "Частковий",
+      "plate": "Номерний Знак",
+      "plateSearch": "Пошук За Номером (ТЗ)",
+      "records": "Записи",
+      "recordsNoData": "Немає доступних записів",
+      "recordsNoResults": "Записи не знайдені",
+      "recordsPerPage": "Записів на сторінці",
+      "refresh": "Оновити",
+      "reportsHeader": "Рапорт",
+      "sendToUnits": "Надіслати підрозділу(ам)",
+      "statuses": {
+        "active": "Активний",
+        "closed": "Закритий",
+        "inactive": "Неактивний"
+      },
+      "unit": "Юніт"
+    },
+    "notes": {
+      "notepad": "Блокнот",
+      "notes": "Нотатки",
+      "title": "Назва"
+    },
+    "rapidIQForm": {
+      "answerColumn": "Відповідь",
+      "autoImportToCallEditorTooltip": "Автоімпорт у редактор дзвінків ({state})",
+      "completedNoCard": "RapidIQ завершено",
+      "copyResults": "Скопіювати запитання й відповіді",
+      "copyResultsSuccess": "Запитання й відповіді скопійовано",
+      "displayCardAtEndTooltip": "Показати картку в кінці ({state})",
+      "nextHotkey": "Наступне запитання (Стрілка вправо або Enter)",
+      "previousHotkey": "Попереднє питання (ліва стрілка)",
+      "questionColumn": "Питання"
+    },
+    "recordCenter": {
+      "errors": {
+        "noRecordTypes": "Немає Типів Записів: Додайте їх у Admin > Customization > Custom Records",
+        "noReportTypes": "Немає Типів Звітів: Додайте їх у Admin > Customization > Custom Records",
+        "syncEnabledFeatDisabled": "Ця функція несумісна із синхронізацією бази даних"
+      },
+      "filesAwaitingApproval": "Файли, що очікують підтвердження.",
+      "myDrafts": "Мої чернетки",
+      "myFiles": "Мої Файли",
+      "newRecord": "Новий Запис",
+      "newReport": "Новий Звіт",
+      "noRecordsForSuper": "Немає записів, що потребують підтвердження Керівником",
+      "noRecordsFound": "Записів не знайдено",
+      "noReportsForSuper": "Немає звітів, що потребують підтвердження Керівником",
+      "noReportsFound": "Звітів не знайдено",
+      "pendingFiles": "Файли на Розгляді",
+      "pendingRecords": "Записи на Розгляді",
+      "supervisorPanel": "Панель Керівника"
+    },
+    "records": {
+      "agency": {
+        "agencyInformation": "Інформація про Агентство",
+        "agencyName": "Назва Агентства",
+        "badge": "Значок #",
+        "date": "Дата",
+        "location": "Місцезнаходження",
+        "observingOfficer": "Спостерігаючий Офіцер",
+        "recordNum": "Запис #",
+        "zip": "Поштовий Індекс"
+      },
+      "arrest": {
+        "arrestInformation": "Інформація про Арешт",
+        "arrestType": "Тип Арешту",
+        "probationaryOfficer": "Офіцер на Випробувальному Терміні",
+        "weapons": "Зброя"
+      },
+      "charges": {
+        "bondFineAmount": "Покарання/Сума Штрафу",
+        "bondType": "Тип Покарання",
+        "charge": "Обвинувачення",
+        "chargeNumber": "Обвинувачення #",
+        "charges": "Обвинувачення",
+        "chargeType": "Тип Обвинувачення",
+        "counts": "Кількість",
+        "fineTotal": "Загальна сума штрафу",
+        "jailTime": "Термін Ув'язнення",
+        "titleCode": "Назва, Код"
+      },
+      "editor": {
+        "addRecord": "Додати Запис",
+        "applyForDmv": "Зареєструвати в Базі Даних",
+        "copyLink": "Копіювати посилання на запис",
+        "dmvType": "Тип Бази Даних",
+        "errors": {
+          "nameOrPlate": "Помилка: Запис повинен містити ім'я громадянина або номерний знак транспортного засобу!",
+          "noCopiedLink": "Помилка: Ви не скопіювали посилання на запис!",
+          "noName": "Помилка: Запис повинен містити ім'я громадянина!",
+          "noPlate": "Помилка: Запис повинен містити номер транспортного засобу!",
+          "requiredField": "Помилка: Обов'язкове поле"
+        },
+        "history": {
+          "action": {
+            "add": "Запис Додано",
+            "edit": "Запис відредаговано"
+          },
+          "after": "Після",
+          "apiUser": "Веб API",
+          "before": "До",
+          "changedBy": "Змінено ким",
+          "loadError": "Помилка: Не вдалося завантажити історію запису.",
+          "noFieldChanges": "У цьому записі значення полів не змінено."
+        },
+        "linkTitle": "Назва посилання",
+        "noCustomTypes": "Немає записів цього типу: Додайте їх через Admin > Customization > Custom Records",
+        "pasteLink": "Вставити посилання на запис",
+        "pdf": "PDF",
+        "printInGame": "Друк у грі",
+        "recordType": "Тип Запису",
+        "removeRecord": "Видалити Запис",
+        "saveAsDraft": "Зберегти як чернетку",
+        "saveRecord": "Зберегти Запис",
+        "status": {
+          "active": "АКТИВНИЙ",
+          "approved": "СХВАЛЕНИЙ",
+          "closed": "ЗАКРИТИЙ",
+          "pending": "НА РОЗГЛЯДІ",
+          "rejected": "ВІДХИЛЕНИЙ"
+        }
+      },
+      "general": {
+        "records": "Записи",
+        "reports": "Доповіді"
+      },
+      "getCiv": {
+        "characterSearch": "Пошук персонажа",
+        "civilianInfo": "Громадянська інформація"
+      },
+      "getVeh": {
+        "vehicleSearch": "Пошук Транспортного Засобу"
+      },
+      "narrative": {
+        "narrative": "Опис"
+      },
+      "speed": {
+        "citationInformation": "Інформація про штраф",
+        "courtDate": "Дата Суду",
+        "courtTime": "Дата і Час",
+        "fine": "Штраф",
+        "other": "Інше",
+        "pace": "Перевищення",
+        "paceType": "Перевищення",
+        "radar": "Радар",
+        "speedLimit": "Обмеження швидкості",
+        "vehicleSpeed": "Швидкість Транспортного Засобу"
+      },
+      "status": {
+        "dateSubmitted": "Дата Подачі",
+        "observingSignature": "Підпис Спостерігаючого",
+        "status": "Статус",
+        "supervisorSignature": "Підпис Керівника"
+      },
+      "vehicle": {
+        "color": "Колір",
+        "make": "Марка",
+        "model": "Модель",
+        "plate": "Номерний Знак",
+        "type": "Тип Транспортного Засобу",
+        "types": {
+          "aircraft": "Повітряний Транспорт",
+          "coupe": "Купе",
+          "marine": "Морський Транспорт",
+          "motorcycle": "Мотоцикл",
+          "offroad": "Позашляховий",
+          "sedan": "Седан",
+          "suv": "Позашляховик",
+          "truck": "Вантажівка"
+        },
+        "vehicleInformation": "Інформація про Транспортний Засіб",
+        "year": "Рік Випуску"
+      }
+    },
+    "signal": {
+      "clear": "Очистити Сигнал",
+      "initiate": "Ініціювати Сигнал",
+      "modify": "Модифікувати Сигнал",
+      "signal": "Сигнал"
+    },
+    "timers": {
+      "attachments": "Вкладення",
+      "automationLabelCountDown": "Автоматизація: Статус {status} {seconds} Секунд",
+      "automationLabelCountUp": "Автоматизація: Статус {status} Відлік вгору",
+      "clearAttachment": "Очистити вкладення",
+      "hours": "Години",
+      "minutes": "Хвилини",
+      "newTimer": "Новий таймер",
+      "seconds": "Секунди",
+      "timers": "Таймери"
+    },
+    "toneBoard": {
+      "speechToTextFailed": "Не вдалося розпізнати мовлення.",
+      "speechToTextNoMicrophone": "Мікрофон не виявлено.",
+      "speechToTextNoSpeech": "Мовлення не виявлено.",
+      "speechToTextNotAllowed": "Доступ до мікрофона було заборонено.",
+      "speechToTextUnavailable": "Розпізнавання мовлення зараз недоступне.",
+      "textToSpeech": "Текст у мовлення"
+    },
+    "unitEditor": {
+      "agency": "Агентство",
+      "aop": "Зона патрулювання",
+      "bodycamDisabled": "Відеореєстратор вимкнено",
+      "bodycamEnabled": "Нагрудна камера увімкнена",
+      "bodycamMaxDuration": "Макс. тривалість",
+      "bodycamRepeatTone": "Повторити тон",
+      "bodycamShadowRecording": "Тіньовий запис",
+      "bodycamSoundEffects": "Звукові ефекти",
+      "bodycamTab": "Нагрудна камера",
+      "bodycamVolume": "Гучність  ",
+      "confirmRemove": "Ви впевнені, що хочете видалити Ідентифікатор?",
+      "department": "Департамент",
+      "departments": "Департаменти",
+      "effects": "Ефекти",
+      "electronBodycamHint": "Миготіння білого? Спробуйте ділитися всім екраном замість конкретного вікна програми.",
+      "electronBodycamOpenPermissions": "Дозволи на відкриття",
+      "electronBodycamPermissionWarning": "Для запису bodycam потрібен дозвіл macOS на запис екрана. Увімкніть його в Системних параметрах, потім повністю завершіть роботу й знову відкрийте Sonoran CAD.",
+      "electronBodycamSource": "Джерело нагрудної камери",
+      "group": "Група",
+      "location": "Місцезнаходження",
+      "modifyIdentifier": "Змінити Ідентифікатор",
+      "modifyIdentifierTab": "Змінити Ідентифікатор",
+      "name": "Ім'я",
+      "overlay": "Накладення",
+      "persistentGroup": "Постійна група",
+      "persistentGroupFull": "Ця група заповнена",
+      "persistentGroupHint": "Самопризначення до налаштованої постійної групи.",
+      "persistentGroupUpdateFailed": "Наразі неможливо оновити постійну групу.",
+      "rank": "Ранг",
+      "status": "Статус",
+      "subdivision": "Підрозділ",
+      "subdivisions": "Підрозділи",
+      "switchIdentifier": "Змінити Ідентифікатор",
+      "switchIdentifierTab": "Змінити Ідентифікатор",
+      "unitNumber": "Номер Юніта",
+      "units": "Юніти"
+    },
+    "units": {
+      "activeGroups": "Активні Групи",
+      "activeUnits": "Активні Юніти",
+      "addToCall": "Додати до Виклику",
+      "addToGroup": "Додати до Групи",
+      "createGroup": "Створити Групу",
+      "dispatchersHidden": "Диспетчери Приховані",
+      "dispatchersShown": "Диспетчери Показані",
+      "editUnit": "Редагувати Юніт",
+      "group": "Група",
+      "groupName": "Ім'я Групи",
+      "kickUnit": "Видалити Юніта",
+      "newGroup": "Нова Група",
+      "togglePanic": "Перемикач Паніки",
+      "unitGroups": "Групи Юнітів",
+      "units": "Юніти"
+    }
+  },
+  "pricing": {
+    "sonoranCADSPaidSubscriptionsAllowYouToEnableNewIntegrationFe": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!"
+  },
+  "promotion": {
+    "dontShowAgain": "Не показувати мені знову",
+    "newPromotion": "Нова промоція",
+    "title": "Промоція"
+  },
+  "rapidIQCustomization": {
+    "codes": "Коди:",
+    "defaults": "Значення за замовчуванням:",
+    "flows": "Потоки:",
+    "label": "Мітка",
+    "question": "Питання",
+    "questions": "Питання:"
+  },
+  "selectionPage": {
+    "buttons": {
+      "createCommunity": "Створити Спільноту",
+      "discover": "Відкрити для себе",
+      "joinCommunity": "Приєднатися до спільноти",
+      "leaveCommunity": "Покинути Спільноту",
+      "My Account": "Мій Обліковий Запис",
+      "myCommunities": "Dashboard"
+    },
+    "errors": {
+      "communityIdCharacters": "Помилка: ID вашої спільноти може містити лише літери, цифри, нижні підкреслення і тире!",
+      "communityIdLength": "Помилка: ID вашої спільноти повинен містити від 1 до 50 символів!",
+      "communityNameLength": "Помилка: Назва вашої спільноти повинна містити від 1 до 50 символів!",
+      "noCommunityID": "Помилка: Будь ласка, вкажіть ID спільноти!"
+    },
+    "labels": {
+      "communityName": "Назва Спільноти",
+      "website": "Веб-Сайт (Опціонально)"
+    },
+    "text": {
+      "communityNotFound": "Спільноту не знайдено",
+      "confirmLeave1": "Ви дійсно бажаєте покинути цю спільноту?",
+      "confirmLeave2": "Ваш обліковий запис і всі пов’язані з ним дані будуть видалені з цієї бази даних!",
+      "createHeader": "Реєстрація CAD",
+      "createText": "Зареєструйте нову спільноту CAD для приєднання інших!",
+      "helpCommunityId1": "ID вашої спільноти є її унікальним ідентифікатором. Користувачі будуть використовувати його для приєднання до вашої спільноти.",
+      "helpCommunityId2": "Зазвичай, це абревіатура вашої спільноти.",
+      "helpCommunityId3": "Приклад: Arizona Serious Roleplay - ID: AZSRP",
+      "helpCommunityIdFind1": "Вам слід зв'язатися з власником або адміністратором цієї ігрової спільноти.",
+      "helpCommunityIdFind2": "Вони дадуть вам спеціальний ID спільноти для їхнього CAD.",
+      "helpCommunityIdFindHeader": "Де я можу знайти ID спільноти?",
+      "helpCommunityName": "Назва вашої спільноти є публічним ім'ям вашої RP спільноти.",
+      "helpCommunityWebsite": "Веб-сайт вашої спільноти — це URL вашого сайту, форуму або Discord. Це поле є додатковим і може не заповнюватися",
+      "joinHeader": "Приєднатися до спільноти",
+      "joinText": "Приєднатися до CAD спільноти!"
+    },
+    "tooltips": {
+      "join": "Приєднатися",
+      "joinHelp": "Не впевнені, що робити?",
+      "joinThis": "Приєднатися до цього CAD.",
+      "leaveCommunity": "Покинути цю спільноту.",
+      "owner": "Ви Власник цієї спільноти",
+      "register": "Реєстрація вашого Sonoran CAD",
+      "search": "Шукати спільноту в Sonoran CAD"
+    }
+  },
+  "settings": {
+    "accountSecretId": "ID секрету облікового запису:",
+    "accountTab": "Обліковий запис",
+    "apiIdDisable": "Ви повинні приєднатися до спільноти, щоб ввести API ID",
+    "apiIdLabel": "ID API:",
+    "bringToTop": "Вівести спереду вікон",
+    "changeDesktop": "Змінити робочий стіл",
+    "classicLayout": "Класичне Розташування",
+    "desktopOverlayHotkey": "Накладення на робочий стіл",
+    "erlcHotkeys": "Гарячі клавіші ER:LC",
+    "exitResize": "Закінчити Переміщення",
+    "generalTab": "Загальне",
+    "helpImprove": "Допомога з перекладом!",
+    "hotkeyClickToRecord": "Натисніть, щоб записати",
+    "hotkeyClickToStop": "Натисніть, щоб зупинити запис",
+    "hotkeyCombination": "Комбінація",
+    "hotkeyDisable": "Гарячі клавіші не доступні в безкоштовній версії",
+    "hotkeyDuplicateCleared": "Сполучення клавіш {combo} вже було призначено для {action}. Попереднє прив'язування було очищено.",
+    "hotkeyRecorderHelp": "Клацніть поле комбінації, щоб почати або зупинити запис. Клацніть правою кнопкою миші поле, щоб очистити гарячу клавішу.",
+    "hotkeyRecording": "Запис...",
+    "hotkeys": "Гарячі клавіші",
+    "hotkeyUnassigned": "Не призначено",
+    "language": "Мова",
+    "languageKorean": "Корейська/한국어",
+    "lockWindow": "Закріпити Вікно",
+    "microphone": "Мікрофон",
+    "microphoneNumbered": "Мікрофон {index}",
+    "microphoneStt": "Мікрофон (STT)",
+    "overlay": {
+      "addBulb": "Додати лампу",
+      "addFrame": "Додати кадр",
+      "bodycam": "Нагрудна камера",
+      "bulbType": "Тип лампи",
+      "callUpdates": "Оновлення викликів",
+      "channel": "Канал",
+      "color": "Колір",
+      "configuration": "Конфігурація",
+      "confirmReset": "Ви впевнені, що бажаєте скинути налаштування?",
+      "createWyzeKey": "Створити Wyze Key",
+      "credentials": "Облікові дані",
+      "customTextFiles": "Користувацькі текстові файли",
+      "dataKeys": "Ключі даних",
+      "dataStorage": "Сховище даних",
+      "delay": "Затримка",
+      "events": "Події",
+      "exampleText": "Приклад тексту",
+      "field": "Поле",
+      "fileName": "Ім'я файлу",
+      "font": "Шрифт",
+      "fontEditor": "Редактор шрифтів",
+      "fontSize": "Розмір шрифту",
+      "fontWeight": "Товщина шрифту:",
+      "goveeBluetooth": "Govee Bluetooth",
+      "goveeWifi": "Govee WiFi",
+      "lighting": "Освітлення",
+      "manualIp": "Ручний IP (необов'язкове)",
+      "oauthToken": "OAuth-токен",
+      "obsTextFiles": "OBS текстові файли",
+      "philipsHue": "Philips Hue",
+      "refreshPayment": "Оновити платіж",
+      "scan": "Сканувати",
+      "scanForBulbs": "Сканувати лампи",
+      "stopScanning": "Зупинити сканування",
+      "streamAdBanner": "Перегляньте наше накладання для прямого ефіру та Twitch-бота!",
+      "streamOverlay": "Накладення потоку",
+      "twitch": "Twitch",
+      "twitchConfig": "Конфігурація Twitch",
+      "twitchLogs": "Логи Twitch",
+      "txtFiles": "TXT файли",
+      "unitUpdates": "Оновлення підрозділу",
+      "wyzeApiKey": "Ключ API Wyze",
+      "wyzeColor": "Wyze Color",
+      "wyzeKeyId": "ID ключа Wyze"
+    },
+    "panic": "Кнопка Паніки",
+    "prefix": "Кнопка Префіксу",
+    "previousMicrophoneUnavailable": "Попередньо вибраний мікрофон (недоступний)",
+    "quickResize": "Швидке Переміщення",
+    "resetLayout": "Скинути Розташування",
+    "secretDisable": "Ви повинні приєднатися до спільноти, щоб отримати Secret ID",
+    "settings": "Настройки",
+    "showAdvanced": "Показати розширені",
+    "showHide": "Показати/Сховати",
+    "statusHotkeys": "Гарячі клавіші статусу",
+    "systemDefaultMicrophone": "Мікрофон за замовчуванням системи",
+    "theme": {
+      "backgroundImage": "Фонове зображення",
+      "backgroundImageFit": "Підігнання фоновому зображенню",
+      "backgroundImagePosition": "Позиція фонового зображення",
+      "backgroundImageScale": "Масштаб фоновому зображенню",
+      "bgImageFit": {
+        "contain": "Вмістити (Підігнати всередину)",
+        "cover": "Заповнити (обрізати)",
+        "fill": "Заповнити (розтягнути)",
+        "none": "Немає (Оригінальний розмір)",
+        "scaleDown": "Зменшити"
+      },
+      "bgImagePosition": {
+        "bottom": "Внизу",
+        "bottomLeft": "Внизу ліворуч",
+        "bottomRight": "Внизу праворуч",
+        "center": "По центру",
+        "left": "Ліворуч",
+        "right": "Праворуч",
+        "top": "Верх",
+        "topLeft": "Угорі ліворуч",
+        "topRight": "Угорі праворуч"
+      },
+      "bgImageScale": {
+        "p100": "100%",
+        "p125": "125%",
+        "p150": "150%",
+        "p200": "200%",
+        "p50": "50%",
+        "p75": "75%"
+      },
+      "colors": {
+        "accent1": "Акцент 1",
+        "accent1Text": "Текст Акценту 1",
+        "accent2": "Акцент 2",
+        "accent2Text": "Текст Акценту 2",
+        "accent3": "Акцент 3",
+        "accent3Text": "Текст Акценту 3",
+        "background": "Фон",
+        "foreground": "Передній план",
+        "foregroundLight": "Світлий передній план",
+        "inverseText": "Інверсний текст",
+        "primary": "Основний",
+        "primaryFaded": "Основний приглушений",
+        "primaryText": "Основний текст",
+        "subtitleText": "Текст підзаголовка",
+        "titleText": "Текст назви"
+      },
+      "confirmDeleteTheme": "Ви впевнені, що хочете видалити {themeName}?",
+      "dark": "Темна",
+      "deleteTheme": "Видалити тему",
+      "enterThemeName": "Введіть назву теми",
+      "errors": {
+        "invalidFormat": "Недійсний формат теми."
+      },
+      "importedThemeName": "Імпортована тема {index}",
+      "restoreDefaults": "Відновити значення за замовчуванням",
+      "saveTheme": "Зберегти тему",
+      "themeColors": "Кольори теми",
+      "themeName": "Назва теми",
+      "uploadBackground": "Завантажити фон"
+    },
+    "trafficStopDispatchCode": "10-38",
+    "trafficStopDispatchHotkey": "Зупинка транспорту",
+    "trafficStopDispatchTitle": "Зупинка транспорту",
+    "trafficStopHotkey": "Зчитувач номерних знаків",
+    "unlockWindow": "Відкріпити Вікно",
+    "voice": "Голос озвучки",
+    "volume": "Звук"
+  },
+  "sideMenu": {
+    "buttons": {
+      "communityMenu": "Меню Спільноти",
+      "disclaimer": "Перед тем, как использоввать Sonoran CAD вы соглашаетесь с условиями пользования и политикой конфидециальности.",
+      "downloads": "Загрузки",
+      "exitFullscreen": "Вийти з повноекранного режиму",
+      "goFullscreen": "Запустити в повному екрані",
+      "login": "Увійти",
+      "logout": "Вийти",
+      "menu": "Меню",
+      "myAccount": "Мій Акаунт",
+      "settings": "Настройки",
+      "switchCommunities": "Змінити спільноту",
+      "tutorials": "Посібники"
     }
   },
   "stationAlert": {
-    "stationAlert": "станційне сповіщення",
-    "updateDoors": "оновитиДвері",
+    "makeSelection": "зробіть вибір",
+    "message": "Повідомлення",
     "sendAlert": "надіслатиСповіщення",
     "sendMessage": "надіслати повідомлення",
-    "makeSelection": "зробіть вибір",
+    "stationAlert": "станційне сповіщення",
+    "stationTone": "станціяТон",
+    "tone": "Тон",
     "toneBoard": "тональна дошка",
-    "stationTone": "станціяТон"
+    "updateDoors": "оновитиДвері"
   },
-  "homepage": {
-    "heroTitle": "The #1 Dispatch Platform for Gaming",
-    "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
-    "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
-    "startToday": "Start Today",
-    "integrateButton": "Integrate",
-    "welcomeTitle": "Welcome",
-    "welcomeHeadline": "Welcome to Sonoran CAD!",
-    "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
-    "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
-    "integrations": {
-      "fivem": {
-        "name": "FiveM",
-        "description": "Official FiveM resource with dozens of deep integration points."
-      },
-      "erlc": {
-        "name": "ER:LC",
-        "description": "Official ER:LC in-game integration with live map and more."
-      }
-    }
+  "taskbar": {
+    "close": "Закрити",
+    "displayTabIcons": "Відображати значки вкладок",
+    "displayTabLabels": "Відображати мітки вкладок",
+    "layoutCustomization": "Налаштування макета",
+    "newWindow": "Нове Вікно",
+    "nextDesktop": "Наступний робочий стіл",
+    "pinToTaskbar": "Закріпити в панелі завдань",
+    "previousDesktop": "Попередній робочий стіл",
+    "sonoranCADV": "Sonoran CAD v",
+    "startMenu": "Меню запуску",
+    "system": "Система",
+    "tabCustomization": "Налаштування вкладки",
+    "taskbarPosition": "Позиція панелі завдань",
+    "unpinFromTaskbar": "Відкріпити від панелі завдань"
+  },
+  "toneBoard": {
+    "playStack": "Відтворити стек",
+    "stack": "Стік"
   }
 }
