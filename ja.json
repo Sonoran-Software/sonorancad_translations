@@ -30,7 +30,8 @@
         "serverLimit2": "サーバー!"
       },
       "geo": {
-        "geographicalSettings": "地理設定"
+        "geographicalSettings": "地理設定",
+        "penalCodeName": "刑法名"
       },
       "info": {
         "name": "名前",
@@ -73,6 +74,7 @@
         "options": "オプション",
         "resultCode": "結果コード",
         "searchCodes": "コードを検索",
+        "searchFlows": "フローを検索",
         "tabs": {
           "defaults": "デフォルト パス"
         },
@@ -241,6 +243,7 @@
   "common": {
     "actions": "操作",
     "activeServer": "アクティブ サーバー",
+    "cancel": "キャンセル",
     "close": "閉じる",
     "errors": {
       "limitReached": "エラー: 最大制限に達しました"
@@ -304,6 +307,9 @@
             "description": "ER:LC向けの無料CAD。3Dライブマップ、ボディカメラ、緊急通報、キャラクターツール、ゲーム内オーバーレイ対応。"
           },
           "modules": {
+            "character": {
+              "title": "文字の作成"
+            },
             "emergency": {
               "title": "緊急通報"
             },
@@ -364,6 +370,7 @@
       "resetPassword": "パスワードをリセット"
     },
     "linkAuth": {
+      "idPageBackToMenu": "メニューに戻る",
       "linkPageDescription": "アカウントにサインインしてから、埋め込みログインウィンドウに表示されている4文字のコードを入力してください。",
       "success": "ログインをリンクしました。元の埋め込みウィンドウに戻れます。"
     },
@@ -416,6 +423,7 @@
         "noTitle": "エラー: この通話にはタイトルが設定されていません!"
       },
       "nearestStations": "最寄りの駅",
+      "nextCall": "次の通話（右矢印）",
       "originOptions": {
         "walkUp": "徒歩来店"
       },
@@ -426,6 +434,7 @@
         "active": "有効"
       },
       "statusTimers": {
+        "descCountdown": "ユニットのステータスが {status} に設定されたら、カウントダウンタイマーを開始します。",
         "descCountup": "ユニットのステータスが {status} に設定されたら、カウントアップタイマーを開始します。"
       },
       "unitStatusAttachedHint": "ユニットが通話に関連付けられたら、そのステータスを更新します。",
@@ -488,7 +497,8 @@
         "dispatchCall": "出荷要請"
       },
       "controls": {
-        "right": "右"
+        "right": "右",
+        "up": "上"
       },
       "speedDisplay": "{multiplier}x ({speed})"
     },
@@ -507,6 +517,7 @@
         "name": "氏名",
         "status": "ステータス"
       },
+      "flags": "フラグ:",
       "recordsNoData": "記録はありません",
       "refresh": "更新"
     },
@@ -562,6 +573,7 @@
       },
       "speed": {
         "courtDate": "出廷日",
+        "other": "その他",
         "speedLimit": "速度制限",
         "vehicleSpeed": "車両速度"
       },
@@ -569,6 +581,7 @@
         "types": {
           "aircraft": "航空機",
           "coupe": "クーペ",
+          "sedan": "セダン",
           "suv": "SUV"
         }
       }

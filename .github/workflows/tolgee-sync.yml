@@ -209,6 +209,30 @@ jobs:
             git push origin HEAD:staging
           fi
 
+      - name: Promote staging to master
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.TRANSLATION_AUTOMATION_TOKEN }}
+          script: |
+            const owner = 'Sonoran-Software';
+            const repo = 'sonorancad_translations';
+            try {
+              await github.rest.repos.merge({
+                owner,
+                repo,
+                base: 'master',
+                head: 'staging',
+                commit_message: 'chore: promote synced translations',
+              });
+              core.info('Merged staging into master');
+            } catch (error) {
+              if (error.status === 204 || (error.status === 409 && String(error.message).includes('No commits'))) {
+                core.info('master is already up to date');
+              } else {
+                throw error;
+              }
+            }
+
       - name: Trigger frontend rebuild
         uses: actions/github-script@v7
         with:
