@@ -4,7 +4,9 @@
       "subscriptions": "訂閱內容"
     },
     "delete": {
+      "confirm": "刪除賬戶",
       "failure": "無法刪除您的賬戶。",
+      "message": "您確定要刪除您的帳戶並永久失去所有相關資料嗎？",
       "title": "刪除賬戶？"
     },
     "labels": {
@@ -90,7 +92,10 @@
         "tenCodeName": "10-Code程式碼名稱"
       },
       "infernoPagers": {
-        "invalidMessage": "錯誤：Inferno 編輯器傳送了無效的頁面節點資料。"
+        "description": "管理用於緊急服務傳呼路由的傳呼節點樹。",
+        "infernoPagers": "Inferno Pager",
+        "invalidMessage": "錯誤：Inferno 編輯器傳送了無效的頁面節點資料。",
+        "loading": "內嵌的 Inferno 編輯器將自動載入並同步您目前的 pager 設定。"
       },
       "info": {
         "communityId": "社群ID",
@@ -103,30 +108,61 @@
         "website": "官方網站"
       },
       "lookupTypes": {
+        "addField": "新增區域",
+        "addSearchType": "新增查詢型別",
+        "advancedFields": "進階欄位",
+        "advancedFieldsDescription": "支援的欄位類型：文字、數字、下拉式選單和地址。",
+        "advancedMode": "進階",
+        "basicMode": "基本",
+        "configDescription": "設定簡單的單一輸入搜尋，或建立包含多個欄位的進階搜尋。",
         "configTitle": "搜尋類型配置",
         "customRecordFieldId": "自定義記錄表ID",
+        "displayName": "顯示名稱",
         "dropdownOptions": "下拉式選項",
+        "dropdownOptionsHelp": "按 Enter 新增每個選項。",
+        "fieldFallback": "區域 {index}",
+        "fieldLabel": "區域標籤",
+        "fieldMappingId": "欄位對映 ID",
         "fieldMappingIdHelp": "選擇將用於此搜尋的自訂記錄欄位。",
         "fieldMappingIdValue": "欄位對映 ID: {id}",
         "fieldsCount": "{count} 個欄位",
+        "fieldTypeAddress": "地址",
+        "fieldTypeDropdown": "下拉式",
         "fieldTypeFallback": "區域",
+        "fieldTypeNumber": "數字",
+        "fieldTypeText": "文字",
+        "inputMask": "輸入遮罩",
         "lookupTypes": "查詢型別",
+        "mappableFieldsCount": "{count} 個可對應欄位",
         "mask": "掩碼",
+        "newField": "新欄位",
         "newLookup": "新的查詢",
+        "noFieldsConfigured": "尚未設定欄位。",
         "noFieldSelected": "未選擇欄位",
         "noRecordTemplates": "沒有可供對應欄位的記錄範本。",
         "optional": "可選項",
+        "placeholder": "佔位符",
+        "preview": "預覽",
+        "previewHelp": "此預覽顯示此搜尋類型將如何顯示在使用者的查詢視窗中。",
         "previewTitle": "{name} 預覽",
         "rangeDisabled": "範圍已停用",
+        "rangeEnabled": "範圍已啟用",
         "rangeSearch": "範圍搜尋",
+        "rangeSearchHelp": "允許使用者在搜尋時輸入最小值和最大值。",
         "recordField": "記錄欄位",
         "reindexRecords": "重新索引所有記錄",
+        "reindexRecordsConfirmMessage": "這將為您目前的自訂搜尋類型重新建立現有記錄的索引。這可能需要一些時間，而且每 12 小時只能執行一次。",
         "reindexRecordsConfirmTitle": "重新索引所有記錄",
         "reindexRecordsHelp": "重新儲存現有記錄的查找索引欄位，讓自訂搜尋類型使用您最新的欄位對應。",
+        "required": "必填",
+        "requirement": "需求",
+        "searchTypeFallback": "搜尋類型 {index}",
         "sectionFallback": "區段 {index}",
         "selectField": "選擇欄位",
+        "selectRecordField": "選擇記錄欄位",
         "selectRecordFieldDescription": "選擇一個記錄範本，展開一個區段，然後按一下欄位以進行對應。",
-        "width": "寬度"
+        "width": "寬度",
+        "widthHelp": "控制此搜尋欄位在查找視窗中的顯示寬度。點擊預覽圖示查看其顯示方式。"
       },
       "notificationTones": {
         "dispatchClosed": "排程結束",
@@ -152,25 +188,51 @@
         "quickLinks": "快速連結"
       },
       "rapidIQEditor": {
+        "addCode": "新增程式碼",
+        "addCondition": "新增條件",
+        "addFlow": "新增流程",
         "addOption": "新增選項",
+        "addQuestion": "新增問題",
         "codeName": "程式碼名稱",
         "codesHelp": "管理回應代碼。Code ID 用於流程中，Code Name 顯示於派發。",
         "conditionsInOrder": "條件（依順序）",
+        "defaultQuestions": "預設問題",
+        "defaultQuestionsHint": "選擇哪些問題在預設路徑中。",
+        "defaultsHelp": "選擇預設的開場問題順序。",
+        "flowPreview": "流程預覽",
         "flowsHelp": "使用有序條件建立路由邏輯。每個流程都會以一個結果代碼結束。",
+        "headerHelp": "設定 RapidIQ 問題、回應選項、代碼和流程規則。",
         "label": "標籤",
         "maskHint": "範例: (###) ###-####",
+        "maskOptional": "遮罩 (可選項)",
         "newCodeId": "新 Code ID",
+        "newCodeName": "新 程式碼名稱",
+        "operator": "操作員",
         "options": "選項",
         "order": "排序",
         "question": "問題",
+        "questionsHelp": "建立並編輯每個問題。使用選項進行快速選擇，或使用文字／數字／地址作為輸入答案。",
+        "questionText": "問題文字",
+        "questionType": "問題類型",
+        "resultCode": "結果代碼",
         "searchCodes": "搜尋代碼",
+        "searchFlows": "搜尋流程",
+        "searchQuestions": "搜尋問題",
+        "selectFlowPrompt": "選擇一個流程來編輯或新增一個。",
+        "selectQuestionPrompt": "選擇或新增一個問題來編輯。",
         "stats": {
-          "flows": "流程"
-        },
-        "tabs": {
-          "defaults": "預設路徑",
+          "codes": "程式碼",
+          "defaults": "預設值",
+          "flows": "流程",
           "questions": "問題"
         },
+        "tabs": {
+          "codes": "程式碼",
+          "defaults": "預設路徑",
+          "flows": "流程",
+          "questions": "問題"
+        },
+        "validationErrors": "驗證錯誤",
         "value": "資料"
       },
       "restrictions": {
@@ -237,6 +299,8 @@
       "name": "名稱",
       "newField": "新欄位",
       "newValue": "新資料",
+      "notApplicable": "不適用",
+      "placeholder": "佔位符",
       "placeholderAbout": "輸入值前顯示於空欄位中的選填輔助文字。",
       "readOnly": "只讀",
       "recordEditor": "記錄編輯器",
@@ -285,6 +349,7 @@
       "departments": "部門",
       "description": "描述",
       "editorSubtitle": "管理機構、部門和子部門。",
+      "editorTitle": "部門編輯器",
       "errors": {
         "agencyExists": "錯誤：使用此名稱的機構已經存在！",
         "agencyLimit2": "機構！",
@@ -324,7 +389,15 @@
       },
       "name": "名稱",
       "persistentGroups": {
-        "groupName": "小組名稱"
+        "badge": "持續群組",
+        "empty": "未設定持續群組。",
+        "groupName": "小組名稱",
+        "hint": "這些群組在派遣中總是會出現，即使沒有指派任何單位。",
+        "limitReached": "錯誤：'{group}' 一次只能容納 {max} 個單位。",
+        "maxUnits": "最大 單位",
+        "maxUnitsHint": "可選項",
+        "noUnits": "群組中沒有單位",
+        "title": "持續單位小組"
       },
       "subdivisions": "子部門",
       "zip": "郵政編碼"
@@ -337,7 +410,10 @@
       "customization": "自定義",
       "customRecords": "自定義記錄",
       "departments": "部門",
+      "desktops": "桌面",
       "discordIntegration": "DIscord整合功能",
+      "documentation": "文件",
+      "identifiers": "員警身份",
       "inGameIntegration": "遊戲內整合功能",
       "limits": "限制",
       "logs": "記錄",
@@ -345,11 +421,15 @@
       "transferOrDelete": "轉移或刪除CAD",
       "wipeRecords": "清空記錄"
     },
+    "helpPermissions": {
+      "permissionsGuide": "許可權指導"
+    },
     "integration": {
       "apiDocs": "API文件",
       "apiHeader": "網頁API",
       "apiKey": "API金鑰",
       "apiSubheader": "Sonoran CAD的網頁API允許您實時更新單位的位置、切換單位的緊急狀態、生成緊急呼叫，以及在遊戲中進行更多操作！",
+      "availableMaps": "可用地圖",
       "changeApiKey": "修改API金鑰",
       "configureAndDeploy": "配置並部署",
       "confirmKeyChange1": "確定要申請新的API金鑰嗎？",
@@ -371,6 +451,7 @@
         "descriptionCredentials": "在這裡填寫您伺服器的SQL連線憑證。",
         "enableDbMerge": "啟用資料庫整合",
         "enableDbSync": "啟用資料庫同步",
+        "enableDbSyncLookupBoth": "將 CAD API 記錄納入 DB Sync 查詢",
         "externalKey": "外部金鑰",
         "fieldMapId": "使用者資訊對映ID",
         "fieldMapIdAbout": "該ID可以將自定義使用者資訊中的欄位對映到其他記錄，並區分哪些欄位包含所搜尋的字詞，例如名和姓。",
@@ -402,36 +483,89 @@
       "differingOutboundIp": "不同的出站IP",
       "enableMap": "啟用地圖",
       "erlc": {
+        "apiKey": "ER:LC API 金鑰",
+        "apiKeyHint": "貼上新金鑰以取代已儲存的值。",
         "civilianRegistrationsHeader": "平民註冊",
+        "commandHint": "留空以停用此指令。",
+        "customRobloxMap": "自訂 Roblox 地圖",
+        "customRobloxMapProTooltip": "自訂 Roblox 地圖僅支援 Pro。",
         "emergencyCallCommand": "911 指令",
+        "emergencyCallsHeader": "緊急呼叫",
+        "header": "ER:LC 整合",
+        "liveMapAbout": "即時地圖提供互動式 2D 和 3D 遊戲地圖，包含單位位置、隨身攝影機、緊急呼叫、派遣呼叫等更多內容。",
         "notifyAlways": "始終",
         "notifyAlwaysTooltip": "指令處理後，玩家將一律收到私人訊息。",
+        "notifyMode": "通知玩家",
         "notifyNever": "永不",
+        "notifyNeverTooltip": "玩家不會因為此指令收到私人訊息。",
         "notifyOnlyOnFailure": "僅在失敗時",
+        "notifyOnlyOnFailureTooltip": "只有在指令失敗時，玩家才會收到私人訊息。",
+        "officialRobloxMap": "官方 ER:LC 地圖",
+        "registerCommand": "註冊指令",
+        "tempRegisterCommand": "臨時註冊指令",
+        "trafficStopCommand": "攔截交通 指令",
+        "trafficStopDefaultTenCode": "預設 10-Code",
+        "trafficStopDefaultTenCodeHint": "用於交通攔停派遣通話。請在此填入您偏好的代碼。",
+        "trafficStopDescription": "派遣描述",
+        "trafficStopDescriptionHeader": "描述與 10 碼",
         "trafficStopDescriptionHint": "支援自訂變數。",
+        "trafficStopMaxRadius": "最大附近車輛半徑",
         "trafficStopMaxRadiusHint": "如果最近的車輛距離超過此值，攔車呼叫將回退為車牌輸入或省略車輛詳細資訊。",
+        "trafficStopsHeader": "攔截交通",
+        "trafficStopVariableBuildingNumber": "目前來自 ER:LC 的建築號碼。",
         "trafficStopVariableCopied": "變數已複製到剪貼簿",
-        "trafficStopVariablePlate": "提供車牌時的第一個指令引數。"
+        "trafficStopVariablePicker": "檢視範本變數",
+        "trafficStopVariablePickerHint": "點擊任何變數將其複製到剪貼簿。",
+        "trafficStopVariablePickerTitle": "攔截交通變數",
+        "trafficStopVariablePlate": "提供車牌時的第一個指令引數。",
+        "trafficStopVariablePostalCode": "員警目前的郵遞區號。",
+        "trafficStopVariableStreetName": "來自 ER:LC 的目前街道名稱。",
+        "trafficStopVariableVehicleColorName": "最近或相符的車輛顏色名稱。",
+        "trafficStopVariableVehicleName": "最近或相符的車輛名稱。",
+        "trafficStopVariableVehiclePlate": "從手動輸入、附近的 ER:LC 車輛或符合的 CAD 登記解析出的車牌。",
+        "vehicleRegistrationsHeader": "車輛註冊資訊"
       },
       "erlcTab": "ER:LC",
       "eventDocumentation": "事件記錄",
       "fivem": {
         "configureFeaturesTitle": "設定功能",
         "configureResourceTitle": "設定資源",
+        "configureServerTitle": "設定伺服器",
         "downloadInstallTitle": "下載與安裝",
         "manual": {
+          "additionalOptions": "您可以在這裡進一步了解其他設定選項。",
+          "addToServerCfg": "將以下內容加入你的 server.cfg：",
           "configComment": "# 啟動 sonorancad 資源和其他捆綁資源",
           "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
-          "downloadButton": "下載 Sonoran CAD 以用於 FiveM"
+          "configureResource": "開啟 sonorancad/configuration/config.json 以設定此資源。",
+          "downloadButton": "下載 Sonoran CAD 以用於 FiveM",
+          "extractResource": "下載後，將 [sonorancad] 資料夾解壓縮到您伺服器的 resources 資料夾。",
+          "preconfiguredNotice": "該資源將已預先設定 communityID 和 apiKey。",
+          "restartComplete": "而且一旦你重新啟動你的伺服器，就完成了！請查看文件以啟用並使用各項功能。",
+          "seeDocs": "查看文件",
+          "welcomeDescription": "依照此教學在你的伺服器上安裝 FiveM 資源！"
         },
         "rocketNode": {
+          "accessPanel": "存取遊戲伺服器的面板。",
+          "configurationLabel": "配置",
+          "couponCode": "SONORAN",
+          "couponPrefix": "使用優惠碼",
+          "couponSuffix": "享 20% 折扣。",
+          "fileManager": "檔案管理員",
+          "gamePanelPurchaseTitle": "遊戲面板購買",
           "installerLabel": "Sonoran 安裝程式",
+          "installSonoran": "在 Rocket Node 面板上點擊安裝 Sonoran。",
           "maskedKey": "********************",
+          "navigateFolder": "前往 resources > [sonorancad] > sonorancad > configuration 資料夾。",
+          "navigateInstaller": "在 Rocket Node 遊戲面板上，前往",
+          "purchaseServer": "從 Rocket Node 購買 FiveM 遊戲伺服器",
           "resourceAccess": "安裝完成後，您可以在檔案管理器中存取資源檔案。",
           "selectCad": "選擇 CAD 並點擊以下複製／貼上 ID 和金鑰。",
           "submoduleDocs": "您可以在這裡進一步了解子模組設定。"
-        }
+        },
+        "welcomeTitle": "歡迎"
       },
+      "fivemTab": "FiveM",
       "gamePort": "遊戲埠",
       "ip": "IP",
       "liveMapHeader": "伺服器事件和整合實時地圖",
@@ -450,6 +584,7 @@
       "staticOnly": "只使用靜態URL",
       "staticOnlyAbout": "如果您的遊戲模式與實時地圖資源不相容，則可以指定一個帶有遊戲地圖的網站。",
       "uploadCustomMap": "上傳自定義地圖",
+      "videoTutorial": "影片教學",
       "websiteUrl": "網站URL"
     },
     "limits": {
@@ -600,6 +735,7 @@
   },
   "civilian": {
     "buttons": {
+      "autoRegister": "自動註冊",
       "dmv": "車管局",
       "editCharacter": "編輯市民",
       "newCharacter": "新建市民",
@@ -632,6 +768,7 @@
       "weight": "體重",
       "zip": "郵編座標"
     },
+    "erlcAutoRegister": "ER:LC 自動註冊",
     "errors": {
       "maxCharacters": "錯誤：您已達到社群的最大字元數限制"
     },
@@ -643,43 +780,69 @@
     "actions": "操作",
     "activeServer": "活躍中的伺服器",
     "add": "新增",
+    "addRow": "新增列",
     "attach": "附加",
+    "attachToCall": "關聯呼叫 (Enter)",
     "autoSort": "自動排序",
+    "back": "返回",
     "cancel": "取消",
+    "clear": "清空",
     "close": "關閉",
     "communityId": "社群ID",
     "confirm": "確認",
     "contains": "包含",
+    "continue": "繼續",
     "copy": "複製",
+    "csv": "CSV",
+    "dbSyncRecordWarning": "這是一個資料庫同步記錄，且只有在啟用資料庫合併時才能修改。",
     "deleteRow": "刪除列",
+    "detach": "脫離",
+    "detachFromCall": "從通話中分離（Enter）",
+    "disabled": "已停用",
+    "dismiss": "關閉",
+    "download": "下載",
     "edit": "編輯",
     "enabled": "啟用",
     "equal": "等於",
     "errors": {
-      "limitReached": "錯誤：已達到最大限制"
+      "limitReached": "錯誤：已達到最大限制",
+      "notFound": "抱歉，這裡沒有任何內容..."
     },
     "export": "輸出",
+    "exportAll": "全部輸出",
     "externalWindow": "在外部窗中開啟",
     "failed": "失敗",
     "field": "區域",
     "help": "幫助",
+    "history": "歷史",
+    "hours": "小時",
     "icon": "圖示",
     "id": "ID",
     "import": "上傳",
     "importPrompt": "貼上JSON內容",
     "itemsPerPage": "每頁顯示數量",
+    "json": "JSON",
     "learnMore": "更多資訊",
+    "link": "連結",
+    "loading": "載入中",
     "lostConnection": "您與伺服器斷開連線。",
+    "lostSignal": "訊號遺失",
+    "max": "最大值",
     "maximize": "最大化",
+    "message": "訊息",
     "min": "最小",
     "minimize": "最小化",
+    "minutes": "分鐘",
     "modify": "修改",
     "new": "新的",
     "noData": "無資料",
+    "noImageSelected": "未選擇圖片",
     "noResults": "無結果",
     "notEqual": "不等於",
     "off": "關閉",
+    "ok": "確定",
     "on": "開啟",
+    "open": "開啟",
     "paste": "黏貼",
     "pause": "暫停",
     "range": "範圍",
@@ -690,8 +853,10 @@
     "s": "s",
     "save": "儲存",
     "search": "搜尋",
+    "searchOnMap": "在地圖上搜尋",
     "seconds": "秒",
     "serverStatus": "伺服器狀態",
+    "sessionExpired": "工作階段已過期",
     "start": "開始",
     "status": "狀態",
     "stop": "停止",
@@ -704,6 +869,10 @@
     "upload": "上傳圖片",
     "uploader": "圖片上傳（最大5MB）",
     "versionDisplay": {
+      "currentVersion": "您的版本: {version}",
+      "description": "注意：看起來您使用的是過時版本的 Sonoran CAD。",
+      "latestVersion": "最新版本：{latestVersion}",
+      "title": "注意：版本已過期",
       "updateReminder": "請務必更新您的應用程式，以獲得最新功能、變更與修正！"
     }
   },
@@ -723,12 +892,34 @@
     },
     "labels": {
       "permissionKey": "許可權金鑰"
+    },
+    "text": {
+      "noPermissions": "無許可權"
     }
   },
   "CustomDomain": {
     "chooseYourDomainName": "選擇您的網域名稱",
+    "cname": "CNAME",
+    "communityID": "社群ID",
+    "configureYourDnsRecord": "設定您的 DNS 記錄",
     "content": "內容",
-    "setCustomDomain": "設定 自訂 網域"
+    "copiedToClipboard": "已複製到剪貼簿！",
+    "name": "名稱",
+    "placeholderExampleDomain": "cad.example.com",
+    "saveYourCommunitesCustomDomain": "儲存您的社群自訂網域",
+    "setCustomDomain": "設定 自訂 網域",
+    "txt": "TXT",
+    "youMustOwnYourDomainName": "您必須擁有您的網域才能設定自訂網域。"
+  },
+  "development": {
+    "banner": "開發測試版本 - 不供正式使用",
+    "message": "這是 Sonoran CAD 的免費開發版本，不適用於正式使用。",
+    "title": "開發測試",
+    "understand": "我了解"
+  },
+  "downloads": {
+    "desktopAndMobileBanner": "下載我們的 Windows 桌面和行動應用程式！",
+    "desktopBanner": "下載我們的 Windows 桌面應用程式！"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -743,21 +934,71 @@
           "ctaPrimary": "立即註冊",
           "faq": {
             "items": {
+              "best": {
+                "answer": "Sonoran CAD 是遊戲社群中最先進且最廣泛使用的 CAD 系統之一，包括 ER:LC。免費方案提供完整 ER:LC 整合，您的社群可在幾分鐘內開始運作。",
+                "question": "Sonoran CAD 是 ER:LC 最好的 CAD 嗎？"
+              },
+              "community": {
+                "answer": "當然。免費方案非常適合小型到中型社群，提供完整的 ER:LC 功能，沒有任何限制。若您的伺服器成長並需要額外帳號或功能，之後也可以升級。",
+                "question": "這適合小型或成長中的社群嗎？"
+              },
+              "features": {
+                "answer": "此整合包含完整的即時功能套件，例如：\n- 即時 3D 地圖，具備玩家與單位追蹤\n- 自動同步 911 電話\n- 攔檢自動化與熱鍵\n- 車牌辨識自動化與熱鍵\n- 車輛與角色建立自動化\n- 以及更多功能",
+                "question": "ER:LC 整合包含哪些功能？"
+              },
               "free": {
-                "answer": "是，ER:LC 整合在 Sonoran CAD 免費版中完全可用。只有當你想新增更多使用者帳號或擴展你的社群時，才需要付費方案，但所有核心 ER:LC 功能都可在不升級的情況下使用。"
+                "answer": "是，ER:LC 整合在 Sonoran CAD 免費版中完全可用。只有當你想新增更多使用者帳號或擴展你的社群時，才需要付費方案，但所有核心 ER:LC 功能都可在不升級的情況下使用。",
+                "question": "ER:LC 整合是免費使用的嗎？"
+              },
+              "setup": {
+                "answer": "設定通常只需少於 10 分鐘。您只需產生您的 ER:LC API 金鑰，將其貼入 Sonoran CAD，然後將我們的 webhook URL 貼入 ER:LC 伺服器選單。不需要編碼或進階設定。",
+                "question": "設定此整合需要多久？"
               }
             }
           },
+          "faqKicker": "支援協定",
+          "faqTitleAccent": "問題",
+          "faqTitlePrimary": "常見問題",
+          "headlineAccent": "適用於 ER:LC",
+          "headlinePrimary": "最佳 CAD",
+          "kicker": "免費、快速、完全整合",
           "meta": {
             "description": "適用於 ER:LC 的免費 CAD，具備 3D 即時地圖、隨身攝影機、緊急呼叫、角色工具，以及遊戲內疊加層支援。",
-            "keywords": "ER:LC CAD，免費的 ER:LC CAD，ERLC CAD，Sonoran CAD"
+            "keywords": "ER:LC CAD，免費的 ER:LC CAD，ERLC CAD，Sonoran CAD",
+            "ogImageAlt": "Sonoran CAD ER:LC 整合",
+            "title": "ER:LC 免費 CAD | Sonoran CAD",
+            "twitterImageAlt": "Sonoran CAD x 緊急應變：Liberty County"
           },
           "modules": {
+            "bodycam": {
+              "infoCopy": "錄製遊戲內身體攝影機影像以供重播和檢視。",
+              "infoTitle": "錄音",
+              "previewTitle": "即時 記錄儀 預覽",
+              "title": "即時 記錄儀"
+            },
+            "character": {
+              "infoCopy": "自動產生角色，無需 CAD 登入。",
+              "infoTitle": "遊戲內指令",
+              "previewTitle": "市民建立預覽",
+              "title": "市民建立"
+            },
+            "emergency": {
+              "infoCopy": "將遊戲內緊急呼叫傳送給調度員，顯示在地圖上。",
+              "infoTitle": "911 App",
+              "previewTitle": "緊急呼叫預覽",
+              "title": "緊急呼叫"
+            },
             "map": {
-              "previewTitle": "3D 即時地圖預覽"
+              "infoCopy": "指揮單位並以沉浸式即時 3D 地圖掃描城市。",
+              "infoTitle": "3D 地圖",
+              "previewTitle": "3D 即時地圖預覽",
+              "title": "3D 即時地圖"
             },
             "overlay": {
-              "previewTitle": "遊戲內覆蓋層預覽"
+              "infoCopy": "無需離開遊戲即可查看即時派遣資訊。",
+              "infoTitle": "遊戲內覆蓋層",
+              "previewTitle": "遊戲內覆蓋層預覽",
+              "title": "遊戲內覆蓋層"
             }
           }
         },
@@ -767,13 +1008,24 @@
         "description": "Official FiveM resource with dozens of deep integration points.",
         "landing": {
           "ctaDocs": "查看文件",
+          "ctaPrimary": "立即註冊",
           "faq": {
             "items": {
+              "best": {
+                "answer": "Sonoran CAD 專為遊戲社群設計，並提供目前最深入的 FiveM 整合堆疊之一，具備圍繞真實派遣與紀錄工作流程打造的官方工具。",
+                "question": "Sonoran CAD 是 FiveM 最好的 CAD 嗎？"
+              },
               "community": {
+                "answer": "是。免費方案很適合較小的社群，而 Sonoran CAD 也能隨著你的伺服器新增更多使用者、功能與營運複雜度，擴展以支援更大的部門。",
                 "question": "這適合小型或成長中的社群嗎？"
               },
               "features": {
-                "answer": "FiveM 整合包含即時地圖支援、bodycam 工具、資料庫同步，以及不斷擴充的官方插件集合，可支援更深入的遊戲內工作流程。"
+                "answer": "FiveM 整合包含即時地圖支援、bodycam 工具、資料庫同步，以及不斷擴充的官方插件集合，可支援更深入的遊戲內工作流程。",
+                "question": "FiveM 整合包含哪些功能？"
+              },
+              "free": {
+                "answer": "是。Sonoran CAD 的核心 FiveM 整合可於免費方案使用，因此社群可以在不支付基礎工作流程費用的情況下開始使用。",
+                "question": "FiveM 整合是免費使用的嗎？"
               },
               "setup": {
                 "answer": "大多數伺服器都能在幾分鐘內設定好基本資源。安裝資源，加入你的社群 ID 和 API 金鑰，重新啟動伺服器，然後啟用你想要的功能。",
@@ -782,28 +1034,51 @@
             }
           },
           "faqKicker": "支援協定",
+          "faqTitleAccent": "問題",
           "faqTitlePrimary": "常見問題",
+          "headlineAccent": "適用於 FiveM",
+          "headlinePrimary": "最佳 CAD",
+          "kicker": "免費、快速、完全整合",
           "meta": {
+            "description": "適用於 FiveM 的免費 CAD，具備即時地圖、隨身攝影機、資料庫同步，以及官方外掛支援，為深度整合的角色扮演伺服器而設。",
+            "keywords": "FiveM CAD，FiveM 免費 CAD，Sonoran CAD，FiveM dispatch，FiveM roleplay CAD",
+            "ogImageAlt": "Sonoran CAD FiveM 整合",
+            "title": "FiveM 免費 CAD | Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM 整合預覽"
           },
           "modules": {
             "bodycam": {
+              "infoCopy": "透過與您的 CAD 工作流程直接連結的同步隨身攝影機畫面，檢視事件。",
+              "infoTitle": "錄音",
+              "previewTitle": "FiveM 隨身攝影機預覽",
               "title": "即時 記錄儀"
             },
             "map": {
-              "infoTitle": "3D 地圖"
+              "infoCopy": "追蹤單位、監控通話，並以專為活躍 FiveM 社群打造的即時地圖協調場景。",
+              "infoTitle": "3D 地圖",
+              "previewTitle": "FiveM 即時地圖預覽",
+              "title": "即時地圖"
             },
             "plugins": {
-              "description": "官方子模組將 Sonoran CAD 延伸至你的 FiveM 伺服器堆疊的其他部分。"
+              "description": "官方子模組將 Sonoran CAD 延伸至你的 FiveM 伺服器堆疊的其他部分。",
+              "infoCopy": "為來電者、標誌、呼叫器、站點等部署專為用途打造的外掛程式，無需重建您的工作流程。",
+              "infoTitle": "伺服器整合",
+              "previewTitle": "FiveM 外掛生態系統預覽",
+              "title": "外掛生態系統"
             },
             "sync": {
-              "infoCopy": "連接遊戲內身分、車輛和紀錄，讓你的 CAD 與伺服器活動保持一致。"
+              "infoCopy": "連接遊戲內身分、車輛和紀錄，讓你的 CAD 與伺服器活動保持一致。",
+              "infoTitle": "同步資料",
+              "previewTitle": "FiveM 資料庫同步預覽",
+              "title": "資料庫同步"
             }
           },
           "submodules": {
             "items": {
               "callers": {
-                "description": "建立沉浸式 NPC 與玩家呼叫，直接以結構化 CAD 資料送入派遣。"
+                "description": "建立沉浸式 NPC 與玩家呼叫，直接以結構化 CAD 資料送入派遣。",
+                "previewTitle": "自訂來電者 插件預覽",
+                "title": "自訂來電者"
               },
               "ers": {
                 "description": "在你的伺服器與 Sonoran CAD 之間橋接無線電工作流程，以便在事件處理期間更快速協調。",
@@ -814,8 +1089,24 @@
                 "description": "從派遣活動傳送有針對性的尋呼機通知，讓單位立即取得正確資訊。",
                 "previewTitle": "Pagers 插件預覽",
                 "title": "呼叫器"
+              },
+              "printer": {
+                "description": "在遊戲中列印紀錄和支援資訊，供希望取得具體現場交接的部門使用。",
+                "previewTitle": "Printer 插件預覽",
+                "title": "印表機"
+              },
+              "signs": {
+                "description": "透過為角色扮演場景打造的 CAD 支援工具管理動態街道標誌和道路訊息。",
+                "previewTitle": "街道標誌外掛預覽",
+                "title": "街道標識"
+              },
+              "station": {
+                "description": "從 CAD 事件觸發站台音效、門的動作和警示訊息，以保持團隊同步。",
+                "previewTitle": "Station 警示外掛預覽",
+                "title": "Station 警示"
               }
-            }
+            },
+            "title": "官方整合"
           }
         },
         "name": "FiveM"
@@ -828,7 +1119,20 @@
     "welcomeTitle": "Welcome"
   },
   "infernoPager": {
-    "infernoPager": "Inferno Pager"
+    "addresses": "地址",
+    "addressesHint": "選擇一個或多個路由傳呼機地址。",
+    "body": "頁面 內容",
+    "importCurrentCallUnits": "從目前通話附加單位",
+    "infernoPager": "Inferno Pager",
+    "invalidPlayers": "玩家 ID 必須是以逗號分隔的整數。",
+    "messageRequired": "送出前請先輸入頁面內容。",
+    "nature": "頁面 自然",
+    "noAddresses": "未設定可分頁的 Inferno pager 位址。",
+    "playerIds": "單位",
+    "playerIdsHint": "可選的線上單位，直接分頁。",
+    "selectionRequired": "請至少選取一個地址或單位。",
+    "sendPage": "傳送頁面",
+    "unitsTooltip": "你也可以將一個使用中的派遣通話拖放到這裡，以新增其附加單位。"
   },
   "login": {
     "buttons": {
@@ -849,24 +1153,53 @@
     },
     "linkAuth": {
       "codeLabel": "4 字元驗證碼",
+      "description": "Apple 和 Discord 登入必須在嵌入式框架外完成。",
       "errors": {
-        "invalidCode": "請輸入有效的 4 字元代碼。"
+        "auth": "您的登入工作階段遺失或已過期。請再次登入。",
+        "community": "無法判斷此連結所屬的社群。",
+        "createFailed": "目前無法建立連結代碼。請再試一次。",
+        "expired": "無效或已過期的連結代碼。",
+        "invalidCode": "請輸入有效的 4 字元代碼。",
+        "submitFailed": "目前無法連結此代碼。請再試一次。"
       },
+      "idPageBackToMenu": "返回選單",
       "idPageDescription": "輸入遊戲內的 4 位代碼。",
+      "idPageSuccessDescription": "您的遊戲內帳號現已連結。",
+      "idPageSuccessTitle": "連結完成",
       "idPageTitle": "輸入連結代碼",
       "idPageVerifying": "驗證中...",
+      "linkPageDescription": "登入您的帳戶，然後輸入嵌入式登入視窗中顯示的 4 位元代碼。",
+      "linkPageTitle": "連結 嵌入式 登入",
+      "openLink": "開啟連結頁面",
+      "scanPrompt": "掃描以在手機上開啟",
+      "stepOneDescription": "使用你的相機掃描 QR code。",
+      "stepOneTitle": "在手機或平板上開啟連結",
+      "stepTwoDescription": "開啟連結後輸入這個 4 字元代碼。",
+      "stepTwoTitle": "在瀏覽器中開啟連結",
+      "submit": "連結 登入",
       "success": "登入已連結。您現在可以返回原始嵌入視窗。",
-      "title": "選擇您的登入方式"
+      "title": "選擇您的登入方式",
+      "visit": "開啟",
+      "waiting": "等待此代碼被連結"
     },
     "newVisitor": {
       "description": "了解更多關於 Sonoran CAD 的整合外掛系統、即時地圖、資料庫同步功能、iOS/Android 應用程式等！",
+      "heading": "歡迎來到 Sonoran CAD！",
       "title": "歡迎"
-    }
+    },
+    "robloxLinkBannerTitle": "需要連結 Roblox 帳號"
   },
   "management": {
     "currentPlayersLastHour": "目前玩家數（過去 1 小時）",
     "heartbeatMetrics": "心跳整合指標：",
-    "topServersHeartbeat": "前 25 名伺服器（心跳）"
+    "lastUpdated": "上次更新",
+    "node": "節點",
+    "password": "管理密碼",
+    "playerCount": "玩家數量",
+    "topServersHeartbeat": "前 25 名伺服器（心跳）",
+    "totalServersLastHour": "總伺服器數（過去 1 小時）",
+    "updateDb": "更新 DB",
+    "users": "使用者"
   },
   "payment": {
     "buttons": {
@@ -878,18 +1211,26 @@
     },
     "labels": {
       "bundleDiscount": "組合折扣",
+      "chargesPerPage": "每頁指控",
       "endDate": "結束日期",
       "expertInstallation": "專家安裝",
+      "monthly": "每月",
+      "noChargesAvailable": "沒有可用的費用",
+      "noChargesFound": "找不到費用",
+      "noSubscriptionsAvailable": "沒有可用的訂閱內容",
+      "noSubscriptionsFound": "找不到訂閱內容",
       "plan": "套餐",
       "plus": "高階版",
       "pro": "專業版",
       "quarterly": "每季",
+      "sonoranOne": "Sonoran One",
       "standard": "標準版",
       "startDate": "開始日期",
       "starter": "基礎版",
       "subscriptionsPerPage": "每頁訂閱內容"
     },
     "pricing": {
+      "description": "Sonoran CAD 的付費訂閱可讓您啟用新的整合功能、啟用自訂、移除限制等等！",
       "howToPurchase": "如何購買",
       "title": "升級 訂閱 定價"
     },
@@ -905,16 +1246,27 @@
   },
   "police": {
     "bodycamRecordings": {
-      "noneFound": "未找到行車記錄器錄影。"
+      "noneFound": "未找到行車記錄器錄影。",
+      "searchRecordings": "搜尋錄影",
+      "selectRecordingPrompt": "選擇一段錄製內容以預覽。"
     },
     "bodycamViewer": {
       "allCams": "所有攝影機",
+      "indicatorAlt": "隨身攝影機指示器",
+      "live": "即時",
+      "screens": "畫面",
+      "screensAvailable": "可用畫面：{visible} / {total}（第 {page} 頁，共 {pages} 頁）",
       "singleCam": "單一攝影機",
-      "startRecording": "開始錄音"
+      "startRecording": "開始錄音",
+      "stopRecording": "停止錄影 {duration}",
+      "switchToAll": "切換到所有隨身攝影機檢視",
+      "switchToSingle": "切換到單一隨身攝影機檢視",
+      "uploadingClip": "正在上傳片段..."
     },
     "callEditor": {
       "addNote": "新增備註",
       "address": "地址",
+      "automations": "自動化",
       "block": "街區",
       "callAttachmentAutoStatus": "通話附件自動狀態",
       "callDescription": "呼叫描述",
@@ -934,6 +1286,7 @@
       },
       "createCall": "建立呼叫",
       "dispatch": "排程",
+      "dispatchCallsOnly": "僅調度呼叫",
       "dispatchRecord": "排程記錄",
       "emergencyCallsShown": "顯示的緊急呼叫",
       "errors": {
@@ -947,7 +1300,9 @@
       "nearestStations": "Najbliższe stacje",
       "nearestUnits": "Najbliższe Jednostki",
       "newDispatch": "新建排程",
+      "nextCall": "下一通來電（右箭頭）",
       "note": "備註",
+      "openRapidIQ": "開啟 RapidIQ",
       "originOptions": {
         "caller": "911報警",
         "observed": "員警目擊",
@@ -961,24 +1316,35 @@
       "savedTypes": "已保存的類型",
       "selfClear": "自我清除",
       "selfDispatch": "自我派遣",
+      "selfDispatchUnavailable": "您沒有使用自派遣的權限。",
       "statusOptions": {
         "active": "活躍",
         "closed": "關閉",
         "pending": "掛起"
       },
       "statusTimers": {
-        "countup": "計數向上"
+        "countdown": "倒數計時",
+        "countup": "計數向上",
+        "descCountdown": "當單位的狀態設為 {status} 時，開始倒數計時。",
+        "descCountup": "當單位的狀態設為 {status} 時，開始計時。"
       },
       "trackPrimary": "追蹤主處理單位（GPS）",
       "units": "單位",
+      "unitStatusAttached": "單位狀態：已附加",
       "unitStatusAttachedHint": "當單位附加到通話時，更新其狀態。",
+      "unitStatusClosed": "單位狀態：已關閉",
       "unitStatusClosedHint": "當通話結束時，更新所有已附加單位的狀態。",
+      "unitStatusDetached": "單位狀態：已分離",
+      "unitStatusDetachedHint": "當單位從通話中分離時，更新其狀態。",
       "unitStatusTimers": "單位狀態：計時器",
       "updateCall": "更新呼叫",
       "webhooks": {
+        "action": "操作",
+        "attached": "已附加",
         "closed": "關閉",
         "detached": "脫離",
-        "enabled": "啟用"
+        "enabled": "啟用",
+        "status": "狀態"
       }
     },
     "callList": {
@@ -1000,21 +1366,43 @@
       "priority": "優先順序"
     },
     "callouts": {
+      "availableWeapons": "可用武器",
       "calloutLabel": "通報",
       "chanceToAttack": "攻擊玩家機率",
+      "chanceToFlee": "逃離玩家機率",
       "chanceToObtainWeapons": "取得武器機率",
-      "chanceToSurrender": "投降機會"
+      "chanceToSurrender": "投降機會",
+      "fallbackTooltip": "若以下動作皆未發生，則為預設動作。",
+      "pedFallbackAction": "行人備援動作"
     },
     "chat": {
+      "allOnlineUnits": "所有線上單位",
+      "attachedRecord": "附加紀錄",
+      "composerHint": "使用 Ctrl/Cmd+Enter 傳送文字。先複製紀錄或通話連結，再將其貼到聊天中。",
+      "conversations": "對話",
       "emptySelection": "選擇一個或多個在線單位以開始聊天。",
+      "emptyThread": "此聊天尚無訊息。",
+      "groupLabel": "小組：{group}",
       "justYou": "只有你",
       "linkPreview": "[連結] {label}",
+      "message": "訊息",
+      "noMessages": "尚無訊息。",
       "noThreads": "尚無進行中的對話。",
+      "offline": "離線",
+      "offlineRecipientsHint": "傳送新訊息前請先移除離線收件人。",
       "online": "線上",
+      "openLinkedRecord": "開啟連結記錄",
+      "recipients": "收件人",
       "recipientsHint": "選擇線上單位以開始或繼續聊天。",
+      "sendLinkedRecord": "傳送連結記錄",
+      "sessionNotice": "僅限即時。重新整理會清除聊天記錄。",
       "ttsIncomingLink": "{sender}。{label}",
+      "ttsIncomingText": "{sender}. {message}",
       "ttsIncomingTooltip": "朗讀傳入聊天訊息",
-      "unableToSend": "目前無法傳送聊天。"
+      "ttsToggle": "切換 文字轉語音",
+      "unableToSend": "目前無法傳送聊天。",
+      "unitFallback": "單位 {id}",
+      "you": "你"
     },
     "command": {
       "attach": "響應",
@@ -1033,12 +1421,22 @@
       "view": "查看"
     },
     "diagram": {
+      "deleteSelected": "刪除已選取項目",
+      "groupUngroupSelected": "將選取項目群組／取消群組（SHIFT + CLICK）",
+      "itemOptions": "項目選項",
       "lockUnlockSelected": "鎖定/解除鎖定所選項目",
       "moveLayerDown": "下移圖層（Shift = 底部）",
+      "moveLayerUp": "上移圖層(Shift = 頂端)",
+      "redo": "重做",
       "shortcutDelete": "快捷鍵: DELETE",
+      "shortcutDown": "快捷鍵：（SHIFT）向下箭頭",
+      "shortcutGroup": "快捷鍵: G",
       "shortcutLock": "快捷鍵: L",
+      "shortcutO": "快捷鍵: O",
+      "shortcutRedo": "快捷鍵: CTRL + SHIFT + Z",
       "shortcutUndo": "快捷鍵: CTRL + Z",
-      "shortcutUp": "快捷鍵：（SHIFT）向上箭頭"
+      "shortcutUp": "快捷鍵：（SHIFT）向上箭頭",
+      "undo": "撤銷"
     },
     "emergencyCall": {
       "caller": "報警人",
@@ -1071,6 +1469,7 @@
         "switchToSingle": "Switch to single bodycam view"
       },
       "bolo": "BOLO資訊",
+      "chat": "聊天",
       "count": "計數",
       "emergencyCalls": "緊急呼叫",
       "file": "檔案",
@@ -1079,6 +1478,7 @@
       "panic": "緊急狀態",
       "playTo": "播放至",
       "quickLinks": "快速連結",
+      "rapidIQ": "RapidIQ",
       "records": "記錄",
       "repeat": "重複",
       "seconds": "秒",
@@ -1090,17 +1490,39 @@
     },
     "liveMap3d": {
       "blip": {
+        "custom": "自訂",
+        "default": "標記",
         "dispatchCall": "調度呼叫",
         "emergency": "911",
         "newCallout": "新通報",
-        "sign": "標誌"
-      }
+        "sign": "標誌",
+        "station": "站",
+        "unit": "單位"
+      },
+      "controls": {
+        "camera": "相機",
+        "cycle": "循環",
+        "down": "向下",
+        "left": "左",
+        "position": "位置",
+        "right": "右",
+        "speed": "速度",
+        "up": "上"
+      },
+      "followBlip": "跟隨",
+      "loadError": "無法載入 3D 地形：{reason}",
+      "speedDisplay": "{multiplier}x ({speed})",
+      "unknownError": "未知錯誤"
     },
     "liveMap": {
       "toolbar": {
         "decreaseBlipSize": "縮小標記大小",
         "dragAndDrop": "（拖放）",
-        "mapMode": "地圖模式"
+        "ersCallout": "ERS 呼叫提示（拖放）",
+        "increaseBlipSize": "放大標記大小",
+        "mapMode": "地圖模式",
+        "zoomIn": "放大",
+        "zoomOut": "縮小"
       }
     },
     "lookup": {
@@ -1125,6 +1547,7 @@
       "department": "部門",
       "exact": "精確",
       "first": "名",
+      "flags": "標記:",
       "getOwner": "獲取所有者",
       "id": "記錄ID",
       "identifier": "員警身份",
@@ -1158,7 +1581,14 @@
     },
     "rapidIQForm": {
       "answerColumn": "答案",
-      "autoImportToCallEditorTooltip": "自動匯入至通話編輯器（{state}）"
+      "autoImportToCallEditorTooltip": "自動匯入至通話編輯器（{state}）",
+      "completedNoCard": "RapidIQ 完成",
+      "copyResults": "複製問題和答案",
+      "copyResultsSuccess": "問題和答案已複製",
+      "displayCardAtEndTooltip": "於結尾顯示卡片（{state}）",
+      "nextHotkey": "下一題（右方向鍵或 Enter）",
+      "previousHotkey": "上一個問題（左箭頭）",
+      "questionColumn": "問題"
     },
     "recordCenter": {
       "errors": {
@@ -1167,6 +1597,7 @@
         "syncEnabledFeatDisabled": "此功能與數據庫同步不兼容"
       },
       "filesAwaitingApproval": "待審批檔案",
+      "myDrafts": "我的草稿",
       "myFiles": "我的檔案",
       "newRecord": "新建記錄",
       "newReport": "新建報告",
@@ -1224,7 +1655,11 @@
             "add": "記錄已新增",
             "edit": "記錄已編輯"
           },
+          "after": "之後",
+          "apiUser": "網頁API",
           "before": "之前",
+          "changedBy": "變更者",
+          "loadError": "錯誤：無法載入紀錄歷史。",
           "noFieldChanges": "此項目中沒有欄位值變更。"
         },
         "linkTitle": "鏈接主題",
@@ -1307,31 +1742,55 @@
       "automationLabelCountDown": "自動化：狀態 {status} {seconds} 秒",
       "automationLabelCountUp": "自動化：狀態 {status} 計數上升",
       "clearAttachment": "清除附件",
+      "hours": "小時",
       "minutes": "分鐘",
       "newTimer": "新計時器",
       "seconds": "秒",
       "timers": "計時器"
     },
+    "toneBoard": {
+      "speechToTextFailed": "語音轉文字失敗。",
+      "speechToTextNoMicrophone": "未偵測到麥克風。",
+      "speechToTextNoSpeech": "未偵測到語音。",
+      "speechToTextNotAllowed": "麥克風存取已被拒絕。",
+      "speechToTextUnavailable": "語音辨識目前無法使用。",
+      "textToSpeech": "文字轉語音"
+    },
     "unitEditor": {
       "agency": "機構",
       "aop": "AOP",
+      "bodycamDisabled": "執法攝影機已停用",
+      "bodycamEnabled": "記錄儀已啟用",
+      "bodycamMaxDuration": "最長持續時間",
+      "bodycamRepeatTone": "重複音調",
       "bodycamShadowRecording": "影像錄影",
+      "bodycamSoundEffects": "音效",
+      "bodycamTab": "記錄儀",
       "bodycamVolume": "音量  ",
       "confirmRemove": "確定要刪除身份資訊嗎？",
       "department": "部門",
       "departments": "部門",
       "effects": "效果",
+      "electronBodycamHint": "白色閃爍？試著分享整個螢幕，而不是特定的應用程式視窗。",
       "electronBodycamOpenPermissions": "開啟許可權",
       "electronBodycamPermissionWarning": "bodycam 擷取需要 macOS 螢幕錄製權限。請在系統設定中啟用，然後完全結束並重新開啟 Sonoran CAD。",
+      "electronBodycamSource": "記錄儀來源",
       "group": "小組",
       "location": "地點",
       "modifyIdentifier": "編輯員警身份",
+      "modifyIdentifierTab": "編輯員警身份",
       "name": "名稱",
+      "overlay": "遮蔽",
+      "persistentGroup": "持續群組",
+      "persistentGroupFull": "此群組已滿",
+      "persistentGroupHint": "自動指派至已設定的持續群組。",
+      "persistentGroupUpdateFailed": "目前無法更新持久群組。",
       "rank": "職級",
       "status": "狀態",
       "subdivision": "子部門",
       "subdivisions": "子部門",
       "switchIdentifier": "切換員警身份",
+      "switchIdentifierTab": "切換員警身份",
       "unitNumber": "呼號",
       "units": "單位"
     },
@@ -1352,6 +1811,11 @@
       "unitGroups": "單位小組",
       "units": "單位"
     }
+  },
+  "promotion": {
+    "dontShowAgain": "不要再顯示給我",
+    "newPromotion": "新促銷",
+    "title": "促銷"
   },
   "selectionPage": {
     "buttons": {
@@ -1400,18 +1864,31 @@
     }
   },
   "settings": {
+    "accountSecretId": "帳戶密鑰 ID：",
+    "accountTab": "賬戶",
     "apiIdDisable": "你必須登入到社群才能設定API ID",
+    "apiIdLabel": "API ID:",
     "bringToTop": "設為置頂",
+    "changeDesktop": "變更桌面",
     "classicLayout": "經典佈局",
+    "desktopOverlayHotkey": "桌面 遮蔽",
+    "erlcHotkeys": "ER:LC 自定義按鍵",
     "exitResize": "退出縮放",
+    "generalTab": "一般",
     "helpImprove": "幫助改進翻譯",
+    "hotkeyClickToRecord": "點擊以錄製",
+    "hotkeyClickToStop": "點擊以停止錄製",
     "hotkeyCombination": "組合",
     "hotkeyDisable": "免費版無法使用自定義按鍵設定",
+    "hotkeyDuplicateCleared": "快速鍵 {combo} 已經指派給 {action}。先前的綁定已清除。",
+    "hotkeyRecorderHelp": "點擊組合框以開始或停止錄製。右鍵點擊框以清除快速鍵。",
     "hotkeyRecording": "錄音中...",
     "hotkeys": "自定義按鍵",
+    "hotkeyUnassigned": "未指定",
     "language": "語言",
     "languageKorean": "韓國語/한국어",
     "lockWindow": "鎖定視窗",
+    "microphone": "麥克風",
     "microphoneNumbered": "麥克風 {index}",
     "microphoneStt": "麥克風（STT）",
     "overlay": {
@@ -1421,27 +1898,34 @@
       "bulbType": "燈泡型別",
       "callUpdates": "呼叫更新",
       "channel": "頻道",
+      "color": "顏色",
       "configuration": "配置",
       "confirmReset": "你確定要重置？",
+      "createWyzeKey": "建立 Wyze 金鑰",
       "credentials": "證書",
       "customTextFiles": "自定義文字檔案",
       "dataKeys": "資料鍵",
       "dataStorage": "資料儲存",
       "delay": "延遲",
       "events": "事件",
+      "exampleText": "範例文字",
       "field": "區域",
       "fileName": "檔名",
+      "font": "字型",
       "fontEditor": "字型編輯器",
       "fontSize": "字型大小",
       "fontWeight": "字體粗細:",
+      "goveeBluetooth": "Govee 藍牙",
       "goveeWifi": "Govee WiFi",
       "lighting": "燈光",
       "manualIp": "手動設定IP (可選）",
       "oauthToken": "OAuth令牌",
       "obsTextFiles": "OBS文字檔案",
+      "philipsHue": "Philips Hue",
       "refreshPayment": "重新整理交易",
       "scan": "掃描",
       "scanForBulbs": "掃描燈泡",
+      "stopScanning": "停止掃描",
       "streamAdBanner": "查看我們的直播疊加層和 Twitch 機器人！",
       "streamOverlay": "直播遮蔽",
       "twitch": "Twitch",
@@ -1455,40 +1939,81 @@
     },
     "panic": "緊急狀況",
     "prefix": "字首",
+    "previousMicrophoneUnavailable": "先前選取的麥克風（無法使用）",
     "quickResize": "快速縮放",
     "resetLayout": "重置佈局",
     "secretDisable": "你必須登陸倒社群才能獲取你的Secret ID",
     "settings": "設定",
     "showAdvanced": "顯示進階",
     "showHide": "顯示/隱藏",
+    "statusHotkeys": "狀態自定義按鍵",
     "systemDefaultMicrophone": "系統預設麥克風",
     "theme": {
+      "backgroundImage": "背景圖片",
       "backgroundImageFit": "背景圖片適應",
       "backgroundImagePosition": "背景圖片位置",
       "backgroundImageScale": "背景圖片縮放",
       "bgImageFit": {
-        "contain": "包含（適合內部）"
+        "contain": "包含（適合內部）",
+        "cover": "覆蓋（填滿並裁切）",
+        "fill": "填滿（拉伸）",
+        "none": "無（原始大小）",
+        "scaleDown": "縮小"
       },
       "bgImagePosition": {
+        "bottom": "下",
+        "bottomLeft": "左下",
+        "bottomRight": "右下",
         "center": "置中",
         "left": "左",
-        "right": "右"
+        "right": "右",
+        "top": "頂部",
+        "topLeft": "左上",
+        "topRight": "右上"
       },
       "bgImageScale": {
+        "p100": "100%",
+        "p125": "125%",
         "p150": "150%",
+        "p200": "200%",
+        "p50": "50%",
         "p75": "75%"
       },
       "colors": {
+        "accent1": "重點色 1",
+        "accent1Text": "重點色 1 文字",
         "accent2": "重點色 2",
+        "accent2Text": "重點色 2 文字",
         "accent3": "重點色 3",
         "accent3Text": "重點色 3 文字",
         "background": "背景",
+        "foreground": "前景",
+        "foregroundLight": "前景淺色",
         "inverseText": "反向文字",
-        "primaryText": "主要文字"
+        "primary": "主色",
+        "primaryFaded": "主色淡化",
+        "primaryText": "主要文字",
+        "subtitleText": "子標題文字",
+        "titleText": "標題文字"
       },
-      "saveTheme": "儲存主題"
+      "confirmDeleteTheme": "確定要刪除 {themeName}？",
+      "dark": "深色",
+      "deleteTheme": "刪除主題",
+      "enterThemeName": "輸入主題名稱",
+      "errors": {
+        "invalidFormat": "主題格式無效。"
+      },
+      "importedThemeName": "已匯入主題 {index}",
+      "restoreDefaults": "還原預設值",
+      "saveTheme": "儲存主題",
+      "themeColors": "主題顏色",
+      "themeName": "主題名稱",
+      "uploadBackground": "上傳背景"
     },
+    "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "攔截交通",
+    "trafficStopDispatchTitle": "攔截交通",
+    "trafficStopHotkey": "車牌辨識器",
     "unlockWindow": "解鎖視窗",
     "voice": "語音",
     "volume": "音量"
@@ -1525,6 +2050,7 @@
     "displayTabLabels": "顯示標籤頁名稱",
     "layoutCustomization": "自定義佈局",
     "newWindow": "新視窗",
+    "nextDesktop": "下一個桌面",
     "pinToTaskbar": "固定至工作列",
     "previousDesktop": "上一個桌面",
     "startMenu": "開始選單",
