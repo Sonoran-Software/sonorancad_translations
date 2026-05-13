@@ -6,7 +6,8 @@
   },
   "admin": {
     "accounts": {
-      "purge": "非アクティブを削除"
+      "purge": "非アクティブを削除",
+      "status": "ステータス"
     },
     "authenticate": {
       "authSubtext1": "コミュニティの所有者は、所有権を認証するために固有の識別キーをリクエストできます。"
@@ -51,6 +52,7 @@
         "rangeEnabled": "範囲有効",
         "reindexRecordsConfirmTitle": "すべてのレコードを再インデックス",
         "reindexRecordsHelp": "既存レコードの lookup インデックス フィールドを再保存し、カスタム検索タイプが最新のフィールド マッピングを使用するようにします。",
+        "requirement": "要件",
         "sectionFallback": "セクション {index}",
         "width": "幅"
       },
@@ -78,6 +80,9 @@
       },
       "servers": {
         "newServer": "新しいサーバー"
+      },
+      "unitStatus": {
+        "unavailable": "利用不可"
       }
     },
     "customRecords": {
@@ -88,6 +93,9 @@
       },
       "duplicateSection": "セクションを複製",
       "enableDuplicate": "複製を有効にする",
+      "errors": {
+        "minCiv": "エラー: このレコードタイプには検索可能な文字フィールドが十分にありません。(UID が 'first' および 'last' のフィールド)"
+      },
       "readOnly": "読み取り専用",
       "recordPreview": "レコードプレビュー",
       "recordTypes": {
@@ -95,6 +103,7 @@
         "policeReport": "警察報告書",
         "vehicleRegistration": "車両登録"
       },
+      "searchVehicles": "車両検索",
       "sectionLabel": "セクションラベル",
       "width": "幅"
     },
@@ -231,6 +240,7 @@
   },
   "common": {
     "actions": "操作",
+    "activeServer": "アクティブ サーバー",
     "close": "閉じる",
     "errors": {
       "limitReached": "エラー: 最大制限に達しました"
@@ -265,6 +275,7 @@
   },
   "CustomDomain": {
     "chooseYourDomainName": "ドメイン名を選択",
+    "communityID": "コミュニティID",
     "content": "コンテンツ",
     "copiedToClipboard": "クリップボードにコピーしました!",
     "setCustomDomain": "カスタムドメインを設定",
@@ -340,7 +351,8 @@
   },
   "infernoPager": {
     "messageRequired": "送信前にページ本文を入力してください。",
-    "playerIdsHint": "ページを直接指定する任意のオンライン単位。"
+    "playerIdsHint": "ページを直接指定する任意のオンライン単位。",
+    "unitsTooltip": "アクティブな配車通話をここにドラッグ＆ドロップして、添付されたユニットを追加することもできます。"
   },
   "login": {
     "buttons": {
@@ -363,7 +375,8 @@
   "management": {
     "currentPlayersLastHour2": "現在のプレイヤー（直近1時間）:",
     "node2": "ノード:",
-    "password": "管理用パスワード"
+    "password": "管理用パスワード",
+    "updateDb": "DBを更新"
   },
   "payment": {
     "buttons": {
@@ -425,6 +438,9 @@
       }
     },
     "callList": {
+      "columns": {
+        "callId": "通話ID"
+      },
       "previewCall": "通話をプレビュー",
       "priority": "優先度"
     },
@@ -437,6 +453,7 @@
       "recipients": "受信者",
       "recipientsHint": "チャットを開始または継続するオンラインの部隊を選択してください。",
       "ttsIncomingTooltip": "受信したチャットメッセージを読み上げる",
+      "ttsToggle": "テキスト読み上げを切り替え",
       "unableToSend": "現在チャットを送信できません。"
     },
     "command": {
@@ -451,12 +468,14 @@
       "shortcutUp": "ショートカット: (SHIFT) 上矢印"
     },
     "emergencyCall": {
-      "calls": "通話"
+      "calls": "通話",
+      "confirmRemoveAll": "すべての進行中の緊急通報を閉じてもよろしいですか?"
     },
     "header": {
       "activeCalls": "通話中",
       "activeUnits": "稼働中のユニット",
       "bodyCamRecordings": "ボディカム録画",
+      "chat": "チャット",
       "emergencyCalls": "緊急通報",
       "quickLinks": "クイックリンク",
       "rapidIQ": "RapidIQ",
@@ -484,6 +503,7 @@
     "lookup": {
       "columns": {
         "expiration": "有効期限",
+        "mi": "身分証明書",
         "name": "氏名",
         "status": "ステータス"
       },
@@ -508,6 +528,7 @@
         "counts": "件"
       },
       "editor": {
+        "addRecord": "記録を追加",
         "errors": {
           "nameOrPlate": "エラー: この記録には検索のため市民の名前または車両のナンバープレート番号が必要です!",
           "noCopiedLink": "エラー: レコードのリンクがコピーされていません!"
@@ -547,7 +568,8 @@
       "vehicle": {
         "types": {
           "aircraft": "航空機",
-          "coupe": "クーペ"
+          "coupe": "クーペ",
+          "suv": "SUV"
         }
       }
     },
@@ -595,6 +617,10 @@
       "createHeader": "CAD登録",
       "helpCommunityId3": "例: アリゾナ Serious Roleplay - ID: AZSRP",
       "helpCommunityWebsite": "あなたのコミュニティサイトは、フォーラム、discord、またはその他のサイトのURLです。この項目は任意であり、必須ではありません！"
+    },
+    "tooltips": {
+      "leaveCommunity": "このコミュニティを離れる。",
+      "search": "Sonoran CAD コミュニティを検索"
     }
   },
   "settings": {
@@ -608,6 +634,7 @@
       "addFrame": "フレームを追加",
       "configuration": "設定",
       "events": "イベント",
+      "field": "フィールド",
       "fontSize": "フォントサイズ",
       "fontWeight": "フォントの太さ:",
       "goveeWifi": "Govee WiFi",
@@ -642,6 +669,7 @@
         "inverseText": "インバーステキスト",
         "subtitleText": "字幕テキスト"
       },
+      "deleteTheme": "テーマを削除",
       "enterThemeName": "テーマ名を入力"
     }
   },
