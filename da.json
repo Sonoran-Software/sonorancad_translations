@@ -6,7 +6,8 @@
   },
   "admin": {
     "accounts": {
-      "purge": "Ryd inaktive"
+      "purge": "Ryd inaktive",
+      "status": "Status"
     },
     "authenticate": {
       "authSubtext1": "Fællesskabs ejere kan anmode om en unik identifikationsnøgle for at bekræfte deres ejerskab."
@@ -33,6 +34,7 @@
       },
       "info": {
         "name": "Navn",
+        "subtitle": "Undertekst",
         "website": "Websted"
       },
       "lookupTypes": {
@@ -50,6 +52,7 @@
         "rangeEnabled": "Område aktiveret",
         "reindexRecordsConfirmTitle": "Genindeksér alle poster",
         "reindexRecordsHelp": "Gemmer opslagindeksfelterne igen for eksisterende poster, så brugerdefinerede søgetyper bruger dine seneste feltmappinger.",
+        "requirement": "Krav",
         "sectionFallback": "Sektion {index}",
         "width": "Bredde"
       },
@@ -68,6 +71,7 @@
         "maskHint": "Eksempel: (###) ###-####",
         "newCodeId": "Ny kode-id",
         "options": "Indstillinger",
+        "resultCode": "Resultatkode",
         "searchCodes": "Søg koder",
         "tabs": {
           "defaults": "Standardsti"
@@ -76,6 +80,9 @@
       },
       "servers": {
         "newServer": "Ny server"
+      },
+      "unitStatus": {
+        "unavailable": "Ikke tilgængelig"
       }
     },
     "customRecords": {
@@ -86,12 +93,17 @@
       },
       "duplicateSection": "Duplikér sektion",
       "enableDuplicate": "Aktivér duplikat",
+      "errors": {
+        "minCiv": "FEJL: Denne posttype har ikke nok søgbare tegnfelter. (Felter med en UID på 'first' og 'last')"
+      },
       "readOnly": "Skrivebeskyttet",
+      "recordPreview": "Postforhåndsvisning",
       "recordTypes": {
         "fireRecord": "Brandregister",
         "policeReport": "Politirapport",
         "vehicleRegistration": "Køretøjsregistrering"
       },
+      "searchVehicles": "Søg køretøjer",
       "sectionLabel": "Sektionslabel",
       "width": "Bredde"
     },
@@ -99,6 +111,7 @@
       "abbreviation": "Forkortelse",
       "address": "Adresse",
       "agencies": "Agenturer",
+      "agency": "Myndighed",
       "errors": {
         "departmentLimit2": "afdelinger pr. distrikt!",
         "subdivisionExists": "Fejl: En underafdeling med dette navn findes allerede!"
@@ -113,6 +126,7 @@
       "zip": "Postnummer"
     },
     "general": {
+      "accounts": "Konti",
       "authenticate": "Godkend",
       "customRecords": "Brugerdefinerede poster",
       "discordIntegration": "Discord-integration",
@@ -129,6 +143,7 @@
         "dbSyncSubtext3": "Alle RED-felter er påkrævet. Hvis du ikke har en datakolonne til et valgfrit felt, så lad det blot være tomt.",
         "dbValue": "Databaseværdi",
         "fieldMapId": "Feltkortlægnings-ID",
+        "friendlyMappingExample": "Fx: 'drive_license' -> 'Førerkort'",
         "host": "Host/Adresse",
         "jsonColumnAbout": "Hvis denne kolonne er en JSON-datatype, kan du angive JSON-nøglen.",
         "testConnection": "Test forbindelse",
@@ -137,6 +152,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "Civile registreringer",
         "notifyAlwaysTooltip": "Spilleren vil altid modtage en privat besked, efter at kommandoen er behandlet.",
+        "notifyOnlyOnFailureTooltip": "Spilleren vil kun modtage en privat besked, hvis kommandoen mislykkes.",
         "trafficStopDescriptionHint": "Understøtter brugerdefinerede variabler.",
         "trafficStopMaxRadiusHint": "Hvis det nærmeste køretøj er længere væk end dette, falder trafikstopopkald tilbage til nummerpladeindtastningen eller udelader køretøjsoplysninger.",
         "trafficStopVariableBuildingNumber": "Det aktuelle bygningsnummer fra ER:LC.",
@@ -224,6 +240,7 @@
   },
   "common": {
     "actions": "Handlinger",
+    "activeServer": "Aktiv server",
     "close": "Luk",
     "errors": {
       "limitReached": "Fejl: maksimal grænse nået"
@@ -240,6 +257,7 @@
     "rateLimit": "Hastighedsgrænse",
     "refresh": "Opdater",
     "s": "s",
+    "search": "Søg",
     "start": "Start",
     "status": "Status",
     "stop": "Stop",
@@ -257,6 +275,7 @@
   },
   "CustomDomain": {
     "chooseYourDomainName": "Vælg dit domænenavn",
+    "communityID": "Community ID",
     "content": "Indhold",
     "copiedToClipboard": "Kopieret til udklipsholderen!",
     "setCustomDomain": "Angiv brugerdefineret domæne"
@@ -330,7 +349,9 @@
     "welcomeDescription": "Lær mere om Sonoran CAD's integrations-plugin-system, brugerdefinerede livekort, database-synkroniseringsfunktionalitet, iOS-/Android-apps og mere!"
   },
   "infernoPager": {
-    "messageRequired": "Indtast en sidetekst før du sender."
+    "messageRequired": "Indtast en sidetekst før du sender.",
+    "playerIdsHint": "Valgfrie onlineenheder til direkte paging.",
+    "unitsTooltip": "Du kan også trække og slippe et aktivt udsendelsesopkald her for at tilføje dets tilknyttede enheder."
   },
   "login": {
     "buttons": {
@@ -353,7 +374,8 @@
   "management": {
     "currentPlayersLastHour2": "Nuværende spillere (sidste 1 time):",
     "node2": "Node:",
-    "password": "Administrationsadgangskode"
+    "password": "Administrationsadgangskode",
+    "updateDb": "Opdatér DB"
   },
   "payment": {
     "buttons": {
@@ -382,11 +404,15 @@
       "startRecording": "Start optagelse"
     },
     "callEditor": {
+      "addNote": "Tilføj note",
       "callNotes": "Opkaldsnoter",
       "callViewer": "Opkaldsvisning",
       "confirmations": {
         "close1": "Du har sat opkaldsstatus til LUKKET.",
         "close3": "Denne samtale og alle data vil blive fjernet!"
+      },
+      "errors": {
+        "noTitle": "Fejl: Denne sag har ikke en titel angivet!"
       },
       "nearestStations": "Nærmeste stationer",
       "originOptions": {
@@ -394,6 +420,7 @@
       },
       "postal": "Postnummer",
       "previousCall": "Forrige opkald (venstre pil)",
+      "priority": "Prioritet",
       "statusOptions": {
         "active": "Aktiv"
       },
@@ -410,6 +437,9 @@
       }
     },
     "callList": {
+      "columns": {
+        "callId": "Opkalds-ID"
+      },
       "previewCall": "Forhåndsvis opkald",
       "priority": "Prioritet"
     },
@@ -422,6 +452,7 @@
       "recipients": "Modtagere",
       "recipientsHint": "Vælg online enheder for at starte eller fortsætte en chat.",
       "ttsIncomingTooltip": "Læs indgående chatbeskeder højt",
+      "ttsToggle": "Skift tekst til tale",
       "unableToSend": "Kan ikke sende chat lige nu."
     },
     "command": {
@@ -436,14 +467,17 @@
       "shortcutUp": "GENVEJ: (SHIFT) Pil op"
     },
     "emergencyCall": {
-      "calls": "Opkald"
+      "calls": "Opkald",
+      "confirmRemoveAll": "Er du sikker på, at du vil lukke alle aktive nødopkald?"
     },
     "header": {
       "activeCalls": "Aktive opkald",
       "activeUnits": "Aktive enheder",
       "bodyCamRecordings": "Bodycam-optagelser",
+      "chat": "Chat",
       "emergencyCalls": "Nødopkald",
       "quickLinks": "Hurtige links",
+      "rapidIQ": "RapidIQ",
       "records": "Poster",
       "signal": "Signal",
       "toneBoard": "Toneboard"
@@ -468,6 +502,7 @@
     "lookup": {
       "columns": {
         "expiration": "Udløb",
+        "mi": "M.I.",
         "name": "Navn",
         "status": "Status"
       },
@@ -492,11 +527,13 @@
         "counts": "Forhold"
       },
       "editor": {
+        "addRecord": "Tilføj post",
         "errors": {
           "nameOrPlate": "Fejl: Denne post skal have en civilpersons navn eller et køretøjs registreringsnummer for at blive søgt!",
           "noCopiedLink": "Fejl: Du har ikke et kopieret postlink!"
         },
         "history": {
+          "loadError": "Fejl: Kunne ikke indlæse posthistorik.",
           "noFieldChanges": "Ingen feltværdier blev ændret i denne post."
         },
         "pdf": "PDF",
@@ -530,7 +567,8 @@
       "vehicle": {
         "types": {
           "aircraft": "Fly",
-          "coupe": "Coupé"
+          "coupe": "Coupé",
+          "suv": "SUV"
         }
       }
     },
@@ -578,6 +616,10 @@
       "createHeader": "CAD-registrering",
       "helpCommunityId3": "F.eks. Arizona Serious Roleplay - ID: AZSRP",
       "helpCommunityWebsite": "Dit fællesskabswebsted er URL'en til dine fora, discord eller andet websted. Dette felt er VALGFRIT og er ikke påkrævet!"
+    },
+    "tooltips": {
+      "leaveCommunity": "Forlad dette fællesskab.",
+      "search": "Søg efter et Sonoran CAD-fællesskab."
     }
   },
   "settings": {
@@ -591,6 +633,7 @@
       "addFrame": "Tilføj ramme",
       "configuration": "Konfiguration",
       "events": "Begivenheder",
+      "field": "Felt",
       "fontSize": "Skriftstørrelse",
       "fontWeight": "Fontvægt:",
       "goveeWifi": "Govee WiFi",
@@ -625,6 +668,7 @@
         "inverseText": "Inverteret tekst",
         "subtitleText": "Underteksttekst"
       },
+      "deleteTheme": "Slet tema",
       "enterThemeName": "Indtast et temnavn"
     }
   },

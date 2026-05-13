@@ -6,7 +6,8 @@
   },
   "admin": {
     "accounts": {
-      "purge": "非アクティブを削除"
+      "purge": "非アクティブを削除",
+      "status": "ステータス"
     },
     "authenticate": {
       "authSubtext1": "コミュニティの所有者は、所有権を認証するために固有の識別キーをリクエストできます。"
@@ -33,6 +34,7 @@
       },
       "info": {
         "name": "名前",
+        "subtitle": "サブタイトル",
         "website": "ウェブサイト"
       },
       "lookupTypes": {
@@ -50,6 +52,7 @@
         "rangeEnabled": "範囲有効",
         "reindexRecordsConfirmTitle": "すべてのレコードを再インデックス",
         "reindexRecordsHelp": "既存レコードの lookup インデックス フィールドを再保存し、カスタム検索タイプが最新のフィールド マッピングを使用するようにします。",
+        "requirement": "要件",
         "sectionFallback": "セクション {index}",
         "width": "幅"
       },
@@ -68,6 +71,7 @@
         "maskHint": "例: (###) ###-####",
         "newCodeId": "新しいコード ID",
         "options": "オプション",
+        "resultCode": "結果コード",
         "searchCodes": "コードを検索",
         "tabs": {
           "defaults": "デフォルト パス"
@@ -76,6 +80,9 @@
       },
       "servers": {
         "newServer": "新しいサーバー"
+      },
+      "unitStatus": {
+        "unavailable": "利用不可"
       }
     },
     "customRecords": {
@@ -86,12 +93,17 @@
       },
       "duplicateSection": "セクションを複製",
       "enableDuplicate": "複製を有効にする",
+      "errors": {
+        "minCiv": "エラー: このレコードタイプには検索可能な文字フィールドが十分にありません。(UID が 'first' および 'last' のフィールド)"
+      },
       "readOnly": "読み取り専用",
+      "recordPreview": "レコードプレビュー",
       "recordTypes": {
         "fireRecord": "火災記録",
         "policeReport": "警察報告書",
         "vehicleRegistration": "車両登録"
       },
+      "searchVehicles": "車両検索",
       "sectionLabel": "セクションラベル",
       "width": "幅"
     },
@@ -99,6 +111,7 @@
       "abbreviation": "略称",
       "address": "アドレス",
       "agencies": "代理店",
+      "agency": "機関",
       "errors": {
         "departmentLimit2": "地区ごとの部門数!",
         "subdivisionExists": "エラー: この名前の区分はすでに存在します!"
@@ -113,6 +126,7 @@
       "zip": "郵便番号"
     },
     "general": {
+      "accounts": "アカウント",
       "authenticate": "認証",
       "customRecords": "カスタム記録",
       "discordIntegration": "Discord連携",
@@ -129,6 +143,7 @@
         "dbSyncSubtext3": "すべてのRED項目は必須です。オプション項目のデータ列がない場合は、空欄のままにしてください。",
         "dbValue": "データベース値",
         "fieldMapId": "フィールドマッピングID",
+        "friendlyMappingExample": "例: 'drive_license' -> '運転免許証'",
         "host": "ホスト/アドレス",
         "jsonColumnAbout": "この列が JSON データ型の場合、JSON キーを指定できます。",
         "testConnection": "接続をテスト",
@@ -137,6 +152,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "民間人登録",
         "notifyAlwaysTooltip": "コマンドが処理された後、プレイヤーは常にプライベートメッセージを受け取ります。",
+        "notifyOnlyOnFailureTooltip": "コマンドが失敗した場合のみ、プレイヤーはプライベートメッセージを受け取ります。",
         "trafficStopDescriptionHint": "カスタム変数をサポートします。",
         "trafficStopMaxRadiusHint": "最も近い車両がこれより遠い場合、交通停止の通話はナンバー入力にフォールバックするか、車両詳細を省略します。",
         "trafficStopVariableBuildingNumber": "ER:LCの現在の建物番号。",
@@ -224,6 +240,7 @@
   },
   "common": {
     "actions": "操作",
+    "activeServer": "アクティブ サーバー",
     "close": "閉じる",
     "errors": {
       "limitReached": "エラー: 最大制限に達しました"
@@ -240,6 +257,7 @@
     "rateLimit": "レート制限",
     "refresh": "更新",
     "s": "s",
+    "search": "検索",
     "start": "開始",
     "status": "ステータス",
     "stop": "停止",
@@ -257,6 +275,7 @@
   },
   "CustomDomain": {
     "chooseYourDomainName": "ドメイン名を選択",
+    "communityID": "コミュニティID",
     "content": "コンテンツ",
     "copiedToClipboard": "クリップボードにコピーしました!",
     "setCustomDomain": "カスタムドメインを設定",
@@ -331,7 +350,9 @@
     "welcomeDescription": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!"
   },
   "infernoPager": {
-    "messageRequired": "送信前にページ本文を入力してください。"
+    "messageRequired": "送信前にページ本文を入力してください。",
+    "playerIdsHint": "ページを直接指定する任意のオンライン単位。",
+    "unitsTooltip": "アクティブな配車通話をここにドラッグ＆ドロップして、添付されたユニットを追加することもできます。"
   },
   "login": {
     "buttons": {
@@ -354,7 +375,8 @@
   "management": {
     "currentPlayersLastHour2": "現在のプレイヤー（直近1時間）:",
     "node2": "ノード:",
-    "password": "管理用パスワード"
+    "password": "管理用パスワード",
+    "updateDb": "DBを更新"
   },
   "payment": {
     "buttons": {
@@ -383,11 +405,15 @@
       "startRecording": "録画開始"
     },
     "callEditor": {
+      "addNote": "メモを追加",
       "callNotes": "通話メモ",
       "callViewer": "通話ビューア",
       "confirmations": {
         "close1": "通話ステータスをCLOSEDに設定しました。",
         "close3": "この通話とすべてのデータが削除されます!"
+      },
+      "errors": {
+        "noTitle": "エラー: この通話にはタイトルが設定されていません!"
       },
       "nearestStations": "最寄りの駅",
       "originOptions": {
@@ -395,6 +421,7 @@
       },
       "postal": "郵便",
       "previousCall": "前回の通話（左矢印）",
+      "priority": "優先度",
       "statusOptions": {
         "active": "有効"
       },
@@ -411,6 +438,9 @@
       }
     },
     "callList": {
+      "columns": {
+        "callId": "通話ID"
+      },
       "previewCall": "通話をプレビュー",
       "priority": "優先度"
     },
@@ -423,6 +453,7 @@
       "recipients": "受信者",
       "recipientsHint": "チャットを開始または継続するオンラインの部隊を選択してください。",
       "ttsIncomingTooltip": "受信したチャットメッセージを読み上げる",
+      "ttsToggle": "テキスト読み上げを切り替え",
       "unableToSend": "現在チャットを送信できません。"
     },
     "command": {
@@ -437,14 +468,17 @@
       "shortcutUp": "ショートカット: (SHIFT) 上矢印"
     },
     "emergencyCall": {
-      "calls": "通話"
+      "calls": "通話",
+      "confirmRemoveAll": "すべての進行中の緊急通報を閉じてもよろしいですか?"
     },
     "header": {
       "activeCalls": "通話中",
       "activeUnits": "稼働中のユニット",
       "bodyCamRecordings": "ボディカム録画",
+      "chat": "チャット",
       "emergencyCalls": "緊急通報",
       "quickLinks": "クイックリンク",
+      "rapidIQ": "RapidIQ",
       "records": "記録",
       "signal": "シグナル",
       "toneBoard": "トーンボード"
@@ -469,6 +503,7 @@
     "lookup": {
       "columns": {
         "expiration": "有効期限",
+        "mi": "身分証明書",
         "name": "氏名",
         "status": "ステータス"
       },
@@ -493,11 +528,13 @@
         "counts": "件"
       },
       "editor": {
+        "addRecord": "記録を追加",
         "errors": {
           "nameOrPlate": "エラー: この記録には検索のため市民の名前または車両のナンバープレート番号が必要です!",
           "noCopiedLink": "エラー: レコードのリンクがコピーされていません!"
         },
         "history": {
+          "loadError": "エラー: レコード履歴の読み込みに失敗しました。",
           "noFieldChanges": "このエントリではフィールド値に変更はありません。"
         },
         "pdf": "PDF",
@@ -531,7 +568,8 @@
       "vehicle": {
         "types": {
           "aircraft": "航空機",
-          "coupe": "クーペ"
+          "coupe": "クーペ",
+          "suv": "SUV"
         }
       }
     },
@@ -579,6 +617,10 @@
       "createHeader": "CAD登録",
       "helpCommunityId3": "例: アリゾナ Serious Roleplay - ID: AZSRP",
       "helpCommunityWebsite": "あなたのコミュニティサイトは、フォーラム、discord、またはその他のサイトのURLです。この項目は任意であり、必須ではありません！"
+    },
+    "tooltips": {
+      "leaveCommunity": "このコミュニティを離れる。",
+      "search": "Sonoran CAD コミュニティを検索"
     }
   },
   "settings": {
@@ -592,6 +634,7 @@
       "addFrame": "フレームを追加",
       "configuration": "設定",
       "events": "イベント",
+      "field": "フィールド",
       "fontSize": "フォントサイズ",
       "fontWeight": "フォントの太さ:",
       "goveeWifi": "Govee WiFi",
@@ -626,6 +669,7 @@
         "inverseText": "インバーステキスト",
         "subtitleText": "字幕テキスト"
       },
+      "deleteTheme": "テーマを削除",
       "enterThemeName": "テーマ名を入力"
     }
   },

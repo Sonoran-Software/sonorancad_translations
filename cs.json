@@ -6,7 +6,8 @@
   },
   "admin": {
     "accounts": {
-      "purge": "Odstranit neaktivní"
+      "purge": "Odstranit neaktivní",
+      "status": "Stav"
     },
     "authenticate": {
       "authSubtext1": "Vlastníci komunity mohou požádat o jedinečný identifikační klíč k ověření svého vlastnictví."
@@ -33,6 +34,7 @@
       },
       "info": {
         "name": "Jméno",
+        "subtitle": "Podtitul",
         "website": "Webové stránky"
       },
       "lookupTypes": {
@@ -50,6 +52,7 @@
         "rangeEnabled": "Rozsah povolen",
         "reindexRecordsConfirmTitle": "Přeindexovat všechny záznamy",
         "reindexRecordsHelp": "Znovu uloží pole indexu vyhledávání pro stávající záznamy, aby vlastní typy vyhledávání používaly vaše nejnovější mapování polí.",
+        "requirement": "Požadavek",
         "sectionFallback": "Sekce {index}",
         "width": "Šířka"
       },
@@ -68,6 +71,7 @@
         "maskHint": "Příklad: (###) ###-####",
         "newCodeId": "Nové ID kódu",
         "options": "Možnosti",
+        "resultCode": "Kód výsledku",
         "searchCodes": "Hledat kódy",
         "tabs": {
           "defaults": "Výchozí cesta"
@@ -76,6 +80,9 @@
       },
       "servers": {
         "newServer": "Nový server"
+      },
+      "unitStatus": {
+        "unavailable": "Nedostupné"
       }
     },
     "customRecords": {
@@ -86,12 +93,17 @@
       },
       "duplicateSection": "Duplicitní sekce",
       "enableDuplicate": "Povolit duplikát",
+      "errors": {
+        "minCiv": "CHYBA: Tento typ záznamu nemá dostatek prohledávatelných textových polí. (Pole s UID „first“ a „last“)"
+      },
       "readOnly": "Pouze ke čtení",
+      "recordPreview": "Náhled záznamu",
       "recordTypes": {
         "fireRecord": "Požární záznam",
         "policeReport": "Policejní zpráva",
         "vehicleRegistration": "Registrace vozidla"
       },
+      "searchVehicles": "Vyhledat vozidla",
       "sectionLabel": "Popisek sekce",
       "width": "Šířka"
     },
@@ -99,6 +111,7 @@
       "abbreviation": "Zkratka",
       "address": "Adresa",
       "agencies": "Agentury",
+      "agency": "Agentura",
       "errors": {
         "departmentLimit2": "oddělení na okres!",
         "subdivisionExists": "Chyba: Oddělení s tímto názvem již existuje!"
@@ -113,6 +126,7 @@
       "zip": "PSČ"
     },
     "general": {
+      "accounts": "Účty",
       "authenticate": "Ověřit",
       "customRecords": "Vlastní záznamy",
       "discordIntegration": "Integrace Discordu",
@@ -129,6 +143,7 @@
         "dbSyncSubtext3": "Všechna pole červeně jsou povinná. Pokud nemáte datový sloupec pro volitelné pole, nechte ho prázdné.",
         "dbValue": "Hodnota databáze",
         "fieldMapId": "ID mapování polí",
+        "friendlyMappingExample": "Např: 'drive_license' -> 'Řidičský průkaz'",
         "host": "Host/adresa",
         "jsonColumnAbout": "Pokud je tento sloupec datového typu JSON, můžete zadat klíč JSON.",
         "testConnection": "Otestovat připojení",
@@ -137,6 +152,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "Registrace civilistů",
         "notifyAlwaysTooltip": "Hráč vždy obdrží soukromou zprávu po zpracování příkazu.",
+        "notifyOnlyOnFailureTooltip": "Hráč obdrží soukromou zprávu pouze v případě, že příkaz selže.",
         "trafficStopDescriptionHint": "Podporuje vlastní proměnné.",
         "trafficStopMaxRadiusHint": "Pokud je nejbližší vozidlo dál než toto, volání o zastavení provozu přejdou na zadání SPZ nebo vynechají údaje o vozidle.",
         "trafficStopVariableBuildingNumber": "Aktuální číslo budovy z ER:LC.",
@@ -224,6 +240,7 @@
   },
   "common": {
     "actions": "Akce",
+    "activeServer": "Aktivní server",
     "close": "Zavřít",
     "errors": {
       "limitReached": "Chyba: dosažen maximální limit"
@@ -240,6 +257,7 @@
     "rateLimit": "Omezení rychlosti",
     "refresh": "Obnovit",
     "s": "s",
+    "search": "Hledat",
     "start": "Začít",
     "status": "Stav",
     "stop": "Zastavit",
@@ -257,6 +275,7 @@
   },
   "CustomDomain": {
     "chooseYourDomainName": "Zvolte název své domény",
+    "communityID": "Community ID",
     "content": "Obsah",
     "copiedToClipboard": "Zkopírováno do schránky!",
     "setCustomDomain": "Nastavit vlastní doménu",
@@ -331,7 +350,9 @@
     "welcomeDescription": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!"
   },
   "infernoPager": {
-    "messageRequired": "Před odesláním zadejte tělo stránky."
+    "messageRequired": "Před odesláním zadejte tělo stránky.",
+    "playerIdsHint": "Volitelné online jednotky pro přímé stránkování.",
+    "unitsTooltip": "Můžete sem také přetáhnout aktivní dispečerský hovor a přidat k němu připojené jednotky."
   },
   "login": {
     "buttons": {
@@ -354,7 +375,8 @@
   "management": {
     "currentPlayersLastHour2": "Aktuální hráči (poslední 1 hodina):",
     "node2": "Uzel:",
-    "password": "Heslo pro správu"
+    "password": "Heslo pro správu",
+    "updateDb": "Aktualizovat DB"
   },
   "payment": {
     "buttons": {
@@ -383,11 +405,15 @@
       "startRecording": "Spustit nahrávání"
     },
     "callEditor": {
+      "addNote": "Přidat poznámku",
       "callNotes": "Poznámky k hovoru",
       "callViewer": "Prohlížeč hovorů",
       "confirmations": {
         "close1": "Nastavili jste stav hovoru na ZAVŘENO.",
         "close3": "Tento hovor a všechna data budou odstraněny!"
+      },
+      "errors": {
+        "noTitle": "Chyba: Tento hovor nemá nastavený název!"
       },
       "nearestStations": "Nejbližší stanice",
       "originOptions": {
@@ -395,6 +421,7 @@
       },
       "postal": "Poštovní",
       "previousCall": "Předchozí hovor (šipka vlevo)",
+      "priority": "Priorita",
       "statusOptions": {
         "active": "AKTIVNÍ"
       },
@@ -411,6 +438,9 @@
       }
     },
     "callList": {
+      "columns": {
+        "callId": "ID hovoru"
+      },
       "previewCall": "Náhled hovoru",
       "priority": "Priorita"
     },
@@ -423,6 +453,7 @@
       "recipients": "Příjemci",
       "recipientsHint": "Vyberte online jednotky pro zahájení nebo pokračování chatu.",
       "ttsIncomingTooltip": "Předčítat příchozí zprávy v chatu",
+      "ttsToggle": "Přepnout text na řeč",
       "unableToSend": "Chat nyní nelze odeslat."
     },
     "command": {
@@ -437,14 +468,17 @@
       "shortcutUp": "Zkratka: (SHIFT) šipka nahoru"
     },
     "emergencyCall": {
-      "calls": "Volání"
+      "calls": "Volání",
+      "confirmRemoveAll": "Opravdu chcete zavřít všechny aktivní tísňové hovory?"
     },
     "header": {
       "activeCalls": "Aktivní hovory",
       "activeUnits": "Aktivní jednotky",
       "bodyCamRecordings": "Záznamy z tělesné kamery",
+      "chat": "Chat",
       "emergencyCalls": "Nouzová volání",
       "quickLinks": "Rychlé odkazy",
+      "rapidIQ": "RapidIQ",
       "records": "Záznamy",
       "signal": "Signal",
       "toneBoard": "Zvuková deska"
@@ -469,6 +503,7 @@
     "lookup": {
       "columns": {
         "expiration": "Platnost",
+        "mi": "M.I.",
         "name": "Jméno",
         "status": "Stav"
       },
@@ -493,11 +528,13 @@
         "counts": "Obvinění"
       },
       "editor": {
+        "addRecord": "Přidat záznam",
         "errors": {
           "nameOrPlate": "Chyba: Tento záznam musí mít jméno civilisty nebo registrační značku vozidla, aby mohl být vyhledán!",
           "noCopiedLink": "Chyba: Nemáte zkopírovaný odkaz na záznam!"
         },
         "history": {
+          "loadError": "Chyba: Nepodařilo se načíst historii záznamu.",
           "noFieldChanges": "V tomto záznamu se nezměnily žádné hodnoty polí."
         },
         "pdf": "PDF",
@@ -531,7 +568,8 @@
       "vehicle": {
         "types": {
           "aircraft": "Letadlo",
-          "coupe": "Kupé"
+          "coupe": "Kupé",
+          "suv": "SUV"
         }
       }
     },
@@ -579,6 +617,10 @@
       "createHeader": "Registrace CAD",
       "helpCommunityId3": "NAPŘ: Arizona Serious Roleplay - ID: AZSRP",
       "helpCommunityWebsite": "Vaše komunitní webové stránky jsou URL vašich fór, Discordu nebo jiného webu. Toto pole je NEPOVINNÉ a není vyžadováno!"
+    },
+    "tooltips": {
+      "leaveCommunity": "Opustit tuto komunitu.",
+      "search": "Vyhledat komunitu Sonoran CAD."
     }
   },
   "settings": {
@@ -592,6 +634,7 @@
       "addFrame": "Přidat rámeček",
       "configuration": "Konfigurace",
       "events": "Události",
+      "field": "Pole",
       "fontSize": "Velikost písma",
       "fontWeight": "Tloušťka písma:",
       "goveeWifi": "Govee WiFi",
@@ -626,6 +669,7 @@
         "inverseText": "Invertovaný text",
         "subtitleText": "Podtitulkový text"
       },
+      "deleteTheme": "Smazat motiv",
       "enterThemeName": "Zadejte název motivu"
     }
   },
