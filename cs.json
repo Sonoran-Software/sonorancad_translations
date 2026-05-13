@@ -33,6 +33,7 @@
       },
       "info": {
         "name": "Jméno",
+        "subtitle": "Podtitul",
         "website": "Webové stránky"
       },
       "lookupTypes": {
@@ -68,6 +69,7 @@
         "maskHint": "Příklad: (###) ###-####",
         "newCodeId": "Nové ID kódu",
         "options": "Možnosti",
+        "resultCode": "Kód výsledku",
         "searchCodes": "Hledat kódy",
         "tabs": {
           "defaults": "Výchozí cesta"
@@ -87,6 +89,7 @@
       "duplicateSection": "Duplicitní sekce",
       "enableDuplicate": "Povolit duplikát",
       "readOnly": "Pouze ke čtení",
+      "recordPreview": "Náhled záznamu",
       "recordTypes": {
         "fireRecord": "Požární záznam",
         "policeReport": "Policejní zpráva",
@@ -99,6 +102,7 @@
       "abbreviation": "Zkratka",
       "address": "Adresa",
       "agencies": "Agentury",
+      "agency": "Agentura",
       "errors": {
         "departmentLimit2": "oddělení na okres!",
         "subdivisionExists": "Chyba: Oddělení s tímto názvem již existuje!"
@@ -113,6 +117,7 @@
       "zip": "PSČ"
     },
     "general": {
+      "accounts": "Účty",
       "authenticate": "Ověřit",
       "customRecords": "Vlastní záznamy",
       "discordIntegration": "Integrace Discordu",
@@ -129,6 +134,7 @@
         "dbSyncSubtext3": "Všechna pole červeně jsou povinná. Pokud nemáte datový sloupec pro volitelné pole, nechte ho prázdné.",
         "dbValue": "Hodnota databáze",
         "fieldMapId": "ID mapování polí",
+        "friendlyMappingExample": "Např: 'drive_license' -> 'Řidičský průkaz'",
         "host": "Host/adresa",
         "jsonColumnAbout": "Pokud je tento sloupec datového typu JSON, můžete zadat klíč JSON.",
         "testConnection": "Otestovat připojení",
@@ -137,6 +143,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "Registrace civilistů",
         "notifyAlwaysTooltip": "Hráč vždy obdrží soukromou zprávu po zpracování příkazu.",
+        "notifyOnlyOnFailureTooltip": "Hráč obdrží soukromou zprávu pouze v případě, že příkaz selže.",
         "trafficStopDescriptionHint": "Podporuje vlastní proměnné.",
         "trafficStopMaxRadiusHint": "Pokud je nejbližší vozidlo dál než toto, volání o zastavení provozu přejdou na zadání SPZ nebo vynechají údaje o vozidle.",
         "trafficStopVariableBuildingNumber": "Aktuální číslo budovy z ER:LC.",
@@ -240,6 +247,7 @@
     "rateLimit": "Omezení rychlosti",
     "refresh": "Obnovit",
     "s": "s",
+    "search": "Hledat",
     "start": "Začít",
     "status": "Stav",
     "stop": "Zastavit",
@@ -331,7 +339,8 @@
     "welcomeDescription": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!"
   },
   "infernoPager": {
-    "messageRequired": "Před odesláním zadejte tělo stránky."
+    "messageRequired": "Před odesláním zadejte tělo stránky.",
+    "playerIdsHint": "Volitelné online jednotky pro přímé stránkování."
   },
   "login": {
     "buttons": {
@@ -383,11 +392,15 @@
       "startRecording": "Spustit nahrávání"
     },
     "callEditor": {
+      "addNote": "Přidat poznámku",
       "callNotes": "Poznámky k hovoru",
       "callViewer": "Prohlížeč hovorů",
       "confirmations": {
         "close1": "Nastavili jste stav hovoru na ZAVŘENO.",
         "close3": "Tento hovor a všechna data budou odstraněny!"
+      },
+      "errors": {
+        "noTitle": "Chyba: Tento hovor nemá nastavený název!"
       },
       "nearestStations": "Nejbližší stanice",
       "originOptions": {
@@ -395,6 +408,7 @@
       },
       "postal": "Poštovní",
       "previousCall": "Předchozí hovor (šipka vlevo)",
+      "priority": "Priorita",
       "statusOptions": {
         "active": "AKTIVNÍ"
       },
@@ -445,6 +459,7 @@
       "bodyCamRecordings": "Záznamy z tělesné kamery",
       "emergencyCalls": "Nouzová volání",
       "quickLinks": "Rychlé odkazy",
+      "rapidIQ": "RapidIQ",
       "records": "Záznamy",
       "signal": "Signal",
       "toneBoard": "Zvuková deska"
@@ -498,6 +513,7 @@
           "noCopiedLink": "Chyba: Nemáte zkopírovaný odkaz na záznam!"
         },
         "history": {
+          "loadError": "Chyba: Nepodařilo se načíst historii záznamu.",
           "noFieldChanges": "V tomto záznamu se nezměnily žádné hodnoty polí."
         },
         "pdf": "PDF",

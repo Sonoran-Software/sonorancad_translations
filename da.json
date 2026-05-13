@@ -33,6 +33,7 @@
       },
       "info": {
         "name": "Navn",
+        "subtitle": "Undertekst",
         "website": "Websted"
       },
       "lookupTypes": {
@@ -68,6 +69,7 @@
         "maskHint": "Eksempel: (###) ###-####",
         "newCodeId": "Ny kode-id",
         "options": "Indstillinger",
+        "resultCode": "Resultatkode",
         "searchCodes": "Søg koder",
         "tabs": {
           "defaults": "Standardsti"
@@ -87,6 +89,7 @@
       "duplicateSection": "Duplikér sektion",
       "enableDuplicate": "Aktivér duplikat",
       "readOnly": "Skrivebeskyttet",
+      "recordPreview": "Postforhåndsvisning",
       "recordTypes": {
         "fireRecord": "Brandregister",
         "policeReport": "Politirapport",
@@ -99,6 +102,7 @@
       "abbreviation": "Forkortelse",
       "address": "Adresse",
       "agencies": "Agenturer",
+      "agency": "Myndighed",
       "errors": {
         "departmentLimit2": "afdelinger pr. distrikt!",
         "subdivisionExists": "Fejl: En underafdeling med dette navn findes allerede!"
@@ -113,6 +117,7 @@
       "zip": "Postnummer"
     },
     "general": {
+      "accounts": "Konti",
       "authenticate": "Godkend",
       "customRecords": "Brugerdefinerede poster",
       "discordIntegration": "Discord-integration",
@@ -129,6 +134,7 @@
         "dbSyncSubtext3": "Alle RED-felter er påkrævet. Hvis du ikke har en datakolonne til et valgfrit felt, så lad det blot være tomt.",
         "dbValue": "Databaseværdi",
         "fieldMapId": "Feltkortlægnings-ID",
+        "friendlyMappingExample": "Fx: 'drive_license' -> 'Førerkort'",
         "host": "Host/Adresse",
         "jsonColumnAbout": "Hvis denne kolonne er en JSON-datatype, kan du angive JSON-nøglen.",
         "testConnection": "Test forbindelse",
@@ -137,6 +143,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "Civile registreringer",
         "notifyAlwaysTooltip": "Spilleren vil altid modtage en privat besked, efter at kommandoen er behandlet.",
+        "notifyOnlyOnFailureTooltip": "Spilleren vil kun modtage en privat besked, hvis kommandoen mislykkes.",
         "trafficStopDescriptionHint": "Understøtter brugerdefinerede variabler.",
         "trafficStopMaxRadiusHint": "Hvis det nærmeste køretøj er længere væk end dette, falder trafikstopopkald tilbage til nummerpladeindtastningen eller udelader køretøjsoplysninger.",
         "trafficStopVariableBuildingNumber": "Det aktuelle bygningsnummer fra ER:LC.",
@@ -240,6 +247,7 @@
     "rateLimit": "Hastighedsgrænse",
     "refresh": "Opdater",
     "s": "s",
+    "search": "Søg",
     "start": "Start",
     "status": "Status",
     "stop": "Stop",
@@ -330,7 +338,8 @@
     "welcomeDescription": "Lær mere om Sonoran CAD's integrations-plugin-system, brugerdefinerede livekort, database-synkroniseringsfunktionalitet, iOS-/Android-apps og mere!"
   },
   "infernoPager": {
-    "messageRequired": "Indtast en sidetekst før du sender."
+    "messageRequired": "Indtast en sidetekst før du sender.",
+    "playerIdsHint": "Valgfrie onlineenheder til direkte paging."
   },
   "login": {
     "buttons": {
@@ -382,11 +391,15 @@
       "startRecording": "Start optagelse"
     },
     "callEditor": {
+      "addNote": "Tilføj note",
       "callNotes": "Opkaldsnoter",
       "callViewer": "Opkaldsvisning",
       "confirmations": {
         "close1": "Du har sat opkaldsstatus til LUKKET.",
         "close3": "Denne samtale og alle data vil blive fjernet!"
+      },
+      "errors": {
+        "noTitle": "Fejl: Denne sag har ikke en titel angivet!"
       },
       "nearestStations": "Nærmeste stationer",
       "originOptions": {
@@ -394,6 +407,7 @@
       },
       "postal": "Postnummer",
       "previousCall": "Forrige opkald (venstre pil)",
+      "priority": "Prioritet",
       "statusOptions": {
         "active": "Aktiv"
       },
@@ -444,6 +458,7 @@
       "bodyCamRecordings": "Bodycam-optagelser",
       "emergencyCalls": "Nødopkald",
       "quickLinks": "Hurtige links",
+      "rapidIQ": "RapidIQ",
       "records": "Poster",
       "signal": "Signal",
       "toneBoard": "Toneboard"
@@ -497,6 +512,7 @@
           "noCopiedLink": "Fejl: Du har ikke et kopieret postlink!"
         },
         "history": {
+          "loadError": "Fejl: Kunne ikke indlæse posthistorik.",
           "noFieldChanges": "Ingen feltværdier blev ændret i denne post."
         },
         "pdf": "PDF",

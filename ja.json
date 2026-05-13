@@ -33,6 +33,7 @@
       },
       "info": {
         "name": "名前",
+        "subtitle": "サブタイトル",
         "website": "ウェブサイト"
       },
       "lookupTypes": {
@@ -68,6 +69,7 @@
         "maskHint": "例: (###) ###-####",
         "newCodeId": "新しいコード ID",
         "options": "オプション",
+        "resultCode": "結果コード",
         "searchCodes": "コードを検索",
         "tabs": {
           "defaults": "デフォルト パス"
@@ -87,6 +89,7 @@
       "duplicateSection": "セクションを複製",
       "enableDuplicate": "複製を有効にする",
       "readOnly": "読み取り専用",
+      "recordPreview": "レコードプレビュー",
       "recordTypes": {
         "fireRecord": "火災記録",
         "policeReport": "警察報告書",
@@ -99,6 +102,7 @@
       "abbreviation": "略称",
       "address": "アドレス",
       "agencies": "代理店",
+      "agency": "機関",
       "errors": {
         "departmentLimit2": "地区ごとの部門数!",
         "subdivisionExists": "エラー: この名前の区分はすでに存在します!"
@@ -113,6 +117,7 @@
       "zip": "郵便番号"
     },
     "general": {
+      "accounts": "アカウント",
       "authenticate": "認証",
       "customRecords": "カスタム記録",
       "discordIntegration": "Discord連携",
@@ -129,6 +134,7 @@
         "dbSyncSubtext3": "すべてのRED項目は必須です。オプション項目のデータ列がない場合は、空欄のままにしてください。",
         "dbValue": "データベース値",
         "fieldMapId": "フィールドマッピングID",
+        "friendlyMappingExample": "例: 'drive_license' -> '運転免許証'",
         "host": "ホスト/アドレス",
         "jsonColumnAbout": "この列が JSON データ型の場合、JSON キーを指定できます。",
         "testConnection": "接続をテスト",
@@ -137,6 +143,7 @@
       "erlc": {
         "civilianRegistrationsHeader": "民間人登録",
         "notifyAlwaysTooltip": "コマンドが処理された後、プレイヤーは常にプライベートメッセージを受け取ります。",
+        "notifyOnlyOnFailureTooltip": "コマンドが失敗した場合のみ、プレイヤーはプライベートメッセージを受け取ります。",
         "trafficStopDescriptionHint": "カスタム変数をサポートします。",
         "trafficStopMaxRadiusHint": "最も近い車両がこれより遠い場合、交通停止の通話はナンバー入力にフォールバックするか、車両詳細を省略します。",
         "trafficStopVariableBuildingNumber": "ER:LCの現在の建物番号。",
@@ -240,6 +247,7 @@
     "rateLimit": "レート制限",
     "refresh": "更新",
     "s": "s",
+    "search": "検索",
     "start": "開始",
     "status": "ステータス",
     "stop": "停止",
@@ -331,7 +339,8 @@
     "welcomeDescription": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!"
   },
   "infernoPager": {
-    "messageRequired": "送信前にページ本文を入力してください。"
+    "messageRequired": "送信前にページ本文を入力してください。",
+    "playerIdsHint": "ページを直接指定する任意のオンライン単位。"
   },
   "login": {
     "buttons": {
@@ -383,11 +392,15 @@
       "startRecording": "録画開始"
     },
     "callEditor": {
+      "addNote": "メモを追加",
       "callNotes": "通話メモ",
       "callViewer": "通話ビューア",
       "confirmations": {
         "close1": "通話ステータスをCLOSEDに設定しました。",
         "close3": "この通話とすべてのデータが削除されます!"
+      },
+      "errors": {
+        "noTitle": "エラー: この通話にはタイトルが設定されていません!"
       },
       "nearestStations": "最寄りの駅",
       "originOptions": {
@@ -395,6 +408,7 @@
       },
       "postal": "郵便",
       "previousCall": "前回の通話（左矢印）",
+      "priority": "優先度",
       "statusOptions": {
         "active": "有効"
       },
@@ -445,6 +459,7 @@
       "bodyCamRecordings": "ボディカム録画",
       "emergencyCalls": "緊急通報",
       "quickLinks": "クイックリンク",
+      "rapidIQ": "RapidIQ",
       "records": "記録",
       "signal": "シグナル",
       "toneBoard": "トーンボード"
@@ -498,6 +513,7 @@
           "noCopiedLink": "エラー: レコードのリンクがコピーされていません!"
         },
         "history": {
+          "loadError": "エラー: レコード履歴の読み込みに失敗しました。",
           "noFieldChanges": "このエントリではフィールド値に変更はありません。"
         },
         "pdf": "PDF",
