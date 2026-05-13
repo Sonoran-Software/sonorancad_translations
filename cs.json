@@ -30,7 +30,8 @@
         "serverLimit2": "servery!"
       },
       "geo": {
-        "geographicalSettings": "Geografická nastavení"
+        "geographicalSettings": "Geografická nastavení",
+        "penalCodeName": "Název trestního zákoníku"
       },
       "info": {
         "name": "Jméno",
@@ -73,6 +74,7 @@
         "options": "Možnosti",
         "resultCode": "Kód výsledku",
         "searchCodes": "Hledat kódy",
+        "searchFlows": "Hledat toky",
         "tabs": {
           "defaults": "Výchozí cesta"
         },
@@ -241,6 +243,7 @@
   "common": {
     "actions": "Akce",
     "activeServer": "Aktivní server",
+    "cancel": "Zrušit",
     "close": "Zavřít",
     "errors": {
       "limitReached": "Chyba: dosažen maximální limit"
@@ -304,6 +307,9 @@
             "description": "Bezplatné CAD pro ER:LC s 3D živou mapou, bodycamem, nouzovými hovory, nástroji pro postavu a podporou herního overlaye."
           },
           "modules": {
+            "character": {
+              "title": "Vytvoření postavy"
+            },
             "emergency": {
               "title": "Nouzová volání"
             },
@@ -364,6 +370,7 @@
       "resetPassword": "Resetovat heslo"
     },
     "linkAuth": {
+      "idPageBackToMenu": "Zpět do menu",
       "linkPageDescription": "Přihlaste se ke svému účtu a poté zadejte 4znakový kód zobrazený ve vloženém přihlašovacím okně.",
       "success": "Přihlášení propojeno. Nyní se můžete vrátit do původního vloženého okna."
     },
@@ -416,6 +423,7 @@
         "noTitle": "Chyba: Tento hovor nemá nastavený název!"
       },
       "nearestStations": "Nejbližší stanice",
+      "nextCall": "Další hovor (šipka doprava)",
       "originOptions": {
         "walkUp": "Docházka bez předchozího oznámení"
       },
@@ -426,6 +434,7 @@
         "active": "AKTIVNÍ"
       },
       "statusTimers": {
+        "descCountdown": "Když je stav jednotky nastaven na {status}, spusťte odpočet.",
         "descCountup": "Když je stav jednotky nastaven na {status}, spusťte odpočet nahoru."
       },
       "unitStatusAttachedHint": "Když je jednotka připojena k hovoru, aktualizujte její stav.",
@@ -488,7 +497,8 @@
         "dispatchCall": "VÝJEZD"
       },
       "controls": {
-        "right": "VPRAVO"
+        "right": "VPRAVO",
+        "up": "NAHORU"
       },
       "speedDisplay": "{multiplier}x ({speed})"
     },
@@ -507,6 +517,7 @@
         "name": "Jméno",
         "status": "Stav"
       },
+      "flags": "Vlajky:",
       "recordsNoData": "Žádné záznamy nejsou k dispozici",
       "refresh": "Obnovit"
     },
@@ -562,6 +573,7 @@
       },
       "speed": {
         "courtDate": "Datum jednání soudu",
+        "other": "Ostatní",
         "speedLimit": "Rychlostní limit",
         "vehicleSpeed": "Rychlost vozidla"
       },
@@ -569,6 +581,7 @@
         "types": {
           "aircraft": "Letadlo",
           "coupe": "Kupé",
+          "sedan": "sedan",
           "suv": "SUV"
         }
       }
