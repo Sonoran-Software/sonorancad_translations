@@ -1,20 +1,32 @@
 {
   "account": {
+    "delete": {
+      "confirm": "アカウントを削除",
+      "message": "アカウントを削除して、関連するすべてのデータを永久に失ってもよろしいですか？"
+    },
     "labels": {
+      "email": "メール",
       "emailMe": "重要なお知らせ、更新、プロモーションをメールで受け取る。"
     }
   },
   "admin": {
+    "10Codes": {
+      "code": "コード"
+    },
     "accounts": {
+      "joined": "参加済み",
+      "permissions": "権限",
       "purge": "非アクティブを削除",
       "status": "ステータス"
     },
     "authenticate": {
+      "authHeader": "CAD所有権を認証",
       "authSubtext1": "コミュニティの所有者は、所有権を認証するために固有の識別キーをリクエストできます。"
     },
     "communityId": {
       "changeHeader": "コミュニティIDを変更",
       "changeSubtext1": "コミュニティの所有者は新しいコミュニティIDをリクエストできます。",
+      "newId": "新しい ID",
       "requestChange": "変更をリクエスト"
     },
     "customization": {
@@ -22,53 +34,87 @@
       "customLogin": {
         "url": "URL"
       },
+      "discordRpc": {
+        "clientId": "クライアント ID"
+      },
       "emails": {
         "accountRegistration": "アカウント登録",
-        "subheader": "サブヘッダー"
+        "customEmails": "カスタムコミュニティメール",
+        "header": "ヘッダー",
+        "subheader": "サブヘッダー",
+        "subtext1": "カスタムログイン画面からアカウント作成時やパスワードリセット時にユーザーが受信するメールをカスタマイズします。"
       },
       "errors": {
-        "serverLimit2": "サーバー!"
+        "serverLimit2": "サーバー!",
+        "serverMinimum": "エラー: 少なくとも1つのサーバーが必要です！"
       },
       "geo": {
         "geographicalSettings": "地理設定",
-        "penalCodeName": "刑法名"
+        "penalCodeName": "刑法名",
+        "tenCodeName": "10コード名"
+      },
+      "infernoPagers": {
+        "infernoPagers": "インフェルノページャー",
+        "loading": "埋め込みの Inferno エディタは、現在のページャー設定を自動的に読み込み、同期します。"
       },
       "info": {
+        "communityInfo": "コミュニティ情報",
+        "discord": "Discord",
         "name": "名前",
         "subtitle": "サブタイトル",
         "website": "ウェブサイト"
       },
       "lookupTypes": {
+        "addSearchType": "検索タイプを追加",
+        "advancedFields": "高度なフィールド",
         "advancedFieldsDescription": "対応フィールドタイプ: テキスト、数値、ドロップダウン、住所。",
         "configTitle": "検索タイプ設定",
         "displayName": "表示名",
         "dropdownOptions": "ドロップダウン オプション",
         "dropdownOptionsHelp": "各オプションを追加するにはEnterキーを押してください。",
         "fieldFallback": "フィールド {index}",
+        "fieldMappingId": "フィールドマッピングID",
         "fieldTypeDropdown": "ドロップダウン",
+        "lookupTypes": "照会タイプ",
+        "mappableFieldsCount": "{count} 件のマッピング可能なフィールド",
+        "newField": "新しいフィールド",
+        "noFieldsConfigured": "まだフィールドが設定されていません。",
         "noFieldSelected": "フィールドが選択されていません",
         "noRecordTemplates": "マップ可能なフィールドを持つレコードテンプレートはありません。",
         "optional": "任意",
+        "placeholder": "プレースホルダー",
         "rangeDisabled": "範囲無効",
         "rangeEnabled": "範囲有効",
         "reindexRecordsConfirmTitle": "すべてのレコードを再インデックス",
         "reindexRecordsHelp": "既存レコードの lookup インデックス フィールドを再保存し、カスタム検索タイプが最新のフィールド マッピングを使用するようにします。",
+        "required": "必須",
         "requirement": "要件",
         "sectionFallback": "セクション {index}",
-        "width": "幅"
+        "width": "幅",
+        "widthHelp": "この検索フィールドがルックアップウィンドウでどのくらい広く表示されるかを制御します。表示方法を確認するには、プレビューアイコンをクリックしてください。"
+      },
+      "notificationTones": {
+        "notificationTones": "通知音"
       },
       "otherCustomization": "その他のカスタマイズ機能",
       "pageColors": {
-        "menuPageBkg": "メニューページ背景"
+        "menuPageBkg": "メニューページ背景",
+        "setToDefault": "デフォルトの色に設定"
       },
       "quickLinks": {
+        "deleteLink": "リンクを削除",
+        "newLink": "新しいリンク",
         "quickLinks": "クイックリンク"
       },
       "rapidIQEditor": {
+        "addCode": "コードを追加",
+        "addCondition": "条件を追加",
+        "addFlow": "フローを追加",
         "addOption": "オプションを追加",
         "codesHelp": "レスポンスコードを管理します。Code IDはフローで使用され、Code Nameはディスパッチに表示されます。",
         "defaultQuestions": "デフォルトの質問",
         "flowsHelp": "順序付けされた条件でルーティングロジックを構築します。各フローは1つの結果コードで終了します。",
+        "headerHelp": "RapidIQ の質問、応答オプション、コード、フロールールを設定します。",
         "maskHint": "例: (###) ###-####",
         "newCodeId": "新しいコード ID",
         "options": "オプション",
@@ -76,13 +122,26 @@
         "searchCodes": "コードを検索",
         "searchFlows": "フローを検索",
         "selectQuestionPrompt": "編集する質問を選択または追加してください。",
+        "stats": {
+          "defaults": "デフォルト",
+          "questions": "質問"
+        },
         "tabs": {
-          "defaults": "デフォルト パス"
+          "codes": "コード",
+          "defaults": "デフォルト パス",
+          "flows": "フロー"
         },
         "value": "値"
       },
+      "restrictions": {
+        "maxRegistrations": "民間人車両登録の最大数 *",
+        "note": "* これらの制限は、Database Sync が有効なコミュニティには適用されません。",
+        "userAccountRestrictions": "ユーザーアカウントの制限"
+      },
       "servers": {
-        "newServer": "新しいサーバー"
+        "description": "説明",
+        "newServer": "新しいサーバー",
+        "subtext2": "Sonoran CADでは、同じ記録を共有しながら、オンラインユニットとディスパッチを複数のサーバー間で分離できます。"
       },
       "unitStatus": {
         "unavailable": "利用不可"
@@ -96,16 +155,29 @@
       },
       "duplicateSection": "セクションを複製",
       "enableDuplicate": "複製を有効にする",
+      "enableMapping": "マッピングを有効化",
       "errors": {
-        "minCiv": "エラー: このレコードタイプには検索可能な文字フィールドが十分にありません。(UID が 'first' および 'last' のフィールド)"
+        "maxStatus": "エラー: このレコードタイプにはカスタムタイプの「status」フィールドが多すぎます。",
+        "maxVeh": "エラー: このレコードタイプには検索可能な車両セクションが多すぎます。 (UID が 'plate' のフィールド)",
+        "minCiv": "エラー: このレコードタイプには検索可能な文字フィールドが十分にありません。(UID が 'first' および 'last' のフィールド)",
+        "minStatus": "エラー: このレコードタイプにはカスタムタイプの「status」フィールドが1つ必要です。"
       },
+      "existingHeader": "既存のカスタムレコードタイプ",
+      "maskNumber": "#: 数字",
+      "name": "名前",
       "readOnly": "読み取り専用",
       "recordPreview": "レコードプレビュー",
+      "recordTypeName": "記録の種類名",
       "recordTypes": {
+        "dmvRecord": "DMV 記録",
         "fireRecord": "火災記録",
+        "lawReport": "法務報告",
         "policeReport": "警察報告書",
-        "vehicleRegistration": "車両登録"
+        "vehicleRegistration": "車両登録",
+        "warrant": "令状"
       },
+      "requiredAbout": "必須項目",
+      "reverseMap": "逆引きマップ",
       "searchVehicles": "車両検索",
       "sectionLabel": "セクションラベル",
       "width": "幅"
@@ -115,15 +187,32 @@
       "address": "アドレス",
       "agencies": "代理店",
       "agency": "機関",
+      "department": "部門",
+      "description": "説明",
       "errors": {
+        "agencyExists": "エラー: この名前の代理店はすでに存在します!",
         "departmentLimit2": "地区ごとの部門数!",
+        "generalLimit1": "エラー: あなたのコミュニティは上限が設定されています",
         "subdivisionExists": "エラー: この名前の区分はすでに存在します!"
       },
       "modifyAgency": {
-        "name": "機関名"
+        "name": "機関名",
+        "remove": {
+          "confirmRemove1": "本当にこの代理店を削除しますか"
+        }
+      },
+      "modifyDepartment": {
+        "abbreviation": "略称",
+        "confirmRemove2": "この部門と含まれるすべての下位区分が削除されます!",
+        "zip": "郵便番号"
+      },
+      "modifySubdivision": {
+        "description": "説明"
       },
       "persistentGroups": {
-        "groupName": "グループ名"
+        "groupName": "グループ名",
+        "limitReached": "エラー: '{group}' には一度に {max} 単位しか保持できません。",
+        "title": "永続ユニットグループ"
       },
       "subdivisions": "下位区分",
       "zip": "郵便番号"
@@ -131,13 +220,22 @@
     "general": {
       "accounts": "アカウント",
       "authenticate": "認証",
+      "customization": "カスタマイズ",
       "customRecords": "カスタム記録",
+      "desktops": "デスクトップ",
       "discordIntegration": "Discord連携",
+      "logs": "ログ",
       "wipeRecords": "記録を消去"
     },
+    "helpPermissions": {
+      "permissionsGuide": "権限ガイド"
+    },
     "integration": {
+      "apiKey": "API キー",
       "availableMaps": "利用可能なマップ",
+      "configureAndDeploy": "設定してデプロイ",
       "dbSync": {
+        "characterMapping": "文字マッピング",
         "columnName": "列名",
         "customMapAbout": "これはカスタムレコードエディタによって提供されるカスタムDB Syncマッピングフィールドです。",
         "dbSyncHeader": "データベース 同期",
@@ -145,20 +243,36 @@
         "dbSyncSubtext2": "データベースのSQL接続文字列を指定し、テーブルとフィールドをSonoran CADにマッピングするだけです。",
         "dbSyncSubtext3": "すべてのRED項目は必須です。オプション項目のデータ列がない場合は、空欄のままにしてください。",
         "dbValue": "データベース値",
+        "description": "説明",
+        "descriptionCredentials": "これはゲームデータベースへのSQL接続詳細です。",
+        "enableDbSync": "データベース 同期 を 有効 に する",
         "fieldMapId": "フィールドマッピングID",
         "friendlyMappingExample": "例: 'drive_license' -> '運転免許証'",
+        "friendlyValue": "フレンドリー値",
         "host": "ホスト/アドレス",
+        "jsonColumn": "JSON カラム",
         "jsonColumnAbout": "この列が JSON データ型の場合、JSON キーを指定できます。",
+        "jsonKey": "JSONキー",
+        "saveCredentials": "接続認証情報を保存",
         "testConnection": "接続をテスト",
-        "tooltipCharacterColumn": "これは、テーブル内の一意のキャラクター ID 列の名前です。一般的に、ここには Steam Hex が含まれます。"
+        "tooltipCharacterColumn": "これは、テーブル内の一意のキャラクター ID 列の名前です。一般的に、ここには Steam Hex が含まれます。",
+        "type": "種類",
+        "username": "ユーザー名"
       },
       "erlc": {
         "apiKeyHint": "保存済みの値を置き換える新しいキーを貼り付けてください。",
         "civilianRegistrationsHeader": "民間人登録",
+        "customRobloxMap": "カスタム Roblox マップ",
+        "emergencyCallsHeader": "緊急通報",
+        "header": "ER:LC 統合",
         "notifyAlwaysTooltip": "コマンドが処理された後、プレイヤーは常にプライベートメッセージを受け取ります。",
         "notifyOnlyOnFailureTooltip": "コマンドが失敗した場合のみ、プレイヤーはプライベートメッセージを受け取ります。",
+        "tempRegisterCommand": "一時登録コマンド",
+        "trafficStopDefaultTenCodeHint": "交通停止の派遣通話に使用します。お好みのコードをここに入力してください。",
+        "trafficStopDescription": "出動説明",
         "trafficStopDescriptionHint": "カスタム変数をサポートします。",
         "trafficStopMaxRadiusHint": "最も近い車両がこれより遠い場合、交通停止の通話はナンバー入力にフォールバックするか、車両詳細を省略します。",
+        "trafficStopsHeader": "交通停止",
         "trafficStopVariableBuildingNumber": "ER:LCの現在の建物番号。",
         "trafficStopVariableCopied": "変数がクリップボードにコピーされました",
         "trafficStopVariablePlate": "ナンバープレートが指定されたときの最初のコマンド引数",
@@ -168,55 +282,95 @@
       "fivem": {
         "configureResourceTitle": "リソースを設定",
         "manual": {
-          "configComment": "# sonorancad リソースとその他の同梱リソースを開始"
+          "additionalOptions": "ここで他の設定オプションについて詳しく学べます。",
+          "configComment": "# sonorancad リソースとその他の同梱リソースを開始",
+          "configureResource": "sonorancad/configuration/config.json を開いてリソースを設定します。",
+          "extractResource": "ダウンロード後、[sonorancad] フォルダをサーバーの resources フォルダに展開してください。",
+          "preconfiguredNotice": "リソースには communityID と apiKey がすでに事前設定されています。",
+          "restartComplete": "そしてサーバーを再起動すれば、完了です! 各機能の有効化と使用方法については、ドキュメントをご確認ください。",
+          "seeDocs": "ドキュメントを見る"
         },
         "rocketNode": {
           "accessPanel": "ゲームサーバーのパネルにアクセス",
+          "configurationLabel": "設定",
+          "couponCode": "SONORAN",
+          "couponPrefix": "クーポンコードを使用",
+          "fileManager": "ファイル マネージャー",
+          "installSonoran": "Rocket NodeパネルでSonoranをインストールをクリックしてください。",
+          "navigateFolder": "resources > [sonorancad] > sonorancad > configuration フォルダに移動します。",
+          "purchaseServer": "Rocket NodeからFiveMゲームサーバーを購入",
           "resourceAccess": "インストールが完了したら、File Manager でリソースファイルにアクセスできます。",
           "selectCad": "CAD を選択し、クリックして下の ID とキーをコピー/貼り付けしてください。"
-        }
+        },
+        "welcomeTitle": "ようこそ"
       },
+      "ip": "IP",
       "luaPlugins": "LUA プラグイン",
-      "uploadCustomMap": "カスタムマップをアップロード"
+      "manualInstalltion": "手動インストール",
+      "staticOnlyAbout": "ゲームモードが Live Map リソースと互換性がない場合は、代わりにゲームのマップが掲載されたウェブサイトを指定できます。",
+      "uploadCustomMap": "カスタムマップをアップロード",
+      "websiteUrl": "ウェブサイト URL"
     },
     "limits": {
       "expiration": "有効期限",
       "limitsHeader": "Sonoran CAD コミュニティ制限",
+      "upgradeYourCad": "CADをアップグレード",
       "version": "バージョン"
     },
     "penal": {
       "bondType": "債券の種類",
       "chargeType": "請求タイプ",
+      "chargeTypes": "請求タイプ",
+      "code": "コード",
       "createNewPenal": "新しい刑法を作成",
       "editPenal": "刑法を編集",
       "errors": {
-        "duplicate": "エラー: すでに存在する刑法に設定することはできません!"
+        "duplicate": "エラー: すでに存在する刑法に設定することはできません!",
+        "notFound": "エラー: 削除する刑法が見つかりません!"
       },
       "title": "タイトル"
     },
     "permissions": {
+      "account": "アカウント",
+      "adminAccess": "管理者アクセス",
+      "confirmBan": "本当に～しますか",
+      "errors": {
+        "duplicateKey": "エラー: この名前の重複キーはすでに存在します!"
+      },
+      "joined": "参加済み",
       "lawRecords": "法記録",
+      "pagePermissions": "ページ権限",
+      "permissions": "権限",
       "policeAdvanced": "警察 - 詳細設定",
       "status": {
         "active": "有効"
       },
       "toggles": {
         "editOtherIdent": "他人の識別子を編集する"
-      }
+      },
+      "unban": "BAN解除"
     },
     "remove": {
       "removeSubtext": "このCADを削除するにはコミュニティ/CADの所有者である必要があります。削除手続きにはメール認証が必要です。",
       "transferHeader": "Sonoran CAD を移行"
     },
     "webhooks": {
+      "10CodeAbout": "この WebHook は、管理者が 10-Code を追加、編集、または削除したときに送信されます。",
       "accountPermissionsAbout": "この WebHook は、管理者がユーザーアカウントの権限を変更したときに送信されます。",
       "adminWebhooks": "管理者 Webhooks",
       "adminWebhooksAbout": "これらのWebHooksは管理サービスに関連しています。",
       "apiRequestAbout": "この WebHook は API リクエストが送信されたときに送信されます。",
+      "bolo": "要注意人物",
       "character": "文字の変更",
       "civilianWebhooks": "市民向けWebhook",
+      "departmentStructure": "部門構成",
       "departmentStructureAbout": "この WebHook は、管理者が部署構造を更新したときに送信されます。",
+      "dmv": "DMV 記録",
       "emergencyAbout": "これらのwebhooksは緊急サービスに関連しています。",
+      "emergencyCall": "緊急通報",
+      "emergencyWebhooks": "緊急Webhook",
+      "fireRecord": "火災記録",
+      "medicalRecordAbout": "この WebHook は、医療記録が追加、変更、または削除されたときに送信されます。",
       "modified": "変更済み",
       "policeRecordAbout": "この WebHook は、警察記録が追加、変更、または削除されたときに送信されます。",
       "signal": "Signal",
@@ -224,6 +378,9 @@
       "subtext2": "下の必要な項目に対して Discord WebHook URL を有効にして指定するだけです。",
       "toneBoardAbout": "この webhook は dispatcher によって tone が再生されたときに送信されます",
       "unitPanic": "ユニットパニック"
+    },
+    "wipeRecords": {
+      "wipeSubtext1": "コミュニティ所有者はタイプごとに保存されたすべてのレコードを削除できます。"
     }
   },
   "calleditor": {
@@ -239,28 +396,52 @@
       "addCharacter": "キャラクターを追加",
       "age": "年齢",
       "aka": "別名（エイリアス）/旧名称",
+      "confirmRemove": "本当にこのキャラクターを削除しますか",
+      "editExistingCharacter": "キャラクターを編集",
+      "emergencyContact": "緊急通報先",
+      "hair": "髪色",
+      "image": "画像",
+      "relationship": "関係",
       "residence": "居住地",
       "saveCharacter": "キャラクターを保存",
-      "sex": "性別"
+      "sex": "性別",
+      "skin": "肌の色",
+      "zip": "郵便番号"
     }
   },
   "common": {
     "actions": "操作",
     "activeServer": "アクティブ サーバー",
+    "autoSort": "自動ソート",
+    "back": "戻る",
     "cancel": "キャンセル",
+    "clear": "クリア",
     "close": "閉じる",
+    "dbSyncRecordWarning": "これは Database Sync レコードであり、Database Merge が有効な場合のみ変更できます。",
+    "detachFromCall": "通話から切り離す (Enter)",
+    "download": "ダウンロード",
+    "enabled": "有効",
     "errors": {
       "limitReached": "エラー: 最大制限に達しました"
     },
     "export": "エクスポート",
     "externalWindow": "外部ウィンドウで開く",
+    "hours": "時間",
+    "icon": "アイコン",
+    "import": "インポート",
+    "importPrompt": "JSONの内容を貼り付け",
     "json": "JSON",
     "learnMore": "詳細を見る",
     "lostConnection": "サーバーとの接続が失われました。",
     "max": "最大",
+    "message": "メッセージ",
     "minimize": "最小化",
     "modify": "変更",
     "new": "新規",
+    "noData": "データなし",
+    "noImageSelected": "画像が選択されていません",
+    "noResults": "結果がありません",
+    "ok": "OK",
     "rateLimit": "レート制限",
     "refresh": "更新",
     "s": "s",
@@ -268,30 +449,50 @@
     "start": "開始",
     "status": "ステータス",
     "stop": "停止",
+    "success": "成功",
+    "tutorials": "チュートリアル",
     "type": "種類",
-    "upload": "アップロード"
+    "undo": "元に戻す",
+    "upload": "アップロード",
+    "versionDisplay": {
+      "currentVersion": "あなたのバージョン: {version}",
+      "description": "注意: Sonoran CAD の古いバージョンを使用しているようです。",
+      "latestVersion": "最新バージョン: {latestVersion}"
+    }
   },
   "communityMenu": {
     "buttons": {
       "civilian": "市民向け",
+      "discord": "Discord",
       "dispatch": "出荷",
       "fire": "退会",
+      "law": "法",
       "police": "警察",
       "setDefault": "デフォルトコミュニティに設定"
     }
   },
   "CustomDomain": {
     "chooseYourDomainName": "ドメイン名を選択",
+    "cname": "CNAME",
     "communityID": "コミュニティID",
+    "configureYourDnsRecord": "DNSレコードを設定する",
     "content": "コンテンツ",
     "copiedToClipboard": "クリップボードにコピーしました!",
+    "name": "名前",
+    "placeholderExampleDomain": "cad.example.com",
     "setCustomDomain": "カスタムドメインを設定",
     "txt": "TXT"
   },
   "development": {
+    "banner": "開発テスト版 - 本番環境での使用不可",
     "message": "これは Sonoran CAD の無料開発版であり、本番環境での使用を意図していません。"
   },
+  "downloads": {
+    "desktopAndMobileBanner": "Windowsデスクトップアプリとモバイルアプリをダウンロードしてください！"
+  },
   "homepage": {
+    "heroInlineStatement": "最も先進的で、統合され、人気のある配車ソフトウェアです。",
+    "heroTitle": "ゲーム向けの第1位のディスパッチプラットフォーム",
     "integrations": {
       "erlc": {
         "description": "公式ER:LCゲーム内連携でライブマップなどを利用できます。",
@@ -299,46 +500,93 @@
           "ctaDocs": "ドキュメントを見る",
           "faq": {
             "items": {
+              "best": {
+                "question": "Sonoran CADはER:LCに最適なCADですか？"
+              },
               "community": {
-                "answer": "もちろんです。無料プランは小規模から中規模のコミュニティに最適で、ER:LCの全機能を制限なく利用できます。サーバーが成長して追加のアカウントや機能が必要になったら、後でアップグレードできます。"
+                "answer": "もちろんです。無料プランは小規模から中規模のコミュニティに最適で、ER:LCの全機能を制限なく利用できます。サーバーが成長して追加のアカウントや機能が必要になったら、後でアップグレードできます。",
+                "question": "これは小規模または成長中のコミュニティに適していますか？"
               },
               "features": {
-                "answer": "この統合には、次のようなリアルタイム機能がすべて含まれています:\n- プレイヤーとユニットの追跡ができるライブ 3D マップ\n- 911 通報の自動同期\n- 交通停止の自動化とホットキー\n- ナンバープレートリーダーの自動化とホットキー\n- 車両とキャラクター作成の自動化\n- その他多数"
+                "answer": "この統合には、次のようなリアルタイム機能がすべて含まれています:\n- プレイヤーとユニットの追跡ができるライブ 3D マップ\n- 911 通報の自動同期\n- 交通停止の自動化とホットキー\n- ナンバープレートリーダーの自動化とホットキー\n- 車両とキャラクター作成の自動化\n- その他多数",
+                "question": "ER:LC 統合にはどの機能が含まれていますか？"
+              },
+              "setup": {
+                "question": "インテグレーションの設定にはどれくらい時間がかかりますか？"
               }
             }
           },
+          "faqTitlePrimary": "よくある質問",
+          "headlinePrimary": "最高の CAD",
           "meta": {
             "description": "ER:LC向けの無料CAD。3Dライブマップ、ボディカメラ、緊急通報、キャラクターツール、ゲーム内オーバーレイ対応。",
-            "ogImageAlt": "Sonoran CAD ER:LC 統合"
+            "ogImageAlt": "Sonoran CAD ER:LC 統合",
+            "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "bodycam": {
+              "infoCopy": "ゲーム内のボディカム映像を撮影して再生と確認に使えます。",
+              "infoTitle": "録画",
+              "previewTitle": "ライブ Bodycam プレビュー"
+            },
             "character": {
+              "infoTitle": "ゲーム内コマンド",
               "title": "文字の作成"
             },
             "emergency": {
+              "infoCopy": "ゲーム内の緊急通報をディスパッチャーに送信し、マップに表示します。",
               "title": "緊急通報"
             },
             "map": {
+              "infoCopy": "コマンドユニットを操作して、没入感のあるライブ 3D マップで都市をスキャンします。",
+              "infoTitle": "3D マップ",
               "title": "3D ライブマップ"
+            },
+            "overlay": {
+              "infoCopy": "ゲームプレイを中断せずにライブの配車情報を表示"
             }
           }
         }
       },
       "fivem": {
+        "description": "多数の深い統合ポイントを備えた公式 FiveM リソース。",
         "landing": {
+          "faq": {
+            "items": {
+              "best": {
+                "question": "Sonoran CADはFiveMに最適なCADですか？"
+              },
+              "free": {
+                "answer": "はい。Sonoran CADのFiveM向けコア連携は無料プランで利用できるため、コミュニティは基本ワークフローを費用なしで始められます。"
+              }
+            }
+          },
           "faqKicker": "サポートプロトコル",
+          "faqTitleAccent": "質問",
+          "headlineAccent": "FiveM向け",
+          "kicker": "無料、高速、完全統合",
           "meta": {
-            "keywords": "FiveM CAD、FiveM 用の無料 CAD、Sonoran CAD、FiveM ディスパッチ、FiveM ロールプレイ CAD"
+            "description": "ライブマップ、ボディカム、データベース同期、公式プラグイン対応を備えた FiveM 向けの無料 CAD。深く統合されたロールプレイサーバー向け。",
+            "keywords": "FiveM CAD、FiveM 用の無料 CAD、Sonoran CAD、FiveM ディスパッチ、FiveM ロールプレイ CAD",
+            "title": "FiveM用の無料 CAD | Sonoran CAD"
           },
           "modules": {
             "bodycam": {
+              "infoCopy": "同期したボディカム映像でCADワークフローに直接紐づいたインシデントを確認",
+              "infoTitle": "録画",
               "title": "ライブ Bodycam"
             },
             "map": {
-              "infoTitle": "3D マップ"
+              "infoCopy": "ユニットを追跡し、通話を監視し、アクティブな FiveM コミュニティ向けに構築されたライブマップで現場を調整します。",
+              "infoTitle": "3D マップ",
+              "title": "ライブマップ"
             },
             "plugins": {
+              "infoTitle": "サーバー統合",
               "title": "プラグイン エコシステム"
+            },
+            "sync": {
+              "infoTitle": "データ 同期"
             }
           },
           "submodules": {
@@ -351,53 +599,99 @@
               },
               "pagers": {
                 "title": "ページャー"
+              },
+              "printer": {
+                "description": "ゲーム内で記録と補助情報を印刷し、物理的な現場引き継ぎを求める部門向け。",
+                "previewTitle": "プリンタープラグインのプレビュー",
+                "title": "プリンター"
+              },
+              "signs": {
+                "previewTitle": "道路標識プラグインのプレビュー"
+              },
+              "station": {
+                "title": "駅アラート通知"
               }
-            }
+            },
+            "title": "公式インテグレーション"
           }
         }
       }
     },
     "pricingDescription": "Sonoran CADの有料サブスクリプションでは、新しい統合機能の有効化、カスタマイズの有効化、制限の解除などができます！",
-    "welcomeDescription": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!"
+    "welcomeDescription": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!",
+    "welcomeHeadline": "Sonoran CADへようこそ!"
   },
   "infernoPager": {
+    "addresses": "アドレス",
+    "body": "ページ本文",
+    "importCurrentCallUnits": "現在の通話からユニットを添付",
     "messageRequired": "送信前にページ本文を入力してください。",
+    "nature": "ページの性質",
+    "noAddresses": "ページング可能なInfernoページャーのアドレスは設定されていません。",
     "playerIdsHint": "ページを直接指定する任意のオンライン単位。",
+    "selectionRequired": "少なくとも1つの住所または単位を選択してください。",
     "unitsTooltip": "アクティブな配車通話をここにドラッグ＆ドロップして、添付されたユニットを追加することもできます。"
   },
   "login": {
     "buttons": {
-      "forgot": "パスワードを忘れた"
+      "create": "アカウントを作成",
+      "forgot": "パスワードを忘れた",
+      "switchCommunities": "コミュニティを切り替える"
     },
     "labels": {
+      "confirmPassword": "パスワードを確認",
       "email": "メール",
       "emailPreferences": "メール設定",
-      "resetPassword": "パスワードをリセット"
+      "resetPassword": "パスワードをリセット",
+      "username": "ユーザー名"
     },
+    "learnMoreAboutSonoranCADSIntegrationPluginSystemCustomLiveMa": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!",
     "linkAuth": {
+      "description": "Apple と Discord のサインインは埋め込みフレームの外で完了する必要があります。",
+      "errors": {
+        "auth": "ログインセッションがありません、または期限切れです。再度サインインしてください。",
+        "createFailed": "現在リンクコードを作成できません。もう一度お試しください。",
+        "submitFailed": "現在このコードをリンクできません。もう一度お試しください。"
+      },
       "idPageBackToMenu": "メニューに戻る",
+      "idPageSuccessDescription": "ゲーム内アカウントがリンクされました。",
+      "idPageSuccessTitle": "リンク完了",
       "linkPageDescription": "アカウントにサインインしてから、埋め込みログインウィンドウに表示されている4文字のコードを入力してください。",
-      "success": "ログインをリンクしました。元の埋め込みウィンドウに戻れます。"
+      "linkPageTitle": "埋め込みログインをリンク",
+      "scanPrompt": "スマホで開くにはスキャン",
+      "stepOneDescription": "カメラでQRコードをスキャンしてください。",
+      "stepOneTitle": "スマホまたはタブレットでリンクを開いてください",
+      "stepTwoTitle": "ブラウザでリンクを開く",
+      "success": "ログインをリンクしました。元の埋め込みウィンドウに戻れます。",
+      "visit": "開く"
     },
     "newVisitor": {
       "description": "Sonoran CADの統合プラグインシステム、カスタムライブマップ、データベース同期機能、iOS/Androidアプリなどについて詳しく知る!"
     },
+    "robloxLinkBannerTitle": "Roblox アカウントのリンクが必要",
     "welcome": "ようこそ"
   },
   "management": {
     "currentPlayersLastHour2": "現在のプレイヤー（直近1時間）:",
+    "lastUpdated": "最終更新",
     "node2": "ノード:",
     "password": "管理用パスワード",
+    "totalServersLastHour": "合計サーバー（過去1時間）",
     "updateDb": "DBを更新",
     "users": "ユーザー"
   },
   "payment": {
     "buttons": {
+      "amount": "金額",
+      "openBillingPortal": "請求ポータルを開く",
       "purchase": "サブスクリプションを購入"
     },
     "labels": {
+      "chargesPerPage": "ページごとの料金",
       "monthly": "月額",
       "noSubscriptionsAvailable": "利用可能なサブスクリプションはありません",
+      "noSubscriptionsFound": "サブスクリプションが見つかりません",
+      "pro": "プロ",
       "standard": "標準",
       "subscriptionsPerPage": "ページごとのサブスクリプション"
     },
@@ -408,53 +702,74 @@
       "newSubscription": "新規サブスクリプション",
       "save25": "25%節約",
       "serverIp": "サーバー IP",
-      "serversEmail": "Sonoran Servers アカウントメール"
+      "serversEmail": "Sonoran Servers アカウントメール",
+      "setCommunityId": "コミュニティIDを設定"
     }
   },
   "police": {
     "bodycamViewer": {
+      "live": "ライブ",
       "screensAvailable": "利用可能な画面: {visible} / {total} (ページ {page} / {pages})",
       "singleCam": "単一カメラ",
-      "startRecording": "録画開始"
+      "startRecording": "録画開始",
+      "stopRecording": "録画を停止 {duration}",
+      "switchToAll": "すべてのボディカム表示に切り替え",
+      "switchToSingle": "単一のボディカム表示に切り替え",
+      "uploadingClip": "クリップをアップロード中..."
     },
     "callEditor": {
       "addNote": "メモを追加",
       "callNotes": "通話メモ",
+      "callOrigin": "通話元",
+      "callTitle": "通話タイトル",
       "callViewer": "通話ビューア",
       "confirmations": {
         "close1": "通話ステータスをCLOSEDに設定しました。",
-        "close3": "この通話とすべてのデータが削除されます!"
+        "close3": "この通話とすべてのデータが削除されます!",
+        "detatch": "切り離す"
       },
+      "dispatchRecord": "出荷記録",
       "errors": {
-        "noTitle": "エラー: この通話にはタイトルが設定されていません!"
+        "noOrigin": "エラー: この通話には発信元が設定されていません!",
+        "noTitle": "エラー: この通話にはタイトルが設定されていません!",
+        "unitAlreadyOnCall": "エラー: このユニットはすでに通話中です!"
       },
       "nearestStations": "最寄りの駅",
+      "newDispatch": "新規出荷",
       "nextCall": "次の通話（右矢印）",
+      "note": "メモ",
       "originOptions": {
         "walkUp": "徒歩来店"
       },
       "postal": "郵便",
       "previousCall": "前回の通話（左矢印）",
       "priority": "優先度",
+      "savedTypes": "保存されたタイプ",
+      "selfDispatchUnavailable": "自動配車を使用する権限がありません。",
       "statusOptions": {
-        "active": "有効"
+        "active": "有効",
+        "pending": "保留中"
       },
       "statusTimers": {
         "descCountdown": "ユニットのステータスが {status} に設定されたら、カウントダウンタイマーを開始します。",
         "descCountup": "ユニットのステータスが {status} に設定されたら、カウントアップタイマーを開始します。"
       },
+      "unitStatusAttached": "部隊ステータス: 取り付け済み",
       "unitStatusAttachedHint": "ユニットが通話に関連付けられたら、そのステータスを更新します。",
       "unitStatusClosedHint": "通話が終了したら、すべての関連ユニットのステータスを更新します。",
       "unitStatusTimers": "部隊ステータス: タイマー",
       "updateCall": "通話を更新",
       "webhooks": {
+        "attached": "添付済み",
         "enabled": "有効",
         "status": "ステータス"
       }
     },
     "callList": {
+      "callHistory": "通話履歴",
       "columns": {
-        "callId": "通話ID"
+        "callId": "通話ID",
+        "callTitle": "通話タイトル"
       },
       "previewCall": "通話をプレビュー",
       "priority": "優先度"
@@ -463,99 +778,162 @@
       "fallbackTooltip": "以下のどのアクションも発生しない場合のデフォルトのアクション。"
     },
     "chat": {
+      "composerHint": "テキストを送信するには Ctrl/Cmd+Enter を使います。レコードまたは通話リンクを先にコピーして、チャットに貼り付けてください。",
       "conversations": "会話",
       "emptyThread": "このチャットにはまだメッセージがありません。",
       "justYou": "あなただけ",
       "noThreads": "まだアクティブな会話はありません。",
+      "offline": "オフライン",
+      "offlineRecipientsHint": "新しいメッセージを送信する前に、オフラインの受信者を削除してください。",
       "recipients": "受信者",
       "recipientsHint": "チャットを開始または継続するオンラインの部隊を選択してください。",
       "ttsIncomingTooltip": "受信したチャットメッセージを読み上げる",
       "ttsToggle": "テキスト読み上げを切り替え",
-      "unableToSend": "現在チャットを送信できません。"
+      "unableToSend": "現在チャットを送信できません。",
+      "you": "あなた"
     },
     "command": {
+      "attach": "添付",
       "clear": "クリア",
       "close": "閉じる",
       "commandLine": "コマンドライン",
       "detach": "切り離す",
-      "savedCallType": "保存された通話タイプ"
+      "savedCallType": "保存された通話タイプ",
+      "unitStatus": "部隊ステータス"
     },
     "diagram": {
+      "deleteSelected": "選択した項目を削除",
+      "itemOptions": "アイテム オプション",
+      "moveLayerUp": "レイヤーを上へ移動 (Shift = 上端)",
+      "shortcutDown": "ショートカット: (SHIFT) 下矢印",
       "shortcutUndo": "ショートカット: CTRL + Z",
       "shortcutUp": "ショートカット: (SHIFT) 上矢印"
     },
     "emergencyCall": {
+      "caller": "通報者",
       "calls": "通話",
-      "confirmRemoveAll": "すべての進行中の緊急通報を閉じてもよろしいですか?"
+      "confirmRemoveAll": "すべての進行中の緊急通報を閉じてもよろしいですか?",
+      "emergency": "緊急通報",
+      "location": "位置",
+      "removeAllCalls": "すべての通話を削除"
     },
     "header": {
       "activeCalls": "通話中",
+      "activeServer": "アクティブ サーバー",
       "activeUnits": "稼働中のユニット",
       "bodyCamRecordings": "ボディカム録画",
+      "bolo": "要注意人物",
       "chat": "チャット",
       "emergencyCalls": "緊急通報",
+      "lookup": "照会",
+      "playTo": "再生先",
       "quickLinks": "クイックリンク",
       "rapidIQ": "RapidIQ",
       "records": "記録",
       "signal": "シグナル",
+      "signalEffect1": "シグナル",
       "toneBoard": "トーンボード"
     },
     "liveMap3d": {
       "blip": {
-        "dispatchCall": "出荷要請"
+        "dispatchCall": "出荷要請",
+        "station": "駅"
       },
       "controls": {
+        "camera": "カメラ",
+        "left": "左",
+        "position": "位置",
         "right": "右",
         "up": "上"
       },
-      "speedDisplay": "{multiplier}x ({speed})"
+      "speedDisplay": "{multiplier}x ({speed})",
+      "unknownError": "不明なエラー"
     },
     "liveMap": {
       "toolbar": {
         "dragAndDrop": "(ドラッグアンドドロップ)",
         "ersCallout": "ERS コールアウト（ドラッグアンドドロップ）",
         "mapMode": "地図モード",
-        "zoomIn": "拡大"
+        "zoomIn": "拡大",
+        "zoomOut": "縮小"
       }
     },
     "lookup": {
+      "agency": "機関",
       "columns": {
         "expiration": "有効期限",
         "mi": "身分証明書",
         "name": "氏名",
+        "plate": "ナンバープレート",
         "status": "ステータス"
       },
+      "department": "部門",
       "flags": "フラグ:",
+      "identifier": "識別子",
+      "lookup": "照会",
+      "nameSearch": "名前",
+      "plate": "ナンバープレート",
+      "plateSearch": "ナンバープレート",
       "recordsNoData": "記録はありません",
-      "refresh": "更新"
+      "refresh": "更新",
+      "reportsHeader": "報告",
+      "statuses": {
+        "active": "有効",
+        "inactive": "非アクティブ"
+      }
+    },
+    "notes": {
+      "notepad": "メモ帳"
+    },
+    "rapidIQForm": {
+      "completedNoCard": "RapidIQ完了",
+      "copyResultsSuccess": "質問と回答をコピーしました",
+      "nextHotkey": "次の質問（右矢印キーまたはEnter）"
     },
     "recordCenter": {
       "errors": {
-        "noRecordTypes": "レコードタイプがありません: Admin > Customization > Custom Records で追加してください"
+        "noRecordTypes": "レコードタイプがありません: Admin > Customization > Custom Records で追加してください",
+        "syncEnabledFeatDisabled": "この機能はデータベース同期と互換性がありません"
       },
+      "myFiles": "マイファイル",
       "newReport": "新規レポート",
       "noRecordsForSuper": "監督者の対応が必要な記録はありません",
+      "noRecordsFound": "記録が見つかりません",
+      "noReportsForSuper": "監督者の対応が必要な報告はありません",
       "noReportsFound": "報告が見つかりません",
       "supervisorPanel": "管理者パネル"
     },
     "records": {
       "agency": {
         "agencyName": "機関名",
-        "observingOfficer": "監視部隊"
+        "location": "位置",
+        "observingOfficer": "監視部隊",
+        "recordNum": "記録 #"
+      },
+      "arrest": {
+        "weapons": "武器"
       },
       "charges": {
-        "counts": "件"
+        "charge": "請求",
+        "chargeType": "請求タイプ",
+        "counts": "件",
+        "fineTotal": "罰金合計"
       },
       "editor": {
         "addRecord": "記録を追加",
+        "copyLink": "レコードリンクをコピー",
         "errors": {
           "nameOrPlate": "エラー: この記録には検索のため市民の名前または車両のナンバープレート番号が必要です!",
-          "noCopiedLink": "エラー: レコードのリンクがコピーされていません!"
+          "noCopiedLink": "エラー: レコードのリンクがコピーされていません!",
+          "requiredField": "エラー: 必須項目"
         },
         "history": {
+          "after": "後",
+          "changedBy": "変更者",
           "loadError": "エラー: レコード履歴の読み込みに失敗しました。",
           "noFieldChanges": "このエントリではフィールド値に変更はありません。"
         },
+        "pasteLink": "レコードリンクを貼り付け",
         "pdf": "PDF",
         "recordType": "記録の種類",
         "removeRecord": "記録を削除",
@@ -564,6 +942,7 @@
         "status": {
           "approved": "承認済み",
           "closed": "閉鎖",
+          "pending": "保留中",
           "rejected": "却下"
         }
       },
@@ -580,18 +959,27 @@
         "narrative": "供述"
       },
       "speed": {
+        "citationInformation": "引用情報",
         "courtDate": "出廷日",
         "other": "その他",
+        "radar": "レーダー",
         "speedLimit": "速度制限",
         "vehicleSpeed": "車両速度"
       },
+      "status": {
+        "status": "ステータス"
+      },
       "vehicle": {
+        "make": "メーカー",
+        "plate": "ナンバープレート",
         "types": {
           "aircraft": "航空機",
           "coupe": "クーペ",
+          "motorcycle": "オートバイ",
           "sedan": "セダン",
           "suv": "SUV"
-        }
+        },
+        "vehicleInformation": "車両情報"
       }
     },
     "signal": {
@@ -599,40 +987,70 @@
     },
     "timers": {
       "attachments": "添付ファイル",
+      "clearAttachment": "添付ファイルをクリア",
       "seconds": "秒"
     },
     "toneBoard": {
+      "speechToTextFailed": "音声認識に失敗しました。",
+      "speechToTextNoMicrophone": "マイクが検出されませんでした。",
+      "speechToTextNoSpeech": "音声は検出されませんでした。",
       "speechToTextNotAllowed": "マイクへのアクセスが拒否されました。",
       "speechToTextUnavailable": "音声認識は現在利用できません。",
       "textToSpeech": "テキスト読み上げ"
     },
     "unitEditor": {
+      "aop": "AOP",
+      "bodycamEnabled": "ボディカメラ有効",
       "bodycamShadowRecording": "シャドウ録画",
+      "bodycamTab": "ボディカメラ",
+      "confirmRemove": "本当にidentifierを削除しますか",
       "departments": "部門",
       "effects": "効果",
       "electronBodycamPermissionWarning": "ボディカム録画にはmacOSの画面収録権限が必要です。システム設定で有効にし、その後Sonoran CADを完全に終了して再度開いてください。",
+      "location": "位置",
       "overlay": "オーバーレイ",
+      "persistentGroup": "永続グループ",
+      "persistentGroupFull": "このグループはいっぱいです",
+      "persistentGroupHint": "設定済みの永続グループに自己割り当てする。",
       "status": "ステータス",
       "subdivision": "下位区分",
       "subdivisions": "下位区分",
-      "switchIdentifier": "識別子を切り替え"
+      "switchIdentifier": "識別子を切り替え",
+      "switchIdentifierTab": "識別子を切り替え",
+      "units": "単位"
     },
     "units": {
+      "activeUnits": "稼働中のユニット",
+      "addToCall": "通話に追加",
       "editUnit": "部隊を編集",
-      "groupName": "グループ名"
+      "groupName": "グループ名",
+      "units": "単位"
     }
+  },
+  "promotion": {
+    "newPromotion": "新しいプロモーション",
+    "title": "プロモーション"
   },
   "rapidIQCustomization": {
     "codes": "コード:",
-    "flows": "フロー:"
+    "defaults": "デフォルト:",
+    "flows": "フロー:",
+    "question": "質問"
   },
   "selectionPage": {
     "buttons": {
       "createCommunity": "コミュニティを作成",
-      "discover": "見つける"
+      "discover": "見つける",
+      "joinCommunity": "コミュニティに参加",
+      "My Account": "マイアカウント"
     },
     "errors": {
+      "communityIdCharacters": "エラー: コミュニティIDには英字、数字、アンダースコア、ハイフンのみ使用できます!",
+      "communityNameLength": "エラー: コミュニティ名は1文字以上50文字以下でなければなりません!",
       "noCommunityID": "エラー: Community IDを入力してください!"
+    },
+    "labels": {
+      "website": "Webサイト（任意）"
     },
     "text": {
       "createHeader": "CAD登録",
@@ -640,28 +1058,46 @@
       "helpCommunityWebsite": "あなたのコミュニティサイトは、フォーラム、discord、またはその他のサイトのURLです。この項目は任意であり、必須ではありません！"
     },
     "tooltips": {
+      "join": "参加",
       "leaveCommunity": "このコミュニティを離れる。",
       "search": "Sonoran CAD コミュニティを検索"
     }
   },
   "settings": {
     "accountSecretId": "アカウントシークレットID:",
+    "accountTab": "アカウント",
+    "apiIdLabel": "API ID:",
+    "classicLayout": "クラシックレイアウト",
+    "desktopOverlayHotkey": "デスクトップオーバーレイ",
+    "erlcHotkeys": "ER:LCホットキー",
     "exitResize": "サイズ変更を終了",
+    "hotkeyClickToRecord": "クリックして記録",
     "hotkeyCombination": "組み合わせ",
+    "language": "言語",
     "languageKorean": "韓国語/한국어",
     "lockWindow": "ウィンドウをロック",
     "microphoneNumbered": "マイク {index}",
     "overlay": {
       "addFrame": "フレームを追加",
+      "callUpdates": "通話の更新",
+      "channel": "チャンネル",
+      "color": "色",
       "configuration": "設定",
+      "confirmReset": "設定をリセットしてもよろしいですか?",
+      "customTextFiles": "カスタムテキストファイル",
       "events": "イベント",
+      "exampleText": "例テキスト",
       "field": "フィールド",
       "fontSize": "フォントサイズ",
       "fontWeight": "フォントの太さ:",
       "goveeWifi": "Govee WiFi",
       "lighting": "照明",
+      "manualIp": "手動 IP（任意）",
+      "philipsHue": "Philips Hue",
       "streamAdBanner": "ライブ配信オーバーレイと Twitch bot をチェックしてください！",
       "streamOverlay": "ストリーム オーバーレイ",
+      "twitch": "Twitch",
+      "txtFiles": "TXTファイル",
       "wyzeApiKey": "Wyze API キー",
       "wyzeColor": "Wyze Color",
       "wyzeKeyId": "Wyze Key ID"
@@ -672,47 +1108,73 @@
     "statusHotkeys": "ステータス ホットキー",
     "systemDefaultMicrophone": "システム既定のマイク",
     "theme": {
+      "backgroundImage": "背景画像",
       "backgroundImagePosition": "背景画像の位置",
       "backgroundImageScale": "背景画像の拡大率",
       "bgImageFit": {
         "contain": "含める（内側に合わせる）",
-        "cover": "カバー（塗りつぶしとトリミング）"
+        "cover": "カバー（塗りつぶしとトリミング）",
+        "scaleDown": "縮小して合わせる"
       },
       "bgImagePosition": {
-        "bottomRight": "右下"
+        "bottom": "下",
+        "bottomRight": "右下",
+        "top": "上",
+        "topLeft": "左上"
       },
       "bgImageScale": {
+        "p200": "200%",
+        "p50": "50%",
         "p75": "75%"
       },
       "colors": {
+        "accent1Text": "アクセント 1 テキスト",
         "accent2Text": "アクセント 2 テキスト",
         "accent3Text": "アクセント 3 テキスト",
+        "foreground": "前景",
         "inverseText": "インバーステキスト",
-        "subtitleText": "字幕テキスト"
+        "primary": "プライマリ",
+        "subtitleText": "字幕テキスト",
+        "titleText": "タイトルテキスト"
       },
+      "confirmDeleteTheme": "本当に{themeName}を削除しますか",
       "deleteTheme": "テーマを削除",
-      "enterThemeName": "テーマ名を入力"
+      "enterThemeName": "テーマ名を入力",
+      "importedThemeName": "インポートされたテーマ {index}",
+      "themeColors": "テーマカラー"
     },
     "trafficStopHotkey": "プレート リーダー"
   },
   "sideMenu": {
     "buttons": {
       "disclaimer": "Sonoran CADにアクセスまたは使用することで、利用規約とプライバシーポリシーに同意したことになります。",
+      "downloads": "ダウンロード",
       "exitFullscreen": "フルスクリーンを終了",
+      "goFullscreen": "フルスクリーンにする",
+      "login": "ログイン",
       "logout": "ログアウト",
-      "settings": "設定"
+      "myAccount": "マイアカウント",
+      "settings": "設定",
+      "tutorials": "チュートリアル"
     }
   },
   "stationAlert": {
     "makeSelection": "選択してください",
+    "sendAlert": "アラートを送信",
+    "sendMessage": "メッセージを送信",
     "stationAlert": "駅アラート",
     "toneBoard": "トーンボード"
   },
   "taskbar": {
     "displayTabIcons": "タブアイコンを表示",
+    "layoutCustomization": "レイアウトのカスタマイズ",
+    "nextDesktop": "次のデスクトップ",
     "startMenu": "スタートメニュー",
     "system": "システム",
     "taskbarPosition": "タスクバーの位置",
     "unpinFromTaskbar": "タスクバーからピンを外す"
+  },
+  "toneBoard": {
+    "playStack": "スタックを再生"
   }
 }
