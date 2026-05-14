@@ -1,20 +1,32 @@
 {
   "account": {
+    "delete": {
+      "confirm": "Smazat účet",
+      "message": "Opravdu chcete smazat svůj účet a trvale ztratit všechna přidružená data?"
+    },
     "labels": {
+      "email": "E-mail",
       "emailMe": "Posílejte mi důležitá oznámení, aktualizace a propagační nabídky."
     }
   },
   "admin": {
+    "10Codes": {
+      "code": "Kód"
+    },
     "accounts": {
+      "joined": "Připojeno",
+      "permissions": "Oprávnění",
       "purge": "Odstranit neaktivní",
       "status": "Stav"
     },
     "authenticate": {
+      "authHeader": "Ověřte vlastnictví vašeho CAD",
       "authSubtext1": "Vlastníci komunity mohou požádat o jedinečný identifikační klíč k ověření svého vlastnictví."
     },
     "communityId": {
       "changeHeader": "Změňte své Community ID",
       "changeSubtext1": "Vlastníci komunity mohou požádat o nové ID komunity.",
+      "newId": "Nové ID",
       "requestChange": "Požádat o změnu"
     },
     "customization": {
@@ -22,53 +34,87 @@
       "customLogin": {
         "url": "URL"
       },
+      "discordRpc": {
+        "clientId": "ID klienta"
+      },
       "emails": {
         "accountRegistration": "Registrace účtu",
-        "subheader": "Podzáhlaví"
+        "customEmails": "Vlastní komunitní e-maily",
+        "header": "Hlavička",
+        "subheader": "Podzáhlaví",
+        "subtext1": "Přizpůsobte e-maily, které vaši uživatelé obdrží při vytváření účtu nebo resetování hesla z vaší vlastní přihlašovací obrazovky."
       },
       "errors": {
-        "serverLimit2": "servery!"
+        "serverLimit2": "servery!",
+        "serverMinimum": "Chyba: Musíte mít alespoň jeden server!"
       },
       "geo": {
         "geographicalSettings": "Geografická nastavení",
-        "penalCodeName": "Název trestního zákoníku"
+        "penalCodeName": "Název trestního zákoníku",
+        "tenCodeName": "Název desítkového kódu"
+      },
+      "infernoPagers": {
+        "infernoPagers": "Inferno pagery",
+        "loading": "Vložený editor Inferno automaticky načte a synchronizuje vaši aktuální konfiguraci pageru."
       },
       "info": {
+        "communityInfo": "Informace o komunitě",
+        "discord": "Discord",
         "name": "Jméno",
         "subtitle": "Podtitul",
         "website": "Webové stránky"
       },
       "lookupTypes": {
+        "addSearchType": "Přidat typ vyhledávání",
+        "advancedFields": "Pokročilá pole",
         "advancedFieldsDescription": "Podporované typy polí: text, číslo, rozbalovací nabídka a adresa.",
         "configTitle": "Konfigurace typu vyhledávání",
         "displayName": "Zobrazované jméno",
         "dropdownOptions": "Možnosti rozbalovacího seznamu",
         "dropdownOptionsHelp": "Stisknutím klávesy Enter přidáte každou možnost.",
         "fieldFallback": "Pole {index}",
+        "fieldMappingId": "ID mapování polí",
         "fieldTypeDropdown": "Rozbalovací seznam",
+        "lookupTypes": "Typy vyhledávání",
+        "mappableFieldsCount": "{count} mapovatelných polí",
+        "newField": "Nové pole",
+        "noFieldsConfigured": "Zatím nejsou nakonfigurována žádná pole.",
         "noFieldSelected": "Nebyl vybrán žádný pole",
         "noRecordTemplates": "Žádné šablony záznamů s mapovatelnými poli nejsou k dispozici.",
         "optional": "Volitelné",
+        "placeholder": "Zástupný symbol",
         "rangeDisabled": "Rozsah zakázán",
         "rangeEnabled": "Rozsah povolen",
         "reindexRecordsConfirmTitle": "Přeindexovat všechny záznamy",
         "reindexRecordsHelp": "Znovu uloží pole indexu vyhledávání pro stávající záznamy, aby vlastní typy vyhledávání používaly vaše nejnovější mapování polí.",
+        "required": "Povinné",
         "requirement": "Požadavek",
         "sectionFallback": "Sekce {index}",
-        "width": "Šířka"
+        "width": "Šířka",
+        "widthHelp": "Určuje, jak široce se toto vyhledávací pole zobrazuje v okně vyhledávání. Klikněte na ikonu Náhled a zobrazte, jak se bude zobrazovat."
+      },
+      "notificationTones": {
+        "notificationTones": "Tóny oznámení"
       },
       "otherCustomization": "Další možnosti přizpůsobení",
       "pageColors": {
-        "menuPageBkg": "Pozadí stránky nabídky"
+        "menuPageBkg": "Pozadí stránky nabídky",
+        "setToDefault": "Nastavit na výchozí barvu"
       },
       "quickLinks": {
+        "deleteLink": "Smazat odkaz",
+        "newLink": "Nový odkaz",
         "quickLinks": "Rychlé odkazy"
       },
       "rapidIQEditor": {
+        "addCode": "Přidat kód",
+        "addCondition": "Přidat podmínku",
+        "addFlow": "Přidat tok",
         "addOption": "Přidat možnost",
         "codesHelp": "Spravujte kódy odpovědí. ID kódu se používá ve flow a název kódu se zobrazuje pro odeslání.",
         "defaultQuestions": "Výchozí otázky",
         "flowsHelp": "Sestavte směrovací logiku s uspořádanými podmínkami. Každý tok končí jedním výsledným kódem.",
+        "headerHelp": "Nastavte otázky RapidIQ, možnosti odpovědí, kódy a pravidla toku.",
         "maskHint": "Příklad: (###) ###-####",
         "newCodeId": "Nové ID kódu",
         "options": "Možnosti",
@@ -76,13 +122,26 @@
         "searchCodes": "Hledat kódy",
         "searchFlows": "Hledat toky",
         "selectQuestionPrompt": "Vyberte nebo přidejte otázku k úpravě.",
+        "stats": {
+          "defaults": "Výchozí hodnoty",
+          "questions": "Otázky"
+        },
         "tabs": {
-          "defaults": "Výchozí cesta"
+          "codes": "Kódy",
+          "defaults": "Výchozí cesta",
+          "flows": "Toky"
         },
         "value": "Hodnota"
       },
+      "restrictions": {
+        "maxRegistrations": "Maximální registrace civilních vozidel *",
+        "note": "* Tato omezení se NEVZTAHUJÍ na komunity s povolenou Database Sync.",
+        "userAccountRestrictions": "Omezení uživatelského účtu"
+      },
       "servers": {
-        "newServer": "Nový server"
+        "description": "Popis",
+        "newServer": "Nový server",
+        "subtext2": "Sonoran CAD vám umožňuje oddělit online jednotky a dispečink mezi více servery a zároveň sdílet stejné záznamy."
       },
       "unitStatus": {
         "unavailable": "Nedostupné"
@@ -96,16 +155,29 @@
       },
       "duplicateSection": "Duplicitní sekce",
       "enableDuplicate": "Povolit duplikát",
+      "enableMapping": "Povolit mapování",
       "errors": {
-        "minCiv": "CHYBA: Tento typ záznamu nemá dostatek prohledávatelných textových polí. (Pole s UID „first“ a „last“)"
+        "maxStatus": "CHYBA: Tento typ záznamu má příliš mnoho vlastních polí typu 'status'.",
+        "maxVeh": "CHYBA: Tento typ záznamu má příliš mnoho prohledávatelných sekcí vozidla. (Pole s UID „plate“)",
+        "minCiv": "CHYBA: Tento typ záznamu nemá dostatek prohledávatelných textových polí. (Pole s UID „first“ a „last“)",
+        "minStatus": "CHYBA: Tento typ záznamu musí mít JEDNO vlastní pole typu 'status'."
       },
+      "existingHeader": "Existující vlastní typy záznamů",
+      "maskNumber": "#: Číslo",
+      "name": "Jméno",
       "readOnly": "Pouze ke čtení",
       "recordPreview": "Náhled záznamu",
+      "recordTypeName": "Název typu záznamu",
       "recordTypes": {
+        "dmvRecord": "Záznam DMV",
         "fireRecord": "Požární záznam",
+        "lawReport": "Právní zpráva",
         "policeReport": "Policejní zpráva",
-        "vehicleRegistration": "Registrace vozidla"
+        "vehicleRegistration": "Registrace vozidla",
+        "warrant": "Příkaz k zatčení"
       },
+      "requiredAbout": "Povinné pole",
+      "reverseMap": "Reverzní mapa",
       "searchVehicles": "Vyhledat vozidla",
       "sectionLabel": "Popisek sekce",
       "width": "Šířka"
@@ -115,15 +187,32 @@
       "address": "Adresa",
       "agencies": "Agentury",
       "agency": "Agentura",
+      "department": "Oddělení",
+      "description": "Popis",
       "errors": {
+        "agencyExists": "Chyba: Agentura s tímto názvem již existuje!",
         "departmentLimit2": "oddělení na okres!",
+        "generalLimit1": "Chyba: Vaše komunita je omezena na",
         "subdivisionExists": "Chyba: Oddělení s tímto názvem již existuje!"
       },
       "modifyAgency": {
-        "name": "Název agentury"
+        "name": "Název agentury",
+        "remove": {
+          "confirmRemove1": "Opravdu chcete odebrat tuto agenturu?"
+        }
+      },
+      "modifyDepartment": {
+        "abbreviation": "Zkratka",
+        "confirmRemove2": "Toto oddělení a všechny obsažené pododdělení budou odstraněny!",
+        "zip": "PSČ"
+      },
+      "modifySubdivision": {
+        "description": "Popis"
       },
       "persistentGroups": {
-        "groupName": "Název skupiny"
+        "groupName": "Název skupiny",
+        "limitReached": "Chyba: '{group}' může najednou obsahovat pouze {max} jednotku(jednotky).",
+        "title": "Trvalé skupiny jednotek"
       },
       "subdivisions": "Pododdělení",
       "zip": "PSČ"
@@ -131,13 +220,22 @@
     "general": {
       "accounts": "Účty",
       "authenticate": "Ověřit",
+      "customization": "Přizpůsobení",
       "customRecords": "Vlastní záznamy",
+      "desktops": "Plochy",
       "discordIntegration": "Integrace Discordu",
+      "logs": "Záznamy",
       "wipeRecords": "Smazat záznamy"
     },
+    "helpPermissions": {
+      "permissionsGuide": "Průvodce oprávněními"
+    },
     "integration": {
+      "apiKey": "Klíč API",
       "availableMaps": "Dostupné mapy",
+      "configureAndDeploy": "Nastavit a nasadit",
       "dbSync": {
+        "characterMapping": "Mapování znaků",
         "columnName": "Název sloupce",
         "customMapAbout": "Toto je vlastní pole mapování DB Sync poskytnuté vaším editorem vlastních záznamů.",
         "dbSyncHeader": "Synchronizace databáze",
@@ -145,20 +243,36 @@
         "dbSyncSubtext2": "Stačí jednoduše zadat váš SQL připojovací řetězec k databázi a namapovat vaše tabulky a pole na Sonoran CAD.",
         "dbSyncSubtext3": "Všechna pole červeně jsou povinná. Pokud nemáte datový sloupec pro volitelné pole, nechte ho prázdné.",
         "dbValue": "Hodnota databáze",
+        "description": "Popis",
+        "descriptionCredentials": "To jsou SQL údaje o připojení k vaší herní databázi.",
+        "enableDbSync": "Povolit synchronizaci databáze",
         "fieldMapId": "ID mapování polí",
         "friendlyMappingExample": "Např: 'drive_license' -> 'Řidičský průkaz'",
+        "friendlyValue": "Přívětivá hodnota",
         "host": "Host/adresa",
+        "jsonColumn": "Sloupec JSON",
         "jsonColumnAbout": "Pokud je tento sloupec datového typu JSON, můžete zadat klíč JSON.",
+        "jsonKey": "JSON klíč",
+        "saveCredentials": "Uložit přihlašovací údaje připojení",
         "testConnection": "Otestovat připojení",
-        "tooltipCharacterColumn": "Toto je název sloupce s jedinečným ID postavy ve vaší tabulce. Obvykle obsahuje Steam Hex."
+        "tooltipCharacterColumn": "Toto je název sloupce s jedinečným ID postavy ve vaší tabulce. Obvykle obsahuje Steam Hex.",
+        "type": "Typ",
+        "username": "Uživatelské jméno"
       },
       "erlc": {
         "apiKeyHint": "Vložte nový klíč pro nahrazení uložené hodnoty.",
         "civilianRegistrationsHeader": "Registrace civilistů",
+        "customRobloxMap": "Vlastní mapa Roblox",
+        "emergencyCallsHeader": "Nouzová volání",
+        "header": "Integrace ER:LC",
         "notifyAlwaysTooltip": "Hráč vždy obdrží soukromou zprávu po zpracování příkazu.",
         "notifyOnlyOnFailureTooltip": "Hráč obdrží soukromou zprávu pouze v případě, že příkaz selže.",
+        "tempRegisterCommand": "Dočasný registrační příkaz",
+        "trafficStopDefaultTenCodeHint": "Používá se pro dispečerské hovory při zastavení provozu. Zde ponechte svůj preferovaný kód.",
+        "trafficStopDescription": "Popis dispečinku",
         "trafficStopDescriptionHint": "Podporuje vlastní proměnné.",
         "trafficStopMaxRadiusHint": "Pokud je nejbližší vozidlo dál než toto, volání o zastavení provozu přejdou na zadání SPZ nebo vynechají údaje o vozidle.",
+        "trafficStopsHeader": "Policejní zastavení",
         "trafficStopVariableBuildingNumber": "Aktuální číslo budovy z ER:LC.",
         "trafficStopVariableCopied": "Proměnná zkopírována do schránky",
         "trafficStopVariablePlate": "První argument příkazu, když byla uvedena registrační značka.",
@@ -168,55 +282,95 @@
       "fivem": {
         "configureResourceTitle": "Nastavit zdroj",
         "manual": {
-          "configComment": "# Spusťte zdroj sonorancad a další přibalené zdroje"
+          "additionalOptions": "Více o dalších možnostech konfigurace se můžete dozvědět zde.",
+          "configComment": "# Spusťte zdroj sonorancad a další přibalené zdroje",
+          "configureResource": "Otevřete sonorancad/configuration/config.json pro konfiguraci resource.",
+          "extractResource": "Po stažení rozbalte složku [sonorancad] do složky resources vašeho serveru.",
+          "preconfiguredNotice": "Zdroj bude mít communityID a apiKey již předem nakonfigurované.",
+          "restartComplete": "A jakmile restartujete svůj server, máte hotovo! Podívejte se do dokumentace k povolení a používání každé funkce.",
+          "seeDocs": "Vizte dokumentaci"
         },
         "rocketNode": {
           "accessPanel": "Přístup k panelu herního serveru.",
+          "configurationLabel": "Konfigurace",
+          "couponCode": "SONORAN",
+          "couponPrefix": "Použít kód kupónu",
+          "fileManager": "Správce souborů",
+          "installSonoran": "Klikněte na Instalovat Sonoran na panelu Rocket Node.",
+          "navigateFolder": "Přejděte do složky resources > [sonorancad] > sonorancad > configuration.",
+          "purchaseServer": "Koupit herní server FiveM od Rocket Node",
           "resourceAccess": "Jakmile bude instalace dokončena, můžete k souborům zdroje přistupovat ve Správci souborů.",
           "selectCad": "Vyberte CAD a klikněte pro zkopírování/vložení ID a klíče níže."
-        }
+        },
+        "welcomeTitle": "Vítejte"
       },
+      "ip": "IP",
       "luaPlugins": "LUA pluginy",
-      "uploadCustomMap": "Nahrát vlastní mapu"
+      "manualInstalltion": "Ruční instalace",
+      "staticOnlyAbout": "Pokud váš herní režim není kompatibilní se zdrojem Live Map, můžete místo toho zadat webovou stránku s mapou vaší hry.",
+      "uploadCustomMap": "Nahrát vlastní mapu",
+      "websiteUrl": "URL webových stránek"
     },
     "limits": {
       "expiration": "Platnost",
       "limitsHeader": "Komunitní limity Sonoran CAD",
+      "upgradeYourCad": "Upgradujte své CAD",
       "version": "Verze"
     },
     "penal": {
       "bondType": "Typ kauce",
       "chargeType": "Typ poplatku",
+      "chargeTypes": "Typy poplatků",
+      "code": "Kód",
       "createNewPenal": "Vytvořit nový trestní zákoník",
       "editPenal": "Upravit trestní zákoník",
       "errors": {
-        "duplicate": "Chyba: Nemůžete nastavit trestní zákoník na takový, který již existuje!"
+        "duplicate": "Chyba: Nemůžete nastavit trestní zákoník na takový, který již existuje!",
+        "notFound": "Chyba: Nelze najít trestní zákoník k odstranění!"
       },
       "title": "Název"
     },
     "permissions": {
+      "account": "Účet",
+      "adminAccess": "Přístup pro správce",
+      "confirmBan": "Opravdu chcete",
+      "errors": {
+        "duplicateKey": "Chyba: Duplicitní klíč s tímto názvem již existuje!"
+      },
+      "joined": "Připojeno",
       "lawRecords": "Právní záznamy",
+      "pagePermissions": "Oprávnění stránky",
+      "permissions": "Oprávnění",
       "policeAdvanced": "Policie - pokročilé",
       "status": {
         "active": "AKTIVNÍ"
       },
       "toggles": {
         "editOtherIdent": "Upravit identitu jiného uživatele."
-      }
+      },
+      "unban": "zrušení zákazu"
     },
     "remove": {
       "removeSubtext": "Musíte být vlastníkem komunity/CAD, abyste mohli toto CAD odebrat. Proces odebrání bude vyžadovat ověření e-mailu.",
       "transferHeader": "Přesuňte svůj Sonoran CAD"
     },
     "webhooks": {
+      "10CodeAbout": "Tento WebHook bude odeslán, když administrátor přidá, upraví nebo odstraní 10-Code.",
       "accountPermissionsAbout": "Tento WebHook bude odeslán, když správce upraví oprávnění uživatelského účtu.",
       "adminWebhooks": "Webhooky správce",
       "adminWebhooksAbout": "Tyto WebHooky souvisejí s administrátorskými službami.",
       "apiRequestAbout": "Tento WebHook bude odeslán, když bude odeslán požadavek API.",
+      "bolo": "HLEDÁNÁ OSOBA",
       "character": "Změna znaku",
       "civilianWebhooks": "Civilní webhooky",
+      "departmentStructure": "Struktura oddělení",
       "departmentStructureAbout": "Tento WebHook bude odeslán, když administrátor aktualizuje strukturu oddělení.",
+      "dmv": "Záznam DMV",
       "emergencyAbout": "Tyto WebHooky souvisejí s nouzovými službami.",
+      "emergencyCall": "Nouzové volání",
+      "emergencyWebhooks": "Nouzové webhooks",
+      "fireRecord": "Požární záznam",
+      "medicalRecordAbout": "Tento WebHook bude odeslán, když bude přidán, upraven nebo odstraněn zdravotní záznam.",
       "modified": "Upraveno",
       "policeRecordAbout": "Tento WebHook bude odeslán, když bude přidán, upraven nebo odstraněn policejní záznam.",
       "signal": "Signal",
@@ -224,6 +378,9 @@
       "subtext2": "Jednoduše povolte a uveďte URL adresu Discord WebHooku pro požadovaná pole níže.",
       "toneBoardAbout": "Tento webhook bude odeslán, když dispečer přehraje tón",
       "unitPanic": "Panika jednotky"
+    },
+    "wipeRecords": {
+      "wipeSubtext1": "Vlastníci komunity mohou odstranit všechny uložené záznamy podle typu."
     }
   },
   "calleditor": {
@@ -239,28 +396,52 @@
       "addCharacter": "Přidat postavu",
       "age": "Věk",
       "aka": "Také znám jako (aliasy)/dřívější jméno(na)",
+      "confirmRemove": "Opravdu chcete odebrat tuto postavu?",
+      "editExistingCharacter": "Upravit postavu",
+      "emergencyContact": "Nouzový kontakt",
+      "hair": "Barva vlasů",
+      "image": "Obrázek",
+      "relationship": "Vztah",
       "residence": "Místo pobytu",
       "saveCharacter": "Uložit postavu",
-      "sex": "Pohlaví"
+      "sex": "Pohlaví",
+      "skin": "Odstín pleti",
+      "zip": "PSČ"
     }
   },
   "common": {
     "actions": "Akce",
     "activeServer": "Aktivní server",
+    "autoSort": "Automatické řazení",
+    "back": "Zpět",
     "cancel": "Zrušit",
+    "clear": "Vymazat",
     "close": "Zavřít",
+    "dbSyncRecordWarning": "Toto je záznam synchronizace databáze a lze jej upravit pouze se zapnutým sloučením databáze.",
+    "detachFromCall": "Odpojit se od hovoru (Enter)",
+    "download": "Stáhnout",
+    "enabled": "Povoleno",
     "errors": {
       "limitReached": "Chyba: dosažen maximální limit"
     },
     "export": "Exportovat",
     "externalWindow": "Otevřít v externím okně",
+    "hours": "Hodiny",
+    "icon": "Ikona",
+    "import": "Import",
+    "importPrompt": "Vložte obsah JSONu",
     "json": "JSON",
     "learnMore": "Zjistit více",
     "lostConnection": "Ztratili jste spojení se serverem.",
     "max": "Max",
+    "message": "Zpráva",
     "minimize": "Minimalizovat",
     "modify": "Upravit",
     "new": "Nový",
+    "noData": "Žádná data",
+    "noImageSelected": "Nebyl vybrán žádný obrázek",
+    "noResults": "Žádné výsledky",
+    "ok": "OK",
     "rateLimit": "Omezení rychlosti",
     "refresh": "Obnovit",
     "s": "s",
@@ -268,30 +449,50 @@
     "start": "Začít",
     "status": "Stav",
     "stop": "Zastavit",
+    "success": "Úspěch",
+    "tutorials": "Návody",
     "type": "Typ",
-    "upload": "Nahrát"
+    "undo": "Vrátit zpět",
+    "upload": "Nahrát",
+    "versionDisplay": {
+      "currentVersion": "Vaše verze: {version}",
+      "description": "UPOZORNĚNÍ: Vypadá to, že používáte zastaralou verzi Sonoran CAD.",
+      "latestVersion": "Nejnovější verze: {latestVersion}"
+    }
   },
   "communityMenu": {
     "buttons": {
       "civilian": "Civilní",
+      "discord": "Discord",
       "dispatch": "Odeslat",
       "fire": "Spálit",
+      "law": "Právo",
       "police": "Policie",
       "setDefault": "Nastavit výchozí komunitu"
     }
   },
   "CustomDomain": {
     "chooseYourDomainName": "Zvolte název své domény",
+    "cname": "CNAME",
     "communityID": "Community ID",
+    "configureYourDnsRecord": "Nakonfigurujte svůj DNS záznam",
     "content": "Obsah",
     "copiedToClipboard": "Zkopírováno do schránky!",
+    "name": "Jméno",
+    "placeholderExampleDomain": "cad.example.com",
     "setCustomDomain": "Nastavit vlastní doménu",
     "txt": "TXT"
   },
   "development": {
+    "banner": "Vývojová testovací verze - Není určeno pro produkční použití",
     "message": "Toto je bezplatná vývojová verze Sonoran CAD a není určena pro produkční použití."
   },
+  "downloads": {
+    "desktopAndMobileBanner": "Stáhněte si naše desktopové a mobilní aplikace pro Windows!"
+  },
   "homepage": {
+    "heroInlineStatement": "je nejpokročilejší, integrovaný a nejoblíbenější dostupný dispečerský software.",
+    "heroTitle": "#1 platforma pro dispečink her",
     "integrations": {
       "erlc": {
         "description": "Oficiální herní integrace ER:LC s živou mapou a dalšími funkcemi.",
@@ -299,46 +500,93 @@
           "ctaDocs": "Zobrazit dokumentaci",
           "faq": {
             "items": {
+              "best": {
+                "question": "Je Sonoran CAD nejlepší CAD pro ER:LC?"
+              },
               "community": {
-                "answer": "Rozhodně. Bezplatný plán je ideální pro malé až středně velké komunity a nabízí plnou funkcionalitu ER:LC bez omezení. Později můžete přejít na vyšší plán, pokud váš server poroste a bude potřebovat další účty nebo funkce."
+                "answer": "Rozhodně. Bezplatný plán je ideální pro malé až středně velké komunity a nabízí plnou funkcionalitu ER:LC bez omezení. Později můžete přejít na vyšší plán, pokud váš server poroste a bude potřebovat další účty nebo funkce.",
+                "question": "Je to vhodné pro malé nebo rostoucí komunity?"
               },
               "features": {
-                "answer": "Integrace zahrnuje kompletní sadu funkcí v reálném čase, jako jsou:\n- Živá 3D mapa se sledováním hráčů a jednotek\n- Automatické synchronizování hovorů na 911\n- Automatizace dopravních zastavení a klávesová zkratka\n- Automatizace čtečky registračních značek a klávesová zkratka\n- Automatizace tvorby vozidel a postav\n- a mnohem více"
+                "answer": "Integrace zahrnuje kompletní sadu funkcí v reálném čase, jako jsou:\n- Živá 3D mapa se sledováním hráčů a jednotek\n- Automatické synchronizování hovorů na 911\n- Automatizace dopravních zastavení a klávesová zkratka\n- Automatizace čtečky registračních značek a klávesová zkratka\n- Automatizace tvorby vozidel a postav\n- a mnohem více",
+                "question": "Jaké funkce jsou zahrnuty v integraci ER:LC?"
+              },
+              "setup": {
+                "question": "Jak dlouho trvá nastavení integrace?"
               }
             }
           },
+          "faqTitlePrimary": "Často kladené otázky",
+          "headlinePrimary": "Nejlepší CAD",
           "meta": {
             "description": "Bezplatné CAD pro ER:LC s 3D živou mapou, bodycamem, nouzovými hovory, nástroji pro postavu a podporou herního overlaye.",
-            "ogImageAlt": "Integrace Sonoran CAD pro ER:LC"
+            "ogImageAlt": "Integrace Sonoran CAD pro ER:LC",
+            "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "bodycam": {
+              "infoCopy": "Nahrávejte herní záznam z bodycamy pro přehrání a kontrolu.",
+              "infoTitle": "Nahrávání",
+              "previewTitle": "Náhled živé bodycam"
+            },
             "character": {
+              "infoTitle": "Příkazy ve hře",
               "title": "Vytvoření postavy"
             },
             "emergency": {
+              "infoCopy": "Posílejte tísňová volání ve hře dispečerům, zobrazená na mapě.",
               "title": "Nouzová volání"
             },
             "map": {
+              "infoCopy": "Velte jednotkám a prozkoumejte město s pohlcující živou 3D mapou.",
+              "infoTitle": "3D mapa",
               "title": "3D živá mapa"
+            },
+            "overlay": {
+              "infoCopy": "Zobrazte si živé informace o dispatchi bez opuštění hraní."
             }
           }
         }
       },
       "fivem": {
+        "description": "Oficiální FiveM zdroj s desítkami hlubokých integračních bodů.",
         "landing": {
+          "faq": {
+            "items": {
+              "best": {
+                "question": "Je Sonoran CAD nejlepší CAD pro FiveM?"
+              },
+              "free": {
+                "answer": "Ano. Základní integrace Sonoran CAD pro FiveM je dostupná v bezplatném plánu, takže komunity mohou začít bez placení za základní workflow."
+              }
+            }
+          },
           "faqKicker": "Podpůrné protokoly",
+          "faqTitleAccent": "Otázky",
+          "headlineAccent": "pro FiveM",
+          "kicker": "Zdarma, rychle, plně integrované",
           "meta": {
-            "keywords": "FiveM CAD, bezplatné CAD pro FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD"
+            "description": "Bezplatné CAD pro FiveM s živou mapou, bodycamem, synchronizací databáze a oficiální podporou pluginů pro hluboce integrované roleplay servery.",
+            "keywords": "FiveM CAD, bezplatné CAD pro FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
+            "title": "Bezplatné CAD pro FiveM | Sonoran CAD"
           },
           "modules": {
             "bodycam": {
+              "infoCopy": "Prohlížejte incidenty se synchronizovaným záznamem z bodycam připojeným přímo k vašim CAD pracovním postupům.",
+              "infoTitle": "Nahrávání",
               "title": "Živá bodycam"
             },
             "map": {
-              "infoTitle": "3D mapa"
+              "infoCopy": "Sledujte jednotky, monitorujte hovory a koordinujte scény s živou mapou vytvořenou pro aktivní FiveM komunity.",
+              "infoTitle": "3D mapa",
+              "title": "Živá mapa"
             },
             "plugins": {
+              "infoTitle": "Integrace serveru",
               "title": "Ekosystém pluginů"
+            },
+            "sync": {
+              "infoTitle": "Synchronizace dat"
             }
           },
           "submodules": {
@@ -351,53 +599,99 @@
               },
               "pagers": {
                 "title": "Přivolávače"
+              },
+              "printer": {
+                "description": "Tiskněte záznamy a podpůrné informace ve hře pro oddělení, která chtějí hmatatelné předání scény.",
+                "previewTitle": "Náhled pluginu tiskárny",
+                "title": "Tiskárna"
+              },
+              "signs": {
+                "previewTitle": "Náhled pluginu dopravních značek"
+              },
+              "station": {
+                "title": "Upozornění stanice"
               }
-            }
+            },
+            "title": "Oficiální integrace"
           }
         }
       }
     },
     "pricingDescription": "Placená předplatná Sonoran CAD vám umožňují povolit nové integrační funkce, povolit přizpůsobení, odstranit omezení a další!",
-    "welcomeDescription": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!"
+    "welcomeDescription": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!",
+    "welcomeHeadline": "Vítejte v Sonoran CAD!"
   },
   "infernoPager": {
+    "addresses": "Adresy",
+    "body": "Tělo stránky",
+    "importCurrentCallUnits": "Připojit jednotky z aktuálního hovoru",
     "messageRequired": "Před odesláním zadejte tělo stránky.",
+    "nature": "Natura stránky",
+    "noAddresses": "Není nakonfigurována žádná stránkovatelná adresa pageru Inferno.",
     "playerIdsHint": "Volitelné online jednotky pro přímé stránkování.",
+    "selectionRequired": "Vyberte alespoň jednu adresu nebo jednotku.",
     "unitsTooltip": "Můžete sem také přetáhnout aktivní dispečerský hovor a přidat k němu připojené jednotky."
   },
   "login": {
     "buttons": {
-      "forgot": "Zapomenuté heslo"
+      "create": "Vytvořit účet",
+      "forgot": "Zapomenuté heslo",
+      "switchCommunities": "Přepnout komunity"
     },
     "labels": {
+      "confirmPassword": "Potvrdit heslo",
       "email": "E-mail",
       "emailPreferences": "Předvolby e-mailu",
-      "resetPassword": "Resetovat heslo"
+      "resetPassword": "Resetovat heslo",
+      "username": "Uživatelské jméno"
     },
+    "learnMoreAboutSonoranCADSIntegrationPluginSystemCustomLiveMa": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!",
     "linkAuth": {
+      "description": "Přihlášení přes Apple a Discord musí být dokončeno mimo vložený rámec.",
+      "errors": {
+        "auth": "Vaše přihlašovací relace chybí nebo vypršela. Přihlaste se prosím znovu.",
+        "createFailed": "Nelze nyní vytvořit kód odkazu. Zkuste to prosím znovu.",
+        "submitFailed": "Nelze nyní propojit tento kód. Zkuste to prosím znovu."
+      },
       "idPageBackToMenu": "Zpět do menu",
+      "idPageSuccessDescription": "Váš herní účet je nyní propojen.",
+      "idPageSuccessTitle": "Propojení dokončeno",
       "linkPageDescription": "Přihlaste se ke svému účtu a poté zadejte 4znakový kód zobrazený ve vloženém přihlašovacím okně.",
-      "success": "Přihlášení propojeno. Nyní se můžete vrátit do původního vloženého okna."
+      "linkPageTitle": "Propojit vložené přihlášení",
+      "scanPrompt": "Naskenujte pro otevření v telefonu",
+      "stepOneDescription": "Použijte fotoaparát ke скenování QR kódu.",
+      "stepOneTitle": "Otevřete odkaz v telefonu nebo tabletu",
+      "stepTwoTitle": "Otevřete odkaz v prohlížeči",
+      "success": "Přihlášení propojeno. Nyní se můžete vrátit do původního vloženého okna.",
+      "visit": "Otevřít"
     },
     "newVisitor": {
       "description": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!"
     },
+    "robloxLinkBannerTitle": "Propojení účtu Roblox je vyžadováno",
     "welcome": "Vítejte"
   },
   "management": {
     "currentPlayersLastHour2": "Aktuální hráči (poslední 1 hodina):",
+    "lastUpdated": "Naposledy aktualizováno",
     "node2": "Uzel:",
     "password": "Heslo pro správu",
+    "totalServersLastHour": "Celkem serverů (poslední 1 hodina)",
     "updateDb": "Aktualizovat DB",
     "users": "Uživatelé"
   },
   "payment": {
     "buttons": {
+      "amount": "Částka",
+      "openBillingPortal": "Otevřít fakturační portál",
       "purchase": "Koupit předplatné"
     },
     "labels": {
+      "chargesPerPage": "Poplatky za stránku",
       "monthly": "Měsíčně",
       "noSubscriptionsAvailable": "Žádné dostupné předplatné",
+      "noSubscriptionsFound": "Žádná předplatná nenalezena",
+      "pro": "Pro",
       "standard": "Standardní",
       "subscriptionsPerPage": "Předplatná na stránku"
     },
@@ -408,53 +702,74 @@
       "newSubscription": "Nové předplatné",
       "save25": "Ušetřete 25 %",
       "serverIp": "IP serveru",
-      "serversEmail": "E-mail účtu Sonoran Servers"
+      "serversEmail": "E-mail účtu Sonoran Servers",
+      "setCommunityId": "Nastavit ID komunity"
     }
   },
   "police": {
     "bodycamViewer": {
+      "live": "Živě",
       "screensAvailable": "Dostupné obrazovky: {visible} / {total} (Stránka {page} z {pages})",
       "singleCam": "Jedna kamera",
-      "startRecording": "Spustit nahrávání"
+      "startRecording": "Spustit nahrávání",
+      "stopRecording": "Zastavit nahrávání {duration}",
+      "switchToAll": "Přepnout na zobrazení všech kamer policie",
+      "switchToSingle": "Přepnout na zobrazení jedné kamery policie",
+      "uploadingClip": "Nahrávání klipu..."
     },
     "callEditor": {
       "addNote": "Přidat poznámku",
       "callNotes": "Poznámky k hovoru",
+      "callOrigin": "Původ hovoru",
+      "callTitle": "Název hovoru",
       "callViewer": "Prohlížeč hovorů",
       "confirmations": {
         "close1": "Nastavili jste stav hovoru na ZAVŘENO.",
-        "close3": "Tento hovor a všechna data budou odstraněny!"
+        "close3": "Tento hovor a všechna data budou odstraněny!",
+        "detatch": "Odpojit"
       },
+      "dispatchRecord": "Záznam o odeslání",
       "errors": {
-        "noTitle": "Chyba: Tento hovor nemá nastavený název!"
+        "noOrigin": "Chyba: Tento hovor nemá nastavený původ!",
+        "noTitle": "Chyba: Tento hovor nemá nastavený název!",
+        "unitAlreadyOnCall": "Chyba: Tato jednotka je již na hovoru!"
       },
       "nearestStations": "Nejbližší stanice",
+      "newDispatch": "Nový výjezd",
       "nextCall": "Další hovor (šipka doprava)",
+      "note": "Poznámka",
       "originOptions": {
         "walkUp": "Docházka bez předchozího oznámení"
       },
       "postal": "Poštovní",
       "previousCall": "Předchozí hovor (šipka vlevo)",
       "priority": "Priorita",
+      "savedTypes": "Uložené typy",
+      "selfDispatchUnavailable": "Nemáte oprávnění používat samodispečink.",
       "statusOptions": {
-        "active": "AKTIVNÍ"
+        "active": "AKTIVNÍ",
+        "pending": "ČEKAJÍCÍ"
       },
       "statusTimers": {
         "descCountdown": "Když je stav jednotky nastaven na {status}, spusťte odpočet.",
         "descCountup": "Když je stav jednotky nastaven na {status}, spusťte odpočet nahoru."
       },
+      "unitStatusAttached": "Stav jednotky: Připojeno",
       "unitStatusAttachedHint": "Když je jednotka připojena k hovoru, aktualizujte její stav.",
       "unitStatusClosedHint": "Když je hovor uzavřen, aktualizujte stav všech připojených jednotek.",
       "unitStatusTimers": "Stav jednotky: časovače",
       "updateCall": "Aktualizovat hovor",
       "webhooks": {
+        "attached": "Připojeno",
         "enabled": "Povoleno",
         "status": "Stav"
       }
     },
     "callList": {
+      "callHistory": "Historie hovorů",
       "columns": {
-        "callId": "ID hovoru"
+        "callId": "ID hovoru",
+        "callTitle": "Název hovoru"
       },
       "previewCall": "Náhled hovoru",
       "priority": "Priorita"
@@ -468,95 +783,157 @@
       "emptyThread": "Zatím žádné zprávy pro tento chat.",
       "justYou": "Jen vy",
       "noThreads": "Zatím žádné aktivní konverzace.",
+      "offline": "Offline",
+      "offlineRecipientsHint": "Před odesláním nové zprávy odeberte offline příjemce.",
       "recipients": "Příjemci",
       "recipientsHint": "Vyberte online jednotky pro zahájení nebo pokračování chatu.",
       "ttsIncomingTooltip": "Předčítat příchozí zprávy v chatu",
       "ttsToggle": "Přepnout text na řeč",
-      "unableToSend": "Chat nyní nelze odeslat."
+      "unableToSend": "Chat nyní nelze odeslat.",
+      "you": "Ty"
     },
     "command": {
+      "attach": "Připojit",
       "clear": "Vymazat",
       "close": "Zavřít",
       "commandLine": "Příkazový řádek",
       "detach": "Odpojit",
-      "savedCallType": "Uložený typ hovoru"
+      "savedCallType": "Uložený typ hovoru",
+      "unitStatus": "Stav jednotky"
     },
     "diagram": {
+      "deleteSelected": "Smazat vybrané",
+      "itemOptions": "Možnosti položky",
+      "moveLayerUp": "Posunout vrstvu nahoru (Shift = Nahoru)",
+      "shortcutDown": "Zkratka: (SHIFT) šipka dolů",
       "shortcutUndo": "ZKRATKA: CTRL + Z",
       "shortcutUp": "Zkratka: (SHIFT) šipka nahoru"
     },
     "emergencyCall": {
+      "caller": "Volající",
       "calls": "Volání",
-      "confirmRemoveAll": "Opravdu chcete zavřít všechny aktivní tísňové hovory?"
+      "confirmRemoveAll": "Opravdu chcete zavřít všechny aktivní tísňové hovory?",
+      "emergency": "Nouzový",
+      "location": "Poloha",
+      "removeAllCalls": "Odstranit všechny hovory"
     },
     "header": {
       "activeCalls": "Aktivní hovory",
+      "activeServer": "Aktivní server",
       "activeUnits": "Aktivní jednotky",
       "bodyCamRecordings": "Záznamy z tělesné kamery",
+      "bolo": "HLEDÁNÁ OSOBA",
       "chat": "Chat",
       "emergencyCalls": "Nouzová volání",
+      "lookup": "Vyhledat",
+      "playTo": "Přehrávat do",
       "quickLinks": "Rychlé odkazy",
       "rapidIQ": "RapidIQ",
       "records": "Záznamy",
       "signal": "Signal",
+      "signalEffect1": "Signal",
       "toneBoard": "Zvuková deska"
     },
     "liveMap3d": {
       "blip": {
-        "dispatchCall": "VÝJEZD"
+        "dispatchCall": "VÝJEZD",
+        "station": "STANICE"
       },
       "controls": {
+        "camera": "Kamera",
+        "left": "LEVÁ",
+        "position": "Pozice",
         "right": "VPRAVO",
         "up": "NAHORU"
       },
-      "speedDisplay": "{multiplier}x ({speed})"
+      "speedDisplay": "{multiplier}x ({speed})",
+      "unknownError": "neznámá chyba"
     },
     "liveMap": {
       "toolbar": {
         "dragAndDrop": "(Přetáhni a pusť)",
         "ersCallout": "ERS upozornění (Přetáhni a pusť)",
         "mapMode": "Režim mapy",
-        "zoomIn": "Přiblížit"
+        "zoomIn": "Přiblížit",
+        "zoomOut": "Oddálit"
       }
     },
     "lookup": {
+      "agency": "Agentura",
       "columns": {
         "expiration": "Platnost",
         "mi": "M.I.",
         "name": "Jméno",
+        "plate": "SPZ",
         "status": "Stav"
       },
+      "department": "Oddělení",
       "flags": "Vlajky:",
+      "identifier": "Identifikátor",
+      "lookup": "Vyhledat",
+      "nameSearch": "Jméno",
+      "plate": "Poznávací značka",
+      "plateSearch": "SPZ",
       "recordsNoData": "Žádné záznamy nejsou k dispozici",
-      "refresh": "Obnovit"
+      "refresh": "Obnovit",
+      "reportsHeader": "Zprávy",
+      "statuses": {
+        "active": "AKTIVNÍ",
+        "inactive": "Neaktivní"
+      }
+    },
+    "notes": {
+      "notepad": "Poznámkový blok"
+    },
+    "rapidIQForm": {
+      "completedNoCard": "RapidIQ dokončeno",
+      "copyResultsSuccess": "Otázky a odpovědi zkopírovány",
+      "nextHotkey": "Další otázka (šipka doprava nebo Enter)"
     },
     "recordCenter": {
       "errors": {
-        "noRecordTypes": "Žádné typy záznamů: Přidejte je v Admin > Přizpůsobení > Vlastní záznamy"
+        "noRecordTypes": "Žádné typy záznamů: Přidejte je v Admin > Přizpůsobení > Vlastní záznamy",
+        "syncEnabledFeatDisabled": "Tato funkce není kompatibilní se synchronizací databáze"
       },
+      "myFiles": "Moje soubory",
       "newReport": "Nový záznam",
       "noRecordsForSuper": "Žádné záznamy vyžadující zásah nadřízeného",
+      "noRecordsFound": "Nebyly nalezeny žádné záznamy",
+      "noReportsForSuper": "Žádné zprávy vyžadující zásah nadřízeného",
       "noReportsFound": "Nebyly nalezeny žádné záznamy",
       "supervisorPanel": "Panel nadřízeného"
     },
     "records": {
       "agency": {
         "agencyName": "Název agentury",
-        "observingOfficer": "Dozorující útvar"
+        "location": "Poloha",
+        "observingOfficer": "Dozorující útvar",
+        "recordNum": "Záznam č."
+      },
+      "arrest": {
+        "weapons": "Zbraň(e)"
       },
       "charges": {
-        "counts": "Obvinění"
+        "charge": "Poplatek",
+        "chargeType": "Typ poplatku",
+        "counts": "Obvinění",
+        "fineTotal": "Celková pokuta"
       },
       "editor": {
         "addRecord": "Přidat záznam",
+        "copyLink": "Kopírovat odkaz na záznam",
         "errors": {
           "nameOrPlate": "Chyba: Tento záznam musí mít jméno civilisty nebo registrační značku vozidla, aby mohl být vyhledán!",
-          "noCopiedLink": "Chyba: Nemáte zkopírovaný odkaz na záznam!"
+          "noCopiedLink": "Chyba: Nemáte zkopírovaný odkaz na záznam!",
+          "requiredField": "Chyba: Povinné pole"
         },
         "history": {
+          "after": "Po",
+          "changedBy": "Změnil",
           "loadError": "Chyba: Nepodařilo se načíst historii záznamu.",
           "noFieldChanges": "V tomto záznamu se nezměnily žádné hodnoty polí."
         },
+        "pasteLink": "Vložit odkaz na záznam",
         "pdf": "PDF",
         "recordType": "Typ záznamu",
         "removeRecord": "Odstranit záznam",
@@ -565,6 +942,7 @@
         "status": {
           "approved": "SCHVÁLENO",
           "closed": "UZAVŘENO",
+          "pending": "ČEKAJÍCÍ",
           "rejected": "ZAMÍTNUTO"
         }
       },
@@ -581,18 +959,27 @@
         "narrative": "narrativ"
       },
       "speed": {
+        "citationInformation": "Informace o citaci",
         "courtDate": "Datum jednání soudu",
         "other": "Ostatní",
+        "radar": "Radar",
         "speedLimit": "Rychlostní limit",
         "vehicleSpeed": "Rychlost vozidla"
       },
+      "status": {
+        "status": "Stav"
+      },
       "vehicle": {
+        "make": "Značka",
+        "plate": "Poznávací značka",
         "types": {
           "aircraft": "Letadlo",
           "coupe": "Kupé",
+          "motorcycle": "Motocykl",
           "sedan": "sedan",
           "suv": "SUV"
-        }
+        },
+        "vehicleInformation": "Informace o vozidle"
       }
     },
     "signal": {
@@ -600,40 +987,70 @@
     },
     "timers": {
       "attachments": "Přílohy",
+      "clearAttachment": "Vymazat přílohu",
       "seconds": "Sekundy"
     },
     "toneBoard": {
+      "speechToTextFailed": "Převod řeči na text se nezdařil.",
+      "speechToTextNoMicrophone": "Nebyl zjištěn žádný mikrofon.",
+      "speechToTextNoSpeech": "Nebyla zjištěna žádná řeč.",
       "speechToTextNotAllowed": "Přístup k mikrofonu byl odepřen.",
       "speechToTextUnavailable": "Rozpoznávání řeči je nyní nedostupné.",
       "textToSpeech": "Text na řeč"
     },
     "unitEditor": {
+      "aop": "AOP",
+      "bodycamEnabled": "Bodycam povoleno",
       "bodycamShadowRecording": "Tajné nahrávání",
+      "bodycamTab": "Bodycam",
+      "confirmRemove": "Opravdu chcete odebrat identifikátor",
       "departments": "Oddělení",
       "effects": "Efekty",
       "electronBodycamPermissionWarning": "Pro pořizování záznamu tělové kamery je vyžadováno oprávnění pro záznam obrazovky v macOS. Povolte ho v Nastavení systému a poté Sonoran CAD úplně ukončete a znovu otevřete.",
+      "location": "Poloha",
       "overlay": "Překrytí",
+      "persistentGroup": "Trvalá skupina",
+      "persistentGroupFull": "Tato skupina je plná",
+      "persistentGroupHint": "Přiřadit se do nakonfigurované trvalé skupiny.",
       "status": "Stav",
       "subdivision": "Pododdělení",
       "subdivisions": "Pododdělení",
-      "switchIdentifier": "Přepnout identifikátor"
+      "switchIdentifier": "Přepnout identifikátor",
+      "switchIdentifierTab": "Přepnout identifikátor",
+      "units": "Jednotky"
     },
     "units": {
+      "activeUnits": "Aktivní jednotky",
+      "addToCall": "Přidat k hovoru",
       "editUnit": "Upravit útvar",
-      "groupName": "Název skupiny"
+      "groupName": "Název skupiny",
+      "units": "Jednotky"
     }
+  },
+  "promotion": {
+    "newPromotion": "Nová propagace",
+    "title": "Propagace"
   },
   "rapidIQCustomization": {
     "codes": "Kódy:",
-    "flows": "Toky:"
+    "defaults": "Výchozí hodnoty:",
+    "flows": "Toky:",
+    "question": "Otázka"
   },
   "selectionPage": {
     "buttons": {
       "createCommunity": "Vytvořit komunitu",
-      "discover": "Objevit"
+      "discover": "Objevit",
+      "joinCommunity": "Připojit se ke komunitě",
+      "My Account": "Můj účet"
     },
     "errors": {
+      "communityIdCharacters": "Chyba: Vaše ID komunity může obsahovat pouze písmena, čísla, podtržítka a pomlčky!",
+      "communityNameLength": "Chyba: Název vaší komunity musí mít 1 až 50 znaků!",
       "noCommunityID": "Chyba: Zadejte prosím ID komunity!"
+    },
+    "labels": {
+      "website": "Webová stránka (volitelné)"
     },
     "text": {
       "createHeader": "Registrace CAD",
@@ -641,28 +1058,46 @@
       "helpCommunityWebsite": "Vaše komunitní webové stránky jsou URL vašich fór, Discordu nebo jiného webu. Toto pole je NEPOVINNÉ a není vyžadováno!"
     },
     "tooltips": {
+      "join": "Připojit",
       "leaveCommunity": "Opustit tuto komunitu.",
       "search": "Vyhledat komunitu Sonoran CAD."
     }
   },
   "settings": {
     "accountSecretId": "ID tajného účtu:",
+    "accountTab": "Účet",
+    "apiIdLabel": "ID API:",
+    "classicLayout": "Klasické rozložení",
+    "desktopOverlayHotkey": "Překrytí na ploše",
+    "erlcHotkeys": "ER:LC klávesové zkratky",
     "exitResize": "Ukončit změnu velikosti",
+    "hotkeyClickToRecord": "Klikněte pro nahrávání",
     "hotkeyCombination": "Kombinace",
+    "language": "Jazyk",
     "languageKorean": "Korejština/한국어",
     "lockWindow": "Zamknout okno",
     "microphoneNumbered": "Mikrofon {index}",
     "overlay": {
       "addFrame": "Přidat rámeček",
+      "callUpdates": "Aktualizace hovoru",
+      "channel": "Kanál",
+      "color": "Barva",
       "configuration": "Konfigurace",
+      "confirmReset": "Opravdu chcete resetovat svou konfiguraci?",
+      "customTextFiles": "Vlastní textové soubory",
       "events": "Události",
+      "exampleText": "Ukázkový text",
       "field": "Pole",
       "fontSize": "Velikost písma",
       "fontWeight": "Tloušťka písma:",
       "goveeWifi": "Govee WiFi",
       "lighting": "Osvětlení",
+      "manualIp": "Ruční IP (Volitelné)",
+      "philipsHue": "Philips Hue",
       "streamAdBanner": "Podívejte se na náš livestream overlay a Twitch bota!",
       "streamOverlay": "Překrytí streamu",
+      "twitch": "Twitch",
+      "txtFiles": "TXT soubory",
       "wyzeApiKey": "Klíč API Wyze",
       "wyzeColor": "Wyze Color",
       "wyzeKeyId": "ID klíče Wyze"
@@ -673,47 +1108,73 @@
     "statusHotkeys": "Klávesové zkratky stavu",
     "systemDefaultMicrophone": "Výchozí systémový mikrofon",
     "theme": {
+      "backgroundImage": "Obrázek na pozadí",
       "backgroundImagePosition": "Pozice obrázku na pozadí",
       "backgroundImageScale": "Měřítko obrázku na pozadí",
       "bgImageFit": {
         "contain": "Obsahovat (Přizpůsobit dovnitř)",
-        "cover": "Pokrýt (vyplnit a oříznout)"
+        "cover": "Pokrýt (vyplnit a oříznout)",
+        "scaleDown": "Zmenšit"
       },
       "bgImagePosition": {
-        "bottomRight": "Vpravo dole"
+        "bottom": "Dole",
+        "bottomRight": "Vpravo dole",
+        "top": "Nahoře",
+        "topLeft": "Vlevo nahoře"
       },
       "bgImageScale": {
+        "p200": "200%",
+        "p50": "50%",
         "p75": "75 %"
       },
       "colors": {
+        "accent1Text": "Text zvýraznění 1",
         "accent2Text": "Text zvýraznění 2",
         "accent3Text": "Text zvýraznění 3",
+        "foreground": "Popředí",
         "inverseText": "Invertovaný text",
-        "subtitleText": "Podtitulkový text"
+        "primary": "Primární",
+        "subtitleText": "Podtitulkový text",
+        "titleText": "Text názvu"
       },
+      "confirmDeleteTheme": "Opravdu chcete odstranit {themeName}?",
       "deleteTheme": "Smazat motiv",
-      "enterThemeName": "Zadejte název motivu"
+      "enterThemeName": "Zadejte název motivu",
+      "importedThemeName": "Importovaný motiv {index}",
+      "themeColors": "Barvy motivu"
     },
     "trafficStopHotkey": "Rozpoznávání SPZ"
   },
   "sideMenu": {
     "buttons": {
       "disclaimer": "Používáním nebo přístupem k Sonoran CAD souhlasíte s našimi podmínkami a zásadami ochrany osobních údajů.",
+      "downloads": "Stažené soubory",
       "exitFullscreen": "Opustit režim celé obrazovky",
+      "goFullscreen": "Přejít do režimu celé obrazovky",
+      "login": "Přihlásit se",
       "logout": "Odhlásit se",
-      "settings": "Nastavení"
+      "myAccount": "Můj účet",
+      "settings": "Nastavení",
+      "tutorials": "Návody"
     }
   },
   "stationAlert": {
     "makeSelection": "Vyberte možnost",
+    "sendAlert": "Odeslat upozornění",
+    "sendMessage": "Odeslat zprávu",
     "stationAlert": "Upozornění stanice",
     "toneBoard": "Zvuková deska"
   },
   "taskbar": {
     "displayTabIcons": "Zobrazit ikony karet",
+    "layoutCustomization": "Přizpůsobení rozložení",
+    "nextDesktop": "Další plocha",
     "startMenu": "Menu Start",
     "system": "Systém",
     "taskbarPosition": "Umístění hlavního panelu",
     "unpinFromTaskbar": "Odepnout z hlavního panelu"
+  },
+  "toneBoard": {
+    "playStack": "Hrací pila"
   }
 }
