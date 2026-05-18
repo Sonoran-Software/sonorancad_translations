@@ -1,0 +1,38 @@
+name: Sync Primary Branch to Staging
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-primary-to-staging
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref_name == 'master' || github.ref_name == 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout staging
+        uses: actions/checkout@v4
+        with:
+          ref: staging
+          fetch-depth: 0
+
+      - name: Configure Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Merge primary branch into staging
+        run: |
+          set -euo pipefail
+          git fetch origin "${GITHUB_REF_NAME}" staging
+          git merge --no-edit -m "chore: sync ${GITHUB_REF_NAME} into staging" "${GITHUB_SHA}"
+          git push origin HEAD:staging
