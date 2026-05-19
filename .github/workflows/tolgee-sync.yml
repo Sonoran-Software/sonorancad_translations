@@ -209,7 +209,21 @@ jobs:
             git push origin HEAD:staging
           fi
 
+      - name: Detect i18n changes pending promotion
+        id: i18n_changes
+        run: |
+          set -euo pipefail
+          git fetch origin master:refs/remotes/origin/master
+          if git diff --quiet origin/master...HEAD -- "*.json"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No i18n changes pending promotion."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "i18n changes pending promotion."
+          fi
+
       - name: Promote staging to master
+        id: promote
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.TRANSLATION_AUTOMATION_TOKEN }}
@@ -217,23 +231,31 @@ jobs:
             const owner = 'Sonoran-Software';
             const repo = 'sonorancad_translations';
             try {
-              await github.rest.repos.merge({
+              const response = await github.rest.repos.merge({
                 owner,
                 repo,
                 base: 'master',
                 head: 'staging',
                 commit_message: 'chore: promote synced translations',
               });
-              core.info('Merged staging into master');
+              if (response.status === 204) {
+                core.info('master is already up to date');
+                core.setOutput('promoted', 'false');
+              } else {
+                core.info('Merged staging into master');
+                core.setOutput('promoted', 'true');
+              }
             } catch (error) {
               if (error.status === 204 || (error.status === 409 && String(error.message).includes('No commits'))) {
                 core.info('master is already up to date');
+                core.setOutput('promoted', 'false');
               } else {
                 throw error;
               }
             }
 
       - name: Trigger frontend rebuild
+        if: steps.i18n_changes.outputs.changed == 'true' && steps.promote.outputs.promoted == 'true'
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.TRANSLATION_AUTOMATION_TOKEN }}
