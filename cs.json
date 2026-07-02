@@ -895,6 +895,7 @@
     "search": "Hledat",
     "searchOnMap": "Hledat na mapě",
     "seconds": "Sekundy",
+    "select": "Vybrat",
     "serverStatus": "Stav serveru",
     "sessionExpired": "Platnost relace vypršela",
     "start": "Začít",
@@ -963,10 +964,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Stáhněte si naše desktopové a mobilní aplikace pro Windows!",
-    "desktopBanner": "Stáhněte si naši desktopovou aplikaci pro Windows!"
+    "desktopBanner": "Stáhněte si naši desktopovou aplikaci pro Windows!",
+    "desktopBannerMacBody": "Nainstalujte aplikaci pro OSX pro rychlejší CAD prostředí s nativními desktopovými nástroji.",
+    "desktopBannerMacTitle": "Aplikace Sonoran CAD pro OS X",
+    "desktopBannerWindowsBody": "Nainstalujte aplikaci pro Windows pro rychlejší CAD prostředí s nativními desktopovými nástroji.",
+    "desktopBannerWindowsTitle": "Aplikace Sonoran CAD pro Windows"
   },
   "error404": {
     "goBack": "Jít zpět"
+  },
+  "footer": {
+    "rocketNodeLink": "Otevřít RocketNode hosting",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
+    "sonoranOneLink": "Otevřít Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "je nejpokročilejší, integrovaný a nejoblíbenější dostupný dispečerský software.",
@@ -1159,6 +1169,12 @@
         "name": "FiveM"
       }
     },
+    "meta": {
+      "description": "Sonoran CAD je bezplatný systém CAD/MDT a správy záznamů pro herní komunity. Zaregistrujte svou komunitu zdarma ještě dnes!",
+      "keywords": "CAD/MDT, Free CAD/MDT, Police Dispatching, Roleplay Dispatching",
+      "ogImageAlt": "Logo Sonoran CAD",
+      "title": "Sonoran CAD, bezplatný software pro dispečink CAD/MDT"
+    },
     "pricingDescription": "Placená předplatná Sonoran CAD vám umožňují povolit nové integrační funkce, povolit přizpůsobení, odstranit omezení a další!",
     "startToday": "Začít dnes",
     "welcomeDescription": "Zjistěte více o integračním pluginovém systému Sonoran CAD, vlastní živé mapě, funkci synchronizace databáze, aplikacích pro iOS/Android a dalších věcech!",
@@ -1267,6 +1283,126 @@
     "discovery": "Objevování"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "AKTIVNÍ",
+      "cadPlans": "CAD plány",
+      "cancellingStatus": "Rušení: {date}",
+      "changeCommunity": "Změnit komunitu",
+      "choosePlanAria": "Vybrat {plan}",
+      "clearCommunity": "Vymazat ID komunity",
+      "communityAlreadySubscribedTooltip": "Tato komunita už má aktivní předplatné.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "Toto předplatné bylo zakoupeno, ale zatím nebylo přiřazeno ke komunitě CAD.",
+      "communityMissingTitle": "Není nastaveno ID komunity",
+      "contactSupport": "Kontaktovat podporu",
+      "description": "Spravujte předplatná, přiřazujte je komunitám CAD a aktualizujte fakturaci přes Stripe.",
+      "expertInstallInfo": "Informace o odborné instalaci",
+      "eyebrow": "Platební centrum",
+      "inactiveSubscriptions": "Neaktivní / Zrušené",
+      "manageSubscription": "Spravovat předplatné",
+      "noActiveSubscriptionsBody": "Vytvořte nové předplatné pro upgrade komunity CAD.",
+      "noCommunitiesAvailable": "Pro tento účet nejsou k dispozici žádná společenství.",
+      "noInactiveSubscriptions": "Žádná neaktivní předplatná",
+      "noInactiveSubscriptionsBody": "Zrušená a neaktivní předplatná se zobrazí zde.",
+      "openOnePortal": "Otevřít ONE Portal",
+      "otherProducts": "Ostatní produkty",
+      "planDescriptions": {
+        "expertInstallation": "Jednorázová pomoc s nastavením od týmu Sonoran.",
+        "free": "Základní přístup k CAD s ER:LC, FiveM a připojením k API.",
+        "plus": "Přidává synchronizaci databáze, dva servery, vyšší limity a více šablon.",
+        "pro": "Odemkne neomezené škálování, vlastní mapy, sloučení databází a přehledné mapování.",
+        "sonoranOne": "Balíčky CAD Pro, CMS Pro, Radio Pro, streamovací nástroje a hosting RocketNode.",
+        "standard": "Přidává podporu vlastních domén, vyšší limity a rozšířené komunitní nástroje.",
+        "starter": "Přidává vlastní ID komunity, více uživatelů a placené CAD funkce.",
+        "streamOverlay": "Nástroje překrytí pro streamery a komunitní vysílání."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standard",
+        "free": "Zdarma",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD Standard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "Nástroje pro streamování"
+      },
+      "planPrices": {
+        "expertInstallation": "34,99 $",
+        "free": "$0,00/měs.",
+        "plus": "17,99 $/měs.",
+        "pro": "29,99 $/měs.",
+        "sonoranOne": "49,99 $/měs.",
+        "standard": "9,99 $/měs.",
+        "starter": "3,99 $/měs.",
+        "streamOverlay": "4,99 $/měs."
+      },
+      "planQuarterlyPrices": {
+        "free": "$0,00/měs.",
+        "plus": "13,50 $/měs.",
+        "pro": "22,50 $/měs.",
+        "sonoranOne": "37,50 $/měs.",
+        "standard": "$7,60/měs.",
+        "starter": "$3,00/měs."
+      },
+      "pricingBadges": {
+        "bestValue": "Nejlepší hodnota",
+        "mostPopular": "Nejoblíbenější"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Nahrávání z tělesné kamery / 24 hodin",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Vlastní ID komunity",
+        "customDomain": "Vlastní doména",
+        "customLiveMapImage": "Vlastní živý obrázek mapy",
+        "customRecordTemplates": "Vlastní šablony záznamů",
+        "databaseFriendlyMapping": "Databázové přátelské mapování",
+        "databaseMerge": "Sloučení databáze",
+        "databaseSync": "Synchronizace databáze",
+        "integrationAccess": "Integrace ER:LC + FiveM a API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM hosting",
+        "servers": "Servery",
+        "streamingTools": "Nástroje pro streamování",
+        "userAccounts": "Uživatelské účty"
+      },
+      "pricingPlanNames": {
+        "free": "Zdarma",
+        "plus": "Plus",
+        "pro": "Pro",
+        "standard": "Standardní",
+        "starter": "Začátečník"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 min",
+        "included": "Zahrnuto",
+        "notIncluded": "Není zahrnuto",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 min",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 min",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Neomezený"
+      },
+      "selectCommunityForPurchase": "Vyberte komunitu CAD",
+      "selectCommunitySubtitle": "Vyberte komunitu, kterou chcete upgradovat tímto předplatným.",
+      "sonoranOnePlaceholder": "Jedno předplatné pro CAD, CMS, Radio a zahrnutý RocketNode FiveM hosting.",
+      "subscribed": "Přihlášeno k odběru",
+      "subscribeToBundle": "Přihlásit k odběru",
+      "subscriptionsBody": "Zkontrolujte aktivní předplatná, přiřaďte komunity CAD a spravujte neaktivní předplatná.",
+      "subscriptionsTitle": "Vaše předplatná",
+      "supportBody": "Naše vyhrazená podpora přes živý chat je k dispozici 7 dní v týdnu během pracovní doby. Máte otázky? Náš tým je připraven vám pomoci.",
+      "supportTitle": "Promluvte si s člověkem",
+      "unknownPlan": "Neznámý plán"
+    },
     "buttons": {
       "amount": "Částka",
       "comparePlans": "Cenotvorba",
@@ -1913,6 +2049,8 @@
       "kickUnit": "Vyhodit jednotku",
       "newGroup": "Nová skupina",
       "removeFromGroup": "Odebrat ze skupiny",
+      "showAllUnitGroups": "Zobrazit všechny skupiny jednotek",
+      "showUnitGroupsWithUnits": "Zobrazit skupiny s jednotkami",
       "togglePanic": "Přepnout paniku",
       "unitGroups": "Skupiny jednotek",
       "units": "Jednotky"
@@ -2046,6 +2184,7 @@
       "scanForBulbs": "Skenovat žárovky",
       "stopScanning": "Zastavit skenování",
       "streamAdBanner": "Podívejte se na náš livestream overlay a Twitch bota!",
+      "streamAdTitle": "Nástroje pro živé vysílání pro Sonoran CAD",
       "streamOverlay": "Překrytí streamu",
       "twitch": "Twitch",
       "twitchConfig": "Nastavení Twitch",
