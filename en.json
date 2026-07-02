@@ -895,6 +895,7 @@
     "search": "Search",
     "searchOnMap": "Search on Map",
     "seconds": "Seconds",
+    "select": "Select",
     "serverStatus": "Server Status",
     "sessionExpired": "Session Expired",
     "start": "Start",
@@ -963,22 +964,25 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Download our Windows desktop and mobile applications!",
-    "desktopBanner": "Download our Windows Desktop Application!"
+    "desktopBanner": "Download our Windows Desktop Application!",
+    "desktopBannerMacBody": "Install the OSX app for a faster CAD experience with native desktop tools.",
+    "desktopBannerMacTitle": "Sonoran CAD OSX app",
+    "desktopBannerWindowsBody": "Install the Windows app for a faster CAD experience with native desktop tools.",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows app"
   },
   "error404": {
     "goBack": "Go back"
+  },
+  "footer": {
+    "rocketNodeLink": "Open RocketNode hosting",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
+    "sonoranOneLink": "Open Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
     "heroSupportCopy": "Built for emergency services dispatching and record management, Sonoran CAD is the most customizable system available. Dispatch faster, organize records efficiently, and scale your departments like never before.",
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "integrateButton": "Integrate",
-    "meta": {
-      "description": "Sonoran CAD is a free CAD/MDT and records management system for gaming communities. Register your community for free today!",
-      "keywords": "CAD/MDT, Free CAD/MDT, Police Dispatching, Roleplay Dispatching",
-      "ogImageAlt": "Sonoran CAD logo",
-      "title": "Sonoran CAD, Free CAD/MDT Dispatching Software"
-    },
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
@@ -1165,6 +1169,12 @@
         "name": "FiveM"
       }
     },
+    "meta": {
+      "description": "Sonoran CAD is a free CAD/MDT and records management system for gaming communities. Register your community for free today!",
+      "keywords": "CAD/MDT, Free CAD/MDT, Police Dispatching, Roleplay Dispatching",
+      "ogImageAlt": "Sonoran CAD logo",
+      "title": "Sonoran CAD, Free CAD/MDT Dispatching Software"
+    },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
@@ -1273,6 +1283,126 @@
     "discovery": "Discovery"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Active",
+      "cadPlans": "CAD Plans",
+      "cancellingStatus": "Cancelling: {date}",
+      "changeCommunity": "Change Community",
+      "choosePlanAria": "Choose {plan}",
+      "clearCommunity": "Clear Community ID",
+      "communityAlreadySubscribedTooltip": "This community already has an active subscription applied.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "This subscription is purchased but has not been applied to a CAD community yet.",
+      "communityMissingTitle": "No Community ID Set",
+      "contactSupport": "Contact Support",
+      "description": "Manage subscriptions, assign them to CAD communities, and update billing through Stripe.",
+      "expertInstallInfo": "Expert Installation Info",
+      "eyebrow": "Payment Center",
+      "inactiveSubscriptions": "Inactive / Cancelled",
+      "manageSubscription": "Manage Subscription",
+      "noActiveSubscriptionsBody": "Create a new subscription to upgrade a CAD community.",
+      "noCommunitiesAvailable": "No communities are available on this account.",
+      "noInactiveSubscriptions": "No inactive subscriptions",
+      "noInactiveSubscriptionsBody": "Cancelled and inactive subscriptions will appear here.",
+      "openOnePortal": "Open ONE Portal",
+      "otherProducts": "Other Products",
+      "planDescriptions": {
+        "expertInstallation": "One-time setup help from the Sonoran team.",
+        "free": "Core CAD access with ER:LC, FiveM, and API connectivity.",
+        "plus": "Adds database sync, two servers, higher limits, and more templates.",
+        "pro": "Unlocks unlimited scale, custom maps, database merge, and friendly mapping.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streaming tools, and RocketNode hosting.",
+        "standard": "Adds custom domain support, higher limits, and expanded community tools.",
+        "starter": "Adds custom community ID, more users, and paid CAD essentials.",
+        "streamOverlay": "Overlay tools for streamers and community broadcasts."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standard",
+        "free": "Free",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD Standard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "Streaming Tools"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0.00/mo",
+        "plus": "$17.99/mo",
+        "pro": "$29.99/mo",
+        "sonoranOne": "$49.99/mo",
+        "standard": "$9.99/mo",
+        "starter": "$3.99/mo",
+        "streamOverlay": "$4.99/mo"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0.00/mo",
+        "plus": "$13.50/mo",
+        "pro": "$22.50/mo",
+        "sonoranOne": "$37.50/mo",
+        "standard": "$7.60/mo",
+        "starter": "$3.00/mo"
+      },
+      "pricingBadges": {
+        "bestValue": "Best Value",
+        "mostPopular": "Most Popular"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Bodycam Uploads / 24 Hours",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Custom Community ID",
+        "customDomain": "Custom Domain",
+        "customLiveMapImage": "Custom Live Map Image",
+        "customRecordTemplates": "Custom Record Templates",
+        "databaseFriendlyMapping": "Database Friendly Mapping",
+        "databaseMerge": "Database Merge",
+        "databaseSync": "Database Sync",
+        "integrationAccess": "ER:LC + FiveM Integration & API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM Hosting",
+        "servers": "Servers",
+        "streamingTools": "Streaming Tools",
+        "userAccounts": "User Accounts"
+      },
+      "pricingPlanNames": {
+        "free": "Free",
+        "plus": "Plus",
+        "pro": "Pro",
+        "standard": "Standard",
+        "starter": "Starter"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 min",
+        "included": "Included",
+        "notIncluded": "Not included",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 min",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 min",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Unlimited"
+      },
+      "selectCommunityForPurchase": "Select CAD Community",
+      "selectCommunitySubtitle": "Choose the community to upgrade with this subscription.",
+      "sonoranOnePlaceholder": "One subscription for CAD, CMS, Radio, and included RocketNode FiveM hosting.",
+      "subscribed": "Subscribed",
+      "subscribeToBundle": "Subscribe",
+      "subscriptionsBody": "Review active subscriptions, assign CAD communities, and manage inactive subscriptions.",
+      "subscriptionsTitle": "Your Subscriptions",
+      "supportBody": "Our dedicated live chat support is available 7 days a week during business hours. Have questions? Our team is standing by.",
+      "supportTitle": "Speak with a human",
+      "unknownPlan": "Unknown Plan"
+    },
     "buttons": {
       "amount": "Amount",
       "comparePlans": "Pricing",
@@ -1919,6 +2049,8 @@
       "kickUnit": "Kick Unit",
       "newGroup": "New Group",
       "removeFromGroup": "Remove from Group",
+      "showAllUnitGroups": "Show All Unit Groups",
+      "showUnitGroupsWithUnits": "Show Groups With Units",
       "togglePanic": "Toggle Panic",
       "unitGroups": "Unit Groups",
       "units": "Units"
