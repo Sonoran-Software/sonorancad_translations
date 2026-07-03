@@ -676,6 +676,11 @@
       "transferHeader": "Sonoran CAD 이전",
       "transferSubtext": "이 CAD을(를) 이전하려면 커뮤니티/CAD 소유자여야 합니다. 이전 프로세스에는 이메일 확인이 필요합니다."
     },
+    "upgradeBanner": {
+      "button": "업그레이드",
+      "message": "더 많은 기능, 사용자 계정, 및 사용자 지정 기능을 이용하세요.",
+      "title": "귀하의 커뮤니티는 무료 버전입니다."
+    },
     "webhooks": {
       "10Code": "10개 코드 수정됨",
       "10CodeAbout": "이 WebHook은 관리자가 10코드를 추가, 편집 또는 제거할 때 전송됩니다.",
@@ -895,6 +900,7 @@
     "search": "찾다",
     "searchOnMap": "지도에서 찾다",
     "seconds": "초",
+    "select": "선택",
     "serverStatus": "서버 상태",
     "sessionExpired": "세션 만료",
     "start": "시작",
@@ -963,10 +969,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Windows 데스크톱 및 모바일 애플리케이션을 다운로드하세요!",
-    "desktopBanner": "Windows 데스크톱 애플리케이션을 다운로드하세요!"
+    "desktopBanner": "Windows 데스크톱 애플리케이션을 다운로드하세요!",
+    "desktopBannerMacBody": "더 빠른 CAD 경험을 위해 기본 데스크톱 도구가 포함된 OSX 앱을 설치하세요.",
+    "desktopBannerMacTitle": "Sonoran CAD OSX 앱",
+    "desktopBannerWindowsBody": "더 빠른 CAD 경험을 위해 기본 데스크톱 도구가 포함된 Windows 앱을 설치하세요.",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows 앱"
   },
   "error404": {
     "goBack": "뒤로 가기"
+  },
+  "footer": {
+    "rocketNodeLink": "RocketNode 호스팅 열기",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
+    "sonoranOneLink": "Sonoran One 열기"
   },
   "homepage": {
     "heroInlineStatement": "가장 발전되고 통합되었으며 널리 사용되는 파견 소프트웨어입니다.",
@@ -1013,7 +1028,7 @@
             "description": "3D 라이브 지도, 바디캠, 긴급 호출, 캐릭터 도구, 게임 내 오버레이 지원이 있는 ER:LC용 무료 CAD.",
             "keywords": "ER:LC CAD, ER:LC에 대한 무료 CAD, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC 통합",
-            "title": "ER:LC에 대한 무료 CAD | Sonoran CAD",
+            "title": "ER:LC에 대한 무료 CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1090,7 +1105,7 @@
             "description": "라이브 지도, 바디캠, 데이터베이스 동기화, 공식 플러그인 지원이 포함된 FiveM용 무료 CAD로, 깊이 통합된 롤플레이 서버를 지원합니다.",
             "keywords": "FiveM CAD, FiveM에 대한 무료 CAD, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 통합",
-            "title": "FiveM에 대한 무료 CAD | Sonoran CAD",
+            "title": "FiveM에 대한 무료 CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM 통합 미리보기"
           },
           "modules": {
@@ -1158,6 +1173,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD는 게임 커뮤니티를 위한 무료 CAD/MDT 및 기록 관리 시스템입니다. 오늘 귀하의 커뮤니티를 무료로 등록하세요!",
+      "keywords": "CAD/MDT, 무료 CAD/MDT, 경찰 출동 지령, 역할극 지령",
+      "ogImageAlt": "Sonoran CAD 로고",
+      "title": "Sonoran CAD, 무료 CAD/MDT 디스패칭 소프트웨어"
     },
     "pricingDescription": "Sonoran CAD의 유료 구독을 통해 새로운 통합 기능 활성화, 사용자 정의 활성화, 제한 제거 등을 수행할 수 있습니다!",
     "startToday": "오늘 시작하세요",
@@ -1267,6 +1288,126 @@
     "discovery": "발견"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "활동적인",
+      "cadPlans": "CAD 플랜",
+      "cancellingStatus": "취소 중: {date}",
+      "changeCommunity": "커뮤니티 변경",
+      "choosePlanAria": "{plan} 선택",
+      "clearCommunity": "커뮤니티 ID 지우기",
+      "communityAlreadySubscribedTooltip": "이 커뮤니티에는 이미 활성 구독이 적용되어 있습니다.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "이 구독은 구매되었지만 아직 CAD 커뮤니티에 적용되지 않았습니다.",
+      "communityMissingTitle": "커뮤니티 ID가 설정되지 않음",
+      "contactSupport": "지원팀에 문의",
+      "description": "구독을 관리하고, CAD 커뮤니티에 할당하고, Stripe를 통해 청구를 업데이트하세요.",
+      "expertInstallInfo": "전문가 설치 정보",
+      "eyebrow": "결제 센터",
+      "inactiveSubscriptions": "비활성 / 취소됨",
+      "manageSubscription": "구독 관리",
+      "noActiveSubscriptionsBody": "CAD 커뮤니티를 업그레이드하려면 새 구독을 생성하세요.",
+      "noCommunitiesAvailable": "이 계정에는 사용 가능한 커뮤니티가 없습니다.",
+      "noInactiveSubscriptions": "비활성 구독이 없습니다.",
+      "noInactiveSubscriptionsBody": "취소된 및 비활성 구독이 여기에 표시됩니다.",
+      "openOnePortal": "ONE 포털 열기",
+      "otherProducts": "기타 제품",
+      "planDescriptions": {
+        "expertInstallation": "Sonoran 팀의 일회성 설정 도움.",
+        "free": "ER:LC, FiveM, 및 API 연결이 포함된 Core CAD 액세스.",
+        "plus": "데이터베이스 동기화, 두 개의 서버, 더 높은 제한, 더 많은 템플릿을 추가합니다.",
+        "pro": "무제한 확장, 맞춤 맵, 데이터베이스 병합, 그리고 친화적인 매핑을 잠금 해제합니다.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streaming tools, and RocketNode hosting.",
+        "standard": "커스텀 도메인 지원, 더 높은 한도, 확장된 커뮤니티 도구를 추가합니다.",
+        "starter": "커스텀 커뮤니티 ID, 더 많은 사용자, 유료 CAD 필수 기능을 추가합니다.",
+        "streamOverlay": "스트리머 및 커뮤니티 방송을 위한 오버레이 도구."
+      },
+      "planNames": {
+        "cmsPro": "소노란 CMS Pro",
+        "cmsStandard": "소노란 CMS Standard",
+        "free": "무료",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "소노란 라디오 Plus",
+        "radioPro": "소노란 라디오 Pro",
+        "sonoranOne": "소노란 One",
+        "standard": "Sonoran CAD Standard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "스트리밍 툴"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0.00/월",
+        "plus": "$17.99/월",
+        "pro": "$29.99/월",
+        "sonoranOne": "$49.99/월",
+        "standard": "$9.99/월",
+        "starter": "$3.99/월",
+        "streamOverlay": "$4.99/월"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0.00/월",
+        "plus": "$13.50/월",
+        "pro": "$22.50/월",
+        "sonoranOne": "$37.50/월",
+        "standard": "$7.60/월",
+        "starter": "$3.00/월"
+      },
+      "pricingBadges": {
+        "bestValue": "최고의 값",
+        "mostPopular": "가장 인기"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "바디캠 업로드 / 24시간",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "소노란 CMS Pro",
+        "customCommunityId": "맞춤형 커뮤니티 ID",
+        "customDomain": "사용자 지정 도메인",
+        "customLiveMapImage": "사용자 정의 실시간 지도 이미지",
+        "customRecordTemplates": "맞춤 기록 템플릿",
+        "databaseFriendlyMapping": "데이터베이스 친숙한 매핑",
+        "databaseMerge": "데이터 베이스 병합",
+        "databaseSync": "데이터베이스 동기화",
+        "integrationAccess": "ER:LC + FiveM 통합 및 API",
+        "radioPro": "소노란 라디오 Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM 호스팅",
+        "servers": "서버",
+        "streamingTools": "스트리밍 툴",
+        "userAccounts": "사용자 계정"
+      },
+      "pricingPlanNames": {
+        "free": "무료",
+        "plus": "을 더한",
+        "pro": "찬성",
+        "standard": "기준",
+        "starter": "기동기"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 분",
+        "included": "포함됨",
+        "notIncluded": "포함되지 않음",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 분",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 분",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "무제한"
+      },
+      "selectCommunityForPurchase": "CAD 커뮤니티 선택",
+      "selectCommunitySubtitle": "이 구독으로 업그레이드할 커뮤니티를 선택하세요.",
+      "sonoranOnePlaceholder": "CAD, CMS, Radio, 및 포함된 RocketNode FiveM 호스팅을 위한 하나의 구독.",
+      "subscribed": "구독됨",
+      "subscribeToBundle": "구독",
+      "subscriptionsBody": "활성 구독을 검토하고, CAD 커뮤니티를 할당하고, 비활성 구독을 관리하세요.",
+      "subscriptionsTitle": "귀하의 구독",
+      "supportBody": "전담 실시간 채팅 지원은 영업 시간 동안 주 7일 이용할 수 있습니다. 질문이 있으신가요? 저희 팀이 대기 중입니다.",
+      "supportTitle": "사람과 대화하기",
+      "unknownPlan": "알 수 없는 플랜"
+    },
     "buttons": {
       "amount": "양",
       "comparePlans": "가격",
@@ -1913,6 +2054,8 @@
       "kickUnit": "킥 유닛",
       "newGroup": "새 그룹",
       "removeFromGroup": "그룹에서 제거",
+      "showAllUnitGroups": "모든 단위 그룹 보기",
+      "showUnitGroupsWithUnits": "유닛이 있는 그룹 보기",
       "togglePanic": "패닉 전환",
       "unitGroups": "단위 그룹",
       "units": "단위"
