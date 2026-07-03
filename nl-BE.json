@@ -676,6 +676,11 @@
       "transferHeader": "Breng uw Sonoran CAD over",
       "transferSubtext": "U moet de community/CAD-eigenaar zijn om deze CAD over te dragen. Voor het overdrachtsproces is e-mailverificatie vereist."
     },
+    "upgradeBanner": {
+      "button": "Upgraden",
+      "message": "Krijg meer functies, gebruikersaccounts en aanpassingen.",
+      "title": "Je community gebruikt de gratis versie."
+    },
     "webhooks": {
       "10Code": "Oproeptope gewijzigd",
       "10CodeAbout": "Deze WebHook wordt verzonden wanneer een beheerder een oproeptype toevoegt, bewerkt of verwijdert.",
@@ -894,6 +899,7 @@
     "search": "Zoek op",
     "searchOnMap": "Zoek op kaart",
     "seconds": "Seconden",
+    "select": "Selecteer",
     "serverStatus": "Serverstatus",
     "sessionExpired": "Sessie verlopen",
     "start": "Starten",
@@ -962,10 +968,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Download onze Windows-desktop- en mobiele applicaties!",
-    "desktopBanner": "Download onze Windows-desktopapplicatie!"
+    "desktopBanner": "Download onze Windows-desktopapplicatie!",
+    "desktopBannerMacBody": "Installeer de OSX-app voor een snellere CAD-ervaring met native desktoptools.",
+    "desktopBannerMacTitle": "Sonoran CAD OSX-app",
+    "desktopBannerWindowsBody": "Installeer de Windows-app voor een snellere CAD-ervaring met native desktoptools.",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows-app"
   },
   "error404": {
     "goBack": "Ga terug"
+  },
+  "footer": {
+    "rocketNodeLink": "Open RocketNode-hosting",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM-hosting",
+    "sonoranOneLink": "Open Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -1012,7 +1027,7 @@
             "description": "Gratis CAD voor ER:LC met 3D-livekaart, bodycam, noodoproepen, karaktertools en ondersteuning voor in-game overlay.",
             "keywords": "ER:LC CAD, gratis CAD voor ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC-integratie",
-            "title": "Gratis CAD voor ER:LC | Sonoran CAD",
+            "title": "Gratis CAD voor ER:LC - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1089,7 +1104,7 @@
             "description": "Gratis CAD voor FiveM met livekaart, bodycam, database-synchronisatie en officiële pluginondersteuning voor diep geïntegreerde roleplayservers.",
             "keywords": "FiveM CAD, gratis CAD voor FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM-integratie",
-            "title": "Gratis CAD voor FiveM | Sonoran CAD",
+            "title": "Gratis CAD voor FiveM - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM-integratievoorbeeld"
           },
           "modules": {
@@ -1157,6 +1172,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD is een gratis CAD/MDT- en recordsbeheersysteem voor gaminggemeenschappen. Registreer vandaag nog gratis je community!",
+      "keywords": "CAD/MDT, Gratis CAD/MDT, Politie-dispatching, Roleplay-dispatching",
+      "ogImageAlt": "Sonoran CAD-logo",
+      "title": "Sonoran CAD, gratis CAD/MDT-dispatchsoftware"
     },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
@@ -1266,6 +1287,126 @@
     "discovery": "Ontdekking"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Actief",
+      "cadPlans": "CAD-plannen",
+      "cancellingStatus": "Annuleren: {date}",
+      "changeCommunity": "Verander Community",
+      "choosePlanAria": "Kies {plan}",
+      "clearCommunity": "Community ID wissen",
+      "communityAlreadySubscribedTooltip": "Deze community heeft al een actief abonnement.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "Dit abonnement is aangeschaft maar is nog niet toegepast op een CAD-community.",
+      "communityMissingTitle": "Geen Community ID ingesteld",
+      "contactSupport": "Contacteer support",
+      "description": "Abonnementen beheren, toewijzen aan CAD-gemeenschappen en facturering bijwerken via Stripe.",
+      "expertInstallInfo": "Info over installatie door experts",
+      "eyebrow": "Betalingscentrum",
+      "inactiveSubscriptions": "Inactief / Geannuleerd",
+      "manageSubscription": "Abonnement beheren",
+      "noActiveSubscriptionsBody": "Maak een nieuw abonnement aan om een CAD-community te upgraden.",
+      "noCommunitiesAvailable": "Er zijn geen communities beschikbaar op dit account.",
+      "noInactiveSubscriptions": "Geen inactieve abonnementen",
+      "noInactiveSubscriptionsBody": "Geannuleerde en inactieve abonnementen verschijnen hier.",
+      "openOnePortal": "Open ONE Portal",
+      "otherProducts": "Andere producten",
+      "planDescriptions": {
+        "expertInstallation": "Eenmalige installatiehulp van het Sonoran-team.",
+        "free": "Basis CAD-toegang met ER:LC, FiveM en API-connectiviteit.",
+        "plus": "Voegt databasesynchronisatie, twee servers, hogere limieten en meer sjablonen toe.",
+        "pro": "Ontgrendelt onbeperkte schaal, aangepaste kaarten, databank samenvoegen en vriendelijke toewijzing.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streamingtools en RocketNode-hosting.",
+        "standard": "Voegt ondersteuning voor een aangepast domein, hogere limieten en uitgebreide communitytools toe.",
+        "starter": "Voegt aangepaste community-ID, meer gebruikers en betaalde CAD-basisfuncties toe.",
+        "streamOverlay": "Overlaytools voor streamers en community-uitzendingen."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standaard",
+        "free": "Gratis",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD Standaard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "Streamingtools"
+      },
+      "planPrices": {
+        "expertInstallation": "$34,99",
+        "free": "€0,00/maand",
+        "plus": "$17,99/maand",
+        "pro": "$29,99/maand",
+        "sonoranOne": "$49,99/maand",
+        "standard": "$9,99/maand",
+        "starter": "$3,99/maand",
+        "streamOverlay": "$4,99/maand"
+      },
+      "planQuarterlyPrices": {
+        "free": "€0,00/maand",
+        "plus": "$13,50/maand",
+        "pro": "$22,50/maand",
+        "sonoranOne": "$37,50/maand",
+        "standard": "$7,60/maand",
+        "starter": "€3,00/maand"
+      },
+      "pricingBadges": {
+        "bestValue": "Beste waarde",
+        "mostPopular": "Meest populair"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Bodycam-uploaden / 24 uur",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Aangepaste Community ID",
+        "customDomain": "Aangepast domein",
+        "customLiveMapImage": "Aangepaste livekaartafbeelding",
+        "customRecordTemplates": "Aangepaste recordsjablonen",
+        "databaseFriendlyMapping": "Databasevriendelijke mapping",
+        "databaseMerge": "Database samenvoegen",
+        "databaseSync": "Databasesynchronisatie",
+        "integrationAccess": "ER:LC + FiveM-integratie & API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM-hosting",
+        "servers": "Servers",
+        "streamingTools": "Streamingtools",
+        "userAccounts": "Gebruikers Accounts"
+      },
+      "pricingPlanNames": {
+        "free": "Gratis",
+        "plus": "Plus",
+        "pro": "Pro",
+        "standard": "Standaard",
+        "starter": "Starter"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 min",
+        "included": "Inbegrepen",
+        "notIncluded": "Niet inbegrepen",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 min",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 min",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Onbeperkt"
+      },
+      "selectCommunityForPurchase": "Selecteer CAD-gemeenschap",
+      "selectCommunitySubtitle": "Kies de community om met dit abonnement te upgraden.",
+      "sonoranOnePlaceholder": "Één abonnement voor CAD, CMS, Radio en inbegrepen RocketNode FiveM-hosting.",
+      "subscribed": "Geabonneerd",
+      "subscribeToBundle": "Abonneren",
+      "subscriptionsBody": "Bekijk actieve abonnementen, wijs CAD-gemeenschappen toe en beheer inactieve abonnementen.",
+      "subscriptionsTitle": "Uw abonnementen",
+      "supportBody": "Onze toegewijde livechatondersteuning is 7 dagen per week beschikbaar tijdens de kantooruren. Vragen? Ons team staat klaar.",
+      "supportTitle": "Spreek met een medewerker",
+      "unknownPlan": "Onbekend abonnement"
+    },
     "buttons": {
       "amount": "Bedrag",
       "comparePlans": "Pricing",
@@ -1921,6 +2062,8 @@
       "kickUnit": "Kick Eenheid",
       "newGroup": "Nieuwe Groep",
       "removeFromGroup": "Uit groep verwijderen",
+      "showAllUnitGroups": "Toon alle eenheidsgroepen",
+      "showUnitGroupsWithUnits": "Toon groepen met eenheden",
       "togglePanic": "Noodknop aan/uit",
       "unitGroups": "Eenheid groepen",
       "units": "Eenheden"

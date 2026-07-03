@@ -676,6 +676,11 @@
       "transferHeader": "Overfør din Sonoran CAD",
       "transferSubtext": "Du må være samfunns/CAD -eieren for å overføre denne CAD -en. Overføringsprosessen krever e -postbekreftelse."
     },
+    "upgradeBanner": {
+      "button": "Oppgrader",
+      "message": "Få flere funksjoner, brukerkontoer og tilpasninger.",
+      "title": "Samfunnet ditt bruker gratisversjonen."
+    },
     "webhooks": {
       "10Code": "10-kode endret",
       "10CodeAbout": "Denne WebHook vil bli sendt når en administrator legger til, redigerer eller fjerner en 10-kode.",
@@ -894,6 +899,7 @@
     "search": "Søk",
     "searchOnMap": "Søk på kart",
     "seconds": "Sekunder",
+    "select": "Velg",
     "serverStatus": "Serverstatus",
     "sessionExpired": "Økten er utløpt",
     "start": "Start",
@@ -962,10 +968,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Last ned våre Windows-apper for skrivebord og mobil!",
-    "desktopBanner": "Last ned vår Windows-skrivebordsapp!"
+    "desktopBanner": "Last ned vår Windows-skrivebordsapp!",
+    "desktopBannerMacBody": "Installer OSX-appen for en raskere CAD-opplevelse med native skrivebordsverktøy.",
+    "desktopBannerMacTitle": "Sonoran CAD OSX-app",
+    "desktopBannerWindowsBody": "Installer Windows-appen for en raskere CAD-opplevelse med native skrivebordsverktøy.",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows-app"
   },
   "error404": {
     "goBack": "Gå tilbake"
+  },
+  "footer": {
+    "rocketNodeLink": "Åpne RocketNode-hosting",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM-hosting",
+    "sonoranOneLink": "Åpne Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "er den mest avanserte, integrerte og populære disponeringsprogramvaren som er tilgjengelig.",
@@ -1012,7 +1027,7 @@
             "description": "Gratis CAD for ER:LC med 3D-kart i sanntid, bodycam, nødanrop, karakterverktøy og støtte for overlay i spillet.",
             "keywords": "ER:LC CAD, gratis CAD for ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC-integrasjon",
-            "title": "Gratis CAD for ER:LC | Sonoran CAD",
+            "title": "Gratis CAD for ER:LC - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1089,7 +1104,7 @@
             "description": "Gratis CAD for FiveM med livekart, bodycam, databasesynk og offisiell plugin-støtte for dypt integrerte rollespillservere.",
             "keywords": "FiveM CAD, gratis CAD for FiveM, Sonoran CAD, FiveM dispatch, FiveM rollespill CAD",
             "ogImageAlt": "Sonoran CAD FiveM integrasjon",
-            "title": "Gratis CAD for FiveM | Sonoran CAD",
+            "title": "Gratis CAD for FiveM - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM integrasjon forhåndsvisning"
           },
           "modules": {
@@ -1157,6 +1172,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD er et gratis CAD/MDT- og saksbehandlingssystem for spillfellesskap. Registrer fellesskapet ditt gratis i dag!",
+      "keywords": "CAD/MDT, Gratis CAD/MDT, Politiutrykning, Rollespillutrykning",
+      "ogImageAlt": "Sonoran CAD-logo",
+      "title": "Sonoran CAD, gratis CAD/MDT-dispatchprogramvare"
     },
     "pricingDescription": "Sonoran CADs betalte abonnementer lar deg aktivere nye integrasjonsfunksjoner, aktivere tilpasning, fjerne begrensninger og mer!",
     "startToday": "Start i dag",
@@ -1266,6 +1287,126 @@
     "discovery": "Oppdagelse"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Aktiv",
+      "cadPlans": "CAD-planer",
+      "cancellingStatus": "Avbryter: {date}",
+      "changeCommunity": "Endre samfunn",
+      "choosePlanAria": "Velg {plan}",
+      "clearCommunity": "Fjern samfunns ID",
+      "communityAlreadySubscribedTooltip": "Dette fellesskapet har allerede et aktivt abonnement.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "Dette abonnementet er kjøpt, men har ikke blitt brukt på et CAD-fellesskap ennå.",
+      "communityMissingTitle": "Ingen samfunns ID angitt",
+      "contactSupport": "Kontakt støtte",
+      "description": "Administrer abonnementer, tildel dem til CAD-fellesskap og oppdater fakturering via Stripe.",
+      "expertInstallInfo": "Ekspertinstallasjonsinformasjon",
+      "eyebrow": "Betalingssenter",
+      "inactiveSubscriptions": "Inaktive / Avsluttede",
+      "manageSubscription": "Administrer abonnement",
+      "noActiveSubscriptionsBody": "Opprett et nytt abonnement for å oppgradere et CAD-fellesskap.",
+      "noCommunitiesAvailable": "Ingen fellesskap er tilgjengelige på denne kontoen.",
+      "noInactiveSubscriptions": "Ingen inaktive abonnementer",
+      "noInactiveSubscriptionsBody": "Avsluttede og inaktive abonnementer vil vises her.",
+      "openOnePortal": "Åpne ONE Portal",
+      "otherProducts": "Andre produkter",
+      "planDescriptions": {
+        "expertInstallation": "Engangshjelp med oppsett fra Sonoran-teamet.",
+        "free": "Kjerne-CAD-tilgang med ER:LC, FiveM og API-tilkobling.",
+        "plus": "Legger til databasesynk, to servere, høyere grenser og flere maler.",
+        "pro": "Låser opp ubegrenset skala, egendefinerte kart, databasesammenslåing og vennlig kartlegging.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, strømmeverktøy og RocketNode-hosting.",
+        "standard": "Legger til støtte for egendefinert domene, høyere grenser og utvidede fellesskapsverktøy.",
+        "starter": "Legger til egendefinert community-ID, flere brukere og betalte CAD-essensielle funksjoner.",
+        "streamOverlay": "Overleggsverktøy for streamere og fellesskapskringkastinger."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standard",
+        "free": "Gratis",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD Standard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "Strømmeverktøy"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0,00/mnd",
+        "plus": "$17,99/md",
+        "pro": "$29,99/md",
+        "sonoranOne": "$49,99/md",
+        "standard": "$9,99/md",
+        "starter": "$3,99/md",
+        "streamOverlay": "$4,99/md"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0,00/mnd",
+        "plus": "$13.50/md",
+        "pro": "$22.50/md",
+        "sonoranOne": "$37.50/md",
+        "standard": "$7,60/md.",
+        "starter": "$3,00/mnd"
+      },
+      "pricingBadges": {
+        "bestValue": "Beste verdi",
+        "mostPopular": "Mest populær"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Bodycam-opplastinger / 24 timer",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Tilpasset samfunns ID",
+        "customDomain": "Egendefinert domene",
+        "customLiveMapImage": "Tilpasset levende kartbilde",
+        "customRecordTemplates": "Tilpassede saksmaler",
+        "databaseFriendlyMapping": "Database-vennlig mapping",
+        "databaseMerge": "Database Sammenslåing",
+        "databaseSync": "Database Synkronisering",
+        "integrationAccess": "ER:LC + FiveM-integrasjon & API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM-hosting",
+        "servers": "Servere",
+        "streamingTools": "Strømmeverktøy",
+        "userAccounts": "Brukerkontoer"
+      },
+      "pricingPlanNames": {
+        "free": "Gratis",
+        "plus": "Plus",
+        "pro": "Pro",
+        "standard": "Standard",
+        "starter": "Start"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 min",
+        "included": "Inkludert",
+        "notIncluded": "Ikke inkludert",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 min",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 min",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Ubegrenset"
+      },
+      "selectCommunityForPurchase": "Velg CAD-fellesskap",
+      "selectCommunitySubtitle": "Velg fellesskapet som skal oppgraderes med dette abonnementet.",
+      "sonoranOnePlaceholder": "Ett abonnement for CAD, CMS, Radio og inkludert RocketNode FiveM-hosting.",
+      "subscribed": "Abonnert",
+      "subscribeToBundle": "Abonner",
+      "subscriptionsBody": "Gå gjennom aktive abonnementer, tildel CAD-fellesskap og administrer inaktive abonnementer.",
+      "subscriptionsTitle": "Abonnementene dine",
+      "supportBody": "Vår dedikerte livechat-støtte er tilgjengelig 7 dager i uken i åpningstiden. Har du spørsmål? Teamet vårt står klare.",
+      "supportTitle": "Snakk med et menneske",
+      "unknownPlan": "Ukjent plan"
+    },
     "buttons": {
       "amount": "Beløp",
       "comparePlans": "Priser",
@@ -1921,6 +2062,8 @@
       "kickUnit": "Fjern enhet",
       "newGroup": "Ny gruppe",
       "removeFromGroup": "Fjern fra gruppe",
+      "showAllUnitGroups": "Vis alle enhetsgrupper",
+      "showUnitGroupsWithUnits": "Vis grupper med enheter",
       "togglePanic": "Slå panikk av/på",
       "unitGroups": "Enhetsgrupper",
       "units": "Enheter"

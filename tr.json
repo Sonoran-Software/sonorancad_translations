@@ -676,6 +676,11 @@
       "transferHeader": "Sonoran CAD'nizi aktarın",
       "transferSubtext": "Bu CAD'yi aktarmak için topluluk/CAD sahibi olmanız gerekir. Aktarım işlemi e-posta doğrulamasını gerektirecektir."
     },
+    "upgradeBanner": {
+      "button": "Yükselt",
+      "message": "Daha fazla özellik, kullanıcı hesabı ve özelleştirme alın.",
+      "title": "Topluluğunuz ücretsiz sürümde."
+    },
     "webhooks": {
       "10Code": "10-Kod Değiştirildi",
       "10CodeAbout": "Bu WebHook, bir yönetici 10 Kodlu bir kodu eklediğinde, düzenlediğinde veya kaldırdığında gönderilecektir.",
@@ -895,6 +900,7 @@
     "search": "Ara",
     "searchOnMap": "Haritada Ara",
     "seconds": "Saniye",
+    "select": "Seç",
     "serverStatus": "Sunucu durumu",
     "sessionExpired": "Oturum Süresi Doldu",
     "start": "Başlangıç",
@@ -963,10 +969,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Windows masaüstü ve mobil uygulamalarımızı indirin!",
-    "desktopBanner": "Windows Masaüstü Uygulamamızı indirin!"
+    "desktopBanner": "Windows Masaüstü Uygulamamızı indirin!",
+    "desktopBannerMacBody": "Daha hızlı bir CAD deneyimi için yerel masaüstü araçlarıyla OSX uygulamasını yükleyin.",
+    "desktopBannerMacTitle": "Sonoran CAD OSX uygulaması",
+    "desktopBannerWindowsBody": "Daha hızlı bir CAD deneyimi için yerel masaüstü araçlarıyla Windows uygulamasını yükleyin.",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows uygulaması"
   },
   "error404": {
     "goBack": "Geri dön"
+  },
+  "footer": {
+    "rocketNodeLink": "RocketNode barındırmayı aç",
+    "sonoranOneBundle": "CAD + CMS + Radyo + FiveM Hosting",
+    "sonoranOneLink": "Sonoran One'ı Aç"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -1013,7 +1028,7 @@
             "description": "3D canlı harita, bodycam, acil çağrılar, karakter araçları ve oyun içi kaplama desteğiyle ER:LC için ücretsiz CAD.",
             "keywords": "ER:LC CAD, ER:LC için ücretsiz CAD, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC entegrasyonu",
-            "title": "ER:LC için Ücretsiz CAD | Sonoran CAD",
+            "title": "ER:LC için Ücretsiz CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Acil Durum Müdahalesi: Liberty County"
           },
           "modules": {
@@ -1090,7 +1105,7 @@
             "description": "Canlı harita, bodycam, veritabanı eşitlemesi ve resmi eklenti desteği ile derinlemesine entegre rol yapma sunucuları için ücretsiz FiveM CAD.",
             "keywords": "FiveM CAD, FiveM için ücretsiz CAD, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM entegrasyonu",
-            "title": "FiveM için Ücretsiz CAD | Sonoran CAD",
+            "title": "FiveM için Ücretsiz CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM entegrasyon önizlemesi"
           },
           "modules": {
@@ -1158,6 +1173,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD, oyun toplulukları için ücretsiz bir CAD/MDT ve kayıt yönetim sistemidir. Topluluğunuzu bugün ücretsiz kaydedin!",
+      "keywords": "CAD/MDT, Ücretsiz CAD/MDT, Polis Sevk, Roleplay Sevk",
+      "ogImageAlt": "Sonoran CAD logosu",
+      "title": "Sonoran CAD, Ücretsiz CAD/MDT Sevk Yazılımı"
     },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
@@ -1267,6 +1288,126 @@
     "discovery": "Keşif"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Aktif",
+      "cadPlans": "CAD Planları",
+      "cancellingStatus": "İptal ediliyor: {date}",
+      "changeCommunity": "Topluluğu Değiştir",
+      "choosePlanAria": "{plan} seç",
+      "clearCommunity": "Topluluk Kimliğini Temizle",
+      "communityAlreadySubscribedTooltip": "Bu topluluğa zaten etkin bir abonelik uygulanmış.",
+      "communityIdValue": "Kimlik {id}",
+      "communityMissingBody": "Bu abonelik satın alındı ancak henüz bir CAD topluluğuna uygulanmadı.",
+      "communityMissingTitle": "Topluluk Kimliği Ayarlanmadı",
+      "contactSupport": "Destekle İletişime Geçin",
+      "description": "Abonelikleri yönetin, bunları CAD topluluklarına atayın ve faturalandırmayı Stripe üzerinden güncelleyin.",
+      "expertInstallInfo": "Uzman Kurulum Bilgisi",
+      "eyebrow": "Ödeme Merkezi",
+      "inactiveSubscriptions": "Etkin Değil / İptal Edildi",
+      "manageSubscription": "Aboneliği Yönet",
+      "noActiveSubscriptionsBody": "Bir CAD topluluğunu yükseltmek için yeni bir abonelik oluşturun.",
+      "noCommunitiesAvailable": "Bu hesapta kullanılabilir topluluk yok.",
+      "noInactiveSubscriptions": "Etkin olmayan abonelik bulunamadı",
+      "noInactiveSubscriptionsBody": "İptal edilen ve etkin olmayan abonelikler burada görünür.",
+      "openOnePortal": "ONE Portal'ı Aç",
+      "otherProducts": "Diğer Ürünler",
+      "planDescriptions": {
+        "expertInstallation": "Sonoran ekibinden tek seferlik kurulum yardımı.",
+        "free": "ER:LC, FiveM ve API bağlantısıyla temel CAD erişimi.",
+        "plus": "Veritabanı senkronizasyonu, iki sunucu, daha yüksek limitler ve daha fazla şablon ekler.",
+        "pro": "Sınırsız ölçek, özel haritalar, veritabanı birleştirme ve kolay eşleştirmeyi açar.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streaming araçları ve RocketNode barındırma.",
+        "standard": "Özel alan adı desteği, daha yüksek limitler ve genişletilmiş topluluk araçları ekler.",
+        "starter": "Özel topluluk kimliği, daha fazla kullanıcı ve ücretli CAD temel özellikleri ekler.",
+        "streamOverlay": "Yayıncılar ve topluluk yayınları için kaplama araçları."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standart",
+        "free": "Ücretsiz",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radyo Plus",
+        "radioPro": "Sonoran Radyo Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD Standart",
+        "starter": "Sonoran CAD Başlangıç",
+        "streamingTools": "Yayın Araçları"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0,00/ay",
+        "plus": "$17.99/ay",
+        "pro": "$29.99/ay",
+        "sonoranOne": "$49.99/ay",
+        "standard": "$9.99/ay",
+        "starter": "$3.99/ay",
+        "streamOverlay": "$4.99/ay"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0,00/ay",
+        "plus": "$13.50/ay",
+        "pro": "$22.50/ay",
+        "sonoranOne": "$37.50/ay",
+        "standard": "$7.60/ay",
+        "starter": "$3,00/ay"
+      },
+      "pricingBadges": {
+        "bestValue": "En İyi Değer",
+        "mostPopular": "En Popüler"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Vücut Kamerası Yüklemeleri / 24 Saat",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Özel Topluluk Kimliği",
+        "customDomain": "Özel Alan Adı",
+        "customLiveMapImage": "Özel Canlı Harita Görseli",
+        "customRecordTemplates": "Özel Kayıt Şablonları",
+        "databaseFriendlyMapping": "Veritabanı Dostu Haritalama",
+        "databaseMerge": "Veritabanı Birleştirme",
+        "databaseSync": "Veritabanı Senkronizasyonu",
+        "integrationAccess": "ER:LC + FiveM Entegrasyonu & API",
+        "radioPro": "Sonoran Radyo Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM Barındırma",
+        "servers": "Sunucular",
+        "streamingTools": "Yayın Araçları",
+        "userAccounts": "Kullanıcı hesapları"
+      },
+      "pricingPlanNames": {
+        "free": "Ücretsiz",
+        "plus": "Artı",
+        "pro": "Profesyonel",
+        "standard": "Standart",
+        "starter": "Başlangıç"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 dk",
+        "included": "Dahil",
+        "notIncluded": "Dahil değil",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 dk",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 dk",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Sınırsız"
+      },
+      "selectCommunityForPurchase": "CAD Topluluğu Seçin",
+      "selectCommunitySubtitle": "Bu abonelikle yükseltilecek topluluğu seçin.",
+      "sonoranOnePlaceholder": "CAD, CMS, Radio ve dahil RocketNode FiveM barındırma için tek abonelik.",
+      "subscribed": "Abonelik",
+      "subscribeToBundle": "Abone ol",
+      "subscriptionsBody": "Etkin abonelikleri gözden geçir, CAD toplulukları ata ve etkin olmayan abonelikleri yönet.",
+      "subscriptionsTitle": "Abonelikleriniz",
+      "supportBody": "Özel canlı sohbet desteğimiz iş saatleri boyunca haftanın 7 günü hizmetinizdedir. Sorularınız mı var? Ekibimiz bekliyor.",
+      "supportTitle": "Bir insanla konuşun",
+      "unknownPlan": "Bilinmeyen Plan"
+    },
     "buttons": {
       "amount": "Miktar",
       "comparePlans": "Pricing",
@@ -1922,6 +2063,8 @@
       "kickUnit": "Tekme Ünitesi",
       "newGroup": "Yeni Grup",
       "removeFromGroup": "Gruptan Kaldır",
+      "showAllUnitGroups": "Tüm Birim Gruplarını Göster",
+      "showUnitGroupsWithUnits": "Birimlerle Grupları Göster",
       "togglePanic": "Paniği Değiştir",
       "unitGroups": "Birim Grupları",
       "units": "Birimler"

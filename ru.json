@@ -676,6 +676,11 @@
       "transferHeader": "Перенос вашего Sonoran CAD",
       "transferSubtext": "Вы должны быть владельцем сообщества/CAD, чтобы передать этот CAD. Процесс передачи потребует проверки по электронной почте."
     },
+    "upgradeBanner": {
+      "button": "Обновить",
+      "message": "Получите больше функций, учетных записей пользователей и настроек.",
+      "title": "Ваше сообщество использует бесплатную версию."
+    },
     "webhooks": {
       "10Code": "10-код изменен",
       "10CodeAbout": "Этот WebHook будет отправлен, когда администратор добавит, изменит или удалит 10-код.",
@@ -895,6 +900,7 @@
     "search": "Найти",
     "searchOnMap": "Найти на карте",
     "seconds": "Секунды",
+    "select": "Выбрать",
     "serverStatus": "Статус Сервера",
     "sessionExpired": "Сессия истекла",
     "start": "Начать",
@@ -963,10 +969,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Скачайте наши настольные и мобильные приложения для Windows!",
-    "desktopBanner": "Скачайте наше настольное приложение для Windows!"
+    "desktopBanner": "Скачайте наше настольное приложение для Windows!",
+    "desktopBannerMacBody": "Установите приложение для OSX для более быстрого опыта CAD с нативными инструментами рабочего стола.",
+    "desktopBannerMacTitle": "Приложение Sonoran CAD для OSX",
+    "desktopBannerWindowsBody": "Установите приложение для Windows для более быстрого опыта CAD с нативными инструментами рабочего стола.",
+    "desktopBannerWindowsTitle": "Приложение Sonoran CAD для Windows"
   },
   "error404": {
     "goBack": "Назад"
+  },
+  "footer": {
+    "rocketNodeLink": "Открыть хостинг RocketNode",
+    "sonoranOneBundle": "CAD + CMS + радио + хостинг FiveM",
+    "sonoranOneLink": "Открыть Сонoран Один"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -1013,7 +1028,7 @@
             "description": "Бесплатный CAD для ER:LC с живой 3D-картой, bodycam, экстренными вызовами, инструментами для персонажа и поддержкой внутриигрового оверлея.",
             "keywords": "ER:LC CAD, бесплатный CAD для ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Интеграция Sonoran CAD с ER:LC",
-            "title": "Бесплатный CAD для ER:LC | Sonoran CAD",
+            "title": "Бесплатный CAD для ER:LC - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1090,7 +1105,7 @@
             "description": "Бесплатный CAD для FiveM с живой картой, bodycam, синхронизацией базы данных и официальной поддержкой плагинов для глубоко интегрированных ролевых серверов.",
             "keywords": "FiveM CAD, бесплатный CAD для FiveM, Sonoran CAD, диспетчеризация FiveM, CAD для ролевой игры FiveM",
             "ogImageAlt": "Интеграция Sonoran CAD с FiveM",
-            "title": "Бесплатный CAD для FiveM | Sonoran CAD",
+            "title": "Бесплатный CAD для FiveM - Sonoran CAD",
             "twitterImageAlt": "Предпросмотр интеграции Sonoran CAD x FiveM"
           },
           "modules": {
@@ -1158,6 +1173,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD — это бесплатная система CAD/MDT и управления записями для игровых сообществ. Зарегистрируйте своё сообщество бесплатно уже сегодня!",
+      "keywords": "CAD/MDT, Бесплатный CAD/MDT, Диспетчеризация полиции, Диспетчеризация для ролевой игры",
+      "ogImageAlt": "Логотип Sonoran CAD",
+      "title": "Sonoran CAD, бесплатное ПО для диспетчеризации CAD/MDT"
     },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
@@ -1267,6 +1288,126 @@
     "discovery": "Обнаружение"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Активный",
+      "cadPlans": "Тарифы CAD",
+      "cancellingStatus": "Отмена: {date}",
+      "changeCommunity": "Сменить сообщество",
+      "choosePlanAria": "Выберите {plan}",
+      "clearCommunity": "Очистить ID Сообщества",
+      "communityAlreadySubscribedTooltip": "У этого сообщества уже есть активная подписка.",
+      "communityIdValue": "ИД {id}",
+      "communityMissingBody": "Эта подписка приобретена, но ещё не применена к сообществу CAD.",
+      "communityMissingTitle": "ID Сообщества не задан",
+      "contactSupport": "Связаться со службой поддержки",
+      "description": "Управляйте подписками, назначайте их сообществам CAD и обновляйте биллинг через Stripe.",
+      "expertInstallInfo": "Информация об экспертной установке",
+      "eyebrow": "Центр платежей",
+      "inactiveSubscriptions": "Неактивные / отменённые",
+      "manageSubscription": "Управление подпиской",
+      "noActiveSubscriptionsBody": "Создайте новую подписку, чтобы перейти на уровень сообщества CAD.",
+      "noCommunitiesAvailable": "В этом аккаунте нет доступных сообществ.",
+      "noInactiveSubscriptions": "Неактивных подписок нет",
+      "noInactiveSubscriptionsBody": "Отменённые и неактивные подписки будут отображаться здесь.",
+      "openOnePortal": "Открыть портал ONE",
+      "otherProducts": "Другие продукты",
+      "planDescriptions": {
+        "expertInstallation": "Разовая помощь по настройке от команды Sonoran.",
+        "free": "Базовый доступ к CAD с ER:LC, FiveM и API-подключением.",
+        "plus": "Добавляет синхронизацию базы данных, два сервера, более высокие лимиты и больше шаблонов.",
+        "pro": "Открывает неограниченный масштаб, пользовательские карты, объединение базы данных и удобное сопоставление.",
+        "sonoranOne": "Пакеты CAD Pro, CMS Pro, Radio Pro, инструменты для стриминга и хостинг RocketNode.",
+        "standard": "Добавляет поддержку собственного домена, более высокие лимиты и расширенные инструменты сообщества.",
+        "starter": "Добавляет собственный ID сообщества, больше пользователей и платные CAD-основы.",
+        "streamOverlay": "Инструменты оверлея для стримеров и трансляций сообщества."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS Standard",
+        "free": "Бесплатный",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Сонoран Один",
+        "standard": "Sonoran CAD Standard",
+        "starter": "Sonoran CAD Starter",
+        "streamingTools": "Инструменты для стриминга"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0.00/мес",
+        "plus": "$17.99/мес",
+        "pro": "$29.99/мес",
+        "sonoranOne": "$49.99/мес",
+        "standard": "$9.99/мес",
+        "starter": "$3.99/мес",
+        "streamOverlay": "$4.99/мес"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0.00/мес",
+        "plus": "$13.50/мес",
+        "pro": "$22.50/мес",
+        "sonoranOne": "$37.50/мес",
+        "standard": "$7.60/мес",
+        "starter": "$3.00/мес"
+      },
+      "pricingBadges": {
+        "bestValue": "Лучшее предложение",
+        "mostPopular": "Самый популярный"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Загрузки бодикама / 24 часа",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "Пользовательский ID Сообщества",
+        "customDomain": "Собственный домен",
+        "customLiveMapImage": "Пользовательское изображение живой карты",
+        "customRecordTemplates": "Настраиваемые Шаблоны Записей",
+        "databaseFriendlyMapping": "Удобное сопоставление базы данных",
+        "databaseMerge": "Объединение базы данных",
+        "databaseSync": "Синхронизация базы данных",
+        "integrationAccess": "Интеграция ER:LC + FiveM и API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "Хостинг RocketNode FiveM",
+        "servers": "Серверы",
+        "streamingTools": "Инструменты для стриминга",
+        "userAccounts": "Учетные записи пользователей"
+      },
+      "pricingPlanNames": {
+        "free": "Бесплатный",
+        "plus": "Увеличенный",
+        "pro": "Профисиональный",
+        "standard": "Стандартный",
+        "starter": "Начальный"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 мин",
+        "included": "Включено",
+        "notIncluded": "Не включено",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 мин",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 мин",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Безлимитный"
+      },
+      "selectCommunityForPurchase": "Выберите сообщество CAD",
+      "selectCommunitySubtitle": "Выберите сообщество для перехода на него с помощью этой подписки.",
+      "sonoranOnePlaceholder": "Одна подписка для CAD, CMS, Radio и включённого хостинга RocketNode FiveM.",
+      "subscribed": "Подписка оформлена",
+      "subscribeToBundle": "Подписаться",
+      "subscriptionsBody": "Просматривайте активные подписки, назначайте сообщества CAD и управляйте неактивными подписками.",
+      "subscriptionsTitle": "Ваши подписки",
+      "supportBody": "Наша выделенная поддержка в живом чате доступна 7 дней в неделю в рабочие часы. Есть вопросы? Наша команда на связи.",
+      "supportTitle": "Поговорите с человеком",
+      "unknownPlan": "Неизвестный тариф"
+    },
     "buttons": {
       "amount": "Сумма",
       "comparePlans": "Pricing",
@@ -1922,6 +2063,8 @@
       "kickUnit": "Кикнуть Юнита",
       "newGroup": "Новая Группа",
       "removeFromGroup": "Удалить из группы",
+      "showAllUnitGroups": "Показать все группы Юнитов",
+      "showUnitGroupsWithUnits": "Показать группы с подразделениями",
       "togglePanic": "Переключатель Паники",
       "unitGroups": "Группы Юнитов",
       "units": "Юниты"

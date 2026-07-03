@@ -676,6 +676,11 @@
       "transferHeader": "Transférez votre CAD Sonoran",
       "transferSubtext": "Vous devez être le propriétaire de la communauté/du CAD pour transférer ce CAD. Le processus de transfert nécessitera une vérification par e-mail."
     },
+    "upgradeBanner": {
+      "button": "Mettre à niveau",
+      "message": "Obtenez plus de fonctionnalités, de comptes utilisateurs et de personnalisations.",
+      "title": "Votre communauté est sur la version gratuite."
+    },
     "webhooks": {
       "10Code": "Modification des 10-Code ",
       "10CodeAbout": "Ce WebHook sera envoyé lorsqu'un administrateur ajoute, modifie ou supprime un code 10.",
@@ -895,6 +900,7 @@
     "search": "Rechercher",
     "searchOnMap": "Rechercher sur la carte",
     "seconds": "Secondes",
+    "select": "Sélectionner",
     "serverStatus": "Statut du serveur",
     "sessionExpired": "Session expirée",
     "start": "Début",
@@ -963,10 +969,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "Téléchargez nos applications de bureau et mobiles Windows !",
-    "desktopBanner": "Téléchargez notre application de bureau Windows !"
+    "desktopBanner": "Téléchargez notre application de bureau Windows !",
+    "desktopBannerMacBody": "Installez l'app OSX pour une expérience CAD plus rapide avec des outils natifs de bureau.",
+    "desktopBannerMacTitle": "application Sonoran CAD OSX",
+    "desktopBannerWindowsBody": "Installez l'app Windows pour une expérience CAD plus rapide avec des outils natifs de bureau.",
+    "desktopBannerWindowsTitle": "application Sonoran CAD Windows"
   },
   "error404": {
     "goBack": "Retour"
+  },
+  "footer": {
+    "rocketNodeLink": "Ouvrir l'hébergement RocketNode",
+    "sonoranOneBundle": "Hébergement CAD + CMS + Radio + FiveM",
+    "sonoranOneLink": "Ouvrir Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -1013,7 +1028,7 @@
             "description": "CAO gratuite pour ER:LC avec carte 3D en direct, bodycam, appels d'urgence, outils de personnage et prise en charge de la superposition en jeu.",
             "keywords": "ER:LC CAD, CAD gratuit pour ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Intégration Sonoran CAD ER:LC",
-            "title": "CAD gratuit pour ER:LC | Sonoran CAD",
+            "title": "CAD gratuit pour ER:LC - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1090,7 +1105,7 @@
             "description": "CAD gratuit pour FiveM avec carte en direct, bodycam, synchronisation de base de données et prise en charge officielle des plugins pour des serveurs roleplay profondément intégrés.",
             "keywords": "CAD FiveM, CAD gratuit pour FiveM, Sonoran CAD, dispatch FiveM, CAD de roleplay FiveM",
             "ogImageAlt": "Intégration Sonoran CAD FiveM",
-            "title": "CAD gratuit pour FiveM | Sonoran CAD",
+            "title": "CAD gratuit pour FiveM - Sonoran CAD",
             "twitterImageAlt": "Aperçu de l'intégration Sonoran CAD x FiveM"
           },
           "modules": {
@@ -1158,6 +1173,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD est un système gratuit de CAD/MDT et de gestion des dossiers pour les communautés de jeu. Inscrivez votre communauté gratuitement dès aujourd'hui!",
+      "keywords": "CAD/MDT, CAD/MDT gratuit, Répartition policière, Répartition pour roleplay",
+      "ogImageAlt": "Logo Sonoran CAD",
+      "title": "Sonoran CAD, logiciel de répartition CAD/MDT gratuit"
     },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
@@ -1267,6 +1288,126 @@
     "discovery": "Découverte"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "Actif",
+      "cadPlans": "Plans CAD",
+      "cancellingStatus": "Annulation : {date}",
+      "changeCommunity": "Changer de communauté",
+      "choosePlanAria": "Choisir {plan}",
+      "clearCommunity": "Effacer l’ID de la communauté",
+      "communityAlreadySubscribedTooltip": "Cette communauté a déjà un abonnement actif appliqué.",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "Cet abonnement a été acheté mais n’a pas encore été appliqué à une communauté CAD.",
+      "communityMissingTitle": "Aucun ID de communauté défini",
+      "contactSupport": "Contacter le support",
+      "description": "Gérer les abonnements, les attribuer aux communautés CAD et mettre à jour la facturation via Stripe.",
+      "expertInstallInfo": "Infos d'installation experte",
+      "eyebrow": "Centre de paiement",
+      "inactiveSubscriptions": "Inactif / Annulé",
+      "manageSubscription": "Gérer l’abonnement",
+      "noActiveSubscriptionsBody": "Créez un nouvel abonnement pour passer à une communauté CAD.",
+      "noCommunitiesAvailable": "Aucune communauté n'est disponible sur ce compte.",
+      "noInactiveSubscriptions": "Aucun abonnement inactif",
+      "noInactiveSubscriptionsBody": "Les abonnements annulés et inactifs apparaîtront ici.",
+      "openOnePortal": "Ouvrir ONE Portal",
+      "otherProducts": "Autres produits",
+      "planDescriptions": {
+        "expertInstallation": "Aide à la configuration unique de l'équipe Sonoran.",
+        "free": "Accès CAD de base avec ER:LC, FiveM et connectivité API.",
+        "plus": "Ajoute la synchronisation de base de données, deux serveurs, des limites plus élevées et plus de modèles.",
+        "pro": "Débloque une mise à l'échelle illimitée, des cartes personnalisées, la fusion de bases de données et un mappage convivial.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, outils de streaming et hébergement RocketNode.",
+        "standard": "Ajoute la prise en charge des domaines personnalisés, des limites plus élevées et des outils communautaires étendus.",
+        "starter": "Ajoute un identifiant de communauté personnalisé, plus d'utilisateurs et des fonctionnalités CAD payantes essentielles.",
+        "streamOverlay": "Outils de superposition pour les streamers et les diffusions communautaires."
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "CMS standard Sonoran",
+        "free": "Gratuit",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD standard",
+        "starter": "Sonoran CAD starter",
+        "streamingTools": "Outils de streaming"
+      },
+      "planPrices": {
+        "expertInstallation": "34,99 $",
+        "free": "0,00 $/mois",
+        "plus": "17,99 $/mois",
+        "pro": "29,99 $/mois",
+        "sonoranOne": "49,99 $/mois",
+        "standard": "9,99 $/mois",
+        "starter": "3,99 $/mois",
+        "streamOverlay": "4,99 $/mois"
+      },
+      "planQuarterlyPrices": {
+        "free": "0,00 $/mois",
+        "plus": "13,50 $/mois",
+        "pro": "22,50 $/mois",
+        "sonoranOne": "37,50 $/mois",
+        "standard": "7,60 $/mois",
+        "starter": "3,00 $/mo"
+      },
+      "pricingBadges": {
+        "bestValue": "Meilleure valeur",
+        "mostPopular": "Le plus populaire"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "Téléversements de bodycam / 24 heures",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "ID de communauté personnalisé",
+        "customDomain": "Domaine personnalisé",
+        "customLiveMapImage": "Image de carte dynamique personnalisée",
+        "customRecordTemplates": "Modèles d'enregistrements personnalisés",
+        "databaseFriendlyMapping": "Cartographie conviviale de la base de données",
+        "databaseMerge": "Fusion de bases de données",
+        "databaseSync": "Syncronisation de la base de donnée ",
+        "integrationAccess": "Intégration ER:LC + FiveM & API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "Hébergement RocketNode FiveM",
+        "servers": "Serveurs",
+        "streamingTools": "Outils de streaming",
+        "userAccounts": "Compte utilisateur"
+      },
+      "pricingPlanNames": {
+        "free": "Gratuit",
+        "plus": "Plus",
+        "pro": "Pro",
+        "standard": "Standard",
+        "starter": "Pack de démarrage"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 min",
+        "included": "Inclus",
+        "notIncluded": "Non inclus",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 min",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 min",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "Illimité"
+      },
+      "selectCommunityForPurchase": "Sélectionner la communauté CAD",
+      "selectCommunitySubtitle": "Choisissez la communauté à mettre à niveau avec cet abonnement.",
+      "sonoranOnePlaceholder": "Un abonnement pour CAD, CMS, Radio et l'hébergement RocketNode FiveM inclus.",
+      "subscribed": "Abonné",
+      "subscribeToBundle": "S'abonner",
+      "subscriptionsBody": "Révisez les abonnements actifs, attribuez les communautés CAD et gérez les abonnements inactifs.",
+      "subscriptionsTitle": "Vos abonnements",
+      "supportBody": "Notre assistance par chat en direct dédiée est disponible 7 jours sur 7 pendant les heures ouvrables. Des questions ? Notre équipe est à votre disposition.",
+      "supportTitle": "Parler à une personne",
+      "unknownPlan": "Forfait inconnu"
+    },
     "buttons": {
       "amount": "Montant",
       "comparePlans": "Pricing",
@@ -1922,6 +2063,8 @@
       "kickUnit": "Expulser l'unité",
       "newGroup": "Nouveau groupe",
       "removeFromGroup": "Retirer du groupe",
+      "showAllUnitGroups": "Afficher tous les groupes d'unités",
+      "showUnitGroupsWithUnits": "Afficher les groupes avec unités",
       "togglePanic": "Activer/désactiver le bouton Panique",
       "unitGroups": "Groupes d'unités",
       "units": "Unité"

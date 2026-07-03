@@ -676,6 +676,11 @@
       "transferHeader": "轉移您的Sonoran CAD",
       "transferSubtext": "您必須是該社群/CAD的所有者，才能轉讓此CAD。轉讓過程需要電子郵件驗證。"
     },
+    "upgradeBanner": {
+      "button": "升級",
+      "message": "取得更多功能、使用者帳戶和自訂項目。",
+      "title": "您的社群目前使用免費版本。"
+    },
     "webhooks": {
       "10Code": "10-Code程式碼變更",
       "10CodeAbout": "新增，修改或刪除10-Code程式碼時，將傳送此推送。",
@@ -895,6 +900,7 @@
     "search": "搜尋",
     "searchOnMap": "在地圖上搜尋",
     "seconds": "秒",
+    "select": "選擇",
     "serverStatus": "伺服器狀態",
     "sessionExpired": "工作階段已過期",
     "start": "開始",
@@ -963,10 +969,19 @@
   },
   "downloads": {
     "desktopAndMobileBanner": "下載我們的 Windows 桌面和行動應用程式！",
-    "desktopBanner": "下載我們的 Windows 桌面應用程式！"
+    "desktopBanner": "下載我們的 Windows 桌面應用程式！",
+    "desktopBannerMacBody": "安裝 OSX 應用程式以透過原生桌面工具獲得更快的 CAD 體驗。",
+    "desktopBannerMacTitle": "Sonoran CAD OSX 應用程式",
+    "desktopBannerWindowsBody": "安裝 Windows 應用程式以透過原生桌面工具獲得更快的 CAD 體驗。",
+    "desktopBannerWindowsTitle": "Sonoran CAD Windows 應用程式"
   },
   "error404": {
     "goBack": "返回"
+  },
+  "footer": {
+    "rocketNodeLink": "開啟 RocketNode 主機託管",
+    "sonoranOneBundle": "CAD + CMS + Radio + FiveM 主機託管",
+    "sonoranOneLink": "開啟 Sonoran One"
   },
   "homepage": {
     "heroInlineStatement": "is the most advanced, integrated, and popular dispatching software available.",
@@ -1013,7 +1028,7 @@
             "description": "適用於 ER:LC 的免費 CAD，具備 3D 即時地圖、隨身攝影機、緊急呼叫、角色工具，以及遊戲內疊加層支援。",
             "keywords": "ER:LC CAD，免費的 ER:LC CAD，ERLC CAD，Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC 整合",
-            "title": "ER:LC 免費 CAD | Sonoran CAD",
+            "title": "ER:LC 免費 CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x 緊急應變：Liberty County"
           },
           "modules": {
@@ -1090,7 +1105,7 @@
             "description": "適用於 FiveM 的免費 CAD，具備即時地圖、隨身攝影機、資料庫同步，以及官方外掛支援，為深度整合的角色扮演伺服器而設。",
             "keywords": "FiveM CAD，FiveM 免費 CAD，Sonoran CAD，FiveM dispatch，FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 整合",
-            "title": "FiveM 免費 CAD | Sonoran CAD",
+            "title": "FiveM 免費 CAD - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM 整合預覽"
           },
           "modules": {
@@ -1158,6 +1173,12 @@
         },
         "name": "FiveM"
       }
+    },
+    "meta": {
+      "description": "Sonoran CAD 是一個適用於遊戲社群的免費 CAD/MDT 與紀錄管理系統。今天就免費註冊你的社群！",
+      "keywords": "CAD/MDT，免費 CAD/MDT，警務派遣，角色扮演派遣",
+      "ogImageAlt": "Sonoran CAD 標誌",
+      "title": "Sonoran CAD，免費 CAD/MDT 派遣軟體"
     },
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "startToday": "Start Today",
@@ -1267,6 +1288,126 @@
     "discovery": "探索"
   },
   "payment": {
+    "billingCenter": {
+      "activeSubscriptions": "活躍",
+      "cadPlans": "CAD 方案",
+      "cancellingStatus": "取消中: {date}",
+      "changeCommunity": "更改社群",
+      "choosePlanAria": "選擇 {plan}",
+      "clearCommunity": "清除社群ID",
+      "communityAlreadySubscribedTooltip": "此社群已套用有效訂閱。",
+      "communityIdValue": "ID {id}",
+      "communityMissingBody": "此訂閱已購買，但尚未套用至 CAD 社群。",
+      "communityMissingTitle": "未設定社群ID",
+      "contactSupport": "聯絡支援",
+      "description": "管理訂閱，將其指派給 CAD 社群，並透過 Stripe 更新帳單。",
+      "expertInstallInfo": "專家安裝資訊",
+      "eyebrow": "付款中心",
+      "inactiveSubscriptions": "未啟用／已取消",
+      "manageSubscription": "管理訂閱",
+      "noActiveSubscriptionsBody": "建立新的訂閱以升級 CAD 社群。",
+      "noCommunitiesAvailable": "此帳戶沒有可用的社群。",
+      "noInactiveSubscriptions": "找不到未啟用的訂閱內容",
+      "noInactiveSubscriptionsBody": "已取消且未啟用的訂閱將顯示在此處。",
+      "openOnePortal": "開啟 ONE Portal",
+      "otherProducts": "其他產品",
+      "planDescriptions": {
+        "expertInstallation": "Sonoran 團隊的一次性設定協助。",
+        "free": "具備 ER:LC、FiveM 和 API 連線的核心 CAD 存取。",
+        "plus": "新增資料庫同步、兩台伺服器、更高限制，以及更多範本。",
+        "pro": "解鎖無限擴充、自訂地圖、資料庫合併，與友善對應。",
+        "sonoranOne": "Bundles CAD Pro、CMS Pro、Radio Pro、streaming tools，以及 RocketNode hosting。",
+        "standard": "新增自訂網域支援、更高限制，以及擴充的社群工具。",
+        "starter": "新增自訂社群 ID、更多使用者，以及付費 CAD 必備功能。",
+        "streamOverlay": "供直播主與社群播報使用的疊加工具。"
+      },
+      "planNames": {
+        "cmsPro": "Sonoran CMS Pro",
+        "cmsStandard": "Sonoran CMS 標準版",
+        "free": "免費",
+        "plus": "Sonoran CAD Plus",
+        "pro": "Sonoran CAD Pro",
+        "radioPlus": "Sonoran Radio Plus",
+        "radioPro": "Sonoran Radio Pro",
+        "sonoranOne": "Sonoran One",
+        "standard": "Sonoran CAD 標準版",
+        "starter": "Sonoran CAD 入門版",
+        "streamingTools": "串流工具"
+      },
+      "planPrices": {
+        "expertInstallation": "$34.99",
+        "free": "$0.00/月",
+        "plus": "$17.99/月",
+        "pro": "$29.99/月",
+        "sonoranOne": "$49.99/月",
+        "standard": "$9.99/月",
+        "starter": "$3.99/月",
+        "streamOverlay": "$4.99/月"
+      },
+      "planQuarterlyPrices": {
+        "free": "$0.00/月",
+        "plus": "$13.50/月",
+        "pro": "$22.50/月",
+        "sonoranOne": "$37.50/月",
+        "standard": "$7.60/月",
+        "starter": "$3.00/月"
+      },
+      "pricingBadges": {
+        "bestValue": "最超值",
+        "mostPopular": "最受歡迎"
+      },
+      "pricingFeatures": {
+        "bodycamUploads": "隨身攝影機上傳／24 小時",
+        "cadPro": "Sonoran CAD Pro",
+        "cmsPro": "Sonoran CMS Pro",
+        "customCommunityId": "自定義社群ID",
+        "customDomain": "自訂 網域",
+        "customLiveMapImage": "自訂即時地圖圖片",
+        "customRecordTemplates": "自定義記錄範本",
+        "databaseFriendlyMapping": "資料庫簡易對映",
+        "databaseMerge": "資料庫整合",
+        "databaseSync": "資料庫同步",
+        "integrationAccess": "ER:LC + FiveM 整合 & API",
+        "radioPro": "Sonoran Radio Pro",
+        "rocketNodeFivemHosting": "RocketNode FiveM 主機託管",
+        "servers": "伺服器",
+        "streamingTools": "串流工具",
+        "userAccounts": "使用者賬戶"
+      },
+      "pricingPlanNames": {
+        "free": "免費",
+        "plus": "高階版",
+        "pro": "專業版",
+        "standard": "標準版",
+        "starter": "基礎版"
+      },
+      "pricingValues": {
+        "fifteen": "15",
+        "fifty": "50",
+        "hundred": "100",
+        "hundredMinutes": "100 分鐘",
+        "included": "包含",
+        "notIncluded": "不包含",
+        "one": "1",
+        "ten": "10",
+        "tenMinutes": "10 分鐘",
+        "thirtyFive": "35",
+        "thousandMinutes": "1000 分鐘",
+        "two": "2",
+        "twoHundredFifty": "250",
+        "unlimited": "無限制"
+      },
+      "selectCommunityForPurchase": "選取 CAD 社群",
+      "selectCommunitySubtitle": "選擇要以此訂閱升級的社群。",
+      "sonoranOnePlaceholder": "一個訂閱適用於 CAD、CMS、Radio，以及包含的 RocketNode FiveM 主機服務。",
+      "subscribed": "已訂閱",
+      "subscribeToBundle": "訂閱",
+      "subscriptionsBody": "檢視有效訂閱、指派 CAD 社群，並管理無效訂閱。",
+      "subscriptionsTitle": "您的訂閱內容",
+      "supportBody": "我們的專屬即時聊天支援於營業時間內每週 7 天提供服務。有問題嗎？我們團隊隨時待命。",
+      "supportTitle": "與真人交談",
+      "unknownPlan": "未知方案"
+    },
     "buttons": {
       "amount": "金額",
       "comparePlans": "Pricing",
@@ -1922,6 +2063,8 @@
       "kickUnit": "將單位踢出",
       "newGroup": "新小組",
       "removeFromGroup": "從群組中移除",
+      "showAllUnitGroups": "顯示所有單位小組",
+      "showUnitGroupsWithUnits": "顯示含單位的群組",
       "togglePanic": "啟用緊急狀態",
       "unitGroups": "單位小組",
       "units": "單位"
