@@ -1211,11 +1211,11 @@
                 "question": "È adatto per comunità piccole o in crescita?"
               },
               "features": {
-                "answer": "L'integrazione FiveM include supporto alla mappa in tempo reale, strumenti bodycam, sincronizzazione del database e un set in espansione di plugin ufficiali per flussi di lavoro di gioco più approfonditi.",
+                "answer": "L'integrazione gratuita per FiveM include supporto mappa in tempo reale, strumenti bodycam e plugin ufficiali. Database Sync è un componente aggiuntivo a pagamento opzionale per server QBCore, QBox ed ESX.",
                 "question": "Quali funzionalità sono incluse con l'integrazione FiveM?"
               },
               "free": {
-                "answer": "Sì. L'integrazione FiveM principale di Sonoran CAD è disponibile nel piano gratuito, così le community possono iniziare senza pagare il flusso di lavoro base.",
+                "answer": "Sì. L'integrazione FiveM principale di Sonoran CAD funziona con il piano gratuito. Alcuni script di terze parti e Database Sync sono a pagamento separatamente; CAD Pro include Station Alert e Pager Reborn senza costi aggiuntivi.",
                 "question": "L'integrazione FiveM è gratuita da usare?"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "Il miglior CAD",
           "kicker": "Gratis, veloce, completamente integrato",
           "meta": {
-            "description": "CAD gratuito per FiveM con mappa live, bodycam, sincronizzazione database e supporto ufficiale ai plugin per server roleplay profondamente integrati.",
+            "description": "CAD gratuito per FiveM con mappa in tempo reale, bodycam, plugin ufficiali e sincronizzazione opzionale del database per server roleplay profondamente integrati.",
             "keywords": "FiveM CAD, CAD gratuito per FiveM, Sonoran CAD, dispatch di FiveM, CAD per roleplay FiveM",
             "ogImageAlt": "Integrazione Sonoran CAD FiveM",
             "title": "CAD gratuito per FiveM - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "Ecosistema di plugin"
             },
             "sync": {
-              "infoCopy": "Collega identità di gioco, veicoli e registri così che il tuo CAD resti allineato con l'attività del server.",
+              "badge": "Componente aggiuntivo a pagamento",
+              "badgeTooltip": "Un'integrazione a pagamento del database per server framework QBCore, QBox ed ESX.",
+              "infoCopy": "Carica automaticamente personaggi, licenze e veicoli da QBCore, QBox o ESX.",
               "infoTitle": "Sincronizzazione dati",
               "previewTitle": "Anteprima sincronizzazione database FiveM",
               "title": "Sincronizzazione database"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "Crea chiamate immersive per NPC e giocatori che confluiscono direttamente nel dispatch con dati CAD strutturati.",
-                "previewTitle": "Anteprima plugin Chiamanti personalizzati",
-                "title": "Chiamanti personalizzati"
+                "previewTitle": "Anteprima dell'integrazione chiamanti locali",
+                "title": "Chiamanti locali"
               },
               "ers": {
                 "description": "Collega i flussi di lavoro radio tra il tuo server e Sonoran CAD per una coordinazione più rapida durante gli incidenti attivi.",
-                "previewTitle": "Anteprima del plugin Radio di emergenza",
-                "title": "Radio di emergenza"
+                "previewTitle": "Anteprima dell'integrazione ERS",
+                "title": "Integrazione ERS"
               },
               "pagers": {
+                "badge": "Bonus CAD Pro",
+                "badgeTooltip": "L'integrazione CAD funziona su tutti i piani. Le community CAD Pro ricevono lo script Inferno Collection a pagamento senza costi aggiuntivi.",
                 "description": "Invia notifiche pager mirate dall'attività di dispatch così le unità ricevono subito le informazioni giuste.",
                 "previewTitle": "Anteprima plugin Pagers",
-                "title": "Pager"
+                "title": "Pager Reborn"
               },
               "printer": {
                 "description": "Stampa i registri e le informazioni di supporto nel gioco per i dipartimenti che desiderano passaggi di scena tangibili.",
@@ -1292,15 +1296,40 @@
                 "title": "Cartelli stradali"
               },
               "station": {
-                "description": "Attiva toni della stazione, azioni delle porte e messaggi di allerta dagli eventi CAD per mantenere sincronizzate le squadre.",
+                "badge": "Bonus CAD Pro",
+                "badgeTooltip": "L'integrazione CAD funziona su tutti i piani. Le community CAD Pro ricevono lo script Inferno Collection a pagamento senza costi aggiuntivi.",
+                "description": "Invia notifiche pager mirate dall'attività di dispatch così le unità ricevono subito le informazioni giuste.",
                 "previewTitle": "Anteprima del plugin di allerta della stazione",
-                "title": "AllertaStazione"
+                "title": "allertaStazione"
               }
             },
             "title": "Integrazioni ufficiali"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "Richiedi il 20% di sconto sul tuo prossimo upgrade",
+        "ecosystemDescription": "Aggiungi strumenti progettati ad hoc al tuo server senza ricostruire il tuo flusso di lavoro o pagare per il livello di integrazione.",
+        "ecosystemEyebrow": "Approfondisci nel gioco",
+        "featuresDescription": "Strumenti in tempo reale collegano gameplay, assegnazione e registri così la tua community può restare immersa.",
+        "featuresEyebrow": "Integrazioni",
+        "featuresTitle": "Creato per {game}",
+        "freeBadge": "Tutte le integrazioni di gioco incluse gratuitamente",
+        "homeAriaLabel": "Home Sonoran CAD",
+        "includedFree": "Incluso gratis",
+        "livePreview": "Anteprima in tempo reale",
+        "previewAriaLabel": "Anteprime delle funzionalità di integrazione",
+        "showcaseImageAriaLabel": "Visualizza i dettagli di {feature}",
+        "stats": {
+          "apiIntegration": "API & Integrazione",
+          "customerSupport": "ASSISTENZA CLIENTI",
+          "free": "Gratis",
+          "getStarted": "Inizia",
+          "integrateMinutes": "Completamente integrato in pochi minuti",
+          "liveChat": "Chat dal vivo 7 giorni/settimana"
+        },
+        "viewAllIntegrations": "Visualizza tutte le integrazioni"
       }
     },
     "marketingOffer": {

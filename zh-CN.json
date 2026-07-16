@@ -1211,11 +1211,11 @@
                 "question": "这适合小型或正在成长的社区吗？"
               },
               "features": {
-                "answer": "FiveM 集成包括实时地图支持、执法记录仪工具、数据库同步，以及一组不断扩展的官方插件，用于更深入的游戏内工作流程。",
+                "answer": "免费的 FiveM 集成包括实时地图支持、执法记录仪工具和官方插件。数据库同步是面向 QBCore、QBox 和 ESX 服务器的可选付费附加组件。",
                 "question": "FiveM 集成包含哪些功能？"
               },
               "free": {
-                "answer": "是。Sonoran CAD 的核心 FiveM 集成可在免费计划中使用，因此社区可以无需为基础工作流程付费即可开始。",
+                "answer": "是。Sonoran CAD 的核心 FiveM 集成功能可在免费方案中使用。部分第三方脚本和 Database Sync 需单独付费；CAD Pro 包含 Station Alert 和 Pager Reborn，不收取额外费用。",
                 "question": "FiveM 集成可以免费使用吗？"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "最好的 CAD",
           "kicker": "免费、快速、完全集成",
           "meta": {
-            "description": "为 FiveM 提供的免费 CAD，带有实时地图、执法记录仪、数据库同步和官方插件支持，深度集成角色扮演服务器。",
+            "description": "FiveM 的免费 CAD，支持实时地图、执法记录仪、官方插件，以及可选的数据库同步，适用于深度集成的角色扮演服务器。",
             "keywords": "FiveM CAD，FiveM 的免费 CAD，Sonoran CAD，FiveM dispatch，FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 集成",
             "title": "FiveM 的免费 CAD - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "插件生态系统"
             },
             "sync": {
-              "infoCopy": "连接游戏内身份、车辆和记录，让您的 CAD 与服务器活动保持同步。",
+              "badge": "付费附加组件",
+              "badgeTooltip": "适用于 QBCore、QBox 和 ESX 框架服务器的付费数据库集成。",
+              "infoCopy": "从 QBCore、QBox 或 ESX 自动加载角色、执照和载具。",
               "infoTitle": "同步数据",
               "previewTitle": "FiveM 数据库同步预览",
               "title": "数据库同步"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "创建沉浸式 NPC 和玩家呼叫，以结构化 CAD 数据直接推送到调度系统。",
-                "previewTitle": "自定义呼叫者插件预览",
-                "title": "自定义呼叫者"
+                "previewTitle": "本地呼叫者集成预览",
+                "title": "本地 调用者"
               },
               "ers": {
                 "description": "在您的服务器和 Sonoran CAD 之间桥接无线电工作流，以便在紧急事件期间更快协调。",
-                "previewTitle": "紧急无线电插件预览",
-                "title": "紧急无线电"
+                "previewTitle": "ERS 集成预览",
+                "title": "紧急无线电插件 集成"
               },
               "pagers": {
+                "badge": "CAD Pro 奖励",
+                "badgeTooltip": "CAD 集成适用于所有方案。CAD Pro 社区可免费获得付费的 Inferno Collection 脚本，无需额外费用。",
                 "description": "根据调度活动发送定向传呼通知，让单位立即获取正确信息。",
                 "previewTitle": "寻呼机插件预览",
-                "title": "寻呼机"
+                "title": "Pager Reborn"
               },
               "printer": {
                 "description": "在游戏中打印记录和支持信息，方便需要有形现场交接的部门使用。",
@@ -1292,15 +1296,40 @@
                 "title": "街道标识"
               },
               "station": {
-                "description": "从 CAD 事件触发站点提示音、门操作和警报消息，让团队保持同步。",
+                "badge": "CAD Pro 奖励",
+                "badgeTooltip": "CAD 集成适用于所有方案。CAD Pro 社区可免费获得付费的 Inferno Collection 脚本，无需额外费用。",
+                "description": "根据调度活动发送定向传呼通知，让单位立即获取正确信息。",
                 "previewTitle": "Station 报警插件预览",
-                "title": "Station 报警"
+                "title": "站点警报"
               }
             },
             "title": "官方集成"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "领取未来升级 20% 折扣",
+        "ecosystemDescription": "无需重建工作流程或为集成层付费，即可向您的服务器添加专为特定用途打造的工具。",
+        "ecosystemEyebrow": "深入游戏",
+        "featuresDescription": "实时工具连接游戏、调度和记录，让您的社区保持沉浸。",
+        "featuresEyebrow": "集成",
+        "featuresTitle": "专为 {game} 打造",
+        "freeBadge": "所有游戏集成免费包含",
+        "homeAriaLabel": "Sonoran CAD 首页",
+        "includedFree": "免费包括",
+        "livePreview": "实时预览",
+        "previewAriaLabel": "集成功能预览",
+        "showcaseImageAriaLabel": "查看 {feature} 详情",
+        "stats": {
+          "apiIntegration": "API 与 集成",
+          "customerSupport": "客户支持",
+          "free": "免费",
+          "getStarted": "开始使用",
+          "integrateMinutes": "几分钟内完全集成",
+          "liveChat": "实时聊天 每周7天"
+        },
+        "viewAllIntegrations": "查看所有集成"
       }
     },
     "marketingOffer": {

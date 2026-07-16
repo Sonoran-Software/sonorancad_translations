@@ -1211,11 +1211,11 @@
                 "question": "¿Esto es adecuado para comunidades pequeñas o en crecimiento?"
               },
               "features": {
-                "answer": "La integración de FiveM incluye compatibilidad con mapa en vivo, herramientas de bodycam, sincronización de base de datos y un conjunto en expansión de plugins oficiales para flujos de trabajo más profundos dentro del juego.",
+                "answer": "La integración gratuita de FiveM incluye compatibilidad con mapa en vivo, herramientas bodycam y plugins oficiales. Database Sync es un complemento de pago opcional para servidores QBCore, QBox y ESX.",
                 "question": "¿Qué funciones están incluidas con la integración de FiveM?"
               },
               "free": {
-                "answer": "Sí. La integración principal de FiveM de Sonoran CAD está disponible en el plan gratuito, por lo que las comunidades pueden empezar sin pagar por el flujo de trabajo básico.",
+                "answer": "Sí. La integración principal de FiveM de Sonoran CAD funciona en el plan gratuito. Algunos scripts de terceros y Database Sync se pagan por separado; CAD Pro incluye Station Alert y Pager Reborn sin costo adicional.",
                 "question": "¿Es gratuita la integración de FiveM?"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "El mejor CAD",
           "kicker": "Gratis, rápido, totalmente integrado",
           "meta": {
-            "description": "CAD gratis para FiveM con mapa en vivo, bodycam, sincronización de base de datos y soporte oficial de plugins para servidores de roleplay profundamente integrados.",
+            "description": "CAD gratuito para FiveM con mapa en vivo, bodycam, plugins oficiales y sincronización de base de datos opcional para servidores de roleplay profundamente integrados.",
             "keywords": "FiveM CAD, CAD gratis para FiveM, Sonoran CAD, despacho de FiveM, CAD de roleplay de FiveM",
             "ogImageAlt": "Integración de Sonoran CAD FiveM",
             "title": "CAD gratis para FiveM - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "Ecosistema de complementos"
             },
             "sync": {
-              "infoCopy": "Conecta identidades, vehículos y registros dentro del juego para que tu CAD se mantenga alineado con la actividad del servidor.",
+              "badge": "Complemento de pago",
+              "badgeTooltip": "Una integración de base de datos de pago para servidores de los frameworks QBCore, QBox y ESX.",
+              "infoCopy": "Carga automática de personajes, licencias y vehículos desde QBCore, QBox o ESX.",
               "infoTitle": "Sincronizar datos",
               "previewTitle": "Vista previa de sincronización de base de datos de FiveM",
               "title": "Sincronización de base de datos"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "Crea alertas inmersivas de PNJ y jugadores que se integran directamente en dispatch con datos CAD estructurados.",
-                "previewTitle": "Vista previa del complemento Llamadores personalizados",
-                "title": "Llamadores personalizados"
+                "previewTitle": "Vista previa del complemento de llamadas locales",
+                "title": "Llamadas locales"
               },
               "ers": {
                 "description": "Conecta los flujos de trabajo de radio entre tu servidor y Sonoran CAD para una coordinación más rápida durante incidentes activos.",
-                "previewTitle": "Vista previa del complemento de radio de emergencia",
-                "title": "Radio de emergencia"
+                "previewTitle": "Vista previa de la integración de ERS",
+                "title": "Integración de ERS"
               },
               "pagers": {
+                "badge": "Bonificación Pro de CAD",
+                "badgeTooltip": "La integración CAD funciona en todos los planes. Las comunidades CAD Pro reciben el script de la colección Inferno de pago sin costo adicional.",
                 "description": "Envía notificaciones de buscapersonas dirigidas a partir de la actividad de despacho para que las unidades reciban la información correcta de inmediato.",
                 "previewTitle": "Vista previa del complemento Pagers",
-                "title": "Buscapersonas"
+                "title": "Buscapersonas Renacido"
               },
               "printer": {
                 "description": "Imprime registros e información de apoyo en el juego para departamentos que quieren entregas físicas de la escena.",
@@ -1292,15 +1296,40 @@
                 "title": "Letreros de las calles"
               },
               "station": {
-                "description": "Activa tonos de estación, acciones de puertas y mensajes de alerta desde eventos de CAD para mantener sincronizadas a las tripulaciones.",
+                "badge": "Bonificación Pro de CAD",
+                "badgeTooltip": "La integración CAD funciona en todos los planes. Las comunidades CAD Pro reciben el script de la colección Inferno de pago sin costo adicional.",
+                "description": "Envía notificaciones de buscapersonas dirigidas a partir de la actividad de despacho para que las unidades reciban la información correcta de inmediato.",
                 "previewTitle": "Vista previa del plugin de alertas de Station",
-                "title": "Alerta de estación"
+                "title": "alertaDeEstación"
               }
             },
             "title": "Integraciones oficiales"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "Reclama un 20% de descuento en tu próxima actualización",
+        "ecosystemDescription": "Añade herramientas diseñadas específicamente a tu servidor sin reconstruir tu flujo de trabajo ni pagar por la capa de integración.",
+        "ecosystemEyebrow": "Profundiza En El Juego",
+        "featuresDescription": "Las herramientas en tiempo real conectan el juego, el despacho y los registros para que tu comunidad pueda mantenerse inmersa.",
+        "featuresEyebrow": "Integraciones",
+        "featuresTitle": "Diseñado para {game}",
+        "freeBadge": "Todas las integraciones de juegos incluidas gratis",
+        "homeAriaLabel": "Inicio de Sonoran CAD",
+        "includedFree": "Incluido gratis",
+        "livePreview": "Vista previa en vivo",
+        "previewAriaLabel": "Vistas previas de funciones de integración",
+        "showcaseImageAriaLabel": "Ver detalles de {feature}",
+        "stats": {
+          "apiIntegration": "API e integración",
+          "customerSupport": "ATENCIÓN AL CLIENTE",
+          "free": "Gratis",
+          "getStarted": "Comenzar",
+          "integrateMinutes": "Totalmente integrado en minutos",
+          "liveChat": "Chat en vivo 7 días/semana"
+        },
+        "viewAllIntegrations": "Ver todas las integraciones"
       }
     },
     "marketingOffer": {
