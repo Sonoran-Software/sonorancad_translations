@@ -1211,11 +1211,11 @@
                 "question": "これは小規模または成長中のコミュニティに適していますか？"
               },
               "features": {
-                "answer": "FiveM統合にはライブマップ対応、ボディカムツール、データベース同期、そしてより深いゲーム内ワークフロー向けに拡張中の公式プラグインセットが含まれます。",
+                "answer": "無料の FiveM 統合には、ライブマップ対応、ボディカムツール、公式プラグインが含まれます。Database Sync は、QBCore、QBox、ESX サーバー向けのオプションの有料アドオンです。",
                 "question": "FiveM 統合にはどの機能が含まれていますか？"
               },
               "free": {
-                "answer": "はい。Sonoran CADのFiveM向けコア連携は無料プランで利用できるため、コミュニティは基本ワークフローを費用なしで始められます。",
+                "answer": "はい。Sonoran CADのコアFiveM連携は無料プランで利用できます。一部のサードパーティスクリプトとDatabase Syncは別途有料です。CAD ProにはStation AlertとPager Rebornが追加費用なしで含まれます。",
                 "question": "FiveM 統合は無料で使えますか"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "最高の CAD",
           "kicker": "無料、高速、完全統合",
           "meta": {
-            "description": "ライブマップ、ボディカム、データベース同期、公式プラグイン対応を備えた FiveM 向けの無料 CAD。深く統合されたロールプレイサーバー向け。",
+            "description": "FiveM向けの無料CAD。ライブマップ、ボディカム、公式プラグイン、そして深く統合されたロールプレイサーバー向けのオプションのデータベース同期付き。",
             "keywords": "FiveM CAD、FiveM 用の無料 CAD、Sonoran CAD、FiveM ディスパッチ、FiveM ロールプレイ CAD",
             "ogImageAlt": "Sonoran CAD FiveM 統合",
             "title": "FiveM 用の無料 CAD - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "プラグイン エコシステム"
             },
             "sync": {
-              "infoCopy": "ゲーム内のID、車両、記録を連携して、CAD をサーバーのアクティビティと一致させます。",
+              "badge": "有料アドオン",
+              "badgeTooltip": "QBCore、QBox、ESXフレームワークサーバー向けの有料データベース統合。",
+              "infoCopy": "QBCore、QBox、または ESX からキャラクター、ライセンス、車両を自動読み込みします。",
               "infoTitle": "データ 同期",
               "previewTitle": "FiveM データベース 同期 プレビュー",
               "title": "データベース 同期"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "没入感のあるNPCとプレイヤーの通報を作成し、構造化されたCADデータでdispatchに直接連携します。",
-                "previewTitle": "カスタム コーラー プラグインのプレビュー",
-                "title": "カスタム コーラー"
+                "previewTitle": "ローカル通話者統合のプレビュー",
+                "title": "ローカル通話者"
               },
               "ers": {
                 "description": "サーバーとSonoran CADの間で無線ワークフローを連携し、進行中のインシデントでより迅速に連携します。",
-                "previewTitle": "緊急無線プラグインのプレビュー",
-                "title": "緊急無線"
+                "previewTitle": "緊急無線 統合のプレビュー",
+                "title": "緊急無線 統合"
               },
               "pagers": {
+                "badge": "CAD Pro ボーナス",
+                "badgeTooltip": "CAD連携はすべてのプランで利用できます。CAD Proコミュニティは、有料のInferno Collectionスクリプトを追加費用なしで受け取れます。",
                 "description": "配車活動から対象を絞ったページャー通知を配信して、各ユニットが必要な情報をすぐに受け取れるようにします。",
                 "previewTitle": "ページャープラグインのプレビュー",
-                "title": "ページャー"
+                "title": "ページャーリボーン"
               },
               "printer": {
                 "description": "ゲーム内で記録と補助情報を印刷し、物理的な現場引き継ぎを求める部門向け。",
@@ -1292,15 +1296,40 @@
                 "title": "道路標識"
               },
               "station": {
-                "description": "CADイベントから駅のトーン、ドア操作、警告メッセージを起動して、クルーの連携を維持します。",
+                "badge": "CAD Pro ボーナス",
+                "badgeTooltip": "CAD連携はすべてのプランで利用できます。CAD Proコミュニティは、有料のInferno Collectionスクリプトを追加費用なしで受け取れます。",
+                "description": "配車活動から対象を絞ったページャー通知を配信して、各ユニットが必要な情報をすぐに受け取れるようにします。",
                 "previewTitle": "駅アラート通知プラグインのプレビュー",
-                "title": "駅アラート通知"
+                "title": "駅アラート"
               }
             },
             "title": "公式インテグレーション"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "将来のアップグレードが20%オフ",
+        "ecosystemDescription": "ワークフローを再構築したり、統合レイヤーに料金を支払ったりせずに、目的特化型ツールをサーバーに追加できます。",
+        "ecosystemEyebrow": "ゲームをさらに深く",
+        "featuresDescription": "リアルタイム ツールがゲームプレイ、ディスパッチ、記録をつなぎ、コミュニティが没入し続けられるようにします。",
+        "featuresEyebrow": "統合",
+        "featuresTitle": "{game}向けに作成",
+        "freeBadge": "すべてのゲーム内統合が無料で含まれます",
+        "homeAriaLabel": "Sonoran CAD ホーム",
+        "includedFree": "無料で含まれる",
+        "livePreview": "ライブ プレビュー",
+        "previewAriaLabel": "統合機能のプレビュー",
+        "showcaseImageAriaLabel": "{feature} の詳細を見る",
+        "stats": {
+          "apiIntegration": "API & 統合",
+          "customerSupport": "カスタマー サポート",
+          "free": "無料",
+          "getStarted": "始める",
+          "integrateMinutes": "数分で完全統合",
+          "liveChat": "ライブチャット 週7日"
+        },
+        "viewAllIntegrations": "すべての統合を見る"
       }
     },
     "marketingOffer": {

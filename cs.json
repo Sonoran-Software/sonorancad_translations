@@ -1211,11 +1211,11 @@
                 "question": "Je to vhodné pro malé nebo rostoucí komunity?"
               },
               "features": {
-                "answer": "Integrace FiveM zahrnuje podporu živé mapy, nástroje bodycam, synchronizaci databáze a rozšiřující se sadu oficiálních pluginů pro hlubší herní workflow.",
+                "answer": "Bezplatná integrace FiveM zahrnuje podporu živé mapy, nástroje bodycam a oficiální pluginy. Database Sync je volitelný placený doplněk pro servery QBCore, QBox a ESX.",
                 "question": "Jaké funkce jsou zahrnuty v integraci FiveM?"
               },
               "free": {
-                "answer": "Ano. Základní integrace Sonoran CAD pro FiveM je dostupná v bezplatném plánu, takže komunity mohou začít bez placení za základní workflow.",
+                "answer": "Ano. Základní integrace Sonoran CAD pro FiveM funguje v bezplatném plánu. Některé skripty třetích stran a Database Sync se platí zvlášť; CAD Pro zahrnuje Station Alert a Pager Reborn bez příplatku.",
                 "question": "Je integrace FiveM zdarma k použití?"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "Nejlepší CAD",
           "kicker": "Zdarma, rychle, plně integrované",
           "meta": {
-            "description": "Bezplatné CAD pro FiveM s živou mapou, bodycamem, synchronizací databáze a oficiální podporou pluginů pro hluboce integrované roleplay servery.",
+            "description": "Bezplatný CAD pro FiveM s živou mapou, bodycamem, oficiálními pluginy a volitelnou synchronizací databáze pro hluboce integrované roleplay servery.",
             "keywords": "FiveM CAD, bezplatné CAD pro FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Integrace Sonoran CAD pro FiveM",
             "title": "Bezplatné CAD pro FiveM | Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "Ekosystém pluginů"
             },
             "sync": {
-              "infoCopy": "Propojte herní identity, vozidla a záznamy, aby vaše CAD zůstávalo v souladu s aktivitou serveru.",
+              "badge": "Placený doplněk",
+              "badgeTooltip": "Placená integrace databáze pro servery frameworků QBCore, QBox a ESX.",
+              "infoCopy": "Automaticky načítá postavy, licence a vozidla z QBCore, QBox nebo ESX.",
               "infoTitle": "Synchronizace dat",
               "previewTitle": "Náhled synchronizace databáze FiveM",
               "title": "Synchronizace databáze"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "Vytvářejte pohlcující hlášení NPC a hráčů, která se přímo napojují na dispečink s strukturovanými CAD daty.",
-                "previewTitle": "Náhled pluginu vlastních volajících",
-                "title": "Vlastní volající"
+                "previewTitle": "Náhled integrace místních volajících",
+                "title": "Místní volající"
               },
               "ers": {
                 "description": "Propojte rádiové workflow mezi vaším serverem a Sonoran CAD pro rychlejší koordinaci během aktivních incidentů.",
-                "previewTitle": "Náhled pluginu nouzového rádia",
-                "title": "Nouzové rádio"
+                "previewTitle": "Náhled integrace ERS",
+                "title": "Integrace ERS"
               },
               "pagers": {
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "Integrace CAD funguje ve všech plánech. Komunity CAD Pro získají placený skript Inferno Collection bez dalších nákladů.",
                 "description": "Doručujte cílená pagerová oznámení z dispečerské činnosti, aby jednotky okamžitě dostaly správné informace.",
                 "previewTitle": "Náhled pluginu pagerů",
-                "title": "Přivolávače"
+                "title": "Pager Reborn"
               },
               "printer": {
                 "description": "Tiskněte záznamy a podpůrné informace ve hře pro oddělení, která chtějí hmatatelné předání scény.",
@@ -1292,7 +1296,9 @@
                 "title": "Pouliční značky"
               },
               "station": {
-                "description": "Spouštějte tón stanice, akce dveří a upozornění z událostí CAD, aby byly posádky synchronizované.",
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "Integrace CAD funguje ve všech plánech. Komunity CAD Pro získají placený skript Inferno Collection bez dalších nákladů.",
+                "description": "Doručujte cílená pagerová oznámení z dispečerské činnosti, aby jednotky okamžitě dostaly správné informace.",
                 "previewTitle": "Náhled pluginu upozornění stanice",
                 "title": "Upozornění stanice"
               }
@@ -1301,6 +1307,29 @@
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "Získejte 20% slevu na budoucí upgrade",
+        "ecosystemDescription": "Přidejte specializované nástroje na svůj server, aniž byste museli předělávat svůj pracovní postup nebo platit za integrační vrstvu.",
+        "ecosystemEyebrow": "Ponořte se hlouběji do hry",
+        "featuresDescription": "Nástroje v reálném čase propojují hraní, dispatch a záznamy, aby vaše komunita mohla zůstat ponořená.",
+        "featuresEyebrow": "Integrace",
+        "featuresTitle": "Vytvořeno pro {game}",
+        "freeBadge": "Všechny herní integrace zdarma",
+        "homeAriaLabel": "Domů Sonoran CAD",
+        "includedFree": "Zahrnuto zdarma",
+        "livePreview": "Živý náhled",
+        "previewAriaLabel": "Náhledy funkcí integrace",
+        "showcaseImageAriaLabel": "Zobrazit podrobnosti o {feature}",
+        "stats": {
+          "apiIntegration": "API a integrace",
+          "customerSupport": "Zákaznická podpora",
+          "free": "Zdarma",
+          "getStarted": "Začít",
+          "integrateMinutes": "Plně integrováno během několika minut",
+          "liveChat": "Živý chat 7 dní v týdnu"
+        },
+        "viewAllIntegrations": "Zobrazit všechny integrace"
       }
     },
     "marketingOffer": {

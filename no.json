@@ -1210,11 +1210,11 @@
                 "question": "Passer dette for små eller voksende fellesskap?"
               },
               "features": {
-                "answer": "FiveM-integrasjonen inkluderer støtte for live-kart, bodycam-verktøy, databasesynk og et voksende utvalg av offisielle plugins for dypere arbeidsflyter i spillet.",
+                "answer": "Den gratis FiveM-integrasjonen inkluderer støtte for live-kart, bodycam-verktøy og offisielle plugins. Database Sync er et valgfritt betalt tillegg for QBCore-, QBox- og ESX-servere.",
                 "question": "Hvilke funksjoner er inkludert med FiveM-integrasjonen?"
               },
               "free": {
-                "answer": "Ja. Sonoran CADs kjerneintegrasjon for FiveM er tilgjengelig på gratisplanen, så fellesskap kan komme i gang uten å betale for grunnflyten.",
+                "answer": "Ja. Sonoran CADs kjerneintegrasjon for FiveM fungerer med gratisplanen. Noen tredjeparts skript og Database Sync betales separat; CAD Pro inkluderer Station Alert og Pager Reborn uten ekstra kostnad.",
                 "question": "Er FiveM-integrasjonen gratis å bruke?"
               },
               "setup": {
@@ -1230,7 +1230,7 @@
           "headlinePrimary": "Det beste CAD",
           "kicker": "Gratis, rask, fullt integrert",
           "meta": {
-            "description": "Gratis CAD for FiveM med livekart, bodycam, databasesynk og offisiell plugin-støtte for dypt integrerte rollespillservere.",
+            "description": "Gratis CAD for FiveM med live-kart, bodycam, offisielle plugins og valgfri databasesynk for dypt integrerte rollespillservere.",
             "keywords": "FiveM CAD, gratis CAD for FiveM, Sonoran CAD, FiveM dispatch, FiveM rollespill CAD",
             "ogImageAlt": "Sonoran CAD FiveM integrasjon",
             "title": "Gratis CAD for FiveM - Sonoran CAD",
@@ -1257,7 +1257,9 @@
               "title": "Plugin-økosystem"
             },
             "sync": {
-              "infoCopy": "Koble spillidentiteter, kjøretøy og logger slik at CAD-en din forblir synkronisert med serveraktivitet.",
+              "badge": "Betalt tillegg",
+              "badgeTooltip": "En betalt databaseintegrasjon for QBCore-, QBox- og ESX-rammeverkservere.",
+              "infoCopy": "Auto-last karakterer, lisenser og kjøretøy fra QBCore, QBox eller ESX.",
               "infoTitle": "Synkroniser data",
               "previewTitle": "FiveM database synkroniseringsforhåndsvisning",
               "title": "Database Synkronisering"
@@ -1267,18 +1269,20 @@
             "items": {
               "callers": {
                 "description": "Lag oppslukende NPC- og spillervarslinger som sendes direkte til dispatch med strukturerte CAD-data.",
-                "previewTitle": "Forhåndsvisning av tilpassede anropere-plugin",
-                "title": "Tilpassede anropere"
+                "previewTitle": "Forhåndsvisning av integrasjon for lokale innringere",
+                "title": "Lokale kallere"
               },
               "ers": {
                 "description": "Koble radioworkflows mellom serveren din og Sonoran CAD for raskere koordinering under aktive hendelser.",
-                "previewTitle": "Forhåndsvisning av nødradio-plugin",
-                "title": "Nødradio"
+                "previewTitle": "Forhåndsvisning av ERS-integrasjon",
+                "title": "ERS-integrasjon"
               },
               "pagers": {
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "CAD-integrasjonen fungerer på alle abonnementer. CAD Pro-fellesskap får det betalte Inferno Collection-skriptet uten ekstra kostnad.",
                 "description": "Lever målrettede personsøker-varsler fra utrykkningsaktivitet slik at enhetene får riktig informasjon umiddelbart.",
                 "previewTitle": "Forhåndsvisning av Pagers-plugin",
-                "title": "Personsøkere"
+                "title": "Pager Reborn"
               },
               "printer": {
                 "description": "Skriv ut rapporter og støttende informasjon i spillet for avdelinger som vil ha håndfaste overleveringer fra åsteder.",
@@ -1291,15 +1295,40 @@
                 "title": "Trafikkskilt"
               },
               "station": {
-                "description": "Utløs stasjonstoner, dørhandlinger og varslingsmeldinger fra CAD-hendelser for å holde mannskapene synkroniserte.",
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "CAD-integrasjonen fungerer på alle abonnementer. CAD Pro-fellesskap får det betalte Inferno Collection-skriptet uten ekstra kostnad.",
+                "description": "Lever målrettede personsøker-varsler fra utrykkningsaktivitet slik at enhetene får riktig informasjon umiddelbart.",
                 "previewTitle": "Forhåndsvisning av stasjonsvarslingstillegg",
-                "title": "stasjonsvarsling"
+                "title": "stasjonsvarsel"
               }
             },
             "title": "Offisielle integrasjoner"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "Få 20 % rabatt på din fremtidige oppgradering",
+        "ecosystemDescription": "Legg til spesialbygde verktøy på serveren din uten å bygge om arbeidsflyten din eller betale for integrasjonslaget.",
+        "ecosystemEyebrow": "Gå dypere i spillet",
+        "featuresDescription": "Verktøy i sanntid kobler spilling, innsats og poster slik at fellesskapet ditt kan forbli oppslukt.",
+        "featuresEyebrow": "Integrasjoner",
+        "featuresTitle": "Bygget for {game}",
+        "freeBadge": "Alle spillintegrasjoner inkludert gratis",
+        "homeAriaLabel": "Sonoran CAD-hjem",
+        "includedFree": "Inkludert gratis",
+        "livePreview": "Direkte forhåndsvisning",
+        "previewAriaLabel": "Forhåndsvisninger av integrasjonsfunksjoner",
+        "showcaseImageAriaLabel": "Vis detaljer om {feature}",
+        "stats": {
+          "apiIntegration": "API & integrasjon",
+          "customerSupport": "Kundesupport",
+          "free": "Gratis",
+          "getStarted": "Kom i gang",
+          "integrateMinutes": "Fullt integrert på minutter",
+          "liveChat": "Livechat 7 dager/uke"
+        },
+        "viewAllIntegrations": "Se alle integrasjoner"
       }
     },
     "marketingOffer": {

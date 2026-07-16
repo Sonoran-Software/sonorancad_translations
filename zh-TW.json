@@ -1211,11 +1211,11 @@
                 "question": "這適合小型或成長中的社群嗎？"
               },
               "features": {
-                "answer": "FiveM 整合包含即時地圖支援、bodycam 工具、資料庫同步，以及不斷擴充的官方插件集合，可支援更深入的遊戲內工作流程。",
+                "answer": "免費的 FiveM 整合包含即時地圖支援、bodycam 工具，以及官方插件。Database Sync 是適用於 QBCore、QBox 和 ESX 伺服器的可選付費附加元件。",
                 "question": "FiveM 整合包含哪些功能？"
               },
               "free": {
-                "answer": "是。Sonoran CAD 的核心 FiveM 整合可於免費方案使用，因此社群可以在不支付基礎工作流程費用的情況下開始使用。",
+                "answer": "是。Sonoran CAD 的核心 FiveM 整合可在免費方案中使用。部分第三方腳本和 Database Sync 需另行付費；CAD Pro 包含 Station Alert 和 Pager Reborn，無需額外費用。",
                 "question": "FiveM 整合是免費使用的嗎？"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "最佳 CAD",
           "kicker": "免費、快速、完全整合",
           "meta": {
-            "description": "適用於 FiveM 的免費 CAD，具備即時地圖、隨身攝影機、資料庫同步，以及官方外掛支援，為深度整合的角色扮演伺服器而設。",
+            "description": "FiveM 的免費 CAD，提供即時地圖、bodycam、官方插件，以及供深度整合角色扮演伺服器使用的可選資料庫同步。",
             "keywords": "FiveM CAD，FiveM 免費 CAD，Sonoran CAD，FiveM dispatch，FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 整合",
             "title": "FiveM 免費 CAD - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "外掛生態系統"
             },
             "sync": {
-              "infoCopy": "連接遊戲內身分、車輛和紀錄，讓你的 CAD 與伺服器活動保持一致。",
+              "badge": "付費附加元件",
+              "badgeTooltip": "適用於 QBCore、QBox 和 ESX 框架伺服器的付費資料庫整合。",
+              "infoCopy": "自動從 QBCore、QBox 或 ESX 載入角色、執照和車輛。",
               "infoTitle": "同步資料",
               "previewTitle": "FiveM 資料庫同步預覽",
               "title": "資料庫同步"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "建立沉浸式 NPC 與玩家呼叫，直接以結構化 CAD 資料送入派遣。",
-                "previewTitle": "自訂來電者 插件預覽",
-                "title": "自訂來電者"
+                "previewTitle": "本地呼叫者外掛預覽",
+                "title": "本地呼叫端"
               },
               "ers": {
                 "description": "在你的伺服器與 Sonoran CAD 之間橋接無線電工作流程，以便在事件處理期間更快速協調。",
-                "previewTitle": "緊急電台外掛預覽",
-                "title": "緊急電台"
+                "previewTitle": "ERS 整合預覽",
+                "title": "ERS 整合"
               },
               "pagers": {
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "CAD 整合適用於所有方案。CAD Pro 社群可免費取得付費的 Inferno Collection 腳本，無需額外費用。",
                 "description": "從派遣活動傳送有針對性的尋呼機通知，讓單位立即取得正確資訊。",
                 "previewTitle": "Pagers 插件預覽",
-                "title": "呼叫器"
+                "title": "Pager Reborn"
               },
               "printer": {
                 "description": "在遊戲中列印紀錄和支援資訊，供希望取得具體現場交接的部門使用。",
@@ -1292,15 +1296,40 @@
                 "title": "街道標識"
               },
               "station": {
-                "description": "從 CAD 事件觸發站台音效、門的動作和警示訊息，以保持團隊同步。",
+                "badge": "CAD Pro Bonus",
+                "badgeTooltip": "CAD 整合適用於所有方案。CAD Pro 社群可免費取得付費的 Inferno Collection 腳本，無需額外費用。",
+                "description": "從派遣活動傳送有針對性的尋呼機通知，讓單位立即取得正確資訊。",
                 "previewTitle": "Station 警示外掛預覽",
-                "title": "Station 警示"
+                "title": "alerta de estación"
               }
             },
             "title": "官方整合"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "領取您未來升級 20% 折扣",
+        "ecosystemDescription": "將專為用途打造的工具加入你的伺服器，無需重建工作流程或支付整合層費用。",
+        "ecosystemEyebrow": "深入遊戲",
+        "featuresDescription": "即時工具連接遊戲、派遣和紀錄，讓你的社群保持沉浸。",
+        "featuresEyebrow": "整合",
+        "featuresTitle": "為 {game} 而打造",
+        "freeBadge": "所有遊戲整合功能免費包含",
+        "homeAriaLabel": "Sonoran CAD 首頁",
+        "includedFree": "包含免費",
+        "livePreview": "即時預覽",
+        "previewAriaLabel": "整合功能預覽",
+        "showcaseImageAriaLabel": "查看 {feature} 詳情",
+        "stats": {
+          "apiIntegration": "API & 整合",
+          "customerSupport": "客戶支援",
+          "free": "免費",
+          "getStarted": "開始使用",
+          "integrateMinutes": "幾分鐘內完全整合",
+          "liveChat": "即時聊天 每週 7 天"
+        },
+        "viewAllIntegrations": "查看所有整合"
       }
     },
     "marketingOffer": {

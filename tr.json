@@ -1211,11 +1211,11 @@
                 "question": "Bu küçük veya büyüyen topluluklar için uygun mu?"
               },
               "features": {
-                "answer": "FiveM entegrasyonu canlı harita desteği, bodycam araçları, veritabanı eşitlemesi ve daha derin oyun içi iş akışları için genişleyen bir resmi eklenti seti içerir.",
+                "answer": "Ücretsiz FiveM entegrasyonu canlı harita desteği, bodycam araçları ve resmi eklentileri içerir. Database Sync, QBCore, QBox ve ESX sunucuları için isteğe bağlı ücretli bir eklentidir.",
                 "question": "FiveM entegrasyonuna hangi özellikler dahildir?"
               },
               "free": {
-                "answer": "Evet. Sonoran CAD'nin temel FiveM entegrasyonu ücretsiz planda mevcuttur, böylece topluluklar temel iş akışı için ödeme yapmadan başlayabilir.",
+                "answer": "Evet. Sonoran CAD’nin temel FiveM entegrasyonu ücretsiz planda çalışır. Bazı üçüncü taraf scriptler ve Database Sync ayrıca ücretlidir; CAD Pro, Station Alert ve Pager Reborn’u ek ücret olmadan içerir.",
                 "question": "FiveM entegrasyonu kullanmak ücretsiz mi?"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "En İyi CAD",
           "kicker": "Ücretsiz, Hızlı, Tam Entegre",
           "meta": {
-            "description": "Canlı harita, bodycam, veritabanı eşitlemesi ve resmi eklenti desteği ile derinlemesine entegre rol yapma sunucuları için ücretsiz FiveM CAD.",
+            "description": "Canlı harita, bodycam, resmi eklentiler ve derinlemesine entegre roleplay sunucuları için isteğe bağlı veritabanı eşitlemesiyle FiveM için ücretsiz CAD.",
             "keywords": "FiveM CAD, FiveM için ücretsiz CAD, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM entegrasyonu",
             "title": "FiveM için Ücretsiz CAD - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "Eklenti Ekosistemi"
             },
             "sync": {
-              "infoCopy": "Oyun içi kimlikleri, araçları ve kayıtları bağlayın, böylece CAD'niz sunucu etkinliğiyle uyumlu kalsın.",
+              "badge": "Ücretli Eklenti",
+              "badgeTooltip": "QBCore, QBox ve ESX framework sunucuları için ücretli bir veritabanı entegrasyonu.",
+              "infoCopy": "QBCore, QBox veya ESX'ten karakterleri, lisansları ve araçları otomatik olarak yükleyin.",
               "infoTitle": "Veri Senkronizasyonu",
               "previewTitle": "FiveM veritabanı senkronizasyonu önizlemesi",
               "title": "Veritabanı Senkronizasyonu"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "Doğrudan dispatch'e yapılandırılmış CAD verileriyle aktarılan sürükleyici NPC ve oyuncu çağrıları oluşturun.",
-                "previewTitle": "Özel arayanlar eklentisi önizlemesi",
-                "title": "Özel Arayanlar"
+                "previewTitle": "Yerel arayanlar entegrasyonu önizlemesi",
+                "title": "Yerel Arayanlar"
               },
               "ers": {
                 "description": "Sunucunuz ile Sonoran CAD arasında radyo iş akışlarını köprüleyerek aktif olaylar sırasında daha hızlı koordinasyon sağlayın.",
-                "previewTitle": "Acil radyo eklentisi önizlemesi",
-                "title": "Acil radyo"
+                "previewTitle": "ERS entegrasyonu önizlemesi",
+                "title": "ERS Entegrasyonu"
               },
               "pagers": {
+                "badge": "CAD Pro Bonusu",
+                "badgeTooltip": "CAD entegrasyonu tüm planlarda çalışır. CAD Pro toplulukları ücretli Inferno Collection scriptini ek ücret olmadan alır.",
                 "description": "Sevk faaliyetinden hedefli telsiz bildirimleri gönderin, böylece birimler doğru bilgiyi hemen alsın.",
                 "previewTitle": "Çağrı Cihazları eklentisi önizlemesi",
-                "title": "Çağrı cihazları"
+                "title": "Yeniden Doğan Çağrı Cihazı"
               },
               "printer": {
                 "description": "İşlem kayıtlarını ve destekleyici bilgileri oyunda, elle tutulur olay devri isteyen departmanlar için yazdırın.",
@@ -1292,15 +1296,40 @@
                 "title": "Sokak işaretleri"
               },
               "station": {
-                "description": "CAD olaylarından istasyon tonlarını, kapı eylemlerini ve uyarı mesajlarını tetikleyerek ekiplerin senkronize kalmasını sağlayın.",
+                "badge": "CAD Pro Bonusu",
+                "badgeTooltip": "CAD entegrasyonu tüm planlarda çalışır. CAD Pro toplulukları ücretli Inferno Collection scriptini ek ücret olmadan alır.",
+                "description": "Sevk faaliyetinden hedefli telsiz bildirimleri gönderin, böylece birimler doğru bilgiyi hemen alsın.",
                 "previewTitle": "İstasyon uyarı eklentisi önizlemesi",
-                "title": "İstasyon Uyarısı"
+                "title": "İstasyon Ayarlarları"
               }
             },
             "title": "Resmi Entegrasyonlar"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "Gelecekteki yükseltmeniz için %20 indirimden yararlanın",
+        "ecosystemDescription": "İş akışınızı yeniden kurmadan veya entegrasyon katmanı için ödeme yapmadan sunucunuza amaca yönelik araçlar ekleyin.",
+        "ecosystemEyebrow": "Oyunun İçine Daha Derin Girin",
+        "featuresDescription": "Gerçek zamanlı araçlar oynanış, sevkiyat ve kayıtları birbirine bağlayarak topluluğunuzun sürükleyici kalmasını sağlar.",
+        "featuresEyebrow": "Entegrasyonlar",
+        "featuresTitle": "{game} için tasarlandı",
+        "freeBadge": "Tüm Oyun Entegrasyonları Ücretsiz Dahil",
+        "homeAriaLabel": "Sonoran CAD ana sayfası",
+        "includedFree": "Ücretsiz dahil",
+        "livePreview": "Canlı Önizleme",
+        "previewAriaLabel": "Entegrasyon özelliği önizlemeleri",
+        "showcaseImageAriaLabel": "{feature} ayrıntılarını görüntüle",
+        "stats": {
+          "apiIntegration": "API & Entegrasyon",
+          "customerSupport": "MÜŞTERİ DESTEĞİ",
+          "free": "Ücretsiz",
+          "getStarted": "Başlayın",
+          "integrateMinutes": "Dakikalar içinde tam entegre",
+          "liveChat": "Canlı sohbet haftanın 7 günü"
+        },
+        "viewAllIntegrations": "Tüm Entegrasyonları Görüntüle"
       }
     },
     "marketingOffer": {

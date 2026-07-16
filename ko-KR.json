@@ -1211,11 +1211,11 @@
                 "question": "소규모 또는 성장하는 커뮤니티에 적합합니까?"
               },
               "features": {
-                "answer": "FiveM 통합에는 실시간 지도 지원, 바디캠 도구, 데이터베이스 동기화, 그리고 더 깊은 게임 내 워크플로를 위한 확장되는 공식 플러그인 세트가 포함됩니다",
+                "answer": "무료 FiveM 통합에는 실시간 지도 지원, 바디캠 도구, 그리고 공식 플러그인이 포함됩니다. Database Sync는 QBCore, QBox, 그리고 ESX 서버를 위한 선택적 유료 추가 기능입니다.",
                 "question": "FiveM 통합에는 어떤 기능이 포함되어 있나요?"
               },
               "free": {
-                "answer": "네. Sonoran CAD의 핵심 FiveM 연동은 무료 플랜에서 사용할 수 있어, 커뮤니티는 기본 워크플로를 위해 비용을 지불하지 않고도 시작할 수 있습니다.",
+                "answer": "네. Sonoran CAD의 핵심 FiveM 통합 기능은 무료 플랜에서 작동합니다. 일부 타사 스크립트와 Database Sync는 별도로 유료이며; CAD Pro에는 Station Alert와 Pager Reborn이 추가 비용 없이 포함됩니다.",
                 "question": "FiveM 통합은 무료로 사용할 수 있나요?"
               },
               "setup": {
@@ -1231,7 +1231,7 @@
           "headlinePrimary": "최고의 CAD",
           "kicker": "무료이며 빠르며 완전히 통합되었습니다.",
           "meta": {
-            "description": "라이브 지도, 바디캠, 데이터베이스 동기화, 공식 플러그인 지원이 포함된 FiveM용 무료 CAD로, 깊이 통합된 롤플레이 서버를 지원합니다.",
+            "description": "실시간 지도, 바디캠, 공식 플러그인, 그리고 깊이 통합된 롤플레이 서버를 위한 선택적 데이터베이스 동기화가 포함된 FiveM용 무료 CAD",
             "keywords": "FiveM CAD, FiveM에 대한 무료 CAD, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 통합",
             "title": "FiveM에 대한 무료 CAD - Sonoran CAD",
@@ -1258,7 +1258,9 @@
               "title": "플러그인 생태계"
             },
             "sync": {
-              "infoCopy": "게임 내 신원, 차량, 기록을 연결해 CAD가 서버 활동과 일치하도록 유지하세요.",
+              "badge": "유료 Add-on",
+              "badgeTooltip": "QBCore, QBox, ESX 프레임워크 서버를 위한 유료 데이터베이스 통합입니다.",
+              "infoCopy": "QBCore, QBox, 또는 ESX에서 캐릭터, 면허, 차량을 자동으로 불러옵니다.",
               "infoTitle": "데이터 동기화",
               "previewTitle": "FiveM 데이터베이스 동기화 미리보기",
               "title": "데이터베이스 동기화"
@@ -1268,18 +1270,20 @@
             "items": {
               "callers": {
                 "description": "구조화된 CAD 데이터로 바로 디스패치에 전달되는 몰입감 있는 NPC 및 플레이어 호출을 생성하세요.",
-                "previewTitle": "맞춤 호출자 플러그인 미리보기",
-                "title": "맞춤 호출자"
+                "previewTitle": "로컬 호출자 통합 미리보기",
+                "title": "로컬 호출자"
               },
               "ers": {
                 "description": "서버와 Sonoran CAD 사이에서 무전 업무 흐름을 연결해 활성 사건 중 더 빠른 조율을 지원합니다.",
-                "previewTitle": "비상 라디오 플러그인 미리보기",
-                "title": "비상 라디오"
+                "previewTitle": "ERS 통합 미리보기",
+                "title": "ERS 통합"
               },
               "pagers": {
+                "badge": "CAD Pro 보너스",
+                "badgeTooltip": "CAD 통합은 모든 플랜에서 작동합니다. CAD Pro 커뮤니티는 추가 비용 없이 유료 Inferno Collection 스크립트를 받습니다.",
                 "description": "배차 활동에서 대상별 호출 알림을 전달해 부대가 올바른 정보를 즉시 받게 합니다.",
                 "previewTitle": "호출기 플러그인 미리보기",
-                "title": "호출기"
+                "title": "호출기 리본"
               },
               "printer": {
                 "description": "게임 내에서 부서가 실물 장면 인계를 원할 때 기록과 지원 정보를 출력합니다.",
@@ -1292,15 +1296,40 @@
                 "title": "거리 표지판"
               },
               "station": {
-                "description": "CAD 이벤트로 스테이션 톤, 문 동작, 경고 메시지를 트리거해 크루가 동기화되도록 유지합니다.",
+                "badge": "CAD Pro 보너스",
+                "badgeTooltip": "CAD 통합은 모든 플랜에서 작동합니다. CAD Pro 커뮤니티는 추가 비용 없이 유료 Inferno Collection 스크립트를 받습니다.",
+                "description": "배차 활동에서 대상별 호출 알림을 전달해 부대가 올바른 정보를 즉시 받게 합니다.",
                 "previewTitle": "스테이션 경고 플러그인 미리보기",
-                "title": "스테이션 경고"
+                "title": "스테이션 알림"
               }
             },
             "title": "공식 통합"
           }
         },
         "name": "FiveM"
+      },
+      "shared": {
+        "campaignCtaDetail": "향후 업그레이드에 20% 할인 받기",
+        "ecosystemDescription": "워크플로를 다시 구축하거나 통합 레이어 비용을 지불하지 않고 서버에 목적에 맞게 설계된 도구를 추가하세요.",
+        "ecosystemEyebrow": "게임 속으로 더 깊이",
+        "featuresDescription": "실시간 도구는 게임플레이, 배포, 기록을 연결해 커뮤니티가 몰입을 유지할 수 있게 합니다.",
+        "featuresEyebrow": "통합",
+        "featuresTitle": "{game}에 맞게 제작됨",
+        "freeBadge": "모든 게임 통합 무료 포함",
+        "homeAriaLabel": "Sonoran CAD 홈",
+        "includedFree": "무료 포함됨",
+        "livePreview": "라이브 미리보기",
+        "previewAriaLabel": "통합 기능 미리보기",
+        "showcaseImageAriaLabel": "{feature} 세부 정보 보기",
+        "stats": {
+          "apiIntegration": "API 및 통합",
+          "customerSupport": "고객 지원",
+          "free": "무료",
+          "getStarted": "시작하기",
+          "integrateMinutes": "몇 분 만에 완전히 통합",
+          "liveChat": "실시간 채팅 주 7일"
+        },
+        "viewAllIntegrations": "모든 통합 보기"
       }
     },
     "marketingOffer": {
