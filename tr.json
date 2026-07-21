@@ -1395,6 +1395,10 @@
           "description": "Topluluğunuzun renkleri ve iş akışları etrafında oyuna hazır bir çalışma alanı oluşturun.",
           "title": "Özel"
         },
+        "mike19": {
+          "description": "Mark43 CAD'den ilham alan, kompakt ve simge odaklı bir çalışma alanı.",
+          "title": "Mike19"
+        },
         "modern": {
           "description": "Keskin paneller, kompakt kontroller ve aktif sevk için yüksek kontrastlı görünümler.",
           "title": "Modern"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "Klasik CAD tarzı, cesur renkler, yoğun tablolar ve tanıdık denetimlerle.",
           "title": "Retro"
+        },
+        "spillboy": {
+          "description": "Motorola Solutions Spillman Flex CAD'den ilham alan klasik sevk stilizasyonu.",
+          "title": "Retro"
+        },
+        "trevor": {
+          "description": "Tyler Technologies Enterprise CAD'den esinlenilmiş yoğun bir kurumsal çalışma alanı.",
+          "title": "Trevor"
         }
       },
       "description": "Topluluğunuza uyum sağlamak için temaları, renkleri ve düzenleri değiştirin, gönderim hızından ödün vermeden.",
@@ -2510,6 +2522,7 @@
       "backgroundImageScale": "Arka Plan Görüntüsü Ölçeği",
       "badgeStyle": "Rozet Stili",
       "badgeStyles": {
+        "compact": "Kompakt Kare",
         "modern": "Modern",
         "none": "Yok",
         "retro": "Retro"
@@ -2552,18 +2565,23 @@
         "foreground": "Ön Plan",
         "foregroundLight": "Açık Ön Plan",
         "icon": "Görev Çubuğu Simgesi",
+        "inputBackground": "Giriş Arka Planı",
         "inverseText": "Ters Metin",
         "primary": "Birincil",
         "primaryFaded": "Birincil Soluk",
         "primaryText": "Birincil Metin",
         "subtitleText": "Alt yazı metni",
         "tableBorder": "Tablo Kenarlığı",
+        "taskbarGradientBottom": "Görev Çubuğu Alt Gradyanı",
+        "taskbarGradientTop": "Görev Çubuğu Üst Gradyanı",
         "titleText": "Başlık metni",
         "unitStatusAvailable": "Ünite Durumu Mevcut",
         "unitStatusBusy": "Ünite Durumu: Meşgul",
         "unitStatusEnroute": "Ünite Yolda",
         "unitStatusOnScene": "Sahnedeki Ünite Durumu",
-        "unitStatusUnavailable": "Ünite Durumu Kullanım dışı"
+        "unitStatusUnavailable": "Ünite Durumu Kullanım dışı",
+        "windowHeaderGradientBottom": "Pencere Başlığı Gradyanı Alt",
+        "windowHeaderGradientTop": "Pencere Başlığı Gradyanı Üst"
       },
       "componentStyle": "Bileşen Stili",
       "componentStyles": {
@@ -2596,6 +2614,11 @@
         "semibold": "Yarı kalın"
       },
       "importedThemeName": "İçe Aktarılan Tema {index}",
+      "inputStyle": "Girdi Stili",
+      "inputStyles": {
+        "classic": "Klasik Dikdörtgen",
+        "default": "Varsayılan"
+      },
       "loadingAnimationStyle": "Yükleme Animasyonu",
       "loadingAnimationStyles": {
         "auto": "Otomatik",
@@ -2607,9 +2630,21 @@
         "modern": "Modern",
         "retro": "Retro"
       },
+      "presetDescriptions": {
+        "dark": "Sonoran Software Systems tarafından tasarlandı",
+        "mike19": "Mark43 CAD'den esinlenilmiştir",
+        "mike19Light": "Mark43 CAD'den esinlenilmiştir",
+        "retro": "Motorola Solutions Spillman Flex CAD'den ilham alan",
+        "tylerDark": "Tyler Technologies Enterprise CAD'den esinlenilmiştir",
+        "tylerLight": "Tyler Technologies Enterprise CAD'den esinlenilmiştir"
+      },
       "presets": {
-        "dark": "Modern",
-        "retro": "Retro"
+        "dark": "Sonoran",
+        "mike19": "Mike19",
+        "mike19Light": "Mike19 Açık",
+        "retro": "Retro",
+        "tylerDark": "Trevor Koyu",
+        "tylerLight": "Trevor Light"
       },
       "recordCenterNavStyle": "Kayıt Merkezi Gezinme Stili",
       "recordCenterNavStyles": {
@@ -2622,6 +2657,12 @@
         "retro": "Retro"
       },
       "restoreDefaults": "Varsayılanları Geri Yükle",
+      "rowColorOptions": {
+        "alternate": "Dönüşümlü",
+        "none": "Yok",
+        "status": "Tam Durum"
+      },
+      "rowColors": "Satır Renkleri",
       "saveTheme": "Temayı Kaydet",
       "sections": {
         "behavior": "Davranış",
@@ -2662,6 +2703,12 @@
         "bottom": "Alt",
         "top": "Üst"
       },
+      "taskbarStyle": "Görev çubuğu stili",
+      "taskbarStyles": {
+        "default": "Varsayılan",
+        "ribbon": "Kurdele",
+        "toolbar": "Kompakt Araç Çubuğu"
+      },
       "taskbarTabAlignment": "Sekme Hizalaması",
       "taskbarTabAlignments": {
         "left": "Sol",
@@ -2680,7 +2727,13 @@
       "unsavedChanges": "Kaydedilmemiş değişiklikler",
       "updateThemeToCurrent": "Temayı Geçerli Olanla Güncelle",
       "uploadBackground": "Arka Plan Yükle",
-      "uploadStartMenuLogo": "Başlangıç menüsü logosunu yükle"
+      "uploadStartMenuLogo": "Başlangıç menüsü logosunu yükle",
+      "windowHeaderStyle": "Pencere Başlık Stili",
+      "windowHeaderStyles": {
+        "compact": "Kompakt Düz",
+        "default": "Varsayılan",
+        "gradient": "Gradyan"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "Trafik Durdurma",

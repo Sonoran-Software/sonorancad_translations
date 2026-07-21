@@ -1395,6 +1395,10 @@
           "description": "Створіть робочий простір, готовий до гри, навколо кольорів і робочих процесів вашої спільноти.",
           "title": "ВЛАСНИЙ"
         },
+        "mike19": {
+          "description": "Компактний робочий простір, керований іконками, натхненний Mark43 CAD.",
+          "title": "Mike19"
+        },
         "modern": {
           "description": "Чіткі панелі, компактні елементи керування та висококонтрастні подання для активного диспетчерування.",
           "title": "Сучасний"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "Класичний CAD-стиль із яскравими кольорами, щільними таблицями та звичними елементами керування.",
           "title": "Ретро"
+        },
+        "spillboy": {
+          "description": "Класичний стиль диспетчеризації, натхненний Motorola Solutions Spillman Flex CAD.",
+          "title": "Ретро"
+        },
+        "trevor": {
+          "description": "Щільний корпоративний робочий простір, натхненний Tyler Technologies Enterprise CAD.",
+          "title": "Тревор"
         }
       },
       "description": "Перемикайте теми, кольори та макети, щоб відповідати вашій спільноті, не жертвуючи швидкістю диспетчеризації.",
@@ -2510,6 +2522,7 @@
       "backgroundImageScale": "Масштаб фоновому зображенню",
       "badgeStyle": "Стиль значка",
       "badgeStyles": {
+        "compact": "Компактний квадрат",
         "modern": "Сучасний",
         "none": "Немає",
         "retro": "Ретро"
@@ -2552,18 +2565,23 @@
         "foreground": "Передній план",
         "foregroundLight": "Світлий передній план",
         "icon": "Значок панелі завдань",
+        "inputBackground": "Фон поля",
         "inverseText": "Інверсний текст",
         "primary": "Основний",
         "primaryFaded": "Основний приглушений",
         "primaryText": "Основний текст",
         "subtitleText": "Текст підзаголовка",
         "tableBorder": "Межа таблиці",
+        "taskbarGradientBottom": "Нижній градієнт панелі задач",
+        "taskbarGradientTop": "Верхній градієнт панелі задач",
         "titleText": "Текст назви",
         "unitStatusAvailable": "Доступний статус підрозділу",
         "unitStatusBusy": "Статус підрозділу: Зайнято",
         "unitStatusEnroute": "Статус підрозділу в дорозі",
         "unitStatusOnScene": "Статус підрозділу на місці",
-        "unitStatusUnavailable": "Статус підрозділу недоступний"
+        "unitStatusUnavailable": "Статус підрозділу недоступний",
+        "windowHeaderGradientBottom": "Нижня частина градієнта заголовка вікна",
+        "windowHeaderGradientTop": "Верхня частина градієнта заголовка вікна"
       },
       "componentStyle": "Стиль компонента",
       "componentStyles": {
@@ -2596,6 +2614,11 @@
         "semibold": "Напівжирний"
       },
       "importedThemeName": "Імпортована тема {index}",
+      "inputStyle": "Стиль введення",
+      "inputStyles": {
+        "classic": "Класичний прямокутний",
+        "default": "Значення за замовчуванням"
+      },
       "loadingAnimationStyle": "Стиль анімації завантаження",
       "loadingAnimationStyles": {
         "auto": "Автоматичне",
@@ -2607,9 +2630,21 @@
         "modern": "Сучасний",
         "retro": "Ретро"
       },
+      "presetDescriptions": {
+        "dark": "Розроблено Sonoran Software Systems",
+        "mike19": "Натхнено Mark43 CAD",
+        "mike19Light": "Натхнено Mark43 CAD",
+        "retro": "Натхненний Motorola Solutions Spillman Flex CAD",
+        "tylerDark": "Натхненний Tyler Technologies Enterprise CAD",
+        "tylerLight": "Натхненний Tyler Technologies Enterprise CAD"
+      },
       "presets": {
-        "dark": "Сучасний",
-        "retro": "Ретро"
+        "dark": "Sonoran",
+        "mike19": "Mike19",
+        "mike19Light": "Mike19 Light",
+        "retro": "Ретро",
+        "tylerDark": "Темний Тревор",
+        "tylerLight": "Світлий Тревор"
       },
       "recordCenterNavStyle": "Стиль навігації Центру записів",
       "recordCenterNavStyles": {
@@ -2622,6 +2657,12 @@
         "retro": "Ретро"
       },
       "restoreDefaults": "Відновити значення за замовчуванням",
+      "rowColorOptions": {
+        "alternate": "Чергування",
+        "none": "Немає",
+        "status": "Повний Статус"
+      },
+      "rowColors": "Кольори рядків",
       "saveTheme": "Зберегти тему",
       "sections": {
         "behavior": "Поведінка",
@@ -2662,6 +2703,12 @@
         "bottom": "Внизу",
         "top": "Верх"
       },
+      "taskbarStyle": "Стиль панелі завдань",
+      "taskbarStyles": {
+        "default": "Значення за замовчуванням",
+        "ribbon": "Стрічка",
+        "toolbar": "Компактна панель інструментів"
+      },
       "taskbarTabAlignment": "Вирівнювання вкладок",
       "taskbarTabAlignments": {
         "left": "Ліворуч",
@@ -2680,7 +2727,13 @@
       "unsavedChanges": "Незбережені зміни",
       "updateThemeToCurrent": "Оновити тему до поточної",
       "uploadBackground": "Завантажити фон",
-      "uploadStartMenuLogo": "Завантажити логотип меню запуску"
+      "uploadStartMenuLogo": "Завантажити логотип меню запуску",
+      "windowHeaderStyle": "Стиль заголовка вікна",
+      "windowHeaderStyles": {
+        "compact": "Компактний плоский",
+        "default": "Значення за замовчуванням",
+        "gradient": "Градієнт"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "Зупинка транспорту",

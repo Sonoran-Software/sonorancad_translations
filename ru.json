@@ -1395,6 +1395,10 @@
           "description": "Создайте рабочее пространство, готовое к игре, вокруг цветов и рабочих процессов вашего сообщества.",
           "title": "Пользовательский"
         },
+        "mike19": {
+          "description": "Компактное рабочее пространство с акцентом на иконки, вдохновлённое Mark43 CAD.",
+          "title": "Mike19"
+        },
         "modern": {
           "description": "Чёткие панели, компактные элементы управления и высококонтрастные виды для активной диспетчеризации.",
           "title": "Современный"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "Классический стиль CAD с яркими цветами, плотными таблицами и привычными элементами управления.",
           "title": "Ретро"
+        },
+        "spillboy": {
+          "description": "Классический стиль диспетчеризации, вдохновлённый Motorola Solutions Spillman Flex CAD.",
+          "title": "Ретро"
+        },
+        "trevor": {
+          "description": "Плотное корпоративное рабочее пространство, вдохновлённое Tyler Technologies Enterprise CAD.",
+          "title": "Тревор"
         }
       },
       "description": "Переключайте темы, цвета и макеты, чтобы они соответствовали вашему сообществу, не жертвуя скоростью отправки.",
@@ -2510,6 +2522,7 @@
       "backgroundImageScale": "Масштаб фонового изображения",
       "badgeStyle": "Стиль значка",
       "badgeStyles": {
+        "compact": "Компактный квадрат",
         "modern": "Современный",
         "none": "Нет",
         "retro": "Ретро"
@@ -2552,18 +2565,23 @@
         "foreground": "Передний план",
         "foregroundLight": "Светлый передний план",
         "icon": "Значок панели задач",
+        "inputBackground": "Фон поля ввода",
         "inverseText": "Инверсный текст",
         "primary": "Основной",
         "primaryFaded": "Основной приглушённый",
         "primaryText": "Основной текст",
         "subtitleText": "Текст подзаголовка",
         "tableBorder": "Граница таблицы",
+        "taskbarGradientBottom": "Нижний градиент панели задач",
+        "taskbarGradientTop": "Верхний градиент панели задач",
         "titleText": "Текст заголовка",
         "unitStatusAvailable": "Статус подразделения доступен",
         "unitStatusBusy": "Статус подразделения: Занят",
         "unitStatusEnroute": "Статус подразделения в пути",
         "unitStatusOnScene": "Статус подразделения на месте",
-        "unitStatusUnavailable": "Статус подразделения не доступен"
+        "unitStatusUnavailable": "Статус подразделения не доступен",
+        "windowHeaderGradientBottom": "Нижний градиент заголовка окна",
+        "windowHeaderGradientTop": "Верхний градиент заголовка окна"
       },
       "componentStyle": "Стиль компонента",
       "componentStyles": {
@@ -2596,6 +2614,11 @@
         "semibold": "Полужирный"
       },
       "importedThemeName": "Импортированная тема {index}",
+      "inputStyle": "Стиль ввода",
+      "inputStyles": {
+        "classic": "Классический прямоугольный",
+        "default": "По умолчанию"
+      },
       "loadingAnimationStyle": "Анимация загрузки",
       "loadingAnimationStyles": {
         "auto": "Авто",
@@ -2607,9 +2630,21 @@
         "modern": "Современный",
         "retro": "Ретро"
       },
+      "presetDescriptions": {
+        "dark": "Разработано Sonoran Software Systems",
+        "mike19": "Вдохновлено Mark43 CAD",
+        "mike19Light": "Вдохновлено Mark43 CAD",
+        "retro": "Вдохновлено Motorola Solutions Spillman Flex CAD",
+        "tylerDark": "Вдохновлено Tyler Technologies Enterprise CAD",
+        "tylerLight": "Вдохновлено Tyler Technologies Enterprise CAD"
+      },
       "presets": {
-        "dark": "Современный",
-        "retro": "Ретро"
+        "dark": "Соноран",
+        "mike19": "Mike19",
+        "mike19Light": "Mike19 Light",
+        "retro": "Ретро",
+        "tylerDark": "Тревор Дарк",
+        "tylerLight": "Тревор Лайт"
       },
       "recordCenterNavStyle": "Стиль навигации центра записей",
       "recordCenterNavStyles": {
@@ -2622,6 +2657,12 @@
         "retro": "Ретро"
       },
       "restoreDefaults": "Восстановить значения по умолчанию",
+      "rowColorOptions": {
+        "alternate": "Чередующийся",
+        "none": "Нет",
+        "status": "Полный Статус"
+      },
+      "rowColors": "Цвета строк",
       "saveTheme": "Сохранить тему",
       "sections": {
         "behavior": "Поведение",
@@ -2662,6 +2703,12 @@
         "bottom": "Снизу",
         "top": "Верх"
       },
+      "taskbarStyle": "Стиль панели задач",
+      "taskbarStyles": {
+        "default": "По умолчанию",
+        "ribbon": "Лента",
+        "toolbar": "Компактная панель инструментов"
+      },
       "taskbarTabAlignment": "Выравнивание вкладок",
       "taskbarTabAlignments": {
         "left": "Слева",
@@ -2680,7 +2727,13 @@
       "unsavedChanges": "Несохранённые изменения",
       "updateThemeToCurrent": "Обновить тему до текущей",
       "uploadBackground": "Загрузить фон",
-      "uploadStartMenuLogo": "Загрузить логотип меню «Пуск»"
+      "uploadStartMenuLogo": "Загрузить логотип меню «Пуск»",
+      "windowHeaderStyle": "Стиль заголовка окна",
+      "windowHeaderStyles": {
+        "compact": "Компактный плоский",
+        "default": "По умолчанию",
+        "gradient": "Градиент"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "Остановка транспорта",
