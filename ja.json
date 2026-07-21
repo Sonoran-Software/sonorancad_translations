@@ -1395,6 +1395,10 @@
           "description": "コミュニティの色とワークフローに合わせて、ゲーム対応のワークスペースを構築します。",
           "title": "カスタム"
         },
+        "mike19": {
+          "description": "Mark43 CADに着想を得た、コンパクトでアイコン中心のワークスペース。",
+          "title": "マイク19"
+        },
         "modern": {
           "description": "シャープなパネル、コンパクトなコントロール、高コントラストなビューで、アクティブなディスパッチに対応。",
           "title": "モダン"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "クラシックなCADスタイルに、鮮やかな色、密なテーブル、見慣れた操作を組み合わせたもの。",
           "title": "レトロ"
+        },
+        "spillboy": {
+          "description": "Motorola Solutions Spillman Flex CAD に着想を得たクラシックなディスパッチスタイル。",
+          "title": "レトロ"
+        },
+        "trevor": {
+          "description": "Tyler Technologies Enterprise CAD に着想を得た高密度なエンタープライズ ワークスペース。",
+          "title": "トレバー"
         }
       },
       "description": "テーマ、色、レイアウトを切り替えて、ディスパッチ速度を落とさずにコミュニティに合わせましょう。",
@@ -2501,6 +2513,7 @@
       "backgroundImageScale": "背景画像の拡大率",
       "badgeStyle": "バッジ スタイル",
       "badgeStyles": {
+        "compact": "コンパクト 正方形",
         "modern": "モダン",
         "none": "なし",
         "retro": "レトロ"
@@ -2543,18 +2556,23 @@
         "foreground": "前景",
         "foregroundLight": "前景 ライト",
         "icon": "タスクバー アイコン",
+        "inputBackground": "入力背景",
         "inverseText": "インバーステキスト",
         "primary": "プライマリ",
         "primaryFaded": "プライマリ フェード",
         "primaryText": "プライマリ テキスト",
         "subtitleText": "字幕テキスト",
         "tableBorder": "テーブルの境界線",
+        "taskbarGradientBottom": "タスクバーグラデーション下部",
+        "taskbarGradientTop": "タスクバーグラデーション上部",
         "titleText": "タイトルテキスト",
         "unitStatusAvailable": "部隊ステータス利用可能",
         "unitStatusBusy": "部隊ステータス: 忙しい",
         "unitStatusEnroute": "部隊ステータス 出動中",
         "unitStatusOnScene": "現場の部隊ステータス",
-        "unitStatusUnavailable": "部隊ステータス利用不可"
+        "unitStatusUnavailable": "部隊ステータス利用不可",
+        "windowHeaderGradientBottom": "ウィンドウヘッダーグラデーション下部",
+        "windowHeaderGradientTop": "ウィンドウヘッダーグラデーション上部"
       },
       "componentStyle": "コンポーネント スタイル",
       "componentStyles": {
@@ -2587,6 +2605,11 @@
         "semibold": "セミボールド"
       },
       "importedThemeName": "インポートされたテーマ {index}",
+      "inputStyle": "入力スタイル",
+      "inputStyles": {
+        "classic": "クラシック長方形",
+        "default": "デフォルト"
+      },
       "loadingAnimationStyle": "ローディング アニメーション",
       "loadingAnimationStyles": {
         "auto": "自動",
@@ -2598,9 +2621,21 @@
         "modern": "モダン",
         "retro": "レトロ"
       },
+      "presetDescriptions": {
+        "dark": "Sonoran Software Systems によって設計",
+        "mike19": "Mark43 CAD に着想を得た",
+        "mike19Light": "Mark43 CAD に着想を得た",
+        "retro": "Motorola Solutions Spillman Flex CAD に着想を得た",
+        "tylerDark": "Tyler Technologies Enterprise CAD に着想を得た",
+        "tylerLight": "Tyler Technologies Enterprise CAD に着想を得た"
+      },
       "presets": {
-        "dark": "モダン",
-        "retro": "レトロ"
+        "dark": "Sonoran",
+        "mike19": "マイク19",
+        "mike19Light": "マイク19 ライト",
+        "retro": "レトロ",
+        "tylerDark": "トレバー ダーク",
+        "tylerLight": "トレバー ライト"
       },
       "recordCenterNavStyle": "レコードセンター ナビゲーションスタイル",
       "recordCenterNavStyles": {
@@ -2613,6 +2648,12 @@
         "retro": "レトロ"
       },
       "restoreDefaults": "デフォルトに戻す",
+      "rowColorOptions": {
+        "alternate": "交互",
+        "none": "なし",
+        "status": "フル ステータス"
+      },
+      "rowColors": "行の色",
       "saveTheme": "テーマを保存",
       "sections": {
         "behavior": "動作",
@@ -2653,6 +2694,12 @@
         "bottom": "下",
         "top": "上"
       },
+      "taskbarStyle": "タスクバー スタイル",
+      "taskbarStyles": {
+        "default": "デフォルト",
+        "ribbon": "リボン",
+        "toolbar": "コンパクト ツールバー"
+      },
       "taskbarTabAlignment": "タブの配置",
       "taskbarTabAlignments": {
         "left": "左",
@@ -2671,7 +2718,13 @@
       "unsavedChanges": "未保存の変更",
       "updateThemeToCurrent": "テーマを現在に更新",
       "uploadBackground": "背景をアップロード",
-      "uploadStartMenuLogo": "スタートメニュー ロゴをアップロード"
+      "uploadStartMenuLogo": "スタートメニュー ロゴをアップロード",
+      "windowHeaderStyle": "ウィンドウヘッダーのスタイル",
+      "windowHeaderStyles": {
+        "compact": "コンパクト フラット",
+        "default": "デフォルト",
+        "gradient": "グラデーション"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "交通停止",

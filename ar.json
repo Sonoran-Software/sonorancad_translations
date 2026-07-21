@@ -1395,6 +1395,10 @@
           "description": "أنشئ مساحة عمل جاهزة للألعاب حول ألوان مجتمعك وسير العمل.",
           "title": "مخصص"
         },
+        "mike19": {
+          "description": "مساحة عمل مدمجة تعتمد على الأيقونات ومستلهمة من Mark43 CAD.",
+          "title": "مايك19"
+        },
         "modern": {
           "description": "ألواح حادة، عناصر تحكم مدمجة، وعروض عالية التباين للإرسال النشط.",
           "title": "حديث"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "أسلوب CAD الكلاسيكي بألوان جريئة، وجداول كثيفة، وعناصر تحكم مألوفة.",
           "title": "ريتو"
+        },
+        "spillboy": {
+          "description": "أسلوب إرسال كلاسيكي مستوحى من Motorola Solutions Spillman Flex CAD.",
+          "title": "ريتو"
+        },
+        "trevor": {
+          "description": "مساحة عمل مؤسسية كثيفة مستوحاة من نظام CAD المؤسسي لشركة Tyler Technologies.",
+          "title": "تريفور"
         }
       },
       "description": "بدّل السمات والألوان والتخطيطات لتناسب مجتمعك دون التنازل عن سرعة الإرسال.",
@@ -2510,6 +2522,7 @@
       "backgroundImageScale": "مقياس صورة الخلفية",
       "badgeStyle": "نمط الشارة",
       "badgeStyles": {
+        "compact": "مربع مدمج",
         "modern": "حديث",
         "none": "لا شيء",
         "retro": "ريتو"
@@ -2552,18 +2565,23 @@
         "foreground": "الأمامي",
         "foregroundLight": "الأمامي الفاتح",
         "icon": "أيقونة شريط المهام",
+        "inputBackground": "خلفية الإدخال",
         "inverseText": "النص المعكوس",
         "primary": "الأساسي",
         "primaryFaded": "اللون الأساسي الباهت",
         "primaryText": "النص الأساسي",
         "subtitleText": "نص العنوان الفرعي",
         "tableBorder": "حدود الجدول",
+        "taskbarGradientBottom": "أسفل تدرج شريط المهام",
+        "taskbarGradientTop": "أعلى تدرج شريط المهام",
         "titleText": "نص العنوان",
         "unitStatusAvailable": "حالة الوحدة متاحة",
         "unitStatusBusy": "حالة الوحدة: مشغول",
         "unitStatusEnroute": "حالة الوحدة في الطريق",
         "unitStatusOnScene": "حالة الوحدة في الموقع",
-        "unitStatusUnavailable": "حالة الوحدة غير متاحة"
+        "unitStatusUnavailable": "حالة الوحدة غير متاحة",
+        "windowHeaderGradientBottom": "تدرج سفلي لعنوان النافذة",
+        "windowHeaderGradientTop": "تدرج علوي لعنوان النافذة"
       },
       "componentStyle": "نمط المكوّن",
       "componentStyles": {
@@ -2596,6 +2614,11 @@
         "semibold": "نصف عريض"
       },
       "importedThemeName": "السمة المستوردة {index}",
+      "inputStyle": "نمط الإدخال",
+      "inputStyles": {
+        "classic": "كلاسيكي مستطيل",
+        "default": "الافتراضي"
+      },
       "loadingAnimationStyle": "رسوم متحركة للتحميل",
       "loadingAnimationStyles": {
         "auto": "تلقائي",
@@ -2607,9 +2630,21 @@
         "modern": "حديث",
         "retro": "ريتو"
       },
+      "presetDescriptions": {
+        "dark": "من تصميم Sonoran Software Systems",
+        "mike19": "مستوحى من Mark43 CAD",
+        "mike19Light": "مستوحى من Mark43 CAD",
+        "retro": "مستوحى من Motorola Solutions Spillman Flex CAD",
+        "tylerDark": "مستوحى من نظام CAD المؤسسي لشركة Tyler Technologies",
+        "tylerLight": "مستوحى من نظام CAD المؤسسي لشركة Tyler Technologies"
+      },
       "presets": {
-        "dark": "حديث",
-        "retro": "ريتو"
+        "dark": "سونوران",
+        "mike19": "مايك19",
+        "mike19Light": "مايك19 فاتح",
+        "retro": "ريتو",
+        "tylerDark": "تريفور داكن",
+        "tylerLight": "تريفور لايت"
       },
       "recordCenterNavStyle": "نمط تنقّل مركز السجل",
       "recordCenterNavStyles": {
@@ -2622,6 +2657,12 @@
         "retro": "ريتو"
       },
       "restoreDefaults": "استعادة الإعدادات الافتراضية",
+      "rowColorOptions": {
+        "alternate": "متناوب",
+        "none": "لا شيء",
+        "status": "الحالة الكاملة"
+      },
+      "rowColors": "ألوان الصفوف",
       "saveTheme": "حفظ النسق",
       "sections": {
         "behavior": "السلوك",
@@ -2662,6 +2703,12 @@
         "bottom": "أسفل",
         "top": "أعلى"
       },
+      "taskbarStyle": "نمط شريط المهام",
+      "taskbarStyles": {
+        "default": "الافتراضي",
+        "ribbon": "شريط",
+        "toolbar": "شريط أدوات مدمج"
+      },
       "taskbarTabAlignment": "محاذاة التبويب",
       "taskbarTabAlignments": {
         "left": "يسار",
@@ -2680,7 +2727,13 @@
       "unsavedChanges": "تغييرات غير محفوظة",
       "updateThemeToCurrent": "تحديث السمة إلى الحالية",
       "uploadBackground": "رفع الخلفية",
-      "uploadStartMenuLogo": "رفع شعار قائمة البداية"
+      "uploadStartMenuLogo": "رفع شعار قائمة البداية",
+      "windowHeaderStyle": "نمط ترويسة النافذة",
+      "windowHeaderStyles": {
+        "compact": "مسطح مدمج",
+        "default": "الافتراضي",
+        "gradient": "تدرج"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "إيقاف المرور",

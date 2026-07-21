@@ -1395,6 +1395,10 @@
           "description": "Crie um espaço de trabalho pronto para jogos em torno das cores e fluxos de trabalho da sua comunidade.",
           "title": "PERSONALIZADO"
         },
+        "mike19": {
+          "description": "Um espaço de trabalho compacto, orientado por ícones, inspirado no CAD da Mark43.",
+          "title": "Mike19"
+        },
         "modern": {
           "description": "Painéis nítidos, controles compactos e vistas de alto contraste para despacho ativo.",
           "title": "Moderno"
@@ -1402,6 +1406,14 @@
         "retro": {
           "description": "Estilo CAD clássico com cores fortes, tabelas densas e controles familiares.",
           "title": "Retrô"
+        },
+        "spillboy": {
+          "description": "Estilo clássico de despacho inspirado no Motorola Solutions Spillman Flex CAD.",
+          "title": "Retrô"
+        },
+        "trevor": {
+          "description": "Um espaço de trabalho corporativo denso inspirado no Enterprise CAD da Tyler Technologies",
+          "title": "Trevor"
         }
       },
       "description": "Alterne temas, cores e layouts para combinar com sua comunidade sem abrir mão da velocidade de despacho.",
@@ -2510,6 +2522,7 @@
       "backgroundImageScale": "Escala da imagem de fundo",
       "badgeStyle": "Estilo do distintivo",
       "badgeStyles": {
+        "compact": "Quadrado Compacto",
         "modern": "Moderno",
         "none": "Nenhum",
         "retro": "Retrô"
@@ -2552,18 +2565,23 @@
         "foreground": "Primeiro plano",
         "foregroundLight": "Primeiro plano claro",
         "icon": "Ícone da barra de tarefas",
+        "inputBackground": "Fundo de entrada",
         "inverseText": "Texto inverso",
         "primary": "Primário",
         "primaryFaded": "Primário desbotado",
         "primaryText": "Texto Principal",
         "subtitleText": "Texto do subtítulo",
         "tableBorder": "Borda da tabela",
+        "taskbarGradientBottom": "Gradiente Inferior da Barra de Tarefas",
+        "taskbarGradientTop": "Gradiente Superior da Barra de Tarefas",
         "titleText": "Texto do título",
         "unitStatusAvailable": "Status da unidade disponível",
         "unitStatusBusy": "Status da unidade: Ocupado",
         "unitStatusEnroute": "Status da unidade a caminho",
         "unitStatusOnScene": "Status da unidade no local",
-        "unitStatusUnavailable": "Status da unidade indisponível"
+        "unitStatusUnavailable": "Status da unidade indisponível",
+        "windowHeaderGradientBottom": "Base do gradiente do cabeçalho da janela",
+        "windowHeaderGradientTop": "Topo do gradiente do cabeçalho da janela"
       },
       "componentStyle": "Estilo do componente",
       "componentStyles": {
@@ -2596,6 +2614,11 @@
         "semibold": "Semi-negrito"
       },
       "importedThemeName": "Tema importado {index}",
+      "inputStyle": "Estilo de entrada",
+      "inputStyles": {
+        "classic": "Clássico Retangular",
+        "default": "Padrão"
+      },
       "loadingAnimationStyle": "Animação de carregamento",
       "loadingAnimationStyles": {
         "auto": "Automático",
@@ -2607,9 +2630,21 @@
         "modern": "Moderno",
         "retro": "Retrô"
       },
+      "presetDescriptions": {
+        "dark": "Projetado por Sonoran Software Systems",
+        "mike19": "Inspirado no CAD da Mark43",
+        "mike19Light": "Inspirado no CAD da Mark43",
+        "retro": "Inspirado no Motorola Solutions Spillman Flex CAD",
+        "tylerDark": "Inspirado no Enterprise CAD da Tyler Technologies",
+        "tylerLight": "Inspirado no Enterprise CAD da Tyler Technologies"
+      },
       "presets": {
-        "dark": "Moderno",
-        "retro": "Retrô"
+        "dark": "Sonoran",
+        "mike19": "Mike19",
+        "mike19Light": "Mike19 Claro",
+        "retro": "Retrô",
+        "tylerDark": "Trevor Escuro",
+        "tylerLight": "Trevor Claro"
       },
       "recordCenterNavStyle": "Estilo de Navegação do Centro de Gravação",
       "recordCenterNavStyles": {
@@ -2622,6 +2657,12 @@
         "retro": "Retrô"
       },
       "restoreDefaults": "Restaurar padrões",
+      "rowColorOptions": {
+        "alternate": "Alternado",
+        "none": "Nenhum",
+        "status": "Status Completo"
+      },
+      "rowColors": "Cores das Linhas",
       "saveTheme": "Guardar tema",
       "sections": {
         "behavior": "Comportamento",
@@ -2662,6 +2703,12 @@
         "bottom": "Inferior",
         "top": "Topo"
       },
+      "taskbarStyle": "Estilo da barra de tarefas",
+      "taskbarStyles": {
+        "default": "Padrão",
+        "ribbon": "Faixa",
+        "toolbar": "Barra de Ferramentas Compacta"
+      },
       "taskbarTabAlignment": "Alinhamento das abas",
       "taskbarTabAlignments": {
         "left": "Esquerda",
@@ -2680,7 +2727,13 @@
       "unsavedChanges": "Alterações não salvas",
       "updateThemeToCurrent": "Atualizar tema para o atual",
       "uploadBackground": "Enviar Fundo",
-      "uploadStartMenuLogo": "Carregar Logotipo do Menu Inicial"
+      "uploadStartMenuLogo": "Carregar Logotipo do Menu Inicial",
+      "windowHeaderStyle": "Estilo do Cabeçalho da Janela",
+      "windowHeaderStyles": {
+        "compact": "Compacto Plano",
+        "default": "Padrão",
+        "gradient": "Gradiente"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "Parada de Tráfego",
