@@ -1395,13 +1395,13 @@
           "description": "Build a game-ready workspace around your community's colors and workflows.",
           "title": "Custom"
         },
-        "modern": {
-          "description": "Sharp panels, compact controls, and high-contrast views for active dispatch.",
-          "title": "Modern"
-        },
         "mike19": {
           "description": "A compact, icon-driven workspace inspired by Mark43 CAD.",
           "title": "Mike19"
+        },
+        "modern": {
+          "description": "Sharp panels, compact controls, and high-contrast views for active dispatch.",
+          "title": "Modern"
         },
         "retro": {
           "description": "Classic CAD styling with bold colors, dense tables, and familiar controls.",
@@ -2501,6 +2501,11 @@
     "statusHotkeys": "Status Hotkeys",
     "systemDefaultMicrophone": "System default microphone",
     "theme": {
+      "alternateRowColorOptions": {
+        "disabled": "Disabled",
+        "enabled": "Enabled"
+      },
+      "alternateRowColors": "Alternate Row Colors",
       "autoOpenCallViewerOnAttach": "Open call viewer when my unit is attached",
       "backgroundImage": "Background Image",
       "backgroundImageFit": "Background Image Fit",
@@ -2616,14 +2621,6 @@
         "modern": "Modern",
         "retro": "Retro"
       },
-      "presets": {
-        "dark": "Sonoran",
-        "mike19": "Mike19",
-        "mike19Light": "Mike19 Light",
-        "retro": "Spillboy",
-        "tylerDark": "Trevor Dark",
-        "tylerLight": "Trevor Light"
-      },
       "presetDescriptions": {
         "dark": "Designed by Sonoran Software Systems",
         "mike19": "Inspired by Mark43 CAD",
@@ -2631,6 +2628,14 @@
         "retro": "Inspired by Motorola Solutions Spillman Flex CAD",
         "tylerDark": "Inspired by Tyler Technologies Enterprise CAD",
         "tylerLight": "Inspired by Tyler Technologies Enterprise CAD"
+      },
+      "presets": {
+        "dark": "Sonoran",
+        "mike19": "Mike19",
+        "mike19Light": "Mike19 Light",
+        "retro": "Spillboy",
+        "tylerDark": "Trevor Dark",
+        "tylerLight": "Trevor Light"
       },
       "recordCenterNavStyle": "Record Center Navigation Style",
       "recordCenterNavStyles": {
@@ -2642,13 +2647,13 @@
         "modern": "Modern",
         "retro": "Retro"
       },
+      "restoreDefaults": "Restore Defaults",
       "rowColorOptions": {
         "alternate": "Alternating",
         "none": "None",
         "status": "Full Status"
       },
       "rowColors": "Row Colors",
-      "restoreDefaults": "Restore Defaults",
       "saveTheme": "Save Theme",
       "sections": {
         "behavior": "Behavior",
@@ -2685,15 +2690,15 @@
         "horizontal": "Horizontal",
         "square": "Square"
       },
+      "taskbarPositions": {
+        "bottom": "Bottom",
+        "top": "Top"
+      },
       "taskbarStyle": "Taskbar Style",
       "taskbarStyles": {
         "default": "Default",
         "ribbon": "Ribbon",
         "toolbar": "Compact Toolbar"
-      },
-      "taskbarPositions": {
-        "bottom": "Bottom",
-        "top": "Top"
       },
       "taskbarTabAlignment": "Tab Alignment",
       "taskbarTabAlignments": {
@@ -2706,12 +2711,6 @@
         "ellipsis": "Ellipsis",
         "stretch": "Stretch"
       },
-      "windowHeaderStyle": "Window Header Style",
-      "windowHeaderStyles": {
-        "compact": "Compact Flat",
-        "default": "Default",
-        "gradient": "Gradient"
-      },
       "themeActions": "Theme actions",
       "themeColors": "Theme Colors",
       "themeName": "Theme Name",
@@ -2719,7 +2718,13 @@
       "unsavedChanges": "Unsaved changes",
       "updateThemeToCurrent": "Update Theme to Current",
       "uploadBackground": "Upload Background",
-      "uploadStartMenuLogo": "Upload Start Menu Logo"
+      "uploadStartMenuLogo": "Upload Start Menu Logo",
+      "windowHeaderStyle": "Window Header Style",
+      "windowHeaderStyles": {
+        "compact": "Compact Flat",
+        "default": "Default",
+        "gradient": "Gradient"
+      }
     },
     "trafficStopDispatchCode": "10-38",
     "trafficStopDispatchHotkey": "Traffic Stop",
