@@ -1930,7 +1930,148 @@
       "status": "Status",
       "unit": "Unit",
       "unitStatus": "Unit Status",
-      "view": "View"
+      "view": "View",
+      "cli": {
+        "shortLabel": "CLI",
+        "placeholder": "Enter a command or start typing an action…",
+        "runCommand": "Run command",
+        "commandReference": "Command reference",
+        "customizeCommands": "Customize commands",
+        "keyboardHint": "Enter runs • Tab completes • ↑/↓ recalls history • ? opens help",
+        "nextArgument": "Next: {argument}",
+        "referenceIntro": "Commands are case-insensitive and may be entered before or after the unit. Put multi-word values in quotes, or place them in the final argument. Named values such as call=123 can be entered in any position.",
+        "customizeIntro": "Map each CAD action to your agency's command codes and argument order. Add ? after an optional argument.",
+        "aliases": "Aliases",
+        "aliasesHint": "Separate aliases with commas",
+        "primaryCommand": "Primary command",
+        "argumentOrder": "Argument order",
+        "allowedVariables": "Allowed: {variables}",
+        "noCommand": "No command assigned",
+        "resetDefaults": "Reset defaults",
+        "configurationSaved": "Command configuration saved.",
+        "configurationImported": "Command configuration imported.",
+        "commandComplete": "{action} complete.",
+        "unitCount": "{count} units",
+        "untitledCall": "Untitled call",
+        "trafficStopSavedType": "Traffic Stop",
+        "activityDetails": " — {details}",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "callDetails": "Details: {details}",
+        "variables": {
+          "unit": "unit",
+          "call": "call",
+          "details": "details",
+          "description": "description",
+          "type": "saved call type",
+          "postal": "postal",
+          "note": "note"
+        },
+        "errors": {
+          "unknownCommand": "Unknown command: {command}. Type ? to open the command reference.",
+          "missingArgument": "Missing required argument: {argument}.",
+          "tooManyArguments": "This command has more arguments than its configured action accepts.",
+          "unitNotFound": "Unit {unit} is not active or could not be found.",
+          "currentUnitNotFound": "Your active unit could not be found. Select or activate a unit before using SI.",
+          "callNotFound": "Active call {call} could not be found.",
+          "callAmbiguous": "That unit is attached to multiple calls. Include the call ID.",
+          "noActiveCall": "No active call could be inferred. Include the call ID or open the call in Call Viewer.",
+          "savedCallTypeNotFound": "Saved call type “{type}” could not be found. Save or import that call type first.",
+          "commandRequired": "{action} needs a primary command.",
+          "invalidVariable": "{variable} is not a supported variable for {action}.",
+          "duplicateVariable": "{variable} can only appear once in an argument order.",
+          "requiredVariable": "{action} must include the {variable} variable.",
+          "invalidCommand": "Command codes may only contain letters, numbers, hyphens, and underscores: {command}.",
+          "commandConflict": "{command} is assigned to both {first} and {second}.",
+          "invalidConfiguration": "The command configuration is invalid.",
+          "actionUnavailable": "This action is not available.",
+          "commandFailed": "The command could not be completed."
+        },
+        "actions": {
+          "status": {
+            "description": "Set a unit or apparatus to the community status “{status}”."
+          },
+          "dispatchUnit": {
+            "label": "Dispatch unit",
+            "description": "Attach a unit or apparatus to a call. If call is omitted, use the open call or the unit's only active call."
+          },
+          "clearUnit": {
+            "label": "Clear unit",
+            "description": "Detach a unit or apparatus from a call."
+          },
+          "inService": {
+            "label": "In service",
+            "description": "Set a unit to the community's available status."
+          },
+          "outOfService": {
+            "label": "Out of service",
+            "description": "Set a unit to the community's unavailable status."
+          },
+          "busy": {
+            "label": "Busy",
+            "description": "Set a unit to the community's busy status."
+          },
+          "enroute": {
+            "label": "Enroute",
+            "description": "Set a unit to the community's enroute status. Optional trailing details are added to the unit's call."
+          },
+          "arrived": {
+            "label": "Arrived / On scene",
+            "description": "Set a unit to the community's on-scene status."
+          },
+          "enrouteSecond": {
+            "label": "Enroute to second location",
+            "description": "Set enroute and add a second-location activity note to the call."
+          },
+          "arrivedSecond": {
+            "label": "Arrived at second location",
+            "description": "Set on scene and add a second-location activity note to the call."
+          },
+          "enrouteJail": {
+            "label": "Enroute to jail",
+            "description": "Set enroute and add a jail transport activity note to the call."
+          },
+          "codeFour": {
+            "label": "Code 4",
+            "description": "Add a Code 4 activity note to the unit's call."
+          },
+          "enrouteHospital": {
+            "label": "Enroute to hospital",
+            "description": "Set enroute and add a hospital transport activity note to the call."
+          },
+          "arrivedHospital": {
+            "label": "Arrived at hospital",
+            "description": "Set on scene and add a hospital arrival activity note to the call."
+          },
+          "trafficStop": {
+            "label": "Traffic stop",
+            "description": "Create a traffic-stop call from a saved call type, using the unit's current location and optional vehicle details."
+          },
+          "createCall": {
+            "label": "Create saved call",
+            "description": "Create a call from any saved call type, with an optional unit, postal, and trailing description. Quote call types that contain spaces."
+          },
+          "selfInitiated": {
+            "label": "Self-initiated call",
+            "description": "Create a saved call at your active unit's current location and automatically attach your unit, with an optional postal and trailing description."
+          },
+          "closeCall": {
+            "label": "Close call",
+            "description": "Close the specified call, or the call currently open in Call Viewer."
+          },
+          "viewCall": {
+            "label": "View call",
+            "description": "Open an active call in Call Viewer."
+          },
+          "addNote": {
+            "label": "Add call note",
+            "description": "Add a text note to an active call."
+          },
+          "clearEditor": {
+            "label": "Clear Call Viewer",
+            "description": "Clear the current Call Viewer editor."
+          }
+        }
+      }
     },
     "diagram": {
       "deleteSelected": "Delete Selected",
@@ -2801,6 +2942,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Open Call Viewer when Assigned to a Call",
     "close": "Close",
+    "commandLineHotkeyTooltip": "CLI — Hotkey: {hotkey}",
     "desktop": "Desktop",
     "displayTabIcons": "Display Tab Icons",
     "displayTabLabels": "Display Tab Labels",
