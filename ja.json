@@ -1920,6 +1920,147 @@
       "attach": "添付",
       "callId": "通話ID",
       "clear": "クリア",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "通話中のコールにテキストメモを追加",
+            "label": "通話メモを追加"
+          },
+          "arrived": {
+            "description": "部隊をコミュニティの現場到着状態に設定します。",
+            "label": "到着 / 現場対応中"
+          },
+          "arrivedHospital": {
+            "description": "現場到着を設定し、通報に病院到着の活動メモを追加します。",
+            "label": "病院に到着"
+          },
+          "arrivedSecond": {
+            "description": "現場到着を設定し、通報に第二地点の活動メモを追加します。",
+            "label": "2つ目の場所に到着"
+          },
+          "busy": {
+            "description": "部隊をコミュニティの稼働中状態に設定します。",
+            "label": "使用中"
+          },
+          "clearEditor": {
+            "description": "現在の通話ビューア エディタをクリアします。",
+            "label": "通話ビューアをクリア"
+          },
+          "clearUnit": {
+            "description": "通報から隊員または車両を解除する。",
+            "label": "ユニットをクリア"
+          },
+          "closeCall": {
+            "description": "指定された通報、または Call Viewer で現在開いている通報を閉じます。",
+            "label": "通話を閉じる"
+          },
+          "codeFour": {
+            "description": "ユニットのコールにコード4活動メモを追加する。",
+            "label": "コード 4"
+          },
+          "createCall": {
+            "description": "保存済みの任意の通話種別から通話を作成します。任意でユニット、郵便番号、末尾の説明を指定できます。スペースを含む通話種別は引用符で囲んでください。",
+            "label": "保存された通話を作成"
+          },
+          "dispatchUnit": {
+            "description": "ユニットまたは装備を通報に割り当てます。通報が省略された場合は、オープンな通報またはユニットの唯一のアクティブな通報を使用します。",
+            "label": "部隊を出荷"
+          },
+          "enroute": {
+            "description": "ユニットを地域の出動中ステータスに設定します。任意の後続詳細はユニットの出動に追加されます。",
+            "label": "移動中"
+          },
+          "enrouteHospital": {
+            "description": "移動中に設定し、通報に病院搬送の活動メモを追加する。",
+            "label": "病院へ向かっています"
+          },
+          "enrouteJail": {
+            "description": "移動中に設定し、通報に留置場搬送の活動メモを追加する。",
+            "label": "留置場へ移動中"
+          },
+          "enrouteSecond": {
+            "description": "移動中に設定し、通報に第二地点の活動メモを追加する。",
+            "label": "第二現場へ向かっています"
+          },
+          "inService": {
+            "description": "部隊をコミュニティの利用可能状態に設定します。",
+            "label": "勤務中"
+          },
+          "outOfService": {
+            "description": "部隊をコミュニティの利用不可状態に設定します。",
+            "label": "使用停止"
+          },
+          "selfInitiated": {
+            "description": "現在の所属部隊の位置に保存通報を作成し、部隊を自動的に割り当て、必要に応じて郵便番号と補足説明を追加します。",
+            "label": "自発的通報"
+          },
+          "status": {
+            "description": "部隊または車両をコミュニティのステータス「{status}」に設定します。"
+          },
+          "trafficStop": {
+            "description": "保存済みの通報種別から、車両の現在位置と任意の車両詳細を使用して交通停止通報を作成します。",
+            "label": "交通停止"
+          },
+          "viewCall": {
+            "description": "Call Viewer でアクティブな通報を開く",
+            "label": "通話を見る"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "別名",
+        "aliasesHint": "エイリアスをカンマで区切る",
+        "allowedVariables": "使用可: {variables}",
+        "argumentOrder": "引数の順序",
+        "callDetails": "詳細: {details}",
+        "commandComplete": "{action} 完了。",
+        "commandReference": "コマンドリファレンス",
+        "configurationImported": "コマンド設定をインポートしました。",
+        "configurationSaved": "コマンド設定を保存しました。",
+        "customizeCommands": "コマンドをカスタマイズ",
+        "customizeIntro": "各 CAD アクションを、あなたの機関のコマンドコードと引数の順序に対応付けます。任意の引数の後に ? を追加します。",
+        "errors": {
+          "actionUnavailable": "この操作は利用できません。",
+          "callAmbiguous": "そのユニットは複数の通報に割り当てられています。通報 ID を含めてください。",
+          "callNotFound": "アクティブな通報 {call} は見つかりませんでした。",
+          "commandConflict": "{command} は {first} と {second} の両方に割り当てられています。",
+          "commandFailed": "コマンドを完了できませんでした。",
+          "commandRequired": "{action} には主要コマンドが必要です。",
+          "currentUnitNotFound": "現在のユニットが見つかりませんでした。SI を使用する前にユニットを選択するか、有効化してください。",
+          "duplicateVariable": "{variable}は引数順序に1回しか表示できません。",
+          "invalidCommand": "コマンドコードには英字、数字、ハイフン、アンダースコアのみ使用できます: {command}.",
+          "invalidConfiguration": "コマンド設定が無効です。",
+          "invalidVariable": "{variable} は {action} ではサポートされていない変数です。",
+          "missingArgument": "必須の引数がありません: {argument}.",
+          "noActiveCall": "有効な通報は推測できませんでした。通報 ID を含めるか Call Viewer で通報を開いてください。",
+          "requiredVariable": "{action} には {variable} 変数を含める必要があります。",
+          "savedCallTypeNotFound": "保存された通話タイプ「{type}」が見つかりませんでした。先にその通話タイプを保存またはインポートしてください。",
+          "tooManyArguments": "このコマンドには、設定されたアクションが受け入れるより多くの引数があります。",
+          "unitNotFound": "ユニット {unit} はアクティブではないか、見つかりませんでした。",
+          "unknownCommand": "不明なコマンド: {command}。? を入力してコマンドリファレンスを開いてください。"
+        },
+        "keyboardHint": "Enterで実行 • Tabで補完 • ↑/↓で履歴を呼び出し • ?でヘルプを開く",
+        "nextArgument": "次: {argument}",
+        "noCommand": "コマンドが割り当てられていません",
+        "placeholder": "コマンドを入力するか、アクションの入力を始めてください…",
+        "primaryCommand": "プライマリコマンド",
+        "referenceIntro": "コマンドは大文字小文字を区別せず、部隊の前でも後でも入力できます。複数語の値は引用符で囲むか、最後の引数に入れてください。call=123 のような名前付きの値はどの位置でも入力できます。",
+        "resetDefaults": "デフォルトに戻す",
+        "runCommand": "コマンドを実行",
+        "shortLabel": "警察コマンド CLI",
+        "trafficStopSavedType": "交通停止",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count}単位",
+        "untitledCall": "無題の通話",
+        "variables": {
+          "call": "通話",
+          "description": "説明",
+          "details": "詳細",
+          "note": "メモ",
+          "postal": "郵便",
+          "type": "保存された通話タイプ",
+          "unit": "部隊"
+        }
+      },
       "close": "閉じる",
       "commandLine": "コマンドライン",
       "create": "作成",
@@ -2801,6 +2942,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "通話に割り当てられたら通話ビューアーを開く",
     "close": "閉じる",
+    "commandLineHotkeyTooltip": "CLI — ホットキー: {hotkey}",
     "desktop": "デスクトップ",
     "displayTabIcons": "タブアイコンを表示",
     "displayTabLabels": "タブラベルを表示",

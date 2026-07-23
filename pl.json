@@ -1920,6 +1920,147 @@
       "attach": "Dołącz",
       "callId": "ID zgłoszenia",
       "clear": "Wyczyść",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Dodaj notatkę tekstową do aktywnego zgłoszenia.",
+            "label": "Dodaj notatkę do wezwania"
+          },
+          "arrived": {
+            "description": "Ustaw jednostkę na status na miejscu dla społeczności.",
+            "label": "Na miejscu / Na miejscu"
+          },
+          "arrivedHospital": {
+            "description": "Ustaw jako na miejscu i dodaj notatkę o przybyciu do szpitala do zgłoszenia.",
+            "label": "Dotarł do szpitala"
+          },
+          "arrivedSecond": {
+            "description": "Ustaw jako na miejscu i dodaj notatkę o aktywności w drugiej lokalizacji do zgłoszenia.",
+            "label": "Dotarł na drugą lokalizację"
+          },
+          "busy": {
+            "description": "Ustaw jednostkę na status zajęty dla społeczności.",
+            "label": "Zajęty"
+          },
+          "clearEditor": {
+            "description": "Wyczyść bieżący edytor Podglądu połączenia.",
+            "label": "Wyczyść podgląd wezwania"
+          },
+          "clearUnit": {
+            "description": "Odłącz jednostkę lub pojazd od zgłoszenia.",
+            "label": "Wyczyść jednostkę"
+          },
+          "closeCall": {
+            "description": "Zamknij określone zgłoszenie lub zgłoszenie aktualnie otwarte w Call Viewer.",
+            "label": "Zamknij wezwanie"
+          },
+          "codeFour": {
+            "description": "Dodaj notatkę o aktywności Code 4 do zgłoszenia jednostki.",
+            "label": "Kod 4"
+          },
+          "createCall": {
+            "description": "Utwórz zgłoszenie z dowolnego zapisanego typu zgłoszenia, z opcjonalną jednostką, adresem pocztowym i końcowym opisem. Typy zgłoszeń zawierające spacje ujmuj w cudzysłów.",
+            "label": "Utwórz zapisane wezwanie"
+          },
+          "dispatchUnit": {
+            "description": "Przypisz jednostkę lub pojazd do zgłoszenia. Jeśli zgłoszenie zostanie pominięte, użyj otwartego zgłoszenia lub jedynego aktywnego zgłoszenia jednostki.",
+            "label": "Wezwij jednostkę"
+          },
+          "enroute": {
+            "description": "Ustaw jednostkę jako w drodze do społeczności. Opcjonalne dodatkowe szczegóły są dodawane do wezwania jednostki.",
+            "label": "W drodze"
+          },
+          "enrouteHospital": {
+            "description": "Ustaw w drodze i dodaj notatkę o aktywności transportu do szpitala do zgłoszenia.",
+            "label": "W drodze do szpitala"
+          },
+          "enrouteJail": {
+            "description": "Ustaw w drodze i dodaj notatkę o aktywności transportu do aresztu do zgłoszenia.",
+            "label": "W drodze do więzienia"
+          },
+          "enrouteSecond": {
+            "description": "Ustaw w drodze i dodaj notatkę o aktywności w drugiej lokalizacji do zgłoszenia.",
+            "label": "W drodze do drugiej lokalizacji"
+          },
+          "inService": {
+            "description": "Ustaw jednostkę na status dostępny dla społeczności.",
+            "label": "Na służbie"
+          },
+          "outOfService": {
+            "description": "Ustaw jednostkę na status niedostępny dla społeczności.",
+            "label": "Poza służbą"
+          },
+          "selfInitiated": {
+            "description": "Utwórz zapisane wezwanie w bieżącej lokalizacji swojej aktywnej jednostki i automatycznie dołącz swoją jednostkę, z opcjonalnym kodem pocztowym i opisem końcowym.",
+            "label": "Połączenie zainicjowane samodzielnie"
+          },
+          "status": {
+            "description": "Ustaw jednostkę lub aparat na status społeczności „{status}”."
+          },
+          "trafficStop": {
+            "description": "Utwórz zgłoszenie zatrzymania pojazdu na podstawie zapisanego typu zgłoszenia, używając bieżącej lokalizacji jednostki i opcjonalnych danych pojazdu.",
+            "label": "Zatrzymanie ruchu"
+          },
+          "viewCall": {
+            "description": "Otwórz aktywne zgłoszenie w Podglądzie zgłoszeń.",
+            "label": "Podgląd wezwania"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliasy",
+        "aliasesHint": "Oddziel aliasy przecinkami",
+        "allowedVariables": "Dozwolone: {variables}",
+        "argumentOrder": "Kolejność argumentów",
+        "callDetails": "Szczegóły: {details}",
+        "commandComplete": "{action} zakończone.",
+        "commandReference": "Odwołanie do polecenia",
+        "configurationImported": "Zaimportowano konfigurację komendy.",
+        "configurationSaved": "Zapisano konfigurację komendy.",
+        "customizeCommands": "Dostosuj polecenia",
+        "customizeIntro": "Mapuj każdą akcję CAD na kody komend i kolejność argumentów Twojej agencji. Dodaj ? po opcjonalnym argumencie.",
+        "errors": {
+          "actionUnavailable": "Ta akcja jest niedostępna.",
+          "callAmbiguous": "Ta jednostka jest przypisana do wielu zgłoszeń. Uwzględnij ID zgłoszenia.",
+          "callNotFound": "Aktywne połączenie {call} nie można znaleźć.",
+          "commandConflict": "{command} jest przypisane zarówno do {first}, jak i do {second}.",
+          "commandFailed": "Polecenia nie udało się wykonać.",
+          "commandRequired": "{action} wymaga komendy głównej.",
+          "currentUnitNotFound": "Twojej aktywnej jednostki nie można znaleźć. Wybierz lub aktywuj jednostkę przed użyciem SI.",
+          "duplicateVariable": "{variable} może wystąpić tylko raz w kolejności argumentów.",
+          "invalidCommand": "Kody poleceń mogą zawierać tylko litery, cyfry, łączniki i podkreślenia: {command}.",
+          "invalidConfiguration": "Konfiguracja komendy jest nieprawidłowa.",
+          "invalidVariable": "{variable} nie jest obsługiwaną zmienną dla {action}.",
+          "missingArgument": "Brak wymaganego argumentu: {argument}.",
+          "noActiveCall": "Nie można było określić aktywnego zgłoszenia. Dołącz ID zgłoszenia lub otwórz zgłoszenie w Call Viewer.",
+          "requiredVariable": "{action} musi zawierać zmienną {variable}.",
+          "savedCallTypeNotFound": "Nie można było znaleźć zapisanego typu zgłoszenia „{type}”. Najpierw zapisz lub zaimportuj ten typ zgłoszenia.",
+          "tooManyArguments": "To polecenie ma więcej argumentów, niż akceptuje jego skonfigurowana akcja.",
+          "unitNotFound": "Jednostka {unit} nie jest aktywna lub nie można jej znaleźć.",
+          "unknownCommand": "Nieznana komenda: {command}. Wpisz ?, aby otworzyć odwołanie do komend."
+        },
+        "keyboardHint": "Enter uruchamia • Tab uzupełnia • ↑/↓ przywołuje historię • ? otwiera pomoc",
+        "nextArgument": "Następny: {argument}",
+        "noCommand": "Brak przypisanego polecenia",
+        "placeholder": "Wpisz polecenie lub zacznij wpisywać akcję…",
+        "primaryCommand": "Komenda główna",
+        "referenceIntro": "Polecenia nie rozróżniają wielkości liter i można je wprowadzać przed jednostką lub po niej. Wartości wielowyrazowe umieszczaj w cudzysłowie albo w ostatnim argumencie. Nazwane wartości, takie jak call=123, można wprowadzać w dowolnej pozycji.",
+        "resetDefaults": "Przywróć domyślne",
+        "runCommand": "Uruchom polecenie",
+        "shortLabel": "Wiersz poleceń",
+        "trafficStopSavedType": "Zatrzymanie ruchu",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} jednostek",
+        "untitledCall": "Połączenie bez tytułu",
+        "variables": {
+          "call": "wezwanie",
+          "description": "Opis",
+          "details": "szczegóły",
+          "note": "notatka",
+          "postal": "kod pocztowy",
+          "type": "zapisany typ zgłoszenia",
+          "unit": "jednostka"
+        }
+      },
       "close": "Zamknij",
       "commandLine": "Wiersz poleceń",
       "create": "Utwórz",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Otwórz Podgląd po przypisaniu do połączenia",
     "close": "Zamknij",
+    "commandLineHotkeyTooltip": "CLI — Skrót klawiszowy: {hotkey}",
     "desktop": "Pulpit",
     "displayTabIcons": "Wyświelt ikony zakładek",
     "displayTabLabels": "Wyświetl nazwy zakładek",

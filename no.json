@@ -1919,6 +1919,147 @@
       "attach": "Legg ved",
       "callId": "Anrops-ID",
       "clear": "Fjern",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Legg til en tekstnote i en aktiv samtale.",
+            "label": "Legg til samtalenotat"
+          },
+          "arrived": {
+            "description": "Sett en enhet til samfunnets status på stedet.",
+            "label": "Ankommet / På stedet"
+          },
+          "arrivedHospital": {
+            "description": "Sett på stedet og legg til et notat om ankomst til sykehus på samtalen.",
+            "label": "Ankommet sykehus"
+          },
+          "arrivedSecond": {
+            "description": "Sett på stedet og legg til et aktivitetsnotat for andre sted i samtalen.",
+            "label": "Ankommet andre sted"
+          },
+          "busy": {
+            "description": "Sett en enhet til samfunnets opptatte status.",
+            "label": "Opptatt"
+          },
+          "clearEditor": {
+            "description": "Tøm den gjeldende Call Viewer-redigereren.",
+            "label": "Tøm anropsvisning"
+          },
+          "clearUnit": {
+            "description": "Koble en enhet eller et apparat fra en utrykning.",
+            "label": "Fjern enhet"
+          },
+          "closeCall": {
+            "description": "Lukk den angitte samtalen, eller samtalen som for øyeblikket er åpen i Call Viewer.",
+            "label": "Avslutt samtale"
+          },
+          "codeFour": {
+            "description": "Legg til et Code 4-aktivitetsnotat til enhetens oppdrag.",
+            "label": "Kode 4"
+          },
+          "createCall": {
+            "description": "Opprett en samtale fra en hvilken som helst lagret samtaletype, med en valgfri enhet, poststed og etterfølgende beskrivelse. Sett anførselstegn rundt samtaletyper som inneholder mellomrom.",
+            "label": "Opprett lagret anrop"
+          },
+          "dispatchUnit": {
+            "description": "Knytt en enhet eller et apparat til en utrykning. Hvis utrykning utelates, bruk den åpne utrykningen eller enhetens eneste aktive utrykning.",
+            "label": "Utrykningsenhet"
+          },
+          "enroute": {
+            "description": "Sett en enhet til lokalsamfunnets underveis-status. Valgfrie avsluttende detaljer legges til enhetens oppdrag.",
+            "label": "Underveis"
+          },
+          "enrouteHospital": {
+            "description": "Sett som underveis og legg til et aktivitetsnotat for transport til sykehus i samtalen.",
+            "label": "På vei til sykehus"
+          },
+          "enrouteJail": {
+            "description": "Sett som underveis og legg til et aktivitetsnotat for transport til fengsel i samtalen.",
+            "label": "Underveis til fengsel"
+          },
+          "enrouteSecond": {
+            "description": "Sett som underveis og legg til et aktivitetsnotat for andre sted i samtalen.",
+            "label": "På vei til andre sted"
+          },
+          "inService": {
+            "description": "Sett en enhet til samfunnets tilgjengelige status.",
+            "label": "I tjeneste"
+          },
+          "outOfService": {
+            "description": "Sett en enhet til samfunnets utilgjengelige status.",
+            "label": "Ute av drift"
+          },
+          "selfInitiated": {
+            "description": "Opprett et lagret anrop ved din aktive enhets nåværende posisjon og legg automatisk til din enhet, med valgfri postkode og beskrivende tekst etterpå.",
+            "label": "Selvinitiert samtale"
+          },
+          "status": {
+            "description": "Sett en enhet eller et apparat til samfunnets status «{status}»."
+          },
+          "trafficStop": {
+            "description": "Opprett en trafikkstopp-oppdrag fra en lagret oppdragstype, ved å bruke enhetens nåværende posisjon og valgfrie kjøretøydetaljer.",
+            "label": "Trafikkstopp"
+          },
+          "viewCall": {
+            "description": "Åpne en aktiv samtale i samtaleviseren.",
+            "label": "Vis samtale"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliaser",
+        "aliasesHint": "Skill aliaser med komma",
+        "allowedVariables": "Tillatt: {variables}",
+        "argumentOrder": "Argumentrekkefølge",
+        "callDetails": "Detaljer: {details}",
+        "commandComplete": "{action} fullført.",
+        "commandReference": "Kommandoreferanse",
+        "configurationImported": "Kommandokonfigurasjon importert.",
+        "configurationSaved": "Kommandokonfigurasjon lagret.",
+        "customizeCommands": "Tilpass kommandoer",
+        "customizeIntro": "Knytt hver CAD-handling til etatens kommandokoder og argumentrekkefølge. Legg til ? etter et valgfritt argument.",
+        "errors": {
+          "actionUnavailable": "Denne handlingen er ikke tilgjengelig.",
+          "callAmbiguous": "Den enheten er tilknyttet flere samtaler. Inkluder samtale-IDen.",
+          "callNotFound": "Aktiv samtale {call} kunne ikke bli funnet.",
+          "commandConflict": "{command} er tildelt både {first} og {second}.",
+          "commandFailed": "Kommandoen kunne ikke fullføres.",
+          "commandRequired": "{action} trenger en primær kommando.",
+          "currentUnitNotFound": "Din aktive enhet kunne ikke bli funnet. Velg eller aktiver en enhet før du bruker SI.",
+          "duplicateVariable": "{variable} kan bare forekomme én gang i en argumentrekkefølge.",
+          "invalidCommand": "Kommando-koder kan bare inneholde bokstaver, tall, bindestreker og understreker: {command}.",
+          "invalidConfiguration": "Kommandokonfigurasjonen er ugyldig.",
+          "invalidVariable": "{variable} er ikke en støttet variabel for {action}.",
+          "missingArgument": "Mangler påkrevd argument: {argument}.",
+          "noActiveCall": "Ingen aktiv samtale kunne utledes. Ta med samtale-ID-en eller åpne samtalen i Call Viewer.",
+          "requiredVariable": "{action} må inkludere variabelen {variable}.",
+          "savedCallTypeNotFound": "Lagret samtaletype “{type}” ble ikke funnet. Lagre eller importer den samtaletypen først.",
+          "tooManyArguments": "Denne kommandoen har flere argumenter enn den konfigurerte handlingen godtar.",
+          "unitNotFound": "Enhet {unit} er ikke aktiv eller kunne ikke bli funnet.",
+          "unknownCommand": "Ukjent kommando: {command}. Skriv ? for å åpne kommandoreferansen."
+        },
+        "keyboardHint": "Enter kjører • Tab fullfører • ↑/↓ henter historikk • ? åpner hjelp",
+        "nextArgument": "Neste: {argument}",
+        "noCommand": "Ingen kommando er tildelt",
+        "placeholder": "Skriv inn en kommando eller begynn å skrive en handling…",
+        "primaryCommand": "Primær kommando",
+        "referenceIntro": "Kommandoer skiller ikke mellom store og små bokstaver og kan skrives før eller etter enheten. Sett verdier med flere ord i anførselstegn, eller plasser dem i det siste argumentet. Navngitte verdier som call=123 kan skrives hvor som helst.",
+        "resetDefaults": "Tilbakestill standardinnstillinger",
+        "runCommand": "Kjør kommando",
+        "shortLabel": "Kommandolinje",
+        "trafficStopSavedType": "Trafikkstopp",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} enheter",
+        "untitledCall": "Uten navn-samtale",
+        "variables": {
+          "call": "samtale",
+          "description": "beskrivelse",
+          "details": "detaljer",
+          "note": "Notat",
+          "postal": "postnummer",
+          "type": "lagret anropstype",
+          "unit": "enhet"
+        }
+      },
       "close": "Lukk",
       "commandLine": "Kommandolinje",
       "create": "Opprett",
@@ -2809,6 +2950,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Åpne anropsvisning når tildelt et anrop",
     "close": "Lukk",
+    "commandLineHotkeyTooltip": "CLI — Hurtigtast: {hotkey}",
     "desktop": "Skrivebord",
     "displayTabIcons": "Vis fanekoner",
     "displayTabLabels": "Vis fanemerker",

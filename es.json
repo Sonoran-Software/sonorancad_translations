@@ -1920,6 +1920,147 @@
       "attach": "Adjuntar",
       "callId": "ID de llamada",
       "clear": "Eliminar",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Añadir una nota de texto a una llamada activa.",
+            "label": "Añadir nota de llamada"
+          },
+          "arrived": {
+            "description": "Establecer una unidad en el estado en escena de la comunidad.",
+            "label": "En escena"
+          },
+          "arrivedHospital": {
+            "description": "Marcar en escena y añadir una nota de actividad de llegada al hospital a la llamada.",
+            "label": "Llegado al hospital"
+          },
+          "arrivedSecond": {
+            "description": "Marcar en escena y añadir una nota de actividad de segunda ubicación a la llamada.",
+            "label": "Llegó a la segunda ubicación"
+          },
+          "busy": {
+            "description": "Establecer una unidad en el estado ocupado de la comunidad.",
+            "label": "Ocupado"
+          },
+          "clearEditor": {
+            "description": "Borra el editor actual del Visor de llamadas.",
+            "label": "Borrar visor de llamadas"
+          },
+          "clearUnit": {
+            "description": "Desvincula una unidad o aparato de una llamada.",
+            "label": "Eliminar unidad"
+          },
+          "closeCall": {
+            "description": "Cierra la llamada especificada o la llamada actualmente abierta en el Visor de llamadas.",
+            "label": "Cerrar llamada"
+          },
+          "codeFour": {
+            "description": "Agregar una nota de actividad Código 4 a la llamada de la unidad.",
+            "label": "Código 4"
+          },
+          "createCall": {
+            "description": "Crea una llamada desde cualquier tipo de llamada guardado, con una unidad, postal y descripción final opcionales. Entrecomilla los tipos de llamada que contengan espacios.",
+            "label": "Crear llamada guardada"
+          },
+          "dispatchUnit": {
+            "description": "Vincula una unidad o aparato a una llamada. Si se omite la llamada, usa la llamada abierta o la única llamada activa de la unidad.",
+            "label": "Despachar unidad"
+          },
+          "enroute": {
+            "description": "Establecer una unidad en el estado de ruta de la comunidad. Los detalles opcionales al final se añaden a la llamada de la unidad.",
+            "label": "En camino"
+          },
+          "enrouteHospital": {
+            "description": "Establecer en ruta y añadir una nota de actividad de traslado al hospital a la llamada.",
+            "label": "En ruta al hospital"
+          },
+          "enrouteJail": {
+            "description": "Establecer en ruta y añadir una nota de actividad de traslado a prisión a la llamada.",
+            "label": "En camino a la cárcel"
+          },
+          "enrouteSecond": {
+            "description": "Establecer en ruta y añadir una nota de actividad de segunda ubicación a la llamada.",
+            "label": "En ruta hacia la segunda ubicación"
+          },
+          "inService": {
+            "description": "Establecer una unidad en el estado disponible de la comunidad.",
+            "label": "En servicio"
+          },
+          "outOfService": {
+            "description": "Establecer una unidad en el estado no disponible de la comunidad.",
+            "label": "Fuera de servicio"
+          },
+          "selfInitiated": {
+            "description": "Crea una llamada guardada en la ubicación actual de tu unidad activa y adjunta automáticamente tu unidad, con un código postal y una descripción adicional opcionales.",
+            "label": "Llamada iniciada por uno mismo"
+          },
+          "status": {
+            "description": "Establecer una unidad o aparato en el estado de la comunidad “{status}”."
+          },
+          "trafficStop": {
+            "description": "Crear una llamada de parada de tráfico a partir de un tipo de llamada guardado, usando la ubicación actual de la unidad y detalles opcionales del vehículo.",
+            "label": "Parada de tráfico"
+          },
+          "viewCall": {
+            "description": "Abrir una llamada activa en el visor de llamadas.",
+            "label": "Ver llamada"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Alias",
+        "aliasesHint": "Separa los alias con comas",
+        "allowedVariables": "Permitido: {variables}",
+        "argumentOrder": "Orden de los argumentos",
+        "callDetails": "Detalles: {details}",
+        "commandComplete": "{action} completo.",
+        "commandReference": "Referencia de comandos",
+        "configurationImported": "Configuración del comando importada.",
+        "configurationSaved": "Configuración del comando guardada.",
+        "customizeCommands": "Personalizar comandos",
+        "customizeIntro": "Asigna cada acción CAD a los códigos de comando y al orden de argumentos de tu agencia. Añade ? después de un argumento opcional.",
+        "errors": {
+          "actionUnavailable": "Esta acción no está disponible.",
+          "callAmbiguous": "Esa unidad está asignada a varias llamadas. Incluye el ID de la llamada.",
+          "callNotFound": "No se pudo encontrar la llamada activa {call}.",
+          "commandConflict": "{command} está asignado a {first} y {second}.",
+          "commandFailed": "No se pudo completar el comando.",
+          "commandRequired": "{action} necesita un comando principal.",
+          "currentUnitNotFound": "No se pudo encontrar tu unidad activa. Selecciona o activa una unidad antes de usar SI.",
+          "duplicateVariable": "{variable} solo puede aparecer una vez en un orden de argumento.",
+          "invalidCommand": "Los códigos de comando solo pueden contener letras, números, guiones y barras bajas: {command}.",
+          "invalidConfiguration": "La configuración del comando no es válida.",
+          "invalidVariable": "{variable} no es una variable compatible para {action}.",
+          "missingArgument": "Falta el argumento obligatorio: {argument}.",
+          "noActiveCall": "No se pudo inferir ninguna llamada activa. Incluye el ID de la llamada o abre la llamada en Call Viewer.",
+          "requiredVariable": "{action} debe incluir la variable {variable}.",
+          "savedCallTypeNotFound": "No se pudo encontrar el tipo de llamada guardado “{type}”. Guarda o importa ese tipo de llamada primero.",
+          "tooManyArguments": "Este comando tiene más argumentos de los que acepta la acción configurada.",
+          "unitNotFound": "La unidad {unit} no está activa o no se pudo encontrar.",
+          "unknownCommand": "Comando desconocido: {command}. Escribe ? para abrir la referencia de comandos."
+        },
+        "keyboardHint": "Intro ejecuta • Tab completa • ↑/↓ recupera historial • ? abre ayuda",
+        "nextArgument": "Siguiente: {argument}",
+        "noCommand": "Ningún comando asignado",
+        "placeholder": "Introduce un comando o empieza a escribir una acción…",
+        "primaryCommand": "Comando principal",
+        "referenceIntro": "Los comandos no distinguen entre mayúsculas y minúsculas y pueden introducirse antes o después de la unidad. Ponga los valores de varias palabras entre comillas, o colóquelos en el argumento final. Los valores con nombre como call=123 pueden introducirse en cualquier posición.",
+        "resetDefaults": "Restablecer valores predeterminados",
+        "runCommand": "Ejecutar comando",
+        "shortLabel": "Interfaz de línea de comandos",
+        "trafficStopSavedType": "Parada de tráfico",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} unidades",
+        "untitledCall": "Llamada sin título",
+        "variables": {
+          "call": "llamada",
+          "description": "Descripción",
+          "details": "detalles",
+          "note": "Nota",
+          "postal": "postal",
+          "type": "tipo de llamada guardada",
+          "unit": "unidad"
+        }
+      },
       "close": "Cerrar",
       "commandLine": "Línea de comando",
       "create": "Crear",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Abrir el visor de llamadas cuando se asigne una llamada",
     "close": "Cerrar",
+    "commandLineHotkeyTooltip": "CLI — Tecla de acceso rápido: {hotkey}",
     "desktop": "Escritorio",
     "displayTabIcons": "Mostrar iconos de pestañas",
     "displayTabLabels": "Mostrar etiquetas de pestañas",
