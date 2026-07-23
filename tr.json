@@ -1920,6 +1920,147 @@
       "attach": "Eklemek",
       "callId": "Çağrı kimliği",
       "clear": "Temizlemek",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Aktif bir çağrıya metin notu ekle.",
+            "label": "Çağrı notu ekle"
+          },
+          "arrived": {
+            "description": "Bir üniteyi topluluğun sahnedeki durumuna ayarla.",
+            "label": "Varış yaptı / Sahnede"
+          },
+          "arrivedHospital": {
+            "description": "Olay yerine varıldı olarak ayarla ve çağrıya bir hastaneye varış faaliyet notu ekle.",
+            "label": "Hastaneye varıldı"
+          },
+          "arrivedSecond": {
+            "description": "Olay yerine varıldı olarak ayarla ve çağrıya ikinci konum faaliyet notu ekle.",
+            "label": "İkinci konuma varıldı"
+          },
+          "busy": {
+            "description": "Bir üniteyi topluluğun meşgul durumuna ayarla.",
+            "label": "Meşgul"
+          },
+          "clearEditor": {
+            "description": "Geçerli Çağrı Görüntüleyici düzenleyicisini temizle.",
+            "label": "Çağrı Görüntüleyiciyi Temizle"
+          },
+          "clearUnit": {
+            "description": "Bir birimi veya aracı bir çağrıdan ayırın.",
+            "label": "Birimi temizle"
+          },
+          "closeCall": {
+            "description": "Belirtilen çağrıyı veya şu anda Call Viewer'da açık olan çağrıyı kapatın.",
+            "label": "Yakın çağrı"
+          },
+          "codeFour": {
+            "description": "Birim çağrısına bir Code 4 etkinlik notu ekle.",
+            "label": "Kod 4"
+          },
+          "createCall": {
+            "description": "Kaydedilmiş herhangi bir çağrı türünden, isteğe bağlı bir birim, posta kodu ve ek açıklama ile bir çağrı oluşturun. Boşluk içeren çağrı türlerini tırnak içine alın.",
+            "label": "Kayıtlı Çağrı Oluştur"
+          },
+          "dispatchUnit": {
+            "description": "Bir birimi veya aracı bir çağrıya bağla. Çağrı belirtilmezse, açık çağrıyı veya birimin tek etkin çağrısını kullan.",
+            "label": "Birim sevk et"
+          },
+          "enroute": {
+            "description": "Bir birimi topluluğun yolda durumuna ayarla. İsteğe bağlı sondaki ayrıntılar birimin çağrısına eklenir.",
+            "label": "Yolda"
+          },
+          "enrouteHospital": {
+            "description": "Yola çıkış durumunu ayarla ve çağrıya bir hastane nakil etkinlik notu ekle.",
+            "label": "Hastaneye gidiyor"
+          },
+          "enrouteJail": {
+            "description": "Yola çıkış durumunu ayarla ve çağrıya cezaevi nakil etkinlik notu ekle.",
+            "label": "Hapishaneye yolda"
+          },
+          "enrouteSecond": {
+            "description": "Yola çıkış durumunu ayarla ve çağrıya ikinci konum etkinlik notu ekle.",
+            "label": "İkinci konuma giderken"
+          },
+          "inService": {
+            "description": "Bir üniteyi topluluğun uygun durumuna ayarla.",
+            "label": "Görevde"
+          },
+          "outOfService": {
+            "description": "Bir üniteyi topluluğun kullanım dışı durumuna ayarla.",
+            "label": "Hizmet dışı"
+          },
+          "selfInitiated": {
+            "description": "Aktif biriminizin mevcut konumunda kaydedilmiş bir çağrı oluşturun ve isteğe bağlı bir posta kodu ile ek açıklama ekleyerek biriminizi otomatik olarak iliştirin.",
+            "label": "Kendi başlatılan çağrı"
+          },
+          "status": {
+            "description": "Bir üniteyi veya aparatı topluluğun “{status}” durumuna ayarla."
+          },
+          "trafficStop": {
+            "description": "Kaydedilmiş bir çağrı türünden, birimin mevcut konumunu ve isteğe bağlı araç ayrıntılarını kullanarak trafik durdurma çağrısı oluşturun.",
+            "label": "Trafik Durdurma"
+          },
+          "viewCall": {
+            "description": "Call Viewer'da aktif bir çağrı açın.",
+            "label": "Çağrıyı Görüntüle"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Takma Adlar",
+        "aliasesHint": "Takma adları virgülle ayırın",
+        "allowedVariables": "İzin verilenler: {variables}",
+        "argumentOrder": "Argüman sırası",
+        "callDetails": "Detaylar: {details}",
+        "commandComplete": "{action} tamamlandı.",
+        "commandReference": "Komut başvurusu",
+        "configurationImported": "Komut yapılandırması içe aktarıldı.",
+        "configurationSaved": "Komut yapılandırması kaydedildi.",
+        "customizeCommands": "Komutları özelleştir",
+        "customizeIntro": "Her bir CAD eylemini ajansınızın komut kodları ve argüman sırasıyla eşleştirin. İsteğe bağlı bir argümandan sonra ? ekleyin.",
+        "errors": {
+          "actionUnavailable": "Bu işlem kullanılamıyor.",
+          "callAmbiguous": "Bu birim birden fazla çağrıya bağlı. Çağrı ID’sini ekleyin.",
+          "callNotFound": "Aktif çağrı {call} bulunamadı.",
+          "commandConflict": "{command} hem {first} hem de {second} için atanmış.",
+          "commandFailed": "Komut tamamlanamadı.",
+          "commandRequired": "{action} birincil bir komuta ihtiyaç duyuyor.",
+          "currentUnitNotFound": "Aktif biriminiz bulunamadı. SI kullanmadan önce bir birim seçin veya etkinleştirin.",
+          "duplicateVariable": "{variable} bir argüman sıralamasında yalnızca bir kez görünebilir.",
+          "invalidCommand": "Komut kodları yalnızca harf, rakam, tire ve alt çizgi içerebilir: {command}.",
+          "invalidConfiguration": "Komut yapılandırması geçersiz.",
+          "invalidVariable": "{variable} {action} için desteklenen bir değişken değil.",
+          "missingArgument": "Eksik gerekli argüman: {argument}.",
+          "noActiveCall": "Etkin bir çağrı belirlenemedi. Çağrı kimliğini ekleyin veya çağrıyı Çağrı Görüntüleyici'de açın.",
+          "requiredVariable": "{action} {variable} değişkenini içermelidir.",
+          "savedCallTypeNotFound": "Kaydedilmiş çağrı türü “{type}” bulunamadı. Önce o çağrı türünü kaydedin veya içe aktarın.",
+          "tooManyArguments": "Bu komut, yapılandırılmış eyleminin kabul ettiğinden daha fazla argümana sahip.",
+          "unitNotFound": "Birim {unit} etkin değil veya bulunamadı.",
+          "unknownCommand": "Bilinmeyen komut: {command}. Komut başvurusunu açmak için ? yazın."
+        },
+        "keyboardHint": "Enter çalıştırır • Tab tamamlar • ↑/↓ geçmişi çağırır • ? yardımı açar",
+        "nextArgument": "Sonraki: {argument}",
+        "noCommand": "Komut atanmadı",
+        "placeholder": "Bir komut girin veya bir eylem yazmaya başlayın…",
+        "primaryCommand": "Birincil komut",
+        "referenceIntro": "Komutlar büyük/küçük harfe duyarlı değildir ve birimin önüne ya da arkasına girilebilir. Birden fazla kelimeden oluşan değerleri tırnak içine alın ya da son argümanda verin. call=123 gibi adlandırılmış değerler herhangi bir konumda girilebilir.",
+        "resetDefaults": "Varsayılanları Sıfırla",
+        "runCommand": "Komutu çalıştır",
+        "shortLabel": "KYS",
+        "trafficStopSavedType": "Trafik Durdurma",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} birim",
+        "untitledCall": "Başlıksız çağrı",
+        "variables": {
+          "call": "çağrı",
+          "description": "Açıklama",
+          "details": "detaylar",
+          "note": "Not",
+          "postal": "posta",
+          "type": "Kayıtlı Arama Türü",
+          "unit": "birim"
+        }
+      },
       "close": "Kapalı",
       "commandLine": "Komut satırı",
       "create": "Yaratmak",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Bir Aramaya Atanınca Arama Görüntüleyicisini Aç",
     "close": "Kapalı",
+    "commandLineHotkeyTooltip": "CLI — Kısayol tuşu: {hotkey}",
     "desktop": "Masaüstü",
     "displayTabIcons": "Sekme Simgelerini Görüntüle",
     "displayTabLabels": "Sekme Etiketlerini Görüntüle",

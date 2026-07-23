@@ -1920,6 +1920,147 @@
       "attach": "響應",
       "callId": "呼叫ID",
       "clear": "清空",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "為進行中的通話新增文字備註。",
+            "label": "新增呼叫備註"
+          },
+          "arrived": {
+            "description": "將單位設為社區的現場狀態。",
+            "label": "已到達 / 在現場"
+          },
+          "arrivedHospital": {
+            "description": "到場並為此通話新增醫院抵達活動註記。",
+            "label": "已抵達醫院"
+          },
+          "arrivedSecond": {
+            "description": "到場並為此通話新增第二地點活動註記。",
+            "label": "已到達第二地點"
+          },
+          "busy": {
+            "description": "將單位設為社區的忙碌狀態。",
+            "label": "繁忙"
+          },
+          "clearEditor": {
+            "description": "清除目前的 呼叫 檢視器 編輯器。",
+            "label": "清除呼叫檢視器"
+          },
+          "clearUnit": {
+            "description": "將單位或器材從通話中解除關聯。",
+            "label": "清空單位"
+          },
+          "closeCall": {
+            "description": "關閉指定的通話，或目前在 通話檢視器 中開啟的通話。",
+            "label": "關閉呼叫"
+          },
+          "codeFour": {
+            "description": "為單位的通話新增一則 Code 4 活動備註。",
+            "label": "Code 4"
+          },
+          "createCall": {
+            "description": "從任何已儲存的通話類型建立通話，可選擇單位、郵遞區號和後續描述。含有空格的通話類型請加上引號。",
+            "label": "建立已保存呼叫"
+          },
+          "dispatchUnit": {
+            "description": "將單位或器材指派到通話。如果省略通話，則使用開啟中的通話或該單位唯一的進行中通話。",
+            "label": "調度單位"
+          },
+          "enroute": {
+            "description": "將單位設為社區的前往中狀態。可選的尾隨詳細資料會新增至單位的呼叫。",
+            "label": "在途中"
+          },
+          "enrouteHospital": {
+            "description": "將狀態設為前往中，並為通話新增醫院運送活動備註。",
+            "label": "前往醫院途中"
+          },
+          "enrouteJail": {
+            "description": "將狀態設為前往中，並為通話新增監所運送活動備註。",
+            "label": "前往監獄途中"
+          },
+          "enrouteSecond": {
+            "description": "將狀態設為前往中，並為通話新增第二地點活動備註。",
+            "label": "前往第二地點"
+          },
+          "inService": {
+            "description": "將單位設為社區的可用狀態。",
+            "label": "在勤"
+          },
+          "outOfService": {
+            "description": "將單位設為社區的不可用狀態。",
+            "label": "停用"
+          },
+          "selfInitiated": {
+            "description": "在你目前啟用的單位位置建立已儲存通話，並自動附加你的單位，且可選擇郵遞區號和附加說明。",
+            "label": "自發呼叫"
+          },
+          "status": {
+            "description": "將單位或車輛設為社區狀態「{status}」。"
+          },
+          "trafficStop": {
+            "description": "使用單位的目前位置與可選車輛詳細資料，從已儲存的呼叫類型建立交通攔截呼叫。",
+            "label": "攔截交通"
+          },
+          "viewCall": {
+            "description": "在通話檢視器中開啟一個進行中的通話。",
+            "label": "查看呼叫"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "別名",
+        "aliasesHint": "以逗號分隔別名",
+        "allowedVariables": "允許：{variables}",
+        "argumentOrder": "參數順序",
+        "callDetails": "詳細資料：{details}",
+        "commandComplete": "{action} 完成。",
+        "commandReference": "指令參考",
+        "configurationImported": "指令設定已匯入。",
+        "configurationSaved": "指令設定已儲存。",
+        "customizeCommands": "自訂命令",
+        "customizeIntro": "將每個 CAD 動作對應到你機構的指揮代碼和參數順序。將 ? 加在可選參數後。",
+        "errors": {
+          "actionUnavailable": "此動作不可用。",
+          "callAmbiguous": "該單位已附加到多個呼叫。請包含呼叫 ID。",
+          "callNotFound": "作用中通話 {call} 找不到。",
+          "commandConflict": "{command} 已同時指派給 {first} 和 {second}。",
+          "commandFailed": "指令無法完成。",
+          "commandRequired": "{action} 需要主要指令。",
+          "currentUnitNotFound": "找不到您目前啟用的單位。請先選取或啟用單位，再使用 SI。",
+          "duplicateVariable": "{variable} 只能在參數順序中出現一次。",
+          "invalidCommand": "指令代碼只能包含字母、數字、連字號和底線：{command}。",
+          "invalidConfiguration": "指令設定無效。",
+          "invalidVariable": "{variable} 不是 {action} 的支援變數。",
+          "missingArgument": "缺少必要參數：{argument}。",
+          "noActiveCall": "無法推斷目前沒有進行中的通話。請包含通話 ID 或在通話檢視器中開啟該通話。",
+          "requiredVariable": "{action} 必須包含 {variable} 變數。",
+          "savedCallTypeNotFound": "找不到已儲存的通話類型「{type}」。請先儲存或匯入該通話類型。",
+          "tooManyArguments": "此命令的引數多於其設定的動作可接受的數量。",
+          "unitNotFound": "單位 {unit} 未啟用或找不到。",
+          "unknownCommand": "未知命令：{command}。輸入 ? 以開啟命令參考。"
+        },
+        "keyboardHint": "Enter 執行 • Tab 補完 • ↑/↓ 呼叫歷史記錄 • ? 開啟說明",
+        "nextArgument": "下一個: {argument}",
+        "noCommand": "未指派命令",
+        "placeholder": "輸入指令或開始輸入動作…",
+        "primaryCommand": "主要指令",
+        "referenceIntro": "指令不區分大小寫，且可在單位之前或之後輸入。多字詞值請加上引號，或將其放在最後一個參數中。像 call=123 這類具名值可在任何位置輸入。",
+        "resetDefaults": "重設預設值",
+        "runCommand": "執行指令",
+        "shortLabel": "指令 介面",
+        "trafficStopSavedType": "攔截交通",
+        "unitActivityNote": "{unit}：{activity}{details}",
+        "unitCount": "{count} 個單位",
+        "untitledCall": "無標題通話",
+        "variables": {
+          "call": "通報",
+          "description": "描述",
+          "details": "詳細資料",
+          "note": "備註",
+          "postal": "郵政編碼",
+          "type": "已保存的呼叫類型",
+          "unit": "單位"
+        }
+      },
       "close": "關閉",
       "commandLine": "命令行",
       "create": "創建",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "在指派通話時開啟通話檢視器",
     "close": "關閉",
+    "commandLineHotkeyTooltip": "CLI — 按鍵：{hotkey}",
     "desktop": "桌面",
     "displayTabIcons": "顯示標籤頁圖示",
     "displayTabLabels": "顯示標籤頁名稱",
