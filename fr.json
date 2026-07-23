@@ -1920,6 +1920,147 @@
       "attach": "Attacher",
       "callId": "ID de l'appel",
       "clear": "Effacé",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Ajouter une note texte à un appel actif.",
+            "label": "Ajouter une note d'appel"
+          },
+          "arrived": {
+            "description": "Mettre une unité au statut sur les lieux de la communauté.",
+            "label": "Arrivé / Sur les lieux"
+          },
+          "arrivedHospital": {
+            "description": "Marquer sur les lieux et ajouter une note d'arrivée à l'hôpital à l'appel.",
+            "label": "Arrivé à l'hôpital"
+          },
+          "arrivedSecond": {
+            "description": "Marquer sur les lieux et ajouter une note d'activité pour un second lieu à l'appel.",
+            "label": "Arrivé au deuxième emplacement"
+          },
+          "busy": {
+            "description": "Mettre une unité au statut occupé de la communauté.",
+            "label": "Occupé"
+          },
+          "clearEditor": {
+            "description": "Effacer l'éditeur actuel de la visionneuse d'appel.",
+            "label": "Effacer la visionneuse d'appel"
+          },
+          "clearUnit": {
+            "description": "Détacher une unité ou un véhicule d'une intervention.",
+            "label": "Effacer l'unité"
+          },
+          "closeCall": {
+            "description": "Fermer l'appel spécifié, ou l'appel actuellement ouvert dans Call Viewer.",
+            "label": "Fermer l'appel"
+          },
+          "codeFour": {
+            "description": "Ajouter une note d'activité Code 4 à l'appel de l'unité.",
+            "label": "Code 4"
+          },
+          "createCall": {
+            "description": "Créer un appel à partir de tout type d'appel enregistré, avec une unité, un code postal et une description de suivi facultatifs. Mettez entre guillemets les types d'appel qui contiennent des espaces.",
+            "label": "Créer une carte d'appel enregistrée"
+          },
+          "dispatchUnit": {
+            "description": "Affecter une unité ou un véhicule à un appel. Si l'appel est omis, utiliser l'appel ouvert ou l'unique appel actif de l'unité.",
+            "label": "Affecter une unité"
+          },
+          "enroute": {
+            "description": "Définir une unité au statut en route de la communauté. Les détails supplémentaires facultatifs sont ajoutés à l'appel de l'unité.",
+            "label": "En route"
+          },
+          "enrouteHospital": {
+            "description": "Définir en route et ajouter une note d'activité de transport à l'hôpital à l'appel.",
+            "label": "En route vers l'hôpital"
+          },
+          "enrouteJail": {
+            "description": "Définir en route et ajouter une note d'activité de transport en prison à l'appel.",
+            "label": "En route vers la prison"
+          },
+          "enrouteSecond": {
+            "description": "Définir en route et ajouter une note d'activité pour un second lieu à l'appel.",
+            "label": "En route vers le deuxième lieu"
+          },
+          "inService": {
+            "description": "Mettre une unité au statut disponible de la communauté.",
+            "label": "En service"
+          },
+          "outOfService": {
+            "description": "Mettre une unité au statut indisponible de la communauté.",
+            "label": "Hors service"
+          },
+          "selfInitiated": {
+            "description": "Créer un appel enregistré à l'emplacement actuel de votre unité active et y joindre automatiquement votre unité, avec un code postal et une description complémentaire facultatifs.",
+            "label": "Appel initié par soi-même"
+          },
+          "status": {
+            "description": "Mettre une unité ou un appareil au statut de la communauté « {status} »."
+          },
+          "trafficStop": {
+            "description": "Créer un appel de contrôle routier à partir d'un type d'appel enregistré, en utilisant la position actuelle de l'unité et les détails facultatifs du véhicule.",
+            "label": "Arrêt de la circulation"
+          },
+          "viewCall": {
+            "description": "Ouvrir un appel actif dans le visualiseur d'appels.",
+            "label": "Voir l'appel"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Alias",
+        "aliasesHint": "Séparez les alias par des virgules",
+        "allowedVariables": "Autorisé : {variables}",
+        "argumentOrder": "Ordre des arguments",
+        "callDetails": "Détails: {details}",
+        "commandComplete": "{action} terminé.",
+        "commandReference": "Référence de commande",
+        "configurationImported": "Configuration de la commande importée.",
+        "configurationSaved": "Configuration de la commande enregistrée.",
+        "customizeCommands": "Personnaliser les commandes",
+        "customizeIntro": "Associez chaque action CAD aux codes de commande et à l'ordre des arguments de votre agence. Ajoutez ? après un argument facultatif.",
+        "errors": {
+          "actionUnavailable": "Cette action n'est pas disponible.",
+          "callAmbiguous": "Cette unité est rattachée à plusieurs appels. Incluez l'ID de l'appel.",
+          "callNotFound": "L'appel actif {call} est introuvable.",
+          "commandConflict": "{command} est attribué à la fois à {first} et à {second}.",
+          "commandFailed": "La commande n'a pas pu être terminée.",
+          "commandRequired": "{action} nécessite une commande principale.",
+          "currentUnitNotFound": "Votre unité active est introuvable. Sélectionnez ou activez une unité avant d'utiliser SI.",
+          "duplicateVariable": "{variable} ne peut apparaître qu'une seule fois dans un ordre d'argument.",
+          "invalidCommand": "Les codes de commande ne peuvent contenir que des lettres, des chiffres, des tirets et des underscores : {command}.",
+          "invalidConfiguration": "La configuration de la commande est invalide.",
+          "invalidVariable": "{variable} n'est pas une variable prise en charge pour {action}.",
+          "missingArgument": "Argument requis manquant : {argument}.",
+          "noActiveCall": "Aucun appel actif n'a pu être déduit. Incluez l'ID de l'appel ou ouvrez l'appel dans Call Viewer.",
+          "requiredVariable": "{action} doit inclure la variable {variable}.",
+          "savedCallTypeNotFound": "Le type d'appel enregistré « {type} » est introuvable. Enregistrez ou importez d'abord ce type d'appel.",
+          "tooManyArguments": "Cette commande a plus d'arguments que l'action configurée n'en accepte.",
+          "unitNotFound": "L'unité {unit} n'est pas active ou est introuvable.",
+          "unknownCommand": "Commande inconnue : {command}. Tapez ? pour ouvrir la référence des commandes."
+        },
+        "keyboardHint": "Entrée exécute • Tab complète • ↑/↓ rappelle l’historique • ? ouvre l’aide",
+        "nextArgument": "Suivant : {argument}",
+        "noCommand": "Aucune commande assignée",
+        "placeholder": "Entrez une commande ou commencez à taper une action…",
+        "primaryCommand": "Commande principale",
+        "referenceIntro": "Les commandes ne sont pas sensibles à la casse et peuvent être saisies avant ou après l’unité. Mettez les valeurs à plusieurs mots entre guillemets, ou placez-les dans l’argument final. Les valeurs nommées telles que call=123 peuvent être saisies dans n’importe quelle position.",
+        "resetDefaults": "Rétablir les valeurs par défaut",
+        "runCommand": "Exécuter la commande",
+        "shortLabel": "Ligne de commande",
+        "trafficStopSavedType": "Arrêt de la circulation",
+        "unitActivityNote": "{unit} : {activity}{details}",
+        "unitCount": "{count} unités",
+        "untitledCall": "Appel sans titre",
+        "variables": {
+          "call": "appel",
+          "description": "Description",
+          "details": "détails",
+          "note": "note",
+          "postal": "Code postal",
+          "type": "Type d'Appel Enregistré",
+          "unit": "unité"
+        }
+      },
       "close": "Fermer",
       "commandLine": "Ligne de Commande",
       "create": "Créer",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Ouvrir le visualiseur d'appels lorsqu'un appel est attribué",
     "close": "Fermer",
+    "commandLineHotkeyTooltip": "CLI — Raccourci clavier: {hotkey}",
     "desktop": "Bureau",
     "displayTabIcons": "Afficher les icônes de l’onglet",
     "displayTabLabels": "Afficher les étiquettes de l’onglet",

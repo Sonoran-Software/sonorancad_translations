@@ -1920,6 +1920,147 @@
       "attach": "붙이다",
       "callId": "ID에 전화하세요",
       "clear": "분명한",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "활성 통화에 텍스트 메모를 추가합니다.",
+            "label": "통화 메모 추가"
+          },
+          "arrived": {
+            "description": "장치를 커뮤니티의 현장 상태로 설정합니다.",
+            "label": "도착 / 현장에"
+          },
+          "arrivedHospital": {
+            "description": "현장 도착으로 설정하고 호출에 병원 도착 활동 메모를 추가합니다.",
+            "label": "병원에 도착함"
+          },
+          "arrivedSecond": {
+            "description": "현장 도착으로 설정하고 호출에 두 번째 위치 활동 메모를 추가합니다.",
+            "label": "두 번째 위치에 도착"
+          },
+          "busy": {
+            "description": "장치를 커뮤니티의 사용 중 상태로 설정합니다.",
+            "label": "바쁘다"
+          },
+          "clearEditor": {
+            "description": "현재 통화 뷰어 편집기를 지웁니다.",
+            "label": "통화 뷰어 지우기"
+          },
+          "clearUnit": {
+            "description": "유닛 또는 장비를 호출에서 분리합니다.",
+            "label": "유닛 해제"
+          },
+          "closeCall": {
+            "description": "지정한 콜, 또는 Call Viewer에서 현재 열려 있는 콜을 닫습니다.",
+            "label": "통화 종료"
+          },
+          "codeFour": {
+            "description": "유닛의 출동에 코드 4 활동 메모를 추가합니다.",
+            "label": "코드 4"
+          },
+          "createCall": {
+            "description": "저장된 모든 출동 유형에서 출동을 생성합니다, 선택적으로 부대, 우편번호, 후행 설명을 포함할 수 있습니다. 공백이 포함된 출동 유형은 따옴표로 묶으세요.",
+            "label": "저장된 통화 생성"
+          },
+          "dispatchUnit": {
+            "description": "유닛 또는 장비를 호출에 연결합니다. 호출이 생략되면 열린 호출 또는 유닛의 유일한 활성 호출을 사용합니다.",
+            "label": "부대 보내다"
+          },
+          "enroute": {
+            "description": "부대를 지역사회의 출동중 상태로 설정합니다. 선택적인 뒤의 세부사항은 부대의 호출에 추가됩니다.",
+            "label": "도중에"
+          },
+          "enrouteHospital": {
+            "description": "출동 중으로 설정하고 통화에 병원 이송 활동 메모를 추가합니다.",
+            "label": "병원으로 이동 중"
+          },
+          "enrouteJail": {
+            "description": "출동 중으로 설정하고 통화에 교정시설 이송 활동 메모를 추가합니다.",
+            "label": "교도소로 도중에"
+          },
+          "enrouteSecond": {
+            "description": "출동 중으로 설정하고 통화에 두 번째 위치 활동 메모를 추가합니다.",
+            "label": "두 번째 위치로 이동 중"
+          },
+          "inService": {
+            "description": "장치를 커뮤니티의 사용 가능 상태로 설정합니다.",
+            "label": "근무 중"
+          },
+          "outOfService": {
+            "description": "장치를 커뮤니티의 사용 불가 상태로 설정합니다.",
+            "label": "운영 중지"
+          },
+          "selfInitiated": {
+            "description": "활성 유닛의 현재 위치에 저장된 통화를 생성하고 유닛을 자동으로 연결하며, 선택적으로 우편번호와 뒤따르는 설명을 추가합니다.",
+            "label": "자체 발신 통화"
+          },
+          "status": {
+            "description": "장치 또는 장비를 커뮤니티 상태 “{status}”로 설정합니다."
+          },
+          "trafficStop": {
+            "description": "저장된 호출 유형에서 단속 호출을 생성하고, 부서의 현재 위치와 선택 사항인 차량 세부 정보를 사용합니다.",
+            "label": "교통정지"
+          },
+          "viewCall": {
+            "description": "Call Viewer에서 활성 호출 열기.",
+            "label": "통화 보기"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "별칭",
+        "aliasesHint": "별칭은 쉼표로 구분",
+        "allowedVariables": "허용됨: {variables}",
+        "argumentOrder": "인수 순서",
+        "callDetails": "세부 정보: {details}",
+        "commandComplete": "{action} 완료.",
+        "commandReference": "명령 참조",
+        "configurationImported": "명령 구성 가져옴.",
+        "configurationSaved": "명령 구성 저장됨.",
+        "customizeCommands": "명령어 사용자 지정",
+        "customizeIntro": "각 CAD 작업을 기관의 명령 코드 및 인수 순서에 매핑하세요. 선택적 인수 뒤에는 ?를 추가하세요.",
+        "errors": {
+          "actionUnavailable": "이 작업은 사용할 수 없습니다.",
+          "callAmbiguous": "그 유닛은 여러 호출에 연결되어 있습니다. 호출 ID를 포함하세요.",
+          "callNotFound": "활성 통화 {call}를 찾을 수 없습니다.",
+          "commandConflict": "{command}이 {first}와 {second}에 모두 할당되어 있습니다.",
+          "commandFailed": "명령을 완료할 수 없습니다.",
+          "commandRequired": "{action}에는 기본 명령이 필요합니다.",
+          "currentUnitNotFound": "현재 활성 유닛을 찾을 수 없습니다. SI를 사용하기 전에 유닛을 선택하거나 활성화하세요.",
+          "duplicateVariable": "{variable}는 인수 순서에 한 번만 나타날 수 있습니다.",
+          "invalidCommand": "명령 코드는 문자, 숫자, 하이픈, 밑줄만 포함할 수 있습니다: {command}.",
+          "invalidConfiguration": "명령 구성은 유효하지 않음.",
+          "invalidVariable": "{variable}은 {action}에 지원되는 변수가 아닙니다.",
+          "missingArgument": "필수 인수가 누락되었습니다: {argument}.",
+          "noActiveCall": "활성 통화를 추론할 수 없습니다. 통화 ID를 포함하거나 Call Viewer에서 통화를 여세요.",
+          "requiredVariable": "{action} 에는 {variable} 변수 가 포함되어야 합니다.",
+          "savedCallTypeNotFound": "저장된 호출 유형 “{type}”을 찾을 수 없습니다. 먼저 해당 호출 유형을 저장하거나 가져오세요.",
+          "tooManyArguments": "이 명령은 설정된 작업이 허용하는 것보다 더 많은 인수를 가집니다.",
+          "unitNotFound": "{unit} 유닛이 활성 상태가 아니거나 찾을 수 없습니다.",
+          "unknownCommand": "알 수 없는 명령: {command}. 명령 참조를 열려면 ?를 입력하세요."
+        },
+        "keyboardHint": "Enter 실행 • Tab 완성 • ↑/↓ 기록 불러오기 • ? 도움말 열기",
+        "nextArgument": "다음: {argument}",
+        "noCommand": "명령이 할당되지 않음",
+        "placeholder": "명령을 입력하거나 작업 입력을 시작하세요…",
+        "primaryCommand": "기본 명령",
+        "referenceIntro": "명령어는 대소문자를 구분하지 않으며 부대 앞이나 뒤에 입력할 수 있습니다. 여러 단어로 된 값은 따옴표로 묶거나 마지막 인수에 넣으세요. call=123 같은 이름이 있는 값은 어떤 위치에나 입력할 수 있습니다.",
+        "resetDefaults": "기본값 재설정",
+        "runCommand": "명령 실행",
+        "shortLabel": "경찰 명령줄",
+        "trafficStopSavedType": "교통정지",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} 단위",
+        "untitledCall": "제목 없는 호출",
+        "variables": {
+          "call": "통화",
+          "description": "설명",
+          "details": "세부 정보",
+          "note": "메모",
+          "postal": "우편 엽서",
+          "type": "저장된 통화 유형",
+          "unit": "단위"
+        }
+      },
       "close": "닫다",
       "commandLine": "명령줄",
       "create": "만들다",
@@ -2801,6 +2942,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "통화에 할당되면 통화 뷰어 열기",
     "close": "닫다",
+    "commandLineHotkeyTooltip": "CLI — 단축키: {hotkey}",
     "desktop": "데스크톱",
     "displayTabIcons": "표시 탭 아이콘",
     "displayTabLabels": "표시 탭 레이블",

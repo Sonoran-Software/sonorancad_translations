@@ -1920,6 +1920,147 @@
       "attach": "Anhängen",
       "callId": "Anruf-ID",
       "clear": "Löschen",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Einen Textnotiz zu einem aktiven Einsatz hinzufügen.",
+            "label": "Einsatznotiz hinzufügen"
+          },
+          "arrived": {
+            "description": "Eine Einheit auf den Vor-Ort-Status der Gemeinde setzen.",
+            "label": "Eingetroffen / Am Ort"
+          },
+          "arrivedHospital": {
+            "description": "Am Einsatzort setzen und einen Hinweis zur Ankunft im Krankenhaus zum Einsatz hinzufügen.",
+            "label": "Im Krankenhaus angekommen"
+          },
+          "arrivedSecond": {
+            "description": "Am Einsatzort setzen und eine Aktivitätsnotiz für einen zweiten Ort zum Einsatz hinzufügen.",
+            "label": "An zweitem Ort angekommen"
+          },
+          "busy": {
+            "description": "Eine Einheit auf den beschäftigten Status der Gemeinde setzen.",
+            "label": "Beschäftigt"
+          },
+          "clearEditor": {
+            "description": "Leere den aktuellen Call Viewer-Editor.",
+            "label": "Einsatzansicht löschen"
+          },
+          "clearUnit": {
+            "description": "Eine Einheit oder ein Fahrzeug von einem Einsatz lösen.",
+            "label": "Einheit löschen"
+          },
+          "closeCall": {
+            "description": "Schließe den angegebenen Einsatz oder den aktuell im Call Viewer offenen Einsatz.",
+            "label": "Einsatz schließen"
+          },
+          "codeFour": {
+            "description": "Füge der Meldung der Einheit eine Code-4-Aktivitätsnotiz hinzu.",
+            "label": "Code 4"
+          },
+          "createCall": {
+            "description": "Einen Einsatz aus jedem gespeicherten Einsatztp erstellen, mit optionaler Einheit, Postleitzahl und nachgestellter Beschreibung. Einsatztpen in Anführungszeichen setzen, die Leerzeichen enthalten.",
+            "label": "Gespeicherten Einsatz erstellen"
+          },
+          "dispatchUnit": {
+            "description": "Einer Einsatzmeldung eine Einheit oder ein Fahrzeug zuweisen. Wenn keine Einsatzmeldung angegeben ist, die offene Einsatzmeldung oder den einzigen aktiven Einsatz der Einheit verwenden.",
+            "label": "Einheit einsetzen"
+          },
+          "enroute": {
+            "description": "Setze eine Einheit auf den Enroute-Status der Gemeinde. Optionale nachgestellte Details werden dem Einsatz der Einheit hinzugefügt.",
+            "label": "Unterwegs"
+          },
+          "enrouteHospital": {
+            "description": "Auf \"unterwegs\" setzen und eine Aktivitätsnotiz für den Krankenhaustransport zum Einsatz hinzufügen.",
+            "label": "Auf dem Weg zum Krankenhaus"
+          },
+          "enrouteJail": {
+            "description": "Auf \"unterwegs\" setzen und eine Aktivitätsnotiz für den Gefangenentransport zum Einsatz hinzufügen.",
+            "label": "Unterwegs zur Haftanstalt"
+          },
+          "enrouteSecond": {
+            "description": "Auf \"unterwegs\" setzen und eine Aktivitätsnotiz für einen zweiten Ort zum Einsatz hinzufügen.",
+            "label": "Auf dem Weg zum zweiten Einsatzort"
+          },
+          "inService": {
+            "description": "Eine Einheit auf den verfügbaren Status der Gemeinde setzen.",
+            "label": "Im Dienst"
+          },
+          "outOfService": {
+            "description": "Eine Einheit auf den nicht verfügbaren Status der Gemeinde setzen.",
+            "label": "Außer Dienst"
+          },
+          "selfInitiated": {
+            "description": "Erstelle einen gespeicherten Einsatz an der aktuellen Position deiner aktiven Einheit und füge automatisch deine Einheit hinzu, mit optionaler Adresse und nachfolgender Beschreibung.",
+            "label": "Selbstinitiierter Anruf"
+          },
+          "status": {
+            "description": "Eine Einheit oder ein Fahrzeug auf den Gemeinde-Status „{status}“ setzen."
+          },
+          "trafficStop": {
+            "description": "Einen Verkehrsstopp-Einsatz aus einem gespeicherten Einsatztpy erstellen, wobei der aktuelle Standort der Einheit und optionale Fahrzeugdetails verwendet werden.",
+            "label": "Verkehrsstopp"
+          },
+          "viewCall": {
+            "description": "Einen aktiven Einsatz im Einsatz-Viewer öffnen.",
+            "label": "Einsatz anzeigen"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliasse",
+        "aliasesHint": "Aliasse durch Kommas trennen",
+        "allowedVariables": "Erlaubt: {variables}",
+        "argumentOrder": "Argumentreihenfolge",
+        "callDetails": "Details: {details}",
+        "commandComplete": "{action} abgeschlossen.",
+        "commandReference": "Befehlsreferenz",
+        "configurationImported": "Befehlskonfiguration importiert.",
+        "configurationSaved": "Befehlskonfiguration gespeichert.",
+        "customizeCommands": "Befehle anpassen",
+        "customizeIntro": "Ordne jede CAD-Aktion den Befehlscodes und der Argumentreihenfolge deiner Behörde zu. Füge ? nach einem optionalen Argument hinzu.",
+        "errors": {
+          "actionUnavailable": "Diese Aktion ist nicht verfügbar.",
+          "callAmbiguous": "Diese Einheit ist mehreren Einsätzen zugeordnet. Geben Sie die Einsatz-ID an.",
+          "callNotFound": "Aktiver Einsatz {call} konnte nicht gefunden werden.",
+          "commandConflict": "{command} ist sowohl {first} als auch {second} zugewiesen.",
+          "commandFailed": "Der Befehl konnte nicht abgeschlossen werden.",
+          "commandRequired": "{action} benötigt einen Hauptbefehl.",
+          "currentUnitNotFound": "Deine aktive Einheit konnte nicht gefunden werden. Wähle oder aktiviere eine Einheit, bevor du SI verwendest.",
+          "duplicateVariable": "{variable} kann in einer Argumentreihenfolge nur einmal vorkommen.",
+          "invalidCommand": "Befehlscodes dürfen nur Buchstaben, Zahlen, Bindestriche und Unterstriche enthalten: {command}.",
+          "invalidConfiguration": "Die Befehlskonfiguration ist ungültig.",
+          "invalidVariable": "{variable} ist keine unterstützte Variable für {action}.",
+          "missingArgument": "Fehlendes erforderliches Argument: {argument}.",
+          "noActiveCall": "Es konnte kein aktiver Einsatz ermittelt werden. Füge die Einsatz-ID hinzu oder öffne den Einsatz im Call Viewer.",
+          "requiredVariable": "{action} muss die Variable {variable} enthalten.",
+          "savedCallTypeNotFound": "Gespeicherter Einsatztentyp „{type}“ konnte nicht gefunden werden. Speichere oder importiere diesen Einsatztentyp zuerst.",
+          "tooManyArguments": "Dieser Befehl hat mehr Argumente, als seine konfigurierte Aktion akzeptiert.",
+          "unitNotFound": "Einheit {unit} ist nicht aktiv oder konnte nicht gefunden werden.",
+          "unknownCommand": "Unbekannter Befehl: {command}. Tippe ? , um die Befehlsreferenz zu öffnen."
+        },
+        "keyboardHint": "Eingabe führt aus • Tab vervollständigt • ↑/↓ ruft Verlauf auf • ? öffnet Hilfe",
+        "nextArgument": "Nächste: {argument}",
+        "noCommand": "Kein Befehl zugewiesen",
+        "placeholder": "Geben Sie einen Befehl ein oder beginnen Sie, eine Aktion zu tippen…",
+        "primaryCommand": "Hauptbefehl",
+        "referenceIntro": "Befehle sind nicht zwischen Groß- und Kleinschreibung unterschieden und können vor oder nach der Einheit eingegeben werden. Setzen Sie mehrteilige Werte in Anführungszeichen oder geben Sie sie im letzten Argument ein. Benannte Werte wie call=123 können an jeder Position eingegeben werden.",
+        "resetDefaults": "Standardeinstellungen zurücksetzen",
+        "runCommand": "Befehl ausführen",
+        "shortLabel": "Kommandozeile",
+        "trafficStopSavedType": "Verkehrsstopp",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} Einheiten",
+        "untitledCall": "Unbenannter Einsatz",
+        "variables": {
+          "call": "Einsatz",
+          "description": "Beschreibung",
+          "details": "Details",
+          "note": "Notiz",
+          "postal": "Postleitzahl",
+          "type": "gespeicherter Anruftyp",
+          "unit": "Einheit"
+        }
+      },
       "close": "Schließen",
       "commandLine": "Befehlszeile",
       "create": "Erstellen",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Anrufansicht öffnen, wenn ein Anruf zugewiesen wird",
     "close": "Schließen",
+    "commandLineHotkeyTooltip": "CLI — Tastenkürzel: {hotkey}",
     "desktop": "Desktop",
     "displayTabIcons": "Tab-Symbole anzeigen",
     "displayTabLabels": "Tab-Beschriftungen anzeigen",

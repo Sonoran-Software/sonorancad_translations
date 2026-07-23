@@ -1919,6 +1919,147 @@
       "attach": "Bijvoegen",
       "callId": "Melding ID",
       "clear": "Wissen",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Voeg een tekstnotitie toe aan een actieve oproep.",
+            "label": "Meldingnotitie toevoegen"
+          },
+          "arrived": {
+            "description": "Stel een eenheid in op de ter plaatse status van de gemeenschap.",
+            "label": "Aangekomen / Ter plaatse"
+          },
+          "arrivedHospital": {
+            "description": "Zet ter plaatse en voeg een notitie toe over de aankomst in het ziekenhuis aan de oproep.",
+            "label": "Aangekomen in het ziekenhuis"
+          },
+          "arrivedSecond": {
+            "description": "Zet ter plaatse en voeg een activiteitennotitie op een tweede locatie toe aan de oproep.",
+            "label": "Aangekomen op tweede locatie"
+          },
+          "busy": {
+            "description": "Stel een eenheid in op de bezette status van de gemeenschap.",
+            "label": "Bezig"
+          },
+          "clearEditor": {
+            "description": "Wis de huidige Call Viewer-editor.",
+            "label": "Wissen van melding kijker"
+          },
+          "clearUnit": {
+            "description": "Koppel een eenheid of voertuig los van een oproep.",
+            "label": "Eenheid wissen"
+          },
+          "closeCall": {
+            "description": "Sluit de opgegeven oproep, of de momenteel geopende oproep in Call Viewer.",
+            "label": "Sluit Melding"
+          },
+          "codeFour": {
+            "description": "Voeg een Code 4-activiteitsnotitie toe aan de oproep van de eenheid.",
+            "label": "Code 4"
+          },
+          "createCall": {
+            "description": "Maak een oproep aan van elk opgeslagen oproeptype, met een optionele eenheid, postcode en aanvullende beschrijving. Zet oproeptypes met spaties tussen aanhalingstekens.",
+            "label": "Opgeslagen Melding Aanmaken"
+          },
+          "dispatchUnit": {
+            "description": "Koppel een eenheid of voertuig aan een oproep. Als de oproep wordt weggelaten, gebruik de open oproep of de enige actieve oproep van de eenheid.",
+            "label": "Eenheid dispatchen"
+          },
+          "enroute": {
+            "description": "Zet een eenheid op de enroute-status van de gemeenschap. Optionele bijkomende details worden toegevoegd aan de oproep van de eenheid.",
+            "label": "Onderweg"
+          },
+          "enrouteHospital": {
+            "description": "Zet enroute en voeg een activiteitennotitie voor een ziekenhuisvervoer toe aan de oproep.",
+            "label": "Op weg naar het ziekenhuis"
+          },
+          "enrouteJail": {
+            "description": "Zet enroute en voeg een activiteitennotitie voor een gevangenenvervoer toe aan de oproep.",
+            "label": "Onderweg naar de cel"
+          },
+          "enrouteSecond": {
+            "description": "Zet enroute en voeg een activiteitennotitie op een tweede locatie toe aan de oproep.",
+            "label": "Onderweg naar tweede locatie"
+          },
+          "inService": {
+            "description": "Stel een eenheid in op de beschikbare status van de gemeenschap.",
+            "label": "In dienst"
+          },
+          "outOfService": {
+            "description": "Stel een eenheid in op de niet-beschikbare status van de gemeenschap.",
+            "label": "Buiten dienst"
+          },
+          "selfInitiated": {
+            "description": "Maak een opgeslagen oproep aan op de huidige locatie van je actieve eenheid en koppel automatisch je eenheid, met een optionele postcode en extra beschrijving.",
+            "label": "Zelfgestarte oproep"
+          },
+          "status": {
+            "description": "Stel een eenheid of voertuig in op de gemeenschapsstatus “{status}”."
+          },
+          "trafficStop": {
+            "description": "Maak een verkeersstopmelding aan vanuit een opgeslagen meldingstype, met gebruik van de huidige locatie van de eenheid en optionele voertuiggegevens.",
+            "label": "Verkeersstop"
+          },
+          "viewCall": {
+            "description": "Open een actieve oproep in Call Viewer.",
+            "label": "Bekijk melding"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliassen",
+        "aliasesHint": "Scheid aliassen met komma's",
+        "allowedVariables": "Toegelaten: {variables}",
+        "argumentOrder": "Argumentvolgorde",
+        "callDetails": "Details: {details}",
+        "commandComplete": "{action} voltooid.",
+        "commandReference": "Opdrachtverwijzing",
+        "configurationImported": "Commando-configuratie geïmporteerd.",
+        "configurationSaved": "Commando-configuratie opgeslagen.",
+        "customizeCommands": "Opdrachten aanpassen",
+        "customizeIntro": "Koppel elke CAD-actie aan de commandocodes van je dienst en de volgorde van de argumenten. Voeg ? toe na een optioneel argument.",
+        "errors": {
+          "actionUnavailable": "Deze actie is niet beschikbaar.",
+          "callAmbiguous": "Die eenheid is aan meerdere oproepen gekoppeld. Voeg het oproep-ID toe.",
+          "callNotFound": "Actieve oproep {call} kon niet worden gevonden.",
+          "commandConflict": "{command} is toegewezen aan zowel {first} als {second}.",
+          "commandFailed": "De opdracht kon niet worden voltooid.",
+          "commandRequired": "{action} heeft een primair commando nodig.",
+          "currentUnitNotFound": "Je actieve eenheid kon niet worden gevonden. Selecteer of activeer een eenheid voordat je SI gebruikt.",
+          "duplicateVariable": "{variable} kan maar één keer voorkomen in een argumentvolgorde.",
+          "invalidCommand": "Commandcodes mogen alleen letters, cijfers, koppeltekens en underscores bevatten: {command}.",
+          "invalidConfiguration": "De commandoconfiguratie is ongeldig.",
+          "invalidVariable": "{variable} is geen ondersteunde variabele voor {action}.",
+          "missingArgument": "Ontbrekend vereist argument: {argument}.",
+          "noActiveCall": "Er kon geen actieve oproep worden afgeleid. Vermeld de oproep-ID of open de oproep in Call Viewer.",
+          "requiredVariable": "{action} moet de variabele {variable} bevatten.",
+          "savedCallTypeNotFound": "Opgeslagen oproeptype “{type}” kon niet worden gevonden. Sla dat oproeptype eerst op of importeer het.",
+          "tooManyArguments": "Dit commando heeft meer argumenten dan de geconfigureerde actie accepteert.",
+          "unitNotFound": "Eenheid {unit} is niet actief of kon niet worden gevonden.",
+          "unknownCommand": "Onbekend commando: {command}. Typ ? om de commandoreferentie te openen."
+        },
+        "keyboardHint": "Enter voert uit • Tab voltooit • ↑/↓ roept geschiedenis op • ? opent help",
+        "nextArgument": "Volgende: {argument}",
+        "noCommand": "Geen commando toegewezen",
+        "placeholder": "Voer een opdracht in of begin een actie te typen…",
+        "primaryCommand": "Primair commando",
+        "referenceIntro": "Opdrachten zijn niet hoofdlettergevoelig en kunnen voor of na de eenheid worden ingevoerd. Zet waarden met meerdere woorden tussen aanhalingstekens, of plaats ze in het laatste argument. Genoemde waarden zoals call=123 kunnen op elke positie worden ingevoerd.",
+        "resetDefaults": "Standaardwaarden herstellen",
+        "runCommand": "Voer commando uit",
+        "shortLabel": "CLI",
+        "trafficStopSavedType": "Verkeersstop",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} eenheden",
+        "untitledCall": "Ongenoemde oproep",
+        "variables": {
+          "call": "melding",
+          "description": "Beschrijving",
+          "details": "details",
+          "note": "Notitie",
+          "postal": "Postcode",
+          "type": "Opgeslagen meldingstype",
+          "unit": "eenheid"
+        }
+      },
       "close": "Sluit",
       "commandLine": "Commandoregel",
       "create": "Maak",
@@ -2809,6 +2950,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Open oproepviewer wanneer toegewezen aan een oproep",
     "close": "Sluit",
+    "commandLineHotkeyTooltip": "CLI — Sneltoets: {hotkey}",
     "desktop": "Bureaublad",
     "displayTabIcons": "Toon tab iconen",
     "displayTabLabels": "Toon tab namen",

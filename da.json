@@ -1919,6 +1919,147 @@
       "attach": "Vedhæft",
       "callId": "Opkalds-ID",
       "clear": "Ryd",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Tilføj en tekstnote til et aktivt opkald.",
+            "label": "Tilføj opkaldsnote"
+          },
+          "arrived": {
+            "description": "Sæt en enhed til fællesskabets status på stedet.",
+            "label": "Ankommet / På stedet"
+          },
+          "arrivedHospital": {
+            "description": "Angiv på stedet og tilføj en notits om ankomst til hospitalet til opkaldet.",
+            "label": "Ankommet til hospitalet"
+          },
+          "arrivedSecond": {
+            "description": "Angiv på stedet og tilføj en aktivitetnote for anden lokation til opkaldet.",
+            "label": "Ankommet til anden lokation"
+          },
+          "busy": {
+            "description": "Sæt en enhed til fællesskabets optagede status.",
+            "label": "Optaget"
+          },
+          "clearEditor": {
+            "description": "Ryd den aktuelle Call Viewer-editor.",
+            "label": "Ryd opkaldsvisning"
+          },
+          "clearUnit": {
+            "description": "Frakobl en enhed eller et køretøj fra et kald.",
+            "label": "Ryd enhed"
+          },
+          "closeCall": {
+            "description": "Luk den angivne sag, eller den sag, der i øjeblikket er åben i Call Viewer.",
+            "label": "Luk opkald"
+          },
+          "codeFour": {
+            "description": "Tilføj en Code 4-aktivitetsnote til enhedens kald.",
+            "label": "Kode 4"
+          },
+          "createCall": {
+            "description": "Opret et opkald ud fra en hvilken som helst gemt opkaldstype, med en valgfri enhed, postnummer og efterfølgende beskrivelse. Sæt opkaldstyper med mellemrum i anførselstegn.",
+            "label": "Opret gemt opkald"
+          },
+          "dispatchUnit": {
+            "description": "Tilknyt en enhed eller et apparat til et kald. Hvis kaldet udelades, bruges det åbne kald eller enhedens eneste aktive kald.",
+            "label": "Afsend enhed"
+          },
+          "enroute": {
+            "description": "Sæt en enhed til fællesskabets enroute-status. Valgfrie efterfølgende detaljer tilføjes til enhedens kald.",
+            "label": "På vej"
+          },
+          "enrouteHospital": {
+            "description": "Sæt en route og tilføj en aktivitetnote for hospitalstransport til opkaldet.",
+            "label": "På vej til hospitalet"
+          },
+          "enrouteJail": {
+            "description": "Sæt en route og tilføj en aktivitetnote for fængselstransport til opkaldet.",
+            "label": "På vej til fængsel"
+          },
+          "enrouteSecond": {
+            "description": "Sæt en route og tilføj en aktivitetnote for anden lokation til opkaldet.",
+            "label": "På vej til anden lokation"
+          },
+          "inService": {
+            "description": "Sæt en enhed til fællesskabets tilgængelige status.",
+            "label": "I tjeneste"
+          },
+          "outOfService": {
+            "description": "Sæt en enhed til fællesskabets ikke tilgængelige status.",
+            "label": "Ude af drift"
+          },
+          "selfInitiated": {
+            "description": "Opret et gemt opkald på din aktive enheds aktuelle placering og tilknyt automatisk din enhed, med en valgfri postadresse og efterfølgende beskrivelse.",
+            "label": "Selvinitieret opkald"
+          },
+          "status": {
+            "description": "Sæt en enhed eller et apparat til fællesskabets status “{status}”."
+          },
+          "trafficStop": {
+            "description": "Opret en trafikstop-udrykning fra en gemt udrykningstype ved at bruge enhedens aktuelle placering og valgfrie køretøjsoplysninger.",
+            "label": "Trafikstop"
+          },
+          "viewCall": {
+            "description": "Åbn et aktivt opkald i Call Viewer.",
+            "label": "Se opkald"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliasser",
+        "aliasesHint": "Adskil aliaser med kommaer",
+        "allowedVariables": "Tilladt: {variables}",
+        "argumentOrder": "Argumentrækkefølge",
+        "callDetails": "Detaljer: {details}",
+        "commandComplete": "{action} fuldført.",
+        "commandReference": "Kommandoreference",
+        "configurationImported": "Kommando-konfiguration importeret.",
+        "configurationSaved": "Kommando-konfiguration gemt.",
+        "customizeCommands": "Tilpas kommandoer",
+        "customizeIntro": "Kortlæg hver CAD-handling til dit agenturs kommando-koder og argumentrækkefølge. Tilføj ? efter et valgfrit argument.",
+        "errors": {
+          "actionUnavailable": "Denne handling er ikke tilgængelig.",
+          "callAmbiguous": "Den enhed er tilknyttet flere opkald. Inkluder opkalds-ID'et.",
+          "callNotFound": "Aktivt opkald {call} kunne ikke findes.",
+          "commandConflict": "{command} er tildelt både {first} og {second}.",
+          "commandFailed": "Kommandoen kunne ikke fuldføres.",
+          "commandRequired": "{action} kræver en primær kommando.",
+          "currentUnitNotFound": "Din aktive enhed kunne ikke findes. Vælg eller aktivér en enhed, før du bruger SI.",
+          "duplicateVariable": "{variable} kan kun forekomme én gang i en argumentrækkefølge.",
+          "invalidCommand": "Kommando-koder må kun indeholde bogstaver, tal, bindestreger og understregninger: {command}.",
+          "invalidConfiguration": "Kommando-konfigurationen er ugyldig.",
+          "invalidVariable": "{variable} er ikke en understøttet variabel for {action}.",
+          "missingArgument": "Mangler påkrævet argument: {argument}.",
+          "noActiveCall": "Ingen aktiv sag kunne udledes. Inkluder sags-ID'et eller åbn sagen i Call Viewer.",
+          "requiredVariable": "{action} skal indeholde variablen {variable}.",
+          "savedCallTypeNotFound": "Det gemte opkaldstype “{type}” kunne ikke findes. Gem eller importér den opkaldstype først.",
+          "tooManyArguments": "Denne kommando har flere argumenter, end dens konfigurerede handling accepterer.",
+          "unitNotFound": "Enhed {unit} er ikke aktiv eller kunne ikke findes.",
+          "unknownCommand": "Ukendt kommando: {command}. Skriv ? for at åbne kommandoreferencen."
+        },
+        "keyboardHint": "Enter kører • Tab fuldfører • ↑/↓ kalder historik frem • ? åbner hjælp",
+        "nextArgument": "Næste: {argument}",
+        "noCommand": "Ingen kommando tildelt",
+        "placeholder": "Indtast en kommando eller begynd at skrive en handling…",
+        "primaryCommand": "Primær kommando",
+        "referenceIntro": "Kommandoer er ikke store og små bogstaver-følsomme og kan indtastes før eller efter enheden. Sæt værdier med flere ord i anførselstegn, eller placer dem i det sidste argument. Navngivne værdier som call=123 kan indtastes i ნებისმ position.",
+        "resetDefaults": "Nulstil standardindstillinger",
+        "runCommand": "Kør kommando",
+        "shortLabel": "CLI",
+        "trafficStopSavedType": "Trafikstop",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} enheder",
+        "untitledCall": "Opkald uden titel",
+        "variables": {
+          "call": "opkald",
+          "description": "beskrivelse",
+          "details": "detaljer",
+          "note": "note",
+          "postal": "postnummer",
+          "type": "gemt kaldetype",
+          "unit": "enhed"
+        }
+      },
       "close": "Luk",
       "commandLine": "Kommandolinje",
       "create": "Opret",
@@ -2800,6 +2941,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Åbn opkaldsvisning, når tildelt et opkald",
     "close": "Luk",
+    "commandLineHotkeyTooltip": "CLI — Genvejstast: {hotkey}",
     "desktop": "Skrivebord",
     "displayTabIcons": "Vis fanebladeikoner",
     "displayTabLabels": "Vis fanebladeetiketter",

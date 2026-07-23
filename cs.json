@@ -1920,6 +1920,147 @@
       "attach": "Připojit",
       "callId": "ID hovoru",
       "clear": "Vymazat",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "Přidat textovou poznámku k aktivnímu hovoru.",
+            "label": "Přidat poznámku k hovoru"
+          },
+          "arrived": {
+            "description": "Nastavte jednotku do stavu komunity na místě.",
+            "label": "Na místě"
+          },
+          "arrivedHospital": {
+            "description": "Nastavit na místě a přidat k hovoru poznámku o příjezdu do nemocnice.",
+            "label": "Příjezd do nemocnice"
+          },
+          "arrivedSecond": {
+            "description": "Nastavit na místě a přidat k hovoru poznámku o aktivitě na druhém místě.",
+            "label": "Dorazil na druhé místo"
+          },
+          "busy": {
+            "description": "Nastavte jednotku do zaneprázdněného stavu pro komunitu.",
+            "label": "Zaneprázdněno"
+          },
+          "clearEditor": {
+            "description": "Vymazat aktuální editor Prohlížeče hovorů.",
+            "label": "Vymazat Prohlížeč hovorů"
+          },
+          "clearUnit": {
+            "description": "Odpojit jednotku nebo vozidlo od zásahu.",
+            "label": "Vymazat jednotku"
+          },
+          "closeCall": {
+            "description": "Zavřete zadaný hovor nebo aktuálně otevřený hovor v Zobrazení hovorů.",
+            "label": "Uzavřít případ"
+          },
+          "codeFour": {
+            "description": "Přidejte poznámku o aktivitě Code 4 k hovoru jednotky.",
+            "label": "Kód 4"
+          },
+          "createCall": {
+            "description": "Vytvořte hovor z libovolného uloženého typu hovoru s volitelnou jednotkou, PSČ a doplňujícím popisem. U typů hovorů, které obsahují mezery, použijte uvozovky.",
+            "label": "Vytvořit uložený hovor"
+          },
+          "dispatchUnit": {
+            "description": "Přiřadit jednotku nebo vozidlo k hlášení. Pokud je hlášení vynecháno, použijte otevřené hlášení nebo jediný aktivní hovor jednotky.",
+            "label": "Odeslat jednotku"
+          },
+          "enroute": {
+            "description": "Nastavit jednotku do statusu na cestě ke komunitě. Volitelné doplňující detaily budou přidány k hovoru jednotky.",
+            "label": "Na cestě"
+          },
+          "enrouteHospital": {
+            "description": "Nastavit jako na cestě a přidat ke volání poznámku o převozu do nemocnice.",
+            "label": "Na cestě do nemocnice"
+          },
+          "enrouteJail": {
+            "description": "Nastavit jako na cestě a přidat ke volání poznámku o převozu do vězení.",
+            "label": "Na cestě do vazby"
+          },
+          "enrouteSecond": {
+            "description": "Nastavit jako na cestě a přidat ke volání poznámku o aktivitě na druhém místě.",
+            "label": "Na cestě na druhé místo"
+          },
+          "inService": {
+            "description": "Nastavte jednotku do dostupného stavu pro komunitu.",
+            "label": "Ve službě"
+          },
+          "outOfService": {
+            "description": "Nastavte jednotku do nedostupného stavu pro komunitu.",
+            "label": "Mimo službu"
+          },
+          "selfInitiated": {
+            "description": "Vytvořte uložený hovor na aktuální poloze své aktivní jednotky a automaticky k němu připojte svou jednotku s volitelným poštovním směrovacím číslem a doplňujícím popisem.",
+            "label": "Vlastní volání"
+          },
+          "status": {
+            "description": "Nastavte jednotku nebo techniku do stavu komunity „{status}“."
+          },
+          "trafficStop": {
+            "description": "Vytvořit hovor o zastavení vozidla z uloženého typu hovoru s použitím aktuální polohy jednotky a volitelných údajů o vozidle.",
+            "label": "Policejní zastavení"
+          },
+          "viewCall": {
+            "description": "Otevřít aktivní hovor v prohlížeči hovorů.",
+            "label": "Zobrazit hovor"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "Aliasy",
+        "aliasesHint": "Oddělte aliasy čárkami",
+        "allowedVariables": "Povoleno: {variables}",
+        "argumentOrder": "Pořadí argumentů",
+        "callDetails": "Detaily: {details}",
+        "commandComplete": "{action} dokončeno.",
+        "commandReference": "Přehled příkazů",
+        "configurationImported": "Konfigurace příkazu importována.",
+        "configurationSaved": "Konfigurace příkazu uložena.",
+        "customizeCommands": "Přizpůsobit příkazy",
+        "customizeIntro": "Přiřaďte každou akci CAD k příkazovým kódům vaší agentury a pořadí argumentů. Za volitelný argument přidejte ?.",
+        "errors": {
+          "actionUnavailable": "Tato akce není k dispozici.",
+          "callAmbiguous": "Ta jednotka je přiřazena k více hovorům. Uveďte ID hovoru.",
+          "callNotFound": "Aktivní hovor {call} nebyl nalezen.",
+          "commandConflict": "{command} je přiřazen k {first} i {second}.",
+          "commandFailed": "Příkaz nebylo možné dokončit.",
+          "commandRequired": "{action} potřebuje primární příkaz.",
+          "currentUnitNotFound": "Vaše aktivní jednotka nebyla nalezena. Vyberte nebo aktivujte jednotku před použitím SI.",
+          "duplicateVariable": "{variable} se může objevit pouze jednou v pořadí argumentů.",
+          "invalidCommand": "Kódy příkazů mohou obsahovat pouze písmena, čísla, spojovníky a podtržítka: {command}.",
+          "invalidConfiguration": "Konfigurace příkazu je neplatná.",
+          "invalidVariable": "{variable} není podporovaná proměnná pro {action}.",
+          "missingArgument": "Chybí povinný argument: {argument}.",
+          "noActiveCall": "Nelze odvodit žádné aktivní volání. Uveďte ID volání nebo otevřete volání v prohlížeči volání.",
+          "requiredVariable": "{action} musí obsahovat proměnnou {variable}.",
+          "savedCallTypeNotFound": "Uložený typ hovoru „{type}“ nebyl nalezen. Nejprve tento typ hovoru uložte nebo importujte.",
+          "tooManyArguments": "Tento příkaz má více argumentů, než jeho nakonfigurovaná akce přijímá.",
+          "unitNotFound": "Jednotka {unit} není aktivní nebo nebyla nalezena.",
+          "unknownCommand": "Neznámý příkaz: {command}. Zadejte ? pro otevření odkazu na příkazy."
+        },
+        "keyboardHint": "Enter spustí • Tab doplní • ↑/↓ vyvolá historii • ? otevře nápovědu",
+        "nextArgument": "Další: {argument}",
+        "noCommand": "Žádný příkaz není přiřazen",
+        "placeholder": "Zadejte příkaz nebo začněte psát akci…",
+        "primaryCommand": "Primární příkaz",
+        "referenceIntro": "Příkazy nerozlišují velikost písmen a lze je zadat před nebo za jednotkou. Víceslovné hodnoty dejte do uvozovek nebo je vložte do posledního argumentu. Pojmenované hodnoty jako call=123 lze zadat na libovolné pozici.",
+        "resetDefaults": "Obnovit výchozí hodnoty",
+        "runCommand": "Spustit příkaz",
+        "shortLabel": "Příkazový řádek",
+        "trafficStopSavedType": "Policejní zastavení",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} jednotek",
+        "untitledCall": "Hovor bez názvu",
+        "variables": {
+          "call": "hovor",
+          "description": "Popis",
+          "details": "detaily",
+          "note": "poznámka",
+          "postal": "poštovní",
+          "type": "uložený typ hovoru",
+          "unit": "jednotka"
+        }
+      },
       "close": "Zavřít",
       "commandLine": "Příkazový řádek",
       "create": "Vytvořit",
@@ -2801,6 +2942,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "Otevřít zobrazení hovoru při přiřazení k hovoru",
     "close": "Zavřít",
+    "commandLineHotkeyTooltip": "CLI — Klávesová zkratka: {hotkey}",
     "desktop": "Plocha",
     "displayTabIcons": "Zobrazit ikony karet",
     "displayTabLabels": "Zobrazit popisky karet",
