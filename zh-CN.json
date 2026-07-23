@@ -1920,6 +1920,147 @@
       "attach": "附加",
       "callId": "呼叫 ID",
       "clear": "清除",
+      "cli": {
+        "actions": {
+          "addNote": {
+            "description": "向一个正在进行的呼叫添加文本备注。",
+            "label": "添加呼叫备注"
+          },
+          "arrived": {
+            "description": "将单位设为社区现场状态。",
+            "label": "已到达 / 在现场"
+          },
+          "arrivedHospital": {
+            "description": "到场并为该通话添加医院到达活动备注。",
+            "label": "到达医院"
+          },
+          "arrivedSecond": {
+            "description": "到场并为该呼叫添加第二地点活动备注。",
+            "label": "到达第二地点"
+          },
+          "busy": {
+            "description": "将单位设为社区忙碌状态。",
+            "label": "繁忙"
+          },
+          "clearEditor": {
+            "description": "清除当前呼叫查看器编辑器。",
+            "label": "清除呼叫查看器"
+          },
+          "clearUnit": {
+            "description": "将单位或设备从呼叫中分离。",
+            "label": "清除单位"
+          },
+          "closeCall": {
+            "description": "关闭指定的呼叫，或 Call Viewer 中当前打开的呼叫。",
+            "label": "关闭呼叫"
+          },
+          "codeFour": {
+            "description": "为单元的呼叫添加 Code 4 活动备注。",
+            "label": "4代码"
+          },
+          "createCall": {
+            "description": "从任何已保存的呼叫类型创建呼叫，可选单位、邮政编码和后续描述。包含空格的呼叫类型请加引号。",
+            "label": "创建已保存的呼叫"
+          },
+          "dispatchUnit": {
+            "description": "将一个单位或装备附加到一个呼叫。如果省略呼叫，则使用打开的呼叫或该单位唯一的活动呼叫。",
+            "label": "调度单元"
+          },
+          "enroute": {
+            "description": "将一个单位设置为社区的在途状态。可选的尾随详情将添加到该单位的呼叫中。",
+            "label": "在途中"
+          },
+          "enrouteHospital": {
+            "description": "设置已在途中并为该呼叫添加医院运送活动备注。",
+            "label": "前往医院途中"
+          },
+          "enrouteJail": {
+            "description": "设置已在途中并为该呼叫添加监狱运送活动备注。",
+            "label": "前往监狱"
+          },
+          "enrouteSecond": {
+            "description": "设置已在途中并为该呼叫添加第二地点活动备注。",
+            "label": "前往第二地点途中"
+          },
+          "inService": {
+            "description": "将单位设为社区可用状态。",
+            "label": "服务中"
+          },
+          "outOfService": {
+            "description": "将单位设为社区不可用状态。",
+            "label": "停用"
+          },
+          "selfInitiated": {
+            "description": "在你当前班组当前位置创建一个已保存呼叫并自动附加你的班组，可选填写邮政编码和附加描述。",
+            "label": "自发呼叫"
+          },
+          "status": {
+            "description": "将单位或装备设为社区状态“{status}”。"
+          },
+          "trafficStop": {
+            "description": "使用单位当前位置和可选车辆详情，从已保存的呼叫类型创建交通拦截呼叫。",
+            "label": "拦截交通"
+          },
+          "viewCall": {
+            "description": "在通话查看器中打开一个活动呼叫。",
+            "label": "查看呼叫"
+          }
+        },
+        "activityDetails": " — {details}",
+        "aliases": "别名",
+        "aliasesHint": "用逗号分隔别名",
+        "allowedVariables": "允许的: {variables}",
+        "argumentOrder": "参数顺序",
+        "callDetails": "详情: {details}",
+        "commandComplete": "{action} 完成。",
+        "commandReference": "命令参考",
+        "configurationImported": "命令配置已导入。",
+        "configurationSaved": "命令配置已保存。",
+        "customizeCommands": "自定义命令",
+        "customizeIntro": "将每个 CAD 操作映射到你所在机构的指挥代码和参数顺序。可选参数后加 ?。",
+        "errors": {
+          "actionUnavailable": "此操作不可用。",
+          "callAmbiguous": "该单位附加到多个呼叫。请包含呼叫 ID。",
+          "callNotFound": "活动呼叫 {call} 未找到。",
+          "commandConflict": "{command} 已分配给 {first} 和 {second}。",
+          "commandFailed": "命令无法完成。",
+          "commandRequired": "{action} 需要一个主命令。",
+          "currentUnitNotFound": "未找到您的当前单位。使用 SI 前请选择或激活一个单位。",
+          "duplicateVariable": "{variable} 只能在参数顺序中出现一次。",
+          "invalidCommand": "命令代码只能包含字母、数字、连字符和下划线：{command}。",
+          "invalidConfiguration": "命令配置无效。",
+          "invalidVariable": "{variable} 不是 {action} 的受支持变量。",
+          "missingArgument": "缺少必需参数：{argument}。",
+          "noActiveCall": "无法推断出当前活跃呼叫。请包含呼叫 ID 或在 Call Viewer 中打开该呼叫。",
+          "requiredVariable": "{action}必须包含{variable}变量。",
+          "savedCallTypeNotFound": "未找到已保存的呼叫类型“{type}”。请先保存或导入该呼叫类型。",
+          "tooManyArguments": "此命令的参数数量超过其配置的操作所接受的范围。",
+          "unitNotFound": "单位 {unit} 未激活或未找到。",
+          "unknownCommand": "未知命令：{command}。输入 ? 打开命令参考。"
+        },
+        "keyboardHint": "输入执行 • Tab 补全 • ↑/↓ 调用历史 • ? 打开帮助",
+        "nextArgument": "下一个：{argument}",
+        "noCommand": "未分配命令",
+        "placeholder": "输入命令或开始输入操作…",
+        "primaryCommand": "主命令",
+        "referenceIntro": "命令不区分大小写，可在单位前或后输入。多词值请用引号括起，或放在最后一个参数中。像 call=123 这样的命名值可以在任意位置输入。",
+        "resetDefaults": "重置默认设置",
+        "runCommand": "运行命令",
+        "shortLabel": "命令行界面",
+        "trafficStopSavedType": "拦截交通",
+        "unitActivityNote": "{unit}: {activity}{details}",
+        "unitCount": "{count} 单位",
+        "untitledCall": "未命名呼叫",
+        "variables": {
+          "call": "呼叫",
+          "description": "描述",
+          "details": "详情",
+          "note": "备注",
+          "postal": "邮政编码",
+          "type": "保存呼叫类型",
+          "unit": "单位"
+        }
+      },
       "close": "关闭",
       "commandLine": "命令行",
       "create": "创建",
@@ -2810,6 +2951,7 @@
   "taskbar": {
     "autoOpenAssignedCallViewer": "分配到通话时自动打开通话查看器",
     "close": "关闭",
+    "commandLineHotkeyTooltip": "命令行 — 热键: {hotkey}",
     "desktop": "桌面",
     "displayTabIcons": "显示标签页图标",
     "displayTabLabels": "显示标签页名称",
