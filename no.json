@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "Adresser"
     },
+    "aiUsage": {
+      "blocked": "Blokkert",
+      "completionTokens": "Utgangstokener",
+      "deniedRequests": "Blokkerte forespørsler",
+      "description": "Månedlig aktivitet for AI-assistert egendefinert journalføring. Automatiserte sikkerhetstiltak hindrer for omfattende bruk.",
+      "error": "AI-bruksdata er midlertidig utilgjengelig.",
+      "failed": "Feilet",
+      "model": "Modell",
+      "promptTokens": "Input tokens",
+      "recentRequests": "Nylige forespørsler",
+      "requestCount": "Forespørsler",
+      "resetAt": "Nullstilles {date}",
+      "status": "Status",
+      "success": "Fullført",
+      "successfulRequests": "Fullførte forespørsler",
+      "title": "AI-bruk",
+      "tokens": "Tokens"
+    },
     "authenticate": {
       "authHeader": "Bekreft ditt CAD-eierskap",
       "authSubtext1": "Fellesskapseiere kan be om en unik identifikasjonsnøkkel for å autentisere eierskapet sitt.",
@@ -267,6 +285,18 @@
       "actions": "Handlinger",
       "addCustomSection": "Legg til egendefinert seksjon",
       "addPremadeSection": "Legg til forhåndsdefinert seksjon",
+      "aiCompleteEmpty": "AI-tjenesten returnerte ikke et forslag.",
+      "aiCompleteFailed": "Kan ikke generere et AI-forslag akkurat nå.",
+      "aiCompleteProRequired": "AI-forslag krever et PRO-abonnement.",
+      "aiCompleteQuotaExceeded": "Dette lokalsamfunnet har nådd sin månedlige AI-bruksgrense.",
+      "aiCompleteRateLimited": "For mange AI-forespørsler. Vennligst vent og prøv igjen.",
+      "aiCompleteTimeout": "AI-forslaget tok for lang tid. Prøv igjen.",
+      "aiCompleteUnauthorized": "Økten din kunne ikke bekreftes. Logg inn på nytt.",
+      "aiCompleteUnavailable": "AI-forslag er ikke konfigurert akkurat nå.",
+      "aiCompleteUsageUnavailable": "AI-brukssporing er midlertidig utilgjengelig. Prøv igjen senere.",
+      "aiFeatureName": "AI-skriveassistanse",
+      "aiImprove": "Forbedre skriving med AI",
+      "aiImproveEmpty": "Skriv inn eller diktér litt tekst før du bruker AI-forbedring.",
       "dbMap": "DB-synkroniseringsmapping",
       "dependency": "Avhengighet",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "Søk etter sivile",
       "searchVehicles": "Søk etter kjøretøy",
       "sectionLabel": "Seksjonsnavn",
+      "speechToTextFailed": "Talegjenkjenning mislyktes.",
+      "speechToTextHold": "Trykk og hold for å diktere",
+      "speechToTextListening": "Lytter… slipp for å sette inn tekst",
+      "speechToTextNoMicrophone": "Ingen mikrofon ble oppdaget.",
+      "speechToTextNoSpeech": "Ingen tale ble oppdaget.",
+      "speechToTextNotAllowed": "Tilgang til mikrofon ble nektet.",
+      "speechToTextUnavailable": "Talegjenkjenning er ikke tilgjengelig akkurat nå.",
       "supervisorAbout": "Begrens feltet til kun veiledere",
       "type": "Type",
       "uniqueField": "Unikt felt",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "Brukere",
       "advanced": "Avansert",
+      "aiUsage": "AI-bruk",
       "authenticate": "Autentiser",
       "changeCommunityId": "Endre samfunns ID",
       "customization": "Tilpasning",
@@ -992,6 +1030,12 @@
     "open": "Åpne",
     "paste": "Lim inn",
     "pause": "Pause",
+    "proFeature": {
+      "description": "Oppgrader dette communityet til Sonoran CAD Pro eller Sonoran One for å bruke denne funksjonen.",
+      "title": "Pro-funksjon",
+      "unlockTitle": "Lås opp {feature} med Sonoran CAD Pro",
+      "upgrade": "Se oppgraderingsalternativer"
+    },
     "range": "Område",
     "rateLimit": "Rate limit",
     "refresh": "Oppdater",
@@ -1635,6 +1679,7 @@
         "mostPopular": "Mest populær"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "AI-fortellingsforbedring",
         "bodycamUploads": "Bodycam-opplastinger / 24 timer",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "Sonoran CMS Pro",

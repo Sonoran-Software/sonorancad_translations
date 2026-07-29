@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "地址"
     },
+    "aiUsage": {
+      "blocked": "已阻止",
+      "completionTokens": "输出令牌",
+      "deniedRequests": "已阻止的请求",
+      "description": "AI辅助自定义记录编写的每月活动。自动保护措施可防止过度使用。",
+      "error": "AI 使用数据暂时不可用。",
+      "failed": "失败",
+      "model": "型号",
+      "promptTokens": "输入令牌",
+      "recentRequests": "最近请求",
+      "requestCount": "请求",
+      "resetAt": "重置于 {date}",
+      "status": "状态",
+      "success": "已完成",
+      "successfulRequests": "已完成请求",
+      "title": "AI 使用",
+      "tokens": "令牌"
+    },
     "authenticate": {
       "authHeader": "验证您的CAD所有权",
       "authSubtext1": "社区所有者可以请求唯一的标识密钥来验证其所有权。",
@@ -267,6 +285,18 @@
       "actions": "操作",
       "addCustomSection": "添加自定义节",
       "addPremadeSection": "添加预设节",
+      "aiCompleteEmpty": "AI 服务未返回建议。",
+      "aiCompleteFailed": "当前无法生成 AI 建议。",
+      "aiCompleteProRequired": "AI 建议需要 PRO 订阅。",
+      "aiCompleteQuotaExceeded": "该社区已达到其每月 AI 使用上限。",
+      "aiCompleteRateLimited": "AI 请求过多。请稍后再试。",
+      "aiCompleteTimeout": "AI 建议耗时过长。请重试。",
+      "aiCompleteUnauthorized": "无法验证您的会话。请重新登录。",
+      "aiCompleteUnavailable": "AI 建议当前未配置。",
+      "aiCompleteUsageUnavailable": "AI 使用跟踪暂时不可用。请稍后再试。",
+      "aiFeatureName": "AI 写作辅助",
+      "aiImprove": "使用 AI 改进写作",
+      "aiImproveEmpty": "在使用 AI 优化前请输入或口述一些文本。",
       "dbMap": "数据库同步映射",
       "dependency": "依赖",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "搜索市民信息",
       "searchVehicles": "搜索车辆信息",
       "sectionLabel": "节标签",
+      "speechToTextFailed": "语音识别失败。",
+      "speechToTextHold": "按住说话",
+      "speechToTextListening": "正在聆听…松开以插入文本",
+      "speechToTextNoMicrophone": "未检测到麦克风。",
+      "speechToTextNoSpeech": "未检测到语音。",
+      "speechToTextNotAllowed": "麦克风访问被拒绝。",
+      "speechToTextUnavailable": "语音识别当前不可用。",
       "supervisorAbout": "仅主管可用的字段",
       "type": "类型",
       "uniqueField": "唯一字段",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "账户",
       "advanced": "进阶",
+      "aiUsage": "AI 使用",
       "authenticate": "验证",
       "changeCommunityId": "修改社区ID",
       "customization": "自定义",
@@ -992,6 +1030,12 @@
     "open": "打开",
     "paste": "粘贴",
     "pause": "暂停",
+    "proFeature": {
+      "description": "将此社区升级到 Sonoran CAD Pro 或 Sonoran One 以使用此功能。",
+      "title": "专业功能",
+      "unlockTitle": "使用 Sonoran CAD Pro 解锁 {feature}",
+      "upgrade": "查看升级选项"
+    },
     "range": "范围",
     "rateLimit": "速率限制",
     "refresh": "刷新",
@@ -1636,6 +1680,7 @@
         "mostPopular": "最受欢迎"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "AI 叙述优化",
         "bodycamUploads": "执法记录仪上传 / 24 小时",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "Sonoran CMS 专业版",

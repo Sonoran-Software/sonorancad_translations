@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "Адреси"
     },
+    "aiUsage": {
+      "blocked": "Заблоковано",
+      "completionTokens": "Вихідні токени",
+      "deniedRequests": "Заблоковані запити",
+      "description": "Щомісячна активність для написання користувацьких записів за допомогою ШІ. Автоматизовані запобіжники запобігають надмірному використанню.",
+      "error": "Дані використання ШІ тимчасово недоступні.",
+      "failed": "Відмовлено",
+      "model": "Модель",
+      "promptTokens": "Вхідні токени",
+      "recentRequests": "Нещодавні запити",
+      "requestCount": "Запити",
+      "resetAt": "Скидається {date}",
+      "status": "Статус",
+      "success": "Виконано",
+      "successfulRequests": "Виконані запити",
+      "title": "Використання ШІ",
+      "tokens": "Токени"
+    },
     "authenticate": {
       "authHeader": "Аутентифікуйте ваше право власності на CAD",
       "authSubtext1": "Власники спільноти можуть запросити унікальний ідентифікаційний ключ для підтвердження свого права власності.",
@@ -267,6 +285,18 @@
       "actions": "Дії",
       "addCustomSection": "Додати власний розділ",
       "addPremadeSection": "Додати готовий розділ",
+      "aiCompleteEmpty": "Сервіс ШІ не повернув пропозицію.",
+      "aiCompleteFailed": "Наразі не вдається згенерувати AI-пропозицію.",
+      "aiCompleteProRequired": "Підказки ШІ потребують підписки PRO.",
+      "aiCompleteQuotaExceeded": "Ця спільнота досягла свого місячного ліміту використання ШІ.",
+      "aiCompleteRateLimited": "Надто багато запитів до ШІ. Будь ласка, зачекайте і спробуйте ще раз.",
+      "aiCompleteTimeout": "Схожа пропозиція від ШІ зайняла забагато часу. Будь ласка, спробуйте ще раз.",
+      "aiCompleteUnauthorized": "Не вдалося підтвердити вашу сесію. Будь ласка, увійдіть знову.",
+      "aiCompleteUnavailable": "Підказки ШІ зараз не налаштовані.",
+      "aiCompleteUsageUnavailable": "Відстеження використання ШІ тимчасово недоступне. Будь ласка, спробуйте ще раз пізніше.",
+      "aiFeatureName": "Допомога у написанні на основі ШІ",
+      "aiImprove": "Покращити текст за допомогою ШІ",
+      "aiImproveEmpty": "Введіть або продиктуйте текст перед використанням покращення за допомогою ШІ.",
       "dbMap": "Відображення синхронізації бази даних",
       "dependency": "Залежність",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "Пошук цивільних",
       "searchVehicles": "Пошук транспортних засобів",
       "sectionLabel": "Мітка розділу",
+      "speechToTextFailed": "Розпізнавання мовлення не вдалося.",
+      "speechToTextHold": "Натисніть і утримуйте, щоб продиктувати",
+      "speechToTextListening": "Прослуховування… відпустіть, щоб вставити текст",
+      "speechToTextNoMicrophone": "Мікрофон не виявлено.",
+      "speechToTextNoSpeech": "Мовлення не виявлено.",
+      "speechToTextNotAllowed": "Доступ до мікрофона було заборонено.",
+      "speechToTextUnavailable": "Розпізнавання мовлення зараз недоступне.",
       "supervisorAbout": "Обмежити поле лише для наглядачів",
       "type": "Тип",
       "uniqueField": "Унікальне поле",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "Акаунти",
       "advanced": "Розширений",
+      "aiUsage": "Використання ШІ",
       "authenticate": "Аутентифікувати",
       "changeCommunityId": "Змінити ідентифікатор спільноти",
       "customization": "Налаштування",
@@ -992,6 +1030,12 @@
     "open": "Відкрити",
     "paste": "Вставити",
     "pause": "Пауза",
+    "proFeature": {
+      "description": "Оновіть цю спільноту до Sonoran CAD Pro або Sonoran One, щоб використовувати цю функцію.",
+      "title": "Професійна функція",
+      "unlockTitle": "Розблокуйте {feature} з Sonoran CAD Pro",
+      "upgrade": "Переглянути варіанти оновлення"
+    },
     "range": "Діапазон",
     "rateLimit": "Ліміт запитів",
     "refresh": "Оновити",
@@ -1636,6 +1680,7 @@
         "mostPopular": "Найпопулярніше"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "Покращення наративу ШІ",
         "bodycamUploads": "Завантаження bodycam / 24 години",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "Sonoran CMS Pro",

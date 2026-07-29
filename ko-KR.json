@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "구애"
     },
+    "aiUsage": {
+      "blocked": "차단됨",
+      "completionTokens": "출력 토큰",
+      "deniedRequests": "차단된 요청",
+      "description": "AI 지원 맞춤 기록 작성의 월간 활동량. 자동 보호 장치가 과도한 사용을 방지합니다.",
+      "error": "AI 사용 데이터는 일시적으로 사용할 수 없습니다.",
+      "failed": "실패한",
+      "model": "모델",
+      "promptTokens": "입력 토큰",
+      "recentRequests": "최근 요청",
+      "requestCount": "요청",
+      "resetAt": "{date}에 재설정",
+      "status": "상태",
+      "success": "완료됨",
+      "successfulRequests": "완료된 요청",
+      "title": "AI 사용",
+      "tokens": "토큰"
+    },
     "authenticate": {
       "authHeader": "CAD 소유권 인증",
       "authSubtext1": "커뮤니티 소유자는 소유권을 인증하기 위해 고유 식별 키를 요청할 수 있습니다.",
@@ -267,6 +285,18 @@
       "actions": "행위",
       "addCustomSection": "사용자 정의 섹션 추가",
       "addPremadeSection": "미리 만들어진 섹션 추가",
+      "aiCompleteEmpty": "AI 서비스가 제안을 반환하지 않았습니다.",
+      "aiCompleteFailed": "지금은 AI 제안을 생성할 수 없습니다.",
+      "aiCompleteProRequired": "AI 제안은 PRO 구독이 필요합니다.",
+      "aiCompleteQuotaExceeded": "이 커뮤니티는 월간 AI 사용 한도에 도달했습니다.",
+      "aiCompleteRateLimited": "AI 요청이 너무 많습니다. 잠시 기다렸다가 다시 시도하세요.",
+      "aiCompleteTimeout": "AI 제안이 너무 오래 걸렸습니다. 다시 시도해 주세요.",
+      "aiCompleteUnauthorized": "세션을 확인할 수 없습니다. 다시 로그인하세요.",
+      "aiCompleteUnavailable": "AI 제안은 현재 구성되어 있지 않습니다.",
+      "aiCompleteUsageUnavailable": "AI 사용 추적은 일시적으로 사용할 수 없습니다. 나중에 다시 시도하세요.",
+      "aiFeatureName": "AI 작문 지원",
+      "aiImprove": "AI로 글쓰기 개선",
+      "aiImproveEmpty": "AI 개선을 사용하기 전에 텍스트를 입력하거나 받아쓰세요.",
       "dbMap": "DB 동기화 매핑",
       "dependency": "의존",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "민간인 수색",
       "searchVehicles": "차량 검색",
       "sectionLabel": "섹션 라벨",
+      "speechToTextFailed": "음성 인식에 실패했습니다.",
+      "speechToTextHold": "길게 눌러 음성 입력",
+      "speechToTextListening": "듣는 중… 놓으면 텍스트 삽입",
+      "speechToTextNoMicrophone": "마이크가 감지되지 않았습니다.",
+      "speechToTextNoSpeech": "음성이 감지되지 않았습니다.",
+      "speechToTextNotAllowed": "마이크 접근이 거부되었습니다.",
+      "speechToTextUnavailable": "음성 인식은 지금 사용할 수 없습니다.",
       "supervisorAbout": "필드를 감독자에게만 제한",
       "type": "유형",
       "uniqueField": "고유 필드",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "계정",
       "advanced": "고급의",
+      "aiUsage": "AI 사용",
       "authenticate": "인증하다",
       "changeCommunityId": "커뮤니티 변경 ID",
       "customization": "맞춤화",
@@ -992,6 +1030,12 @@
     "open": "열기",
     "paste": "반죽",
     "pause": "정지시키다",
+    "proFeature": {
+      "description": "이 기능을 사용하려면 이 커뮤니티를 Sonoran CAD Pro 또는 Sonoran One으로 업그레이드하세요.",
+      "title": "프로 기능",
+      "unlockTitle": "Sonoran CAD Pro로 {feature} 잠금 해제",
+      "upgrade": "업그레이드 옵션 보기"
+    },
     "range": "범위",
     "rateLimit": "요청 제한",
     "refresh": "새로 고치다",
@@ -1636,6 +1680,7 @@
         "mostPopular": "가장 인기"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "AI 내러티브 개선",
         "bodycamUploads": "바디캠 업로드 / 24시간",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "소노란 CMS Pro",

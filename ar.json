@@ -40,10 +40,21 @@
     },
     "aiUsage": {
       "blocked": "محظور",
+      "completionTokens": "رموز الإخراج",
       "deniedRequests": "الطلبات المحظورة",
+      "description": "النشاط الشهري لكتابة السجلات المخصصة بمساعدة الذكاء الاصطناعي. تمنع وسائل الحماية الآلية الاستخدام المفرط.",
+      "error": "بيانات استخدام الذكاء الاصطناعي غير متاحة مؤقتًا.",
       "failed": "فشل",
       "model": "أسم المركبة",
-      "recentRequests": "الطلبات الأخيرة"
+      "promptTokens": "رموز الإدخال",
+      "recentRequests": "الطلبات الأخيرة",
+      "requestCount": "الطلبات",
+      "resetAt": "يعيد التعيين {date}",
+      "status": "الحالة",
+      "success": "مكتمل",
+      "successfulRequests": "الطلبات المكتملة",
+      "title": "استخدام الذكاء الاصطناعي",
+      "tokens": "الرموز"
     },
     "authenticate": {
       "authHeader": "التحقق من هوية مالك المجتمع",
@@ -274,6 +285,10 @@
       "actions": "أجراءات",
       "addCustomSection": "إضافة قسم مخصص",
       "addPremadeSection": "إضافة قسم مسبق الصنع",
+      "aiCompleteEmpty": "لم تُرجِع خدمة الذكاء الاصطناعي اقتراحًا.",
+      "aiCompleteFailed": "تعذر إنشاء اقتراح بالذكاء الاصطناعي الآن.",
+      "aiCompleteProRequired": "تتطلب اقتراحات الذكاء الاصطناعي اشتراكًا PRO.",
+      "aiCompleteQuotaExceeded": "وصل هذا المجتمع إلى حد الاستخدام الشهري للذكاء الاصطناعي.",
       "aiCompleteRateLimited": "طلبات الذكاء الاصطناعي كثيرة جدًا. يرجى الانتظار والمحاولة مرة أخرى.",
       "aiCompleteTimeout": "استغرق اقتراح الذكاء الاصطناعي وقتًا طويلاً. يرجى المحاولة مرة أخرى.",
       "aiCompleteUnauthorized": "تعذر التحقق من جلستك. يرجى تسجيل الدخول مرة أخرى.",
@@ -351,8 +366,10 @@
       "searchCivs": "بحث عن المدنيين",
       "searchVehicles": "بحث عن المركبات",
       "sectionLabel": "تسمية القسم",
+      "speechToTextFailed": "فشل التعرف على الكلام.",
       "speechToTextHold": "اضغط مع الاستمرار للإملاء",
       "speechToTextListening": "جارٍ الاستماع… حرر للإدخال النص",
+      "speechToTextNoMicrophone": "لم يتم اكتشاف ميكروفون.",
       "speechToTextNoSpeech": "لم يتم اكتشاف أي كلام.",
       "speechToTextNotAllowed": "تم رفض الوصول إلى الميكروفون.",
       "speechToTextUnavailable": "التعرّف على الكلام غير متاح الآن.",
@@ -426,6 +443,7 @@
     "general": {
       "accounts": "الأعضاء",
       "advanced": "الإضافات",
+      "aiUsage": "استخدام الذكاء الاصطناعي",
       "authenticate": "المصادقة",
       "changeCommunityId": "تغيير اسم المجتمع",
       "customization": "تخصيص",
@@ -1015,7 +1033,8 @@
     "proFeature": {
       "description": "قم بترقية هذا المجتمع إلى Sonoran CAD Pro أو Sonoran One لاستخدام هذه الميزة.",
       "title": "ميزة احترافية",
-      "unlockTitle": "افتح {feature} مع Sonoran CAD Pro"
+      "unlockTitle": "افتح {feature} مع Sonoran CAD Pro",
+      "upgrade": "عرض خيارات الترقية"
     },
     "range": "المدى",
     "rateLimit": "حد المعدل",
@@ -1661,6 +1680,7 @@
         "mostPopular": "الأكثر شيوعًا"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "تحسين السرد بالذكاء الاصطناعي",
         "bodycamUploads": "تحميلات كاميرا الجسم / 24 ساعة",
         "cadPro": "سونوران CAD برو",
         "cmsPro": "سونوران CMS برو",
