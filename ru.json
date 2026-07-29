@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "Адреса"
     },
+    "aiUsage": {
+      "blocked": "Заблокировано",
+      "completionTokens": "Выходные токены",
+      "deniedRequests": "Заблокированные запросы",
+      "description": "Ежемесячная активность по написанию пользовательских записей с помощью ИИ. Автоматические ограничения предотвращают чрезмерное использование.",
+      "error": "Данные об использовании ИИ временно недоступны.",
+      "failed": "Отказанно",
+      "model": "Модель",
+      "promptTokens": "Входные токены",
+      "recentRequests": "Недавние запросы",
+      "requestCount": "Запросы",
+      "resetAt": "Сбрасывается {date}",
+      "status": "Статусы",
+      "success": "Выполнено",
+      "successfulRequests": "Выполненные запросы",
+      "title": "Использование ИИ",
+      "tokens": "Токены"
+    },
     "authenticate": {
       "authHeader": "Проверка подлинности Владения CAD ",
       "authSubtext1": "Владельцы сообщества могут запросить уникальный индентификационный ключ для собственной аутентфикации",
@@ -267,6 +285,18 @@
       "actions": "Действия",
       "addCustomSection": "Добавить пользовательский раздел",
       "addPremadeSection": "Добавить готовый раздел",
+      "aiCompleteEmpty": "Служба ИИ не вернула предложение.",
+      "aiCompleteFailed": "Не удалось сгенерировать AI-предложение прямо сейчас.",
+      "aiCompleteProRequired": "Для AI-подсказок требуется подписка PRO.",
+      "aiCompleteQuotaExceeded": "Это сообщество достигло своего ежемесячного лимита использования ИИ.",
+      "aiCompleteRateLimited": "Слишком много запросов к ИИ. Подождите и попробуйте снова.",
+      "aiCompleteTimeout": "Подсказка ИИ заняла слишком много времени. Пожалуйста, попробуйте снова.",
+      "aiCompleteUnauthorized": "Не удалось подтвердить вашу сессию. Войдите снова.",
+      "aiCompleteUnavailable": "Подсказки ИИ сейчас не настроены.",
+      "aiCompleteUsageUnavailable": "Отслеживание использования ИИ временно недоступно. Пожалуйста, попробуйте позже.",
+      "aiFeatureName": "Помощь в написании с ИИ",
+      "aiImprove": "Улучшить текст с помощью ИИ",
+      "aiImproveEmpty": "Введите или продиктуйте текст перед использованием улучшения с помощью ИИ.",
       "dbMap": "Картирование синхронизации базы данных",
       "dependency": "Зависимость",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "Искать гражданских",
       "searchVehicles": "Искать транспортные средства",
       "sectionLabel": "Метка раздела",
+      "speechToTextFailed": "Распознавание речи не удалось.",
+      "speechToTextHold": "Нажмите и удерживайте, чтобы продиктовать",
+      "speechToTextListening": "Слушаю… отпустите, чтобы вставить текст",
+      "speechToTextNoMicrophone": "Микрофон не был обнаружен.",
+      "speechToTextNoSpeech": "Речь не была обнаружена.",
+      "speechToTextNotAllowed": "Доступ к микрофону был запрещён.",
+      "speechToTextUnavailable": "Распознавание речи сейчас недоступно.",
       "supervisorAbout": "Ограничить доступ к полю только для супервайзеров",
       "type": "Тип",
       "uniqueField": "Уникальное поле",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "Аккаунты",
       "advanced": "Дополнительно",
+      "aiUsage": "Использование ИИ",
       "authenticate": "Проверка Подлинности",
       "changeCommunityId": "Сменить ID сообщества",
       "customization": "Кастомизация",
@@ -992,6 +1030,12 @@
     "open": "Открыть",
     "paste": "Вставить",
     "pause": "Пауза",
+    "proFeature": {
+      "description": "Обновите это сообщество до Sonoran CAD Pro или Sonoran One, чтобы использовать эту функцию.",
+      "title": "Профессиональная функция",
+      "unlockTitle": "Разблокируйте {feature} с Sonoran CAD Pro",
+      "upgrade": "Посмотреть варианты обновления"
+    },
     "range": "Диапазон",
     "rateLimit": "Ограничение скорости",
     "refresh": "Обновить",
@@ -1636,6 +1680,7 @@
         "mostPopular": "Самый популярный"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "Улучшение ИИ-описания",
         "bodycamUploads": "Загрузки бодикама / 24 часа",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "Sonoran CMS Pro",

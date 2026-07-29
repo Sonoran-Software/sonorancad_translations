@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "Adresses"
     },
+    "aiUsage": {
+      "blocked": "Bloqué",
+      "completionTokens": "Jetons de sortie",
+      "deniedRequests": "Requêtes bloquées",
+      "description": "Activité mensuelle pour la rédaction d'enregistrements personnalisés assistée par IA. Des protections automatisées empêchent une utilisation excessive.",
+      "error": "Les données d'utilisation de l'IA sont temporairement indisponibles.",
+      "failed": "Échec",
+      "model": "Modèle",
+      "promptTokens": "Jetons d'entrée",
+      "recentRequests": "Demandes récentes",
+      "requestCount": "Requêtes",
+      "resetAt": "Réinitialise {date}",
+      "status": "Statut",
+      "success": "Terminé",
+      "successfulRequests": "Requêtes terminées",
+      "title": "Utilisation de l’IA",
+      "tokens": "Jetons"
+    },
     "authenticate": {
       "authHeader": "Authentifier votre propriété CAD",
       "authSubtext1": "Les propriétaires de communauté peuvent demander une clé d'identification unique pour authentifier leur propriété.",
@@ -267,6 +285,18 @@
       "actions": "Actions",
       "addCustomSection": "Ajouter une section personnalisée",
       "addPremadeSection": "Ajouter une section prédéfinie",
+      "aiCompleteEmpty": "Le service IA n'a pas renvoyé de suggestion.",
+      "aiCompleteFailed": "Impossible de générer une suggestion IA pour le moment.",
+      "aiCompleteProRequired": "Les suggestions IA nécessitent un abonnement PRO.",
+      "aiCompleteQuotaExceeded": "Cette communauté a atteint sa limite mensuelle d'utilisation de l'IA.",
+      "aiCompleteRateLimited": "Trop de requêtes IA. Veuillez attendre et réessayer.",
+      "aiCompleteTimeout": "La suggestion IA a pris trop de temps. Veuillez réessayer.",
+      "aiCompleteUnauthorized": "Votre session n'a pas pu être vérifiée. Veuillez vous reconnecter.",
+      "aiCompleteUnavailable": "Les suggestions IA ne sont pas configurées pour le moment.",
+      "aiCompleteUsageUnavailable": "Le suivi de l'utilisation de l'IA est temporairement indisponible. Veuillez réessayer plus tard.",
+      "aiFeatureName": "assistance à la rédaction par IA",
+      "aiImprove": "Améliorer le texte avec l’IA",
+      "aiImproveEmpty": "Saisissez ou dictez du texte avant d’utiliser l’amélioration par IA.",
       "dbMap": "Cartographie de la synchronisation DB",
       "dependency": "Dépendance",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "Recherche de citoyen",
       "searchVehicles": "Rechercher de véhicule",
       "sectionLabel": "Étiquette de section",
+      "speechToTextFailed": "La reconnaissance vocale a échoué.",
+      "speechToTextHold": "Appuyez longuement pour dicter",
+      "speechToTextListening": "Écoute… relâchez pour insérer le texte",
+      "speechToTextNoMicrophone": "Aucun microphone n’a été détecté.",
+      "speechToTextNoSpeech": "Aucune parole n’a été détectée.",
+      "speechToTextNotAllowed": "L'accès au microphone a été refusé.",
+      "speechToTextUnavailable": "La reconnaissance vocale n'est pas disponible pour le moment.",
       "supervisorAbout": "Restreindre le champ aux superviseurs seulement",
       "type": "Type",
       "uniqueField": "Champ unique",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "Comptes",
       "advanced": "Avancé",
+      "aiUsage": "Utilisation de l’IA",
       "authenticate": "Authentifier",
       "changeCommunityId": "Changer l'ID de la communauté",
       "customization": "Personnalisation",
@@ -992,6 +1030,12 @@
     "open": "Ouvrir",
     "paste": "Coller",
     "pause": "Pause",
+    "proFeature": {
+      "description": "Passez cette communauté à Sonoran CAD Pro ou Sonoran One pour utiliser cette fonctionnalité.",
+      "title": "Fonctionnalité Pro",
+      "unlockTitle": "Débloquez {feature} avec Sonoran CAD Pro",
+      "upgrade": "Voir les options de mise à niveau"
+    },
     "range": "Rayon",
     "rateLimit": "Limite de débit",
     "refresh": "Actualiser",
@@ -1636,6 +1680,7 @@
         "mostPopular": "Le plus populaire"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "Amélioration du récit IA",
         "bodycamUploads": "Téléversements de bodycam / 24 heures",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "Sonoran CMS Pro",

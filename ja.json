@@ -38,6 +38,24 @@
     "addresses": {
       "addresses": "アドレス"
     },
+    "aiUsage": {
+      "blocked": "ブロック済み",
+      "completionTokens": "出力トークン",
+      "deniedRequests": "ブロックされたリクエスト",
+      "description": "AI支援のカスタム記録作成の月間利用状況。自動保護により過度な使用を防止します。",
+      "error": "AI使用状況データは一時的に利用できません。",
+      "failed": "失敗しました",
+      "model": "車種",
+      "promptTokens": "入力トークン",
+      "recentRequests": "最近のリクエスト",
+      "requestCount": "リクエスト",
+      "resetAt": "{date}にリセット",
+      "status": "ステータス",
+      "success": "完了",
+      "successfulRequests": "完了したリクエスト",
+      "title": "AI 利用",
+      "tokens": "トークン"
+    },
     "authenticate": {
       "authHeader": "CAD所有権を認証",
       "authSubtext1": "コミュニティの所有者は、所有権を認証するために固有の識別キーをリクエストできます。",
@@ -267,6 +285,18 @@
       "actions": "操作",
       "addCustomSection": "カスタムセクションを追加",
       "addPremadeSection": "既製セクションを追加",
+      "aiCompleteEmpty": "AI サービスは提案を返しませんでした。",
+      "aiCompleteFailed": "現在AI提案を生成できません。",
+      "aiCompleteProRequired": "AI の提案には PRO サブスクリプションが必要です。",
+      "aiCompleteQuotaExceeded": "このコミュニティは月間の AI 利用上限に達しました。",
+      "aiCompleteRateLimited": "AIリクエストが多すぎます。しばらく待ってから再試行してください。",
+      "aiCompleteTimeout": "AI の提案に時間がかかりすぎました。もう一度お試しください。",
+      "aiCompleteUnauthorized": "セッションを確認できませんでした。再度サインインしてください。",
+      "aiCompleteUnavailable": "AI の提案は現在設定されていません。",
+      "aiCompleteUsageUnavailable": "AI使用状況の追跡は一時的に利用できません。後でもう一度お試しください。",
+      "aiFeatureName": "AI 書き込み支援",
+      "aiImprove": "AIで文章を改善",
+      "aiImproveEmpty": "AI改善を使用する前にテキストを入力するか口述してください。",
       "dbMap": "DB同期マッピング",
       "dependency": "依存関係",
       "dependencyInfo": {
@@ -336,6 +366,13 @@
       "searchCivs": "市民を検索",
       "searchVehicles": "車両検索",
       "sectionLabel": "セクションラベル",
+      "speechToTextFailed": "音声認識に失敗しました。",
+      "speechToTextHold": "押して長押しして音声入力",
+      "speechToTextListening": "聞き取り中…離すとテキストを挿入",
+      "speechToTextNoMicrophone": "マイクが検出されませんでした。",
+      "speechToTextNoSpeech": "音声は検出されませんでした。",
+      "speechToTextNotAllowed": "マイクへのアクセスが拒否されました。",
+      "speechToTextUnavailable": "音声認識は現在利用できません。",
       "supervisorAbout": "フィールドを監督者のみに制限",
       "type": "種類",
       "uniqueField": "一意のフィールド",
@@ -406,6 +443,7 @@
     "general": {
       "accounts": "アカウント",
       "advanced": "詳細設定",
+      "aiUsage": "AI 利用",
       "authenticate": "認証",
       "changeCommunityId": "コミュニティIDを変更",
       "customization": "カスタマイズ",
@@ -992,6 +1030,12 @@
     "open": "開く",
     "paste": "貼り付け",
     "pause": "一時停止",
+    "proFeature": {
+      "description": "このコミュニティを Sonoran CAD Pro または Sonoran One にアップグレードすると、この機能を使用できます。",
+      "title": "プロ機能",
+      "unlockTitle": "Sonoran CAD Pro で {feature} を解除",
+      "upgrade": "アップグレードオプションを表示"
+    },
     "range": "範囲",
     "rateLimit": "レート制限",
     "refresh": "更新",
@@ -1636,6 +1680,7 @@
         "mostPopular": "最も人気"
       },
       "pricingFeatures": {
+        "aiNarrativeImprovement": "AIナラティブ改善",
         "bodycamUploads": "ボディカムアップロード / 24時間",
         "cadPro": "Sonoran CAD Pro",
         "cmsPro": "ソノラン CMS Pro",
