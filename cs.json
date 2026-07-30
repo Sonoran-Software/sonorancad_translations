@@ -478,7 +478,7 @@
         "aiAllowLicenseFields": "Přidat chybějící pole typu licence",
         "aiAllowLicenseFieldsHint": "Umožňuje nastavení přidat typy licencí QBCore s důkazy do šablony záznamu o licenci. Ukládají se jen pokud dokončené mapování projde validací.",
         "aiAllowPrimaryKeys": "Přidat chybějící primární klíč databáze, když je vyžadován",
-        "aiAllowPrimaryKeysHint": "Umožňuje jednu operaci ALTER TABLE na vybrané tabulce pouze poté, co server potvrdí, že navrhovaný sloupec je jedinečný a není null. SQL uživatel musí mít oprávnění.",
+        "aiAllowPrimaryKeysHint": "Umožňuje ALTER TABLE až na třech požadovaných vybraných tabulkách, a to pouze poté, co server potvrdí, že každý navržený sloupec je jedinečný a neprázdný. MySQL potvrdí přidaný klíč okamžitě, takže zůstane i v případě, že pozdější krok nastavení selže. Uživatel SQL musí mít oprávnění.",
         "aiAutomaticSetup": "Automatické nastavení AI",
         "aiChangesMade": "Provedené změny",
         "aiPhases": {
