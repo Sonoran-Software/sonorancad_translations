@@ -480,12 +480,15 @@
       "confirmKeyChange2": "You will need to update your API key in all plugin or API configurations!",
       "customMapImagesLabel": "Custom Map Images (30MB/each Max)",
       "dbSync": {
+        "aiAllowFriendlyMappings": "Add Friendly Mappings for recognized values",
+        "aiAllowFriendlyMappingsHint": "Converts verified numeric values, such as FiveM vehicle paint indexes, into readable record values like Metallic Black. Existing manual mappings are preserved.",
         "aiAllowLicenseFields": "Add missing license type fields",
         "aiAllowLicenseFieldsHint": "Allows setup to add evidenced QBCore license types to the license record template. They are saved only if the completed mapping passes validation.",
         "aiAllowPrimaryKeys": "Add a missing database primary key when required",
         "aiAllowPrimaryKeysHint": "Allows ALTER TABLE on up to three required selected tables, only after the server confirms each proposed column is unique and non-null. MySQL commits an added key immediately, so it remains even if a later setup step fails. The SQL user must have permission.",
         "aiAutomaticSetup": "AI Automatic Setup",
         "aiChangesMade": "Changes Made",
+        "aiFriendlyMappingsProOnly": "AI-generated Friendly Mappings are available on the PRO plan.",
         "aiPhases": {
           "analyzingSchema": "Choosing the most likely character, license, and vehicle data sources…",
           "checkingConnection": "Testing the MySQL connection and credentials…",
