@@ -1724,6 +1724,38 @@
     "sendPage": "Отправить страницу",
     "unitsTooltip": "Вы также можете перетащить сюда активный вызов диспетчеризации, чтобы добавить прикреплённые к нему единицы."
   },
+  "integrationPanels": {
+    "actionFailed": "Действие интеграции не удалось.",
+    "actionSucceeded": "Действие интеграции завершено.",
+    "builder": {
+      "addComponent": "Добавить компонент",
+      "bodyRequired": "Определение требует массива body.",
+      "components": {
+        "button": "Кнопка",
+        "grid": "Сетка",
+        "input": "Ввод",
+        "repeat": "Повторитель",
+        "section": "Раздел",
+        "select": "Выбрать",
+        "text": "Текст",
+        "toggle": "Переключатель"
+      },
+      "copied": "JSON панели скопирован.",
+      "copy": "Копировать JSON",
+      "definition": "Определение",
+      "developerTools": "Получите плагины разработчика Claude и Codex, чтобы помочь собрать JSON вашей панели",
+      "format": "Формат",
+      "lastAction": "Последнее отправленное действие",
+      "mockState": "Состояние макета",
+      "preview": "Предпросмотр",
+      "reset": "Сбросить пример",
+      "subtitle": "Создавайте, просматривайте и копируйте настраиваемую панель интеграции.",
+      "title": "Конструктор панели интеграции",
+      "validJson": "Валидный JSON"
+    },
+    "confirmTitle": "Подтвердить действие",
+    "invalidDefinition": "Определение этой панели недействительно."
+  },
   "login": {
     "buttons": {
       "cancel": "Отмена",
@@ -1821,6 +1853,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "Активный",
+      "billedQuarterly": "Списывается {price} ежеквартально",
+      "billingCycle": "Платёжный цикл",
       "cadPlans": "Тарифы CAD",
       "cancellingStatus": "Отмена: {date}",
       "changeCommunity": "Сменить сообщество",
@@ -1847,10 +1881,11 @@
         "free": "Базовый доступ к CAD с ER:LC, FiveM и API-подключением.",
         "plus": "Добавляет синхронизацию базы данных, два сервера, более высокие лимиты и больше шаблонов.",
         "pro": "Открывает неограниченный масштаб, пользовательские карты, объединение базы данных и удобное сопоставление.",
-        "sonoranOne": "Пакеты CAD Pro, CMS Pro, Radio Pro, инструменты для стриминга и хостинг RocketNode.",
+        "sonoranOne": "Пакеты CAD Pro, CMS Pro, Radio Pro, Sonoran Studio и хостинг RocketNode.",
         "standard": "Добавляет поддержку собственного домена, более высокие лимиты и расширенные инструменты сообщества.",
         "starter": "Добавляет собственный ID сообщества, больше пользователей и платные CAD-основы.",
-        "streamOverlay": "Инструменты оверлея для стримеров и трансляций сообщества."
+        "streamOverlay": "Инструменты оверлея для стримеров и трансляций сообщества.",
+        "studioCommunity": "Инструменты оверлея для стримеров и трансляций сообщества."
       },
       "planNames": {
         "cmsPro": "Sonoran CMS Pro",
@@ -1863,7 +1898,8 @@
         "sonoranOne": "Сонoран Один",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Starter",
-        "streamingTools": "Инструменты для стриминга"
+        "streamingTools": "Инструменты для стриминга",
+        "studioCommunity": "Лицензия сообщества Sonoran Studio"
       },
       "planPrices": {
         "expertInstallation": "$34.99",
@@ -1873,7 +1909,16 @@
         "sonoranOne": "$49.99/мес",
         "standard": "$9.99/мес",
         "starter": "$3.99/мес",
-        "streamOverlay": "$4.99/мес"
+        "streamOverlay": "$4.99/мес",
+        "studioCommunity": "$4.99/мес"
+      },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67.50",
+        "sonoranOne": "$112.50",
+        "standard": "22,80 $",
+        "starter": "$9.00",
+        "studioCommunity": "$18.00"
       },
       "planQuarterlyPrices": {
         "free": "$0.00/мес",
@@ -1881,7 +1926,8 @@
         "pro": "$22.50/мес",
         "sonoranOne": "$37.50/мес",
         "standard": "$7.60/мес",
-        "starter": "$3.00/мес"
+        "starter": "$3.00/мес",
+        "studioCommunity": "$6.00/мес"
       },
       "pricingBadges": {
         "bestValue": "Лучшее предложение",

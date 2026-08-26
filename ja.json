@@ -1724,6 +1724,38 @@
     "sendPage": "ページを送信",
     "unitsTooltip": "アクティブな配車通話をここにドラッグ＆ドロップして、添付されたユニットを追加することもできます。"
   },
+  "integrationPanels": {
+    "actionFailed": "連携アクションに失敗しました。",
+    "actionSucceeded": "連携アクションが完了しました。",
+    "builder": {
+      "addComponent": "コンポーネントを追加",
+      "bodyRequired": "定義には body 配列が必要です。",
+      "components": {
+        "button": "ボタン",
+        "grid": "グリッド",
+        "input": "入力",
+        "repeat": "リピーター",
+        "section": "セクション",
+        "select": "選択",
+        "text": "テキスト",
+        "toggle": "切り替え"
+      },
+      "copied": "Panel JSON をコピーしました。",
+      "copy": "JSONをコピー",
+      "definition": "定義",
+      "developerTools": "パネル JSON の作成を支援する Claude と Codex の開発者プラグインを入手",
+      "format": "形式",
+      "lastAction": "最後に発行されたアクション",
+      "mockState": "モック状態",
+      "preview": "プレビュー",
+      "reset": "例をリセット",
+      "subtitle": "カスタム統合パネルを作成、プレビュー、コピーします。",
+      "title": "統合パネルビルダー",
+      "validJson": "有効な JSON"
+    },
+    "confirmTitle": "操作の確認",
+    "invalidDefinition": "このパネル定義は無効です。"
+  },
   "login": {
     "buttons": {
       "cancel": "キャンセル",
@@ -1822,6 +1854,7 @@
     "billingCenter": {
       "activeSubscriptions": "有効",
       "billedQuarterly": "{price} 円を四半期ごとに請求",
+      "billingCycle": "請求サイクル",
       "cadPlans": "CADプラン",
       "cancellingStatus": "キャンセル中: {date}",
       "changeCommunity": "コミュニティを変更",
@@ -1848,7 +1881,7 @@
         "free": "ER:LC、FiveM、API接続を含む基本的なCADアクセス。",
         "plus": "データベース同期、2つのサーバー、より高い制限、さらに多くのテンプレートを追加します。",
         "pro": "無制限のスケール、カスタムマップ、データベースマージ、そして親しみやすいマッピングを解放します。",
-        "sonoranOne": "Bundles CAD Pro、CMS Pro、Radio Pro、ストリーミングツール、RocketNodeホスティング。",
+        "sonoranOne": "Bundles CAD Pro、CMS Pro、Radio Pro、Sonoran Studio、RocketNode hosting。",
         "standard": "カスタムドメイン対応、より高い上限、拡張されたコミュニティツールを追加します。",
         "starter": "カスタムコミュニティID、より多くのユーザー、有料CAD必須機能を追加します。",
         "streamOverlay": "配信者とコミュニティ放送向けのオーバーレイツール。",
@@ -1865,7 +1898,8 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Starter",
-        "streamingTools": "ストリーミング ツール"
+        "streamingTools": "ストリーミング ツール",
+        "studioCommunity": "Sonoran Studio コミュニティライセンス"
       },
       "planPrices": {
         "expertInstallation": "$34.99",
@@ -1878,13 +1912,22 @@
         "streamOverlay": "$4.99/月",
         "studioCommunity": "$4.99/月"
       },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67.50",
+        "sonoranOne": "$112.50",
+        "standard": "$22.80",
+        "starter": "$9.00",
+        "studioCommunity": "$18.00"
+      },
       "planQuarterlyPrices": {
         "free": "$0.00/月",
         "plus": "$13.50/月",
         "pro": "$22.50/月",
         "sonoranOne": "$37.50/月",
         "standard": "$7.60/月",
-        "starter": "$3.00/月"
+        "starter": "$3.00/月",
+        "studioCommunity": "$6.00/月"
       },
       "pricingBadges": {
         "bestValue": "最もお得",
