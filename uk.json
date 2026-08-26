@@ -1724,6 +1724,38 @@
     "sendPage": "Надіслати сторінку",
     "unitsTooltip": "Ви також можете перетягнути сюди активний виклик диспетчеризації, щоб додати його прикріплені одиниці."
   },
+  "integrationPanels": {
+    "actionFailed": "Не вдалося виконати дію інтеграції.",
+    "actionSucceeded": "Дію інтеграції виконано.",
+    "builder": {
+      "addComponent": "Додати компонент",
+      "bodyRequired": "Визначення вимагає масиву body.",
+      "components": {
+        "button": "Кнопка",
+        "grid": "Сітка",
+        "input": "Ввід",
+        "repeat": "Повторювач",
+        "section": "Розділ",
+        "select": "Виберіть",
+        "text": "Текст",
+        "toggle": "Перемикач"
+      },
+      "copied": "JSON панелі скопійовано.",
+      "copy": "Копіювати JSON",
+      "definition": "Визначення",
+      "developerTools": "Отримайте плагіни розробника Claude та Codex, щоб допомогти створити JSON вашої панелі",
+      "format": "Формат",
+      "lastAction": "Остання виконана дія",
+      "mockState": "Тестовий стан",
+      "preview": "Попередній перегляд",
+      "reset": "Скинути приклад",
+      "subtitle": "Створюйте, переглядайте й копіюйте власну панель інтеграції.",
+      "title": "Конструктор панелі інтеграції",
+      "validJson": "Валідний JSON"
+    },
+    "confirmTitle": "Підтвердити дію",
+    "invalidDefinition": "Це визначення панелі недійсне."
+  },
   "login": {
     "buttons": {
       "cancel": "Скасувати",
@@ -1821,6 +1853,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "Активний",
+      "billedQuarterly": "Виставляється до оплати {price} щоквартально",
+      "billingCycle": "Білінговий цикл",
       "cadPlans": "Плани CAD",
       "cancellingStatus": "Скасування: {date}",
       "changeCommunity": "Змінити спільноту",
@@ -1847,10 +1881,11 @@
         "free": "Базовий доступ до CAD із ER:LC, FiveM та підключенням до API.",
         "plus": "Додає синхронізацію бази даних, два сервери, вищі ліміти та більше шаблонів.",
         "pro": "Відкриває необмежене масштабування, власні карти, злиття баз даних і зручне зіставлення.",
-        "sonoranOne": "Пакети CAD Pro, CMS Pro, Radio Pro, інструменти стримінгу та хостинг RocketNode.",
+        "sonoranOne": "Пакети CAD Pro, CMS Pro, Radio Pro, Sonoran Studio та хостинг RocketNode.",
         "standard": "Додає підтримку власного домену, вищі ліміти та розширені інструменти спільноти.",
         "starter": "Додає власний ідентифікатор спільноти, більше користувачів і платні базові функції CAD.",
-        "streamOverlay": "Накладні інструменти для стрімерів і спільнотних трансляцій."
+        "streamOverlay": "Накладні інструменти для стрімерів і спільнотних трансляцій.",
+        "studioCommunity": "Накладні інструменти для стрімерів і спільнотних трансляцій."
       },
       "planNames": {
         "cmsPro": "Sonoran CMS Pro",
@@ -1863,7 +1898,8 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Starter",
-        "streamingTools": "Інструменти для стримінгу"
+        "streamingTools": "Інструменти для стримінгу",
+        "studioCommunity": "Ліцензія спільноти Sonoran Studio"
       },
       "planPrices": {
         "expertInstallation": "$34.99",
@@ -1873,7 +1909,16 @@
         "sonoranOne": "$49.99/міс",
         "standard": "$9.99/міс",
         "starter": "$3.99/міс",
-        "streamOverlay": "$4.99/міс"
+        "streamOverlay": "$4.99/міс",
+        "studioCommunity": "$4.99/міс"
+      },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67.50",
+        "sonoranOne": "$112.50",
+        "standard": "22,80 $",
+        "starter": "9,00 $",
+        "studioCommunity": "$18.00"
       },
       "planQuarterlyPrices": {
         "free": "$0.00/міс",
@@ -1881,7 +1926,8 @@
         "pro": "$22.50/міс",
         "sonoranOne": "$37.50/міс",
         "standard": "$7.60/міс",
-        "starter": "$3.00/міс"
+        "starter": "$3.00/міс",
+        "studioCommunity": "$6.00/міс"
       },
       "pricingBadges": {
         "bestValue": "Найкраща пропозиція",

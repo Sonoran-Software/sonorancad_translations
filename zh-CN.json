@@ -1724,6 +1724,38 @@
     "sendPage": "发送页面",
     "unitsTooltip": "你也可以将一个活动的派单呼叫拖放到这里以添加其附属单元。"
   },
+  "integrationPanels": {
+    "actionFailed": "集成操作失败。",
+    "actionSucceeded": "集成操作已完成。",
+    "builder": {
+      "addComponent": "添加组件",
+      "bodyRequired": "定义需要一个 body 数组。",
+      "components": {
+        "button": "按钮",
+        "grid": "网格",
+        "input": "输入",
+        "repeat": "重复器",
+        "section": "节",
+        "select": "选择",
+        "text": "文本",
+        "toggle": "切换"
+      },
+      "copied": "面板 JSON 已复制。",
+      "copy": "复制 JSON",
+      "definition": "定义",
+      "developerTools": "获取 Claude 和 Codex 开发者插件以帮助构建你的面板 JSON",
+      "format": "格式",
+      "lastAction": "最后发出的操作",
+      "mockState": "模拟状态",
+      "preview": "预览",
+      "reset": "重置示例",
+      "subtitle": "构建、预览并复制自定义集成面板。",
+      "title": "集成面板构建器",
+      "validJson": "有效 JSON"
+    },
+    "confirmTitle": "确认操作",
+    "invalidDefinition": "此面板定义无效。"
+  },
   "login": {
     "buttons": {
       "cancel": "取消",
@@ -1821,6 +1853,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "活跃",
+      "billedQuarterly": "按季度收取 {price}",
+      "billingCycle": "计费周期",
       "cadPlans": "CAD 方案",
       "cancellingStatus": "取消中：{date}",
       "changeCommunity": "更改社区",
@@ -1847,10 +1881,11 @@
         "free": "核心 CAD 访问，支持 ER:LC、FiveM 和 API 连接。",
         "plus": "增加数据库同步、两个服务器、更高限制和更多模板。",
         "pro": "解锁无限扩展、自定义地图、数据库合并和友好映射。",
-        "sonoranOne": "套餐 CAD Pro、CMS Pro、Radio Pro、流媒体工具和 RocketNode 托管。",
+        "sonoranOne": "套餐包含 CAD Pro、CMS Pro、Radio Pro、Sonoran Studio 和 RocketNode 托管。",
         "standard": "添加自定义域名支持、更高限制和扩展的社区工具。",
         "starter": "添加自定义社区 ID，更多用户，以及付费 CAD 基础功能。",
-        "streamOverlay": "适用于主播和社区直播的叠加工具。"
+        "streamOverlay": "适用于主播和社区直播的叠加工具。",
+        "studioCommunity": "适用于主播和社区直播的叠加工具。"
       },
       "planNames": {
         "cmsPro": "Sonoran CMS 专业版",
@@ -1863,7 +1898,8 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD 标准版",
         "starter": "Sonoran CAD 入门版",
-        "streamingTools": "流媒体工具"
+        "streamingTools": "流媒体工具",
+        "studioCommunity": "Sonoran Studio 社区许可证"
       },
       "planPrices": {
         "expertInstallation": "$34.99",
@@ -1873,7 +1909,16 @@
         "sonoranOne": "$49.99/月",
         "standard": "$9.99/月",
         "starter": "$3.99/月",
-        "streamOverlay": "$4.99/月"
+        "streamOverlay": "$4.99/月",
+        "studioCommunity": "$4.99/月"
+      },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67.50",
+        "sonoranOne": "$112.50",
+        "standard": "22.80美元",
+        "starter": "$9.00",
+        "studioCommunity": "$18.00"
       },
       "planQuarterlyPrices": {
         "free": "$0.00/月",
@@ -1881,7 +1926,8 @@
         "pro": "$22.50/月",
         "sonoranOne": "$37.50/月",
         "standard": "$7.60/月",
-        "starter": "$3.00/月"
+        "starter": "$3.00/月",
+        "studioCommunity": "$6.00/月"
       },
       "pricingBadges": {
         "bestValue": "最优价值",

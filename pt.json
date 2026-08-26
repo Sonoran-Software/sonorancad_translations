@@ -1724,6 +1724,38 @@
     "sendPage": "Enviar página",
     "unitsTooltip": "Você também pode arrastar e soltar uma chamada de despacho ativa aqui para adicionar as unidades anexadas."
   },
+  "integrationPanels": {
+    "actionFailed": "A ação de integração falhou.",
+    "actionSucceeded": "A ação de integração foi concluída.",
+    "builder": {
+      "addComponent": "Adicionar componente",
+      "bodyRequired": "A definição requer um array body.",
+      "components": {
+        "button": "Botão",
+        "grid": "Grelha",
+        "input": "Entrada",
+        "repeat": "Repetidor",
+        "section": "Secção",
+        "select": "Selecionar",
+        "text": "Texto",
+        "toggle": "Alternar"
+      },
+      "copied": "JSON do painel copiado.",
+      "copy": "Copiar JSON",
+      "definition": "Definição",
+      "developerTools": "Obtenha os plugins de desenvolvedor Claude e Codex para ajudar a criar o JSON do seu painel",
+      "format": "Formatar",
+      "lastAction": "Última ação emitida",
+      "mockState": "Estado simulado",
+      "preview": "Pré-visualização",
+      "reset": "Redefinir exemplo",
+      "subtitle": "Crie, visualize e copie um painel de integração personalizado.",
+      "title": "Construtor de Painel de Integração",
+      "validJson": "JSON válido"
+    },
+    "confirmTitle": "Confirmar ação",
+    "invalidDefinition": "Esta definição de painel é inválida."
+  },
   "login": {
     "buttons": {
       "cancel": "Cancelar",
@@ -1821,6 +1853,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "Ativo",
+      "billedQuarterly": "Cobrado como {price} trimestralmente",
+      "billingCycle": "Ciclo de faturamento",
       "cadPlans": "Planos CAD",
       "cancellingStatus": "Cancelando: {date}",
       "changeCommunity": "Mudar comunidade",
@@ -1847,10 +1881,11 @@
         "free": "Acesso básico ao CAD com ER:LC, FiveM e conectividade de API.",
         "plus": "Adiciona sincronização de banco de dados, dois servidores, limites mais altos e mais modelos.",
         "pro": "Desbloqueia escala ilimitada, mapas personalizados, fusão de bases de dados e mapeamento fácil.",
-        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, ferramentas de streaming e hospedagem RocketNode.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, Sonoran Studio e hospedagem RocketNode.",
         "standard": "Adiciona suporte a domínio personalizado, limites mais altos e ferramentas comunitárias expandidas.",
         "starter": "Adiciona ID de comunidade personalizado, mais usuários e recursos pagos de CAD.",
-        "streamOverlay": "Ferramentas de sobreposição para streamers e transmissões da comunidade."
+        "streamOverlay": "Ferramentas de sobreposição para streamers e transmissões da comunidade.",
+        "studioCommunity": "Ferramentas de sobreposição para streamers e transmissões da comunidade."
       },
       "planNames": {
         "cmsPro": "Sonoran CMS Pro",
@@ -1863,7 +1898,8 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Iniciante",
-        "streamingTools": "Ferramentas de Streaming"
+        "streamingTools": "Ferramentas de Streaming",
+        "studioCommunity": "Licença Comunitária do Sonoran Studio"
       },
       "planPrices": {
         "expertInstallation": "US$34.99",
@@ -1873,7 +1909,16 @@
         "sonoranOne": "$49,99/mês",
         "standard": "$9,99/mês",
         "starter": "$3,99/mês",
-        "streamOverlay": "$4,99/mês"
+        "streamOverlay": "$4,99/mês",
+        "studioCommunity": "$4,99/mês"
+      },
+      "planQuarterlyBilled": {
+        "plus": "US$40,50",
+        "pro": "$67.50",
+        "sonoranOne": "US$112,50",
+        "standard": "$22,80",
+        "starter": "US$9,00",
+        "studioCommunity": "R$18,00"
       },
       "planQuarterlyPrices": {
         "free": "$0,00/mês",
@@ -1881,7 +1926,8 @@
         "pro": "US$22,50/mês",
         "sonoranOne": "US$37,50/mês",
         "standard": "$7,60/mês",
-        "starter": "$3,00/mês"
+        "starter": "$3,00/mês",
+        "studioCommunity": "$6,00/mês"
       },
       "pricingBadges": {
         "bestValue": "Melhor valor",
