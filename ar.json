@@ -1821,6 +1821,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "نشط",
+      "billedQuarterly": "يتم الفوترة بـ {price} ربع سنويًا",
+      "billingCycle": "دورة الفوترة",
       "cadPlans": "خطط CAD",
       "cancellingStatus": "إلغاء: {date}",
       "changeCommunity": "تغيير المجتمع",
@@ -1847,10 +1849,11 @@
         "free": "وصول أساسي إلى CAD مع ER:LC وFiveM والاتصال بـAPI.",
         "plus": "يضيف مزامنة قاعدة البيانات، وخادمين، وحدودًا أعلى، والمزيد من القوالب.",
         "pro": "يفتح نطاقًا غير محدود، وخرائط مخصصة، ودمج قاعدة البيانات، وخرائط ودية.",
-        "sonoranOne": "حِزم CAD Pro وCMS Pro وRadio Pro وأدوات البث والاستضافة RocketNode.",
+        "sonoranOne": "تتضمن CAD Pro وCMS Pro وRadio Pro وSonoran Studio واستضافة RocketNode.",
         "standard": "يضيف دعم النطاق المخصص، وحدودًا أعلى، وأدوات مجتمع موسعة.",
         "starter": "يضيف معرّف مجتمع مخصص، ومزيدًا من المستخدمين، وضروريات CAD المدفوعة.",
-        "streamOverlay": "أدوات التراكب للبث المباشر للمذيعين والمجتمعات."
+        "streamOverlay": "أدوات التراكب للبث المباشر للمذيعين والمجتمعات.",
+        "studioCommunity": "أدوات التراكب للبث المباشر للمذيعين والمجتمعات."
       },
       "planNames": {
         "cmsPro": "سونوران CMS برو",
@@ -1863,7 +1866,8 @@
         "sonoranOne": "سونوران وان",
         "standard": "سونوران CAD ستاندرد",
         "starter": "سونوران CAD ستارتر",
-        "streamingTools": "أدوات البث"
+        "streamingTools": "أدوات البث",
+        "studioCommunity": "ترخيص سونوران ستوديو المجتمعي"
       },
       "planPrices": {
         "expertInstallation": "$34.99",
@@ -1873,7 +1877,16 @@
         "sonoranOne": "$49.99/شهر",
         "standard": "$9.99/شهر",
         "starter": "$3.99/شهر",
-        "streamOverlay": "$4.99/شهر"
+        "streamOverlay": "$4.99/شهر",
+        "studioCommunity": "$4.99/شهر"
+      },
+      "planQuarterlyBilled": {
+        "plus": "٤٠.٥٠$",
+        "pro": "‏٦٧.٥٠$",
+        "sonoranOne": "١١٢٫٥٠$",
+        "standard": "٢٢٫٨٠$",
+        "starter": "$9.00",
+        "studioCommunity": "١٨.٠٠$"
       },
       "planQuarterlyPrices": {
         "free": "$0.00/شهر",
@@ -1881,7 +1894,8 @@
         "pro": "$22.50/شهر",
         "sonoranOne": "$37.50/شهر",
         "standard": "‏$7.60/شهر",
-        "starter": "$3.00/شهر"
+        "starter": "$3.00/شهر",
+        "studioCommunity": "$6.00/شهر"
       },
       "pricingBadges": {
         "bestValue": "أفضل قيمة",

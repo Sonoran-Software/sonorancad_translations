@@ -1820,6 +1820,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "Aktiv",
+      "billedQuarterly": "Faktureret som {price} kvartalsvis",
+      "billingCycle": "Faktureringscyklus",
       "cadPlans": "CAD-planer",
       "cancellingStatus": "Annullerer: {date}",
       "changeCommunity": "Skift fællesskab",
@@ -1846,10 +1848,11 @@
         "free": "Kerneadgang til CAD med ER:LC, FiveM og API-forbindelse.",
         "plus": "Tilføjer databasesynkronisering, to servere, højere grænser og flere skabeloner.",
         "pro": "Låser op for ubegrænset skala, brugerdefinerede kort, databasesammenfletning og venlig mapping.",
-        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streamingværktøjer og RocketNode-hosting.",
+        "sonoranOne": "Bundlerne CAD Pro, CMS Pro, Radio Pro, Sonoran Studio og RocketNode-hosting.",
         "standard": "Tilføjer understøttelse af eget domæne, højere grænser og udvidede fællesskabsværktøjer.",
         "starter": "Tilføjer brugerdefineret community-ID, flere brugere og betalte CAD-essentials.",
-        "streamOverlay": "Overlay-værktøjer til streamere og community-udsendelser."
+        "streamOverlay": "Overlay-værktøjer til streamere og community-udsendelser.",
+        "studioCommunity": "Overlay-værktøjer til streamere og community-udsendelser."
       },
       "planNames": {
         "cmsPro": "Sonoran CMS Pro",
@@ -1862,7 +1865,8 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Starter",
-        "streamingTools": "Streamingværktøjer"
+        "streamingTools": "Streamingværktøjer",
+        "studioCommunity": "Sonoran Studio fællesskabslicens"
       },
       "planPrices": {
         "expertInstallation": "34,99 $",
@@ -1872,7 +1876,16 @@
         "sonoranOne": "49,99 $/md.",
         "standard": "9,99 $/md.",
         "starter": "3,99 $/md.",
-        "streamOverlay": "4,99 $/md."
+        "streamOverlay": "4,99 $/md.",
+        "studioCommunity": "4,99 $/md."
+      },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67,50",
+        "sonoranOne": "112,50 $",
+        "standard": "22,80 $",
+        "starter": "9,00 $",
+        "studioCommunity": "18,00 $"
       },
       "planQuarterlyPrices": {
         "free": "0,00 $/md",
@@ -1880,7 +1893,8 @@
         "pro": "22,50 $/md",
         "sonoranOne": "37,50 $/md",
         "standard": "$7.60/md",
-        "starter": "3,00 $/md"
+        "starter": "3,00 $/md",
+        "studioCommunity": "6,00 $/md"
       },
       "pricingBadges": {
         "bestValue": "Bedste værdi",
