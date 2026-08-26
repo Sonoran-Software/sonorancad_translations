@@ -1821,6 +1821,8 @@
   "payment": {
     "billingCenter": {
       "activeSubscriptions": "Active",
+      "billedQuarterly": "Billed as {price} quarterly",
+      "billingCycle": "Billing cycle",
       "cadPlans": "CAD Plans",
       "cancellingStatus": "Cancelling: {date}",
       "changeCommunity": "Change Community",
@@ -1847,10 +1849,11 @@
         "free": "Core CAD access with ER:LC, FiveM, and API connectivity.",
         "plus": "Adds database sync, two servers, higher limits, and more templates.",
         "pro": "Unlocks unlimited scale, custom maps, database merge, and friendly mapping.",
-        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, streaming tools, and RocketNode hosting.",
+        "sonoranOne": "Bundles CAD Pro, CMS Pro, Radio Pro, Sonoran Studio, and RocketNode hosting.",
         "standard": "Adds custom domain support, higher limits, and expanded community tools.",
         "starter": "Adds custom community ID, more users, and paid CAD essentials.",
-        "streamOverlay": "Overlay tools for streamers and community broadcasts."
+        "studioCommunity": "Smart lighting and stream widgets for your community. Included with Sonoran One.",
+        "streamOverlay": "Smart lighting and stream widgets for your community. Included with Sonoran One."
       },
       "planNames": {
         "cmsPro": "Sonoran CMS Pro",
@@ -1863,6 +1866,7 @@
         "sonoranOne": "Sonoran One",
         "standard": "Sonoran CAD Standard",
         "starter": "Sonoran CAD Starter",
+        "studioCommunity": "Sonoran Studio Community License",
         "streamingTools": "Streaming Tools"
       },
       "planPrices": {
@@ -1873,7 +1877,8 @@
         "sonoranOne": "$49.99/mo",
         "standard": "$9.99/mo",
         "starter": "$3.99/mo",
-        "streamOverlay": "$4.99/mo"
+        "studioCommunity": "$7.99/mo",
+        "streamOverlay": "$7.99/mo"
       },
       "planQuarterlyPrices": {
         "free": "$0.00/mo",
@@ -1881,7 +1886,16 @@
         "pro": "$22.50/mo",
         "sonoranOne": "$37.50/mo",
         "standard": "$7.60/mo",
-        "starter": "$3.00/mo"
+        "starter": "$3.00/mo",
+        "studioCommunity": "$6.00/mo"
+      },
+      "planQuarterlyBilled": {
+        "plus": "$40.50",
+        "pro": "$67.50",
+        "sonoranOne": "$112.50",
+        "standard": "$22.80",
+        "starter": "$9.00",
+        "studioCommunity": "$18.00"
       },
       "pricingBadges": {
         "bestValue": "Best Value",
