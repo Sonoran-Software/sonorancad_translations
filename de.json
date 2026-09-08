@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Du musst deinen API Key in allen Plugin oder API-Konfigurationen ändern!",
       "customMapImagesLabel": "Benutzerdefinierte Kartenbilder (max. 30 MB pro Datei)",
       "dbSync": {
+        "accountIdentifierColumn": "Spalte für Kontokennung",
+        "accountIdentifierColumnAbout": "Die Spalte, die die zugehörige FiveM-Lizenz enthält, typischerweise license. Sonoran gleicht exakte Werte mit oder ohne den Präfix license: ab.",
+        "accountIdentifierOwnerColumn": "Kontokennzeichen-Spalte",
+        "accountIdentifierOwnerColumnAbout": "Die Spalte in der Tabelle der Kontokennung, die den Zeichen-Schlüssel enthält, der von Ihren anderen Zeichen-Zuordnungen verwendet wird, typischerweise citizenid.",
+        "accountIdentifierTable": "Tabelle für Kontokennung",
+        "accountIdentifierTableAbout": "Die Tabelle, die sowohl die FiveM-Lizenz als auch den Charakter-Schlüssel enthält, typischerweise Spieler.",
         "aiAllowFriendlyMappings": "Freundliche Zuordnungen für erkannte Werte hinzufügen",
         "aiAllowFriendlyMappingsHint": "Konvertiert verifizierte numerische Werte, wie etwa FiveM-Fahrzeuglack-Indexe, in lesbare Datensatzwerte wie Metallic Black. Vorhandene manuelle Zuordnungen bleiben erhalten.",
         "aiAllowLicenseFields": "Fehlende Lizenztyp-Felder hinzufügen",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Automatische Einrichtung",
         "aiStartSetup": "Automatische Einrichtung starten",
         "aiWarnings": "Warnungen",
+        "automaticCharacterLinking": "Automatisch verknüpfen",
+        "automaticCharacterLinkingAbout": "Zeigt jedem Benutzer sicher nur die Charaktere an, die zu seiner verknüpften FiveM-Lizenz gehören. Benutzer führen im Spiel /link aus und aktualisieren dann ihre Zivilisten-Seite.",
         "characterMapping": "Charaktermapping",
         "characterMappingColumn": "Charaktermappingspalte",
         "columnName": "Spaltenname",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON-Schlüssel",
         "label": "Bezeichnung",
         "licenseMapping": "Lizenzmapping",
+        "manualCharacterLinking": "Manuell verknüpfen",
+        "manualCharacterLinkingAbout": "Benutzer durchsuchen die Datenbanksynchronisierung nach einem Charakter und wählen ihn aus, um diesen Charakter mit ihrem CAD-Konto zu verknüpfen.",
         "password": "Passwort",
         "port": "Port",
         "saveCredentials": "Verbindungsdaten speichern",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC-Autoregistrierung",
     "errors": {
       "dmvManagedByDatabaseSync": "Datenbanksynchronisierung ist aktiviert, daher werden Lizenzen und Fahrzeugdatensätze automatisch aus deiner In-Game-Datenbank übernommen.",
-      "maxCharacters": "Fehler: Du hast die maximale Anzahl von zivilen Charaktern in der Community erreicht."
+      "maxCharacters": "Fehler: Du hast die maximale Anzahl von zivilen Charaktern in der Community erreicht.",
+      "noAutomaticCharacters": "Keine verknüpften Charaktere gefunden. Die Datenbanksynchronisierung verwendet die automatische Charakterverknüpfung. Führe /link im Spiel aus und lade dann diese Seite neu. Wenn du deine Charaktere immer noch nicht siehst, wende dich an einen Community-Administrator."
     },
     "labels": {
+      "refreshCharacters": "Verknüpfte Charaktere aktualisieren",
       "selectedCharacter": "Ausgewählter Charakter"
     }
   },

@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Będziesz musiał zaktualizować swój klucz API we wszystkich wtyczkach lub konfiguracji API!",
       "customMapImagesLabel": "Niestandardowe obrazy map (maks. 30 MB/szt.)",
       "dbSync": {
+        "accountIdentifierColumn": "Kolumna identyfikatora konta",
+        "accountIdentifierColumnAbout": "Kolumna zawierająca przypisaną licencję FiveM, zazwyczaj license. Sonoran dopasowuje dokładne wartości z prefiksem license: lub bez niego.",
+        "accountIdentifierOwnerColumn": "Kolumna klucza znaku konta",
+        "accountIdentifierOwnerColumnAbout": "Kolumna w tabeli identyfikatora konta zawierająca klucz postaci używany przez twoje inne mapowania postaci, zwykle citizenid.",
+        "accountIdentifierTable": "Tabela identyfikatora konta",
+        "accountIdentifierTableAbout": "Tabela zawierająca zarówno licencję FiveM, jak i klucz postaci, zazwyczaj graczy.",
         "aiAllowFriendlyMappings": "Dodaj przyjazne mapowania dla rozpoznanych wartości",
         "aiAllowFriendlyMappingsHint": "Konwertuje zweryfikowane wartości numeryczne, takie jak indeksy lakieru pojazdów FiveM, na czytelne wartości rekordów, takie jak Metallic Black. Istniejące ręczne mapowania są zachowane.",
         "aiAllowLicenseFields": "Dodaj brakujące pola typu licencji",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Automatyczna konfiguracja AI",
         "aiStartSetup": "Rozpocznij automatyczną konfigurację",
         "aiWarnings": "Ostrzeżenia",
+        "automaticCharacterLinking": "Łącz automatycznie",
+        "automaticCharacterLinkingAbout": "Bezpiecznie pokazuje każdemu użytkownikowi tylko postacie przypisane do jego połączonej licencji FiveM. Użytkownicy wpisują /link w grze, a następnie odświeżają swoją stronę cywilną.",
         "characterMapping": "Mapowanie Postaci",
         "characterMappingColumn": "Kolumna Mapowania Postaci Mapping Column",
         "columnName": "Nazwa Kolumny",
@@ -684,6 +692,8 @@
         "jsonKey": "Klucz JSON",
         "label": "Etykieta",
         "licenseMapping": "Mapowanie Licencji",
+        "manualCharacterLinking": "Połącz ręcznie",
+        "manualCharacterLinkingAbout": "Użytkownicy wyszukują w Synchronizacji bazy danych postać i wybierają ją, aby powiązać tę postać ze swoim kontem CAD.",
         "password": "Hasło",
         "port": "Port",
         "saveCredentials": "Zapisz Poświadczenia Połączenia",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "Automatyczna rejestracja ER:LC",
     "errors": {
       "dmvManagedByDatabaseSync": "Synchronizacja bazy danych jest włączona, więc licencje i rekordy pojazdów są automatycznie pobierane z twojej bazy danych w grze.",
-      "maxCharacters": "Błąd: Osiągnąłeś maksymalną liczbę postaci dla Twojej społeczności"
+      "maxCharacters": "Błąd: Osiągnąłeś maksymalną liczbę postaci dla Twojej społeczności",
+      "noAutomaticCharacters": "Nie znaleziono powiązanych postaci. Synchronizacja bazy danych używa automatycznego łączenia postaci. Uruchom /link w grze, a następnie odśwież tę stronę. Jeśli nadal nie widzisz swoich postaci, skontaktuj się z administratorem społeczności."
     },
     "labels": {
+      "refreshCharacters": "Odśwież powiązane postacie",
       "selectedCharacter": "Wybierz postać"
     }
   },

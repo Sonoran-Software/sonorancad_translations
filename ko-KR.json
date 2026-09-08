@@ -626,6 +626,12 @@
       "confirmKeyChange2": "모든 플러그인 또는 API 구성에서 API 키를 업데이트해야 합니다!",
       "customMapImagesLabel": "사용자 지정 지도 이미지 (각 30MB 최대)",
       "dbSync": {
+        "accountIdentifierColumn": "계정 식별자 열",
+        "accountIdentifierColumnAbout": "소유 FiveM 라이선스를 포함하는 열, 일반적으로 license. Sonoran은 license: 접두사가 있든 없든 정확한 값을 일치시킵니다.",
+        "accountIdentifierOwnerColumn": "계정 문자 키 열",
+        "accountIdentifierOwnerColumnAbout": "다른 문자 매핑에서 사용하는 문자 키를 포함하는 계정 식별자 테이블의 열이며, 일반적으로 citizenid입니다.",
+        "accountIdentifierTable": "계정 식별자 테이블",
+        "accountIdentifierTableAbout": "FiveM 라이선스와 캐릭터 키를 모두 포함하는 테이블, 일반적으로 플레이어",
         "aiAllowFriendlyMappings": "인식된 값에 대한 친숙한 매핑 추가",
         "aiAllowFriendlyMappingsHint": "검증된 숫자 값을, 예를 들어 FiveM 차량 페인트 인덱스를, Metallic Black 같은 읽을 수 있는 레코드 값으로 변환합니다. 기존 수동 매핑은 유지됩니다.",
         "aiAllowLicenseFields": "누락된 라이선스 유형 필드 추가",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "AI 자동 설정",
         "aiStartSetup": "자동 설정 시작",
         "aiWarnings": "경고",
+        "automaticCharacterLinking": "자동으로 연결",
+        "automaticCharacterLinkingAbout": "연결된 FiveM 라이선스가 소유한 캐릭터만 각 사용자에게 안전하게 표시합니다. 사용자는 게임 내에서 /link를 실행한 다음 시민 페이지를 새로고침합니다.",
         "characterMapping": "문자 매핑",
         "characterMappingColumn": "문자 매핑 열",
         "columnName": "열 이름",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON 키",
         "label": "상표",
         "licenseMapping": "라이선스 매핑",
+        "manualCharacterLinking": "수동으로 연결",
+        "manualCharacterLinkingAbout": "사용자가 Database Sync에서 캐릭터를 검색하고 선택하여 해당 캐릭터를 CAD 계정에 연결합니다.",
         "password": "비밀번호",
         "port": "포트",
         "saveCredentials": "연결 자격 증명 저장",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC 자동 등록",
     "errors": {
       "dmvManagedByDatabaseSync": "데이터베이스 동기화가 활성화되어 있어 면허와 차량 기록이 게임 내 데이터베이스에서 자동으로 불러와집니다.",
-      "maxCharacters": "오류: 커뮤니티의 최대 문자 한도에 도달했습니다."
+      "maxCharacters": "오류: 커뮤니티의 최대 문자 한도에 도달했습니다.",
+      "noAutomaticCharacters": "연결된 캐릭터를 찾을 수 없습니다. 데이터베이스 동기화는 자동 캐릭터 연결을 사용합니다. 게임 내에서 /link를 실행한 다음 이 페이지를 새로고침하세요. 여전히 캐릭터가 보이지 않으면 커뮤니티 관리자에게 문의하세요."
     },
     "labels": {
+      "refreshCharacters": "연결된 캐릭터 새로고침",
       "selectedCharacter": "선택한 캐릭터"
     }
   },

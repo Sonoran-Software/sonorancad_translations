@@ -626,6 +626,12 @@
       "confirmKeyChange2": "您需要在所有外掛或API配置中更新您的API金鑰！",
       "customMapImagesLabel": "自訂地圖圖片（每個最大 30MB）",
       "dbSync": {
+        "accountIdentifierColumn": "帳號識別碼欄位",
+        "accountIdentifierColumnAbout": "包含擁有者 FiveM 授權的欄位，通常為 license。Sonoran 會比對完全相符的值，無論是否包含 license: 前綴。",
+        "accountIdentifierOwnerColumn": "帳號字元鍵欄位",
+        "accountIdentifierOwnerColumnAbout": "帳號識別表中包含字元鍵值的欄位，供你的其他字元對應使用，通常為 citizenid。",
+        "accountIdentifierTable": "帳號識別碼表格",
+        "accountIdentifierTableAbout": "包含 FiveM 授權與角色鍵的表格，通常為玩家。",
         "aiAllowFriendlyMappings": "為已識別值新增友善對應",
         "aiAllowFriendlyMappingsHint": "將已驗證的數值，例如 FiveM 車輛烤漆索引，轉換為可讀取的記錄值，例如 Metallic Black。現有的手動對應會被保留。",
         "aiAllowLicenseFields": "新增缺少的執照類型欄位",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "AI 自動設定",
         "aiStartSetup": "開始自動設定",
         "aiWarnings": "警告",
+        "automaticCharacterLinking": "自動連結",
+        "automaticCharacterLinkingAbout": "安全地只顯示每位使用者其已連結的 FiveM 授權所擁有的角色。使用者在遊戲內執行 /link，然後重新整理其平民頁面。",
         "characterMapping": "市民資訊對映",
         "characterMappingColumn": "市民資訊列對映",
         "columnName": "資料庫列名",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON金鑰",
         "label": "標籤",
         "licenseMapping": "許可證資訊對映",
+        "manualCharacterLinking": "手動連結",
+        "manualCharacterLinkingAbout": "使用者在資料庫同步中搜尋一個角色並選取它，將該角色連結至他們的 CAD 帳戶。",
         "password": "密碼",
         "port": "埠",
         "saveCredentials": "儲存連線憑證",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC 自動註冊",
     "errors": {
       "dmvManagedByDatabaseSync": "資料庫同步已啟用，因此駕照和車輛記錄會自動從你的遊戲內資料庫提取。",
-      "maxCharacters": "錯誤：您已達到社群的最大字元數限制"
+      "maxCharacters": "錯誤：您已達到社群的最大字元數限制",
+      "noAutomaticCharacters": "未找到已連結的角色。資料庫同步正在使用自動角色連結。請在遊戲中執行 /link，然後重新整理此頁面。如果您仍然看不到您的角色，請聯絡社群管理員。"
     },
     "labels": {
+      "refreshCharacters": "重新整理已連結角色",
       "selectedCharacter": "選擇市民"
     }
   },

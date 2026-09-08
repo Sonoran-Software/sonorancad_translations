@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Tüm eklenti veya API yapılandırmalarında API anahtarınızı güncellemeniz gerekecektir!",
       "customMapImagesLabel": "Özel Harita Görselleri (her biri en fazla 30MB)",
       "dbSync": {
+        "accountIdentifierColumn": "Hesap Tanımlayıcı Sütunu",
+        "accountIdentifierColumnAbout": "Sahip olan FiveM lisansını içeren sütun, genellikle license. Sonoran, license: öneki olsun ya da olmasın tam değerleri eşleştirir.",
+        "accountIdentifierOwnerColumn": "Hesap Karakter Anahtarı Sütunu",
+        "accountIdentifierOwnerColumnAbout": "Hesap tanımlayıcı tablosunda diğer karakter eşleştirmeleriniz tarafından kullanılan karakter anahtarını içeren sütun, genellikle citizenid.",
+        "accountIdentifierTable": "Hesap Tanımlayıcı Tablosu",
+        "accountIdentifierTableAbout": "Hem FiveM lisansını hem de karakter anahtarını içeren tablo, genellikle oyuncular.",
         "aiAllowFriendlyMappings": "Tanınan değerler için Dostça Eşlemeler Ekle",
         "aiAllowFriendlyMappingsHint": "Doğrulanmış sayısal değerleri, örneğin FiveM araç boya indekslerini, Metallic Black gibi okunabilir kayıt değerlerine dönüştürür. Mevcut manuel eşleştirmeler korunur.",
         "aiAllowLicenseFields": "Eksik lisans türü alanlarını ekle",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Yapay Zeka Otomatik Kurulum",
         "aiStartSetup": "Otomatik Kurulumu Başlat",
         "aiWarnings": "Uyarılar",
+        "automaticCharacterLinking": "Otomatik Olarak Bağla",
+        "automaticCharacterLinkingAbout": "Güvenli bir şekilde her kullanıcıya yalnızca bağlı FiveM lisansına ait karakterleri gösterir. Kullanıcılar oyunda /link çalıştırır, ardından sivil sayfalarını yeniler.",
         "characterMapping": "Karakter Eşleme",
         "characterMappingColumn": "Karakter Eşleme Sütunu",
         "columnName": "Sütun adı",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON Anahtarı",
         "label": "Etiket",
         "licenseMapping": "Lisans Eşleme",
+        "manualCharacterLinking": "Manuel Olarak Bağla",
+        "manualCharacterLinkingAbout": "Kullanıcılar bir karakter için Veritabanı Senkronizasyonunda arama yapar ve o karakteri CAD hesaplarına bağlamak için seçer.",
         "password": "Şifre",
         "port": "Liman",
         "saveCredentials": "Bağlantı Kimlik Bilgilerini Kaydet",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC Otomatik Kayıt",
     "errors": {
       "dmvManagedByDatabaseSync": "Veritabanı senkronizasyonu etkin, bu yüzden lisanslar ve araç kayıtları oyun içi veritabanınızdan otomatik olarak çekilir.",
-      "maxCharacters": "Hata: Topluluğunuzun maksimum karakter sınırına ulaştınız"
+      "maxCharacters": "Hata: Topluluğunuzun maksimum karakter sınırına ulaştınız",
+      "noAutomaticCharacters": "Bağlı karakter bulunamadı. Veritabanı Senkronizasyonu otomatik karakter bağlamayı kullanıyor. Oyun içinde /link çalıştırın, ardından bu sayfayı yenileyin. Hâlâ karakterlerinizi göremiyorsanız, bir topluluk yöneticisiyle iletişime geçin."
     },
     "labels": {
+      "refreshCharacters": "Bağlı karakterleri yenile",
       "selectedCharacter": "Seçilen Karakter"
     }
   },
