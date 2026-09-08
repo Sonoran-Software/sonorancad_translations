@@ -1386,7 +1386,7 @@
                 "question": "Je Sonoran CAD nejlepší CAD pro ER:LC?"
               },
               "community": {
-                "answer": "Rozhodně. Bezplatný plán je ideální pro malé až středně velké komunity a nabízí plnou funkcionalitu ER:LC bez omezení. Později můžete přejít na vyšší plán, pokud váš server poroste a bude potřebovat další účty nebo funkce.",
+                "answer": "Ano. Začněte s bezplatným plánem a přejděte na vyšší, až budete potřebovat více účtů nebo další funkce CAD. Integrace ER:LC je dostupná v každém plánu CAD.",
                 "question": "Je to vhodné pro malé nebo rostoucí komunity?"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "Jaké funkce jsou zahrnuty v integraci ER:LC?"
               },
               "free": {
-                "answer": "Ano, integrace ER:LC je plně dostupná v bezplatné verzi Sonoran CAD. Placené plány jsou potřeba jen tehdy, pokud chcete přidat více uživatelských účtů nebo škálovat svou komunitu, ale všechny základní funkce ER:LC fungují bez upgradu.",
+                "answer": "Ano. Sonoran CAD zahrnuje integraci ER:LC v bezplatném plánu. ER:LC vyžaduje samostatný nákup balíčku API Expansion Pack pro váš privátní server. Limity plánu CAD stále platí; porovnejte plány pro limity účtu a další funkce.",
                 "question": "Je integrace ER:LC zdarma k použití?"
               },
               "setup": {
-                "answer": "Nastavení obvykle zabere méně než 10 minut. Stačí vygenerovat svůj klíč ER:LC API, vložit ho do Sonoran CAD a vložit naši URL webhooku do menu serveru ER:LC. Není vyžadováno žádné kódování ani pokročilé nastavení.",
-                "question": "Jak dlouho trvá nastavení integrace?"
+                "answer": "V nastavení vašeho soukromého serveru ER:LC v případě potřeby zakupte balíček API Expansion Pack a zkopírujte svůj klíč API ER:LC. V Sonoran CAD otevřete Admin > Advanced > In-Game Integration > ER:LC a vložte klíč do odpovídajícího pole serveru. Zkopírujte URL webhooku událostí z CAD do ER:LC API > Event Log Webhook. Hráči si také musí v CAD propojit své účty Roblox.",
+                "question": "Jak připojím svůj server ER:LC k Sonoran CAD?"
+              },
+              "troubleshooting": {
+                "answer": "Zakoupení balíčku umožní přístup k API; nepřipojí server automaticky. Zkontrolujte, že je aktuální klíč ER:LC API uložen pro správný server v CAD. Pokud chybí hovory nebo registrace, zkontrolujte Event Log Webhook v ER:LC oproti URL zobrazené v CAD. Hráči by také měli zkontrolovat, že jejich účet Roblox je propojen. Pokud potřebujete pomoc s nalezením těchto nastavení, použijte níže uvedený průvodce nastavením.",
+                "question": "Koupil jsem balíček ER:LC API Pack. Proč Sonoran CAD nefunguje?"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "Otázky",
           "faqTitlePrimary": "Často kladené otázky",
           "headlineAccent": "pro ER:LC",
-          "headlinePrimary": "Nejlepší CAD",
+          "headlinePrimary": "Zdarma CAD",
           "kicker": "Zdarma, rychle, plně integrované",
           "meta": {
-            "description": "Bezplatné CAD pro ER:LC s 3D živou mapou, bodycamem, nouzovými hovory, nástroji pro postavu a podporou herního overlaye.",
+            "description": "Bezplatné CAD pro záchranné složky: Liberty County (ERLC) na Robloxu. Propojte svůj server s živou mapou, bodycamem, tísňovými hovory a nástroji pro postavu.",
             "keywords": "ER:LC CAD, bezplatné CAD pro ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Integrace Sonoran CAD pro ER:LC",
-            "title": "Bezplatné CAD pro ER:LC | Sonoran CAD",
+            "title": "Bezplatný ERLC CAD systém pro Roblox - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "Otázky",
           "faqTitlePrimary": "Často kladené otázky",
           "headlineAccent": "pro FiveM",
-          "headlinePrimary": "Nejlepší CAD",
+          "headlinePrimary": "Zdarma CAD / MDT",
           "kicker": "Zdarma, rychle, plně integrované",
           "meta": {
-            "description": "Bezplatný CAD pro FiveM s živou mapou, bodycamem, oficiálními pluginy a volitelnou synchronizací databáze pro hluboce integrované roleplay servery.",
+            "description": "Bezplatné FiveM CAD / MDT pro roleplay dispečink, živé mapy, bodycam a oficiální pluginy. Připojte svůj server, porovnejte tarify a prozkoumejte volitelnou synchronizaci databáze.",
             "keywords": "FiveM CAD, bezplatné CAD pro FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Integrace Sonoran CAD pro FiveM",
-            "title": "Bezplatné CAD pro FiveM | Sonoran CAD",
+            "title": "Bezplatné FiveM CAD / MDT | Sonoran CAD",
             "twitterImageAlt": "Náhled integrace Sonoran CAD x FiveM"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "Cenotvorba",
     "pricingDescription": "Placená předplatná Sonoran CAD vám umožňují povolit nové integrační funkce, povolit přizpůsobení, odstranit omezení a další!",
+    "pricingPage": {
+      "description": "Porovnejte tarify Sonoran CAD, měsíční a čtvrtletní ceny, limity účtů a zahrnuté funkce. Bezplatné integrace FiveM a ERLC jsou k dispozici u každého tarifu CAD.",
+      "erlcLink": "Integrace ERLC CAD",
+      "fivemLink": "Integrace FiveM CAD / MDT",
+      "heading": "Ceník Sonoran CAD",
+      "integrationLinks": "Herní integrace",
+      "setupGuide": "Průvodce nastavením ERLC",
+      "title": "Ceník Sonoran CAD - bezplatné a placené plány"
+    },
     "startFree": "Začít zdarma",
     "startToday": "Začít dnes",
     "studio": {

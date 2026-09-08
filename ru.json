@@ -1386,7 +1386,7 @@
                 "question": "Sonoran CAD — лучший CAD для ER:LC?"
               },
               "community": {
-                "answer": "Абсолютно. Бесплатный план идеально подходит для небольших и средних сообществ, предлагая полный функционал ER:LC без ограничений. Вы сможете перейти на более высокий план позже, если ваш сервер вырастет и потребуется больше аккаунтов или функций.",
+                "answer": "Да. Начните с бесплатного тарифа и перейдите на более высокий, когда вам понадобятся дополнительные аккаунты или дополнительные функции CAD. Интеграция ER:LC доступна на каждом тарифе CAD.",
                 "question": "Подходит ли это для небольших или растущих сообществ?"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "Какие функции включены в интеграцию ER:LC?"
               },
               "free": {
-                "answer": "Да, интеграция ER:LC полностью доступна в бесплатной версии Sonoran CAD. Платные планы нужны только если вы хотите добавить больше учетных записей пользователей или масштабировать свое сообщество, но все основные функции ER:LC работают без обновления.",
+                "answer": "Да. Sonoran CAD включает интеграцию ER:LC в бесплатный план. Для вашего частного сервера в ER:LC требуется отдельная покупка API Expansion Pack. Ограничения плана CAD по-прежнему действуют; сравните планы по лимитам аккаунтов и дополнительным функциям.",
                 "question": "Бесплатно ли использовать интеграцию ER:LC?"
               },
               "setup": {
-                "answer": "Настройка обычно занимает менее 10 минут. Вам просто нужно сгенерировать свой ключ API ER:LC, вставить его в Sonoran CAD и вставить наш URL вебхука в меню сервера ER:LC. Кодирование или сложная настройка не требуются.",
-                "question": "Сколько времени занимает настройка интеграции?"
+                "answer": "В настройках вашего частного сервера ER:LC при необходимости приобретите API Expansion Pack и скопируйте ваш ключ ER:LC API. В Sonoran CAD откройте Admin > Advanced > In-Game Integration > ER:LC и вставьте ключ в соответствующее поле сервера. Скопируйте URL вебхука событий из CAD в ER:LC API > Event Log Webhook. Игроки также должны связать свои аккаунты Roblox в CAD.",
+                "question": "Как подключить мой сервер ER:LC к Sonoran CAD?"
+              },
+              "troubleshooting": {
+                "answer": "Покупка пакета открывает доступ к API; он не подключает сервер автоматически. Убедитесь, что текущий ключ API ER:LC сохранён для правильного сервера в CAD. Если вызовы или регистрации отсутствуют, проверьте Event Log Webhook в ER:LC по URL, указанному в CAD. Игрокам также следует проверить, что их аккаунт Roblox привязан. Если вам нужна помощь в поиске этих настроек, воспользуйтесь руководством по настройке ниже.",
+                "question": "Я купил ER:LC API Pack. Почему Sonoran CAD не работает?"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "Вопросы",
           "faqTitlePrimary": "Часто задаваемые",
           "headlineAccent": "для ER:LC",
-          "headlinePrimary": "Лучший CAD",
+          "headlinePrimary": "Бесплатный CAD",
           "kicker": "Бесплатно, быстро, полностью интегрировано",
           "meta": {
-            "description": "Бесплатный CAD для ER:LC с живой 3D-картой, bodycam, экстренными вызовами, инструментами для персонажа и поддержкой внутриигрового оверлея.",
+            "description": "Бесплатный CAD для экстренного реагирования: Liberty County (ERLC) в Roblox. Подключите свой сервер к живой карте, боди-камере, экстренным вызовам и инструментам персонажа.",
             "keywords": "ER:LC CAD, бесплатный CAD для ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Интеграция Sonoran CAD с ER:LC",
-            "title": "Бесплатный CAD для ER:LC - Sonoran CAD",
+            "title": "Бесплатный ERLC CAD для Roblox - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "Вопросы",
           "faqTitlePrimary": "Часто задаваемые",
           "headlineAccent": "для FiveM",
-          "headlinePrimary": "Лучший CAD",
+          "headlinePrimary": "Бесплатный CAD / MDT",
           "kicker": "Бесплатно, быстро, полностью интегрировано",
           "meta": {
-            "description": "Бесплатный CAD для FiveM с живой картой, bodycam, официальными плагинами и необязательной синхронизацией базы данных для глубоко интегрированных ролевых серверов.",
+            "description": "Бесплатный FiveM CAD / MDT для roleplay-диспетчеризации, живых карт, bodycam и официальных плагинов. Подключите свой сервер, сравните планы и изучите дополнительную синхронизацию базы данных.",
             "keywords": "FiveM CAD, бесплатный CAD для FiveM, Sonoran CAD, диспетчеризация FiveM, CAD для ролевой игры FiveM",
             "ogImageAlt": "Интеграция Sonoran CAD с FiveM",
-            "title": "Бесплатный CAD для FiveM - Sonoran CAD",
+            "title": "Бесплатный CAD / MDT для FiveM - Sonoran CAD",
             "twitterImageAlt": "Предпросмотр интеграции Sonoran CAD x FiveM"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "pricingPage": {
+      "description": "Сравните планы Sonoran CAD, ежемесячные и квартальные цены, лимиты аккаунта и включённые функции. Бесплатные интеграции FiveM и ERLC доступны на каждом плане CAD.",
+      "erlcLink": "Интеграция ERLC CAD",
+      "fivemLink": "Интеграция FiveM CAD / MDT",
+      "heading": "Цены Sonoran CAD",
+      "integrationLinks": "Игровые интеграции",
+      "setupGuide": "Руководство по настройке ERLC",
+      "title": "Цены Sonoran CAD - бесплатные и платные планы"
+    },
     "startFree": "Начать бесплатно",
     "startToday": "Start Today",
     "studio": {

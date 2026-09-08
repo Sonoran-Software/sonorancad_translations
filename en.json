@@ -626,6 +626,12 @@
       "confirmKeyChange2": "You will need to update your API key in all plugin or API configurations!",
       "customMapImagesLabel": "Custom Map Images (30MB/each Max)",
       "dbSync": {
+        "accountIdentifierColumn": "Account Identifier Column",
+        "accountIdentifierColumnAbout": "The column containing the owning FiveM license, typically license. Sonoran matches exact values with or without the license: prefix.",
+        "accountIdentifierOwnerColumn": "Account Character Key Column",
+        "accountIdentifierOwnerColumnAbout": "The column on the account identifier table containing the character key used by your other character mappings, typically citizenid.",
+        "accountIdentifierTable": "Account Identifier Table",
+        "accountIdentifierTableAbout": "The table containing both the FiveM license and the character key, typically players.",
         "aiAllowFriendlyMappings": "Add Friendly Mappings for recognized values",
         "aiAllowFriendlyMappingsHint": "Converts verified numeric values, such as FiveM vehicle paint indexes, into readable record values like Metallic Black. Existing manual mappings are preserved.",
         "aiAllowLicenseFields": "Add missing license type fields",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "AI Automatic Setup",
         "aiStartSetup": "Start Automatic Setup",
         "aiWarnings": "Warnings",
+        "automaticCharacterLinking": "Automatically Link",
+        "automaticCharacterLinkingAbout": "Securely shows each user only the characters owned by their linked FiveM license. Users run /link in-game, then refresh their civilian page.",
         "characterMapping": "Character Mapping",
         "characterMappingColumn": "Character Mapping Column",
         "columnName": "Column Name",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON Key",
         "label": "Label",
         "licenseMapping": "License Mapping",
+        "manualCharacterLinking": "Manually Link",
+        "manualCharacterLinkingAbout": "Users search Database Sync for a character and select it to link that character to their CAD account.",
         "password": "Password",
         "port": "Port",
         "saveCredentials": "Save Connection Credentials",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC Auto Registration",
     "errors": {
       "dmvManagedByDatabaseSync": "Database sync is enabled, so licenses and vehicle records are automatically pulled from your in-game database.",
-      "maxCharacters": "Error: You have reached your community's maximum limit for characters"
+      "maxCharacters": "Error: You have reached your community's maximum limit for characters",
+      "noAutomaticCharacters": "No linked characters were found. Database Sync is using automatic character linking. Run /link in-game, then refresh this page. If you still do not see your characters, contact a community administrator."
     },
     "labels": {
+      "refreshCharacters": "Refresh linked characters",
       "selectedCharacter": "Selected Character"
     }
   },
