@@ -1320,6 +1320,15 @@
     "sonoranOneLink": "Open Sonoran One"
   },
   "homepage": {
+    "pricingPage": {
+      "heading": "Sonoran CAD Pricing",
+      "title": "Sonoran CAD Pricing - Free & Paid Plans",
+      "description": "Compare Sonoran CAD plans, monthly and quarterly pricing, account limits and included features. Free FiveM and ERLC integrations are available on every CAD plan.",
+      "integrationLinks": "Game integrations",
+      "erlcLink": "ERLC CAD integration",
+      "fivemLink": "FiveM CAD / MDT integration",
+      "setupGuide": "ERLC setup guide"
+    },
     "bottomCta": {
       "description": "Join thousands of communities using Sonoran CAD for the best RP experience.",
       "notes": {
@@ -1378,7 +1387,7 @@
                 "question": "Is Sonoran CAD the best CAD for ER:LC?"
               },
               "community": {
-                "answer": "Absolutely. The free plan is ideal for small to mid-sized communities, offering full ER:LC functionality without limitations. You can upgrade later if your server grows and needs additional accounts or features.",
+                "answer": "Yes. Start with the free plan and upgrade when you need more accounts or additional CAD features. The ER:LC integration is available on every CAD plan.",
                 "question": "Is this suitable for small or growing communities?"
               },
               "features": {
@@ -1386,12 +1395,16 @@
                 "question": "What features are included with the ER:LC integration?"
               },
               "free": {
-                "answer": "Yes, the ER:LC integration is fully available on the free version of Sonoran CAD. Paid plans are only needed if you want to add more user accounts or scale your community, but all core ER:LC features work without upgrading.",
+                "answer": "Yes. Sonoran CAD includes the ER:LC integration on its free plan. ER:LC requires a separate API Expansion Pack purchase for your private server. CAD plan limits still apply; compare plans for account limits and additional features.",
                 "question": "Is the ER:LC integration free to use?"
               },
               "setup": {
-                "answer": "Setup typically takes less than 10 minutes. You simply generate your ER:LC API key, paste it into Sonoran CAD, and paste our webhook URL in the ER:LC server menu. No coding or advanced setup is required.",
-                "question": "How long does it take to set up the integration?"
+                "answer": "In your ER:LC private server settings, purchase the API Expansion Pack if needed and copy your ER:LC API key. In Sonoran CAD, open Admin > Advanced > In-Game Integration > ER:LC and paste the key into the matching server field. Copy the event webhook URL from CAD into ER:LC API > Event Log Webhook. Players must also link their Roblox accounts in CAD.",
+                "question": "How do I connect my ER:LC server to Sonoran CAD?"
+              },
+              "troubleshooting": {
+                "question": "I bought the ER:LC API Pack. Why is Sonoran CAD not working?",
+                "answer": "Buying the pack enables API access; it does not connect the server automatically. Check that the current ER:LC API key is saved for the correct server in CAD. If calls or registrations are missing, check the Event Log Webhook in ER:LC against the URL shown in CAD. Players should also check that their Roblox account is linked. Use the setup guide below if you need help locating these settings."
               }
             }
           },
@@ -1399,13 +1412,13 @@
           "faqTitleAccent": "Questions",
           "faqTitlePrimary": "Frequently Asked",
           "headlineAccent": "for ER:LC",
-          "headlinePrimary": "The Best CAD",
+          "headlinePrimary": "Free CAD",
           "kicker": "Free, Fast, Fully Integrated",
           "meta": {
-            "description": "Free CAD for ER:LC with 3D live map, bodycam, emergency calls, character tools, and in-game overlay support.",
+            "description": "Free CAD for Emergency Response: Liberty County (ERLC) on Roblox. Connect your server to a live map, bodycam, emergency calls and character tools.",
             "keywords": "ER:LC CAD, free CAD for ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC integration",
-            "title": "Free CAD for ER:LC - Sonoran CAD",
+            "title": "Free ERLC CAD System for Roblox - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1476,13 +1489,13 @@
           "faqTitleAccent": "Questions",
           "faqTitlePrimary": "Frequently Asked",
           "headlineAccent": "for FiveM",
-          "headlinePrimary": "The Best CAD",
+          "headlinePrimary": "Free CAD / MDT",
           "kicker": "Free, Fast, Fully Integrated",
           "meta": {
-            "description": "Free CAD for FiveM with live map, bodycam, official plugins, and optional database sync for deeply integrated roleplay servers.",
+            "description": "Free FiveM CAD / MDT for roleplay dispatch, live maps, bodycam and official plugins. Connect your server, compare plans and explore optional database sync.",
             "keywords": "FiveM CAD, free CAD for FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM integration",
-            "title": "Free CAD for FiveM - Sonoran CAD",
+            "title": "Free FiveM CAD / MDT System - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM integration preview"
           },
           "modules": {
