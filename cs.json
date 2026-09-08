@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Budete muset aktualizovat svůj API klíč ve všech konfiguracích pluginu nebo API!",
       "customMapImagesLabel": "Vlastní obrázky map (max. 30 MB/každý)",
       "dbSync": {
+        "accountIdentifierColumn": "Sloupec identifikátoru účtu",
+        "accountIdentifierColumnAbout": "Sloupec obsahující vlastnickou FiveM licenci, obvykle license. Sonoran porovnává přesné hodnoty s prefixem license: nebo bez něj.",
+        "accountIdentifierOwnerColumn": "Sloupec klíče znaku účtu",
+        "accountIdentifierOwnerColumnAbout": "Sloupec v tabulce identifikátoru účtu obsahující znakový klíč používaný vašimi ostatními mapováními postav, obvykle citizenid.",
+        "accountIdentifierTable": "Tabulka identifikátoru účtu",
+        "accountIdentifierTableAbout": "Tabulka obsahující FiveM licenci i klíč postavy, obvykle hráčů.",
         "aiAllowFriendlyMappings": "Přidat přátelské mapování pro rozpoznané hodnoty",
         "aiAllowFriendlyMappingsHint": "Převádí ověřené číselné hodnoty, jako jsou indexy laku vozidel FiveM, na čitelné hodnoty záznamů, jako je Metalická černá. Stávající ruční mapování jsou zachována.",
         "aiAllowLicenseFields": "Přidat chybějící pole typu licence",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Automatické nastavení AI",
         "aiStartSetup": "Spustit automatické nastavení",
         "aiWarnings": "Varování",
+        "automaticCharacterLinking": "Automaticky propojit",
+        "automaticCharacterLinkingAbout": "Bezpečně zobrazuje každému uživateli pouze postavy vlastněné jeho propojenou licencí FiveM. Uživatelé ve hře zadají /link a poté obnoví svou stránku civilisty.",
         "characterMapping": "Mapování znaků",
         "characterMappingColumn": "Sloupec mapování znaků",
         "columnName": "Název sloupce",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON klíč",
         "label": "Popisek",
         "licenseMapping": "Mapování licencí",
+        "manualCharacterLinking": "Ručně propojit",
+        "manualCharacterLinkingAbout": "Uživatelé vyhledají v Synchronizaci databáze znak a vyberou jej, aby tento znak propojili se svým účtem CAD.",
         "password": "Heslo",
         "port": "Port",
         "saveCredentials": "Uložit přihlašovací údaje připojení",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "Automatická registrace ER:LC",
     "errors": {
       "dmvManagedByDatabaseSync": "Synchronizace databáze je povolena, takže licence a záznamy vozidel se automaticky načítají z vaší databáze ve hře.",
-      "maxCharacters": "Chyba: Dosáhli jste maximálního limitu znaků vaší komunity"
+      "maxCharacters": "Chyba: Dosáhli jste maximálního limitu znaků vaší komunity",
+      "noAutomaticCharacters": "Nebyly nalezeny žádné propojené postavy. Sync databáze používá automatické propojení postav. Spusťte ve hře /link a pak obnovte tuto stránku. Pokud své postavy stále nevidíte, kontaktujte správce komunity."
     },
     "labels": {
+      "refreshCharacters": "Obnovit propojené postavy",
       "selectedCharacter": "Vybraná postava"
     }
   },

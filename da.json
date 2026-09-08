@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Du skal opdatere din API-nøgle i alle plugin- eller API-konfigurationer!",
       "customMapImagesLabel": "Brugerdefinerede kortbilleder (maks. 30 MB pr. stk.)",
       "dbSync": {
+        "accountIdentifierColumn": "Kontoidifikationskolonne",
+        "accountIdentifierColumnAbout": "Kolonnen der indeholder den ejende FiveM-licens, typisk license. Sonoran matcher nøjagtige værdier med eller uden license:-præfikset.",
+        "accountIdentifierOwnerColumn": "Konto tegnnøgle-kolonne",
+        "accountIdentifierOwnerColumnAbout": "Kolonnen på kontoidentifikattabellen, der indeholder tegnnøglen, som bruges af dine andre tegnmappinger, typisk citizenid.",
+        "accountIdentifierTable": "Kontoidifikationstabel",
+        "accountIdentifierTableAbout": "Tabellen der indeholder både FiveM-licensen og karakternøglen, typisk spillere.",
         "aiAllowFriendlyMappings": "Tilføj venlige mappinger for genkendte værdier",
         "aiAllowFriendlyMappingsHint": "Konverterer verificerede numeriske værdier, såsom FiveM-køretøjslakindeks, til læsbare record-værdier som Metallic Black. Eksisterende manuelle mappinger bevares.",
         "aiAllowLicenseFields": "Tilføj manglende felter for licenstype",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "AI automatisk opsætning",
         "aiStartSetup": "Start automatisk opsætning",
         "aiWarnings": "Advarsler",
+        "automaticCharacterLinking": "Tilknyt automatisk",
+        "automaticCharacterLinkingAbout": "Viser sikkert kun hver bruger de karakterer, der ejes af deres tilknyttede FiveM-licens. Brugere kører /link i spillet og opdaterer derefter deres civile side.",
         "characterMapping": "Tegnmapping",
         "characterMappingColumn": "Tegnmappingskolonne",
         "columnName": "Kolonnenavn",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON-nøgle",
         "label": "Etiket",
         "licenseMapping": "Licensmapping",
+        "manualCharacterLinking": "Link manuelt",
+        "manualCharacterLinkingAbout": "Brugere søger i Database Sync efter en karakter og vælger den for at linke den karakter til deres CAD-konto.",
         "password": "Adgangskode",
         "port": "Port",
         "saveCredentials": "Gem forbindelsesoplysninger",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC Auto-registrering",
     "errors": {
       "dmvManagedByDatabaseSync": "Datanabasesynkronisering er aktiveret, så licenser og køretøjsoptegnelser hentes automatisk fra din in-game-database.",
-      "maxCharacters": "Fejl: Du har nået din communities maksimale grænse for tegn"
+      "maxCharacters": "Fejl: Du har nået din communities maksimale grænse for tegn",
+      "noAutomaticCharacters": "Ingen tilknyttede karakterer blev fundet. Database Sync bruger automatisk karakterkobling. Kør /link i spillet, og opdater derefter denne side. Hvis du stadig ikke kan se dine karakterer, kontakt en community-administrator."
     },
     "labels": {
+      "refreshCharacters": "Opdater tilknyttede karakterer",
       "selectedCharacter": "Valgt karakter"
     }
   },

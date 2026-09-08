@@ -626,6 +626,12 @@
       "confirmKeyChange2": "U moet uw API-sleutel bijwerken in alle plugins of API-configuraties!",
       "customMapImagesLabel": "Aangepaste kaartafbeeldingen (max. 30 MB/stuk)",
       "dbSync": {
+        "accountIdentifierColumn": "Kolom account-ID",
+        "accountIdentifierColumnAbout": "De kolom met de bijbehorende FiveM-licentie, doorgaans license. Sonoran vergelijkt exacte waarden met of zonder het voorvoegsel license:",
+        "accountIdentifierOwnerColumn": "Accounttekensleutelkolom",
+        "accountIdentifierOwnerColumnAbout": "De kolom in de tabel met accountidentificaties die de tekensleutel bevat die gebruikt wordt door uw andere karakterkoppelingen, meestal citizenid.",
+        "accountIdentifierTable": "Kolom account-ID",
+        "accountIdentifierTableAbout": "De tabel met zowel de FiveM-licentie als de personagesleutel, doorgaans spelers.",
         "aiAllowFriendlyMappings": "Voeg vriendelijke mappings toe voor herkende waarden",
         "aiAllowFriendlyMappingsHint": "Zet geverifieerde numerieke waarden, zoals FiveM-voertuigverfindexen, om in leesbare recordwaarden zoals Metallic Black. Bestaande manuele mappings blijven behouden.",
         "aiAllowLicenseFields": "Ontbrekende licentietypevelden toevoegen",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Automatische AI-installatie",
         "aiStartSetup": "Automatische installatie starten",
         "aiWarnings": "Waarschuwingen",
+        "automaticCharacterLinking": "Automatisch koppelen",
+        "automaticCharacterLinkingAbout": "Toont veilig elke gebruiker alleen de personages die gekoppeld zijn aan hun FiveM-licentie. Gebruikers voeren /link uit in-game en vernieuwen daarna hun civiele pagina.",
         "characterMapping": "Karaktertoewijzing",
         "characterMappingColumn": "Kolom voor karaktertoewijzing",
         "columnName": "Kolom naam",
@@ -684,6 +692,8 @@
         "jsonKey": "JSON sleutel",
         "label": "Label",
         "licenseMapping": "Licentietoewijzing",
+        "manualCharacterLinking": "Handmatig koppelen",
+        "manualCharacterLinkingAbout": "Gebruikers zoeken in Database Sync naar een personage en selecteren het om dat personage aan hun CAD-account te koppelen.",
         "password": "Wachtwoord",
         "port": "Poort",
         "saveCredentials": "Verbindingsreferenties opslaan",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC Automatische registratie",
     "errors": {
       "dmvManagedByDatabaseSync": "Databasesynchronisatie is ingeschakeld, dus licenties en voertuiggegevens worden automatisch uit je in-game database gehaald.",
-      "maxCharacters": "Error: Je hebt het maximum aantal karakters bereikt ingesteld door deze community"
+      "maxCharacters": "Error: Je hebt het maximum aantal karakters bereikt ingesteld door deze community",
+      "noAutomaticCharacters": "Er zijn geen gekoppelde personages gevonden. Database Sync gebruikt automatische personagekoppeling. Voer /link uit in het spel en vernieuw daarna deze pagina. Als u uw personages nog steeds niet ziet, neem dan contact op met een gemeenschapsbeheerder."
     },
     "labels": {
+      "refreshCharacters": "Gekoppelde personages vernieuwen",
       "selectedCharacter": "Geselecteerd karakter"
     }
   },

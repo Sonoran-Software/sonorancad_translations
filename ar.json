@@ -626,6 +626,12 @@
       "confirmKeyChange2": "سوف تحتاج إلى تحديث مفتاح API الخاص بك في جميع المكونات الإضافية أو تكوينات API!",
       "customMapImagesLabel": "صور الخرائط المخصصة (30 ميجابايت/للكل كحد أقصى)",
       "dbSync": {
+        "accountIdentifierColumn": "عمود معرّف الحساب",
+        "accountIdentifierColumnAbout": "العمود الذي يحتوي على ترخيص FiveM المالك، عادةً license. يطابق Sonoran القيم الدقيقة مع أو بدون البادئة license:.",
+        "accountIdentifierOwnerColumn": "عمود مفتاح حرف الحساب",
+        "accountIdentifierOwnerColumnAbout": "العمود في جدول معرّف الحساب الذي يحتوي على مفتاح المحرف المستخدم في تعيينات المحارف الأخرى لديك، عادةً citizenid.",
+        "accountIdentifierTable": "جدول معرّف الحساب",
+        "accountIdentifierTableAbout": "الجدول الذي يحتوي على كلٍ من ترخيص FiveM ومفتاح الشخصية، عادةً اللاعبين.",
         "aiAllowFriendlyMappings": "إضافة تعيينات ودية للقيم المعترف بها",
         "aiAllowFriendlyMappingsHint": "يحوّل القيم الرقمية الموثقة، مثل فهارس طلاء مركبات FiveM، إلى قيم سجل مقروءة مثل Metallic Black. يتم الاحتفاظ بالتعيينات اليدوية الحالية.",
         "aiAllowLicenseFields": "إضافة حقول نوع الترخيص المفقودة",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "الإعداد التلقائي بالذكاء الاصطناعي",
         "aiStartSetup": "بدء الإعداد التلقائي",
         "aiWarnings": "تحذيرات",
+        "automaticCharacterLinking": "ربط تلقائيًا",
+        "automaticCharacterLinkingAbout": "يعرض بشكل آمن لكل مستخدم فقط الشخصيات المملوكة لرخصة FiveM المرتبطة به. يقوم المستخدمون بتشغيل /link داخل اللعبة، ثم تحديث صفحة المدني الخاصة بهم.",
         "characterMapping": "تعيين الأحرف",
         "characterMappingColumn": "عمود تعيين الأحرف",
         "columnName": "اسم العمود",
@@ -684,6 +692,8 @@
         "jsonKey": "مفتاح JSON",
         "label": "التسمية",
         "licenseMapping": "تعيين الترخيص",
+        "manualCharacterLinking": "ربط يدوي",
+        "manualCharacterLinkingAbout": "يبحث المستخدمون في مزامنة قاعدة البيانات عن شخصية ويحددونها لربط تلك الشخصية بحساب CAD الخاص بهم.",
         "password": "كلمة المرور",
         "port": "البورت",
         "saveCredentials": "حفظ بيانات اعتماد الاتصال",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "التسجيل التلقائي لـ ER:LC",
     "errors": {
       "dmvManagedByDatabaseSync": "مزامنة قاعدة البيانات مفعلة، لذا يتم سحب التراخيص وسجلات المركبات تلقائيًا من قاعدة البيانات داخل اللعبة.",
-      "maxCharacters": "خطاء , لقد وصلت الحد الاقصى من الشخصيات في هذا المجتمع"
+      "maxCharacters": "خطاء , لقد وصلت الحد الاقصى من الشخصيات في هذا المجتمع",
+      "noAutomaticCharacters": "لم يتم العثور على شخصيات مرتبطة. يستخدم مزامنة قاعدة البيانات الربط التلقائي للشخصيات. شغّل /link داخل اللعبة، ثم حدّث هذه الصفحة. إذا كنت لا ترى شخصياتك بعد ذلك، فاتصل بمسؤول المجتمع."
     },
     "labels": {
+      "refreshCharacters": "تحديث الشخصيات المرتبطة",
       "selectedCharacter": "الشخصية المختارة"
     }
   },

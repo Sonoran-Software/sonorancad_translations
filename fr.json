@@ -626,6 +626,12 @@
       "confirmKeyChange2": "Vous devrez mettre à jour votre clé API dans toutes les configurations de plugin ou d'API !",
       "customMapImagesLabel": "Images de carte personnalisées (30 Mo max/chacune)",
       "dbSync": {
+        "accountIdentifierColumn": "Colonne identifiant de compte",
+        "accountIdentifierColumnAbout": "La colonne contenant la licence FiveM propriétaire, généralement license. Sonoran correspond aux valeurs exactes avec ou sans le préfixe license:.",
+        "accountIdentifierOwnerColumn": "Colonne de clé de caractère du compte",
+        "accountIdentifierOwnerColumnAbout": "La colonne de la table des identifiants de compte contenant la clé de caractère utilisée par vos autres correspondances de caractères, généralement citizenid.",
+        "accountIdentifierTable": "Table identifiant de compte",
+        "accountIdentifierTableAbout": "La table contenant à la fois la licence FiveM et la clé de personnage, généralement les joueurs.",
         "aiAllowFriendlyMappings": "Ajouter des correspondances conviviales pour les valeurs reconnues",
         "aiAllowFriendlyMappingsHint": "Convertit les valeurs numériques vérifiées, telles que les index de peinture de véhicule FiveM, en valeurs de registre lisibles comme Noir métallisé. Les correspondances manuelles existantes sont conservées.",
         "aiAllowLicenseFields": "Ajouter les champs de type de licence manquants",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "Configuration automatique IA",
         "aiStartSetup": "Commencer la configuration automatique",
         "aiWarnings": "Avertissements",
+        "automaticCharacterLinking": "Lier automatiquement",
+        "automaticCharacterLinkingAbout": "Affiche en toute sécurité à chaque utilisateur uniquement les personnages liés à sa licence FiveM associée. Les utilisateurs exécutent /link en jeu, puis actualisent leur page civile.",
         "characterMapping": "Cartographie des caractères",
         "characterMappingColumn": "Colonne de cartographie des caractères",
         "columnName": "Nom de colonne",
@@ -684,6 +692,8 @@
         "jsonKey": "Clé JSON",
         "label": "Étiquette",
         "licenseMapping": "Cartographie des licences",
+        "manualCharacterLinking": "Lier manuellement",
+        "manualCharacterLinkingAbout": "Les utilisateurs recherchent un personnage dans la synchronisation de la base de données et le sélectionnent pour lier ce personnage à leur compte CAD.",
         "password": "Mot de passe",
         "port": "Port",
         "saveCredentials": "Enregistrer les identifiants de connexion",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "Inscription automatique ER:LC",
     "errors": {
       "dmvManagedByDatabaseSync": "La synchronisation de la base de données est activée, donc les permis et les dossiers de véhicules sont automatiquement récupérés depuis votre base de données en jeu.",
-      "maxCharacters": "Erreur : Vous avez atteint la limite maximale de votre communauté pour les personnages"
+      "maxCharacters": "Erreur : Vous avez atteint la limite maximale de votre communauté pour les personnages",
+      "noAutomaticCharacters": "Aucun personnage lié n'a été trouvé. La synchronisation de la base de données utilise la liaison automatique des personnages. Exécutez /link en jeu, puis actualisez cette page. Si vous ne voyez toujours pas vos personnages, contactez un administrateur de la communauté."
     },
     "labels": {
+      "refreshCharacters": "Actualiser les personnages liés",
       "selectedCharacter": "Selectionner le personnage"
     }
   },

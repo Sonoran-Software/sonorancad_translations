@@ -626,6 +626,12 @@
       "confirmKeyChange2": "すべてのプラグインまたは API 設定で API キーを更新する必要があります!",
       "customMapImagesLabel": "カスタムマップ画像（1つあたり最大30MB）",
       "dbSync": {
+        "accountIdentifierColumn": "アカウント識別子列",
+        "accountIdentifierColumnAbout": "所有している FiveM ライセンスを含む列。通常は license。Sonoran は license: プレフィックスの有無にかかわらず完全一致を照合します。",
+        "accountIdentifierOwnerColumn": "アカウント文字キー列",
+        "accountIdentifierOwnerColumnAbout": "アカウント識別子テーブルの列で、他のキャラクターマッピングで使用される文字キーを含むもの。通常は citizenid。",
+        "accountIdentifierTable": "アカウント識別子テーブル",
+        "accountIdentifierTableAbout": "FiveM license と character key の両方を含む table。通常は players。",
         "aiAllowFriendlyMappings": "認識された値に対するフレンドリーマッピングを追加",
         "aiAllowFriendlyMappingsHint": "検証済みの数値値を、FiveM の車両ペイントインデックスのような、Metallic Black のような読みやすいレコード値に変換します。既存の手動マッピングは保持されます。",
         "aiAllowLicenseFields": "不足しているライセンスタイプのフィールドを追加",
@@ -656,6 +662,8 @@
         "aiSetupTitle": "AI 自動セットアップ",
         "aiStartSetup": "自動セットアップを開始",
         "aiWarnings": "警告",
+        "automaticCharacterLinking": "自動的にリンク",
+        "automaticCharacterLinkingAbout": "安全に各ユーザーに、リンクされた FiveM ライセンスが所有するキャラクターのみを表示します。ユーザーはゲーム内で /link を実行し、その後市民ページを更新します。",
         "characterMapping": "文字マッピング",
         "characterMappingColumn": "文字マッピング列",
         "columnName": "列名",
@@ -684,6 +692,8 @@
         "jsonKey": "JSONキー",
         "label": "ラベル",
         "licenseMapping": "ライセンス マッピング",
+        "manualCharacterLinking": "手動でリンク",
+        "manualCharacterLinkingAbout": "ユーザーは Database Sync でキャラクターを検索し、それを選択してそのキャラクターを自分の CAD アカウントにリンクします。",
         "password": "パスワード",
         "port": "ポート",
         "saveCredentials": "接続認証情報を保存",
@@ -1134,9 +1144,11 @@
     "erlcAutoRegister": "ER:LC 自動登録",
     "errors": {
       "dmvManagedByDatabaseSync": "データベース同期が有効なため、ライセンスと車両記録はゲーム内データベースから自動的に取得されます。",
-      "maxCharacters": "エラー: コミュニティの文字数上限に達しました"
+      "maxCharacters": "エラー: コミュニティの文字数上限に達しました",
+      "noAutomaticCharacters": "リンクされたキャラクターは見つかりませんでした。Database Sync は自動キャラクターリンクを使用しています。ゲーム内で /link を実行してから、このページを更新してください。それでもキャラクターが表示されない場合は、コミュニティ管理者に連絡してください。"
     },
     "labels": {
+      "refreshCharacters": "リンク済みキャラクターを更新",
       "selectedCharacter": "選択済みキャラクター"
     }
   },
