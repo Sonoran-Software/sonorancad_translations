@@ -1386,7 +1386,7 @@
                 "question": "Sonoran CAD, ER:LC için en iyi CAD mi?"
               },
               "community": {
-                "answer": "Kesinlikle. Ücretsiz plan, küçükten orta ölçekli topluluklar için idealdir ve hiçbir sınırlama olmadan tam ER:LC işlevselliği sunar. Sunucunuz büyür ve ek hesaplare veya özelliklere ihtiyaç duyarsa daha sonra yükseltebilirsiniz.",
+                "answer": "Evet. Ücretsiz planla başlayın ve daha fazla hesaba veya ek CAD özelliklerine ihtiyaç duyduğunuzda yükseltin. ER:LC entegrasyonu her CAD planında kullanılabilir.",
                 "question": "Bu küçük veya büyüyen topluluklar için uygun mu?"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "ER:LC entegrasyonuna hangi özellikler dahildir?"
               },
               "free": {
-                "answer": "Evet, ER:LC entegrasyonu Sonoran CAD'in ücretsiz sürümünde tamamen kullanılabilir. Ücretli planlar yalnızca daha fazla kullanıcı hesabı eklemek veya topluluğunuzu büyütmek istiyorsanız gerekir, ancak tüm temel ER:LC özellikleri yükseltme yapmadan çalışır.",
+                "answer": "Evet. Sonoran CAD, ücretsiz planında ER:LC entegrasyonunu içerir. ER:LC, özel sunucunuz için ayrı bir API Expansion Pack satın alımı gerektirir. CAD plan limitleri yine geçerlidir; hesap limitleri ve ek özellikler için planları karşılaştırın.",
                 "question": "ER:LC entegrasyonu kullanmak ücretsiz mi?"
               },
               "setup": {
-                "answer": "Kurulum genellikle 10 dakikadan kısa sürer. Yapmanız gereken yalnızca ER:LC API anahtarınızı oluşturmak, Sonoran CAD'e yapıştırmak ve webhook URL'mizi ER:LC sunucu menüsüne yapıştırmaktır. Kodlama veya gelişmiş kurulum gerekmez.",
-                "question": "Entegrasyonu kurmak ne kadar sürer?"
+                "answer": "ER:LC özel sunucu ayarlarınızda, gerekirse API Expansion Pack'i satın alın ve ER:LC API anahtarınızı kopyalayın. Sonoran CAD'de, Admin > Advanced > In-Game Integration > ER:LC yolunu açın ve anahtarı ilgili sunucu alanına yapıştırın. CAD'den etkinlik webhook URL'sini ER:LC API > Event Log Webhook'a kopyalayın. Oyuncuların ayrıca Roblox hesaplarını CAD'de bağlaması gerekir.",
+                "question": "ER:LC sunucumu Sonoran CAD'ye nasıl bağlarım?"
+              },
+              "troubleshooting": {
+                "answer": "Paketi satın almak API erişimini etkinleştirir; sunucuyu otomatik olarak bağlamaz. Mevcut ER:LC API anahtarının CAD içinde doğru sunucu için kaydedildiğini kontrol edin. Aramalar veya kayıtlar eksikse, ER:LC içindeki Event Log Webhook'u CAD'de gösterilen URL ile karşılaştırın. Oyuncular ayrıca Roblox hesaplarının bağlı olduğunu kontrol etmelidir. Bu ayarları bulmada yardıma ihtiyacınız varsa aşağıdaki kurulum kılavuzunu kullanın.",
+                "question": "ER:LC API Pack'i satın aldım. Sonoran CAD neden çalışmıyor?"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "Sorular",
           "faqTitlePrimary": "Sıkça Sorulan",
           "headlineAccent": "ER:LC için",
-          "headlinePrimary": "En İyi CAD",
+          "headlinePrimary": "Ücretsiz CAD",
           "kicker": "Ücretsiz, Hızlı, Tam Entegre",
           "meta": {
-            "description": "3D canlı harita, bodycam, acil çağrılar, karakter araçları ve oyun içi kaplama desteğiyle ER:LC için ücretsiz CAD.",
+            "description": "Roblox'ta Acil Durum Müdahalesi için Ücretsiz CAD: Liberty County (ERLC). Sunucunuzu canlı harita, bodycam, acil çağrılar ve karakter araçlarıyla bağlayın.",
             "keywords": "ER:LC CAD, ER:LC için ücretsiz CAD, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC entegrasyonu",
-            "title": "ER:LC için Ücretsiz CAD - Sonoran CAD",
+            "title": "Roblox için Ücretsiz ERLC CAD Sistemi - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Acil Durum Müdahalesi: Liberty County"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "Sorular",
           "faqTitlePrimary": "Sıkça Sorulan",
           "headlineAccent": "FiveM için",
-          "headlinePrimary": "En İyi CAD",
+          "headlinePrimary": "Ücretsiz CAD / MDT",
           "kicker": "Ücretsiz, Hızlı, Tam Entegre",
           "meta": {
-            "description": "Canlı harita, bodycam, resmi eklentiler ve derinlemesine entegre roleplay sunucuları için isteğe bağlı veritabanı eşitlemesiyle FiveM için ücretsiz CAD.",
+            "description": "Rol yapma sevk, canlı haritalar, bodycam ve resmi eklentiler için ücretsiz FiveM CAD / MDT. Sunucunuzu bağlayın, planları karşılaştırın ve isteğe bağlı veritabanı senkronizasyonunu keşfedin.",
             "keywords": "FiveM CAD, FiveM için ücretsiz CAD, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM entegrasyonu",
-            "title": "FiveM için Ücretsiz CAD - Sonoran CAD",
+            "title": "Ücretsiz FiveM CAD / MDT Sistemi - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM entegrasyon önizlemesi"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "pricingPage": {
+      "description": "Sonoran CAD planlarını, aylık ve üç aylık fiyatlandırmayı, hesap limitlerini ve dahil olan özellikleri karşılaştırın. Ücretsiz FiveM ve ERLC entegrasyonları her CAD planında mevcuttur.",
+      "erlcLink": "ERLC CAD entegrasyonu",
+      "fivemLink": "FiveM CAD / MDT entegrasyonu",
+      "heading": "Sonoran CAD Fiyatlandırması",
+      "integrationLinks": "Oyun entegrasyonları",
+      "setupGuide": "ERLC kurulum kılavuzu",
+      "title": "Sonoran CAD Fiyatlandırması - Ücretsiz ve Ücretli Planlar"
+    },
     "startFree": "Ücretsiz Başla",
     "startToday": "Start Today",
     "studio": {

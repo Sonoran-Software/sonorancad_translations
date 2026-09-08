@@ -1385,7 +1385,7 @@
                 "question": "Is Sonoran CAD de beste CAD voor ER:LC?"
               },
               "community": {
-                "answer": "Absoluut. Het gratis plan is ideaal voor kleine tot middelgrote communities en biedt volledige ER:LC-functionaliteit zonder beperkingen. Je kunt later upgraden als je server groeit en extra accounts of functies nodig heeft.",
+                "answer": "Ja. Begin met het gratis plan en upgrade wanneer je meer accounts of extra CAD-functies nodig hebt. De ER:LC-integratie is beschikbaar op elk CAD-plan.",
                 "question": "Is dit geschikt voor kleine of groeiende gemeenschappen?"
               },
               "features": {
@@ -1393,12 +1393,16 @@
                 "question": "Welke functies zijn inbegrepen bij de ER:LC-integratie?"
               },
               "free": {
-                "answer": "Ja, de ER:LC-integratie is volledig beschikbaar in de gratis versie van Sonoran CAD. Betaalde abonnementen zijn alleen nodig als je meer gebruikersaccounts wilt toevoegen of je community wilt laten groeien, maar alle kernfuncties van ER:LC werken zonder upgrade.",
+                "answer": "Ja. Sonoran CAD bevat de ER:LC-integratie in het gratis abonnement. ER:LC vereist een aparte API Expansion Pack-aankoop voor je privéserver. CAD-planlimieten blijven van toepassing; vergelijk de abonnementen voor accountlimieten en extra functies.",
                 "question": "Is de ER:LC-integratie gratis te gebruiken?"
               },
               "setup": {
-                "answer": "Installatie duurt doorgaans minder dan 10 minuten. U genereert gewoon uw ER:LC API-sleutel, plakt die in Sonoran CAD en plakt onze webhook-URL in het ER:LC-servermenu. Er is geen codering of geavanceerde installatie vereist.",
-                "question": "Hoe lang duurt het om de integratie in te stellen?"
+                "answer": "In je ER:LC privéserverinstellingen, koop indien nodig het API Expansion Pack en kopieer je ER:LC API-sleutel. Open in Sonoran CAD Admin > Advanced > In-Game Integration > ER:LC en plak de sleutel in het overeenkomende serverveld. Kopieer de event webhook-URL uit CAD naar ER:LC API > Event Log Webhook. Spelers moeten ook hun Roblox-accounts koppelen in CAD.",
+                "question": "Hoe verbind ik mijn ER:LC-server met Sonoran CAD?"
+              },
+              "troubleshooting": {
+                "answer": "Het kopen van het pakket schakelt API-toegang in; het verbindt de server niet automatisch. Controleer of de huidige ER:LC-API-sleutel is opgeslagen voor de juiste server in CAD. Als oproepen of registraties ontbreken, controleer dan de Event Log Webhook in ER:LC aan de hand van de URL die in CAD wordt weergegeven. Spelers moeten ook controleren of hun Roblox-account gekoppeld is. Gebruik de onderstaande installatiegids als je hulp nodig hebt om deze instellingen te vinden.",
+                "question": "Ik heb de ER:LC API Pack gekocht. Waarom werkt Sonoran CAD niet?"
               }
             }
           },
@@ -1406,13 +1410,13 @@
           "faqTitleAccent": "Vragen",
           "faqTitlePrimary": "Veelgestelde vragen",
           "headlineAccent": "voor ER:LC",
-          "headlinePrimary": "De beste CAD",
+          "headlinePrimary": "Gratis CAD",
           "kicker": "Gratis, Snel, Volledig geïntegreerd",
           "meta": {
-            "description": "Gratis CAD voor ER:LC met 3D-livekaart, bodycam, noodoproepen, karaktertools en ondersteuning voor in-game overlay.",
+            "description": "Gratis CAD voor noodhulp: Liberty County (ERLC) op Roblox. Koppel je server aan een live kaart, bodycam, noodoproepen en karaktertools.",
             "keywords": "ER:LC CAD, gratis CAD voor ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC-integratie",
-            "title": "Gratis CAD voor ER:LC - Sonoran CAD",
+            "title": "Gratis ERLC CAD-systeem voor Roblox - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1483,13 +1487,13 @@
           "faqTitleAccent": "Vragen",
           "faqTitlePrimary": "Veelgestelde vragen",
           "headlineAccent": "voor FiveM",
-          "headlinePrimary": "De beste CAD",
+          "headlinePrimary": "Gratis CAD / MDT",
           "kicker": "Gratis, Snel, Volledig geïntegreerd",
           "meta": {
-            "description": "Gratis CAD voor FiveM met livekaart, bodycam, officiële plugins en optionele databasesynchronisatie voor sterk geïntegreerde roleplay-servers.",
+            "description": "Gratis FiveM CAD / MDT voor roleplay-dispatch, live kaarten, bodycam en officiële plugins. Verbind je server, vergelijk plannen en ontdek optionele databasesynchronisatie.",
             "keywords": "FiveM CAD, gratis CAD voor FiveM, Sonoran CAD, FiveM dispatch, FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM-integratie",
-            "title": "Gratis CAD voor FiveM - Sonoran CAD",
+            "title": "Gratis FiveM CAD / MDT-systeem - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM-integratievoorbeeld"
           },
           "modules": {
@@ -1617,6 +1621,15 @@
     },
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "pricingPage": {
+      "description": "Vergelijk Sonoran CAD-abonnementen, maandelijkse en driemaandelijkse prijzen, accountlimieten en inbegrepen functies. Gratis FiveM- en ERLC-integraties zijn beschikbaar bij elk CAD-abonnement.",
+      "erlcLink": "ERLC CAD-integratie",
+      "fivemLink": "FiveM CAD / MDT-integratie",
+      "heading": "Sonoran CAD-prijzen",
+      "integrationLinks": "Game-integraties",
+      "setupGuide": "ERLC-setupgids",
+      "title": "Sonoran CAD-prijzen - Gratis en betaalde abonnementen"
+    },
     "startFree": "Gratis starten",
     "startToday": "Start Today",
     "studio": {

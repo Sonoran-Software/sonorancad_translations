@@ -1386,7 +1386,7 @@
                 "question": "Czy Sonoran CAD to najlepszy CAD dla ER:LC?"
               },
               "community": {
-                "answer": "Oczywiście. Darmowy plan jest idealny dla małych i średnich społeczności, oferując pełną funkcjonalność ER:LC bez ograniczeń. Możesz później przejść na wyższy plan, jeśli Twój serwer się rozrośnie i będzie potrzebował dodatkowych kont lub funkcji.",
+                "answer": "Tak. Zacznij od darmowego planu i przejdź na wyższy, gdy będziesz potrzebować więcej kont lub dodatkowych funkcji CAD. Integracja z ER:LC jest dostępna w każdym planie CAD.",
                 "question": "Czy to jest odpowiednie dla małych lub rozwijających się społeczności?"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "Jakie funkcje są zawarte w integracji ER:LC?"
               },
               "free": {
-                "answer": "Tak, integracja ER:LC jest w pełni dostępna w darmowej wersji Sonoran CAD. Płatne plany są potrzebne tylko wtedy, gdy chcesz dodać więcej kont użytkowników lub rozbudować swoją społeczność, ale wszystkie podstawowe funkcje ER:LC działają bez aktualizacji.",
+                "answer": "Tak. Sonoran CAD zawiera integrację ER:LC w swoim darmowym planie. ER:LC wymaga osobnego zakupu API Expansion Pack dla twojego prywatnego serwera. Limity planu CAD nadal obowiązują; porównaj plany pod kątem limitów kont i dodatkowych funkcji.",
                 "question": "Czy integracja ER:LC jest darmowa w użyciu?"
               },
               "setup": {
-                "answer": "Konfiguracja zwykle zajmuje mniej niż 10 minut. Wystarczy wygenerować klucz API ER:LC, wkleić go do Sonoran CAD i wkleić nasz adres URL webhooka w menu serwera ER:LC. Nie jest wymagane kodowanie ani zaawansowana konfiguracja.",
-                "question": "Jak długo trwa skonfigurowanie integracji?"
+                "answer": "W ustawieniach prywatnego serwera ER:LC, w razie potrzeby kup pakiet API Expansion Pack i skopiuj swój klucz API ER:LC. W Sonoran CAD otwórz Admin > Advanced > In-Game Integration > ER:LC i wklej klucz do odpowiedniego pola serwera. Skopiuj adres webhooka zdarzeń z CAD do ER:LC API > Event Log Webhook. Gracze muszą też połączyć swoje konta Roblox w CAD.",
+                "question": "Jak połączyć mój serwer ER:LC z Sonoran CAD?"
+              },
+              "troubleshooting": {
+                "answer": "Zakup pakietu włącza dostęp do API; nie łączy automatycznie serwera. Sprawdź, czy bieżący klucz API ER:LC jest zapisany dla właściwego serwera w CAD. Jeśli zgłoszenia lub rejestracje są brakujące, porównaj Event Log Webhook w ER:LC z adresem URL widocznym w CAD. Gracze powinni też sprawdzić, czy ich konto Roblox jest połączone. Skorzystaj z przewodnika konfiguracji poniżej, jeśli potrzebujesz pomocy w znalezieniu tych ustawień.",
+                "question": "Kupiłem pakiet ER:LC API. Dlaczego Sonoran CAD nie działa?"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "Pytania",
           "faqTitlePrimary": "Najczęściej zadawane",
           "headlineAccent": "dla ER:LC",
-          "headlinePrimary": "Najlepszy CAD",
+          "headlinePrimary": "Darmowy CAD",
           "kicker": "Darmowy, szybki, w pełni zintegrowany",
           "meta": {
-            "description": "Darmowy CAD dla ER:LC z mapą 3D na żywo, bodycamem, połączeniami alarmowymi, narzędziami postaci i obsługą nakładki w grze.",
+            "description": "Darmowe CAD dla służb ratunkowych: Liberty County (ERLC) na Roblox. Połącz swój serwer z mapą na żywo, bodycamem, zgłoszeniami alarmowymi i narzędziami postaci.",
             "keywords": "ER:LC CAD, darmowy CAD dla ER:LC, ERLC CAD, Sonoran CAD",
             "ogImageAlt": "Integracja Sonoran CAD z ER:LC",
-            "title": "Darmowy CAD dla ER:LC - Sonoran CAD",
+            "title": "Darmowy system CAD dla ERLC dla Roblox - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "Pytania",
           "faqTitlePrimary": "Najczęściej zadawane pytania",
           "headlineAccent": "dla FiveM",
-          "headlinePrimary": "Najlepszy CAD",
+          "headlinePrimary": "Darmowy CAD / MDT",
           "kicker": "Darmowy, szybki, w pełni zintegrowany",
           "meta": {
-            "description": "Darmowy CAD dla FiveM z mapą na żywo, bodycam, oficjalnymi wtyczkami i opcjonalną synchronizacją bazy danych dla głęboko zintegrowanych serwerów roleplay.",
+            "description": "Darmowy FiveM CAD / MDT do dispatchu roleplay, map na żywo, bodycam i oficjalnych pluginów. Podłącz swój serwer, porównaj plany i poznaj opcjonalną synchronizację bazy danych.",
             "keywords": "FiveM CAD, darmowy CAD do FiveM, Sonoran CAD, dyspozytor FiveM, CAD do odgrywania ról FiveM",
             "ogImageAlt": "Integracja Sonoran CAD z FiveM",
-            "title": "Darmowy CAD dla FiveM - Sonoran CAD",
+            "title": "Darmowy system CAD / MDT dla FiveM - Sonoran CAD",
             "twitterImageAlt": "Podgląd integracji Sonoran CAD x FiveM"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "pricingPage": {
+      "description": "Porównaj plany Sonoran CAD, ceny miesięczne i kwartalne, limity kont oraz zawarte funkcje. Darmowe integracje FiveM i ERLC są dostępne w każdym planie CAD.",
+      "erlcLink": "Integracja ERLC CAD",
+      "fivemLink": "Integracja FiveM CAD / MDT",
+      "heading": "Cennik Sonoran CAD",
+      "integrationLinks": "Integracje gry",
+      "setupGuide": "Przewodnik konfiguracji ERLC",
+      "title": "Cennik Sonoran CAD - Plany darmowe i płatne"
+    },
     "startFree": "Zacznij za darmo",
     "startToday": "Start Today",
     "studio": {
