@@ -1386,7 +1386,7 @@
                 "question": "Sonoran CADはER:LCに最適なCADですか？"
               },
               "community": {
-                "answer": "もちろんです。無料プランは小規模から中規模のコミュニティに最適で、ER:LCの全機能を制限なく利用できます。サーバーが成長して追加のアカウントや機能が必要になったら、後でアップグレードできます。",
+                "answer": "はい。無料プランから始めて、より多くのアカウントや追加のCAD機能が必要になったらアップグレードしてください。ER:LC連携はすべてのCADプランで利用できます。",
                 "question": "これは小規模または成長中のコミュニティに適していますか？"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "ER:LC 統合にはどの機能が含まれていますか？"
               },
               "free": {
-                "answer": "はい、ER:LC 統合は Sonoran CAD の無料版で完全に利用できます。有料プランが必要なのは、より多くのユーザーアカウントを追加したい場合やコミュニティを拡大したい場合のみです。ですが、ER:LC のすべての主要機能はアップグレードなしで動作します。",
+                "answer": "はい。Sonoran CADには、無料プランにER:LC統合が含まれています。ER:LCでは、プライベートサーバー向けに別途API Expansion Packの購入が必要です。CADプランの制限は引き続き適用されます。アカウント制限と追加機能についてはプランを比較してください。",
                 "question": "ER:LC 統合は無料で使えますか"
               },
               "setup": {
-                "answer": "セットアップは通常10分未満で完了します。ER:LC APIキーを生成し、Sonoran CADに貼り付け、ER:LCサーバーメニューに当社のwebhook URLを貼り付けるだけです。コーディングや高度な設定は不要です。",
-                "question": "インテグレーションの設定にはどれくらい時間がかかりますか？"
+                "answer": "ER:LCのプライベートサーバー設定で、必要に応じてAPI Expansion Packを購入し、ER:LC APIキーをコピーします。Sonoran CADでは、Admin > Advanced > In-Game Integration > ER:LCを開き、キーを対応するサーバー欄に貼り付けます。CADからイベントWebhook URLをコピーして、ER:LC API > Event Log Webhookに貼り付けます。プレイヤーはCADでRobloxアカウントもリンクする必要があります。",
+                "question": "ER:LC サーバーを Sonoran CAD に接続するにはどうすればよいですか？"
+              },
+              "troubleshooting": {
+                "answer": "パックを購入すると API アクセスが有効になります; サーバーは自動的には接続されません。現在の ER:LC API キーが CAD の正しいサーバーに保存されていることを確認してください。呼び出しや登録が見つからない場合は、ER:LC の Event Log Webhook を CAD に表示されている URL と照合してください。プレイヤーは Roblox アカウントがリンクされていることも確認してください。これらの設定の場所がわからない場合は、下のセットアップガイドを参照してください。",
+                "question": "ER:LC API Packを購入しました。なぜSonoran CADが動作しないのですか？"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "質問",
           "faqTitlePrimary": "よくある質問",
           "headlineAccent": "ER:LC向け",
-          "headlinePrimary": "最高の CAD",
+          "headlinePrimary": "無料 CAD",
           "kicker": "無料、高速、完全統合",
           "meta": {
-            "description": "ER:LC向けの無料CAD。3Dライブマップ、ボディカメラ、緊急通報、キャラクターツール、ゲーム内オーバーレイ対応。",
+            "description": "Robloxの緊急対応向け無料CAD: Liberty County (ERLC)。サーバーをライブマップ、ボディカメラ、緊急通報、キャラクターツールに接続します。",
             "keywords": "ER:LC CAD、ER:LC用の無料 CAD、ERLC CAD、Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC 統合",
-            "title": "ER:LC 用の無料 CAD - Sonoran CAD",
+            "title": "Roblox 用無料 ERLC CAD システム - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "質問",
           "faqTitlePrimary": "よくある質問",
           "headlineAccent": "FiveM向け",
-          "headlinePrimary": "最高の CAD",
+          "headlinePrimary": "無料 CAD / MDT",
           "kicker": "無料、高速、完全統合",
           "meta": {
-            "description": "FiveM向けの無料CAD。ライブマップ、ボディカム、公式プラグイン、そして深く統合されたロールプレイサーバー向けのオプションのデータベース同期付き。",
+            "description": "ロールプレイ ディスパッチ、ライブ マップ、ボディカム、公式プラグイン向けの無料 FiveM CAD / MDT。サーバーを接続し、プランを比較して、オプションのデータベース同期を確認。",
             "keywords": "FiveM CAD、FiveM 用の無料 CAD、Sonoran CAD、FiveM ディスパッチ、FiveM ロールプレイ CAD",
             "ogImageAlt": "Sonoran CAD FiveM 統合",
-            "title": "FiveM 用の無料 CAD - Sonoran CAD",
+            "title": "無料 FiveM CAD / MDT システム - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM 統合プレビュー"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "料金",
     "pricingDescription": "Sonoran CADの有料サブスクリプションでは、新しい統合機能の有効化、カスタマイズの有効化、制限の解除などができます！",
+    "pricingPage": {
+      "description": "Sonoran CAD プラン、月額および四半期料金、アカウント制限、含まれる機能を比較します。無料の FiveM と ERLC の統合はすべての CAD プランで利用できます。",
+      "erlcLink": "ERLC CAD 統合",
+      "fivemLink": "FiveM CAD / MDT 統合",
+      "heading": "Sonoran CAD 料金",
+      "integrationLinks": "ゲーム内 統合",
+      "setupGuide": "ERLC セットアップガイド",
+      "title": "Sonoran CAD 料金 - 無料 & 有料プラン"
+    },
     "startFree": "無料で開始",
     "startToday": "今日始める",
     "studio": {

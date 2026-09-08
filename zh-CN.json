@@ -1386,7 +1386,7 @@
                 "question": "Sonoran CAD 是 ER:LC 的最佳 CAD 吗？"
               },
               "community": {
-                "answer": "当然。免费方案非常适合中小型社区，提供完整的 ER:LC 功能，没有任何限制。如果你的服务器发展壮大并需要额外的账户或功能，你以后可以升级。",
+                "answer": "是。先从免费方案开始，在你需要更多账户或额外 CAD 功能时再升级。ER:LC 集成在每个 CAD 方案中均可用。",
                 "question": "这适合小型或正在成长的社区吗？"
               },
               "features": {
@@ -1394,12 +1394,16 @@
                 "question": "ER:LC 集成包含哪些功能？"
               },
               "free": {
-                "answer": "是，ER:LC 集成在 Sonoran CAD 的免费版本中完全可用。只有在你想添加更多用户账户或扩展你的社区时才需要付费方案，但所有核心 ER:LC 功能都无需升级即可使用。",
+                "answer": "是。Sonoran CAD 的免费套餐包含 ER:LC 集成。ER:LC 需要为你的私人服务器单独购买 API Expansion Pack。CAD 套餐限制仍然适用；请比较套餐以了解账号限制和额外功能。",
                 "question": "ER:LC 集成可以免费使用吗？"
               },
               "setup": {
-                "answer": "设置通常只需不到 10 分钟。你只需生成你的 ER:LC API 密钥，将其粘贴到 Sonoran CAD 中，并将我们的 webhook URL 粘贴到 ER:LC 服务器菜单中。无需编写代码或进行高级设置。",
-                "question": "设置集成需要多长时间？"
+                "answer": "在你的 ER:LC 私服设置中，如有需要，请购买 API Expansion Pack 并复制你的 ER:LC API 密钥。在 Sonoran CAD 中，打开 Admin > Advanced > In-Game Integration > ER:LC，并将该密钥粘贴到对应的服务器字段中。将 CAD 中的事件 webhook URL 复制到 ER:LC API > Event Log Webhook。玩家还必须在 CAD 中关联他们的 Roblox 账户。",
+                "question": "我如何将我的 ER:LC 服务器连接到 Sonoran CAD？"
+              },
+              "troubleshooting": {
+                "answer": "购买此套餐可启用 API 访问；不会自动连接服务器。请确认当前 ER:LC API 密钥已为 CAD 中的正确服务器保存。如果呼叫或登记缺失，请将 ER:LC 中的 Event Log Webhook 与 CAD 中显示的 URL 进行核对。玩家还应检查他们的 Roblox 账号是否已链接。如果你需要帮助查找这些设置，请使用下面的设置指南。",
+                "question": "我购买了 ER:LC API 套餐。为什么 Sonoran CAD 不工作？"
               }
             }
           },
@@ -1407,13 +1411,13 @@
           "faqTitleAccent": "问题",
           "faqTitlePrimary": "常见问题",
           "headlineAccent": "适用于 ER:LC",
-          "headlinePrimary": "最好的 CAD",
+          "headlinePrimary": "免费 CAD",
           "kicker": "免费、快速、完全集成",
           "meta": {
-            "description": "适用于 ER:LC 的免费 CAD，支持 3D 实时地图、执法记录仪、紧急呼叫、角色工具和游戏内覆盖层。",
+            "description": "Roblox 上《紧急响应：自由县（ERLC）》的免费 CAD。将你的服务器连接到实时地图、执法记录仪、紧急呼叫和角色工具。",
             "keywords": "ER:LC CAD，ER:LC 的免费 CAD，ERLC CAD，Sonoran CAD",
             "ogImageAlt": "Sonoran CAD ER:LC 集成",
-            "title": "ER:LC 的免费 CAD - Sonoran CAD",
+            "title": "免费的 ERLC CAD 系统 - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x 应急响应：自由县"
           },
           "modules": {
@@ -1484,13 +1488,13 @@
           "faqTitleAccent": "问题",
           "faqTitlePrimary": "常见问题",
           "headlineAccent": "适用于 FiveM",
-          "headlinePrimary": "最好的 CAD",
+          "headlinePrimary": "免费 CAD / MDT",
           "kicker": "免费、快速、完全集成",
           "meta": {
-            "description": "FiveM 的免费 CAD，支持实时地图、执法记录仪、官方插件，以及可选的数据库同步，适用于深度集成的角色扮演服务器。",
+            "description": "适用于角色扮演调度、实时地图、执法记录仪和官方插件的免费 FiveM CAD / MDT。连接你的服务器，比较方案并探索可选的数据库同步。",
             "keywords": "FiveM CAD，FiveM 的免费 CAD，Sonoran CAD，FiveM dispatch，FiveM roleplay CAD",
             "ogImageAlt": "Sonoran CAD FiveM 集成",
-            "title": "FiveM 的免费 CAD - Sonoran CAD",
+            "title": "免费的 FiveM CAD / MDT 系统 - Sonoran CAD",
             "twitterImageAlt": "Sonoran CAD x FiveM 集成预览"
           },
           "modules": {
@@ -1618,6 +1622,15 @@
     },
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
+    "pricingPage": {
+      "description": "比较 Sonoran CAD 套餐、月付和季付价格、账户限制及包含的功能。每个 CAD 套餐均提供免费的 FiveM 和 ERLC 集成。",
+      "erlcLink": "ERLC CAD 集成",
+      "fivemLink": "FiveM CAD / MDT 集成",
+      "heading": "Sonoran CAD 定价",
+      "integrationLinks": "游戏集成",
+      "setupGuide": "ERLC 设置指南",
+      "title": "Sonoran CAD 定价 - 免费与付费方案"
+    },
     "startFree": "开始免费",
     "startToday": "Start Today",
     "studio": {
