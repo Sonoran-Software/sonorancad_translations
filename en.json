@@ -1728,6 +1728,10 @@
           "description": "Build a game-ready workspace around your community's colors and workflows.",
           "title": "Custom"
         },
+        "metro": {
+          "description": "Light call grids, dark title bars, and blue controls inspired by CentralSquare Enterprise CAD.",
+          "title": "CentralCircle"
+        },
         "mike19": {
           "description": "A compact, icon-driven workspace inspired by Mark43 CAD.",
           "title": "Mike19"
@@ -1919,23 +1923,23 @@
     "users2": "Users:"
   },
   "marketingCoupon": {
-    "emailTitle": "Save 20%",
-    "emailTerms": "On your first subscription payment.",
-    "copyCode": "Copy coupon code",
-    "emailButton": "Email me",
-    "notNow": "Not now",
     "accountSettings": "Update account email",
+    "codeLabel": "Coupon code",
+    "copyCode": "Copy coupon code",
+    "description": "Your offer is ready. Use this code at Stripe Checkout when you upgrade.",
+    "emailButton": "Email me",
     "emailSent": "Your offer email was sent. Check the inbox or spam folder for your account email.",
     "emailStatus": {
-      "needs_email": "Your account needs a real email address. Update it in your Sonoran account, then try again in 15 minutes. You can still copy your code here.",
-      "not_ready": "If you just requested an email, check your inbox or spam folder. Otherwise, wait 15 minutes and try again. You can still copy your code.",
       "claim_failed": "We couldn't confirm your saved offer. Please try again shortly. Your code is still shown above.",
+      "failed": "We couldn't confirm the email was sent. Check your inbox before trying again in 15 minutes, or copy your code here.",
       "invalid_session": "Please sign in again to email your offer. You can still copy your code.",
-      "failed": "We couldn't confirm the email was sent. Check your inbox before trying again in 15 minutes, or copy your code here."
+      "needs_email": "Your account needs a real email address. Update it in your Sonoran account, then try again in 15 minutes. You can still copy your code here.",
+      "not_ready": "If you just requested an email, check your inbox or spam folder. Otherwise, wait 15 minutes and try again. You can still copy your code."
     },
-    "codeLabel": "Coupon code",
-    "description": "Your offer is ready. Use this code at Stripe Checkout when you upgrade.",
+    "emailTerms": "On your first subscription payment.",
+    "emailTitle": "Save 20%",
     "eyebrow": "Exclusive TikTok offer",
+    "notNow": "Not now",
     "offer": "20% off your first month",
     "savedButton": "I saved it",
     "saveReminder": "Take a screenshot, copy it, or write it down before switching devices.",
@@ -3126,6 +3130,7 @@
         "primaryFaded": "Primary Faded",
         "primaryText": "Primary Text",
         "subtitleText": "Subtitle Text",
+        "tableAlternateBackground": "Alternating Row Background",
         "tableBorder": "Table Border",
         "taskbarGradientBottom": "Taskbar Gradient Bottom",
         "taskbarGradientTop": "Taskbar Gradient Top",
@@ -3136,10 +3141,12 @@
         "unitStatusOnScene": "Unit Status On Scene",
         "unitStatusUnavailable": "Unit Status Unavailable",
         "windowHeaderGradientBottom": "Window Header Gradient Bottom",
-        "windowHeaderGradientTop": "Window Header Gradient Top"
+        "windowHeaderGradientTop": "Window Header Gradient Top",
+        "windowHeaderText": "Solid Window Header Text"
       },
       "componentStyle": "Component Style",
       "componentStyles": {
+        "flat": "Flat",
         "modern": "Modern",
         "retro": "Retro"
       },
@@ -3187,6 +3194,7 @@
       },
       "presetDescriptions": {
         "dark": "Designed by Sonoran Software Systems",
+        "metro": "Inspired by CentralSquare Enterprise CAD",
         "mike19": "Inspired by Mark43 CAD",
         "mike19Light": "Inspired by Mark43 CAD",
         "retro": "Inspired by Motorola Solutions Spillman Flex CAD",
@@ -3195,6 +3203,7 @@
       },
       "presets": {
         "dark": "Sonoran",
+        "metro": "CentralCircle",
         "mike19": "Mike19",
         "mike19Light": "Mike19 Light",
         "retro": "Spillboy",
@@ -3261,6 +3270,7 @@
       },
       "taskbarStyle": "Taskbar Style",
       "taskbarStyles": {
+        "command": "Command Bar",
         "default": "Default",
         "ribbon": "Ribbon",
         "toolbar": "Compact Toolbar"
@@ -3288,7 +3298,8 @@
       "windowHeaderStyles": {
         "compact": "Compact Flat",
         "default": "Default",
-        "gradient": "Gradient"
+        "gradient": "Gradient",
+        "solid": "Solid"
       }
     },
     "trafficStopDispatchCode": "10-38",
