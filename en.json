@@ -1,4 +1,66 @@
 {
+  "releaseHighlights": {
+    "brand": "Sonoran CAD",
+    "menu": "What’s new",
+    "eyebrow": "New in Sonoran CAD",
+    "preview": "Coming next · Preview",
+    "cta": "See what’s new",
+    "dismiss": "Dismiss this release announcement",
+    "close": "Close",
+    "features": "Release features",
+    "enlarge": "View full size",
+    "previous": "Previous feature",
+    "next": "Next feature",
+    "done": "Got it",
+    "counter": "{current} of {total}",
+    "archive": "Explore releases",
+    "openPage": "Open release page",
+    "changelog": "Full changelog",
+    "releases": {
+      "community-workflows": {
+        "title": "Your community. Your workflow.",
+        "shortTitle": "A new era for records",
+        "description": "Less repetitive work. More precise control. Meet three upgrades built around the way your community operates.",
+        "teaser": "Record automations, granular permissions, and a new visual record editor."
+      },
+      "central-circle": {
+        "title": "A fresh perspective on dispatch.",
+        "shortTitle": "Meet CentralCircle",
+        "description": "A new built-in theme brings light tables and dark headers to your CAD workspace.",
+        "teaser": "Light tables. Dark headers. A whole new look for your CAD."
+      }
+    },
+    "featuresCopy": {
+      "automations": {
+        "label": "Record automations",
+        "title": "Set the rules. Skip the busywork.",
+        "description": "When a record is saved, check the fields you choose and update another field automatically. Match all conditions or any one of them.",
+        "location": "Administration → Automations",
+        "alt": "Record automation editor with an incident-report rule that sets Review status to Supervisor review when priority is High."
+      },
+      "permissions": {
+        "label": "Granular permissions",
+        "title": "The right access. For every role.",
+        "description": "Choose who can view, create, edit, and delete each record type. Separate access to a member’s own records from access to everyone’s.",
+        "location": "Administration → Permission keys",
+        "alt": "Granular record permissions for Incident Report, including view, create, edit own, edit any, delete, and supervisor fields."
+      },
+      "recordEditor": {
+        "label": "Visual record editor",
+        "title": "Build it the way you see it.",
+        "description": "Edit your template in a live record preview. Select a field to adjust its settings, arrange sections, and see how your form comes together.",
+        "location": "Administration → Custom records",
+        "alt": "Visual Incident Report template editor with a live form preview and a selected field settings panel."
+      },
+      "centralCircle": {
+        "label": "CentralCircle theme",
+        "title": "A familiar feel. A fresh look.",
+        "description": "Give your workspace a new perspective with light tables, dark headers, and crisp blue accents. Select CentralCircle from your built-in themes.",
+        "location": "Customization → CentralCircle",
+        "alt": "Sonoran CAD dispatch workspace using CentralCircle with light unit and call tables, dark headers, and blue accents."
+      }
+    }
+  },
   "account": {
     "analytics": {
       "allow": "Allow",
@@ -3501,5 +3563,71 @@
   "toneBoard": {
     "playStack": "Play stack",
     "stack": "Stack"
+  },
+  "automations": {
+    "title": "Automations",
+    "intro": "Update record fields automatically when a record is created or saved.",
+    "refresh": "Refresh",
+    "add": "Add automation",
+    "edit": "Edit automation",
+    "delete": "Delete automation",
+    "enabled": "Enabled",
+    "emptyTitle": "Your records can do the routine work.",
+    "emptyHint": "Choose a record, add conditions, and set a field when they match.",
+    "conditionCount": "{count} conditions",
+    "all": "All conditions",
+    "any": "Any condition",
+    "cancel": "Cancel",
+    "name": "Automation name",
+    "when": "When",
+    "if": "If",
+    "then": "Then",
+    "template": "Record template",
+    "triggerHint": "Runs on create and update, including civilian records and API saves.",
+    "allHint": "Every condition must match (AND).",
+    "anyHint": "At least one condition must match (OR).",
+    "and": "AND",
+    "or": "OR",
+    "field": "Field",
+    "comparison": "Comparison",
+    "values": "Accepted values",
+    "number": "Number",
+    "value": "Value",
+    "removeCondition": "Remove condition",
+    "addCondition": "Add condition",
+    "setField": "Set field",
+    "toValue": "To value",
+    "save": "Save automation",
+    "targetHint": "Only non-repeating fields can be updated. Synced, read-only, and unique fields are excluded. Supervisor-only fields are excluded except status fields.",
+    "behavior": "Matching rules overwrite the target on every save. Otherwise it stays unchanged. Rules do not chain or update existing records retroactively.",
+    "missingTemplate": "Missing record template",
+    "deleteConfirm": "Delete “{name}”? This will not undo earlier record changes.",
+    "operators": {
+      "equals": "Equals",
+      "choiceequals": "Is one of",
+      "choicenotEquals": "Is not one of",
+      "notEquals": "Does not equal",
+      "numberEquals": "Number equals",
+      "numberNotEquals": "Number does not equal",
+      "gt": "Greater than",
+      "gte": "At least",
+      "lt": "Less than",
+      "lte": "At most"
+    },
+    "errors": {
+      "forbidden": "You need customization permission to manage automations.",
+      "migrationRequired": "Automations needs its database table. Run the automations SQL migration, then refresh this panel.",
+      "invalidRule": "Enter a name, 1–20 conditions, and an action.",
+      "invalidTemplate": "Select an existing record template.",
+      "invalidField": "A condition field was removed, changed type, or is unsupported. Select it again.",
+      "invalidTarget": "The target field was removed, changed type, or cannot be automated. Select another field.",
+      "invalidCondition": "Check the comparison and accepted values. Numeric comparisons require a plain number.",
+      "invalidValue": "Choose a valid target value from the field’s current options.",
+      "targetConflict": "Another enabled automation already updates this field. Edit or disable it first.",
+      "staleRule": "This automation changed in another session. Close the editor and refresh before trying again.",
+      "ruleLimit": "This community has reached the limit of 100 automations.",
+      "templateInUse": "Update or disable the automation that uses this template first.",
+      "unavailable": "Automations could not be loaded or saved. Try refreshing."
+    }
   }
 }
