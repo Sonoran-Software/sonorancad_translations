@@ -49,13 +49,14 @@
       "addresses": "Addresses"
     },
     "aiUsage": {
+      "allowanceUsed": "Monthly allowance used",
       "blocked": "Blocked",
       "completionTokens": "Output tokens",
       "cost": "Estimated cost",
       "customRecord": "Report improvements",
       "databaseSync": "Database Sync setup",
       "deniedRequests": "Blocked requests",
-      "description": "Monthly activity and estimated provider cost for AI-assisted features. Shared and feature-specific safeguards prevent excessive usage.",
+      "description": "Monthly activity and allowance usage for AI-assisted features.",
       "error": "AI usage data is temporarily unavailable.",
       "failed": "Failed",
       "feature": "Feature",
@@ -436,6 +437,7 @@
       "actions": "Actions",
       "addCustomSection": "Add Custom Section",
       "addPremadeSection": "Add Premade Section",
+      "addSection": "Add section",
       "aiCompleteEmpty": "The AI service did not return a suggestion.",
       "aiCompleteFailed": "Unable to generate an AI suggestion right now.",
       "aiCompleteProRequired": "AI suggestions require a PRO subscription.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Enter or dictate some text before using AI improvement.",
       "dbMap": "DB Sync Mapping",
       "dependency": "Dependency",
+      "dependencyField": "Show only when this field matches",
       "dependencyInfo": {
         "infoContains": "Display if field value contains one or more:",
         "infoEqual": "Display if field value equals:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Duplicate Section",
       "enableDuplicate": "Enable Duplicate",
+      "enableDuplicateAbout": "Let users add another copy of this section while filling out a record.",
       "enableMapping": "Enable Mapping",
       "enforceFormatting": "Enforce formatting for text fields.",
       "errors": {
@@ -471,9 +475,10 @@
         "noStatusField": "ERROR: This record type must have ONE custom field with the UID of 'status'"
       },
       "existingHeader": "Existing Custom Record Types",
+      "exportTemplate": "Export template",
       "label": "Label",
       "lookupPreview": "Lookup Preview",
-      "lookupPreviewAbout": "Show field value in lookup table preview",
+      "lookupPreviewAbout": "Show this field as a preview column in search results when someone runs a record lookup.",
       "mask": "Mask",
       "maskAlphaNumeric": "X: Alphanumeric",
       "maskNumber": "#: Number",
@@ -482,12 +487,16 @@
       "newField": "New Field",
       "newValue": "New Value",
       "notApplicable": "N/A",
+      "pasteSection": "Paste {name}",
       "placeholder": "Placeholder",
       "placeholderAbout": "Optional helper text shown in the empty field before a value is entered.",
       "readOnly": "Read Only",
+      "rebuildPreviews": "Rebuild lookup previews",
       "recordEditor": "Record Editor",
+      "recordImage": "Record image",
       "recordPreview": "Record Preview",
       "recordSections": "Record Sections",
+      "recordTemplate": "Record template",
       "recordTypeName": "Record Type Name",
       "recordTypes": {
         "bolo": "BOLO",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Reverse Map",
       "searchCivs": "Search Civilians",
+      "searchCivsAbout": "Search for a civilian and fill matching fields in this section with their details.",
       "searchVehicles": "Search Vehicles",
+      "searchVehiclesAbout": "Search for a vehicle and fill matching fields in this section with its details.",
       "sectionLabel": "Section Label",
       "speechToTextFailed": "Speech recognition failed.",
       "speechToTextHold": "Press and hold to dictate",
@@ -524,9 +535,11 @@
       "speechToTextNoSpeech": "No speech was detected.",
       "speechToTextNotAllowed": "Microphone access was denied.",
       "speechToTextUnavailable": "Speech recognition is unavailable right now.",
-      "supervisorAbout": "Restrict field to supervisors only",
+      "supervisorAbout": "Editing this field requires the Supervisor fields permission for this record type, in addition to permission to edit the record.",
+      "templateActions": "Template actions",
       "type": "Type",
       "uniqueField": "Unique Field",
+      "unsavedChanges": "Unsaved changes",
       "width": "Width"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Jail Time",
       "title": "Title"
     },
+    "permissionCode": {
+      "code": "Permission code",
+      "copied": "Permission code copied.",
+      "copyError": "Unable to copy. Select the code and copy it manually.",
+      "hint": "Paste this one-line code into Sonoran Bot's role mapping for this community.",
+      "loadError": "Unable to load permissions. Please try again.",
+      "title": "Bot permissions",
+      "tooLong": "This code exceeds 1000 characters. Split these permissions across role mappings."
+    },
     "permissions": {
       "account": "Account",
       "accountManagement": "Account Management",
@@ -1123,6 +1145,72 @@
       "action": "View",
       "message": "Experience the new Beta"
     }
+  },
+  "automations": {
+    "add": "Add automation",
+    "addCondition": "Add condition",
+    "all": "All conditions",
+    "allHint": "Every condition must match (AND).",
+    "and": "AND",
+    "any": "Any condition",
+    "anyHint": "At least one condition must match (OR).",
+    "behavior": "Matching rules overwrite the target on every save. Otherwise it stays unchanged. Rules do not chain or update existing records retroactively.",
+    "cancel": "Cancel",
+    "comparison": "Comparison",
+    "conditionCount": "{count} conditions",
+    "delete": "Delete automation",
+    "deleteConfirm": "Delete “{name}”? This will not undo earlier record changes.",
+    "edit": "Edit automation",
+    "emptyHint": "Choose a record, add conditions, and set a field when they match.",
+    "emptyTitle": "Your records can do the routine work.",
+    "enabled": "Enabled",
+    "errors": {
+      "forbidden": "You need customization permission to manage automations.",
+      "invalidCondition": "Check the comparison and accepted values. Numeric comparisons require a plain number.",
+      "invalidField": "A condition field was removed, changed type, or is unsupported. Select it again.",
+      "invalidRule": "Enter a name, 1–20 conditions, and an action.",
+      "invalidTarget": "The target field was removed, changed type, or cannot be automated. Select another field.",
+      "invalidTemplate": "Select an existing record template.",
+      "invalidValue": "Choose a valid target value from the field’s current options.",
+      "migrationRequired": "Automations needs its database table. Run the automations SQL migration, then refresh this panel.",
+      "ruleLimit": "This community has reached the limit of 100 automations.",
+      "staleRule": "This automation changed in another session. Close the editor and refresh before trying again.",
+      "targetConflict": "Another enabled automation already updates this field. Edit or disable it first.",
+      "templateInUse": "Update or disable the automation that uses this template first.",
+      "unavailable": "Automations could not be loaded or saved. Try refreshing."
+    },
+    "field": "Field",
+    "if": "If",
+    "intro": "Update record fields automatically when a record is created or saved.",
+    "missingTemplate": "Missing record template",
+    "name": "Automation name",
+    "number": "Number",
+    "operators": {
+      "choiceequals": "Is one of",
+      "choicenotEquals": "Is not one of",
+      "equals": "Equals",
+      "gt": "Greater than",
+      "gte": "At least",
+      "lt": "Less than",
+      "lte": "At most",
+      "notEquals": "Does not equal",
+      "numberEquals": "Number equals",
+      "numberNotEquals": "Number does not equal"
+    },
+    "or": "OR",
+    "refresh": "Refresh",
+    "removeCondition": "Remove condition",
+    "save": "Save automation",
+    "setField": "Set field",
+    "targetHint": "Only non-repeating fields can be updated. Synced, read-only, and unique fields are excluded. Supervisor-only fields are excluded except status fields.",
+    "template": "Record template",
+    "then": "Then",
+    "title": "Automations",
+    "toValue": "To value",
+    "triggerHint": "Runs on create and update, including civilian records and API saves.",
+    "value": "Value",
+    "values": "Accepted values",
+    "when": "When"
   },
   "bodycamRecordings": {
     "open": "Open",
@@ -2918,6 +3006,68 @@
     "label": "Label",
     "question": "Question",
     "questions": "Questions:"
+  },
+  "releaseHighlights": {
+    "archive": "Explore releases",
+    "brand": "Sonoran CAD",
+    "changelog": "Full changelog",
+    "close": "Close",
+    "counter": "{current} of {total}",
+    "cta": "See what’s new",
+    "dismiss": "Dismiss this release announcement",
+    "done": "Got it",
+    "enlarge": "View full size",
+    "eyebrow": "New in Sonoran CAD",
+    "features": "Release features",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Record automation editor with an incident-report rule that sets Review status to Supervisor review when priority is High.",
+        "description": "When a record is saved, check the fields you choose and update another field automatically. Match all conditions or any one of them.",
+        "label": "Record automations",
+        "location": "Administration → Automations",
+        "title": "Set the rules. Skip the busywork."
+      },
+      "centralCircle": {
+        "alt": "Sonoran CAD dispatch workspace using CentralCircle with light unit and call tables, dark headers, and blue accents.",
+        "description": "Give your workspace a new perspective with light tables, dark headers, and crisp blue accents. Select CentralCircle from your built-in themes.",
+        "label": "CentralCircle theme",
+        "location": "Customization → CentralCircle",
+        "title": "A familiar feel. A fresh look."
+      },
+      "permissions": {
+        "alt": "Granular record permissions for Incident Report, including view, create, edit own, edit any, delete, and supervisor fields.",
+        "description": "Choose who can view, create, edit, and delete each record type. Separate access to a member’s own records from access to everyone’s.",
+        "label": "Granular permissions",
+        "location": "Administration → Permission keys",
+        "title": "The right access. For every role."
+      },
+      "recordEditor": {
+        "alt": "Visual Incident Report template editor with a live form preview and a selected field settings panel.",
+        "description": "Edit your template in a live record preview. Select a field to adjust its settings, arrange sections, and see how your form comes together.",
+        "label": "Visual record editor",
+        "location": "Administration → Custom records",
+        "title": "Build it the way you see it."
+      }
+    },
+    "menu": "What’s new",
+    "next": "Next feature",
+    "openPage": "Open release page",
+    "preview": "Coming next · Preview",
+    "previous": "Previous feature",
+    "releases": {
+      "central-circle": {
+        "description": "A new built-in theme brings light tables and dark headers to your CAD workspace.",
+        "shortTitle": "Meet CentralCircle",
+        "teaser": "Light tables. Dark headers. A whole new look for your CAD.",
+        "title": "A fresh perspective on dispatch."
+      },
+      "community-workflows": {
+        "description": "Less repetitive work. More precise control. Meet three upgrades built around the way your community operates.",
+        "shortTitle": "A new era for records",
+        "teaser": "Record automations, granular permissions, and a new visual record editor.",
+        "title": "Your community. Your workflow."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {
