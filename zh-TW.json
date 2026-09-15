@@ -1728,6 +1728,10 @@
           "description": "圍繞你社群的顏色和工作流程，打造一個可直接用於遊戲的工作空間。",
           "title": "自訂"
         },
+        "metro": {
+          "description": "淺色呼叫網格、深色標題列，以及受 CentralSquare Enterprise CAD 啟發的藍色控制項。",
+          "title": "中央圓形"
+        },
         "mike19": {
           "description": "受 Mark43 CAD 啟發的精巧、以圖示驅動的工作區。",
           "title": "Mike19"
@@ -1919,9 +1923,23 @@
     "users2": "使用者："
   },
   "marketingCoupon": {
+    "accountSettings": "更新帳戶電子郵件",
     "codeLabel": "優惠碼",
+    "copyCode": "複製優惠碼",
     "description": "您的優惠已準備好。在您升級時，請在 Stripe Checkout 使用此代碼。",
+    "emailButton": "寄電子郵件給我",
+    "emailSent": "您的優惠電子郵件已送出。請查看您帳戶電子郵件的收件匣或垃圾郵件資料夾。",
+    "emailStatus": {
+      "claim_failed": "我們無法確認您已儲存的優惠。請稍後再試。您的代碼仍顯示在上方。",
+      "failed": "我們無法確認電子郵件是否已送出。請在 15 分鐘後再次嘗試之前先檢查你的收件匣，或在此複製你的代碼。",
+      "invalid_session": "請再次登入以將您的優惠寄送至電子郵件。您仍然可以複製您的代碼。",
+      "needs_email": "您的帳戶需要一個真實的電子郵件地址。請在您的 Sonoran 帳戶中更新，然後在 15 分鐘後再試一次。您仍然可以在這裡複製您的代碼。",
+      "not_ready": "如果您剛剛要求寄送電子郵件，請檢查您的收件匣或垃圾郵件資料夾。否則，請等待 15 分鐘後再試一次。您仍然可以複製您的代碼。"
+    },
+    "emailTerms": "在您的首次訂閱付款時。",
+    "emailTitle": "儲存 20%",
     "eyebrow": "TikTok 專屬優惠",
+    "notNow": "現在不要",
     "offer": "首月 8 折",
     "savedButton": "我已儲存",
     "saveReminder": "在切換裝置前請截圖、複製或抄下來。",
@@ -3121,6 +3139,7 @@
         "primaryFaded": "主色淡化",
         "primaryText": "主要文字",
         "subtitleText": "子標題文字",
+        "tableAlternateBackground": "交替列背景",
         "tableBorder": "表格邊框",
         "taskbarGradientBottom": "工作列漸層底部",
         "taskbarGradientTop": "工作列漸層頂部",
@@ -3131,10 +3150,12 @@
         "unitStatusOnScene": "現場單位狀態",
         "unitStatusUnavailable": "離開單位狀態",
         "windowHeaderGradientBottom": "視窗標題列漸層下方",
-        "windowHeaderGradientTop": "視窗標題列漸層上方"
+        "windowHeaderGradientTop": "視窗標題列漸層上方",
+        "windowHeaderText": "實心視窗標題列文字"
       },
       "componentStyle": "元件樣式",
       "componentStyles": {
+        "flat": "扁平",
         "modern": "現代",
         "retro": "復古"
       },
@@ -3182,6 +3203,7 @@
       },
       "presetDescriptions": {
         "dark": "由 Sonoran Software Systems 設計",
+        "metro": "靈感來自 CentralSquare Enterprise CAD",
         "mike19": "靈感來自 Mark43 CAD",
         "mike19Light": "靈感來自 Mark43 CAD",
         "retro": "受 Motorola Solutions Spillman Flex CAD 啟發",
@@ -3190,6 +3212,7 @@
       },
       "presets": {
         "dark": "Sonoran",
+        "metro": "中央圓形",
         "mike19": "Mike19",
         "mike19Light": "Mike19 淺色",
         "retro": "復古",
@@ -3256,6 +3279,7 @@
       },
       "taskbarStyle": "工作列樣式",
       "taskbarStyles": {
+        "command": "指令列",
         "default": "預設值",
         "ribbon": "緞帶",
         "toolbar": "緊湊工具列"
@@ -3283,7 +3307,8 @@
       "windowHeaderStyles": {
         "compact": "簡潔 平面",
         "default": "預設值",
-        "gradient": "漸層"
+        "gradient": "漸層",
+        "solid": "實心"
       }
     },
     "trafficStopDispatchCode": "10-38",

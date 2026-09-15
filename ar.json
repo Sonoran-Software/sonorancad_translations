@@ -1728,6 +1728,10 @@
           "description": "أنشئ مساحة عمل جاهزة للألعاب حول ألوان مجتمعك وسير العمل.",
           "title": "مخصص"
         },
+        "metro": {
+          "description": "شبكات مكالمات فاتحة، وأشرطة عناوين داكنة، وأزرار تحكم زرقاء مستوحاة من CentralSquare Enterprise CAD.",
+          "title": "الدائرة المركزية"
+        },
         "mike19": {
           "description": "مساحة عمل مدمجة تعتمد على الأيقونات ومستلهمة من Mark43 CAD.",
           "title": "مايك19"
@@ -1919,9 +1923,23 @@
     "users2": "المستخدمون:"
   },
   "marketingCoupon": {
+    "accountSettings": "تحديث بريد الحساب الإلكتروني",
     "codeLabel": "رمز القسيمة",
+    "copyCode": "نسخ رمز القسيمة",
     "description": "عرضك جاهز. استخدم هذا الرمز في Stripe Checkout عند الترقية.",
+    "emailButton": "راسلني بالبريد الإلكتروني",
+    "emailSent": "تم إرسال بريد عرضك. تحقق من صندوق الوارد أو مجلد الرسائل غير المرغوب فيها لعنوان بريد حسابك.",
+    "emailStatus": {
+      "claim_failed": "تعذر علينا تأكيد العرض المحفوظ. يرجى المحاولة مرة أخرى بعد قليل. لا يزال رمزك معروضًا أعلاه.",
+      "failed": "تعذرنا من تأكيد إرسال البريد الإلكتروني. تحقق من صندوق الوارد قبل المحاولة مرة أخرى بعد 15 دقيقة، أو انسخ الرمز هنا.",
+      "invalid_session": "يرجى تسجيل الدخول مرة أخرى لإرسال عرضك عبر البريد الإلكتروني. لا يزال بإمكانك نسخ الرمز الخاص بك.",
+      "needs_email": "يحتاج حسابك إلى عنوان بريد إلكتروني حقيقي. حدّثه في حساب Sonoran الخاص بك، ثم حاول مرة أخرى بعد 15 دقيقة. لا يزال بإمكانك نسخ رمزك هنا.",
+      "not_ready": "إذا كنت قد طلبت رسالة بريد إلكتروني للتو، فتحقق من صندوق الوارد أو مجلد الرسائل غير المرغوب فيها. وإلا، فانتظر 15 دقيقة وحاول مرة أخرى. لا يزال بإمكانك نسخ الرمز الخاص بك."
+    },
+    "emailTerms": "في دفعة اشتراكك الأولى.",
+    "emailTitle": "حفظ 20%",
     "eyebrow": "عرض حصري على TikTok",
+    "notNow": "ليس الآن",
     "offer": "خصم 20% على شهرك الأول",
     "savedButton": "حفظته",
     "saveReminder": "التقط لقطة شاشة، انسخها، أو دوّنها قبل تبديل الأجهزة.",
@@ -3121,6 +3139,7 @@
         "primaryFaded": "اللون الأساسي الباهت",
         "primaryText": "النص الأساسي",
         "subtitleText": "نص العنوان الفرعي",
+        "tableAlternateBackground": "خلفية الصف المتناوبة",
         "tableBorder": "حدود الجدول",
         "taskbarGradientBottom": "أسفل تدرج شريط المهام",
         "taskbarGradientTop": "أعلى تدرج شريط المهام",
@@ -3131,10 +3150,12 @@
         "unitStatusOnScene": "حالة الوحدة في الموقع",
         "unitStatusUnavailable": "حالة الوحدة غير متاحة",
         "windowHeaderGradientBottom": "تدرج سفلي لعنوان النافذة",
-        "windowHeaderGradientTop": "تدرج علوي لعنوان النافذة"
+        "windowHeaderGradientTop": "تدرج علوي لعنوان النافذة",
+        "windowHeaderText": "نص ترويسة النافذة الصلب"
       },
       "componentStyle": "نمط المكوّن",
       "componentStyles": {
+        "flat": "مسطح",
         "modern": "حديث",
         "retro": "ريتو"
       },
@@ -3182,6 +3203,7 @@
       },
       "presetDescriptions": {
         "dark": "من تصميم Sonoran Software Systems",
+        "metro": "مستوحى من CentralSquare Enterprise CAD",
         "mike19": "مستوحى من Mark43 CAD",
         "mike19Light": "مستوحى من Mark43 CAD",
         "retro": "مستوحى من Motorola Solutions Spillman Flex CAD",
@@ -3190,6 +3212,7 @@
       },
       "presets": {
         "dark": "سونوران",
+        "metro": "الدائرة المركزية",
         "mike19": "مايك19",
         "mike19Light": "مايك19 فاتح",
         "retro": "ريتو",
@@ -3256,6 +3279,7 @@
       },
       "taskbarStyle": "نمط شريط المهام",
       "taskbarStyles": {
+        "command": "شريط الأوامر",
         "default": "الافتراضي",
         "ribbon": "شريط",
         "toolbar": "شريط أدوات مدمج"
@@ -3283,7 +3307,8 @@
       "windowHeaderStyles": {
         "compact": "مسطح مدمج",
         "default": "الافتراضي",
-        "gradient": "تدرج"
+        "gradient": "تدرج",
+        "solid": "صلب"
       }
     },
     "trafficStopDispatchCode": "10-38",
