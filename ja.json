@@ -1728,6 +1728,10 @@
           "description": "コミュニティの色とワークフローに合わせて、ゲーム対応のワークスペースを構築します。",
           "title": "カスタム"
         },
+        "metro": {
+          "description": "CentralSquare Enterprise CAD に着想を得た、明るい通話グリッド、暗いタイトルバー、青いコントロール。",
+          "title": "中央円"
+        },
         "mike19": {
           "description": "Mark43 CADに着想を得た、コンパクトでアイコン中心のワークスペース。",
           "title": "マイク19"
@@ -1919,9 +1923,23 @@
     "users2": "ユーザー:"
   },
   "marketingCoupon": {
+    "accountSettings": "アカウントのメールアドレスを更新",
     "codeLabel": "クーポンコード",
+    "copyCode": "クーポンコードをコピー",
     "description": "あなたのオファーの準備ができました。このコードをStripe Checkoutでアップグレード時にご利用ください。",
+    "emailButton": "メールを送ってください",
+    "emailSent": "あなたのオファーのメールが送信されました。アカウントのメールアドレスの受信箱または迷惑メールフォルダを確認してください。",
+    "emailStatus": {
+      "claim_failed": "保存済みオファーを確認できませんでした。しばらくしてからもう一度お試しください。コードは上に表示されたままです。",
+      "failed": "メールが送信されたことを確認できませんでした。15分後に再試行する前に受信箱を確認するか、ここにコードをコピーしてください。",
+      "invalid_session": "もう一度サインインして、オファーをメールで送信してください。コードは引き続きコピーできます。",
+      "needs_email": "あなたのアカウントには有効なメールアドレスが必要です。Sonoran アカウントで更新してから、15 分後にもう一度お試しください。ここでコードをコピーすることはできます。",
+      "not_ready": "メールをリクエストしたばかりの場合は、受信トレイまたは迷惑メールフォルダを確認してください。それ以外の場合は、15分待ってからもう一度お試しください。コードは引き続きコピーできます。"
+    },
+    "emailTerms": "初回のサブスクリプション支払い時。",
+    "emailTitle": "20%節約",
     "eyebrow": "TikTok限定オファー",
+    "notNow": "今はしない",
     "offer": "初月20%オフ",
     "savedButton": "保存した",
     "saveReminder": "デバイスを切り替える前に、スクリーンショットを撮るか、コピーするか、書き留めてください。",
@@ -3112,6 +3130,7 @@
         "primaryFaded": "プライマリ フェード",
         "primaryText": "プライマリ テキスト",
         "subtitleText": "字幕テキスト",
+        "tableAlternateBackground": "交互行背景色",
         "tableBorder": "テーブルの境界線",
         "taskbarGradientBottom": "タスクバーグラデーション下部",
         "taskbarGradientTop": "タスクバーグラデーション上部",
@@ -3122,10 +3141,12 @@
         "unitStatusOnScene": "現場の部隊ステータス",
         "unitStatusUnavailable": "部隊ステータス利用不可",
         "windowHeaderGradientBottom": "ウィンドウヘッダーグラデーション下部",
-        "windowHeaderGradientTop": "ウィンドウヘッダーグラデーション上部"
+        "windowHeaderGradientTop": "ウィンドウヘッダーグラデーション上部",
+        "windowHeaderText": "ソリッドウィンドウヘッダーテキスト"
       },
       "componentStyle": "コンポーネント スタイル",
       "componentStyles": {
+        "flat": "フラット",
         "modern": "モダン",
         "retro": "レトロ"
       },
@@ -3173,6 +3194,7 @@
       },
       "presetDescriptions": {
         "dark": "Sonoran Software Systems によって設計",
+        "metro": "CentralSquare Enterprise CAD に着想を得た",
         "mike19": "Mark43 CAD に着想を得た",
         "mike19Light": "Mark43 CAD に着想を得た",
         "retro": "Motorola Solutions Spillman Flex CAD に着想を得た",
@@ -3181,6 +3203,7 @@
       },
       "presets": {
         "dark": "Sonoran",
+        "metro": "中央円",
         "mike19": "マイク19",
         "mike19Light": "マイク19 ライト",
         "retro": "レトロ",
@@ -3247,6 +3270,7 @@
       },
       "taskbarStyle": "タスクバー スタイル",
       "taskbarStyles": {
+        "command": "コマンド バー",
         "default": "デフォルト",
         "ribbon": "リボン",
         "toolbar": "コンパクト ツールバー"
@@ -3274,7 +3298,8 @@
       "windowHeaderStyles": {
         "compact": "コンパクト フラット",
         "default": "デフォルト",
-        "gradient": "グラデーション"
+        "gradient": "グラデーション",
+        "solid": "ソリッド"
       }
     },
     "trafficStopDispatchCode": "10-38",
