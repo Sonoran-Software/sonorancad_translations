@@ -49,13 +49,14 @@
       "addresses": "Adressen"
     },
     "aiUsage": {
+      "allowanceUsed": "Maandelijkse tegoed gebruikt",
       "blocked": "Geblokkeerd",
       "completionTokens": "Uitvoertokens",
       "cost": "Geschatte kost",
       "customRecord": "Verbeteringen melden",
       "databaseSync": "Instellingen voor databasesynchronisatie",
       "deniedRequests": "Geblokkeerde aanvragen",
-      "description": "Maandelijkse activiteit en geschatte providerkosten voor AI-ondersteunde functies. Gedeelde en functiespecifieke beveiligingen voorkomen overmatig gebruik.",
+      "description": "Maandelijkse activiteit en gebruik van de toegestane hoeveelheid voor AI-ondersteunde functies.",
       "error": "AI-gebruiksgegevens zijn tijdelijk niet beschikbaar.",
       "failed": "Mislukt",
       "feature": "Functie",
@@ -451,6 +452,7 @@
       "aiImproveEmpty": "Voer tekst in of dicteer iets voordat u AI-verbetering gebruikt.",
       "dbMap": "DB-synchronisatiemapping",
       "dependency": "Afhankelijkheid",
+      "dependencyField": "Alleen tonen wanneer dit veld overeenkomt",
       "dependencyInfo": {
         "infoContains": "Weergeven als veldwaarde een of meer bevat:",
         "infoEqual": "Weergeven als veldwaarde gelijk is aan:",
@@ -458,6 +460,7 @@
       },
       "duplicateSection": "Dupliceer Sectie",
       "enableDuplicate": "Dupliceren inschakelen",
+      "enableDuplicateAbout": "Laat gebruikers nog een kopie van deze sectie toevoegen tijdens het invullen van een record.",
       "enableMapping": "Toewijzing inschakelen",
       "enforceFormatting": "Formaat afdwingen voor tekstvelden.",
       "errors": {
@@ -490,8 +493,10 @@
       "readOnly": "Alleen lezen",
       "rebuildPreviews": "Opzoekvoorbeelden opnieuw opbouwen",
       "recordEditor": "Verslag Editor",
+      "recordImage": "Recordafbeelding",
       "recordPreview": "Voorbeeldverslag",
       "recordSections": "Verslag Secties",
+      "recordTemplate": "Recordsjabloon",
       "recordTypeName": "Verslag Type Naam",
       "recordTypes": {
         "bolo": "BOLO",
@@ -519,7 +524,9 @@
       },
       "reverseMap": "Kaart omkeren",
       "searchCivs": "Zoek Burgers",
+      "searchCivsAbout": "Zoek naar een burger en vul de overeenstemmende velden in deze sectie met hun gegevens.",
       "searchVehicles": "Zoek Voertuigen",
+      "searchVehiclesAbout": "Zoek een voertuig en vul de overeenstemmende velden in deze sectie met de details ervan.",
       "sectionLabel": "Sectie Label",
       "speechToTextFailed": "Spraakherkenning mislukt.",
       "speechToTextHold": "Houd ingedrukt om te dicteren",
@@ -532,6 +539,7 @@
       "templateActions": "Sjabloonacties",
       "type": "Type",
       "uniqueField": "Uniek Veld",
+      "unsavedChanges": "Niet-opgeslagen wijzigingen",
       "width": "Breedte"
     },
     "department": {
@@ -1000,6 +1008,12 @@
       "title": "Titel"
     },
     "permissionCode": {
+      "code": "Machtigingscode",
+      "copied": "Machtigingscode gekopieerd.",
+      "copyError": "Kan niet kopiëren. Selecteer de code en kopieer die handmatig.",
+      "hint": "Plak deze eenregelige code in de roltoewijzing van Sonoran Bot voor deze community.",
+      "loadError": "Kan machtigingen niet laden. Probeer het opnieuw.",
+      "title": "Bot machtigingen",
       "tooLong": "Deze code overschrijdt 1000 tekens. Splits deze machtigingen over roltoewijzingen."
     },
     "permissions": {
@@ -1140,9 +1154,14 @@
     "and": "EN",
     "any": "Elke voorwaarde",
     "anyHint": "Minstens één voorwaarde moet overeenkomen (OF).",
+    "behavior": "Matchende regels overschrijven de target bij elke opslag. Anders blijft die ongewijzigd. Regels ketenen niet en actualiseren bestaande records niet met terugwerkende kracht.",
     "cancel": "Annuleer",
     "comparison": "Vergelijking",
+    "conditionCount": "{count} voorwaarden",
+    "delete": "Automatisering verwijderen",
+    "deleteConfirm": "“{name}” verwijderen? Dit maakt eerdere recordwijzigingen niet ongedaan.",
     "edit": "Automatisering bewerken",
+    "emptyHint": "Kies een record, voeg voorwaarden toe en stel een veld in wanneer ze overeenkomen.",
     "emptyTitle": "Uw dossiers kunnen het routinewerk doen.",
     "enabled": "Ingeschakeld",
     "errors": {
@@ -1150,23 +1169,48 @@
       "invalidCondition": "Controleer de vergelijking en de geaccepteerde waarden. Numerieke vergelijkingen vereisen een gewoon getal.",
       "invalidField": "Een voorwaardevak werd verwijderd, van type gewijzigd of wordt niet ondersteund. Selecteer het opnieuw.",
       "invalidRule": "Voer een naam, 1–20 voorwaarden en een actie in.",
+      "invalidTarget": "Het doelveld is verwijderd, van type veranderd of kan niet worden geautomatiseerd. Selecteer een ander veld.",
       "invalidTemplate": "Selecteer een bestaand recordsjabloon.",
+      "invalidValue": "Kies een geldige doelwaarde uit de huidige opties van het veld.",
+      "migrationRequired": "Automations heeft zijn databasetabel nodig. Voer de SQL-migratie voor automations uit en vernieuw daarna dit paneel.",
       "ruleLimit": "Deze community heeft de limiet van 100 automatiseringen bereikt.",
-      "staleRule": "Deze automatisering is gewijzigd in een andere sessie. Sluit de editor en vernieuw voordat je het opnieuw probeert."
+      "staleRule": "Deze automatisering is gewijzigd in een andere sessie. Sluit de editor en vernieuw voordat je het opnieuw probeert.",
+      "targetConflict": "Een andere ingeschakelde automatisering werkt dit veld al bij. Bewerk of schakel die eerst uit.",
+      "templateInUse": "Werk eerst de automatisering bij of schakel ze uit die deze sjabloon gebruikt.",
+      "unavailable": "Automatiseringen konden niet worden geladen of opgeslagen. Probeer te vernieuwen."
     },
+    "field": "Veld",
+    "if": "Als",
     "intro": "Werk veldgegevens automatisch bij wanneer een record wordt aangemaakt of opgeslagen.",
+    "missingTemplate": "Ontbrekend recordsjabloon",
     "name": "Automatiseringsnaam",
+    "number": "Nummer",
     "operators": {
+      "choiceequals": "Is een van",
       "choicenotEquals": "Is niet een van",
+      "equals": "Gelijk aan",
+      "gt": "Groter dan",
+      "gte": "Minstens",
+      "lt": "Minder dan",
       "lte": "Ten hoogste",
       "notEquals": "Is niet gelijk aan",
-      "numberEquals": "Nummer is gelijk aan"
+      "numberEquals": "Nummer is gelijk aan",
+      "numberNotEquals": "Nummer is niet gelijk aan"
     },
+    "or": "OF",
+    "refresh": "Vernieuwen",
+    "removeCondition": "Voorwaarde verwijderen",
+    "save": "Automatisering opslaan",
+    "setField": "Veld instellen",
+    "targetHint": "Alleen niet-herhalende velden kunnen worden bijgewerkt. Gesynchroniseerde, alleen-lezen en unieke velden zijn uitgesloten. Velden die alleen door een supervisor kunnen worden gebruikt zijn uitgesloten, behalve statusvelden.",
     "template": "Recordsjabloon",
     "then": "Dan",
     "title": "Automatiseringen",
     "toValue": "Naar waarde",
-    "values": "Geaccepteerde waarden"
+    "triggerHint": "Wordt uitgevoerd bij aanmaken en bijwerken, inclusief burgerregisters en API-opslagen.",
+    "value": "Waarde",
+    "values": "Geaccepteerde waarden",
+    "when": "Wanneer"
   },
   "bodycamRecordings": {
     "open": "Openen",
@@ -1260,6 +1304,7 @@
     "confirm": "Bevestig",
     "contains": "Bevat",
     "continue": "Doorgaan",
+    "copiedToClipboard": "Gekopieerd naar klembord!",
     "copy": "Kopieer",
     "copyCommunityId": "Kopieer Community ID",
     "csv": "CSV",
@@ -2973,8 +3018,13 @@
   },
   "releaseHighlights": {
     "archive": "Ontdek releases",
+    "brand": "Sonoran CAD",
+    "changelog": "Volledig wijzigingslog",
+    "close": "Sluit",
     "counter": "{current} van {total}",
     "cta": "Bekijk wat er nieuw is",
+    "dismiss": "Sluit deze releaseaankondiging",
+    "done": "Begrepen",
     "enlarge": "Volledige grootte bekijken",
     "eyebrow": "Nieuw in Sonoran CAD",
     "features": "Functies van de release",
@@ -2982,27 +3032,47 @@
       "automations": {
         "alt": "Editor voor recordautomatisering met een incidentrapportregel die de beoordelingsstatus instelt op Supervisorsbeoordeling wanneer de prioriteit Hoog is.",
         "description": "Wanneer een record wordt opgeslagen, controleer de velden die je kiest en werk automatisch een ander veld bij. Voldoet aan alle voorwaarden of aan een van de voorwaarden.",
-        "location": "Administratie → Automatiseringen"
+        "label": "Recordautomatiseringen",
+        "location": "Administratie → Automatiseringen",
+        "title": "Stel de regels in. Sla het routinewerk over."
       },
       "centralCircle": {
+        "alt": "Sonoran CAD-dispatchwerkruimte met CentralCircle met lichte eenheids- en oproeptabellen, donkere koppen en blauwe accenten.",
+        "description": "Geef je werkruimte een nieuw perspectief met lichte tabellen, donkere kopteksten en frisse blauwe accenten. Selecteer CentralCircle uit je ingebouwde thema's.",
         "label": "Centraalcirkel-thema",
+        "location": "Personaliseren → Centraalcirkel",
         "title": "Een vertrouwde uitstraling. Een frisse look."
       },
       "permissions": {
         "alt": "Granulaire recordrechten voor Incident Report, inclusief bekijken, aanmaken, eigen bewerken, alles bewerken, verwijderen en supervisorvelden.",
-        "label": "Granulaire rechten"
+        "description": "Kies wie elk recordtype kan bekijken, aanmaken, bewerken en verwijderen. Scheid toegang tot de eigen records van een lid van toegang tot ieders records.",
+        "label": "Granulaire rechten",
+        "location": "Administratie → Machtiging sleutels",
+        "title": "De juiste toegang. Voor elke rol."
+      },
+      "recordEditor": {
+        "alt": "Visuele sjablooneditor voor incidentrapporten met live formuliervoorbeeld en een paneel met instellingen voor het geselecteerde veld.",
+        "description": "Bewerk je sjabloon in een live recordvoorbeeld. Selecteer een veld om de instellingen aan te passen, secties te rangschikken en te zien hoe je formulier samenkomt.",
+        "label": "Visuele verslageditor",
+        "location": "Administratie → Aangepaste records",
+        "title": "Bouw het zoals jij het ziet."
       }
     },
     "menu": "Wat is er nieuw",
+    "next": "Volgende functie",
     "openPage": "Open releasepagina",
     "preview": "Binnenkort · Voorvertoning",
     "previous": "Vorige functie",
     "releases": {
       "central-circle": {
+        "description": "Een nieuw ingebouwd thema brengt lichte tabellen en donkere kopteksten naar je CAD-werkruimte.",
         "shortTitle": "Maak kennis met Centraalcirkel",
-        "teaser": "Lichte tabellen. Donkere headers. Een volledig nieuwe look voor je CAD."
+        "teaser": "Lichte tabellen. Donkere headers. Een volledig nieuwe look voor je CAD.",
+        "title": "Een frisse kijk op dispatch."
       },
       "community-workflows": {
+        "description": "Minder repetitief werk. Meer precieze controle. Maak kennis met drie upgrades die zijn opgebouwd rond de manier waarop uw gemeenschap werkt.",
+        "shortTitle": "Een nieuw tijdperk voor dossiers",
         "teaser": "Recordautomatiseringen, gedetailleerde machtigingen en een nieuwe visuele recordeditor.",
         "title": "Uw community. Uw workflow."
       }

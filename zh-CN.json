@@ -49,13 +49,14 @@
       "addresses": "地址"
     },
     "aiUsage": {
+      "allowanceUsed": "已使用的月度配额",
       "blocked": "已阻止",
       "completionTokens": "输出令牌",
       "cost": "预计成本",
       "customRecord": "报告改进",
       "databaseSync": "数据库同步设置",
       "deniedRequests": "已阻止的请求",
-      "description": "AI 辅助功能的每月活动量和预估提供商成本。共享和功能特定的保障措施可防止过度使用。",
+      "description": "AI 辅助功能的每月活动和额度使用情况。",
       "error": "AI 使用数据暂时不可用。",
       "failed": "失败",
       "feature": "功能",
@@ -436,6 +437,7 @@
       "actions": "操作",
       "addCustomSection": "添加自定义节",
       "addPremadeSection": "添加预设节",
+      "addSection": "添加节",
       "aiCompleteEmpty": "AI 服务未返回建议。",
       "aiCompleteFailed": "当前无法生成 AI 建议。",
       "aiCompleteProRequired": "AI 建议需要 PRO 订阅。",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "在使用 AI 优化前请输入或口述一些文本。",
       "dbMap": "数据库同步映射",
       "dependency": "依赖",
+      "dependencyField": "仅当此字段匹配时显示",
       "dependencyInfo": {
         "infoContains": "如果字段值包含一个或多个：",
         "infoEqual": "显示字段值是否等于：",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "克隆区域",
       "enableDuplicate": "开启克隆",
+      "enableDuplicateAbout": "让用户在填写记录时添加此部分的另一个副本。",
       "enableMapping": "启用映射",
       "enforceFormatting": "强制执行文本字段格式。",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "错误：此记录类型必须具有一个UID为'status'字段。"
       },
       "existingHeader": "现有自定义记录类型",
+      "exportTemplate": "导出模板",
       "label": "标签",
       "lookupPreview": "查找预览",
       "lookupPreviewAbout": "在查找表预览中显示字段值",
@@ -482,12 +487,16 @@
       "newField": "新字段",
       "newValue": "新数据",
       "notApplicable": "不适用",
+      "pasteSection": "粘贴 {name}",
       "placeholder": "占位符",
       "placeholderAbout": "可选的辅助文本，在输入值之前显示在空字段中。",
       "readOnly": "只读",
+      "rebuildPreviews": "重建查找预览",
       "recordEditor": "记录编辑器",
+      "recordImage": "记录图像",
       "recordPreview": "预览记录",
       "recordSections": "记录节",
+      "recordTemplate": "记录模板",
       "recordTypeName": "记录类型名称",
       "recordTypes": {
         "bolo": "BOLO信息",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "反向映射",
       "searchCivs": "搜索市民信息",
+      "searchCivsAbout": "搜索平民并在此部分中填写与其匹配的字段及其详情。",
       "searchVehicles": "搜索车辆信息",
+      "searchVehiclesAbout": "搜索车辆并在此部分中填写与其匹配的字段及其详情。",
       "sectionLabel": "节标签",
       "speechToTextFailed": "语音识别失败。",
       "speechToTextHold": "按住说话",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "麦克风访问被拒绝。",
       "speechToTextUnavailable": "语音识别当前不可用。",
       "supervisorAbout": "仅主管可用的字段",
+      "templateActions": "模板操作",
       "type": "类型",
       "uniqueField": "唯一字段",
+      "unsavedChanges": "未保存的更改",
       "width": "宽度"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "监禁时长",
       "title": "罪名"
     },
+    "permissionCode": {
+      "code": "权限代码",
+      "copied": "权限代码已复制。",
+      "copyError": "无法复制。请选择代码并手动复制。",
+      "hint": "将这段单行代码粘贴到此社区的 Sonoran Bot 角色映射中。",
+      "loadError": "无法加载权限。请重试。",
+      "title": "机器人权限",
+      "tooLong": "此代码超过 1000 个字符。请将这些权限拆分到角色映射中。"
+    },
     "permissions": {
       "account": "账户",
       "accountManagement": "账户管理",
@@ -1124,6 +1146,72 @@
       "message": "体验新的 Beta 版"
     }
   },
+  "automations": {
+    "add": "添加自动化",
+    "addCondition": "添加条件",
+    "all": "所有条件",
+    "allHint": "每个条件都必须匹配（AND）",
+    "and": "且",
+    "any": "任何条件",
+    "anyHint": "至少一个条件必须匹配（或）。",
+    "behavior": "匹配规则会在每次保存时覆盖目标。否则它保持不变。规则不会串联，也不会追溯更新现有记录。",
+    "cancel": "取消",
+    "comparison": "对比",
+    "conditionCount": "{count} 个条件",
+    "delete": "删除自动化",
+    "deleteConfirm": "删除“{name}”？这不会撤销之前的记录更改。",
+    "edit": "编辑自动化",
+    "emptyHint": "选择一条记录，添加条件，并在条件匹配时设置一个字段。",
+    "emptyTitle": "您的记录可以完成例行工作。",
+    "enabled": "启用",
+    "errors": {
+      "forbidden": "你需要自定义权限才能管理自动化。",
+      "invalidCondition": "检查比较和可接受值。数值比较需要使用纯数字。",
+      "invalidField": "条件字段已移除、类型已更改或不受支持。请重新选择。",
+      "invalidRule": "输入名称、1–20 个条件和一个操作。",
+      "invalidTarget": "目标字段已被移除、更改类型或无法自动化。请选择另一个字段。",
+      "invalidTemplate": "选择一个现有记录模板。",
+      "invalidValue": "从字段的当前选项中选择一个有效的目标值。",
+      "migrationRequired": "Automations 需要其数据库表。运行 automations SQL 迁移，然后刷新此面板。",
+      "ruleLimit": "此社区已达到 100 个自动化的上限。",
+      "staleRule": "此自动化已在另一个会话中更改。请关闭编辑器并刷新后重试。",
+      "targetConflict": "另一个已启用的自动化已在更新此字段。请先编辑或禁用它。",
+      "templateInUse": "请先更新或禁用使用此模板的自动化。",
+      "unavailable": "自动化无法加载或保存。请尝试刷新。"
+    },
+    "field": "区域",
+    "if": "如果",
+    "intro": "在记录创建或保存时自动更新记录字段。",
+    "missingTemplate": "缺少记录模板",
+    "name": "自动化名称",
+    "number": "号码",
+    "operators": {
+      "choiceequals": "属于其中之一",
+      "choicenotEquals": "不属于其中之一",
+      "equals": "等于",
+      "gt": "大于",
+      "gte": "至少",
+      "lt": "小于",
+      "lte": "至多",
+      "notEquals": "不相等",
+      "numberEquals": "号码等于",
+      "numberNotEquals": "号码不相等"
+    },
+    "or": "或",
+    "refresh": "刷新",
+    "removeCondition": "移除条件",
+    "save": "保存自动化",
+    "setField": "设置字段",
+    "targetHint": "仅可更新非重复字段。已同步、只读和唯一字段不包括在内。仅主管可见字段不包括在内，状态字段除外。",
+    "template": "记录模板",
+    "then": "然后",
+    "title": "自动化",
+    "toValue": "到值",
+    "triggerHint": "在创建和更新时运行，包括平民记录和 API 保存。",
+    "value": "值",
+    "values": "可接受的值",
+    "when": "当"
+  },
   "bodycamRecordings": {
     "open": "打开",
     "refresh": "刷新"
@@ -1216,6 +1304,7 @@
     "confirm": "确认",
     "contains": "包含",
     "continue": "继续",
+    "copiedToClipboard": "已复制到剪贴板!",
     "copy": "复制",
     "copyCommunityId": "复制社区ID",
     "csv": "CSV",
@@ -2927,6 +3016,68 @@
     "label": "标签",
     "question": "问题",
     "questions": "问题："
+  },
+  "releaseHighlights": {
+    "archive": "探索发布版本",
+    "brand": "Sonoran CAD",
+    "changelog": "完整更新日志",
+    "close": "关闭",
+    "counter": "{current} / {total}",
+    "cta": "查看有哪些新内容",
+    "dismiss": "关闭此版本公告",
+    "done": "知道了",
+    "enlarge": "查看原始大小",
+    "eyebrow": "Sonoran CAD 新功能",
+    "features": "发布功能",
+    "featuresCopy": {
+      "automations": {
+        "alt": "带有事件报告规则的记录自动化编辑器，当优先级为高时将审查状态设置为主管审查。",
+        "description": "当记录被保存时，检查您选择的字段，并自动更新另一个字段。匹配所有条件或其中任意一个。",
+        "label": "记录自动化",
+        "location": "管理 → 自动化",
+        "title": "设定规则。跳过繁琐工作。"
+      },
+      "centralCircle": {
+        "alt": "Sonoran CAD 调度工作区使用 CentralCircle，带有浅色单位和呼叫表、深色标题和蓝色强调。",
+        "description": "通过浅色表格、深色标题和清晰的蓝色点缀，为您的工作区带来全新视角。从内置主题中选择 CentralCircle。",
+        "label": "中央圆圈主题",
+        "location": "自定义 → 中央圆圈",
+        "title": "熟悉的感觉。全新的外观。"
+      },
+      "permissions": {
+        "alt": "Incident Report 的细粒度记录权限，包括查看、创建、编辑自己的、编辑任意、删除和主管字段。",
+        "description": "选择谁可以查看、创建、编辑和删除每种记录类型。将成员自己的记录访问权限与所有人的记录访问权限分开。",
+        "label": "细粒度权限",
+        "location": "管理 → 权限密钥",
+        "title": "合适的访问权限。适用于每个角色。"
+      },
+      "recordEditor": {
+        "alt": "带有实时表单预览和所选字段设置面板的视觉事件报告模板编辑器。",
+        "description": "在实时记录预览中编辑你的模板。选择一个字段来调整其设置，排列各个部分，并查看你的表单如何组合成型。",
+        "label": "可视化记录编辑器",
+        "location": "管理 → 自定义记录",
+        "title": "按你看到的方式构建。"
+      }
+    },
+    "menu": "有哪些新内容",
+    "next": "下一个功能",
+    "openPage": "打开发布页面",
+    "preview": "即将推出 · 预览",
+    "previous": "上一项功能",
+    "releases": {
+      "central-circle": {
+        "description": "新的内置主题为你的 CAD 工作区带来了浅色表格和深色标题。",
+        "shortTitle": "认识中央圆圈",
+        "teaser": "浅色表格。深色标题。为您的 CAD 带来全新外观。",
+        "title": "调度的新视角。"
+      },
+      "community-workflows": {
+        "description": "更少重复性工作。更精准的控制。了解围绕社区运作方式打造的三项升级。",
+        "shortTitle": "记录新纪元",
+        "teaser": "记录自动化、细粒度权限和新的可视化记录编辑器。",
+        "title": "你的社区。你的工作流。"
+      }
+    }
   },
   "selectionPage": {
     "buttons": {
