@@ -49,13 +49,14 @@
       "addresses": "Adresses"
     },
     "aiUsage": {
+      "allowanceUsed": "Allocation mensuelle utilisée",
       "blocked": "Bloqué",
       "completionTokens": "Jetons de sortie",
       "cost": "Coût estimé",
       "customRecord": "Signaler des améliorations",
       "databaseSync": "Configuration de la synchronisation de la base de données",
       "deniedRequests": "Requêtes bloquées",
-      "description": "Activité mensuelle et coût fournisseur estimé des fonctionnalités assistées par IA. Des protections partagées et spécifiques aux fonctionnalités empêchent une utilisation excessive.",
+      "description": "Activité mensuelle et utilisation de l’allocation pour les fonctionnalités assistées par IA.",
       "error": "Les données d'utilisation de l'IA sont temporairement indisponibles.",
       "failed": "Échec",
       "feature": "Fonctionnalité",
@@ -436,6 +437,7 @@
       "actions": "Actions",
       "addCustomSection": "Ajouter une section personnalisée",
       "addPremadeSection": "Ajouter une section prédéfinie",
+      "addSection": "Ajouter une section",
       "aiCompleteEmpty": "Le service IA n'a pas renvoyé de suggestion.",
       "aiCompleteFailed": "Impossible de générer une suggestion IA pour le moment.",
       "aiCompleteProRequired": "Les suggestions IA nécessitent un abonnement PRO.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Saisissez ou dictez du texte avant d’utiliser l’amélioration par IA.",
       "dbMap": "Cartographie de la synchronisation DB",
       "dependency": "Dépendance",
+      "dependencyField": "Afficher uniquement lorsque ce champ correspond",
       "dependencyInfo": {
         "infoContains": "Afficher si la valeur du champ contient un ou plusieurs :",
         "infoEqual": "Afficher si la valeur du champ est égale à :",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Dupliquer la section",
       "enableDuplicate": "Activer la duplication",
+      "enableDuplicateAbout": "Permettre aux utilisateurs d'ajouter une autre copie de cette section lors du remplissage d'un enregistrement.",
       "enableMapping": "Activer le mapping",
       "enforceFormatting": "Appliquer le formatage pour les champs de texte.",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "ERREUR : Ce type d'enregistrement doit avoir UN champ personnalisé avec l'UID de « statut »"
       },
       "existingHeader": "Types d'arrestation personnalisés existants",
+      "exportTemplate": "Exporter le modèle",
       "label": "Étiquette",
       "lookupPreview": "Aperçu de la recherche",
       "lookupPreviewAbout": "Afficher la valeur du champ dans l'aperçu de la table de recherche",
@@ -482,12 +487,16 @@
       "newField": "Nouveau champ",
       "newValue": "Nouvelle valeur",
       "notApplicable": "S/O",
+      "pasteSection": "Coller {name}",
       "placeholder": "Espace réservé",
       "placeholderAbout": "Texte d'aide facultatif affiché dans le champ vide avant la saisie d'une valeur.",
       "readOnly": "Lecture seulement",
+      "rebuildPreviews": "Reconstruire les aperçus de la recherche",
       "recordEditor": "Éditeur d'arrestation",
+      "recordImage": "Image d'enregistrement",
       "recordPreview": "Aperçu du rapport d'arrestation",
       "recordSections": "Sections d'enregistrement",
+      "recordTemplate": "Modèle d'enregistrement",
       "recordTypeName": "Nom du type d'arrestation",
       "recordTypes": {
         "bolo": "Avis de recherche",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Carte inversée",
       "searchCivs": "Recherche de citoyen",
+      "searchCivsAbout": "Rechercher un civil et renseigner dans cette section les champs correspondants avec ses détails.",
       "searchVehicles": "Rechercher de véhicule",
+      "searchVehiclesAbout": "Rechercher un véhicule et renseigner dans cette section les champs correspondants avec ses détails.",
       "sectionLabel": "Étiquette de section",
       "speechToTextFailed": "La reconnaissance vocale a échoué.",
       "speechToTextHold": "Appuyez longuement pour dicter",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "L'accès au microphone a été refusé.",
       "speechToTextUnavailable": "La reconnaissance vocale n'est pas disponible pour le moment.",
       "supervisorAbout": "Restreindre le champ aux superviseurs seulement",
+      "templateActions": "Actions du modèle",
       "type": "Type",
       "uniqueField": "Champ unique",
+      "unsavedChanges": "Modifications non enregistrées",
       "width": "Largeur"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Durée d'emprisonnement",
       "title": "Titre"
     },
+    "permissionCode": {
+      "code": "Code de permission",
+      "copied": "Code de permission copié.",
+      "copyError": "Impossible de copier. Sélectionnez le code et copiez-le manuellement.",
+      "hint": "Collez ce code sur une seule ligne dans le mappage des rôles de Sonoran Bot pour cette communauté.",
+      "loadError": "Impossible de charger les autorisations. Veuillez réessayer.",
+      "title": "Autorisations du bot",
+      "tooLong": "Ce code dépasse 1000 caractères. Répartissez ces autorisations sur plusieurs mappages de rôle."
+    },
     "permissions": {
       "account": "Compte",
       "accountManagement": "Gestion de compte",
@@ -1123,6 +1145,72 @@
       "action": "Voir",
       "message": "Découvrez la nouvelle version bêta"
     }
+  },
+  "automations": {
+    "add": "Ajouter une automatisation",
+    "addCondition": "Ajouter une condition",
+    "all": "Toutes les conditions",
+    "allHint": "Chaque condition doit correspondre (AND).",
+    "and": "ET",
+    "any": "Toute condition",
+    "anyHint": "Au moins une condition doit correspondre (OU).",
+    "behavior": "Les règles de correspondance écrasent la cible à chaque sauvegarde. Sinon, elle reste inchangée. Les règles ne s'enchaînent pas et ne mettent pas à jour rétroactivement les enregistrements existants.",
+    "cancel": "Annuler",
+    "comparison": "Comparaison",
+    "conditionCount": "{count} conditions",
+    "delete": "Supprimer l'automatisation",
+    "deleteConfirm": "Supprimer « {name} » ? Cela n’annulera pas les modifications antérieures de l’enregistrement.",
+    "edit": "Modifier l'automatisation",
+    "emptyHint": "Choisissez un enregistrement, ajoutez des conditions, et définissez un champ lorsqu'elles correspondent.",
+    "emptyTitle": "Vos dossiers peuvent faire le travail de routine.",
+    "enabled": "Activé",
+    "errors": {
+      "forbidden": "Vous avez besoin de l'autorisation de personnalisation pour gérer les automatisations.",
+      "invalidCondition": "Vérifiez la comparaison et les valeurs acceptées. Les comparaisons numériques nécessitent un nombre simple.",
+      "invalidField": "Un champ de condition a été supprimé, a changé de type ou n'est pas pris en charge. Sélectionnez-le à nouveau.",
+      "invalidRule": "Saisissez un nom, 1–20 conditions et une action.",
+      "invalidTarget": "Le champ cible a été supprimé, a changé de type ou ne peut pas être automatisé. Sélectionnez un autre champ.",
+      "invalidTemplate": "Sélectionnez un modèle d'enregistrement existant.",
+      "invalidValue": "Choisissez une valeur cible valide parmi les options actuelles du champ.",
+      "migrationRequired": "Automations a besoin de sa table de base de données. Exécutez la migration SQL des automations, puis actualisez ce panneau.",
+      "ruleLimit": "Cette communauté a atteint la limite de 100 automatisations.",
+      "staleRule": "Cette automatisation a été modifiée dans une autre session. Fermez l'éditeur et actualisez avant de réessayer.",
+      "targetConflict": "Une autre automatisation activée met déjà à jour ce champ. Modifiez-la ou désactivez-la d'abord.",
+      "templateInUse": "Mettez d'abord à jour ou désactivez l'automatisation qui utilise ce modèle.",
+      "unavailable": "Les automatisations n'ont pas pu être chargées ou enregistrées. Essayez de rafraîchir."
+    },
+    "field": "champ",
+    "if": "Si",
+    "intro": "Mettre à jour automatiquement les champs d’un dossier lorsqu’un dossier est créé ou enregistré.",
+    "missingTemplate": "Modèle d'enregistrement manquant",
+    "name": "Nom de l'automatisation",
+    "number": "Numéro",
+    "operators": {
+      "choiceequals": "Est l'un de",
+      "choicenotEquals": "N'est pas l'un de",
+      "equals": "Égale",
+      "gt": "Supérieur à",
+      "gte": "Au moins",
+      "lt": "Inférieur à",
+      "lte": "Au maximum",
+      "notEquals": "N'est pas égal à",
+      "numberEquals": "Le nombre est égal à",
+      "numberNotEquals": "Le nombre n'est pas égal à"
+    },
+    "or": "OU",
+    "refresh": "Rafrarîchir",
+    "removeCondition": "Supprimer la condition",
+    "save": "Enregistrer l'automatisation",
+    "setField": "Définir le champ",
+    "targetHint": "Seuls les champs non répétitifs peuvent être mis à jour. Les champs synchronisés, en lecture seule et uniques sont exclus. Les champs réservés au superviseur sont exclus, sauf les champs de statut.",
+    "template": "Modèle d'enregistrement",
+    "then": "Alors",
+    "title": "Automatisations",
+    "toValue": "Vers la valeur",
+    "triggerHint": "S’exécute à la création et à la mise à jour, y compris les dossiers civils et les enregistrements API.",
+    "value": "Valeur",
+    "values": "Valeurs acceptées",
+    "when": "Quand"
   },
   "bodycamRecordings": {
     "open": "Ouvrir",
@@ -2927,6 +3015,68 @@
     "label": "Étiquette",
     "question": "Question",
     "questions": "Questions:"
+  },
+  "releaseHighlights": {
+    "archive": "Explorer les versions",
+    "brand": "Sonoran CAD",
+    "changelog": "Journal complet des modifications",
+    "close": "Fermer",
+    "counter": "{current} sur {total}",
+    "cta": "Voir les nouveautés",
+    "dismiss": "Ignorer cette annonce de version",
+    "done": "Compris",
+    "enlarge": "Voir en taille réelle",
+    "eyebrow": "Nouveau dans Sonoran CAD",
+    "features": "Fonctionnalités de la version",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Éditeur d'automatisation des dossiers avec une règle de rapport d'incident qui définit le statut Revue à Revue du superviseur lorsque la priorité est Élevée.",
+        "description": "Lorsqu'un enregistrement est enregistré, vérifiez les champs que vous choisissez et mettez à jour automatiquement un autre champ. Faites correspondre toutes les conditions ou l'une d'elles.",
+        "label": "Automatisations des enregistrements",
+        "location": "Administration → Automatisations",
+        "title": "Définissez les règles. Ignorez les tâches fastidieuses."
+      },
+      "centralCircle": {
+        "alt": "Espace de travail de répartition Sonoran CAD utilisant CentralCircle avec tableaux des unités et des appels clairs, en-têtes sombres et accents bleus.",
+        "description": "Donnez une nouvelle perspective à votre espace de travail avec des tableaux clairs, des en-têtes sombres et des accents bleus nets. Sélectionnez CentralCircle parmi vos thèmes intégrés.",
+        "label": "Thème CercleCentral",
+        "location": "Personnalisation → CercleCentral",
+        "title": "Un aspect familier. Un nouveau look."
+      },
+      "permissions": {
+        "alt": "Autorisations granulaires des dossiers pour le rapport d'incident, y compris la consultation, la création, la modification de ses propres éléments, la modification de n'importe quel élément, la suppression et les champs superviseur.",
+        "description": "Choisissez qui peut voir, créer, modifier et supprimer chaque type d’enregistrement. Séparez l’accès aux dossiers d’un membre de l’accès à ceux de tous.",
+        "label": "Autorisations granulaires",
+        "location": "Administration → Clés de permission",
+        "title": "Le bon accès. Pour chaque rôle."
+      },
+      "recordEditor": {
+        "alt": "Éditeur de modèle de rapport d’incident visuel avec aperçu du formulaire en direct et panneau de paramètres du champ sélectionné.",
+        "description": "Modifiez votre modèle dans un aperçu d'enregistrement en direct. Sélectionnez un champ pour ajuster ses paramètres, organisez les sections et voyez comment votre formulaire prend forme.",
+        "label": "Éditeur visuel de dossier",
+        "location": "Administration → Dossiers personnalisés",
+        "title": "Construisez-le comme vous le voyez."
+      }
+    },
+    "menu": "Nouveautés",
+    "next": "Fonctionnalité suivante",
+    "openPage": "Ouvrir la page de publication",
+    "preview": "À venir · Aperçu",
+    "previous": "Fonctionnalité précédente",
+    "releases": {
+      "central-circle": {
+        "description": "Un nouveau thème intégré apporte des tables claires et des en-têtes sombres à votre espace de travail CAD.",
+        "shortTitle": "Rencontrez CercleCentral",
+        "teaser": "Tables claires. En-têtes sombres. Un tout nouveau look pour votre CAD.",
+        "title": "Un regard neuf sur la répartition."
+      },
+      "community-workflows": {
+        "description": "Moins de travail répétitif. Plus de contrôle précis. Découvrez trois améliorations conçues autour de la façon dont votre communauté fonctionne.",
+        "shortTitle": "Une nouvelle ère pour les dossiers",
+        "teaser": "Automatisations d'enregistrements, permissions granulaires et un nouvel éditeur visuel d'enregistrements.",
+        "title": "Votre communauté. Votre flux de travail."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

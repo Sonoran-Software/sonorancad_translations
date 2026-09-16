@@ -49,13 +49,14 @@
       "addresses": "アドレス"
     },
     "aiUsage": {
+      "allowanceUsed": "月間使用量",
       "blocked": "ブロック済み",
       "completionTokens": "出力トークン",
       "cost": "推定コスト",
       "customRecord": "改善を報告",
       "databaseSync": "データベース 同期 セットアップ",
       "deniedRequests": "ブロックされたリクエスト",
-      "description": "AI支援機能の月間アクティビティと推定プロバイダーコスト。共有および機能固有の保護により過剰な使用を防止します。",
+      "description": "AI支援機能の月間利用状況と利用量。",
       "error": "AI使用状況データは一時的に利用できません。",
       "failed": "失敗しました",
       "feature": "機能",
@@ -436,6 +437,7 @@
       "actions": "操作",
       "addCustomSection": "カスタムセクションを追加",
       "addPremadeSection": "既製セクションを追加",
+      "addSection": "セクションを追加",
       "aiCompleteEmpty": "AI サービスは提案を返しませんでした。",
       "aiCompleteFailed": "現在AI提案を生成できません。",
       "aiCompleteProRequired": "AI の提案には PRO サブスクリプションが必要です。",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "AI改善を使用する前にテキストを入力するか口述してください。",
       "dbMap": "DB同期マッピング",
       "dependency": "依存関係",
+      "dependencyField": "このフィールドが一致する場合のみ表示",
       "dependencyInfo": {
         "infoContains": "フィールド値に1つ以上含まれる場合に表示",
         "infoEqual": "フィールド値が次と等しい場合に表示:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "セクションを複製",
       "enableDuplicate": "複製を有効にする",
+      "enableDuplicateAbout": "ユーザーが記録を入力中にこのセクションの別のコピーを追加できるようにします。",
       "enableMapping": "マッピングを有効化",
       "enforceFormatting": "テキストフィールドに書式を適用する。",
       "errors": {
@@ -471,9 +475,10 @@
         "noStatusField": "エラー: このレコードタイプには UID が「status」のカスタムフィールドが1つ必要です。"
       },
       "existingHeader": "既存のカスタムレコードタイプ",
+      "exportTemplate": "エクスポートテンプレート",
       "label": "ラベル",
       "lookupPreview": "ルックアップ プレビュー",
-      "lookupPreviewAbout": "ルックアップテーブルのプレビューでフィールド値を表示",
+      "lookupPreviewAbout": "レコード検索を実行したときに、このフィールドを検索結果のプレビュー列として表示します。",
       "mask": "マスク",
       "maskAlphaNumeric": "X: 英数字",
       "maskNumber": "#: 数字",
@@ -482,12 +487,16 @@
       "newField": "新しいフィールド",
       "newValue": "新しい値",
       "notApplicable": "該当なし",
+      "pasteSection": "{name} を貼り付け",
       "placeholder": "プレースホルダー",
       "placeholderAbout": "値が入力される前に空欄に表示される任意の補助テキスト。",
       "readOnly": "読み取り専用",
+      "rebuildPreviews": "ルックアップ プレビューを再構築",
       "recordEditor": "記録 編集",
+      "recordImage": "記録画像",
       "recordPreview": "レコードプレビュー",
       "recordSections": "レコードセクション",
+      "recordTemplate": "記録テンプレート",
       "recordTypeName": "記録の種類名",
       "recordTypes": {
         "bolo": "要注意人物",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "逆引きマップ",
       "searchCivs": "市民を検索",
+      "searchCivsAbout": "市民を検索し、このセクションの一致する項目にその詳細を入力します。",
       "searchVehicles": "車両検索",
+      "searchVehiclesAbout": "車両を検索し、このセクションの一致する項目にその詳細を入力します。",
       "sectionLabel": "セクションラベル",
       "speechToTextFailed": "音声認識に失敗しました。",
       "speechToTextHold": "押して長押しして音声入力",
@@ -524,9 +535,11 @@
       "speechToTextNoSpeech": "音声は検出されませんでした。",
       "speechToTextNotAllowed": "マイクへのアクセスが拒否されました。",
       "speechToTextUnavailable": "音声認識は現在利用できません。",
-      "supervisorAbout": "フィールドを監督者のみに制限",
+      "supervisorAbout": "このフィールドを編集するには、このレコードタイプのSupervisor fields権限に加えて、レコードを編集する権限が必要です。",
+      "templateActions": "テンプレート操作",
       "type": "種類",
       "uniqueField": "一意のフィールド",
+      "unsavedChanges": "未保存の変更",
       "width": "幅"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "拘留時間",
       "title": "タイトル"
     },
+    "permissionCode": {
+      "code": "権限コード",
+      "copied": "権限コードをコピーしました。",
+      "copyError": "コピーできません。コードを選択して手動でコピーしてください。",
+      "hint": "この1行のコードを、このコミュニティの Sonoran Bot の役割マッピングに貼り付けてください。",
+      "loadError": "権限を読み込めませんでした。再試行してください。",
+      "title": "Bot権限",
+      "tooLong": "このコードは1000文字を超えています。これらの権限をロールマッピングに分割してください。"
+    },
     "permissions": {
       "account": "アカウント",
       "accountManagement": "アカウント管理",
@@ -1123,6 +1145,72 @@
       "action": "見る",
       "message": "新しい Beta を体験"
     }
+  },
+  "automations": {
+    "add": "自動化を追加",
+    "addCondition": "条件を追加",
+    "all": "すべての条件",
+    "allHint": "すべての条件が一致する必要があります（AND）。",
+    "and": "かつ",
+    "any": "任意の条件",
+    "anyHint": "少なくとも1つの条件が一致する必要があります（OR）。",
+    "behavior": "一致ルールは保存のたびにターゲットを上書きします。そうでなければ変更されません。ルールは連鎖せず、既存のレコードを遡って更新しません。",
+    "cancel": "キャンセル",
+    "comparison": "比較",
+    "conditionCount": "{count}件の条件",
+    "delete": "自動化を削除",
+    "deleteConfirm": "“{name}”を削除しますか? これは以前のレコード変更を元に戻しません。",
+    "edit": "自動化を編集",
+    "emptyHint": "レコードを選択し、条件を追加し、一致したときにフィールドを設定します。",
+    "emptyTitle": "あなたの記録は日常業務を行えます。",
+    "enabled": "有効",
+    "errors": {
+      "forbidden": "自動化を管理するにはカスタマイズ権限が必要です。",
+      "invalidCondition": "比較と許容値を確認してください。数値の比較には、プレーンな数値が必要です。",
+      "invalidField": "条件フィールドが削除されたか、型が変更されたか、サポートされていません。もう一度選択してください。",
+      "invalidRule": "名前、1～20 個の条件、アクションを入力してください。",
+      "invalidTarget": "対象フィールドが削除されたか、型が変更されたか、自動化できません。別のフィールドを選択してください。",
+      "invalidTemplate": "既存のレコードテンプレートを選択してください。",
+      "invalidValue": "フィールドの現在のオプションから有効なターゲット値を選択してください。",
+      "migrationRequired": "Automations にはデータベーステーブルが必要です。automations の SQL マイグレーションを実行してから、このパネルを更新してください。",
+      "ruleLimit": "このコミュニティは100件の自動化の上限に達しました。",
+      "staleRule": "この自動化は別のセッションで変更されました。再試行する前にエディタを閉じて更新してください。",
+      "targetConflict": "別の有効な自動化がすでにこのフィールドを更新しています。先にそれを編集するか無効にしてください。",
+      "templateInUse": "このテンプレートを使用している自動化を先に更新または無効化してください。",
+      "unavailable": "自動化を読み込めないか保存できませんでした。更新してみてください。"
+    },
+    "field": "フィールド",
+    "if": "もし",
+    "intro": "レコードが作成または保存されたときにレコードフィールドを自動的に更新します。",
+    "missingTemplate": "記録テンプレートがありません",
+    "name": "自動化名",
+    "number": "数字",
+    "operators": {
+      "choiceequals": "のいずれかである",
+      "choicenotEquals": "のいずれでもない",
+      "equals": "等しい",
+      "gt": "より大きい",
+      "gte": "少なくとも",
+      "lt": "未満",
+      "lte": "最大で",
+      "notEquals": "等しくない",
+      "numberEquals": "数字が等しい",
+      "numberNotEquals": "数字が等しくない"
+    },
+    "or": "または",
+    "refresh": "更新",
+    "removeCondition": "条件を削除",
+    "save": "自動化を保存",
+    "setField": "フィールドを設定",
+    "targetHint": "更新できるのは、繰り返しのないフィールドのみです。同期済み、読み取り専用、一意のフィールドは対象外です。スーパーバイザー専用のフィールドは、ステータスフィールドを除いて対象外です。",
+    "template": "記録テンプレート",
+    "then": "その後",
+    "title": "自動化",
+    "toValue": "値へ",
+    "triggerHint": "新規作成と更新時に実行されます 民間人記録と API 保存を含みます",
+    "value": "値",
+    "values": "許可された値",
+    "when": "〜のとき"
   },
   "bodycamRecordings": {
     "open": "開く",
@@ -2918,6 +3006,68 @@
     "label": "ラベル",
     "question": "質問",
     "questions": "質問:"
+  },
+  "releaseHighlights": {
+    "archive": "リリースを確認",
+    "brand": "Sonoran CAD",
+    "changelog": "完全な変更履歴",
+    "close": "閉じる",
+    "counter": "{current} / {total}",
+    "cta": "新機能を見る",
+    "dismiss": "このリリースのお知らせを閉じる",
+    "done": "了解",
+    "enlarge": "フルサイズで表示",
+    "eyebrow": "Sonoran CAD に新登場",
+    "features": "リリース機能",
+    "featuresCopy": {
+      "automations": {
+        "alt": "インシデント報告ルール付きの記録自動化エディターで、優先度が高の場合に Review ステータスを Supervisor review に設定します。",
+        "description": "レコードが保存されたら、選択したフィールドをチェックし、別のフィールドを自動的に更新します。すべての条件に一致するか、いずれか1つに一致します。",
+        "label": "記録の自動化",
+        "location": "管理 → 自動化",
+        "title": "ルールを設定。面倒な作業は省略。"
+      },
+      "centralCircle": {
+        "alt": "CentralCircle を使用した Sonoran CAD のディスパッチ作業スペース。ライトなユニットとコールのテーブル、ダークなヘッダー、青いアクセント。",
+        "description": "ライトテーブル、ダークヘッダー、くっきりしたブルーのアクセントで、ワークスペースに新しい視点を。内蔵テーマからCentralCircleを選択してください。",
+        "label": "中央円 テーマ",
+        "location": "カスタマイズ → 中央円",
+        "title": "なじみのある感覚。新しい見た目。"
+      },
+      "permissions": {
+        "alt": "Incident Report の詳細なレコード権限。閲覧、新規作成、自己編集、すべて編集、削除、監督者フィールドを含みます。",
+        "description": "各レコード種別を閲覧、作成、編集、削除できるユーザーを選択します。メンバー自身のレコードへのアクセスと、全員のレコードへのアクセスを分けます。",
+        "label": "詳細な権限",
+        "location": "管理 → 権限キー",
+        "title": "適切な権限。すべての役割に。"
+      },
+      "recordEditor": {
+        "alt": "ライブフォームプレビューと選択フィールド設定パネル付きの視覚的なインシデントレポートテンプレートエディター",
+        "description": "ライブレコードプレビューでテンプレートを編集できます。フィールドを選択して設定を調整し、セクションを並べ替え、フォームがどのように組み上がるかを確認してください。",
+        "label": "Visual 記録 編集",
+        "location": "管理 → カスタム記録",
+        "title": "見たままに作る。"
+      }
+    },
+    "menu": "新機能",
+    "next": "次の機能",
+    "openPage": "リリースページを開く",
+    "preview": "次に登場 · プレビュー",
+    "previous": "前の機能",
+    "releases": {
+      "central-circle": {
+        "description": "新しい組み込みテーマで CAD ワークスペースに明るいテーブルと暗いヘッダーを導入します。",
+        "shortTitle": "CentralCircle に会う",
+        "teaser": "ライトな表。ダークなヘッダー。あなたの CAD に全く新しい見た目を。",
+        "title": "ディスパッチに新しい視点を。"
+      },
+      "community-workflows": {
+        "description": "反復作業を削減。より正確な制御。地域の運用に合わせて構築された3つのアップグレードをご紹介します。",
+        "shortTitle": "記録の新時代",
+        "teaser": "記録の自動化、きめ細かな権限、新しいビジュアル記録エディタ。",
+        "title": "あなたのコミュニティ。あなたのワークフロー。"
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

@@ -49,13 +49,14 @@
       "addresses": "구애"
     },
     "aiUsage": {
+      "allowanceUsed": "월간 사용량",
       "blocked": "차단됨",
       "completionTokens": "출력 토큰",
       "cost": "예상 비용",
       "customRecord": "개선 사항 보고",
       "databaseSync": "데이터베이스 동기화 설정",
       "deniedRequests": "차단된 요청",
-      "description": "AI 지원 기능의 월간 활동 및 예상 제공자 비용. 공유 및 기능별 안전장치가 과도한 사용을 방지합니다.",
+      "description": "AI 지원 기능의 월별 활동 및 허용량 사용.",
       "error": "AI 사용 데이터는 일시적으로 사용할 수 없습니다.",
       "failed": "실패한",
       "feature": "기능",
@@ -436,6 +437,7 @@
       "actions": "행위",
       "addCustomSection": "사용자 정의 섹션 추가",
       "addPremadeSection": "미리 만들어진 섹션 추가",
+      "addSection": "섹션 추가",
       "aiCompleteEmpty": "AI 서비스가 제안을 반환하지 않았습니다.",
       "aiCompleteFailed": "지금은 AI 제안을 생성할 수 없습니다.",
       "aiCompleteProRequired": "AI 제안은 PRO 구독이 필요합니다.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "AI 개선을 사용하기 전에 텍스트를 입력하거나 받아쓰세요.",
       "dbMap": "DB 동기화 매핑",
       "dependency": "의존",
+      "dependencyField": "이 필드가 일치할 때만 표시",
       "dependencyInfo": {
         "infoContains": "필드 값에 하나 이상이 포함되어 있는지 표시합니다.",
         "infoEqual": "필드 값이 다음과 같은지 표시합니다.",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "섹션 복제",
       "enableDuplicate": "중복 활성화",
+      "enableDuplicateAbout": "기록을 작성하는 동안 사용자가 이 섹션의 다른 복사본을 추가할 수 있게 합니다.",
       "enableMapping": "매핑 활성화",
       "enforceFormatting": "텍스트 필드에 서식을 적용합니다.",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "오류: 이 레코드 유형에는 UID가 '상태'인 사용자 정의 필드가 하나 있어야 합니다."
       },
       "existingHeader": "기존 사용자 정의 레코드 유형",
+      "exportTemplate": "템플릿 내보내기",
       "label": "상표",
       "lookupPreview": "조회 미리보기",
       "lookupPreviewAbout": "조회 테이블 미리보기에 필드 값 표시",
@@ -482,12 +487,16 @@
       "newField": "새로운 분야",
       "newValue": "새로운 가치",
       "notApplicable": "해당 없음",
+      "pasteSection": "붙여넣기 {name}",
       "placeholder": "자리 표시자",
       "placeholderAbout": "값을 입력하기 전 빈 필드에 표시되는 선택적 도움말 텍스트.",
       "readOnly": "읽기 전용",
+      "rebuildPreviews": "조회 미리보기 다시 생성",
       "recordEditor": "레코드 편집자",
+      "recordImage": "기록 이미지",
       "recordPreview": "녹화 미리보기",
       "recordSections": "레코드 섹션",
+      "recordTemplate": "기록 템플릿",
       "recordTypeName": "레코드 유형 이름",
       "recordTypes": {
         "bolo": "BOLO",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "역방향 지도",
       "searchCivs": "민간인 수색",
+      "searchCivsAbout": "시민을 검색하고 이 섹션의 일치하는 필드를 해당 정보로 채우세요.",
       "searchVehicles": "차량 검색",
+      "searchVehiclesAbout": "차량을 검색하고 이 섹션의 일치하는 필드를 해당 정보로 채우세요.",
       "sectionLabel": "섹션 라벨",
       "speechToTextFailed": "음성 인식에 실패했습니다.",
       "speechToTextHold": "길게 눌러 음성 입력",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "마이크 접근이 거부되었습니다.",
       "speechToTextUnavailable": "음성 인식은 지금 사용할 수 없습니다.",
       "supervisorAbout": "필드를 감독자에게만 제한",
+      "templateActions": "템플릿 작업",
       "type": "유형",
       "uniqueField": "고유 필드",
+      "unsavedChanges": "저장되지 않은 변경 사항",
       "width": "너비"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "감옥 시간",
       "title": "제목"
     },
+    "permissionCode": {
+      "code": "권한 코드",
+      "copied": "권한 코드가 복사되었습니다.",
+      "copyError": "복사할 수 없습니다. 코드를 선택하고 수동으로 복사하세요.",
+      "hint": "이 한 줄 코드를 이 커뮤니티의 Sonoran Bot 역할 매핑에 붙여넣으세요.",
+      "loadError": "권한을 불러올 수 없습니다. 다시 시도해 주세요.",
+      "title": "봇 권한",
+      "tooLong": "이 코드는 1000자를 초과합니다. 이 권한들을 역할 매핑에 분할하세요."
+    },
     "permissions": {
       "account": "계정",
       "accountManagement": "계정 관리",
@@ -1123,6 +1145,72 @@
       "action": "보다",
       "message": "새로운 Beta를 경험해 보세요"
     }
+  },
+  "automations": {
+    "add": "자동화 추가",
+    "addCondition": "조건 추가",
+    "all": "모든 조건",
+    "allHint": "모든 조건이 일치해야 합니다 (AND).",
+    "and": "그리고",
+    "any": "아무 조건",
+    "anyHint": "적어도 하나의 조건은 일치해야 합니다(OR).",
+    "behavior": "매칭 규칙은 저장할 때마다 대상 값을 덮어씁니다. 그렇지 않으면 변경되지 않습니다. 규칙은 연결되지 않으며 기존 기록을 소급해서 업데이트하지 않습니다.",
+    "cancel": "취소",
+    "comparison": "비교",
+    "conditionCount": "{count} 조건",
+    "delete": "자동화 삭제",
+    "deleteConfirm": "“{name}” 삭제하시겠습니까? 이 작업은 이전 기록 변경을 되돌리지 않습니다.",
+    "edit": "자동화 편집",
+    "emptyHint": "기록을 선택하고, 조건을 추가하고, 일치하면 필드를 설정합니다.",
+    "emptyTitle": "귀하의 기록은 일상 업무를 처리할 수 있습니다",
+    "enabled": "활성화됨",
+    "errors": {
+      "forbidden": "자동화를 관리하려면 사용자 지정 권한이 필요합니다.",
+      "invalidCondition": "비교와 허용된 값을 확인하세요. 숫자 비교에는 일반 숫자가 필요합니다.",
+      "invalidField": "조건 필드가 제거되었거나, 유형이 변경되었거나, 지원되지 않습니다. 다시 선택하세요.",
+      "invalidRule": "이름, 조건 1~20개, 작업을 입력하세요.",
+      "invalidTarget": "대상 필드가 제거되었거나, 유형이 변경되었거나, 자동화할 수 없습니다. 다른 필드를 선택하세요.",
+      "invalidTemplate": "기존 기록 템플릿을 선택하세요.",
+      "invalidValue": "필드의 현재 옵션에서 유효한 대상 값을 선택하세요.",
+      "migrationRequired": "Automations에 데이터베이스 테이블이 필요합니다. automations SQL 마이그레이션을 실행한 다음 이 패널을 새로고침하세요.",
+      "ruleLimit": "이 커뮤니티는 자동화 100개의 한도에 도달했습니다.",
+      "staleRule": "이 자동화는 다른 세션에서 변경되었습니다. 다시 시도하기 전에 편집기를 닫고 새로고침하세요.",
+      "targetConflict": "다른 활성화된 자동화가 이미 이 필드를 업데이트합니다. 먼저 편집하거나 비활성화하세요.",
+      "templateInUse": "이 템플릿을 사용하는 자동화를 먼저 업데이트하거나 비활성화하세요.",
+      "unavailable": "자동화을 로드하거나 저장할 수 없습니다. 새로고침해 보세요."
+    },
+    "field": "필드",
+    "if": "만약",
+    "intro": "기록이 생성되거나 저장될 때 기록 필드를 자동으로 업데이트합니다.",
+    "missingTemplate": "누락된 기록 템플릿",
+    "name": "자동화 이름",
+    "number": "숫자",
+    "operators": {
+      "choiceequals": "다음 중 하나임",
+      "choicenotEquals": "다음 중 하나가 아님",
+      "equals": "같음",
+      "gt": "보다 큼",
+      "gte": "최소",
+      "lt": "보다 작음",
+      "lte": "최대",
+      "notEquals": "같지 않음",
+      "numberEquals": "숫자가 같음",
+      "numberNotEquals": "숫자가 같지 않음"
+    },
+    "or": "또는",
+    "refresh": "새로 고치다",
+    "removeCondition": "조건 제거",
+    "save": "자동화 저장",
+    "setField": "필드 설정",
+    "targetHint": "반복되지 않는 필드만 업데이트할 수 있습니다. 동기화, 읽기 전용, 고유 필드는 제외됩니다. 감독자 전용 필드는 상태 필드를 제외하고 제외됩니다.",
+    "template": "기록 템플릿",
+    "then": "그 다음",
+    "title": "자동화",
+    "toValue": "대상 값",
+    "triggerHint": "민간인 기록과 API 저장을 포함해 생성 및 업데이트 시 실행됩니다.",
+    "value": "값",
+    "values": "허용된 값",
+    "when": "일 때"
   },
   "bodycamRecordings": {
     "open": "열기",
@@ -2918,6 +3006,68 @@
     "label": "상표",
     "question": "질문",
     "questions": "질문:"
+  },
+  "releaseHighlights": {
+    "archive": "릴리스를 탐색",
+    "brand": "Sonoran CAD",
+    "changelog": "전체 변경 내역",
+    "close": "닫다",
+    "counter": "{current} / {total}",
+    "cta": "새로운 기능 보기",
+    "dismiss": "이 릴리스 공지 닫기",
+    "done": "알겠습니다",
+    "enlarge": "전체 크기 보기",
+    "eyebrow": "Sonoran CAD의 새로운 기능",
+    "features": "출시 기능",
+    "featuresCopy": {
+      "automations": {
+        "alt": "우선순위가 High일 때 Review 상태를 Supervisor review로 설정하는 사고 보고 규칙이 있는 Record automation 편집기.",
+        "description": "레코드가 저장되면, 선택한 필드를 확인하고 다른 필드를 자동으로 업데이트합니다. 모든 조건 또는 그중 하나를 일치시키세요.",
+        "label": "기록 자동화",
+        "location": "관리 → 자동화",
+        "title": "규칙을 설정하세요. 번거로운 작업은 건너뛰세요."
+      },
+      "centralCircle": {
+        "alt": "CentralCircle를 사용하는 Sonoran CAD 출동 작업 공간으로, 라이트 유닛 및 콜 테이블, 다크 헤더, 파란색 포인트 포함.",
+        "description": "라이트 테이블, 다크 헤더, 선명한 블루 포인트로 작업 공간에 새로운 시각을 더하세요. 내장 테마에서 CentralCircle을 선택하세요.",
+        "label": "중앙 원 테마",
+        "location": "맞춤화 → 중앙 원",
+        "title": "익숙한 느낌. 새로운 모습."
+      },
+      "permissions": {
+        "alt": "Incident Report에 대한 세부적인 레코드 권한, 보기, 생성, 내 것 수정, 모든 것 수정, 삭제, 그리고 감독자 필드 포함.",
+        "description": "각 레코드 유형을 누가 볼 수 있고, 생성하고, 편집하고, 삭제할 수 있는지 선택하세요. 구성원 본인의 레코드에 대한 액세스와 모든 사람의 레코드에 대한 액세스를 분리하세요.",
+        "label": "세분화된 권한",
+        "location": "Administration → 권한 키",
+        "title": "모든 역할에 맞는 올바른 접근 권한."
+      },
+      "recordEditor": {
+        "alt": "실시간 폼 미리보기와 선택된 필드 설정 패널이 있는 시각적 사건 보고서 템플릿 편집기.",
+        "description": "실시간 레코드 미리보기에서 템플릿을 편집하세요. 필드를 선택해 설정을 조정하고, 섹션을 배치하며, 폼이 어떻게 완성되는지 확인하세요.",
+        "label": "시각적 레코드 편집기",
+        "location": "관리 → 맞춤 기록",
+        "title": "보이는 대로 만드세요."
+      }
+    },
+    "menu": "새로운 기능",
+    "next": "다음 기능",
+    "openPage": "릴리스 페이지 열기",
+    "preview": "곧 공개 · 미리보기",
+    "previous": "이전 기능",
+    "releases": {
+      "central-circle": {
+        "description": "새로운 내장 테마는 CAD 작업 공간에 밝은 테이블과 어두운 헤더를 제공합니다.",
+        "shortTitle": "중앙 원 만나기",
+        "teaser": "라이트 테이블. 다크 헤더. CAD의 완전히 새로운 모습.",
+        "title": "디스패치에 대한 새로운 관점."
+      },
+      "community-workflows": {
+        "description": "반복 작업은 줄이고. 제어는 더 정밀하게. 커뮤니티 운영 방식에 맞춘 3가지 업그레이드를 만나보세요.",
+        "shortTitle": "기록을 위한 새로운 시대",
+        "teaser": "레코드 자동화, 세분화된 권한, 그리고 새로운 시각적 레코드 편집기.",
+        "title": "당신의 커뮤니티. 당신의 워크플로."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

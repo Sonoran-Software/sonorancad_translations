@@ -49,13 +49,14 @@
       "addresses": "Adressen"
     },
     "aiUsage": {
+      "allowanceUsed": "Monatlich verwendetes Kontingent",
       "blocked": "Gesperrt",
       "completionTokens": "Output-Tokens",
       "cost": "Geschätzte Kosten",
       "customRecord": "Verbesserungen melden",
       "databaseSync": "Datenbank-Sync-Einrichtung",
       "deniedRequests": "Blockierte Anfragen",
-      "description": "Monatliche Aktivität und geschätzte Anbieterkosten für KI-gestützte Funktionen. Gemeinsame und funktionsspezifische Schutzmechanismen verhindern übermäßige Nutzung.",
+      "description": "Monatliche Aktivität und Nutzung des Kontingents für KI-gestützte Funktionen.",
       "error": "KI-Nutzungsdaten sind vorübergehend nicht verfügbar.",
       "failed": "Fehlgeschlagen",
       "feature": "Funktion",
@@ -436,6 +437,7 @@
       "actions": "Aktionen",
       "addCustomSection": "Eigenen Abschnitt hinzufügen",
       "addPremadeSection": "Vorgefertigten Abschnitt hinzufügen",
+      "addSection": "Abschnitt hinzufügen",
       "aiCompleteEmpty": "Der KI-Dienst hat keinen Vorschlag zurückgegeben.",
       "aiCompleteFailed": "Eine KI-Vorschlag kann derzeit nicht generiert werden.",
       "aiCompleteProRequired": "KI-Vorschläge erfordern ein PRO-Abonnement.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Geben Sie etwas Text ein oder diktieren Sie ihn, bevor Sie die KI-Verbesserung verwenden.",
       "dbMap": "DB-Sync-Mapping",
       "dependency": "Abhängigkeit",
+      "dependencyField": "Nur anzeigen, wenn dieses Feld übereinstimmt",
       "dependencyInfo": {
         "infoContains": "Anzeigen, wenn der Feldwert eines oder mehrere enthält:",
         "infoEqual": "Anzeigen, wenn der Feldwert gleich ist:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Abschnitt duplizieren",
       "enableDuplicate": "Duplizieren aktivieren",
+      "enableDuplicateAbout": "Ermöglichen Sie Benutzern, beim Ausfüllen eines Datensatzes eine weitere Kopie dieses Abschnitts hinzuzufügen.",
       "enableMapping": "Mapping aktivieren",
       "enforceFormatting": "Formatierung für Textfelder erzwingen.",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "FEHLER: Dieser Datensatztyp muss EIN benutzerdefiniertes Feld mit der UID ‚status‘ haben."
       },
       "existingHeader": "Existierende eigene Berichtsarten",
+      "exportTemplate": "Vorlage exportieren",
       "label": "Bezeichnung",
       "lookupPreview": "Suchvorschau",
       "lookupPreviewAbout": "Zeige Feldwert in Suchvorschau",
@@ -482,12 +487,16 @@
       "newField": "Neues Feld",
       "newValue": "Neuer Wert",
       "notApplicable": "k.A.",
+      "pasteSection": "{name} einfügen",
       "placeholder": "Platzhalter",
       "placeholderAbout": "Optionaler Hilfetext, der im leeren Feld angezeigt wird, bevor ein Wert eingegeben wird.",
       "readOnly": "Nur lesen",
+      "rebuildPreviews": "Suchvorschauen neu erstellen",
       "recordEditor": "Berichtseditor",
+      "recordImage": "Eintragsbild",
       "recordPreview": "Berichtsvorschau",
       "recordSections": "Berichtsabschnitte",
+      "recordTemplate": "Eintragvorlage",
       "recordTypeName": "Berichtsartname",
       "recordTypes": {
         "bolo": "Fahndung",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Map umkehren",
       "searchCivs": "Zivilisten suchen",
+      "searchCivsAbout": "Suche nach einer Zivilperson und fülle die passenden Felder in diesem Abschnitt mit ihren Details aus.",
       "searchVehicles": "Fahrzeuge suchen",
+      "searchVehiclesAbout": "Suche nach einem Fahrzeug und fülle die passenden Felder in diesem Abschnitt mit seinen Details aus.",
       "sectionLabel": "Abschnittstitel",
       "speechToTextFailed": "Spracherkennung fehlgeschlagen.",
       "speechToTextHold": "Zum Diktieren gedrückt halten",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "Der Zugriff auf das Mikrofon wurde verweigert.",
       "speechToTextUnavailable": "Spracherkennung ist derzeit nicht verfügbar.",
       "supervisorAbout": "Beschränke Feld auf Vorgesetzte",
+      "templateActions": "Vorlagenaktionen",
       "type": "Art",
       "uniqueField": "Einzigartiges Feld",
+      "unsavedChanges": "Nicht gespeicherte Änderungen",
       "width": "Breite"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Gefängniszeit",
       "title": "Titel"
     },
+    "permissionCode": {
+      "code": "Berechtigungscode",
+      "copied": "Berechtigungscode kopiert.",
+      "copyError": "Kopieren nicht möglich. Wählen Sie den Code aus und kopieren Sie ihn manuell.",
+      "hint": "Füge diesen einzeiligen Code in das Rollen-Mapping von Sonoran Bot für diese Community ein.",
+      "loadError": "Berechtigungen können nicht geladen werden. Bitte erneut versuchen.",
+      "title": "Bot-Berechtigungen",
+      "tooLong": "Dieser Code überschreitet 1000 Zeichen. Teilen Sie diese Berechtigungen auf Rollen-Zuordnungen auf."
+    },
     "permissions": {
       "account": "Konto",
       "accountManagement": "Accountverwaltung",
@@ -1123,6 +1145,72 @@
       "action": "Anzeigen",
       "message": "Erlebe die neue Beta"
     }
+  },
+  "automations": {
+    "add": "Automatisierung hinzufügen",
+    "addCondition": "Bedingung hinzufügen",
+    "all": "Alle Bedingungen",
+    "allHint": "Jede Bedingung muss zutreffen (UND).",
+    "and": "UND",
+    "any": "Beliebige Bedingung",
+    "anyHint": "Mindestens eine Bedingung muss zutreffen (ODER).",
+    "behavior": "Abgleichsregeln überschreiben das Ziel bei jedem Speichern. Andernfalls bleibt es unverändert. Regeln verketten sich nicht und aktualisieren vorhandene Datensätze nicht rückwirkend.",
+    "cancel": "Abbruch",
+    "comparison": "Vergleich",
+    "conditionCount": "{count} Bedingungen",
+    "delete": "Automatisierung löschen",
+    "deleteConfirm": "„{name}“ löschen? Dies macht frühere Datensatzänderungen nicht rückgängig.",
+    "edit": "Automatisierung bearbeiten",
+    "emptyHint": "Wähle einen Datensatz, füge Bedingungen hinzu und setze ein Feld, wenn sie übereinstimmen.",
+    "emptyTitle": "Ihre Datensätze können die Routinearbeit erledigen.",
+    "enabled": "Aktiviert",
+    "errors": {
+      "forbidden": "Du benötigst die Berechtigung zur Anpassung, um Automatisierungen zu verwalten.",
+      "invalidCondition": "Prüfe den Vergleich und die zulässigen Werte. Numerische Vergleiche erfordern eine einfache Zahl.",
+      "invalidField": "Ein Bedingungsfeld wurde entfernt, hat den Typ geändert oder wird nicht unterstützt. Wählen Sie es erneut aus.",
+      "invalidRule": "Geben Sie einen Namen, 1–20 Bedingungen und eine Aktion ein.",
+      "invalidTarget": "Das Zielfeld wurde entfernt, hat den Typ geändert oder kann nicht automatisiert werden. Wählen Sie ein anderes Feld.",
+      "invalidTemplate": "Wählen Sie eine vorhandene Vorlagensatzvorlage aus.",
+      "invalidValue": "Wählen Sie einen gültigen Zielwert aus den aktuellen Optionen des Feldes.",
+      "migrationRequired": "Automations benötigt seine Datenbanktabelle. Führe die SQL-Migration für Automations aus und aktualisiere dann dieses Panel.",
+      "ruleLimit": "Diese Community hat das Limit von 100 Automatisierungen erreicht.",
+      "staleRule": "Diese Automatisierung wurde in einer anderen Sitzung geändert. Schließe den Editor und aktualisiere ihn, bevor du es erneut versuchst.",
+      "targetConflict": "Eine andere aktivierte Automatisierung aktualisiert dieses Feld bereits. Bearbeite oder deaktiviere sie zuerst.",
+      "templateInUse": "Aktualisiere oder deaktiviere zuerst die Automatisierung, die diese Vorlage verwendet.",
+      "unavailable": "Automatisierungen konnten nicht geladen oder gespeichert werden. Versuchen Sie, die Seite zu aktualisieren."
+    },
+    "field": "Feld",
+    "if": "Wenn",
+    "intro": "Aktualisiere Datensatzfelder automatisch, wenn ein Datensatz erstellt oder gespeichert wird.",
+    "missingTemplate": "Fehlende Eintragvorlage",
+    "name": "Automatisierungsname",
+    "number": "Nummer",
+    "operators": {
+      "choiceequals": "Ist einer von",
+      "choicenotEquals": "Ist nicht einer von",
+      "equals": "Gleich",
+      "gt": "Größer als",
+      "gte": "Mindestens",
+      "lt": "Kleiner als",
+      "lte": "Höchstens",
+      "notEquals": "Entspricht nicht",
+      "numberEquals": "Nummer ist gleich",
+      "numberNotEquals": "Nummer ist nicht gleich"
+    },
+    "or": "ODER",
+    "refresh": "Neu laden",
+    "removeCondition": "Bedingung entfernen",
+    "save": "Automatisierung speichern",
+    "setField": "Feld festlegen",
+    "targetHint": "Nur nicht wiederholbare Felder können aktualisiert werden. Synchronisierte, schreibgeschützte und eindeutige Felder sind ausgeschlossen. Nur für Vorgesetzte vorgesehene Felder sind ausgeschlossen, außer Statusfeldern.",
+    "template": "Eintragvorlage",
+    "then": "Dann",
+    "title": "Automatisierungen",
+    "toValue": "In Wert",
+    "triggerHint": "Läuft bei Erstellung und Aktualisierung, einschließlich Zivilakten und API-Speichern.",
+    "value": "Wert",
+    "values": "Akzeptierte Werte",
+    "when": "Wenn"
   },
   "bodycamRecordings": {
     "open": "Öffnen",
@@ -2927,6 +3015,68 @@
     "label": "Bezeichnung",
     "question": "Frage",
     "questions": "Fragen:"
+  },
+  "releaseHighlights": {
+    "archive": "Veröffentlichungen entdecken",
+    "brand": "Sonoran CAD",
+    "changelog": "Vollständiges Änderungsprotokoll",
+    "close": "Schließen",
+    "counter": "{current} von {total}",
+    "cta": "Sieh dir an, was es Neues gibt",
+    "dismiss": "Diese Veröffentlichungsankündigung schließen",
+    "done": "Verstanden",
+    "enlarge": "In voller Größe anzeigen",
+    "eyebrow": "Neu in Sonoran CAD",
+    "features": "Funktionen der Version",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Editor für die Automatisierung von Datensätzen mit einer Regel für den Vorfallbericht, die den Überprüfungsstatus bei hoher Priorität auf Supervisor-Überprüfung setzt.",
+        "description": "Wenn ein Datensatz gespeichert wird, überprüfe die Felder, die du auswählst, und aktualisiere ein anderes Feld automatisch. Alle Bedingungen erfüllen oder nur eine von ihnen.",
+        "label": "Aufzeichnungen-Automatisierungen",
+        "location": "Administration → Automatisierungen",
+        "title": "Regeln festlegen. Routinearbeit überspringen."
+      },
+      "centralCircle": {
+        "alt": "Sonoran CAD-Dispositionsarbeitsbereich mit CentralCircle, hellen Einheiten- und Einsatztabellen, dunklen Kopfzeilen und blauen Akzenten.",
+        "description": "Verleihe deinem Arbeitsbereich mit hellen Tabellen, dunklen Kopfzeilen und klaren blauen Akzenten eine neue Perspektive. Wähle CentralCircle aus deinen integrierten Designs.",
+        "label": "Zentralkreis-Design",
+        "location": "Anpassung → Zentralkreis",
+        "title": "Ein vertrautes Gefühl. Ein frischer Look."
+      },
+      "permissions": {
+        "alt": "Granulare Datensatzberechtigungen für Incident Report, einschließlich anzeigen, erstellen, eigene bearbeiten, beliebige bearbeiten, löschen und Supervisor-Felder.",
+        "description": "Wähle aus, wer jeden Datentyp ansehen, erstellen, bearbeiten und löschen kann. Trenne den Zugriff auf die eigenen Datensätze eines Mitglieds vom Zugriff auf die aller.",
+        "label": "Granulare Berechtigungen",
+        "location": "Administration → Berechtigungsschlüssel",
+        "title": "Der richtige Zugriff. Für jede Rolle."
+      },
+      "recordEditor": {
+        "alt": "Visueller Vorlageneditor für Einsatzberichte mit Live-Formularvorschau und einem Einstellungsbereich für das ausgewählte Feld.",
+        "description": "Bearbeite deine Vorlage in einer Live-Datensatzvorschau. Wähle ein Feld aus, um seine Einstellungen anzupassen, ordne Abschnitte an und sieh, wie dein Formular zusammenkommt.",
+        "label": "Visueller Berichtseditor",
+        "location": "Verwaltung → Eigene Einträge",
+        "title": "Gestalte es so, wie du es siehst."
+      }
+    },
+    "menu": "Was gibt es Neues",
+    "next": "Nächste Funktion",
+    "openPage": "Release-Seite öffnen",
+    "preview": "Demnächst · Vorschau",
+    "previous": "Vorherige Funktion",
+    "releases": {
+      "central-circle": {
+        "description": "Ein neues integriertes Design bringt helle Tabellen und dunkle Kopfzeilen in deinen CAD-Arbeitsbereich.",
+        "shortTitle": "Treffe Zentralkreis",
+        "teaser": "Helle Tabellen. Dunkle Kopfzeilen. Ein komplett neuer Look für dein CAD.",
+        "title": "Ein frischer Blick auf den Einsatz."
+      },
+      "community-workflows": {
+        "description": "Weniger repetitive Arbeit. Mehr präzise Kontrolle. Entdecken Sie drei Verbesserungen, die auf die Arbeitsweise Ihrer Community zugeschnitten sind.",
+        "shortTitle": "Eine neue Ära für Datensätze",
+        "teaser": "Automatisierungen für Datensätze, granulare Berechtigungen und ein neuer visueller Datensatzeditor.",
+        "title": "Ihre Community. Ihr Workflow."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

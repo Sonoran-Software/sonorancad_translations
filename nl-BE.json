@@ -436,6 +436,7 @@
       "actions": "Acties",
       "addCustomSection": "Voeg Custom Sectie Toe",
       "addPremadeSection": "Voeg Sjabloon Sectie Toe",
+      "addSection": "Voeg sectie toe",
       "aiCompleteEmpty": "De AI-service gaf geen suggestie terug.",
       "aiCompleteFailed": "Kan momenteel geen AI-voorstel genereren.",
       "aiCompleteProRequired": "AI- सुझावen vereisen een PRO-abonnement.",
@@ -471,6 +472,7 @@
         "noStatusField": "ERROR: Dit recordtype moet ÉÉN aangepast veld hebben met de UID van 'status'"
       },
       "existingHeader": "Bestaande typen aangepaste verslagen",
+      "exportTemplate": "Exportsjabloon",
       "label": "Label",
       "lookupPreview": "Opzoekvoorbeeld",
       "lookupPreviewAbout": "Toon veldwaarde in voorbeeld van opzoektabel",
@@ -482,9 +484,11 @@
       "newField": "Nieuw Veld",
       "newValue": "Nieuwe Waarde",
       "notApplicable": "N.v.t.",
+      "pasteSection": "Plak {name}",
       "placeholder": "Tijdelijke aanduiding",
       "placeholderAbout": "Optionele helptekst die wordt weergegeven in het lege veld voordat een waarde wordt ingevoerd.",
       "readOnly": "Alleen lezen",
+      "rebuildPreviews": "Opzoekvoorbeelden opnieuw opbouwen",
       "recordEditor": "Verslag Editor",
       "recordPreview": "Voorbeeldverslag",
       "recordSections": "Verslag Secties",
@@ -525,6 +529,7 @@
       "speechToTextNotAllowed": "Microfoontoegang werd geweigerd.",
       "speechToTextUnavailable": "Spraakherkenning is momenteel niet beschikbaar.",
       "supervisorAbout": "Veld beperken tot alleen supervisors",
+      "templateActions": "Sjabloonacties",
       "type": "Type",
       "uniqueField": "Uniek Veld",
       "width": "Breedte"
@@ -994,6 +999,9 @@
       "jailTime": "Gevangenisstraf",
       "title": "Titel"
     },
+    "permissionCode": {
+      "tooLong": "Deze code overschrijdt 1000 tekens. Splits deze machtigingen over roltoewijzingen."
+    },
     "permissions": {
       "account": "Account",
       "accountManagement": "Accountmanagement",
@@ -1123,6 +1131,42 @@
       "action": "Bekijk",
       "message": "Ontdek de nieuwe bèta"
     }
+  },
+  "automations": {
+    "add": "Automatisering toevoegen",
+    "addCondition": "Voorwaarde toevoegen",
+    "all": "Alle voorwaarden",
+    "allHint": "Elke voorwaarde moet overeenkomen (AND).",
+    "and": "EN",
+    "any": "Elke voorwaarde",
+    "anyHint": "Minstens één voorwaarde moet overeenkomen (OF).",
+    "cancel": "Annuleer",
+    "comparison": "Vergelijking",
+    "edit": "Automatisering bewerken",
+    "emptyTitle": "Uw dossiers kunnen het routinewerk doen.",
+    "enabled": "Ingeschakeld",
+    "errors": {
+      "forbidden": "Je hebt aanpassingsrechten nodig om automatiseringen te beheren.",
+      "invalidCondition": "Controleer de vergelijking en de geaccepteerde waarden. Numerieke vergelijkingen vereisen een gewoon getal.",
+      "invalidField": "Een voorwaardevak werd verwijderd, van type gewijzigd of wordt niet ondersteund. Selecteer het opnieuw.",
+      "invalidRule": "Voer een naam, 1–20 voorwaarden en een actie in.",
+      "invalidTemplate": "Selecteer een bestaand recordsjabloon.",
+      "ruleLimit": "Deze community heeft de limiet van 100 automatiseringen bereikt.",
+      "staleRule": "Deze automatisering is gewijzigd in een andere sessie. Sluit de editor en vernieuw voordat je het opnieuw probeert."
+    },
+    "intro": "Werk veldgegevens automatisch bij wanneer een record wordt aangemaakt of opgeslagen.",
+    "name": "Automatiseringsnaam",
+    "operators": {
+      "choicenotEquals": "Is niet een van",
+      "lte": "Ten hoogste",
+      "notEquals": "Is niet gelijk aan",
+      "numberEquals": "Nummer is gelijk aan"
+    },
+    "template": "Recordsjabloon",
+    "then": "Dan",
+    "title": "Automatiseringen",
+    "toValue": "Naar waarde",
+    "values": "Geaccepteerde waarden"
   },
   "bodycamRecordings": {
     "open": "Openen",
@@ -2926,6 +2970,43 @@
     "label": "Tekst",
     "question": "Vraag",
     "questions": "Vragen:"
+  },
+  "releaseHighlights": {
+    "archive": "Ontdek releases",
+    "counter": "{current} van {total}",
+    "cta": "Bekijk wat er nieuw is",
+    "enlarge": "Volledige grootte bekijken",
+    "eyebrow": "Nieuw in Sonoran CAD",
+    "features": "Functies van de release",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Editor voor recordautomatisering met een incidentrapportregel die de beoordelingsstatus instelt op Supervisorsbeoordeling wanneer de prioriteit Hoog is.",
+        "description": "Wanneer een record wordt opgeslagen, controleer de velden die je kiest en werk automatisch een ander veld bij. Voldoet aan alle voorwaarden of aan een van de voorwaarden.",
+        "location": "Administratie → Automatiseringen"
+      },
+      "centralCircle": {
+        "label": "Centraalcirkel-thema",
+        "title": "Een vertrouwde uitstraling. Een frisse look."
+      },
+      "permissions": {
+        "alt": "Granulaire recordrechten voor Incident Report, inclusief bekijken, aanmaken, eigen bewerken, alles bewerken, verwijderen en supervisorvelden.",
+        "label": "Granulaire rechten"
+      }
+    },
+    "menu": "Wat is er nieuw",
+    "openPage": "Open releasepagina",
+    "preview": "Binnenkort · Voorvertoning",
+    "previous": "Vorige functie",
+    "releases": {
+      "central-circle": {
+        "shortTitle": "Maak kennis met Centraalcirkel",
+        "teaser": "Lichte tabellen. Donkere headers. Een volledig nieuwe look voor je CAD."
+      },
+      "community-workflows": {
+        "teaser": "Recordautomatiseringen, gedetailleerde machtigingen en een nieuwe visuele recordeditor.",
+        "title": "Uw community. Uw workflow."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

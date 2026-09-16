@@ -49,13 +49,14 @@
       "addresses": "Adresy"
     },
     "aiUsage": {
+      "allowanceUsed": "Měsíční limit vyčerpán",
       "blocked": "Blokováno",
       "completionTokens": "Výstupní tokeny",
       "cost": "Odhadované náklady",
       "customRecord": "Nahlásit vylepšení",
       "databaseSync": "Nastavení synchronizace databáze",
       "deniedRequests": "Blokované požadavky",
-      "description": "Měsíční aktivita a odhadované náklady poskytovatele pro funkce s asistencí AI. Sdílená a funkcím specifická ochranná opatření zabraňují nadměrnému využívání.",
+      "description": "Měsíční aktivita a využití povolenky pro funkce s asistencí AI.",
       "error": "Data o využití AI jsou dočasně nedostupná.",
       "failed": "Nepodařilo se",
       "feature": "Funkce",
@@ -436,6 +437,7 @@
       "actions": "Akce",
       "addCustomSection": "Přidat vlastní sekci",
       "addPremadeSection": "Přidat předpřipravenou sekci",
+      "addSection": "Přidat sekci",
       "aiCompleteEmpty": "Služba AI nevrátila žádný návrh.",
       "aiCompleteFailed": "Nelze nyní vygenerovat návrh pomocí AI.",
       "aiCompleteProRequired": "Návrhy AI vyžadují předplatné PRO.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Zadejte nebo nadiktujte nějaký text před použitím vylepšení AI.",
       "dbMap": "Mapování synchronizace DB",
       "dependency": "Závislost",
+      "dependencyField": "Zobrazit pouze, když toto pole odpovídá",
       "dependencyInfo": {
         "infoContains": "Zobrazit, pokud hodnota pole obsahuje jednu nebo více:",
         "infoEqual": "Zobrazit, pokud hodnota pole je rovna:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Duplicitní sekce",
       "enableDuplicate": "Povolit duplikát",
+      "enableDuplicateAbout": "Umožněte uživatelům přidat další kopii této sekce při vyplňování záznamu.",
       "enableMapping": "Povolit mapování",
       "enforceFormatting": "Vynutit formátování pro textová pole.",
       "errors": {
@@ -471,9 +475,10 @@
         "noStatusField": "CHYBA: Tento typ záznamu musí mít JEDNO vlastní pole s UID 'status'"
       },
       "existingHeader": "Existující vlastní typy záznamů",
+      "exportTemplate": "Exportovat šablonu",
       "label": "Popisek",
       "lookupPreview": "Náhled vyhledávání",
-      "lookupPreviewAbout": "Zobrazit hodnotu pole v náhledu vyhledávací tabulky",
+      "lookupPreviewAbout": "Zobrazit toto pole jako sloupec náhledu ve výsledcích vyhledávání, když někdo spustí vyhledání záznamu.",
       "mask": "Maska",
       "maskAlphaNumeric": "X: Alfanumerický",
       "maskNumber": "#: Číslo",
@@ -482,12 +487,16 @@
       "newField": "Nové pole",
       "newValue": "Nová hodnota",
       "notApplicable": "N/A",
+      "pasteSection": "Vložit {name}",
       "placeholder": "Zástupný symbol",
       "placeholderAbout": "Volitelný pomocný text zobrazený v prázdném poli před zadáním hodnoty.",
       "readOnly": "Pouze ke čtení",
+      "rebuildPreviews": "Znovu vytvořit náhledy vyhledávání",
       "recordEditor": "Editor záznamu",
+      "recordImage": "Obrázek záznamu",
       "recordPreview": "Náhled záznamu",
       "recordSections": "Sekce záznamu",
+      "recordTemplate": "Šablona záznamu",
       "recordTypeName": "Název typu záznamu",
       "recordTypes": {
         "bolo": "HLEDANÁ OSOBA",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Reverzní mapa",
       "searchCivs": "Hledat civilisty",
+      "searchCivsAbout": "Vyhledejte civilistu a do této sekce vyplňte odpovídající pole jeho údaji.",
       "searchVehicles": "Vyhledat vozidla",
+      "searchVehiclesAbout": "Vyhledejte vozidlo a do této sekce vyplňte odpovídající pole jeho údaji.",
       "sectionLabel": "Popisek sekce",
       "speechToTextFailed": "Rozpoznávání řeči selhalo.",
       "speechToTextHold": "Stiskněte a podržte pro diktování",
@@ -524,9 +535,11 @@
       "speechToTextNoSpeech": "Nebyla zjištěna žádná řeč.",
       "speechToTextNotAllowed": "Přístup k mikrofonu byl odepřen.",
       "speechToTextUnavailable": "Rozpoznávání řeči je nyní nedostupné.",
-      "supervisorAbout": "Omezit pole pouze na supervizory",
+      "supervisorAbout": "Úprava tohoto pole vyžaduje oprávnění k polím Supervizor pro tento typ záznamu, kromě oprávnění k úpravě záznamu.",
+      "templateActions": "Akce šablony",
       "type": "Typ",
       "uniqueField": "Jedinečné pole",
+      "unsavedChanges": "Neuložené změny",
       "width": "Šířka"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Doba ve vězení",
       "title": "Název"
     },
+    "permissionCode": {
+      "code": "Kód oprávnění",
+      "copied": "Kód oprávnění zkopírován.",
+      "copyError": "Nelze zkopírovat. Vyberte kód a zkopírujte jej ručně.",
+      "hint": "Vložte tento jednořádkový kód do mapování rolí Sonoran Botu pro tuto komunitu.",
+      "loadError": "Nepodařilo se načíst oprávnění. Zkuste to prosím znovu.",
+      "title": "Oprávnění bota",
+      "tooLong": "Tento kód přesahuje 1000 znaků. Rozdělte tato oprávnění mezi mapování rolí."
+    },
     "permissions": {
       "account": "Účet",
       "accountManagement": "Správa účtu",
@@ -1123,6 +1145,72 @@
       "action": "Zobrazit",
       "message": "Zažijte novou betu"
     }
+  },
+  "automations": {
+    "add": "Přidat automatizaci",
+    "addCondition": "Přidat podmínku",
+    "all": "Všechny podmínky",
+    "allHint": "Každá podmínka musí být splněna (AND).",
+    "and": "A",
+    "any": "Jakákoli podmínka",
+    "anyHint": "Alespoň jedna podmínka musí platit (NEBO).",
+    "behavior": "Pravidla shody při každém uložení přepíší cíl. Jinak zůstane beze změny. Pravidla se neřetězí ani neaktualizují stávající záznamy zpětně.",
+    "cancel": "Zrušit",
+    "comparison": "Porovnání",
+    "conditionCount": "{count} podmínek",
+    "delete": "Smazat automatizaci",
+    "deleteConfirm": "Smazat „{name}“? Tímto nelze vrátit dřívější změny záznamu.",
+    "edit": "Upravit automatizaci",
+    "emptyHint": "Vyberte záznam, přidejte podmínky a nastavte pole, když se shodují.",
+    "emptyTitle": "Vaše záznamy mohou dělat rutinní práci.",
+    "enabled": "Povoleno",
+    "errors": {
+      "forbidden": "K správě automatizací potřebujete oprávnění k přizpůsobení.",
+      "invalidCondition": "Zkontrolujte porovnání a přijímané hodnoty. Číselná porovnání vyžadují prosté číslo.",
+      "invalidField": "Pole podmínky bylo odstraněno, změněno typem nebo není podporováno. Vyberte ho znovu.",
+      "invalidRule": "Zadejte název, 1–20 podmínek a akci.",
+      "invalidTarget": "Cílové pole bylo odstraněno, změnilo typ nebo nelze automatizovat. Vyberte jiné pole.",
+      "invalidTemplate": "Vyberte existující šablonu záznamu.",
+      "invalidValue": "Vyberte platnou cílovou hodnotu z aktuálních možností pole.",
+      "migrationRequired": "Automatizace potřebuje svou databázovou tabulku. Spusťte SQL migraci automatizací a potom obnovte tento panel.",
+      "ruleLimit": "Tato komunita dosáhla limitu 100 automatizací.",
+      "staleRule": "Tato automatizace byla změněna v jiné relaci. Zavřete editor a před dalším pokusem obnovte stránku.",
+      "targetConflict": "Jiná povolená automatizace již aktualizuje toto pole. Nejprve ji upravte nebo vypněte.",
+      "templateInUse": "Nejprve aktualizujte nebo zakažte automatizaci, která používá tuto šablonu.",
+      "unavailable": "Automatizace se nepodařilo načíst ani uložit. Zkuste obnovit stránku."
+    },
+    "field": "Pole",
+    "if": "Jestliže",
+    "intro": "Aktualizovat pole záznamu automaticky, když je záznam vytvořen nebo uložen.",
+    "missingTemplate": "Chybějící šablona záznamu",
+    "name": "Název automatizace",
+    "number": "Číslo",
+    "operators": {
+      "choiceequals": "Je jedním z",
+      "choicenotEquals": "Není jedním z",
+      "equals": "Rovná se",
+      "gt": "Větší než",
+      "gte": "Alespoň",
+      "lt": "Menší než",
+      "lte": "Nanejvýš",
+      "notEquals": "Není stejné",
+      "numberEquals": "Číslo se rovná",
+      "numberNotEquals": "Číslo se nerovná"
+    },
+    "or": "NEBO",
+    "refresh": "Obnovit",
+    "removeCondition": "Odstranit podmínku",
+    "save": "Uložit automatizaci",
+    "setField": "Nastavit pole",
+    "targetHint": "Aktualizovat lze pouze neopakující se pole. Synchronizovaná, pouze pro čtení a jedinečná pole jsou vyloučena. Pole pouze pro nadřízeného jsou vyloučena s výjimkou stavových polí.",
+    "template": "Šablona záznamu",
+    "then": "Potom",
+    "title": "Automatizace",
+    "toValue": "Na hodnotu",
+    "triggerHint": "Spouští se při vytvoření a aktualizaci, včetně záznamů civilistů a uložení přes API.",
+    "value": "Hodnota",
+    "values": "Přijaté hodnoty",
+    "when": "Když"
   },
   "bodycamRecordings": {
     "open": "Otevřít",
@@ -2918,6 +3006,68 @@
     "label": "Popisek",
     "question": "Otázka",
     "questions": "Otázky:"
+  },
+  "releaseHighlights": {
+    "archive": "Prozkoumat vydání",
+    "brand": "Sonoran CAD",
+    "changelog": "Úplný seznam změn",
+    "close": "Zavřít",
+    "counter": "{current} z {total}",
+    "cta": "Podívejte se, co je nového",
+    "dismiss": "Zavřít toto oznámení o vydání",
+    "done": "Mám to",
+    "enlarge": "Zobrazit v plné velikosti",
+    "eyebrow": "Novinky v Sonoran CAD",
+    "features": "Funkce vydání",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Editor automatizace záznamů s pravidlem pro hlášení incidentu, které nastaví stav Kontrola na Kontrola supervizorem, když je priorita Vysoká.",
+        "description": "Když je záznam uložen, zkontrolujte pole, která vyberete, a automaticky aktualizujte jiné pole. Splňte všechny podmínky nebo kteroukoli z nich.",
+        "label": "Automatizace záznamů",
+        "location": "Administrace → Automatizace",
+        "title": "Nastavte pravidla. Přeskočte rutinu."
+      },
+      "centralCircle": {
+        "alt": "Dispečerské pracovní prostředí Sonoran CAD používající CentralCircle se světlou tabulkou jednotek a volání, tmavými záhlavími a modrými akcenty.",
+        "description": "Dodejte svému pracovnímu prostoru nový pohled s jasnými tabulkami, tmavými záhlavími a výraznými modrými akcenty. Vyberte CentralCircle z vestavěných motivů.",
+        "label": "Motiv Centrální kruh",
+        "location": "Přizpůsobení → Centrální kruh",
+        "title": "Známý pocit. Nový vzhled."
+      },
+      "permissions": {
+        "alt": "Podrobná oprávnění k záznamům pro Incident Report, včetně zobrazení, vytváření, úprav vlastních, úprav všech, mazání a polí nadřízeného.",
+        "description": "Vyberte, kdo může zobrazovat, vytvářet, upravovat a mazat jednotlivé typy záznamů. Oddělte přístup k vlastním záznamům člena od přístupu ke záznamům všech.",
+        "label": "Detailní oprávnění",
+        "location": "Administrace → Klíče oprávnění",
+        "title": "Správný přístup. Pro každou roli."
+      },
+      "recordEditor": {
+        "alt": "Editor šablony vizuální zprávy o incidentu s živým náhledem formuláře a panelem nastavení vybraného pole.",
+        "description": "Upravte svou šablonu v živém náhledu záznamu. Vyberte pole pro úpravu jeho nastavení, uspořádejte sekce a sledujte, jak se váš formulář skládá dohromady.",
+        "label": "Vizuální editor záznamu",
+        "location": "Administrace → Vlastní záznamy",
+        "title": "Sestavte si to tak, jak to vidíte."
+      }
+    },
+    "menu": "Co je nového",
+    "next": "Další funkce",
+    "openPage": "Otevřít stránku vydání",
+    "preview": "Brzy na řadě · Náhled",
+    "previous": "Předchozí funkce",
+    "releases": {
+      "central-circle": {
+        "description": "Nové vestavěné téma přináší světlé tabulky a tmavé záhlaví do vašeho CAD pracovního prostoru.",
+        "shortTitle": "Seznamte se s Centrálním kruhem",
+        "teaser": "Světlé tabulky. Tmavé záhlaví. Úplně nový vzhled pro vaše CAD.",
+        "title": "Nový pohled na dispečink."
+      },
+      "community-workflows": {
+        "description": "Méně opakované práce. Větší přesnost a kontrola. Seznamte se se třemi vylepšeními postavenými na způsobu, jakým vaše komunita funguje.",
+        "shortTitle": "Nová éra pro záznamy",
+        "teaser": "Automatizace záznamů, podrobná oprávnění a nový vizuální editor záznamů.",
+        "title": "Vaše komunita. Váš pracovní postup."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

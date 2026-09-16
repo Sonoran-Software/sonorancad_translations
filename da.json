@@ -49,13 +49,14 @@
       "addresses": "Adresser"
     },
     "aiUsage": {
+      "allowanceUsed": "Månedligt forbrugte kvote",
       "blocked": "Blokeret",
       "completionTokens": "Output tokens",
       "cost": "Anslået pris",
       "customRecord": "Rapportér forbedringer",
       "databaseSync": "Opsætning af databasesynkronisering",
       "deniedRequests": "Blokerede anmodninger",
-      "description": "Månedlig aktivitet og estimeret udbyderomkostning for AI-assisterede funktioner. Delte og funktionsspecifikke sikkerhedsforanstaltninger forhindrer overdreven brug.",
+      "description": "Månedlig aktivitet og forbrugsanvendelse for AI-assisterede funktioner.",
       "error": "AI-brugsdata er midlertidigt utilgængelig.",
       "failed": "Mislykkedes",
       "feature": "Funktion",
@@ -436,6 +437,7 @@
       "actions": "Handlinger",
       "addCustomSection": "Tilføj brugerdefineret sektion",
       "addPremadeSection": "Tilføj forudlavet sektion",
+      "addSection": "Tilføj sektion",
       "aiCompleteEmpty": "AI-tjenesten returnerede ikke et forslag.",
       "aiCompleteFailed": "Kan ikke generere et AI-forslag lige nu.",
       "aiCompleteProRequired": "AI-forslag kræver et PRO-abonnement.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Indtast eller dikter noget tekst, før du bruger AI-forbedring.",
       "dbMap": "DB-synkroniseringsmapping",
       "dependency": "Afhængighed",
+      "dependencyField": "Vis kun når dette felt matcher",
       "dependencyInfo": {
         "infoContains": "Vis hvis feltværdien indeholder én eller flere:",
         "infoEqual": "Vises hvis feltværdien er lig med:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Duplikér sektion",
       "enableDuplicate": "Aktivér duplikat",
+      "enableDuplicateAbout": "Lad brugere tilføje endnu en kopi af denne sektion, mens de udfylder en registrering.",
       "enableMapping": "Aktivér mapping",
       "enforceFormatting": "Tving formatering for tekstfelter.",
       "errors": {
@@ -471,9 +475,10 @@
         "noStatusField": "FEJL: Denne posttype skal have ÉT brugerdefineret felt med UID'en 'status'"
       },
       "existingHeader": "Eksisterende brugerdefinerede posttyper",
+      "exportTemplate": "Eksportér skabelon",
       "label": "Etiket",
       "lookupPreview": "Opslagsforhåndsvisning",
-      "lookupPreviewAbout": "Vis feltværdi i forhåndsvisning af opslagstabel",
+      "lookupPreviewAbout": "Vis dette felt som en forhåndsvisningskolonne i søgeresultater, når nogen udfører et opslag i en post.",
       "mask": "Maske",
       "maskAlphaNumeric": "X: Alfanumerisk",
       "maskNumber": "#: Nummer",
@@ -482,12 +487,16 @@
       "newField": "Nyt felt",
       "newValue": "Ny værdi",
       "notApplicable": "Ikke relevant",
+      "pasteSection": "Indsæt {name}",
       "placeholder": "Pladsholder",
       "placeholderAbout": "Valgfri hjælpetekst vist i det tomme felt, før en værdi indtastes.",
       "readOnly": "Skrivebeskyttet",
+      "rebuildPreviews": "Genopbyg opslagsforhåndsvisninger",
       "recordEditor": "Postredigering",
+      "recordImage": "Postbillede",
       "recordPreview": "Postforhåndsvisning",
       "recordSections": "Postsektioner",
+      "recordTemplate": "Postskabelon",
       "recordTypeName": "Navn på rapporttype",
       "recordTypes": {
         "bolo": "BOLO",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Omvendt kort",
       "searchCivs": "Søg borgere",
+      "searchCivsAbout": "Søg efter en civilperson og udfyld de tilsvarende felter i denne sektion med deres oplysninger.",
       "searchVehicles": "Søg køretøjer",
+      "searchVehiclesAbout": "Søg efter et køretøj og udfyld de tilsvarende felter i denne sektion med dets oplysninger.",
       "sectionLabel": "Sektionslabel",
       "speechToTextFailed": "Talegenkendelse mislykkedes.",
       "speechToTextHold": "Tryk og hold nede for at diktere",
@@ -524,9 +535,11 @@
       "speechToTextNoSpeech": "Der blev ikke registreret tale.",
       "speechToTextNotAllowed": "Adgang til mikrofonen blev nægtet.",
       "speechToTextUnavailable": "Talegenkendelse er ikke tilgængelig lige nu.",
-      "supervisorAbout": "Begræns feltet til kun supervisorer",
+      "supervisorAbout": "Redigering af dette felt kræver tilladelse til Supervisor-felter for denne posttype, ud over tilladelse til at redigere posten.",
+      "templateActions": "Skabelonhandlinger",
       "type": "Type",
       "uniqueField": "Unikt felt",
+      "unsavedChanges": "Ikke-gemte ændringer",
       "width": "Bredde"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Fængselsstraf",
       "title": "Titel"
     },
+    "permissionCode": {
+      "code": "Tilladelseskode",
+      "copied": "Tilladelseskode kopieret.",
+      "copyError": "Kan ikke kopiere. Vælg koden og kopiér den manuelt.",
+      "hint": "Indsæt denne enlinjekode i Sonoran Bots rolletilknytning for dette community.",
+      "loadError": "Kan ikke indlæse tilladelser. Prøv igen.",
+      "title": "Bottilladelser",
+      "tooLong": "Denne kode overstiger 1000 tegn. Opdel disse tilladelser på tværs af rolletilknytninger."
+    },
     "permissions": {
       "account": "Konto",
       "accountManagement": "Kontoadministration",
@@ -1123,6 +1145,72 @@
       "action": "Se",
       "message": "Oplev den nye Beta"
     }
+  },
+  "automations": {
+    "add": "Tilføj automatisering",
+    "addCondition": "Tilføj betingelse",
+    "all": "Alle betingelser",
+    "allHint": "Hver betingelse skal matche (AND).",
+    "and": "OG",
+    "any": "Enhver betingelse",
+    "anyHint": "Mindst én betingelse skal være opfyldt (ELLER).",
+    "behavior": "Matchende regler overskriver målet ved hver gemning. Ellers forbliver det uændret. Regler kæder ikke eller opdaterer eksisterende poster retroaktivt.",
+    "cancel": "Annuller",
+    "comparison": "Sammenligning",
+    "conditionCount": "{count} betingelser",
+    "delete": "Slet automatisering",
+    "deleteConfirm": "Slet “{name}”? Dette kan ikke fortryde tidligere ændringer i posten.",
+    "edit": "Rediger automatisering",
+    "emptyHint": "Vælg en post, tilføj betingelser, og angiv et felt, når de matcher.",
+    "emptyTitle": "Dine registreringer kan udføre rutinearbejdet.",
+    "enabled": "Aktiveret",
+    "errors": {
+      "forbidden": "Du skal have tilladelse til tilpasning for at administrere automatiseringer.",
+      "invalidCondition": "Kontrollér sammenligningen og de accepterede værdier. Numeriske sammenligninger kræver et almindeligt tal.",
+      "invalidField": "Et betingelsesfelt blev fjernet, ændrede type eller understøttes ikke. Vælg det igen.",
+      "invalidRule": "Indtast et navn, 1–20 betingelser og en handling.",
+      "invalidTarget": "Målfeltet blev fjernet, ændrede type eller kan ikke automatiseres. Vælg et andet felt.",
+      "invalidTemplate": "Vælg en eksisterende recordskabelon.",
+      "invalidValue": "Vælg en gyldig målværdi fra feltets aktuelle valgmuligheder.",
+      "migrationRequired": "Automations har brug for sin databasetabel. Kør automations SQL-migreringen, og opdater derefter dette panel.",
+      "ruleLimit": "Dette fællesskab har nået grænsen på 100 automatiseringer.",
+      "staleRule": "Denne automatisering blev ændret i en anden session. Luk editoren og opdater, før du prøver igen.",
+      "targetConflict": "En anden aktiveret automatisering opdaterer allerede dette felt. Redigér eller deaktivér den først.",
+      "templateInUse": "Opdater eller deaktiver først automatiseringen, der bruger denne skabelon.",
+      "unavailable": "Automatiseringer kunne ikke indlæses eller gemmes. Prøv at opdatere."
+    },
+    "field": "Felt",
+    "if": "Hvis",
+    "intro": "Opdater rekordfelter automatisk, når en post oprettes eller gemmes.",
+    "missingTemplate": "Manglende postskabelon",
+    "name": "Automatiseringsnavn",
+    "number": "Nummer",
+    "operators": {
+      "choiceequals": "Er en af",
+      "choicenotEquals": "Er ikke en af",
+      "equals": "Er lig med",
+      "gt": "Større end",
+      "gte": "Mindst",
+      "lt": "Mindre end",
+      "lte": "Højst",
+      "notEquals": "Er ikke lig med",
+      "numberEquals": "Nummer er lig med",
+      "numberNotEquals": "Nummer er ikke lig med"
+    },
+    "or": "ELLER",
+    "refresh": "Opdater",
+    "removeCondition": "Fjern betingelse",
+    "save": "Gem automatisering",
+    "setField": "Sæt felt",
+    "targetHint": "Kun ikke-gentagne felter kan opdateres. Synkroniserede, skrivebeskyttede og unikke felter er udelukket. Feltet kun for supervisorer er udelukket undtagen statusfelter.",
+    "template": "Postskabelon",
+    "then": "Så",
+    "title": "Automatiseringer",
+    "toValue": "Til værdi",
+    "triggerHint": "Kører ved oprettelse og opdatering, inklusive civile journaler og API-gemninger.",
+    "value": "Værdi",
+    "values": "Accepterede værdier",
+    "when": "Når"
   },
   "bodycamRecordings": {
     "open": "Åbn",
@@ -2917,6 +3005,68 @@
     "label": "Etiket",
     "question": "Spørgsmål",
     "questions": "Spørgsmål:"
+  },
+  "releaseHighlights": {
+    "archive": "Udforsk udgivelser",
+    "brand": "Sonoran CAD",
+    "changelog": "Fuld ændringslog",
+    "close": "Luk",
+    "counter": "{current} af {total}",
+    "cta": "Se hvad der er nyt",
+    "dismiss": "Afvis denne udgivelsesmeddelelse",
+    "done": "Forstået",
+    "enlarge": "Vis i fuld størrelse",
+    "eyebrow": "Nyt i Sonoran CAD",
+    "features": "Udgivelsesfunktioner",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Registreringsautomatiseringseditor med en hændelsesrapportregel, der sætter status til Gennemgang til Supervisor review, når prioritet er Høj.",
+        "description": "Når en post gemmes, skal du kontrollere de felter, du vælger, og opdatere et andet felt automatisk. Match alle betingelser eller bare én af dem.",
+        "label": "Automatiseringer for poster",
+        "location": "Administration → Automatiseringer",
+        "title": "Sæt reglerne. Spring rutinearbejdet over."
+      },
+      "centralCircle": {
+        "alt": "Sonoran CAD-dispatcharbejdsområde med CentralCircle med lyse enheds- og opkaldstabeller, mørke overskrifter og blå accenter.",
+        "description": "Giv dit arbejdsområde et nyt perspektiv med lyse tabeller, mørke overskrifter og klare blå accenter. Vælg CentralCircle fra dine indbyggede temaer.",
+        "label": "CentralCirkel tema",
+        "location": "Tilpasning → CentralCirkel",
+        "title": "Et velkendt udtryk. Et friskt look."
+      },
+      "permissions": {
+        "alt": "Granulære rettigheder for poster for hændelsesrapport, inklusive visning, oprettelse, rediger egne, rediger alle, slet og supervisorfelter.",
+        "description": "Vælg, hvem der kan se, oprette, redigere og slette hver posttype. Adskil adgang til et medlems egne poster fra adgang til alles.",
+        "label": "Granulære tilladelser",
+        "location": "Administration → Tilladelsesnøgler",
+        "title": "Den rette adgang. For hver rolle."
+      },
+      "recordEditor": {
+        "alt": "Visuel hændelsesrapport skabeloneditor med live formularforhåndsvisning og et indstillingspanel for det valgte felt.",
+        "description": "Rediger din skabelon i en live forhåndsvisning af en post. Vælg et felt for at justere dets indstillinger, arranger sektioner, og se, hvordan din formular samles.",
+        "label": "Visuel postredigering",
+        "location": "Administration → Brugerdefinerede poster",
+        "title": "Byg det, som du ser det."
+      }
+    },
+    "menu": "Hvad er nyt",
+    "next": "Næste funktion",
+    "openPage": "Åbn udgivelsesside",
+    "preview": "Kommer snart · Forhåndsvisning",
+    "previous": "Forrige funktion",
+    "releases": {
+      "central-circle": {
+        "description": "Et nyt indbygget tema bringer lyse tabeller og mørke overskrifter til dit CAD-arbejdsområde.",
+        "shortTitle": "Mød CentralCirkel",
+        "teaser": "Lyse tabeller. Mørke overskrifter. Et helt nyt udseende til din CAD.",
+        "title": "Et nyt perspektiv på disponering."
+      },
+      "community-workflows": {
+        "description": "Mindre gentaget arbejde. Mere præcis kontrol. Oplev tre opgraderinger bygget op omkring den måde, dit fællesskab fungerer på.",
+        "shortTitle": "En ny æra for registre",
+        "teaser": "Automatisering af poster, detaljerede tilladelser og en ny visuel posteditor.",
+        "title": "Dit fællesskab. Din arbejdsgang."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {
