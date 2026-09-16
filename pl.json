@@ -49,13 +49,14 @@
       "addresses": "Adresy"
     },
     "aiUsage": {
+      "allowanceUsed": "Wykorzystany miesięczny limit",
       "blocked": "Zablokowano",
       "completionTokens": "Tokeny wyjściowe",
       "cost": "Szacowany koszt",
       "customRecord": "Zgłoś ulepszenia",
       "databaseSync": "Konfiguracja Synchronizacji Bazy Danych",
       "deniedRequests": "Zablokowane żądania",
-      "description": "Miesięczna aktywność i szacunkowy koszt dostawcy dla funkcji wspomaganych przez AI. Wspólne i specyficzne dla funkcji zabezpieczenia zapobiegają nadmiernemu użyciu.",
+      "description": "Miesięczna aktywność i wykorzystanie limitu funkcji wspomaganych przez AI.",
       "error": "Dane o użyciu AI są tymczasowo niedostępne.",
       "failed": "Nieudane",
       "feature": "Funkcja",
@@ -451,6 +452,7 @@
       "aiImproveEmpty": "Wpisz lub podyktuj tekst przed użyciem ulepszenia AI.",
       "dbMap": "Mapowanie Bazy Danych",
       "dependency": "Zależność",
+      "dependencyField": "Pokaż tylko, gdy to pole pasuje",
       "dependencyInfo": {
         "infoContains": "Wyświetl, jeśli wartość pola zawiera jeden lub więcej:",
         "infoEqual": "Wyświetl, jeśli wartość pola jest równa:",
@@ -458,6 +460,7 @@
       },
       "duplicateSection": "Duplikuj sekcję",
       "enableDuplicate": "Włącz duplikację",
+      "enableDuplicateAbout": "Pozwól użytkownikom dodać kolejną kopię tej sekcji podczas wypełniania rekordu.",
       "enableMapping": "Włącz Mapowanie",
       "enforceFormatting": "Wymusz formatowanie pól tekstowych.",
       "errors": {
@@ -490,8 +493,10 @@
       "readOnly": "Tylko do odczytu",
       "rebuildPreviews": "Odbuduj podglądy wyszukiwania",
       "recordEditor": "Edytor Rejestrów",
+      "recordImage": "Obraz rekordu",
       "recordPreview": "Podgląd Wyszukiwania",
       "recordSections": "Sekcje Rejestrów",
+      "recordTemplate": "Szablon rejestru",
       "recordTypeName": "Nazwa Typów Rejestrów",
       "recordTypes": {
         "bolo": "BOLO",
@@ -519,7 +524,9 @@
       },
       "reverseMap": "Odwróć Mapę",
       "searchCivs": "Szukaj cywili",
+      "searchCivsAbout": "Wyszukaj cywila i uzupełnij pasujące pola w tej sekcji jego danymi.",
       "searchVehicles": "Szukaj pojazdów",
+      "searchVehiclesAbout": "Wyszukaj pojazd i uzupełnij pasujące pola w tej sekcji jego danymi.",
       "sectionLabel": "Etykieta Sekcji",
       "speechToTextFailed": "Rozpoznawanie mowy nie powiodło się.",
       "speechToTextHold": "Naciśnij i przytrzymaj, aby dyktować",
@@ -532,6 +539,7 @@
       "templateActions": "Akcje szablonu",
       "type": "Typ",
       "uniqueField": "Unikalne pole",
+      "unsavedChanges": "Niezapisane zmiany",
       "width": "Szerokość"
     },
     "department": {
@@ -1000,6 +1008,12 @@
       "title": "Tytuł"
     },
     "permissionCode": {
+      "code": "Kod uprawnień",
+      "copied": "Kod uprawnień skopiowany.",
+      "copyError": "Nie można skopiować. Zaznacz kod i skopiuj go ręcznie.",
+      "hint": "Wklej ten jednowierszowy kod do mapowania ról Sonoran Bot dla tej społeczności.",
+      "loadError": "Nie można wczytać uprawnień. Spróbuj ponownie.",
+      "title": "Uprawnienia bota",
       "tooLong": "Ten kod przekracza 1000 znaków. Podziel te uprawnienia między mapowania ról."
     },
     "permissions": {
@@ -1143,6 +1157,9 @@
     "behavior": "Reguły dopasowania nadpisują cel przy każdym zapisie. W przeciwnym razie pozostaje bez zmian. Reguły nie łączą się ani nie aktualizują istniejących rekordów wstecznie.",
     "cancel": "Anuluj",
     "comparison": "Porównanie",
+    "conditionCount": "{count} warunki",
+    "delete": "Usuń automatyzację",
+    "deleteConfirm": "Usunąć „{name}”? To nie cofnie wcześniejszych zmian w rekordzie.",
     "edit": "Edytuj automatyzację",
     "emptyHint": "Wybierz rekord, dodaj warunki i ustaw pole, gdy zostaną spełnione.",
     "emptyTitle": "Twoje rekordy mogą wykonywać rutynową pracę.",
@@ -1152,26 +1169,46 @@
       "invalidCondition": "Sprawdź porównanie i akceptowane wartości. Porównania numeryczne wymagają zwykłej liczby.",
       "invalidField": "Usunięto pole warunku, zmieniono jego typ albo nie jest obsługiwane. Wybierz je ponownie.",
       "invalidRule": "Wprowadź nazwę, 1–20 warunków i działanie.",
+      "invalidTarget": "Pole docelowe zostało usunięte, zmieniło typ lub nie można go zautomatyzować. Wybierz inne pole.",
       "invalidTemplate": "Wybierz istniejący szablon rekordu.",
       "invalidValue": "Wybierz prawidłową wartość docelową z bieżących opcji pola.",
+      "migrationRequired": "Automatyzacje potrzebują swojej tabeli bazy danych. Uruchom migrację SQL automatyzacji, a następnie odśwież ten panel.",
       "ruleLimit": "Ta społeczność osiągnęła limit 100 automatyzacji.",
       "staleRule": "Ta automatyzacja została zmieniona w innej sesji. Zamknij edytor i odśwież przed ponowną próbą.",
+      "targetConflict": "Inna włączona automatyzacja już aktualizuje to pole. Najpierw ją edytuj lub wyłącz.",
+      "templateInUse": "Najpierw zaktualizuj lub wyłącz automatyzację, która korzysta z tego szablonu.",
       "unavailable": "Automatyzacje nie mogły zostać wczytane ani zapisane. Spróbuj odświeżyć."
     },
+    "field": "Pole",
+    "if": "Jeśli",
     "intro": "Automatycznie aktualizuj pola rekordu, gdy rekord zostanie utworzony lub zapisany.",
+    "missingTemplate": "Brakujący szablon rejestru",
     "name": "Nazwa automatyzacji",
+    "number": "Numer",
     "operators": {
+      "choiceequals": "Jest jednym z",
       "choicenotEquals": "Nie jest jednym z",
       "equals": "Równe",
+      "gt": "Większe niż",
+      "gte": "Co najmniej",
+      "lt": "Mniejsze niż",
       "lte": "Co najwyżej",
       "notEquals": "Nie równe",
-      "numberEquals": "Liczba równa się"
+      "numberEquals": "Liczba równa się",
+      "numberNotEquals": "Liczba nie równa się"
     },
+    "or": "LUB",
+    "refresh": "Odśwież",
+    "removeCondition": "Usuń warunek",
+    "save": "Zapisz automatyzację",
+    "setField": "Ustaw pole",
     "targetHint": "Można aktualizować tylko pola niepowtarzające się. Pola zsynchronizowane, tylko do odczytu i unikalne są wykluczone. Pola dostępne tylko dla przełożonych są wykluczone, z wyjątkiem pól statusu.",
     "template": "Szablon rejestru",
     "then": "Wtedy",
     "title": "Automatyzacje",
     "toValue": "Na wartość",
+    "triggerHint": "Uruchamia się przy tworzeniu i aktualizacji, w tym dla rekordów cywilnych i zapisów API.",
+    "value": "Wartość",
     "values": "Akceptowane wartości",
     "when": "Gdy"
   },
@@ -1267,6 +1304,7 @@
     "confirm": "Zatwierdź",
     "contains": "Zawiera",
     "continue": "Kontynuuj",
+    "copiedToClipboard": "Skopiowano do schowka!",
     "copy": "Kopiuj",
     "copyCommunityId": "Skopiuj ID Społeczności",
     "csv": "CSV",
@@ -2981,9 +3019,13 @@
   },
   "releaseHighlights": {
     "archive": "Przeglądaj wydania",
+    "brand": "Sonoran CAD",
+    "changelog": "Pełny dziennik zmian",
     "close": "Zamknij",
     "counter": "{current} z {total}",
     "cta": "Zobacz, co nowego",
+    "dismiss": "Odrzuć to ogłoszenie o wydaniu",
+    "done": "Rozumiem",
     "enlarge": "Wyświetl w pełnym rozmiarze",
     "eyebrow": "Nowości w Sonoran CAD",
     "features": "Funkcje wydania",
@@ -2992,32 +3034,45 @@
         "alt": "Edytor automatyzacji rekordów z regułą raportu incydentu, która ustawia status Przegląd na Do weryfikacji przez przełożonego, gdy priorytet jest Wysoki.",
         "description": "Gdy rekord zostanie zapisany, sprawdź wybrane pola i automatycznie zaktualizuj inne pole. Dopasuj wszystkie warunki albo jeden z nich.",
         "label": "Automatyzacje rekordów",
-        "location": "Administracja → Automatyzacje"
+        "location": "Administracja → Automatyzacje",
+        "title": "Ustal reguły. Pomiń żmudną pracę."
       },
       "centralCircle": {
         "alt": "Przestrzeń robocza dyspozytorska Sonoran CAD z CentralCircle z jasną tabelą jednostek i zgłoszeń, ciemnymi nagłówkami i niebieskimi akcentami.",
+        "description": "Nadaj swojemu obszarowi roboczemu nową perspektywę dzięki jasnym tabelom, ciemnym nagłówkom i wyrazistym niebieskim akcentom. Wybierz CentralCircle spośród wbudowanych motywów.",
         "label": "Motyw Centrum",
+        "location": "Dostosowywanie → Centrum",
         "title": "Znajomy wygląd. Świeże spojrzenie."
       },
       "permissions": {
         "alt": "Szczegółowe uprawnienia do rekordów dla Incident Report, obejmujące podgląd, tworzenie, edycję własnych, edycję dowolnych, usuwanie i pola przełożonego.",
         "description": "Wybierz, kto może przeglądać, tworzyć, edytować i usuwać każdy typ rekordu. Oddziel dostęp do własnych rekordów członka od dostępu do rekordów wszystkich.",
-        "label": "Szczegółowe uprawnienia"
+        "label": "Szczegółowe uprawnienia",
+        "location": "Administracja → Klucze uprawnień",
+        "title": "Właściwy dostęp. Dla każdej roli."
       },
       "recordEditor": {
+        "alt": "Edytor szablonu wizualnego raportu zdarzenia z podglądem formularza na żywo i panelem ustawień wybranego pola.",
+        "description": "Edytuj swój szablon w podglądzie rekordu na żywo. Wybierz pole, aby dostosować jego ustawienia, uporządkuj sekcje i zobacz, jak składa się Twój formularz.",
+        "label": "Wizualny edytor rejestrów",
+        "location": "Administracja → Niestandardowe rejestry",
         "title": "Zbuduj to tak, jak to widzisz."
       }
     },
     "menu": "Co nowego",
+    "next": "Następna funkcja",
     "openPage": "Otwórz stronę wydania",
     "preview": "Wkrótce · Podgląd",
     "previous": "Poprzednia funkcja",
     "releases": {
       "central-circle": {
+        "description": "Nowy wbudowany motyw wprowadza jasne tabele i ciemne nagłówki do Twojego obszaru roboczego CAD.",
         "shortTitle": "Poznaj Centrum",
-        "teaser": "Jasne stoły. Ciemne nagłówki. Zupełnie nowy wygląd Twojego CAD."
+        "teaser": "Jasne stoły. Ciemne nagłówki. Zupełnie nowy wygląd Twojego CAD.",
+        "title": "Świeże spojrzenie na dyspozycję."
       },
       "community-workflows": {
+        "description": "Mniej powtarzalnej pracy. Większa precyzja kontroli. Poznaj trzy ulepszenia stworzone wokół sposobu działania Twojej społeczności.",
         "shortTitle": "Nowa era dla rekordów",
         "teaser": "Automatyzacje rekordów, szczegółowe uprawnienia i nowy wizualny edytor rekordów.",
         "title": "Twoja społeczność. Twój workflow."
