@@ -49,13 +49,14 @@
       "addresses": "Adresler"
     },
     "aiUsage": {
+      "allowanceUsed": "Aylık kullanım hakkı kullanıldı",
       "blocked": "Engellendi",
       "completionTokens": "Çıktı tokenları",
       "cost": "Tahmini maliyet",
       "customRecord": "İyileştirmeleri raporla",
       "databaseSync": "Veritabanı Senkronizasyonu kurulumu",
       "deniedRequests": "Engellenen istekler",
-      "description": "Yapay zeka destekli özellikler için aylık etkinlik ve tahmini sağlayıcı maliyeti. Paylaşılan ve özelliğe özel korumalar aşırı kullanımı önler.",
+      "description": "Aylık etkinlik ve AI destekli özellikler için kullanım hakkı kullanımı.",
       "error": "Yapay zeka kullanım verileri geçici olarak kullanılamıyor.",
       "failed": "Başarısız ",
       "feature": "Özellik",
@@ -436,6 +437,7 @@
       "actions": "Hareketler",
       "addCustomSection": "Özel Bölüm Ekle",
       "addPremadeSection": "Hazır Bölüm Ekle",
+      "addSection": "Bölüm Ekle",
       "aiCompleteEmpty": "Yapay zeka hizmeti bir öneri döndürmedi.",
       "aiCompleteFailed": "Şu anda bir yapay zeka önerisi oluşturulamıyor.",
       "aiCompleteProRequired": "AI önerileri PRO aboneliği gerektirir.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "AI iyileştirmeyi kullanmadan önce bir metin girin veya dikte edin.",
       "dbMap": "DB Senkronizasyon Eşlemesi",
       "dependency": "Bağımlılık",
+      "dependencyField": "Bu alan eşleştiğinde yalnızca göster",
       "dependencyInfo": {
         "infoContains": "Alan değerinin bir veya daha fazlasını içerip içermediğini görüntüle:",
         "infoEqual": "Alan değeri şuna eşitse görüntüle:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Yinelenen Bölüm",
       "enableDuplicate": "Çoğaltmayı Etkinleştir",
+      "enableDuplicateAbout": "Kullanıcıların bir kayıt doldururken bu bölümün başka bir kopyasını eklemesine izin verin.",
       "enableMapping": "Eşlemeyi Etkinleştir",
       "enforceFormatting": "Metin alanları için biçimlendirmeyi zorunlu kıl.",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "HATA: Bu kayıt türünde 'durum' UID'sine sahip BİR özel alan bulunmalıdır"
       },
       "existingHeader": "Mevcut Özel Kayıt Türleri",
+      "exportTemplate": "Şablonu dışa aktar",
       "label": "Etiket",
       "lookupPreview": "Arama Önizlemesi",
       "lookupPreviewAbout": "Arama tablosu önizlemesinde alan değerini göster",
@@ -482,12 +487,16 @@
       "newField": "Yeni alan",
       "newValue": "Yeni değer",
       "notApplicable": "Yok",
+      "pasteSection": "Yapıştır {name}",
       "placeholder": "Yer tutucu",
       "placeholderAbout": "Bir değer girilmeden önce boş alanda gösterilen isteğe bağlı yardımcı metin.",
       "readOnly": "Sadece oku",
+      "rebuildPreviews": "Arama önizlemelerini yeniden oluştur",
       "recordEditor": "Kayıt Düzenleyici",
+      "recordImage": "Kayıt resmi",
       "recordPreview": "Kayıt Önizlemesi",
       "recordSections": "Bölümleri Kaydet",
+      "recordTemplate": "Kayıt şablonu",
       "recordTypeName": "Kayıt Türü Adı",
       "recordTypes": {
         "bolo": "BOLO",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Haritayı Ters Çevir",
       "searchCivs": "Sivilleri Ara",
+      "searchCivsAbout": "Bir sivil arayın ve eşleşen alanları bu bölümde onun ayrıntılarıyla doldurun.",
       "searchVehicles": "Araç Ara",
+      "searchVehiclesAbout": "Bir araç arayın ve eşleşen alanları bu bölümde onun ayrıntılarıyla doldurun.",
       "sectionLabel": "Bölüm Etiketi",
       "speechToTextFailed": "Konuşma tanıma başarısız oldu.",
       "speechToTextHold": "Basılı tutarak dikte edin",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "Mikrofona erişim reddedildi.",
       "speechToTextUnavailable": "Konuşma tanıma şu anda kullanılamıyor.",
       "supervisorAbout": "Alanı yalnızca denetçilerle sınırla",
+      "templateActions": "Şablon işlemleri",
       "type": "Tip",
       "uniqueField": "Benzersiz Alan",
+      "unsavedChanges": "Kaydedilmemiş değişiklikler",
       "width": "Genişlik"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Hapis Süresi",
       "title": "Başlık"
     },
+    "permissionCode": {
+      "code": "İzin kodu",
+      "copied": "İzin kodu kopyalandı.",
+      "copyError": "Kopyalanamıyor. Kodu seçin ve manuel olarak kopyalayın.",
+      "hint": "Bu tek satırlı kodu bu topluluk için Sonoran Bot'un rol eşlemesine yapıştırın.",
+      "loadError": "İzinler yüklenemedi. Lütfen tekrar deneyin.",
+      "title": "Bot izinleri",
+      "tooLong": "Bu kod 1000 karakteri aşıyor. Bu izinleri rol eşlemeleri arasında bölün."
+    },
     "permissions": {
       "account": "Hesap",
       "accountManagement": "Hesap Yönetimi",
@@ -1124,6 +1146,72 @@
       "message": "Yeni Beta'yı deneyimleyin"
     }
   },
+  "automations": {
+    "add": "Otomasyon ekle",
+    "addCondition": "Koşul Ekle",
+    "all": "Tüm koşullar",
+    "allHint": "Her koşul eşleşmeli (VE).",
+    "and": "VE",
+    "any": "Herhangi bir koşul",
+    "anyHint": "En az bir koşul eşleşmeli (OR).",
+    "behavior": "Eşleşme kuralları, her kaydetmede hedefi üzerine yazar. Aksi halde değişmeden kalır. Kurallar zincirlenmez veya mevcut kayıtları geriye dönük olarak güncellemez.",
+    "cancel": "Iptal Et",
+    "comparison": "Karşılaştırma",
+    "conditionCount": "{count} koşul",
+    "delete": "Otomasyonu sil",
+    "deleteConfirm": "“{name}” silinsin mi? Bu, önceki kayıt değişikliklerini geri almaz.",
+    "edit": "Otomasyonu düzenle",
+    "emptyHint": "Bir kayıt seçin, koşullar ekleyin ve eşleştiğinde bir alan ayarlayın.",
+    "emptyTitle": "Kayıtlarınız rutin işi yapabilir.",
+    "enabled": "Etkinleştir",
+    "errors": {
+      "forbidden": "Otomasyonları yönetmek için özelleştirme iznine ihtiyacınız var.",
+      "invalidCondition": "Karşılaştırmayı ve kabul edilen değerleri kontrol edin. Sayısal karşılaştırmalar düz sayı gerektirir.",
+      "invalidField": "Bir koşul alanı kaldırıldı, türü değiştirildi veya desteklenmiyor. Tekrar seçin.",
+      "invalidRule": "Bir ad, 1–20 koşul ve bir eylem girin.",
+      "invalidTarget": "Hedef alan kaldırıldı, türü değiştirildi veya otomatikleştirilemez. Başka bir alan seçin.",
+      "invalidTemplate": "Mevcut bir kayıt şablonu seçin.",
+      "invalidValue": "Alanının mevcut seçeneklerinden geçerli bir hedef değer seçin.",
+      "migrationRequired": "Automasyonların veritabanı tablosuna ihtiyacı var. Automations SQL geçişini çalıştırın, ardından bu paneli yenileyin.",
+      "ruleLimit": "Bu topluluk 100 otomasyon sınırına ulaştı.",
+      "staleRule": "Bu otomasyon başka bir oturumda değiştirildi. Tekrar denemeden önce düzenleyiciyi kapatın ve yenileyin.",
+      "targetConflict": "Bu alanı başka etkin bir otomasyon zaten güncelliyor. Önce onu düzenleyin veya devre dışı bırakın.",
+      "templateInUse": "Bu şablonu kullanan otomasyonu önce güncelleyin veya devre dışı bırakın.",
+      "unavailable": "Otomasyonlar yüklenemedi veya kaydedilemedi. Yenilemeyi deneyin."
+    },
+    "field": "Alan",
+    "if": "Eğer",
+    "intro": "Bir kayıt oluşturulduğunda veya kaydedildiğinde alanları otomatik olarak güncelleyin.",
+    "missingTemplate": "Eksik kayıt şablonu",
+    "name": "Otomasyon adı",
+    "number": "Numara",
+    "operators": {
+      "choiceequals": "Şunlardan biri",
+      "choicenotEquals": "Şunlardan biri değil",
+      "equals": "Eşittir",
+      "gt": "Büyüktür",
+      "gte": "En az",
+      "lt": "Şundan az",
+      "lte": "En fazla",
+      "notEquals": "Eşit değil",
+      "numberEquals": "Numara eşittir",
+      "numberNotEquals": "Numara eşit değil"
+    },
+    "or": "VEYA",
+    "refresh": "Yenile",
+    "removeCondition": "Koşulu kaldır",
+    "save": "Otomasyonu kaydet",
+    "setField": "Alanı Ayarla",
+    "targetHint": "Yalnızca tekrarlanmayan alanlar güncellenebilir. Senkronize, salt okunur ve benzersiz alanlar hariç tutulur. Yalnızca amire ait alanlar, durum alanları hariç, kapsam dışıdır.",
+    "template": "Kayıt şablonu",
+    "then": "Sonra",
+    "title": "Otomasyonlar",
+    "toValue": "Değere",
+    "triggerHint": "Oluşturma ve güncellemede çalışır, sivil kayıtlar ve API kayıtları dahil.",
+    "value": "Değer",
+    "values": "Kabul edilen değerler",
+    "when": "Ne zaman"
+  },
   "bodycamRecordings": {
     "open": "Aç",
     "refresh": "Yenile"
@@ -1216,6 +1304,7 @@
     "confirm": "Onayla",
     "contains": "İçerir",
     "continue": "Devam et",
+    "copiedToClipboard": "Panoya kopyalandı!",
     "copy": "Kopyala",
     "copyCommunityId": "Topluluk Kimliğini Kopyala",
     "csv": "CSV",
@@ -2927,6 +3016,68 @@
     "label": "Etiket",
     "question": "Soru",
     "questions": "Sorular:"
+  },
+  "releaseHighlights": {
+    "archive": "Sürümleri keşfet",
+    "brand": "Sonoran CAD",
+    "changelog": "Tam değişiklik günlüğü",
+    "close": "Kapalı",
+    "counter": "{current} / {total}",
+    "cta": "Yeniliklere göz atın",
+    "dismiss": "Bu sürüm duyurusunu kapat",
+    "done": "Anladım",
+    "enlarge": "Tam boyutta görüntüle",
+    "eyebrow": "Sonoran CAD'de Yenilikler",
+    "features": "Sürüm özellikleri",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Bir olay raporu kuralı içeren kayıt otomasyonu düzenleyicisi; önceliği Yüksek olduğunda İnceleme durumunu Amir incelemesi olarak ayarlar.",
+        "description": "Bir kayıt kaydedildiğinde, seçtiğiniz alanları kontrol edin ve başka bir alanı otomatik olarak güncelleyin. Tüm koşulları veya bunlardan herhangi birini eşleştirin.",
+        "label": "Kayıt otomasyonları",
+        "location": "Yönetim → Otomasyonlar",
+        "title": "Kuralları belirle. Boş işleri atla."
+      },
+      "centralCircle": {
+        "alt": "Merkez Çember kullanan, açık renkli birim ve çağrı tabloları, koyu başlıklar ve mavi vurgular içeren Sonoran CAD sevk çalışma alanı.",
+        "description": "Çalışma alanınıza ışık tablolaryla, koyu başlıklarla ve net mavi vurgularla yeni bir bakış açısı kazandırın. Yerleşik temalarınızdan CentralCircle'ı seçin.",
+        "label": "MerkezDaire teması",
+        "location": "Özelleştirme → MerkezDaire",
+        "title": "Tanıdık bir his. Yeni bir görünüm."
+      },
+      "permissions": {
+        "alt": "Olay Raporu için ayrıntılı kayıt izinleri, görüntüleme, oluşturma, kendi kaydını düzenleme, herhangi bir kaydı düzenleme, silme ve süpervizör alanları dahil.",
+        "description": "Her kayıt türünü kimlerin görüntüleyebileceğini, oluşturabileceğini, düzenleyebileceğini ve silebileceğini seçin. Bir üyenin kendi kayıtlarına erişimi ile herkesin kayıtlarına erişimi ayrı tutun.",
+        "label": "Ayrıntılı izinler",
+        "location": "Yönetim → İzin Anahtarları",
+        "title": "Doğru erişim. Her rol için."
+      },
+      "recordEditor": {
+        "alt": "Canlı form önizlemesi ve seçili alan ayarları paneli olan Görsel Olay Raporu şablon düzenleyicisi.",
+        "description": "Şablonunuzu canlı bir kayıt önizlemesinde düzenleyin. Ayarlarını değiştirmek için bir alan seçin, bölümleri düzenleyin ve formunuzun nasıl şekillendiğini görün.",
+        "label": "Görsel kayıt düzenleyici",
+        "location": "Yönetim → Özel kayıtlar",
+        "title": "Gördüğünüz gibi oluşturun."
+      }
+    },
+    "menu": "Yenilikler",
+    "next": "Sonraki özellik",
+    "openPage": "Sürüm sayfasını aç",
+    "preview": "Yakında geliyor · Önizleme",
+    "previous": "Önceki özellik",
+    "releases": {
+      "central-circle": {
+        "description": "Yeni yerleşik tema, CAD çalışma alanınıza açık renk tablolar ve koyu başlıklar getiriyor.",
+        "shortTitle": "CentralCircle ile tanışın",
+        "teaser": "Açık tablolar. Koyu başlıklar. CAD'iniz için bambaşka bir görünüm.",
+        "title": "Sevkiyata yeni bir bakış."
+      },
+      "community-workflows": {
+        "description": "Daha az tekrarlayan iş. Daha hassas kontrol. Topluluğunuzun çalışma şekline göre tasarlanmış üç yenilikle tanışın.",
+        "shortTitle": "Kayıtlar için yeni bir dönem",
+        "teaser": "Kayıt otomasyonları, ayrıntılı izinler ve yeni bir görsel kayıt düzenleyici.",
+        "title": "Topluluğunuz. İş akışınız."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

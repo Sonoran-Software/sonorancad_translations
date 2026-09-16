@@ -49,13 +49,14 @@
       "addresses": "Endereços"
     },
     "aiUsage": {
+      "allowanceUsed": "Limite mensal utilizado",
       "blocked": "Bloqueado",
       "completionTokens": "Tokens de saída",
       "cost": "Custo estimado",
       "customRecord": "Reportar melhorias",
       "databaseSync": "Configuração de Sincronização de Base de Dados",
       "deniedRequests": "Pedidos bloqueados",
-      "description": "Atividade mensal e custo estimado do provedor para recursos assistidos por IA. Salvaguardas compartilhadas e específicas do recurso evitam uso excessivo.",
+      "description": "Atividade mensal e uso do limite para recursos assistidos por IA.",
       "error": "Os dados de uso de IA estão temporariamente indisponíveis.",
       "failed": "Falhado",
       "feature": "Recurso",
@@ -436,6 +437,7 @@
       "actions": "Ações",
       "addCustomSection": "Adicionar Secção Personalizada",
       "addPremadeSection": "Adicionar secção pré-existente",
+      "addSection": "Adicionar Secção",
       "aiCompleteEmpty": "O serviço de IA não retornou uma sugestão.",
       "aiCompleteFailed": "Não foi possível gerar uma sugestão de IA neste momento.",
       "aiCompleteProRequired": "As sugestões de IA requerem uma assinatura PRO.",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "Insira ou dite algum texto antes de usar a melhoria de IA.",
       "dbMap": "Sincronizar Mapa com Base de Dados",
       "dependency": "Dependência",
+      "dependencyField": "Mostrar apenas quando este campo corresponder",
       "dependencyInfo": {
         "infoContains": "Exibir se o valor do campo contiver um ou mais:",
         "infoEqual": "Exibir se o valor do campo for igual a:",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "Duplicar Secção",
       "enableDuplicate": "Habilitar Duplicado",
+      "enableDuplicateAbout": "Permitir que os usuários adicionem outra cópia desta seção ao preencher um registro.",
       "enableMapping": "Habilitar Mapeamento",
       "enforceFormatting": "Impor formatação para campos de texto.",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "ERRO: Este tipo de registo deve ter UM campo personalizado com o UID de 'status'"
       },
       "existingHeader": "Tipos de registos personalizados existentes",
+      "exportTemplate": "Exportar modelo",
       "label": "Etiqueta",
       "lookupPreview": "Vista Previa de pesquisa",
       "lookupPreviewAbout": "Mostrar o valor do campo na visualização da tabela de pesquisa",
@@ -482,12 +487,16 @@
       "newField": "Novo campo",
       "newValue": "Novo valor",
       "notApplicable": "N/D",
+      "pasteSection": "Colar {name}",
       "placeholder": "Placeholder",
       "placeholderAbout": "Texto de ajuda opcional mostrado no campo vazio antes de um valor ser inserido.",
       "readOnly": "Somente leitura",
+      "rebuildPreviews": "Reconstruir vistas prévias de pesquisa",
       "recordEditor": "Editor de Registos",
+      "recordImage": "Imagem do Registo",
       "recordPreview": "Vista Previa de Gravação",
       "recordSections": "Secção de Registos",
+      "recordTemplate": "Modelo de registo",
       "recordTypeName": "Nome do tipo de registo",
       "recordTypes": {
         "bolo": "BOLO",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "Reverter Mapa",
       "searchCivs": "Procurar Civis",
+      "searchCivsAbout": "Pesquise um civil e preencha os campos correspondentes nesta seção com seus detalhes.",
       "searchVehicles": "Procurar Veiculos",
+      "searchVehiclesAbout": "Pesquise um veículo e preencha os campos correspondentes nesta seção com os seus detalhes.",
       "sectionLabel": "Etiqueta de Secção",
       "speechToTextFailed": "O reconhecimento de voz falhou.",
       "speechToTextHold": "Pressione e segure para ditar",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "O acesso ao microfone foi negado.",
       "speechToTextUnavailable": "O reconhecimento de fala está indisponível no momento.",
       "supervisorAbout": "Restringir o campo apenas para os supervisores",
+      "templateActions": "Ações do modelo",
       "type": "Tipo",
       "uniqueField": "Campo unico",
+      "unsavedChanges": "Alterações não salvas",
       "width": "Largura"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "Tempo de Prisão",
       "title": "Título"
     },
+    "permissionCode": {
+      "code": "Código de permissão",
+      "copied": "Código de permissão copiado.",
+      "copyError": "Não foi possível copiar. Selecione o código e copie-o manualmente.",
+      "hint": "Cole este código de uma linha no mapeamento de funções do Sonoran Bot para esta comunidade.",
+      "loadError": "Não foi possível carregar as permissões. Tente novamente.",
+      "title": "Permissões do bot",
+      "tooLong": "Este código excede 1000 caracteres. Divida estas permissões entre os mapeamentos de funções."
+    },
     "permissions": {
       "account": "Conta",
       "accountManagement": "Administração de Contas",
@@ -1124,6 +1146,72 @@
       "message": "Experimente a nova Beta"
     }
   },
+  "automations": {
+    "add": "Adicionar automação",
+    "addCondition": "Adicionar condição",
+    "all": "Todas as condições",
+    "allHint": "Toda condição deve corresponder (E).",
+    "and": "E",
+    "any": "Qualquer condição",
+    "anyHint": "Pelo menos uma condição deve corresponder (OU).",
+    "behavior": "Regras correspondentes substituem o destino a cada salvamento. Caso contrário, ele permanece inalterado. As regras não se encadeiam nem atualizam registros existentes retroativamente.",
+    "cancel": "Cancelar",
+    "comparison": "Comparação",
+    "conditionCount": "{count} condições",
+    "delete": "Excluir automação",
+    "deleteConfirm": "Excluir “{name}”? Isso não desfará alterações anteriores no registro.",
+    "edit": "Editar automação",
+    "emptyHint": "Escolha um registo, adicione condições e defina um campo quando corresponderem.",
+    "emptyTitle": "Os seus registos podem fazer o trabalho rotineiro.",
+    "enabled": "Ativado",
+    "errors": {
+      "forbidden": "Você precisa de permissão de personalização para gerenciar automações.",
+      "invalidCondition": "Verifique a comparação e os valores aceitos. Comparações numéricas exigem um número simples.",
+      "invalidField": "Um campo de condição foi removido, mudou de tipo ou não é suportado. Selecione-o novamente.",
+      "invalidRule": "Introduza um nome, 1–20 condições e uma ação.",
+      "invalidTarget": "O campo de destino foi removido, teve o tipo alterado ou não pode ser automatizado. Selecione outro campo.",
+      "invalidTemplate": "Selecione um modelo de registro existente.",
+      "invalidValue": "Escolha um valor de destino válido entre as opções atuais do campo.",
+      "migrationRequired": "Automations precisa da sua tabela de banco de dados. Execute a migração SQL de automations e depois atualize este painel.",
+      "ruleLimit": "Esta comunidade atingiu o limite de 100 automações.",
+      "staleRule": "Esta automação foi alterada em outra sessão. Feche o editor e atualize antes de tentar novamente.",
+      "targetConflict": "Outra automação ativada já atualiza este campo. Edite-a ou desative-a primeiro.",
+      "templateInUse": "Atualize ou desative a automação que usa este modelo primeiro.",
+      "unavailable": "As automações não puderam ser carregadas ou salvas. Tente atualizar."
+    },
+    "field": "Campo",
+    "if": "Se",
+    "intro": "Atualizar campos do registro automaticamente quando um registro é criado ou salvo.",
+    "missingTemplate": "Modelo de registo em falta",
+    "name": "Nome da automação",
+    "number": "Número",
+    "operators": {
+      "choiceequals": "É um de",
+      "choicenotEquals": "Não é um de",
+      "equals": "Igual",
+      "gt": "Maior que",
+      "gte": "Pelo menos",
+      "lt": "Menor que",
+      "lte": "No máximo",
+      "notEquals": "Não é igual a",
+      "numberEquals": "Número igual a",
+      "numberNotEquals": "Número não é igual a"
+    },
+    "or": "OU",
+    "refresh": "Atualizar",
+    "removeCondition": "Remover condição",
+    "save": "Salvar automação",
+    "setField": "Definir campo",
+    "targetHint": "Apenas campos não repetidos podem ser atualizados. Campos sincronizados, somente leitura e exclusivos estão excluídos. Campos apenas para supervisor estão excluídos, exceto campos de status.",
+    "template": "Modelo de registo",
+    "then": "Então",
+    "title": "Automações",
+    "toValue": "Para valor",
+    "triggerHint": "Executa na criação e na atualização, incluindo registros civis e salvamentos via API.",
+    "value": "Valor",
+    "values": "Valores aceitos",
+    "when": "Quando"
+  },
   "bodycamRecordings": {
     "open": "Abrir",
     "refresh": "Atualizar"
@@ -1216,6 +1304,7 @@
     "confirm": "Confirmar",
     "contains": "Contém",
     "continue": "Continuar",
+    "copiedToClipboard": "Copiado para a área de transferência!",
     "copy": "Copiar",
     "copyCommunityId": "Copiar ID da comunidade",
     "csv": "CSV",
@@ -2927,6 +3016,68 @@
     "label": "Etiqueta",
     "question": "Pergunta",
     "questions": "Perguntas:"
+  },
+  "releaseHighlights": {
+    "archive": "Explorar lançamentos",
+    "brand": "Sonoran CAD",
+    "changelog": "Registo completo de alterações",
+    "close": "Fechar",
+    "counter": "{current} de {total}",
+    "cta": "Veja o que há de novo",
+    "dismiss": "Dispensar este anúncio de lançamento",
+    "done": "Entendi",
+    "enlarge": "Ver tamanho completo",
+    "eyebrow": "Novidades no Sonoran CAD",
+    "features": "Recursos da versão",
+    "featuresCopy": {
+      "automations": {
+        "alt": "Editor de automação de registros com uma regra de relatório de incidente que define o status de Revisão como revisão do supervisor quando a prioridade é Alta.",
+        "description": "Quando um registro é salvo, verifique os campos que você escolher e atualize outro campo automaticamente. Corresponda a todas as condições ou a apenas uma delas.",
+        "label": "Automações de registros",
+        "location": "Administração → Automações",
+        "title": "Defina as regras. Pule o trabalho repetitivo."
+      },
+      "centralCircle": {
+        "alt": "Espaço de trabalho de despacho do Sonoran CAD usando CentralCircle com tabelas de unidades e chamadas claras, cabeçalhos escuros e detalhes em azul.",
+        "description": "Dê ao seu espaço de trabalho uma nova perspectiva com tabelas claras, cabeçalhos escuros e detalhes em azul nítido. Selecione CentralCircle entre seus temas integrados.",
+        "label": "Tema Círculo Central",
+        "location": "Personalização → Círculo Central",
+        "title": "Uma sensação familiar. Um visual novo."
+      },
+      "permissions": {
+        "alt": "Permissões granulares de registros para Relatório de Incidente, incluindo visualizar, criar, editar próprios, editar quaisquer, excluir e campos de supervisor.",
+        "description": "Escolha quem pode ver, criar, editar e excluir cada tipo de registro. Separe o acesso aos registros próprios de um membro do acesso aos de todos.",
+        "label": "Permissões granulares",
+        "location": "Administração → Chaves de permissão",
+        "title": "O acesso certo. Para cada função."
+      },
+      "recordEditor": {
+        "alt": "Editor de modelo de Relatório Visual de Ocorrência com pré-visualização do formulário em tempo real e um painel de configurações do campo selecionado.",
+        "description": "Edite seu modelo em uma pré-visualização de registro ao vivo. Selecione um campo para ajustar suas configurações, organize seções e veja como seu formulário se encaixa.",
+        "label": "Editor visual de registos",
+        "location": "Administração → Registos Personalizados",
+        "title": "Construa do jeito que você vê."
+      }
+    },
+    "menu": "O que há de novo",
+    "next": "Próximo recurso",
+    "openPage": "Abrir página da versão",
+    "preview": "Em breve · Prévia",
+    "previous": "Recurso anterior",
+    "releases": {
+      "central-circle": {
+        "description": "Um novo tema integrado traz tabelas claras e cabeçalhos escuros para o seu espaço de trabalho CAD.",
+        "shortTitle": "Conheça o Círculo Central",
+        "teaser": "Tabelas claras. Cabeçalhos escuros. Um visual totalmente novo para o seu CAD.",
+        "title": "Uma nova perspectiva sobre o despacho."
+      },
+      "community-workflows": {
+        "description": "Menos trabalho repetitivo. Mais controle preciso. Conheça três melhorias criadas em torno da forma como a sua comunidade opera.",
+        "shortTitle": "Uma nova era para registros",
+        "teaser": "Automações de registros, permissões granulares e um novo editor visual de registros.",
+        "title": "A sua comunidade. O seu fluxo de trabalho."
+      }
+    }
   },
   "selectionPage": {
     "buttons": {

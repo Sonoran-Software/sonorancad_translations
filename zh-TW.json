@@ -49,13 +49,14 @@
       "addresses": "地址"
     },
     "aiUsage": {
+      "allowanceUsed": "每月配額已使用",
       "blocked": "已封鎖",
       "completionTokens": "輸出代幣",
       "cost": "預估成本",
       "customRecord": "回報改進建議",
       "databaseSync": "資料庫同步設定",
       "deniedRequests": "已封鎖的請求",
-      "description": "AI 輔助功能的每月活動與預估供應商成本。共享與功能專屬保護機制可防止過度使用。",
+      "description": "每月 AI 輔助功能的活動與額度使用情況。",
       "error": "AI 使用資料目前暫時無法使用。",
       "failed": "失敗",
       "feature": "功能",
@@ -436,6 +437,7 @@
       "actions": "操作",
       "addCustomSection": "新增自定義節",
       "addPremadeSection": "新增預設節",
+      "addSection": "新增區段",
       "aiCompleteEmpty": "AI 服務未回傳建議。",
       "aiCompleteFailed": "目前無法產生 AI 建議。",
       "aiCompleteProRequired": "AI 建議需要 PRO 訂閱。",
@@ -450,6 +452,7 @@
       "aiImproveEmpty": "在使用 AI 改善前，請輸入或口述一些文字。",
       "dbMap": "資料庫同步對映",
       "dependency": "依賴",
+      "dependencyField": "僅在此欄位符合時顯示",
       "dependencyInfo": {
         "infoContains": "當字段包含一個或多個顯示：",
         "infoEqual": "當字段相等時顯示：",
@@ -457,6 +460,7 @@
       },
       "duplicateSection": "克隆區域",
       "enableDuplicate": "開啟克隆",
+      "enableDuplicateAbout": "讓使用者在填寫記錄時新增此區段的另一份副本。",
       "enableMapping": "啟用對映",
       "enforceFormatting": "強制格式化文字欄位。",
       "errors": {
@@ -471,6 +475,7 @@
         "noStatusField": "錯誤：此記錄型別必須具有一個UID為'status'欄位。"
       },
       "existingHeader": "現有自定義記錄型別",
+      "exportTemplate": "匯出範本",
       "label": "標籤",
       "lookupPreview": "查詢預覽",
       "lookupPreviewAbout": "在查詢表預覽中顯示欄位值",
@@ -482,12 +487,16 @@
       "newField": "新欄位",
       "newValue": "新資料",
       "notApplicable": "不適用",
+      "pasteSection": "黏貼 {name}",
       "placeholder": "佔位符",
       "placeholderAbout": "輸入值前顯示於空欄位中的選填輔助文字。",
       "readOnly": "只讀",
+      "rebuildPreviews": "重建查詢預覽",
       "recordEditor": "記錄編輯器",
+      "recordImage": "記錄圖片",
       "recordPreview": "預覽記錄",
       "recordSections": "記錄節",
+      "recordTemplate": "記錄範本",
       "recordTypeName": "記錄型別名稱",
       "recordTypes": {
         "bolo": "BOLO資訊",
@@ -515,7 +524,9 @@
       },
       "reverseMap": "反向對映",
       "searchCivs": "搜尋市民資訊",
+      "searchCivsAbout": "搜尋平民並以其詳細資料填寫此區段中的對應欄位。",
       "searchVehicles": "搜尋車輛資訊",
+      "searchVehiclesAbout": "搜尋車輛並以其詳細資料填寫此區段中的對應欄位。",
       "sectionLabel": "節標籤",
       "speechToTextFailed": "語音辨識失敗。",
       "speechToTextHold": "按住以口述",
@@ -525,8 +536,10 @@
       "speechToTextNotAllowed": "麥克風存取已被拒絕。",
       "speechToTextUnavailable": "語音辨識目前無法使用。",
       "supervisorAbout": "僅主管可用的欄位",
+      "templateActions": "範本動作",
       "type": "型別",
       "uniqueField": "唯一欄位",
+      "unsavedChanges": "未儲存的變更",
       "width": "寬度"
     },
     "department": {
@@ -994,6 +1007,15 @@
       "jailTime": "監禁時長",
       "title": "罪名"
     },
+    "permissionCode": {
+      "code": "許可權代碼",
+      "copied": "許可權代碼已複製。",
+      "copyError": "無法複製。請選取代碼並手動複製。",
+      "hint": "將這組單行代碼貼到 Sonoran Bot 的此社群角色對應中。",
+      "loadError": "無法載入權限。請再試一次。",
+      "title": "機器人許可權",
+      "tooLong": "此代碼超過 1000 個字元。請將這些權限分散至角色對應。"
+    },
     "permissions": {
       "account": "賬戶",
       "accountManagement": "賬戶管理",
@@ -1124,6 +1146,72 @@
       "message": "體驗全新 Beta"
     }
   },
+  "automations": {
+    "add": "新增自動化",
+    "addCondition": "新增條件",
+    "all": "所有條件",
+    "allHint": "每個條件都必須符合（AND）。",
+    "and": "且",
+    "any": "任意條件",
+    "anyHint": "至少一個條件必須符合（OR）。",
+    "behavior": "相符規則在每次儲存時都會覆寫目標。否則它保持不變。規則不會串聯，也不會回溯更新現有記錄。",
+    "cancel": "取消",
+    "comparison": "比較",
+    "conditionCount": "{count} 個條件",
+    "delete": "刪除自動化",
+    "deleteConfirm": "刪除「{name}」？這不會還原先前的記錄變更。",
+    "edit": "編輯自動化",
+    "emptyHint": "選擇一筆記錄，新增條件，並在符合時設定欄位。",
+    "emptyTitle": "您的記錄可以做例行工作。",
+    "enabled": "啟用",
+    "errors": {
+      "forbidden": "您需要自訂權限才能管理自動化。",
+      "invalidCondition": "檢查比較和可接受的值。數值比較需要純數字。",
+      "invalidField": "條件欄位已移除、類型已變更，或不受支援。請重新選取。",
+      "invalidRule": "輸入名稱、1–20 個條件和一個動作。",
+      "invalidTarget": "目標欄位已移除、類型已變更，或無法自動化。請選擇其他欄位。",
+      "invalidTemplate": "選擇現有的記錄範本。",
+      "invalidValue": "請從欄位目前的選項中選擇有效的目標值。",
+      "migrationRequired": "Automations 需要其資料庫表格。執行 automations SQL 遷移，然後重新整理此面板。",
+      "ruleLimit": "此社群已達到 100 個自動化的上限。",
+      "staleRule": "此自動化已在另一個工作階段中變更。請先關閉編輯器並重新整理，然後再試一次。",
+      "targetConflict": "另一個已啟用的自動化已更新此欄位。請先編輯或停用它。",
+      "templateInUse": "先更新或停用使用此範本的自動化。",
+      "unavailable": "無法載入或儲存自動化。請嘗試重新整理。"
+    },
+    "field": "區域",
+    "if": "如果",
+    "intro": "當記錄建立或儲存時，自動更新記錄欄位。",
+    "missingTemplate": "缺少記錄範本",
+    "name": "自動化名稱",
+    "number": "數字",
+    "operators": {
+      "choiceequals": "是其中之一",
+      "choicenotEquals": "不是其中之一",
+      "equals": "等於",
+      "gt": "大於",
+      "gte": "至少",
+      "lt": "小於",
+      "lte": "至多",
+      "notEquals": "不等於",
+      "numberEquals": "數字等於",
+      "numberNotEquals": "數字不等於"
+    },
+    "or": "或",
+    "refresh": "重新整理",
+    "removeCondition": "移除條件",
+    "save": "儲存自動化",
+    "setField": "設定欄位",
+    "targetHint": "只有非重複欄位可以更新。已同步、唯讀和唯一欄位皆不包含。僅主管可用欄位不包含在內，狀態欄位除外。",
+    "template": "記錄範本",
+    "then": "然後",
+    "title": "自動化",
+    "toValue": "目標值",
+    "triggerHint": "於建立和更新時執行，包括平民記錄和 API 儲存。",
+    "value": "資料",
+    "values": "可接受的值",
+    "when": "當"
+  },
   "bodycamRecordings": {
     "open": "開啟",
     "refresh": "重新整理"
@@ -1216,6 +1304,7 @@
     "confirm": "確認",
     "contains": "包含",
     "continue": "繼續",
+    "copiedToClipboard": "已複製到剪貼簿！",
     "copy": "複製",
     "copyCommunityId": "複製社群ID",
     "csv": "CSV",
@@ -2927,6 +3016,68 @@
     "label": "標籤",
     "question": "問題",
     "questions": "問題："
+  },
+  "releaseHighlights": {
+    "archive": "探索版本",
+    "brand": "Sonoran CAD",
+    "changelog": "完整更新日誌",
+    "close": "關閉",
+    "counter": "{current} / {total}",
+    "cta": "查看有什麼新功能",
+    "dismiss": "關閉此版本公告",
+    "done": "知道了",
+    "enlarge": "查看原始大小",
+    "eyebrow": "Sonoran CAD 新功能",
+    "features": "版本功能",
+    "featuresCopy": {
+      "automations": {
+        "alt": "具備事故報告規則的記錄自動化編輯器，當優先級為高時會將審核狀態設為主管審核。",
+        "description": "當記錄儲存時，檢查您選擇的欄位並自動更新另一個欄位。符合所有條件或其中任一條件。",
+        "label": "紀錄自動化",
+        "location": "管理 → 自動化",
+        "title": "設定規則。跳過繁瑣工作。"
+      },
+      "centralCircle": {
+        "alt": "Sonoran CAD 派遣工作區使用 CentralCircle，搭配淺色單位與通話表格、深色標題和藍色強調色。",
+        "description": "透過淺色表格、深色標題和清爽的藍色點綴，為您的工作區帶來全新視角。從內建主題中選擇 CentralCircle。",
+        "label": "中央圓形主題",
+        "location": "自定義 → 中央圓形",
+        "title": "熟悉的感受。全新的外觀。"
+      },
+      "permissions": {
+        "alt": "事件報告的細粒度記錄權限，包括檢視、建立、編輯自己的、編輯任何、刪除和主管欄位。",
+        "description": "選擇誰可以檢視、建立、編輯和刪除每種記錄類型。將成員自己的記錄存取權與所有人的存取權分開。",
+        "label": "細緻許可權",
+        "location": "管理 → 許可權金鑰",
+        "title": "正確的存取權限。適用於每個角色。"
+      },
+      "recordEditor": {
+        "alt": "具即時表單預覽與已選欄位設定面板的視覺事故報告範本編輯器。",
+        "description": "在即時記錄預覽中編輯您的範本。選取欄位以調整其設定、排列區塊，並查看您的表單如何組成。",
+        "label": "視覺化記錄編輯器",
+        "location": "管理 → 自定義記錄",
+        "title": "照你看到的方式建立它。"
+      }
+    },
+    "menu": "有什麼新功能",
+    "next": "下一個功能",
+    "openPage": "開啟發佈頁面",
+    "preview": "即將推出 · 預覽",
+    "previous": "上一個功能",
+    "releases": {
+      "central-circle": {
+        "description": "全新的內建主題為您的 CAD 工作區帶來淺色表格和深色標題。",
+        "shortTitle": "認識中央圓形",
+        "teaser": "淺色表格。深色標題列。您的 CAD 全新風格。",
+        "title": "調度的新視角"
+      },
+      "community-workflows": {
+        "description": "更少重複工作。更精準控制。認識圍繞您的社群運作方式打造的三項升級。",
+        "shortTitle": "記錄的新紀元",
+        "teaser": "記錄自動化、精細權限，以及新的視覺化記錄編輯器。",
+        "title": "您的社群。您的工作流程。"
+      }
+    }
   },
   "selectionPage": {
     "buttons": {
