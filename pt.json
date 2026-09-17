@@ -1149,6 +1149,7 @@
   "automations": {
     "actionMode": "Ação",
     "actions": {
+      "add": "Adicionar seleções",
       "clear": "Limpar campo",
       "current": "Data/hora atual da comunidade",
       "remove": "Remover seleções",
@@ -1179,7 +1180,7 @@
       "invalidRule": "Introduza um nome, 1–20 condições e uma ação.",
       "invalidTarget": "O campo de destino foi removido, teve o tipo alterado ou não pode ser automatizado. Selecione outro campo.",
       "invalidTemplate": "Selecione um modelo de registro existente.",
-      "invalidValue": "Escolha um valor de destino válido entre as opções atuais do campo.",
+      "invalidValue": "Escolha um valor válido para o campo de destino. Os campos obrigatórios não podem ser limpos.",
       "migrationRequired": "Automations precisa da sua tabela de banco de dados. Execute a migração SQL de automations e depois atualize este painel.",
       "ruleLimit": "Esta comunidade atingiu o limite de 100 automações.",
       "staleRule": "Esta automação foi alterada em outra sessão. Feche o editor e atualize antes de tentar novamente.",
@@ -1195,6 +1196,8 @@
     "name": "Nome da automação",
     "number": "Número",
     "operators": {
+      "after": "Depois",
+      "before": "Antes",
       "choiceequals": "É um de",
       "choicenotEquals": "Não é um de",
       "containsAll": "Contém todos",
@@ -1203,25 +1206,29 @@
       "equals": "Igual",
       "gt": "Maior que",
       "gte": "Pelo menos",
+      "isEmpty": "Está vazio",
       "isNotEmpty": "Não está vazio",
       "lt": "Menor que",
       "lte": "No máximo",
       "notEquals": "Não é igual a",
       "numberEquals": "Número igual a",
       "numberNotEquals": "Número não é igual a",
+      "onOrAfter": "Em ou depois de",
       "onOrBefore": "No ou antes"
     },
     "or": "OU",
     "refresh": "Atualizar",
     "removeCondition": "Remover condição",
     "save": "Salvar automação",
+    "selections": "Seleções",
     "setField": "Definir campo",
-    "targetHint": "Apenas campos não repetidos podem ser atualizados. Campos sincronizados, somente leitura e exclusivos estão excluídos. Campos apenas para supervisor estão excluídos, exceto campos de status.",
+    "targetHint": "Automações criadas por administradores podem atualizar campos somente leitura e de supervisor. Campos repetidos, valores sincronizados e campos únicos não podem ser atualizados.",
     "template": "Modelo de registo",
     "then": "Então",
     "title": "Automações",
     "toValue": "Para valor",
     "triggerHint": "Executa na criação e na atualização, incluindo registros civis e salvamentos via API.",
+    "unnamedField": "Campo {type} sem nome",
     "value": "Valor",
     "values": "Valores aceitos",
     "when": "Quando"
@@ -3032,6 +3039,14 @@
     "label": "Etiqueta",
     "question": "Pergunta",
     "questions": "Perguntas:"
+  },
+  "recordEditing": {
+    "botLimit": "Para conceder edição de campo selecionado, use o editor de conta ou de chave de permissão. Os códigos de permissão do Sonoran Bot não incluem esta permissão.",
+    "fieldDescription": "Permite que usuários com Edit selected fields on others' records alterem este campo. Edit own e Edit any não exigem esta configuração. Campos somente para supervisores ainda exigem permissão de Supervisor fields; campos somente leitura permanecem bloqueados.",
+    "fieldLabel": "Permitir edição limitada",
+    "includedByAny": "Incluído por Editar qualquer",
+    "selectedDescription": "Alterar apenas os campos marcados como Permitir edição limitada em registros pertencentes a outras contas. Não concede edição dos seus próprios registros.",
+    "selectedLabel": "Editar campos selecionados em registros de outros"
   },
   "releaseHighlights": {
     "archive": "Explorar lançamentos",
