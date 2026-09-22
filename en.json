@@ -3670,5 +3670,2628 @@
   "toneBoard": {
     "playStack": "Play stack",
     "stack": "Stack"
+  },
+  "fiveMConfig": {
+    "fields": {
+      "": {
+        "label": "",
+        "help": ""
+      },
+      "_core": {
+        "label": "General settings",
+        "help": ""
+      },
+      "_core_postTime": {
+        "label": "Post time",
+        "help": ""
+      },
+      "_core_linkCommand": {
+        "label": "Link command",
+        "help": ""
+      },
+      "_core_linkPollIntervalMs": {
+        "label": "Link poll interval ms",
+        "help": ""
+      },
+      "_core_linkPopupTitleText": {
+        "label": "Link popup title text",
+        "help": ""
+      },
+      "_core_linkButtonText": {
+        "label": "Link button text",
+        "help": ""
+      },
+      "_core_primaryIdentifier": {
+        "label": "Primary identifier",
+        "help": ""
+      },
+      "_core_apiSendEnabled": {
+        "label": "Api send enabled",
+        "help": ""
+      },
+      "_core_debugMode": {
+        "label": "Debug mode",
+        "help": ""
+      },
+      "_core_notificationSystem": {
+        "label": "Notification system",
+        "help": ""
+      },
+      "_core_updateBranch": {
+        "label": "Update branch",
+        "help": ""
+      },
+      "_core_statusLabels": {
+        "label": "Status labels",
+        "help": ""
+      },
+      "_core_statusLabels_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_core_allowAutoUpdate": {
+        "label": "Allow auto update",
+        "help": ""
+      },
+      "_core_autoUpdateUrl": {
+        "label": "Auto update url",
+        "help": ""
+      },
+      "_core_allowUpdateWithPlayers": {
+        "label": "Allow update with players",
+        "help": ""
+      },
+      "_core_noUnitTimer": {
+        "label": "No unit timer",
+        "help": ""
+      },
+      "_core_enablePushEventForwarding": {
+        "label": "Enable push event forwarding",
+        "help": ""
+      },
+      "_core_pushEventForwardUrl": {
+        "label": "Push event forward url",
+        "help": ""
+      },
+      "_core_disableOverride": {
+        "label": "Disable override",
+        "help": ""
+      },
+      "_plugins": {
+        "label": "Plugins",
+        "help": ""
+      },
+      "_plugins_bodycam": {
+        "label": "Body camera",
+        "help": ""
+      },
+      "_plugins_bodycam_autoEnableWithLights": {
+        "label": "Auto enable with lights",
+        "help": "Automaticlly enable bodycam when lights are enabled / disabled"
+      },
+      "_plugins_bodycam_autoEnableWithWeapons": {
+        "label": "Auto enable with weapons",
+        "help": "Automaticlly enable bodycam when a weapon is drawn."
+      },
+      "_plugins_bodycam_beepFrequency": {
+        "label": "Beep frequency",
+        "help": "Adjusts the frequency at which unit body camera beeps when turned on(in milliseconds)."
+      },
+      "_plugins_bodycam_beepRange": {
+        "label": "Beep range",
+        "help": "Adjusts the range at which a person can hear the bodycam beeps"
+      },
+      "_plugins_bodycam_beepType": {
+        "label": "Beep type",
+        "help": ""
+      },
+      "_plugins_bodycam_clothing": {
+        "label": "Clothing",
+        "help": ""
+      },
+      "_plugins_bodycam_command": {
+        "label": "Command",
+        "help": "The command name to toggle your body camera on or off."
+      },
+      "_plugins_bodycam_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_bodycam_defaultKeybind": {
+        "label": "Default keybind",
+        "help": "The default keybind for toggling the bodycam."
+      },
+      "_plugins_bodycam_enableAnimation": {
+        "label": "Enable animation",
+        "help": "Enables or disables animations on start up"
+      },
+      "_plugins_bodycam_enableBeeps": {
+        "label": "Enable beeps",
+        "help": "Enables or disables the body camera beeping when turned on."
+      },
+      "_plugins_bodycam_enableOverlay": {
+        "label": "Enable overlay",
+        "help": "Enables or disables the blinking body camera image on screen when enabled."
+      },
+      "_plugins_bodycam_enablePadShake": {
+        "label": "Enable pad shake",
+        "help": "Enables or disables controller vibration during bodycam beeps."
+      },
+      "_plugins_bodycam_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_bodycam_forceOffAce": {
+        "label": "Force off ace",
+        "help": "Ace permission required for /bodycam forceoff (leave blank to disable ace check)."
+      },
+      "_plugins_bodycam_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_bodycam_overlayLocation": {
+        "label": "Overlay location",
+        "help": ""
+      },
+      "_plugins_bodycam_peerStream": {
+        "label": "Peer stream",
+        "help": "Streams the bodycam video to PeerJS using a WebGL canvas capture in NUI."
+      },
+      "_plugins_bodycam_peerStream_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_bodycam_peerStream_fps": {
+        "label": "Fps",
+        "help": "Capture FPS for canvas.captureStream()."
+      },
+      "_plugins_bodycam_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_bodycam_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_bodycam_recording": {
+        "label": "Recording",
+        "help": "Additive local recording configuration layered on top of the existing bodycam stream."
+      },
+      "_plugins_bodycam_recording_allowManualRecordingDuringPrivacyOverride": {
+        "label": "Allow manual recording during privacy override",
+        "help": "Privacy precedence: forceoff blocks remote/export/automatic control, but local manual recording can still be requested."
+      },
+      "_plugins_bodycam_recording_audioBitrate": {
+        "label": "Audio bitrate",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_autoRecordCooldownMs": {
+        "label": "Auto record cooldown ms",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_autoRecordEvents": {
+        "label": "Auto record events",
+        "help": "Automatic recording triggers and debounce protection."
+      },
+      "_plugins_bodycam_recording_autoRecordEvents_item": {
+        "label": "Item",
+        "help": "Automatic recording triggers and debounce protection."
+      },
+      "_plugins_bodycam_recording_blockRemoteRecordingDuringPrivacyOverride": {
+        "label": "Block remote recording during privacy override",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_commands": {
+        "label": "Commands",
+        "help": "Optional standalone recording toggle command/keybind. Leave blank to disable."
+      },
+      "_plugins_bodycam_recording_commands_toggleRecording": {
+        "label": "Toggle recording",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_enableRecordingSfx": {
+        "label": "Enable recording sfx",
+        "help": "Recording SFX."
+      },
+      "_plugins_bodycam_recording_fps": {
+        "label": "Fps",
+        "help": "Capture FPS for canvas.captureStream()."
+      },
+      "_plugins_bodycam_recording_height": {
+        "label": "Height",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_keybinds": {
+        "label": "Keybinds",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_keybinds_toggleRecording": {
+        "label": "Toggle recording",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_liveClipSeconds": {
+        "label": "Live clip seconds",
+        "help": "Live segment duration recorded after a trigger starts a clip."
+      },
+      "_plugins_bodycam_recording_maxClipSeconds": {
+        "label": "Max clip seconds",
+        "help": "Hard max upload duration. Sonoran upload rejects clips over 120 seconds."
+      },
+      "_plugins_bodycam_recording_maxFileSizeBytes": {
+        "label": "Max file size bytes",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_mimeType": {
+        "label": "Mime type",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_recordingStartSfx": {
+        "label": "Recording start sfx",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_recordingStopSfx": {
+        "label": "Recording stop sfx",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_shadowBufferSeconds": {
+        "label": "Shadow buffer seconds",
+        "help": "Rolling local shadow buffer duration. Valid range: 0-60 seconds."
+      },
+      "_plugins_bodycam_recording_videoBitrate": {
+        "label": "Video bitrate",
+        "help": ""
+      },
+      "_plugins_bodycam_recording_width": {
+        "label": "Width",
+        "help": "Recording/export targets. These only apply to clip export/upload, not the live stream renderer."
+      },
+      "_plugins_bodycam_requireUnitDuty": {
+        "label": "Require unit duty",
+        "help": "if true, the player must be onduty in CAD to use the bodycam"
+      },
+      "_plugins_bodycam_weapons": {
+        "label": "Weapons",
+        "help": "Weapons that when drawn enable bodycam."
+      },
+      "_plugins_bodycam_weapons_item": {
+        "label": "Item",
+        "help": "Weapons that when drawn enable bodycam."
+      },
+      "_plugins_caddisplay": {
+        "label": "In-vehicle and station CAD displays",
+        "help": ""
+      },
+      "_plugins_caddisplay_acePerms": {
+        "label": "Ace perms",
+        "help": "Ace Permissions Section --"
+      },
+      "_plugins_caddisplay_acePerms_aceObjectAdminUseMenu": {
+        "label": "Ace object admin use menu",
+        "help": "Ace to save/delete placements for vehicle models"
+      },
+      "_plugins_caddisplay_acePerms_aceObjectUseMenu": {
+        "label": "Ace object use menu",
+        "help": "Ace to open/attach CAD displays"
+      },
+      "_plugins_caddisplay_acePerms_aceWorldDisplayAdmin": {
+        "label": "Ace world display admin",
+        "help": "Ace to save/delete station display placements"
+      },
+      "_plugins_caddisplay_allowlistedCars": {
+        "label": "Allowlisted cars",
+        "help": ""
+      },
+      "_plugins_caddisplay_allowlistedCars_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_caddisplay_builtinScreens": {
+        "label": "Builtin screens",
+        "help": "Vehicles with built-in laptop screens you want to skin with the CAD DUI Each entry needs: vehicle         - spawn code (model name) for the vehicle screenTexture   - texture name on the built-in laptop model to replace with the DUI textureWidth    - optional width of the built-in texture in pixels (used to scale the DUI), default 512 textureHeight   - optional height of the built-in texture in pixels (used to scale the DUI), default 256"
+      },
+      "_plugins_caddisplay_commands": {
+        "label": "Commands",
+        "help": ""
+      },
+      "_plugins_caddisplay_commands_cadDisplayMenu": {
+        "label": "Cad display menu",
+        "help": ""
+      },
+      "_plugins_caddisplay_commands_restricted": {
+        "label": "Restricted",
+        "help": "should the CAD display menu be restricted?"
+      },
+      "_plugins_caddisplay_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_caddisplay_custom": {
+        "label": "Custom",
+        "help": "Configuration For Custom Permissions Handling --"
+      },
+      "_plugins_caddisplay_custom_checkPermsServerSide": {
+        "label": "Check perms server side",
+        "help": "If true the permission event will be sent out to the server side resource"
+      },
+      "_plugins_caddisplay_custom_permissionCheck": {
+        "label": "Permission check",
+        "help": "Always called server side."
+      },
+      "_plugins_caddisplay_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_caddisplay_framework": {
+        "label": "Framework",
+        "help": "Framework Related Settings --"
+      },
+      "_plugins_caddisplay_framework_adminJobNames": {
+        "label": "Admin job names",
+        "help": "Jobs allowed to save/delete placements"
+      },
+      "_plugins_caddisplay_framework_adminJobNames_item": {
+        "label": "Item",
+        "help": "Jobs allowed to save/delete placements"
+      },
+      "_plugins_caddisplay_framework_civilianJobNames": {
+        "label": "Civilian job names",
+        "help": "Jobs allowed to open the menu"
+      },
+      "_plugins_caddisplay_framework_civilianJobNames_item": {
+        "label": "Item",
+        "help": "Jobs allowed to open the menu"
+      },
+      "_plugins_caddisplay_framework_frameworkType": {
+        "label": "Framework type",
+        "help": "Options: esx or qb-core"
+      },
+      "_plugins_caddisplay_framework_useCivilianJobListAsBlacklist": {
+        "label": "Use civilian job list as blacklist",
+        "help": "Treat the civilian job list as a blacklist rather than whitelist"
+      },
+      "_plugins_caddisplay_general": {
+        "label": "General",
+        "help": ""
+      },
+      "_plugins_caddisplay_general_useAllowlistAsBlacklist": {
+        "label": "Use allowlist as blacklist",
+        "help": "If true, allowlistedCars is treated as a blacklist"
+      },
+      "_plugins_caddisplay_interactControl": {
+        "label": "Interact control",
+        "help": "Fallback control code (INPUT_DETONATE) - avoid horn (E)"
+      },
+      "_plugins_caddisplay_interactKey": {
+        "label": "Interact key",
+        "help": "Default key mapping for interaction (RegisterKeyMapping)"
+      },
+      "_plugins_caddisplay_interactRange": {
+        "label": "Interact range",
+        "help": "Distance in meters to allow interacting with the laptop"
+      },
+      "_plugins_caddisplay_lang": {
+        "label": "Lang",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_addNewDisplayHelp": {
+        "label": "Add new display help",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_attachButton": {
+        "label": "Attach button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_attachMenuButton": {
+        "label": "Attach menu button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_attachingSubMenu": {
+        "label": "Attaching sub menu",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_cannotGoFaster": {
+        "label": "Cannot go faster",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_cannotGoSlower": {
+        "label": "Cannot go slower",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_confirmPlacementButton": {
+        "label": "Confirm placement button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_creditsPanel": {
+        "label": "Credits panel",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_deleteMenuButton": {
+        "label": "Delete menu button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_deletionCancelButton": {
+        "label": "Deletion cancel button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_deletionCancelled": {
+        "label": "Deletion cancelled",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_deletionConfirmationButton": {
+        "label": "Deletion confirmation button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_deletionSubMenu": {
+        "label": "Deletion sub menu",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_detachButton": {
+        "label": "Detach button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_menuHeader": {
+        "label": "Menu header",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_modelComboBox": {
+        "label": "Model combo box",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_noDisplayFound": {
+        "label": "No display found",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_notInVeh": {
+        "label": "Not in veh",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_object": {
+        "label": "Object",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_objectName": {
+        "label": "Object name",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_spawnMenuButton": {
+        "label": "Spawn menu button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_spawningSubMenu": {
+        "label": "Spawning sub menu",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_vehAlreadyDisplay": {
+        "label": "Veh already display",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_vehAlreadyDisplayNoti": {
+        "label": "Veh already display noti",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_vehNotCompatible": {
+        "label": "Veh not compatible",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_vehicleBone": {
+        "label": "Vehicle bone",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_vehicleBoneComboBox": {
+        "label": "Vehicle bone combo box",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldCancelButton": {
+        "label": "World cancel button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldDeleteButton": {
+        "label": "World delete button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldDeletionCancelled": {
+        "label": "World deletion cancelled",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldEditButton": {
+        "label": "World edit button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldMenuButton": {
+        "label": "World menu button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldMenuHeader": {
+        "label": "World menu header",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldNoDisplays": {
+        "label": "World no displays",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldPlacementSelect": {
+        "label": "World placement select",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldPlacementSubMenu": {
+        "label": "World placement sub menu",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldSaveButton": {
+        "label": "World save button",
+        "help": ""
+      },
+      "_plugins_caddisplay_lang_worldSpawnButton": {
+        "label": "World spawn button",
+        "help": ""
+      },
+      "_plugins_caddisplay_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_caddisplay_permissionMode": {
+        "label": "Permission mode",
+        "help": "Available Options: ace, framework, custom"
+      },
+      "_plugins_caddisplay_pluginAuthor": {
+        "label": "Plugin author",
+        "help": ""
+      },
+      "_plugins_caddisplay_pluginName": {
+        "label": "Plugin name",
+        "help": ""
+      },
+      "_plugins_caddisplay_requestAcceptKey": {
+        "label": "Request accept key",
+        "help": "Key to accept a control request"
+      },
+      "_plugins_caddisplay_requestDenyKey": {
+        "label": "Request deny key",
+        "help": "Key to deny a control request"
+      },
+      "_plugins_caddisplay_worldDisplays": {
+        "label": "World displays",
+        "help": "Station/world CAD display placements (static around the map) These defaults are approximate exterior locations for standard GTA V PD stations. Adjust as needed using the in-game menu."
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements": {
+        "label": "Default placements",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_displayModel": {
+        "label": "Display model",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_label": {
+        "label": "Label",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_position": {
+        "label": "Position",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_position_x": {
+        "label": "X",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_position_y": {
+        "label": "Y",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_position_z": {
+        "label": "Z",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_rotation": {
+        "label": "Rotation",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_rotation_pitch": {
+        "label": "Pitch",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_rotation_roll": {
+        "label": "Roll",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_rotation_yaw": {
+        "label": "Yaw",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_scale": {
+        "label": "Scale",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_scale_x": {
+        "label": "X",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_scale_y": {
+        "label": "Y",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_defaultPlacements_item_scale_z": {
+        "label": "Z",
+        "help": ""
+      },
+      "_plugins_caddisplay_worldDisplays_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_callcommands": {
+        "label": "Call commands",
+        "help": ""
+      },
+      "_plugins_callcommands_addPanicCall": {
+        "label": "Add panic call",
+        "help": "adds an emergency call when panic button is pressed"
+      },
+      "_plugins_callcommands_callTypes": {
+        "label": "Call types",
+        "help": "put your configuration options below"
+      },
+      "_plugins_callcommands_callTypes_item": {
+        "label": "Item",
+        "help": "put your configuration options below"
+      },
+      "_plugins_callcommands_callTypes_item_command": {
+        "label": "Command",
+        "help": ""
+      },
+      "_plugins_callcommands_callTypes_item_descriptionPrefix": {
+        "label": "Description prefix",
+        "help": ""
+      },
+      "_plugins_callcommands_callTypes_item_isEmergency": {
+        "label": "Is emergency",
+        "help": ""
+      },
+      "_plugins_callcommands_callTypes_item_suggestionText": {
+        "label": "Suggestion text",
+        "help": ""
+      },
+      "_plugins_callcommands_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_callcommands_enablePanic": {
+        "label": "Enable panic",
+        "help": ""
+      },
+      "_plugins_callcommands_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_callcommands_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_callcommands_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_callcommands_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_callcommands_useCallLocation": {
+        "label": "Use call location",
+        "help": "If true, the postal of the call with be used as the call location. If false, the player's current postal will be used."
+      },
+      "_plugins_callcommands_usePositionForMetadata": {
+        "label": "Use position for metadata",
+        "help": ""
+      },
+      "_plugins_calltemplates": {
+        "label": "Dispatch call templates",
+        "help": ""
+      },
+      "_plugins_calltemplates_callTypeDirectory": {
+        "label": "Call type directory",
+        "help": "Path containing exported call type JSON templates"
+      },
+      "_plugins_calltemplates_commands": {
+        "label": "Commands",
+        "help": "Command to template mappings"
+      },
+      "_plugins_calltemplates_commands_item": {
+        "label": "Item",
+        "help": "Command to template mappings"
+      },
+      "_plugins_calltemplates_commands_item_callTypeFile": {
+        "label": "Call type file",
+        "help": ""
+      },
+      "_plugins_calltemplates_commands_item_command": {
+        "label": "Command",
+        "help": ""
+      },
+      "_plugins_calltemplates_commands_item_descriptionPrefix": {
+        "label": "Description prefix",
+        "help": ""
+      },
+      "_plugins_calltemplates_commands_item_includePlayerUnit": {
+        "label": "Include player unit",
+        "help": ""
+      },
+      "_plugins_calltemplates_commands_item_includeWraithPlate": {
+        "label": "Include wraith plate",
+        "help": "attach locked plate from wraithv2 if available"
+      },
+      "_plugins_calltemplates_commands_item_suggestionText": {
+        "label": "Suggestion text",
+        "help": ""
+      },
+      "_plugins_calltemplates_commands_item_useAcePermissions": {
+        "label": "Use ace permissions",
+        "help": "requires ace permission \"command.ts\""
+      },
+      "_plugins_calltemplates_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_calltemplates_defaultOrigin": {
+        "label": "Default origin",
+        "help": "0 = CALLER / 1 = RADIO DISPATCH / 2 = OBSERVED / 3 = WALK_UP"
+      },
+      "_plugins_calltemplates_defaultPriority": {
+        "label": "Default priority",
+        "help": "1, 2, or 3"
+      },
+      "_plugins_calltemplates_defaultStatus": {
+        "label": "Default status",
+        "help": "0 = PENDING / 1 = ACTIVE / 2 = CLOSED"
+      },
+      "_plugins_calltemplates_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_calltemplates_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_calltemplates_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_calltemplates_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_calltemplates_reloadTemplatesOnEachUse": {
+        "label": "Reload templates on each use",
+        "help": "When true, templates are re-read every command execution (useful while editing files)"
+      },
+      "_plugins_calltemplates_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": ""
+      },
+      "_plugins_calltemplates_requiresPlugins_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_calltemplates_requiresPlugins_item_critical": {
+        "label": "Critical",
+        "help": ""
+      },
+      "_plugins_calltemplates_requiresPlugins_item_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_civintegration": {
+        "label": "Civilian integration",
+        "help": ""
+      },
+      "_plugins_civintegration_allowCustomIds": {
+        "label": "Allow custom ids",
+        "help": ""
+      },
+      "_plugins_civintegration_allowPurge": {
+        "label": "Allow purge",
+        "help": ""
+      },
+      "_plugins_civintegration_cacheTime": {
+        "label": "Cache time",
+        "help": "one hour"
+      },
+      "_plugins_civintegration_commandName": {
+        "label": "Command name",
+        "help": ""
+      },
+      "_plugins_civintegration_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_civintegration_enableCommands": {
+        "label": "Enable commands",
+        "help": ""
+      },
+      "_plugins_civintegration_enableIDCardUI": {
+        "label": "Enable idcard ui",
+        "help": ""
+      },
+      "_plugins_civintegration_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_civintegration_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_civintegration_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_civintegration_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_civintegration_showNearbyDistance": {
+        "label": "Show nearby distance",
+        "help": ""
+      },
+      "_plugins_civreg": {
+        "label": "Civilian registration",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds": {
+        "label": "Autofill field ids",
+        "help": "Map framework identity values to field UIDs from template #7. Change the value on the right when a field has a custom Field Mapping ID in CAD."
+      },
+      "_plugins_civreg_autofillFieldIds_dob": {
+        "label": "Dob",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_first": {
+        "label": "First",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_height": {
+        "label": "Height",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_last": {
+        "label": "Last",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_nationality": {
+        "label": "Nationality",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_phone": {
+        "label": "Phone",
+        "help": ""
+      },
+      "_plugins_civreg_autofillFieldIds_sex": {
+        "label": "Sex",
+        "help": ""
+      },
+      "_plugins_civreg_commandName": {
+        "label": "Command name",
+        "help": ""
+      },
+      "_plugins_civreg_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync": {
+        "label": "Database sync",
+        "help": "When CAD database sync and character mapping are enabled, CivReg writes portraits to the framework database instead of creating API characters. These defaults match the standard QBCore and ESX character schemas."
+      },
+      "_plugins_civreg_databaseSync_esx": {
+        "label": "Esx",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync_esx_characterIdColumn": {
+        "label": "Character id column",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync_esx_tableName": {
+        "label": "Table name",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync_qbCore": {
+        "label": "Qb core",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync_qbCore_characterIdColumn": {
+        "label": "Character id column",
+        "help": ""
+      },
+      "_plugins_civreg_databaseSync_qbCore_tableName": {
+        "label": "Table name",
+        "help": ""
+      },
+      "_plugins_civreg_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_civreg_language": {
+        "label": "Language",
+        "help": ""
+      },
+      "_plugins_civreg_language_cancel": {
+        "label": "Cancel",
+        "help": ""
+      },
+      "_plugins_civreg_language_databaseSyncCommandNotice": {
+        "label": "Database sync command notice",
+        "help": ""
+      },
+      "_plugins_civreg_language_databaseSyncSuccess": {
+        "label": "Database sync success",
+        "help": ""
+      },
+      "_plugins_civreg_language_helpMsg": {
+        "label": "Help msg",
+        "help": ""
+      },
+      "_plugins_civreg_language_loading": {
+        "label": "Loading",
+        "help": ""
+      },
+      "_plugins_civreg_language_selfieAction": {
+        "label": "Selfie action",
+        "help": ""
+      },
+      "_plugins_civreg_language_selfieHint": {
+        "label": "Selfie hint",
+        "help": ""
+      },
+      "_plugins_civreg_language_submit": {
+        "label": "Submit",
+        "help": ""
+      },
+      "_plugins_civreg_language_subtitle": {
+        "label": "Subtitle",
+        "help": ""
+      },
+      "_plugins_civreg_language_success": {
+        "label": "Success",
+        "help": ""
+      },
+      "_plugins_civreg_language_title": {
+        "label": "Title",
+        "help": ""
+      },
+      "_plugins_civreg_maxSelfieBytes": {
+        "label": "Max selfie bytes",
+        "help": "Portraits are submitted to CAD as base64 image data. This limit applies to the decoded size of each PNG or JPEG. No public image hosting is needed."
+      },
+      "_plugins_civreg_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_civreg_pluginAuthor": {
+        "label": "Plugin author",
+        "help": ""
+      },
+      "_plugins_civreg_pluginName": {
+        "label": "Plugin name",
+        "help": ""
+      },
+      "_plugins_civreg_templateCacheSeconds": {
+        "label": "Template cache seconds",
+        "help": "A short shared cache prevents multiple players from exhausting the CAD template endpoint's rate limit. The form is never loaded from a bundled copy."
+      },
+      "_plugins_civreg_templateId": {
+        "label": "Template id",
+        "help": ""
+      },
+      "_plugins_dispatchnotify": {
+        "label": "Dispatch notifications",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_addNoteSubcommand": {
+        "label": "Add note subcommand",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_addPlateSubcommand": {
+        "label": "Add plate subcommand",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_callTitle": {
+        "label": "Call title",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_civilCallType": {
+        "label": "Civil call type",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_commandName": {
+        "label": "Command name",
+        "help": "Base command for dispatch notify actions"
+      },
+      "_plugins_dispatchnotify_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_dispatchDisablesSelfResponse": {
+        "label": "Dispatch disables self response",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_dispatchDisablesUnitNotify": {
+        "label": "Dispatch disables unit notify",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_dotCallType": {
+        "label": "Dot call type",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_emergencyCallType": {
+        "label": "Emergency call type",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableAddNote": {
+        "label": "Enable add note",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableAddPlate": {
+        "label": "Enable add plate",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableCallerNotify": {
+        "label": "Enable caller notify",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableUnitNotify": {
+        "label": "Enable unit notify",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableUnitNotifyToggleCommand": {
+        "label": "Enable unit notify toggle command",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enableUnitResponse": {
+        "label": "Enable unit response",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_esxJobsAllowed": {
+        "label": "Esx jobs allowed",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_gpsToggleSubcommand": {
+        "label": "Gps toggle subcommand",
+        "help": "subcommand for toggling automatic GPS waypointing"
+      },
+      "_plugins_dispatchnotify_incomingCallMessage": {
+        "label": "Incoming call message",
+        "help": "incomingCallMessage = \"<b>Incoming Call!</b><br/>Location: {'{'}location{'}'}<br/>Description: {'{'}description{'}'}<br/>Use command /r911 <b>{'{'}callId{'}'}</b> to respond!\","
+      },
+      "_plugins_dispatchnotify_incomingCallMessageNoResponse": {
+        "label": "Incoming call message no response",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_noteMessage": {
+        "label": "Note message",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_notificationOverride": {
+        "label": "Notification override",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_notifyMessage": {
+        "label": "Notify message",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_onSceneHandler": {
+        "label": "On scene handler",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_onSceneIndex": {
+        "label": "On scene index",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_dispatchnotify_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_dispatchnotify_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_requiresPlugins_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_requiresPlugins_item_critical": {
+        "label": "Critical",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_requiresPlugins_item_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_respondSubcommandName": {
+        "label": "Respond subcommand name",
+        "help": "Subcommand to respond to calls with"
+      },
+      "_plugins_dispatchnotify_sendNotesToUnits": {
+        "label": "Send notes to units",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_unitDutyMethod": {
+        "label": "Unit duty method",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_unitNotifyToggleAce": {
+        "label": "Unit notify toggle ace",
+        "help": "Leave blank (\"\") to allow anyone to use the command."
+      },
+      "_plugins_dispatchnotify_unitNotifyToggleSubcommand": {
+        "label": "Unit notify toggle subcommand",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_unitStatusAttachedMessage": {
+        "label": "Unit status attached message",
+        "help": "[[ Unit status notifications use notifyMethod ]]"
+      },
+      "_plugins_dispatchnotify_unitStatusDetachedMessage": {
+        "label": "Unit status detached message",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_waypointFallbackEnabled": {
+        "label": "Waypoint fallback enabled",
+        "help": ""
+      },
+      "_plugins_dispatchnotify_waypointType": {
+        "label": "Waypoint type",
+        "help": ""
+      },
+      "_plugins_ersintegration": {
+        "label": "Emergency Response Simulator",
+        "help": ""
+      },
+      "_plugins_ersintegration_DOBFormat": {
+        "label": "Dobformat",
+        "help": "Make sure this matches {'|'} en: dd/mm/yyyy {'|'} us: mm/dd/yyyy {'|'} iso: yyyy/mm/dd"
+      },
+      "_plugins_ersintegration_autoAddCall": {
+        "label": "Auto add call",
+        "help": "Automatically add members to the call when an ERS callout is accepted"
+      },
+      "_plugins_ersintegration_callCodes": {
+        "label": "Call codes",
+        "help": ""
+      },
+      "_plugins_ersintegration_callPriority": {
+        "label": "Call priority",
+        "help": "Priority of the call created in CAD (1-3) {'|'} Only used if createEmergencyCall is true"
+      },
+      "_plugins_ersintegration_clearRecordsAfter": {
+        "label": "Clear records after",
+        "help": "Clear records after this many minutes (0 = never)"
+      },
+      "_plugins_ersintegration_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_ersintegration_create911Call": {
+        "label": "Create911 call",
+        "help": "Create a 911 call when an ERS callout is created"
+      },
+      "_plugins_ersintegration_createEmergencyCall": {
+        "label": "Create emergency call",
+        "help": "Create an emergency call when an ERS callout is accepted"
+      },
+      "_plugins_ersintegration_customRecords": {
+        "label": "Custom records",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_boloRecordID": {
+        "label": "Bolo record id",
+        "help": "Record ID for BOLO records"
+      },
+      "_plugins_ersintegration_customRecords_boloRecordValues": {
+        "label": "Bolo record values",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_civilianRecordID": {
+        "label": "Civilian record id",
+        "help": "Record ID for civilian records"
+      },
+      "_plugins_ersintegration_customRecords_civilianValues": {
+        "label": "Civilian values",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseRecordId": {
+        "label": "License record id",
+        "help": "Record ID for license records"
+      },
+      "_plugins_ersintegration_customRecords_licenseRecordValues": {
+        "label": "License record values",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseTypeConfigs": {
+        "label": "License type configs",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseTypeConfigs_BOAT_is_valid": {
+        "label": "Is valid",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseTypeConfigs_BOAT_license": {
+        "label": "License",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseTypeConfigs_BOAT_type": {
+        "label": "Type",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_licenseTypeField": {
+        "label": "License type field",
+        "help": "Field ID for license type"
+      },
+      "_plugins_ersintegration_customRecords_vehicleRegistrationRecordID": {
+        "label": "Vehicle registration record id",
+        "help": "Record ID for vehicle registration records"
+      },
+      "_plugins_ersintegration_customRecords_vehicleRegistrationValues": {
+        "label": "Vehicle registration values",
+        "help": ""
+      },
+      "_plugins_ersintegration_customRecords_warrantDescription": {
+        "label": "Warrant description",
+        "help": "Field ID for warrant description"
+      },
+      "_plugins_ersintegration_customRecords_warrantFlags": {
+        "label": "Warrant flags",
+        "help": "Field ID for warrant flags"
+      },
+      "_plugins_ersintegration_customRecords_warrantRecordID": {
+        "label": "Warrant record id",
+        "help": "Record ID for warrant records"
+      },
+      "_plugins_ersintegration_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_ersintegration_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_ersintegration_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_forcereg": {
+        "label": "Required account linking",
+        "help": ""
+      },
+      "_plugins_forcereg_allowPopupCloseWhenUnlinked": {
+        "label": "Allow popup close when unlinked",
+        "help": "When not using Freeze, should the popup still be closable while unlinked? This replaces the old top-level config.allowPopupCloseWhenUnlinked setting."
+      },
+      "_plugins_forcereg_autoOpenLinkPopup": {
+        "label": "Auto open link popup",
+        "help": "Replaces the old top-level config.autoOpenLinkPopup setting."
+      },
+      "_plugins_forcereg_captiveMessage": {
+        "label": "Captive message",
+        "help": "What message to show with the above options? Nag, Freeze, and Whitelist can use colors."
+      },
+      "_plugins_forcereg_captiveOption": {
+        "label": "Captive option",
+        "help": ""
+      },
+      "_plugins_forcereg_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_forcereg_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_forcereg_instructionalMessage": {
+        "label": "Instructional message",
+        "help": "What does the user do once they link?"
+      },
+      "_plugins_forcereg_linkButtonText": {
+        "label": "Link button text",
+        "help": ""
+      },
+      "_plugins_forcereg_linkCommand": {
+        "label": "Link command",
+        "help": "Optional override for the /link command name used in ForceReg text and the link UI."
+      },
+      "_plugins_forcereg_linkPollIntervalMs": {
+        "label": "Link poll interval ms",
+        "help": "Optional override for how often the link UI polls for link completion."
+      },
+      "_plugins_forcereg_linkPopupTitleText": {
+        "label": "Link popup title text",
+        "help": "Optional override for the link popup title/button text while ForceReg is active."
+      },
+      "_plugins_forcereg_nagDrawTextLocation": {
+        "label": "Nag draw text location",
+        "help": "If using Nag, should the text be centered in the users screen or at the top? ('Center' or 'Top')"
+      },
+      "_plugins_forcereg_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_forcereg_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_forcereg_requireLink": {
+        "label": "Require link",
+        "help": "Controls whether ForceReg actually enforces CAD linking. This replaces the old top-level config.requireLink setting."
+      },
+      "_plugins_forcereg_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_forcereg_verifyMessage": {
+        "label": "Verify message",
+        "help": "What message to show under the notice. This should tell players how to reopen the CAD link popup."
+      },
+      "_plugins_forcereg_whitelist": {
+        "label": "Whitelist",
+        "help": "Would you like to only show this message to players who are whitelisted?"
+      },
+      "_plugins_forcereg_whitelist_aces": {
+        "label": "Aces",
+        "help": "ace permissions will see the message"
+      },
+      "_plugins_forcereg_whitelist_aces_item": {
+        "label": "Item",
+        "help": "ace permissions will see the message"
+      },
+      "_plugins_forcereg_whitelist_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_forcereg_whitelist_jobs": {
+        "label": "Jobs",
+        "help": "QB or ESX jobs will see the message"
+      },
+      "_plugins_forcereg_whitelist_jobs_item": {
+        "label": "Item",
+        "help": "QB or ESX jobs will see the message"
+      },
+      "_plugins_forcereg_whitelist_mode": {
+        "label": "Mode",
+        "help": "qb-core, esx, ace"
+      },
+      "_plugins_frameworksupport": {
+        "label": "Framework and fines",
+        "help": ""
+      },
+      "_plugins_frameworksupport_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_frameworksupport_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_frameworksupport_fineNotify": {
+        "label": "Fine notify",
+        "help": "Send a message in chat when someone is fined."
+      },
+      "_plugins_frameworksupport_fineableForms": {
+        "label": "Fineable forms",
+        "help": "List of form names that should issue fines (Don't Include Warrants or Bolos)"
+      },
+      "_plugins_frameworksupport_fineableForms_item": {
+        "label": "Item",
+        "help": "List of form names that should issue fines (Don't Include Warrants or Bolos)"
+      },
+      "_plugins_frameworksupport_identityType": {
+        "label": "Identity type",
+        "help": "Newer ESX versions use license instead of steam for identity, specify the other below if different"
+      },
+      "_plugins_frameworksupport_issueFines": {
+        "label": "Issue fines",
+        "help": "Use the fine system"
+      },
+      "_plugins_frameworksupport_legacyESX": {
+        "label": "Legacy esx",
+        "help": "Set to true if default settings do not get character name properly (older esx_identity/ESX legacy versions)"
+      },
+      "_plugins_frameworksupport_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_frameworksupport_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_frameworksupport_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_frameworksupport_qbFineMessage": {
+        "label": "Qb fine message",
+        "help": "Placeholders $AMOUNT and $OFFICER_NAME where $AMOUNT is the fine total and $OFFICER_NAME is the Unit Name of the officer issuing the fine"
+      },
+      "_plugins_frameworksupport_qbManagementAccountNames": {
+        "label": "Qb management account names",
+        "help": "Setup the qb-management account names dependent on department issuing fine"
+      },
+      "_plugins_frameworksupport_qbNotifyFinedPlayer": {
+        "label": "Qb notify fined player",
+        "help": ""
+      },
+      "_plugins_frameworksupport_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_frameworksupport_usePrefix": {
+        "label": "Use prefix",
+        "help": "Some ESX versions don't use the prefix (such as license:abcdef), set to false to disable the prefix"
+      },
+      "_plugins_frameworksupport_usingQBCore": {
+        "label": "Using qbcore",
+        "help": "If you are using QBCore set this to true"
+      },
+      "_plugins_frameworksupport_usingQBManagement": {
+        "label": "Using qbmanagement",
+        "help": "If using qb-management for LEO set this to true"
+      },
+      "_plugins_kick": {
+        "label": "Player kick",
+        "help": ""
+      },
+      "_plugins_kick_configVersion": {
+        "label": "Config version",
+        "help": "version of the plugin"
+      },
+      "_plugins_kick_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_kick_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_kick_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_kick_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_kick_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_localcallers": {
+        "label": "Local callers",
+        "help": ""
+      },
+      "_plugins_localcallers_callCoolDown": {
+        "label": "Call cool down",
+        "help": "Time in between calls in seconds"
+      },
+      "_plugins_localcallers_callTimers": {
+        "label": "Call timers",
+        "help": ""
+      },
+      "_plugins_localcallers_callTimers_carJacking": {
+        "label": "Car jacking",
+        "help": "Enable or disable carjacking calls"
+      },
+      "_plugins_localcallers_callTimers_death": {
+        "label": "Death",
+        "help": "Enable or disable death-related calls"
+      },
+      "_plugins_localcallers_callTimers_gun": {
+        "label": "Gun",
+        "help": "Enable or disable gun-related calls"
+      },
+      "_plugins_localcallers_callTypes": {
+        "label": "Call types",
+        "help": ""
+      },
+      "_plugins_localcallers_callTypes_carJacking": {
+        "label": "Car jacking",
+        "help": "Enable or disable carjacking calls"
+      },
+      "_plugins_localcallers_callTypes_death": {
+        "label": "Death",
+        "help": "Enable or disable death-related calls"
+      },
+      "_plugins_localcallers_callTypes_gun": {
+        "label": "Gun",
+        "help": "Enable or disable gun-related calls"
+      },
+      "_plugins_localcallers_clearRecordsAfter": {
+        "label": "Clear records after",
+        "help": "Time in minutes to clear records after a call is made {'|'} 0 will disable this feature"
+      },
+      "_plugins_localcallers_clothingConfig": {
+        "label": "Clothing config",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female": {
+        "label": "Female",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_hat": {
+        "label": "Hat",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_hat_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_hat_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_pants": {
+        "label": "Pants",
+        "help": "====================== PANTS (component 4) ======================"
+      },
+      "_plugins_localcallers_clothingConfig_female_pants_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_pants_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_shoes": {
+        "label": "Shoes",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_shoes_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_shoes_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_top": {
+        "label": "Top",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_top_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_top_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_torso": {
+        "label": "Torso",
+        "help": "====================== TORSOS (component 3) ======================"
+      },
+      "_plugins_localcallers_clothingConfig_female_torso_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_female_torso_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male": {
+        "label": "Male",
+        "help": "====================== TOPS (component 8) ====================== mp_m_freemode_01 (male)"
+      },
+      "_plugins_localcallers_clothingConfig_male_fighting": {
+        "label": "Fighting",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_hat": {
+        "label": "Hat",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_hat_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_hat_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_pants": {
+        "label": "Pants",
+        "help": "====================== PANTS (component 4) ======================"
+      },
+      "_plugins_localcallers_clothingConfig_male_pants_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_pants_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_shoes": {
+        "label": "Shoes",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_shoes_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_shoes_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_top": {
+        "label": "Top",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_top_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_top_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_torso": {
+        "label": "Torso",
+        "help": "====================== TORSOS (component 3) ======================"
+      },
+      "_plugins_localcallers_clothingConfig_male_torso_0_colors": {
+        "label": "Colors",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_male_torso_0_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList": {
+        "label": "White list",
+        "help": "Array of clothing items that will be whitelisted from triggering 911 calls"
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item": {
+        "label": "Item",
+        "help": "Array of clothing items that will be whitelisted from triggering 911 calls"
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_gender": {
+        "label": "Gender",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_ped": {
+        "label": "Ped",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_component": {
+        "label": "Component",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_drawable": {
+        "label": "Drawable",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_textures": {
+        "label": "Textures",
+        "help": ""
+      },
+      "_plugins_localcallers_clothingConfig_whiteList_item_textures_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_localcallers_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_localcallers_language": {
+        "label": "Language",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callDropped": {
+        "label": "Call dropped",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates": {
+        "label": "Call templates",
+        "help": "Templates for different call types {'|'} Place holders: {'{'}street{'}'} and {'{'}description{'}'}"
+      },
+      "_plugins_localcallers_language_callTemplates_carjacking": {
+        "label": "Carjacking",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_carjacking_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_explosive": {
+        "label": "Explosive",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_explosive_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_fighting": {
+        "label": "Fighting",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_fighting_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_fire": {
+        "label": "Fire",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_fire_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_heavy": {
+        "label": "Heavy",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_heavy_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_knife": {
+        "label": "Knife",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_knife_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_longgun": {
+        "label": "Longgun",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_longgun_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_melee": {
+        "label": "Melee",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_melee_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_pistol": {
+        "label": "Pistol",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_pistol_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_playerDied": {
+        "label": "Player died",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_playerDied_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_shotgun": {
+        "label": "Shotgun",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_shotgun_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_smg": {
+        "label": "Smg",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_smg_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_sniper": {
+        "label": "Sniper",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_sniper_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_throwable": {
+        "label": "Throwable",
+        "help": ""
+      },
+      "_plugins_localcallers_language_callTemplates_throwable_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_language_caller": {
+        "label": "Caller",
+        "help": "Default caller type"
+      },
+      "_plugins_localcallers_language_callerStates": {
+        "label": "Caller states",
+        "help": "Language configuration"
+      },
+      "_plugins_localcallers_language_female": {
+        "label": "Female",
+        "help": ""
+      },
+      "_plugins_localcallers_language_male": {
+        "label": "Male",
+        "help": "====================== TOPS (component 8) ====================== mp_m_freemode_01 (male)"
+      },
+      "_plugins_localcallers_language_unknown": {
+        "label": "Unknown",
+        "help": ""
+      },
+      "_plugins_localcallers_language_unknownColor": {
+        "label": "Unknown color",
+        "help": ""
+      },
+      "_plugins_localcallers_language_unknownItem": {
+        "label": "Unknown item",
+        "help": ""
+      },
+      "_plugins_localcallers_localRunTime": {
+        "label": "Local run time",
+        "help": "Time in seconds for how long \"locals\" will run towards the player to show interest in the call {'|'} 0 will disable this feature"
+      },
+      "_plugins_localcallers_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_localcallers_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_localcallers_weaponConfig": {
+        "label": "Weapon config",
+        "help": ""
+      },
+      "_plugins_localcallers_weaponConfig_weaponResponses": {
+        "label": "Weapon responses",
+        "help": ""
+      },
+      "_plugins_localcallers_weaponConfig_weaponResponses_-2084633992_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones": {
+        "label": "Whitelist zones",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_center": {
+        "label": "Center",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_center_x": {
+        "label": "X",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_center_y": {
+        "label": "Y",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_center_z": {
+        "label": "Z",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_radius": {
+        "label": "Radius",
+        "help": ""
+      },
+      "_plugins_localcallers_whitelistZones_item_whitelistTypes": {
+        "label": "Whitelist types",
+        "help": "allowed to report these, others ignored"
+      },
+      "_plugins_locations": {
+        "label": "Locations and live map",
+        "help": ""
+      },
+      "_plugins_locations_clientCheckTime": {
+        "label": "Client check time",
+        "help": "how often the client will check for a location update"
+      },
+      "_plugins_locations_configVersion": {
+        "label": "Config version",
+        "help": "version of your plugin"
+      },
+      "_plugins_locations_customStreetNames": {
+        "label": "Custom street names",
+        "help": ""
+      },
+      "_plugins_locations_customStreetNames_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_locations_customStreetNames_names": {
+        "label": "Names",
+        "help": "Optional street-name overrides used by location updates. This is useful when a HUD keeps its custom names private instead of updating game text entries. If your HUD can update game text entries globally, use that option instead; the normal FiveM street-name natives will then return the custom names. Copy the same street hash/name pairs from the HUD's configuration here. Numeric, signed decimal, and quoted hexadecimal hashes are supported."
+      },
+      "_plugins_locations_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_locations_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_locations_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_locations_prefixPostal": {
+        "label": "Prefix postal",
+        "help": "prefix postal code on locations sent, requires postal plugin"
+      },
+      "_plugins_locations_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels": {
+        "label": "Vehicle models",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_foot_model": {
+        "label": "Model",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_foot_zOffset": {
+        "label": "Z offset",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_foot_sizeOffset": {
+        "label": "Size offset",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_foot_headingOffset": {
+        "label": "Heading offset",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_foot_lights": {
+        "label": "Lights",
+        "help": ""
+      },
+      "_plugins_locations_vehicleModels_police_lightZOffset": {
+        "label": "Light zoffset",
+        "help": ""
+      },
+      "_plugins_lookups": {
+        "label": "Record lookups",
+        "help": ""
+      },
+      "_plugins_lookups_autoLookupEnabled": {
+        "label": "Auto lookup enabled",
+        "help": ""
+      },
+      "_plugins_lookups_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_lookups_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_lookups_maxCacheTime": {
+        "label": "Max cache time",
+        "help": "max time to cache a plate hit, in seconds"
+      },
+      "_plugins_lookups_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_lookups_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_lookups_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_lookups_stalePurgeTimer": {
+        "label": "Stale purge timer",
+        "help": "delay between garbage collection, default 10 minutes"
+      },
+      "_plugins_postals": {
+        "label": "Postal codes",
+        "help": ""
+      },
+      "_plugins_postals_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_postals_customPostalCodesFile": {
+        "label": "Custom postal codes file",
+        "help": "if not using nearest-postal, place a json file containing the postals in the /submodules/postals folder and specify a name below ex: \"my_custom_postals.json\""
+      },
+      "_plugins_postals_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_postals_mode": {
+        "label": "Mode",
+        "help": "optionally use an event fired by another resource, set mode to \"event\" and add the name of the event below, set mode to \"file\" if you are using a custom postal file"
+      },
+      "_plugins_postals_nearestPostalEvent": {
+        "label": "Nearest postal event",
+        "help": ""
+      },
+      "_plugins_postals_nearestPostalResourceName": {
+        "label": "Nearest postal resource name",
+        "help": "if using nearestpostal, specify the name of the resource here if you changed it"
+      },
+      "_plugins_postals_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_postals_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_postals_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": ""
+      },
+      "_plugins_postals_requiresPlugins_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_postals_requiresPlugins_item_critical": {
+        "label": "Critical",
+        "help": ""
+      },
+      "_plugins_postals_requiresPlugins_item_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_postals_sendTimer": {
+        "label": "Send timer",
+        "help": "how often to send postal to client"
+      },
+      "_plugins_postals_shouldSendPostalData": {
+        "label": "Should send postal data",
+        "help": "toggles this plugin on/off"
+      },
+      "_plugins_recordPrinter": {
+        "label": "Record printer",
+        "help": ""
+      },
+      "_plugins_recordPrinter_acceptShareCommand": {
+        "label": "Accept share command",
+        "help": "command to accept a shared record into your queue"
+      },
+      "_plugins_recordPrinter_clearPrintQueueCommand": {
+        "label": "Clear print queue command",
+        "help": "command to clear print queue"
+      },
+      "_plugins_recordPrinter_commandPrefix": {
+        "label": "Command prefix",
+        "help": "base command prefix, e.g. /printer queue, /printer print, /printer share"
+      },
+      "_plugins_recordPrinter_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_recordPrinter_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_recordPrinter_frameworks": {
+        "label": "Frameworks",
+        "help": ""
+      },
+      "_plugins_recordPrinter_frameworks_use_custom_inventory": {
+        "label": "Use custom inventory",
+        "help": "Use a custom inventory"
+      },
+      "_plugins_recordPrinter_frameworks_use_esx": {
+        "label": "Use esx",
+        "help": "Use the ESX framework"
+      },
+      "_plugins_recordPrinter_frameworks_use_esx_ox_inventory": {
+        "label": "Use esx ox inventory",
+        "help": "Use OX Inventory for ESX"
+      },
+      "_plugins_recordPrinter_frameworks_use_qbcore": {
+        "label": "Use qbcore",
+        "help": "Use the QBCore framework"
+      },
+      "_plugins_recordPrinter_frameworks_use_quasar_inventory": {
+        "label": "Use quasar inventory",
+        "help": "Use Quasar inventory"
+      },
+      "_plugins_recordPrinter_interactRadius": {
+        "label": "Interact radius",
+        "help": "radius to interact with printers and players"
+      },
+      "_plugins_recordPrinter_maxPrintsPerQueue": {
+        "label": "Max prints per queue",
+        "help": "max number of prints allowed in print queue"
+      },
+      "_plugins_recordPrinter_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_recordPrinter_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_recordPrinter_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_recordPrinter_printCommand": {
+        "label": "Print command",
+        "help": "command to print record"
+      },
+      "_plugins_recordPrinter_printQueueCommand": {
+        "label": "Print queue command",
+        "help": "command to print record"
+      },
+      "_plugins_recordPrinter_printerCoords": {
+        "label": "Printer coords",
+        "help": "add specific coords for printers here {'{'}x = 0, y = 0, z = 0, h = 0{'}'}"
+      },
+      "_plugins_recordPrinter_printerObjects": {
+        "label": "Printer objects",
+        "help": "objects that can be used as printers"
+      },
+      "_plugins_recordPrinter_printerObjects_item": {
+        "label": "Item",
+        "help": "objects that can be used as printers"
+      },
+      "_plugins_recordPrinter_recordPurgeDays": {
+        "label": "Record purge days",
+        "help": "days until records are purged {'|'} set to 0 to disable"
+      },
+      "_plugins_recordPrinter_shareCommand": {
+        "label": "Share command",
+        "help": "command to share a queued record with other players"
+      },
+      "_plugins_recordPrinter_translations": {
+        "label": "Translations",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_couldNotHold": {
+        "label": "Could not hold",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_imageDropped": {
+        "label": "Image dropped",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_lookThroughCamera": {
+        "label": "Look through camera",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_notePadText": {
+        "label": "Note pad text",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_photoDeleted": {
+        "label": "Photo deleted",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_photoDescription": {
+        "label": "Photo description",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_photoPrinting": {
+        "label": "Photo printing",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_placedInPocket": {
+        "label": "Placed in pocket",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_placedInPocketPutCamAway": {
+        "label": "Placed in pocket put cam away",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_pressToDrop": {
+        "label": "Press to drop",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_printCancel": {
+        "label": "Print cancel",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_putAwayCamera": {
+        "label": "Put away camera",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_putPhotoAway": {
+        "label": "Put photo away",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_uploadCadPrintCancel": {
+        "label": "Upload cad print cancel",
+        "help": ""
+      },
+      "_plugins_recordPrinter_translations_uploadedCad": {
+        "label": "Uploaded cad",
+        "help": ""
+      },
+      "_plugins_recordPrinter_vehicleConfig": {
+        "label": "Vehicle config",
+        "help": ""
+      },
+      "_plugins_recordPrinter_vehicleConfig_reverseWhitelist": {
+        "label": "Reverse whitelist",
+        "help": "if true the whitelist will be used as a blacklist"
+      },
+      "_plugins_recordPrinter_vehicleConfig_whitelist": {
+        "label": "Whitelist",
+        "help": "jobs that can print vehicle records"
+      },
+      "_plugins_recordPrinter_vehicleConfig_whitelist_item": {
+        "label": "Item",
+        "help": "jobs that can print vehicle records"
+      },
+      "_plugins_sonrad": {
+        "label": "Sonoran Radio",
+        "help": ""
+      },
+      "_plugins_sonrad_addPanicCall": {
+        "label": "Add panic call",
+        "help": "Should radio panics generate CAD calls?"
+      },
+      "_plugins_sonrad_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_sonrad_enabled": {
+        "label": "Enabled",
+        "help": "should the radio name be synced with the CAD?"
+      },
+      "_plugins_sonrad_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_sonrad_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_sonrad_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": ""
+      },
+      "_plugins_sonrad_syncRadioName": {
+        "label": "Sync radio name",
+        "help": ""
+      },
+      "_plugins_sonrad_syncRadioName_enabled": {
+        "label": "Enabled",
+        "help": "should the radio name be synced with the CAD?"
+      },
+      "_plugins_sonrad_syncRadioName_nameFormat": {
+        "label": "Name format",
+        "help": "format of the radio name {'|'} available variables: {'{'}UNIT_NUMBER{'}'}, {'{'}UNIT_NAME{'}'}"
+      },
+      "_plugins_unitstatus": {
+        "label": "Unit status",
+        "help": ""
+      },
+      "_plugins_unitstatus_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_unitstatus_enableAceCheck": {
+        "label": "Enable ace check",
+        "help": "restrict command via ace permission"
+      },
+      "_plugins_unitstatus_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_unitstatus_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_unitstatus_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_unitstatus_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_unitstatus_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_unitstatus_setStatusCommand": {
+        "label": "Set status command",
+        "help": "user command for setting their own status, leave blank to not use"
+      },
+      "_plugins_unitstatus_statusCodes": {
+        "label": "Status codes",
+        "help": "put your configuration options below"
+      },
+      "_plugins_vehreg": {
+        "label": "Vehicle registration",
+        "help": ""
+      },
+      "_plugins_vehreg_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_vehreg_customData": {
+        "label": "Custom data",
+        "help": ""
+      },
+      "_plugins_vehreg_customData_item": {
+        "label": "Item",
+        "help": ""
+      },
+      "_plugins_vehreg_customData_item_model": {
+        "label": "Model",
+        "help": ""
+      },
+      "_plugins_vehreg_customData_item_spawncode": {
+        "label": "Spawncode",
+        "help": ""
+      },
+      "_plugins_vehreg_defaultRegExpire": {
+        "label": "Default reg expire",
+        "help": "The default date that all registrations will expire"
+      },
+      "_plugins_vehreg_defaultRegStatus": {
+        "label": "Default reg status",
+        "help": "The default status that all registrations will have {'|'} MUST BE IN CAPS"
+      },
+      "_plugins_vehreg_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_vehreg_language": {
+        "label": "Language",
+        "help": ""
+      },
+      "_plugins_vehreg_language_helpMsg": {
+        "label": "Help msg",
+        "help": ""
+      },
+      "_plugins_vehreg_language_incompleteCharData": {
+        "label": "Incomplete char data",
+        "help": ""
+      },
+      "_plugins_vehreg_language_noCadLink": {
+        "label": "No cad link",
+        "help": ""
+      },
+      "_plugins_vehreg_language_noCharFound": {
+        "label": "No char found",
+        "help": ""
+      },
+      "_plugins_vehreg_language_notInVeh": {
+        "label": "Not in veh",
+        "help": ""
+      },
+      "_plugins_vehreg_language_plateAlrRegisted": {
+        "label": "Plate alr registed",
+        "help": ""
+      },
+      "_plugins_vehreg_language_successReg": {
+        "label": "Success reg",
+        "help": ""
+      },
+      "_plugins_vehreg_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_vehreg_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_vehreg_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_vehreg_recordData": {
+        "label": "Record data",
+        "help": "If you have changed your field UID's in CAD please update the corresponding values here. (Field UID goes in the quotes on the right)"
+      },
+      "_plugins_vehreg_recordData_colorUid": {
+        "label": "Color uid",
+        "help": ""
+      },
+      "_plugins_vehreg_recordData_expiresUid": {
+        "label": "Expires uid",
+        "help": ""
+      },
+      "_plugins_vehreg_recordData_modelUid": {
+        "label": "Model uid",
+        "help": ""
+      },
+      "_plugins_vehreg_recordData_plateUid": {
+        "label": "Plate uid",
+        "help": ""
+      },
+      "_plugins_vehreg_recordData_statusUid": {
+        "label": "Status uid",
+        "help": ""
+      },
+      "_plugins_vehreg_recordData_typeUid": {
+        "label": "Type uid",
+        "help": ""
+      },
+      "_plugins_vehreg_reigsterCommand": {
+        "label": "Reigster command",
+        "help": "Command to register car"
+      },
+      "_plugins_wraithv2": {
+        "label": "Wraith radar",
+        "help": ""
+      },
+      "_plugins_wraithv2_alertNoRegistration": {
+        "label": "Alert no registration",
+        "help": "alert if no registration was found on scan?"
+      },
+      "_plugins_wraithv2_configVersion": {
+        "label": "Config version",
+        "help": ""
+      },
+      "_plugins_wraithv2_customFields": {
+        "label": "Custom fields",
+        "help": "set to the field IDs you want appended to the ALPR notifications (order preserved)"
+      },
+      "_plugins_wraithv2_enabled": {
+        "label": "Enabled",
+        "help": ""
+      },
+      "_plugins_wraithv2_expiresUid": {
+        "label": "Expires uid",
+        "help": ""
+      },
+      "_plugins_wraithv2_flagOnStatuses": {
+        "label": "Flag on statuses",
+        "help": "statuses to flag on when scanned"
+      },
+      "_plugins_wraithv2_flagOnStatuses_item": {
+        "label": "Item",
+        "help": "statuses to flag on when scanned"
+      },
+      "_plugins_wraithv2_notificationOverride": {
+        "label": "Notification override",
+        "help": "Optional notification override for this submodule only. Valid values: \"none\", \"ox_lib\", \"lation_ui\", \"pnotify\", \"chat\""
+      },
+      "_plugins_wraithv2_notificationTimers": {
+        "label": "Notification timers",
+        "help": ""
+      },
+      "_plugins_wraithv2_notificationTimers_bolo": {
+        "label": "Bolo",
+        "help": "20 seconds for bolo"
+      },
+      "_plugins_wraithv2_notificationTimers_noReg": {
+        "label": "No reg",
+        "help": "5 seconds for no registration"
+      },
+      "_plugins_wraithv2_notificationTimers_validReg": {
+        "label": "Valid reg",
+        "help": "30 seconds for valid registration"
+      },
+      "_plugins_wraithv2_notificationTimers_warrant": {
+        "label": "Warrant",
+        "help": "20 seconds for warrant"
+      },
+      "_plugins_wraithv2_pluginAuthor": {
+        "label": "Plugin author",
+        "help": "author"
+      },
+      "_plugins_wraithv2_pluginName": {
+        "label": "Plugin name",
+        "help": "name your plugin here"
+      },
+      "_plugins_wraithv2_requiresPlugins": {
+        "label": "Requires plugins",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_wraithv2_requiresPlugins_item": {
+        "label": "Item",
+        "help": "required plugins for this plugin to work, separated by commas"
+      },
+      "_plugins_wraithv2_requiresPlugins_item_critical": {
+        "label": "Critical",
+        "help": ""
+      },
+      "_plugins_wraithv2_requiresPlugins_item_name": {
+        "label": "Name",
+        "help": ""
+      },
+      "_plugins_wraithv2_statusUid": {
+        "label": "Status uid",
+        "help": "if your custom vehicle record is different, change the below"
+      },
+      "_plugins_wraithv2_useExpires": {
+        "label": "Use expires",
+        "help": "use vehicle registration expirations, or not"
+      },
+      "_plugins_wraithv2_useMiddleInitial": {
+        "label": "Use middle initial",
+        "help": "use middle initials?"
+      },
+      "_plugins_wraithv2_vehTypeFilter": {
+        "label": "Veh type filter",
+        "help": "Vehicle classes that will NOT get ran through CAD {'|'} Classes: https://docs.fivem.net/natives/?_0x29439776AAA00A62"
+      },
+      "_plugins_wraithv2_vehTypeFilter_item": {
+        "label": "Item",
+        "help": "Vehicle classes that will NOT get ran through CAD {'|'} Classes: https://docs.fivem.net/natives/?_0x29439776AAA00A62"
+      }
+    },
+    "title": "FiveM configuration",
+    "intro": "Manage each server’s features here. Save changes for its next startup, or apply them now to restart SonoranCAD.",
+    "server": "FiveM server",
+    "core": "General settings",
+    "enabled": "Enable this feature",
+    "search": "Find a feature",
+    "save": "Save",
+    "apply": "Apply and restart",
+    "reload": "Reload",
+    "reset": "Restore default",
+    "add": "Add entry",
+    "remove": "Remove entry",
+    "newKey": "New mapping key",
+    "value": "Value",
+    "item": "Entry {number}",
+    "revision": "Saved revision: {saved} · Loaded by resource: {applied}",
+    "unsaved": "You have unsaved changes. Save or reload before switching servers.",
+    "dependencies": "Dependencies: {names}",
+    "invalidNumber": "Enter a number within the allowed range.",
+    "invalidField": "Check the value at {path}.",
+    "saved": "Saved. The resource will load these settings on its next startup. Apply and restart to use them now.",
+    "sent": "Restart request sent to the connected server. Reload to check which revision the resource has loaded.",
+    "offline": "Saved configuration is available, but no server connection received the restart request. Start the resource or reconnect and apply again.",
+    "restartWarning": "This restarts the SonoranCAD resource on the selected server. Players may temporarily lose CAD features, active camera sessions, and in-progress interactions. Restart now?",
+    "discardTitle": "Discard unsaved changes?",
+    "discardBody": "Reload the saved configuration and discard your local edits?",
+    "errors": {
+      "conflict": "Another administrator changed these settings. Reload before saving or applying.",
+      "forbidden": "You need the In-Game Integration administration permission.",
+      "serverNotFound": "This server is no longer configured in the community.",
+      "staleTemplate": "The configuration template changed. Reload to get the latest fields.",
+      "unavailable": "Configuration is unavailable. Try again shortly.",
+      "invalid": "Some settings are invalid. Check your fields and try again."
+    },
+    "dependencyError": "Enable {dependency} before enabling {module}, or disable {module}.",
+    "import": "Import local configuration",
+    "imported": "Imported into this editor. Review each feature, then save when ready. Nothing has been sent to the server yet.",
+    "importFailed": "Could not import this file. Use sonoran_config_export in the server console and check that the exported settings match this resource version.",
+    "customFields": {
+      "x": "X coordinate",
+      "y": "Y coordinate",
+      "z": "Z coordinate",
+      "h": "Heading",
+      "vehicle": "Vehicle spawn code",
+      "screenTexture": "Screen texture name",
+      "textureWidth": "Texture width (pixels)",
+      "textureHeight": "Texture height (pixels)",
+      "ped": "Ped",
+      "component": "Component",
+      "drawable": "Drawable",
+      "textures": "Textures",
+      "name": "Name",
+      "critical": "Critical"
+    },
+    "feature": "Feature"
   }
 }
