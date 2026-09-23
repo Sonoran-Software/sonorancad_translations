@@ -1619,6 +1619,12 @@
         "landing": {
           "ctaDocs": "Belgeleri Görüntüle",
           "ctaPrimary": "Bugün Kaydol",
+          "dispatchAi": {
+            "description": "Sonoran Radio üzerinden plaka sorgulama yapın, çağrı oluşturun ve birim durumunu CAD'de güncelleyin.",
+            "linkLabel": "Nasıl çalıştığını görün",
+            "note": "Radio'nun ücretsiz katmanında kullanılabilir; aylık yapay zeka kullanım limitleri geçerlidir.",
+            "title": "Dispatcher yok mu? Dispatch AI ile tanışın."
+          },
           "faq": {
             "items": {
               "best": {
@@ -1648,6 +1654,7 @@
           "faqTitlePrimary": "Sıkça Sorulan",
           "headlineAccent": "FiveM için",
           "headlinePrimary": "Ücretsiz CAD / MDT",
+          "heroDescription": "Dispatch, canlı haritalar, bodycam ve oyun içi araçları FiveM sunucunuza getirin. Ücretsiz CAD ile başlayın ve resmi kaynağı bağlayın.",
           "kicker": "Ücretsiz, Hızlı, Tam Entegre",
           "meta": {
             "description": "Rol yapma sevk, canlı haritalar, bodycam ve resmi eklentiler için ücretsiz FiveM CAD / MDT. Sunucunuzu bağlayın, planları karşılaştırın ve isteğe bağlı veritabanı senkronizasyonunu keşfedin.",
@@ -1728,7 +1735,8 @@
         "name": "FiveM"
       },
       "shared": {
-        "campaignCtaDetail": "Gelecekteki yükseltmeniz için %20 indirimden yararlanın",
+        "campaignCtaDetail": "Uygun bir abonelik ödemesinde %20 indirimden yararlanmak için oturum açın",
+        "campaignCtaTitle": "Ücretsiz Başla + %20 Tasarruf Et",
         "ecosystemDescription": "İş akışınızı yeniden kurmadan veya entegrasyon katmanı için ödeme yapmadan sunucunuza amaca yönelik araçlar ekleyin.",
         "ecosystemEyebrow": "Oyunun İçine Daha Derin Girin",
         "featuresDescription": "Gerçek zamanlı araçlar oynanış, sevkiyat ve kayıtları birbirine bağlayarak topluluğunuzun sürükleyici kalmasını sağlar.",
@@ -2037,25 +2045,37 @@
   },
   "marketingCoupon": {
     "accountSettings": "Hesap e-postasını güncelle",
+    "claimStatus": {
+      "failed": "Bu teklifi hesabınıza kaydedemedik. Tekrar deneyin veya teklif olmadan devam edin.",
+      "saved": "Teklifiniz bu hesaba kaydedildi ve ödeme sırasında geçerlidir.",
+      "saving": "Bu teklif şimdi hesabınıza kaydediliyor."
+    },
     "codeLabel": "Kupon kodu",
+    "continueButton": "CAD'e devam et",
+    "continueWithoutOffer": "CAD'e devam et",
     "copyCode": "Kupon kodunu kopyala",
     "description": "Teklifiniz hazır. Yükseltme yaparken Stripe Checkout'ta bu kodu kullanın.",
-    "emailButton": "Bana e-posta gönder",
+    "emailButton": "Bana e-posta ile bir hatırlatma gönder",
     "emailSent": "Teklif e-postanız gönderildi. Hesabınızın e-posta adresi için gelen kutusunu veya spam klasörünü kontrol edin.",
     "emailStatus": {
-      "claim_failed": "Kaydedilmiş teklifinizi doğrulayamadık. Lütfen kısa süre sonra tekrar deneyin. Kodunuz hâlâ yukarıda gösteriliyor.",
-      "failed": "E-postanın gönderildiğini doğrulayamadık. 15 dakika sonra tekrar denemeden önce gelen kutunuzu kontrol edin veya kodunuzu buraya kopyalayın.",
-      "invalid_session": "Lütfen teklifinizi e-posta ile göndermek için tekrar oturum açın. Kodunuzu yine de kopyalayabilirsiniz.",
-      "needs_email": "Hesabınızın gerçek bir e-posta adresine ihtiyacı var. Bunu Sonoran hesabınızda güncelleyin, ardından 15 dakika içinde tekrar deneyin. Kodunuzu yine de buradan kopyalayabilirsiniz.",
-      "not_ready": "Az önce bir e-posta istediyseniz, gelen kutunuzu veya spam klasörünüzü kontrol edin. Aksi halde, 15 dakika bekleyip yeniden deneyin. Kodunuzu yine de kopyalayabilirsiniz."
+      "claim_failed": "Kaydedilmiş teklifinizi doğrulayamadık. Lütfen kısa süre sonra tekrar deneyin. Kodu hâlâ burada görüntüleyebilirsiniz.",
+      "failed": "E-postanın gönderildiğini doğrulayamadık. Yeniden denemeden önce gelen kutunuzu 15 dakika içinde kontrol edin veya kodunuzu burada görüntüleyin.",
+      "invalid_session": "Teklifinizi e-posta ile göndermek için lütfen yeniden giriş yapın. Kodunuzu hâlâ burada görüntüleyebilirsiniz.",
+      "needs_email": "Hesabınızın gerçek bir e-posta adresine ihtiyacı var. Bunu Sonoran hesabınızda güncelleyin, ardından 15 dakika içinde tekrar deneyin. Kodunuzu burada yine de görüntüleyebilirsiniz.",
+      "not_ready": "Eğer az önce bir e-posta istediyseniz, gelen kutunuzu veya spam klasörünüzü kontrol edin. Aksi takdirde, 15 dakika bekleyip tekrar deneyin. Kodunuzu yine de burada görüntüleyebilirsiniz."
     },
     "emailTerms": "İlk abonelik ödemenizde.",
     "emailTitle": "%20 kaydet",
-    "eyebrow": "TikTok’a özel teklif",
+    "eyebrow": "CAD teklifiniz",
+    "failedTitle": "Teklif henüz kaydedilmedi",
     "notNow": "Şimdi değil",
-    "offer": "İlk ayınızda %20 indirim",
+    "offer": "uygun bir abonelik ödemesinde %20 indirim",
+    "pendingTitle": "Teklifiniz kaydediliyor",
+    "readyTitle": "Bu kodu kaydet",
+    "retryButton": "Tekrar dene",
     "savedButton": "Kaydettim",
-    "saveReminder": "Cihaz değiştirirken bir ekran görüntüsü alın, kopyalayın veya not edin.",
+    "saveReminder": "Bir PC'ye geçiş mi yapıyorsunuz? Kuruluma devam etmek için aynı Sonoran hesabıyla oturum açın.",
+    "savingButton": "Teklif kaydediliyor",
     "title": "Bu kodu kaydet"
   },
   "menu": {
@@ -2189,6 +2209,8 @@
         "twoHundredFifty": "250",
         "unlimited": "Sınırsız"
       },
+      "savedOfferBody": "Ödeme sırasında otomatik olarak uygulanır.",
+      "savedOfferTitle": "%20 indirim hesabınıza kaydedildi.",
       "selectCommunityForPurchase": "CAD Topluluğu Seçin",
       "selectCommunitySubtitle": "Bu abonelikle yükseltilecek topluluğu seçin.",
       "sonoranOnePlaceholder": "CAD, CMS, Radio ve dahil RocketNode FiveM barındırma için tek abonelik.",
