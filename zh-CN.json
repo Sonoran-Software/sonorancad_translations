@@ -1619,6 +1619,12 @@
         "landing": {
           "ctaDocs": "查看文档",
           "ctaPrimary": "立即注册",
+          "dispatchAi": {
+            "description": "通过 Sonoran Radio 进行语音通话，查询车牌，创建呼叫，并在 CAD 中更新警员状态。",
+            "linkLabel": "看看它是如何运作的",
+            "note": "可在 Radio 的免费套餐中使用；适用每月 AI 使用限制。",
+            "title": "没有调度员？认识一下 Dispatch AI。"
+          },
           "faq": {
             "items": {
               "best": {
@@ -1648,6 +1654,7 @@
           "faqTitlePrimary": "常见问题",
           "headlineAccent": "适用于 FiveM",
           "headlinePrimary": "免费 CAD / MDT",
+          "heroDescription": "将调度、实时地图、执法记录仪和游戏内工具带入你的 FiveM 服务器。先从免费 CAD 开始，并连接官方资源。",
           "kicker": "免费、快速、完全集成",
           "meta": {
             "description": "适用于角色扮演调度、实时地图、执法记录仪和官方插件的免费 FiveM CAD / MDT。连接你的服务器，比较方案并探索可选的数据库同步。",
@@ -1728,7 +1735,8 @@
         "name": "FiveM"
       },
       "shared": {
-        "campaignCtaDetail": "领取未来升级 20% 折扣",
+        "campaignCtaDetail": "登录以在符合条件的订阅付款中节省 20%",
+        "campaignCtaTitle": "开始免费 + 节省 20%",
         "ecosystemDescription": "无需重建工作流程或为集成层付费，即可向您的服务器添加专为特定用途打造的工具。",
         "ecosystemEyebrow": "深入游戏",
         "featuresDescription": "实时工具连接游戏、调度和记录，让您的社区保持沉浸。",
@@ -2037,25 +2045,37 @@
   },
   "marketingCoupon": {
     "accountSettings": "更新账户电子邮件",
+    "claimStatus": {
+      "failed": "我们无法将此优惠保存到您的账户。请重试，或不使用该优惠继续。",
+      "saved": "您的优惠已保存到此账户，并将在结账时生效。",
+      "saving": "正在将此优惠保存到您的账户。"
+    },
     "codeLabel": "优惠码",
+    "continueButton": "继续到 CAD",
+    "continueWithoutOffer": "继续到 CAD",
     "copyCode": "复制优惠码",
     "description": "您的优惠已准备好。升级时请在 Stripe 结账时使用此代码。",
-    "emailButton": "给我发送电子邮件",
+    "emailButton": "给我发提醒邮件",
     "emailSent": "您的优惠邮件已发送。请查看您账户邮箱的收件箱或垃圾邮件文件夹。",
     "emailStatus": {
       "claim_failed": "我们无法确认您保存的优惠。请稍后再试。您的代码仍显示在上方。",
-      "failed": "我们无法确认邮件已发送。请在 15 分钟后重试前先检查您的收件箱，或者在此处复制您的代码。",
-      "invalid_session": "请重新登录以通过电子邮件发送您的优惠。您仍然可以复制您的代码。",
-      "needs_email": "您的账户需要一个真实的电子邮件地址。请在您的 Sonoran 账户中更新，然后在 15 分钟后再试。您仍然可以在这里复制您的代码。",
-      "not_ready": "如果您刚刚请求了电子邮件，请检查您的收件箱或垃圾邮件文件夹。否则，请等待 15 分钟后再试。您仍然可以复制您的代码。"
+      "failed": "我们无法确认邮件是否已发送。请在15分钟后重试前检查您的收件箱，或在此查看您的代码。",
+      "invalid_session": "请重新登录以通过电子邮件发送您的优惠。您的代码仍显示在上方。",
+      "needs_email": "您的账户需要一个真实的电子邮件地址。请在您的 Sonoran 账户中更新，然后在 15 分钟后再试。您仍然可以在这里查看您的代码。",
+      "not_ready": "如果你刚刚请求了电子邮件，请检查收件箱或垃圾邮件文件夹。否则，等待 15 分钟后重试。你仍然可以在此查看你的代码。"
     },
     "emailTerms": "在您的首次订阅付款时。",
     "emailTitle": "节省 20%",
-    "eyebrow": "TikTok 独家优惠",
+    "eyebrow": "你的 CAD 优惠",
+    "failedTitle": "优惠尚未保存",
     "notNow": "现在不",
-    "offer": "首月立减 20%",
+    "offer": "符合条件的订阅付款享受 20% 折扣",
+    "pendingTitle": "正在保存你的优惠",
+    "readyTitle": "保存此代码",
+    "retryButton": "重试",
     "savedButton": "我已保存",
-    "saveReminder": "切换设备前请截图、复制或记下来。",
+    "saveReminder": "切换到电脑了？使用相同的 Sonoran 账户登录以继续设置。",
+    "savingButton": "正在保存优惠",
     "title": "保存此代码"
   },
   "menu": {
@@ -2189,6 +2209,8 @@
         "twoHundredFifty": "250",
         "unlimited": "无限制"
       },
+      "savedOfferBody": "在结账时自动应用。",
+      "savedOfferTitle": "已为您的账户保存 20% 折扣。",
       "selectCommunityForPurchase": "选择 CAD 社区",
       "selectCommunitySubtitle": "选择要使用此订阅升级的社区。",
       "sonoranOnePlaceholder": "一个订阅，适用于 CAD、CMS、Radio，并包含 RocketNode FiveM 托管。",

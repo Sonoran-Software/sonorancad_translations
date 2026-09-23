@@ -1618,6 +1618,12 @@
         "landing": {
           "ctaDocs": "Vis dokumentasjon",
           "ctaPrimary": "Registrer deg i dag",
+          "dispatchAi": {
+            "description": "Snakk over Sonoran Radio for å kjøre skilt, opprette oppdrag og oppdatere enhetsstatus i CAD.",
+            "linkLabel": "Se hvordan det fungerer",
+            "note": "Tilgjengelig på Radio sin gratisplan; månedlige AI-bruksgrenser gjelder.",
+            "title": "Ingen dispatcher? Møt Oppdrags-AI."
+          },
           "faq": {
             "items": {
               "best": {
@@ -1647,6 +1653,7 @@
           "faqTitlePrimary": "Ofte stilte spørsmål",
           "headlineAccent": "for FiveM",
           "headlinePrimary": "Gratis CAD / MDT",
+          "heroDescription": "Ta med dispatch, live kart, bodycam og verktøy i spillet inn i FiveM-serveren din. Start med gratis CAD og koble til den offisielle ressursen.",
           "kicker": "Gratis, rask, fullt integrert",
           "meta": {
             "description": "Gratis FiveM CAD / MDT for rollespill-dispatch, livekart, bodycam og offisielle plugins. Koble til serveren din, sammenlign planer og utforsk valgfri databasesynk.",
@@ -1727,7 +1734,8 @@
         "name": "FiveM"
       },
       "shared": {
-        "campaignCtaDetail": "Få 20 % rabatt på din fremtidige oppgradering",
+        "campaignCtaDetail": "Logg inn for å spare 20 % på en kvalifisert abonnementsbetaling",
+        "campaignCtaTitle": "Start gratis + Spar 20%",
         "ecosystemDescription": "Legg til spesialbygde verktøy på serveren din uten å bygge om arbeidsflyten din eller betale for integrasjonslaget.",
         "ecosystemEyebrow": "Gå dypere i spillet",
         "featuresDescription": "Verktøy i sanntid kobler spilling, innsats og poster slik at fellesskapet ditt kan forbli oppslukt.",
@@ -2036,25 +2044,37 @@
   },
   "marketingCoupon": {
     "accountSettings": "Oppdater e-post for konto",
+    "claimStatus": {
+      "failed": "Vi kunne ikke lagre dette tilbudet på kontoen din. Prøv igjen, eller fortsett uten tilbudet.",
+      "saved": "Tilbudet ditt er lagret på denne kontoen og gjelder ved utsjekking.",
+      "saving": "Lagrer dette tilbudet på kontoen din nå."
+    },
     "codeLabel": "Kupongkode",
+    "continueButton": "Fortsett til CAD",
+    "continueWithoutOffer": "Fortsett til CAD",
     "copyCode": "Kopier kupongkode",
     "description": "Tilbudet ditt er klart. Bruk denne koden i Stripe Checkout når du oppgraderer.",
-    "emailButton": "Send meg e-post",
+    "emailButton": "Send meg en påminnelse på e-post",
     "emailSent": "Tilbudse-posten din ble sendt. Sjekk innboksen eller søppelpostmappen for e-postadressen til kontoen din.",
     "emailStatus": {
-      "claim_failed": "Vi kunne ikke bekrefte ditt lagrede tilbud. Vennligst prøv igjen om kort tid. Koden din vises fortsatt ovenfor.",
-      "failed": "Vi kunne ikke bekrefte at e-posten ble sendt. Sjekk innboksen din før du prøver igjen om 15 minutter, eller kopier koden din her.",
-      "invalid_session": "Logg inn på nytt for å sende tilbudet ditt på e-post. Du kan fortsatt kopiere koden din.",
-      "needs_email": "Kontoen din trenger en ekte e-postadresse. Oppdater den i Sonoran-kontoen din, og prøv igjen om 15 minutter. Du kan fortsatt kopiere koden din her.",
-      "not_ready": "Hvis du nettopp ba om en e-post, sjekk innboksen eller søppelpostmappen. Ellers, vent 15 minutter og prøv igjen. Du kan fortsatt kopiere koden din."
+      "claim_failed": "Vi kunne ikke bekrefte det lagrede tilbudet ditt. Vennligst prøv igjen om kort tid. Du kan fortsatt se koden her.",
+      "failed": "Vi kunne ikke bekrefte at e-posten ble sendt. Sjekk innboksen din før du prøver igjen om 15 minutter, eller se koden din her.",
+      "invalid_session": "Vennligst logg inn igjen for å sende tilbudet ditt på e-post. Du kan fortsatt se koden din her.",
+      "needs_email": "Kontoen din trenger en ekte e-postadresse. Oppdater den i Sonoran-kontoen din, og prøv igjen om 15 minutter. Du kan fortsatt se koden din her.",
+      "not_ready": "Hvis du nettopp ba om en e-post, sjekk innboksen eller søppelpostmappen. Ellers, vent 15 minutter og prøv igjen. Du kan fortsatt se koden din her."
     },
     "emailTerms": "Ved din første abonnementsbetaling.",
     "emailTitle": "Spar 20%",
-    "eyebrow": "Eksklusivt TikTok-tilbud",
+    "eyebrow": "Ditt CAD-tilbud",
+    "failedTitle": "Tilbud ikke lagret ennå",
     "notNow": "Ikke nå",
-    "offer": "20 % rabatt på din første måned",
+    "offer": "20 % rabatt på en kvalifisert abonnementsbetaling",
+    "pendingTitle": "Lagrer tilbudet ditt",
+    "readyTitle": "Lagre denne koden",
+    "retryButton": "Prøv igjen",
     "savedButton": "Jeg lagret det",
-    "saveReminder": "Ta et skjermbilde, kopier det eller skriv det ned før du bytter enhet.",
+    "saveReminder": "Bytter du til en PC? Logg inn med samme Sonoran-konto for å fortsette oppsettet.",
+    "savingButton": "Lagrer tilbud",
     "title": "Lagre denne koden"
   },
   "menu": {
@@ -2188,6 +2208,8 @@
         "twoHundredFifty": "250",
         "unlimited": "Ubegrenset"
       },
+      "savedOfferBody": "Brukes automatisk ved utsjekking.",
+      "savedOfferTitle": "20 % rabatt lagret på kontoen din.",
       "selectCommunityForPurchase": "Velg CAD-fellesskap",
       "selectCommunitySubtitle": "Velg fellesskapet som skal oppgraderes med dette abonnementet.",
       "sonoranOnePlaceholder": "Ett abonnement for CAD, CMS, Radio og inkludert RocketNode FiveM-hosting.",

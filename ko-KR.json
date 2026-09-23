@@ -1619,6 +1619,12 @@
         "landing": {
           "ctaDocs": "문서 보기",
           "ctaPrimary": "지금 가입하세요",
+          "dispatchAi": {
+            "description": "Sonoran Radio를 통해 차량 조회를 하고, 콜을 생성하며, CAD에서 유닛 상태를 업데이트하세요.",
+            "linkLabel": "작동 방식 보기",
+            "note": "Radio의 무료 요금제에서 이용 가능; 월간 AI 사용 한도가 적용됩니다.",
+            "title": "디스패처가 없나요? Dispatch AI를 만나보세요."
+          },
           "faq": {
             "items": {
               "best": {
@@ -1648,6 +1654,7 @@
           "faqTitlePrimary": "자주 묻는 질문",
           "headlineAccent": "FiveM용",
           "headlinePrimary": "무료 CAD / MDT",
+          "heroDescription": "디스패치, 라이브 맵, 바디캠, 인게임 도구를 FiveM 서버에 도입하세요. 무료 CAD로 시작하고 공식 리소스를 연결하세요.",
           "kicker": "무료이며 빠르며 완전히 통합되었습니다.",
           "meta": {
             "description": "역할극 디스패치, 라이브 맵, 바디캠 및 공식 플러그인을 위한 무료 FiveM CAD / MDT. 서버를 연결하고, 요금제를 비교하며, 선택적 데이터베이스 동기화를 살펴보세요.",
@@ -1728,7 +1735,8 @@
         "name": "FiveM"
       },
       "shared": {
-        "campaignCtaDetail": "향후 업그레이드에 20% 할인 받기",
+        "campaignCtaDetail": "자격 요건을 충족하는 구독 결제 20% 할인을 받으려면 로그인",
+        "campaignCtaTitle": "무료로 시작 + 20% 절약",
         "ecosystemDescription": "워크플로를 다시 구축하거나 통합 레이어 비용을 지불하지 않고 서버에 목적에 맞게 설계된 도구를 추가하세요.",
         "ecosystemEyebrow": "게임 속으로 더 깊이",
         "featuresDescription": "실시간 도구는 게임플레이, 배포, 기록을 연결해 커뮤니티가 몰입을 유지할 수 있게 합니다.",
@@ -2037,25 +2045,37 @@
   },
   "marketingCoupon": {
     "accountSettings": "계정 이메일 업데이트",
+    "claimStatus": {
+      "failed": "이 혜택을 계정에 저장할 수 없었습니다. 다시 시도하거나 혜택 없이 계속하세요.",
+      "saved": "이 혜택은 이 계정에 저장되며 결제 시 적용됩니다.",
+      "saving": "이 혜택을 지금 계정에 저장하는 중입니다."
+    },
     "codeLabel": "쿠폰 코드",
+    "continueButton": "CAD로 계속",
+    "continueWithoutOffer": "CAD로 계속",
     "copyCode": "쿠폰 코드 복사",
     "description": "귀하의 혜택이 준비되었습니다. 업그레이드할 때 Stripe Checkout에서 이 코드를 사용하세요.",
-    "emailButton": "이메일 보내기",
+    "emailButton": "리마인더를 이메일로 보내기",
     "emailSent": "귀하의 제안 이메일이 전송되었습니다. 계정 이메일의 받은편지함 또는 스팸 폴더를 확인하세요.",
     "emailStatus": {
-      "claim_failed": "저장된 혜택을 확인할 수 없었습니다. 잠시 후 다시 시도해 주세요. 코드는 여전히 위에 표시되어 있습니다.",
-      "failed": "이메일이 전송되었는지 확인할 수 없었습니다. 15분 후에 다시 시도하기 전에 받은 편지함을 확인하거나 여기에 코드를 복사하세요.",
-      "invalid_session": "이메일로 혜택을 보내려면 다시 로그인하세요. 코드는 계속 복사할 수 있습니다.",
-      "needs_email": "귀하의 계정에는 실제 이메일 주소가 필요합니다. Sonoran 계정에서 업데이트한 다음 15분 후에 다시 시도하세요. 여기에서 코드를 계속 복사할 수 있습니다.",
-      "not_ready": "방금 이메일을 요청했다면 받은 편지함이나 스팸 폴더를 확인하세요. 그렇지 않으면 15분 기다렸다가 다시 시도하세요. 코드는 계속 복사할 수 있습니다."
+      "claim_failed": "저장된 혜택을 확인할 수 없습니다. 잠시 후 다시 시도해 주세요. 코드는 여전히 여기에서 볼 수 있습니다.",
+      "failed": "이메일이 전송되었는지 확인할 수 없습니다. 15분 후 다시 시도하기 전에 받은 편지함을 확인하거나 여기에서 코드를 확인하세요.",
+      "invalid_session": "혜택을 이메일로 보내려면 다시 로그인해 주세요. 코드는 여전히 여기에서 볼 수 있습니다.",
+      "needs_email": "귀하의 계정에는 실제 이메일 주소가 필요합니다. Sonoran 계정에서 업데이트한 다음 15분 후에 다시 시도하세요. 여기에서 코드는 계속 볼 수 있습니다.",
+      "not_ready": "방금 이메일을 요청했다면 받은 편지함이나 스팸 폴더를 확인하세요. 그렇지 않으면 15분 기다렸다가 다시 시도하세요. 여기에서 코드는 계속 볼 수 있습니다."
     },
     "emailTerms": "첫 구독 결제 시.",
     "emailTitle": "20% 저장",
-    "eyebrow": "TikTok 전용 혜택",
+    "eyebrow": "귀하의 CAD 혜택",
+    "failedTitle": "오퍼가 아직 저장되지 않음",
     "notNow": "지금 아님",
-    "offer": "첫 달 20% 할인",
+    "offer": "자격 요건을 충족하는 구독 결제 20% 할인",
+    "pendingTitle": "혜택을 저장하는 중",
+    "readyTitle": "이 코드를 저장하세요",
+    "retryButton": "다시 시도",
     "savedButton": "저장했어요",
-    "saveReminder": "기기를 바꾸기 전에 스크린샷을 찍거나 복사하거나 적어 두세요.",
+    "saveReminder": "PC로 전환하시나요? 같은 Sonoran 계정으로 로그인하여 설정을 계속하세요.",
+    "savingButton": "혜택 저장 중",
     "title": "이 코드를 저장하세요"
   },
   "menu": {
@@ -2189,6 +2209,8 @@
         "twoHundredFifty": "250",
         "unlimited": "무제한"
       },
+      "savedOfferBody": "결제 시 자동 적용됩니다.",
+      "savedOfferTitle": "20% 할인은 계정에 저장되었습니다.",
       "selectCommunityForPurchase": "CAD 커뮤니티 선택",
       "selectCommunitySubtitle": "이 구독으로 업그레이드할 커뮤니티를 선택하세요.",
       "sonoranOnePlaceholder": "CAD, CMS, Radio, 및 포함된 RocketNode FiveM 호스팅을 위한 하나의 구독.",

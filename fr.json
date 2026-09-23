@@ -1619,6 +1619,12 @@
         "landing": {
           "ctaDocs": "Voir la documentation",
           "ctaPrimary": "Inscrivez-vous aujourd'hui",
+          "dispatchAi": {
+            "description": "Parlez via Sonoran Radio pour vérifier des plaques, créer des appels et mettre à jour le statut des unités dans le CAD.",
+            "linkLabel": "Voir comment ça fonctionne",
+            "note": "Disponible dans l'offre gratuite de Radio; des limites mensuelles d'utilisation de l'IA s'appliquent.",
+            "title": "Pas de répartiteur ? Découvrez Dispatch IA."
+          },
           "faq": {
             "items": {
               "best": {
@@ -1648,6 +1654,7 @@
           "faqTitlePrimary": "Foire aux questions",
           "headlineAccent": "pour FiveM",
           "headlinePrimary": "CAD / MDT gratuit",
+          "heroDescription": "Intégrez la gestion des interventions, les cartes en direct, la bodycam et les outils en jeu à votre serveur FiveM. Commencez avec le CAD gratuit et connectez la ressource officielle.",
           "kicker": "Gratuit, rapide, entièrement intégré",
           "meta": {
             "description": "CAD / MDT FiveM gratuit pour le dispatch roleplay, les cartes en direct, la bodycam et les plugins officiels. Connectez votre serveur, comparez les offres et explorez la synchronisation de base de données optionnelle.",
@@ -1728,7 +1735,8 @@
         "name": "FiveM"
       },
       "shared": {
-        "campaignCtaDetail": "Bénéficiez de 20 % de réduction sur votre prochaine mise à niveau",
+        "campaignCtaDetail": "Connectez-vous pour économiser 20 % sur un paiement d’abonnement éligible",
+        "campaignCtaTitle": "Commencer gratuitement + économiser 20%",
         "ecosystemDescription": "Ajoutez des outils conçus à cet effet à votre serveur sans reconstruire votre flux de travail ni payer la couche d’intégration.",
         "ecosystemEyebrow": "Aller plus loin dans le jeu",
         "featuresDescription": "Les outils en temps réel connectent le gameplay, la gestion et les enregistrements pour que votre communauté reste immergée.",
@@ -2037,25 +2045,37 @@
   },
   "marketingCoupon": {
     "accountSettings": "Mettre à jour l'e-mail du compte",
+    "claimStatus": {
+      "failed": "Nous n'avons pas pu enregistrer cette offre sur votre compte. Réessayez ou continuez sans l'offre.",
+      "saved": "Votre offre est enregistrée sur ce compte et s'applique au moment du paiement.",
+      "saving": "Enregistrement de cette offre sur votre compte en cours."
+    },
     "codeLabel": "Code promo",
+    "continueButton": "Continuer vers CAD",
+    "continueWithoutOffer": "Continuer vers CAD",
     "copyCode": "Copier le code promo",
     "description": "Votre offre est prête. Utilisez ce code sur Stripe Checkout lorsque vous passez à une offre supérieure.",
-    "emailButton": "M'envoyer un e-mail",
+    "emailButton": "M'envoyer un rappel par e-mail",
     "emailSent": "Votre e-mail d'offre a été envoyé. Vérifiez la boîte de réception ou le dossier spam de l'e-mail de votre compte.",
     "emailStatus": {
-      "claim_failed": "Nous n'avons pas pu confirmer votre offre enregistrée. Veuillez réessayer sous peu. Votre code s'affiche toujours ci-dessus.",
-      "failed": "Nous n'avons pas pu confirmer que l'e-mail a été envoyé. Vérifiez votre boîte de réception avant de réessayer dans 15 minutes, ou copiez votre code ici.",
-      "invalid_session": "Veuillez vous reconnecter pour envoyer votre offre par e-mail. Vous pouvez toujours copier votre code.",
-      "needs_email": "Votre compte nécessite une véritable adresse e-mail. Mettez-la à jour dans votre compte Sonoran, puis réessayez dans 15 minutes. Vous pouvez toujours copier votre code ici.",
-      "not_ready": "Si vous venez de demander un e-mail, vérifiez votre boîte de réception ou votre dossier spam. Sinon, attendez 15 minutes et réessayez. Vous pouvez toujours copier votre code."
+      "claim_failed": "Nous n'avons pas pu confirmer votre offre enregistrée. Veuillez réessayer sous peu. Vous pouvez toujours voir le code ici.",
+      "failed": "Nous n'avons pas pu confirmer l'envoi de l'e-mail. Vérifiez votre boîte de réception avant d'essayer à nouveau dans 15 minutes, ou consultez votre code ici.",
+      "invalid_session": "Veuillez vous reconnecter pour envoyer votre offre par e-mail. Vous pouvez toujours voir votre code ici.",
+      "needs_email": "Votre compte a besoin d'une adresse e-mail valide. Mettez-la à jour dans votre compte Sonoran, puis réessayez dans 15 minutes. Vous pouvez toujours consulter votre code ici.",
+      "not_ready": "Si vous venez de demander un e-mail, vérifiez votre boîte de réception ou vos indésirables. Sinon, attendez 15 minutes et réessayez. Vous pouvez toujours consulter votre code ici."
     },
     "emailTerms": "Lors de votre premier paiement d'abonnement.",
     "emailTitle": "Économisez 20%",
-    "eyebrow": "Offre TikTok exclusive",
+    "eyebrow": "Votre offre CAD",
+    "failedTitle": "Offre pas encore enregistrée",
     "notNow": "Pas maintenant",
-    "offer": "20% de réduction sur votre premier mois",
+    "offer": "20 % de réduction sur un paiement d’abonnement éligible",
+    "pendingTitle": "Enregistrement de votre offre",
+    "readyTitle": "Enregistrer ce code",
+    "retryButton": "Réessayer",
     "savedButton": "Je l'ai sauvegardé",
-    "saveReminder": "Prenez une capture d’écran, copiez-la ou notez-la avant de changer d’appareil.",
+    "saveReminder": "Vous passez à un PC? Connectez-vous avec le même compte Sonoran pour continuer la configuration.",
+    "savingButton": "Enregistrement de l'offre",
     "title": "Enregistrer ce code"
   },
   "menu": {
@@ -2189,6 +2209,8 @@
         "twoHundredFifty": "250",
         "unlimited": "Illimité"
       },
+      "savedOfferBody": "Appliqué automatiquement au moment du paiement.",
+      "savedOfferTitle": "20 % de réduction enregistrée sur votre compte.",
       "selectCommunityForPurchase": "Sélectionner la communauté CAD",
       "selectCommunitySubtitle": "Choisissez la communauté à mettre à niveau avec cet abonnement.",
       "sonoranOnePlaceholder": "Un abonnement pour CAD, CMS, Radio et l'hébergement RocketNode FiveM inclus.",
