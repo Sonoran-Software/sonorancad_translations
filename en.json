@@ -1556,6 +1556,10 @@
                 "answer": "Yes. Sonoran CAD includes the ER:LC integration on its free plan. ER:LC requires a separate API Expansion Pack purchase for your private server. CAD plan limits still apply; compare plans for account limits and additional features.",
                 "question": "Is the ER:LC integration free to use?"
               },
+              "whatIsCad": {
+                "answer": "CAD (computer-aided dispatch) helps dispatchers manage calls, units, and records for a roleplay community. Sonoran CAD connects that work to your ER:LC private server with live unit locations, emergency calls, and character tools.",
+                "question": "What is a CAD system in ER:LC?"
+              },
               "setup": {
                 "answer": "In your ER:LC private server settings, purchase the API Expansion Pack if needed and copy your ER:LC API key. In Sonoran CAD, open Admin > Advanced > In-Game Integration > ER:LC and paste the key into the matching server field. Copy the event webhook URL from CAD into ER:LC API > Event Log Webhook. Players must also link their Roblox accounts in CAD.",
                 "question": "How do I connect my ER:LC server to Sonoran CAD?"
@@ -1645,14 +1649,19 @@
                 "question": "What features are included with the FiveM integration?"
               },
               "free": {
-                "answer": "Yes. Sonoran CAD's core FiveM integration works on the free plan. Some third-party scripts and Database Sync are paid separately; CAD Pro includes Station Alert and Pager Reborn at no extra cost.",
-                "question": "Is the FiveM integration free to use?"
+                "answer": "Yes. Sonoran CAD's core FiveM integration works on the free plan. The in-game tablet gives responders an MDT-style view of their full CAD, while Mini-CAD is a smaller overlay for viewing and attaching to calls. Some third-party scripts and Database Sync are paid separately; CAD Pro includes Station Alert and Pager Reborn at no extra cost.",
+                "question": "Is Sonoran CAD's FiveM CAD/MDT free to use?"
+              },
+              "whatIsCad": {
+                "answer": "CAD (computer-aided dispatch) helps dispatchers manage calls, units, and records for a roleplay server. Sonoran CAD connects that work to FiveM; responders can open their CAD on the in-game tablet or use Mini-CAD to view and attach to calls.",
+                "question": "What is a CAD system in FiveM?"
               },
               "setup": {
                 "answer": "Most servers can get the base resource configured in a few minutes. Install the resource, add your community ID and API key, restart the server, and then enable the features you want.",
                 "question": "How long does it take to set up the integration?"
               }
-            }
+            },
+            "tabletGuideLabel": "Set up Tablet & Mini-CAD"
           },
           "faqKicker": "Support Protocols",
           "faqTitleAccent": "Questions",
