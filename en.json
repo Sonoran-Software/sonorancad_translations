@@ -731,6 +731,7 @@
           "panelIntro": "Look up your FiveM characters, licenses, and vehicles directly in CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Open User Accounts and add a user. Give it SELECT and SHOW VIEW access to your database, as shown below. Enter your database server’s public address and the new user’s details.",
+          "plusRequired": "Database Sync setup requires Sonoran CAD Plus.",
           "provider": "Where is your database?",
           "ready": "Let AI finish the setup",
           "required": "Required",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Differing Outbound IP",
       "enableMap": "Enable Map",
       "erlc": {
+        "addServer": "Add server",
         "advancedSettingsCaption": "Optional command automation settings for each server.",
         "advancedSettingsTitle": "Advanced Command Settings",
         "apiKey": "ER:LC API Key",
@@ -802,7 +804,8 @@
           "webhook": "Add the Event Webhook"
         },
         "liveMapAbout": "The live map offers an interactive 2D and 3D game map with unit locations, bodycameras, emergency calls, dispatch calls, and more.",
-        "liveMapStatus": "Live Map",
+        "liveMapHeader": "Live Map",
+        "liveMapStatus": "Status",
         "liveMapStyle": "Map Style",
         "noServersConfigured": "No servers are configured for this community yet.",
         "notifyAlways": "Always",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} screenshot {number}",
         "serverKeysBody": "Paste the API key for each ER:LC server you want connected.",
         "serverKeysTitle": "Connect Your Servers",
+        "serverLimit": "This community has reached its server limit.",
+        "serverName": "Server name",
+        "serversTitle": "Servers",
         "setupChecklistTitle": "Setup Checklist",
         "setupIntro": "Walk through the free ER:LC integration setup, then fine tune map and command options as needed.",
         "startSetup": "Start Setup",
@@ -887,7 +893,7 @@
         "header": "FiveM Integration",
         "liveMapBody": "The FiveM resource automatically sends unit locations to the CAD live map with no extra live map configuration. Users only need to be connected to this CAD and run /link in-game.",
         "liveMapPermissionNote": "Users also need account permission to view the live map.",
-        "liveMapStatus": "Live Map",
+        "liveMapStatus": "Status",
         "liveMapTitle": "Live Map",
         "manual": {
           "additionalOptions": "You can learn more about the other configuration options here.",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "Open RocketNode hosting",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
     "sonoranOneLink": "Open Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Back",
+    "chooseGame": "What do you play?",
+    "connectNext": "Your community is ready. Next, connect your game.",
+    "continue": "Continue",
+    "createFailed": "We couldn’t create your community. Check your community limit and try again.",
+    "createUncertain": "We couldn’t confirm creation. Refresh your communities before trying again.",
+    "dispatchAi": "Set up Dispatch AI",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Other"
+    },
+    "instruction": {
+      "erlc": "Open Admin → Advanced → In-Game Integration → ER:LC. You’ll need your server’s ER:LC API Pack.",
+      "fivem": "On your PC, open Admin → Advanced → In-Game Integration → FiveM.",
+      "other": "Dispatch AI connects Sonoran Radio to your CAD. Start with the setup guide."
+    },
+    "joinInstead": "Join a community instead",
+    "mobileHint": "Create it here. Finish connecting your game on PC.",
+    "nameCommunity": "Name your community",
+    "next": {
+      "erlc": "Connect ER:LC",
+      "fivem": "Connect FiveM",
+      "other": "Set up Dispatch AI"
+    },
+    "openCommunity": "Open community",
+    "openGuide": "Open setup guide",
+    "openingCommunity": "Opening your community…",
+    "otherName": "Game name",
+    "otherRequired": "Enter a game name (2–60 characters).",
+    "pcNext": "Your community is saved. Sign in with this same account on your PC to continue.",
+    "previewDesktop": "Resume on desktop",
+    "previewEvents": "Captured events (not sent to Google Analytics)",
+    "previewFailure": "Simulate a failed save",
+    "previewJoined": "Preview: the existing join-community dialog would open here.",
+    "previewLabel": "Local preview · sample data · no live account changes",
+    "previewMobile": "Mobile preview",
+    "previewOpened": "Preview: the community would open here.",
+    "previewReset": "Start over",
+    "saveFailed": "Your choice wasn’t saved. Please try again.",
+    "setup": "Continue setup",
+    "startTitle": "Set up your community"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "Select at least one address or unit.",
     "sendPage": "Send Page",
     "unitsTooltip": "You can also drag and drop an active dispatch call here to add its attached units."
+  },
+  "integrationGame": {
+    "apiDescription": "For custom integrations. Click a value to copy it.",
+    "apiDocs": "API documentation",
+    "change": "Change",
+    "copyApiKey": "Copy API key",
+    "copyCommunityId": "Copy community ID",
+    "current": "Game",
+    "unselected": "Not selected"
   },
   "integrationPanels": {
     "actionFailed": "The integration action failed.",
@@ -3810,6 +3869,64 @@
     "unlockWindow": "Unlock Window",
     "voice": "Voice",
     "volume": "Volume"
+  },
+  "setupChecklist": {
+    "addSync": "Add sync step",
+    "allDone": "Complete",
+    "chooseFramework": "Which framework do you use?",
+    "configureSync": "Open database sync",
+    "currentStep": "Step {step} of {total}",
+    "details": "Details",
+    "discord": "Join our Discord",
+    "dismiss": "Dismiss setup checklist",
+    "done": "Complete",
+    "editFramework": "Edit",
+    "framework": "Framework",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Other",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} selected",
+    "help": "Get help",
+    "hints": {
+      "db_sync": "Choose your framework, or select No framework to complete this step.",
+      "erlc_key": "Save your server’s API key in the ER:LC integration panel.",
+      "erlc_webhook": "Add the webhook URL, then run a CAD custom command in ER:LC to confirm the connection.",
+      "fivem_resource": "Download the resource and add it to your FiveM server."
+    },
+    "noFramework": "No framework",
+    "noFrameworkSelected": "No framework — database sync isn’t needed.",
+    "optionalSync": "Optional: database sync",
+    "pending": "Not complete",
+    "previewControls": "Preview controls (sample data)",
+    "previewErlc": "ER:LC checklist",
+    "previewFivem": "FiveM checklist",
+    "previewKey": "API key saved",
+    "previewOwner": "Registered owner",
+    "previewResource": "Resource prepared",
+    "previewSync": "Sync configured",
+    "previewTitle": "Community setup preview",
+    "previewWebhook": "Webhook received",
+    "refresh": "Refresh setup progress",
+    "reopen": "Setup checklist",
+    "saveFailed": "Your checklist change wasn’t saved. Please try again.",
+    "setUpSync": "Set up",
+    "shortTitle": "Setup",
+    "skipSetup": "Skip setup",
+    "skipSync": "Skip database sync",
+    "steps": {
+      "db_sync": "Database sync",
+      "erlc_key": "Save ER:LC API key",
+      "erlc_webhook": "Connect ER:LC webhook",
+      "fivem_resource": "Get FiveM resource"
+    },
+    "syncOptions": "Database sync options",
+    "syncQuestion": "Using a framework? Automatically sync characters, licenses and vehicle registrations from your FiveM database.",
+    "syncSummary": "Sync characters, licenses and vehicles from your server.",
+    "title": "Set up {name}",
+    "webhookHint": "After adding the webhook URL, run a CAD custom command in ER:LC. This checks off when CAD receives it."
   },
   "shortcuts": {
     "accountSaveFailed": "Shortcuts could not be saved to your account.",
