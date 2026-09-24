@@ -1563,6 +1563,10 @@
               "troubleshooting": {
                 "answer": "Buying the pack enables API access; it does not connect the server automatically. Check that the current ER:LC API key is saved for the correct server in CAD. If calls or registrations are missing, check the Event Log Webhook in ER:LC against the URL shown in CAD. Players should also check that their Roblox account is linked. Use the setup guide below if you need help locating these settings.",
                 "question": "I bought the ER:LC API Pack. Why is Sonoran CAD not working?"
+              },
+              "management": {
+                "answer": "Sonoran CAD handles dispatch calls, unit tracking, and roleplay records. Sonoran CMS adds ER:LC server moderation, staff activity, rosters, and applications. Communities moving from Melonly can import their Melonly player logs into Sonoran CMS.",
+                "question": "Can I manage my ER:LC staff and server alongside the Roblox CAD?"
               }
             }
           },
@@ -1610,7 +1614,8 @@
               "previewTitle": "In-Game Overlay Preview",
               "title": "In-Game Overlay"
             }
-          }
+          },
+          "cmsLink": "Manage your ER:LC community with Sonoran CMS"
         },
         "name": "ER:LC"
       },
@@ -1798,7 +1803,9 @@
       "heading": "Sonoran CAD Pricing",
       "integrationLinks": "Game integrations",
       "setupGuide": "ERLC setup guide",
-      "title": "Sonoran CAD Pricing - Free & Paid Plans"
+      "title": "Sonoran CAD Pricing - Free & Paid Plans",
+      "imperialComparisonLink": "Sonoran CAD vs ImperialCAD",
+      "melonlyComparisonLink": "Sonoran CAD vs Melonly"
     },
     "startFree": "Start Free",
     "startToday": "Start Today",
@@ -1909,7 +1916,269 @@
     },
     "welcomeDescription": "Learn more about Sonoran CAD's integration plugin system, custom live map, database sync functionality, iOS/Android apps, and more!",
     "welcomeHeadline": "Welcome to Sonoran CAD!",
-    "welcomeTitle": "Welcome"
+    "welcomeTitle": "Welcome",
+    "comparisons": {
+      "shared": {
+        "checked": "Product and plan details checked September 2026.",
+        "compareHeading": "Compare the essentials",
+        "homeLabel": "Sonoran CAD home",
+        "logoAlt": "Sonoran CAD",
+        "plansLink": "Pricing",
+        "platformLabels": {
+          "android": "Download Sonoran CAD for Android",
+          "ios": "Download Sonoran CAD for iOS",
+          "linux": "Download Sonoran CAD for Linux",
+          "macos": "Download Sonoran CAD for macOS",
+          "windows": "Download Sonoran CAD for Windows"
+        },
+        "libraryLabels": {
+          "javascript": "Sonoran.js code library on npm",
+          "lua": "Sonoran.lua code library on LuaRocks",
+          "dotnet": "Sonoran.Net code library on NuGet",
+          "python": "Sonoran.py code library on PyPI"
+        },
+        "reviewsLink": "Read Google reviews",
+        "sonoranColumn": "Sonoran CAD",
+        "sonoranDownloadsSource": "Sonoran CAD downloads",
+        "sonoranLibrariesSource": "Sonoran v2 API code libraries",
+        "sonoranSource": "Sonoran CAD plans",
+        "sourcesLabel": "Sources",
+        "startFree": "Start free",
+        "socialQuestion": "Which CAD is better",
+        "versus": "VS",
+        "supportCopy": "Live chat with our USA and UK teams during business hours. Real people are here to help every day of the week.",
+        "supportHeading": "Human support, seven days a week",
+        "supportLink": "Talk to support",
+        "widgetTitle": "Sonoran support response times"
+      },
+      "melonly": {
+        "closeHeading": "Ready to bring dispatch to your ER:LC server?",
+        "competitorColumn": "Melonly Departments + CAD",
+        "competitorShort": "Melonly",
+        "heading": "Sonoran CAD vs Melonly CAD",
+        "independenceNote": "Independent comparison. Melonly has not sponsored or endorsed this page.",
+        "imageAlt": "Sonoran CAD ER:LC live map showing units and calls",
+        "imageCaption": "Sonoran CAD live map for ER:LC",
+        "intro": "Start free ER:LC CAD with the full integration: 3D live map, live bodycam, and dedicated iOS and Android apps.",
+        "meta": {
+          "description": "Compare Sonoran CAD and Melonly for ER:LC: free CAD, dedicated iOS and Android apps, a 3D live map, multiple server options, and support.",
+          "socialDescription": "Free ER:LC CAD with full integration. Compare Sonoran CAD and Melonly CAD.",
+          "socialImageAlt": "Which CAD is better for ER:LC? Sonoran CAD versus Melonly CAD",
+          "socialQuestionEnd": "for ER:LC?",
+          "socialCompetitorLabel": "Melonly CAD",
+          "title": "Sonoran CAD vs Melonly CAD | ER:LC Comparison"
+        },
+        "note": "ER:LC sells its private-server API Expansion Pack separately. CAD plan limits still apply.",
+        "downloadsSource": "Melonly desktop downloads",
+        "melonlyApiSource": "Melonly public API reference",
+        "melonlyRateLimitsSource": "Melonly API rate limits",
+        "supportSource": "Melonly support",
+        "pwaSource": "Melonly mobile PWA",
+        "sonoranErlcSource": "Sonoran ER:LC features",
+        "supportCopy": "Get help through Sonoran live chat without opening a Discord ticket. Free and paid users can reach our team seven days a week during support hours.",
+        "platformMissing": {
+          "android": "Melonly does not list a dedicated Android app; its mobile PWA is available",
+          "ios": "Melonly does not list a dedicated iOS app; its mobile PWA is available"
+        },
+        "platformDownloads": {
+          "linux": "Melonly Linux download",
+          "macos": "Melonly macOS download",
+          "windows": "Melonly Windows download"
+        },
+        "related": {
+          "cms": {
+            "description": "Use a free ER:LC game panel for player records, moderation, and server management.",
+            "imageAlt": "Sonoran CMS ER:LC management panel with sample player records and activity",
+            "link": "Explore Sonoran CMS",
+            "title": "Looking for ER:LC management?"
+          },
+          "radio": {
+            "description": "Add free ER:LC radio channels and a desktop overlay to your roleplay sessions.",
+            "imageAlt": "Sonoran Radio handheld and desktop overlays displayed over ER:LC scenes",
+            "link": "Explore Sonoran Radio",
+            "title": "Looking for ER:LC radio?"
+          }
+        },
+        "relatedHeading": "More for your ER:LC community",
+        "rows": [
+          {
+            "label": "CAD starting price",
+            "sonoran": "$0/month",
+            "competitor": "From $1.99/month"
+          },
+          {
+            "label": "Entry plan",
+            "sonoran": "Full ER:LC integration, 35 CAD accounts, and one server on Free. Civilians can register characters and vehicles in-game without a CAD account.",
+            "sonoranHighlight": "Full ER:LC integration",
+            "competitor": "One department and one additional CAD panel type."
+          },
+          {
+            "label": "ER:LC servers in one CAD",
+            "sonoran": "One on Free, two on Plus, and up to 100 on Pro or Sonoran One. Each server has its own ER:LC API key.",
+            "sonoranHighlight": "up to 100 on Pro or Sonoran One",
+            "competitor": "Each Departments + CAD subscription is tied to one Melonly server; another server needs its own subscription."
+          },
+          {
+            "label": "Apps and platforms",
+            "sonoran": "Dedicated iOS and Android apps, plus web and Windows, macOS, and Linux desktop apps.",
+            "sonoranHighlight": "Dedicated iOS and Android apps",
+            "competitor": "Mobile PWA and web access, plus Windows, macOS, and Linux desktop apps. No dedicated iOS or Android app listed.",
+            "platforms": true
+          },
+          {
+            "label": "Live map",
+            "sonoran": "2D and 3D live map with unit locations, calls, and bodycam feeds.",
+            "sonoranHighlight": "3D live map",
+            "competitor": "Interactive in-game map with units and calls; no 3D view listed on its product page."
+          },
+          {
+            "label": "Roleplay tools",
+            "sonoran": "Live bodycam, emergency calls, traffic stops, registrations, and records.",
+            "competitor": "CAD, radio, bodycam, in-game map, records, and department tools."
+          },
+          {
+            "label": "Developer API",
+            "sonoran": "Free v2 API. Same request limits on every plan.",
+            "sonoranHighlight": "Free v2 API",
+            "competitor": "Standard: 1,000 requests/hour. Premium: 5,000/hour.",
+            "competitorHighlight": "Premium: 5,000/hour"
+          },
+          {
+            "label": "Support channel",
+            "sonoran": "Direct live chat for free and paid users, seven days a week during support hours.",
+            "competitor": "Melonly directs users to its Discord server for support."
+          }
+        ],
+        "sourceLabel": "Melonly Departments + CAD"
+      },
+      "imperialcad": {
+        "closeHeading": "Ready to connect your FiveM server?",
+        "competitorColumn": "ImperialCAD",
+        "competitorShort": "ImperialCAD",
+        "heading": "Sonoran CAD vs ImperialCAD",
+        "independenceNote": "Independent comparison. ImperialCAD has not sponsored or endorsed this page.",
+        "imageAlt": "Sonoran CAD FiveM live map showing active units",
+        "imageCaption": "Sonoran CAD live map for FiveM",
+        "intro": "Start free FiveM CAD with full in-game integration, a 3D live map, and live bodycam. Add direct database sync for framework communities.",
+        "meta": {
+          "description": "Compare Sonoran CAD and ImperialCAD for FiveM. See free v2 API access, direct database sync, starting prices, 3D live maps, and support.",
+          "socialDescription": "Free FiveM CAD with Dispatch AI, live bodycam, and a 3D map. Compare Sonoran CAD and ImperialCAD.",
+          "socialImageAlt": "Which CAD is better for FiveM? Sonoran CAD versus ImperialCAD",
+          "socialQuestionEnd": "for FiveM?",
+          "socialCompetitorLabel": "ImperialCAD",
+          "title": "Sonoran CAD vs ImperialCAD | FiveM CAD Comparison"
+        },
+        "supportCopy": "Anyone in your community can reach Sonoran's live chat, whether your CAD is free or paid. Our team is available seven days a week during support hours.",
+        "imperialSupportSource": "ImperialCAD support options",
+        "imperialAppsSource": "ImperialCAD apps and platforms",
+        "pricingSource": "ImperialCAD plans",
+        "mapSource": "ImperialCAD LiveMap",
+        "apiSource": "ImperialCAD API plans",
+        "pluginsSource": "ImperialCAD offered plugins",
+        "sonoranIntegrationsSource": "Sonoran FiveM submodules",
+        "sonoranFeaturesSource": "Sonoran CAD features",
+        "sonoranDbSyncSource": "Sonoran Database Sync",
+        "sonoranV2Source": "Sonoran v2 API",
+        "sonoranLayoutSource": "Sonoran layout and themes",
+        "imperialFrameworkSource": "ImperialCAD FiveM integration",
+        "platformMissing": {
+          "android": "ImperialCAD does not list a dedicated Android app",
+          "ios": "ImperialCAD does not list a dedicated iOS app",
+          "linux": "ImperialCAD does not list a Linux desktop app",
+          "macos": "ImperialCAD does not list a macOS desktop app"
+        },
+        "platformDownloads": {
+          "windows": "ImperialCAD Windows desktop app"
+        },
+        "rows": [
+          {
+            "label": "CAD starting price",
+            "sonoran": "$0/month",
+            "competitor": "From $5/month",
+            "competitorDetail": "Starter plan · no free plan"
+          },
+          {
+            "label": "Apps and platforms",
+            "sonoran": "Dedicated iOS and Android apps, plus web and Windows, macOS, and Linux desktop apps.",
+            "sonoranHighlight": "Dedicated iOS and Android apps",
+            "competitor": "Browser access, Windows desktop app, and an in-game FiveM tablet. No dedicated iOS or Android app or macOS/Linux desktop download listed.",
+            "platforms": true
+          },
+          {
+            "label": "FiveM resources",
+            "sonoran": "Dozens of documented submodules, with the core FiveM resource on Free.",
+            "sonoranHighlight": "Dozens of documented submodules",
+            "sonoranHighlightHref": "https://docs.sonoransoftware.com/cad/integration-plugins/in-game-integration/fivem-installation/available-plugins",
+            "competitor": "Official FiveM resource with tablet, civilian tools, ERS, LiveMap, and other plugins."
+          },
+          {
+            "label": "Dispatch AI",
+            "sonoran": "Dispatch AI included on Free (monthly use limit). Create calls, run plates, and update status by voice through Sonoran Radio.",
+            "sonoranHighlight": "Dispatch AI included on Free",
+            "competitor": "No Dispatch AI offering.",
+            "competitorHighlight": "No Dispatch AI"
+          },
+          {
+            "label": "FiveM database sync",
+            "sonoran": "Direct database sync on Plus or higher: search in-game characters, licenses, and vehicle registrations from ESX, QBCore, QBox, or another compatible database.",
+            "sonoranHighlight": "Direct database sync on Plus or higher",
+            "competitor": "No direct FiveM database sync offered.",
+            "competitorHighlight": "No direct FiveM database sync"
+          },
+          {
+            "label": "Live map",
+            "sonoran": "Free 3D live map with units, calls, and bodycam feeds.",
+            "sonoranHighlight": "Free 3D live map",
+            "competitor": "LiveMap with unit and postal tracking. Premium: $35/month.",
+            "competitorHighlight": "Premium: $35/month"
+          },
+          {
+            "label": "Live bodycam",
+            "sonoran": "Free live in-game bodycam feeds inside CAD.",
+            "sonoranHighlight": "Free live in-game bodycam feeds",
+            "competitor": "No live bodycam offered.",
+            "competitorHighlight": "No live bodycam"
+          },
+          {
+            "label": "Developer API",
+            "sonoran": "Free v2 API access with documented endpoints and official code libraries.",
+            "sonoranHighlight": "Free v2 API access",
+            "libraries": true,
+            "competitor": "API access starts at $15/month (Standard).",
+            "competitorHighlight": "$15/month"
+          },
+          {
+            "label": "Themes and layouts",
+            "sonoran": "Built-in themes, custom colors, saved layouts, movable panels, and multiple desktops.",
+            "competitor": "Community branding and customization, including Premium color swatches."
+          },
+          {
+            "label": "Customer support",
+            "sonoran": "Direct live chat for anyone in your community, free or paid, seven days a week during support hours. Live response times are shown below.",
+            "sonoranHighlight": "Direct live chat for anyone in your community",
+            "competitor": "Discord tickets for customers and end users; ImperialCAD advises allowing 24–48 hours for a response.",
+            "competitorHighlight": "24–48 hours"
+          }
+        ],
+        "sourceLabel": "ImperialCAD FAQ",
+        "themes": {
+          "heading": "Like the ImperialCAD look? Try Spillboy.",
+          "description": "Start with Spillboy, then make your CAD your own. Change colors, save themes, move and resize panels, and build a layout that fits your dispatch workflow.",
+          "featuredAlt": "Sonoran CAD Spillboy theme preview",
+          "spillboyAttribution": "Inspired by Motorola Solutions Spillman Flex CAD",
+          "moreHeading": "More built-in looks",
+          "modern": "Modern",
+          "modernAttribution": "Original Sonoran design",
+          "trevor": "Trevor",
+          "trevorAttribution": "Inspired by Tyler Technologies Enterprise CAD",
+          "mike19": "Mike19",
+          "mike19Attribution": "Inspired by Mark43 CAD",
+          "metro": "CentralCircle",
+          "metroAttribution": "Inspired by CentralSquare Enterprise CAD",
+          "link": "Explore Sonoran CAD themes and layouts"
+        }
+      }
+    }
   },
   "infernoPager": {
     "addresses": "Addresses",
