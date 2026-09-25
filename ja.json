@@ -731,6 +731,7 @@
           "panelIntro": "CADであなたのFiveMキャラクター、免許、車両を直接検索できます。",
           "php": "phpMyAdmin",
           "phpHelp": "ユーザーアカウントを開き、ユーザーを追加します。以下のように、データベースへのSELECTとSHOW VIEWアクセス権を付与してください。データベースサーバーの公開アドレスと新しいユーザーの詳細を入力してください。",
+          "plusRequired": "Database Sync のセットアップには Sonoran CAD Plus が必要です。",
           "provider": "データベースはどこですか？",
           "ready": "AIにセットアップを完了させる",
           "required": "必須",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "異なる送信元IP",
       "enableMap": "マップを有効化",
       "erlc": {
+        "addServer": "サーバーを追加",
         "advancedSettingsCaption": "各サーバーの任意のコマンド自動化設定。",
         "advancedSettingsTitle": "高度なコマンド設定",
         "apiKey": "ER:LC API キー",
@@ -802,7 +804,8 @@
           "webhook": "イベント webhook を追加"
         },
         "liveMapAbout": "ライブマップは、部隊の位置、ボディカメラ、緊急通報、配車通報などを表示するインタラクティブな 2D と 3D のゲームマップを提供します。",
-        "liveMapStatus": "ライブマップ",
+        "liveMapHeader": "ライブマップ",
+        "liveMapStatus": "ステータス",
         "liveMapStyle": "マップスタイル",
         "noServersConfigured": "このコミュニティにはまだサーバーが設定されていません。",
         "notifyAlways": "常に",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} スクリーンショット {number}",
         "serverKeysBody": "接続したい各ER:LCサーバーのAPIキーを貼り付けてください。",
         "serverKeysTitle": "サーバーを接続",
+        "serverLimit": "このコミュニティはサーバー上限に達しました。",
+        "serverName": "サーバー名",
+        "serversTitle": "サーバー",
         "setupChecklistTitle": "セットアップチェックリスト",
         "setupIntro": "無料のER:LC連携セットアップを案内し、その後必要に応じてマップとコマンドのオプションを微調整します。",
         "startSetup": "セットアップを開始",
@@ -887,7 +893,7 @@
         "header": "FiveM 統合",
         "liveMapBody": "FiveM リソースは、追加の live map 設定なしでユニットの位置を CAD live map に自動送信します。ユーザーは、この CAD に接続し、ゲーム内で /link を実行するだけです。",
         "liveMapPermissionNote": "ユーザーはライブマップを表示するためにアカウント権限も必要です。",
-        "liveMapStatus": "ライブマップ",
+        "liveMapStatus": "ステータス",
         "liveMapTitle": "ライブマップ",
         "manual": {
           "additionalOptions": "ここで他の設定オプションについて詳しく学べます。",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "RocketNode ホスティングを開く",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM ホスティング",
     "sonoranOneLink": "Sonoran One を開く"
+  },
+  "guidedSetup": {
+    "back": "戻る",
+    "chooseGame": "何をしますか？",
+    "connectNext": "あなたのコミュニティの準備ができました。次に、ゲームを接続してください。",
+    "continue": "続ける",
+    "createFailed": "コミュニティを作成できませんでした。コミュニティの上限を確認して、もう一度お試しください。",
+    "createUncertain": "作成を確認できませんでした。もう一度試す前にコミュニティを更新してください。",
+    "dispatchAi": "Dispatch AI を設定",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "その他"
+    },
+    "instruction": {
+      "erlc": "Admin → Advanced → In-Game Integration → ER:LC を開いてください。サーバーの ER:LC API Pack が必要です。",
+      "fivem": "PC で、Admin → Advanced → In-Game Integration → FiveM を開いてください。",
+      "other": "Dispatch AI は Sonoran Radio を CAD に接続します。セットアップガイドから始めてください。"
+    },
+    "joinInstead": "代わりにコミュニティに参加",
+    "mobileHint": "ここで作成します。PC でゲームの接続を完了してください。",
+    "nameCommunity": "コミュニティ名を設定",
+    "next": {
+      "erlc": "ER:LC に接続",
+      "fivem": "FiveM に接続",
+      "other": "Dispatch AI を設定"
+    },
+    "openCommunity": "コミュニティを開く",
+    "openGuide": "セットアップガイドを開く",
+    "openingCommunity": "コミュニティを開いています…",
+    "otherName": "ゲーム名",
+    "otherRequired": "ゲーム名を入力してください（2～60文字）",
+    "pcNext": "あなたのコミュニティは保存されました。続行するには、PCでも同じアカウントでサインインしてください。",
+    "previewDesktop": "デスクトップで再開",
+    "previewEvents": "取得されたイベント（Google Analytics に送信されていない）",
+    "previewFailure": "保存失敗をシミュレート",
+    "previewJoined": "プレビュー: 既存のコミュニティ参加ダイアログがここで開きます。",
+    "previewLabel": "ローカルプレビュー · サンプルデータ · ライブアカウントの変更なし",
+    "previewMobile": "モバイル プレビュー",
+    "previewOpened": "プレビュー: コミュニティがここで開きます。",
+    "previewReset": "最初からやり直す",
+    "saveFailed": "選択内容は保存されませんでした。もう一度お試しください。",
+    "setup": "セットアップを続ける",
+    "startTitle": "コミュニティを設定"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "少なくとも1つの住所または単位を選択してください。",
     "sendPage": "ページを送信",
     "unitsTooltip": "アクティブな配車通話をここにドラッグ＆ドロップして、添付されたユニットを追加することもできます。"
+  },
+  "integrationGame": {
+    "apiDescription": "カスタム統合用。値をクリックしてコピーします。",
+    "apiDocs": "API ドキュメンテーション",
+    "change": "変更",
+    "copyApiKey": "API キーをコピー",
+    "copyCommunityId": "コミュニティIDをコピー",
+    "current": "ゲーム",
+    "unselected": "未選択"
   },
   "integrationPanels": {
     "actionFailed": "連携アクションに失敗しました。",
@@ -3811,6 +3870,64 @@
     "voice": "音声",
     "volume": "音量"
   },
+  "setupChecklist": {
+    "addSync": "同期ステップを追加",
+    "allDone": "完了",
+    "chooseFramework": "どのフレームワークを使っていますか？",
+    "configureSync": "データベース 同期 を開く",
+    "currentStep": "ステップ {step} / {total}",
+    "details": "詳細",
+    "discord": "Discord に参加",
+    "dismiss": "セットアップチェックリストを閉じる",
+    "done": "完了",
+    "editFramework": "編集",
+    "framework": "フレームワーク",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "その他",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} が選択されました",
+    "help": "ヘルプを取得",
+    "hints": {
+      "db_sync": "フレームワークを選択するか、この手順を完了するにはフレームワークなしを選択してください。",
+      "erlc_key": "ER:LC連携パネルにサーバーのAPIキーを保存してください。",
+      "erlc_webhook": "webhook URL を追加し、次に ER:LC で CAD カスタムコマンドを実行して接続を確認してください。",
+      "fivem_resource": "リソースをダウンロードし、FiveM サーバーに追加してください。"
+    },
+    "noFramework": "フレームワークなし",
+    "noFrameworkSelected": "フレームワークなし — データベース同期は不要です。",
+    "optionalSync": "オプション: データベース 同期",
+    "pending": "未完了",
+    "previewControls": "プレビューコントロール（サンプルデータ）",
+    "previewErlc": "ER:LC チェックリスト",
+    "previewFivem": "FiveM チェックリスト",
+    "previewKey": "API キーが保存されました",
+    "previewOwner": "登録済み所有者",
+    "previewResource": "リソースを準備しました",
+    "previewSync": "同期設定済み",
+    "previewTitle": "コミュニティ設定プレビュー",
+    "previewWebhook": "Webhookを受信しました",
+    "refresh": "セットアップ進行状況を更新",
+    "reopen": "セットアップチェックリスト",
+    "saveFailed": "チェックリストの変更は保存されませんでした。もう一度お試しください。",
+    "setUpSync": "設定",
+    "shortTitle": "セットアップ",
+    "skipSetup": "セットアップをスキップ",
+    "skipSync": "データベース 同期 を スキップ",
+    "steps": {
+      "db_sync": "データベース 同期",
+      "erlc_key": "ER:LC API キーを保存",
+      "erlc_webhook": "ER:LC webhook に接続",
+      "fivem_resource": "FiveM リソースを取得"
+    },
+    "syncOptions": "データベース 同期 オプション",
+    "syncQuestion": "フレームワークを使用していますか？FiveMデータベースからキャラクター、ライセンス、車両登録情報を自動同期します。",
+    "syncSummary": "サーバーからキャラクター、ライセンス、車両を同期します。",
+    "title": "{name} を設定",
+    "webhookHint": "webhook URL を追加した後、ER:LC で CAD カスタムコマンドを実行してください。CAD が受信すると完了扱いになります。"
+  },
   "shortcuts": {
     "accountSaveFailed": "ショートカットをアカウントに保存できませんでした。",
     "addCliVariable": "CLI 引数を追加",
@@ -3988,13 +4105,17 @@
     "unavailableTitle": "コミュニティは利用不可"
   },
   "vanityUrl": {
+    "autoJoin": "このURLからサインインすると、自動的にコミュニティに参加します。承認と権限は引き続き適用されます。",
     "copy": "コミュニティURLをコピー",
+    "invalidCharacters": "このコミュニティ ID は vanity URL では使用できません。文字、数字、またはハイフンを使用し、先頭と末尾は文字または数字にしてください。",
     "label": "コミュニティURL",
     "meta": {
       "description": "{community} に参加しよう Sonoran CAD、ゲームコミュニティ向けのディスパッチと記録管理プラットフォーム",
       "imageAlt": "{community}ロゴ",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "このコミュニティ ID は vanity URL として使用できません。英字、数字、またはハイフンを使用し、予約済みの名前は避けてください。"
+    "reserved": "このコミュニティ ID は予約済みで、vanity URL として使用できません。",
+    "tooLong": "このコミュニティ ID は vanity URL に対して長すぎます。",
+    "unavailable": "このコミュニティ ID は vanity URL として使用できません。"
   }
 }

@@ -731,6 +731,7 @@
           "panelIntro": "Slå dine FiveM-karakterer, licenser og køretøjer op direkte i CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Åbn brugerkonti, og tilføj en bruger. Giv den SELECT- og SHOW VIEW-adgang til din database, som vist nedenfor. Indtast din databaseservers offentlige adresse og den nye brugers oplysninger.",
+          "plusRequired": "Database Synkroniseringsopsætning kræver Sonoran CAD Plus.",
           "provider": "Hvor er din database?",
           "ready": "Lad AI afslutte opsætningen",
           "required": "Påkrævet",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Afvigende udgående IP",
       "enableMap": "Aktivér kort",
       "erlc": {
+        "addServer": "Tilføj server",
         "advancedSettingsCaption": "Valgfrie indstillinger for kommandoautomatisering for hver server.",
         "advancedSettingsTitle": "Avancerede kommandoinstillinger",
         "apiKey": "ER:LC API-nøgle",
@@ -802,6 +804,7 @@
           "webhook": "Tilføj event-webhooken"
         },
         "liveMapAbout": "Det levende kort tilbyder et interaktivt 2D- og 3D-spilkort med enheders placeringer, bodycams, nødopkald, dispatchopkald og mere.",
+        "liveMapHeader": "Live-kort",
         "liveMapStatus": "Live-kort",
         "liveMapStyle": "Kortstil",
         "noServersConfigured": "Ingen servere er endnu konfigureret for dette fællesskab.",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} skærmbillede {number}",
         "serverKeysBody": "Indsæt API-nøglen for hver ER:LC-server, du vil have tilsluttet.",
         "serverKeysTitle": "Forbind dine servere",
+        "serverLimit": "Dette fællesskab har nået sin servergrænse.",
+        "serverName": "Servernavn",
+        "serversTitle": "Servere",
         "setupChecklistTitle": "Opsætningscheckliste",
         "setupIntro": "Gå gennem den gratis ER:LC-integrationsopsætning, og finjuster derefter kort- og kommandoindstillinger efter behov.",
         "startSetup": "Start opsætning",
@@ -1484,6 +1490,50 @@
     "rocketNodeLink": "Åbn RocketNode-hosting",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
     "sonoranOneLink": "Åbn Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Tilbage",
+    "chooseGame": "Hvad spiller du?",
+    "connectNext": "Dit fællesskab er klar. Næste, forbind dit spil.",
+    "continue": "Fortsæt",
+    "createFailed": "Vi kunne ikke oprette dit fællesskab. Tjek din fællesskabsgrænse, og prøv igen.",
+    "createUncertain": "Vi kunne ikke bekræfte oprettelsen. Opdater dine fællesskaber, før du prøver igen.",
+    "dispatchAi": "Opsæt Dispatch AI",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Andet"
+    },
+    "instruction": {
+      "erlc": "Åbn Admin → Advanced → In-Game Integration → ER:LC. Du skal bruge din servers ER:LC API Pack.",
+      "fivem": "På din pc, åbn Admin → Advanced → In-Game Integration → FiveM.",
+      "other": "Dispatch AI forbinder Sonoran Radio til din CAD. Start med opsætningsguiden."
+    },
+    "joinInstead": "Bliv medlem af et fællesskab i stedet",
+    "mobileHint": "Opret det her. Færdiggør forbindelsen til dit spil på PC.",
+    "nameCommunity": "Giv dit fællesskab et navn",
+    "next": {
+      "erlc": "Forbind ER:LC",
+      "fivem": "Forbind FiveM",
+      "other": "Opsæt Dispatch AI"
+    },
+    "openCommunity": "Åbn fællesskab",
+    "openGuide": "Åbn opsætningsguide",
+    "openingCommunity": "Åbner dit fællesskab…",
+    "otherName": "Spilnavn",
+    "otherRequired": "Indtast et spilnavn (2–60 tegn).",
+    "pcNext": "Dit fællesskab er gemt. Log ind med den samme konto på din pc for at fortsætte.",
+    "previewDesktop": "Genoptag på skrivebord",
+    "previewEvents": "Registrerede hændelser (ikke sendt til Google Analytics)",
+    "previewFailure": "Simulér en mislykket gemning",
+    "previewJoined": "Forhåndsvisning: den eksisterende dialog til at tilslutte sig fællesskabet ville åbne her.",
+    "previewLabel": "Lokal forhåndsvisning · eksempeldata · ingen ændringer på livekonto",
+    "previewMobile": "Mobil forhåndsvisning",
+    "previewOpened": "Forhåndsvisning: fællesskabet ville åbne her.",
+    "previewReset": "Start forfra",
+    "saveFailed": "Dit valg blev ikke gemt. Prøv igen.",
+    "setup": "Fortsæt opsætning",
+    "startTitle": "Opret dit fællesskab"
   },
   "homepage": {
     "bottomCta": {
@@ -2200,6 +2250,15 @@
     "selectionRequired": "Vælg mindst en adresse eller enhed.",
     "sendPage": "Send side",
     "unitsTooltip": "Du kan også trække og slippe et aktivt udsendelsesopkald her for at tilføje dets tilknyttede enheder."
+  },
+  "integrationGame": {
+    "apiDescription": "Til brugerdefinerede integrationer. Klik på en værdi for at kopiere den.",
+    "apiDocs": "API-dokumentation",
+    "change": "Ændring",
+    "copyApiKey": "Kopiér API-nøgle",
+    "copyCommunityId": "Kopiér fællesskabs-ID",
+    "current": "Spil",
+    "unselected": "Ikke valgt"
   },
   "integrationPanels": {
     "actionFailed": "Integrationshandlingen mislykkedes.",
@@ -3810,6 +3869,64 @@
     "voice": "Stemme",
     "volume": "Lydstyrke"
   },
+  "setupChecklist": {
+    "addSync": "Tilføj synkroniseringstrin",
+    "allDone": "Fuldført",
+    "chooseFramework": "Hvilket framework bruger du?",
+    "configureSync": "Åbn databasesynkronisering",
+    "currentStep": "Trin {step} af {total}",
+    "details": "Detaljer",
+    "discord": "Bliv medlem af vores Discord",
+    "dismiss": "Luk opsætningscheckliste",
+    "done": "Fuldført",
+    "editFramework": "Rediger",
+    "framework": "Framework",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Andet",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} valgt",
+    "help": "Få hjælp",
+    "hints": {
+      "db_sync": "Vælg dit framework, eller vælg Intet framework for at fuldføre dette trin.",
+      "erlc_key": "Gem din servers API-nøgle i ER:LC-integrationspanelet.",
+      "erlc_webhook": "Tilføj webhook-URL'en, og kør derefter en CAD-tilpasset kommando i ER:LC for at bekræfte forbindelsen.",
+      "fivem_resource": "Download ressourcen og tilføj den til din FiveM-server."
+    },
+    "noFramework": "Ingen framework",
+    "noFrameworkSelected": "Intet framework — databasesynkronisering er ikke nødvendig.",
+    "optionalSync": "Valgfrit: databasesynkronisering",
+    "pending": "Ikke fuldført",
+    "previewControls": "Forhåndsvis kontrolfunktioner (eksempeldata)",
+    "previewErlc": "ER:LC-tjekliste",
+    "previewFivem": "FiveM-tjekliste",
+    "previewKey": "API-nøgle gemt",
+    "previewOwner": "Registreret ejer",
+    "previewResource": "Ressource forberedt",
+    "previewSync": "Synkronisering konfigureret",
+    "previewTitle": "Forhåndsvisning af fællesskabsopsætning",
+    "previewWebhook": "Webhook modtaget",
+    "refresh": "Opdater opsætningsforløb",
+    "reopen": "Opsætningscheckliste",
+    "saveFailed": "Din ændring på tjeklisten blev ikke gemt. Prøv igen.",
+    "setUpSync": "Opsæt",
+    "shortTitle": "Opsætning",
+    "skipSetup": "Spring opsætning over",
+    "skipSync": "Spring databasesynkronisering over",
+    "steps": {
+      "db_sync": "Databasesynkronisering",
+      "erlc_key": "Gem ER:LC API-nøgle",
+      "erlc_webhook": "Forbind ER:LC webhook",
+      "fivem_resource": "Få FiveM-ressource"
+    },
+    "syncOptions": "Databasesynkroniseringsindstillinger",
+    "syncQuestion": "Bruger du et framework? Synk automatisk karakterer, licenser og køretøjsregistreringer fra din FiveM-database.",
+    "syncSummary": "Synkroniser personer, kørekort og køretøjer fra din server.",
+    "title": "Opsæt {name}",
+    "webhookHint": "Efter at have tilføjet webhook-URL'en skal du køre en CAD-tilpasset kommando i ER:LC. Dette markeres som gennemført, når CAD modtager den."
+  },
   "shortcuts": {
     "accountSaveFailed": "Genveje kunne ikke gemmes på din konto.",
     "addCliVariable": "Tilføj CLI-argument",
@@ -3987,13 +4104,17 @@
     "unavailableTitle": "Fællesskab ikke tilgængeligt"
   },
   "vanityUrl": {
+    "autoJoin": "Ved at logge ind via denne URL bliver du automatisk tilmeldt dit fællesskab. Godkendelse og tilladelser gælder stadig.",
     "copy": "Kopiér fællesskabs-URL",
+    "invalidCharacters": "Dette Community ID kan ikke bruges i en vanity-URL. Brug bogstaver, tal eller bindestreger, og start og slut med et bogstav eller et tal.",
     "label": "Fællesskabs-URL",
     "meta": {
       "description": "Bliv medlem af {community} på Sonoran CAD, platformen til udrykning og journalføring for gamingfællesskaber.",
       "imageAlt": "{community} logo",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Dette Community ID kan ikke bruges som en vanity URL. Brug bogstaver, tal eller bindestreger, og undgå reserverede navne."
+    "reserved": "Dette Community ID er reserveret og kan ikke bruges som en vanity URL.",
+    "tooLong": "Dette Community ID er for langt til en vanity URL.",
+    "unavailable": "Dette Community ID kan ikke bruges som en vanity URL."
   }
 }

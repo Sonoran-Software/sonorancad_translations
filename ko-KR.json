@@ -731,6 +731,7 @@
           "panelIntro": "CAD에서 FiveM 캐릭터, 면허, 차량을 직접 조회하세요.",
           "php": "phpMyAdmin",
           "phpHelp": "User Accounts를 열고 사용자를 추가합니다. 아래와 같이 데이터베이스에 SELECT 및 SHOW VIEW 접근 권한을 부여합니다. 데이터베이스 서버의 공용 주소와 새 사용자의 세부 정보를 입력합니다.",
+          "plusRequired": "Database Sync 설정에는 Sonoran CAD Plus가 필요합니다.",
           "provider": "데이터베이스는 어디에 있나요?",
           "ready": "AI가 설정을 완료하게 하기",
           "required": "필수",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "아웃바운드 IP가 다름",
       "enableMap": "지도 활성화",
       "erlc": {
+        "addServer": "서버 추가",
         "advancedSettingsCaption": "각 서버에 대한 선택적 명령 자동화 설정.",
         "advancedSettingsTitle": "고급 명령 설정",
         "apiKey": "ER:LC API 키",
@@ -802,7 +804,8 @@
           "webhook": "이벤트 웹훅 추가"
         },
         "liveMapAbout": "라이브 맵은 유닛 위치, 바디캠, 긴급 호출, 출동 호출 등을 제공하는 인터랙티브한 2D 및 3D 게임 맵입니다.",
-        "liveMapStatus": "실시간 지도",
+        "liveMapHeader": "실시간 지도",
+        "liveMapStatus": "상태",
         "liveMapStyle": "맵 스타일",
         "noServersConfigured": "이 커뮤니티에는 아직 구성된 서버가 없습니다.",
         "notifyAlways": "항상",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} 스크린샷 {number}",
         "serverKeysBody": "연결하려는 각 ER:LC 서버의 API 키를 붙여넣으세요.",
         "serverKeysTitle": "서버 연결하기",
+        "serverLimit": "이 커뮤니티는 서버 한도에 도달했습니다.",
+        "serverName": "서버 이름",
+        "serversTitle": "서버",
         "setupChecklistTitle": "설정 체크리스트",
         "setupIntro": "무료 ER:LC 통합 설정을 따라가고, 그런 다음 필요에 따라 맵 및 명령 옵션을 세부 조정하세요.",
         "startSetup": "설정 시작",
@@ -887,7 +893,7 @@
         "header": "FiveM 통합",
         "liveMapBody": "FiveM 리소스가 추가 live map 설정 없이 unit 위치를 CAD live map으로 자동 전송합니다. 사용자는 이 CAD에 연결되어 있고 인게임에서 /link만 실행하면 됩니다.",
         "liveMapPermissionNote": "사용자도 라이브 맵을 보려면 계정 권한이 필요합니다.",
-        "liveMapStatus": "실시간 지도",
+        "liveMapStatus": "상태",
         "liveMapTitle": "실시간 지도",
         "manual": {
           "additionalOptions": "여기에서 다른 구성 옵션에 대해 자세히 알아볼 수 있습니다.",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "RocketNode 호스팅 열기",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
     "sonoranOneLink": "Sonoran One 열기"
+  },
+  "guidedSetup": {
+    "back": "뒤로",
+    "chooseGame": "무슨 게임을 하세요?",
+    "connectNext": "귀하의 커뮤니티가 준비되었습니다. 다음으로, 게임을 연결하세요.",
+    "continue": "계속",
+    "createFailed": "커뮤니티를 생성할 수 없었습니다. 커뮤니티 한도를 확인하고 다시 시도하세요.",
+    "createUncertain": "생성을 확인할 수 없었습니다. 다시 시도하기 전에 커뮤니티를 새로고침하세요.",
+    "dispatchAi": "파견 AI 설정",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "다른"
+    },
+    "instruction": {
+      "erlc": "Admin → Advanced → In-Game Integration → ER:LC를 여세요. 서버의 ER:LC API Pack이 필요합니다.",
+      "fivem": "PC에서 Admin → Advanced → In-Game Integration → FiveM을 여세요.",
+      "other": "Dispatch AI는 Sonoran Radio를 your CAD에 연결합니다. 설정 가이드부터 시작하세요."
+    },
+    "joinInstead": "커뮤니티에 대신 가입",
+    "mobileHint": "여기에서 만드세요. PC에서 게임 연결을 완료하세요.",
+    "nameCommunity": "커뮤니티 이름 정하기",
+    "next": {
+      "erlc": "ER:LC 연결",
+      "fivem": "FiveM 연결",
+      "other": "파견 AI 설정"
+    },
+    "openCommunity": "커뮤니티 열기",
+    "openGuide": "설정 가이드 열기",
+    "openingCommunity": "커뮤니티 여는 중…",
+    "otherName": "게임 이름",
+    "otherRequired": "게임 이름을 입력하세요 (2–60자).",
+    "pcNext": "귀하의 커뮤니티가 저장되었습니다. 계속하려면 PC에서 이 동일한 계정으로 로그인하세요.",
+    "previewDesktop": "데스크톱에서 재개",
+    "previewEvents": "캡처된 이벤트 (Google Analytics로 전송되지 않음)",
+    "previewFailure": "저장 실패를 시뮬레이션",
+    "previewJoined": "미리보기: 기존 커뮤니티 참여 대화 상자가 여기서 열립니다.",
+    "previewLabel": "로컬 미리보기 · 샘플 데이터 · 실시간 계정 변경 없음",
+    "previewMobile": "모바일 미리보기",
+    "previewOpened": "미리보기: 커뮤니티가 여기서 열립니다.",
+    "previewReset": "다시 시작",
+    "saveFailed": "선택이 저장되지 않았습니다. 다시 시도해 주세요.",
+    "setup": "설정 계속",
+    "startTitle": "커뮤니티 설정"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "주소 또는 유닛을 하나 이상 선택하세요.",
     "sendPage": "페이지 보내기",
     "unitsTooltip": "활성 배차 호출도 여기에 끌어다 놓아 연결된 유닛을 추가할 수 있습니다."
+  },
+  "integrationGame": {
+    "apiDescription": "맞춤 통합용입니다. 값을 클릭해 복사하세요.",
+    "apiDocs": "API 문서",
+    "change": "변경",
+    "copyApiKey": "API 키 복사",
+    "copyCommunityId": "커뮤니티 ID 복사",
+    "current": "게임",
+    "unselected": "선택되지 않음"
   },
   "integrationPanels": {
     "actionFailed": "통합 작업에 실패했습니다.",
@@ -3811,6 +3870,64 @@
     "voice": "목소리",
     "volume": "용량"
   },
+  "setupChecklist": {
+    "addSync": "동기화 단계 추가",
+    "allDone": "완료",
+    "chooseFramework": "어떤 프레임워크를 사용하시나요?",
+    "configureSync": "데이터베이스 동기화 열기",
+    "currentStep": "{step}단계 / {total}단계",
+    "details": "세부 정보",
+    "discord": "Discord에 참여",
+    "dismiss": "설정 체크리스트 닫기",
+    "done": "완료",
+    "editFramework": "편집하다",
+    "framework": "프레임워크",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "다른",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} 선택됨",
+    "help": "도움 받기",
+    "hints": {
+      "db_sync": "프레임워크를 선택하거나 이 단계를 완료하려면 프레임워크 없음 을 선택하세요",
+      "erlc_key": "ER:LC 통합 패널에 서버의 API 키를 저장하세요.",
+      "erlc_webhook": "웹훅 URL을 추가한 다음 ER:LC에서 CAD 사용자 지정 명령을 실행하여 연결을 확인하세요.",
+      "fivem_resource": "리소스를 다운로드하고 FiveM 서버에 추가하세요."
+    },
+    "noFramework": "프레임워크 없음",
+    "noFrameworkSelected": "프레임워크가 없으므로 데이터베이스 동기화가 필요하지 않습니다.",
+    "optionalSync": "선택 사항: 데이터베이스 동기화",
+    "pending": "미완료",
+    "previewControls": "미리보기 컨트롤 (샘플 데이터)",
+    "previewErlc": "ER:LC 체크리스트",
+    "previewFivem": "파이브엠 체크리스트",
+    "previewKey": "API 키 저장됨",
+    "previewOwner": "등록된 소유자",
+    "previewResource": "리소스 준비됨",
+    "previewSync": "동기화 구성됨",
+    "previewTitle": "커뮤니티 설정 미리보기",
+    "previewWebhook": "Webhook 수신됨",
+    "refresh": "설정 진행 상황 새로고침",
+    "reopen": "설정 체크리스트",
+    "saveFailed": "체크리스트 변경 사항이 저장되지 않았습니다. 다시 시도해 주세요.",
+    "setUpSync": "설정",
+    "shortTitle": "설정",
+    "skipSetup": "설정 건너뛰기",
+    "skipSync": "데이터베이스 동기화 건너뛰기",
+    "steps": {
+      "db_sync": "데이터베이스 동기화",
+      "erlc_key": "ER:LC API 키 저장",
+      "erlc_webhook": "ER:LC 웹훅 연결",
+      "fivem_resource": "FiveM 자원 가져오기"
+    },
+    "syncOptions": "데이터베이스 동기화 옵션",
+    "syncQuestion": "프레임워크를 사용 중이신가요? FiveM 데이터베이스에서 캐릭터, 라이센스 및 차량 등록을 자동으로 동기화하세요.",
+    "syncSummary": "서버에서 캐릭터, 라이선스 및 차량을 동기화합니다.",
+    "title": "{name} 설정",
+    "webhookHint": "웹훅 URL을 추가한 후 ER:LC에서 CAD 사용자 지정 명령을 실행하세요. CAD가 이를 수신하면 체크됩니다."
+  },
   "shortcuts": {
     "accountSaveFailed": "바로가기를 계정에 저장할 수 없었습니다.",
     "addCliVariable": "CLI 인수 추가",
@@ -3988,13 +4105,17 @@
     "unavailableTitle": "커뮤니티 없음"
   },
   "vanityUrl": {
+    "autoJoin": "이 URL로 로그인하면 자동으로 커뮤니티에 가입됩니다. 승인 및 권한은 계속 적용됩니다.",
     "copy": "커뮤니티 URL 복사",
+    "invalidCharacters": "이 Community ID는 vanity URL에 사용할 수 없습니다. 문자, 숫자 또는 하이픈을 사용하고, 문자나 숫자로 시작하고 끝내세요.",
     "label": "커뮤니티 URL",
     "meta": {
       "description": "게임 커뮤니티를 위한 배차 및 기록 플랫폼 Sonoran CAD에서 {community}에 가입하세요.",
       "imageAlt": "{community} 로고",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "이 Community ID는 vanity URL로 사용할 수 없습니다. 문자, 숫자 또는 하이픈을 사용하고, 예약된 이름은 피하세요."
+    "reserved": "이 Community ID는 예약되어 있으며 vanity URL로 사용할 수 없습니다.",
+    "tooLong": "이 Community ID는 vanity URL에 너무 깁니다.",
+    "unavailable": "이 Community ID는 vanity URL로 사용할 수 없습니다."
   }
 }
