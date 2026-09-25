@@ -731,6 +731,7 @@
           "panelIntro": "Slå opp FiveM-karakterene, lisensene og kjøretøyene dine direkte i CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Åpne brukerkontoer og legg til en bruker. Gi den SELECT- og SHOW VIEW-tilgang til databasen din, som vist nedenfor. Skriv inn databaserverens offentlige adresse og den nye brukerens detaljer.",
+          "plusRequired": "Database-synkronisering-oppsett krever Sonoran CAD Plus.",
           "provider": "Hvor er databasen din?",
           "ready": "La AI fullføre oppsettet",
           "required": "Påkrevd",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Avvikende utgående IP",
       "enableMap": "Aktiver kart",
       "erlc": {
+        "addServer": "Legg til server",
         "advancedSettingsCaption": "Valgfrie automatiseringsinnstillinger for kommandoer for hver server.",
         "advancedSettingsTitle": "Avanserte kommandoinnstillinger",
         "apiKey": "ER:LC API-nøkkel",
@@ -802,7 +804,8 @@
           "webhook": "Legg til hendelseswebhooken"
         },
         "liveMapAbout": "Sanntidskartet tilbyr et interaktivt 2D- og 3D-spillkart med enhetsplasseringer, kroppskameraer, nødanrop, dispatch-anrop og mer.",
-        "liveMapStatus": "Direkte kart",
+        "liveMapHeader": "Direkte kart",
+        "liveMapStatus": "Status",
         "liveMapStyle": "Kartstil",
         "noServersConfigured": "Ingen servere er konfigurert for dette fellesskapet ennå.",
         "notifyAlways": "Alltid",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} skjermbilde {number}",
         "serverKeysBody": "Lim inn API-nøkkelen for hver ER:LC-server du vil koble til.",
         "serverKeysTitle": "Koble til serverne dine",
+        "serverLimit": "Dette fellesskapet har nådd servergrensen.",
+        "serverName": "Servernavn",
+        "serversTitle": "Servere",
         "setupChecklistTitle": "Oppsettssjekkliste",
         "setupIntro": "Gå gjennom den gratis ER:LC-integrasjonsoppsettet, og finjuster deretter kart- og kommandoalternativene etter behov.",
         "startSetup": "Start oppsett",
@@ -887,7 +893,7 @@
         "header": "FiveM-integrasjon",
         "liveMapBody": "FiveM-ressursen sender automatisk enhetsposisjoner til CADs livekart uten ekstra konfigurering av livekartet. Brukere trenger bare å være koblet til dette CAD-et og kjøre /link i spillet.",
         "liveMapPermissionNote": "Brukere trenger også kontotillatelse for å se livekartet.",
-        "liveMapStatus": "Direkte kart",
+        "liveMapStatus": "Status",
         "liveMapTitle": "Direkte kart",
         "manual": {
           "additionalOptions": "Du kan lære mer om de andre konfigurasjonsalternativene her.",
@@ -1484,6 +1490,50 @@
     "rocketNodeLink": "Åpne RocketNode-hosting",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM-hosting",
     "sonoranOneLink": "Åpne Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Tilbake",
+    "chooseGame": "Hva spiller du?",
+    "connectNext": "Ditt lokalsamfunn er klart. Deretter, koble til spillet ditt.",
+    "continue": "Fortsett",
+    "createFailed": "Vi kunne ikke opprette fellesskapet ditt. Sjekk fellesskapsgrensen din og prøv igjen.",
+    "createUncertain": "Vi kunne ikke bekrefte opprettelsen. Oppdater fellesskapene dine før du prøver igjen.",
+    "dispatchAi": "Sett opp Oppdrags-AI",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Annet"
+    },
+    "instruction": {
+      "erlc": "Åpne Admin → Avansert → Integrasjon i spillet → ER:LC. Du trenger serverens ER:LC API-pakke.",
+      "fivem": "På PC-en din, åpne Admin → Avansert → Integrasjon i spillet → FiveM.",
+      "other": "Dispatch AI kobler Sonoran Radio til din CAD. Start med oppsettguiden."
+    },
+    "joinInstead": "Bli med i et fellesskap i stedet",
+    "mobileHint": "Opprett det her. Fullfør tilkoblingen av spillet ditt på PC.",
+    "nameCommunity": "Gi samfunn navnet ditt",
+    "next": {
+      "erlc": "Koble til ER:LC",
+      "fivem": "Koble til FiveM",
+      "other": "Sett opp Oppdrags-AI"
+    },
+    "openCommunity": "Åpne samfunn",
+    "openGuide": "Åpne oppsettsguide",
+    "openingCommunity": "Åpner ditt samfunn…",
+    "otherName": "Spillnavn",
+    "otherRequired": "Skriv inn et spillnavn (2–60 tegn).",
+    "pcNext": "Ditt lokalsamfunn er lagret. Logg inn med den samme kontoen på PC-en din for å fortsette.",
+    "previewDesktop": "Fortsett på skrivebordet",
+    "previewEvents": "Registrerte hendelser (ikke sendt til Google Analytics)",
+    "previewFailure": "Simuler en mislykket lagring",
+    "previewJoined": "Forhåndsvisning: den eksisterende dialogen for å bli med i fellesskapet ville åpnes her.",
+    "previewLabel": "Lokal forhåndsvisning · eksempeldata · ingen endringer på live-konto",
+    "previewMobile": "Mobil forhåndsvisning",
+    "previewOpened": "Forhåndsvisning: fellesskapet ville åpnes her.",
+    "previewReset": "Start på nytt",
+    "saveFailed": "Valget ditt ble ikke lagret. Prøv igjen.",
+    "setup": "Fortsett oppsett",
+    "startTitle": "Sett opp ditt samfunn"
   },
   "homepage": {
     "bottomCta": {
@@ -2200,6 +2250,15 @@
     "selectionRequired": "Velg minst én adresse eller enhet.",
     "sendPage": "Send side",
     "unitsTooltip": "Du kan også dra og slippe et aktivt utsendingsanrop hit for å legge til de tilknyttede enhetene."
+  },
+  "integrationGame": {
+    "apiDescription": "For egendefinerte integrasjoner. Klikk på en verdi for å kopiere den.",
+    "apiDocs": "API-dokumentasjon",
+    "change": "Endre",
+    "copyApiKey": "Kopier API-nøkkel",
+    "copyCommunityId": "Kopier samfunns ID",
+    "current": "Spill",
+    "unselected": "Ikke valgt"
   },
   "integrationPanels": {
     "actionFailed": "Integrasjonshandlingen mislyktes.",
@@ -3819,6 +3878,64 @@
     "voice": "Stemme",
     "volume": "Volum"
   },
+  "setupChecklist": {
+    "addSync": "Legg til synkroniseringstrinn",
+    "allDone": "Fullført",
+    "chooseFramework": "Hvilket rammeverk bruker du?",
+    "configureSync": "Åpne databasesynkronisering",
+    "currentStep": "Trinn {step} av {total}",
+    "details": "Detaljer",
+    "discord": "Bli med i Discord",
+    "dismiss": "Lukk oppsettssjekkliste",
+    "done": "Fullført",
+    "editFramework": "Rediger",
+    "framework": "Rammeverk",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Annet",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} valgt",
+    "help": "Få hjelp",
+    "hints": {
+      "db_sync": "Velg rammeverket ditt, eller velg Ingen rammeverk for å fullføre dette trinnet.",
+      "erlc_key": "Lagre serverens API-nøkkel i ER:LC-integrasjonspanelet.",
+      "erlc_webhook": "Legg til webhook-URL-en, og kjør deretter en CAD-tilpasset kommando i ER:LC for å bekrefte tilkoblingen.",
+      "fivem_resource": "Last ned ressursen og legg den til FiveM-serveren din."
+    },
+    "noFramework": "Ingen rammeverk",
+    "noFrameworkSelected": "Ingen rammeverk — databasesynkronisering er ikke nødvendig.",
+    "optionalSync": "Valgfritt: databasesynkronisering",
+    "pending": "Ikke fullført",
+    "previewControls": "Forhåndsvis kontroller (eksempeldata)",
+    "previewErlc": "ER:LC sjekkliste",
+    "previewFivem": "FiveM-sjekkliste",
+    "previewKey": "API-nøkkel lagret",
+    "previewOwner": "Registrert eier",
+    "previewResource": "Ressurs klargjort",
+    "previewSync": "Synkronisering konfigurert",
+    "previewTitle": "Forhåndsvisning av fellesskapsoppsett",
+    "previewWebhook": "Webhook mottatt",
+    "refresh": "Oppdater oppsettets fremdrift",
+    "reopen": "Oppsettssjekkliste",
+    "saveFailed": "Endringen i sjekklisten ble ikke lagret. Prøv igjen.",
+    "setUpSync": "Sett opp",
+    "shortTitle": "Oppsett",
+    "skipSetup": "Hopp over oppsett",
+    "skipSync": "Hopp over databasesynkronisering",
+    "steps": {
+      "db_sync": "Database synkronisering",
+      "erlc_key": "Lagre ER:LC API-nøkkel",
+      "erlc_webhook": "Koble til ER:LC-webhook",
+      "fivem_resource": "Få FiveM-ressurs"
+    },
+    "syncOptions": "Alternativer for databasesynkronisering",
+    "syncQuestion": "Bruker du et rammeverk? Synkroniser automatisk karakterer, lisenser og kjøretøyregistreringer fra FiveM-databasen din.",
+    "syncSummary": "Synk tegn, lisenser og kjøretøy fra serveren din.",
+    "title": "Sett opp {name}",
+    "webhookHint": "Etter at du har lagt til webhook-URL-en, kjør en CAD-tilpasset kommando i ER:LC. Dette blir avkrysset når CAD mottar den."
+  },
   "shortcuts": {
     "accountSaveFailed": "Snarveier kunne ikke lagres på kontoen din.",
     "addCliVariable": "Legg til CLI-argument",
@@ -3996,13 +4113,17 @@
     "unavailableTitle": "Samfunnet utilgjengelig"
   },
   "vanityUrl": {
+    "autoJoin": "Ved å logge inn via denne URL-en blir du automatisk med i fellesskapet ditt. Godkjenning og tillatelser gjelder fortsatt.",
     "copy": "Kopier samfunns-URL",
+    "invalidCharacters": "Denne Community-ID-en kan ikke brukes i en vanity-URL. Bruk bokstaver, tall eller bindestreker, og start og slutt med en bokstav eller et tall.",
     "label": "Samfunns-URL",
     "meta": {
       "description": "Bli med {community} på Sonoran CAD, plattformen for dispatch og registre for spillfellesskap.",
       "imageAlt": "{community} logo",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Denne Community ID-en kan ikke brukes som en vanity-URL. Bruk bokstaver, tall eller bindestreker, og unngå reserverte navn."
+    "reserved": "Denne Community ID-en er reservert og kan ikke brukes som en vanity-URL.",
+    "tooLong": "Denne Community ID-en er for lang for en vanity-URL.",
+    "unavailable": "Denne Community ID-en kan ikke brukes som en vanity-URL."
   }
 }

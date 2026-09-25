@@ -731,6 +731,7 @@
           "panelIntro": "Zoek je FiveM-personages, licenties en voertuigen rechtstreeks op in CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Open Gebruikersaccounts en voeg een gebruiker toe. Geef deze SELECT- en SHOW VIEW-toegang tot je database, zoals hieronder weergegeven. Voer het openbare adres van je databaseserver en de gegevens van de nieuwe gebruiker in.",
+          "plusRequired": "Database-synchronisatie instellen vereist Sonoran CAD Plus.",
           "provider": "Waar is uw database?",
           "ready": "Laat AI de configuratie voltooien",
           "required": "Vereist",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Verschillende uitgaande IP",
       "enableMap": "Kaart inschakelen",
       "erlc": {
+        "addServer": "Server toevoegen",
         "advancedSettingsCaption": "Optionele command automation-instellingen voor elke server.",
         "advancedSettingsTitle": "Geavanceerde opdrachtinstellingen",
         "apiKey": "ER:LC API-sleutel",
@@ -802,7 +804,8 @@
           "webhook": "Voeg de event-webhook toe"
         },
         "liveMapAbout": "De livekaart biedt een interactieve 2D- en 3D-spelkaart met locaties van eenheden, bodycams, noodoproepen, dispatchoproepen en meer.",
-        "liveMapStatus": "Live Kaart",
+        "liveMapHeader": "Live Kaart",
+        "liveMapStatus": "Status",
         "liveMapStyle": "Kaartstijl",
         "noServersConfigured": "Er zijn nog geen servers geconfigureerd voor deze community.",
         "notifyAlways": "Altijd",
@@ -818,6 +821,9 @@
         "screenshotAlt": "screenshot van {step} {number}",
         "serverKeysBody": "Plak de API-sleutel voor elke ER:LC-server die je wilt verbinden.",
         "serverKeysTitle": "Verbind je servers",
+        "serverLimit": "Deze gemeenschap heeft haar serverlimiet bereikt.",
+        "serverName": "Servernaam",
+        "serversTitle": "Servers",
         "setupChecklistTitle": "Instellingenchecklist",
         "setupIntro": "Doorloop de gratis ER:LC-integratie-installatie en verfijn daarna de map- en commandopties indien nodig.",
         "startSetup": "Setup starten",
@@ -887,7 +893,7 @@
         "header": "FiveM-integratie",
         "liveMapBody": "De FiveM-resource stuurt automatisch de locaties van eenheden naar de CAD-livekaart zonder extra configuratie van de livekaart. Gebruikers hoeven alleen met deze CAD verbonden te zijn en in-game /link uit te voeren.",
         "liveMapPermissionNote": "Gebruikers hebben ook accounttoestemming nodig om de live kaart te bekijken.",
-        "liveMapStatus": "Live Kaart",
+        "liveMapStatus": "Status",
         "liveMapTitle": "Live Kaart",
         "manual": {
           "additionalOptions": "Je kunt hier meer leren over de andere configuratieopties.",
@@ -1484,6 +1490,50 @@
     "rocketNodeLink": "Open RocketNode-hosting",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM-hosting",
     "sonoranOneLink": "Open Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Terug",
+    "chooseGame": "Wat speel je?",
+    "connectNext": "Je gemeenschap is klaar. Koppel nu je game.",
+    "continue": "Doorgaan",
+    "createFailed": "We konden uw community niet maken. Controleer uw communitylimiet en probeer het opnieuw.",
+    "createUncertain": "We konden de aanmaak niet bevestigen. Vernieuw je communities voordat je het opnieuw probeert.",
+    "dispatchAi": "Dispatch AI instellen",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Overig"
+    },
+    "instruction": {
+      "erlc": "Open Admin → Geavanceerd → In-game integratie → ER:LC. Je hebt het ER:LC API Pack van je server nodig.",
+      "fivem": "Open op je pc Admin → Geavanceerd → In-game integratie → FiveM.",
+      "other": "Dispatch AI verbindt Sonoran Radio met je CAD. Begin met de installatiegids."
+    },
+    "joinInstead": "Betreed een community in plaats daarvan",
+    "mobileHint": "Maak het hier aan. Rond het koppelen van je game op pc af.",
+    "nameCommunity": "Geef je community een naam",
+    "next": {
+      "erlc": "Verbind ER:LC",
+      "fivem": "Verbind FiveM",
+      "other": "Dispatch AI instellen"
+    },
+    "openCommunity": "Open community",
+    "openGuide": "Open de setupgids",
+    "openingCommunity": "Je community openen…",
+    "otherName": "Spelnaam",
+    "otherRequired": "Voer een spelnaam in (2–60 tekens).",
+    "pcNext": "Je community is opgeslagen. Meld je aan met hetzelfde account op je pc om verder te gaan.",
+    "previewDesktop": "Hervatten op desktop",
+    "previewEvents": "Vastgelegde gebeurtenissen (niet verzonden naar Google Analytics)",
+    "previewFailure": "Imiteer een mislukte opslag",
+    "previewJoined": "Voorbeeld: het bestaande dialoogvenster om een community te joinen zou hier openen.",
+    "previewLabel": "Lokale preview · voorbeeldgegevens · geen live accountwijzigingen",
+    "previewMobile": "Mobiele voorbeeldweergave",
+    "previewOpened": "Voorbeeld: de community zou hier openen.",
+    "previewReset": "Opnieuw beginnen",
+    "saveFailed": "Je keuze werd niet opgeslagen. Probeer het opnieuw.",
+    "setup": "Doorgaan met instellen",
+    "startTitle": "Stel je community in"
   },
   "homepage": {
     "bottomCta": {
@@ -2200,6 +2250,15 @@
     "selectionRequired": "Selecteer minstens één adres of eenheid.",
     "sendPage": "Pagina verzenden",
     "unitsTooltip": "Je kunt ook een actieve dispatch-oproep hiernaartoe slepen en neerzetten om de gekoppelde units toe te voegen."
+  },
+  "integrationGame": {
+    "apiDescription": "Voor aangepaste integraties. Klik op een waarde om die te kopiëren.",
+    "apiDocs": "API documentatie",
+    "change": "Wijziging",
+    "copyApiKey": "API-sleutel kopiëren",
+    "copyCommunityId": "Kopieer community-ID",
+    "current": "Spel",
+    "unselected": "Niet geselecteerd"
   },
   "integrationPanels": {
     "actionFailed": "De integratieactie is mislukt.",
@@ -3819,6 +3878,64 @@
     "voice": "Spraak",
     "volume": "Volume"
   },
+  "setupChecklist": {
+    "addSync": "Synchronisatiestap toevoegen",
+    "allDone": "Voltooid",
+    "chooseFramework": "Welk framework gebruikt u?",
+    "configureSync": "Open databasesynchronisatie",
+    "currentStep": "Stap {step} van {total}",
+    "details": "Details",
+    "discord": "Word lid van onze Discord",
+    "dismiss": "Instellingenchecklist sluiten",
+    "done": "Voltooid",
+    "editFramework": "Aanpassen",
+    "framework": "Framework",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Overig",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} geselecteerd",
+    "help": "Hulp krijgen",
+    "hints": {
+      "db_sync": "Kies je framework, of selecteer Geen framework om deze stap te voltooien.",
+      "erlc_key": "Sla je API-sleutel van de server op in het ER:LC-integratiepaneel.",
+      "erlc_webhook": "Voeg de webhook-URL toe en voer daarna een aangepaste CAD-opdracht uit in ER:LC om de verbinding te bevestigen.",
+      "fivem_resource": "Download de resource en voeg deze toe aan je FiveM-server."
+    },
+    "noFramework": "Geen framework",
+    "noFrameworkSelected": "Geen framework — databasesynchronisatie is niet nodig.",
+    "optionalSync": "Optioneel: databasesynchronisatie",
+    "pending": "Niet voltooid",
+    "previewControls": "Voorbeeldbesturingselementen (voorbeeldgegevens)",
+    "previewErlc": "ER:LC-checklist",
+    "previewFivem": "FiveM-checklist",
+    "previewKey": "API-sleutel opgeslagen",
+    "previewOwner": "Geregistreerde eigenaar",
+    "previewResource": "Bron voorbereid",
+    "previewSync": "Synchronisatie geconfigureerd",
+    "previewTitle": "Voorbeeld van community-instelling",
+    "previewWebhook": "Webhook ontvangen",
+    "refresh": "Instelvoortgang vernieuwen",
+    "reopen": "Instellingenchecklist",
+    "saveFailed": "Je checklistwijziging werd niet opgeslagen. Probeer het opnieuw.",
+    "setUpSync": "Stel in",
+    "shortTitle": "Setup",
+    "skipSetup": "Setup overslaan",
+    "skipSync": "Databasesynchronisatie overslaan",
+    "steps": {
+      "db_sync": "Databasesynchronisatie",
+      "erlc_key": "ER:LC API-sleutel opslaan",
+      "erlc_webhook": "Verbind ER:LC-webhook",
+      "fivem_resource": "FiveM-hulpmiddel ophalen"
+    },
+    "syncOptions": "Opties voor databasesynchronisatie",
+    "syncQuestion": "Gebruik je een framework? Synchroniseer automatisch karakters, licenties en voertuigregistraties vanuit je FiveM-database.",
+    "syncSummary": "Synchroniseer personages, licenties en voertuigen vanaf je server.",
+    "title": "Stel {name} in",
+    "webhookHint": "Na het toevoegen van de webhook-URL, voer een aangepaste CAD-opdracht uit in ER:LC. Dit wordt afgevinkt wanneer CAD die ontvangt."
+  },
   "shortcuts": {
     "accountSaveFailed": "Snelkoppelingen konden niet worden opgeslagen in uw account.",
     "addCliVariable": "CLI-argument toevoegen",
@@ -3996,13 +4113,17 @@
     "unavailableTitle": "Gemeenschap niet beschikbaar"
   },
   "vanityUrl": {
+    "autoJoin": "Aanmelden via deze URL voegt je automatisch toe aan je community. Goedkeuring en machtigingen blijven van toepassing.",
     "copy": "Kopieer community-URL",
+    "invalidCharacters": "Deze Community-ID kan niet worden gebruikt in een vanity-URL. Gebruik letters, cijfers of koppeltekens, beginnend en eindigend met een letter of cijfer.",
     "label": "Community-URL",
     "meta": {
       "description": "Sluit je aan bij {community} op Sonoran CAD, het dispatch- en registratiesysteem voor gaminggemeenschappen.",
       "imageAlt": "{community} logo",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Deze Community-ID kan niet gebruikt worden als vanity-URL. Gebruik letters, cijfers of koppeltekens, en vermijd gereserveerde namen."
+    "reserved": "Deze Community-ID is gereserveerd en kan niet gebruikt worden als vanity-URL.",
+    "tooLong": "Deze Community-ID is te lang voor een vanity-URL.",
+    "unavailable": "Deze Community-ID kan niet gebruikt worden als vanity-URL."
   }
 }

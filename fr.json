@@ -731,6 +731,7 @@
           "panelIntro": "Consultez directement vos personnages, licences et véhicules FiveM dans le CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Ouvrez Comptes utilisateurs et ajoutez un utilisateur. Donnez-lui les accès SELECT et SHOW VIEW à votre base de données, comme indiqué ci-dessous. Saisissez l’adresse publique de votre serveur de base de données et les détails du nouvel utilisateur.",
+          "plusRequired": "La configuration de la synchronisation de base de données nécessite Sonoran CAD Plus.",
           "provider": "Où se trouve votre base de données ?",
           "ready": "Laissez l’IA terminer la configuration",
           "required": "Requis",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "IP sortante différente",
       "enableMap": "Activier la carte",
       "erlc": {
+        "addServer": "Ajouter un serveur",
         "advancedSettingsCaption": "Paramètres d’automatisation de commande facultatifs pour chaque serveur.",
         "advancedSettingsTitle": "Paramètres avancés des commandes",
         "apiKey": "Clé API ER:LC",
@@ -802,7 +804,8 @@
           "webhook": "Ajouter le webhook d’événement"
         },
         "liveMapAbout": "La carte en direct offre une carte de jeu interactive en 2D et 3D avec les emplacements des unités, les bodycams, les appels d'urgence, les appels de dispatch, et plus encore.",
-        "liveMapStatus": "Carte interactive",
+        "liveMapHeader": "Carte interactive",
+        "liveMapStatus": "Statut",
         "liveMapStyle": "Style de carte",
         "noServersConfigured": "Aucun serveur n’est configuré pour cette communauté pour le moment.",
         "notifyAlways": "Toujours",
@@ -818,6 +821,9 @@
         "screenshotAlt": "capture d’écran {step} {number}",
         "serverKeysBody": "Collez la clé API pour chaque serveur ER:LC que vous souhaitez connecter.",
         "serverKeysTitle": "Connectez vos serveurs",
+        "serverLimit": "Cette communauté a atteint sa limite de serveur.",
+        "serverName": "Nom du serveur",
+        "serversTitle": "Serveurs",
         "setupChecklistTitle": "Liste de vérification de configuration",
         "setupIntro": "Suivez la configuration gratuite de l’intégration ER:LC, puis ajustez les options de carte et de commande selon les besoins.",
         "startSetup": "Commencer la configuration",
@@ -887,7 +893,7 @@
         "header": "Intégration FiveM",
         "liveMapBody": "La ressource FiveM envoie automatiquement les emplacements des unités à la carte en direct du CAD sans configuration supplémentaire de la carte en direct. Les utilisateurs doivent seulement être connectés à ce CAD et exécuter /link en jeu.",
         "liveMapPermissionNote": "Les utilisateurs ont également besoin de l'autorisation de compte pour voir la carte en direct.",
-        "liveMapStatus": "Carte interactive",
+        "liveMapStatus": "Statut",
         "liveMapTitle": "Carte interactive",
         "manual": {
           "additionalOptions": "Vous pouvez en savoir plus sur les autres options de configuration ici.",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "Ouvrir l'hébergement RocketNode",
     "sonoranOneBundle": "Hébergement CAD + CMS + Radio + FiveM",
     "sonoranOneLink": "Ouvrir Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Retour",
+    "chooseGame": "À quoi joues-tu ?",
+    "connectNext": "Votre communauté est prête. Ensuite, connectez votre jeu.",
+    "continue": "Continuer",
+    "createFailed": "Nous n’avons pas pu créer votre communauté. Vérifiez votre limite de communauté et réessayez.",
+    "createUncertain": "Nous n’avons pas pu confirmer la création. Actualisez vos communautés avant de réessayer.",
+    "dispatchAi": "Configurer Répartition IA",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Autre"
+    },
+    "instruction": {
+      "erlc": "Ouvrez Admin → Avancé → Intégration en jeu → ER:LC. Vous aurez besoin du pack API ER:LC de votre serveur.",
+      "fivem": "Sur votre PC, ouvrez Admin → Avancé → Intégration en jeu → FiveM.",
+      "other": "Dispatch AI connecte Sonoran Radio à votre CAD. Commencez par le guide de configuration."
+    },
+    "joinInstead": "Rejoindre une communauté à la place",
+    "mobileHint": "Créez-le ici. Terminez la connexion de votre jeu sur PC.",
+    "nameCommunity": "Nommez votre communauté",
+    "next": {
+      "erlc": "Connecter ER:LC",
+      "fivem": "Connecter FiveM",
+      "other": "Configurer Répartition IA"
+    },
+    "openCommunity": "Ouvrir la communauté",
+    "openGuide": "Ouvrir le guide de configuration",
+    "openingCommunity": "Ouverture de votre communauté…",
+    "otherName": "Nom du jeu",
+    "otherRequired": "Entrez un nom de jeu (2–60 caractères).",
+    "pcNext": "Votre communauté est enregistrée. Connectez-vous avec ce même compte sur votre PC pour continuer.",
+    "previewDesktop": "Reprendre sur ordinateur",
+    "previewEvents": "Événements capturés (non envoyés à Google Analytics)",
+    "previewFailure": "Simuler une sauvegarde échouée",
+    "previewJoined": "Aperçu : la boîte de dialogue existante pour rejoindre la communauté s'ouvrirait ici.",
+    "previewLabel": "Aperçu local · données d'exemple · aucune modification du compte en direct",
+    "previewMobile": "Aperçu mobile",
+    "previewOpened": "Aperçu : la communauté s'ouvrirait ici.",
+    "previewReset": "Recommencer",
+    "saveFailed": "Votre choix n’a pas été enregistré. Veuillez réessayer.",
+    "setup": "Continuer la configuration",
+    "startTitle": "Configurer votre communauté"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "Sélectionnez au moins une adresse ou une unité.",
     "sendPage": "Envoyer la page",
     "unitsTooltip": "Vous pouvez aussi glisser-déposer ici un appel de répartition actif pour ajouter ses unités attachées."
+  },
+  "integrationGame": {
+    "apiDescription": "Pour les intégrations personnalisées. Cliquez sur une valeur pour la copier.",
+    "apiDocs": "Documentation de l'API",
+    "change": "Changer",
+    "copyApiKey": "Copier la clé API",
+    "copyCommunityId": "Copier l’ID de la communauté",
+    "current": "Jeu",
+    "unselected": "Non sélectionné"
   },
   "integrationPanels": {
     "actionFailed": "L’action d’intégration a échoué.",
@@ -3820,6 +3879,64 @@
     "voice": "Voix",
     "volume": "Volume"
   },
+  "setupChecklist": {
+    "addSync": "Ajouter une étape de synchronisation",
+    "allDone": "Terminé",
+    "chooseFramework": "Quel framework utilisez-vous ?",
+    "configureSync": "Ouvrir la synchronisation de la base de données",
+    "currentStep": "Étape {step} sur {total}",
+    "details": "Détails",
+    "discord": "Rejoindre Discord",
+    "dismiss": "Fermer la liste de vérification de configuration",
+    "done": "Terminé",
+    "editFramework": "Editer",
+    "framework": "Framework",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Autre",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} sélectionné",
+    "help": "Obtenir de l'aide",
+    "hints": {
+      "db_sync": "Choisissez votre framework, ou sélectionnez Aucun framework pour terminer cette étape.",
+      "erlc_key": "Enregistrez la clé API de votre serveur dans le panneau d'intégration ER:LC.",
+      "erlc_webhook": "Ajoutez l'URL du webhook, puis exécutez une commande personnalisée du CAD dans ER:LC pour confirmer la connexion.",
+      "fivem_resource": "Téléchargez la ressource et ajoutez-la à votre serveur FiveM."
+    },
+    "noFramework": "Aucun framework",
+    "noFrameworkSelected": "Aucun framework — la synchronisation de la base de données n’est pas nécessaire.",
+    "optionalSync": "Optionnel : synchronisation de la base de données",
+    "pending": "Non terminé",
+    "previewControls": "Aperçu des contrôles (données d'exemple)",
+    "previewErlc": "liste de contrôle ER:LC",
+    "previewFivem": "liste de contrôle FiveM",
+    "previewKey": "Clé API enregistrée",
+    "previewOwner": "Propriétaire enregistré",
+    "previewResource": "Ressource préparée",
+    "previewSync": "Synchronisation configurée",
+    "previewTitle": "Aperçu de la configuration de la communauté",
+    "previewWebhook": "Webhook reçu",
+    "refresh": "Actualiser la progression de la configuration",
+    "reopen": "Liste de vérification de configuration",
+    "saveFailed": "Votre modification de la liste de contrôle n’a pas été enregistrée. Veuillez réessayer.",
+    "setUpSync": "Configurer",
+    "shortTitle": "Configuration",
+    "skipSetup": "Passer la configuration",
+    "skipSync": "Ignorer la synchronisation de la base de données",
+    "steps": {
+      "db_sync": "Synchronisation de la base de données",
+      "erlc_key": "Enregistrer la clé API ER:LC",
+      "erlc_webhook": "Connecter le webhook ER:LC",
+      "fivem_resource": "Obtenir la ressource FiveM"
+    },
+    "syncOptions": "Options de synchronisation de la base de données",
+    "syncQuestion": "Vous utilisez un framework ? Synchronisez automatiquement les personnages, les licences et les immatriculations de véhicules depuis votre base de données FiveM.",
+    "syncSummary": "Synchroniser les personnages, les licences et les véhicules depuis votre serveur.",
+    "title": "Configurer {name}",
+    "webhookHint": "Après avoir ajouté l'URL du webhook, exécutez une commande personnalisée du CAD dans ER:LC. Cela se coche lorsque le CAD la reçoit."
+  },
   "shortcuts": {
     "accountSaveFailed": "Les raccourcis n’ont pas pu être enregistrés sur votre compte.",
     "addCliVariable": "Ajouter un argument CLI",
@@ -3997,13 +4114,17 @@
     "unavailableTitle": "Communauté indisponible"
   },
   "vanityUrl": {
+    "autoJoin": "La connexion via cette URL rejoint automatiquement votre communauté. L'approbation et les autorisations s'appliquent toujours.",
     "copy": "Copier l’URL de la communauté",
+    "invalidCharacters": "Cet ID de communauté ne peut pas être utilisé dans une URL personnalisée. Utilisez des lettres, des chiffres ou des tirets, en commençant et en terminant par une lettre ou un chiffre.",
     "label": "URL de la communauté",
     "meta": {
       "description": "Rejoignez {community} sur Sonoran CAD, la plateforme de répartition et de dossiers pour les communautés de jeu.",
       "imageAlt": "Logo de {community}",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Cet identifiant de communauté ne peut pas être utilisé comme URL personnalisée. Utilisez des lettres, des chiffres ou des tirets, et évitez les noms réservés."
+    "reserved": "Cet identifiant de communauté est réservé et ne peut pas être utilisé comme URL personnalisée.",
+    "tooLong": "Cet identifiant de communauté est trop long pour une URL personnalisée.",
+    "unavailable": "Cet identifiant de communauté ne peut pas être utilisé comme URL personnalisée."
   }
 }

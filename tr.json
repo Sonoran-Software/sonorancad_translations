@@ -731,6 +731,7 @@
           "panelIntro": "FiveM karakterlerinizi, lisanslarınızı ve araçlarınızı doğrudan CAD içinde bulun.",
           "php": "phpMyAdmin",
           "phpHelp": "Kullanıcı Hesaplarını açın ve bir kullanıcı ekleyin. Aşağıda gösterildiği gibi veritabanınıza SELECT ve SHOW VIEW erişimi verin. Veritabanı sunucunuzun genel adresini ve yeni kullanıcının ayrıntılarını girin.",
+          "plusRequired": "Veritabanı Senkronizasyonu kurulumu Sonoran CAD Plus gerektirir.",
           "provider": "Veritabanınız nerede?",
           "ready": "Yapay zekanın kurulumu tamamlamasına izin ver",
           "required": "Gerekli",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Farklı Giden IP",
       "enableMap": "Haritayı Etkinleştir",
       "erlc": {
+        "addServer": "Sunucu ekle",
         "advancedSettingsCaption": "Her sunucu için isteğe bağlı komut otomasyon ayarları.",
         "advancedSettingsTitle": "Gelişmiş Komut Ayarları",
         "apiKey": "ER:LC API Anahtarı",
@@ -802,7 +804,8 @@
           "webhook": "Olay webhook'unu ekle"
         },
         "liveMapAbout": "Canlı harita, birim konumları, vücut kameraları, acil çağrılar, sevk çağrıları ve daha fazlasıyla etkileşimli bir 2D ve 3D oyun haritası sunar.",
-        "liveMapStatus": "Canlı Harita",
+        "liveMapHeader": "Canlı Harita",
+        "liveMapStatus": "Durum",
         "liveMapStyle": "Harita Stili",
         "noServersConfigured": "Bu topluluk için henüz sunucu yapılandırılmamış.",
         "notifyAlways": "Her zaman",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} ekran görüntüsü {number}",
         "serverKeysBody": "Bağlanmasını istediğiniz her ER:LC sunucusu için API anahtarını yapıştırın.",
         "serverKeysTitle": "Sunucularınızı Bağlayın",
+        "serverLimit": "Bu topluluk sunucu sınırına ulaştı.",
+        "serverName": "Sunucu adı",
+        "serversTitle": "Sunucular",
         "setupChecklistTitle": "Kurulum Kontrol Listesi",
         "setupIntro": "Ücretsiz ER:LC entegrasyon kurulumunu tamamlayın, ardından gerekirse harita ve komut seçeneklerini ince ayarlayın.",
         "startSetup": "Kurulumu Başlat",
@@ -887,7 +893,7 @@
         "header": "FiveM Entegrasyonu",
         "liveMapBody": "FiveM kaynağı, ek canlı harita yapılandırması olmadan birim konumlarını otomatik olarak CAD canlı haritasına gönderir. Kullanıcıların yalnızca bu CAD’e bağlı olması ve oyunda /link çalıştırması gerekir.",
         "liveMapPermissionNote": "Kullanıcıların canlı haritayı görüntülemek için ayrıca hesap iznine de ihtiyacı vardır.",
-        "liveMapStatus": "Canlı Harita",
+        "liveMapStatus": "Durum",
         "liveMapTitle": "Canlı Harita",
         "manual": {
           "additionalOptions": "Diğer yapılandırma seçenekleri hakkında daha fazla bilgiyi burada öğrenebilirsiniz.",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "RocketNode barındırmayı aç",
     "sonoranOneBundle": "CAD + CMS + Radyo + FiveM Hosting",
     "sonoranOneLink": "Sonoran One'ı Aç"
+  },
+  "guidedSetup": {
+    "back": "Geri",
+    "chooseGame": "Ne oynuyorsun?",
+    "connectNext": "Topluluğunuz hazır. Şimdi, oyununuzu bağlayın.",
+    "continue": "Devam et",
+    "createFailed": "Topluluğunuzu oluşturamadık. Topluluk limitinizi kontrol edin ve tekrar deneyin.",
+    "createUncertain": "Oluşturmayı doğrulayamadık. Tekrar denemeden önce topluluklarınızı yenileyin.",
+    "dispatchAi": "Yapay Zekâ Sevkiyatını Kur",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Diğer"
+    },
+    "instruction": {
+      "erlc": "Admin → Advanced → In-Game Integration → ER:LC öğesini açın. Sunucunuzun ER:LC API Paketi'ne ihtiyacınız olacak.",
+      "fivem": "PC'nizde Admin → Advanced → In-Game Integration → FiveM'yi açın.",
+      "other": "Dispatch AI, Sonoran Radio'yu CAD'inize bağlar. Kurulum kılavuzuyla başlayın."
+    },
+    "joinInstead": "Bir topluluğa katılın",
+    "mobileHint": "Burada oluşturun. Oyun bağlantınızı PC'de tamamlayın.",
+    "nameCommunity": "Topluluğunuzu adlandırın",
+    "next": {
+      "erlc": "ER:LC Bağlan",
+      "fivem": "FiveM'e Bağlan",
+      "other": "Yapay Zekâ Sevkiyatını Kur"
+    },
+    "openCommunity": "Topluluğu aç",
+    "openGuide": "Kurulum kılavuzunu aç",
+    "openingCommunity": "Topluluğunuzu açılıyor…",
+    "otherName": "Oyun adı",
+    "otherRequired": "Bir oyun adı girin (2–60 karakter).",
+    "pcNext": "Topluluğunuz kaydedildi. Devam etmek için PC'nizde aynı hesapla oturum açın.",
+    "previewDesktop": "Masaüstünde sürdür",
+    "previewEvents": "Yakalanan etkinlikler (Google Analytics'e gönderilmedi)",
+    "previewFailure": "Başarısız bir kaydı simüle et",
+    "previewJoined": "Önizleme: mevcut topluluğa katılma iletişim kutusu burada açılır.",
+    "previewLabel": "Yerel önizleme · örnek veriler · canlı hesap değişikliği yok",
+    "previewMobile": "Mobil önizleme",
+    "previewOpened": "Önizleme: topluluk burada açılır.",
+    "previewReset": "Baştan başla",
+    "saveFailed": "Seçiminiz kaydedilmedi. Lütfen tekrar deneyin.",
+    "setup": "Kuruluma devam et",
+    "startTitle": "Topluluğunuzu kurun"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "En az bir adres veya birim seçin.",
     "sendPage": "Sayfayı Gönder",
     "unitsTooltip": "Ayrıca ekli birimlerini eklemek için etkin bir sevk çağrısını buraya sürükleyip bırakabilirsiniz."
+  },
+  "integrationGame": {
+    "apiDescription": "Özel entegrasyonlar için. Kopyalamak için bir değere tıklayın.",
+    "apiDocs": "API dokümantasyonu",
+    "change": "Değiştir",
+    "copyApiKey": "API anahtarını kopyala",
+    "copyCommunityId": "Topluluk Kimliğini Kopyala",
+    "current": "Oyun",
+    "unselected": "Seçilmedi"
   },
   "integrationPanels": {
     "actionFailed": "Entegrasyon eylemi başarısız oldu.",
@@ -3820,6 +3879,64 @@
     "voice": "Ses",
     "volume": "Ses Seviyesi"
   },
+  "setupChecklist": {
+    "addSync": "Senkronizasyon adımı ekle",
+    "allDone": "Tamamlandı",
+    "chooseFramework": "Hangi framework'ü kullanıyorsun?",
+    "configureSync": "Veritabanı senkronizasyonunu açın",
+    "currentStep": "Adım {step} / {total}",
+    "details": "Detaylar",
+    "discord": "Discord'a Katıl",
+    "dismiss": "Kurulum kontrol listesini kapat",
+    "done": "Tamamlandı",
+    "editFramework": "Düzenle",
+    "framework": "Çerçeve",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Diğer",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "{game} seçildi",
+    "help": "Yardım al",
+    "hints": {
+      "db_sync": "Çerçevenizi seçin veya bu adımı tamamlamak için Çerçeve yok'u seçin.",
+      "erlc_key": "Sunucunuzun API anahtarını ER:LC entegrasyon paneline kaydedin.",
+      "erlc_webhook": "Webhook URL'sini ekleyin, ardından bağlantıyı doğrulamak için ER:LC'de özel bir CAD komutu çalıştırın.",
+      "fivem_resource": "Kaynağı indirin ve FiveM sunucunuza ekleyin."
+    },
+    "noFramework": "Çerçeve yok",
+    "noFrameworkSelected": "Çerçeve yok — veritabanı eşitlemesi gerekmez.",
+    "optionalSync": "İsteğe bağlı: veritabanı senkronizasyonu",
+    "pending": "Tamamlanmadı",
+    "previewControls": "Önizleme kontrolleri (örnek veriler)",
+    "previewErlc": "ER:LC kontrol listesi",
+    "previewFivem": "FiveM kontrol listesi",
+    "previewKey": "API anahtarı kaydedildi",
+    "previewOwner": "Kayıtlı sahip",
+    "previewResource": "Kaynak hazırlandı",
+    "previewSync": "Senkronizasyon yapılandırıldı",
+    "previewTitle": "Topluluk kurulum önizlemesi",
+    "previewWebhook": "Webhook alındı",
+    "refresh": "Kurulum ilerlemesini yenile",
+    "reopen": "Kurulum kontrol listesi",
+    "saveFailed": "Kontrol listeniz kaydedilmedi. Lütfen tekrar deneyin.",
+    "setUpSync": "Ayarla",
+    "shortTitle": "Kurulum",
+    "skipSetup": "Kurulumu atla",
+    "skipSync": "Veritabanı senkronizasyonunu atla",
+    "steps": {
+      "db_sync": "Veritabanı senkronizasyonu",
+      "erlc_key": "ER:LC API Anahtarını Kaydet",
+      "erlc_webhook": "ER:LC webhook'una bağlan",
+      "fivem_resource": "FiveM kaynağı al"
+    },
+    "syncOptions": "Veritabanı senkronizasyonu seçenekleri",
+    "syncQuestion": "Bir framework mü kullanıyorsunuz? Karakterleri, lisansları ve araç kayıtlarını FiveM veritabanınızdan otomatik olarak senkronize edin.",
+    "syncSummary": "Karakterleri, lisansları ve araçları sunucunuzdan senkronize edin.",
+    "title": "{name} ayarla",
+    "webhookHint": "Webhook URL'sini ekledikten sonra, ER:LC'de bir CAD özel komutu çalıştırın. CAD bunu aldığında bu işaretlenir."
+  },
   "shortcuts": {
     "accountSaveFailed": "Kısayollar hesabınıza kaydedilemedi.",
     "addCliVariable": "CLI Argümanı Ekle",
@@ -3997,13 +4114,17 @@
     "unavailableTitle": "Topluluk kullanım dışı"
   },
   "vanityUrl": {
+    "autoJoin": "Bu URL üzerinden oturum açmak topluluğunuza otomatik olarak katılmanızı sağlar. Onay ve izinler yine de geçerlidir.",
     "copy": "Topluluk URL'sini Kopyala",
+    "invalidCharacters": "Bu Topluluk Kimliği bir vanity URL'de kullanılamaz. Harfler, rakamlar veya tireler kullanın, harf veya rakamla başlayıp bitirin.",
     "label": "Topluluk URL'si",
     "meta": {
       "description": "{community} ile Sonoran CAD'e katılın, oyun toplulukları için sevk ve kayıt platformu.",
       "imageAlt": "{community} logosu",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Bu Topluluk Kimliği bir vanity URL olarak kullanılamaz. Harfler, sayılar veya tireler kullanın ve ayrılmış adlardan kaçının."
+    "reserved": "Bu Topluluk Kimliği ayrılmıştır ve bir vanity URL olarak kullanılamaz.",
+    "tooLong": "Bu Topluluk Kimliği bir vanity URL için çok uzun.",
+    "unavailable": "Bu Topluluk Kimliği bir vanity URL olarak kullanılamaz."
   }
 }

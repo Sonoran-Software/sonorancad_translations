@@ -731,6 +731,7 @@
           "panelIntro": "Vyhledejte své postavy, licence a vozidla z FiveM přímo v CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "Otevřete Uživatelské účty a přidejte uživatele. Udělte mu přístup SELECT a SHOW VIEW k vaší databázi, jak je uvedeno níže. Zadejte veřejnou adresu vašeho databázového serveru a údaje nového uživatele.",
+          "plusRequired": "Nastavení synchronizace databáze vyžaduje Sonoran CAD Plus.",
           "provider": "Kde je vaše databáze?",
           "ready": "Nechte AI dokončit nastavení",
           "required": "Povinné",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "Odlišná odchozí IP",
       "enableMap": "Povolit mapu",
       "erlc": {
+        "addServer": "Přidat server",
         "advancedSettingsCaption": "Volitelná nastavení automatizace příkazů pro každý server.",
         "advancedSettingsTitle": "Pokročilá nastavení příkazů",
         "apiKey": "API klíč ER:LC",
@@ -802,6 +804,7 @@
           "webhook": "Přidat webhook události"
         },
         "liveMapAbout": "Živá mapa nabízí interaktivní 2D a 3D herní mapu s polohami jednotek, bodykamerami, tísňovými voláními, dispečerskými voláními a dalšími.",
+        "liveMapHeader": "Živá mapa",
         "liveMapStatus": "Živá mapa",
         "liveMapStyle": "Styl mapy",
         "noServersConfigured": "Pro tuto komunitu zatím nejsou nakonfigurovány žádné servery.",
@@ -818,6 +821,9 @@
         "screenshotAlt": "snímek obrazovky {step} {number}",
         "serverKeysBody": "Vložte klíč API pro každý server ER:LC, který chcete připojit.",
         "serverKeysTitle": "Připojte své servery",
+        "serverLimit": "Tato komunita dosáhla limitu serverů.",
+        "serverName": "Název serveru",
+        "serversTitle": "Servery",
         "setupChecklistTitle": "Kontrolní seznam nastavení",
         "setupIntro": "Projděte si bezplatné nastavení integrace ER:LC a poté podle potřeby doladťe možnosti mapy a příkazů.",
         "startSetup": "Začít nastavení",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "Otevřít RocketNode hosting",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM Hosting",
     "sonoranOneLink": "Otevřít Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "Zpět",
+    "chooseGame": "Co hrajete?",
+    "connectNext": "Vaše komunita je připravena. Dále připojte svou hru.",
+    "continue": "Pokračovat",
+    "createFailed": "Vaši komunitu se nepodařilo vytvořit. Zkontrolujte limit své komunity a zkuste to znovu.",
+    "createUncertain": "Nepodařilo se potvrdit vytvoření. Před dalším pokusem obnovte své komunity.",
+    "dispatchAi": "Nastavit AI výjezd",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "Ostatní"
+    },
+    "instruction": {
+      "erlc": "Otevřete Admin → Advanced → In-Game Integration → ER:LC. Budete potřebovat ER:LC API Pack vašeho serveru.",
+      "fivem": "Na vašem PC otevřete Admin → Advanced → In-Game Integration → FiveM.",
+      "other": "Dispatch AI propojuje Sonoran Radio s vaším CAD. Začněte s průvodcem nastavením."
+    },
+    "joinInstead": "Připojit se ke komunitě místo toho",
+    "mobileHint": "Vytvořte ji zde. Dokončete propojení své hry na PC.",
+    "nameCommunity": "Pojmenujte svou komunitu",
+    "next": {
+      "erlc": "Připojit ER:LC",
+      "fivem": "Připojit FiveM",
+      "other": "Nastavit AI výjezd"
+    },
+    "openCommunity": "Otevřít komunitu",
+    "openGuide": "Otevřít průvodce nastavením",
+    "openingCommunity": "Otevírání vaší komunity…",
+    "otherName": "Název hry",
+    "otherRequired": "Zadejte název hry (2–60 znaků).",
+    "pcNext": "Vaše komunita je uložena. Přihlaste se k pokračování na svém PC stejným účtem.",
+    "previewDesktop": "Pokračovat na počítači",
+    "previewEvents": "Zachycené události (neodeslané do Google Analytics)",
+    "previewFailure": "Nasimulovat neúspěšné uložení",
+    "previewJoined": "Náhled: zde by se otevřel stávající dialog pro připojení ke komunitě.",
+    "previewLabel": "Místní náhled · ukázková data · žádné změny živého účtu",
+    "previewMobile": "Náhled na mobilu",
+    "previewOpened": "Náhled: zde by se otevřela komunita.",
+    "previewReset": "Začít znovu",
+    "saveFailed": "Vaše volba nebyla uložena. Zkuste to prosím znovu.",
+    "setup": "Pokračovat v nastavení",
+    "startTitle": "Nastavte svou komunitu"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "Vyberte alespoň jednu adresu nebo jednotku.",
     "sendPage": "Odeslat stránku",
     "unitsTooltip": "Můžete sem také přetáhnout aktivní dispečerský hovor a přidat k němu připojené jednotky."
+  },
+  "integrationGame": {
+    "apiDescription": "Pro vlastní integrace. Klikněte na hodnotu pro zkopírování.",
+    "apiDocs": "Dokumentace API",
+    "change": "Změna",
+    "copyApiKey": "Zkopírovat klíč API",
+    "copyCommunityId": "Kopírovat ID komunity",
+    "current": "Hra",
+    "unselected": "Nevybráno"
   },
   "integrationPanels": {
     "actionFailed": "Integrace akce selhala.",
@@ -3811,6 +3870,64 @@
     "voice": "Hlas",
     "volume": "Hlasitost"
   },
+  "setupChecklist": {
+    "addSync": "Přidat krok synchronizace",
+    "allDone": "Dokončeno",
+    "chooseFramework": "Jaký framework používáte?",
+    "configureSync": "Otevřít synchronizaci databáze",
+    "currentStep": "Krok {step} z {total}",
+    "details": "Detaily",
+    "discord": "Připojit se na Discord",
+    "dismiss": "Zavřít kontrolní seznam nastavení",
+    "done": "Dokončeno",
+    "editFramework": "Upravit",
+    "framework": "Framework",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "Ostatní",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "Vybrána hra {game}",
+    "help": "Získat pomoc",
+    "hints": {
+      "db_sync": "Vyberte svůj framework nebo vyberte Žádný framework, abyste tento krok dokončili.",
+      "erlc_key": "Uložte klíč API svého serveru v panelu integrace ER:LC.",
+      "erlc_webhook": "Přidejte URL webhooku a pak v ER:LC spusťte vlastní příkaz CAD pro potvrzení připojení.",
+      "fivem_resource": "Stáhněte zdroj a přidejte jej na svůj FiveM server."
+    },
+    "noFramework": "Žádný framework",
+    "noFrameworkSelected": "Žádný framework — synchronizace databáze není potřeba.",
+    "optionalSync": "Volitelné: synchronizace databáze",
+    "pending": "Nedokončeno",
+    "previewControls": "Náhled ovládacích prvků (ukázková data)",
+    "previewErlc": "ER:LC kontrolní seznam",
+    "previewFivem": "Kontrolní seznam FiveM",
+    "previewKey": "Klíč API uložen",
+    "previewOwner": "Registrovaný vlastník",
+    "previewResource": "Zdroj připraven",
+    "previewSync": "Synchronizace nakonfigurována",
+    "previewTitle": "Náhled nastavení komunity",
+    "previewWebhook": "Webhook přijat",
+    "refresh": "Obnovit průběh nastavení",
+    "reopen": "Kontrolní seznam nastavení",
+    "saveFailed": "Vaše změna kontrolního seznamu nebyla uložena. Zkuste to prosím znovu.",
+    "setUpSync": "Nastavit",
+    "shortTitle": "Nastavení",
+    "skipSetup": "Přeskočit nastavení",
+    "skipSync": "Přeskočit synchronizaci databáze",
+    "steps": {
+      "db_sync": "Synchronizace databáze",
+      "erlc_key": "Uložit API klíč ER:LC",
+      "erlc_webhook": "Připojit webhook ER:LC",
+      "fivem_resource": "Získat FiveM zdroj"
+    },
+    "syncOptions": "Možnosti synchronizace databáze",
+    "syncQuestion": "Používáte framework? Automaticky synchronizujte postavy, licence a registrace vozidel z vaší FiveM databáze.",
+    "syncSummary": "Synchronizujte postavy, licence a vozidla z vašeho serveru.",
+    "title": "Nastavit {name}",
+    "webhookHint": "Po přidání URL webhooku spusťte v ER:LC vlastní příkaz CAD. Tím se zaškrtne, když jej CAD přijme."
+  },
   "shortcuts": {
     "accountSaveFailed": "Zkratky se nepodařilo uložit do vašeho účtu.",
     "addCliVariable": "Přidat argument CLI",
@@ -3988,13 +4105,17 @@
     "unavailableTitle": "Komunita nedostupná"
   },
   "vanityUrl": {
+    "autoJoin": "Přihlášení přes tuto URL vás automaticky připojí k vaší komunitě. Schválení a oprávnění se stále uplatňují.",
     "copy": "Kopírovat URL komunity",
+    "invalidCharacters": "Toto ID komunity nelze použít ve vanity URL. Použijte písmena, čísla nebo spojovníky, začínající a končící písmenem nebo číslem.",
     "label": "URL komunity",
     "meta": {
       "description": "Připojte se k {community} na Sonoran CAD, dispečerské a evidenční platformě pro herní komunity.",
       "imageAlt": "Logo {community}",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "Tento Community ID nelze použít jako vanity URL. Použijte písmena, čísla nebo spojovníky a vyhněte se vyhrazeným názvům."
+    "reserved": "Tento Community ID je vyhrazený a nelze jej použít jako vanity URL.",
+    "tooLong": "Tento Community ID je pro vanity URL příliš dlouhý.",
+    "unavailable": "Tento Community ID nelze použít jako vanity URL."
   }
 }

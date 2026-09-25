@@ -731,6 +731,7 @@
           "panelIntro": "ابحث عن شخصيات FiveM والتراخيص والمركبات الخاصة بك مباشرةً في CAD.",
           "php": "phpMyAdmin",
           "phpHelp": "افتح حسابات المستخدمين وأضف مستخدمًا. امنحه حق الوصول SELECT وSHOW VIEW إلى قاعدة بياناتك، كما هو موضح أدناه. أدخل العنوان العام لخادم قاعدة البيانات وتفاصيل المستخدم الجديد.",
+          "plusRequired": "يتطلب إعداد مزامنة قاعدة البيانات Sonoran CAD Plus.",
           "provider": "أين قاعدة البيانات الخاصة بك؟",
           "ready": "دع الذكاء الاصطناعي يُكمل الإعداد",
           "required": "مطلوب",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "عنوان IP صادر مختلف",
       "enableMap": "تمكين الخريطة",
       "erlc": {
+        "addServer": "إضافة سيرفر",
         "advancedSettingsCaption": "إعدادات أتمتة الأوامر الاختيارية لكل خادم.",
         "advancedSettingsTitle": "إعدادات الأوامر المتقدمة",
         "apiKey": "مفتاح واجهة برمجة تطبيقات ER:LC",
@@ -802,6 +804,7 @@
           "webhook": "أضف webhook الحدث"
         },
         "liveMapAbout": "توفّر الخريطة المباشرة خريطة لعبة تفاعلية ثنائية وثلاثية الأبعاد مع مواقع الوحدات، وكاميرات الجسم، ومكالمات الطوارئ، ومكالمات الإرسال، والمزيد.",
+        "liveMapHeader": "الخريطة الحيه",
         "liveMapStatus": "الخريطة الحيه",
         "liveMapStyle": "نمط الخريطة",
         "noServersConfigured": "لم يتم تكوين أي خوادم لهذا المجتمع بعد.",
@@ -818,6 +821,9 @@
         "screenshotAlt": "لقطة شاشة {step} {number}",
         "serverKeysBody": "الصق مفتاح API لكل خادم ER:LC تريد ربطه.",
         "serverKeysTitle": "ربط خوادمك",
+        "serverLimit": "وصل هذا المجتمع إلى حد الخادم.",
+        "serverName": "اسم السيرفر",
+        "serversTitle": "السيرفرات",
         "setupChecklistTitle": "قائمة التحقق من الإعداد",
         "setupIntro": "مرّ عبر إعداد تكامل ER:LC المجاني، ثم اضبط خيارات الخريطة والأوامر حسب الحاجة.",
         "startSetup": "بدء الإعداد",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "افتح استضافة RocketNode",
     "sonoranOneBundle": "استضافة CAD + CMS + Radio + FiveM",
     "sonoranOneLink": "افتح سونوران وان"
+  },
+  "guidedSetup": {
+    "back": "رجوع",
+    "chooseGame": "ما الذي تلعبه؟",
+    "connectNext": "مجتمعك جاهز. بعد ذلك، وصّل لعبتك.",
+    "continue": "متابعة",
+    "createFailed": "تعذر علينا إنشاء مجتمعك. تحقق من حد المجتمع لديك وحاول مرة أخرى.",
+    "createUncertain": "تعذر تأكيد الإنشاء. حدّث مجتمعاتك قبل المحاولة مرة أخرى.",
+    "dispatchAi": "إعداد العمليات الذكية",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "اخرى"
+    },
+    "instruction": {
+      "erlc": "افتح Admin → Advanced → In-Game Integration → ER:LC. ستحتاج إلى ER:LC API Pack الخاص بخادمك.",
+      "fivem": "على جهاز الكمبيوتر الخاص بك، افتح Admin → Advanced → In-Game Integration → FiveM.",
+      "other": "يربط Dispatch AI جهاز Sonoran Radio بنظام CAD لديك. ابدأ بدليل الإعداد."
+    },
+    "joinInstead": "دخول مجتمع بدلاً من ذلك",
+    "mobileHint": "أنشئه هنا. أنهِ ربط لعبتك على الكمبيوتر.",
+    "nameCommunity": "سمِّ مجتمعك",
+    "next": {
+      "erlc": "اتصال ER:LC",
+      "fivem": "اتصال FiveM",
+      "other": "إعداد العمليات الذكية"
+    },
+    "openCommunity": "افتح المجتمع",
+    "openGuide": "افتح دليل الإعداد",
+    "openingCommunity": "فتح مجتمعك…",
+    "otherName": "اسم اللعبة",
+    "otherRequired": "أدخل اسم لعبة (2–60 حرفًا).",
+    "pcNext": "تم حفظ مجتمعك. سجّل الدخول باستخدام هذا الحساب نفسه على جهاز الكمبيوتر لمتابعة.",
+    "previewDesktop": "متابعة على سطح المكتب",
+    "previewEvents": "الأحداث الملتقطة (غير المرسلة إلى Google Analytics)",
+    "previewFailure": "محاكاة حفظ فاشل",
+    "previewJoined": "معاينة: سيفتح هنا مربع حوار الانضمام إلى المجتمع الحالي.",
+    "previewLabel": "معاينة محلية · بيانات عينة · بدون تغييرات على الحساب المباشر",
+    "previewMobile": "معاينة الهاتف المحمول",
+    "previewOpened": "معاينة: سيفتح المجتمع هنا.",
+    "previewReset": "ابدأ من جديد",
+    "saveFailed": "لم يتم حفظ اختيارك. يرجى المحاولة مرة أخرى.",
+    "setup": "متابعة الإعداد",
+    "startTitle": "إعداد المجتمع الخاص بك"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "اختر عنوانًا أو وحدة واحدة على الأقل.",
     "sendPage": "إرسال الصفحة",
     "unitsTooltip": "يمكنك أيضًا سحب وإفلات مكالمة إرسال نشطة هنا لإضافة الوحدات المرفقة بها."
+  },
+  "integrationGame": {
+    "apiDescription": "للتكاملات المخصصة. انقر على قيمة لنسخها.",
+    "apiDocs": "توثيق API",
+    "change": "تغيير",
+    "copyApiKey": "نسخ مفتاح API",
+    "copyCommunityId": "نسخ معرف المجتمع",
+    "current": "اللعبة",
+    "unselected": "غير محدد"
   },
   "integrationPanels": {
     "actionFailed": "فشلت عملية التكامل.",
@@ -3820,6 +3879,64 @@
     "voice": "الصوت",
     "volume": "الصوت"
   },
+  "setupChecklist": {
+    "addSync": "إضافة خطوة المزامنة",
+    "allDone": "مكتمل",
+    "chooseFramework": "أي إطار عمل تستخدم؟",
+    "configureSync": "فتح مزامنة قاعدة البيانات",
+    "currentStep": "الخطوة {step} من {total}",
+    "details": "التفاصيل",
+    "discord": "انضم إلى ديسكورد الخاص بنا",
+    "dismiss": "إغلاق قائمة التحقق من الإعداد",
+    "done": "مكتمل",
+    "editFramework": "تعديل",
+    "framework": "إطار عمل",
+    "frameworks": {
+      "esx": "إي إس إكس",
+      "other": "اخرى",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "تم تحديد {game}",
+    "help": "الحصول على المساعدة",
+    "hints": {
+      "db_sync": "اختر إطار العمل الخاص بك، أو حدد بلا إطار عمل لإكمال هذه الخطوة.",
+      "erlc_key": "احفظ مفتاح API الخاص بخادمك في لوحة تكامل ER:LC.",
+      "erlc_webhook": "أضف عنوان URL للـ webhook، ثم شغّل أمر CAD مخصص في ER:LC لتأكيد الاتصال.",
+      "fivem_resource": "قم بتنزيل المورد وأضفه إلى خادم FiveM الخاص بك."
+    },
+    "noFramework": "بدون إطار عمل",
+    "noFrameworkSelected": "لا يوجد إطار عمل — لا حاجة لمزامنة قاعدة البيانات.",
+    "optionalSync": "اختياري: مزامنة قاعدة البيانات",
+    "pending": "غير مكتمل",
+    "previewControls": "معاينة عناصر التحكم (بيانات نموذجية)",
+    "previewErlc": "قائمة ER:LC",
+    "previewFivem": "قائمة FiveM",
+    "previewKey": "تم حفظ مفتاح API",
+    "previewOwner": "المالك المسجل",
+    "previewResource": "تم إعداد المورد",
+    "previewSync": "تمت المزامنة المُهيّأة",
+    "previewTitle": "معاينة إعداد المجتمع",
+    "previewWebhook": "تم استلام Webhook",
+    "refresh": "تحديث تقدّم الإعداد",
+    "reopen": "قائمة التحقق من الإعداد",
+    "saveFailed": "لم يتم حفظ تغيير قائمة التحقق الخاصة بك. يرجى المحاولة مرة أخرى.",
+    "setUpSync": "إعداد",
+    "shortTitle": "الإعداد",
+    "skipSetup": "تخطي الإعداد",
+    "skipSync": "تخطي مزامنة قاعدة البيانات",
+    "steps": {
+      "db_sync": "مزامنة قاعدة البيانات",
+      "erlc_key": "حفظ مفتاح واجهة برمجة تطبيقات ER:LC",
+      "erlc_webhook": "اتصال ER:LC webhook",
+      "fivem_resource": "احصل على مورد FiveM"
+    },
+    "syncOptions": "خيارات مزامنة قاعدة البيانات",
+    "syncQuestion": "تستخدم إطار عمل؟ قم بالمزامنة التلقائية للشخصيات والتراخيص وتسجيلات المركبات من قاعدة بيانات FiveM الخاصة بك.",
+    "syncSummary": "مزامنة الشخصيات والتراخيص والمركبات من الخادم الخاص بك.",
+    "title": "إعداد {name}",
+    "webhookHint": "بعد إضافة عنوان URL للـ webhook، شغّل أمر CAD مخصص في ER:LC. يتم تحديده عند استلام CAD له."
+  },
   "shortcuts": {
     "accountSaveFailed": "تعذّر حفظ الاختصارات في حسابك.",
     "addCliVariable": "إضافة وسيط سطر الأوامر",
@@ -3997,13 +4114,17 @@
     "unavailableTitle": "المجتمع غير متاح"
   },
   "vanityUrl": {
+    "autoJoin": "تسجيل الدخول عبر هذا الرابط ينضم بك تلقائيًا إلى مجتمعك. لا تزال الموافقة والأذونات مطبقة.",
     "copy": "نسخ رابط المجتمع",
+    "invalidCharacters": "لا يمكن استخدام معرّف المجتمع هذا في عنوان URL مخصص. استخدم أحرفًا أو أرقامًا أو شرطات، مع البدء والانتهاء بحرف أو رقم.",
     "label": "رابط المجتمع",
     "meta": {
       "description": "انضم إلى {community} على Sonoran CAD، منصة الإرسال والسجلات لمجتمعات الألعاب.",
       "imageAlt": "شعار {community}",
       "title": "{community} | سونوران CAD"
     },
-    "unavailable": "لا يمكن استخدام معرّف المجتمع هذا كعنوان URL مخصص. استخدم الحروف أو الأرقام أو الشرطات، وتجنب الأسماء المحجوزة."
+    "reserved": "هذا المعرّف الخاص بالمجتمع محجوز ولا يمكن استخدامه كعنوان URL مخصص.",
+    "tooLong": "معرّف المجتمع هذا طويل جدًا بالنسبة إلى عنوان URL مخصص.",
+    "unavailable": "لا يمكن استخدام معرّف المجتمع هذا كعنوان URL مخصص."
   }
 }

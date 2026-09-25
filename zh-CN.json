@@ -731,6 +731,7 @@
           "panelIntro": "直接在 CAD 中查找你的 FiveM 角色、执照和车辆。",
           "php": "phpMyAdmin",
           "phpHelp": "打开用户账户并添加一个用户。按如下所示，给予其数据库的 SELECT 和 SHOW VIEW 访问权限。输入你的数据库服务器的公网地址和新用户的详细信息。",
+          "plusRequired": "数据库同步设置需要 Sonoran CAD Plus。",
           "provider": "你的数据库在哪里？",
           "ready": "让 AI 完成设置",
           "required": "必填",
@@ -759,6 +760,7 @@
       "differingOutboundIp": "不同的出站IP",
       "enableMap": "启用地图",
       "erlc": {
+        "addServer": "添加服务器",
         "advancedSettingsCaption": "每个服务器的可选命令自动化设置。",
         "advancedSettingsTitle": "高级命令设置",
         "apiKey": "ER:LC API 密钥",
@@ -802,7 +804,8 @@
           "webhook": "添加事件 webhook"
         },
         "liveMapAbout": "实时地图提供交互式 2D 和 3D 游戏地图，包含单位位置、执法记录仪、紧急呼叫、调度呼叫等更多内容。",
-        "liveMapStatus": "在线地图",
+        "liveMapHeader": "在线地图",
+        "liveMapStatus": "状态",
         "liveMapStyle": "地图样式",
         "noServersConfigured": "此社区尚未配置服务器。",
         "notifyAlways": "始终",
@@ -818,6 +821,9 @@
         "screenshotAlt": "{step} 截图 {number}",
         "serverKeysBody": "将每个要连接的 ER:LC 服务器的 API 密钥粘贴到此处。",
         "serverKeysTitle": "连接你的服务器",
+        "serverLimit": "此社区已达到其服务器上限。",
+        "serverName": "服务器名称",
+        "serversTitle": "服务器",
         "setupChecklistTitle": "设置清单",
         "setupIntro": "完成免费的 ER:LC 集成设置，然后根据需要微调地图和命令选项。",
         "startSetup": "开始设置",
@@ -887,7 +893,7 @@
         "header": "FiveM 集成",
         "liveMapBody": "FiveM 资源会自动将单位位置发送到 CAD 实时地图，无需额外的实时地图配置。用户只需连接到此 CAD 并在游戏内运行 /link。",
         "liveMapPermissionNote": "用户还需要账户权限才能查看实时地图。",
-        "liveMapStatus": "在线地图",
+        "liveMapStatus": "状态",
         "liveMapTitle": "在线地图",
         "manual": {
           "additionalOptions": "你可以在这里了解有关其他配置选项的更多信息。",
@@ -1485,6 +1491,50 @@
     "rocketNodeLink": "打开 RocketNode 托管",
     "sonoranOneBundle": "CAD + CMS + Radio + FiveM 托管",
     "sonoranOneLink": "打开 Sonoran One"
+  },
+  "guidedSetup": {
+    "back": "返回",
+    "chooseGame": "你玩什么？",
+    "connectNext": "您的社区已准备就绪。接下来，连接您的游戏。",
+    "continue": "继续",
+    "createFailed": "我们无法创建你的社区。请检查你的社区限制并重试。",
+    "createUncertain": "我们无法确认创建。请在重试前刷新你的社区。",
+    "dispatchAi": "设置 调度 AI",
+    "games": {
+      "erlc": "ER:LC",
+      "fivem": "FiveM",
+      "other": "其他"
+    },
+    "instruction": {
+      "erlc": "打开 Admin → Advanced → In-Game Integration → ER:LC。你将需要你服务器的 ER:LC API Pack。",
+      "fivem": "在你的 PC 上，打开 Admin → Advanced → In-Game Integration → FiveM。",
+      "other": "Dispatch AI将 Sonoran Radio 连接到你的 CAD。先从设置指南开始。"
+    },
+    "joinInstead": "改为加入一个社区",
+    "mobileHint": "在此创建。完成在 PC 上连接你的游戏。",
+    "nameCommunity": "为你的社区命名",
+    "next": {
+      "erlc": "连接 ER:LC",
+      "fivem": "连接 FiveM",
+      "other": "设置 调度 AI"
+    },
+    "openCommunity": "打开社区",
+    "openGuide": "打开设置指南",
+    "openingCommunity": "正在打开你的社区…",
+    "otherName": "游戏名称",
+    "otherRequired": "输入游戏名称（2–60 个字符）。",
+    "pcNext": "您的社区已保存。请在您的电脑上使用同一帐户登录以继续。",
+    "previewDesktop": "在桌面端继续",
+    "previewEvents": "已捕获的事件（未发送到 Google Analytics）",
+    "previewFailure": "模拟保存失败",
+    "previewJoined": "预览：现有的加入社区对话框将在此打开。",
+    "previewLabel": "本地预览 · 示例数据 · 不会更改实时账户",
+    "previewMobile": "移动端预览",
+    "previewOpened": "预览：社区将在此打开。",
+    "previewReset": "重新开始",
+    "saveFailed": "未保存您的选择。请重试。",
+    "setup": "继续设置",
+    "startTitle": "设置你的社区"
   },
   "homepage": {
     "bottomCta": {
@@ -2201,6 +2251,15 @@
     "selectionRequired": "至少选择一个地址或单元。",
     "sendPage": "发送页面",
     "unitsTooltip": "你也可以将一个活动的派单呼叫拖放到这里以添加其附属单元。"
+  },
+  "integrationGame": {
+    "apiDescription": "用于自定义集成。点击某个值即可复制。",
+    "apiDocs": "API 文档",
+    "change": "更改",
+    "copyApiKey": "复制 API 密钥",
+    "copyCommunityId": "复制社区ID",
+    "current": "游戏",
+    "unselected": "未选择"
   },
   "integrationPanels": {
     "actionFailed": "集成操作失败。",
@@ -3820,6 +3879,64 @@
     "voice": "语音",
     "volume": "音量"
   },
+  "setupChecklist": {
+    "addSync": "添加同步步骤",
+    "allDone": "完成",
+    "chooseFramework": "你使用哪个框架？",
+    "configureSync": "打开数据库同步",
+    "currentStep": "第 {step} 步，共 {total} 步",
+    "details": "详情",
+    "discord": "加入我们的 Discord",
+    "dismiss": "关闭设置清单",
+    "done": "完成",
+    "editFramework": "编辑",
+    "framework": "框架",
+    "frameworks": {
+      "esx": "ESX",
+      "other": "其他",
+      "qbcore": "QBCore",
+      "qbox": "Qbox"
+    },
+    "game": "已选择 {game}",
+    "help": "获取帮助",
+    "hints": {
+      "db_sync": "选择你的框架，或选择 无框架 以完成此步骤。",
+      "erlc_key": "在 ER:LC 集成面板中保存你的服务器 API 密钥。",
+      "erlc_webhook": "添加 webhook URL，然后在 ER:LC 中运行 CAD 自定义命令以确认连接。",
+      "fivem_resource": "下载资源并将其添加到你的 FiveM 服务器。"
+    },
+    "noFramework": "无框架",
+    "noFrameworkSelected": "未选择框架—无需数据库同步。",
+    "optionalSync": "可选：数据库同步",
+    "pending": "未完成",
+    "previewControls": "预览控件（示例数据）",
+    "previewErlc": "ER:LC 清单",
+    "previewFivem": "FiveM 清单",
+    "previewKey": "API 密钥已保存",
+    "previewOwner": "已注册所有者",
+    "previewResource": "资源已准备",
+    "previewSync": "同步已配置",
+    "previewTitle": "社区设置预览",
+    "previewWebhook": "已收到 Webhook",
+    "refresh": "刷新设置进度",
+    "reopen": "设置清单",
+    "saveFailed": "您的清单更改未保存。请重试。",
+    "setUpSync": "设置",
+    "shortTitle": "设置",
+    "skipSetup": "跳过设置",
+    "skipSync": "跳过数据库同步",
+    "steps": {
+      "db_sync": "数据库同步",
+      "erlc_key": "保存 ER:LC API 密钥",
+      "erlc_webhook": "连接 ER:LC webhook",
+      "fivem_resource": "获取 FiveM 资源"
+    },
+    "syncOptions": "数据库同步选项",
+    "syncQuestion": "使用框架？自动从您的 FiveM 数据库同步市民信息、许可证和车辆注册信息。",
+    "syncSummary": "从你的服务器同步人员、执照和车辆。",
+    "title": "设置 {name}",
+    "webhookHint": "添加 webhook URL 后，在 ER:LC 中运行 CAD 自定义命令。CAD 接收到后会勾选完成。"
+  },
   "shortcuts": {
     "accountSaveFailed": "快捷方式无法保存到您的账户。",
     "addCliVariable": "添加 CLI 参数",
@@ -3997,13 +4114,17 @@
     "unavailableTitle": "社区离开"
   },
   "vanityUrl": {
+    "autoJoin": "通过此 URL 登录后会自动加入你的社区。仍需获得批准并适用权限。",
     "copy": "复制社区URL",
+    "invalidCharacters": "此社区 ID 不能用于个性化 URL。请使用字母、数字或连字符，并以字母或数字开头和结尾。",
     "label": "社区URL",
     "meta": {
       "description": "加入 {community}，使用 Sonoran CAD，这是一款面向游戏社区的调度和记录平台。",
       "imageAlt": "{community} 标志",
       "title": "{community} | Sonoran CAD"
     },
-    "unavailable": "此社区 ID 不能用作个性化 URL。请使用字母、数字或连字符，并避免使用保留名称。"
+    "reserved": "此社区 ID 已保留，不能用作个性化 URL。",
+    "tooLong": "此社区 ID 对个性化 URL 来说太长。",
+    "unavailable": "此社区 ID 不能用作个性化 URL。"
   }
 }
