@@ -773,6 +773,7 @@
         "commandHint": "اتركه فارغًا لتعطيل هذا الأمر.",
         "customRobloxMap": "خريطة روبلوكس مخصصة",
         "customRobloxMapProTooltip": "خرائط Roblox المخصصة مدعومة فقط في Pro.",
+        "discordDescription": "أضف صور خريطة ثلاثية الأبعاد إلى إشعارات المكالمات في Discord. افتح تكامل Discord وفعّل webhooks لمكالمات الإرسال والمكالمات الطارئة.",
         "discordPromoAlt": "إشعارات موقع ERLC: صور مكالمات الطوارئ والإرسال تُرسل إلى Discord.",
         "discordTitle": "الديسكورد",
         "emergencyCallCommand": "أمر 911",
@@ -845,6 +846,7 @@
         "stepTwoCaption": "في CAD",
         "stepWebhookBody": "الصق هذا الرابط في ER:LC API > Event Log Webhook حتى يمكن أن تصل حركة المرور، وتسجيلات المركبات، والمكالمات، والأحداث إلى CAD.",
         "stepWebhookTitle": "أضف webhook الحدث",
+        "streetListAlreadyApplied": "تم تطبيق قائمة شوارع ER:LC بالفعل على محرر البلاغات وحقول عناوين السجلات المخصصة.",
         "tempRegisterCommand": "أمر التسجيل المؤقت",
         "trafficStopCommand": "أمر إيقاف المرور",
         "trafficStopDefaultTenCode": "الرمز 10 الافتراضي",
@@ -1096,30 +1098,40 @@
       "accountPermissions": "بريمشنات الحساب",
       "accountPermissionsAbout": "سيتم إرسال ويب هوك هذا عندما يعدّل المسؤول أذونات حساب المستخدم.",
       "actions": {
+        "banned": "مبند",
         "cleared": "تم المسح",
+        "closed": "مغلق",
+        "created": "تم الإنشاء",
         "failed": "فشل",
+        "modified": "معدل",
         "played": "تم التشغيل",
         "removed": "محذوف",
+        "set": "تعيين",
         "succeeded": "نجح",
         "triggered": "تم التشغيل",
         "unbanned": "فك الباند"
       },
       "adminWebhooks": "ويب هوكس الادراة",
       "adminWebhooksAbout": "ترتبط الويب هوكس هذه بخدمات الادارة.",
+      "apiKeyAccessRequired": "اطلب من مسؤول لديه وصول إلى التكامل داخل اللعبة أن ينسخ مفتاح CAD API ويربط هذا المجتمع باستخدام /settings في Discord.",
       "apiRequest": "طلب اي بي اي",
       "apiRequestAbout": "سيتم إرسال ويب هوك هذا عند إرسال طلب اي بي اي.",
       "autoSave": {
+        "chooseChannel": "اختر قناة لإنهاء الإعداد",
         "error": "تعذر الحفظ",
+        "saved": "تم الحفظ",
         "saving": "جارٍ الحفظ…"
       },
       "bolo": "تعميم",
       "boloAbout": "سيتم إرسال ويب هوك هذا عند إضافة تعميم أو تعديله.",
       "botCommunityNotLinked": "هذا مجتمع CAD غير مرتبط بـ Sonoran Bot بعد. اتبع الخطوة 2 أعلاه، ثم حدّث.",
+      "botDescription": "أرسل إشعارات CAD عبر Sonoran Bot إلى قناة محددة، مع إمكانية تنبيهات الأدوار اختياريًا.",
       "botLinkProblem": "تعذّر على Sonoran Bot العثور على مجتمع CAD هذا أو على خادم مرتبط. اتبع الخطوة 2 أعلاه، ثم حدّث. تستمر إشعارات عنوان URL القديم في العمل.",
       "botUnavailable": "Sonoran Bot غير متاح مؤقتًا. تواصل إشعارات URL الحالية العمل؛ حدّث هذه اللوحة لاحقًا.",
       "channelUnavailable": "الروبوت لا يملك وصولًا إلى القناة",
       "character": "تعديل الشخصية",
       "characterAbout": "سيتم إرسال ويب هوك هذا عند إضافة شخصية مدنية أو تعديلها أو إزالتها.",
+      "characterBase": "شخصية",
       "civilianWebhooks": "ويب هوك المدنيين",
       "civilianWebhooksAbout": "ترتبط الويب هوكس هذه بالخدمات المدنية.",
       "connectBot": "ربط روبوت سونوران",
@@ -1142,13 +1154,19 @@
         "maxWebhooks": "خطأ: لقد وصلت إلى الحد الأقصى لعدد رسائل الويب الخاصة بالمنتدى:"
       },
       "eventSaved": "تم حفظ وجهة الحدث.",
+      "eventSettings": "إشعارات الأحداث",
       "fireRecord": "سجل الحريق",
       "fireRecordAbout": "سيتم إرسال ويب هوك هذا عند إضافة سجل إطلاق أو تعديله أو إزالته.",
+      "guildDataFailed": "تعذر تحميل قنوات هذا الخادم أو أدواره. تحقّق من أذونات القناة للروبوت، ثم حدّث الصفحة.",
       "headerText": "برنامج الكاد الخاص بالدسكورد",
+      "hideLegacyUrl": "إخفاء عنوان URL القديم",
+      "inheritedDestination": "يستخدم وجهة مشتركة موجودة حتى تختار قناة.",
+      "inviteBot": "دعوة بوت سونوران",
       "inviteToSelectChannel": "اربط البوت لاختيار قناة.",
       "law": "سجل القانون",
       "lawAbout": "سيتم إرسال ويب هوك هذا عند إضافة سجل قانون أو تعديله أو إزالته.",
       "legacyActive": "يستخدم هذا الحدث عنوان URL القديم حتى تحدد قناة. السجلات الأخرى التي تشارك عنوان URL هذا تحتفظ بإعداداتها الحالية.",
+      "legacyStatus": "عنوان URL القديم",
       "loadFailed": "تعذر تحميل إعدادات Discord. حدّث الصفحة للمحاولة مرة أخرى.",
       "medicalRecord": "السجل الطبي",
       "medicalRecordAbout": "سيتم إرسال ويب هوك هذا عند إضافة سجل طبي أو تعديله أو إزالته.",
@@ -1157,6 +1175,7 @@
       "noEvents": "لا توجد أحداث إشعار متاحة.",
       "noServers": "لم يتم توصيل أي خوادم Discord بعد. تستمر إشعارات URL الحالية في العمل.",
       "otherEvent": "حدث آخر",
+      "otherWebhooks": "فعاليات أخرى",
       "penalCode": "تعديل قانون العقوبات",
       "penalCodeAbout": "سيتم إرسال ويب هوك هذا عندما يضيف المسؤول أو يعدل أو يزيل قانون عقوبات.",
       "penalCodeBase": "اللائحة",
@@ -1164,23 +1183,35 @@
       "pingRolesHint": "يمكن فقط اختيار الأدوار التي يمكن للروبوت الإشارة إليها في هذا القناة.",
       "policeRecord": "سجل الشرطة",
       "policeRecordAbout": "سيتم إرسال ويب هوك هذا عند إضافة سجل شرطة أو تعديله أو إزالته.",
+      "recordWebhooks": "إشعارات السجلات",
       "refreshDiscord": "تحديث اتصال Discord",
       "removed": "محذوف",
       "retrySave": "إعادة المحاولة",
       "roleLimit": "اختر ما يصل إلى 20 دورًا لحدث.",
+      "roleUnavailable": "لا يمكن للروبوت إرسال إشارة في هذه القناة",
       "routeStorageUnavailable": "يحتاج خادم CAD هذا إلى تحديث تخزين أحداث Discord قبل أن تتمكن الأحداث من الانتقال إلى قنوات البوت. تستمر إشعارات URL الحالية في العمل.",
       "savedLegacyUrl": "عنوان URL القديم",
+      "saveEvent": "حفظ الحدث",
       "saveFailed": "تعذر حفظ هذا الحدث.",
       "searchEvents": "بحث الفعاليات",
+      "sendToChannel": "إرسال إلى القناة",
       "setupGuides": {
         "cms": {
-          "body": "لإعداد المرة الأولى، شغّل /settings، واختر قناة تسجيل، ثم اختر We Use CMS وأدخل بيانات اعتماد CMS الخاصة بك. بعد ذلك، اختر API Settings → Change CAD Setup وأدخل بيانات اعتماد CAD أدناه."
+          "body": "لإعداد المرة الأولى، شغّل /settings، واختر قناة تسجيل، ثم اختر We Use CMS وأدخل بيانات اعتماد CMS الخاصة بك. بعد ذلك، اختر API Settings → Change CAD Setup وأدخل بيانات اعتماد CAD أدناه.",
+          "label": "استخدام نظام إدارة المحتوى"
+        },
+        "existingGuild": {
+          "body": "افتح /settings → إعدادات API → تغيير إعداد CAD. أدخل بيانات اعتماد CAD أدناه ثم أرسل.",
+          "label": "المجموعة الحالية"
         },
         "firstTime": {
+          "body": "شغّل /settings، اختر قناة تسجيل، ثم اختر Discord Only. أدخل بيانات اعتماد CAD أدناه ثم أرسل. اترك Radio فارغًا.",
           "label": "لأول مرة"
         }
       },
       "setupInviteBody": "أضف Sonoran Bot إلى خادم Discord الذي تريد الإشعارات فيه.",
+      "setupInviteTitle": "1. دعوة البوت",
+      "setupLinkTitle": "2. اربط مجتمعك",
       "setupPermission": "يتطلب إذن إدارة الخادم في Discord.",
       "setupRefreshBody": "عد هنا لتحميل الخوادم والقنوات والأدوار.",
       "setupRefreshTitle": "3. تحديث",
@@ -1191,6 +1222,8 @@
       "subtext2": "ما عليك سوى تمكين وتحديد عنوان اليو ار ال الخاص بـ الدسكورد ويب هوك للحقول المطلوبة أدناه.",
       "tenCodeBase": "ارقام البلاغات",
       "toneBoardAbout": "سيتم إرسال هذا الويب هوك عند تشغيل نغمة بواسطة المُرسل.",
+      "toneBoardBase": "لوحة النغمة",
+      "turnOff": "إيقاف",
       "turnOn": "تشغيل",
       "unitPanic": "وحدة الاستنفار الامني",
       "unitPanicAbout": "سيتم إرسال ويب هوك هذا عندما تقوم إحدى الوحدات بتفعيل حالة الاستنفار الامني."
@@ -1953,7 +1986,7 @@
           "faqTitleAccent": "أسئلة",
           "faqTitlePrimary": "الأسئلة الشائعة",
           "headlineAccent": "لِـ ER:LC",
-          "headlinePrimary": "CAD مجاني",
+          "headlinePrimary": "CAD مجاني لـ Roblox",
           "kicker": "مجاني، سريع، متكامل بالكامل",
           "meta": {
             "description": "CAD مجاني للاستجابة للطوارئ: Liberty County (ERLC) على Roblox. اربط خادمك بخريطة مباشرة، وكاميرا الجسم، ومكالمات الطوارئ، وأدوات الشخصية.",
@@ -1964,8 +1997,8 @@
           },
           "modules": {
             "bodycam": {
-              "infoCopy": "التقط لقطات كاميرا الجسم داخل اللعبة لإعادة التشغيل والمراجعة.",
-              "infoTitle": "التسجيل",
+              "infoCopy": "بثوث كاميرا الجسم المباشرة للموزعين والوحدات.",
+              "infoTitle": "البث المباشر",
               "previewTitle": "معاينة كاميرا الجسم المباشرة",
               "title": "كاميرا الجسم المباشرة"
             },
@@ -1982,7 +2015,7 @@
               "title": "بلاغات الطوارئ"
             },
             "map": {
-              "infoCopy": "وحدات الأمر وامسح المدينة باستخدام خريطة حية ثلاثية الأبعاد غامرة.",
+              "infoCopy": "خريطة ثلاثية الأبعاد مخصصة للمدينة بأكملها مع نماذج مركبات ثلاثية الأبعاد.",
               "infoTitle": "خريطة ثلاثية الأبعاد",
               "previewTitle": "معاينة خريطة مباشرة ثلاثية الأبعاد",
               "title": "خريطة حيه ثلاثية الأبعاد"
@@ -1994,10 +2027,14 @@
               "title": "تراكب داخل اللعبة"
             },
             "pin": {
+              "infoCopy": "اختر موقعًا على الخريطة لملء شارع البلاغ والرمز البريدي.",
               "infoTitle": "الشارع والرمز البريدي",
+              "previewTitle": "معاينة إسقاط دبوس محرر المكالمات",
               "title": "إسقاط دبوس محرر المكالمات"
             },
             "webhooks": {
+              "infoCopy": "Webhooks مكالمات Discord مع صورة داخل اللعبة للموقع.",
+              "infoTitle": "صور الموقع",
               "previewTitle": "معاينة خطافات الويب لموقع ثلاثي الأبعاد",
               "title": "خطافات الويب لموقع ثلاثي الأبعاد"
             }
@@ -2188,7 +2225,7 @@
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "pricingPage": {
-      "description": "قارن خطط Sonoran CAD، والأسعار الشهرية والربع سنوية، وحدود الحسابات والميزات المضمنة. تتوفر تكاملات FiveM وERLC المجانية في كل خطة CAD.",
+      "description": "قارن خطط Sonoran CAD، والأسعار، وحدود الحساب، والميزات. تتضمن كل خطة CAD تكاملات FiveM وERLC المجانية.",
       "erlcLink": "تكامل ERLC CAD",
       "fivemLink": "تكامل FiveM CAD / MDT",
       "heading": "أسعار سونوران CAD",
@@ -2768,6 +2805,7 @@
         "radioDispatch": "صادر من غرفة العمليات",
         "walkUp": "مشاه"
       },
+      "pickMapLocation": "اختر الموقع على الخريطة",
       "pickMapLocationHint": "انقر على الخريطة لتعيين أقرب شارع والرمز البريدي. اسحب للتحريك؛ مرر للتكبير.",
       "postal": "الرمز البريدي",
       "previousCall": "المكالمة السابقة (سهم لليسار)",
