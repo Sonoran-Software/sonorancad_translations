@@ -762,6 +762,16 @@
       "erlc": {
         "addServer": "Add server",
         "advancedSettingsCaption": "Optional command automation settings for each server.",
+        "addressesTitle": "Addresses",
+        "addressesDescription": "Set the address list for the call editor and custom record address fields to the official ER:LC map's {count} street and trail names. This replaces your current community address list.",
+        "useStreetList": "Apply ER:LC Street List",
+        "streetListAlreadyApplied": "The ER:LC street list is already applied to the call editor and custom record address fields.",
+        "addressesSaveFailed": "Could not save the ER:LC address list. Please try again.",
+        "discordTitle": "Discord",
+        "previewDiscord": "Preview Discord notifications",
+        "discordPromoAlt": "ERLC Location Notifications: emergency and dispatch call images delivered to Discord.",
+        "discordDescription": "Add 3D map images to your Discord call notifications. Open Discord Integration and enable webhooks for dispatch calls and emergency calls.",
+        "openDiscord": "Open Discord Integration",
         "advancedSettingsTitle": "Advanced Command Settings",
         "apiKey": "ER:LC API Key",
         "apiKeyHint": "Paste a new key to replace the stored value.",
@@ -1128,7 +1138,95 @@
       "subtext2": "Simply enable and specify a Discord WebHook URL for the desired fields below.",
       "toneBoardAbout": "This webhook will be sent when a tone is played by a dispatcher",
       "unitPanic": "Unit Panic",
-      "unitPanicAbout": "This WebHook will be sent when a unit toggles their PANIC status."
+      "unitPanicAbout": "This WebHook will be sent when a unit toggles their PANIC status.",
+      "actions": {
+        "banned": "Banned",
+        "cleared": "Cleared",
+        "closed": "Closed",
+        "created": "Created",
+        "failed": "Failed",
+        "modified": "Modified",
+        "played": "Played",
+        "removed": "Removed",
+        "set": "Set",
+        "succeeded": "Succeeded",
+        "triggered": "Triggered",
+        "unbanned": "Unbanned"
+      },
+      "accountActivity": "Account",
+      "apiKeyAccessRequired": "Ask an admin with In-Game Integration access to copy the CAD API key and link this community with /settings in Discord.",
+      "characterBase": "Character",
+      "channelUnavailable": "bot lacks channel access",
+      "connectBot": "Connect Sonoran Bot",
+      "connectedServers": "Connected Discord servers",
+      "copyFailed": "Could not copy to the clipboard.",
+      "customRecord": "Custom record",
+      "discordChannel": "Channel",
+      "discordServer": "Server",
+      "eventSaved": "Event destination saved.",
+      "eventSettings": "Event notifications",
+      "autoSave": {
+        "saving": "Saving…",
+        "saved": "Saved",
+        "error": "Could not save",
+        "chooseChannel": "Choose a channel to finish setup"
+      },
+      "retrySave": "Retry",
+      "guildDataFailed": "Could not load this server's channels or roles. Check the bot's channel permissions, then refresh.",
+      "hideLegacyUrl": "Hide legacy URL",
+      "inheritedDestination": "Uses an existing shared destination until you choose a channel.",
+      "inviteBot": "Invite Sonoran Bot",
+      "inviteToSelectChannel": "Connect the bot to select a channel.",
+      "noEvents": "No notification events are available.",
+      "noAvailableChannels": "No channels available. Check the bot's View Channel, Send Messages, and Embed Links permissions.",
+      "noServers": "No Discord servers are connected yet. Existing URL notifications continue to work.",
+      "otherEvent": "Other event",
+      "otherWebhooks": "Other events",
+      "penalCodeBase": "Penal Code",
+      "recordWebhooks": "Record notifications",
+      "refreshDiscord": "Refresh Discord connection",
+      "routeStorageUnavailable": "This CAD server needs the Discord event storage update before events can move to bot channels. Existing URL notifications continue to work.",
+      "saveEvent": "Save event",
+      "saveFailed": "Could not save this event.",
+      "savedLegacyUrl": "Legacy URL",
+      "searchEvents": "Search events",
+      "sendToChannel": "Send to channel",
+      "setupInviteBody": "Add Sonoran Bot to the Discord server where you want notifications.",
+      "setupInviteTitle": "1. Invite the bot",
+      "setupGuides": {
+        "firstTime": {
+          "label": "First Time",
+          "body": "Run /settings, select a logging channel, then choose Discord Only. Enter the CAD credentials below and submit. Leave Radio blank."
+        },
+        "existingGuild": {
+          "label": "Existing Guild",
+          "body": "Run /settings → API Settings → Change CAD Setup. Enter the CAD credentials below and submit."
+        },
+        "cms": {
+          "label": "CMS Use",
+          "body": "For first-time setup, run /settings, select a logging channel, then choose We Use CMS and enter your CMS credentials. Next, select API Settings → Change CAD Setup and enter the CAD credentials below."
+        }
+      },
+      "setupPermission": "Requires Manage Server permission in Discord.",
+      "setupLinkTitle": "2. Link your community",
+      "setupRefreshBody": "Return here to load servers, channels, and roles.",
+      "setupRefreshTitle": "3. Refresh",
+      "showLegacyUrl": "Show legacy URL",
+      "botDescription": "Send CAD notifications through Sonoran Bot to a selected channel, with optional role pings.",
+      "botCommunityNotLinked": "This CAD community is not linked to Sonoran Bot yet. Follow step 2 above, then refresh.",
+      "botLinkProblem": "Sonoran Bot could not find this CAD community or a linked server. Follow step 2 above, then refresh. Legacy URL notifications continue to work.",
+      "botUnavailable": "Sonoran Bot is temporarily unavailable. Existing URL notifications continue to work; refresh this panel later.",
+      "legacyActive": "This event uses the legacy URL until you select a channel. Other records sharing this URL keep their existing settings.",
+      "legacyStatus": "Legacy URL",
+      "loadFailed": "Could not load Discord settings. Refresh to try again.",
+      "pingRoles": "Roles to ping (optional)",
+      "pingRolesHint": "Only roles the bot can mention in this channel are selectable.",
+      "roleUnavailable": "bot cannot ping in this channel",
+      "roleLimit": "Choose up to 20 roles for an event.",
+      "tenCodeBase": "10-Code",
+      "toneBoardBase": "Tone Board",
+      "turnOff": "Off",
+      "turnOn": "On"
     },
     "wipeRecords": {
       "confirmWipe1": "Are you sure you want to remove all of the record type",
@@ -1899,8 +1997,8 @@
           },
           "modules": {
             "bodycam": {
-              "infoCopy": "Capture in-game bodycam footage for replay and review.",
-              "infoTitle": "Recording",
+              "infoCopy": "Live bodycam streams for dispatchers and units.",
+              "infoTitle": "Live Streams",
               "previewTitle": "Live Bodycam Preview",
               "title": "Live Bodycam"
             },
@@ -1917,10 +2015,22 @@
               "title": "Emergency Calls"
             },
             "map": {
-              "infoCopy": "Command units and scan the city with an immersive live 3D map.",
+              "infoCopy": "Custom 3D map of the entire city with 3D vehicle models.",
               "infoTitle": "3D Map",
               "previewTitle": "3D Live Map Preview",
               "title": "3D Live Map"
+            },
+            "webhooks": {
+              "infoCopy": "Discord call webhooks with an in-game image of the location.",
+              "infoTitle": "Location Images",
+              "previewTitle": "3D Location Webhooks Preview",
+              "title": "3D Location Webhooks"
+            },
+            "pin": {
+              "infoCopy": "Select a map location to fill the call's street and postal code.",
+              "infoTitle": "Street and Postal",
+              "previewTitle": "Call Editor Pin Drop Preview",
+              "title": "Call Editor Pin Drop"
             },
             "overlay": {
               "infoCopy": "View live dispatch information without leaving gameplay.",
@@ -2740,7 +2850,9 @@
         "detached": "Detached",
         "enabled": "Enabled",
         "status": "Status"
-      }
+      },
+      "pickMapLocation": "Pick location on map",
+      "pickMapLocationHint": "Click the map to set the nearest street and postal. Drag to pan; scroll to zoom."
     },
     "callList": {
       "activeCalls": "Active Calls",
