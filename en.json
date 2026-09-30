@@ -1770,7 +1770,77 @@
           "spillboyAttribution": "Inspired by Motorola Solutions Spillman Flex CAD",
           "trevor": "Trevor",
           "trevorAttribution": "Inspired by Tyler Technologies Enterprise CAD"
-        }
+        },
+        "rows": [
+          {
+            "label": "CAD starting price",
+            "sonoran": "$0/month",
+            "competitor": "From $5/month",
+            "competitorDetail": "Starter plan · no free plan"
+          },
+          {
+            "label": "Apps and platforms",
+            "sonoran": "Dedicated iOS and Android apps, plus web and Windows, macOS, and Linux desktop apps.",
+            "sonoranHighlight": "Dedicated iOS and Android apps",
+            "competitor": "Browser access, Windows desktop app, and an in-game FiveM tablet. No dedicated iOS or Android app or macOS/Linux desktop download listed.",
+            "platforms": true
+          },
+          {
+            "label": "FiveM resources",
+            "sonoran": "Dozens of documented submodules, with the core FiveM resource on Free.",
+            "sonoranHighlight": "Dozens of documented submodules",
+            "sonoranHighlightHref": "https://docs.sonoransoftware.com/cad/integration-plugins/in-game-integration/fivem-installation/available-plugins",
+            "competitor": "Official FiveM resource with tablet, civilian tools, ERS, LiveMap, and other plugins."
+          },
+          {
+            "label": "Dispatch AI",
+            "sonoran": "Dispatch AI included on Free (monthly use limit). Create calls, run plates, and update status by voice through Sonoran Radio.",
+            "sonoranHighlight": "Dispatch AI included on Free",
+            "competitor": "No Dispatch AI offering.",
+            "competitorHighlight": "No Dispatch AI"
+          },
+          {
+            "label": "FiveM database sync",
+            "sonoran": "Direct database sync on Plus or higher: search in-game characters, licenses, and vehicle registrations from ESX, QBCore, QBox, or another compatible database.",
+            "sonoranHighlight": "Direct database sync on Plus or higher",
+            "competitor": "No direct FiveM database sync offered.",
+            "competitorHighlight": "No direct FiveM database sync"
+          },
+          {
+            "label": "Live map",
+            "sonoran": "Free 3D live map with units, calls, and bodycam feeds.",
+            "sonoranHighlight": "Free 3D live map",
+            "competitor": "LiveMap with unit and postal tracking. Premium: $35/month.",
+            "competitorHighlight": "Premium: $35/month"
+          },
+          {
+            "label": "Live bodycam",
+            "sonoran": "Free live in-game bodycam feeds inside CAD.",
+            "sonoranHighlight": "Free live in-game bodycam feeds",
+            "competitor": "No live bodycam offered.",
+            "competitorHighlight": "No live bodycam"
+          },
+          {
+            "label": "Developer API",
+            "sonoran": "Free v2 API access with documented endpoints and official code libraries.",
+            "sonoranHighlight": "Free v2 API access",
+            "libraries": true,
+            "competitor": "API access starts at $15/month (Standard).",
+            "competitorHighlight": "$15/month"
+          },
+          {
+            "label": "Themes and layouts",
+            "sonoran": "Built-in themes, custom colors, saved layouts, movable panels, and multiple desktops.",
+            "competitor": "Community branding and customization, including Premium color swatches."
+          },
+          {
+            "label": "Customer support",
+            "sonoran": "Direct live chat for anyone in your community, free or paid, seven days a week during support hours. Live response times are shown below.",
+            "sonoranHighlight": "Direct live chat for anyone in your community",
+            "competitor": "Discord tickets for customers and end users; ImperialCAD advises allowing 24–48 hours for a response.",
+            "competitorHighlight": "24–48 hours"
+          }
+        ]
       },
       "melonly": {
         "closeHeading": "Ready to bring dispatch to your ER:LC server?",
@@ -1868,7 +1938,56 @@
         "sonoranErlcSource": "Sonoran ER:LC features",
         "sourceLabel": "Melonly Departments + CAD",
         "supportCopy": "Get help through Sonoran live chat without opening a Discord ticket. Free and paid users can reach our team seven days a week during support hours.",
-        "supportSource": "Melonly support"
+        "supportSource": "Melonly support",
+        "rows": [
+          {
+            "label": "CAD starting price",
+            "sonoran": "$0/month",
+            "competitor": "From $1.99/month"
+          },
+          {
+            "label": "Entry plan",
+            "sonoran": "Full ER:LC integration, 35 CAD accounts, and one server on Free. Civilians can register characters and vehicles in-game without a CAD account.",
+            "sonoranHighlight": "Full ER:LC integration",
+            "competitor": "One department and one additional CAD panel type."
+          },
+          {
+            "label": "ER:LC servers in one CAD",
+            "sonoran": "One on Free, two on Plus, and up to 100 on Pro or Sonoran One. Each server has its own ER:LC API key.",
+            "sonoranHighlight": "up to 100 on Pro or Sonoran One",
+            "competitor": "Each Departments + CAD subscription is tied to one Melonly server; another server needs its own subscription."
+          },
+          {
+            "label": "Apps and platforms",
+            "sonoran": "Dedicated iOS and Android apps, plus web and Windows, macOS, and Linux desktop apps.",
+            "sonoranHighlight": "Dedicated iOS and Android apps",
+            "competitor": "Mobile PWA and web access, plus Windows, macOS, and Linux desktop apps. No dedicated iOS or Android app listed.",
+            "platforms": true
+          },
+          {
+            "label": "Live map",
+            "sonoran": "2D and 3D live map with unit locations, calls, and bodycam feeds.",
+            "sonoranHighlight": "3D live map",
+            "competitor": "Interactive in-game map with units and calls; no 3D view listed on its product page."
+          },
+          {
+            "label": "Roleplay tools",
+            "sonoran": "Live bodycam, emergency calls, traffic stops, registrations, and records.",
+            "competitor": "CAD, radio, bodycam, in-game map, records, and department tools."
+          },
+          {
+            "label": "Developer API",
+            "sonoran": "Free v2 API. Same request limits on every plan.",
+            "sonoranHighlight": "Free v2 API",
+            "competitor": "Standard: 1,000 requests/hour. Premium: 5,000/hour.",
+            "competitorHighlight": "Premium: 5,000/hour"
+          },
+          {
+            "label": "Support channel",
+            "sonoran": "Direct live chat for free and paid users, seven days a week during support hours.",
+            "competitor": "Melonly directs users to its Discord server for support."
+          }
+        ]
       },
       "shared": {
         "checked": "Product and plan details checked September 2026.",
@@ -1986,7 +2105,7 @@
           "faqTitleAccent": "Questions",
           "faqTitlePrimary": "Frequently Asked",
           "headlineAccent": "for ER:LC",
-          "headlinePrimary": "Free CAD",
+          "headlinePrimary": "Free Roblox CAD",
           "kicker": "Free, Fast, Fully Integrated",
           "meta": {
             "description": "Free CAD for Emergency Response: Liberty County (ERLC) on Roblox. Connect your server to a live map, bodycam, emergency calls and character tools.",
@@ -2225,7 +2344,7 @@
     "pricingButton": "Pricing",
     "pricingDescription": "Sonoran CAD's paid subscriptions allow you to enable new integration features, enable customization, remove limits, and more!",
     "pricingPage": {
-      "description": "Compare Sonoran CAD plans, monthly and quarterly pricing, account limits and included features. Free FiveM and ERLC integrations are available on every CAD plan.",
+      "description": "Compare Sonoran CAD plans, pricing, account limits, and features. Free FiveM and ERLC integrations are included on every CAD plan.",
       "erlcLink": "ERLC CAD integration",
       "fivemLink": "FiveM CAD / MDT integration",
       "heading": "Sonoran CAD Pricing",
