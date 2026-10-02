@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Select the type below to remove all."
     }
   },
+  "alpr": {
+    "add": "Place camera",
+    "applyDefaults": "Apply default cameras",
+    "applyDefaultsHint": "Replace the camera list with the 28 default speed-camera locations. Other ALPR settings are kept.",
+    "callDescription": "911 description",
+    "cameraName": "Camera {number}",
+    "cancelPlacement": "Cancel placement",
+    "cooldown": "Repeat detection cooldown (seconds)",
+    "defaultDescription": "ALPR: BOLO plate {Plate} detected at {Camera}. Matching BOLO records: {Records}.",
+    "description": "Place virtual cameras on the ERLC map. A matching active BOLO plate creates a 911 call when a vehicle enters or passes through a camera’s range.",
+    "disabledState": "ALPR disabled",
+    "empty": "No cameras placed yet.",
+    "enabled": "Enable ALPR",
+    "enabledState": "ALPR enabled",
+    "expiry": "911 expiry (minutes)",
+    "failed": "Unable to load or save settings.",
+    "fields": {
+      "Camera": {
+        "description": "The camera that detected the plate.",
+        "title": "Camera name"
+      },
+      "Plate": {
+        "description": "The detected BOLO plate.",
+        "title": "License plate"
+      },
+      "Records": {
+        "description": "The matching active BOLO record IDs.",
+        "title": "BOLO records"
+      },
+      "VehicleColorHex": {
+        "description": "The hexadecimal paint color returned by ERLC.",
+        "title": "Vehicle color hex"
+      },
+      "VehicleColorName": {
+        "description": "The color name returned by ERLC.",
+        "title": "Vehicle color"
+      },
+      "VehicleName": {
+        "description": "The full ERLC vehicle name, including make, model and year when supplied.",
+        "title": "Vehicle name"
+      },
+      "VehicleOwner": {
+        "description": "The vehicle owner's ERLC username.",
+        "title": "Vehicle owner"
+      },
+      "VehicleTexture": {
+        "description": "The vehicle texture or livery returned by ERLC.",
+        "title": "Vehicle texture"
+      }
+    },
+    "loading": "Loading settings…",
+    "mapHint": "Drag cameras to move them. Drag the map to pan; scroll to zoom.",
+    "mapLabel": "ERLC ALPR camera placement map",
+    "name": "Camera name",
+    "noServers": "Add a server to configure ALPR cameras.",
+    "openVariables": "Description variables",
+    "placeHint": "Click the map to place a camera.",
+    "radius": "Detection radius (ERLC units)",
+    "remove": "Remove camera",
+    "resetMap": "Show full map",
+    "retry": "Retry",
+    "saved": "All changes saved",
+    "saving": "Saving…",
+    "server": "Server",
+    "title": "ALPR Cameras",
+    "variables": "Use {Plate}, {Camera}, and {Records}.",
+    "variablesHint": "Click a variable to copy it, then paste it into the description.",
+    "vehicleDescription": "ALPR: BOLO plate {Plate} detected at {Camera}. Vehicle: {VehicleName}. Owner: {VehicleOwner}. Color: {VehicleColorName} ({VehicleColorHex}). Texture: {VehicleTexture}. Matching BOLO records: {Records}.",
+    "x": "X coordinate",
+    "z": "Z coordinate",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out"
+  },
   "appBanner": {
     "beta": {
       "action": "Go Back",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Detect active BOLO plates at configured camera locations and automatically create a 911 call with location and vehicle details.",
+              "infoTitle": "ALPR Cameras",
+              "previewTitle": "ALPR Cameras Preview",
+              "title": "ALPR Cameras"
+            },
             "bodycam": {
               "infoCopy": "Live bodycam streams for dispatchers and units.",
               "infoTitle": "Live Streams",
