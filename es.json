@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Seleccione el tipo a continuación para eliminar todo."
     }
   },
+  "alpr": {
+    "add": "Colocar cámara",
+    "applyDefaults": "Aplicar cámaras predeterminadas",
+    "applyDefaultsHint": "Reemplazar la lista de cámaras con las 28 ubicaciones predeterminadas de cámaras de velocidad. Los demás ajustes de ALPR se mantienen.",
+    "callDescription": "Descripción 911",
+    "cameraName": "Cámara {number}",
+    "cancelPlacement": "Cancelar colocación",
+    "cooldown": "Enfriamiento de repetición de detección (segundos)",
+    "defaultDescription": "ALPR: placa BOLO {Plate} detectada en {Camera}. Registros BOLO coincidentes: {Records}.",
+    "description": "Coloca cámaras virtuales en el mapa de ERLC. Una matrícula BOLO activa que coincida crea una llamada al 911 cuando un vehículo entra o pasa por el rango de una cámara.",
+    "disabledState": "ALPR deshabilitado",
+    "empty": "Aún no se han colocado cámaras.",
+    "enabled": "Habilitar ALPR",
+    "enabledState": "ALPR habilitado",
+    "expiry": "Caducidad 911 (minutos)",
+    "failed": "No se pueden cargar o guardar los ajustes.",
+    "fields": {
+      "Camera": {
+        "description": "La cámara que detectó la placa.",
+        "title": "Nombre de la cámara"
+      },
+      "Plate": {
+        "description": "La placa BOLO detectada.",
+        "title": "Matrícula"
+      },
+      "Records": {
+        "description": "Los IDs de registros BOLO activos coincidentes.",
+        "title": "Registros BOLO"
+      },
+      "VehicleColorHex": {
+        "description": "El color hexadecimal de la pintura devuelto por ERLC.",
+        "title": "Color hex del vehículo"
+      },
+      "VehicleColorName": {
+        "description": "El nombre del color devuelto por ERLC.",
+        "title": "Color del vehículo"
+      },
+      "VehicleName": {
+        "description": "El nombre completo del vehículo de ERLC, incluyendo marca, modelo y año cuando se proporcionen.",
+        "title": "Nombre del vehículo"
+      },
+      "VehicleOwner": {
+        "description": "El nombre de usuario ERLC del propietario del vehículo.",
+        "title": "Propietario del vehículo"
+      },
+      "VehicleTexture": {
+        "description": "La textura o librea del vehículo devuelta por ERLC.",
+        "title": "Textura del vehículo"
+      }
+    },
+    "loading": "Cargando ajustes…",
+    "mapHint": "Arrastra las cámaras para moverlas. Arrastra el mapa para desplazarlo; desplázate para acercar o alejar.",
+    "mapLabel": "Mapa de colocación de cámaras ALPR de ERLC",
+    "name": "Nombre de la cámara",
+    "noServers": "Añade un servidor para configurar cámaras ALPR.",
+    "openVariables": "Variables de descripción",
+    "placeHint": "Haz clic en el mapa para colocar una cámara.",
+    "radius": "Radio de detección (unidades ERLC)",
+    "remove": "Eliminar cámara",
+    "resetMap": "Mostrar mapa completo",
+    "retry": "Reintentar",
+    "saved": "Todos los cambios guardados",
+    "saving": "Guardando…",
+    "server": "Servidor",
+    "title": "Cámaras ALPR",
+    "variables": "Use {Plate}, {Camera} y {Records}.",
+    "variablesHint": "Haz clic en una variable para copiarla y luego pégala en la descripción.",
+    "vehicleDescription": "ALPR: placa BOLO {Plate} detectada en {Camera}. Vehículo: {VehicleName}. Propietario: {VehicleOwner}. Color: {VehicleColorName} ({VehicleColorHex}). Textura: {VehicleTexture}. Registros BOLO coincidentes: {Records}.",
+    "x": "Coordenada X",
+    "z": "Coordenada Z",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar"
+  },
   "appBanner": {
     "beta": {
       "action": "Volver",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Respuesta de Emergencia: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Detecta matrículas BOLO activas en ubicaciones de cámaras configuradas y crea automáticamente una llamada al 911 con la ubicación y los detalles del vehículo.",
+              "infoTitle": "Cámaras ALPR",
+              "previewTitle": "Vista previa de cámaras ALPR",
+              "title": "Cámaras ALPR"
+            },
             "bodycam": {
               "infoCopy": "Transmisiones en vivo de cámara corporal para despachadores y unidades.",
               "infoTitle": "Transmisiones en vivo",

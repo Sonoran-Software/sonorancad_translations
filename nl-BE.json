@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Selecteer het onderstaande type om alles te verwijderen."
     }
   },
+  "alpr": {
+    "add": "Plaats camera",
+    "applyDefaults": "Standaardcamera's toepassen",
+    "applyDefaultsHint": "Vervang de cameralijst door de 28 standaardlocaties voor snelheidscamera's. Andere ALPR-instellingen blijven behouden.",
+    "callDescription": "911 beschrijving",
+    "cameraName": "Camera {number}",
+    "cancelPlacement": "Plaatsing annuleren",
+    "cooldown": "Herhalingsdetectie-afkoeltijd (seconden)",
+    "defaultDescription": "ALPR: BOLO-plaat {Plate} gedetecteerd bij {Camera}. Overeenkomende BOLO-records: {Records}.",
+    "description": "Plaats virtuele camera's op de ERLC-kaart. Een overeenkomende actieve BOLO-plaat maakt een 911-oproep aan wanneer een voertuig het bereik van een camera binnenrijdt of passeert.",
+    "disabledState": "ALPR uitgeschakeld",
+    "empty": "Nog geen camera's geplaatst.",
+    "enabled": "ALPR inschakelen",
+    "enabledState": "ALPR ingeschakeld",
+    "expiry": "911 vervaldatum (minuten)",
+    "failed": "Kan instellingen niet laden of opslaan.",
+    "fields": {
+      "Camera": {
+        "description": "De camera die het kenteken detecteerde.",
+        "title": "Cameranaam"
+      },
+      "Plate": {
+        "description": "Het gedetecteerde BOLO-kenteken.",
+        "title": "Nummerplaat"
+      },
+      "Records": {
+        "description": "De overeenkomende actieve BOLO-record-ID's.",
+        "title": "BOLO-rapporten"
+      },
+      "VehicleColorHex": {
+        "description": "De hexadecimale lakkleur geretourneerd door ERLC.",
+        "title": "Voertuigkleur hex"
+      },
+      "VehicleColorName": {
+        "description": "De kleurnaam geretourneerd door ERLC.",
+        "title": "Voertuigkleur"
+      },
+      "VehicleName": {
+        "description": "De volledige ERLC-voertuignaam, inclusief merk, model en bouwjaar indien opgegeven.",
+        "title": "Voertuignaam"
+      },
+      "VehicleOwner": {
+        "description": "De ERLC-gebruikersnaam van de voertuigeigenaar.",
+        "title": "Voertuigeigenaar"
+      },
+      "VehicleTexture": {
+        "description": "De voertuigtextuur of livrei geretourneerd door ERLC.",
+        "title": "Voertuigtextuur"
+      }
+    },
+    "loading": "Instellingen laden…",
+    "mapHint": "Sleep camera's om ze te verplaatsen. Sleep de kaart om te verschuiven; scroll om in te zoomen.",
+    "mapLabel": "ERLC ALPR-cameraplaatsingskaart",
+    "name": "Cameranaam",
+    "noServers": "Voeg een server toe om ALPR-camera's te configureren.",
+    "openVariables": "Beschrijving variabelen",
+    "placeHint": "Klik op de kaart om een camera te plaatsen.",
+    "radius": "Detectiestraal (ERLC-eenheden)",
+    "remove": "Verwijder camera",
+    "resetMap": "Volledige kaart tonen",
+    "retry": "Opnieuw proberen",
+    "saved": "Alle wijzigingen opgeslagen",
+    "saving": "Opslaan…",
+    "server": "Server",
+    "title": "ALPR-camera's",
+    "variables": "Gebruik {Plate}, {Camera} en {Records}.",
+    "variablesHint": "Klik op een variabele om ze te kopiëren en plak ze daarna in de beschrijving.",
+    "vehicleDescription": "ALPR: BOLO-plaat {Plate} gedetecteerd bij {Camera}. Voertuig: {VehicleName}. Eigenaar: {VehicleOwner}. Kleur: {VehicleColorName} ({VehicleColorHex}). Textuur: {VehicleTexture}. Overeenkomende BOLO-records: {Records}.",
+    "x": "X-coördinaat",
+    "z": "Z-coördinaat",
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen"
+  },
   "appBanner": {
     "beta": {
       "action": "Ga terug",
@@ -2053,6 +2126,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Detecteer actieve BOLO-kentekens op geconfigureerde cameralocaties en maak automatisch een 911-oproep aan met locatie- en voertuiggegevens.",
+              "infoTitle": "ALPR-camera's",
+              "previewTitle": "ALPR-camera's voorbeeld",
+              "title": "ALPR-camera's"
+            },
             "bodycam": {
               "infoCopy": "Live bodycamstreams voor dispatchers en eenheden.",
               "infoTitle": "Live streams",

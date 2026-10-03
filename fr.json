@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Sélectionnez le type ci-dessous pour tout supprimer."
     }
   },
+  "alpr": {
+    "add": "Placer la caméra",
+    "applyDefaults": "Appliquer les caméras par défaut",
+    "applyDefaultsHint": "Remplacer la liste des caméras par les 28 emplacements de radars par défaut. Les autres paramètres ALPR sont conservés.",
+    "callDescription": "Description 911",
+    "cameraName": "Caméra {number}",
+    "cancelPlacement": "Annuler le positionnement",
+    "cooldown": "Délai de répétition de détection (secondes)",
+    "defaultDescription": "ALPR : plaque BOLO {Plate} détectée à {Camera}. Dossiers BOLO correspondants : {Records}.",
+    "description": "Placez des caméras virtuelles sur la carte ERLC. Une plaque BOLO active correspondante crée un appel 911 lorsqu’un véhicule entre dans la portée d’une caméra ou la traverse.",
+    "disabledState": "ALPR désactivé",
+    "empty": "Aucune caméra n'a encore été placée.",
+    "enabled": "Activer l'ALPR",
+    "enabledState": "ALPR activé",
+    "expiry": "Expiration 911 (minutes)",
+    "failed": "Impossible de charger ou d'enregistrer les paramètres.",
+    "fields": {
+      "Camera": {
+        "description": "La caméra qui a détecté la plaque.",
+        "title": "Nom de la caméra"
+      },
+      "Plate": {
+        "description": "La plaque BOLO détectée.",
+        "title": "Plaque d'immatriculation"
+      },
+      "Records": {
+        "description": "Les identifiants des enregistrements BOLO actifs correspondants.",
+        "title": "Dossiers BOLO"
+      },
+      "VehicleColorHex": {
+        "description": "La couleur de peinture hexadécimale renvoyée par ERLC.",
+        "title": "Hex de couleur du véhicule"
+      },
+      "VehicleColorName": {
+        "description": "Le nom de couleur renvoyé par ERLC.",
+        "title": "Couleur du véhicule"
+      },
+      "VehicleName": {
+        "description": "Le nom complet du véhicule ERLC, incluant la marque, le modèle et l'année lorsqu'ils sont fournis.",
+        "title": "Nom du véhicule"
+      },
+      "VehicleOwner": {
+        "description": "Le nom d'utilisateur ERLC du propriétaire du véhicule.",
+        "title": "Propriétaire du véhicule"
+      },
+      "VehicleTexture": {
+        "description": "La texture ou livrée du véhicule renvoyée par ERLC.",
+        "title": "Texture du véhicule"
+      }
+    },
+    "loading": "Chargement des paramètres…",
+    "mapHint": "Faites glisser les caméras pour les déplacer. Faites glisser la carte pour la déplacer; faites défiler pour zoomer.",
+    "mapLabel": "Carte de placement des caméras ALPR ERLC",
+    "name": "Nom de la caméra",
+    "noServers": "Ajoutez un serveur pour configurer les caméras ALPR.",
+    "openVariables": "Variables de description",
+    "placeHint": "Cliquez sur la carte pour placer une caméra.",
+    "radius": "Rayon de détection (unités ERLC)",
+    "remove": "Retirer la caméra",
+    "resetMap": "Afficher la carte complète",
+    "retry": "Réessayer",
+    "saved": "Toutes les modifications ont été enregistrées",
+    "saving": "Enregistrement…",
+    "server": "Serveur",
+    "title": "Caméras ALPR",
+    "variables": "Utiliser {Plate}, {Camera} et {Records}.",
+    "variablesHint": "Cliquez sur une variable pour la copier, puis collez-la dans la description.",
+    "vehicleDescription": "ALPR : plaque BOLO {Plate} détectée à {Camera}. Véhicule : {VehicleName}. Propriétaire : {VehicleOwner}. Couleur : {VehicleColorName} ({VehicleColorHex}). Texture : {VehicleTexture}. Dossiers BOLO correspondants : {Records}.",
+    "x": "Coordonnée X",
+    "z": "Coordonnée Z",
+    "zoomIn": "Zoomer",
+    "zoomOut": "Dézoomer"
+  },
   "appBanner": {
     "beta": {
       "action": "Retour",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Détecter les plaques BOLO actives aux emplacements de caméras configurés et créer automatiquement un appel 911 avec les détails de l'emplacement et du véhicule.",
+              "infoTitle": "Caméras ALPR",
+              "previewTitle": "Aperçu des caméras ALPR",
+              "title": "Caméras ALPR"
+            },
             "bodycam": {
               "infoCopy": "Flux en direct des caméras corporelles pour les répartiteurs et les unités.",
               "infoTitle": "Flux en direct",

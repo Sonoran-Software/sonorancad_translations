@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Vælg typen nedenfor for at fjerne alt."
     }
   },
+  "alpr": {
+    "add": "Placer kamera",
+    "applyDefaults": "Anvend standardkameraer",
+    "applyDefaultsHint": "Erstat kameralisten med de 28 standard hastighedskamerapositioner. Andre ALPR-indstillinger bevares.",
+    "callDescription": "911-beskrivelse",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Annullér placering",
+    "cooldown": "Gentagen detekteringsnedkøling (sekunder)",
+    "defaultDescription": "ALPR: BOLO-nummerplade {Plate} registreret ved {Camera}. Matchende BOLO-poster: {Records}.",
+    "description": "Placer virtuelle kameraer på ERLC-kortet. En matchende aktiv BOLO-nummerplade opretter et 911-opkald, når et køretøj kører ind i eller passerer gennem et kameras rækkevidde.",
+    "disabledState": "ALPR deaktiveret",
+    "empty": "Ingen kameraer placeret endnu.",
+    "enabled": "Aktivér ALPR",
+    "enabledState": "ALPR aktiveret",
+    "expiry": "911 udløb (minutter)",
+    "failed": "Kunne ikke indlæse eller gemme indstillinger.",
+    "fields": {
+      "Camera": {
+        "description": "Kameraet der registrerede nummerpladen.",
+        "title": "Kameranavn"
+      },
+      "Plate": {
+        "description": "Den registrerede BOLO-nummerplade.",
+        "title": "Nummerplade"
+      },
+      "Records": {
+        "description": "De matchende aktive BOLO-post-ID'er.",
+        "title": "BOLO-poster"
+      },
+      "VehicleColorHex": {
+        "description": "Den hexadecimale lakfarve returneret af ERLC.",
+        "title": "Køretøjsfarvehex"
+      },
+      "VehicleColorName": {
+        "description": "Farvenavnet returneret af ERLC.",
+        "title": "Køretøjsfarve"
+      },
+      "VehicleName": {
+        "description": "Det fulde ERLC-køretøjsnavn, inklusive mærke, model og årgang, når det er angivet.",
+        "title": "Køretøjsnavn"
+      },
+      "VehicleOwner": {
+        "description": "Køretøjsejerens ERLC-brugernavn.",
+        "title": "Køretøjs ejer"
+      },
+      "VehicleTexture": {
+        "description": "Køretøjets tekstur eller lakering returneret af ERLC.",
+        "title": "Køretøjsfarve"
+      }
+    },
+    "loading": "Indlæser indstillinger…",
+    "mapHint": "Træk kameraer for at flytte dem. Træk kortet for at panorere; rul for at zoome.",
+    "mapLabel": "ERLC ALPR-kameraplaceringskort",
+    "name": "Kameranavn",
+    "noServers": "Tilføj en server for at konfigurere ALPR-kameraer.",
+    "openVariables": "Beskrivelsesvariabler",
+    "placeHint": "Klik på kortet for at placere et kamera.",
+    "radius": "Detekteringsradius (ERLC-enheder)",
+    "remove": "Fjern kamera",
+    "resetMap": "Vis fuld kort",
+    "retry": "Prøv igen",
+    "saved": "Alle ændringer er gemt",
+    "saving": "Gemmer…",
+    "server": "Server",
+    "title": "ALPR-kameraer",
+    "variables": "Brug {Plate}, {Camera} og {Records}.",
+    "variablesHint": "Klik på en variabel for at kopiere den, og indsæt den derefter i beskrivelsen.",
+    "vehicleDescription": "ALPR: BOLO-nummerplade {Plate} registreret ved {Camera}. Køretøj: {VehicleName}. Ejer: {VehicleOwner}. Farve: {VehicleColorName} ({VehicleColorHex}). Tekstur: {VehicleTexture}. Matchende BOLO-poster: {Records}.",
+    "x": "X-koordinat",
+    "z": "Z-koordinat",
+    "zoomIn": "Zoom ind",
+    "zoomOut": "Zoom ud"
+  },
   "appBanner": {
     "beta": {
       "action": "Gå tilbage",
@@ -2053,6 +2126,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Registrer aktive BOLO-nummerplader ved konfigurerede kamerasteder og opret automatisk et 911-opkald med lokation og køretøjsdetaljer.",
+              "infoTitle": "ALPR-kameraer",
+              "previewTitle": "ALPR-kameraer forhåndsvisning",
+              "title": "ALPR-kameraer"
+            },
             "bodycam": {
               "infoCopy": "Live bodycam-streams for dispatchere og enheder.",
               "infoTitle": "Live streams",

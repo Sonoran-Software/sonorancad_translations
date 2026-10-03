@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Wybierz typ poniżej aby usunąć wszystkie."
     }
   },
+  "alpr": {
+    "add": "Umieść kamerę",
+    "applyDefaults": "Zastosuj domyślne kamery",
+    "applyDefaultsHint": "Zastąp listę kamer 28 domyślnymi lokalizacjami fotoradarów. Pozostałe ustawienia ALPR zostaną zachowane.",
+    "callDescription": "Opis 911",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Anuluj umieszczenie",
+    "cooldown": "Czas odnowienia powtórnego wykrywania (sekundy)",
+    "defaultDescription": "ALPR: wykryto tablicę BOLO {Plate} przy {Camera}. Pasujące rekordy BOLO: {Records}.",
+    "description": "Umieść wirtualne kamery na mapie ERLC. Pasująca aktywna tablica BOLO tworzy zgłoszenie 911, gdy pojazd wjeżdża do zasięgu kamery lub przez niego przejeżdża.",
+    "disabledState": "ALPR wyłączone",
+    "empty": "Nie dodano jeszcze żadnych kamer.",
+    "enabled": "Włącz ALPR",
+    "enabledState": "ALPR włączone",
+    "expiry": "Wygaśnięcie 911 (minuty)",
+    "failed": "Nie można wczytać ani zapisać ustawień.",
+    "fields": {
+      "Camera": {
+        "description": "Kamera, która wykryła tablicę.",
+        "title": "Nazwa kamery"
+      },
+      "Plate": {
+        "description": "Wykryta tablica BOLO.",
+        "title": "Rejestracja"
+      },
+      "Records": {
+        "description": "Pasujące aktywne identyfikatory rekordów BOLO.",
+        "title": "Rejestry BOLO"
+      },
+      "VehicleColorHex": {
+        "description": "Szóstkowy kolor lakieru zwracany przez ERLC.",
+        "title": "Hex koloru pojazdu"
+      },
+      "VehicleColorName": {
+        "description": "Nazwa koloru zwracana przez ERLC.",
+        "title": "Kolor pojazdu"
+      },
+      "VehicleName": {
+        "description": "Pełna nazwa pojazdu ERLC, w tym marka, model i rok, jeśli podano.",
+        "title": "Nazwa pojazdu"
+      },
+      "VehicleOwner": {
+        "description": "Nazwa użytkownika ERLC właściciela pojazdu.",
+        "title": "Właściciel pojazdu"
+      },
+      "VehicleTexture": {
+        "description": "Tekstura lub malowanie pojazdu zwrócone przez ERLC.",
+        "title": "Tekstura pojazdu"
+      }
+    },
+    "loading": "Ładowanie ustawień…",
+    "mapHint": "Przeciągnij kamery, aby je przesunąć. Przeciągnij mapę, aby przesuwać widok; przewiń, aby przybliżyć.",
+    "mapLabel": "Mapa rozmieszczenia kamer ALPR ERLC",
+    "name": "Nazwa kamery",
+    "noServers": "Dodaj serwer, aby skonfigurować kamery ALPR.",
+    "openVariables": "Zmienne opisu",
+    "placeHint": "Kliknij mapę, aby umieścić kamerę.",
+    "radius": "Promień wykrywania (jednostki ERLC)",
+    "remove": "Usuń kamerę",
+    "resetMap": "Pokaż całą mapę",
+    "retry": "Spróbuj ponownie",
+    "saved": "Wszystkie zmiany zapisane",
+    "saving": "Zapisywanie…",
+    "server": "Serwer",
+    "title": "Kamery ALPR",
+    "variables": "Użyj {Plate}, {Camera} i {Records}.",
+    "variablesHint": "Kliknij zmienną, aby ją skopiować, a następnie wklej ją do opisu.",
+    "vehicleDescription": "ALPR: wykryto tablicę BOLO {Plate} przy {Camera}. Pojazd: {VehicleName}. Właściciel: {VehicleOwner}. Kolor: {VehicleColorName} ({VehicleColorHex}). Tekstura: {VehicleTexture}. Pasujące rekordy BOLO: {Records}.",
+    "x": "Współrzędna X",
+    "z": "Współrzędna Z",
+    "zoomIn": "Powiększ",
+    "zoomOut": "Pomniejsz"
+  },
   "appBanner": {
     "beta": {
       "action": "Wróć",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Wykrywaj aktywne tablice BOLO w skonfigurowanych lokalizacjach kamer i automatycznie twórz połączenie 911 z lokalizacją oraz danymi pojazdu.",
+              "infoTitle": "Kamery ALPR",
+              "previewTitle": "Podgląd kamer ALPR",
+              "title": "Kamery ALPR"
+            },
             "bodycam": {
               "infoCopy": "Transmisje na żywo z kamer osobistych dla dyspozytorów i jednostek.",
               "infoTitle": "Transmisje na żywo",
