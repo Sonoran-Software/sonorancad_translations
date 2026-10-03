@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Velg typen nedenfor for å fjerne alt."
     }
   },
+  "alpr": {
+    "add": "Plasser kamera",
+    "applyDefaults": "Bruk standardkameraer",
+    "applyDefaultsHint": "Erstatt kameralisten med de 28 standard plasseringene for fartskameraer. Andre ALPR-innstillinger beholdes.",
+    "callDescription": "911-beskrivelse",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Avbryt plassering",
+    "cooldown": "Gjenta deteksjon nedkjøling (sekunder)",
+    "defaultDescription": "ALPR: BOLO-skilt {Plate} oppdaget ved {Camera}. Matchende BOLO-poster: {Records}.",
+    "description": "Plasser virtuelle kameraer på ERLC-kartet. En matching aktiv BOLO-skilt oppretter en 911-samtale når et kjøretøy kjører inn i eller passerer gjennom et kameras rekkevidde.",
+    "disabledState": "ALPR avskrudd",
+    "empty": "Ingen kameraer er plassert ennå.",
+    "enabled": "Aktiver ALPR",
+    "enabledState": "ALPR påskrudd",
+    "expiry": "911 utløp (minutter)",
+    "failed": "Kan ikke laste inn eller lagre innstillinger.",
+    "fields": {
+      "Camera": {
+        "description": "Kameraet som oppdaget skiltet.",
+        "title": "Kameranavn"
+      },
+      "Plate": {
+        "description": "Den oppdagede BOLO-skiltet.",
+        "title": "Registreringsnummer"
+      },
+      "Records": {
+        "description": "De samsvarende aktive BOLO-post-ID-ene.",
+        "title": "BOLO-saker"
+      },
+      "VehicleColorHex": {
+        "description": "Den heksadesimale lakkfargen som returneres av ERLC.",
+        "title": "Kjøretøyfarge hex"
+      },
+      "VehicleColorName": {
+        "description": "Fargenavnet som returneres av ERLC.",
+        "title": "Kjøretøyfarge"
+      },
+      "VehicleName": {
+        "description": "Det fulle kjøretøynavnet i ERLC, inkludert merke, modell og år når oppgitt.",
+        "title": "Kjøretøynavn"
+      },
+      "VehicleOwner": {
+        "description": "Kjøretøyets ERLC-brukernavn.",
+        "title": "Kjøretøyets eier"
+      },
+      "VehicleTexture": {
+        "description": "Kjøretøyteksturen eller lakkeringen returnert av ERLC.",
+        "title": "Kjøretøytekstur"
+      }
+    },
+    "loading": "Laster innstillinger…",
+    "mapHint": "Dra kameraer for å flytte dem. Dra kartet for å panorere; rull for å zoome.",
+    "mapLabel": "ERLC ALPR-kameraplasseringskart",
+    "name": "Kameranavn",
+    "noServers": "Legg til en server for å konfigurere ALPR-kameraer.",
+    "openVariables": "Beskrivelsesvariabler",
+    "placeHint": "Klikk på kartet for å plassere et kamera.",
+    "radius": "Deteksjonsradius (ERLC-enheter)",
+    "remove": "Fjern kamera",
+    "resetMap": "Vis full kart",
+    "retry": "Prøv på nytt",
+    "saved": "Alle endringer lagret",
+    "saving": "Lagrer…",
+    "server": "Server",
+    "title": "ALPR-kameraer",
+    "variables": "Bruk {Plate}, {Camera} og {Records}.",
+    "variablesHint": "Klikk på en variabel for å kopiere den, og lim den deretter inn i beskrivelsen.",
+    "vehicleDescription": "ALPR: BOLO-skilt {Plate} oppdaget ved {Camera}. Kjøretøy: {VehicleName}. Eier: {VehicleOwner}. Farge: {VehicleColorName} ({VehicleColorHex}). Tekstur: {VehicleTexture}. Matchende BOLO-poster: {Records}.",
+    "x": "X-koordinat",
+    "z": "Z-koordinat",
+    "zoomIn": "Zoom inn",
+    "zoomOut": "Zoom ut"
+  },
   "appBanner": {
     "beta": {
       "action": "Gå tilbake",
@@ -2053,6 +2126,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Oppdag aktive BOLO-skilt ved konfigurerte kameraplasser og opprett automatisk en 911-anrop med lokasjon og kjøretøyopplysninger.",
+              "infoTitle": "ALPR-kameraer",
+              "previewTitle": "ALPR-kameraforhåndsvisning",
+              "title": "ALPR-kameraer"
+            },
             "bodycam": {
               "infoCopy": "Direkte kroppskamerastrømmer for operatører og enheter.",
               "infoTitle": "Direktesendinger",

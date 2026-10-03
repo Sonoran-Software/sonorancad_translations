@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Vyberte níže typ pro odstranění všeho."
     }
   },
+  "alpr": {
+    "add": "Umístit kameru",
+    "applyDefaults": "Použít výchozí kamery",
+    "applyDefaultsHint": "Nahradit seznam kamer 28 výchozími místy rychlostních kamer. Ostatní nastavení ALPR zůstanou zachována.",
+    "callDescription": "Popis 911",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Zrušit umístění",
+    "cooldown": "Prodleva opakované detekce (sekundy)",
+    "defaultDescription": "ALPR: SPZ BOLO {Plate} detekována na {Camera}. Odpovídající záznamy BOLO: {Records}.",
+    "description": "Umístěte virtuální kamery na mapu ERLC. Aktivní BOLO značka, která se shoduje, vytvoří tísňové volání 911, když vozidlo vstoupí do dosahu kamery nebo jím projede.",
+    "disabledState": "ALPR zakázáno",
+    "empty": "Zatím nejsou umístěny žádné kamery.",
+    "enabled": "Povolit ALPR",
+    "enabledState": "ALPR povoleno",
+    "expiry": "Platnost 911 (minuty)",
+    "failed": "Nelze načíst ani uložit nastavení.",
+    "fields": {
+      "Camera": {
+        "description": "Kamera, která detekovala registrační značku.",
+        "title": "Název kamery"
+      },
+      "Plate": {
+        "description": "Detekovaná registrační značka BOLO.",
+        "title": "Poznávací značka"
+      },
+      "Records": {
+        "description": "ID odpovídajících aktivních záznamů BOLO.",
+        "title": "Záznamy BOLO"
+      },
+      "VehicleColorHex": {
+        "description": "Hexadecimální barva laku vrácená ERLC.",
+        "title": "Hex barvy vozidla"
+      },
+      "VehicleColorName": {
+        "description": "Název barvy vrácený ERLC.",
+        "title": "Barva vozidla"
+      },
+      "VehicleName": {
+        "description": "Celý název vozidla ERLC, včetně značky, modelu a roku, pokud je uveden.",
+        "title": "Název vozidla"
+      },
+      "VehicleOwner": {
+        "description": "Uživatelské jméno vlastníka vozidla v ERLC.",
+        "title": "Majitel vozidla"
+      },
+      "VehicleTexture": {
+        "description": "Textura nebo zbarvení vozidla vrácené ERLC.",
+        "title": "Textura vozidla"
+      }
+    },
+    "loading": "Načítání nastavení…",
+    "mapHint": "Přetažením kamer je přesunete. Přetažením mapy ji posunete; kolečkem přiblížíte.",
+    "mapLabel": "Mapa umístění kamer ERLC ALPR",
+    "name": "Název kamery",
+    "noServers": "Přidejte server pro konfiguraci kamer ALPR.",
+    "openVariables": "Proměnné popisu",
+    "placeHint": "Kliknutím na mapu umístíte kameru.",
+    "radius": "Poloměr detekce (jednotky ERLC)",
+    "remove": "Odstranit kameru",
+    "resetMap": "Zobrazit celou mapu",
+    "retry": "Zkusit znovu",
+    "saved": "Všechny změny uloženy",
+    "saving": "Ukládání…",
+    "server": "Server",
+    "title": "ALPR kamery",
+    "variables": "Použijte {Plate}, {Camera} a {Records}.",
+    "variablesHint": "Klikněte na proměnnou, chcete-li ji zkopírovat, a pak ji vložte do popisu.",
+    "vehicleDescription": "ALPR: SPZ BOLO {Plate} detekována na {Camera}. Vozidlo: {VehicleName}. Majitel: {VehicleOwner}. Barva: {VehicleColorName} ({VehicleColorHex}). Textura: {VehicleTexture}. Odpovídající záznamy BOLO: {Records}.",
+    "x": "Souřadnice X",
+    "z": "Souřadnice Z",
+    "zoomIn": "Přiblížit",
+    "zoomOut": "Oddálit"
+  },
   "appBanner": {
     "beta": {
       "action": "Jít zpět",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Detekujte aktivní registrační značky BOLO na nakonfigurovaných místech kamer a automaticky vytvořte tísňové volání 911 s údaji o poloze a vozidle.",
+              "infoTitle": "ALPR kamery",
+              "previewTitle": "Náhled kamer ALPR",
+              "title": "ALPR kamery"
+            },
             "bodycam": {
               "infoCopy": "Živé přenosy z tělové kamery pro dispečery a jednotky.",
               "infoTitle": "Živé streamy",

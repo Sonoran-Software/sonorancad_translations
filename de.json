@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Wähle unten die Art, um alle zu löschen."
     }
   },
+  "alpr": {
+    "add": "Kamera platzieren",
+    "applyDefaults": "Standardkameras anwenden",
+    "applyDefaultsHint": "Ersetze die Kameraliste durch die 28 standardmäßigen Geschwindigkeitskamerastandorte. Andere ALPR-Einstellungen bleiben erhalten.",
+    "callDescription": "911-Beschreibung",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Platzierung abbrechen",
+    "cooldown": "Wiederholte Erkennung Abklingzeit (Sekunden)",
+    "defaultDescription": "ALPR: BOLO-Kennzeichen {Plate} erkannt bei {Camera}. Übereinstimmende BOLO-Datensätze: {Records}.",
+    "description": "Platziere virtuelle Kameras auf der ERLC-Karte. Ein passendes aktives BOLO-Kennzeichen erzeugt einen 911-Anruf, wenn ein Fahrzeug den Bereich einer Kamera betritt oder durchfährt.",
+    "disabledState": "ALPR deaktiviert",
+    "empty": "Noch keine Kameras platziert.",
+    "enabled": "ALPR aktivieren",
+    "enabledState": "ALPR aktiviert",
+    "expiry": "911 Ablauf (Minuten)",
+    "failed": "Einstellungen können nicht geladen oder gespeichert werden.",
+    "fields": {
+      "Camera": {
+        "description": "Die Kamera, die das Kennzeichen erkannt hat.",
+        "title": "Kameraname"
+      },
+      "Plate": {
+        "description": "Das erkannte BOLO-Kennzeichen.",
+        "title": "Kennzeichen"
+      },
+      "Records": {
+        "description": "Die passenden aktiven BOLO-Datensatz-IDs.",
+        "title": "BOLO-Einträge"
+      },
+      "VehicleColorHex": {
+        "description": "Die hexadezimale Lackfarbe, die von ERLC zurückgegeben wird.",
+        "title": "Fahrzeugfarb-HEX"
+      },
+      "VehicleColorName": {
+        "description": "Der von ERLC zurückgegebene Farbname.",
+        "title": "Fahrzeugfarbe"
+      },
+      "VehicleName": {
+        "description": "Der vollständige ERLC-Fahrzeugname, einschließlich Marke, Modell und Baujahr, sofern angegeben.",
+        "title": "Fahrzeugname"
+      },
+      "VehicleOwner": {
+        "description": "Der ERLC-Benutzername des Fahrzeughalters.",
+        "title": "Fahrzeughalter"
+      },
+      "VehicleTexture": {
+        "description": "Die vom ERLC zurückgegebene Fahrzeugtextur oder Lackierung.",
+        "title": "Fahrzeuglackierung"
+      }
+    },
+    "loading": "Einstellungen werden geladen…",
+    "mapHint": "Ziehe Kameras, um sie zu verschieben. Ziehe die Karte, um sie zu verschieben; scrolle zum Zoomen.",
+    "mapLabel": "ERLC ALPR-Kameraplatzierungskarte",
+    "name": "Kameraname",
+    "noServers": "Fügen Sie einen Server hinzu, um ALPR-Kameras zu konfigurieren.",
+    "openVariables": "Beschreibungsvariablen",
+    "placeHint": "Klicken Sie auf die Karte, um eine Kamera zu platzieren.",
+    "radius": "Erkennungsradius (ERLC-Einheiten)",
+    "remove": "Kamera entfernen",
+    "resetMap": "Gesamte Karte anzeigen",
+    "retry": "Erneut versuchen",
+    "saved": "Alle Änderungen gespeichert",
+    "saving": "Speichern…",
+    "server": "Server",
+    "title": "ALPR-Kameras",
+    "variables": "Verwende {Plate}, {Camera} und {Records}.",
+    "variablesHint": "Klicke auf eine Variable, um sie zu kopieren, und füge sie dann in die Beschreibung ein.",
+    "vehicleDescription": "ALPR: BOLO-Kennzeichen {Plate} erkannt bei {Camera}. Fahrzeug: {VehicleName}. Besitzer: {VehicleOwner}. Farbe: {VehicleColorName} ({VehicleColorHex}). Textur: {VehicleTexture}. Übereinstimmende BOLO-Datensätze: {Records}.",
+    "x": "X-Koordinate",
+    "z": "Z-Koordinate",
+    "zoomIn": "Vergrößern",
+    "zoomOut": "Verkleinern"
+  },
   "appBanner": {
     "beta": {
       "action": "Zurück",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Erkannte aktive BOLO-Kennzeichen an konfigurierten Kamerastandorten und erstellt automatisch einen 911-Notruf mit Standort- und Fahrzeugdetails.",
+              "infoTitle": "ALPR-Kameras",
+              "previewTitle": "ALPR-Kameras Vorschau",
+              "title": "ALPR-Kameras"
+            },
             "bodycam": {
               "infoCopy": "Live-Bodycam-Streams für Disponenten und Einheiten.",
               "infoTitle": "Live-Streams",

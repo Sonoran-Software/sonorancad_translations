@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "قم بأختيار النوع ادناة للمسح."
     }
   },
+  "alpr": {
+    "add": "ضع الكاميرا",
+    "applyDefaults": "تطبيق الكاميرات الافتراضية",
+    "applyDefaultsHint": "استبدل قائمة الكاميرات بمواقع كاميرات السرعة الافتراضية الـ28. يتم الاحتفاظ بإعدادات ALPR الأخرى.",
+    "callDescription": "وصف 911",
+    "cameraName": "الكاميرا {number}",
+    "cancelPlacement": "إلغاء التعيين",
+    "cooldown": "مهلة إعادة الاكتشاف (ثوانٍ)",
+    "defaultDescription": "ALPR: تم اكتشاف لوحة BOLO {Plate} عند {Camera}. سجلات BOLO المطابقة: {Records}.",
+    "description": "ضع كاميرات افتراضية على خريطة ERLC. تنشئ لوحة BOLO نشطة مطابقة مكالمة 911 عندما تدخل مركبة نطاق الكاميرا أو تمر عبره.",
+    "disabledState": "ALPR معطّل",
+    "empty": "لم يتم وضع أي كاميرات بعد.",
+    "enabled": "تفعيل ALPR",
+    "enabledState": "ALPR ممكن",
+    "expiry": "انتهاء صلاحية 911 (دقائق)",
+    "failed": "يتعذر تحميل الإعدادات أو حفظها.",
+    "fields": {
+      "Camera": {
+        "description": "الكاميرا التي اكتشفت اللوحة.",
+        "title": "اسم الكاميرا"
+      },
+      "Plate": {
+        "description": "لوحة BOLO المكتشفة.",
+        "title": "لوحة الترخيص"
+      },
+      "Records": {
+        "description": "معرّفات سجلات BOLO النشطة المطابقة.",
+        "title": "سجلات BOLO"
+      },
+      "VehicleColorHex": {
+        "description": "لون طلاء الهيكساديسيمال الذي يعيده ERLC.",
+        "title": "رمز لون المركبة"
+      },
+      "VehicleColorName": {
+        "description": "اسم اللون الذي يعيده ERLC.",
+        "title": "لون المركبة"
+      },
+      "VehicleName": {
+        "description": "الاسم الكامل لمركبة ERLC، بما في ذلك الشركة المصنعة والطراز والسنة عند توفرها.",
+        "title": "اسم المركبة"
+      },
+      "VehicleOwner": {
+        "description": "اسم مستخدم مالك المركبة في ERLC.",
+        "title": "مالك المركبة"
+      },
+      "VehicleTexture": {
+        "description": "نسيج المركبة أو الطلاء العائد من ERLC.",
+        "title": "ملمس المركبة"
+      }
+    },
+    "loading": "جارٍ تحميل الإعدادات…",
+    "mapHint": "اسحب الكاميرات لتحريكها. اسحب الخريطة للتحريك؛ مرر للتكبير.",
+    "mapLabel": "خريطة مواقع كاميرات ALPR الخاصة بـ ERLC",
+    "name": "اسم الكاميرا",
+    "noServers": "أضف خادمًا لتكوين كاميرات ALPR.",
+    "openVariables": "متغيرات الوصف",
+    "placeHint": "انقر على الخريطة لوضع كاميرا.",
+    "radius": "نطاق الاكتشاف (وحدات ERLC)",
+    "remove": "إزالة الكاميرا",
+    "resetMap": "عرض الخريطة الكاملة",
+    "retry": "إعادة المحاولة",
+    "saved": "تم حفظ جميع التغييرات",
+    "saving": "جارٍ الحفظ…",
+    "server": "سيرفر",
+    "title": "كاميرات ALPR",
+    "variables": "استخدم {Plate}، و{Camera}، و{Records}.",
+    "variablesHint": "انقر على متغير لنسخه، ثم الصقه في الوصف.",
+    "vehicleDescription": "ALPR: تم اكتشاف لوحة BOLO {Plate} عند {Camera}. المركبة: {VehicleName}. المالك: {VehicleOwner}. اللون: {VehicleColorName} ({VehicleColorHex}). النسيج: {VehicleTexture}. سجلات BOLO المطابقة: {Records}.",
+    "x": "إحداثي X",
+    "z": "إحداثي Z",
+    "zoomIn": "تكبير",
+    "zoomOut": "تصغير"
+  },
   "appBanner": {
     "beta": {
       "action": "رجوع",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD × Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "اكتشف لوحات BOLO النشطة في مواقع الكاميرات المُكوّنة وأنشئ تلقائياً مكالمة 911 مع تفاصيل الموقع والمركبة.",
+              "infoTitle": "كاميرات ALPR",
+              "previewTitle": "معاينة كاميرات ALPR",
+              "title": "كاميرات ALPR"
+            },
             "bodycam": {
               "infoCopy": "بثوث كاميرا الجسم المباشرة للموزعين والوحدات.",
               "infoTitle": "البث المباشر",

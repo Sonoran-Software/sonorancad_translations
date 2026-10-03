@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "選擇下面的型別以刪除該型別的記錄。"
     }
   },
+  "alpr": {
+    "add": "放置相機",
+    "applyDefaults": "套用預設攝影機",
+    "applyDefaultsHint": "將相機清單替換為 28 個預設測速攝影機位置。其他 ALPR 設定會保留。",
+    "callDescription": "911 描述",
+    "cameraName": "相機 {number}",
+    "cancelPlacement": "取消放置",
+    "cooldown": "重複偵測冷卻時間（秒）",
+    "defaultDescription": "ALPR：BOLO 車牌 {Plate} 已在 {Camera} 偵測到。符合 BOLO 記錄：{Records}。",
+    "description": "在 ERLC 地圖上放置虛擬攝影機。當車輛進入或經過攝影機範圍時，符合的啟用中 BOLO 車牌會建立一通 911 來電。",
+    "disabledState": "ALPR 已停用",
+    "empty": "尚未放置任何攝影機。",
+    "enabled": "啟用 ALPR",
+    "enabledState": "ALPR 啟用",
+    "expiry": "911 到期（分鐘）",
+    "failed": "無法載入或儲存設定。",
+    "fields": {
+      "Camera": {
+        "description": "偵測到車牌的攝影機。",
+        "title": "相機名稱"
+      },
+      "Plate": {
+        "description": "偵測到的 BOLO 車牌。",
+        "title": "車牌"
+      },
+      "Records": {
+        "description": "符合的啟用 BOLO 紀錄 ID。",
+        "title": "BOLO 記錄"
+      },
+      "VehicleColorHex": {
+        "description": "ERLC 傳回的十六進位車漆顏色。",
+        "title": "車輛顏色 Hex"
+      },
+      "VehicleColorName": {
+        "description": "ERLC 傳回的顏色名稱。",
+        "title": "車輛顏色"
+      },
+      "VehicleName": {
+        "description": "完整的 ERLC 車輛名稱，包含提供時的廠牌、型號和年份。",
+        "title": "車輛名稱"
+      },
+      "VehicleOwner": {
+        "description": "車主的 ERLC 使用者名稱。",
+        "title": "車主"
+      },
+      "VehicleTexture": {
+        "description": "ERLC 傳回的車輛紋理或塗裝。",
+        "title": "車輛紋理"
+      }
+    },
+    "loading": "載入設定…",
+    "mapHint": "拖曳 攝影機 以 移動。拖曳 地圖 以 平移；捲動 以 縮放。",
+    "mapLabel": "ERLC ALPR 攝影機放置地圖",
+    "name": "相機名稱",
+    "noServers": "新增伺服器以設定 ALPR 攝影機。",
+    "openVariables": "描述變數",
+    "placeHint": "點擊地圖以放置相機。",
+    "radius": "偵測半徑（ERLC 單位）",
+    "remove": "移除相機",
+    "resetMap": "顯示完整地圖",
+    "retry": "重試",
+    "saved": "所有變更已儲存",
+    "saving": "儲存中…",
+    "server": "伺服器",
+    "title": "ALPR 攝影機",
+    "variables": "使用 {Plate}、{Camera} 和 {Records}。",
+    "variablesHint": "點擊一個變數以複製，然後將其貼到描述中。",
+    "vehicleDescription": "ALPR：BOLO 車牌 {Plate} 已在 {Camera} 偵測到。車輛：{VehicleName}。車主：{VehicleOwner}。顏色：{VehicleColorName} ({VehicleColorHex})。紋理：{VehicleTexture}。符合 BOLO 記錄：{Records}。",
+    "x": "X 座標",
+    "z": "Z 座標",
+    "zoomIn": "放大",
+    "zoomOut": "縮小"
+  },
   "appBanner": {
     "beta": {
       "action": "返回",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x 緊急應變：Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "在已設定的攝影機位置偵測啟用中的 BOLO 車牌，並自動建立含位置與車輛詳細資訊的 911 通話。",
+              "infoTitle": "ALPR 攝影機",
+              "previewTitle": "ALPR 攝影機預覽",
+              "title": "ALPR 攝影機"
+            },
             "bodycam": {
               "infoCopy": "供派遣員和單位使用的即時身體攝影機串流。",
               "infoTitle": "即時 串流",

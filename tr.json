@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "Tümünü kaldırmak için aşağıdaki türü seçin."
     }
   },
+  "alpr": {
+    "add": "Kamerayı yerleştir",
+    "applyDefaults": "Varsayılan kameraları uygula",
+    "applyDefaultsHint": "Kamera listesini 28 varsayılan hız kamerası konumuyla değiştirin. Diğer ALPR ayarları korunur.",
+    "callDescription": "911 açıklaması",
+    "cameraName": "Kamera {number}",
+    "cancelPlacement": "Yerleştirmeyi iptal et",
+    "cooldown": "Tekrar tespiti bekleme süresi (saniye)",
+    "defaultDescription": "ALPR: BOLO plaka {Plate} {Camera} konumunda tespit edildi. Eşleşen BOLO kayıtları: {Records}.",
+    "description": "ERLC haritasına sanal kameralar yerleştirin. Eşleşen aktif bir BOLO plakası, bir araç bir kameranın menziline girdiğinde veya içinden geçtiğinde 911 çağrısı oluşturur.",
+    "disabledState": "ALPR devre dışı",
+    "empty": "Henüz kamera yerleştirilmedi.",
+    "enabled": "ALPR'yi etkinleştir",
+    "enabledState": "ALPR etkin",
+    "expiry": "911 süresi (dakika)",
+    "failed": "Ayarlar yüklenemiyor veya kaydedilemiyor.",
+    "fields": {
+      "Camera": {
+        "description": "Plakayı tespit eden kamera.",
+        "title": "Kamera adı"
+      },
+      "Plate": {
+        "description": "Tespit edilen BOLO plakası.",
+        "title": "Plaka"
+      },
+      "Records": {
+        "description": "Eşleşen aktif BOLO kayıt kimlikleri.",
+        "title": "BOLO Kayıtları"
+      },
+      "VehicleColorHex": {
+        "description": "ERLC tarafından döndürülen onaltılık boya rengi.",
+        "title": "Araç renk hex"
+      },
+      "VehicleColorName": {
+        "description": "ERLC tarafından döndürülen renk adı.",
+        "title": "Araç rengi"
+      },
+      "VehicleName": {
+        "description": "Sağlanmışsa marka, model ve yılı da dahil olmak üzere tam ERLC araç adı.",
+        "title": "Araç adı"
+      },
+      "VehicleOwner": {
+        "description": "Araç sahibinin ERLC kullanıcı adı.",
+        "title": "Araç sahibi"
+      },
+      "VehicleTexture": {
+        "description": "ERLC tarafından döndürülen araç kaplaması veya görünümü.",
+        "title": "Araç dokusu"
+      }
+    },
+    "loading": "Ayarlar yükleniyor…",
+    "mapHint": "Kameraları taşımak için sürükleyin. Haritayı kaydırmak için sürükleyin; yakınlaştırmak için kaydırın.",
+    "mapLabel": "ERLC ALPR kamera yerleşim haritası",
+    "name": "Kamera adı",
+    "noServers": "ALPR kameralarını yapılandırmak için bir sunucu ekleyin.",
+    "openVariables": "Açıklama değişkenleri",
+    "placeHint": "Kamera yerleştirmek için haritaya tıklayın.",
+    "radius": "Algılama yarıçapı (ERLC birimleri)",
+    "remove": "Kamerayı kaldır",
+    "resetMap": "Tam haritayı göster",
+    "retry": "Tekrar dene",
+    "saved": "Tüm değişiklikler kaydedildi",
+    "saving": "Kaydediliyor…",
+    "server": "Sunucu",
+    "title": "ALPR Kameraları",
+    "variables": "{Plate}, {Camera} ve {Records} kullanın.",
+    "variablesHint": "Bir değişkene tıklayın kopyalamak için, ardından açıklamaya yapıştırın.",
+    "vehicleDescription": "ALPR: BOLO plaka {Plate} {Camera} konumunda tespit edildi. Araç: {VehicleName}. Sahip: {VehicleOwner}. Renk: {VehicleColorName} ({VehicleColorHex}). Doku: {VehicleTexture}. Eşleşen BOLO kayıtları: {Records}.",
+    "x": "X koordinatı",
+    "z": "Z koordinatı",
+    "zoomIn": "Yakınlaştır",
+    "zoomOut": "Uzaklaştır"
+  },
   "appBanner": {
     "beta": {
       "action": "Geri dön",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Acil Durum Müdahalesi: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "Yapılandırılmış kamera konumlarında aktif BOLO plakalarını tespit edin ve konum ile araç ayrıntılarıyla otomatik olarak bir 911 çağrısı oluşturun.",
+              "infoTitle": "ALPR Kameraları",
+              "previewTitle": "ALPR Kameraları Önizleme",
+              "title": "ALPR Kameraları"
+            },
             "bodycam": {
               "infoCopy": "Görevliler ve birimler için canlı bodycam yayınları.",
               "infoTitle": "Canlı Yayınlar",

@@ -1281,6 +1281,79 @@
       "wipeSubtext2": "모두 제거하려면 아래 유형을 선택하세요."
     }
   },
+  "alpr": {
+    "add": "카메라 배치",
+    "applyDefaults": "기본 카메라 적용",
+    "applyDefaultsHint": "카메라 목록을 28개의 기본 과속 카메라 위치로 바꿉니다. 다른 ALPR 설정은 유지됩니다.",
+    "callDescription": "911 설명",
+    "cameraName": "카메라 {number}",
+    "cancelPlacement": "배치 취소",
+    "cooldown": "반복 감지 쿨다운(초)",
+    "defaultDescription": "ALPR: BOLO 번호판 {Plate} 이 {Camera} 에서 감지됨. 일치하는 BOLO 기록: {Records}.",
+    "description": "ERLC 지도에 가상 카메라를 배치합니다. 일치하는 활성 BOLO 번호판은 차량이 카메라 범위에 진입하거나 통과할 때 911 통화를 생성합니다.",
+    "disabledState": "ALPR 비활성화됨",
+    "empty": "카메라가 아직 배치되지 않았습니다.",
+    "enabled": "ALPR 활성화",
+    "enabledState": "ALPR 활성화됨",
+    "expiry": "911 만료(분)",
+    "failed": "설정을 불러오거나 저장할 수 없습니다.",
+    "fields": {
+      "Camera": {
+        "description": "번호판을 탐지한 카메라.",
+        "title": "카메라 이름"
+      },
+      "Plate": {
+        "description": "탐지된 BOLO 번호판.",
+        "title": "번호판"
+      },
+      "Records": {
+        "description": "일치하는 활성 BOLO 기록 ID.",
+        "title": "BOLO 기록"
+      },
+      "VehicleColorHex": {
+        "description": "ERLC에서 반환된 16진수 도장 색상.",
+        "title": "차량 색상 hex"
+      },
+      "VehicleColorName": {
+        "description": "ERLC에서 반환된 색상 이름.",
+        "title": "차량 색상"
+      },
+      "VehicleName": {
+        "description": "제조사, 모델 및 연식이 제공된 경우 이를 포함한 전체 ERLC 차량 이름.",
+        "title": "차량 이름"
+      },
+      "VehicleOwner": {
+        "description": "차량 소유자의 ERLC 사용자 이름.",
+        "title": "차량 소유자"
+      },
+      "VehicleTexture": {
+        "description": "ERLC에서 반환된 차량 텍스처 또는 도장",
+        "title": "차량 텍스처"
+      }
+    },
+    "loading": "설정 불러오는 중…",
+    "mapHint": "카메라를 드래그해 이동하세요. 지도를 드래그해 이동하고; 스크롤해 확대/축소하세요.",
+    "mapLabel": "ERLC ALPR 카메라 배치 지도",
+    "name": "카메라 이름",
+    "noServers": "ALPR 카메라를 구성하려면 서버를 추가하세요.",
+    "openVariables": "설명 변수",
+    "placeHint": "지도를 클릭하여 카메라를 배치하세요.",
+    "radius": "감지 반경 (ERLC 단위)",
+    "remove": "카메라 제거",
+    "resetMap": "전체 지도 보기",
+    "retry": "다시 시도",
+    "saved": "모든 변경 사항이 저장되었습니다",
+    "saving": "저장 중…",
+    "server": "섬기는 사람",
+    "title": "ALPR 카메라",
+    "variables": "{Plate}, {Camera}, 및 {Records} 사용.",
+    "variablesHint": "변수를 클릭하여 복사한 다음 설명에 붙여넣으세요.",
+    "vehicleDescription": "ALPR: BOLO 번호판 {Plate} 이 {Camera} 에서 감지됨. 차량: {VehicleName}. 소유자: {VehicleOwner}. 색상: {VehicleColorName} ({VehicleColorHex}). 질감: {VehicleTexture}. 일치하는 BOLO 기록: {Records}.",
+    "x": "X 좌표",
+    "z": "Z 좌표",
+    "zoomIn": "확대",
+    "zoomOut": "축소"
+  },
   "appBanner": {
     "beta": {
       "action": "뒤로 가기",
@@ -2054,6 +2127,12 @@
             "twitterImageAlt": "Sonoran CAD x Emergency Response: Liberty County"
           },
           "modules": {
+            "alpr": {
+              "infoCopy": "구성된 카메라 위치에서 활성 BOLO 번호판을 감지하고 위치 및 차량 세부 정보가 포함된 911 호출을 자동으로 생성합니다.",
+              "infoTitle": "ALPR 카메라",
+              "previewTitle": "ALPR 카메라 미리보기",
+              "title": "ALPR 카메라"
+            },
             "bodycam": {
               "infoCopy": "디스패처와 유닛을 위한 실시간 바디캠 스트림.",
               "infoTitle": "라이브 스트림",
