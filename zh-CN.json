@@ -2795,29 +2795,34 @@
       "cadPlans": "CAD 方案",
       "cancellingStatus": "取消中：{date}",
       "changeCommunity": "更改社区",
+      "choosePlan": "选择套餐",
       "choosePlanAria": "选择 {plan}",
       "clearCommunity": "清除社区ID",
       "communityAlreadySubscribedTooltip": "该社区已经应用了有效订阅。",
       "communityIdValue": "ID {id}",
-      "communityMissingBody": "此订阅已购买，但尚未应用到一个 CAD 社区。",
+      "communityMissingBody": "将此方案应用到一个 CAD 社区。",
       "communityMissingTitle": "未设置社区ID",
+      "comparePlans": "比较方案",
       "contactSupport": "联系支持",
-      "description": "管理订阅，将其分配给 CAD 社区，并通过 Stripe 更新账单。",
+      "description": "管理您的方案、社区和付款。",
       "expertInstallInfo": "专家安装信息",
       "eyebrow": "支付中心",
+      "heading": "订阅内容",
       "inactiveSubscriptions": "未激活 / 已取消",
+      "manageBilling": "管理账单",
       "manageSubscription": "管理订阅",
-      "noActiveSubscriptionsBody": "创建新的订阅以升级一个 CAD 社区。",
+      "noActivePlans": "没有激活的订阅",
+      "noActiveSubscriptionsBody": "选择一个方案以升级你的 CAD 社区。",
       "noCommunitiesAvailable": "此账户暂无可用社区。",
-      "noInactiveSubscriptions": "没有未激活的订阅",
-      "noInactiveSubscriptionsBody": "已取消和非活跃的订阅将显示在这里。",
+      "noInactiveSubscriptions": "没有闲置的订阅",
+      "noInactiveSubscriptionsBody": "已取消和未激活的方案会显示在这里。",
       "openOnePortal": "打开 ONE Portal",
       "otherProducts": "其他产品",
       "planDescriptions": {
         "expertInstallation": "Sonoran 团队提供的一次性设置帮助。",
-        "free": "核心 CAD 访问，支持 ER:LC、FiveM 和 API 连接。",
+        "free": "带有游戏集成和 API 访问的核心 CAD 工具。",
         "plus": "增加数据库同步、两个服务器、更高限制和更多模板。",
-        "pro": "解锁无限扩展、自定义地图、数据库合并和友好映射。",
+        "pro": "无限账户、自定义地图和高级数据库工具。",
         "sonoranOne": "套餐包含 CAD Pro、CMS Pro、Radio Pro、Sonoran Studio 和 RocketNode 托管。",
         "standard": "添加自定义域名支持、更高限制和扩展的社区工具。",
         "starter": "添加自定义社区 ID，更多用户，以及付费 CAD 基础功能。",
@@ -2884,7 +2889,7 @@
         "databaseSync": "数据库同步",
         "infernoPagerReborn": "Inferno Pager Reborn",
         "infernoStationAlert": "Inferno 站点警报",
-        "integrationAccess": "ER:LC + FiveM 集成与 API",
+        "integrationAccess": "游戏集成与 API",
         "radioPro": "Sonoran Radio Pro",
         "rocketNodeFivemHosting": "RocketNode FiveM 托管",
         "servers": "服务器",
@@ -2922,8 +2927,8 @@
       "sonoranOnePlaceholder": "一个订阅，适用于 CAD、CMS、Radio，并包含 RocketNode FiveM 托管。",
       "subscribed": "已订阅",
       "subscribeToBundle": "订阅",
-      "subscriptionsBody": "查看活跃订阅，分配 CAD 社区，并管理非活跃订阅。",
-      "subscriptionsTitle": "您的订阅",
+      "subscriptionsBody": "分配一个社区或管理现有方案。",
+      "subscriptionsTitle": "你的方案",
       "supportBody": "我们的专属在线聊天支持在工作时间每周 7 天提供服务。有什么问题？我们的团队随时待命。",
       "supportTitle": "与真人沟通",
       "unknownPlan": "未知方案"
@@ -2955,8 +2960,120 @@
       "starter": "基础版",
       "subscriptionsPerPage": "每页订阅内容"
     },
+    "lifetime": {
+      "acceptance": "我同意 CAD Pro 终身协议和服务条款。购买不可退款，法律要求的除外。",
+      "agreementDownloadFailed": "无法下载您的购买协议。请重试或联系支持。",
+      "agreementIntro": "本协议说明由原始购买者（\"你\"）向 Sonoran Software Systems LLC（\"Sonoran\"、\"我们\"或\"本公司\"）进行的 Sonoran CAD Pro 终身购买。它补充了我们的服务条款（https://docs.sonoransoftware.com/policy/policy/terms-of-service）。其特定的终身条款优先于任何关于所涵盖购买、计费、期限、社区分配、退款或终止的相冲突的一般条款。所有其他适用条款在强制性消费者权利的约束下继续适用。",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "结账时显示的一次性付款可在您的 Sonoran 账户上购买 CAD Pro 终身权益。它没有任何循环订阅费用。税费以及任何可选的、单独购买的产品或服务会在结账时标明。\n\n终身权益提供与循环 CAD Pro 相同的已宣传 CAD Pro 功能、包含的权益和附加项、支持以及使用限制；Pro 功能和使用限制可能会随着时间发生变化，对终身权益和循环 Pro 适用同样的标准；终身权益没有单独的使用配额。重大变更仍受适用的通知要求和消费者救济措施约束。将 Pro 更名、发布新的 CAD 版本或迁移相同的托管 CAD 服务，本身不会取消您受保障的 Pro 权益。\n\n单独定价的产品、常规 Pro 之外的附加项以及未来版本等级，仅在明确标明为您购买内容的一部分时才包含在内。常规 Pro 中包含的权益和附加项仍然包含在内。请保留您的购买确认，其中记录了您接受的优惠。",
+            "title": "1. 一次性付款购买 CAD Pro"
+          },
+          "section2": {
+            "body": "该权益仍归原始购买 Sonoran 账户所有。您不得出售、赠与、转让、出租、再许可或以其他方式转移该权益，也不得出售或共享该账户，以使其 Lifetime 福利可供其他购买者使用。更改您的电子邮件地址或完成合法的账户恢复，不会改变原始购买者。\n\n社区成员可在正常使用 CAD 的过程中，通过自己的账户使用提供给符合资格社区的 Pro 功能。",
+            "title": "2. 仅限原始购买者"
+          },
+          "section3": {
+            "body": "您一次只能将该权益应用于一个 Sonoran CAD 社区，并且您当前必须是 CAD 中该社区的所有者。您可以随时将其重新分配给您当前拥有的另一社区，无需重新分配冷却时间。\n\n重新分配或移除会立即从先前社区移除此许可证的 Pro 覆盖范围。该社区将恢复为原本可用的计划，除非另一个有效许可证提供覆盖。您的 Lifetime 许可证仍保留在您的购买账户上，并可分配给您拥有的其他社区。\n\n在转移社区所有权之前，您必须先在 CAD Billing 中取消将社区与您的 Lifetime 许可证的关联。许可证已应用时，CAD 会阻止转移。转移社区绝不会转移 Lifetime 许可证。如果在此流程之外发生异常所有权变更，则该社区将不再有资格享受此许可证的覆盖范围。\n\n没有游戏限制。您可以将符合条件的社区与受支持的游戏和集成一起使用。集成可用性和兼容性取决于相关第三方平台及其技术要求。",
+            "title": "3. 你当前拥有的一个社区"
+          },
+          "section4": {
+            "body": "“Lifetime”指 Sonoran 托管的 Sonoran CAD 服务的运营期限。在本协议约束下，只要我们运营该服务，所涵盖的权益就持续有效。它是一项托管服务许可，不赋予软件、基础设施或源代码的所有权。\n\n维护、临时停机和常规服务更新不会终止该权益。Lifetime 并不承诺永久保留每个社区或其数据；单独披露的保留和不活跃政策仍然适用。删除不活跃的社区本身不会取消购买账户的 Lifetime 权益。",
+            "title": "4. 终身的含义"
+          },
+          "section5": {
+            "body": "终身购买为最终交易，不接受因改变主意而提出的自愿退款，包括社区关闭、离开社区、使用减少或情况变化。自愿的 48 小时退款保证不适用于终身购买。\n\n适用法律要求的退款、取消权利及其他补救措施仍然可用。这包括关于未供货、描述不符、服务有缺陷或法定撤回的任何适用权利。开始访问或接受这些条款不构成放弃依法不得放弃的权利。任何司法管辖区特定的立即开始请求或撤回信息，必须在需要时单独提供。",
+            "title": "5. 退款和消费者权利"
+          },
+          "section6": {
+            "body": "您必须遵守本协议、适用的服务条款以及与这些 Lifetime 条款一致的合理服务使用政策。故意滥用包括转售或出租覆盖范围、共享购买账户、虚假声称社区所有权、绕过单一社区或原始购买者限制，以及重新分配覆盖范围以规避 Pro 使用限制。您拥有的社区之间进行正常重新分配是允许的。\n\n在我们合理调查欺诈或重大滥用期间，我们可能会暂停访问，并且在发生重大违约时可能会撤销许可证。在合理情况下，我们会说明问题，并在永久撤销前向您发出通知并给予您回应或纠正的机会。为应对欺诈、违法活动、安全威胁或重大伤害风险，可能需要立即暂停。未支付或存在争议的购买款项可能导致暂停，直至付款问题解决。全额退款或未解决的支付撤销将终止许可证及其社区覆盖范围，但须遵守适用法律。仅部分退款不会自动取消许可证。如果支付争议已关闭且购买款项由 Sonoran 保留，仅因该争议而暂停的许可证将被恢复；您可能需要将其重新分配给符合条件的社区。\n\n我们不会仅仅因为您持有该权益的时间很长、进行了合法重新分配，或因为所覆盖的 Pro 价格上涨而撤销该权益。任何在终止时的退款或其他补救措施仍须遵守适用法律。",
+            "title": "6. 滥用、暂停和终止"
+          },
+          "section7": {
+            "body": "如果我们永久停止托管 CAD 服务，我们将在可行范围内提前给予合理通知，并通过可用的导出方式提供合理机会以检索社区数据。如果实质上相同的托管 CAD 服务以新名称或版本继续提供，您的权益将继续，并享有等同的 Pro 保障权益。\n\n服务变更、暂停或关闭不会取消强制性的消费者补救措施，包括法律要求的任何退款。我们将按要求提供重大变更通知，并且不会利用一般政策变更为此受保障权益施加经常性费用。",
+            "title": "7. 服务变更或关闭"
+          },
+          "section8": {
+            "body": "付款前，您必须明确接受本终身协议和适用的服务条款。我们会将已接受的协议版本和副本与购买记录一并保留。您的购买确认将标明所接受的版本，并提供可保存的电子邮件或可下载副本。\n\n如需购买、转让、账户恢复或消费者权益相关请求，请联系 Sonoran Support (https://support.sonoransoftware.com/)。",
+            "title": "8. 接受和联系"
+          }
+        }
+      },
+      "agreementTitle": "CAD 专业版终身协议",
+      "agreementVersion": "版本 2026-10-15",
+      "assign": "分配社区",
+      "assignmentHelp": "将此许可证应用到你拥有的社区。",
+      "assignmentSaved": "终身许可证已应用。",
+      "assignmentTitle": "未设置社区ID",
+      "checkoutUnavailable": "终身结账尚不可用。",
+      "choosePlan": "选择专业版终身",
+      "confirmAssignBody": "将此许可证应用于 {community}？如果它已分配到其他地方，之前的社区将失去此许可证的 Pro 覆盖。",
+      "confirmAssignTitle": "应用 CAD 专业版终身？",
+      "confirmRemoveBody": "此社区将失去此许可证的 Pro 覆盖范围。您的终身许可证仍保留在您的账户中，可随时分配给您拥有的其他社区。",
+      "confirmRemoveTitle": "取消分配 CAD 专业版终身？",
+      "cycleLabel": "终身",
+      "description": "一次付费。终身使用 Sonoran CAD 的 CAD Pro。",
+      "downloadAgreement": "下载购买协议",
+      "eligibility": {
+        "activePlan": "已有另一个有效计划已应用。",
+        "checking": "正在检查资格。",
+        "notOwner": "你不拥有此社区。",
+        "unavailable": "此社区不符合资格。"
+      },
+      "errors": {
+        "activePlan": "此社区已拥有一个有效方案。请先取消分配，然后再应用终身版。",
+        "failed": "无法更新终身计费。刷新后重试。",
+        "inactive": "此终身许可证未激活。",
+        "notOwner": "你必须拥有此社区才能申请终身许可证。",
+        "notPurchaser": "只有原始购买者才能管理此终身许可证。",
+        "paymentProcessing": "您的支付正在处理中。请稍后刷新账单；请勿再次购买。",
+        "policyChanged": "协议已变更。请查看当前条款并接受后继续。",
+        "unavailable": "终身结账当前不可用。"
+      },
+      "gameSummary": "无游戏锁。使用任何通常受支持的Sonoran CAD集成。",
+      "generalTermsLink": "服务条款",
+      "heading": "CAD Pro. 一次性付款。",
+      "loadFailed": "无法加载终身计费。刷新后重试。",
+      "loading": "正在加载终身许可证",
+      "migrationNotice": "购买终身版不会取消现有订阅。请在管理账单中取消任何您不再需要的方案。",
+      "noEligibleCommunities": "没有符合条件的社区。选择你拥有且没有其他有效计划的社区。",
+      "noOwnedCommunities": "你需要拥有一个社区才能申请 Pro Lifetime。",
+      "oneTime": "一次性付款。无 recurring fees。",
+      "openBilling": "打开 CAD 账单",
+      "ownershipSummary": "不可转让。适用于一个 CAD 社区，您拥有。",
+      "ownerTransferBlocked": "在转移此社区之前，请先在 CAD Billing 中取消 CAD Pro Lifetime 关联。",
+      "planName": "CAD 专业版终身",
+      "policyVersion": "协议版本: {version}",
+      "price": "$499 美元",
+      "purchase": "继续前往安全结账",
+      "purchasedAt": "已购买",
+      "purchasedByYourAccount": "不可转让。由您的账户购买。",
+      "purchaseUnavailable": "无法购买",
+      "reassign": "更改社区",
+      "reassignmentSummary": "随时将您的许可证转移到您拥有的任何其他社区。",
+      "refundSummary": "不可退款，法律要求的除外。",
+      "removalSaved": "终身许可已取消分配。",
+      "removeAssignment": "清除社区ID",
+      "retry": "刷新 订阅内容",
+      "reviewTitle": "专业版终身",
+      "selectCommunity": "你拥有的社区",
+      "selectCommunityHelp": "选择要获得 Pro 访问权限的社区。",
+      "serviceSummary": "终身使用 Sonoran CAD。适用 Pro 使用限制。",
+      "standardPro": "所有 CAD Pro 功能。适用 Pro 使用限制。",
+      "status": {
+        "active": "活跃",
+        "revoked": "已撤销",
+        "suspended": "已暂停"
+      },
+      "summaryTitle": "终身许可证详情",
+      "termsLink": "终身条款",
+      "unassignBeforeClearing": "在清除其订阅之前，请先在 CAD Billing 中取消此社区的 CAD Pro Lifetime 关联。",
+      "unassigned": "未分配社区",
+      "viewOption": "查看终身选项"
+    },
     "pricing": {
-      "description": "Sonoran CAD 的付费订阅可让你启用新的集成功能、启用自定义、移除限制等！",
+      "description": "比较你的社区的方案。",
       "howToPurchase": "如何购买",
       "title": "升级订阅定价"
     },
@@ -2969,6 +3086,13 @@
       "serversEmail": "Sonoran服务器帐户电子邮件",
       "setCommunityId": "设置社区ID",
       "signInToOpenBillingPortal": "请登录以打开账单门户。"
+    },
+    "trust": {
+      "label": "关于 Sonoran CAD",
+      "liveChat": "实时聊天， 每周7天",
+      "longevityDetail": "自从那时起一直服务于角色扮演社区。",
+      "longevityTitle": "成立于2019年",
+      "supportTeam": "全职支持团队"
     }
   },
   "police": {
