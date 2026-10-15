@@ -2795,29 +2795,34 @@
       "cadPlans": "CAD Planları",
       "cancellingStatus": "İptal ediliyor: {date}",
       "changeCommunity": "Topluluğu Değiştir",
+      "choosePlan": "Bir plan seç",
       "choosePlanAria": "{plan} seç",
       "clearCommunity": "Topluluk Kimliğini Temizle",
       "communityAlreadySubscribedTooltip": "Bu topluluğa zaten etkin bir abonelik uygulanmış.",
       "communityIdValue": "Kimlik {id}",
-      "communityMissingBody": "Bu abonelik satın alındı ancak henüz bir CAD topluluğuna uygulanmadı.",
+      "communityMissingBody": "Bu planı bir CAD topluluğuna uygulayın.",
       "communityMissingTitle": "Topluluk Kimliği Ayarlanmadı",
+      "comparePlans": "Planları karşılaştır",
       "contactSupport": "Destekle İletişime Geçin",
-      "description": "Abonelikleri yönetin, bunları CAD topluluklarına atayın ve faturalandırmayı Stripe üzerinden güncelleyin.",
+      "description": "Planlarınızı, topluluklarınızı ve ödemelerinizi yönetin.",
       "expertInstallInfo": "Uzman Kurulum Bilgisi",
       "eyebrow": "Ödeme Merkezi",
+      "heading": "Abonelikler",
       "inactiveSubscriptions": "Etkin Değil / İptal Edildi",
+      "manageBilling": "Faturalamayı yönet",
       "manageSubscription": "Aboneliği Yönet",
-      "noActiveSubscriptionsBody": "Bir CAD topluluğunu yükseltmek için yeni bir abonelik oluşturun.",
+      "noActivePlans": "Etkin abonelik bulunamadı",
+      "noActiveSubscriptionsBody": "CAD topluluğunuzu yükseltmek için bir plan seçin.",
       "noCommunitiesAvailable": "Bu hesapta kullanılabilir topluluk yok.",
       "noInactiveSubscriptions": "Etkin olmayan abonelik bulunamadı",
-      "noInactiveSubscriptionsBody": "İptal edilen ve etkin olmayan abonelikler burada görünür.",
+      "noInactiveSubscriptionsBody": "İptal edilen ve etkin olmayan planlar burada görünür.",
       "openOnePortal": "ONE Portal'ı Aç",
       "otherProducts": "Diğer Ürünler",
       "planDescriptions": {
         "expertInstallation": "Sonoran ekibinden tek seferlik kurulum yardımı.",
-        "free": "ER:LC, FiveM ve API bağlantısıyla temel CAD erişimi.",
+        "free": "Oyun entegrasyonları ve API erişimiyle temel CAD araçları.",
         "plus": "Veritabanı senkronizasyonu, iki sunucu, daha yüksek limitler ve daha fazla şablon ekler.",
-        "pro": "Sınırsız ölçek, özel haritalar, veritabanı birleştirme ve kolay eşleştirmeyi açar.",
+        "pro": "Sınırsız hesaplar, özel haritalar ve gelişmiş veritabanı araçları.",
         "sonoranOne": "CAD Pro, CMS Pro, Radio Pro, Sonoran Studio ve RocketNode barındırma paketleri.",
         "standard": "Özel alan adı desteği, daha yüksek limitler ve genişletilmiş topluluk araçları ekler.",
         "starter": "Özel topluluk kimliği, daha fazla kullanıcı ve ücretli CAD temel özellikleri ekler.",
@@ -2884,7 +2889,7 @@
         "databaseSync": "Veritabanı Senkronizasyonu",
         "infernoPagerReborn": "Inferno Pager Reborn",
         "infernoStationAlert": "Inferno İstasyon Uyarısı",
-        "integrationAccess": "ER:LC + FiveM Entegrasyonu & API",
+        "integrationAccess": "Oyun entegrasyonları ve API",
         "radioPro": "Sonoran Radyo Pro",
         "rocketNodeFivemHosting": "RocketNode FiveM Barındırma",
         "servers": "Sunucular",
@@ -2922,8 +2927,8 @@
       "sonoranOnePlaceholder": "CAD, CMS, Radio ve dahil RocketNode FiveM barındırma için tek abonelik.",
       "subscribed": "Abonelik",
       "subscribeToBundle": "Abone ol",
-      "subscriptionsBody": "Etkin abonelikleri gözden geçir, CAD toplulukları ata ve etkin olmayan abonelikleri yönet.",
-      "subscriptionsTitle": "Abonelikleriniz",
+      "subscriptionsBody": "Bir topluluk atayın veya mevcut bir planı yönetin.",
+      "subscriptionsTitle": "Planlarınız",
       "supportBody": "Özel canlı sohbet desteğimiz iş saatleri boyunca haftanın 7 günü hizmetinizdedir. Sorularınız mı var? Ekibimiz bekliyor.",
       "supportTitle": "Bir insanla konuşun",
       "unknownPlan": "Bilinmeyen Plan"
@@ -2955,8 +2960,120 @@
       "starter": "Başlangıç",
       "subscriptionsPerPage": "Sayfa başına abonelikler"
     },
+    "lifetime": {
+      "acceptance": "CAD Pro Ömür Boyu Sözleşmesini ve Hizmet Şartlarını kabul ediyorum. Satın alımlar, kanunen gerekli olanlar dışında iade edilemez.",
+      "agreementDownloadFailed": "Satın alma sözleşmeniz indirilemedi. Lütfen tekrar deneyin veya destek ile iletişime geçin.",
+      "agreementIntro": "Bu sözleşme, Sonoran Software Systems LLC (\"Sonoran,\" \"biz\" veya \"bize\") tarafından orijinal alıcıya (\"siz\") yapılan bir Sonoran CAD Pro Ömür Boyu satın alımını açıklar. Hizmet Şartlarımızı (https://docs.sonoransoftware.com/policy/policy/terms-of-service) tamamlar. Özel Ömür Boyu şartları, kapsanan satın alım, faturalandırma, süre, topluluk ataması, iadeler veya fesih ile ilgili çelişen genel şartları geçersiz kılar. Uygulanabilir diğer tüm şartlar, zorunlu tüketici haklarına tabi olarak geçerliliğini sürdürür.",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "Kasada gösterilen tek seferlik ödeme, Sonoran hesabınızda bir CAD Pro Ömür Boyu hakkı satın alır. Tekrarlayan abonelik ücreti yoktur. Vergiler ve isteğe bağlı, ayrı olarak satın alınan ürün veya hizmetler kasada belirtilir.\n\nÖmür Boyu, tekrarlayan CAD Pro ile aynı reklamı yapılan CAD Pro özelliklerini, dahil avantajları ve eklentileri, desteği ve kullanım limitlerini sağlar. Pro özellikleri ve kullanım limitleri, Ömür Boyu ve tekrarlayan Pro için aynı esaslarda zaman içinde değişebilir; Ömür Boyu için ayrı kullanım kotası yoktur. Önemli değişiklikler, geçerli bildirim gerekliliklerine ve tüketici haklarına tabi olmaya devam eder. Pro’nun yeniden adlandırılması, yeni bir CAD sürümü yayınlanması veya aynı barındırılan CAD hizmetine geçilmesi, tek başına kapsanan Pro hakkınızı ortadan kaldırmaz.\n\nAyrı fiyatlandırılan ürünler, normal Pro kapsamı dışındaki eklentiler ve gelecekteki katmanlar, yalnızca satın alımınızın bir parçası olarak açıkça belirtilmişlerse dahildir. Normal Pro’ya dahil olan avantajlar ve eklentiler dahil olmaya devam eder. Kabul ettiğiniz teklifi kaydeden satın alma onayınızı saklayın.",
+            "title": "1. CAD Pro için tek ödeme"
+          },
+          "section2": {
+            "body": "Hak, orijinal satın alan Sonoran hesabında kalır. Hakkı satamaz, hediye edemez, devredemez, kiralayamaz, alt lisans veremez veya başka şekilde aktaramaz; ayrıca Lifetime avantajlarını başka bir alıcıya sağlamak için hesabı satamaz veya paylaşamazsınız. E-posta adresinizi değiştirmek veya meşru hesap kurtarmayı tamamlamak, orijinal satın alanı değiştirmez.\n\nTopluluk üyeleri, CAD kullanımının normal akışı içinde, uygun topluluğa kendi hesapları üzerinden sağlanan Pro özelliklerini kullanabilir.",
+            "title": "2. Orijinal alıcıya özel"
+          },
+          "section3": {
+            "body": "Bir seferde bir Sonoran CAD topluluğuna bu hakkı uygulayabilirsiniz ve şu anda CAD içinde o topluluğun sahibi olmanız gerekir. Şu anda sahip olduğunuz başka bir topluluğa, yeniden atama bekleme süresi olmadan, bunu serbestçe yeniden atayabilirsiniz.\n\nYeniden atama veya kaldırma, bu lisansın Pro kapsamını önceki topluluktan anında kaldırır. Başka bir geçerli lisans kapsam sağlamıyorsa, o topluluk aksi halde kendisi için kullanılabilir olan plana geri döner. Lifetime lisansınız satın alma hesabınızda kalır ve sahip olduğunuz başka bir topluluğa atanabilir.\n\nTopluluk sahipliğini devretmeden önce CAD Billing içinde topluluğunuzu Lifetime lisansınızdan ayırmanız gerekir. Lisans uygulanmışken CAD devri engeller. Bir topluluğun devredilmesi Lifetime lisansını asla devretmez. Bu sürecin dışında istisnai bir sahiplik değişikliği gerçekleşirse, topluluk artık bu lisansın kapsamına uygun değildir.\n\nOyun kısıtlaması yoktur. Uygun topluluğu desteklenen oyunlar ve entegrasyonlarla kullanabilirsiniz. Entegrasyon kullanılabilirliği ve uyumluluk, ilgili üçüncü taraf platformlara ve bunların teknik gereksinimlerine bağlıdır.",
+            "title": "3. Şu anda sahibi olduğunuz bir topluluk"
+          },
+          "section4": {
+            "body": "\"Ömür boyu\" Sonoran'ın barındırılan Sonoran CAD hizmetinin operasyonel ömrü anlamına gelir. Kapsanan hak, bu hizmeti işlettiğimiz sürece, bu sözleşmeye tabi olarak devam eder. Bu, barındırılan bir hizmet lisansıdır ve yazılım, altyapı veya kaynak kodunun mülkiyetini vermez.\n\nBakım, geçici kesinti ve olağan hizmet güncellemeleri hakkı sona erdirmez. Ömür boyu, her topluluğun veya verisinin kalıcı olarak saklanacağını garanti etmez; ayrıca açıklanan saklama ve hareketsizlik politikaları geçerlidir. Hareketsiz bir topluluğun kaldırılması, tek başına satın alma hesabının Ömür boyu hakkını iptal etmez.",
+            "title": "4. Ömür Boyu Anlamı"
+          },
+          "section5": {
+            "body": "Ömür boyu satın alımlar kesindir, topluluk kapanması, bir topluluktan ayrılma, kullanımın azalması veya koşullarınızdaki bir değişiklik dahil olmak üzere fikir değişikliği nedeniyle gönüllü para iadesi yapılmaz. Gönüllü 48 saatlik para iade garantisi Ömür boyu satın alımlar için geçerli değildir.\n\nYürürlükteki yasaların gerektirdiği iade, iptal hakları ve diğer çözümler geçerliliğini korur. Buna, teslim etmeme, yanlış tanımlama, kusurlu hizmet veya yasal cayma hakkına ilişkin geçerli haklar dahildir. Erişime başlamak veya bu şartları kabul etmek, hukuken feragat edilemeyecek haklardan feragat edildiği anlamına gelmez. Herhangi bir yargı bölgesine özgü anında başlama talebi veya cayma bilgisi, gerektiğinde ayrı olarak sunulmalıdır.",
+            "title": "5. İadeler ve tüketici hakları"
+          },
+          "section6": {
+            "body": "Bu sözleşmeye, geçerli Hizmet Şartlarına ve bu Lifetime şartlarıyla uyumlu makul hizmet kullanımı politikalarına uymalısınız. Kasıtlı kötüye kullanım, kapsamın yeniden satılması veya kiralanması, satın alma hesabının paylaşılması, topluluk sahipliğinin yanlış beyan edilmesi, tek topluluk veya asıl alıcı kısıtlamalarının aşılması ve Pro kullanım sınırlarını aşmak için kapsamın yeniden atanmasını içerir. Sahip olduğunuz topluluklar arasında normal yeniden atama yapılmasına izin verilir.\n\nDolandırıcılığı veya önemli kötüye kullanımı makul ölçüde araştırırken erişimi askıya alabilir ve önemli bir ihlal için lisansı iptal edebiliriz. Makul olduğu durumlarda, sorunu açıklayacak ve kalıcı iptallerden önce size bildirimde bulunup yanıt vermeniz veya durumu düzeltmeniz için fırsat tanıyacağız. Dolandırıcılık, hukuka aykırı faaliyet, güvenlik tehdidi veya önemli bir zarar riskiyle başa çıkmak için derhal askıya alma gerekli olabilir. Ödenmemiş veya ihtilaflı satın alma tutarları, ödeme çözülene kadar askıya alınmayla sonuçlanabilir. Tam iade veya çözülmemiş bir ödeme geri çevirimi, geçerli hukuka tabi olarak lisansı ve ilgili topluluk kapsamını sona erdirir. Kısmi bir iade tek başına lisansı otomatik olarak iptal etmez. Bir ödeme uyuşmazlığı lehinize çözülür ve ödeme elde tutulursa, yalnızca bu uyuşmazlık nedeniyle askıya alınmış bir lisans geri yüklenir; bunu uygun bir topluluğa yeniden atamanız gerekebilir.\n\nYetkiyi yalnızca uzun süredir elinizde tuttuğunuz, meşru yeniden atama yaptığınız veya kapsanan Pro fiyatı arttığı için iptal etmeyeceğiz. Sonlandırma halinde herhangi bir iade veya diğer çözüm yolu yine geçerli hukuka tabidir.",
+            "title": "6. Kötüye kullanım, askıya alma ve sonlandırma"
+          },
+          "section7": {
+            "body": "Eğer barındırılan CAD hizmetini kalıcı olarak sonlandırırsak, uygulanabildiği ölçüde makul bir ön bildirimde bulunacak ve mevcut dışa aktarma yöntemleri aracılığıyla topluluk verilerini alma konusunda makul bir fırsat sağlayacağız. Büyük ölçüde aynı barındırılan CAD hizmeti yeni bir ad veya sürüm altında devam ederse, uygun kapsanan Pro avantajlarıyla birlikte hakkınız devam eder.\n\nHizmet değişiklikleri, askıya alma veya kapatma, kanunen gerekli olan herhangi bir geri ödeme dahil olmak üzere zorunlu tüketici haklarını ortadan kaldırmaz. Önemli değişiklik bildirimlerini gerektiği şekilde vereceğiz ve bu kapsanan hak için yinelenen ücretler uygulamak üzere genel bir politika değişikliğini kullanmayacağız.",
+            "title": "7. Hizmet değişiklikleri veya kapanışı"
+          },
+          "section8": {
+            "body": "Ödeme öncesinde, bu Ömür Boyu sözleşmesini ve लागू olan Hizmet Şartlarını açıkça kabul etmelisiniz. Kabul edilen sözleşme sürümünü ve bir kopyasını satın alma kaydıyla birlikte saklarız. Satın alma onayınız, kabul edilen sürümü belirtecek ve saklayabilmeniz için bir e-posta veya indirilebilir kopya sağlayacaktır.\n\nSatın alma, devretme, hesap kurtarma veya tüketici hakları talepleri için Sonoran Support ile iletişime geçin (https://support.sonoransoftware.com/).",
+            "title": "8. Kabul ve iletişim"
+          }
+        }
+      },
+      "agreementTitle": "CAD Pro Ömür Boyu Sözleşmesi",
+      "agreementVersion": "Sürüm 2026-10-14",
+      "assign": "Topluluk Kimliği Ata",
+      "assignmentHelp": "Bu lisansı sahip olduğunuz bir topluluğa uygulayın.",
+      "assignmentSaved": "Ömür boyu lisans uygulandı.",
+      "assignmentTitle": "Topluluk Kimliği Ayarlanmadı",
+      "checkoutUnavailable": "Ömür boyu ödeme henüz kullanılamıyor.",
+      "choosePlan": "Pro Ömür Boyu seçin",
+      "confirmAssignBody": "Bu lisansı {community} için uygula? Eğer başka bir yerde atanmışsa, önceki topluluk bu lisansın Pro kapsamını kaybedecek.",
+      "confirmAssignTitle": "CAD Pro Ömür Boyu uygulansın mı?",
+      "confirmRemoveBody": "Bu topluluk bu lisansın Pro kapsamını kaybedecek. Ömür Boyu lisansınız hesabınızda kalacak, sahip olduğunuz başka bir topluluğa atamaya hazır.",
+      "confirmRemoveTitle": "CAD Pro Ömür Boyu kaldırılsın mı?",
+      "cycleLabel": "Ömür boyu",
+      "description": "Bir kez öde. Sonoran CAD’in ömür boyu CAD Pro’sunu alın.",
+      "downloadAgreement": "Satın alma sözleşmesini indir",
+      "eligibility": {
+        "activePlan": "Başka bir aktif plan zaten uygulanmış.",
+        "checking": "Uygunluk kontrol ediliyor.",
+        "notOwner": "Bu topluluğun sahibi siz değilsiniz.",
+        "unavailable": "Bu topluluk uygun değil."
+      },
+      "errors": {
+        "activePlan": "Bu topluluğun zaten aktif bir planı var. Lifetime'ı uygulamadan önce onu kaldırın.",
+        "failed": "Ömür boyu faturalandırma güncellenemedi. Yenileyin ve tekrar deneyin.",
+        "inactive": "Bu Ömür Boyu lisans etkin değil.",
+        "notOwner": "Bir Ömür Boyu lisans başvurusu yapmak için bu topluluğun sahibi olmalısınız.",
+        "notPurchaser": "Bu Ömür Boyu lisansı yalnızca ilk satın alan kişi yönetebilir.",
+        "paymentProcessing": "Ödemeniz işleniyor. Faturalamayı kısa süre sonra yenileyin; tekrar satın almayın.",
+        "policyChanged": "Anlaşma değişti. Devam etmeden önce mevcut koşulları inceleyin ve kabul edin.",
+        "unavailable": "Ömür boyu ödeme şu anda kullanılamıyor."
+      },
+      "gameSummary": "Oyun kilidi yok. Normalde desteklenen herhangi bir Sonoran CAD entegrasyonunu kullanın.",
+      "generalTermsLink": "Genel Hizmet Şartları",
+      "heading": "CAD Pro. Tek ödeme.",
+      "loadFailed": "Ömür boyu faturalandırma yüklenemedi. Tekrar denemek için yenileyin.",
+      "loading": "Ömür boyu lisanslar yükleniyor",
+      "migrationNotice": "Lifetime satın almak mevcut abonelikleri iptal etmez. Artık ihtiyacınız olmayan herhangi bir planı Faturalandırmayı yönet bölümünde iptal edin.",
+      "noEligibleCommunities": "Uygun topluluk yok. Başka bir aktif planı olmayan sahip olduğunuz bir topluluk seçin.",
+      "noOwnedCommunities": "Pro Lifetime başvurusu yapmak için bir topluluğun sahibi olmanız gerekir.",
+      "oneTime": "Tek seferlik ödeme. Tekrarlayan ücret yok.",
+      "openBilling": "CAD Faturalandırmasını Aç",
+      "ownershipSummary": "Devredilemez. Sahip olduğunuz bir CAD topluluğu için.",
+      "ownerTransferBlocked": "Bu topluluğu aktarmadan önce CAD Billing'de CAD Pro Lifetime'ı atamadan kaldırın.",
+      "planName": "CAD Pro Ömür Boyu",
+      "policyVersion": "Sözleşme sürümü: {version}",
+      "price": "$499 USD",
+      "purchase": "Güvenli ödemeye devam et",
+      "purchasedAt": "Satın alındı",
+      "purchasedByYourAccount": "Devredilemez. Hesabınız tarafından satın alındı.",
+      "purchaseUnavailable": "Satın alma kullanılamaz",
+      "reassign": "Topluluğu Değiştir",
+      "reassignmentSummary": "Lisansınızı sahip olduğunuz herhangi başka bir topluluğa, istediğiniz zaman taşıyın.",
+      "refundSummary": "İade edilemez, kanunen gerekli olan durumlar hariç.",
+      "removalSaved": "Ömür boyu lisans kaldırıldı.",
+      "removeAssignment": "Topluluk Kimliğini Temizle",
+      "retry": "Abonelikleri yenile",
+      "reviewTitle": "Pro Ömür Boyu",
+      "selectCommunity": "Sahibi olduğunuz topluluk",
+      "selectCommunityHelp": "Pro erişimi alacak topluluğu seçin.",
+      "serviceSummary": "Sonoran CAD’in ömrü boyunca. Pro kullanım limitleri geçerlidir.",
+      "standardPro": "Tüm CAD Pro özellikleri. Pro kullanım limitleri geçerlidir.",
+      "status": {
+        "active": "Aktif",
+        "revoked": "İptal Edildi",
+        "suspended": "Askıda"
+      },
+      "summaryTitle": "Ömür boyu lisans ayrıntıları",
+      "termsLink": "Ömür boyu koşullar",
+      "unassignBeforeClearing": "CAD Billing'de bu topluluktan CAD Pro Lifetime'ı atamadan kaldırın, ardından aboneliğini silin.",
+      "unassigned": "Topluluk atanmadı",
+      "viewOption": "Ömür boyu seçeneği görüntüle"
+    },
     "pricing": {
-      "description": "Sonoran CAD’nin ücretli abonelikleri yeni entegrasyon özelliklerini etkinleştirmenize, özelleştirmeyi etkinleştirmenize, sınırlamaları kaldırmanıza ve daha fazlasına olanak tanır!",
+      "description": "Topluluğunuz için planları karşılaştırın",
       "howToPurchase": "Nasıl Satın Alınır",
       "title": "Abonelik Fiyatlandırmasını Yükselt"
     },
@@ -2969,6 +3086,13 @@
       "serversEmail": "Sonoran Sunucuları Hesap E-postası",
       "setCommunityId": "Topluluk Kimliğini Ayarla",
       "signInToOpenBillingPortal": "Lütfen faturalama portalını açmak için oturum açın."
+    },
+    "trust": {
+      "label": "Sonoran CAD Hakkında",
+      "liveChat": "Canlı sohbet, haftanın 7 günü",
+      "longevityDetail": "Rol yapma topluluklarına o zamandan beri hizmet ediyor.",
+      "longevityTitle": "2019'da kuruldu",
+      "supportTeam": "Tam zamanlı destek ekibi"
     }
   },
   "police": {

@@ -2795,29 +2795,34 @@
       "cadPlans": "CAD plány",
       "cancellingStatus": "Rušení: {date}",
       "changeCommunity": "Změnit komunitu",
+      "choosePlan": "Vybrat plán",
       "choosePlanAria": "Vybrat {plan}",
       "clearCommunity": "Vymazat ID komunity",
       "communityAlreadySubscribedTooltip": "Tato komunita už má aktivní předplatné.",
       "communityIdValue": "ID {id}",
-      "communityMissingBody": "Toto předplatné bylo zakoupeno, ale zatím nebylo přiřazeno ke komunitě CAD.",
+      "communityMissingBody": "Uplatněte tento plán na komunitu CAD.",
       "communityMissingTitle": "Není nastaveno ID komunity",
+      "comparePlans": "Porovnat plány",
       "contactSupport": "Kontaktovat podporu",
-      "description": "Spravujte předplatná, přiřazujte je komunitám CAD a aktualizujte fakturaci přes Stripe.",
+      "description": "Spravujte své plány, komunity a platby.",
       "expertInstallInfo": "Informace o odborné instalaci",
       "eyebrow": "Platební centrum",
+      "heading": "Fakturace",
       "inactiveSubscriptions": "Neaktivní / Zrušené",
+      "manageBilling": "Spravovat fakturaci",
       "manageSubscription": "Spravovat předplatné",
-      "noActiveSubscriptionsBody": "Vytvořte nové předplatné pro upgrade komunity CAD.",
+      "noActivePlans": "Žádná aktivní předplatná",
+      "noActiveSubscriptionsBody": "Vyberte si plán pro upgrade vaší CAD komunity.",
       "noCommunitiesAvailable": "Pro tento účet nejsou k dispozici žádná společenství.",
       "noInactiveSubscriptions": "Žádná neaktivní předplatná",
-      "noInactiveSubscriptionsBody": "Zrušená a neaktivní předplatná se zobrazí zde.",
+      "noInactiveSubscriptionsBody": "Zrušené a neaktivní plány se zobrazují zde.",
       "openOnePortal": "Otevřít ONE Portal",
       "otherProducts": "Ostatní produkty",
       "planDescriptions": {
         "expertInstallation": "Jednorázová pomoc s nastavením od týmu Sonoran.",
-        "free": "Základní přístup k CAD s ER:LC, FiveM a připojením k API.",
+        "free": "Základní CAD nástroje s integrací her a přístupem k API.",
         "plus": "Přidává synchronizaci databáze, dva servery, vyšší limity a více šablon.",
-        "pro": "Odemkne neomezené škálování, vlastní mapy, sloučení databází a přehledné mapování.",
+        "pro": "Neomezené účty, vlastní mapy a pokročilé databázové nástroje.",
         "sonoranOne": "Balíčky CAD Pro, CMS Pro, Radio Pro, Sonoran Studio a hosting RocketNode.",
         "standard": "Přidává podporu vlastních domén, vyšší limity a rozšířené komunitní nástroje.",
         "starter": "Přidává vlastní ID komunity, více uživatelů a placené CAD funkce.",
@@ -2884,7 +2889,7 @@
         "databaseSync": "Synchronizace databáze",
         "infernoPagerReborn": "Inferno pager Reborn",
         "infernoStationAlert": "Upozornění stanice Inferno",
-        "integrationAccess": "Integrace ER:LC + FiveM a API",
+        "integrationAccess": "Herní integrace a API",
         "radioPro": "Sonoran Radio Pro",
         "rocketNodeFivemHosting": "RocketNode FiveM hosting",
         "servers": "Servery",
@@ -2922,8 +2927,8 @@
       "sonoranOnePlaceholder": "Jedno předplatné pro CAD, CMS, Radio a zahrnutý RocketNode FiveM hosting.",
       "subscribed": "Přihlášeno k odběru",
       "subscribeToBundle": "Přihlásit k odběru",
-      "subscriptionsBody": "Zkontrolujte aktivní předplatná, přiřaďte komunity CAD a spravujte neaktivní předplatná.",
-      "subscriptionsTitle": "Vaše předplatná",
+      "subscriptionsBody": "Přiřadit komunitu nebo spravovat stávající plán.",
+      "subscriptionsTitle": "Vaše plány",
       "supportBody": "Naše vyhrazená podpora přes živý chat je k dispozici 7 dní v týdnu během pracovní doby. Máte otázky? Náš tým je připraven vám pomoci.",
       "supportTitle": "Promluvte si s člověkem",
       "unknownPlan": "Neznámý plán"
@@ -2955,8 +2960,120 @@
       "starter": "Začátečník",
       "subscriptionsPerPage": "Předplatná na stránku"
     },
+    "lifetime": {
+      "acceptance": "Souhlasím s doživotní smlouvou CAD Pro a Podmínkami služby. Nákupy jsou nevratné, s výjimkou případů vyžadovaných zákonem.",
+      "agreementDownloadFailed": "Nelze stáhnout vaši kupní smlouvu. Zkuste to prosím znovu nebo kontaktujte podporu.",
+      "agreementIntro": "Tato dohoda popisuje doživotní nákup Sonoran CAD Pro od společnosti Sonoran Software Systems LLC (\"Sonoran,\" \"my,\" nebo \"nás\") původním kupujícím (\"vy\"). Doplňuje naše Podmínky služby (https://docs.sonoransoftware.com/policy/policy/terms-of-service). Její specifické podmínky doživotní licence mají přednost před jakýmikoli rozpornými obecnými podmínkami týkajícími se krytého nákupu, účtování, trvání, přiřazení ke komunitě, vrácení peněz nebo ukončení. Všechny ostatní platné podmínky nadále platí s výhradou povinných práv spotřebitele.",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "Jednorázová platba zobrazená při pokladně pořídí doživotní oprávnění CAD Pro na vašem účtu Sonoran. Nemá žádný opakovaný předplatný poplatek. Daně a jakékoli volitelné samostatně zakoupené produkty nebo služby jsou uvedeny při pokladně.\n\nDoživotní verze poskytuje stejné inzerované funkce CAD Pro, zahrnuté výhody a doplňky, podporu a limity používání jako opakované CAD Pro. Funkce Pro a limity používání se mohou v průběhu času měnit na stejném základě pro Doživotní verzi i opakované Pro; Doživotní verze nemá žádné samostatné kvóty používání. Podstatné změny zůstávají předmětem příslušných oznamovacích požadavků a ochrany spotřebitele. Přejmenování Pro, vydání nové verze CAD nebo migrace stejné hostované služby CAD samo o sobě neodstraní vaše kryté oprávnění Pro.\n\nSamostatně ceněné produkty, doplňky mimo běžné Pro a budoucí tarify jsou zahrnuty pouze tehdy, jsou-li výslovně uvedeny jako součást vašeho nákupu. Výhody a doplňky zahrnuté v běžném Pro zůstávají zahrnuty. Uschovejte si potvrzení o nákupu, které zaznamenává nabídku, kterou jste přijali.",
+            "title": "1. Jednorázová platba za CAD Pro"
+          },
+          "section2": {
+            "body": "Oprávnění zůstává původnímu nakupujícímu účtu Sonoran. Nesmíte oprávnění prodat, darovat, postoupit, pronajmout, poskytnout sublicenci ani jinak převést ani prodat nebo sdílet účet, aby byly jeho výhody Lifetime zpřístupněny jinému kupujícímu. Změna vaší e-mailové adresy nebo dokončení oprávněné obnovy účtu nemění původního kupujícího.\n\nČlenové komunity mohou používat funkce Pro poskytnuté způsobilé komunitě prostřednictvím svých vlastních účtů v rámci běžného používání CAD.",
+            "title": "2. Osobní pro původního kupujícího"
+          },
+          "section3": {
+            "body": "Můžete uplatnit oprávnění na jednu komunitu Sonoran CAD najednou a v CAD musíte být aktuálně jejím vlastníkem. Můžete jej kdykoli bez omezení znovu přiřadit jiné komunitě, kterou aktuálně vlastníte, bez čekací doby na opětovné přiřazení.\n\nOpětovné přiřazení nebo odebrání okamžitě odebere pokrytí Pro této licence z předchozí komunity. Tato komunita se vrátí k plánu, který je pro ni jinak dostupný, pokud ji nepokrývá jiná platná licence. Vaše doživotní licence zůstává na vašem nákupním účtu a může být přiřazena jiné komunitě, kterou vlastníte.\n\nPřed převodem vlastnictví komunity musíte komunitu z vaší doživotní licence v CAD Billing odpojit. CAD blokuje převod, dokud je licence přiřazena. Převod komunity nikdy nepřenáší doživotní licenci. Pokud dojde k výjimečné změně vlastnictví mimo tento proces, komunita již není způsobilá pro pokrytí touto licencí.\n\nNeexistuje žádné omezení hry. Můžete používat způsobilou komunitu s podporovanými hrami a integracemi. Dostupnost a kompatibilita integrací závisí na příslušných platformách třetích stran a jejich technických požadavcích.",
+            "title": "3. Jedna komunita, kterou právě vlastníte"
+          },
+          "section4": {
+            "body": "„Doživotní“ znamená provozní životnost hostované služby Sonoran CAD společnosti Sonoran. Krytý nárok trvá po dobu, kdy tuto službu provozujeme, s výhradou této smlouvy. Jde o licenci na hostovanou službu a nepřevádí vlastnictví softwaru, infrastruktury ani zdrojového kódu.\n\nÚdržba, dočasná odstávka a běžné aktualizace služby nárok neukončují. Doživotní neznamená záruku trvalého uchování každé komunity nebo jejích dat; samostatně zveřejněné zásady uchovávání a nečinnosti nadále platí. Odstranění neaktivní komunity samo o sobě nezruší Doživotní nárok nákupního účtu.",
+            "title": "4. Význam doživotního"
+          },
+          "section5": {
+            "body": "Doživotní nákupy jsou konečné, bez dobrovolných vratek při změně názoru, včetně ukončení komunity, opuštění komunity, menšího používání nebo změny vašich okolností. Dobrovolná 48hodinová záruka vrácení peněz se na Doživotní nákupy nevztahuje.\n\nVrácení peněz, práva na zrušení a další prostředky nápravy požadované platným právem zůstávají k dispozici. To zahrnuje veškerá příslušná práva týkající se neposkytnutí služby, chybného popisu, vadné služby nebo zákonného odstoupení. Zahájení přístupu nebo přijetí těchto podmínek se nevzdává práv, kterých se nelze právně vzdát. Veškeré informace o žádosti o okamžité zahájení nebo o odstoupení specifické pro danou jurisdikci musí být v případě požadavku uvedeny samostatně.",
+            "title": "5. Vrácení peněz a práva spotřebitelů"
+          },
+          "section6": {
+            "body": "Musíte dodržovat tuto smlouvu, platné Podmínky služby a přiměřené zásady používání služby v souladu s těmito podmínkami Lifetime. Úmyslné zneužití zahrnuje další prodej nebo pronájem krytí, sdílení nákupního účtu, nepravdivé tvrzení o vlastnictví komunity, obcházení omezení na jednu komunitu nebo na původního kupujícího a přeřazování krytí za účelem obejití limitů používání Pro. Běžné přeřazení mezi komunitami, které vlastníte, je povoleno.\n\nMůžeme pozastavit přístup během přiměřeného vyšetřování podvodu nebo podstatného zneužití a můžeme zrušit licenci při podstatném porušení. Pokud je to přiměřené, vysvětlíme problém a dáme vám oznámení i příležitost reagovat nebo problém napravit před trvalým zrušením. Okamžité pozastavení může být nezbytné k řešení podvodu, nezákonné činnosti, bezpečnostní hrozby nebo podstatného rizika újmy. Nezaplacené nebo sporné prostředky za nákup mohou vést k pozastavení do vyřešení platby. Úplná refundace nebo storno platby, které není vyřešeno, končí licenci a její komunitní pokrytí, s výhradou platného práva. Částečná refundace sama o sobě licenci automaticky neruší. Pokud je platební spor vyřešen ve váš prospěch a platba je zachována, licence pozastavená pouze kvůli tomuto sporu bude obnovena; může být nutné ji znovu přiřadit oprávněné komunitě.\n\nNezrušíme oprávnění pouze proto, že jste jej drželi dlouhou dobu, provedli legitimní přeřazení, nebo protože cena pokrytého Pro vzroste. Jakákoli refundace nebo jiný prostředek nápravy při ukončení zůstává s výhradou platného práva.",
+            "title": "6. Zneužití, pozastavení a ukončení"
+          },
+          "section7": {
+            "body": "Pokud trvale ukončíme hostovanou službu CAD, poskytneme přiměřené předchozí upozornění, je-li to možné, a přiměřenou možnost získat komunitní data prostřednictvím dostupných metod exportu. Pokud bude v podstatě stejná hostovaná služba CAD pokračovat pod novým názvem nebo verzí, vaše oprávnění pokračuje se stejnými krytými výhodami Pro.\n\nZměny služby, její pozastavení nebo ukončení neomezují povinné prostředky nápravy pro spotřebitele, včetně případné náhrady vyžadované zákonem. O podstatných změnách budeme informovat, jak je vyžadováno, a nebudeme používat obecnou změnu zásad k uložení opakovaných poplatků za toto kryté oprávnění.",
+            "title": "7. Změny služby nebo ukončení"
+          },
+          "section8": {
+            "body": "Před zaplacením musíte výslovně přijmout tuto doživotní smlouvu a příslušné Podmínky služby. Přijatou verzi smlouvy a kopii uchováváme u záznamu o nákupu. Vaše potvrzení nákupu identifikuje přijatou verzi a poskytne e-mailovou nebo stažitelnou kopii, kterou si můžete ponechat.\n\nPro dotazy ohledně nákupu, postoupení, obnovení účtu nebo práv spotřebitele kontaktujte Sonoran Support (https://support.sonoransoftware.com/).",
+            "title": "8. Přijetí a kontakt"
+          }
+        }
+      },
+      "agreementTitle": "Smlouva CAD Pro na celý život",
+      "agreementVersion": "Verze 2026-10-14",
+      "assign": "Přiřadit komunitu",
+      "assignmentHelp": "Uplatněte tuto licenci na komunitu, kterou vlastníte.",
+      "assignmentSaved": "Doživotní licence byla použita.",
+      "assignmentTitle": "Není nastaveno ID komunity",
+      "checkoutUnavailable": "Doživotní nákup zatím není k dispozici.",
+      "choosePlan": "Vyberte Pro na celý život",
+      "confirmAssignBody": "Použít tuto licenci na {community}? Pokud je přiřazena jinde, předchozí komunita ztratí pokrytí Pro této licence.",
+      "confirmAssignTitle": "Použít CAD Pro na celý život?",
+      "confirmRemoveBody": "Tato komunita ztratí Pro pokrytí této licence. Vaše doživotní licence zůstane na vašem účtu a bude připravena k přiřazení jiné komunitě, kterou vlastníte.",
+      "confirmRemoveTitle": "Odebrat CAD Pro na celý život?",
+      "cycleLabel": "Na celý život",
+      "description": "Zaplaťte jednou. Získejte CAD Pro na dobu životnosti Sonoran CAD.",
+      "downloadAgreement": "Stáhnout kupní smlouvu",
+      "eligibility": {
+        "activePlan": "Jiný aktivní plán je již použit.",
+        "checking": "Ověřování způsobilosti.",
+        "notOwner": "Tuto komunitu nevlastníte.",
+        "unavailable": "Tato komunita nemá nárok."
+      },
+      "errors": {
+        "activePlan": "Tato komunita už má aktivní plán. Před použitím doživotního jej nejprve odeberte.",
+        "failed": "Nepodařilo se aktualizovat doživotní fakturaci. Obnovte stránku a zkuste to znovu.",
+        "inactive": "Tato doživotní licence není aktivní.",
+        "notOwner": "Pro uplatnění doživotní licence musíte být vlastníkem této komunity.",
+        "notPurchaser": "Pouze původní kupující může spravovat tuto doživotní licenci.",
+        "paymentProcessing": "Vaše platba se zpracovává. Brzy obnovte fakturaci; nekupujte znovu.",
+        "policyChanged": "Smlouva se změnila. Před pokračováním si prohlédněte aktuální podmínky a přijměte je.",
+        "unavailable": "Doživotní nákup je momentálně nedostupný."
+      },
+      "gameSummary": "Žádný herní zámek. Použijte jakoukoli běžně podporovanou integraci Sonoran CAD.",
+      "generalTermsLink": "Všeobecné obchodní podmínky",
+      "heading": "CAD Pro. Jednorázová platba.",
+      "loadFailed": "Nepodařilo se načíst doživotní fakturaci. Obnovte stránku a zkuste to znovu.",
+      "loading": "Načítání doživotních licencí",
+      "migrationNotice": "Nákup Doživotní verze nezruší stávající předplatná. Zrušte v Správa fakturace jakýkoli plán, který už nepotřebujete.",
+      "noEligibleCommunities": "Žádné způsobilé komunity. Vyberte komunitu, kterou vlastníte, bez jiného aktivního plánu.",
+      "noOwnedCommunities": "Pro uplatnění Pro Lifetime musíte vlastnit komunitu.",
+      "oneTime": "Jednorázová platba. Žádné opakované poplatky.",
+      "openBilling": "Otevřít fakturaci CAD",
+      "ownershipSummary": "Nepřenosné. Pro jednu komunitu CAD, kterou vlastníte.",
+      "ownerTransferBlocked": "Před převodem této komunity odeberte v CAD Billing CAD Pro Lifetime.",
+      "planName": "CAD Pro na celý život",
+      "policyVersion": "Verze smlouvy: {version}",
+      "price": "499 USD",
+      "purchase": "Pokračovat na zabezpečenou pokladnu",
+      "purchasedAt": "Zakoupeno",
+      "purchasedByYourAccount": "Nepřenosné. Zakoupeno vaším účtem.",
+      "purchaseUnavailable": "Nákup není dostupný",
+      "reassign": "Změnit komunitu",
+      "reassignmentSummary": "Přesuňte svou licenci do jakékoli jiné komunity, kterou vlastníte, kdykoli.",
+      "refundSummary": "Nevratné, s výjimkou případů vyžadovaných zákonem.",
+      "removalSaved": "Doživotní licence odpojena.",
+      "removeAssignment": "Vymazat ID komunity",
+      "retry": "Obnovit fakturaci",
+      "reviewTitle": "Pro celý život",
+      "selectCommunity": "Komunita, kterou vlastníte",
+      "selectCommunityHelp": "Vyberte komunitu, která získá Pro přístup.",
+      "serviceSummary": "Po dobu životnosti Sonoran CAD. Platí limity používání Pro.",
+      "standardPro": "Všechny funkce CAD Pro. Platí limity používání Pro.",
+      "status": {
+        "active": "AKTIVNÍ",
+        "revoked": "Odvoláno",
+        "suspended": "Pozastaveno"
+      },
+      "summaryTitle": "Podrobnosti o doživotní licenci",
+      "termsLink": "Podmínky na dobu životnosti",
+      "unassignBeforeClearing": "Před vymazáním odeberte CAD Pro Lifetime z této komunity v CAD Billing.",
+      "unassigned": "Žádná komunita není přiřazena",
+      "viewOption": "Zobrazit možnost doživotního"
+    },
     "pricing": {
-      "description": "Placená předplatná Sonoran CAD vám umožňují povolit nové integrační funkce, povolit přizpůsobení, odstranit omezení a další!",
+      "description": "Porovnejte plány pro vaši komunitu.",
       "howToPurchase": "Jak zakoupit",
       "title": "Ceník upgradu předplatného"
     },
@@ -2969,6 +3086,13 @@
       "serversEmail": "E-mail účtu Sonoran Servers",
       "setCommunityId": "Nastavit ID komunity",
       "signInToOpenBillingPortal": "Přihlaste se pro otevření fakturačního portálu."
+    },
+    "trust": {
+      "label": "O Sonoran CAD",
+      "liveChat": "Živý chat, 7 dní v týdnu",
+      "longevityDetail": "Služba roleplay komunitám už od té doby.",
+      "longevityTitle": "Založeno v roce 2019",
+      "supportTeam": "Tým podpory na plný úvazek"
     }
   },
   "police": {
