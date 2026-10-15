@@ -2794,19 +2794,24 @@
       "cadPlans": "CAD-planer",
       "cancellingStatus": "Annullerer: {date}",
       "changeCommunity": "Skift fællesskab",
+      "choosePlan": "Vælg en plan",
       "choosePlanAria": "Vælg {plan}",
       "clearCommunity": "Ryd Community ID",
       "communityAlreadySubscribedTooltip": "Dette fællesskab har allerede et aktivt abonnement anvendt.",
       "communityIdValue": "ID {id}",
-      "communityMissingBody": "Dette abonnement er købt, men er endnu ikke blevet anvendt på et CAD-fællesskab.",
+      "communityMissingBody": "Anvend denne plan på et CAD-fællesskab.",
       "communityMissingTitle": "Intet fællesskabs-ID angivet",
+      "comparePlans": "Sammenlign planer",
       "contactSupport": "Kontakt support",
-      "description": "Administrer abonnementer, tildel dem til CAD-fællesskaber, og opdater fakturering via Stripe.",
+      "description": "Administrer dine planer, fællesskaber og betalinger.",
       "expertInstallInfo": "Ekspertinstallationsinfo",
       "eyebrow": "Betalingscenter",
+      "heading": "Fakturering",
       "inactiveSubscriptions": "Inaktive / annullerede",
+      "manageBilling": "Administrer fakturering",
       "manageSubscription": "Administrer abonnement",
-      "noActiveSubscriptionsBody": "Opret et nyt abonnement for at opgradere et CAD-fællesskab.",
+      "noActivePlans": "Ingen aktive abonnementer",
+      "noActiveSubscriptionsBody": "Vælg en plan for at opgradere dit CAD-fællesskab.",
       "noCommunitiesAvailable": "Der er ingen fællesskaber tilgængelige på denne konto.",
       "noInactiveSubscriptions": "Ingen inaktive abonnementer",
       "noInactiveSubscriptionsBody": "Annullerede og inaktive abonnementer vises her.",
@@ -2814,9 +2819,9 @@
       "otherProducts": "Andre produkter",
       "planDescriptions": {
         "expertInstallation": "Engangsopsætninghjælp fra Sonoran-teamet.",
-        "free": "Kerneadgang til CAD med ER:LC, FiveM og API-forbindelse.",
+        "free": "Kerne-CAD-værktøjer med spilintegrationer og API-adgang.",
         "plus": "Tilføjer databasesynkronisering, to servere, højere grænser og flere skabeloner.",
-        "pro": "Låser op for ubegrænset skala, brugerdefinerede kort, databasesammenfletning og venlig mapping.",
+        "pro": "Ubegrænsede konti, brugerdefinerede kort og avancerede databaseredskaber.",
         "sonoranOne": "Bundlerne CAD Pro, CMS Pro, Radio Pro, Sonoran Studio og RocketNode-hosting.",
         "standard": "Tilføjer understøttelse af eget domæne, højere grænser og udvidede fællesskabsværktøjer.",
         "starter": "Tilføjer brugerdefineret community-ID, flere brugere og betalte CAD-essentials.",
@@ -2883,7 +2888,7 @@
         "databaseSync": "Database-synkronisering",
         "infernoPagerReborn": "Inferno-personsøger Genfødt",
         "infernoStationAlert": "Inferno Stationsalarm",
-        "integrationAccess": "ER:LC + FiveM-integration & API",
+        "integrationAccess": "Spilintegrationer & API",
         "radioPro": "Sonoran Radio Pro",
         "rocketNodeFivemHosting": "RocketNode FiveM-hosting",
         "servers": "Servere",
@@ -2921,8 +2926,8 @@
       "sonoranOnePlaceholder": "Ét abonnement til CAD, CMS, Radio og inkluderet RocketNode FiveM-hosting.",
       "subscribed": "Abonneret",
       "subscribeToBundle": "Abonner",
-      "subscriptionsBody": "Gennemgå aktive abonnementer, tildel CAD-fællesskaber, og administrer inaktive abonnementer.",
-      "subscriptionsTitle": "Dine abonnementer",
+      "subscriptionsBody": "Tildel et fællesskab eller administrer en eksisterende plan.",
+      "subscriptionsTitle": "Dine planer",
       "supportBody": "Vores dedikerede live chat-support er tilgængelig 7 dage om ugen i åbningstiden. Har du spørgsmål? Vores team står klar.",
       "supportTitle": "Tal med et menneske",
       "unknownPlan": "Ukendt plan"
@@ -2954,8 +2959,120 @@
       "starter": "Starter",
       "subscriptionsPerPage": "Abonnementer pr. side"
     },
+    "lifetime": {
+      "acceptance": "Jeg accepterer CAD Pro Livstidsaftalen og Servicevilkårene. Køb kan ikke refunderes, undtagen hvor loven kræver det.",
+      "agreementDownloadFailed": "Kunne ikke downloade din købsaftale. Prøv igen eller kontakt support.",
+      "agreementIntro": "Denne aftale beskriver et Sonoran CAD Pro Lifetime-køb fra Sonoran Software Systems LLC (\"Sonoran,\" \"vi\" eller \"os\") foretaget af den oprindelige køber (\"dig\"). Den supplerer vores Servicevilkår (https://docs.sonoransoftware.com/policy/policy/terms-of-service). Dens specifikke Lifetime-vilkår styrer enhver modstridende generel vilkår vedrørende det dækkede køb, fakturering, varighed, community-tildeling, refusioner eller ophør. Alle andre gældende vilkår fortsætter med at gælde, med forbehold for obligatoriske forbrugerrettigheder.",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "Den enkeltstående betaling, der vises ved checkout, køber en CAD Pro Lifetime-rettighed på din Sonoran-konto. Den har ingen tilbagevendende abonnementsbetaling. Skatter samt eventuelle valgfrie, separat købte produkter eller tjenester angives ved checkout.\n\nLifetime giver de samme annoncerede CAD Pro-funktioner, inkluderede fordele og tilføjelser, support og forbrugsgrænser som tilbagevendende CAD Pro. Pro-funktioner og forbrugsgrænser kan ændre sig over tid på samme grundlag for Lifetime og tilbagevendende Pro; Lifetime har ingen separate forbrugskvoter. Væsentlige ændringer er fortsat underlagt gældende varslingskrav og forbrugerrettigheder. Omnavngivning af Pro, udgivelse af en ny CAD-version eller migrering af den samme hostede CAD-tjeneste fjerner ikke i sig selv din dækkede Pro-rettighed.\n\nSeparat prissatte produkter, tilføjelser uden for den almindelige Pro og fremtidige niveauer er kun inkluderet, hvis de udtrykkeligt er angivet som en del af dit køb. Fordele og tilføjelser, der er inkluderet i den almindelige Pro, forbliver inkluderet. Gem din ordrebekræftelse, som dokumenterer det tilbud, du accepterede.",
+            "title": "1. Én betaling for CAD Pro"
+          },
+          "section2": {
+            "body": "Rettigheden forbliver hos den oprindelige Sonoran-konto, der foretog købet. Du må ikke sælge, give væk, overdrage, udleje, underlicensere eller på anden måde overføre rettigheden eller sælge eller dele kontoen for at gøre dens Lifetime-fordele tilgængelige for en anden køber. Ændring af din e-mailadresse eller gennemførelse af legitim kontogendannelse ændrer ikke den oprindelige køber.\n\nFællesskabsmedlemmer kan bruge de Pro-funktioner, der stilles til rådighed for det berettigede fællesskab gennem deres egne konti i den normale brug af CAD.",
+            "title": "2. Personligt for den oprindelige køber"
+          },
+          "section3": {
+            "body": "Du kan anvende rettigheden på ét Sonoran CAD-fællesskab ad gangen, og du skal i øjeblikket være dette fællesskabs ejer i CAD. Du kan frit tildele den igen til et andet fællesskab, du i øjeblikket ejer, uden nogen køl ned for gen tildeling.\n\nGen tildeling eller fjernelse fjerner straks denne licens' Pro-dækning fra det tidligere fællesskab. Det fællesskab vender tilbage til den plan, der ellers er tilgængelig for det, medmindre en anden gyldig licens giver dækning. Din Lifetime-licens forbliver på din købs konto og kan tildeles et andet fællesskab, du ejer.\n\nDu skal fjerne fællesskabet fra din Lifetime-licens i CAD Billing, før du overfører fællesskabets ejerskab. CAD blokerer overførslen, mens licensen er anvendt. Overførsel af et fællesskab overfører aldrig Lifetime-licensen. Hvis der sker en ekstraordinær ejerskabsændring uden for denne proces, er fællesskabet ikke længere berettiget til dækning under denne licens.\n\nDer er ingen spil begrænsning. Du kan bruge det berettigede fællesskab med understøttede spil og integrationer. Tilgængelighed og kompatibilitet for integrationer afhænger af de relevante tredjepartsplatforme og deres tekniske krav.",
+            "title": "3. Et fællesskab du aktuelt ejer"
+          },
+          "section4": {
+            "body": "\"Livstid\" betyder den operative levetid for Sonorans hostede Sonoran CAD-tjeneste. Den omfattede ret fortsætter, mens vi driver denne tjeneste, med forbehold for denne aftale. Det er en licens til en hostet tjeneste og medfører ikke ejerskab til software, infrastruktur eller kildekode.\n\nVedligeholdelse, midlertidig nedetid og almindelige tjenesteopdateringer afslutter ikke retten. Livstid lover ikke permanent opbevaring af hver enkelt community eller dens data; særskilt oplyste opbevarings- og inaktivitetsregler gælder stadig. Fjernelse af en inaktiv community annullerer i sig selv ikke købsaccountens Livstid-ret.",
+            "title": "4. Betydning af livstid"
+          },
+          "section5": {
+            "body": "Livstidskøb er endelige, uden frivillige refunderinger ved fortrydelse, herunder fællesskabslukning, at forlade et fællesskab, reduceret brug eller en ændring i dine forhold. Den frivillige 48-timers pengene-tilbage-garanti gælder ikke for livstidskøb.\n\nRefunderinger, annulleringsrettigheder og andre retsmidler, som kræves af gældende lov, forbliver tilgængelige. Dette omfatter alle gældende rettigheder vedrørende manglende levering, forkert beskrivelse, defekt tjeneste eller lovbestemt fortrydelsesret. Påbegyndelse af adgang eller accept af disse vilkår medfører ikke afkald på rettigheder, som lovligt ikke kan fraskrives. Enhver jurisdiktionsspecifik anmodning om øjeblikkelig start eller oplysninger om fortrydelse skal fremlægges separat, hvor det kræves.",
+            "title": "5. Refusioner og forbrugerrettigheder"
+          },
+          "section6": {
+            "body": "Du skal overholde denne aftale, de gældende vilkår for tjenesten og rimelige politikker for brug af tjenesten, der er i overensstemmelse med disse Lifetime-vilkår. Forsætligt misbrug omfatter videresalg eller udlejning af dækning, deling af købskontoen, falsk angivelse af fællesskabets ejerskab, omgåelse af begrænsningerne for ét fællesskab eller den oprindelige køber og omplacering af dækning for at omgå Pro-brugsgrænser. Normal omplacering mellem fællesskaber, du ejer, er tilladt.\n\nVi kan suspendere adgangen, mens vi med rimelighed undersøger svig eller væsentligt misbrug, og kan tilbagekalde licensen ved et væsentligt brud. Hvor det er rimeligt, vil vi forklare problemet og give dig varsel samt en mulighed for at svare eller afhjælpe det, før der sker en permanent tilbagekaldelse. Øjeblikkelig suspension kan være nødvendig for at håndtere svig, ulovlig aktivitet, en sikkerhedstrussel eller en væsentlig risiko for skade. Ubetalte eller omstridte købsbeløb kan medføre suspension, indtil betaling er afklaret. En fuld refundering eller en tilbageførsel af betaling, som ikke bliver afklaret, ophæver licensen og dens fællesskabsdækning, med forbehold for gældende lov. En delvis refundering alene annullerer ikke automatisk licensen. Hvis en betalingstvist afgøres til din fordel, og betalingen beholdes, genoprettes en licens, der kun var suspenderet på grund af den tvist; du kan blive nødt til at omplacere den til et berettiget fællesskab.\n\nVi tilbagekalder ikke retten udelukkende fordi du har haft den i lang tid, har brugt legitim omplacering, eller fordi prisen for den dækkede Pro stiger. Enhver refundering eller anden afhjælpning ved ophør er fortsat underlagt gældende lov.",
+            "title": "6. Misbrug, suspension og ophør"
+          },
+          "section7": {
+            "body": "Hvis vi permanent ophører med den hostede CAD-tjeneste, giver vi rimeligt varsel på forhånd, hvor det er praktisk muligt, og en rimelig mulighed for at hente community-data via tilgængelige eksportmetoder. Hvis stort set den samme hostede CAD-tjeneste fortsætter under et nyt navn eller en ny version, fortsætter din ret med tilsvarende dækkede Pro-fordele.\n\nÆndringer i tjenesten, suspension eller lukning fjerner ikke obligatoriske forbrugerafhjælpninger, herunder enhver refusion, der kræves ved lov. Vi giver varsler om væsentlige ændringer som krævet og vil ikke bruge en generel politikændring til at pålægge tilbagevendende gebyrer for denne dækkede ret.",
+            "title": "7. Ændringer eller lukning af tjenesten"
+          },
+          "section8": {
+            "body": "Før betaling skal du aktivt acceptere denne livstidsaftale og de gældende Servicevilkår. Vi gemmer den accepterede aftaleversion og kopi sammen med købsregistreringen. Din købsbekræftelse vil angive den accepterede version og give en e-mail eller en downloadbar kopi, du kan gemme.\n\nVed køb, overdragelse, kontogendannelse eller anmodninger om forbrugerrettigheder, kontakt Sonoran Support (https://support.sonoransoftware.com/).",
+            "title": "8. Accept og kontakt"
+          }
+        }
+      },
+      "agreementTitle": "CAD Pro Livstidsaftale",
+      "agreementVersion": "Version 2026-10-14",
+      "assign": "Tilknyt community",
+      "assignmentHelp": "Anvend denne licens på et fællesskab, du ejer.",
+      "assignmentSaved": "Livstidslicens anvendt.",
+      "assignmentTitle": "Intet fællesskabs-ID angivet",
+      "checkoutUnavailable": "Livstidsbetaling er endnu ikke tilgængelig.",
+      "choosePlan": "Vælg Pro Livstid",
+      "confirmAssignBody": "Anvend denne licens på {community}? Hvis den er tildelt et andet sted, vil den tidligere community miste denne licens' Pro-dækning.",
+      "confirmAssignTitle": "Anvend CAD Pro Livstid?",
+      "confirmRemoveBody": "Dette community mister denne licens' Pro-dækning. Din Lifetime-licens forbliver på din konto, klar til at blive tildelt et andet community, du ejer.",
+      "confirmRemoveTitle": "Fjern CAD Pro Livstid?",
+      "cycleLabel": "Livstid",
+      "description": "Betal én gang. Få CAD Pro for resten af Sonoran CADs levetid.",
+      "downloadAgreement": "Download købsaftale",
+      "eligibility": {
+        "activePlan": "En anden aktiv plan er allerede anvendt.",
+        "checking": "Tjekker berettigelse.",
+        "notOwner": "Du ejer ikke dette fællesskab.",
+        "unavailable": "Dette fællesskab er ikke berettiget."
+      },
+      "errors": {
+        "activePlan": "Dette fællesskab har allerede en aktiv plan. Frigør den, før du anvender Livstidsplan.",
+        "failed": "Kunne ikke opdatere livstidsbetaling. Opdater og prøv igen.",
+        "inactive": "Denne livstidslicens er ikke aktiv.",
+        "notOwner": "Du skal eje dette fællesskab for at ansøge om en livstidslicens.",
+        "notPurchaser": "Kun den oprindelige køber kan administrere denne Lifetime-licens.",
+        "paymentProcessing": "Din betaling behandles. Opdater fakturering om lidt; køb ikke igen.",
+        "policyChanged": "Aftalen er ændret. Gennemgå de aktuelle vilkår og accepter dem, før du fortsætter.",
+        "unavailable": "Livstidsbetaling er i øjeblikket ikke tilgængelig."
+      },
+      "gameSummary": "Ingen spil-lås. Brug enhver normalt understøttet Sonoran CAD-integration.",
+      "generalTermsLink": "Generelle servicevilkår",
+      "heading": "CAD Pro. Én betaling.",
+      "loadFailed": "Kunne ikke indlæse livstidsbetaling. Opdater for at prøve igen.",
+      "loading": "Indlæser livstidslicenser",
+      "migrationNotice": "Køb af Lifetime annullerer ikke eksisterende abonnementer. Annuller eventuelle planer, du ikke længere har brug for, i Administrer fakturering.",
+      "noEligibleCommunities": "Ingen kvalificerede fællesskaber. Vælg et fællesskab, du ejer, uden en anden aktiv plan.",
+      "noOwnedCommunities": "Du skal eje et fællesskab for at ansøge om Pro Lifetime.",
+      "oneTime": "Engangsbetaling. Ingen tilbagevendende gebyrer.",
+      "openBilling": "Åbn CAD-fakturering",
+      "ownershipSummary": "Ikke-overdragelig. Til ét CAD-fællesskab, som du ejer.",
+      "ownerTransferBlocked": "Fjern tildelingen af CAD Pro Lifetime i CAD Billing, før dette fællesskab overføres.",
+      "planName": "CAD Pro Livstid",
+      "policyVersion": "Aftaleversion: {version}",
+      "price": "499 USD",
+      "purchase": "Fortsæt til sikker betaling",
+      "purchasedAt": "Købt",
+      "purchasedByYourAccount": "Kan ikke overføres. Købt via din konto.",
+      "purchaseUnavailable": "Køb ikke tilgængeligt",
+      "reassign": "Skift fællesskab",
+      "reassignmentSummary": "Flyt din licens til enhver anden community, du ejer, når som helst.",
+      "refundSummary": "Ikke-refunderbar, medmindre det kræves ved lov.",
+      "removalSaved": "Livstidslicens fjernet.",
+      "removeAssignment": "Ryd Community ID",
+      "retry": "Opdater fakturering",
+      "reviewTitle": "Pro Livstid",
+      "selectCommunity": "Fællesskab du ejer",
+      "selectCommunityHelp": "Vælg det fællesskab, der skal modtage Pro-adgang.",
+      "serviceSummary": "For resten af Sonoran CADs levetid. Pro-brugsgrænser gælder.",
+      "standardPro": "Alle CAD Pro-funktioner. Pro-brugsgrænser gælder.",
+      "status": {
+        "active": "Aktiv",
+        "revoked": "Tilbagekaldt",
+        "suspended": "Suspenderet"
+      },
+      "summaryTitle": "Oplysninger om livstidslicens",
+      "termsLink": "Livstidsvilkår",
+      "unassignBeforeClearing": "Fjern tildelingen af CAD Pro Lifetime fra dette fællesskab i CAD Billing, før dets abonnement ryddes.",
+      "unassigned": "Ingen community tildelt",
+      "viewOption": "Vis livstidsmulighed"
+    },
     "pricing": {
-      "description": "Sonoran CAD's betalte abonnementer giver dig mulighed for at aktivere nye integrationsfunktioner, aktivere tilpasning, fjerne begrænsninger og meget mere!",
+      "description": "Sammenlign planer for dit fællesskab.",
       "howToPurchase": "Sådan køber du",
       "title": "Opgrader abonnementspriser"
     },
@@ -2968,6 +3085,13 @@
       "serversEmail": "Sonoran Servers-konto e-mail",
       "setCommunityId": "Angiv fællesskabs-ID",
       "signInToOpenBillingPortal": "Log venligst ind for at åbne faktureringsportalen."
+    },
+    "trust": {
+      "label": "Om Sonoran CAD",
+      "liveChat": "Livechat, 7 dage om ugen",
+      "longevityDetail": "Serverer rollespilsfællesskaber lige siden.",
+      "longevityTitle": "Etableret i 2019",
+      "supportTeam": "Fuldtidssupportteam"
     }
   },
   "police": {

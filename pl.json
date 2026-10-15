@@ -2795,29 +2795,34 @@
       "cadPlans": "Plany CAD",
       "cancellingStatus": "Anulowanie: {date}",
       "changeCommunity": "Zmień Społeczność",
+      "choosePlan": "Wybierz plan",
       "choosePlanAria": "Wybierz {plan}",
       "clearCommunity": "Wyczyść ID społeczności",
       "communityAlreadySubscribedTooltip": "Ta społeczność ma już aktywną subskrypcję.",
       "communityIdValue": "ID {id}",
-      "communityMissingBody": "Ta subskrypcja została zakupiona, ale nie została jeszcze przypisana do społeczności CAD.",
+      "communityMissingBody": "Zastosuj ten plan do społeczności CAD.",
       "communityMissingTitle": "Nie ustawiono ID społeczności",
+      "comparePlans": "Porównaj plany",
       "contactSupport": "Skontaktuj się z pomocą techniczną",
-      "description": "Zarządzaj subskrypcjami, przypisuj je do społeczności CAD i aktualizuj rozliczenia przez Stripe.",
+      "description": "Zarządzaj swoimi planami, społecznościami i płatnościami.",
       "expertInstallInfo": "Informacje o profesjonalnym montażu",
       "eyebrow": "Centrum płatności",
+      "heading": "Subskrypcje",
       "inactiveSubscriptions": "Nieaktywne / Anulowane",
+      "manageBilling": "Zarządzaj subskrypcjami",
       "manageSubscription": "Zarządzaj subskrypcją",
-      "noActiveSubscriptionsBody": "Utwórz nową subskrypcję, aby ulepszyć społeczność CAD.",
+      "noActivePlans": "Brak aktywnych planów",
+      "noActiveSubscriptionsBody": "Wybierz plan, aby ulepszyć swoją społeczność CAD.",
       "noCommunitiesAvailable": "Na tym koncie nie ma dostępnych społeczności.",
-      "noInactiveSubscriptions": "Brak nieaktywnych subskrypcji",
-      "noInactiveSubscriptionsBody": "Anulowane i nieaktywne subskrypcje będą się tutaj pojawiać.",
+      "noInactiveSubscriptions": "Brak nieaktywnych planów",
+      "noInactiveSubscriptionsBody": "Anulowane i nieaktywne plany pojawiają się tutaj.",
       "openOnePortal": "Otwórz portal ONE",
       "otherProducts": "Inne produkty",
       "planDescriptions": {
         "expertInstallation": "Jednorazowa pomoc w konfiguracji od zespołu Sonoran.",
-        "free": "Podstawowy dostęp do CAD z ER:LC, FiveM i łącznością API.",
+        "free": "Podstawowe narzędzia CAD z integracjami gier i dostępem do API.",
         "plus": "Dodaje synchronizację bazy danych, dwa serwery, wyższe limity i więcej szablonów.",
-        "pro": "Odblokowuje nielimitowaną skalę, niestandardowe mapy, scalanie baz danych i przyjazne mapowanie.",
+        "pro": "Nieograniczone konta, niestandardowe mapy i zaawansowane narzędzia bazy danych.",
         "sonoranOne": "Pakiety CAD Pro, CMS Pro, Radio Pro, Sonoran Studio i hosting RocketNode.",
         "standard": "Dodaje obsługę własnej domeny, wyższe limity i rozszerzone narzędzia społeczności.",
         "starter": "Dodaje niestandardowy identyfikator społeczności, więcej użytkowników i płatne podstawowe funkcje CAD.",
@@ -2884,7 +2889,7 @@
         "databaseSync": "Synchronizacja z Bazą Danych",
         "infernoPagerReborn": "Inferno Pager Reborn",
         "infernoStationAlert": "Alert stacji Inferno",
-        "integrationAccess": "Integracja ER:LC + FiveM & API",
+        "integrationAccess": "Integracje gry i API",
         "radioPro": "Sonoran Radio Pro",
         "rocketNodeFivemHosting": "Hosting FiveM RocketNode",
         "servers": "Serwery",
@@ -2922,8 +2927,8 @@
       "sonoranOnePlaceholder": "Jedna subskrypcja dla CAD, CMS, Radio i wliczony hosting RocketNode FiveM.",
       "subscribed": "Subskrybowano",
       "subscribeToBundle": "Subskrybuj",
-      "subscriptionsBody": "Przejrzyj aktywne subskrypcje, przypisz społeczności CAD i zarządzaj nieaktywnymi subskrypcjami.",
-      "subscriptionsTitle": "Twoje Subskrypcje",
+      "subscriptionsBody": "Przypisz społeczność lub zarządzaj istniejącym planem.",
+      "subscriptionsTitle": "Twoje plany",
       "supportBody": "Nasz dedykowany czat na żywo jest dostępny 7 dni w tygodniu w godzinach pracy. Masz pytania? Nasz zespół jest do Twojej dyspozycji.",
       "supportTitle": "Porozmawiaj z człowiekiem",
       "unknownPlan": "Nieznany plan"
@@ -2955,8 +2960,120 @@
       "starter": "Pakiet początkowy",
       "subscriptionsPerPage": "Subskrypcje na stronę"
     },
+    "lifetime": {
+      "acceptance": "Akceptuję Umowę i Warunki świadczenia usług CAD Pro Lifetime. Zakupy nie podlegają zwrotowi, z wyjątkiem przypadków wymaganych przez prawo.",
+      "agreementDownloadFailed": "Nie można pobrać umowy zakupu. Spróbuj ponownie lub skontaktuj się z pomocą techniczną.",
+      "agreementIntro": "Niniejsza umowa opisuje zakup Sonoran CAD Pro Lifetime od Sonoran Software Systems LLC (\"Sonoran\", \"my\" lub \"nas\") dokonany przez pierwotnego nabywcę (\"ty\"). Uzupełnia ona nasze Warunki świadczenia usług (https://docs.sonoransoftware.com/policy/policy/terms-of-service). Jej szczegółowe warunki Lifetime regulują wszelkie sprzeczne ogólne warunki dotyczące objętego zakupu, rozliczeń, czasu trwania, przypisania do społeczności, zwrotów lub rozwiązania. Wszystkie pozostałe obowiązujące warunki nadal mają zastosowanie, z zastrzeżeniem obowiązkowych praw konsumenckich.",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "Pojedyncza płatność pokazana przy kasie kupuje dożywotnie uprawnienie CAD Pro na Twoim koncie Sonoran. Nie wiąże się z nią cykliczna opłata subskrypcyjna. Podatki oraz wszelkie opcjonalne, zakupione oddzielnie produkty lub usługi są wskazane przy kasie.\n\nLifetime zapewnia te same reklamowane funkcje CAD Pro, zawarte świadczenia i dodatki, wsparcie oraz limity użycia co cykliczny CAD Pro. Funkcje Pro i limity użycia mogą zmieniać się z czasem na tych samych zasadach dla Lifetime i cyklicznego Pro; Lifetime nie ma oddzielnych limitów wykorzystania. Istotne zmiany pozostają objęte obowiązującymi wymogami dotyczącymi powiadomień i środkami ochrony konsumentów. Zmiana nazwy Pro, wydanie nowej wersji CAD lub migracja tej samej hostowanej usługi CAD nie spowodują same z siebie utraty objętego ochroną uprawnienia Pro.\n\nProdukty wyceniane oddzielnie, dodatki poza standardowym Pro oraz przyszłe poziomy są uwzględnione tylko wtedy, gdy zostały wyraźnie wskazane jako część Twojego zakupu. Świadczenia i dodatki zawarte w standardowym Pro pozostają zawarte. Zachowaj potwierdzenie zakupu, które zawiera ofertę, którą zaakceptowałeś.",
+            "title": "1. Jedna płatność za CAD Pro"
+          },
+          "section2": {
+            "body": "Uprawnienie pozostaje przy pierwotnym koncie Sonoran, które dokonało zakupu. Nie możesz sprzedawać, darować, cedować, wynajmować, sublicencjonować ani w inny sposób przenosić uprawnienia ani sprzedawać lub udostępniać konta, aby umożliwić innemu nabywcy korzystanie z korzyści Lifetime. Zmiana adresu e-mail lub przeprowadzenie legalnego odzyskiwania konta nie zmienia pierwotnego nabywcy.\n\nCzłonkowie społeczności mogą korzystać z funkcji Pro udostępnionych uprawnionej społeczności za pośrednictwem własnych kont w ramach zwykłego korzystania z CAD.",
+            "title": "2. Dla pierwotnego nabywcy"
+          },
+          "section3": {
+            "body": "Możesz zastosować uprawnienie do jednej społeczności Sonoran CAD naraz i musisz obecnie być właścicielem tej społeczności w CAD. Możesz je swobodnie przypisać ponownie do innej społeczności, której obecnie jesteś właścicielem, bez okresu oczekiwania na ponowne przypisanie.\n\nPonowne przypisanie lub usunięcie natychmiast usuwa ochronę Pro tej licencji z poprzedniej społeczności. Ta społeczność wraca do planu, który byłby dla niej dostępny, chyba że inna ważna licencja zapewnia ochronę. Twoja licencja Lifetime pozostaje na Twoim koncie zakupowym i może zostać przypisana do innej społeczności, której jesteś właścicielem.\n\nMusisz odłączyć społeczność od swojej licencji Lifetime w CAD Billing przed przeniesieniem własności społeczności. CAD blokuje przeniesienie, gdy licencja jest zastosowana. Przeniesienie społeczności nigdy nie przenosi licencji Lifetime. Jeśli wystąpi wyjątkowa zmiana własności poza tym procesem, społeczność nie kwalifikuje się już do ochrony tej licencji.\n\nNie ma ograniczeń dotyczących gier. Możesz używać kwalifikującej się społeczności z obsługiwanymi grami i integracjami. Dostępność i zgodność integracji zależą od odpowiednich platform zewnętrznych oraz ich wymagań technicznych.",
+            "title": "3. Jedna społeczność, którą obecnie posiadasz"
+          },
+          "section4": {
+            "body": "\"Dożywotnio\" oznacza okres operacyjnego funkcjonowania hostowanej przez Sonoran usługi Sonoran CAD. Obejmowane uprawnienie obowiązuje tak długo, jak świadczymy tę usługę, z zastrzeżeniem niniejszej umowy. Jest to licencja na usługę hostowaną i nie przenosi własności oprogramowania, infrastruktury ani kodu źródłowego.\n\nKonserwacja, tymczasowe przestoje i zwykłe aktualizacje usługi nie kończą uprawnienia. Dożywotnio nie oznacza gwarancji trwałego przechowywania każdej społeczności ani jej danych; nadal obowiązują odrębnie ujawnione zasady przechowywania i nieaktywności. Usunięcie nieaktywnej społeczności samo w sobie nie anuluje uprawnienia Dożywotnio na koncie zakupu.",
+            "title": "4. Znaczenie dożywotności"
+          },
+          "section5": {
+            "body": "Zakupy dożywotnie są ostateczne, bez dobrowolnych zwrotów pieniędzy w razie zmiany zdania, w tym zamknięcia społeczności, opuszczenia społeczności, mniejszego korzystania lub zmiany okoliczności. Dobrowolna 48-godzinna gwarancja zwrotu pieniędzy nie ma zastosowania do zakupów dożywotnich.\n\nZwroty, prawa do anulowania i inne środki prawne wymagane przez obowiązujące prawo pozostają dostępne. Obejmuje to wszelkie obowiązujące prawa dotyczące niewykonania usługi, niezgodnego z opisem świadczenia, usługi wadliwej lub ustawowego odstąpienia. Rozpoczęcie korzystania lub zaakceptowanie niniejszych warunków nie oznacza zrzeczenia się praw, których nie można zgodnie z prawem się zrzec. Wszelkie informacje dotyczące żądania natychmiastowego rozpoczęcia lub odstąpienia, wymagane w danej jurysdykcji, muszą być przedstawione oddzielnie, tam gdzie jest to wymagane.",
+            "title": "5. Zwroty i prawa konsumenta"
+          },
+          "section6": {
+            "body": "Musisz przestrzegać niniejszej umowy, obowiązujących Warunków korzystania z usługi oraz zasad rozsądnego korzystania z usługi zgodnych z niniejszymi warunkami Lifetime. Celowe nadużycia obejmują odsprzedaż lub wynajem ochrony, udostępnianie konta zakupowego, fałszywe przedstawianie własności społeczności, omijanie ograniczeń dotyczących jednej społeczności lub pierwotnego nabywcy oraz przenoszenie ochrony w celu obejścia limitów użycia Pro. Dozwolone jest zwykłe przenoszenie między społecznościami, których jesteś właścicielem.\\n\\nMożemy zawiesić dostęp podczas uzasadnionego badania oszustwa lub istotnego nadużycia oraz możemy cofnąć licencję w przypadku istotnego naruszenia. Gdy jest to rozsądne, wyjaśnimy problem i damy Ci powiadomienie oraz możliwość odpowiedzi lub usunięcia naruszenia przed trwałym cofnięciem. Natychmiastowe zawieszenie może być konieczne, aby przeciwdziałać oszustwu, nielegalnym działaniom, zagrożeniu bezpieczeństwa lub istotnemu ryzyku szkody. Niezapłacone lub sporne środki za zakup mogą skutkować zawieszeniem do czasu rozwiązania kwestii płatności. Pełny zwrot lub cofnięcie płatności, które nie zostanie rozwiązane, kończy licencję i ochronę jej społeczności, z zastrzeżeniem obowiązującego prawa. Sam częściowy zwrot nie anuluje automatycznie licencji. Jeśli spór dotyczący płatności zostanie rozstrzygnięty na Twoją korzyść, a płatność zostanie zatrzymana, licencja zawieszona wyłącznie z powodu tego sporu zostanie przywrócona; może być konieczne ponowne przypisanie jej do kwalifikującej się społeczności.\\n\\nNie cofniemy uprawnienia wyłącznie dlatego, że posiadasz je od dawna, korzystałeś z legalnego przeniesienia lub dlatego, że cena objętego Pro wzrasta. Jakikolwiek zwrot lub inny środek zaradczy po rozwiązaniu umowy pozostaje zastrzeżony przez obowiązujące prawo.",
+            "title": "6. Nadużycia, zawieszenie i rozwiązanie"
+          },
+          "section7": {
+            "body": "Jeśli trwale zaprzestaniemy świadczenia hostowanej usługi CAD, poinformujemy z odpowiednim wyprzedzeniem, o ile będzie to praktycznie możliwe, oraz zapewnimy rozsądną możliwość pobrania danych społeczności za pomocą dostępnych metod eksportu. Jeśli zasadniczo ta sama hostowana usługa CAD będzie kontynuowana pod nową nazwą lub wersją, Twoje uprawnienie będzie nadal obowiązywać z równoważnymi objętymi korzyściami Pro.\n\nZmiany usługi, zawieszenie lub zamknięcie nie wyłączają obowiązkowych środków ochrony konsumenta, w tym wszelkiego zwrotu wymaganego przez prawo. Będziemy przekazywać powiadomienia o istotnych zmianach zgodnie z wymaganiami i nie będziemy używać ogólnej zmiany zasad do nakładania cyklicznych opłat za to objęte uprawnienie.",
+            "title": "7. Zmiany usług lub ich zamknięcie"
+          },
+          "section8": {
+            "body": "Przed dokonaniem płatności musisz wyraźnie zaakceptować niniejszą Umowę dożywotnią oraz obowiązujące Warunki świadczenia usług. Zachowujemy zaakceptowaną wersję umowy oraz kopię wraz z zapisem zakupu. Potwierdzenie zakupu wskaże zaakceptowaną wersję i udostępni e-mail lub kopię do pobrania, którą możesz zachować.\n\nW sprawach dotyczących zakupu, cesji, odzyskiwania konta lub wniosków związanych z prawami konsumenta skontaktuj się z Sonoran Support (https://support.sonoransoftware.com/).",
+            "title": "8. Akceptacja i kontakt"
+          }
+        }
+      },
+      "agreementTitle": "Umowa CAD Pro Dożywotnio",
+      "agreementVersion": "Wersja 2026-10-14",
+      "assign": "Przypisz społeczność",
+      "assignmentHelp": "Zastosuj tę licencję do społeczności, której jesteś właścicielem.",
+      "assignmentSaved": "Licencja dożywotnia zastosowana.",
+      "assignmentTitle": "Nie ustawiono ID społeczności",
+      "checkoutUnavailable": "Zakup dożywotni nie jest jeszcze dostępny.",
+      "choosePlan": "Wybierz Pro Dożywotnio",
+      "confirmAssignBody": "Przypisać tę licencję do {community}? Jeśli jest przypisana gdzie indziej, poprzednia społeczność straci zakres Pro tej licencji.",
+      "confirmAssignTitle": "Przypisać CAD Pro Dożywotnio?",
+      "confirmRemoveBody": "Ta społeczność utraci ochronę Pro tej licencji. Twoja licencja Lifetime pozostanie na Twoim koncie, gotowa do przypisania do innej społeczności, którą posiadasz.",
+      "confirmRemoveTitle": "Odpiąć CAD Pro Dożywotnio?",
+      "cycleLabel": "Dożywotnio",
+      "description": "Zapłać raz. Zyskaj CAD Pro na całe życie Sonoran CAD.",
+      "downloadAgreement": "Pobierz umowę zakupu",
+      "eligibility": {
+        "activePlan": "Inny aktywny plan jest już zastosowany.",
+        "checking": "Sprawdzanie uprawnień.",
+        "notOwner": "Nie jesteś właścicielem tej Społeczności.",
+        "unavailable": "Ta społeczność nie kwalifikuje się."
+      },
+      "errors": {
+        "activePlan": "Ta społeczność ma już aktywny plan. Odłącz go przed zastosowaniem planu Lifetime.",
+        "failed": "Nie można było zaktualizować rozliczenia dożywotniego. Odśwież i spróbuj ponownie.",
+        "inactive": "Ta licencja dożywotnia nie jest aktywna.",
+        "notOwner": "Musisz być właścicielem tej społeczności, aby zastosować licencję dożywotnią.",
+        "notPurchaser": "Tylko pierwotny nabywca może zarządzać tą licencją Lifetime.",
+        "paymentProcessing": "Twoja płatność jest przetwarzana. Odśwież rozliczenie wkrótce; nie kupuj ponownie.",
+        "policyChanged": "Umowa uległa zmianie. Zapoznaj się z aktualnymi warunkami i zaakceptuj je przed kontynuacją.",
+        "unavailable": "Zakup dożywotni jest obecnie niedostępny."
+      },
+      "gameSummary": "Brak blokady gry. Używaj dowolnej normalnie obsługiwanej integracji Sonoran CAD.",
+      "generalTermsLink": "Ogólne Warunki Usługi",
+      "heading": "CAD Pro. Jedna płatność.",
+      "loadFailed": "Nie można było wczytać rozliczenia dożywotniego. Odśwież, aby spróbować ponownie.",
+      "loading": "Ładowanie licencji dożywotnich",
+      "migrationNotice": "Zakup opcji Lifetime nie anuluje istniejących subskrypcji. Anuluj każdy plan, którego już nie potrzebujesz, w Zarządzaj rozliczeniami.",
+      "noEligibleCommunities": "Brak kwalifikujących się społeczności. Wybierz społeczność, której jesteś właścicielem i która nie ma innego aktywnego planu.",
+      "noOwnedCommunities": "Musisz być właścicielem społeczności, aby zastosować Pro Lifetime.",
+      "oneTime": "Jednorazowa płatność. Brak opłat cyklicznych.",
+      "openBilling": "Otwórz rozliczenia CAD",
+      "ownershipSummary": "Niezbywalne. Na jedną społeczność CAD, którą posiadasz.",
+      "ownerTransferBlocked": "Odłącz CAD Pro Lifetime w CAD Billing przed przeniesieniem tej społeczności.",
+      "planName": "CAD Pro Dożywotnio",
+      "policyVersion": "Wersja umowy: {version}",
+      "price": "499 USD",
+      "purchase": "Przejdź do bezpiecznej płatności",
+      "purchasedAt": "Zakupiono",
+      "purchasedByYourAccount": "Niezbywalne. Zakupione na Twoje konto.",
+      "purchaseUnavailable": "Zakup niedostępny",
+      "reassign": "Zmień Społeczność",
+      "reassignmentSummary": "Przenieś swoją licencję do dowolnej innej społeczności, którą posiadasz, w dowolnym momencie.",
+      "refundSummary": "Bezzwrotne, z wyjątkiem przypadków wymaganych przez prawo.",
+      "removalSaved": "Licencja dożywotnia została odłączona.",
+      "removeAssignment": "Wyczyść ID społeczności",
+      "retry": "Odśwież subskrypcje",
+      "reviewTitle": "Pro Dożywotnio",
+      "selectCommunity": "Społeczność, którą posiadasz",
+      "selectCommunityHelp": "Wybierz społeczność, która ma otrzymać dostęp Pro.",
+      "serviceSummary": "Na całe życie Sonoran CAD. Obowiązują limity użycia Pro.",
+      "standardPro": "Wszystkie funkcje CAD Pro. Obowiązują limity użycia Pro.",
+      "status": {
+        "active": "Aktywne",
+        "revoked": "Odwołane",
+        "suspended": "Zawieszono"
+      },
+      "summaryTitle": "Szczegóły dożywotniej licencji",
+      "termsLink": "Warunki dożywotnie",
+      "unassignBeforeClearing": "Odłącz CAD Pro Lifetime od tej społeczności w CAD Billing przed wyczyszczeniem jej subskrypcji.",
+      "unassigned": "Brak przypisanej społeczności",
+      "viewOption": "Zobacz opcję dożywotnią"
+    },
     "pricing": {
-      "description": "Płatne subskrypcje Sonoran CAD pozwalają włączyć nowe funkcje integracji, umożliwić dostosowanie, usunąć limity i wiele więcej!",
+      "description": "Porównaj plany dla swojej społeczności",
       "howToPurchase": "Jak kupić",
       "title": "Aktualizacja cen subskrypcji"
     },
@@ -2969,6 +3086,13 @@
       "serversEmail": "Email konta Sonoran Servers",
       "setCommunityId": "Ustaw ID społeczności",
       "signInToOpenBillingPortal": "Zaloguj się, aby otworzyć portal rozliczeniowy."
+    },
+    "trust": {
+      "label": "O Sonoran CAD",
+      "liveChat": "Czat na żywo, 7 dni w tygodniu",
+      "longevityDetail": "Obsługując społeczności roleplay od samego początku.",
+      "longevityTitle": "Założona w 2019",
+      "supportTeam": "Zespół wsparcia na pełny etat"
     }
   },
   "police": {

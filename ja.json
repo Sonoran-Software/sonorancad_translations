@@ -2795,29 +2795,34 @@
       "cadPlans": "CADプラン",
       "cancellingStatus": "キャンセル中: {date}",
       "changeCommunity": "コミュニティを変更",
+      "choosePlan": "プランを選択",
       "choosePlanAria": "{plan}を選択",
       "clearCommunity": "コミュニティIDをクリア",
       "communityAlreadySubscribedTooltip": "このコミュニティにはすでに有効なサブスクリプションが適用されています。",
       "communityIdValue": "ID {id}",
-      "communityMissingBody": "このサブスクリプションは購入済みですが、まだ CAD コミュニティに適用されていません。",
+      "communityMissingBody": "このプランを CAD コミュニティに適用してください。",
       "communityMissingTitle": "コミュニティIDが設定されていません",
+      "comparePlans": "プランを比較",
       "contactSupport": "サポートにお問い合わせ",
-      "description": "サブスクリプションを管理し、CADコミュニティに割り当て、Stripeを通じて請求を更新します。",
+      "description": "プラン、コミュニティ、支払いを管理します。",
       "expertInstallInfo": "専門家による設置情報",
       "eyebrow": "支払いセンター",
+      "heading": "請求",
       "inactiveSubscriptions": "停止中 / キャンセル済み",
+      "manageBilling": "請求の管理",
       "manageSubscription": "サブスクリプションを管理",
-      "noActiveSubscriptionsBody": "CADコミュニティをアップグレードするために新しいサブスクリプションを作成してください。",
+      "noActivePlans": "アクティブなプランはありません",
+      "noActiveSubscriptionsBody": "CAD コミュニティをアップグレードするプランを選択してください。",
       "noCommunitiesAvailable": "このアカウントでは利用可能なコミュニティはありません。",
-      "noInactiveSubscriptions": "非アクティブなサブスクリプションはありません",
-      "noInactiveSubscriptionsBody": "キャンセル済みと非アクティブのサブスクリプションがここに表示されます。",
+      "noInactiveSubscriptions": "非アクティブなプランはありません",
+      "noInactiveSubscriptionsBody": "キャンセル済みの非アクティブなプランがここに表示されます。",
       "openOnePortal": "ONE Portalを開く",
       "otherProducts": "その他の製品",
       "planDescriptions": {
         "expertInstallation": "Sonoranチームによる一回限りのセットアップ支援。",
-        "free": "ER:LC、FiveM、API接続を含む基本的なCADアクセス。",
+        "free": "ゲーム連携と API アクセス付きの基本 CAD ツール。",
         "plus": "データベース同期、2つのサーバー、より高い制限、さらに多くのテンプレートを追加します。",
-        "pro": "無制限のスケール、カスタムマップ、データベースマージ、そして親しみやすいマッピングを解放します。",
+        "pro": "無制限のアカウント、カスタムマップ、そして高度なデータベースツール。",
         "sonoranOne": "Bundles CAD Pro、CMS Pro、Radio Pro、Sonoran Studio、RocketNode hosting。",
         "standard": "カスタムドメイン対応、より高い上限、拡張されたコミュニティツールを追加します。",
         "starter": "カスタムコミュニティID、より多くのユーザー、有料CAD必須機能を追加します。",
@@ -2884,7 +2889,7 @@
         "databaseSync": "データベース 同期",
         "infernoPagerReborn": "インフェルノページャーリボーン",
         "infernoStationAlert": "Inferno 駅アラート",
-        "integrationAccess": "ER:LC + FiveM 統合 & API",
+        "integrationAccess": "ゲーム内 統合 & API",
         "radioPro": "ソノラン Radio Pro",
         "rocketNodeFivemHosting": "RocketNode FiveM ホスティング",
         "servers": "サーバー",
@@ -2922,8 +2927,8 @@
       "sonoranOnePlaceholder": "CAD、CMS、Radio、そしてRocketNode FiveMホスティングを含む1つのサブスクリプション。",
       "subscribed": "購読中",
       "subscribeToBundle": "購読する",
-      "subscriptionsBody": "有効なサブスクリプションを確認し、CADコミュニティを割り当て、無効なサブスクリプションを管理します。",
-      "subscriptionsTitle": "あなたのサブスクリプション",
+      "subscriptionsBody": "コミュニティを割り当てるか、既存のプランを管理します。",
+      "subscriptionsTitle": "あなたのプラン",
       "supportBody": "専任のライブチャットサポートは営業時間内に週7日ご利用いただけます。ご質問ですか？当チームが対応しています。",
       "supportTitle": "人間と話す",
       "unknownPlan": "不明なプラン"
@@ -2955,8 +2960,120 @@
       "starter": "スターター",
       "subscriptionsPerPage": "ページごとのサブスクリプション"
     },
+    "lifetime": {
+      "acceptance": "CAD Pro 生涯契約および利用規約に同意します。購入は、法律で義務付けられている場合を除き、返金不可です。",
+      "agreementDownloadFailed": "購入契約をダウンロードできませんでした。もう一度お試しになるか、サポートにお問い合わせください。",
+      "agreementIntro": "この契約は、Sonoran Software Systems LLC（\"Sonoran\",\"we,\"または\"us\"）による Sonoran CAD Pro Lifetime の購入を、元の購入者（\"you\"）に対して説明するものです。これは、当社の利用規約（https://docs.sonoransoftware.com/policy/policy/terms-of-service）を補足します。その特定の Lifetime 条項は、対象となる購入、請求、期間、コミュニティ割り当て、返金、または終了に関する矛盾する一般条項に優先します。その他の適用される条項は、強行法規上の消費者の権利に従い、引き続き適用されます。",
+      "agreement": {
+        "sections": {
+          "section1": {
+            "body": "チェックアウト時に表示される一回限りの支払いで、Sonoran アカウントに CAD Pro の生涯権利を購入します。継続的なサブスクリプション料金はありません。税金および任意の、別途購入される製品またはサービスはチェックアウト時に表示されます。\n\nLifetime では、広告された CAD Pro の機能、含まれる特典とアドオン、サポート、および利用上限は、継続課金の CAD Pro と同じです。Pro の機能と利用上限は、Lifetime と継続課金の Pro の両方について同じ条件で、時間の経過とともに変更される場合があります。Lifetime に個別の使用枠はありません。重要な変更は、適用される通知要件および消費者救済の対象となります。Pro の名称変更、新しい CAD バージョンの提供、または同じホスト型 CAD サービスへの移行だけでは、対象となる Pro 権利は失われません。\n\n別途価格設定の製品、通常の Pro の範囲外のアドオン、および将来の階層は、購入の一部として明示的に示されている場合にのみ含まれます。通常の Pro に含まれる特典とアドオンは引き続き含まれます。受け入れたオファーが記録されている購入確認書を保管してください。",
+            "title": "1. CAD Pro の一回払い"
+          },
+          "section2": {
+            "body": "権利は、元の購入者である Sonoran アカウントに留まります。権利を販売、贈与、譲渡、貸与、サブライセンス、その他の方法で移転したり、Lifetime の特典を他の購入者に利用可能にするためにアカウントを販売または共有したりすることはできません。メールアドレスを変更しても、または正当なアカウント回復を完了しても、元の購入者は変更されません。\n\nコミュニティメンバーは、CAD の通常の使用過程において、自身のアカウントを通じて、対象コミュニティに提供される Pro 機能を使用できます。",
+            "title": "2. 元の購入者本人のみ"
+          },
+          "section3": {
+            "body": "Sonoran CAD コミュニティ 1 つにのみ特典を適用でき、現在 CAD でそのコミュニティの所有者である必要があります。再割り当てのクールダウンなしで、現在所有している別のコミュニティに自由に再割り当てできます。\n\n再割り当てまたは削除を行うと、このライセンスの Pro 対象は直ちに以前のコミュニティから削除されます。そのコミュニティは、別の有効なライセンスが対象になっていない限り、利用可能なプランに戻ります。Lifetime ライセンスは購入アカウントに残り、所有している別のコミュニティに割り当てることができます。\n\nコミュニティの所有権を移転する前に、CAD Billing で Lifetime ライセンスからそのコミュニティの割り当てを解除する必要があります。ライセンスが適用されている間は、CAD が移転をブロックします。コミュニティを移転しても Lifetime ライセンスは移転されません。例外的な所有権の変更がこの手順以外で発生した場合、そのコミュニティはこのライセンスの対象外になります。\n\nゲーム制限はありません。対応ゲームおよび連携機能で対象コミュニティを使用できます。連携の利用可否と互換性は、関連するサードパーティ プラットフォームとその技術要件によって異なります。",
+            "title": "3. 現在所有しているコミュニティ1つ"
+          },
+          "section4": {
+            "body": "「Lifetime」とは、Sonoran がホストする Sonoran CAD サービスの運用期間を意味します。対象となる権利は、この契約に従い、当社がそのサービスを運用している間継続します。これはホスト型サービスのライセンスであり、ソフトウェア、インフラストラクチャ、またはソースコードの所有権を付与するものではありません。\n\nメンテナンス、一時的なダウンタイム、および通常のサービス更新は、この権利を終了させません。Lifetime は、すべてのコミュニティまたはそのデータの恒久的な保持を約束するものではなく、別途開示される保持および非アクティブ方針は引き続き適用されます。非アクティブなコミュニティの削除は、それ自体では購入アカウントの Lifetime 権利を終了させません。",
+            "title": "4. 生涯の意味"
+          },
+          "section5": {
+            "body": "Lifetime の購入は最終的なものであり、コミュニティの終了、コミュニティからの離脱、利用の減少、または状況の変化を含む考えの変更による任意の返金はありません。任意の 48 時間返金保証は Lifetime の購入には適用されません。\n\n適用法により必要とされる返金、キャンセル権、およびその他の救済は引き続き利用できます。これには、不提供、説明相違、サービスの欠陥、または法定の撤回に関する適用可能な権利が含まれます。アクセスの開始またはこれらの条件への同意は、法律上放棄できない権利を放棄するものではありません。各法域で必要とされる即時開始の申請または撤回に関する情報は、必要に応じて別途提示しなければなりません。",
+            "title": "5. 返金と消費者の権利"
+          },
+          "section6": {
+            "body": "この契約、適用される利用規約、およびこの Lifetime 条項と整合する合理的なサービス利用ポリシーに従う必要があります。意図的な不正利用には、補償の再販または貸与、購入アカウントの共有、コミュニティ所有の虚偽表示、one-community または original-purchaser の制限の回避、そして Pro 利用制限を回避するための補償の再割り当てが含まれます。自分が所有するコミュニティ間での通常の再割り当ては許可されます。\n\n不正行為または重大な不正利用を合理的に調査している間、アクセスを一時停止することがあり、重大な違反があった場合はライセンスを取り消すことがあります。合理的な範囲で、問題を説明し、恒久的な取り消しの前に通知と対応または是正の機会を提供します。不正行為、違法行為、セキュリティ上の脅威、または重大な損害リスクに対処するため、直ちに停止する必要がある場合があります。未払いまたは異議申し立て中の購入代金は、支払いが解決されるまで停止の対象となることがあります。全額返金、または解決されない支払いの返金処理により、適用法に従い、ライセンスおよびそのコミュニティ補償は終了します。部分返金だけでは、ライセンスは自動的にはキャンセルされません。支払い紛争があなたに有利に解決され、支払いが保持される場合、その紛争のみを理由に停止されていたライセンスは復元されます。適格なコミュニティに再割り当てする必要がある場合があります。\n\n長期間保有していたこと、正当な再割り当てを行ったこと、または対象 Pro 価格が上昇したことのみを理由に、権利を取り消すことはありません。終了時の返金またはその他の救済は、いずれも適用法に従います。",
+            "title": "6. 不正利用、停止、終了"
+          },
+          "section7": {
+            "body": "当社がホスト型 CAD サービスを恒久的に終了する場合、実行可能な範囲で合理的な事前通知を行い、利用可能なエクスポート方法を通じてコミュニティデータを取得するための合理的な機会を提供します。実質的に同一のホスト型 CAD サービスが新しい名称またはバージョンで継続される場合、あなたの権利は同等の対象 Pro 特典とともに継続します。\n\nサービスの変更、一時停止、または終了は、法律で要求される返金を含む、必須の消費者救済を排除しません。当社は、必要に応じて重要な変更通知を行い、この対象権利に対して継続的な料金を課すために一般的なポリシー変更を使用しません。",
+            "title": "7. サービス変更または終了"
+          },
+          "section8": {
+            "body": "支払い前に、このLifetime agreementおよび適用される利用規約に明示的に同意する必要があります。受諾された契約版とコピーは購入記録とともに保持されます。購入確認には、受諾した版が記載され、保存できるメールまたはダウンロード可能なコピーが提供されます。\n\n購入、譲渡、アカウント復旧、または消費者権利の要請については、Sonoran Support (https://support.sonoransoftware.com/) にお問い合わせください。",
+            "title": "8. 承諾と連絡先"
+          }
+        }
+      },
+      "agreementTitle": "CAD Pro ライフタイム契約",
+      "agreementVersion": "バージョン 2026-10-14",
+      "assign": "コミュニティIDを割り当てる",
+      "assignmentHelp": "このライセンスを所有しているコミュニティに適用してください。",
+      "assignmentSaved": "生涯ライセンスが適用されました。",
+      "assignmentTitle": "コミュニティIDが設定されていません",
+      "checkoutUnavailable": "ライフタイム決済はまだ利用できません。",
+      "choosePlan": "プロ ライフタイムを選択",
+      "confirmAssignBody": "このライセンスを {community} に適用しますか？ すでに別の場所に割り当てられている場合、以前のコミュニティはこのライセンスの Pro 対応を失います。",
+      "confirmAssignTitle": "CAD Pro ライフタイムを適用しますか",
+      "confirmRemoveBody": "このコミュニティはこのライセンスの Pro 対象を失います。あなたの Lifetime ライセンスはアカウントに残り、あなたが所有する別のコミュニティに割り当てる準備ができたままです。",
+      "confirmRemoveTitle": "CAD Pro ライフタイムを解除しますか",
+      "cycleLabel": "ライフタイム",
+      "description": "一度だけ支払います。Sonoran CAD の期間中、CAD Pro を利用できます。",
+      "downloadAgreement": "購入契約書をダウンロード",
+      "eligibility": {
+        "activePlan": "別の有効なプランがすでに適用されています。",
+        "checking": "利用資格を確認しています。",
+        "notOwner": "このコミュニティのオーナーではありません。",
+        "unavailable": "このコミュニティは対象外です。"
+      },
+      "errors": {
+        "activePlan": "このコミュニティにはすでに有効なプランがあります。Lifetime を適用する前に割り当てを解除してください。",
+        "failed": "Lifetime課金を更新できませんでした。再読み込みして再試行してください。",
+        "inactive": "このライフタイムライセンスは有効ではありません。",
+        "notOwner": "このコミュニティの所有者でないとライフタイムライセンスを適用できません。",
+        "notPurchaser": "このLifetimeライセンスを管理できるのは元の購入者のみです。",
+        "paymentProcessing": "お支払いを処理中です。まもなく請求情報を更新してください。再度購入しないでください。",
+        "policyChanged": "契約内容が変更されました。続行する前に、現在の条件を確認して同意してください。",
+        "unavailable": "ライフタイム決済は現在利用できません。"
+      },
+      "gameSummary": "ゲームロックなし。通常サポートされる Sonoran CAD 統合を使用してください。",
+      "generalTermsLink": "一般利用規約",
+      "heading": "CAD Pro. 一回払い.",
+      "loadFailed": "Lifetime課金を読み込めませんでした。再読み込みして再試行してください。",
+      "loading": "ライフタイムライセンスを読み込み中",
+      "migrationNotice": "Lifetimeの購入では既存のサブスクリプションはキャンセルされません。必要のないプランはManage billingでキャンセルしてください。",
+      "noEligibleCommunities": "対象となるコミュニティがありません。別の有効なプランがない、自分が所有するコミュニティを選択してください。",
+      "noOwnedCommunities": "Pro Lifetimeを適用するには、コミュニティを所有している必要があります。",
+      "oneTime": "一回払い。継続料金なし。",
+      "openBilling": "CAD請求を開く",
+      "ownershipSummary": "譲渡不可。1つのCADコミュニティを所有できます。",
+      "ownerTransferBlocked": "このコミュニティを移管する前に、CAD BillingでCAD Pro Lifetimeの割り当てを解除してください。",
+      "planName": "CAD Pro ライフタイム",
+      "policyVersion": "契約版: {version}",
+      "price": "$499 USD",
+      "purchase": "安全なチェックアウトに進む",
+      "purchasedAt": "購入済み",
+      "purchasedByYourAccount": "譲渡不可。あなたのアカウントで購入済み。",
+      "purchaseUnavailable": "購入できません",
+      "reassign": "コミュニティを変更",
+      "reassignmentSummary": "ライセンスをいつでも、所有している別のコミュニティに移動できます。",
+      "refundSummary": "法律で定められている場合を除き、返金不可。",
+      "removalSaved": "生涯ライセンスの割り当てが解除されました。",
+      "removeAssignment": "コミュニティIDをクリア",
+      "retry": "請求の更新",
+      "reviewTitle": "プロ ライフタイム",
+      "selectCommunity": "所有しているコミュニティ",
+      "selectCommunityHelp": "Proアクセスを受け取るコミュニティを選択してください。",
+      "serviceSummary": "Sonoran CAD の期間中。Pro の使用制限が適用されます。",
+      "standardPro": "すべてのCAD Pro機能。Pro使用制限が適用されます。",
+      "status": {
+        "active": "有効",
+        "revoked": "取消済み",
+        "suspended": "停止中"
+      },
+      "summaryTitle": "生涯ライセンス詳細",
+      "termsLink": "生涯利用規約",
+      "unassignBeforeClearing": "CAD Billingで、このコミュニティからCAD Pro Lifetimeの割り当てを解除してから、そのサブスクリプションを解除してください。",
+      "unassigned": "コミュニティIDが割り当てられていません",
+      "viewOption": "生涯オプションを表示"
+    },
     "pricing": {
-      "description": "Sonoran CADの有料サブスクリプションでは、新しい統合機能の有効化、カスタマイズの有効化、制限の解除などができます！",
+      "description": "コミュニティ向けのプランを比較する。",
       "howToPurchase": "購入方法",
       "title": "サブスクリプション料金をアップグレード"
     },
@@ -2969,6 +3086,13 @@
       "serversEmail": "Sonoran Servers アカウントメール",
       "setCommunityId": "コミュニティIDを設定",
       "signInToOpenBillingPortal": "請求ポータルを開くにはサインインしてください。"
+    },
+    "trust": {
+      "label": "Sonoran CADについて",
+      "liveChat": "ライブチャット、週7日",
+      "longevityDetail": "ロールプレイコミュニティをずっと支援してきました。",
+      "longevityTitle": "2019年に設立",
+      "supportTeam": "常勤サポートチーム"
     }
   },
   "police": {
