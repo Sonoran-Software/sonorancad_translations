@@ -2410,10 +2410,38 @@
                 "previewTitle": "Voorbeeld van lokale bellersintegratie",
                 "title": "Lokale bellers"
               },
+              "civilian": {
+                "description": "Haal karakteridentificatie rechtstreeks uit CAD in het spel.",
+                "title": "Burgerintegratie"
+              },
+              "commands": {
+                "description": "Verstuur noodoproepen via in-game commando's rechtstreeks naar CAD-dispatch.",
+                "title": "Oproepcommando's"
+              },
+              "dispatch": {
+                "description": "Ontvang nieuwe oproepmeldingen, koppel je aan oproepen en volg live GPS-navigatie in de game.",
+                "title": "Dispatch-melding"
+              },
+              "display": {
+                "description": "Gebruik CAD op voertuig- en stationlaptops, met schermen zichtbaar voor spelers in de buurt.",
+                "title": "CAD-weergave"
+              },
               "ers": {
-                "description": "Koppel radiowerkstromen tussen je server en Sonoran CAD voor snellere coördinatie tijdens actieve incidenten.",
+                "description": "Genereer ERS-oproepen vanaf de live kaart en zoek betrokken personages op.",
                 "previewTitle": "ERS-integratievoorbeeld",
                 "title": "ERS-integratie"
+              },
+              "forceRegister": {
+                "description": "CAD-registratie vereisen voor geselecteerde serverjobs of ACE-permissies.",
+                "title": "Geforceerd registreren"
+              },
+              "framework": {
+                "description": "Koppel CAD-rapporten aan automatische in-game boetes op ondersteunde ESX- en QBCore-servers.",
+                "title": "Framework-ondersteuning"
+              },
+              "kick": {
+                "description": "Verwijder gebruikers van de hulpdiensten uit CAD wanneer ze van je server worden losgekoppeld.",
+                "title": "Automatische ontkoppeling"
               },
               "pagers": {
                 "badge": "CAD Pro-bonus",
@@ -2422,10 +2450,22 @@
                 "previewTitle": "Voorvertoning van de Pagers-plugin",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "Open de Sonoran CAD-app vanuit je bestaande LB Phone-resource in de game.",
+                "title": "LB Phone-app"
+              },
               "printer": {
                 "description": "Druk dossiers en ondersteunende informatie af in game voor diensten die tastbare scene-overdrachten willen.",
                 "previewTitle": "Voorvertoning van de Printer-plugin",
                 "title": "Printer"
+              },
+              "radio": {
+                "description": "Koppel Sonoran Radio met je CAD voor gecoördineerde communicatie in de game.",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "Registreer personages in game of synchroniseer karakterportretten met Database Sync.",
+                "title": "Burgerregistratie"
               },
               "signs": {
                 "description": "Beheer dynamische straatborden en wegberichten vanuit CAD-ondersteunde tools, gebouwd voor roleplay-scènes.",
@@ -2438,6 +2478,26 @@
                 "description": "Stuur gerichte pagernotificaties op basis van dispatchactiviteit, zodat eenheden meteen de juiste informatie krijgen.",
                 "previewTitle": "Stationwaarschuwing plug-in voorbeeld",
                 "title": "stationAlert"
+              },
+              "status": {
+                "description": "Wijzig je CAD-eenheidsstatus met een commando in het spel.",
+                "title": "Eenheid Status"
+              },
+              "tablet": {
+                "description": "Open je volledige CAD op een in-game tablet of scherm en koppel aan oproepen met Mini-CAD.",
+                "title": "Tablet & Mini-CAD"
+              },
+              "templates": {
+                "description": "Genereer dispatchoproepen vanuit aangepaste sjablonen met je eigen in-game commando's.",
+                "title": "Oproepsjablonen"
+              },
+              "vehicles": {
+                "description": "Registreer een voertuig in CAD met één in-game commando.",
+                "title": "Voertuigregister"
+              },
+              "wraith": {
+                "description": "Voer automatische kentekenopvragingen uit met de Wraith ARS 2X-radar en kentekenlezer.",
+                "title": "Wraith kentekenlezer"
               }
             },
             "title": "Officiële integraties"
@@ -2450,6 +2510,7 @@
         "campaignCtaTitle": "Gratis starten + 20% besparen",
         "ecosystemDescription": "Voeg doelgerichte tools toe aan je server zonder je workflow opnieuw op te bouwen of te betalen voor de integratielaag.",
         "ecosystemEyebrow": "Verdiep je in het spel",
+        "featureRailHint": "Veeg of gebruik de pijlen om elke integratie te verkennen.",
         "featuresDescription": "Realtime tools verbinden gameplay, dispatch en records zodat je community volledig ondergedompeld kan blijven.",
         "featuresEyebrow": "Integraties",
         "featuresTitle": "Gebouwd voor {game}",
@@ -2457,7 +2518,9 @@
         "homeAriaLabel": "Sonoran CAD-startpagina",
         "includedFree": "Inbegrepen gratis",
         "livePreview": "Live voorvertoning",
+        "nextFeatures": "Volgende integraties",
         "previewAriaLabel": "Voorbeelden van integratiefuncties",
+        "previousFeatures": "Vorige integraties",
         "showcaseImageAriaLabel": "Bekijk details van {feature}",
         "stats": {
           "apiIntegration": "API & integratie",
@@ -3127,6 +3190,152 @@
       "longevityTitle": "Opgericht in 2019",
       "supportTeam": "Fulltime ondersteuningsteam"
     }
+  },
+  "permissionEditor": {
+    "bulkHint": "Alleen van toepassing op machtigingen die je kunt wijzigen.",
+    "empty": "Geen overeenkomende rechten",
+    "emptyHint": "Probeer een andere zoekopdracht of schakel Enkeld ingeschakeld uit.",
+    "enabledCount": "{count} van {total} ingeschakeld",
+    "enabledOnly": "Alleen ingeschakeld",
+    "filteredTitle": "Overeenkomende rechten",
+    "groups": {
+      "administration": "Administratie",
+      "panels": "Paneeltoegang",
+      "units": "Eenheidsinstrumenten"
+    },
+    "includedBy": "Opgenomen door {permission}.",
+    "permissions": {
+      "adminAccounts": {
+        "description": "Leden goedkeuren, verwijderen of bannen, hun rechten wijzigen en eenheden identificatoren beheren.",
+        "label": "Accounts beheren"
+      },
+      "adminCustomization": {
+        "description": "Wijzig community-instellingen, recordsjablonen en automatiseringen.",
+        "label": "Gemeenschap aanpassen"
+      },
+      "adminDepartments": {
+        "description": "Afdelingen, rangen en eenheidsconfiguraties aanmaken en bewerken.",
+        "label": "Beheer departementen"
+      },
+      "admin": {
+        "description": "Toegang tot het beheerderspaneel. De onderstaande machtigingen bepalen de secties ervan.",
+        "label": "Administratiepaneel"
+      },
+      "adminDiscordIntegration": {
+        "description": "Configureer Discord-meldingen en op rollen gebaseerde rechten.",
+        "label": "Discord-integratie beheren"
+      },
+      "adminInGameIntegration": {
+        "description": "Configureer spelverbindingen, API-toegang en databasesynchronisatie.",
+        "label": "Game-integratie beheren"
+      },
+      "adminLimits": {
+        "description": "Bekijk het abonnement van de community, de vervaldatum en gebruikslimieten.",
+        "label": "Limieten bekijken"
+      },
+      "adminLogs": {
+        "description": "Gemeenschapsactiviteitslogs en AI-gebruik bekijken.",
+        "label": "Bekijk logboeken"
+      },
+      "adminPenalCodes": {
+        "description": "Overtredingen, boetes en straffen toevoegen, bewerken en verwijderen.",
+        "label": "Strafwetboeken beheren"
+      },
+      "adminPermissionKeys": {
+        "description": "Sleutels aanmaken en verwijderen die leden inwisselen om rechten te ontvangen.",
+        "label": "Machtigingssleutels beheren"
+      },
+      "adminTenCodes": {
+        "description": "Eenhedenstatuscodes toevoegen, bewerken en verwijderen.",
+        "label": "Ten-codes beheren"
+      },
+      "civilian": {
+        "description": "Toegang tot het burgerpaneel",
+        "label": "Burgerpaneel"
+      },
+      "create": {
+        "description": "Records van dit type aanmaken.",
+        "label": "Maak"
+      },
+      "delete_any": {
+        "description": "Records van dit type die eigendom zijn van elk account verwijderen.",
+        "label": "Alle verwijderen"
+      },
+      "delete_own": {
+        "description": "Records van dit type die eigendom zijn van dit account verwijderen.",
+        "label": "Eigen verwijderen"
+      },
+      "dispatch": {
+        "description": "Open het Dispatch-paneel om oproepen en eenheden te beheren.",
+        "label": "Dispatch-paneel"
+      },
+      "dmv": {
+        "description": "Toegang tot het DMV-paneel.",
+        "label": "DMV-paneel"
+      },
+      "edit_any": {
+        "description": "Records van dit type die eigendom zijn van elk account bewerken. Velden alleen voor supervisor vereisen Supervisor-velden.",
+        "label": "Alle bewerken"
+      },
+      "edit_own": {
+        "description": "Records van dit type die eigendom zijn van dit account bewerken.",
+        "label": "Bewerk eigen"
+      },
+      "edit_selected": {
+        "description": "Wijzig velden gemarkeerd als “Beperkte bewerking toestaan” op records van andere accounts. Eigen records vereisen Eigen bewerken.",
+        "label": "Bewerk geselecteerde velden"
+      },
+      "ems": {
+        "description": "Toegang tot het EMS-paneel",
+        "label": "EMS-paneel"
+      },
+      "fire": {
+        "description": "Toegang tot het brandpaneel",
+        "label": "Brandpaneel"
+      },
+      "lawyer": {
+        "description": "Toegang tot het advocatenpaneel.",
+        "label": "Advocatenpaneel"
+      },
+      "liveMap": {
+        "description": "Bekijk de livekaart en de locaties van verbonden eenheden.",
+        "label": "Live Kaart"
+      },
+      "polEditOtherUnit": {
+        "description": "Bewerk de identificatiegegevens van andere eenheden, wijzig hun status of paniekstatus, en verwijder eenheden.",
+        "label": "Andere eenheden beheren"
+      },
+      "polEditUnit": {
+        "description": "Wijzig de identificatiegegevens van je eigen eenheid.",
+        "label": "Bewerk eigen eenheid"
+      },
+      "police": {
+        "description": "Toegang tot het politiepaneel",
+        "label": "Politiepaneel"
+      },
+      "read": {
+        "description": "Zoek en bekijk records van dit type.",
+        "label": "Bekijk"
+      },
+      "selfDispatch": {
+        "description": "Beheer oproepen, eenheidsstatussen, paniekstanden en signalen vanuit een eenheidspaneel zonder dispatcher.",
+        "label": "Zelfdispatch"
+      },
+      "supervise": {
+        "description": "Vul velden die alleen voor supervisors zijn in bij het aanmaken of bewerken. Vereist Create of een toepasselijke Edit-toestemming.",
+        "label": "Velden van leidinggevende"
+      }
+    },
+    "removedTemplates": "Deze recordsjablonen werden verwijderd. Wis hun rechten voor het opslaan.",
+    "search": "Zoek machtigingen of recordsjablonen",
+    "tabs": {
+      "access": "Toegang",
+      "admin": "Administratie",
+      "records": "Rapport"
+    },
+    "tabTitle": "{tab} rechten",
+    "toggleAll": "Alles aan/uit",
+    "toggleShown": "Weergegeven aan/uit"
   },
   "police": {
     "bodycamRecordings": {

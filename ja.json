@@ -2411,10 +2411,38 @@
                 "previewTitle": "ローカル通話者統合のプレビュー",
                 "title": "ローカル通話者"
               },
+              "civilian": {
+                "description": "ゲーム内で CAD からキャラクター識別情報を直接取得します。",
+                "title": "民間人統合"
+              },
+              "commands": {
+                "description": "ゲーム内コマンドから緊急通報をCAD配車に直接送信。",
+                "title": "コールコマンド"
+              },
+              "dispatch": {
+                "description": "新しい通報アラートを受信し、通報に参加し、ゲーム内でライブ GPS ルーティングに従います。",
+                "title": "出荷通知"
+              },
+              "display": {
+                "description": "車両と拠点の ラップトップで CAD を使用し、画面は近くのプレイヤーに表示されます。",
+                "title": "CADを表示"
+              },
               "ers": {
-                "description": "サーバーとSonoran CADの間で無線ワークフローを連携し、進行中のインシデントでより迅速に連携します。",
+                "description": "ライブマップからERSのコールアウトを生成し、関係する人物を検索します。",
                 "previewTitle": "緊急無線 統合のプレビュー",
                 "title": "緊急無線 統合"
+              },
+              "forceRegister": {
+                "description": "選択したサーバー職務または ACE 権限に CAD 登録を必須にします。",
+                "title": "強制登録"
+              },
+              "framework": {
+                "description": "対応済みの ESX と QBCore サーバーで CAD レポートをゲーム内の自動罰金に連携します。",
+                "title": "フレームワークサポート"
+              },
+              "kick": {
+                "description": "サーバーから切断したときに CAD から緊急サービス ユーザーを削除します。",
+                "title": "自動切断"
               },
               "pagers": {
                 "badge": "CAD Pro ボーナス",
@@ -2423,10 +2451,22 @@
                 "previewTitle": "ページャープラグインのプレビュー",
                 "title": "ページャーリボーン"
               },
+              "phone": {
+                "description": "ゲーム内の既存のLB Phone リソースからSonoran CADアプリにアクセスできます。",
+                "title": "LB Phone App"
+              },
               "printer": {
                 "description": "ゲーム内で記録と補助情報を印刷し、物理的な現場引き継ぎを求める部門向け。",
                 "previewTitle": "プリンタープラグインのプレビュー",
                 "title": "プリンター"
+              },
+              "radio": {
+                "description": "Sonoran Radio を CAD に接続して、連携したゲーム内通信を実現します。",
+                "title": "ソノラン Radio"
+              },
+              "registration": {
+                "description": "ゲーム内でキャラクターを登録するか、Database Sync とキャラクターのポートレートを同期します。",
+                "title": "民間人登録"
               },
               "signs": {
                 "description": "CAD対応ツールから、ロールプレイシーン向けの動的な道路標識と道路メッセージを管理",
@@ -2439,6 +2479,26 @@
                 "description": "配車活動から対象を絞ったページャー通知を配信して、各ユニットが必要な情報をすぐに受け取れるようにします。",
                 "previewTitle": "駅アラート通知プラグインのプレビュー",
                 "title": "駅アラート"
+              },
+              "status": {
+                "description": "ゲーム内コマンドでCADユニットのステータスを変更します。",
+                "title": "部隊ステータス"
+              },
+              "tablet": {
+                "description": "ゲーム内のタブレットまたはビューでフル CAD を開き、Mini-CAD で通報に接続します。",
+                "title": "タブレットとミニCAD"
+              },
+              "templates": {
+                "description": "独自のゲーム内コマンドを使用してカスタムテンプレートから dispatch 通話を生成します。",
+                "title": "コールテンプレート"
+              },
+              "vehicles": {
+                "description": "ゲーム内コマンド1つで CAD に車両を登録します。",
+                "title": "車両登録"
+              },
+              "wraith": {
+                "description": "Wraith ARS 2X レーダーとナンバープレートリーダーから自動プレート照会を実行。",
+                "title": "Wraith プレート リーダー"
               }
             },
             "title": "公式インテグレーション"
@@ -2451,6 +2511,7 @@
         "campaignCtaTitle": "無料で開始 + 20%節約",
         "ecosystemDescription": "ワークフローを再構築したり、統合レイヤーに料金を支払ったりせずに、目的特化型ツールをサーバーに追加できます。",
         "ecosystemEyebrow": "ゲームをさらに深く",
+        "featureRailHint": "スワイプするか矢印を使って各連携を確認してください。",
         "featuresDescription": "リアルタイム ツールがゲームプレイ、ディスパッチ、記録をつなぎ、コミュニティが没入し続けられるようにします。",
         "featuresEyebrow": "統合",
         "featuresTitle": "{game}向けに作成",
@@ -2458,7 +2519,9 @@
         "homeAriaLabel": "Sonoran CAD ホーム",
         "includedFree": "無料で含まれる",
         "livePreview": "ライブ プレビュー",
+        "nextFeatures": "次の統合",
         "previewAriaLabel": "統合機能のプレビュー",
+        "previousFeatures": "以前の統合",
         "showcaseImageAriaLabel": "{feature} の詳細を見る",
         "stats": {
           "apiIntegration": "API & 統合",

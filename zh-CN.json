@@ -2411,10 +2411,38 @@
                 "previewTitle": "本地呼叫者集成预览",
                 "title": "本地 调用者"
               },
+              "civilian": {
+                "description": "在游戏中直接从 CAD 获取角色身份信息。",
+                "title": "市民集成"
+              },
+              "commands": {
+                "description": "通过游戏内命令直接向 CAD 调度发送紧急呼叫。",
+                "title": "呼叫命令"
+              },
+              "dispatch": {
+                "description": "接收新呼叫警报，附加到呼叫，并在游戏中跟随实时 GPS 路由。",
+                "title": "调度通知"
+              },
+              "display": {
+                "description": "在车辆和警局笔记本电脑上使用 CAD，屏幕对附近玩家可见。",
+                "title": "CAD 显示"
+              },
               "ers": {
-                "description": "在您的服务器和 Sonoran CAD 之间桥接无线电工作流，以便在紧急事件期间更快协调。",
+                "description": "从实时地图生成 ERS 出警并查找相关角色。",
                 "previewTitle": "ERS 集成预览",
                 "title": "紧急无线电插件 集成"
+              },
+              "forceRegister": {
+                "description": "为所选服务器工作或 ACE 权限要求 CAD 注册。",
+                "title": "强制注册"
+              },
+              "framework": {
+                "description": "将 CAD 报告连接到受支持的 ESX 和 QBCore 服务器上的自动游戏内罚款。",
+                "title": "框架支持"
+              },
+              "kick": {
+                "description": "当紧急服务用户从你的服务器断开连接时，从 CAD 中移除他们。",
+                "title": "自动断开连接"
               },
               "pagers": {
                 "badge": "CAD Pro 奖励",
@@ -2423,10 +2451,22 @@
                 "previewTitle": "寻呼机插件预览",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "从游戏中现有的 LB Phone 资源访问 Sonoran CAD 应用。",
+                "title": "LB 电话应用"
+              },
               "printer": {
                 "description": "在游戏中打印记录和支持信息，方便需要有形现场交接的部门使用。",
                 "previewTitle": "打印机插件预览",
                 "title": "打印机"
+              },
+              "radio": {
+                "description": "将 Sonoran Radio 与您的 CAD 连接，实现协调的游戏内通信。",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "在游戏中注册角色或与数据库同步同步角色头像。",
+                "title": "平民注册"
               },
               "signs": {
                 "description": "使用为角色扮演场景打造的、由 CAD 支持的工具管理动态街道标志和道路信息。",
@@ -2439,6 +2479,26 @@
                 "description": "根据调度活动发送定向传呼通知，让单位立即获取正确信息。",
                 "previewTitle": "Station 报警插件预览",
                 "title": "站点警报"
+              },
+              "status": {
+                "description": "使用游戏内命令更改你的 CAD 单位状态。",
+                "title": "单位状态"
+              },
+              "tablet": {
+                "description": "在游戏内平板或视图上打开你的完整 CAD，并使用 Mini-CAD 附加到呼叫。",
+                "title": "平板和 Mini-CAD"
+              },
+              "templates": {
+                "description": "使用自定义模板通过你自己的游戏内命令生成调度呼叫。",
+                "title": "呼叫模板"
+              },
+              "vehicles": {
+                "description": "使用单个游戏内命令在 CAD 中注册车辆。",
+                "title": "车辆登记"
+              },
+              "wraith": {
+                "description": "从 Wraith ARS 2X 雷达和车牌读取器运行自动车牌查询。",
+                "title": "Wraith 车牌识别器"
               }
             },
             "title": "官方集成"
@@ -2451,6 +2511,7 @@
         "campaignCtaTitle": "开始免费 + 节省 20%",
         "ecosystemDescription": "无需重建工作流程或为集成层付费，即可向您的服务器添加专为特定用途打造的工具。",
         "ecosystemEyebrow": "深入游戏",
+        "featureRailHint": "滑动或使用箭头浏览所有集成。",
         "featuresDescription": "实时工具连接游戏、调度和记录，让您的社区保持沉浸。",
         "featuresEyebrow": "集成",
         "featuresTitle": "专为 {game} 打造",
@@ -2458,7 +2519,9 @@
         "homeAriaLabel": "Sonoran CAD 首页",
         "includedFree": "免费包括",
         "livePreview": "实时预览",
+        "nextFeatures": "下一步集成",
         "previewAriaLabel": "集成功能预览",
+        "previousFeatures": "之前的集成",
         "showcaseImageAriaLabel": "查看 {feature} 详情",
         "stats": {
           "apiIntegration": "API 与 集成",
@@ -3128,6 +3191,152 @@
       "longevityTitle": "成立于2019年",
       "supportTeam": "全职支持团队"
     }
+  },
+  "permissionEditor": {
+    "bulkHint": "仅适用于你可以更改的权限。",
+    "empty": "没有匹配的权限",
+    "emptyHint": "尝试其他搜索或关闭“仅已启用”。",
+    "enabledCount": "已启用 {count} / {total}",
+    "enabledOnly": "仅启用",
+    "filteredTitle": "匹配的权限",
+    "groups": {
+      "administration": "管理",
+      "panels": "面板访问",
+      "units": "单位工具"
+    },
+    "includedBy": "由 {permission} 包含。",
+    "permissions": {
+      "adminAccounts": {
+        "description": "批准、移除或封禁成员，修改其权限，并管理单元标识符。",
+        "label": "管理账户"
+      },
+      "adminCustomization": {
+        "description": "更改社区设置、记录模板和自动化。",
+        "label": "自定义社区"
+      },
+      "adminDepartments": {
+        "description": "创建和编辑部门、级别和单位配置。",
+        "label": "管理部门"
+      },
+      "admin": {
+        "description": "访问管理面板。下方权限控制其各个部分。",
+        "label": "管理面板"
+      },
+      "adminDiscordIntegration": {
+        "description": "配置 Discord 通知和基于角色的权限。",
+        "label": "管理 Discord 集成功能"
+      },
+      "adminInGameIntegration": {
+        "description": "配置游戏连接、API 访问和数据库同步。",
+        "label": "管理游戏集成功能"
+      },
+      "adminLimits": {
+        "description": "查看社区的订阅方案、到期时间和使用限制。",
+        "label": "查看限制"
+      },
+      "adminLogs": {
+        "description": "查看社区活动日志和 AI 使用情况。",
+        "label": "查看记录"
+      },
+      "adminPenalCodes": {
+        "description": "添加、编辑和移除罪行、罚款和处罚。",
+        "label": "管理法律"
+      },
+      "adminPermissionKeys": {
+        "description": "创建和移除成员兑换以获取权限的密钥。",
+        "label": "管理权限密钥"
+      },
+      "adminTenCodes": {
+        "description": "添加、编辑和移除单位状态代码。",
+        "label": "管理十码"
+      },
+      "civilian": {
+        "description": "访问市民面板。",
+        "label": "市民面板"
+      },
+      "create": {
+        "description": "创建此类型的记录。",
+        "label": "创建"
+      },
+      "delete_any": {
+        "description": "删除任何账户拥有的此类型记录。",
+        "label": "删除任意"
+      },
+      "delete_own": {
+        "description": "删除此账户拥有的此类型记录。",
+        "label": "删除自己的"
+      },
+      "dispatch": {
+        "description": "访问调度面板以管理呼叫和单位。",
+        "label": "调度面板"
+      },
+      "dmv": {
+        "description": "访问 DMV 面板。",
+        "label": "DMV 面板"
+      },
+      "edit_any": {
+        "description": "编辑任何账户拥有的此类型记录。仅主管可用字段需要主管字段。",
+        "label": "编辑任意"
+      },
+      "edit_own": {
+        "description": "编辑此账户拥有的此类型记录。",
+        "label": "编辑自己的"
+      },
+      "edit_selected": {
+        "description": "编辑其他账户记录中标记为“允许有限编辑”的字段。自己的记录需要“编辑自己的”。",
+        "label": "编辑选定字段"
+      },
+      "ems": {
+        "description": "访问 EMS 面板。",
+        "label": "EMS 面板"
+      },
+      "fire": {
+        "description": "访问消防面板。",
+        "label": "消防面板"
+      },
+      "lawyer": {
+        "description": "访问律师面板。",
+        "label": "律师面板"
+      },
+      "liveMap": {
+        "description": "查看实时地图和已连接单位的位置。",
+        "label": "实时地图"
+      },
+      "polEditOtherUnit": {
+        "description": "编辑其他单位的标识符，修改其状态或紧急状态，并踢出单位。",
+        "label": "管理其他单位"
+      },
+      "polEditUnit": {
+        "description": "更改您自己的单位标识信息。",
+        "label": "编辑自己的单位"
+      },
+      "police": {
+        "description": "访问警察面板。",
+        "label": "警察面板"
+      },
+      "read": {
+        "description": "搜索并查看此类记录。",
+        "label": "查看"
+      },
+      "selfDispatch": {
+        "description": "无需调度员即可通过单元面板管理呼叫、单元状态、紧急状态和信号。",
+        "label": "自我派遣"
+      },
+      "supervise": {
+        "description": "在创建或编辑时填写仅主管可见字段。需要创建权限或适用的编辑权限。",
+        "label": "主管字段"
+      }
+    },
+    "removedTemplates": "这些记录模板已被移除。请先清除其权限再保存。",
+    "search": "搜索权限或记录模板",
+    "tabs": {
+      "access": "访问",
+      "admin": "管理",
+      "records": "记录"
+    },
+    "tabTitle": "{tab} 权限",
+    "toggleAll": "全部切换",
+    "toggleShown": "切换显示"
   },
   "police": {
     "bodycamRecordings": {
