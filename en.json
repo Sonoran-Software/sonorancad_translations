@@ -4645,5 +4645,151 @@
     "reserved": "This Community ID is reserved and cannot be used as a vanity URL.",
     "tooLong": "This Community ID is too long for a vanity URL.",
     "unavailable": "This Community ID cannot be used as a vanity URL."
+  },
+  "permissionEditor": {
+    "search": "Search permissions or record templates",
+    "enabledOnly": "Enabled only",
+    "tabs": {
+      "access": "Access",
+      "records": "Records",
+      "admin": "Administration"
+    },
+    "groups": {
+      "panels": "Panel access",
+      "units": "Unit tools",
+      "administration": "Administration"
+    },
+    "tabTitle": "{tab} permissions",
+    "filteredTitle": "Matching permissions",
+    "bulkHint": "Applies only to permissions you can change.",
+    "toggleAll": "Toggle all",
+    "toggleShown": "Toggle shown",
+    "enabledCount": "{count} of {total} enabled",
+    "empty": "No matching permissions",
+    "emptyHint": "Try another search or turn off Enabled only.",
+    "removedTemplates": "These record templates were removed. Clear their permissions before saving.",
+    "includedBy": "Included by {permission}.",
+    "permissions": {
+      "civilian": {
+        "label": "Civilian panel",
+        "description": "Access the Civilian panel."
+      },
+      "lawyer": {
+        "label": "Lawyer panel",
+        "description": "Access the Lawyer panel."
+      },
+      "dmv": {
+        "label": "DMV panel",
+        "description": "Access the DMV panel."
+      },
+      "police": {
+        "label": "Police panel",
+        "description": "Access the Police panel."
+      },
+      "fire": {
+        "label": "Fire panel",
+        "description": "Access the Fire panel."
+      },
+      "ems": {
+        "label": "EMS panel",
+        "description": "Access the EMS panel."
+      },
+      "dispatch": {
+        "label": "Dispatch panel",
+        "description": "Access the Dispatch panel to manage calls and units."
+      },
+      "admin": {
+        "label": "Administration panel",
+        "description": "Access the Administration panel. The permissions below control its sections."
+      },
+      "polEditUnit": {
+        "label": "Edit own unit",
+        "description": "Change your own unit identifier information."
+      },
+      "polEditOtherUnit": {
+        "label": "Manage other units",
+        "description": "Edit other units’ identifiers, change their status or panic state, and kick units."
+      },
+      "selfDispatch": {
+        "label": "Self dispatch",
+        "description": "Manage calls, unit statuses, panic states and signals from a unit panel without a dispatcher."
+      },
+      "liveMap": {
+        "label": "Live map",
+        "description": "View the live map and connected units’ locations."
+      },
+      "adminAccounts": {
+        "label": "Manage accounts",
+        "description": "Approve, remove or ban members, change their permissions, and manage unit identifiers."
+      },
+      "adminPermissionKeys": {
+        "label": "Manage permission keys",
+        "description": "Create and remove keys that members redeem to receive permissions."
+      },
+      "adminCustomization": {
+        "label": "Customize community",
+        "description": "Change community settings, record templates and automations."
+      },
+      "adminDepartments": {
+        "label": "Manage departments",
+        "description": "Create and edit departments, ranks and unit configurations."
+      },
+      "adminTenCodes": {
+        "label": "Manage ten codes",
+        "description": "Add, edit and remove unit status codes."
+      },
+      "adminPenalCodes": {
+        "label": "Manage penal codes",
+        "description": "Add, edit and remove offenses, fines and penalties."
+      },
+      "adminInGameIntegration": {
+        "label": "Manage game integration",
+        "description": "Configure game connections, API access and database sync."
+      },
+      "adminDiscordIntegration": {
+        "label": "Manage Discord integration",
+        "description": "Configure Discord notifications and role-based permissions."
+      },
+      "adminLimits": {
+        "label": "View limits",
+        "description": "View the community’s subscription plan, expiration and usage limits."
+      },
+      "adminLogs": {
+        "label": "View logs",
+        "description": "View community activity logs and AI usage."
+      },
+      "read": {
+        "label": "View",
+        "description": "Search for and view records of this type."
+      },
+      "create": {
+        "label": "Create",
+        "description": "Create records of this type."
+      },
+      "edit_own": {
+        "label": "Edit own",
+        "description": "Edit records of this type owned by this account."
+      },
+      "edit_selected": {
+        "label": "Edit selected fields",
+        "description": "Edit fields marked “Allow limited editing” on other accounts’ records. Own records require Edit own."
+      },
+      "edit_any": {
+        "label": "Edit any",
+        "description": "Edit records of this type owned by any account. Supervisor-only fields need Supervisor fields."
+      },
+      "delete_own": {
+        "label": "Delete own",
+        "description": "Delete records of this type owned by this account."
+      },
+      "delete_any": {
+        "label": "Delete any",
+        "description": "Delete records of this type owned by any account."
+      },
+      "supervise": {
+        "label": "Supervisor fields",
+        "description": "Fill in supervisor-only fields when creating or editing. Requires Create or an applicable Edit permission."
+      }
+    }
   }
 }
