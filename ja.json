@@ -3129,6 +3129,152 @@
       "supportTeam": "常勤サポートチーム"
     }
   },
+  "permissionEditor": {
+    "bulkHint": "変更できる権限にのみ適用されます。",
+    "empty": "一致する権限なし",
+    "emptyHint": "別の検索を試すか、Enabled only をオフにしてください。",
+    "enabledCount": "{count} / {total} が有効",
+    "enabledOnly": "有効のみ",
+    "filteredTitle": "一致する権限",
+    "groups": {
+      "administration": "管理",
+      "panels": "パネルアクセス",
+      "units": "ユニットツール"
+    },
+    "includedBy": "{permission} に含まれる。",
+    "permissions": {
+      "adminAccounts": {
+        "description": "メンバーを承認、削除、またはBANし、権限を変更し、ユニット識別子を管理します。",
+        "label": "アカウントを管理"
+      },
+      "adminCustomization": {
+        "description": "コミュニティ設定、記録テンプレート、オートメーションを変更します。",
+        "label": "コミュニティをカスタマイズ"
+      },
+      "adminDepartments": {
+        "description": "部署、階級、部隊設定を作成および編集します。",
+        "label": "部門を管理"
+      },
+      "admin": {
+        "description": "管理パネルにアクセスします。以下の権限で各セクションを制御します。",
+        "label": "管理パネル"
+      },
+      "adminDiscordIntegration": {
+        "description": "Discord通知とロールベースの権限を設定します。",
+        "label": "Discord連携を管理"
+      },
+      "adminInGameIntegration": {
+        "description": "ゲーム接続、APIアクセス、データベース同期を設定する。",
+        "label": "ゲーム内 統合を管理"
+      },
+      "adminLimits": {
+        "description": "コミュニティのサブスクリプションプラン、有効期限、使用制限を表示する。",
+        "label": "上限を表示"
+      },
+      "adminLogs": {
+        "description": "コミュニティのアクティビティログとAI使用状況を表示します。",
+        "label": "ログを見る"
+      },
+      "adminPenalCodes": {
+        "description": "違反、罰金、処罰を追加、編集、削除します。",
+        "label": "刑法を管理"
+      },
+      "adminPermissionKeys": {
+        "description": "メンバーが権限を受け取るために引き換えるキーを作成・削除します。",
+        "label": "権限キーを管理"
+      },
+      "adminTenCodes": {
+        "description": "部隊ステータスコードを追加、編集、削除",
+        "label": "テンコードを管理"
+      },
+      "civilian": {
+        "description": "市民向けパネルにアクセスする。",
+        "label": "市民向けパネル"
+      },
+      "create": {
+        "description": "この種類のレコードを作成します。",
+        "label": "作成"
+      },
+      "delete_any": {
+        "description": "任意のアカウントが所有するこの種類のレコードを削除",
+        "label": "任意を削除"
+      },
+      "delete_own": {
+        "description": "このアカウントが所有するこの種類のレコードを削除",
+        "label": "自分の削除"
+      },
+      "dispatch": {
+        "description": "Dispatch パネルにアクセスして通話とユニットを管理します。",
+        "label": "配車パネル"
+      },
+      "dmv": {
+        "description": "DMVパネルにアクセスする。",
+        "label": "DMVパネル"
+      },
+      "edit_any": {
+        "description": "任意のアカウントが所有するこの種類のレコードを編集。監督者専用フィールドには監督者フィールドが必要",
+        "label": "すべて編集"
+      },
+      "edit_own": {
+        "description": "このアカウントが所有するこの種類のレコードを編集",
+        "label": "自分の編集"
+      },
+      "edit_selected": {
+        "description": "他のアカウントのレコードで「限定編集可」と表示された項目のみ編集します。自分のレコードには自分の編集権限が必要です。",
+        "label": "選択した項目を編集"
+      },
+      "ems": {
+        "description": "EMSパネルにアクセスする。",
+        "label": "EMSパネル"
+      },
+      "fire": {
+        "description": "消防パネルにアクセスする。",
+        "label": "消防パネル"
+      },
+      "lawyer": {
+        "description": "弁護士パネルにアクセスする。",
+        "label": "弁護士パネル"
+      },
+      "liveMap": {
+        "description": "ライブマップと接続されたユニットの位置を表示",
+        "label": "ライブマップ"
+      },
+      "polEditOtherUnit": {
+        "description": "他のユニットの識別情報を編集し、ステータスやパニック状態を変更し、ユニットをキックする。",
+        "label": "他のユニットを管理"
+      },
+      "polEditUnit": {
+        "description": "自分の所属ユニット識別情報を変更します。",
+        "label": "自分の部隊を編集"
+      },
+      "police": {
+        "description": "Policeパネルにアクセスする。",
+        "label": "Policeパネル"
+      },
+      "read": {
+        "description": "この種類のレコードを検索して表示します。",
+        "label": "見る"
+      },
+      "selfDispatch": {
+        "description": "ディスパッチャーなしで、ユニットパネルから通話、ユニット状態、パニック状態、シグナルを管理します。",
+        "label": "自己出荷"
+      },
+      "supervise": {
+        "description": "作成または編集時に管理者専用フィールドを入力します。作成または該当する編集権限が必要です。",
+        "label": "監督者フィールド"
+      }
+    },
+    "removedTemplates": "これらのレコードテンプレートは削除されました。保存する前に、それらの権限をクリアしてください。",
+    "search": "権限またはレコードテンプレートを検索",
+    "tabs": {
+      "access": "アクセス",
+      "admin": "管理",
+      "records": "記録"
+    },
+    "tabTitle": "{tab}権限",
+    "toggleAll": "すべて切り替え",
+    "toggleShown": "表示を切り替え"
+  },
   "police": {
     "bodycamRecordings": {
       "noneFound": "ボディカム録画が見つかりません",
