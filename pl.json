@@ -2411,10 +2411,38 @@
                 "previewTitle": "Podgląd integracji lokalnych połączeń",
                 "title": "Lokalni dzwoniący"
               },
+              "civilian": {
+                "description": "Pobierz identyfikację postaci z CAD bezpośrednio w grze.",
+                "title": "Integracja cywilna"
+              },
+              "commands": {
+                "description": "Wysyłaj zgłoszenia alarmowe z komend w grze bezpośrednio do dyspozytora CAD.",
+                "title": "Polecenia wywołań"
+              },
+              "dispatch": {
+                "description": "Otrzymuj powiadomienia o nowych zgłoszeniach, dołączaj do zgłoszeń i śledź na żywo trasowanie GPS w grze.",
+                "title": "Powiadomienie dyspozytorskie"
+              },
+              "display": {
+                "description": "Używaj CAD na laptopach w pojazdach i na stacjach, z ekranami widocznymi dla pobliskich graczy.",
+                "title": "Wyświetlanie CAD"
+              },
               "ers": {
-                "description": "Połącz przepływy pracy radia między twoim serwerem a Sonoran CAD, aby szybciej koordynować działania podczas aktywnych incydentów.",
+                "description": "Generuj wywołania ERS z mapy na żywo i wyszukuj zaangażowane postacie.",
                 "previewTitle": "Podgląd integracji ERS",
                 "title": "Integracja ERS"
+              },
+              "forceRegister": {
+                "description": "Wymagaj rejestracji CAD dla wybranych zadań serwera lub uprawnień ACE.",
+                "title": "Wymuś rejestrację"
+              },
+              "framework": {
+                "description": "Połącz raporty CAD z automatycznymi mandatami w grze na obsługiwanych serwerach ESX i QBCore.",
+                "title": "Obsługa frameworka"
+              },
+              "kick": {
+                "description": "Usuwaj użytkowników służb ratunkowych z CAD, gdy rozłączą się z twoim serwerem.",
+                "title": "Automatyczne rozłączenie"
               },
               "pagers": {
                 "badge": "Bonus CAD Pro",
@@ -2423,10 +2451,22 @@
                 "previewTitle": "Podgląd wtyczki Pagers",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "Uzyskaj dostęp do aplikacji Sonoran CAD z istniejącego zasobu LB Phone w grze.",
+                "title": "Aplikacja LB Phone"
+              },
               "printer": {
                 "description": "Drukuj raporty i informacje pomocnicze w grze dla departamentów, które chcą namacalnych przekazań scen.",
                 "previewTitle": "Podgląd wtyczki Printer",
                 "title": "Drukarka"
+              },
+              "radio": {
+                "description": "Połącz Sonoran Radio z Twoim CAD, aby zapewnić skoordynowaną komunikację w grze.",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "Rejestruj postacie w grze lub synchronizuj portrety postaci za pomocą Database Sync.",
+                "title": "Rejestracja cywilna"
               },
               "signs": {
                 "description": "Zarządzaj dynamicznymi znakami ulicznymi i komunikatami drogowymi za pomocą narzędzi opartych na CAD, stworzonych do scen roleplay.",
@@ -2439,6 +2479,26 @@
                 "description": "Dostarczaj ukierunkowane powiadomienia pagera na podstawie aktywności dyspozytorskiej, aby jednostki od razu otrzymywały właściwe informacje.",
                 "previewTitle": "Podgląd wtyczki alertów stacji",
                 "title": "powiadomienieStacji"
+              },
+              "status": {
+                "description": "Zmień status swojej jednostki CAD za pomocą komendy w grze.",
+                "title": "Status jednostki"
+              },
+              "tablet": {
+                "description": "Otwórz pełny CAD na tablecie lub ekranie w grze i dołączaj do zgłoszeń za pomocą Mini-CAD.",
+                "title": "Tablet i Mini-CAD"
+              },
+              "templates": {
+                "description": "Generuj zgłoszenia dyspozytorskie z własnych szablonów za pomocą własnych komend w grze.",
+                "title": "Szablony wywołań"
+              },
+              "vehicles": {
+                "description": "Zarejestruj pojazd w CAD jednym poleceniem w grze.",
+                "title": "Rejestr pojazdów"
+              },
+              "wraith": {
+                "description": "Uruchamiaj automatyczne sprawdzanie tablic z radaru Wraith ARS 2X i czytnika tablic.",
+                "title": "Czytnik tablic rejestracyjnych Wraith"
               }
             },
             "title": "Oficjalne integracje"
@@ -2451,6 +2511,7 @@
         "campaignCtaTitle": "Zacznij za darmo + Oszczędź 20%",
         "ecosystemDescription": "Dodaj narzędzia stworzone specjalnie do Twojego serwera bez przebudowywania przepływu pracy ani płacenia za warstwę integracji.",
         "ecosystemEyebrow": "Zagłęb się w grę",
+        "featureRailHint": "Przesuń palcem lub użyj strzałek, aby przejrzeć każdą integrację.",
         "featuresDescription": "Narzędzia czasu rzeczywistego łączą rozgrywkę, dyspozycję i rekordy, aby Twoja społeczność mogła pozostać zanurzona.",
         "featuresEyebrow": "Integracje",
         "featuresTitle": "Stworzone dla {game}",
@@ -2458,7 +2519,9 @@
         "homeAriaLabel": "Strona główna Sonoran CAD",
         "includedFree": "Zawarto bezpłatnie",
         "livePreview": "Podgląd na żywo",
+        "nextFeatures": "Następne integracje",
         "previewAriaLabel": "Podglądy funkcji integracji",
+        "previousFeatures": "Poprzednie integracje",
         "showcaseImageAriaLabel": "Zobacz szczegóły {feature}",
         "stats": {
           "apiIntegration": "API & Integracja",
@@ -3128,6 +3191,152 @@
       "longevityTitle": "Założona w 2019",
       "supportTeam": "Zespół wsparcia na pełny etat"
     }
+  },
+  "permissionEditor": {
+    "bulkHint": "Dotyczy tylko uprawnień, które możesz zmienić.",
+    "empty": "Brak pasujących uprawnień",
+    "emptyHint": "Spróbuj innego wyszukiwania albo wyłącz tylko włączone.",
+    "enabledCount": "{count} z {total} włączonych",
+    "enabledOnly": "Tylko włączone",
+    "filteredTitle": "Pasujące uprawnienia",
+    "groups": {
+      "administration": "Administracja",
+      "panels": "Dostęp do panelu",
+      "units": "Narzędzia jednostki"
+    },
+    "includedBy": "Uwzględnione przez {permission}.",
+    "permissions": {
+      "adminAccounts": {
+        "description": "Zatwierdzaj, usuwaj lub blokuj członków, zmieniaj ich uprawnienia i zarządzaj identyfikatorami jednostek.",
+        "label": "Zarządzaj kontami"
+      },
+      "adminCustomization": {
+        "description": "Zmień ustawienia społeczności, szablony rekordów i automatyzacje.",
+        "label": "Dostosuj społeczność"
+      },
+      "adminDepartments": {
+        "description": "Twórz i edytuj wydziały, stopnie oraz konfiguracje jednostek.",
+        "label": "Zarządzaj departamentami"
+      },
+      "admin": {
+        "description": "Uzyskaj dostęp do panelu administracyjnego. Poniższe uprawnienia kontrolują jego sekcje.",
+        "label": "Panel administracyjny"
+      },
+      "adminDiscordIntegration": {
+        "description": "Skonfiguruj powiadomienia Discord oraz uprawnienia oparte na rolach.",
+        "label": "Zarządzaj integracją z Discordem"
+      },
+      "adminInGameIntegration": {
+        "description": "Konfiguruj połączenia z grą, dostęp do API i synchronizację bazy danych.",
+        "label": "Zarządzaj integracją gry"
+      },
+      "adminLimits": {
+        "description": "Wyświetl plan subskrypcji społeczności, datę wygaśnięcia i limity wykorzystania.",
+        "label": "Wyświetl limity"
+      },
+      "adminLogs": {
+        "description": "Wyświetl logi aktywności społeczności i użycia AI.",
+        "label": "Wyświetl logi"
+      },
+      "adminPenalCodes": {
+        "description": "Dodawaj, edytuj i usuwaj wykroczenia, grzywny i kary.",
+        "label": "Zarządzanie kodeksami karnymi"
+      },
+      "adminPermissionKeys": {
+        "description": "Twórz i usuwaj klucze, które członkowie realizują, aby otrzymać uprawnienia.",
+        "label": "Zarządzaj kluczami uprawnień"
+      },
+      "adminTenCodes": {
+        "description": "Dodawaj, edytuj i usuwaj kody statusów jednostek.",
+        "label": "Zarządzanie kodami dziesiętnymi"
+      },
+      "civilian": {
+        "description": "Dostęp do panelu cywila.",
+        "label": "Panel cywila"
+      },
+      "create": {
+        "description": "Twórz rekordy tego typu.",
+        "label": "Utwórz"
+      },
+      "delete_any": {
+        "description": "Usuń rekordy tego typu należące do dowolnego konta.",
+        "label": "Usuń dowolne"
+      },
+      "delete_own": {
+        "description": "Usuń rekordy tego typu należące do tego konta.",
+        "label": "Usuń własne"
+      },
+      "dispatch": {
+        "description": "Uzyskaj dostęp do panelu Dyspozytornia, aby zarządzać zgłoszeniami i jednostkami.",
+        "label": "Panel dyspozytora"
+      },
+      "dmv": {
+        "description": "Dostęp do panelu DMV.",
+        "label": "panel DMV"
+      },
+      "edit_any": {
+        "description": "Edytuj rekordy tego typu należące do dowolnego konta. Pola tylko dla przełożonego wymagają pól przełożonego.",
+        "label": "Edytuj dowolne"
+      },
+      "edit_own": {
+        "description": "Edytuj rekordy tego typu należące do tego konta.",
+        "label": "Edytuj własne"
+      },
+      "edit_selected": {
+        "description": "Edytuj pola oznaczone jako „Zezwól na ograniczoną edycję” w rekordach innych kont. Własne rekordy wymagają Edytuj własne.",
+        "label": "Edytuj wybrane pola"
+      },
+      "ems": {
+        "description": "Dostęp do panelu EMS.",
+        "label": "panel EMS"
+      },
+      "fire": {
+        "description": "Dostęp do panelu straży pożarnej.",
+        "label": "Panel straży pożarnej"
+      },
+      "lawyer": {
+        "description": "Dostęp do panelu prawnika.",
+        "label": "Panel prawnika"
+      },
+      "liveMap": {
+        "description": "Wyświetl mapę na żywo i lokalizacje podłączonych jednostek.",
+        "label": "Mapa na żywo"
+      },
+      "polEditOtherUnit": {
+        "description": "Edytuj identyfikatory innych jednostek, zmieniaj ich status lub stan paniki i wyrzucaj jednostki.",
+        "label": "Zarządzaj innymi jednostkami"
+      },
+      "polEditUnit": {
+        "description": "Zmień informacje identyfikacyjne własnej jednostki.",
+        "label": "Edytuj własną jednostkę"
+      },
+      "police": {
+        "description": "Dostęp do panelu policji.",
+        "label": "Panel policji"
+      },
+      "read": {
+        "description": "Szukaj i przeglądaj rekordy tego typu.",
+        "label": "Widok"
+      },
+      "selfDispatch": {
+        "description": "Zarządzaj połączeniami, statusami jednostek, stanami paniki i sygnałami z panelu jednostki bez dyspozytora.",
+        "label": "Samodzielny dyspozytor"
+      },
+      "supervise": {
+        "description": "Wypełniaj pola dostępne tylko dla przełożonego podczas tworzenia lub edycji. Wymaga uprawnienia Create lub odpowiedniego uprawnienia Edit.",
+        "label": "Pola nadzorcy"
+      }
+    },
+    "removedTemplates": "Te szablony rekordów zostały usunięte. Wyczyść ich uprawnienia przed zapisaniem.",
+    "search": "Szukaj uprawnień lub szablonów rekordów",
+    "tabs": {
+      "access": "Dostęp",
+      "admin": "Administracja",
+      "records": "Rejestry"
+    },
+    "tabTitle": "Uprawnienia {tab}",
+    "toggleAll": "Przełącz wszystko",
+    "toggleShown": "Pokaż przełącznik"
   },
   "police": {
     "bodycamRecordings": {

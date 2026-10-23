@@ -2410,10 +2410,38 @@
                 "previewTitle": "Forhåndsvisning af integration af lokale opkaldere",
                 "title": "Lokale kaldere"
               },
+              "civilian": {
+                "description": "Hent karakteridentifikation fra CAD direkte i spillet.",
+                "title": "Borgerintegration"
+              },
+              "commands": {
+                "description": "Send nødopkald fra in-game kommandoer direkte til CAD-dispatch.",
+                "title": "Kald kommandoer"
+              },
+              "dispatch": {
+                "description": "Modtag nye opkaldsalarmer, tilknyt dig opkald, og følg live GPS-rutevejledning i spillet.",
+                "title": "Afsendelsesnotifikation"
+              },
+              "display": {
+                "description": "Brug CAD på køretøjs- og stationslaptops, med skærme synlige for spillere i nærheden.",
+                "title": "CAD-visning"
+              },
               "ers": {
-                "description": "Brobyg radioarbejdsgange mellem din server og Sonoran CAD for hurtigere koordinering under aktive hændelser.",
+                "description": "Generer ERS-kald fra live-kortet og slå de involverede karakterer op.",
                 "previewTitle": "Forhåndsvisning af ERS-integration",
                 "title": "ERS-integration"
+              },
+              "forceRegister": {
+                "description": "Kræv CAD-registrering for udvalgte serverjobs eller ACE-tilladelser.",
+                "title": "Tvangsregistrering"
+              },
+              "framework": {
+                "description": "Kobl CAD-rapporter til automatiske bøder i spillet på understøttede ESX- og QBCore-servere.",
+                "title": "Frameworksupport"
+              },
+              "kick": {
+                "description": "Fjern brugere af udrykningstjenester fra CAD, når de kobler fra din server.",
+                "title": "Automatisk frakobling"
               },
               "pagers": {
                 "badge": "CAD Pro Bonus",
@@ -2422,10 +2450,22 @@
                 "previewTitle": "Pagers-plugin forhåndsvisning",
                 "title": "Personsøger Genfødt"
               },
+              "phone": {
+                "description": "Få adgang til Sonoran CAD-appen fra din eksisterende LB Phone-resurse i spillet.",
+                "title": "LB Phone App"
+              },
               "printer": {
                 "description": "Udskriv registreringer og understøttende information i spillet for afdelinger, der ønsker håndgribelige sceneoverdragelser.",
                 "previewTitle": "Printer-plugin forhåndsvisning",
                 "title": "Printer"
+              },
+              "radio": {
+                "description": "Forbind Sonoran Radio med dit CAD for koordineret kommunikation i spillet.",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "Registrer karakterer i spillet eller synk karakterportrætter med Database Sync.",
+                "title": "Civil registrering"
               },
               "signs": {
                 "description": "Administrer dynamiske vejskilte og vejbeskeder fra CAD-understøttede værktøjer bygget til rollespilsscener.",
@@ -2438,6 +2478,26 @@
                 "description": "Send målrettede pager-beskeder fra dispatch-aktivitet, så enhederne får den rette information med det samme.",
                 "previewTitle": "Forhåndsvisning af stationsalarm-plugin",
                 "title": "Stationsalarm"
+              },
+              "status": {
+                "description": "Skift din CAD-enheds status med en in-game kommando.",
+                "title": "Enhedsstatus"
+              },
+              "tablet": {
+                "description": "Åbn dit fulde CAD på en tablet eller visning i spillet, og tilknyt dig opkald med Mini-CAD.",
+                "title": "Tablet og Mini-CAD"
+              },
+              "templates": {
+                "description": "Generér dispatch-opkald fra brugerdefinerede skabeloner ved hjælp af dine egne in-game-kommandoer.",
+                "title": "Kald skabeloner"
+              },
+              "vehicles": {
+                "description": "Registrér et køretøj i CAD med en enkelt kommando i spillet.",
+                "title": "Køretøjsregister"
+              },
+              "wraith": {
+                "description": "Kør automatiske nummerpladesøgninger fra Wraith ARS 2X-radaren og nummerpladelæseren.",
+                "title": "Wraith nummerpladelæser"
               }
             },
             "title": "Officielle integrationer"
@@ -2450,6 +2510,7 @@
         "campaignCtaTitle": "Start gratis + spar 20%",
         "ecosystemDescription": "Tilføj specialbyggede værktøjer til din server uden at genopbygge din arbejdsgang eller betale for integrationslaget.",
         "ecosystemEyebrow": "Gå dybere ind i spillet",
+        "featureRailHint": "Stryg eller brug pilene til at udforske hver integration.",
         "featuresDescription": "Realtid-værktøjer forbinder gameplay, dispatch og registreringer, så dit community kan forblive fordybet.",
         "featuresEyebrow": "Integrationer",
         "featuresTitle": "Bygget til {game}",
@@ -2457,7 +2518,9 @@
         "homeAriaLabel": "Sonoran CAD-hjem",
         "includedFree": "Inkluderet gratis",
         "livePreview": "Live forhåndsvisning",
+        "nextFeatures": "Næste integrationer",
         "previewAriaLabel": "Forhåndsvisninger af integrationsfunktioner",
+        "previousFeatures": "Tidligere integrationer",
         "showcaseImageAriaLabel": "Se detaljer om {feature}",
         "stats": {
           "apiIntegration": "API & integration",

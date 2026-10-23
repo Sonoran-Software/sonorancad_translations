@@ -2410,10 +2410,38 @@
                 "previewTitle": "Forhåndsvisning av integrasjon for lokale innringere",
                 "title": "Lokale kallere"
               },
+              "civilian": {
+                "description": "Hent karakteridentifikasjon fra CAD direkte i spillet.",
+                "title": "Sivil integrasjon"
+              },
+              "commands": {
+                "description": "Send nødanrop fra spillkommandoer direkte til CAD-dispat​ch.",
+                "title": "Anropskommandoer"
+              },
+              "dispatch": {
+                "description": "Motta nye varsler om anrop, koble deg til anrop og følg GPS-ruting i sanntid i spillet.",
+                "title": "Oppdragsvarsel"
+              },
+              "display": {
+                "description": "Bruk CAD på kjøretøy- og stasjonslaptoper, med skjermer synlige for spillere i nærheten.",
+                "title": "CAD-visning"
+              },
               "ers": {
-                "description": "Koble radioworkflows mellom serveren din og Sonoran CAD for raskere koordinering under aktive hendelser.",
+                "description": "Generer ERS-utrykninger fra livekartet og slå opp involverte karakterer.",
                 "previewTitle": "Forhåndsvisning av ERS-integrasjon",
                 "title": "ERS-integrasjon"
+              },
+              "forceRegister": {
+                "description": "Krev CAD-registrering for valgte serverjobber eller ACE-tillatelser.",
+                "title": "Tvungen registrering"
+              },
+              "framework": {
+                "description": "Koble CAD-rapporter til automatiske bøter i spillet på støttede ESX- og QBCore-servere.",
+                "title": "Rammeverkstøtte"
+              },
+              "kick": {
+                "description": "Fjern brukere av nødetater fra CAD når de kobler fra serveren din.",
+                "title": "Automatisk frakobling"
               },
               "pagers": {
                 "badge": "CAD Pro Bonus",
@@ -2422,10 +2450,22 @@
                 "previewTitle": "Forhåndsvisning av Pagers-plugin",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "Få tilgang til Sonoran CAD-appen fra din eksisterende LB Phone-ressurs i spillet.",
+                "title": "LB Phone-app"
+              },
               "printer": {
                 "description": "Skriv ut rapporter og støttende informasjon i spillet for avdelinger som vil ha håndfaste overleveringer fra åsteder.",
                 "previewTitle": "Forhåndsvisning av Printer-plugin",
                 "title": "Skriver"
+              },
+              "radio": {
+                "description": "Koble Sonoran Radio til din CAD for koordinert kommunikasjon i spillet.",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "Registrer karakterer i spillet eller synk karakterportretter med Database Sync.",
+                "title": "Sivil registrering"
               },
               "signs": {
                 "description": "Administrer dynamiske gateg skilt og veimeldinger fra CAD-støttede verktøy bygget for rollespillscener.",
@@ -2438,6 +2478,26 @@
                 "description": "Lever målrettede personsøker-varsler fra utrykkningsaktivitet slik at enhetene får riktig informasjon umiddelbart.",
                 "previewTitle": "Forhåndsvisning av stasjonsvarslingstillegg",
                 "title": "stasjonsvarsel"
+              },
+              "status": {
+                "description": "Endre CAD-enhetsstatusen din med en kommando i spillet.",
+                "title": "Enhetsstatus"
+              },
+              "tablet": {
+                "description": "Åpne hele CAD-en din på et nettbrett eller en visning i spillet og koble deg til oppdrag med Mini-CAD.",
+                "title": "Nettbrett og Mini-CAD"
+              },
+              "templates": {
+                "description": "Generer utrykninger fra egendefinerte maler med dine egne kommandoer i spillet.",
+                "title": "Anropsmaler"
+              },
+              "vehicles": {
+                "description": "Registrer et kjøretøy i CAD med en enkelt kommando i spillet.",
+                "title": "Kjøretøyregister"
+              },
+              "wraith": {
+                "description": "Kjør automatiske skiltoppslag fra Wraith ARS 2X-radaren og skiltleseren.",
+                "title": "Wraith-skiltleser"
               }
             },
             "title": "Offisielle integrasjoner"
@@ -2450,6 +2510,7 @@
         "campaignCtaTitle": "Start gratis + Spar 20%",
         "ecosystemDescription": "Legg til spesialbygde verktøy på serveren din uten å bygge om arbeidsflyten din eller betale for integrasjonslaget.",
         "ecosystemEyebrow": "Gå dypere i spillet",
+        "featureRailHint": "Sveip eller bruk pilene for å utforske hver integrasjon.",
         "featuresDescription": "Verktøy i sanntid kobler spilling, innsats og poster slik at fellesskapet ditt kan forbli oppslukt.",
         "featuresEyebrow": "Integrasjoner",
         "featuresTitle": "Bygget for {game}",
@@ -2457,7 +2518,9 @@
         "homeAriaLabel": "Sonoran CAD-hjem",
         "includedFree": "Inkludert gratis",
         "livePreview": "Direkte forhåndsvisning",
+        "nextFeatures": "Neste integrasjoner",
         "previewAriaLabel": "Forhåndsvisninger av integrasjonsfunksjoner",
+        "previousFeatures": "Tidligere integrasjoner",
         "showcaseImageAriaLabel": "Vis detaljer om {feature}",
         "stats": {
           "apiIntegration": "API & integrasjon",
@@ -3127,6 +3190,152 @@
       "longevityTitle": "Etablert i 2019",
       "supportTeam": "Heltid supportteam"
     }
+  },
+  "permissionEditor": {
+    "bulkHint": "Gjelder bare tillatelser du kan endre.",
+    "empty": "Ingen treffende tilganger",
+    "emptyHint": "Prøv et annet søk eller slå av Kun aktivert.",
+    "enabledCount": "{count} av {total} aktivert",
+    "enabledOnly": "Kun påskrudd",
+    "filteredTitle": "Treffende tilganger",
+    "groups": {
+      "administration": "Administrasjon",
+      "panels": "Paneltilgang",
+      "units": "Enhetsverktøy"
+    },
+    "includedBy": "Inkludert av {permission}.",
+    "permissions": {
+      "adminAccounts": {
+        "description": "Godkjenn, fjern eller utesteng medlemmer, endre deres tillatelser og administrer enhetsidentifikatorer.",
+        "label": "Administrer brukere"
+      },
+      "adminCustomization": {
+        "description": "Endre innstillinger for fellesskapet, rekordmaler og automatiseringer.",
+        "label": "Tilpass samfunn"
+      },
+      "adminDepartments": {
+        "description": "Opprett og rediger avdelinger, rang og enhetskonfigurasjoner.",
+        "label": "Administrer avdelinger"
+      },
+      "admin": {
+        "description": "Få tilgang til administrasjonspanelet. Tillatelsene nedenfor styrer dets seksjoner.",
+        "label": "Administrasjonspanel"
+      },
+      "adminDiscordIntegration": {
+        "description": "Konfigurer Discord-varsler og rollebaserte tillatelser.",
+        "label": "Administrer Discord-integrasjon"
+      },
+      "adminInGameIntegration": {
+        "description": "Konfigurer spilltilkoblinger, API-tilgang og databasesynkronisering.",
+        "label": "Administrer spillintegrasjon"
+      },
+      "adminLimits": {
+        "description": "Se fellesskapets abonnementsløsning, utløp og bruksgrenser.",
+        "label": "Vis grenser"
+      },
+      "adminLogs": {
+        "description": "Vis aktivitetslogger for fellesskapet og bruk av KI.",
+        "label": "Vis logger"
+      },
+      "adminPenalCodes": {
+        "description": "Legg til, rediger og fjern lovbrudd, bøter og straffer.",
+        "label": "Administrer straffelover"
+      },
+      "adminPermissionKeys": {
+        "description": "Opprett og fjern nøkler som medlemmer løser inn for å få tillatelser.",
+        "label": "Administrer tilgangsnøkler"
+      },
+      "adminTenCodes": {
+        "description": "Legg til, rediger og fjern enhetsstatuskoder.",
+        "label": "Administrer ten-koder"
+      },
+      "civilian": {
+        "description": "Tilgang til sivilpanelet.",
+        "label": "Sivilpanel"
+      },
+      "create": {
+        "description": "Opprett poster av denne typen.",
+        "label": "Opprett"
+      },
+      "delete_any": {
+        "description": "Slett poster av denne typen som eies av hvilken som helst konto.",
+        "label": "Slett hvilken som helst"
+      },
+      "delete_own": {
+        "description": "Slett poster av denne typen som eies av denne kontoen.",
+        "label": "Slett egen"
+      },
+      "dispatch": {
+        "description": "Få tilgang til Dispatch-panelet for å administrere anrop og enheter.",
+        "label": "Oppdragspanel"
+      },
+      "dmv": {
+        "description": "Tilgang til DMV-panelet.",
+        "label": "DMV-panel"
+      },
+      "edit_any": {
+        "description": "Rediger poster av denne typen som eies av hvilken som helst konto. Felt kun for veileder krever veilederfelt.",
+        "label": "Rediger alt"
+      },
+      "edit_own": {
+        "description": "Rediger poster av denne typen som eies av denne kontoen.",
+        "label": "Rediger egen"
+      },
+      "edit_selected": {
+        "description": "Rediger felter merket «Tillat begrenset redigering» på andre kontoers oppføringer. Egne oppføringer krever Rediger egne.",
+        "label": "Rediger valgte felter"
+      },
+      "ems": {
+        "description": "Tilgang til EMS-panelet.",
+        "label": "EMS-panel"
+      },
+      "fire": {
+        "description": "Tilgang til brannpanelet.",
+        "label": "Brannpanel"
+      },
+      "lawyer": {
+        "description": "Tilgang til advokatpanelet.",
+        "label": "Advokatpanel"
+      },
+      "liveMap": {
+        "description": "Vis det levende kartet og de tilkoblede enhetenes plasseringer.",
+        "label": "Direkte kart"
+      },
+      "polEditOtherUnit": {
+        "description": "Rediger andre enheters identifikatorer, endre statusen deres eller panikktilstand, og spark enheter.",
+        "label": "Administrer andre enheter"
+      },
+      "polEditUnit": {
+        "description": "Endre informasjonen om din egen enhetsidentifikator.",
+        "label": "Rediger egen enhet"
+      },
+      "police": {
+        "description": "Tilgang til politipanelet.",
+        "label": "Politipanel"
+      },
+      "read": {
+        "description": "Søk etter og se oppføringer av denne typen.",
+        "label": "Vis"
+      },
+      "selfDispatch": {
+        "description": "Administrer anrop, enhetsstatuser, panikktilstander og signaler fra et enhetspanel uten en disponent.",
+        "label": "Knytte seg selv til oppdrag"
+      },
+      "supervise": {
+        "description": "Fyll ut felter kun for veiledere ved oppretting eller redigering. Krever Opprett eller en relevant Rediger-tillatelse.",
+        "label": "Veilederfelt"
+      }
+    },
+    "removedTemplates": "Disse malene for registrering ble fjernet. Fjern tillatelsene deres før lagring.",
+    "search": "Søk i tillatelser eller postmaler",
+    "tabs": {
+      "access": "Tilgang",
+      "admin": "Administrasjon",
+      "records": "Saker"
+    },
+    "tabTitle": "{tab}-tilganger",
+    "toggleAll": "Slå av/på alle",
+    "toggleShown": "Vis/Skjul"
   },
   "police": {
     "bodycamRecordings": {

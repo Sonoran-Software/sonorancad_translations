@@ -2411,10 +2411,38 @@
                 "previewTitle": "本地呼叫者外掛預覽",
                 "title": "本地呼叫端"
               },
+              "civilian": {
+                "description": "直接在遊戲中從 CAD 取得角色識別資料。",
+                "title": "市民整合"
+              },
+              "commands": {
+                "description": "將遊戲內指令發送的緊急來電直接傳送到 CAD 派遣。",
+                "title": "呼叫指令"
+              },
+              "dispatch": {
+                "description": "接收新的來電警報，附加到來電，並在遊戲中跟隨即時 GPS 路由。",
+                "title": "排程通知"
+              },
+              "display": {
+                "description": "在車輛和分局筆電上使用 CAD，螢幕可被附近玩家看到。",
+                "title": "CAD 顯示"
+              },
               "ers": {
-                "description": "在你的伺服器與 Sonoran CAD 之間橋接無線電工作流程，以便在事件處理期間更快速協調。",
+                "description": "從即時地圖生成 ERS 出勤並查詢相關角色。",
                 "previewTitle": "ERS 整合預覽",
                 "title": "ERS 整合"
+              },
+              "forceRegister": {
+                "description": "對選定的伺服器職務或 ACE 權限要求 CAD 註冊。",
+                "title": "強制註冊"
+              },
+              "framework": {
+                "description": "將 CAD 報告連接到受支援的 ESX 和 QBCore 伺服器上的自動遊戲內罰款。",
+                "title": "框架支援"
+              },
+              "kick": {
+                "description": "當緊急服務使用者從你的伺服器斷線時，將其從 CAD 中移除。",
+                "title": "自動斷線"
               },
               "pagers": {
                 "badge": "CAD Pro Bonus",
@@ -2423,10 +2451,22 @@
                 "previewTitle": "Pagers 插件預覽",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "從你現有的 LB Phone 資源在遊戲中存取 Sonoran CAD 應用程式。",
+                "title": "LB 手機應用程式"
+              },
               "printer": {
                 "description": "在遊戲中列印紀錄和支援資訊，供希望取得具體現場交接的部門使用。",
                 "previewTitle": "Printer 插件預覽",
                 "title": "印表機"
+              },
+              "radio": {
+                "description": "將 Sonoran Radio 與您的 CAD 連接，以進行協調的遊戲內通訊。",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "在遊戲中註冊角色或將角色頭像與 Database Sync 同步。",
+                "title": "平民註冊"
               },
               "signs": {
                 "description": "透過為角色扮演場景打造的 CAD 支援工具管理動態街道標誌和道路訊息。",
@@ -2439,6 +2479,26 @@
                 "description": "從派遣活動傳送有針對性的尋呼機通知，讓單位立即取得正確資訊。",
                 "previewTitle": "Station 警示外掛預覽",
                 "title": "alerta de estación"
+              },
+              "status": {
+                "description": "使用遊戲內指令變更您的 CAD 單位狀態。",
+                "title": "單位狀態"
+              },
+              "tablet": {
+                "description": "在遊戲中的平板或視圖上開啟完整 CAD，並使用 Mini-CAD 附加至呼叫。",
+                "title": "平板電腦與 Mini-CAD"
+              },
+              "templates": {
+                "description": "使用您自己的遊戲內指令，從自訂範本產生派遣呼叫。",
+                "title": "呼叫範本"
+              },
+              "vehicles": {
+                "description": "使用單一遊戲內指令在 CAD 中註冊車輛。",
+                "title": "車輛登記"
+              },
+              "wraith": {
+                "description": "使用 Wraith ARS 2X 雷達與車牌閱讀器執行自動車牌查詢。",
+                "title": "Wraith 車牌辨識器"
               }
             },
             "title": "官方整合"
@@ -2451,6 +2511,7 @@
         "campaignCtaTitle": "免費開始 + 省下 20%",
         "ecosystemDescription": "將專為用途打造的工具加入你的伺服器，無需重建工作流程或支付整合層費用。",
         "ecosystemEyebrow": "深入遊戲",
+        "featureRailHint": "滑動或使用箭頭探索每個整合。",
         "featuresDescription": "即時工具連接遊戲、派遣和紀錄，讓你的社群保持沉浸。",
         "featuresEyebrow": "整合",
         "featuresTitle": "為 {game} 而打造",
@@ -2458,7 +2519,9 @@
         "homeAriaLabel": "Sonoran CAD 首頁",
         "includedFree": "包含免費",
         "livePreview": "即時預覽",
+        "nextFeatures": "下一步整合",
         "previewAriaLabel": "整合功能預覽",
+        "previousFeatures": "先前整合",
         "showcaseImageAriaLabel": "查看 {feature} 詳情",
         "stats": {
           "apiIntegration": "API & 整合",
@@ -3128,6 +3191,62 @@
       "longevityTitle": "成立於 2019 年",
       "supportTeam": "全職支援團隊"
     }
+  },
+  "permissionEditor": {
+    "bulkHint": "僅適用於您可以變更的權限。",
+    "empty": "沒有符合的許可權",
+    "enabledCount": "已啟用 {count} / {total}",
+    "enabledOnly": "僅啟用",
+    "groups": {
+      "administration": "管理",
+      "panels": "面板存取權限"
+    },
+    "permissions": {
+      "adminLogs": {
+        "description": "查看社群活動日誌和 AI 使用情況。"
+      },
+      "adminPermissionKeys": {
+        "description": "建立和移除成員兌換以取得權限的金鑰。",
+        "label": "管理許可權金鑰"
+      },
+      "adminTenCodes": {
+        "label": "管理十碼"
+      },
+      "create": {
+        "description": "建立此類型的記錄。"
+      },
+      "dispatch": {
+        "description": "存取 派遣 面板 以 管理 通話 和 單位。",
+        "label": "排程面板"
+      },
+      "dmv": {
+        "label": "DMV 面板"
+      },
+      "edit_selected": {
+        "description": "編輯其他帳戶記錄上標記為「允許有限編輯」的欄位。自己的記錄需要編輯自己的權限。"
+      },
+      "fire": {
+        "label": "消防面板"
+      },
+      "polEditUnit": {
+        "description": "變更您自己的單位識別資訊。"
+      },
+      "police": {
+        "description": "存取警察面板。"
+      },
+      "read": {
+        "label": "查看"
+      },
+      "supervise": {
+        "description": "在建立或編輯時填寫僅主管可用欄位。需要建立或適用的編輯權限。"
+      }
+    },
+    "removedTemplates": "這些記錄範本已移除。請先清除其權限再儲存。",
+    "search": "搜尋權限或記錄範本",
+    "tabs": {
+      "admin": "管理"
+    },
+    "tabTitle": "{tab} 許可權"
   },
   "police": {
     "bodycamRecordings": {
