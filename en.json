@@ -2411,10 +2411,38 @@
                 "previewTitle": "Local callers integration preview",
                 "title": "Local Callers"
               },
+              "civilian": {
+                "description": "Fetch character identification from CAD directly in game.",
+                "title": "Civilian Integration"
+              },
+              "commands": {
+                "description": "Send emergency calls from in-game commands directly to CAD dispatch.",
+                "title": "Call Commands"
+              },
+              "dispatch": {
+                "description": "Receive new call alerts, attach to calls, and follow live GPS routing in game.",
+                "title": "Dispatch Notify"
+              },
+              "display": {
+                "description": "Use CAD on vehicle and station laptops, with screens visible to nearby players.",
+                "title": "CAD Display"
+              },
               "ers": {
-                "description": "Bridge radio workflows between your server and Sonoran CAD for faster coordination during active incidents.",
+                "description": "Generate ERS callouts from the live map and look up involved characters.",
                 "previewTitle": "ERS integration preview",
                 "title": "ERS Integration"
+              },
+              "forceRegister": {
+                "description": "Require CAD registration for selected server jobs or ACE permissions.",
+                "title": "Force Register"
+              },
+              "framework": {
+                "description": "Connect CAD reports to automatic in-game fines on supported ESX and QBCore servers.",
+                "title": "Framework Support"
+              },
+              "kick": {
+                "description": "Remove emergency-service users from CAD when they disconnect from your server.",
+                "title": "Automatic Disconnect"
               },
               "pagers": {
                 "badge": "CAD Pro Bonus",
@@ -2423,10 +2451,22 @@
                 "previewTitle": "Pagers plugin preview",
                 "title": "Pager Reborn"
               },
+              "phone": {
+                "description": "Access the Sonoran CAD app from your existing LB Phone resource in game.",
+                "title": "LB Phone App"
+              },
               "printer": {
                 "description": "Print records and supporting information in game for departments that want tangible scene handoffs.",
                 "previewTitle": "Printer plugin preview",
                 "title": "Printer"
+              },
+              "radio": {
+                "description": "Connect Sonoran Radio with your CAD for coordinated in-game communication.",
+                "title": "Sonoran Radio"
+              },
+              "registration": {
+                "description": "Register characters in game or sync character portraits with Database Sync.",
+                "title": "Civilian Registration"
               },
               "signs": {
                 "description": "Manage dynamic street signs and roadway messaging from CAD-backed tools built for roleplay scenes.",
@@ -2439,6 +2479,26 @@
                 "description": "Free CAD integration; CAD Pro includes the paid Inferno Collection script.",
                 "previewTitle": "Station alerting plugin preview",
                 "title": "Station Alert"
+              },
+              "status": {
+                "description": "Change your CAD unit status with an in-game command.",
+                "title": "Unit Status"
+              },
+              "tablet": {
+                "description": "Open your full CAD on an in-game tablet or view and attach to calls with Mini-CAD.",
+                "title": "Tablet & Mini-CAD"
+              },
+              "templates": {
+                "description": "Generate dispatch calls from custom templates using your own in-game commands.",
+                "title": "Call Templates"
+              },
+              "vehicles": {
+                "description": "Register a vehicle in CAD with a single in-game command.",
+                "title": "Vehicle Register"
+              },
+              "wraith": {
+                "description": "Run automatic plate lookups from the Wraith ARS 2X radar and plate reader.",
+                "title": "Wraith Plate Reader"
               }
             },
             "title": "Official Integrations"
@@ -2451,6 +2511,7 @@
         "campaignCtaTitle": "Start Free + Save 20%",
         "ecosystemDescription": "Add purpose-built tools to your server without rebuilding your workflow or paying for the integration layer.",
         "ecosystemEyebrow": "Go Deeper In Game",
+        "featureRailHint": "Swipe or use the arrows to explore every integration.",
         "featuresDescription": "Real-time tools connect gameplay, dispatch, and records so your community can stay immersed.",
         "featuresEyebrow": "Integrations",
         "featuresTitle": "Built for {game}",
@@ -2458,7 +2519,9 @@
         "homeAriaLabel": "Sonoran CAD home",
         "includedFree": "Included Free",
         "livePreview": "Live Preview",
+        "nextFeatures": "Next integrations",
         "previewAriaLabel": "Integration feature previews",
+        "previousFeatures": "Previous integrations",
         "showcaseImageAriaLabel": "View {feature} details",
         "stats": {
           "apiIntegration": "API & Integration",

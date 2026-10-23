@@ -3129,6 +3129,152 @@
       "supportTeam": "Vollzeit-Supportteam"
     }
   },
+  "permissionEditor": {
+    "bulkHint": "Gilt nur für Berechtigungen, die Sie ändern können.",
+    "empty": "Keine passenden Berechtigungen",
+    "emptyHint": "Versuche eine andere Suche oder deaktiviere Nur aktiviert.",
+    "enabledCount": "{count} von {total} aktiviert",
+    "enabledOnly": "Nur aktiviert",
+    "filteredTitle": "Passende Berechtigungen",
+    "groups": {
+      "administration": "Verwaltung",
+      "panels": "Panelzugriff",
+      "units": "Einheitstools"
+    },
+    "includedBy": "Enthalten in {permission}.",
+    "permissions": {
+      "adminAccounts": {
+        "description": "Mitglieder genehmigen, entfernen oder sperren, ihre Berechtigungen ändern und Einheitenkennungen verwalten.",
+        "label": "Konten verwalten"
+      },
+      "adminCustomization": {
+        "description": "Gemeinschaftseinstellungen, Vorlagen für Berichte und Automatisierungen ändern.",
+        "label": "Community anpassen"
+      },
+      "adminDepartments": {
+        "description": "Abteilungen, Ränge und Einheitskonfigurationen erstellen und bearbeiten.",
+        "label": "Behörden verwalten"
+      },
+      "admin": {
+        "description": "Zugriff auf das Administrationspanel. Die untenstehenden Berechtigungen steuern seine Bereiche.",
+        "label": "Verwaltungsbereich"
+      },
+      "adminDiscordIntegration": {
+        "description": "Discord-Benachrichtigungen und rollenbasierte Berechtigungen konfigurieren.",
+        "label": "Discord-Integration verwalten"
+      },
+      "adminInGameIntegration": {
+        "description": "Spielverbindungen, API-Zugriff und Datenbanksynchronisierung konfigurieren.",
+        "label": "Spielintegration verwalten"
+      },
+      "adminLimits": {
+        "description": "Abonnementplan, Ablauf und Nutzungslimits der Community anzeigen.",
+        "label": "Grenzen anzeigen"
+      },
+      "adminLogs": {
+        "description": "Community-Aktivitätsprotokolle und KI-Nutzung anzeigen.",
+        "label": "Protokolle anzeigen"
+      },
+      "adminPenalCodes": {
+        "description": "Verstöße, Geldstrafen und Strafen hinzufügen, bearbeiten und entfernen.",
+        "label": "Strafgesetzbuch verwalten"
+      },
+      "adminPermissionKeys": {
+        "description": "Schlüssel erstellen und entfernen, die Mitglieder einlösen, um Berechtigungen zu erhalten.",
+        "label": "Berechtigungsschlüssel verwalten"
+      },
+      "adminTenCodes": {
+        "description": "Einheitenstatuscodes hinzufügen, bearbeiten und entfernen.",
+        "label": "Zehencodes verwalten"
+      },
+      "civilian": {
+        "description": "Auf das Zivilenbereich zugreifen.",
+        "label": "Zivilenbereich"
+      },
+      "create": {
+        "description": "Datensätze dieses Typs erstellen.",
+        "label": "Erstellen"
+      },
+      "delete_any": {
+        "description": "Datensätze dieses Typs löschen, die einem beliebigen Konto gehören.",
+        "label": "Beliebige löschen"
+      },
+      "delete_own": {
+        "description": "Datensätze dieses Typs löschen, die diesem Konto gehören.",
+        "label": "Eigene löschen"
+      },
+      "dispatch": {
+        "description": "Greife auf das Dispatch-Panel zu, um Einsätze und Einheiten zu verwalten.",
+        "label": "Leitstellenbereich"
+      },
+      "dmv": {
+        "description": "Auf das DMV-Panel zugreifen.",
+        "label": "DMV-Bereich"
+      },
+      "edit_any": {
+        "description": "Datensätze dieses Typs bearbeiten, die einem beliebigen Konto gehören. Felder nur für Vorgesetzte benötigen Vorgesetztenfelder.",
+        "label": "Beliebig bearbeiten"
+      },
+      "edit_own": {
+        "description": "Datensätze dieses Typs bearbeiten, die diesem Konto gehören.",
+        "label": "Eigene bearbeiten"
+      },
+      "edit_selected": {
+        "description": "Felder bearbeiten, die auf Datensätzen anderer Konten als „Eingeschränkte Bearbeitung erlauben“ markiert sind. Eigene Datensätze erfordern Eigene bearbeiten.",
+        "label": "Ausgewählte Felder bearbeiten"
+      },
+      "ems": {
+        "description": "Auf das EMS-Panel zugreifen.",
+        "label": "EMS-Panel"
+      },
+      "fire": {
+        "description": "Auf das Feuerwehreinsatz-Panel zugreifen.",
+        "label": "Feuerwehreinsatz"
+      },
+      "lawyer": {
+        "description": "Auf das Anwaltspanel zugreifen.",
+        "label": "Anwaltspanel"
+      },
+      "liveMap": {
+        "description": "Die Live-Karte und die Standorte der verbundenen Einheiten anzeigen.",
+        "label": "Live-Karte"
+      },
+      "polEditOtherUnit": {
+        "description": "Kennungen anderer Einheiten bearbeiten, ihren Status oder Panikzustand ändern und Einheiten kicken",
+        "label": "Andere Einheiten verwalten"
+      },
+      "polEditUnit": {
+        "description": "Ändere deine eigenen Einheitenkennungsinformationen.",
+        "label": "Eigene Einheit bearbeiten"
+      },
+      "police": {
+        "description": "Auf das Polizei-Panel zugreifen.",
+        "label": "Polizei-Panel"
+      },
+      "read": {
+        "description": "Nach Datensätzen dieses Typs suchen und sie anzeigen.",
+        "label": "Anzeigen"
+      },
+      "selfDispatch": {
+        "description": "Anrufe, Einheitsstatus, Panikzustände und Signale über ein Einheitenpanel ohne Disponenten verwalten.",
+        "label": "Selbsteinsatz"
+      },
+      "supervise": {
+        "description": "Nur vom Vorgesetzten auszufüllende Felder beim Erstellen oder Bearbeiten. Erfordert Create oder eine entsprechende Edit-Berechtigung.",
+        "label": "Vorgesetzte Felder"
+      }
+    },
+    "removedTemplates": "Diese Vorlagen wurden entfernt. Löschen Sie ihre Berechtigungen vor dem Speichern.",
+    "search": "Berechtigungen oder Vorlagen durchsuchen",
+    "tabs": {
+      "access": "Zugriff",
+      "admin": "Verwaltung",
+      "records": "Einträge"
+    },
+    "tabTitle": "{tab} Berechtigungen",
+    "toggleAll": "Alle umschalten",
+    "toggleShown": "Umschalten angezeigt"
+  },
   "police": {
     "bodycamRecordings": {
       "noneFound": "Keine Bodycam-Aufzeichnungen gefunden.",
