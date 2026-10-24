@@ -1790,6 +1790,7 @@
       "recordSource": "市民記錄",
       "request": "請求 ID",
       "roleplay": "ER:LC",
+      "runLookup": "執行查詢",
       "unavailable": "ID 無法使用。請稍後再試。"
     },
     "notes": "備註",
@@ -3195,58 +3196,148 @@
   "permissionEditor": {
     "bulkHint": "僅適用於您可以變更的權限。",
     "empty": "沒有符合的許可權",
+    "emptyHint": "請嘗試其他搜尋或關閉僅啟用",
     "enabledCount": "已啟用 {count} / {total}",
     "enabledOnly": "僅啟用",
+    "filteredTitle": "符合的許可權",
     "groups": {
       "administration": "管理",
-      "panels": "面板存取權限"
+      "panels": "面板存取權限",
+      "units": "單位工具"
     },
+    "includedBy": "由 {permission} 包含。",
     "permissions": {
+      "adminAccounts": {
+        "description": "核准、移除或封鎖成員，變更其權限，並管理單位識別碼。",
+        "label": "管理賬戶"
+      },
+      "adminCustomization": {
+        "description": "變更社群設定、紀錄範本和自動化。",
+        "label": "自訂社群"
+      },
+      "adminDepartments": {
+        "description": "建立和編輯部門、階級及單位設定。",
+        "label": "管理部門"
+      },
+      "admin": {
+        "description": "存取管理面板。以下權限控制其區段。",
+        "label": "管理面板"
+      },
+      "adminDiscordIntegration": {
+        "description": "設定 Discord 通知和基於角色的權限。",
+        "label": "管理 Discord 整合功能"
+      },
+      "adminInGameIntegration": {
+        "description": "設定遊戲連線、API 存取和資料庫同步。",
+        "label": "管理遊戲整合功能"
+      },
+      "adminLimits": {
+        "description": "查看社區的訂閱方案、到期時間和使用限制。",
+        "label": "查看限制"
+      },
       "adminLogs": {
-        "description": "查看社群活動日誌和 AI 使用情況。"
+        "description": "查看社群活動日誌和 AI 使用情況。",
+        "label": "查看記錄"
+      },
+      "adminPenalCodes": {
+        "description": "新增、編輯和移除違規、罰款和處罰。",
+        "label": "管理法條"
       },
       "adminPermissionKeys": {
         "description": "建立和移除成員兌換以取得權限的金鑰。",
         "label": "管理許可權金鑰"
       },
       "adminTenCodes": {
+        "description": "新增、編輯和移除單位狀態程式碼。",
         "label": "管理十碼"
       },
+      "civilian": {
+        "description": "存取市民面板。",
+        "label": "市民面板"
+      },
       "create": {
-        "description": "建立此類型的記錄。"
+        "description": "建立此類型的記錄。",
+        "label": "創建"
+      },
+      "delete_any": {
+        "description": "刪除任何帳戶擁有的此類型記錄。",
+        "label": "刪除任何"
+      },
+      "delete_own": {
+        "description": "刪除此帳戶擁有的此類型記錄。",
+        "label": "刪除自己的"
       },
       "dispatch": {
         "description": "存取 派遣 面板 以 管理 通話 和 單位。",
         "label": "排程面板"
       },
       "dmv": {
+        "description": "存取 DMV 面板。",
         "label": "DMV 面板"
       },
+      "edit_any": {
+        "description": "編輯任何帳戶擁有的此類型記錄。僅主管可用欄位需要主管欄位。",
+        "label": "編輯任何"
+      },
+      "edit_own": {
+        "description": "編輯此帳戶擁有的此類型記錄。",
+        "label": "編輯自己的"
+      },
       "edit_selected": {
-        "description": "編輯其他帳戶記錄上標記為「允許有限編輯」的欄位。自己的記錄需要編輯自己的權限。"
+        "description": "編輯其他帳戶記錄上標記為「允許有限編輯」的欄位。自己的記錄需要編輯自己的權限。",
+        "label": "編輯已選欄位"
+      },
+      "ems": {
+        "description": "存取 EMS 面板。",
+        "label": "EMS 面板"
       },
       "fire": {
+        "description": "存取消防面板。",
         "label": "消防面板"
       },
+      "lawyer": {
+        "description": "存取律師面板。",
+        "label": "律師面板"
+      },
+      "liveMap": {
+        "description": "查看即時地圖和已連線單位的位置。",
+        "label": "即時地圖"
+      },
+      "polEditOtherUnit": {
+        "description": "編輯其他單位的識別碼，變更其狀態或警報狀態，並踢出單位",
+        "label": "管理其他單位"
+      },
       "polEditUnit": {
-        "description": "變更您自己的單位識別資訊。"
+        "description": "變更您自己的單位識別資訊。",
+        "label": "編輯自己的單位"
       },
       "police": {
-        "description": "存取警察面板。"
+        "description": "存取警察面板。",
+        "label": "警察面板"
       },
       "read": {
+        "description": "搜尋並檢視此類型的記錄。",
         "label": "查看"
       },
+      "selfDispatch": {
+        "description": "無需調度員即可從單位面板管理通話、單位狀態、緊急狀態和訊號。",
+        "label": "自我派遣"
+      },
       "supervise": {
-        "description": "在建立或編輯時填寫僅主管可用欄位。需要建立或適用的編輯權限。"
+        "description": "在建立或編輯時填寫僅主管可用欄位。需要建立或適用的編輯權限。",
+        "label": "主管欄位"
       }
     },
     "removedTemplates": "這些記錄範本已移除。請先清除其權限再儲存。",
     "search": "搜尋權限或記錄範本",
     "tabs": {
-      "admin": "管理"
+      "access": "存取",
+      "admin": "管理",
+      "records": "記錄"
     },
-    "tabTitle": "{tab} 許可權"
+    "tabTitle": "{tab} 許可權",
+    "toggleAll": "全部切換",
+    "toggleShown": "切換顯示"
   },
   "police": {
     "bodycamRecordings": {
