@@ -470,6 +470,23 @@
     },
     "customRecords": {
       "actions": "Actions",
+      "bodycamField": {
+        "title": "Bodycam clips",
+        "selectClip": "Select bodycam clip",
+        "pasteUrl": "Paste a video URL (HTTPS)",
+        "empty": "No bodycam clips attached.",
+        "invalidUrl": "Enter a valid HTTPS video URL without a username or password.",
+        "duplicate": "This clip is already attached.",
+        "copyUrl": "Copy clip URL",
+        "urlCopied": "Clip URL copied.",
+        "copyFailed": "Could not copy the clip URL.",
+        "retentionHint": "Attachments save a link to the video. Native recordings keep their original expiry; attaching a clip does not extend its storage.",
+        "expiresAt": "Expires {date}",
+        "externalRetention": "External clip: the link is saved until removed, and the video remains available while its host provides it.",
+        "linkRetention": "Video availability and playback depend on the linked host. Use a direct video URL for playback here.",
+        "previewCount": "Clips: {count}",
+        "playbackFailed": "This video cannot be played here. Open its URL to view it on the linked host."
+      },
       "addCustomSection": "Add Custom Section",
       "addPremadeSection": "Add Premade Section",
       "addSection": "Add section",
@@ -3359,9 +3376,23 @@
   },
   "police": {
     "bodycamRecordings": {
+      "attachClip": "Attach clip",
+      "copyUrl": "Copy URL",
+      "copyFailed": "Unable to copy the clip URL.",
+      "createdBy": "{time} by {username}",
+      "defaultTitle": "Bodycam Recording",
+      "expiresAt": "Expires {time}. Attaching this clip does not extend its retention.",
+      "externalRetention": "External clip · No CAD expiry. Availability depends on the host.",
+      "identTitle": "Ident {ident}",
+      "loadFailed": "Unable to load bodycam recordings. Check your connection and try again.",
+      "noLocation": "Location unavailable",
       "noneFound": "No bodycam recordings found.",
+      "playbackError": "This clip could not play here. Open its URL to check the source. Use a direct video URL for playback in CAD.",
       "searchRecordings": "Search recordings",
-      "selectRecordingPrompt": "Select a recording to preview it."
+      "selectRecordingPrompt": "Select a recording to preview it.",
+      "unitTitle": "Unit {unit}",
+      "unknownTime": "Unknown time",
+      "uploadRetention": "CAD-hosted clips expire after 24 hours. Attaching a clip does not extend its retention."
     },
     "bodycamViewer": {
       "allCams": "All Cams",
