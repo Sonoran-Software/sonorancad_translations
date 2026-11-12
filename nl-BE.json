@@ -76,16 +76,27 @@
       "code": "Type Oproep"
     },
     "accounts": {
+      "active": "Actief",
       "apiIds": "API-ID's",
+      "banned": "Verbannen",
       "inviteApps": "Gebruik deze ID om deel te nemen in de desktop- en mobiele apps.",
       "inviteCopyFailed": "Kon niet kopiëren. Probeer opnieuw.",
       "inviteMembers": "Nodig je leden uit",
       "inviteUrlHelp": "Gebruik deze URL om rechtstreeks in te loggen op je CAD.",
       "joined": "Gejoined",
+      "joinedOn": "Gejoined op {date}",
       "lastLogin": "Laatste Login",
+      "lastLoginSummary": "Laatste login · {date}",
+      "loadFailed": "Accounts konden niet worden geladen. Probeer te vernieuwen.",
+      "manageAccount": "Beheer {username}",
+      "moreActions": "Meer accountacties",
+      "noLoginRecorded": "Geen login geregistreerd",
+      "pending": "Wachtende",
       "permissions": "Rechten",
       "purge": "Inactieve gebruikers opschonen",
       "purgeConfirm": "Weet u zeker dat u alle inactieve gebruikersaccounts wilt opschonen? (30 dagen)",
+      "searchAccounts": "Accounts zoeken",
+      "selectAccount": "Selecteer {username}",
       "status": "Status",
       "userAccounts": "Gebruikers Accounts",
       "username": "Gebruikersnaam"
@@ -116,6 +127,11 @@
       "successfulRequests": "Voltooide verzoeken",
       "title": "AI-gebruik",
       "tokens": "Tokens"
+    },
+    "askChatGpt": {
+      "description": "Gebruik de officiële Sonoran Software-app in ChatGPT voor hulp bij het configureren van je CAD-community en het instellen van integraties.",
+      "open": "Openen in ChatGPT",
+      "title": "Vraag ChatGPT"
     },
     "authenticate": {
       "authHeader": "Authenticeer uw CAD Eigenschap",
@@ -237,6 +253,7 @@
         "resetPassword": "Reset Wachtwoord",
         "subheader": "Tussentitel",
         "subtext1": "Personaliseer de emails dat je (nieuwe) leden krijgen als ze een account aanmaken of hun wachtwoord vergeten.",
+        "viewNamedTemplate": "Voorbeeld van e-mail {name}",
         "viewTemplate": "Bekijk Template"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "Naam",
         "saveFailed": "Je communitywijzigingen werden niet opgeslagen. Probeer het opnieuw.",
+        "showDiscordLink": "Discord-link weergeven",
+        "showWebsiteLink": "Toon websitekoppeling",
         "subtitle": "Ondertitel",
         "timezone": "Tijdzone",
         "voiceCommand": "Voice Command Sleutelwoord",
@@ -381,13 +400,28 @@
         "width": "Breedte",
         "widthHelp": "Bepaalt hoe breed dit zoekveld eruitziet in het opzoekvenster. Klik op het voorbeeldpictogram om te zien hoe het wordt weergegeven."
       },
+      "menuStyle": {
+        "classic": "Klassiek",
+        "classicHint": "Compacte tegels met paneeliconen.",
+        "communityMenu": "Gemeenschapsmenu",
+        "description": "Van toepassing op alle leden.",
+        "gta": "GTA",
+        "gtaHint": "Hoge rolkaarten met GTA-geïnspireerde karakterportretten.",
+        "illustrated": "Roblox",
+        "illustratedHint": "Hoge rolkaarten met geïllustreerde Roblox-personages.",
+        "localDescription": "Van toepassing op dit browsertabblad.",
+        "saveFailed": "De menuopmaak kon niet worden opgeslagen. Selecteer opnieuw om het opnieuw te proberen.",
+        "title": "Stijl"
+      },
       "notificationTones": {
         "dispatchClosed": "Dispatch Gesloten",
         "dispatchNote": "Dispatch Notitie",
         "dispatchUpdated": "Dispatch Geupdate",
         "newDispatch": "Nieuwe Dispatch",
         "notificationTones": "Notificatie Geluiden",
-        "statusChange": "Statusverandering"
+        "playPreview": "Voorbeeld afspelen",
+        "statusChange": "Statusverandering",
+        "uploadFailed": "Audio kon niet worden geüpload. Probeer opnieuw."
       },
       "otherCustomization": "Andere personalisatie opties",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "Menu Achtergrond Pagina",
         "setToDefault": "Stel in op standaard"
       },
+      "pickColor": "Kies een kleur",
       "quickLinks": {
+        "addLink": "Link toevoegen",
         "color": "Kleur",
         "deleteLink": "Verwijder Link",
+        "empty": "Voeg een link toe om leden een snelkoppeling naar een website te geven.",
         "label": "Tekst",
         "link": "Link",
         "newLink": "Nieuwe Link",
-        "quickLinks": "Snelle Links"
+        "quickLinks": "Snelle Links",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "Code toevoegen",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD staat toe om online eenheden en dispatching tussen meerdere servers te gebruiken en dezelfde documenten te behouden.",
         "subtext3": "Je community ondersteunt",
         "subtext4": "servers."
+      },
+      "toneBoard": {
+        "add": "Toon toevoegen",
+        "audioUrl": "Audio-URL",
+        "dispatchPreview": "Dispatchvoorbeeld",
+        "empty": "Voeg een toon toe om aan de slag te gaan.",
+        "name": "Toonnaam",
+        "playTone": "Voorbeeld van {name}",
+        "remove": "Toon verwijderen",
+        "untitled": "Nieuwe toon"
       },
       "unitStatus": {
         "available": "Beschikbaar",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "Afkorting",
+      "actionsFor": "Acties voor {name}",
+      "addAgency": "Agentchap toevoegen",
+      "addDepartment": "Voeg department toe",
       "address": "Adres",
+      "addSubdivision": "Subdivisie toevoegen",
       "agencies": "Agentschappen",
       "agency": "Agentschap",
       "department": "Departement",
       "departments": "Departementen",
       "description": "Beschrijving",
+      "editDetails": "Aanpassen {name}",
       "editorSubtitle": "Beheer agentschappen, afdelingen en subafdelingen.",
       "editorTitle": "Departementeditor",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "Subdivisie Naam"
       },
       "name": "naam",
+      "openDetails": "Open {name}",
+      "path": "Departementsstructuur",
       "persistentGroups": {
+        "add": "Groep toevoegen",
         "badge": "Persistente groep",
         "empty": "Geen permanente groepen geconfigureerd.",
         "groupName": "Groep naam",
@@ -664,6 +720,8 @@
         "maxUnits": "Max. eenheden",
         "maxUnitsHint": "Optioneel",
         "noUnits": "Geen eenheden in groep",
+        "remove": "Groep verwijderen",
+        "saveFailed": "Kon eenheidsgroepen niet opslaan.",
         "title": "Persistente eenheidsgroepen"
       },
       "subdivisions": "Subdivisies",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "Machtiging Handboek"
+    },
+    "identifiers": {
+      "assignment": "Toewijzing",
+      "editUnitNumber": "Bewerk identificatie {number}",
+      "loadFailed": "Identifiers konden niet worden geladen. Probeer te vernieuwen.",
+      "noUnitNumber": "Geen eenheidsnummer"
     },
     "integration": {
       "apiDocs": "API-documentatie",
@@ -1120,6 +1184,71 @@
       "logs": "Logboeken",
       "time": "Tijdsstip"
     },
+    "navigation": {
+      "accessRules": "Toegangsregels",
+      "accountRestrictionsDescription": "Beperk hoeveel burgerpersonages elk lid kan aanmaken.",
+      "accountsDescription": "Nodig leden uit en beheer hun toegang.",
+      "activity": "Activiteit en gebruik",
+      "addressesDescription": "Voeg adressen toe waar leden naar kunnen zoeken.",
+      "aiDescription": "Zie hoeveel AI je gemeenschap deze maand gebruikte.",
+      "alpr": "ANPR",
+      "apiDescription": "Beheer sleutels voor tools die verbinding maken met CAD.",
+      "appearance": "Uiterlijk van de gemeenschap",
+      "automationsDescription": "Kies wat CAD doet wanneer er een gebeurtenis plaatsvindt.",
+      "communityIdDescription": "Stel de ID in die mensen invoeren om lid te worden van je community.",
+      "communityInfoDescription": "Bewerk de naam, het logo en de links van uw community.",
+      "connections": "Verbindingen",
+      "customDomainDescription": "Gebruik je eigen webadres voor CAD-aanmelding.",
+      "customEmailsDescription": "Bewerk aanmeldings- en wachtwoordreset-e-mails.",
+      "customization": "Personaliseren",
+      "customRecordsDescription": "Maak formulieren voor de dossiers die uw gemeenschap gebruikt.",
+      "danger": "Gevarenzone",
+      "delete": "Gemeenschap verwijderen",
+      "deleteDescription": "Bevestig via e-mail om deze community te verwijderen.",
+      "departmentsDescription": "Organiseer agentschappen, afdelingen en subafdelingen.",
+      "discordDescription": "Stel de Discord-bot, rolsynchronisatie en meldingen in.",
+      "discordPresenceDescription": "Stel de uitnodigingslinks in die leden tonen in Discord.",
+      "dispatch": "Dispatch instellen",
+      "dispatchLayoutsDescription": "Kies de velden die worden weergegeven bij dispatchoproepen.",
+      "eventWebhooks": "Event-webhooks",
+      "geographicalSettingsDescription": "Stel je tijdzone en lokale termen in.",
+      "identifiersDescription": "Vind en bewerk eenheidsgegevens voor leden.",
+      "infernoPagersDescription": "Kies wie noodpagermeldingen ontvangt.",
+      "integrations": "Integraties",
+      "integrationSettings": "Integratie-instellingen",
+      "limitsDescription": "Bekijk wat uw abonnement toestaat.",
+      "logsDescription": "Zie wat beheerders deden en wanneer.",
+      "lookupTypesDescription": "Kies waar leden naar kunnen zoeken in records.",
+      "manageGame": "Spelinstellingen beheren",
+      "manageGameDescription": "Verbind CAD met je game-server.",
+      "management": "Gemeenschapsbeheer",
+      "members": "Leden en machtigingen",
+      "menuStyleDescription": "Kies hoe het gemeenschapsmenu eruitziet.",
+      "notificationTonesDescription": "Kies geluiden voor oproepen en andere meldingen.",
+      "penalCodes": "Strafwetboeken",
+      "penalCodesDescription": "Stel overtredingen, boetes en gevangenisstraffen in.",
+      "people": "Personen & toegang",
+      "permissionKeysDescription": "Maak sleutels aan die leden toegang geven.",
+      "persistentUnitGroupsDescription": "Houd groepen zichtbaar in dispatch, zelfs wanneer ze leeg zijn.",
+      "quickLinksDescription": "Geef leden snelkoppelingen naar nuttige websites.",
+      "rapidIQDescription": "Kies de vragen die RapidIQ aan bellers stelt.",
+      "recordEditors": "Verslag- en code-editors",
+      "records": "Documenten & codes",
+      "recordSettings": "Opname-instellingen",
+      "sections": "Adminsecties",
+      "serversDescription": "Scheid eenheden en meldingen per game server.",
+      "serverSetup": "Serverinstelling",
+      "system": "Systeem",
+      "tenCodes": "Type Oproep",
+      "tenCodesDescription": "Bewerk de codes die eenheden via de radio gebruiken.",
+      "title": "Administratie",
+      "toneBoardDescription": "Stel geluiden in om op aanvraag af te spelen.",
+      "transfer": "Eigendom overdragen",
+      "transferDescription": "Geef het eigenaarschap aan een ander lid.",
+      "unitStatusCodesDescription": "Stel codes in voor eenheidsstatussen zoals beschikbaar of bezet.",
+      "wipeDescription": "Verwijder alle records van een gekozen type.",
+      "workflows": "Workflows"
+    },
     "penal": {
       "autoSort": "Auto Sorteer",
       "bondAmount": "Bond/Boete bedrag",
@@ -1163,6 +1292,7 @@
       "confirmKick": "Weet je zeker dat je deze persoon wilt kicken",
       "confirmRemoveKey": "Weet je zeker dat je deze machtiging sleutel wilt verwijderen?",
       "dmvRecords": "Licentie Documenten",
+      "editKey": "Sleutel {key} aanpassen",
       "emsAdvanced": "Ambulance - Geavanceerd",
       "errors": {
         "duplicateKey": "Error: Er bestaat al een sleutel met deze code!"
@@ -1173,7 +1303,9 @@
       "keyName": "Sleutelcode",
       "kickUser": "Kick Gebruiker",
       "lawRecords": "Wets Documenten",
+      "loadKeysFailed": "Machtigingssleutels konden niet worden geladen. Probeer te vernieuwen.",
       "modifyStreetSigns": "Pas straatborden aan",
+      "newKey": "Nieuwe sleutel",
       "pagePermissions": "Pagina Machtigingen",
       "permissionKey": "Toestemming sleutel",
       "permissionKeys": "Machtiging sleutels",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "Machtiging Handboek",
       "policeAdvanced": "Politie - Geavanceerd",
       "revokeBan": "Verwijder Ban",
+      "searchKeys": "Zoeksleutels",
       "status": {
         "active": "ACTIEF",
         "banned": "GEBANNED",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "U moet de community/CAD-eigenaar zijn om deze CAD over te dragen. Voor het overdrachtsproces is e-mailverificatie vereist."
     },
     "roleSync": {
-      "accountAction": "Rolsynchronisatie instellen",
-      "accountDescription": "Kies machtigingen één keer. Leden voeren /sync uit in Discord.",
-      "accountTitle": "Laat Discord-rollen machtigingen beheren",
+      "accountAction": "Configureren",
+      "accountDescription": "Koppel Discord-rollen aan CAD-machtigingen. Leden voeren /sync uit in Discord.",
+      "accountTitle": "Discord-rolsynchronisatie",
       "add": "Rol toevoegen",
       "autoResync": "Wijzigingen synchroniseren automatisch alle gekoppelde leden 5 minuten na je laatste bewerking. Synchroniseren kan iets langer duren.",
       "cmsManaged": "Sonoran CMS beheert de rechten voor deze community. Configureer rolesynchronisatie in CMS.",
@@ -1659,6 +1792,7 @@
       "addColumn": "Kolom toevoegen",
       "addColumnLeft": "Kolom links toevoegen",
       "addColumnRight": "Kolom rechts toevoegen",
+      "addPanel": "Paneel toevoegen",
       "borderTooltip": "Sleep om de grootte aan te passen. Klik met de rechtermuisknop voor kolomopties.",
       "edgeTooltip": "Klik met de rechtermuisknop voor kolomopties.",
       "headerToggleTooltip": "Dubbelklik om uit te klappen/inklappen",
@@ -1774,6 +1908,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "Admin",
+      "applyPermissionKey": "Toepassen",
       "civilian": "Burger",
       "discord": "Discord",
       "dispatch": "Dispatch",
@@ -1785,8 +1920,22 @@
       "setDefault": "Stel in als standaard community",
       "website": "Website"
     },
+    "carousel": {
+      "next": "Volgende rol",
+      "position": "Positie van de rolekaart",
+      "previous": "Vorige rol"
+    },
+    "erlcPreview": {
+      "name": "Liberty County Roleplay",
+      "panelSelected": "Geselecteerd paneel: {panel}",
+      "subtitle": "Emergency Response: Liberty County"
+    },
+    "fivemPreviewSubtitle": "FiveM roleplaycommunity",
     "labels": {
       "permissionKey": "Machtiging sleutel"
+    },
+    "preview": {
+      "permissionKeySubmitted": "Voorbeeldmachtigingssleutel ingediend."
     },
     "text": {
       "accessCenter": "Toegangszentrum",
@@ -1869,7 +2018,7 @@
     "creditExplanation": "Cadeaubonnen worden rechtstreeks naar {username} gestuurd. Het krediet wordt automatisch toegepast op alle Sonoran Software-abonnementen op dat account.",
     "creditSummary": "Automatisch toegepast op nieuwe abonnementen en verlengingen.",
     "deleteAccount": "Account verwijderen",
-    "description": "Laat leden bijdragen aan Sonoran-abonnementen.",
+    "description": "Laat leden helpen betalen voor Sonoran-abonnementen.",
     "giftOptions": "Cadeaukaartopties",
     "give": "Een cadeaubon geven",
     "hidden": "Verborgen",
@@ -1973,8 +2122,8 @@
     "chooseGame": "Wat speel je?",
     "connectNext": "Je gemeenschap is klaar. Koppel nu je game.",
     "continue": "Doorgaan",
-    "createFailed": "We konden uw community niet maken. Controleer uw communitylimiet en probeer het opnieuw.",
-    "createUncertain": "We konden de aanmaak niet bevestigen. Vernieuw je communities voordat je het opnieuw probeert.",
+    "createFailed": "Kon je gemeenschap niet aanmaken. Probeer opnieuw.",
+    "createUncertain": "Het aanmaken kon niet worden bevestigd. Vernieuw voordat u het opnieuw probeert.",
     "dispatchAi": "Dispatch AI instellen",
     "games": {
       "erlc": "ER:LC",
@@ -1999,6 +2148,7 @@
     "openingCommunity": "Je community openen…",
     "otherName": "Spelnaam",
     "otherRequired": "Voer een spelnaam in (2–60 tekens).",
+    "ownedCommunityLimit": "Je bezit al het maximum aantal communities.",
     "pcNext": "Je community is opgeslagen. Meld je aan met hetzelfde account op je pc om verder te gaan.",
     "previewDesktop": "Hervatten op desktop",
     "previewEvents": "Vastgelegde gebeurtenissen (niet verzonden naar Google Analytics)",
@@ -3029,7 +3179,20 @@
     "title": "Bewaar deze code"
   },
   "menu": {
-    "discovery": "Ontdekking"
+    "browseDiscovery": "Alle bekijken",
+    "communitiesTitle": "Jouw communities",
+    "communityScrollPosition": "Positie van de gemeenschapskaart",
+    "create": "Maak",
+    "discovery": "Ontdekking",
+    "discoveryTitle": "Gemeenschappen ontdekken",
+    "discoveryUnavailable": "Uitgelichte gemeenschappen zijn niet beschikbaar.",
+    "join": "Betreed",
+    "nextCommunities": "Volgende communities",
+    "nextFeaturedCommunity": "Volgende uitgelichte gemeenschap",
+    "noCommunities": "Word lid van of maak een community om te beginnen.",
+    "openFeaturedCommunity": "Ontdek {name}",
+    "previousCommunities": "Vorige gemeenschappen",
+    "previousFeaturedCommunity": "Vorige uitgelichte gemeenschap"
   },
   "payment": {
     "billingCenter": {
@@ -3871,12 +4034,14 @@
       "view": "Bekijk"
     },
     "diagram": {
+      "brushWidth": "Penseelbreedte",
       "deleteSelected": "Geselecteerde verwijderen",
       "groupUngroupSelected": "Geselecteerde groeperen/ungroeperen (SHIFT + CLICK)",
       "itemOptions": "Itemopties",
       "lockUnlockSelected": "Vergrendelen/Ontgrendelen geselecteerde",
       "moveLayerDown": "Laag naar beneden verplaatsen (Shift = onderaan)",
       "moveLayerUp": "Laag omhoog verplaatsen (Shift = Bovenaan)",
+      "opacity": "Dekking",
       "redo": "Opnieuw",
       "shortcutDelete": "SNELTOETS: DELETE",
       "shortcutDown": "SNELTOETS: (SHIFT) pijl omlaag",
@@ -4314,6 +4479,7 @@
       "newGroup": "Nieuwe Groep",
       "removeFromGroup": "Uit groep verwijderen",
       "showAllUnitGroups": "Toon alle eenheidsgroepen",
+      "showDispatchers": "Dispatchers tonen",
       "showUnitGroupsWithUnits": "Toon groepen met eenheden",
       "togglePanic": "Noodknop aan/uit",
       "unitGroups": "Eenheid groepen",
@@ -4337,16 +4503,16 @@
     "questions": "Vragen:"
   },
   "recentPhotos": {
-    "choose": "Kies recente foto",
+    "choose": "Kies foto",
     "copyFailed": "Kon de foto-URL niet kopiëren.",
     "copyUrl": "Foto-URL kopiëren",
     "empty": "Nog geen foto's ontvangen.",
     "receivedAt": "Ontvangen {time}",
     "replacePhoto": "Foto vervangen",
-    "title": "Recente foto's",
+    "title": "Foto's",
     "unavailable": "Deze foto kon niet worden geladen.",
     "unknownTime": "Tijd onbekend",
-    "unreadLabel": "Recente foto's, {count} ongelezen",
+    "unreadLabel": "Foto's, {count} ongelezen",
     "urlCopied": "Foto-URL gekopieerd.",
     "usePhoto": "Foto gebruiken"
   },

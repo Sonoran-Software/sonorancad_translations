@@ -76,16 +76,27 @@
       "code": "Codice"
     },
     "accounts": {
+      "active": "In corso",
       "apiIds": "ID API",
+      "banned": "BANNATO",
       "inviteApps": "Usa questo ID per accedere alle app desktop e mobile.",
       "inviteCopyFailed": "Impossibile copiare. Riprova.",
       "inviteMembers": "Invita i tuoi membri",
       "inviteUrlHelp": "Usa questo URL per accedere direttamente al tuo CAD.",
       "joined": "Entrato",
+      "joinedOn": "Entrato {date}",
       "lastLogin": "Ultimo Login",
+      "lastLoginSummary": "Ultimo login · {date}",
+      "loadFailed": "Impossibile caricare gli account. Prova ad aggiornare.",
+      "manageAccount": "Gestisci {username}",
+      "moreActions": "Altre azioni dell'account",
+      "noLoginRecorded": "Nessun accesso registrato",
+      "pending": "In attesa",
       "permissions": "Permessi",
       "purge": "Elimina inattivo",
       "purgeConfirm": "Sei sicuro di voler eliminare tutti gli account utente inattivi? (30 giorni)",
+      "searchAccounts": "Cerca account",
+      "selectAccount": "Seleziona {username}",
       "status": "Stato",
       "userAccounts": "Profili utente",
       "username": "Nome utente"
@@ -116,6 +127,11 @@
       "successfulRequests": "Richieste completate",
       "title": "Utilizzo IA",
       "tokens": "Token"
+    },
+    "askChatGpt": {
+      "description": "Usa l'app ufficiale Sonoran Software in ChatGPT per ricevere aiuto nella configurazione della tua community CAD e nell'impostazione delle integrazioni.",
+      "open": "Apri in ChatGPT",
+      "title": "Chiedi a ChatGPT"
     },
     "authenticate": {
       "authHeader": "Autentica la tua proprietà CAD",
@@ -237,6 +253,7 @@
         "resetPassword": "Reimposta password",
         "subheader": "Sottotitolo",
         "subtext1": "Personalizza le email che i tuoi utenti ricevono quando creano un account o reimpostano la password dalla schermata di accesso personalizzata.",
+        "viewNamedTemplate": "Anteprima email {name}",
         "viewTemplate": "Visualizza modello"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "Nome",
         "saveFailed": "Le modifiche della community non sono state salvate. Riprova.",
+        "showDiscordLink": "Mostra link Discord",
+        "showWebsiteLink": "Mostra link sito web",
         "subtitle": "Titolo",
         "timezone": "Fuso orario",
         "voiceCommand": "Parola chiave del comando vocale",
@@ -381,13 +400,28 @@
         "width": "Larghezza",
         "widthHelp": "Controlla quanto è ampio questo campo di ricerca nella finestra di ricerca. Fai clic sull'icona Anteprima per vedere come verrà visualizzato."
       },
+      "menuStyle": {
+        "classic": "Classico",
+        "classicHint": "Tessere compatte con icone del pannello.",
+        "communityMenu": "Menu community",
+        "description": "Si applica a tutti i membri.",
+        "gta": "GTA",
+        "gtaHint": "Schede ruolo alte con ritratti dei personaggi ispirati a GTA.",
+        "illustrated": "Roblox",
+        "illustratedHint": "Schede dei ruoli alte con personaggi Roblox illustrati.",
+        "localDescription": "Si applica a questa scheda del browser.",
+        "saveFailed": "Impossibile salvare lo stile del menu. Selezionalo di nuovo per riprovare.",
+        "title": "Stile"
+      },
       "notificationTones": {
         "dispatchClosed": "Spedizione chiusa",
         "dispatchNote": "Nota di spedizione",
         "dispatchUpdated": "Spedizione aggiornata",
         "newDispatch": "Nuova spedizione",
         "notificationTones": "Suoni notifiche",
-        "statusChange": "Cambio di stato"
+        "playPreview": "Riproduci anteprima",
+        "statusChange": "Cambio di stato",
+        "uploadFailed": "Impossibile caricare l'audio. Riprova."
       },
       "otherCustomization": "Altre caratteristiche di personalizzazione",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "Sfondo della pagina del menu",
         "setToDefault": "Imposta il colore predefinito"
       },
+      "pickColor": "Scegli un colore",
       "quickLinks": {
+        "addLink": "Aggiungi link",
         "color": "Colore",
         "deleteLink": "Cancella Link",
+        "empty": "Aggiungi un link per dare ai membri una scorciatoia a un sito web.",
         "label": "Etichetta",
         "link": "Link",
         "newLink": "Nuovo Link",
-        "quickLinks": "Link veloci"
+        "quickLinks": "Link veloci",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "Aggiungi codice",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD ti consente di separare le unità online e l'invio tra più server pur condividendo le stesse registrazioni",
         "subtext3": "La tua comunità può attualmente supportare fino a",
         "subtext4": "server."
+      },
+      "toneBoard": {
+        "add": "Aggiungi tono",
+        "audioUrl": "URL audio",
+        "dispatchPreview": "Anteprima invio",
+        "empty": "Aggiungi un tono per iniziare.",
+        "name": "Nome tono",
+        "playTone": "Anteprima {name}",
+        "remove": "Rimuovi tono",
+        "untitled": "Nuovo tono"
       },
       "unitStatus": {
         "available": "A disposizione",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "Abbrevazione",
+      "actionsFor": "Azioni per {name}",
+      "addAgency": "Aggiungi agenzia",
+      "addDepartment": "Aggiungi dipartimento",
       "address": "Indirizzo",
+      "addSubdivision": "Aggiungi suddivisione",
       "agencies": "Agenzie",
       "agency": "Agenzia",
       "department": "Dipartmento",
       "departments": "Dipartmenti",
       "description": "Descrizione",
+      "editDetails": "Modifica {name}",
       "editorSubtitle": "Gestisci agenzie, reparti e sottoreparti.",
       "editorTitle": "Editor Dipartimento",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "Nome Suddivisione"
       },
       "name": "Nome",
+      "openDetails": "Apri {name}",
+      "path": "Gerarchia dipartimentale",
       "persistentGroups": {
+        "add": "Aggiungi gruppo",
         "badge": "Gruppo persistente",
         "empty": "Nessun gruppo persistente configurato.",
         "groupName": "Nome Gruppo",
@@ -664,6 +720,8 @@
         "maxUnits": "Unità massime",
         "maxUnitsHint": "Opzionale",
         "noUnits": "Nessuna unità nel gruppo",
+        "remove": "Rimuovi gruppo",
+        "saveFailed": "Impossibile salvare i gruppi unità",
         "title": "Gruppi di unità persistenti"
       },
       "subdivisions": "Suddivisione",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "Guida alle autorizzazioni"
+    },
+    "identifiers": {
+      "assignment": "Assegnazione",
+      "editUnitNumber": "Modifica identificatore {number}",
+      "loadFailed": "Impossibile caricare gli identificatori. Prova ad aggiornare.",
+      "noUnitNumber": "Nessun numero di unità"
     },
     "integration": {
       "apiDocs": "API Documenti",
@@ -1120,6 +1184,71 @@
       "logs": "Registri",
       "time": "Tempo"
     },
+    "navigation": {
+      "accessRules": "Regole di accesso",
+      "accountRestrictionsDescription": "Limita quanti personaggi civili può creare ogni membro.",
+      "accountsDescription": "Invita i membri e gestisci il loro accesso.",
+      "activity": "Attività e utilizzo",
+      "addressesDescription": "Aggiungi indirizzi che i membri possono cercare.",
+      "aiDescription": "Guarda quanto IA ha utilizzato la tua comunità questo mese.",
+      "alpr": "ALPR",
+      "apiDescription": "Gestisci le chiavi per gli strumenti che si connettono al CAD.",
+      "appearance": "Aspetto della community",
+      "automationsDescription": "Scegli cosa fa il CAD quando si verifica un evento.",
+      "communityIdDescription": "Imposta l'ID che le persone inseriscono per unirsi alla tua community.",
+      "communityInfoDescription": "Modifica il nome, il logo e i link della tua community.",
+      "connections": "Connessioni",
+      "customDomainDescription": "Usa il tuo indirizzo web per l'accesso al CAD.",
+      "customEmailsDescription": "Modifica le email di registrazione e reimpostazione della password.",
+      "customization": "Personalizzazione",
+      "customRecordsDescription": "Crea moduli per i registri usati dalla tua comunità.",
+      "danger": "Zona pericolosa",
+      "delete": "Elimina community",
+      "deleteDescription": "Conferma via email per rimuovere questa comunità.",
+      "departmentsDescription": "Organizza agenzie, reparti e suddivisioni.",
+      "discordDescription": "Configura il bot Discord, la sincronizzazione dei ruoli e gli avvisi.",
+      "discordPresenceDescription": "Imposta i link di invito che i membri mostrano su Discord.",
+      "dispatch": "Configurazione centralino",
+      "dispatchLayoutsDescription": "Scegli i campi mostrati sulle chiamate di dispatch.",
+      "eventWebhooks": "Webhook evento",
+      "geographicalSettingsDescription": "Imposta il tuo fuso orario e i termini locali.",
+      "identifiersDescription": "Trova e modifica i dettagli dell'unità per i membri.",
+      "infernoPagersDescription": "Scegli chi riceve gli avvisi del cercapersone di emergenza.",
+      "integrations": "Integrazioni",
+      "integrationSettings": "Impostazioni integrazione",
+      "limitsDescription": "Vedi cosa consente il tuo piano.",
+      "logsDescription": "Vedi cosa hanno fatto gli amministratori e quando.",
+      "lookupTypesDescription": "Scegli cosa i membri possono cercare nei record.",
+      "manageGame": "Gestisci configurazione gioco",
+      "manageGameDescription": "Collega CAD al tuo server di gioco.",
+      "management": "Gestione della community",
+      "members": "Membri e permessi",
+      "menuStyleDescription": "Scegli come appare il menu della community.",
+      "notificationTonesDescription": "Scegli i suoni per le chiamate e altri avvisi.",
+      "penalCodes": "Codici penali",
+      "penalCodesDescription": "Imposta reati, multe e tempi di detenzione.",
+      "people": "Persone e accesso",
+      "permissionKeysDescription": "Crea chiavi che diano accesso ai membri.",
+      "persistentUnitGroupsDescription": "Mantieni i gruppi visibili in dispatch anche quando sono vuoti.",
+      "quickLinksDescription": "Dai ai membri scorciatoie a siti web utili.",
+      "rapidIQDescription": "Scegli le domande che RapidIQ pone ai chiamanti.",
+      "recordEditors": "Modificatori di record e codice",
+      "records": "Registri e codici",
+      "recordSettings": "Impostazioni registrazioni",
+      "sections": "Sezioni amministrative",
+      "serversDescription": "Separa unità e chiamate per server di gioco.",
+      "serverSetup": "Configurazione server",
+      "system": "Sistema",
+      "tenCodes": "Codici-10",
+      "tenCodesDescription": "Modifica i codici che le unità usano via radio.",
+      "title": "Amministrazione",
+      "toneBoardDescription": "Configura i suoni da riprodurre su richiesta.",
+      "transfer": "Trasferisci la proprietà",
+      "transferDescription": "Trasferisci la proprietà a un altro membro.",
+      "unitStatusCodesDescription": "Imposta i codici per gli stati delle unità come disponibile o occupato.",
+      "wipeDescription": "Elimina tutti i record di un tipo scelto.",
+      "workflows": "Flussi di lavoro"
+    },
     "penal": {
       "autoSort": "Ordinamento automatico",
       "bondAmount": "Importo obbligazionario / multa",
@@ -1163,6 +1292,7 @@
       "confirmKick": "Sei sicuro di voler kickare",
       "confirmRemoveKey": "Sei sicuro di voler rimuovere questa chiave di autorizzazione?",
       "dmvRecords": "Documenti",
+      "editKey": "Modifica chiave {key}",
       "emsAdvanced": "EMS - Avanzata",
       "errors": {
         "duplicateKey": "Errore: esiste già una chiave duplicata con questo nome!"
@@ -1173,7 +1303,9 @@
       "keyName": "Key Nome",
       "kickUser": "Espelli utente",
       "lawRecords": "Documenti Avvocato",
+      "loadKeysFailed": "Impossibile caricare le chiavi dei permessi. Prova ad aggiornare.",
       "modifyStreetSigns": "Modifica i segnali stradali",
+      "newKey": "Nuova chiave",
       "pagePermissions": "Autorizzazioni della pagina",
       "permissionKey": "Chiave di autorizzazione",
       "permissionKeys": "Chiavi di autorizzazione",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "Guida alle autorizzazioni",
       "policeAdvanced": "Polizia - Avanzata",
       "revokeBan": "Revoca ban",
+      "searchKeys": "Chiavi di ricerca",
       "status": {
         "active": "ATTIVA",
         "banned": "BANNATO",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "Devi essere il proprietario della comunità / CAD per trasferire questo CAD. Il processo di trasferimento richiederà la verifica dell'email."
     },
     "roleSync": {
-      "accountAction": "Configura sincronizzazione ruoli",
-      "accountDescription": "Scegli i permessi una volta. I membri eseguono /sync in Discord.",
-      "accountTitle": "Consenti ai ruoli Discord di gestire le autorizzazioni",
+      "accountAction": "Configura",
+      "accountDescription": "Mappa i ruoli Discord alle autorizzazioni CAD. I membri eseguono /sync su Discord.",
+      "accountTitle": "Sincronizzazione ruolo Discord",
       "add": "Aggiungi ruolo",
       "autoResync": "Le modifiche sincronizzano automaticamente tutti i membri collegati 5 minuti dopo l'ultima modifica. La sincronizzazione può richiedere un po' più di tempo.",
       "cmsManaged": "Sonoran CMS gestisce le autorizzazioni per questa community. Configura la sincronizzazione dei ruoli in CMS.",
@@ -1659,6 +1792,7 @@
       "addColumn": "Aggiungi colonna",
       "addColumnLeft": "Aggiungi colonna a sinistra",
       "addColumnRight": "Aggiungi colonna a destra",
+      "addPanel": "Aggiungi pannello",
       "borderTooltip": "Trascina per ridimensionare. Fai clic con il tasto destro per le opzioni della colonna.",
       "edgeTooltip": "Fai clic con il tasto destro per le opzioni della colonna.",
       "headerToggleTooltip": "Doppio clic per espandere/comprimere",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "Amministratore",
+      "applyPermissionKey": "Applica",
       "civilian": "Civile",
       "discord": "Discord",
       "dispatch": "Operatore 112",
@@ -1786,8 +1921,22 @@
       "setDefault": "Imposta comunità predefinita",
       "website": "Sito web"
     },
+    "carousel": {
+      "next": "Ruolo successivo",
+      "position": "Posizione scheda ruolo",
+      "previous": "Ruolo precedente"
+    },
+    "erlcPreview": {
+      "name": "Roleplay della Contea di Liberty",
+      "panelSelected": "Pannello selezionato: {panel}",
+      "subtitle": "Emergency Response: Liberty County"
+    },
+    "fivemPreviewSubtitle": "Comunità di roleplay FiveM",
     "labels": {
       "permissionKey": "Chiave di autorizzazione"
+    },
+    "preview": {
+      "permissionKeySubmitted": "Chiave autorizzazione anteprima inviata."
     },
     "text": {
       "accessCenter": "Centro accesso",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "Le gift card vengono inviate direttamente a {username}. Il credito viene applicato automaticamente a tutti gli abbonamenti Sonoran Software su quell'account.",
     "creditSummary": "Applicato automaticamente ai nuovi abbonamenti e ai rinnovi.",
     "deleteAccount": "Elimina account",
-    "description": "Permetti ai membri di contribuire agli abbonamenti Sonoran.",
+    "description": "Consenti ai membri di aiutare a pagare gli abbonamenti Sonoran.",
     "giftOptions": "Opzioni carta regalo",
     "give": "Regala una carta regalo",
     "hidden": "Nascosto",
@@ -1974,8 +2123,8 @@
     "chooseGame": "A cosa giochi?",
     "connectNext": "La tua comunità è pronta. Ora, collega il tuo gioco.",
     "continue": "Continua",
-    "createFailed": "Non siamo riusciti a creare la tua community. Controlla il limite della tua community e riprova.",
-    "createUncertain": "Non è stato possibile confermare la creazione. Aggiorna le tue community prima di riprovare.",
+    "createFailed": "Impossibile creare la tua comunità. Riprova.",
+    "createUncertain": "Impossibile confermare la creazione. Aggiorna prima di riprovare.",
     "dispatchAi": "Configura Dispatch AI",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "Apertura della tua comunità…",
     "otherName": "Nome del gioco",
     "otherRequired": "Inserisci un nome gioco (2–60 caratteri).",
+    "ownedCommunityLimit": "Possiedi già il numero massimo di comunità.",
     "pcNext": "La tua comunità è salvata. Accedi con questo stesso account sul tuo PC per continuare.",
     "previewDesktop": "Riprendi sul desktop",
     "previewEvents": "Eventi acquisiti (non inviati a Google Analytics)",
@@ -3030,7 +3180,20 @@
     "title": "Salva questo codice"
   },
   "menu": {
-    "discovery": "Scoperta"
+    "browseDiscovery": "Sfoglia tutto",
+    "communitiesTitle": "Le tue community",
+    "communityScrollPosition": "Posizione scheda community",
+    "create": "Crea",
+    "discovery": "Scoperta",
+    "discoveryTitle": "Scopri le comunità",
+    "discoveryUnavailable": "Le comunità in evidenza non sono disponibili.",
+    "join": "Unisciti",
+    "nextCommunities": "Prossime community",
+    "nextFeaturedCommunity": "Prossima community in evidenza",
+    "noCommunities": "Unisciti a una comunità o creane una per iniziare.",
+    "openFeaturedCommunity": "Scopri {name}",
+    "previousCommunities": "Comunità precedenti",
+    "previousFeaturedCommunity": "Community in evidenza precedente"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "Visualizza"
     },
     "diagram": {
+      "brushWidth": "Larghezza pennello",
       "deleteSelected": "Elimina selezionati",
       "groupUngroupSelected": "Raggruppa/Separa selezionati (SHIFT + CLICK)",
       "itemOptions": "Opzioni elemento",
       "lockUnlockSelected": "Blocca/Sblocca selezionati",
       "moveLayerDown": "Sposta livello in basso (Shift = In basso)",
       "moveLayerUp": "Sposta livello su (Shift = In alto)",
+      "opacity": "Opacità",
       "redo": "Ripeti",
       "shortcutDelete": "SCORCIATOIA: DELETE",
       "shortcutDown": "SCORCIATOIA: Freccia giù (MAIUSC)",
@@ -4315,6 +4480,7 @@
       "newGroup": "Nuovo gruppo",
       "removeFromGroup": "Rimuovi dal gruppo",
       "showAllUnitGroups": "Mostra tutti i gruppi di unità",
+      "showDispatchers": "Mostra operatori",
       "showUnitGroupsWithUnits": "Mostra gruppi con unità",
       "togglePanic": "Attiva / disattiva pulsante d'emergenza",
       "unitGroups": "Gruppi di unità",
@@ -4338,16 +4504,16 @@
     "questions": "Domande:"
   },
   "recentPhotos": {
-    "choose": "Scegli foto recente",
+    "choose": "Scegli foto",
     "copyFailed": "Impossibile copiare l'URL della foto.",
     "copyUrl": "Copia URL foto",
     "empty": "Nessuna foto ricevuta ancora.",
     "receivedAt": "Ricevuto {time}",
     "replacePhoto": "Sostituisci foto",
-    "title": "Foto recenti",
+    "title": "Foto",
     "unavailable": "Questa foto non è stato possibile caricare.",
     "unknownTime": "Ora sconosciuta",
-    "unreadLabel": "Foto recenti, {count} non lette",
+    "unreadLabel": "Foto, {count} non lette",
     "urlCopied": "URL foto copiata.",
     "usePhoto": "Usa foto"
   },

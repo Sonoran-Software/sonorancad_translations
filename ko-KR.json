@@ -76,16 +76,27 @@
       "code": "암호"
     },
     "accounts": {
+      "active": "활동적인",
       "apiIds": "API ID",
+      "banned": "BANNED",
       "inviteApps": "이 ID를 사용해 데스크톱 및 모바일 앱에 참여하세요.",
       "inviteCopyFailed": "복사할 수 없습니다. 다시 시도해 주세요.",
       "inviteMembers": "구성원을 초대하세요",
       "inviteUrlHelp": "이 URL을 사용해 CAD에 직접 로그인하세요.",
       "joined": "가입됨",
+      "joinedOn": "{date}에 가입됨",
       "lastLogin": "마지막 로그인",
+      "lastLoginSummary": "마지막 로그인 · {date}",
+      "loadFailed": "계정을 불러올 수 없습니다. 새로고침해 보세요.",
+      "manageAccount": "{username} 관리",
+      "moreActions": "계정 추가 작업",
+      "noLoginRecorded": "로그인 기록 없음",
+      "pending": "보류 중",
       "permissions": "권한",
       "purge": "퍼지 비활성",
       "purgeConfirm": "모든 비활성 사용자 계정을 삭제하시겠습니까? (30일)",
+      "searchAccounts": "계정 검색",
+      "selectAccount": "{username} 선택",
       "status": "상태",
       "userAccounts": "사용자 계정",
       "username": "사용자 이름"
@@ -116,6 +127,11 @@
       "successfulRequests": "완료된 요청",
       "title": "AI 사용",
       "tokens": "토큰"
+    },
+    "askChatGpt": {
+      "description": "ChatGPT에서 도움을 받아 CAD 커뮤니티를 구성하고 통합을 설정하려면 공식 Sonoran Software 앱을 사용하세요.",
+      "open": "ChatGPT에서 열기",
+      "title": "ChatGPT에 질문"
     },
     "authenticate": {
       "authHeader": "CAD 소유권 인증",
@@ -237,6 +253,7 @@
         "resetPassword": "비밀번호 재설정",
         "subheader": "하위 헤더",
         "subtext1": "사용자 정의 로그인 화면에서 계정을 만들거나 비밀번호를 재설정할 때 사용자가 받는 이메일을 사용자 정의하세요.",
+        "viewNamedTemplate": "{name} 이메일 시사",
         "viewTemplate": "템플릿 보기"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "이름",
         "saveFailed": "커뮤니티 변경 사항이 저장되지 않았습니다. 다시 시도해 주세요.",
+        "showDiscordLink": "Discord 링크 표시",
+        "showWebsiteLink": "웹사이트 링크 표시",
         "subtitle": "부제",
         "timezone": "시간대",
         "voiceCommand": "음성 명령 키워드",
@@ -381,13 +400,28 @@
         "width": "너비",
         "widthHelp": "이 검색 필드가 조회 창에서 표시되는 너비를 제어합니다. 미리 보기 아이콘을 클릭하여 어떻게 표시되는지 확인하세요."
       },
+      "menuStyle": {
+        "classic": "클래식",
+        "classicHint": "패널 아이콘이 있는 간결한 타일.",
+        "communityMenu": "커뮤니티 메뉴",
+        "description": "모든 구성원에게 적용됩니다.",
+        "gta": "GTA",
+        "gtaHint": "GTA에서 영감을 받은 캐릭터 초상화가 있는 세로형 역할 카드.",
+        "illustrated": "Roblox",
+        "illustratedHint": "일러스트 Roblox 캐릭터가 있는 높은 역할 카드.",
+        "localDescription": "이 브라우저 탭에 적용됩니다.",
+        "saveFailed": "메뉴 스타일을 저장할 수 없습니다. 다시 시도하려면 다시 선택하세요.",
+        "title": "스타일"
+      },
       "notificationTones": {
         "dispatchClosed": "파견 마감",
         "dispatchNote": "파견 노트",
         "dispatchUpdated": "디스패치 업데이트됨",
         "newDispatch": "새로운 파견",
         "notificationTones": "알림음",
-        "statusChange": "상태변화"
+        "playPreview": "미리보기 재생",
+        "statusChange": "상태변화",
+        "uploadFailed": "오디오를 업로드할 수 없습니다. 다시 시도하세요."
       },
       "otherCustomization": "기타 사용자 정의 기능",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "메뉴 페이지 배경",
         "setToDefault": "기본 색상으로 설정"
       },
+      "pickColor": "색상 선택",
       "quickLinks": {
+        "addLink": "링크 추가",
         "color": "색상",
         "deleteLink": "링크 삭제",
+        "empty": "구성원에게 웹사이트 바로가기를 제공하는 링크 추가",
         "label": "상표",
         "link": "링크",
         "newLink": "새 링크",
-        "quickLinks": "빠른 링크"
+        "quickLinks": "빠른 링크",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "암호 추가",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD을 사용하면 동일한 기록을 공유하면서 온라인 장치를 분리하고 여러 서버 간에 파견할 수 있습니다.",
         "subtext3": "귀하의 커뮤니티는 현재 최대",
         "subtext4": "서버."
+      },
+      "toneBoard": {
+        "add": "톤 추가",
+        "audioUrl": "오디오 URL",
+        "dispatchPreview": "파견 미리보기",
+        "empty": "톤을 추가하여 시작하기.",
+        "name": "톤 이름",
+        "playTone": "{name} 시사",
+        "remove": "톤 제거",
+        "untitled": "새 톤"
       },
       "unitStatus": {
         "available": "사용 가능",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "약어",
+      "actionsFor": "{name}에 대한 작업",
+      "addAgency": "대행사 추가",
+      "addDepartment": "부서 추가",
       "address": "주소",
+      "addSubdivision": "세분 추가",
       "agencies": "대행사",
       "agency": "대행사",
       "department": "부서",
       "departments": "부서",
       "description": "설명",
+      "editDetails": "{name} 편집하다",
       "editorSubtitle": "에이전시, 부서, 하위 부서를 관리합니다.",
       "editorTitle": "부서 편집",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "하위 구분 이름"
       },
       "name": "이름",
+      "openDetails": "{name} 열기",
+      "path": "부서 계층",
       "persistentGroups": {
+        "add": "그룹 추가",
         "badge": "영구 그룹",
         "empty": "구성된 영구 그룹이 없습니다.",
         "groupName": "그룹 이름",
@@ -664,6 +720,8 @@
         "maxUnits": "최대 단위",
         "maxUnitsHint": "선택 사항",
         "noUnits": "그룹에 유닛 없음",
+        "remove": "그룹 제거",
+        "saveFailed": "유닛 그룹을 저장할 수 없었습니다",
         "title": "영구 단위 그룹"
       },
       "subdivisions": "세분",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "권한 안내"
+    },
+    "identifiers": {
+      "assignment": "배정",
+      "editUnitNumber": "식별자 {number} 편집",
+      "loadFailed": "식별자를 불러올 수 없습니다. 새로고침해 보세요.",
+      "noUnitNumber": "단위 번호 없음"
     },
     "integration": {
       "apiDocs": "API 문서",
@@ -1120,6 +1184,71 @@
       "logs": "로그",
       "time": "시간"
     },
+    "navigation": {
+      "accessRules": "액세스 규칙",
+      "accountRestrictionsDescription": "각 멤버가 생성할 수 있는 민간인 캐릭터 수를 제한합니다.",
+      "accountsDescription": "멤버를 초대하고 액세스를 관리합니다.",
+      "activity": "활동 및 사용",
+      "addressesDescription": "구성원들이 검색할 수 있는 주소를 추가하세요.",
+      "aiDescription": "이번 달에 커뮤니티가 사용한 AI 양을 확인하세요.",
+      "alpr": "자동 번호판 인식",
+      "apiDescription": "CAD에 연결하는 도구의 키 관리.",
+      "appearance": "커뮤니티 외형",
+      "automationsDescription": "이벤트가 발생할 때 CAD가 수행할 작업을 선택하세요.",
+      "communityIdDescription": "커뮤니티에 참여할 때 사람들이 입력하는 ID를 설정하세요.",
+      "communityInfoDescription": "커뮤니티 이름, 로고, 링크를 편집하세요.",
+      "connections": "연결",
+      "customDomainDescription": "CAD 로그인에 자신만의 웹 주소를 사용하세요.",
+      "customEmailsDescription": "가입 및 비밀번호 재설정 이메일 편집.",
+      "customization": "맞춤화",
+      "customRecordsDescription": "커뮤니티가 사용하는 기록용 폼을 만드세요.",
+      "danger": "위험 구역",
+      "delete": "커뮤니티 삭제",
+      "deleteDescription": "이 커뮤니티를 제거하려면 이메일로 확인하세요.",
+      "departmentsDescription": "에이전시, 부서, 하위 부서를 정리합니다.",
+      "discordDescription": "디스코드 봇, 역할 동기화, 알림을 설정합니다.",
+      "discordPresenceDescription": "Discord에서 구성원이 표시하는 초대 링크를 설정하세요.",
+      "dispatch": "파견 설정",
+      "dispatchLayoutsDescription": "출동 호출에 표시될 필드를 선택하세요.",
+      "eventWebhooks": "이벤트 웹훅",
+      "geographicalSettingsDescription": "시간대와 지역 용어를 설정하세요.",
+      "identifiersDescription": "구성원의 단위 세부 정보를 찾고 편집합니다.",
+      "infernoPagersDescription": "누가 긴급 호출기 알림을 받을지 선택하세요.",
+      "integrations": "통합",
+      "integrationSettings": "통합 설정",
+      "limitsDescription": "요금제에서 허용되는 항목을 확인하세요",
+      "logsDescription": "관리자들이 언제 무엇을 했는지 확인하세요.",
+      "lookupTypesDescription": "구성원이 기록에서 검색할 수 있는 항목을 선택하세요.",
+      "manageGame": "게임 설정 관리",
+      "manageGameDescription": "CAD를 게임 서버에 연결하세요.",
+      "management": "커뮤니티 관리",
+      "members": "구성원 및 권한",
+      "menuStyleDescription": "커뮤니티 메뉴의 표시 방식을 선택하세요.",
+      "notificationTonesDescription": "통화 및 기타 알림에 사용할 소리 선택.",
+      "penalCodes": "형법",
+      "penalCodesDescription": "위반, 벌금, 징역 기간을 설정합니다.",
+      "people": "사람 및 액세스",
+      "permissionKeysDescription": "구성원에게 액세스 권한을 주는 키를 만드세요.",
+      "persistentUnitGroupsDescription": "그룹이 비어 있어도 디스패치에서 계속 표시",
+      "quickLinksDescription": "구성원에게 유용한 웹사이트 바로가기를 제공",
+      "rapidIQDescription": "RapidIQ가 발신자에게 묻는 질문을 선택하세요.",
+      "recordEditors": "레코드 및 코드 편집자",
+      "records": "기록 및 코드",
+      "recordSettings": "기록 설정",
+      "sections": "관리자 섹션",
+      "serversDescription": "게임 서버별로 부대와 호출을 분리합니다.",
+      "serverSetup": "서버 설정",
+      "system": "체계",
+      "tenCodes": "10-코드",
+      "tenCodesDescription": "무전에서 부대가 사용하는 코드 수정.",
+      "title": "관리",
+      "toneBoardDescription": "요청 시 재생할 소리를 설정하세요.",
+      "transfer": "소유권 이전",
+      "transferDescription": "다른 멤버에게 소유권을 부여합니다.",
+      "unitStatusCodesDescription": "available 또는 busy 같은 유닛 상태에 대한 코드를 설정합니다.",
+      "wipeDescription": "선택한 유형의 모든 기록 삭제.",
+      "workflows": "워크플로"
+    },
     "penal": {
       "autoSort": "자동 정렬",
       "bondAmount": "채권/벌금 금액",
@@ -1163,6 +1292,7 @@
       "confirmKick": "정말 걷어차고 싶나요?",
       "confirmRemoveKey": "이 권한 키를 삭제하시겠습니까?",
       "dmvRecords": "DMV 기록",
+      "editKey": "키 {key} 편집",
       "emsAdvanced": "EMS - 고급",
       "errors": {
         "duplicateKey": "오류: 이 이름을 가진 중복 키가 이미 존재합니다!"
@@ -1173,7 +1303,9 @@
       "keyName": "키 이름",
       "kickUser": "사용자 추방",
       "lawRecords": "법률 기록",
+      "loadKeysFailed": "권한 키를 불러올 수 없습니다. 새로고침해 보세요.",
       "modifyStreetSigns": "거리 표지판 수정",
+      "newKey": "새로운 열쇠",
       "pagePermissions": "페이지 권한",
       "permissionKey": "권한 키",
       "permissionKeys": "권한 키",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "권한 안내",
       "policeAdvanced": "경찰 - 고급",
       "revokeBan": "금지 취소",
+      "searchKeys": "키 찾기",
       "status": {
         "active": "ACTIVE",
         "banned": "BANNED",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "이 CAD을(를) 이전하려면 커뮤니티/CAD 소유자여야 합니다. 이전 프로세스에는 이메일 확인이 필요합니다."
     },
     "roleSync": {
-      "accountAction": "역할 동기화 설정",
-      "accountDescription": "권한을 한 번 선택하세요. 멤버들은 Discord에서 /sync를 실행합니다.",
-      "accountTitle": "Discord 역할이 권한을 관리하도록 하기",
+      "accountAction": "구성",
+      "accountDescription": "Discord 역할을 CAD 권한에 매핑합니다. 구성원은 Discord에서 /sync를 실행합니다.",
+      "accountTitle": "Discord 역할 동기화",
       "add": "역할 추가",
       "autoResync": "변경 사항은 마지막 편집 5분 후 모든 연결된 구성원을 자동으로 다시 동기화합니다. 동기화는 조금 더 걸릴 수 있습니다.",
       "cmsManaged": "Sonoran CMS는 이 커뮤니티의 권한을 관리합니다. CMS에서 역할 동기화를 구성하세요.",
@@ -1659,6 +1792,7 @@
       "addColumn": "열 추가",
       "addColumnLeft": "왼쪽에 열 추가",
       "addColumnRight": "오른쪽에 열 추가",
+      "addPanel": "패널 추가",
       "borderTooltip": "크기 조정을 위해 드래그합니다. 열 옵션은 마우스 오른쪽 버튼으로 클릭합니다.",
       "edgeTooltip": "열 옵션은 마우스 오른쪽 버튼으로 클릭합니다.",
       "headerToggleTooltip": "더블 클릭하여 펼치기/접기",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "관리자",
+      "applyPermissionKey": "적용",
       "civilian": "일반 민간인",
       "discord": "Discord",
       "dispatch": "보내다",
@@ -1786,8 +1921,22 @@
       "setDefault": "기본 커뮤니티 설정",
       "website": "웹사이트"
     },
+    "carousel": {
+      "next": "다음 역할",
+      "position": "역할 카드 위치",
+      "previous": "이전 역할"
+    },
+    "erlcPreview": {
+      "name": "리버티 카운티 롤플레이",
+      "panelSelected": "선택된 패널: {panel}",
+      "subtitle": "응급 대응: 리버티 카운티"
+    },
+    "fivemPreviewSubtitle": "FiveM 롤플레이 커뮤니티",
     "labels": {
       "permissionKey": "권한 키"
+    },
+    "preview": {
+      "permissionKeySubmitted": "권한 키 미리보기 제출됨."
     },
     "text": {
       "accessCenter": "액세스 센터",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "기프트 카드가 {username}에게 직접 전송됩니다. 크레딧은 해당 계정의 모든 Sonoran Software 구독에 자동으로 적용됩니다.",
     "creditSummary": "새 구독 및 갱신에 자동 적용됩니다.",
     "deleteAccount": "계정 삭제",
-    "description": "멤버들이 Sonoran 구독에 기여할 수 있게 하세요.",
+    "description": "회원들이 Sonoran 구독료를 내는 데 도움을 주도록 하세요.",
     "giftOptions": "기프트 카드 옵션",
     "give": "기프트 카드 선물하기",
     "hidden": "숨김",
@@ -1974,8 +2123,8 @@
     "chooseGame": "무슨 게임을 하세요?",
     "connectNext": "귀하의 커뮤니티가 준비되었습니다. 다음으로, 게임을 연결하세요.",
     "continue": "계속",
-    "createFailed": "커뮤니티를 생성할 수 없었습니다. 커뮤니티 한도를 확인하고 다시 시도하세요.",
-    "createUncertain": "생성을 확인할 수 없었습니다. 다시 시도하기 전에 커뮤니티를 새로고침하세요.",
+    "createFailed": "커뮤니티를 만들 수 없었습니다. 다시 시도하세요.",
+    "createUncertain": "생성을 확인할 수 없었습니다. 다시 시도하기 전에 새로고침하세요.",
     "dispatchAi": "파견 AI 설정",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "커뮤니티 여는 중…",
     "otherName": "게임 이름",
     "otherRequired": "게임 이름을 입력하세요 (2–60자).",
+    "ownedCommunityLimit": "이미 최대 수의 커뮤니티를 소유하고 있습니다.",
     "pcNext": "귀하의 커뮤니티가 저장되었습니다. 계속하려면 PC에서 이 동일한 계정으로 로그인하세요.",
     "previewDesktop": "데스크톱에서 재개",
     "previewEvents": "캡처된 이벤트 (Google Analytics로 전송되지 않음)",
@@ -3030,7 +3180,20 @@
     "title": "이 코드를 저장하세요"
   },
   "menu": {
-    "discovery": "발견"
+    "browseDiscovery": "모두 탐색",
+    "communitiesTitle": "귀하의 커뮤니티",
+    "communityScrollPosition": "커뮤니티 카드 위치",
+    "create": "만들다",
+    "discovery": "발견",
+    "discoveryTitle": "커뮤니티 찾기",
+    "discoveryUnavailable": "추천 커뮤니티를 사용할 수 없습니다.",
+    "join": "가입하다",
+    "nextCommunities": "다음 커뮤니티",
+    "nextFeaturedCommunity": "다음 추천 커뮤니티",
+    "noCommunities": "시작하려면 커뮤니티에 가입하거나 만들어 보세요.",
+    "openFeaturedCommunity": "발견하기 {name}",
+    "previousCommunities": "이전 커뮤니티",
+    "previousFeaturedCommunity": "이전 추천 커뮤니티"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "보다"
     },
     "diagram": {
+      "brushWidth": "브러시 너비",
       "deleteSelected": "선택 항목 삭제",
       "groupUngroupSelected": "선택 항목 그룹화/그룹 해제 (SHIFT + CLICK)",
       "itemOptions": "항목 옵션",
       "lockUnlockSelected": "선택 항목 잠금/잠금 해제",
       "moveLayerDown": "레이어 아래로 이동 (Shift = 맨 아래)",
       "moveLayerUp": "레이어 위로 이동 (Shift = 맨 위)",
+      "opacity": "불투명도",
       "redo": "다시 실행",
       "shortcutDelete": "SHORTCUT: DELETE",
       "shortcutDown": "단축키: (SHIFT) 아래쪽 화살표",
@@ -4306,6 +4471,7 @@
       "newGroup": "새 그룹",
       "removeFromGroup": "그룹에서 제거",
       "showAllUnitGroups": "모든 단위 그룹 보기",
+      "showDispatchers": "디스패처 표시",
       "showUnitGroupsWithUnits": "유닛이 있는 그룹 보기",
       "togglePanic": "패닉 전환",
       "unitGroups": "단위 그룹",
@@ -4329,16 +4495,16 @@
     "questions": "질문:"
   },
   "recentPhotos": {
-    "choose": "최근 사진 선택",
+    "choose": "사진 선택",
     "copyFailed": "사진 URL을 복사할 수 없습니다.",
     "copyUrl": "사진 URL 복사",
     "empty": "아직 받은 사진이 없습니다.",
     "receivedAt": "{time} 에 수신됨",
     "replacePhoto": "사진 바꾸기",
-    "title": "최근 사진",
+    "title": "사진",
     "unavailable": "이 사진을 불러올 수 없습니다.",
     "unknownTime": "시간을 알 수 없음",
-    "unreadLabel": "최근 사진, {count} 읽지 않음",
+    "unreadLabel": "사진, {count}개 읽지 않음",
     "urlCopied": "사진 URL 복사됨.",
     "usePhoto": "사진 사용"
   },
