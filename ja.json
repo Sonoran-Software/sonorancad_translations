@@ -76,16 +76,27 @@
       "code": "コード"
     },
     "accounts": {
+      "active": "有効",
       "apiIds": "API ID",
+      "banned": "BAN",
       "inviteApps": "このIDを使ってデスクトップアプリとモバイルアプリに参加します。",
       "inviteCopyFailed": "コピーできませんでした。もう一度お試しください。",
       "inviteMembers": "メンバーを招待する",
       "inviteUrlHelp": "この URL を使用して CAD に直接ログインします。",
       "joined": "参加済み",
+      "joinedOn": "{date} に参加済み",
       "lastLogin": "最終ログイン",
+      "lastLoginSummary": "最終ログイン · {date}",
+      "loadFailed": "アカウントを読み込めませんでした。更新してください。",
+      "manageAccount": "{username} を管理",
+      "moreActions": "アカウントのその他の操作",
+      "noLoginRecorded": "ログイン記録なし",
+      "pending": "保留中",
       "permissions": "権限",
       "purge": "非アクティブを削除",
       "purgeConfirm": "非アクティブなユーザーアカウントをすべて削除してもよろしいですか? (30 日)",
+      "searchAccounts": "アカウントを検索",
+      "selectAccount": "{username} を選択",
       "status": "ステータス",
       "userAccounts": "ユーザーアカウント",
       "username": "ユーザー名"
@@ -116,6 +127,11 @@
       "successfulRequests": "完了したリクエスト",
       "title": "AI 利用",
       "tokens": "トークン"
+    },
+    "askChatGpt": {
+      "description": "ChatGPT で公式の Sonoran Software アプリを使用して、CAD コミュニティの設定や統合の構成をサポートします。",
+      "open": "ChatGPT で開く",
+      "title": "ChatGPT に質問"
     },
     "authenticate": {
       "authHeader": "CAD所有権を認証",
@@ -237,7 +253,8 @@
         "resetPassword": "パスワードをリセット",
         "subheader": "サブヘッダー",
         "subtext1": "カスタムログイン画面からアカウント作成時やパスワードリセット時にユーザーが受信するメールをカスタマイズします。",
-        "viewTemplate": "テンプレートを表示"
+        "viewNamedTemplate": "{name} メールのプレビュー",
+        "viewTemplate": "プレビュー"
       },
       "errors": {
         "serverLimit1": "エラー: あなたのコミュニティは制限されています",
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "名前",
         "saveFailed": "コミュニティの変更は保存されませんでした。もう一度お試しください。",
+        "showDiscordLink": "Discordリンクを表示",
+        "showWebsiteLink": "ウェブサイトリンクを表示",
         "subtitle": "サブタイトル",
         "timezone": "タイムゾーン",
         "voiceCommand": "音声コマンドキーワード",
@@ -381,13 +400,28 @@
         "width": "幅",
         "widthHelp": "この検索フィールドがルックアップウィンドウでどのくらい広く表示されるかを制御します。表示方法を確認するには、プレビューアイコンをクリックしてください。"
       },
+      "menuStyle": {
+        "classic": "クラシック",
+        "classicHint": "パネルアイコン付きのコンパクトなタイル。",
+        "communityMenu": "コミュニティメニュー",
+        "description": "すべてのメンバーに適用されます。",
+        "gta": "GTA",
+        "gtaHint": "GTA風のキャラクターポートレート付きの縦長ロールカード。",
+        "illustrated": "Roblox",
+        "illustratedHint": "イラスト付き Roblox キャラクターの縦長ロールカード。",
+        "localDescription": "このブラウザタブに適用されます。",
+        "saveFailed": "メニュースタイルを保存できませんでした。再試行するには、もう一度選択してください。",
+        "title": "スタイル"
+      },
       "notificationTones": {
         "dispatchClosed": "出荷完了",
         "dispatchNote": "出荷メモ",
         "dispatchUpdated": "出荷を更新しました",
         "newDispatch": "新規出荷",
         "notificationTones": "通知音",
-        "statusChange": "ステータス変更"
+        "playPreview": "プレビューを再生",
+        "statusChange": "ステータス変更",
+        "uploadFailed": "オーディオをアップロードできませんでした。もう一度お試しください。"
       },
       "otherCustomization": "その他のカスタマイズ機能",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "メニューページ背景",
         "setToDefault": "デフォルトの色に設定"
       },
+      "pickColor": "色を選択",
       "quickLinks": {
+        "addLink": "リンクを追加",
         "color": "色",
         "deleteLink": "リンクを削除",
+        "empty": "メンバーにウェブサイトへのショートカットを提供するリンクを追加します。",
         "label": "ラベル",
         "link": "リンク",
         "newLink": "新しいリンク",
-        "quickLinks": "クイックリンク"
+        "quickLinks": "クイックリンク",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "コードを追加",
@@ -453,7 +491,7 @@
         "value": "値"
       },
       "restrictions": {
-        "maxCivilians": "最大民間人文字数",
+        "maxCivilians": "1アカウントあたりの市民文字数上限",
         "maxLicenses": "市民ライセンスの上限 *",
         "maxRegistrations": "民間人車両登録の最大数 *",
         "note": "* これらの制限は、Database Sync が有効なコミュニティには適用されません。",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CADでは、同じ記録を共有しながら、オンラインユニットとディスパッチを複数のサーバー間で分離できます。",
         "subtext3": "あなたのコミュニティは現在、最大でサポートできます",
         "subtext4": "サーバー。"
+      },
+      "toneBoard": {
+        "add": "トーンを追加",
+        "audioUrl": "音声URL",
+        "dispatchPreview": "出荷プレビュー",
+        "empty": "始めるにはトーンを追加してください。",
+        "name": "トーン名",
+        "playTone": "{name}プレビュー",
+        "remove": "トーンを削除",
+        "untitled": "新しいトーン"
       },
       "unitStatus": {
         "available": "利用可能",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "略称",
+      "actionsFor": "{name} の操作",
+      "addAgency": "機関を追加",
+      "addDepartment": "部門を追加",
       "address": "アドレス",
+      "addSubdivision": "下位区分を追加",
       "agencies": "代理店",
       "agency": "機関",
       "department": "部門",
       "departments": "部門",
       "description": "説明",
+      "editDetails": "編集 {name}",
       "editorSubtitle": "代理店、部署、およびサブ部署を管理します。",
       "editorTitle": "部門エディター",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "下位区分名"
       },
       "name": "名前",
+      "openDetails": "{name} を開く",
+      "path": "部門階層",
       "persistentGroups": {
+        "add": "グループを追加",
         "badge": "永続グループ",
         "empty": "永続グループが設定されていません。",
         "groupName": "グループ名",
@@ -664,6 +720,8 @@
         "maxUnits": "最大単位",
         "maxUnitsHint": "任意",
         "noUnits": "グループにユニットがありません",
+        "remove": "グループを削除",
+        "saveFailed": "ユニットグループを保存できませんでした。",
         "title": "永続ユニットグループ"
       },
       "subdivisions": "下位区分",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "権限ガイド"
+    },
+    "identifiers": {
+      "assignment": "割り当て",
+      "editUnitNumber": "識別子 {number} を編集",
+      "loadFailed": "識別子を読み込めませんでした。更新してください。",
+      "noUnitNumber": "ユニット番号なし"
     },
     "integration": {
       "apiDocs": "APIドキュメント",
@@ -1120,6 +1184,71 @@
       "logs": "ログ",
       "time": "時間"
     },
+    "navigation": {
+      "accessRules": "アクセスルール",
+      "accountRestrictionsDescription": "各メンバーが作成できる市民キャラクターの数を制限します。",
+      "accountsDescription": "メンバーを招待し、アクセスを管理します。",
+      "activity": "アクティビティと使用状況",
+      "addressesDescription": "メンバーが検索できる住所を追加する。",
+      "aiDescription": "今月コミュニティがどれだけ AI を使ったかを確認する。",
+      "alpr": "自動ナンバー プレート認識",
+      "apiDescription": "CAD に接続するツールのキーを管理します。",
+      "appearance": "コミュニティの外観",
+      "automationsDescription": "イベントが発生したときに CAD が行うことを選択してください。",
+      "communityIdDescription": "コミュニティに参加するために入力する ID を設定します。",
+      "communityInfoDescription": "コミュニティの名前、ロゴ、リンクを編集します。",
+      "connections": "接続",
+      "customDomainDescription": "CADサインインに独自のWebアドレスを使用してください。",
+      "customEmailsDescription": "サインアップとパスワードリセットのメールを編集",
+      "customization": "カスタマイズ",
+      "customRecordsDescription": "地域で使う記録用のフォームを作成します。",
+      "danger": "危険区域",
+      "delete": "コミュニティを削除",
+      "deleteDescription": "このコミュニティを削除するにはメールで確認してください。",
+      "departmentsDescription": "代理店、部署、および下位区分を整理します。",
+      "discordDescription": "Discordボット、ロール同期、アラートを設定します。",
+      "discordPresenceDescription": "Discord でメンバーが表示する招待リンクを設定します。",
+      "dispatch": "出荷設定",
+      "dispatchLayoutsDescription": "通話に表示するフィールドを選択します。",
+      "eventWebhooks": "イベント webhook",
+      "geographicalSettingsDescription": "タイムゾーンと地域用語を設定します。",
+      "identifiersDescription": "メンバーのユニット詳細を検索して編集します。",
+      "infernoPagersDescription": "緊急ページャー通知を受け取る人を選択してください。",
+      "integrations": "統合",
+      "integrationSettings": "連携設定",
+      "limitsDescription": "ご利用プランで可能な内容を確認してください。",
+      "logsDescription": "管理者がいつ何をしたかを見る。",
+      "lookupTypesDescription": "メンバーが記録内で検索できる対象を選択します。",
+      "manageGame": "ゲーム設定を管理",
+      "manageGameDescription": "CAD をゲームサーバーに接続します。",
+      "management": "コミュニティ管理",
+      "members": "メンバーと権限",
+      "menuStyleDescription": "コミュニティメニューの見た目を選択してください。",
+      "notificationTonesDescription": "通話とその他のアラートの音を選択してください。",
+      "penalCodes": "刑法",
+      "penalCodesDescription": "違反、罰金、禁固期間を設定します。",
+      "people": "人々とアクセス",
+      "permissionKeysDescription": "メンバーにアクセス権を与えるキーを作成します。",
+      "persistentUnitGroupsDescription": "グループが空でもディスパッチで表示したままにします。",
+      "quickLinksDescription": "メンバーに便利なウェブサイトへのショートカットを提供します。",
+      "rapidIQDescription": "RapidIQ が発信者に尋ねる質問を選択してください。",
+      "recordEditors": "記録とコード 編集",
+      "records": "記録とコード",
+      "recordSettings": "録画設定",
+      "sections": "管理セクション",
+      "serversDescription": "ゲームサーバーごとにユニットと通報を分ける。",
+      "serverSetup": "サーバー セットアップ",
+      "system": "システム",
+      "tenCodes": "10 コード",
+      "tenCodesDescription": "無線で使うコードを編集します。",
+      "title": "管理",
+      "toneBoardDescription": "必要に応じて再生するサウンドを設定します。",
+      "transfer": "所有権を移転",
+      "transferDescription": "所有権を別のメンバーに移譲します。",
+      "unitStatusCodesDescription": "待機中や対応中などのユニットステータス用コードを設定します。",
+      "wipeDescription": "選択した種類の全レコードを削除します。",
+      "workflows": "ワークフロー"
+    },
     "penal": {
       "autoSort": "自動ソート",
       "bondAmount": "保釈金/罰金額",
@@ -1163,6 +1292,7 @@
       "confirmKick": "本当にキックしますか",
       "confirmRemoveKey": "本当にこの permission key を削除しますか",
       "dmvRecords": "DMV 記録",
+      "editKey": "キー {key} を編集",
       "emsAdvanced": "EMS - 詳細設定",
       "errors": {
         "duplicateKey": "エラー: この名前の重複キーはすでに存在します!"
@@ -1173,7 +1303,9 @@
       "keyName": "キー名",
       "kickUser": "ユーザーをキック",
       "lawRecords": "法記録",
+      "loadKeysFailed": "権限キーを読み込めませんでした。更新してください。",
       "modifyStreetSigns": "道路標識を変更",
+      "newKey": "新規キー",
       "pagePermissions": "ページ権限",
       "permissionKey": "権限キー",
       "permissionKeys": "権限キー",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "権限ガイド",
       "policeAdvanced": "警察 - 詳細設定",
       "revokeBan": "BAN 解除",
+      "searchKeys": "検索キー",
       "status": {
         "active": "有効",
         "banned": "BAN",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "このCADを転送するにはコミュニティ/CADの所有者である必要があります。転送手続きにはメール認証が必要です。"
     },
     "roleSync": {
-      "accountAction": "役割の同期を設定",
-      "accountDescription": "権限を一度選択してください。メンバーは Discord で /sync を実行します。",
-      "accountTitle": "Discord のロールで権限を管理する",
+      "accountAction": "設定",
+      "accountDescription": "Discord のロールを CAD 権限にマッピングします。メンバーは Discord で /sync を実行します。",
+      "accountTitle": "Discord 役割の同期",
       "add": "役割を追加",
       "autoResync": "変更は、最後の編集から5分後にリンクされた全メンバーへ自動的に再同期されます。同期には少し時間がかかる場合があります。",
       "cmsManaged": "Sonoran CMS はこのコミュニティの権限を管理します。CMS でロール同期を設定してください。",
@@ -1659,6 +1792,7 @@
       "addColumn": "列を追加",
       "addColumnLeft": "列を左に追加",
       "addColumnRight": "列を右に追加",
+      "addPanel": "パネルを追加",
       "borderTooltip": "ドラッグしてサイズを変更。列オプションは右クリック。",
       "edgeTooltip": "列オプションは右クリック。",
       "headerToggleTooltip": "ダブルクリックで展開/折りたたみ",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "管理者",
+      "applyPermissionKey": "適用",
       "civilian": "市民向け",
       "discord": "Discord",
       "dispatch": "出荷",
@@ -1786,8 +1921,22 @@
       "setDefault": "デフォルトコミュニティに設定",
       "website": "ウェブサイト"
     },
+    "carousel": {
+      "next": "次の役割",
+      "position": "ロールカード位置",
+      "previous": "前の役割"
+    },
+    "erlcPreview": {
+      "name": "リバティ郡 ロールプレイ",
+      "panelSelected": "選択されたパネル: {panel}",
+      "subtitle": "Emergency Response: Liberty County"
+    },
+    "fivemPreviewSubtitle": "FiveM ロールプレイコミュニティ",
     "labels": {
       "permissionKey": "権限キー"
+    },
+    "preview": {
+      "permissionKeySubmitted": "プレビューパーミッションキーが送信されました。"
     },
     "text": {
       "accessCenter": "アクセス センター",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "ギフトカードは{username}に直接送信されます。クレジットは、そのアカウントのすべてのSonoran Softwareサブスクリプションに自動的に適用されます。",
     "creditSummary": "新規サブスクリプションと更新に自動的に適用されます。",
     "deleteAccount": "アカウントを削除",
-    "description": "メンバーが Sonoran サブスクリプションに貢献できるようにします。",
+    "description": "メンバーが Sonoran のサブスクリプションの支払いを手伝えるようにします。",
     "giftOptions": "ギフトカードのオプション",
     "give": "ギフトカードを贈る",
     "hidden": "非表示",
@@ -1974,8 +2123,8 @@
     "chooseGame": "何をしますか？",
     "connectNext": "あなたのコミュニティの準備ができました。次に、ゲームを接続してください。",
     "continue": "続ける",
-    "createFailed": "コミュニティを作成できませんでした。コミュニティの上限を確認して、もう一度お試しください。",
-    "createUncertain": "作成を確認できませんでした。もう一度試す前にコミュニティを更新してください。",
+    "createFailed": "コミュニティを作成できませんでした。もう一度お試しください。",
+    "createUncertain": "作成を確認できませんでした。再試行する前に更新してください。",
     "dispatchAi": "Dispatch AI を設定",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "コミュニティを開いています…",
     "otherName": "ゲーム名",
     "otherRequired": "ゲーム名を入力してください（2～60文字）",
+    "ownedCommunityLimit": "あなたはすでにコミュニティの最大数を所有しています。",
     "pcNext": "あなたのコミュニティは保存されました。続行するには、PCでも同じアカウントでサインインしてください。",
     "previewDesktop": "デスクトップで再開",
     "previewEvents": "取得されたイベント（Google Analytics に送信されていない）",
@@ -3030,7 +3180,20 @@
     "title": "このコードを保存"
   },
   "menu": {
-    "discovery": "ディスカバリー"
+    "browseDiscovery": "すべてを閲覧",
+    "communitiesTitle": "あなたのコミュニティ",
+    "communityScrollPosition": "コミュニティカード位置",
+    "create": "作成",
+    "discovery": "ディスカバリー",
+    "discoveryTitle": "コミュニティを探索",
+    "discoveryUnavailable": "特集コミュニティは利用できません。",
+    "join": "参加",
+    "nextCommunities": "次のコミュニティ",
+    "nextFeaturedCommunity": "次のおすすめコミュニティ",
+    "noCommunities": "コミュニティに参加するか作成して開始してください。",
+    "openFeaturedCommunity": "見つける {name}",
+    "previousCommunities": "前のコミュニティ",
+    "previousFeaturedCommunity": "前のおすすめコミュニティ"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "見る"
     },
     "diagram": {
+      "brushWidth": "ブラシ幅",
       "deleteSelected": "選択した項目を削除",
       "groupUngroupSelected": "選択項目をグループ化/グループ解除 (SHIFT + CLICK)",
       "itemOptions": "アイテム オプション",
       "lockUnlockSelected": "選択した項目をロック/ロック解除",
       "moveLayerDown": "レイヤーを下へ移動 (Shift = 最下部)",
       "moveLayerUp": "レイヤーを上へ移動 (Shift = 上端)",
+      "opacity": "不透明度",
       "redo": "やり直し",
       "shortcutDelete": "ショートカット: DELETE",
       "shortcutDown": "ショートカット: (SHIFT) 下矢印",
@@ -4306,6 +4471,7 @@
       "newGroup": "新しいグループ",
       "removeFromGroup": "グループから削除",
       "showAllUnitGroups": "すべてのユニットグループを表示",
+      "showDispatchers": "司令員を表示",
       "showUnitGroupsWithUnits": "ユニット付きグループを表示",
       "togglePanic": "パニックを切り替える",
       "unitGroups": "ユニットグループ",
@@ -4329,16 +4495,16 @@
     "questions": "質問:"
   },
   "recentPhotos": {
-    "choose": "最近の写真を選択",
+    "choose": "写真を選択",
     "copyFailed": "写真URLをコピーできませんでした。",
     "copyUrl": "写真URLをコピー",
     "empty": "まだ写真は届いていません。",
     "receivedAt": "{time}に受信",
     "replacePhoto": "写真を差し替え",
-    "title": "最近の写真",
+    "title": "写真",
     "unavailable": "この写真を読み込めませんでした。",
     "unknownTime": "時刻不明",
-    "unreadLabel": "最近の写真、{count}件未読",
+    "unreadLabel": "写真、{count}件未読",
     "urlCopied": "写真URLをコピーしました。",
     "usePhoto": "写真を使用"
   },

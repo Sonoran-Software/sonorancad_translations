@@ -76,16 +76,27 @@
       "code": "Kod"
     },
     "accounts": {
+      "active": "Aktif",
       "apiIds": "API kimlikleri",
+      "banned": "YASAKLANDI",
       "inviteApps": "Bu kimliği masaüstü ve mobil uygulamalarda katılmak için kullanın.",
       "inviteCopyFailed": "Kopyalanamadı. Lütfen tekrar deneyin.",
       "inviteMembers": "Üyelerinizi davet edin",
       "inviteUrlHelp": "CAD'nize doğrudan giriş yapmak için bu URL'yi kullanın.",
       "joined": "Katıldı",
+      "joinedOn": "Katıldı {date}",
       "lastLogin": "Son giriş",
+      "lastLoginSummary": "Son giriş · {date}",
+      "loadFailed": "Hesaplar yüklenemedi. Yenilemeyi deneyin.",
+      "manageAccount": "{username} yönet",
+      "moreActions": "Daha fazla hesap işlemi",
+      "noLoginRecorded": "Giriş kaydı yok",
+      "pending": "Askıda olması",
       "permissions": "İzinler",
       "purge": "Temizleme Etkin Değil",
       "purgeConfirm": "Etkin olmayan tüm kullanıcı hesaplarını temizlemek istediğinizden emin misiniz? (30 gün)",
+      "searchAccounts": "Hesapları ara",
+      "selectAccount": "{username} seçin",
       "status": "Durum",
       "userAccounts": "Kullanıcı hesapları",
       "username": "Kullanıcı adı"
@@ -116,6 +127,11 @@
       "successfulRequests": "Tamamlanan istekler",
       "title": "Yapay Zeka Kullanımı",
       "tokens": "Tokenlar"
+    },
+    "askChatGpt": {
+      "description": "CAD topluluğunuzu yapılandırma ve entegrasyonları kurma konusunda yardım almak için ChatGPT'de resmi Sonoran Software uygulamasını kullanın",
+      "open": "ChatGPT'de Aç",
+      "title": "ChatGPT'ye Sor"
     },
     "authenticate": {
       "authHeader": "CAD Sahipliğinizi doğrulayın",
@@ -237,6 +253,7 @@
         "resetPassword": "Şifreyi yenile",
         "subheader": "Alt başlık",
         "subtext1": "Kullanıcılarınızın hesap oluştururken veya şifrelerini sıfırlarken aldıkları e-postaları özel giriş ekranınızdan özelleştirin.",
+        "viewNamedTemplate": "{name} e-postası önizlemesi",
         "viewTemplate": "Şablonu Görüntüle"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "Anlaşmazlık",
         "name": "İsim",
         "saveFailed": "Topluluk değişiklikleriniz kaydedilmedi. Lütfen tekrar deneyin.",
+        "showDiscordLink": "Discord bağlantısını göster",
+        "showWebsiteLink": "Web sitesi bağlantısını göster",
         "subtitle": "Alt yazı",
         "timezone": "Saat dilimi",
         "voiceCommand": "Sesli Komut Anahtar Kelimesi",
@@ -381,13 +400,28 @@
         "width": "Genişlik",
         "widthHelp": "Bu arama alanının lookup penceresinde ne kadar geniş görüneceğini kontrol eder. Nasıl görüntüleneceğini görmek için Önizleme simgesine tıklayın."
       },
+      "menuStyle": {
+        "classic": "Klasik",
+        "classicHint": "Panel simgeli kompakt kutucuklar.",
+        "communityMenu": "Topluluk menüsü",
+        "description": "Tüm üyelere uygulanır.",
+        "gta": "GTA",
+        "gtaHint": "GTA esintili karakter portrelerine sahip uzun rol kartları.",
+        "illustrated": "Roblox",
+        "illustratedHint": "İllüstre Roblox karakterli uzun rol kartları.",
+        "localDescription": "Bu tarayıcı sekmesi için geçerlidir.",
+        "saveFailed": "Menü stili kaydedilemedi. Yeniden denemek için tekrar seçin.",
+        "title": "Stil"
+      },
       "notificationTones": {
         "dispatchClosed": "Gönderim Kapatıldı",
         "dispatchNote": "Not göndermek",
         "dispatchUpdated": "Sevkiyat Güncellendi",
         "newDispatch": "Yeni Gönderim",
         "notificationTones": "Bildirim Tonları",
-        "statusChange": "Durum değişikliği"
+        "playPreview": "Önizlemeyi Oynat",
+        "statusChange": "Durum değişikliği",
+        "uploadFailed": "Ses yüklenemedi. Tekrar deneyin."
       },
       "otherCustomization": "Diğer Özelleştirme Özellikleri",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "Menü Sayfası Arka Planı",
         "setToDefault": "Varsayılan renge ayarla"
       },
+      "pickColor": "Bir renk seçin",
       "quickLinks": {
+        "addLink": "Bağlantı ekle",
         "color": "Renk",
         "deleteLink": "Bağlantıyı Sil",
+        "empty": "Üyelere bir web sitesine kısayol vermek için bir bağlantı ekleyin.",
         "label": "Etiket",
         "link": "Bağlantı",
         "newLink": "Yeni Bağlantı",
-        "quickLinks": "Hızlı Linkler"
+        "quickLinks": "Hızlı Linkler",
+        "url": "URL'si"
       },
       "rapidIQEditor": {
         "addCode": "Kod Ekle",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD, aynı kayıtları paylaşırken çevrimiçi birimleri ayırmanıza ve birden fazla sunucu arasında gönderim yapmanıza olanak tanır.",
         "subtext3": "Topluluğunuz şu anda en fazla destekleyebilir",
         "subtext4": "sunucular."
+      },
+      "toneBoard": {
+        "add": "Ton ekle",
+        "audioUrl": "Ses URL'si",
+        "dispatchPreview": "Gönderim önizlemesi",
+        "empty": "Başlamak için bir ton ekleyin",
+        "name": "Ton adı",
+        "playTone": "{name} Önizleme",
+        "remove": "Tonu sil",
+        "untitled": "Yeni Ton"
       },
       "unitStatus": {
         "available": "Mevcut",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "Kısaltma",
+      "actionsFor": "{name} için işlemler",
+      "addAgency": "Ajans ekle",
+      "addDepartment": "Departman Ekle",
       "address": "Adres",
+      "addSubdivision": "Alt bölüm ekle",
       "agencies": "ajanslar",
       "agency": "Ajans",
       "department": "Departman",
       "departments": "Bölümler",
       "description": "Tanım",
+      "editDetails": "Düzenle {name}",
       "editorSubtitle": "Ajansları, departmanları ve alt departmanları yönetin.",
       "editorTitle": "Departman Düzenleyici",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "Alt Bölüm Adı"
       },
       "name": "İsim",
+      "openDetails": "Aç {name}",
+      "path": "Departman hiyerarşisi",
       "persistentGroups": {
+        "add": "Grup ekle",
         "badge": "Kalıcı Grup",
         "empty": "Yapılandırılmış kalıcı grup yok.",
         "groupName": "Grup ismi",
@@ -664,6 +720,8 @@
         "maxUnits": "Maksimum Birimler",
         "maxUnitsHint": "İsteğe Bağlı",
         "noUnits": "Grupta Birim Yok",
+        "remove": "Grubu Kaldır",
+        "saveFailed": "Birim grupları kaydedilemedi.",
         "title": "Kalıcı Birim Grupları"
       },
       "subdivisions": "Alt bölümler",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "İzin Kılavuzu"
+    },
+    "identifiers": {
+      "assignment": "Atama",
+      "editUnitNumber": "Tanımlayıcıyı Düzenle {number}",
+      "loadFailed": "Tanımlayıcılar yüklenemedi. Yenilemeyi deneyin.",
+      "noUnitNumber": "Birim numarası yok"
     },
     "integration": {
       "apiDocs": "API Dokümanları",
@@ -1120,6 +1184,71 @@
       "logs": "Kütükler",
       "time": "Zaman"
     },
+    "navigation": {
+      "accessRules": "Erişim kuralları",
+      "accountRestrictionsDescription": "Her üyenin oluşturabileceği sivil karakter sayısını sınırla.",
+      "accountsDescription": "Üyeleri davet edin ve erişimlerini yönetin.",
+      "activity": "Etkinlik ve kullanım",
+      "addressesDescription": "Üyelerin arayabileceği adresler ekleyin.",
+      "aiDescription": "Topluluğunuzun bu ay ne kadar yapay zeka kullandığını görün.",
+      "alpr": "ALPR",
+      "apiDescription": "CAD'e bağlanan araçlar için anahtarları yönetin.",
+      "appearance": "Topluluk görünümü",
+      "automationsDescription": "Bir olay gerçekleştiğinde CAD'in ne yapacağını seçin.",
+      "communityIdDescription": "İnsanların topluluğunuza katılmak için girdiği ID'yi ayarlayın.",
+      "communityInfoDescription": "Topluluğunuzun adını, logosunu ve bağlantılarını düzenleyin.",
+      "connections": "Bağlantılar",
+      "customDomainDescription": "CAD oturumu açmak için kendi web adresinizi kullanın.",
+      "customEmailsDescription": "Kayıt ve parola sıfırlama e-postalarını düzenleyin.",
+      "customization": "Özelleştirme",
+      "customRecordsDescription": "Topluluğunuzun kullandığı kayıtlar için formlar oluşturun.",
+      "danger": "Tehlike bölgesi",
+      "delete": "Topluluğu Sil",
+      "deleteDescription": "Bu topluluğu kaldırmak için e-posta ile onaylayın.",
+      "departmentsDescription": "Ajansları, departmanları ve alt birimleri düzenleyin.",
+      "discordDescription": "Discord botunu, rol senkronizasyonunu ve uyarıları ayarla.",
+      "discordPresenceDescription": "Discord’da üyelerin gösterdiği davet bağlantılarını ayarla.",
+      "dispatch": "Sevk Kurulumu",
+      "dispatchLayoutsDescription": "Sevk çağrılarında gösterilen alanları seçin.",
+      "eventWebhooks": "Olay Web Kancaları",
+      "geographicalSettingsDescription": "Saat diliminizi ve yerel terimleri ayarlayın.",
+      "identifiersDescription": "Üyeler için birim ayrıntılarını bulun ve düzenleyin.",
+      "infernoPagersDescription": "Acil durum çağrı cihazı uyarılarını kimin alacağını seçin.",
+      "integrations": "Entegrasyonlar",
+      "integrationSettings": "Entegrasyon ayarları",
+      "limitsDescription": "Planınızın neleri izin verdiğini görün.",
+      "logsDescription": "Yöneticilerin ne yaptığını ve ne zaman yaptığını görün.",
+      "lookupTypesDescription": "Üyelerin kayıtlarda ne arayabileceğini seçin.",
+      "manageGame": "Oyun kurulumunu yönet",
+      "manageGameDescription": "CAD’nizi oyun sunucunuza bağlayın.",
+      "management": "Topluluk yönetimi",
+      "members": "Üyeler ve izinler",
+      "menuStyleDescription": "Topluluk menüsünün nasıl görüneceğini seçin.",
+      "notificationTonesDescription": "Aramalar ve diğer uyarılar için sesleri seçin.",
+      "penalCodes": "Ceza kodları",
+      "penalCodesDescription": "Suçları, para cezalarını ve hapis sürelerini ayarlayın.",
+      "people": "Kişiler ve erişim",
+      "permissionKeysDescription": "Üyelere erişim veren anahtarlar oluşturun.",
+      "persistentUnitGroupsDescription": "Grupları boş olduklarında bile sevk ekranında görünür tutun.",
+      "quickLinksDescription": "Üyelere kullanışlı web sitelerine kısayollar verin.",
+      "rapidIQDescription": "RapidIQ'nun arayanlara soracağı soruları seçin.",
+      "recordEditors": "Kayıt ve kod düzenleyicileri",
+      "records": "Kayıtlar ve kodlar",
+      "recordSettings": "Kayıt ayarları",
+      "sections": "Yönetim Bölümleri",
+      "serversDescription": "Birimleri ve çağrıları oyun sunucusuna göre ayırın.",
+      "serverSetup": "Sunucu kurulumu",
+      "system": "Sistem",
+      "tenCodes": "10-Kodlar",
+      "tenCodesDescription": "Birimlerin telsizde kullandığı kodları düzenle.",
+      "title": "Yönetim",
+      "toneBoardDescription": "İstendiğinde çalınacak sesleri ayarlayın.",
+      "transfer": "Mülkiyeti devret",
+      "transferDescription": "Sahipliği başka bir üyeye devret.",
+      "unitStatusCodesDescription": "Uygun veya meşgul gibi birim durumları için kodlar ayarlayın.",
+      "wipeDescription": "Seçilen türdeki tüm kayıtları silin.",
+      "workflows": "İş Akışları"
+    },
     "penal": {
       "autoSort": "Otomatik Sıralama",
       "bondAmount": "Kefalet/Ceza Tutarı",
@@ -1163,6 +1292,7 @@
       "confirmKick": "Tekmelemek istediğinden emin misin",
       "confirmRemoveKey": "Bu izin anahtarını kaldırmak istediğinizden emin misiniz?",
       "dmvRecords": "DMV Kayıtları",
+      "editKey": "Anahtarı düzenle {key}",
       "emsAdvanced": "EMS - Gelişmiş",
       "errors": {
         "duplicateKey": "Hata: Bu adda yinelenen bir anahtar zaten mevcut!"
@@ -1173,7 +1303,9 @@
       "keyName": "Anahtar Adı",
       "kickUser": "Kullanıcıyı At",
       "lawRecords": "Hukuk Kayıtları",
+      "loadKeysFailed": "İzin anahtarları yüklenemedi. Yenilemeyi deneyin.",
       "modifyStreetSigns": "Sokak Tabelalarını Değiştirin",
+      "newKey": "Yeni anahtar",
       "pagePermissions": "Sayfa İzinleri",
       "permissionKey": "İzin Anahtarı",
       "permissionKeys": "İzin Anahtarları",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "İzin Kılavuzu",
       "policeAdvanced": "Polis - İleri Düzey",
       "revokeBan": "Yasağı İptal Et",
+      "searchKeys": "Arama anahtarları",
       "status": {
         "active": "AKTİF",
         "banned": "YASAKLANDI",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "Bu CAD'yi aktarmak için topluluk/CAD sahibi olmanız gerekir. Aktarım işlemi e-posta doğrulamasını gerektirecektir."
     },
     "roleSync": {
-      "accountAction": "Rol senkronizasyonunu ayarla",
-      "accountDescription": "İzinleri bir kez seçin. Üyeler Discord'da /sync çalıştırır.",
-      "accountTitle": "Discord rollerinin izinleri yönetmesine izin ver",
+      "accountAction": "Yapılandır",
+      "accountDescription": "Discord rollerini CAD izinleriyle eşleştirin. Üyeler Discord'da /sync kullanır.",
+      "accountTitle": "Discord rol senkronizasyonu",
       "add": "Rol Ekle",
       "autoResync": "Değişiklikler, son düzenlemenizden 5 dakika sonra tüm bağlı üyeleri otomatik olarak yeniden senkronize eder. Senkronizasyon biraz daha uzun sürebilir.",
       "cmsManaged": "Sonoran CMS bu topluluk için izinleri yönetir. Rol senkronizasyonunu CMS'de yapılandırın.",
@@ -1659,6 +1792,7 @@
       "addColumn": "Sütun Ekle",
       "addColumnLeft": "Sola Sütun Ekle",
       "addColumnRight": "Sağa Sütun Ekle",
+      "addPanel": "Panel ekle",
       "borderTooltip": "Boyutu değiştirmek için sürükleyin. Sütun seçenekleri için sağ tıklayın.",
       "edgeTooltip": "Sütun seçenekleri için sağ tıklayın.",
       "headerToggleTooltip": "Genişletmek/daraltmak için çift tıklayın",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "Yönetici",
+      "applyPermissionKey": "Uygula",
       "civilian": "Sivil",
       "discord": "Discord",
       "dispatch": "Muhabere",
@@ -1786,8 +1921,22 @@
       "setDefault": "Varsayılan Topluluğu Ayarla",
       "website": "İnternet sitesi"
     },
+    "carousel": {
+      "next": "Sonraki rol",
+      "position": "Rol kartı konumu",
+      "previous": "Önceki rol"
+    },
+    "erlcPreview": {
+      "name": "Liberty County Roleplay",
+      "panelSelected": "Seçilen panel: {panel}",
+      "subtitle": "Acil Durum Müdahalesi: Liberty County"
+    },
+    "fivemPreviewSubtitle": "FiveM rol yapma topluluğu",
     "labels": {
       "permissionKey": "İzin Anahtarı"
+    },
+    "preview": {
+      "permissionKeySubmitted": "İzin anahtarı önizlemesi gönderildi."
     },
     "text": {
       "accessCenter": "Erişim merkezi",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "Hediye kartları doğrudan {username} adlı kullanıcıya gönderilir. Kredi, bu hesaptaki tüm Sonoran Software aboneliklerine otomatik olarak uygulanır.",
     "creditSummary": "Yeni aboneliklere ve yenilemelere otomatik olarak uygulanır.",
     "deleteAccount": "Hesabı Sil",
-    "description": "Üyelerin Sonoran aboneliklerine katkıda bulunmasına izin verin.",
+    "description": "Üyelerin Sonoran abonelikleri için ödeme yapmasına yardımcı olun.",
     "giftOptions": "Hediye kartı seçenekleri",
     "give": "Hediye kartı ver",
     "hidden": "Gizli",
@@ -1974,8 +2123,8 @@
     "chooseGame": "Ne oynuyorsun?",
     "connectNext": "Topluluğunuz hazır. Şimdi, oyununuzu bağlayın.",
     "continue": "Devam et",
-    "createFailed": "Topluluğunuzu oluşturamadık. Topluluk limitinizi kontrol edin ve tekrar deneyin.",
-    "createUncertain": "Oluşturmayı doğrulayamadık. Tekrar denemeden önce topluluklarınızı yenileyin.",
+    "createFailed": "Topluluğunuz oluşturulamadı. Tekrar deneyin.",
+    "createUncertain": "Oluşturma doğrulanamadı. Yeniden denemeden önce yenileyin.",
     "dispatchAi": "Yapay Zekâ Sevkiyatını Kur",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "Topluluğunuzu açılıyor…",
     "otherName": "Oyun adı",
     "otherRequired": "Bir oyun adı girin (2–60 karakter).",
+    "ownedCommunityLimit": "Zaten en fazla sayıda topluluğa sahipsiniz.",
     "pcNext": "Topluluğunuz kaydedildi. Devam etmek için PC'nizde aynı hesapla oturum açın.",
     "previewDesktop": "Masaüstünde sürdür",
     "previewEvents": "Yakalanan etkinlikler (Google Analytics'e gönderilmedi)",
@@ -3030,7 +3180,20 @@
     "title": "Bu kodu kaydet"
   },
   "menu": {
-    "discovery": "Keşif"
+    "browseDiscovery": "Tümünü Gözat",
+    "communitiesTitle": "Topluluklarınız",
+    "communityScrollPosition": "Topluluk kartı konumu",
+    "create": "Yaratmak",
+    "discovery": "Keşif",
+    "discoveryTitle": "Toplulukları Keşfet",
+    "discoveryUnavailable": "Öne çıkan topluluklar kullanılamıyor.",
+    "join": "Katıl",
+    "nextCommunities": "Sonraki topluluklar",
+    "nextFeaturedCommunity": "Sonraki öne çıkan topluluk",
+    "noCommunities": "Başlamak için bir topluluğa katılın veya oluşturun.",
+    "openFeaturedCommunity": "{name} Keşfet",
+    "previousCommunities": "Önceki topluluklar",
+    "previousFeaturedCommunity": "Önceki öne çıkan topluluk"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "Görüş"
     },
     "diagram": {
+      "brushWidth": "Fırça Genişliği",
       "deleteSelected": "Seçilenleri Sil",
       "groupUngroupSelected": "Seçilenleri Grupla/Ayrıştır (SHIFT + CLICK)",
       "itemOptions": "Öğe Seçenekleri",
       "lockUnlockSelected": "Seçilenleri Kilitle/Kilidi Aç",
       "moveLayerDown": "Katmanı Aşağı Taşı (Shift = Alt)",
       "moveLayerUp": "Katmanı Yukarı Taşı (Shift = Üst)",
+      "opacity": "Opaklık",
       "redo": "Yinele",
       "shortcutDelete": "KISAYOL: DELETE",
       "shortcutDown": "KISAYOL: (SHIFT) Aşağı Ok",
@@ -4315,6 +4480,7 @@
       "newGroup": "Yeni Grup",
       "removeFromGroup": "Gruptan Kaldır",
       "showAllUnitGroups": "Tüm Birim Gruplarını Göster",
+      "showDispatchers": "Sevk Görevlilerini Göster",
       "showUnitGroupsWithUnits": "Birimlerle Grupları Göster",
       "togglePanic": "Paniği Değiştir",
       "unitGroups": "Birim Grupları",
@@ -4338,16 +4504,16 @@
     "questions": "Sorular:"
   },
   "recentPhotos": {
-    "choose": "Son fotoğraf seç",
+    "choose": "Fotoğraf seç",
     "copyFailed": "Fotoğraf URL'si kopyalanamadı.",
     "copyUrl": "Fotoğraf URL'sini Kopyala",
     "empty": "Henüz fotoğraf alınmadı.",
     "receivedAt": "{time} tarihinde alındı",
     "replacePhoto": "Fotoğrafı değiştir",
-    "title": "Son fotoğraflar",
+    "title": "Fotoğraflar",
     "unavailable": "Bu fotoğraf yüklenemedi.",
     "unknownTime": "Zaman bilinmiyor",
-    "unreadLabel": "Son fotoğraflar, {count} okunmamış",
+    "unreadLabel": "Fotoğraflar, {count} okunmadı",
     "urlCopied": "Fotoğraf URL'si kopyalandı.",
     "usePhoto": "Fotoğrafı kullan"
   },

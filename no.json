@@ -76,16 +76,27 @@
       "code": "Kode"
     },
     "accounts": {
+      "active": "Aktiv",
       "apiIds": "API-ID-er",
+      "banned": "Utestengt",
       "inviteApps": "Bruk denne ID-en for å bli med i skrivebords- og mobilappene.",
       "inviteCopyFailed": "Kunne ikke kopiere. Prøv igjen.",
       "inviteMembers": "Inviter medlemmene dine",
       "inviteUrlHelp": "Bruk denne URL-en for å logge inn direkte i CAD-en.",
       "joined": "Ble med",
+      "joinedOn": "Ble med {date}",
       "lastLogin": "Siste innlogging",
+      "lastLoginSummary": "Siste innlogging · {date}",
+      "loadFailed": "Kunne ikke laste inn kontoer. Prøv å oppdatere.",
+      "manageAccount": "Administrer {username}",
+      "moreActions": "Flere kontohandlinger",
+      "noLoginRecorded": "Ingen pålogging registrert",
+      "pending": "VENTER",
       "permissions": "Tilganger",
       "purge": "Slett inaktive",
       "purgeConfirm": "Er du sikker på at du vil slette alle inaktive brukerkontoer? (30 dager)",
+      "searchAccounts": "Søk brukere",
+      "selectAccount": "Velg {username}",
       "status": "Status",
       "userAccounts": "Brukerkontoer",
       "username": "Brukernavn"
@@ -116,6 +127,11 @@
       "successfulRequests": "Fullførte forespørsler",
       "title": "AI-bruk",
       "tokens": "Tokens"
+    },
+    "askChatGpt": {
+      "description": "Bruk den offisielle Sonoran Software-appen i ChatGPT for hjelp med å konfigurere CAD-fellesskapet ditt og sette opp integrasjoner.",
+      "open": "Åpne i ChatGPT",
+      "title": "Spør ChatGPT"
     },
     "authenticate": {
       "authHeader": "Bekreft ditt CAD-eierskap",
@@ -237,7 +253,8 @@
         "resetPassword": "Tilbakestill passord",
         "subheader": "Undermeny",
         "subtext1": "Tilpass e-postene brukerne dine mottar når de oppretter en konto eller tilbakestiller passordet sitt fra din tilpassede innloggingsskjerm.",
-        "viewTemplate": "Vis mal"
+        "viewNamedTemplate": "Forhåndsvisning av e-post {name}",
+        "viewTemplate": "Forhåndsvisning"
       },
       "errors": {
         "serverLimit1": "Feil: Samfunnet ditt er begrenset til",
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "Navn",
         "saveFailed": "Endringene i fellesskapet ble ikke lagret. Prøv igjen.",
+        "showDiscordLink": "Vis Discord-lenke",
+        "showWebsiteLink": "Vis nettstedlenke",
         "subtitle": "Undertittel",
         "timezone": "Tidssone",
         "voiceCommand": "Talekommando-nøkkelord",
@@ -381,13 +400,28 @@
         "width": "Bredde",
         "widthHelp": "Styrer hvor bred dette søkefeltet vises i oppslagsvinduet. Klikk på Forhåndsvisningsikonet for å se hvordan det vil bli vist."
       },
+      "menuStyle": {
+        "classic": "Klassisk",
+        "classicHint": "Kompakte fliser med panelikoner.",
+        "communityMenu": "Samfunnsmeny",
+        "description": "Gjelder for alle medlemmer.",
+        "gta": "GTA",
+        "gtaHint": "Høye rollekort med GTA-inspirerte karakterportretter.",
+        "illustrated": "Roblox",
+        "illustratedHint": "Høye rollekort med illustrerte Roblox-figurer.",
+        "localDescription": "Gjelder denne nettleserfanen.",
+        "saveFailed": "Kunne ikke lagre menystilen. Velg den på nytt for å prøve igjen.",
+        "title": "Stil"
+      },
       "notificationTones": {
         "dispatchClosed": "Oppdrag avsluttet",
         "dispatchNote": "Oppdragsnotat",
         "dispatchUpdated": "Oppdrag oppdatert",
         "newDispatch": "Nytt oppdrag",
         "notificationTones": "Varsellyder",
-        "statusChange": "Statusendring"
+        "playPreview": "Spill av forhåndsvisning",
+        "statusChange": "Statusendring",
+        "uploadFailed": "Kunne ikke laste opp lyd. Prøv igjen."
       },
       "otherCustomization": "Andre tilpasningsfunksjoner",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "Menyside bakgrunn",
         "setToDefault": "Sett til standardfarge"
       },
+      "pickColor": "Velg en farge",
       "quickLinks": {
+        "addLink": "Legg til lenke",
         "color": "Farge",
         "deleteLink": "Slett lenke",
+        "empty": "Legg til en lenke for å gi medlemmer en snarvei til et nettsted.",
         "label": "Merkelapp",
         "link": "Lenke",
         "newLink": "Ny lenke",
-        "quickLinks": "Nyttige lenker"
+        "quickLinks": "Nyttige lenker",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "Legg til kode",
@@ -453,7 +491,7 @@
         "value": "Verdi"
       },
       "restrictions": {
-        "maxCivilians": "Maks antall sivile tegn",
+        "maxCivilians": "Maks antall sivile tegn per konto",
         "maxLicenses": "Maks antall sivile lisenser *",
         "maxRegistrations": "Maks sivile kjøretøyregistreringer *",
         "note": "* Disse begrensningene gjelder IKKE for fellesskap med Database Sync aktivert.",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD lar deg skille nettbaserte enheter og ekspedering mellom flere servere, samtidig som de deler de samme oppføringene.",
         "subtext3": "Ditt fellesskap kan for øyeblikket støtte opptil",
         "subtext4": "servere."
+      },
+      "toneBoard": {
+        "add": "Legg til tone",
+        "audioUrl": "Lyd-URL",
+        "dispatchPreview": "Oppdragsforhåndsvisning",
+        "empty": "Legg til en tone for å komme i gang.",
+        "name": "Tonenavn",
+        "playTone": "Forhåndsvisning {name}",
+        "remove": "Fjern tone",
+        "untitled": "Ny tone"
       },
       "unitStatus": {
         "available": "Tilgjengelig",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "Forkortelse",
+      "actionsFor": "Handlinger for {name}",
+      "addAgency": "Legg til etat",
+      "addDepartment": "Legg til avdeling",
       "address": "Adresse",
+      "addSubdivision": "Legg til underavdeling",
       "agencies": "Etater",
       "agency": "Etat",
       "department": "Avdeling",
       "departments": "Avdelinger",
       "description": "Beskrivelse",
+      "editDetails": "Rediger {name}",
       "editorSubtitle": "Administrer byråer, avdelinger og underavdelinger.",
       "editorTitle": "Avdelingsredigering",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "Underavdelingsnavn"
       },
       "name": "Navn",
+      "openDetails": "Åpne {name}",
+      "path": "Avdelingshierarki",
       "persistentGroups": {
+        "add": "Legg til gruppe",
         "badge": "Vedvarende gruppe",
         "empty": "Ingen vedvarende grupper er konfigurert.",
         "groupName": "Gruppenavn",
@@ -664,6 +720,8 @@
         "maxUnits": "Maks enheter",
         "maxUnitsHint": "Valgfritt",
         "noUnits": "Ingen enheter i gruppe",
+        "remove": "Fjern gruppe",
+        "saveFailed": "Kunne ikke lagre enhetsgrupper.",
         "title": "Vedvarende enhetsgrupper"
       },
       "subdivisions": "Divisjon",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "Veiledning til tilganger"
+    },
+    "identifiers": {
+      "assignment": "Tildeling",
+      "editUnitNumber": "Rediger kallesignal {number}",
+      "loadFailed": "Kunne ikke laste inn identifikatorer. Prøv å oppdatere.",
+      "noUnitNumber": "Intet enhetsnummer"
     },
     "integration": {
       "apiDocs": "API-dokumentasjon",
@@ -1120,6 +1184,71 @@
       "logs": "Logger",
       "time": "Tid"
     },
+    "navigation": {
+      "accessRules": "Tilgangsregler",
+      "accountRestrictionsDescription": "Begrens hvor mange sivile karakterer hvert medlem kan opprette.",
+      "accountsDescription": "Inviter medlemmer og administrer tilgangen deres.",
+      "activity": "Aktivitet og bruk",
+      "addressesDescription": "Legg til adresser medlemmer kan søke etter.",
+      "aiDescription": "Se hvor mye AI lokalsamfunnet ditt brukte denne måneden.",
+      "alpr": "ALPR",
+      "apiDescription": "Administrer nøkler for verktøy som kobler til CAD.",
+      "appearance": "Utseende for fellesskap",
+      "automationsDescription": "Velg hva CAD gjør når en hendelse skjer.",
+      "communityIdDescription": "Sett ID-en folk skriver inn for å bli med i fellesskapet.",
+      "communityInfoDescription": "Rediger fellesskapets navn, logo og lenker.",
+      "connections": "Tilkoblinger",
+      "customDomainDescription": "Bruk din egen nettadresse for CAD-innlogging.",
+      "customEmailsDescription": "Rediger e-poster for registrering og tilbakestilling av passord.",
+      "customization": "Tilpasning",
+      "customRecordsDescription": "Lag skjemaer for registrene samfunnet ditt bruker.",
+      "danger": "Fareområde",
+      "delete": "Slett fellesskap",
+      "deleteDescription": "Bekreft via e-post for å fjerne dette fellesskapet.",
+      "departmentsDescription": "Organiser byråer, avdelinger og underavdelinger.",
+      "discordDescription": "Sett opp Discord-boten, rollesynkronisering og varsler.",
+      "discordPresenceDescription": "Angi invitasjonslenkene medlemmer viser i Discord.",
+      "dispatch": "Oppdragsoppsett",
+      "dispatchLayoutsDescription": "Velg feltene som vises på utrykksanrop.",
+      "eventWebhooks": "Hendelseswebhooks",
+      "geographicalSettingsDescription": "Angi tidssone og lokale begreper.",
+      "identifiersDescription": "Finn og rediger enhetsdetaljer for medlemmer.",
+      "infernoPagersDescription": "Velg hvem som får nødpager-varsler.",
+      "integrations": "Integrasjoner",
+      "integrationSettings": "Integrasjonsinnstillinger",
+      "limitsDescription": "Se hva planen din tillater.",
+      "logsDescription": "Se hva administratorer gjorde og når.",
+      "lookupTypesDescription": "Velg hva medlemmer kan søke etter i poster.",
+      "manageGame": "Administrer spilloppsett",
+      "manageGameDescription": "Koble CAD til spillserveren din.",
+      "management": "Samfunnsadministrasjon",
+      "members": "Medlemmer og tilganger",
+      "menuStyleDescription": "Velg hvordan fellesskapsmenyen ser ut.",
+      "notificationTonesDescription": "Velg lyder for samtaler og andre varsler.",
+      "penalCodes": "Straffelover",
+      "penalCodesDescription": "Sett opp lovbrudd, bøter og fengselsstraffer.",
+      "people": "Personer og tilgang",
+      "permissionKeysDescription": "Opprett nøkler som gir medlemmer tilgang.",
+      "persistentUnitGroupsDescription": "Hold grupper synlige i utrykning selv når de er tomme.",
+      "quickLinksDescription": "Gi medlemmer snarveier til nyttige nettsteder.",
+      "rapidIQDescription": "Velg spørsmålene RapidIQ stiller innringere.",
+      "recordEditors": "Saks- og koderedigerere",
+      "records": "Saker og koder",
+      "recordSettings": "Opptaksinnstillinger",
+      "sections": "Adminseksjoner",
+      "serversDescription": "Skill enheter og anrop etter spillserver.",
+      "serverSetup": "Serveroppsett",
+      "system": "System",
+      "tenCodes": "10-koder",
+      "tenCodesDescription": "Rediger kodene enheter bruker over radioen.",
+      "title": "Administrasjon",
+      "toneBoardDescription": "Sett opp lyder som skal spilles av ved behov.",
+      "transfer": "Overfør eierskap",
+      "transferDescription": "Gi eierskap til et annet medlem.",
+      "unitStatusCodesDescription": "Angi koder for enhetsstatuser som tilgjengelig eller opptatt.",
+      "wipeDescription": "Slett alle poster av en valgt type.",
+      "workflows": "Arbeidsflyter"
+    },
     "penal": {
       "autoSort": "Automatisk sortering",
       "bondAmount": "Foreleggssum",
@@ -1163,6 +1292,7 @@
       "confirmKick": "Er du sikker på at du vil sparke",
       "confirmRemoveKey": "Er du sikker på at du vil fjerne denne tillatelsesnøkkelen?",
       "dmvRecords": "Statens Vegvesen saker",
+      "editKey": "Rediger nøkkel {key}",
       "emsAdvanced": "EMS - Avansert",
       "errors": {
         "duplicateKey": "Feil: En duplisert nøkkel eksisterer allerede med dette navnet!"
@@ -1173,7 +1303,9 @@
       "keyName": "Nøkkelnavn",
       "kickUser": "Fjern bruker",
       "lawRecords": "Juristsaker",
+      "loadKeysFailed": "Kunne ikke laste inn tillatelsesnøkler. Prøv å oppdatere.",
       "modifyStreetSigns": "Modifiser trafikkskilt",
+      "newKey": "Ny nøkkel",
       "pagePermissions": "Side-tilganger",
       "permissionKey": "Tilgangsnøkkel",
       "permissionKeys": "Tilgangsnøkler",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "Veiledning til tilganger",
       "policeAdvanced": "Politi - Avansert",
       "revokeBan": "Opphev utestengelse",
+      "searchKeys": "Søkekoder",
       "status": {
         "active": "AKTIV",
         "banned": "Utestengt",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "Du må være samfunns/CAD -eieren for å overføre denne CAD -en. Overføringsprosessen krever e -postbekreftelse."
     },
     "roleSync": {
-      "accountAction": "Sett opp rolle-synkronisering",
-      "accountDescription": "Velg tillatelser én gang. Medlemmer kjører /sync i Discord.",
-      "accountTitle": "La Discord-roller administrere tillatelser",
+      "accountAction": "Konfigurer",
+      "accountDescription": "Koble Discord-roller til CAD-tillatelser. Medlemmer kjører /sync i Discord.",
+      "accountTitle": "Discord rolle-synkronisering",
       "add": "Legg til rolle",
       "autoResync": "Endringer synkroniserer automatisk alle tilknyttede medlemmer 5 minutter etter siste redigering. Synkronisering kan ta litt lengre tid.",
       "cmsManaged": "Sonoran CMS administrerer tillatelser for dette fellesskapet. Konfigurer rollesynk i CMS.",
@@ -1659,6 +1792,7 @@
       "addColumn": "Legg til kolonne",
       "addColumnLeft": "Legg til kolonne til venstre",
       "addColumnRight": "Legg til kolonne til høyre",
+      "addPanel": "Legg til panel",
       "borderTooltip": "Dra for å endre størrelse. Høyreklikk for kolonnealternativer.",
       "edgeTooltip": "Høyreklikk for kolonnealternativer.",
       "headerToggleTooltip": "Dobbeltklikk for å utvide/kollaps",
@@ -1774,6 +1908,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "Admin",
+      "applyPermissionKey": "Bruk",
       "civilian": "Sivil",
       "discord": "Discord",
       "dispatch": "Oppdrag",
@@ -1785,8 +1920,22 @@
       "setDefault": "Sett standard samfunn",
       "website": "Nettside"
     },
+    "carousel": {
+      "next": "Neste rolle",
+      "position": "Rollekortposisjon",
+      "previous": "Forrige rolle"
+    },
+    "erlcPreview": {
+      "name": "Liberty County Roleplay",
+      "panelSelected": "Valgt panel: {panel}",
+      "subtitle": "Nødhjelp: Liberty County"
+    },
+    "fivemPreviewSubtitle": "FiveM-rollespillfellesskap",
     "labels": {
       "permissionKey": "Tilgangsnøkkel"
+    },
+    "preview": {
+      "permissionKeySubmitted": "Forhåndsvisning av tillatelsesnøkkel sendt inn."
     },
     "text": {
       "accessCenter": "Tilgangssenter",
@@ -1869,7 +2018,7 @@
     "creditExplanation": "Gavekort sendes direkte til {username}. Kreditt blir automatisk brukt på alle Sonoran Software-abonnementer på den kontoen.",
     "creditSummary": "Brukes automatisk på nye abonnementer og fornyelser.",
     "deleteAccount": "Slette brukerkonto",
-    "description": "La medlemmer bidra til Sonoran-abonnementer.",
+    "description": "La medlemmer bidra til å betale for Sonoran-abonnementer.",
     "giftOptions": "Gavekortalternativer",
     "give": "Gi et gavekort",
     "hidden": "Skjult",
@@ -1973,8 +2122,8 @@
     "chooseGame": "Hva spiller du?",
     "connectNext": "Ditt lokalsamfunn er klart. Deretter, koble til spillet ditt.",
     "continue": "Fortsett",
-    "createFailed": "Vi kunne ikke opprette fellesskapet ditt. Sjekk fellesskapsgrensen din og prøv igjen.",
-    "createUncertain": "Vi kunne ikke bekrefte opprettelsen. Oppdater fellesskapene dine før du prøver igjen.",
+    "createFailed": "Kunne ikke opprette fellesskapet ditt. Prøv igjen.",
+    "createUncertain": "Opprettelsen kunne ikke bekreftes. Oppdater før du prøver igjen.",
     "dispatchAi": "Sett opp Oppdrags-AI",
     "games": {
       "erlc": "ER:LC",
@@ -1999,6 +2148,7 @@
     "openingCommunity": "Åpner ditt samfunn…",
     "otherName": "Spillnavn",
     "otherRequired": "Skriv inn et spillnavn (2–60 tegn).",
+    "ownedCommunityLimit": "Du eier allerede maksimalt antall fellesskap.",
     "pcNext": "Ditt lokalsamfunn er lagret. Logg inn med den samme kontoen på PC-en din for å fortsette.",
     "previewDesktop": "Fortsett på skrivebordet",
     "previewEvents": "Registrerte hendelser (ikke sendt til Google Analytics)",
@@ -3029,7 +3179,20 @@
     "title": "Lagre denne koden"
   },
   "menu": {
-    "discovery": "Oppdagelse"
+    "browseDiscovery": "Bla gjennom alle",
+    "communitiesTitle": "Dine fellesskap",
+    "communityScrollPosition": "Posisjon for felleskort",
+    "create": "Opprett",
+    "discovery": "Oppdagelse",
+    "discoveryTitle": "Oppdag lokalsamfunn",
+    "discoveryUnavailable": "Utvalgte samfunn er utilgjengelige.",
+    "join": "Bli med",
+    "nextCommunities": "Neste fellesskap",
+    "nextFeaturedCommunity": "Neste utvalgte fellesskap",
+    "noCommunities": "Bli med i eller opprett et fellesskap for å komme i gang.",
+    "openFeaturedCommunity": "Oppdag {name}",
+    "previousCommunities": "Tidligere fellesskap",
+    "previousFeaturedCommunity": "Forrige utvalgte fellesskap"
   },
   "payment": {
     "billingCenter": {
@@ -3871,12 +4034,14 @@
       "view": "Vis"
     },
     "diagram": {
+      "brushWidth": "Penselbredde",
       "deleteSelected": "Slett valgte",
       "groupUngroupSelected": "Gruppér/opphev gruppering av valgte (SHIFT + CLICK)",
       "itemOptions": "Alternativer for element",
       "lockUnlockSelected": "Lås/lås opp valgte",
       "moveLayerDown": "Flytt lag ned (Shift = bunn)",
       "moveLayerUp": "Flytt lag opp (Shift = topp)",
+      "opacity": "Gjennomsiktighet",
       "redo": "Gjør om",
       "shortcutDelete": "SNARVEI: DELETE",
       "shortcutDown": "SNARVEI: (SHIFT) Pil ned",
@@ -4314,6 +4479,7 @@
       "newGroup": "Ny gruppe",
       "removeFromGroup": "Fjern fra gruppe",
       "showAllUnitGroups": "Vis alle enhetsgrupper",
+      "showDispatchers": "Vis operatører",
       "showUnitGroupsWithUnits": "Vis grupper med enheter",
       "togglePanic": "Slå panikk av/på",
       "unitGroups": "Enhetsgrupper",
@@ -4337,16 +4503,16 @@
     "questions": "Spørsmål:"
   },
   "recentPhotos": {
-    "choose": "Velg nylig bilde",
+    "choose": "Velg bilde",
     "copyFailed": "Kunne ikke kopiere bilde-URL-en.",
     "copyUrl": "Kopier bilde-URL",
     "empty": "Ingen bilder mottatt ennå.",
     "receivedAt": "Mottatt {time}",
     "replacePhoto": "Erstatt bilde",
-    "title": "Nylige bilder",
+    "title": "Bilder",
     "unavailable": "Dette bildet kunne ikke lastes inn.",
     "unknownTime": "Tid ukjent",
-    "unreadLabel": "Nylige bilder, {count} uleste",
+    "unreadLabel": "Bilder, {count} ulest",
     "urlCopied": "Foto-URL kopiert.",
     "usePhoto": "Bruk bilde"
   },

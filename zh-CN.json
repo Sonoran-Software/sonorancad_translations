@@ -76,16 +76,27 @@
       "code": "代码"
     },
     "accounts": {
+      "active": "活跃",
       "apiIds": "API ID",
+      "banned": "已禁止",
       "inviteApps": "使用此 ID 加入桌面和移动应用。",
       "inviteCopyFailed": "无法复制。请重试。",
       "inviteMembers": "邀请您的成员",
       "inviteUrlHelp": "使用此 URL 可直接登录到您的 CAD。",
       "joined": "已加入",
+      "joinedOn": "已于 {date} 加入",
       "lastLogin": "上次登录时间",
+      "lastLoginSummary": "上次登录 · {date}",
+      "loadFailed": "无法加载账户。请尝试刷新。",
+      "manageAccount": "管理 {username}",
+      "moreActions": "更多账户操作",
+      "noLoginRecorded": "未记录登录",
+      "pending": "挂起",
       "permissions": "权限",
       "purge": "清除不活跃用户",
       "purgeConfirm": "您确定要清除所有不活跃超过30天的用户帐户吗？",
+      "searchAccounts": "搜索账户",
+      "selectAccount": "选择 {username}",
       "status": "状态",
       "userAccounts": "用户账户",
       "username": "用户名"
@@ -116,6 +127,11 @@
       "successfulRequests": "已完成请求",
       "title": "AI 使用",
       "tokens": "令牌"
+    },
+    "askChatGpt": {
+      "description": "在 ChatGPT 中使用官方 Sonoran Software 应用来帮助配置您的 CAD 社区并设置集成。",
+      "open": "在 ChatGPT 中打开",
+      "title": "询问 ChatGPT"
     },
     "authenticate": {
       "authHeader": "验证您的CAD所有权",
@@ -237,6 +253,7 @@
         "resetPassword": "重置密码",
         "subheader": "子标题",
         "subtext1": "自定义用户在创建帐户或从您的自定义登录屏幕重置密码时收到的电子邮件。",
+        "viewNamedTemplate": "预览 {name} 电子邮件",
         "viewTemplate": "查看模板"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "名称",
         "saveFailed": "您的社区更改未保存。请重试。",
+        "showDiscordLink": "显示 Discord 链接",
+        "showWebsiteLink": "显示网站链接",
         "subtitle": "子名称",
         "timezone": "时区",
         "voiceCommand": "语音指令关键字",
@@ -381,13 +400,28 @@
         "width": "宽度",
         "widthHelp": "控制此搜索字段在查找窗口中的显示宽度。点击预览 图标查看其显示效果。"
       },
+      "menuStyle": {
+        "classic": "经典",
+        "classicHint": "带面板图标的紧凑磁贴。",
+        "communityMenu": "社区菜单",
+        "description": "适用于所有成员。",
+        "gta": "GTA",
+        "gtaHint": "高个角色卡，带有 GTA 风格的人物肖像。",
+        "illustrated": "罗布乐思",
+        "illustratedHint": "带有 Roblox 插画角色的高个角色卡片。",
+        "localDescription": "适用于此浏览器标签页。",
+        "saveFailed": "无法保存菜单样式。请重新选择以重试。",
+        "title": "样式"
+      },
       "notificationTones": {
         "dispatchClosed": "调度结束",
         "dispatchNote": "调度备注",
         "dispatchUpdated": "调度更新",
         "newDispatch": "新调度",
         "notificationTones": "通知音效",
-        "statusChange": "状态变更"
+        "playPreview": "播放预览",
+        "statusChange": "状态变更",
+        "uploadFailed": "无法上传音频。请重试。"
       },
       "otherCustomization": "其他自定义功能",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "菜单页面背景",
         "setToDefault": "设为默认颜色"
       },
+      "pickColor": "选择颜色",
       "quickLinks": {
+        "addLink": "添加链接",
         "color": "颜色",
         "deleteLink": "删除链接",
+        "empty": "添加链接，为成员提供网站快捷方式。",
         "label": "标签",
         "link": "链接",
         "newLink": "新链接",
-        "quickLinks": "快速链接"
+        "quickLinks": "快速链接",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "添加代码",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD允许您分离在线单位并在多台服务器之间进行调度，同时仍共享相同的记录。",
         "subtext3": "您的社区目前最多可以支持",
         "subtext4": "服务器"
+      },
+      "toneBoard": {
+        "add": "添加语气",
+        "audioUrl": "音频 URL",
+        "dispatchPreview": "调度预览",
+        "empty": "添加一个音调以开始。",
+        "name": "语气名称",
+        "playTone": "预览 {name}",
+        "remove": "移除语气板",
+        "untitled": "新语气"
       },
       "unitStatus": {
         "available": "可用",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "缩写",
+      "actionsFor": "{name}的操作",
+      "addAgency": "添加机构",
+      "addDepartment": "添加部门",
       "address": "地址",
+      "addSubdivision": "添加子部门",
       "agencies": "机构",
       "agency": "机构",
       "department": "部门",
       "departments": "部门",
       "description": "描述",
+      "editDetails": "编辑 {name}",
       "editorSubtitle": "管理机构、部门和子部门。",
       "editorTitle": "部门编辑器",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "子部门名称"
       },
       "name": "名称",
+      "openDetails": "打开 {name}",
+      "path": "部门层级",
       "persistentGroups": {
+        "add": "添加小组",
         "badge": "持久组",
         "empty": "未配置 持久组。",
         "groupName": "小组名称",
@@ -664,6 +720,8 @@
         "maxUnits": "最大单位数",
         "maxUnitsHint": "可选项",
         "noUnits": "组中无单元",
+        "remove": "移除组",
+        "saveFailed": "无法保存单位组。",
         "title": "持久单位小组"
       },
       "subdivisions": "子部门",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "权限指导"
+    },
+    "identifiers": {
+      "assignment": "分配",
+      "editUnitNumber": "编辑标识符 {number}",
+      "loadFailed": "无法加载标识符。请尝试刷新。",
+      "noUnitNumber": "无呼号"
     },
     "integration": {
       "apiDocs": "API文档",
@@ -1120,6 +1184,71 @@
       "logs": "记录",
       "time": "时间"
     },
+    "navigation": {
+      "accessRules": "访问规则",
+      "accountRestrictionsDescription": "限制每个成员可创建的平民角色数量。",
+      "accountsDescription": "邀请成员并管理他们的访问权限。",
+      "activity": "活动和使用情况",
+      "addressesDescription": "添加成员可以搜索的地址。",
+      "aiDescription": "查看本月你的社区使用了多少 AI。",
+      "alpr": "自动车牌识别",
+      "apiDescription": "管理连接到 CAD 的工具密钥。",
+      "appearance": "社区外观",
+      "automationsDescription": "选择 CAD 在事件发生时执行的操作。",
+      "communityIdDescription": "设置人们输入以加入您社区的 ID。",
+      "communityInfoDescription": "编辑您的社区名称、LOGO和链接。",
+      "connections": "连接",
+      "customDomainDescription": "使用自己的网址登录 CAD。",
+      "customEmailsDescription": "编辑注册和密码重置邮件。",
+      "customization": "自定义",
+      "customRecordsDescription": "为你的社区使用的记录构建表单。",
+      "danger": "危险区域",
+      "delete": "删除社区",
+      "deleteDescription": "通过电子邮件确认以移除此社区。",
+      "departmentsDescription": "管理机构、部门和分支机构。",
+      "discordDescription": "设置 Discord 机器人、角色同步和警报。",
+      "discordPresenceDescription": "设置成员在 Discord 中显示的邀请链接。",
+      "dispatch": "调度设置",
+      "dispatchLayoutsDescription": "选择在调度呼叫中显示的字段。",
+      "eventWebhooks": "事件 webhook",
+      "geographicalSettingsDescription": "设置您的时区和本地术语。",
+      "identifiersDescription": "查找并编辑成员的单位详情。",
+      "infernoPagersDescription": "选择接收紧急传呼器警报的人员。",
+      "integrations": "集成",
+      "integrationSettings": "集成设置",
+      "limitsDescription": "查看你的套餐允许什么。",
+      "logsDescription": "查看管理员做了什么以及何时做的。",
+      "lookupTypesDescription": "选择成员可以在记录中搜索的内容。",
+      "manageGame": "管理游戏设置",
+      "manageGameDescription": "将 CAD 连接到你的游戏服务器。",
+      "management": "社区管理",
+      "members": "成员和权限",
+      "menuStyleDescription": "选择社区菜单的显示方式。",
+      "notificationTonesDescription": "为通话和其他警报选择声音。",
+      "penalCodes": "法律",
+      "penalCodesDescription": "设置违法行为、罚款和监禁时间。",
+      "people": "人员与访问",
+      "permissionKeysDescription": "创建可让成员访问的密钥。",
+      "persistentUnitGroupsDescription": "即使组为空，也在调度中保持可见。",
+      "quickLinksDescription": "为成员提供有用网站的快捷方式。",
+      "rapidIQDescription": "选择 RapidIQ 向来电者提问的问题。",
+      "recordEditors": "记录和代码编辑器",
+      "records": "记录和代码",
+      "recordSettings": "录像设置",
+      "sections": "管理节",
+      "serversDescription": "按游戏服务器分离单位和呼叫。",
+      "serverSetup": "服务器设置",
+      "system": "系统",
+      "tenCodes": "10代码",
+      "tenCodesDescription": "编辑单位在无线电中使用的代码。",
+      "title": "管理",
+      "toneBoardDescription": "设置可按需播放的声音。",
+      "transfer": "转移所有权",
+      "transferDescription": "将所有权移交给另一位成员。",
+      "unitStatusCodesDescription": "设置勤务状态代码，如可用或忙碌。",
+      "wipeDescription": "删除所选类型的所有记录。",
+      "workflows": "工作流"
+    },
     "penal": {
       "autoSort": "自动排序",
       "bondAmount": "保释金/罚款金额",
@@ -1163,6 +1292,7 @@
       "confirmKick": "确认要剔除",
       "confirmRemoveKey": "确认要删除这个权限密钥？",
       "dmvRecords": "车管局记录",
+      "editKey": "编辑键 {key}",
       "emsAdvanced": "急救部门 - 进阶",
       "errors": {
         "duplicateKey": "错误：另一个相同名称的密钥已存在！"
@@ -1173,7 +1303,9 @@
       "keyName": "密钥",
       "kickUser": "踢出用户",
       "lawRecords": "法务记录",
+      "loadKeysFailed": "无法加载权限键。请尝试刷新。",
       "modifyStreetSigns": "修改街道标识",
+      "newKey": "新密钥",
       "pagePermissions": "页面权限",
       "permissionKey": "权限密钥",
       "permissionKeys": "权限密钥",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "权限指导",
       "policeAdvanced": "执法部门 - 进阶",
       "revokeBan": "撤销禁止",
+      "searchKeys": "搜索键",
       "status": {
         "active": "已激活",
         "banned": "已禁止",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "您必须是该社区/CAD的所有者，才能转让此CAD。转让过程需要电子邮件验证。"
     },
     "roleSync": {
-      "accountAction": "设置角色同步",
-      "accountDescription": "仅选择一次权限。成员在 Discord 中运行 /sync。",
-      "accountTitle": "让 Discord 角色管理权限",
+      "accountAction": "配置",
+      "accountDescription": "将 Discord 角色映射到 CAD 权限。成员在 Discord 中运行 /sync。",
+      "accountTitle": "Discord 角色同步",
       "add": "添加角色",
       "autoResync": "更改会在您上次编辑后 5 分钟自动重新同步所有关联成员。同步可能需要更长一些时间。",
       "cmsManaged": "Sonoran CMS 管理此社区的权限。请在 CMS 中配置角色同步。",
@@ -1659,6 +1792,7 @@
       "addColumn": "添加列",
       "addColumnLeft": "在左侧添加列",
       "addColumnRight": "在右侧添加列",
+      "addPanel": "添加面板",
       "borderTooltip": "拖动以调整大小。右键单击查看列选项。",
       "edgeTooltip": "右键单击查看列选项。",
       "headerToggleTooltip": "双击展开/折叠",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "管理员",
+      "applyPermissionKey": "应用",
       "civilian": "市民",
       "discord": "Discord",
       "dispatch": "调度中心",
@@ -1786,8 +1921,22 @@
       "setDefault": "设置默认社区",
       "website": "网页"
     },
+    "carousel": {
+      "next": "下一个角色",
+      "position": "角色卡片位置",
+      "previous": "上一个角色"
+    },
+    "erlcPreview": {
+      "name": "自由县角色扮演",
+      "panelSelected": "已选面板：{panel}",
+      "subtitle": "应急响应：自由县"
+    },
+    "fivemPreviewSubtitle": "FiveM 角色扮演社区",
     "labels": {
       "permissionKey": "权限密钥"
+    },
+    "preview": {
+      "permissionKeySubmitted": "预览权限密钥已提交。"
     },
     "text": {
       "accessCenter": "访问中心",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "礼品卡会直接发送给 {username}。积分会自动应用于该账户上的任何和所有 Sonoran Software 订阅。",
     "creditSummary": "自动应用于新的订阅和续订。",
     "deleteAccount": "删除账户",
-    "description": "让成员为 Sonoran 订阅贡献。",
+    "description": "让成员帮助支付 Sonoran 订阅费用。",
     "giftOptions": "礼品卡选项",
     "give": "赠送礼品卡",
     "hidden": "已隐藏",
@@ -1974,8 +2123,8 @@
     "chooseGame": "你玩什么？",
     "connectNext": "您的社区已准备就绪。接下来，连接您的游戏。",
     "continue": "继续",
-    "createFailed": "我们无法创建你的社区。请检查你的社区限制并重试。",
-    "createUncertain": "我们无法确认创建。请在重试前刷新你的社区。",
+    "createFailed": "无法创建您的社区。请重试。",
+    "createUncertain": "无法确认创建。请刷新后重试。",
     "dispatchAi": "设置 调度 AI",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "正在打开你的社区…",
     "otherName": "游戏名称",
     "otherRequired": "输入游戏名称（2–60 个字符）。",
+    "ownedCommunityLimit": "您已拥有最大数量的社区。",
     "pcNext": "您的社区已保存。请在您的电脑上使用同一帐户登录以继续。",
     "previewDesktop": "在桌面端继续",
     "previewEvents": "已捕获的事件（未发送到 Google Analytics）",
@@ -3030,7 +3180,20 @@
     "title": "保存此代码"
   },
   "menu": {
-    "discovery": "发现"
+    "browseDiscovery": "浏览全部",
+    "communitiesTitle": "您的社区",
+    "communityScrollPosition": "社区卡片位置",
+    "create": "创建",
+    "discovery": "发现",
+    "discoveryTitle": "发现社区",
+    "discoveryUnavailable": "精选社区不可用。",
+    "join": "加入",
+    "nextCommunities": "下一个社区",
+    "nextFeaturedCommunity": "下一个精选社区",
+    "noCommunities": "加入或创建一个社区以开始使用。",
+    "openFeaturedCommunity": "发现 {name}",
+    "previousCommunities": "以前的社区",
+    "previousFeaturedCommunity": "上一精选社区"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "查看"
     },
     "diagram": {
+      "brushWidth": "画笔宽度",
       "deleteSelected": "删除所选项",
       "groupUngroupSelected": "对所选内容分组/取消分组（SHIFT + CLICK）",
       "itemOptions": "项目选项",
       "lockUnlockSelected": "锁定/解锁所选项",
       "moveLayerDown": "下移图层（Shift = 底部）",
       "moveLayerUp": "上移图层（Shift = 顶部）",
+      "opacity": "不透明度",
       "redo": "重做",
       "shortcutDelete": "快捷键：DELETE",
       "shortcutDown": "快捷键：(SHIFT) 下箭头",
@@ -4315,6 +4480,7 @@
       "newGroup": "新小组",
       "removeFromGroup": "从组中移除",
       "showAllUnitGroups": "显示所有单位小组",
+      "showDispatchers": "显示DP",
       "showUnitGroupsWithUnits": "显示带单元的小组",
       "togglePanic": "激活紧急状态",
       "unitGroups": "单位小组",
@@ -4338,16 +4504,16 @@
     "questions": "问题："
   },
   "recentPhotos": {
-    "choose": "选择最近照片",
+    "choose": "选择照片",
     "copyFailed": "无法复制照片 URL。",
     "copyUrl": "复制照片 URL",
     "empty": "尚未收到照片。",
     "receivedAt": "收到 {time}",
     "replacePhoto": "替换照片",
-    "title": "最近照片",
+    "title": "照片",
     "unavailable": "此照片无法加载。",
     "unknownTime": "时间未知",
-    "unreadLabel": "最近照片，{count} 未读",
+    "unreadLabel": "照片，{count}张未读",
     "urlCopied": "照片 URL 已复制。",
     "usePhoto": "使用照片"
   },

@@ -76,16 +76,27 @@
       "code": "الكود"
     },
     "accounts": {
+      "active": "نشط",
       "apiIds": "اي دي ستيم",
+      "banned": "مبند",
       "inviteApps": "استخدم هذا المعرّف للانضمام في تطبيقات سطح المكتب والجوال.",
       "inviteCopyFailed": "تعذر النسخ. يرجى المحاولة مرة أخرى.",
       "inviteMembers": "ادعُ أعضاءك",
       "inviteUrlHelp": "استخدم هذا الرابط لتسجيل الدخول مباشرةً إلى نظام CAD الخاص بك.",
       "joined": "الدخول",
+      "joinedOn": "انضم {date}",
       "lastLogin": "أخر ظهور",
+      "lastLoginSummary": "آخر تسجيل دخول · {date}",
+      "loadFailed": "تعذر تحميل الحسابات. حاول التحديث.",
+      "manageAccount": "إدارة {username}",
+      "moreActions": "مزيد من إجراءات الحساب",
+      "noLoginRecorded": "لم يتم تسجيل أي تسجيل دخول",
+      "pending": "معلق",
       "permissions": "الصلاحيات",
       "purge": "حذف غير النشطين",
       "purgeConfirm": "هل أنت متأكد من أنك تريد حذف جميع حسابات المستخدمين غير النشطين؟ (30 يومًا)",
+      "searchAccounts": "بحث الأعضاء",
+      "selectAccount": "اختر {username}",
       "status": "الحالة",
       "userAccounts": "الحسابات",
       "username": "أسم المستخدم"
@@ -116,6 +127,11 @@
       "successfulRequests": "الطلبات المكتملة",
       "title": "استخدام الذكاء الاصطناعي",
       "tokens": "الرموز"
+    },
+    "askChatGpt": {
+      "description": "استخدم تطبيق Sonoran Software الرسمي في ChatGPT للحصول على المساعدة في تهيئة مجتمع CAD الخاص بك وإعداد التكاملات.",
+      "open": "فتح في ChatGPT",
+      "title": "اسأل ChatGPT"
     },
     "authenticate": {
       "authHeader": "التحقق من هوية مالك المجتمع",
@@ -237,6 +253,7 @@
         "resetPassword": "إعادة تعيين كلمة المرور",
         "subheader": "العنوان الفرعي",
         "subtext1": "تخصيص رسائل البريد الإلكتروني التي يتلقاها المستخدمون عند إنشاء حساب أو إعادة تعيين كلمة المرور الخاصة بهم من شاشة تسجيل الدخول المخصصة.",
+        "viewNamedTemplate": "معاينة بريد {name} الإلكتروني",
         "viewTemplate": "عرض النموذج"
       },
       "errors": {
@@ -319,6 +336,8 @@
         "discord": "الديسكورد",
         "name": "الأسم",
         "saveFailed": "لم يتم حفظ تغييرات المجتمع الخاص بك. يرجى المحاولة مرة أخرى.",
+        "showDiscordLink": "إظهار رابط Discord",
+        "showWebsiteLink": "إظهار رابط الموقع الإلكتروني",
         "subtitle": "العنوان الفرعي",
         "timezone": "المنطقة الزمنية",
         "voiceCommand": "الكلمات الرئيسية للأوامر الصوتية",
@@ -381,13 +400,28 @@
         "width": "العرض",
         "widthHelp": "يتحكم في مدى عرض حقل البحث هذا في نافذة البحث. انقر على أيقونة المعاينة لترى كيف سيظهر."
       },
+      "menuStyle": {
+        "classic": "كلاسيكي",
+        "classicHint": "بلاطات مدمجة مع أيقونات اللوحة.",
+        "communityMenu": "قائمة المجتمع",
+        "description": "ينطبق على جميع الأعضاء.",
+        "gta": "جي تي إيه",
+        "gtaHint": "بطاقات أدوار طويلة مع صور شخصيات مستوحاة من GTA.",
+        "illustrated": "Roblox",
+        "illustratedHint": "بطاقات أدوار طويلة مع شخصيات Roblox مصوّرة.",
+        "localDescription": "ينطبق على علامة تبويب المتصفح هذه.",
+        "saveFailed": "تعذر حفظ نمط القائمة. حدده مرة أخرى لإعادة المحاولة.",
+        "title": "نمط"
+      },
       "notificationTones": {
         "dispatchClosed": "تم إغلاق الإرسال",
         "dispatchNote": "ملاحظة الإرسال",
         "dispatchUpdated": "تم تحديث الإرسال",
         "newDispatch": "إرسال جديد",
         "notificationTones": "نغمات الإشعارات",
-        "statusChange": "تغيير الحالة"
+        "playPreview": "تشغيل المعاينة",
+        "statusChange": "تغيير الحالة",
+        "uploadFailed": "تعذر رفع الصوت. حاول مرة أخرى."
       },
       "otherCustomization": "ميزات التخصيص الأخرى",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "خلفية صفحة القائمة",
         "setToDefault": "اضبط على اللون الافتراضي"
       },
+      "pickColor": "اختر لونًا",
       "quickLinks": {
+        "addLink": "إضافة رابط",
         "color": "اللون",
         "deleteLink": "حذف الرابط",
+        "empty": "أضف رابطًا لمنح الأعضاء اختصارًا إلى موقع ويب.",
         "label": "الليبيل",
         "link": "الرابط",
         "newLink": "رابط جديد",
-        "quickLinks": "روابط سريعة"
+        "quickLinks": "روابط سريعة",
+        "url": "يو ار ال"
       },
       "rapidIQEditor": {
         "addCode": "إضافة كود",
@@ -469,6 +507,16 @@
         "subtext2": "يسمح لك الكاد بفصل الوحدات عبر الإنترنت والإرسال بين السيرفرات مع الاستمرار في مشاركة نفس السجلات.",
         "subtext3": "يمكن لمجتمعك حاليًا دعم ما يصل إلى",
         "subtext4": "السيرفرات."
+      },
+      "toneBoard": {
+        "add": "إضافة نغمة",
+        "audioUrl": "عنوان URL للصوت",
+        "dispatchPreview": "معاينة العمليات",
+        "empty": "أضف نغمة للبدء",
+        "name": "اسم النغمة",
+        "playTone": "معاينة {name}",
+        "remove": "إزالة النغمة",
+        "untitled": "نغمة جديدة"
       },
       "unitStatus": {
         "available": "متاح",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "الترميز",
+      "actionsFor": "الإجراءات لـ {name}",
+      "addAgency": "إضافة قطاع",
+      "addDepartment": "إضافة قسم",
       "address": "العنوان",
+      "addSubdivision": "إضافة تقسيم فرعي",
       "agencies": "القطاعات",
       "agency": "القطاع",
       "department": "القسم",
       "departments": "الأقسام",
       "description": "الوصف",
+      "editDetails": "تعديل {name}",
       "editorSubtitle": "إدارة الوكالات، والأقسام، والأقسام الفرعية.",
       "editorTitle": "محرر القسم",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "اسم التقسيم الفرعي"
       },
       "name": "االأسم",
+      "openDetails": "افتح {name}",
+      "path": "هيكلية القسم",
       "persistentGroups": {
+        "add": "إضافة دورية",
         "badge": "المجموعة الدائمة",
         "empty": "لا توجد مجموعات دائمة مُكوَّنة.",
         "groupName": "رمز الدورية",
@@ -664,6 +720,8 @@
         "maxUnits": "الحد الأقصى للوحدات",
         "maxUnitsHint": "اختياري",
         "noUnits": "لا توجد وحدات في المجموعة",
+        "remove": "إزالة المجموعة",
+        "saveFailed": "تعذر حفظ مجموعات الوحدة.",
         "title": "مجموعات الوحدات الدائمة"
       },
       "subdivisions": "القطاعات والاقسام الفرعية",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "دليل الأذونات"
+    },
+    "identifiers": {
+      "assignment": "التعيين",
+      "editUnitNumber": "تحرير المعرف {number}",
+      "loadFailed": "تعذر تحميل المعرفات. حاول التحديث.",
+      "noUnitNumber": "لا يوجد رقم وحدة"
     },
     "integration": {
       "apiDocs": "مستندات API",
@@ -1120,6 +1184,71 @@
       "logs": "السجلات",
       "time": "الوقت"
     },
+    "navigation": {
+      "accessRules": "قواعد الوصول",
+      "accountRestrictionsDescription": "حدّ عدد الشخصيات المدنية التي يمكن لكل عضو إنشاؤها.",
+      "accountsDescription": "دعوة الأعضاء وإدارة وصولهم.",
+      "activity": "النشاط والاستخدام",
+      "addressesDescription": "أضف العناوين التي يمكن للأعضاء البحث عنها.",
+      "aiDescription": "انظر كم من الذكاء الاصطناعي استخدمه مجتمعك هذا الشهر.",
+      "alpr": "التعرف على لوحات المركبات",
+      "apiDescription": "إدارة المفاتيح للأدوات التي تتصل بـ CAD.",
+      "appearance": "مظهر المجتمع",
+      "automationsDescription": "اختر ما يفعله CAD عند حدوث حدث.",
+      "communityIdDescription": "عيّن المعرّف الذي يدخله الأشخاص للانضمام إلى مجتمعك.",
+      "communityInfoDescription": "قم بتحرير اسم مجتمعك وشعاره وروابطه",
+      "connections": "الاتصالات",
+      "customDomainDescription": "استخدم عنوان الويب الخاص بك لتسجيل الدخول إلى CAD.",
+      "customEmailsDescription": "تعديل رسائل التسجيل وإعادة تعيين كلمة المرور.",
+      "customization": "تخصيص",
+      "customRecordsDescription": "أنشئ نماذج للسجلات التي يستخدمها مجتمعك.",
+      "danger": "منطقة الخطر",
+      "delete": "حذف المجتمع",
+      "deleteDescription": "أكد عبر البريد الإلكتروني لإزالة هذا المجتمع.",
+      "departmentsDescription": "تنظيم الوكالات والأقسام والتقسيمات الفرعية.",
+      "discordDescription": "إعداد بوت Discord، ومزامنة الأدوار، والتنبيهات.",
+      "discordPresenceDescription": "تعيين روابط الدعوة التي يعرضها الأعضاء في Discord.",
+      "dispatch": "إعداد العمليات",
+      "dispatchLayoutsDescription": "اختر الحقول المعروضة في مكالمات الإرسال.",
+      "eventWebhooks": "ويب هوكس الحدث",
+      "geographicalSettingsDescription": "عيّن منطقتك الزمنية والمصطلحات المحلية.",
+      "identifiersDescription": "ابحث وعدّل تفاصيل الوحدة للأعضاء.",
+      "infernoPagersDescription": "اختر من يتلقى تنبيهات جهاز النداء للطوارئ.",
+      "integrations": "التكاملات",
+      "integrationSettings": "إعدادات التكامل",
+      "limitsDescription": "اطّلع على ما تسمح به خطتك.",
+      "logsDescription": "اطّلع على ما فعله المسؤولون ومتى.",
+      "lookupTypesDescription": "اختر ما يمكن للأعضاء البحث عنه في السجلات.",
+      "manageGame": "إدارة إعداد اللعبة",
+      "manageGameDescription": "ربط CAD بخادم اللعبة الخاص بك",
+      "management": "إدارة المجتمع",
+      "members": "الأعضاء والصلاحيات",
+      "menuStyleDescription": "اختر كيف تبدو قائمة المجتمع.",
+      "notificationTonesDescription": "اختر الأصوات للمكالمات والتنبيهات الأخرى.",
+      "penalCodes": "اللائحة",
+      "penalCodesDescription": "إعداد المخالفات والغرامات وأوقات السجن.",
+      "people": "الأشخاص والوصول",
+      "permissionKeysDescription": "أنشئ مفاتيح تمنح الأعضاء إمكانية الوصول.",
+      "persistentUnitGroupsDescription": "أبقِ المجموعات مرئية في الإرسال حتى عندما تكون فارغة.",
+      "quickLinksDescription": "امنح الأعضاء اختصارات إلى مواقع ويب مفيدة.",
+      "rapidIQDescription": "اختر الأسئلة التي يطرحها RapidIQ على المتصلين.",
+      "recordEditors": "محررو السجل والرمز",
+      "records": "السجلات والأكواد",
+      "recordSettings": "إعدادات التسجيلات",
+      "sections": "أقسام الإدارة",
+      "serversDescription": "افصل الوحدات والبلاغات حسب خادم اللعبة.",
+      "serverSetup": "إعداد السيرفر",
+      "system": "النظام",
+      "tenCodes": "أكواد البلاغات",
+      "tenCodesDescription": "حرر الرموز التي تستخدمها الوحدات عبر الراديو.",
+      "title": "الإدارة",
+      "toneBoardDescription": "إعداد الأصوات لتشغيلها عند الطلب.",
+      "transfer": "نقل الملكية",
+      "transferDescription": "منح الملكية لعضو آخر.",
+      "unitStatusCodesDescription": "عيّن رموزًا لحالات الوحدات مثل متاح أو مشغول.",
+      "wipeDescription": "حذف جميع السجلات من نوع محدد.",
+      "workflows": "سير العمل"
+    },
     "penal": {
       "autoSort": "فرز تلقائي",
       "bondAmount": "الغرامة المالية",
@@ -1163,6 +1292,7 @@
       "confirmKick": "هل انت متأكد من طرد هذاالمستخدم ؟",
       "confirmRemoveKey": "هل أنت متأكد من إبطال رقم التصريح هذا ؟",
       "dmvRecords": "سجلات المرور",
+      "editKey": "تعديل المفتاح {key}",
       "emsAdvanced": "الطوارئ الطبية - متقدم",
       "errors": {
         "duplicateKey": "خطاء , يوجد بالفعل رقم بهذا الاسم"
@@ -1173,7 +1303,9 @@
       "keyName": "اسم المفتاح",
       "kickUser": "طرد المستخدم",
       "lawRecords": "السجلات القانونية",
+      "loadKeysFailed": "تعذر تحميل مفاتيح الأذونات. حاول التحديث.",
       "modifyStreetSigns": "تعديل لافتات الشوارع",
+      "newKey": "رقم جديد",
       "pagePermissions": "أذونات الصفحة",
       "permissionKey": "رقم التصريح",
       "permissionKeys": "أرقام التصاريح",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "دليل الأذونات",
       "policeAdvanced": "الشرطة - متقدم",
       "revokeBan": "إزالة الحجب عن المستخدم",
+      "searchKeys": "بحث المفاتيح",
       "status": {
         "active": "فعال",
         "banned": "مبند",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "يجب أن تكون مالك المجتمع / الكاد لنقل هذا الكاد. سوف تتطلب عملية النقل التحقق من البريد الإلكتروني."
     },
     "roleSync": {
-      "accountAction": "إعداد مزامنة الأدوار",
-      "accountDescription": "اختر الأذونات مرة واحدة. الأعضاء يكتبون /sync في Discord.",
-      "accountTitle": "دع أدوار Discord تدير الأذونات",
+      "accountAction": "تكوين",
+      "accountDescription": "طابق أدوار Discord مع أذونات CAD. ينفذ الأعضاء /sync في Discord.",
+      "accountTitle": "مزامنة أدوار Discord",
       "add": "إضافة دور",
       "autoResync": "تُعاد مزامنة جميع الأعضاء المرتبطين تلقائيًا بعد 5 دقائق من آخر تعديل لك. قد تستغرق المزامنة وقتًا أطول قليلًا.",
       "cmsManaged": "يدير Sonoran CMS الأذونات لهذا المجتمع. قم بتكوين مزامنة الأدوار في CMS.",
@@ -1659,6 +1792,7 @@
       "addColumn": "إضافة عمود",
       "addColumnLeft": "إضافة عمود إلى اليسار",
       "addColumnRight": "إضافة عمود إلى اليمين",
+      "addPanel": "إضافة لوحة",
       "borderTooltip": "اسحب لتغيير الحجم. انقر بزر الفأرة الأيمن لخيارات العمود.",
       "edgeTooltip": "انقر بزر الفأرة الأيمن لخيارات العمود.",
       "headerToggleTooltip": "انقر نقرًا مزدوجًا للتوسيع/الطي",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "الإدارة",
+      "applyPermissionKey": "تطبيق",
       "civilian": "المواطن",
       "discord": "الديسكورد",
       "dispatch": "العمليات",
@@ -1786,8 +1921,22 @@
       "setDefault": "تعيين كمجتمع أساسي",
       "website": "الموقع الألكتروني"
     },
+    "carousel": {
+      "next": "الدور التالي",
+      "position": "موضع بطاقة الدور",
+      "previous": "الدور السابق"
+    },
+    "erlcPreview": {
+      "name": "لعب الأدوار في مقاطعة ليبرتي",
+      "panelSelected": "اللوحة المحددة: {panel}",
+      "subtitle": "الاستجابة للطوارئ: مقاطعة ليبرتي"
+    },
+    "fivemPreviewSubtitle": "مجتمع لعب الأدوار في FiveM",
     "labels": {
       "permissionKey": "رقم التصريح"
+    },
+    "preview": {
+      "permissionKeySubmitted": "تم إرسال مفتاح إذن المعاينة."
     },
     "text": {
       "accessCenter": "مركز الوصول",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "تُرسل بطاقات الهدايا مباشرةً إلى {username}. يتم تطبيق الرصيد تلقائيًا على أي وجميع اشتراكات Sonoran Software في ذلك الحساب.",
     "creditSummary": "يُطبَّق تلقائيًا على الاشتراكات الجديدة والتجديدات.",
     "deleteAccount": "حذف الحساب",
-    "description": "اسمح للأعضاء بالمساهمة في اشتراكات Sonoran.",
+    "description": "اسمح للأعضاء بالمساعدة في دفع اشتراكات Sonoran.",
     "giftOptions": "خيارات بطاقة الهدية",
     "give": "إهداء بطاقة هدية",
     "hidden": "مخفي",
@@ -1974,8 +2123,8 @@
     "chooseGame": "ما الذي تلعبه؟",
     "connectNext": "مجتمعك جاهز. بعد ذلك، وصّل لعبتك.",
     "continue": "متابعة",
-    "createFailed": "تعذر علينا إنشاء مجتمعك. تحقق من حد المجتمع لديك وحاول مرة أخرى.",
-    "createUncertain": "تعذر تأكيد الإنشاء. حدّث مجتمعاتك قبل المحاولة مرة أخرى.",
+    "createFailed": "تعذر إنشاء مجتمعك. حاول مرة أخرى.",
+    "createUncertain": "تعذّر تأكيد الإنشاء. حدّث قبل إعادة المحاولة.",
     "dispatchAi": "إعداد العمليات الذكية",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "فتح مجتمعك…",
     "otherName": "اسم اللعبة",
     "otherRequired": "أدخل اسم لعبة (2–60 حرفًا).",
+    "ownedCommunityLimit": "أنت تملك بالفعل الحد الأقصى من المجتمعات.",
     "pcNext": "تم حفظ مجتمعك. سجّل الدخول باستخدام هذا الحساب نفسه على جهاز الكمبيوتر لمتابعة.",
     "previewDesktop": "متابعة على سطح المكتب",
     "previewEvents": "الأحداث الملتقطة (غير المرسلة إلى Google Analytics)",
@@ -3030,7 +3180,20 @@
     "title": "احفظ هذا الرمز"
   },
   "menu": {
-    "discovery": "اكتشاف"
+    "browseDiscovery": "تصفح الكل",
+    "communitiesTitle": "مجتمعاتك",
+    "communityScrollPosition": "موضع بطاقة المجتمع",
+    "create": "إنشاء",
+    "discovery": "اكتشاف",
+    "discoveryTitle": "اكتشف المجتمعات",
+    "discoveryUnavailable": "المجتمعات المميزة غير متاحة",
+    "join": "الإنضمام",
+    "nextCommunities": "المجتمعات التالية",
+    "nextFeaturedCommunity": "المجتمع المميز التالي",
+    "noCommunities": "انضم إلى مجتمع أو أنشئ مجتمعًا للبدء.",
+    "openFeaturedCommunity": "اكتشف {name}",
+    "previousCommunities": "المجتمعات السابقة",
+    "previousFeaturedCommunity": "المجتمع المميز السابق"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "عرض"
     },
     "diagram": {
+      "brushWidth": "عرض الفرشاة",
       "deleteSelected": "حذف المحدد",
       "groupUngroupSelected": "تجميع/إلغاء تجميع المحدد (SHIFT + CLICK)",
       "itemOptions": "خيارات العنصر",
       "lockUnlockSelected": "قفل/إلغاء قفل المحدد",
       "moveLayerDown": "نقل الطبقة إلى الأسفل (Shift = الأسفل)",
       "moveLayerUp": "نقل الطبقة للأعلى (Shift = الأعلى)",
+      "opacity": "الشفافية",
       "redo": "إعادة",
       "shortcutDelete": "اختصار: DELETE",
       "shortcutDown": "اختصار: (SHIFT) سهم لأسفل",
@@ -4315,6 +4480,7 @@
       "newGroup": "تعيين دورية جديدة",
       "removeFromGroup": "إزالة من المجموعة",
       "showAllUnitGroups": "إظهار جميع مجموعات الوحدات",
+      "showDispatchers": "إظهار المُرسلين",
       "showUnitGroupsWithUnits": "إظهار المجموعات مع الوحدات",
       "togglePanic": "تفعيل زر الذعر",
       "unitGroups": "الدوريات المتاحة",
@@ -4338,16 +4504,16 @@
     "questions": "أسئلة:"
   },
   "recentPhotos": {
-    "choose": "اختر صورة حديثة",
+    "choose": "اختر صورة",
     "copyFailed": "تعذر نسخ عنوان URL للصورة.",
     "copyUrl": "نسخ عنوان URL للصورة",
     "empty": "لم يتم استلام أي صور بعد.",
     "receivedAt": "تم الاستلام {time}",
     "replacePhoto": "استبدال الصورة",
-    "title": "الصور الأخيرة",
+    "title": "الصور",
     "unavailable": "تعذر تحميل هذه الصورة.",
     "unknownTime": "الوقت غير معروف",
-    "unreadLabel": "الصور الأخيرة، {count} غير مقروءة",
+    "unreadLabel": "الصور، {count} غير مقروءة",
     "urlCopied": "تم نسخ عنوان URL للصورة.",
     "usePhoto": "استخدام الصورة"
   },

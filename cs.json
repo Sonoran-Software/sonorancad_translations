@@ -76,16 +76,27 @@
       "code": "Kód"
     },
     "accounts": {
+      "active": "AKTIVNÍ",
       "apiIds": "ID API",
+      "banned": "ZAKÁZÁNO",
       "inviteApps": "Použijte toto ID pro připojení v desktopové a mobilní aplikaci.",
       "inviteCopyFailed": "Nelze zkopírovat. Zkuste to prosím znovu.",
       "inviteMembers": "Pozvěte své členy",
       "inviteUrlHelp": "Použijte tuto adresu URL k přímému přihlášení do vašeho CADu.",
       "joined": "Připojeno",
+      "joinedOn": "Připojeno {date}",
       "lastLogin": "Poslední přihlášení",
+      "lastLoginSummary": "Poslední přihlášení · {date}",
+      "loadFailed": "Nepodařilo se načíst účty. Zkuste obnovit stránku.",
+      "manageAccount": "Spravovat {username}",
+      "moreActions": "Další akce účtu",
+      "noLoginRecorded": "Žádné přihlášení nebylo zaznamenáno",
+      "pending": "ČEKAJÍCÍ",
       "permissions": "Oprávnění",
       "purge": "Odstranit neaktivní",
       "purgeConfirm": "Opravdu chcete odstranit všechny neaktivní uživatelské účty? (30 dní)",
+      "searchAccounts": "Hledat účty",
+      "selectAccount": "Vyberte {username}",
       "status": "Stav",
       "userAccounts": "Uživatelské účty",
       "username": "Uživatelské jméno"
@@ -116,6 +127,11 @@
       "successfulRequests": "Dokončené požadavky",
       "title": "Využití AI",
       "tokens": "Tokeny"
+    },
+    "askChatGpt": {
+      "description": "Použijte oficiální aplikaci Sonoran Software v ChatGPT pro pomoc s konfigurací vaší CAD komunity a nastavením integrací.",
+      "open": "Otevřít v ChatGPT",
+      "title": "Zeptejte se ChatGPT"
     },
     "authenticate": {
       "authHeader": "Ověřte vlastnictví vašeho CAD",
@@ -237,7 +253,8 @@
         "resetPassword": "Resetovat heslo",
         "subheader": "Podzáhlaví",
         "subtext1": "Přizpůsobte e-maily, které vaši uživatelé obdrží při vytváření účtu nebo resetování hesla z vaší vlastní přihlašovací obrazovky.",
-        "viewTemplate": "Zobrazit šablonu"
+        "viewNamedTemplate": "Náhled e-mailu {name}",
+        "viewTemplate": "Náhled"
       },
       "errors": {
         "serverLimit1": "Chyba: Vaše komunita je omezena na",
@@ -319,6 +336,8 @@
         "discord": "Discord",
         "name": "Jméno",
         "saveFailed": "Vaše změny komunity nebyly uloženy. Zkuste to prosím znovu.",
+        "showDiscordLink": "Zobrazit odkaz na Discord",
+        "showWebsiteLink": "Zobrazit odkaz na web",
         "subtitle": "Podtitul",
         "timezone": "Časové pásmo",
         "voiceCommand": "Hlasový příkaz klíčové slovo",
@@ -381,13 +400,28 @@
         "width": "Šířka",
         "widthHelp": "Určuje, jak široce se toto vyhledávací pole zobrazuje v okně vyhledávání. Klikněte na ikonu Náhled a zobrazte, jak se bude zobrazovat."
       },
+      "menuStyle": {
+        "classic": "Klasické",
+        "classicHint": "Kompaktní dlaždice s ikonami panelu.",
+        "communityMenu": "Nabídka komunity",
+        "description": "Platí pro všechny členy.",
+        "gta": "GTA",
+        "gtaHint": "Vysoké karty rolí s portréty postav inspirovanými GTA.",
+        "illustrated": "Roblox",
+        "illustratedHint": "Vysoké karty rolí s ilustrovanými postavami z Robloxu.",
+        "localDescription": "Platí pro tuto kartu prohlížeče.",
+        "saveFailed": "Styl nabídky se nepodařilo uložit. Vyberte jej znovu a zkuste to znovu.",
+        "title": "Styl"
+      },
       "notificationTones": {
         "dispatchClosed": "Výjezd uzavřen",
         "dispatchNote": "Poznámka k výjezdu",
         "dispatchUpdated": "Odeslání aktualizováno",
         "newDispatch": "Nový výjezd",
         "notificationTones": "Tóny oznámení",
-        "statusChange": "Změna stavu"
+        "playPreview": "Přehrát náhled",
+        "statusChange": "Změna stavu",
+        "uploadFailed": "Nepodařilo se nahrát zvuk. Zkuste to znovu."
       },
       "otherCustomization": "Další možnosti přizpůsobení",
       "pageColors": {
@@ -396,13 +430,17 @@
         "menuPageBkg": "Pozadí stránky nabídky",
         "setToDefault": "Nastavit na výchozí barvu"
       },
+      "pickColor": "Vyberte barvu",
       "quickLinks": {
+        "addLink": "Přidat odkaz",
         "color": "Barva",
         "deleteLink": "Smazat odkaz",
+        "empty": "Přidejte odkaz, abyste členům dali zkratku na webovou stránku.",
         "label": "Popisek",
         "link": "Odkaz",
         "newLink": "Nový odkaz",
-        "quickLinks": "Rychlé odkazy"
+        "quickLinks": "Rychlé odkazy",
+        "url": "URL"
       },
       "rapidIQEditor": {
         "addCode": "Přidat kód",
@@ -453,7 +491,7 @@
         "value": "Hodnota"
       },
       "restrictions": {
-        "maxCivilians": "Maximální počet znaků pro civilisty",
+        "maxCivilians": "Maximální počet civilních znaků na účet",
         "maxLicenses": "Maximální počet civilních licencí *",
         "maxRegistrations": "Maximální registrace civilních vozidel *",
         "note": "* Tato omezení se NEVZTAHUJÍ na komunity s povolenou Database Sync.",
@@ -469,6 +507,16 @@
         "subtext2": "Sonoran CAD vám umožňuje oddělit online jednotky a dispečink mezi více servery a zároveň sdílet stejné záznamy.",
         "subtext3": "Vaše komunita v současnosti může podporovat až",
         "subtext4": "servery."
+      },
+      "toneBoard": {
+        "add": "Přidat tón",
+        "audioUrl": "URL zvuku",
+        "dispatchPreview": "Náhled výjezdu",
+        "empty": "Přidejte tón a začněte.",
+        "name": "Název tónu",
+        "playTone": "Náhled {name}",
+        "remove": "Odstranit tón",
+        "untitled": "Nový tón"
       },
       "unitStatus": {
         "available": "Dostupné",
@@ -609,12 +657,17 @@
     },
     "department": {
       "abbreviation": "Zkratka",
+      "actionsFor": "Akce pro {name}",
+      "addAgency": "Přidat agenturu",
+      "addDepartment": "Přidat oddělení",
       "address": "Adresa",
+      "addSubdivision": "Přidat pododdělení",
       "agencies": "Agentury",
       "agency": "Agentura",
       "department": "Oddělení",
       "departments": "Oddělení",
       "description": "Popis",
+      "editDetails": "Upravit {name}",
       "editorSubtitle": "Spravujte agentury, oddělení a pododdělení.",
       "editorTitle": "Editor oddělení",
       "errors": {
@@ -655,7 +708,10 @@
         "name": "Název pododdělení"
       },
       "name": "Jméno",
+      "openDetails": "Otevřít {name}",
+      "path": "Hierarchie oddělení",
       "persistentGroups": {
+        "add": "Přidat skupinu",
         "badge": "Trvalá skupina",
         "empty": "Nakonfigurovány žádné trvalé skupiny.",
         "groupName": "Název skupiny",
@@ -664,6 +720,8 @@
         "maxUnits": "Max. jednotky",
         "maxUnitsHint": "Volitelné",
         "noUnits": "Žádné jednotky ve skupině",
+        "remove": "Odstranit skupinu",
+        "saveFailed": "Nepodařilo se uložit skupiny jednotek.",
         "title": "Trvalé skupiny jednotek"
       },
       "subdivisions": "Pododdělení",
@@ -704,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "Průvodce oprávněními"
+    },
+    "identifiers": {
+      "assignment": "Přiřazení",
+      "editUnitNumber": "Upravit identifikátor {number}",
+      "loadFailed": "Nepodařilo se načíst identifikátory. Zkuste obnovit stránku.",
+      "noUnitNumber": "Bez čísla útvaru"
     },
     "integration": {
       "apiDocs": "Dokumentace k API",
@@ -1120,6 +1184,71 @@
       "logs": "Záznamy",
       "time": "Čas"
     },
+    "navigation": {
+      "accessRules": "Pravidla přístupu",
+      "accountRestrictionsDescription": "Omezte, kolik civilních postav může každý člen vytvořit.",
+      "accountsDescription": "Pozvěte členy a spravujte jejich přístup.",
+      "activity": "Aktivita a používání",
+      "addressesDescription": "Přidejte adresy, které mohou členové vyhledávat.",
+      "aiDescription": "Podívejte se, kolik AI vaše komunita tento měsíc využila.",
+      "alpr": "ALPR",
+      "apiDescription": "Spravujte klíče pro nástroje, které se připojují k CAD.",
+      "appearance": "Vzhled komunity",
+      "automationsDescription": "Vyberte, co CAD udělá, když nastane událost.",
+      "communityIdDescription": "Nastavte ID, které lidé zadávají, aby se připojili k vaší komunitě.",
+      "communityInfoDescription": "Upravte název, logo a odkazy své komunity.",
+      "connections": "Připojení",
+      "customDomainDescription": "Použijte vlastní webovou adresu pro přihlášení do CAD.",
+      "customEmailsDescription": "Upravte e-maily pro registraci a resetování hesla.",
+      "customization": "Přizpůsobení",
+      "customRecordsDescription": "Vytvářejte formuláře pro záznamy, které vaše komunita používá.",
+      "danger": "Nebezpečná zóna",
+      "delete": "Smazat komunitu",
+      "deleteDescription": "Potvrďte e-mailem odstranění této komunity.",
+      "departmentsDescription": "Uspořádejte agentury, oddělení a pododdělení.",
+      "discordDescription": "Nastavte Discord bota, synchronizaci rolí a upozornění.",
+      "discordPresenceDescription": "Nastavit pozvánkové odkazy, které členové zobrazují v Discordu.",
+      "dispatch": "Nastavení výjezdu",
+      "dispatchLayoutsDescription": "Vyberte pole zobrazená u dispečerských hovorů.",
+      "eventWebhooks": "Webooky událostí",
+      "geographicalSettingsDescription": "Nastavte své časové pásmo a místní termíny.",
+      "identifiersDescription": "Najděte a upravte podrobnosti jednotky pro členy.",
+      "infernoPagersDescription": "Vyberte, kdo bude dostávat upozornění na nouzový pager.",
+      "integrations": "Integrace",
+      "integrationSettings": "Nastavení integrace",
+      "limitsDescription": "Podívejte se, co váš plán umožňuje.",
+      "logsDescription": "Podívejte se, co administrátoři udělali a kdy.",
+      "lookupTypesDescription": "Vyberte, co mohou členové vyhledávat v záznamech.",
+      "manageGame": "Správa nastavení hry",
+      "manageGameDescription": "Připojte CAD ke svému hernímu serveru.",
+      "management": "Správa komunity",
+      "members": "Členové a oprávnění",
+      "menuStyleDescription": "Zvolte, jak vypadá komunitní menu.",
+      "notificationTonesDescription": "Vyberte zvuky pro hovory a další upozornění.",
+      "penalCodes": "Trestní zákoníky",
+      "penalCodesDescription": "Nastavte přestupky, pokuty a tresty odnětí svobody.",
+      "people": "Lidé a přístup",
+      "permissionKeysDescription": "Vytvořte klíče, které členům umožní přístup.",
+      "persistentUnitGroupsDescription": "Ponechat skupiny viditelné v dispečinku, i když jsou prázdné.",
+      "quickLinksDescription": "Dejte členům zkratky na užitečné webové stránky.",
+      "rapidIQDescription": "Vyberte otázky, které RapidIQ klade volajícím.",
+      "recordEditors": "Editory záznamů a kódů",
+      "records": "Záznamy a kódy",
+      "recordSettings": "Nastavení záznamů",
+      "sections": "Admin sekce",
+      "serversDescription": "Oddělte jednotky a hovory podle herního serveru.",
+      "serverSetup": "Nastavení serveru",
+      "system": "Systém",
+      "tenCodes": "10-kódy",
+      "tenCodesDescription": "Upravte kódy, které jednotky používají při rádiové komunikaci.",
+      "title": "Administrace",
+      "toneBoardDescription": "Nastavte zvuky, které se přehrají na vyžádání.",
+      "transfer": "Převést vlastnictví",
+      "transferDescription": "Předejte vlastnictví jinému členovi.",
+      "unitStatusCodesDescription": "Nastavte kódy pro stavy jednotek, jako je k dispozici nebo zaneprázdněn.",
+      "wipeDescription": "Smazat všechny záznamy zvoleného typu.",
+      "workflows": "Pracovní postupy"
+    },
     "penal": {
       "autoSort": "Automatické řazení",
       "bondAmount": "Výše kauce/pokuty",
@@ -1163,6 +1292,7 @@
       "confirmKick": "Opravdu chcete vyhodit",
       "confirmRemoveKey": "Opravdu chcete odebrat tento klíč oprávnění?",
       "dmvRecords": "Záznamy DMV",
+      "editKey": "Upravit klíč {key}",
       "emsAdvanced": "EMS - Pokročilé",
       "errors": {
         "duplicateKey": "Chyba: Duplicitní klíč s tímto názvem již existuje!"
@@ -1173,7 +1303,9 @@
       "keyName": "Název klíče",
       "kickUser": "Vyhodit uživatele",
       "lawRecords": "Právní záznamy",
+      "loadKeysFailed": "Nepodařilo se načíst klíče oprávnění. Zkuste obnovit stránku.",
       "modifyStreetSigns": "Upravit pouliční značky",
+      "newKey": "Nový klíč",
       "pagePermissions": "Oprávnění stránky",
       "permissionKey": "Klíč oprávnění",
       "permissionKeys": "Klíče oprávnění",
@@ -1181,6 +1313,7 @@
       "permissionsGuide": "Průvodce oprávněními",
       "policeAdvanced": "Policie - pokročilé",
       "revokeBan": "Zrušit ban",
+      "searchKeys": "Vyhledat klíče",
       "status": {
         "active": "AKTIVNÍ",
         "banned": "ZAKÁZÁNO",
@@ -1207,9 +1340,9 @@
       "transferSubtext": "Musíte být vlastníkem komunity/CAD, abyste mohli toto CAD převést. Proces převodu bude vyžadovat ověření e-mailu."
     },
     "roleSync": {
-      "accountAction": "Nastavit synchronizaci rolí",
-      "accountDescription": "Vyberte oprávnění jednou. Členové spustí /sync v Discordu.",
-      "accountTitle": "Nechte role na Discordu spravovat oprávnění",
+      "accountAction": "Nastavit",
+      "accountDescription": "Namapujte role na Discordu na oprávnění CAD. Členové spustí /sync na Discordu.",
+      "accountTitle": "Synchronizace role Discord",
       "add": "Přidat roli",
       "autoResync": "Změny se automaticky znovu synchronizují u všech propojených členů 5 minut po vaší poslední úpravě. Synchronizace může trvat o něco déle.",
       "cmsManaged": "Sonoran CMS spravuje oprávnění pro tuto komunitu. Nakonfigurujte synchronizaci rolí v CMS.",
@@ -1659,6 +1792,7 @@
       "addColumn": "Přidat sloupec",
       "addColumnLeft": "Přidat sloupec nalevo",
       "addColumnRight": "Přidat sloupec napravo",
+      "addPanel": "Přidat panel",
       "borderTooltip": "Přetažením změníte velikost. Kliknutím pravým tlačítkem zobrazíte možnosti sloupce.",
       "edgeTooltip": "Kliknutím pravým tlačítkem zobrazíte možnosti sloupce.",
       "headerToggleTooltip": "Dvojitým kliknutím rozbalíte/sbalíte",
@@ -1775,6 +1909,7 @@
   "communityMenu": {
     "buttons": {
       "admin": "Správce",
+      "applyPermissionKey": "Použít",
       "civilian": "Civilní",
       "discord": "Discord",
       "dispatch": "Odeslat",
@@ -1786,8 +1921,22 @@
       "setDefault": "Nastavit výchozí komunitu",
       "website": "Webové stránky"
     },
+    "carousel": {
+      "next": "Další role",
+      "position": "Pozice karty role",
+      "previous": "Předchozí role"
+    },
+    "erlcPreview": {
+      "name": "Liberty County Roleplay",
+      "panelSelected": "Vybraný panel: {panel}",
+      "subtitle": "Emergency Response: Liberty County"
+    },
+    "fivemPreviewSubtitle": "komunita roleplay ve FiveM",
     "labels": {
       "permissionKey": "Klíč oprávnění"
+    },
+    "preview": {
+      "permissionKeySubmitted": "Náhled klíče oprávnění byl odeslán."
     },
     "text": {
       "accessCenter": "Centrum přístupu",
@@ -1870,7 +2019,7 @@
     "creditExplanation": "Dárkové karty jsou odesílány přímo uživateli {username}. Kredit se automaticky uplatní na jakékoli a všechny předplatné Sonoran Software na tomto účtu.",
     "creditSummary": "Automaticky použito na nové předplatné a obnovení.",
     "deleteAccount": "Smazat účet",
-    "description": "Nechte členy přispívat na předplatná Sonoran.",
+    "description": "Nechte členy pomáhat platit předplatná Sonoran.",
     "giftOptions": "Možnosti dárkové karty",
     "give": "Darovat dárkovou kartu",
     "hidden": "Skryto",
@@ -1974,8 +2123,8 @@
     "chooseGame": "Co hrajete?",
     "connectNext": "Vaše komunita je připravena. Dále připojte svou hru.",
     "continue": "Pokračovat",
-    "createFailed": "Vaši komunitu se nepodařilo vytvořit. Zkontrolujte limit své komunity a zkuste to znovu.",
-    "createUncertain": "Nepodařilo se potvrdit vytvoření. Před dalším pokusem obnovte své komunity.",
+    "createFailed": "Nepodařilo se vytvořit vaši komunitu. Zkuste to znovu.",
+    "createUncertain": "Vytvoření se nepodařilo potvrdit. Před opětovným pokusem obnovte stránku.",
     "dispatchAi": "Nastavit AI výjezd",
     "games": {
       "erlc": "ER:LC",
@@ -2000,6 +2149,7 @@
     "openingCommunity": "Otevírání vaší komunity…",
     "otherName": "Název hry",
     "otherRequired": "Zadejte název hry (2–60 znaků).",
+    "ownedCommunityLimit": "Již vlastníte maximální počet komunit.",
     "pcNext": "Vaše komunita je uložena. Přihlaste se k pokračování na svém PC stejným účtem.",
     "previewDesktop": "Pokračovat na počítači",
     "previewEvents": "Zachycené události (neodeslané do Google Analytics)",
@@ -3030,7 +3180,20 @@
     "title": "Uložte tento kód"
   },
   "menu": {
-    "discovery": "Objevování"
+    "browseDiscovery": "Procházet vše",
+    "communitiesTitle": "Vaše komunity",
+    "communityScrollPosition": "Pozice karty komunity",
+    "create": "Vytvořit",
+    "discovery": "Objevování",
+    "discoveryTitle": "Objevovat komunity",
+    "discoveryUnavailable": "Doporučené komunity nejsou k dispozici.",
+    "join": "Připojit",
+    "nextCommunities": "Další komunity",
+    "nextFeaturedCommunity": "Další doporučená komunita",
+    "noCommunities": "Připojte se ke komunitě nebo ji vytvořte, abyste mohli začít.",
+    "openFeaturedCommunity": "Objevit {name}",
+    "previousCommunities": "Předchozí komunity",
+    "previousFeaturedCommunity": "Předchozí doporučená komunita"
   },
   "payment": {
     "billingCenter": {
@@ -3872,12 +4035,14 @@
       "view": "Zobrazit"
     },
     "diagram": {
+      "brushWidth": "Šířka štětce",
       "deleteSelected": "Smazat vybrané",
       "groupUngroupSelected": "Seskupit/Rozeskupit vybrané (SHIFT + CLICK)",
       "itemOptions": "Možnosti položky",
       "lockUnlockSelected": "Zamknout/odemknout vybrané",
       "moveLayerDown": "Přesunout vrstvu dolů (Shift = spodní)",
       "moveLayerUp": "Posunout vrstvu nahoru (Shift = Nahoru)",
+      "opacity": "Neprůhlednost",
       "redo": "Znovu",
       "shortcutDelete": "ZKRATKA: DELETE",
       "shortcutDown": "Zkratka: (SHIFT) šipka dolů",
@@ -4306,6 +4471,7 @@
       "newGroup": "Nová skupina",
       "removeFromGroup": "Odebrat ze skupiny",
       "showAllUnitGroups": "Zobrazit všechny skupiny jednotek",
+      "showDispatchers": "Zobrazit dispečery",
       "showUnitGroupsWithUnits": "Zobrazit skupiny s jednotkami",
       "togglePanic": "Přepnout paniku",
       "unitGroups": "Skupiny jednotek",
@@ -4329,16 +4495,16 @@
     "questions": "Otázky:"
   },
   "recentPhotos": {
-    "choose": "Vybrat nedávnou fotografii",
+    "choose": "Vybrat fotku",
     "copyFailed": "Nepodařilo se zkopírovat URL fotografie.",
     "copyUrl": "Kopírovat URL fotografie",
     "empty": "Zatím nebyly přijaty žádné fotografie.",
     "receivedAt": "Přijato {time}",
     "replacePhoto": "Nahradit fotografii",
-    "title": "Nedávné fotografie",
+    "title": "Fotky",
     "unavailable": "Tuto fotografii nelze načíst.",
     "unknownTime": "Čas neznámý",
-    "unreadLabel": "Nedávné fotografie, {count} nepřečtené",
+    "unreadLabel": "Fotky, {count} nepřečtených",
     "urlCopied": "URL fotografie zkopírována.",
     "usePhoto": "Použít fotku"
   },
