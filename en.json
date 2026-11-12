@@ -1097,8 +1097,13 @@
         "featureWraithV2": "WraithV2",
         "finishSetup": "Finish Setup",
         "header": "FiveM Integration",
+        "installResourceTitle": "Install the FiveM resource",
         "liveMapBody": "Show live unit locations from FiveM or use a static map URL for each server.",
+        "liveMapInteractive": "Interactive",
+        "liveMapMode": "Map type",
         "liveMapPermissionNote": "Members need Live Map permission. To appear on the interactive map, they also need to run /link in FiveM.",
+        "liveMapServerUrl": "{server} map URL",
+        "liveMapStatic": "Static URL",
         "liveMapStatus": "Status",
         "liveMapTitle": "Live Map",
         "manual": {
@@ -1108,16 +1113,16 @@
           "configComment2": "# ONLY use this line for the entire Sonoran CAD resource, you do not need to ensure anything else.",
           "configExec": "exec {'@'}sonorancad/sonorancad.cfg",
           "configureResource": "Open sonorancad/configuration/config.json to configure the resource.",
+          "configureStep": "Update server.cfg",
+          "configureStepBody": "Add this line to server.cfg, then restart your FiveM server.",
+          "copyCommand": "Copy server.cfg command",
           "downloadButton": "Download Sonoran CAD for FiveM",
+          "downloadStep": "Download and extract",
           "extractResource": "Extract the [sonorancad] folder into your server’s resources folder.",
           "preconfiguredNotice": "The resource will already have the communityID and apiKey pre-configured.",
           "restartComplete": "Restart your FiveM server.",
           "seeDocs": "See the Docs",
-          "welcomeDescription": "Follow this tutorial to install the FiveM resource on your server!",
-          "downloadStep": "Download and extract",
-          "configureStep": "Update server.cfg",
-          "configureStepBody": "Add this line to server.cfg, then restart your FiveM server.",
-          "copyCommand": "Copy server.cfg command"
+          "welcomeDescription": "Follow this tutorial to install the FiveM resource on your server!"
         },
         "manualBody": "Download the preconfigured resource and upload it to your own host.",
         "manualDownloadBody": "Download the Sonoran CAD resource, then move it into your existing FiveM server resources folder.",
@@ -1130,6 +1135,7 @@
         "openSonoranOne": "Open Sonoran One",
         "or": "or",
         "promotedBadge": "Recommended",
+        "pushEventsBody": "The FiveM resource automatically handles push events through a websocket connection.",
         "pushEventsFallbackBody": "CAD uses the server IP and game port to deliver push events when the WebSocket connection is unavailable. The FiveM resource usually fills these in automatically.",
         "pushEventsTitle": "Push Events Fallback",
         "recommendedBadge": "One-Click Recommended",
@@ -1161,15 +1167,10 @@
         "stepThreeOneClickCaption": "Feature tour",
         "stepTwoManualCaption": "Manual files",
         "stepTwoOneClickCaption": "Game panel",
+        "viewHostingPromotion": "View hosting promotion",
         "welcomeTitle": "Welcome",
         "whatsNextBody": "After the resource is installed, use the docs to enable the FiveM submodules your server needs.",
-        "whatsNextTitle": "What's Next",
-        "installResourceTitle": "Install the FiveM resource",
-        "liveMapInteractive": "Interactive",
-        "liveMapMode": "Map type",
-        "liveMapServerUrl": "{server} map URL",
-        "liveMapStatic": "Static URL",
-        "viewHostingPromotion": "View hosting promotion"
+        "whatsNextTitle": "What's Next"
       },
       "fivemTab": "FiveM",
       "gamePort": "Game Port",
@@ -1250,8 +1251,11 @@
       "integrations": "Integrations",
       "integrationSettings": "Integration settings",
       "limitsDescription": "See what your plan allows.",
+      "liveMapDescription": "Choose the maps your FiveM servers use in CAD.",
       "logsDescription": "See what admins did and when.",
       "lookupTypesDescription": "Choose what members can search for in records.",
+      "manageErlcIntegration": "Manage ERLC integration",
+      "manageFiveMIntegration": "Manage FiveM integration",
       "manageGame": "Manage Your Game Setup",
       "manageGameDescription": "Install the game integration and configure its plugins.",
       "management": "Community management",
@@ -1263,6 +1267,7 @@
       "people": "People & access",
       "permissionKeysDescription": "Create keys that give members access.",
       "persistentUnitGroupsDescription": "Keep groups visible in dispatch even when they are empty.",
+      "pushEventsDescription": "Set the address and port CAD uses to reach each FiveM server.",
       "quickLinksDescription": "Give members shortcuts to useful websites.",
       "rapidIQDescription": "Choose the questions RapidIQ asks callers.",
       "recordEditors": "Record and code editors",
@@ -1280,9 +1285,7 @@
       "transferDescription": "Give ownership to another member.",
       "unitStatusCodesDescription": "Set codes for unit statuses like available or busy.",
       "wipeDescription": "Delete all records of a chosen type.",
-      "workflows": "Workflows",
-      "manageFiveMIntegration": "Manage FiveM integration",
-      "manageErlcIntegration": "Manage ERLC integration"
+      "workflows": "Workflows"
     },
     "penal": {
       "autoSort": "Auto Sort",
@@ -2132,6 +2135,8 @@
   "fiveMServerConfig": {
     "add": "Add item",
     "conflict": "Another administrator saved this server. Discard your changes and refresh to load the latest version.",
+    "copyCommandFailed": "Could not copy the command. Try again.",
+    "copyMigrationCommand": "Copy migration command",
     "customCallback": "Managed in the FiveM resource",
     "dependency": "Requires {plugins}",
     "disabled": "Disabled",
@@ -2659,6 +2664,7 @@
     "previous": "Previous page",
     "refresh": "Refresh",
     "remove": "Remove {item}",
+    "restartNote": "Saved settings take effect the next time the FiveM resource starts.",
     "save": "Save configuration",
     "saved": "Configuration saved.",
     "saveError": "Could not save this server’s configuration.",
@@ -2690,9 +2696,7 @@
     "serverNumber": "Server {id}",
     "title": "Server configuration",
     "unsaved": "Unsaved changes",
-    "value": "Value (JSON)",
-    "copyMigrationCommand": "Copy migration command",
-    "copyCommandFailed": "Could not copy the command. Try again."
+    "value": "Value (JSON)"
   },
   "footer": {
     "rocketNodeLink": "Open RocketNode hosting",
@@ -3626,9 +3630,9 @@
     "change": "Change",
     "copyApiKey": "Copy API key",
     "copyCommunityId": "Copy community ID",
+    "copyFailed": "Could not copy to the clipboard. Try again.",
     "current": "Game",
-    "unselected": "Not selected",
-    "copyFailed": "Could not copy to the clipboard. Try again."
+    "unselected": "Not selected"
   },
   "integrationPanels": {
     "actionFailed": "The integration action failed.",
