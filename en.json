@@ -71,71 +71,6 @@
     }
   },
   "admin": {
-    "navigation": {
-      "accessRules": "Access rules",
-      "accountRestrictionsDescription": "Limit how many civilian characters each member can create.",
-      "accountsDescription": "Invite members and manage their access.",
-      "activity": "Activity and usage",
-      "addressesDescription": "Add addresses members can search for.",
-      "aiDescription": "See how much AI your community used this month.",
-      "alpr": "ALPR",
-      "apiDescription": "Manage keys for tools that connect to CAD.",
-      "appearance": "Community appearance",
-      "automationsDescription": "Choose what CAD does when an event happens.",
-      "communityIdDescription": "Set the ID people enter to join your community.",
-      "communityInfoDescription": "Edit your community's name, logo, and links.",
-      "connections": "Connections",
-      "customDomainDescription": "Use your own web address for CAD sign-in.",
-      "customEmailsDescription": "Edit signup and password reset emails.",
-      "customRecordsDescription": "Build forms for the records your community uses.",
-      "customization": "Customization",
-      "danger": "Danger zone",
-      "delete": "Delete community",
-      "deleteDescription": "Confirm by email to remove this community.",
-      "departmentsDescription": "Organize agencies, departments, and subdivisions.",
-      "discordDescription": "Set up the Discord bot, role sync, and alerts.",
-      "discordPresenceDescription": "Set the invite links members show in Discord.",
-      "dispatch": "Dispatch setup",
-      "dispatchLayoutsDescription": "Choose the fields shown on dispatch calls.",
-      "eventWebhooks": "Event webhooks",
-      "geographicalSettingsDescription": "Set your time zone and local terms.",
-      "identifiersDescription": "Find and edit unit details for members.",
-      "infernoPagersDescription": "Choose who gets emergency pager alerts.",
-      "integrationSettings": "Integration settings",
-      "integrations": "Integrations",
-      "limitsDescription": "See what your plan allows.",
-      "logsDescription": "See what admins did and when.",
-      "lookupTypesDescription": "Choose what members can search for in records.",
-      "manageGame": "Manage game setup",
-      "manageGameDescription": "Connect CAD to your game server.",
-      "management": "Community management",
-      "members": "Members and permissions",
-      "menuStyleDescription": "Choose how the community menu looks.",
-      "notificationTonesDescription": "Choose sounds for calls and other alerts.",
-      "penalCodes": "Penal codes",
-      "penalCodesDescription": "Set up offenses, fines, and jail times.",
-      "people": "People & access",
-      "permissionKeysDescription": "Create keys that give members access.",
-      "persistentUnitGroupsDescription": "Keep groups visible in dispatch even when they are empty.",
-      "quickLinksDescription": "Give members shortcuts to useful websites.",
-      "rapidIQDescription": "Choose the questions RapidIQ asks callers.",
-      "recordEditors": "Record and code editors",
-      "recordSettings": "Record settings",
-      "records": "Records & codes",
-      "sections": "Admin sections",
-      "serverSetup": "Server setup",
-      "serversDescription": "Separate units and calls by game server.",
-      "system": "System",
-      "tenCodes": "10-codes",
-      "tenCodesDescription": "Edit the codes units use over the radio.",
-      "title": "Administration",
-      "toneBoardDescription": "Set up sounds to play on demand.",
-      "transfer": "Transfer ownership",
-      "transferDescription": "Give ownership to another member.",
-      "unitStatusCodesDescription": "Set codes for unit statuses like available or busy.",
-      "wipeDescription": "Delete all records of a chosen type.",
-      "workflows": "Workflows"
-    },
     "10Codes": {
       "action": "Action",
       "code": "Code"
@@ -169,12 +104,6 @@
     "addresses": {
       "addresses": "Addresses"
     },
-    "identifiers": {
-      "assignment": "Assignment",
-      "editUnitNumber": "Edit identifier {number}",
-      "loadFailed": "Could not load identifiers. Try refreshing.",
-      "noUnitNumber": "No unit number"
-    },
     "aiUsage": {
       "allowanceUsed": "Monthly allowance used",
       "blocked": "Blocked",
@@ -199,6 +128,11 @@
       "title": "AI Usage",
       "tokens": "Tokens"
     },
+    "askChatGpt": {
+      "description": "Use the official Sonoran Software app in ChatGPT for help configuring your CAD community and setting up integrations.",
+      "open": "Open in ChatGPT",
+      "title": "Ask ChatGPT"
+    },
     "authenticate": {
       "authHeader": "Authenticate your CAD Ownership",
       "authSubtext1": "Community owners can request a unique identification key to authenticate their ownership.",
@@ -218,19 +152,6 @@
       "customizationHeader": "Community Customization",
       "customizationSubtext1": "Community Information",
       "customizationSubtext2": "Customize your community name, logo, and more!",
-      "menuStyle": {
-        "classic": "Classic",
-        "classicHint": "Compact tiles with panel icons.",
-        "communityMenu": "Community menu",
-        "description": "Applies to all members.",
-        "gta": "GTA",
-        "gtaHint": "Tall role cards with GTA-inspired character portraits.",
-        "illustrated": "Roblox",
-        "illustratedHint": "Tall role cards with illustrated Roblox characters.",
-        "localDescription": "Applies to this browser tab.",
-        "saveFailed": "Could not save the menu style. Select it again to retry.",
-        "title": "Style"
-      },
       "customLogin": {
         "customLoginPage": "Custom Domain",
         "url": "URL"
@@ -479,25 +400,28 @@
         "width": "Width",
         "widthHelp": "Controls how wide this search field appears in the lookup window. Click the Preview icon to see how it will be displayed."
       },
-      "toneBoard": {
-        "add": "Add tone",
-        "audioUrl": "Audio URL",
-        "dispatchPreview": "Dispatch preview",
-        "empty": "Add a tone to get started.",
-        "name": "Tone name",
-        "playTone": "Preview {name}",
-        "remove": "Remove tone",
-        "untitled": "New Tone"
+      "menuStyle": {
+        "classic": "Classic",
+        "classicHint": "Compact tiles with panel icons.",
+        "communityMenu": "Community menu",
+        "description": "Applies to all members.",
+        "gta": "GTA",
+        "gtaHint": "Tall role cards with GTA-inspired character portraits.",
+        "illustrated": "Roblox",
+        "illustratedHint": "Tall role cards with illustrated Roblox characters.",
+        "localDescription": "Applies to this browser tab.",
+        "saveFailed": "Could not save the menu style. Select it again to retry.",
+        "title": "Style"
       },
       "notificationTones": {
-        "playPreview": "Play preview",
-        "uploadFailed": "Could not upload audio. Try again.",
         "dispatchClosed": "Dispatch Closed",
         "dispatchNote": "Dispatch Note",
         "dispatchUpdated": "Dispatch Updated",
         "newDispatch": "New Dispatch",
         "notificationTones": "Notification Tones",
-        "statusChange": "Status Change"
+        "playPreview": "Play preview",
+        "statusChange": "Status Change",
+        "uploadFailed": "Could not upload audio. Try again."
       },
       "otherCustomization": "Other Customization Features",
       "pageColors": {
@@ -583,6 +507,16 @@
         "subtext2": "Sonoran CAD allows you to separate online units and dispatching between multiple servers while still sharing the same records.",
         "subtext3": "Your community can currently support up to",
         "subtext4": "servers."
+      },
+      "toneBoard": {
+        "add": "Add tone",
+        "audioUrl": "Audio URL",
+        "dispatchPreview": "Dispatch preview",
+        "empty": "Add a tone to get started.",
+        "name": "Tone name",
+        "playTone": "Preview {name}",
+        "remove": "Remove tone",
+        "untitled": "New Tone"
       },
       "unitStatus": {
         "available": "Available",
@@ -726,8 +660,8 @@
       "actionsFor": "Actions for {name}",
       "addAgency": "Add agency",
       "addDepartment": "Add department",
-      "addSubdivision": "Add subdivision",
       "address": "Address",
+      "addSubdivision": "Add subdivision",
       "agencies": "Agencies",
       "agency": "Agency",
       "department": "Department",
@@ -806,11 +740,6 @@
       "tab": "Invite bot",
       "title": "Connect Discord"
     },
-    "askChatGpt": {
-      "description": "Use the official Sonoran Software app in ChatGPT for help configuring your CAD community and setting up integrations.",
-      "open": "Open in ChatGPT",
-      "title": "Ask ChatGPT"
-    },
     "general": {
       "accounts": "Accounts",
       "advanced": "Advanced",
@@ -833,6 +762,12 @@
     },
     "helpPermissions": {
       "permissionsGuide": "Permissions Guide"
+    },
+    "identifiers": {
+      "assignment": "Assignment",
+      "editUnitNumber": "Edit identifier {number}",
+      "loadFailed": "Could not load identifiers. Try refreshing.",
+      "noUnitNumber": "No unit number"
     },
     "integration": {
       "apiDocs": "API Docs",
@@ -1248,6 +1183,71 @@
       "log": "Log",
       "logs": "Logs",
       "time": "Time"
+    },
+    "navigation": {
+      "accessRules": "Access rules",
+      "accountRestrictionsDescription": "Limit how many civilian characters each member can create.",
+      "accountsDescription": "Invite members and manage their access.",
+      "activity": "Activity and usage",
+      "addressesDescription": "Add addresses members can search for.",
+      "aiDescription": "See how much AI your community used this month.",
+      "alpr": "ALPR",
+      "apiDescription": "Manage keys for tools that connect to CAD.",
+      "appearance": "Community appearance",
+      "automationsDescription": "Choose what CAD does when an event happens.",
+      "communityIdDescription": "Set the ID people enter to join your community.",
+      "communityInfoDescription": "Edit your community's name, logo, and links.",
+      "connections": "Connections",
+      "customDomainDescription": "Use your own web address for CAD sign-in.",
+      "customEmailsDescription": "Edit signup and password reset emails.",
+      "customization": "Customization",
+      "customRecordsDescription": "Build forms for the records your community uses.",
+      "danger": "Danger zone",
+      "delete": "Delete community",
+      "deleteDescription": "Confirm by email to remove this community.",
+      "departmentsDescription": "Organize agencies, departments, and subdivisions.",
+      "discordDescription": "Set up the Discord bot, role sync, and alerts.",
+      "discordPresenceDescription": "Set the invite links members show in Discord.",
+      "dispatch": "Dispatch setup",
+      "dispatchLayoutsDescription": "Choose the fields shown on dispatch calls.",
+      "eventWebhooks": "Event webhooks",
+      "geographicalSettingsDescription": "Set your time zone and local terms.",
+      "identifiersDescription": "Find and edit unit details for members.",
+      "infernoPagersDescription": "Choose who gets emergency pager alerts.",
+      "integrations": "Integrations",
+      "integrationSettings": "Integration settings",
+      "limitsDescription": "See what your plan allows.",
+      "logsDescription": "See what admins did and when.",
+      "lookupTypesDescription": "Choose what members can search for in records.",
+      "manageGame": "Manage game setup",
+      "manageGameDescription": "Connect CAD to your game server.",
+      "management": "Community management",
+      "members": "Members and permissions",
+      "menuStyleDescription": "Choose how the community menu looks.",
+      "notificationTonesDescription": "Choose sounds for calls and other alerts.",
+      "penalCodes": "Penal codes",
+      "penalCodesDescription": "Set up offenses, fines, and jail times.",
+      "people": "People & access",
+      "permissionKeysDescription": "Create keys that give members access.",
+      "persistentUnitGroupsDescription": "Keep groups visible in dispatch even when they are empty.",
+      "quickLinksDescription": "Give members shortcuts to useful websites.",
+      "rapidIQDescription": "Choose the questions RapidIQ asks callers.",
+      "recordEditors": "Record and code editors",
+      "records": "Records & codes",
+      "recordSettings": "Record settings",
+      "sections": "Admin sections",
+      "serversDescription": "Separate units and calls by game server.",
+      "serverSetup": "Server setup",
+      "system": "System",
+      "tenCodes": "10-codes",
+      "tenCodesDescription": "Edit the codes units use over the radio.",
+      "title": "Administration",
+      "toneBoardDescription": "Set up sounds to play on demand.",
+      "transfer": "Transfer ownership",
+      "transferDescription": "Give ownership to another member.",
+      "unitStatusCodesDescription": "Set codes for unit statuses like available or busy.",
+      "wipeDescription": "Delete all records of a chosen type.",
+      "workflows": "Workflows"
     },
     "penal": {
       "autoSort": "Auto Sort",
@@ -1907,17 +1907,6 @@
     }
   },
   "communityMenu": {
-    "carousel": {
-      "next": "Next role",
-      "position": "Role card position",
-      "previous": "Previous role"
-    },
-    "fivemPreviewSubtitle": "FiveM roleplay community",
-    "erlcPreview": {
-      "name": "Liberty County Roleplay",
-      "panelSelected": "Selected panel: {panel}",
-      "subtitle": "Emergency Response: Liberty County"
-    },
     "buttons": {
       "admin": "Admin",
       "applyPermissionKey": "Apply",
@@ -1929,8 +1918,20 @@
       "fire": "Fire",
       "law": "Law",
       "police": "Police",
+      "setDefault": "Set Default Community",
       "website": "Website"
     },
+    "carousel": {
+      "next": "Next role",
+      "position": "Role card position",
+      "previous": "Previous role"
+    },
+    "erlcPreview": {
+      "name": "Liberty County Roleplay",
+      "panelSelected": "Selected panel: {panel}",
+      "subtitle": "Emergency Response: Liberty County"
+    },
+    "fivemPreviewSubtitle": "FiveM roleplay community",
     "labels": {
       "permissionKey": "Permission Key"
     },
@@ -2146,9 +2147,9 @@
     "openCommunity": "Open community",
     "openGuide": "Open setup guide",
     "openingCommunity": "Opening your community…",
-    "ownedCommunityLimit": "You already own the maximum number of communities.",
     "otherName": "Game name",
     "otherRequired": "Enter a game name (2–60 characters).",
+    "ownedCommunityLimit": "You already own the maximum number of communities.",
     "pcNext": "Your community is saved. Sign in with this same account on your PC to continue.",
     "previewDesktop": "Resume on desktop",
     "previewEvents": "Captured events (not sent to Google Analytics)",
@@ -4034,14 +4035,14 @@
       "view": "View"
     },
     "diagram": {
+      "brushWidth": "Brush Width",
       "deleteSelected": "Delete Selected",
       "groupUngroupSelected": "Group/Ungroup Selected (SHIFT + CLICK)",
       "itemOptions": "Item Options",
-      "opacity": "Opacity",
-      "brushWidth": "Brush Width",
       "lockUnlockSelected": "Lock/Unlock Selected",
       "moveLayerDown": "Move Layer Down (Shift = Bottom)",
       "moveLayerUp": "Move Layer Up (Shift = Top)",
+      "opacity": "Opacity",
       "redo": "Redo",
       "shortcutDelete": "SHORTCUT: DELETE",
       "shortcutDown": "SHORTCUT: (SHIFT) Down Arrow",
@@ -4463,7 +4464,6 @@
       "createGroup": "Create Group",
       "dispatchersHidden": "Dispatchers Hidden",
       "dispatchersShown": "Dispatchers Shown",
-      "showDispatchers": "Show Dispatchers",
       "editUnit": "Edit Unit",
       "group": "Group",
       "groupName": "Group Name",
@@ -4471,6 +4471,7 @@
       "newGroup": "New Group",
       "removeFromGroup": "Remove from Group",
       "showAllUnitGroups": "Show All Unit Groups",
+      "showDispatchers": "Show Dispatchers",
       "showUnitGroupsWithUnits": "Show Groups With Units",
       "togglePanic": "Toggle Panic",
       "unitGroups": "Unit Groups",
