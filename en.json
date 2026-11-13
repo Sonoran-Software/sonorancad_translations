@@ -132,9 +132,9 @@
     "askChatGpt": {
       "description": "Use the official Sonoran Software app in ChatGPT for help configuring your CAD community and setting up integrations.",
       "open": "Open in ChatGPT",
-      "title": "Ask ChatGPT",
       "recordDescription": "Sign in to Sonoran CAD in ChatGPT to generate forms for your community.",
-      "recordTitle": "Create record templates with ChatGPT"
+      "recordTitle": "Create record templates with ChatGPT",
+      "title": "Ask ChatGPT"
     },
     "authenticate": {
       "authHeader": "Authenticate your CAD Ownership",
@@ -173,8 +173,8 @@
         "application": "Discord application",
         "btn2Failure": "Error: Without Pro, button #2 may only direct users to a Sonoran CAD or Sonoran CMS invite.",
         "buttonLabel": "Button {number} label",
-        "buttonUrl": "Button {number} URL",
         "buttons": "Profile buttons",
+        "buttonUrl": "Button {number} URL",
         "clientId": "Client ID",
         "discordRichPresence": "Discord Rich Presence",
         "iconName": "Icon Name",
@@ -485,9 +485,9 @@
         "options": "Options",
         "order": "Order",
         "question": "Question",
+        "questionsHelp": "Choose what to ask and how callers can answer.",
         "questionText": "Question text",
         "questionType": "Answer type",
-        "questionsHelp": "Choose what to ask and how callers can answer.",
         "removeCode": "Remove code",
         "removeCodeConfirm": "Remove code {id} and any flows that use it?",
         "removeCondition": "Remove condition",
@@ -534,7 +534,10 @@
         "removeServer": "Remove server",
         "serverId": "Server ID: {id}",
         "servers": "Servers",
+        "subtext1": "Does your community use multiple servers?",
         "subtext2": "Servers keep units and dispatch separate while sharing community records.",
+        "subtext3": "Your community can currently support up to",
+        "subtext4": "servers.",
         "usage": "{count} of {limit} servers in use"
       },
       "toneBoard": {
@@ -1100,6 +1103,7 @@
         "configureFeaturesTitle": "Configure Features",
         "configureResourceTitle": "Configure Resource",
         "configureServerTitle": "Configure Server",
+        "customMapPro": "Custom maps are available on Pro.",
         "downloadInstallTitle": "Download & Install",
         "featureBodycam": "Body Camera",
         "featureCadDisplay": "CAD Display",
@@ -1116,6 +1120,7 @@
         "finishSetup": "Finish Setup",
         "header": "FiveM Integration",
         "installResourceTitle": "Install the FiveM resource",
+        "liveMapBody": "Show live unit locations from FiveM or use a static map URL for each server.",
         "liveMapInteractive": "Interactive",
         "liveMapMode": "Map type",
         "liveMapPermissionNote": "To appear on the interactive map, members need Live Map permission and must run /link in FiveM.",
@@ -1144,6 +1149,12 @@
         "manualBody": "Download the preconfigured resource and upload it to your own host.",
         "manualDownloadBody": "Download the Sonoran CAD resource, then move it into your existing FiveM server resources folder.",
         "manualTitle": "Manual Installation",
+        "mapStyles": {
+          "custom": "Custom",
+          "normal": "Normal",
+          "ocrpPostal": "OCRP Postal",
+          "postal": "Postal"
+        },
         "oneClickBody": "Sonoran One includes RocketNode FiveM hosting with one-click installs.",
         "oneClickInstallerBody": "Open the Sonoran Installer in the RocketNode game panel, select CAD, then run the installer.",
         "oneClickInstallerTitle": "Run the RocketNode installer",
@@ -1187,14 +1198,7 @@
         "viewHostingPromotion": "View hosting promotion",
         "welcomeTitle": "Welcome",
         "whatsNextBody": "After the resource is installed, use the docs to enable the FiveM submodules your server needs.",
-        "whatsNextTitle": "What's Next",
-        "customMapPro": "Custom maps are available on Pro.",
-        "mapStyles": {
-          "normal": "Normal",
-          "postal": "Postal",
-          "ocrpPostal": "OCRP Postal",
-          "custom": "Custom"
-        }
+        "whatsNextTitle": "What's Next"
       },
       "fivemTab": "FiveM",
       "gamePort": "Game Port",
@@ -2158,6 +2162,7 @@
   },
   "fiveMServerConfig": {
     "add": "Add item",
+    "addServer": "Add server",
     "conflict": "Another administrator saved this server. Discard your changes and refresh to load the latest version.",
     "copyCommandFailed": "Could not copy the command. Try again.",
     "copyMigrationCommand": "Copy migration command",
@@ -2165,6 +2170,8 @@
     "dependency": "Requires {plugins}",
     "disabled": "Disabled",
     "discard": "Discard changes",
+    "downloadCallType": "Download call type",
+    "downloadCallTypeFailed": "Could not download the call type. Try again.",
     "empty": "No items",
     "enabled": "Enabled",
     "fields": {
@@ -2636,6 +2643,7 @@
     "loadError": "Could not load this server’s configuration.",
     "next": "Next page",
     "noMatch": "No plugins match your search.",
+    "noSavedCallTypes": "No saved call types on this device. Save one in the Dispatch Call Editor to select it here.",
     "noServers": "Add a server in Server Settings to configure its FiveM plugins.",
     "off": "Off",
     "on": "On",
@@ -2685,6 +2693,7 @@
     "pending": "Update the Sonoran CAD FiveM resource if you’re on an older version. Run the command below in your FiveM server console to migrate your settings to CAD, then click Refresh.",
     "pendingTitle": "Waiting for this server’s configuration",
     "plugins": "Plugins",
+    "pluginStatus": "{plugin} status",
     "preview": "Preview with sample servers. Changes stay in this tab.",
     "previous": "Previous page",
     "refresh": "Refresh",
@@ -2692,6 +2701,8 @@
     "restartNote": "Saved settings take effect the next time the FiveM resource starts.",
     "save": "Save configuration",
     "saved": "Configuration saved.",
+    "savedCallType": "Saved call type",
+    "savedCallTypesHint": "Choose a saved call type for a command, then download it and place it in the call type directory on your FiveM server.",
     "saveError": "Could not save this server’s configuration.",
     "search": "Find a plugin",
     "sections": {
@@ -2721,15 +2732,8 @@
     "serverNumber": "Server {id}",
     "title": "Server configuration",
     "unsaved": "Unsaved changes",
-    "value": "Value (JSON)",
-    "savedCallType": "Saved call type",
-    "noSavedCallTypes": "No saved call types on this device. Save one in the Dispatch Call Editor to select it here.",
-    "savedCallTypesHint": "Choose a saved call type for a command, then download it and place it in the call type directory on your FiveM server.",
-    "downloadCallType": "Download call type",
-    "downloadCallTypeFailed": "Could not download the call type. Try again.",
     "useCallTypeFile": "Press Enter to use this server filename.",
-    "pluginStatus": "{plugin} status",
-    "addServer": "Add server"
+    "value": "Value (JSON)"
   },
   "footer": {
     "rocketNodeLink": "Open RocketNode hosting",
@@ -3663,11 +3667,11 @@
     "change": "Change",
     "copyApiKey": "Copy API key",
     "copyCommunityId": "Copy community ID",
+    "copyFailed": "Could not copy to the clipboard. Try again.",
     "current": "Game",
     "loadFailed": "Couldn’t load the game settings.",
     "ownerRequired": "Ask the community owner to choose a game to open Integrations.",
-    "unselected": "Not selected",
-    "copyFailed": "Could not copy to the clipboard. Try again."
+    "unselected": "Not selected"
   },
   "integrationPanels": {
     "actionFailed": "The integration action failed.",
@@ -5627,11 +5631,9 @@
     "volume": "Volume"
   },
   "setupChecklist": {
-    "awaitingAdmin": "An admin needs to finish game integration setup.",
-    "fivemDownloadRequired": "Download the FiveM resource to unlock the rest of CAD.",
-    "required": "Finish game integration setup to unlock this community.",
     "addSync": "Add sync step",
     "allDone": "Complete",
+    "awaitingAdmin": "An admin needs to finish game integration setup.",
     "chooseFramework": "Which framework do you use?",
     "configureSync": "Open database sync",
     "currentStep": "Step {step} of {total}",
@@ -5640,6 +5642,7 @@
     "dismiss": "Dismiss setup checklist",
     "done": "Complete",
     "editFramework": "Edit",
+    "fivemDownloadRequired": "Download the FiveM resource to unlock the rest of CAD.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5673,6 +5676,7 @@
     "previewWebhook": "Webhook received",
     "refresh": "Refresh setup progress",
     "reopen": "Setup checklist",
+    "required": "Finish game integration setup to unlock this community.",
     "saveFailed": "Your checklist change wasn’t saved. Please try again.",
     "setUpSync": "Set up",
     "shortTitle": "Setup",
