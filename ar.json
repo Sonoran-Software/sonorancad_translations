@@ -132,6 +132,8 @@
     "askChatGpt": {
       "description": "استخدم تطبيق Sonoran Software الرسمي في ChatGPT للحصول على المساعدة في تهيئة مجتمع CAD الخاص بك وإعداد التكاملات.",
       "open": "فتح في ChatGPT",
+      "recordDescription": "سجّل الدخول إلى Sonoran CAD في ChatGPT لإنشاء نماذج لمجتمعك.",
+      "recordTitle": "إنشاء قوالب السجلات باستخدام ChatGPT",
       "title": "اسأل ChatGPT"
     },
     "authenticate": {
@@ -168,7 +170,11 @@
         "url": "يو ار ال"
       },
       "discordRpc": {
+        "application": "تطبيق ديسكورد",
         "btn2Failure": "خطأ: بدون النسخة الاحترافية، قد يوجه الزر رقم #2 المستخدمين فقط إلى دعوة Sonoran CAD أو Sonoran CMS.",
+        "buttonLabel": "عنوان زر {number}",
+        "buttons": "أزرار الملف الشخصي",
+        "buttonUrl": "عنوان زر {number}",
         "clientId": "معرف العميل",
         "discordRichPresence": "الحضور الغني لـ Discord",
         "iconName": "اسم الأيقونة",
@@ -460,14 +466,16 @@
         "addOption": "إضافة خيار",
         "addQuestion": "إضافة سؤال",
         "codeName": "اسم الشفرة",
-        "codesHelp": "إدارة رموز الاستجابة. يُستخدم معرّف الرمز في التدفقات، ويظهر اسم الرمز للإرسال.",
+        "codesHelp": "تستخدم التدفقات معرف الرمز. يرى الإرسال اسم الرمز.",
         "conditionsInOrder": "الشروط (بالترتيب)",
         "defaultQuestions": "أسئلة افتراضية",
         "defaultQuestionsHint": "حدد الأسئلة التي في المسار الافتراضي.",
-        "defaultsHelp": "اختر ترتيب سؤال الافتتاح الافتراضي.",
+        "defaultsHelp": "اختر الأسئلة التي يراها المتصلون أولًا. اسحب لإعادة الترتيب.",
+        "duplicateFlow": "تكرار التدفق",
+        "flowNumber": "التدفق {number}",
         "flowPreview": "معاينة التدفق",
-        "flowsHelp": "أنشئ منطق التوجيه بشروط مرتبة. ينتهي كل تدفق برمز نتيجة واحد.",
-        "headerHelp": "تكوين أسئلة RapidIQ، وخيارات الرد، والأكواد، وقواعد التدفق.",
+        "flowsHelp": "اضبط رمز الاستجابة لكل مجموعة من الإجابات. اسحب التدفقات لتغيير أيها يعمل أولًا.",
+        "headerHelp": "حدّد ما الذي يسأل عنه RapidIQ المتصلين وكيف يرمّز إجاباتهم.",
         "label": "التسمية",
         "maskHint": "مثال: (###) ###-####",
         "maskOptional": "القناع (اختياري)",
@@ -477,9 +485,17 @@
         "options": "الخيارات",
         "order": "ترتيب",
         "question": "سؤال",
-        "questionsHelp": "أنشئ وعدّل كل سؤال. استخدم الخيارات للاختيارات السريعة، أو النص/الرقم/العنوان للإجابات المكتوبة.",
+        "questionsHelp": "اختر ما تسأل عنه وكيف يمكن للمتصلين الإجابة.",
         "questionText": "نص السؤال",
-        "questionType": "نوع السؤال",
+        "questionType": "نوع الإجابة",
+        "removeCode": "إزالة الرمز",
+        "removeCodeConfirm": "هل تريد إزالة الرمز {id} وأي تدفقات تستخدمه؟",
+        "removeCondition": "إزالة الشرط",
+        "removeFlow": "إزالة التدفق",
+        "removeFlowConfirm": "هل تريد إزالة هذا التدفق؟",
+        "removeOption": "إزالة الخيار",
+        "removeQuestion": "إزالة السؤال",
+        "removeQuestionConfirm": "هل تريد إزالة السؤال “{id}” وأي تدفقات تستخدمه؟",
         "resultCode": "رمز النتيجة",
         "searchCodes": "بحث الرموز",
         "searchFlows": "بحث التدفقات",
@@ -510,14 +526,19 @@
         "userAccountRestrictions": "قيود حساب المستخدم"
       },
       "servers": {
+        "addServer": "إضافة سيرفر",
+        "confirmRemove": "إزالة {name}؟ قد تحصل الخوادم المتبقية على معرّفات جديدة.",
         "description": "وصف",
         "name": "اسم",
         "newServer": "سيرفر جديد",
+        "removeServer": "إزالة السيرفر",
+        "serverId": "معرّف السيرفر: {id}",
         "servers": "السيرفرات",
         "subtext1": "هل يستخدم مجتمعك سيرفرات متعددة؟",
         "subtext2": "يسمح لك الكاد بفصل الوحدات عبر الإنترنت والإرسال بين السيرفرات مع الاستمرار في مشاركة نفس السجلات.",
         "subtext3": "يمكن لمجتمعك حاليًا دعم ما يصل إلى",
-        "subtext4": "السيرفرات."
+        "subtext4": "السيرفرات.",
+        "usage": "{count} من {limit} خوادم قيد الاستخدام"
       },
       "toneBoard": {
         "add": "إضافة نغمة",
@@ -1082,6 +1103,7 @@
         "configureFeaturesTitle": "تكوين الميزات",
         "configureResourceTitle": "تهيئة المورد",
         "configureServerTitle": "تكوين الخادم",
+        "customMapPro": "الخرائط المخصصة متاحة في Pro.",
         "downloadInstallTitle": "تنزيل وتثبيت",
         "featureBodycam": "كاميرا الجسم",
         "featureCadDisplay": "عرض CAD",
@@ -1101,7 +1123,7 @@
         "liveMapBody": "عرض مواقع الوحدات المباشرة من FiveM أو استخدام رابط خريطة ثابت لكل خادم.",
         "liveMapInteractive": "تفاعلي",
         "liveMapMode": "نوع الخريطة",
-        "liveMapPermissionNote": "يحتاج الأعضاء إلى إذن Live Map. للظهور على الخريطة التفاعلية، عليهم أيضًا تشغيل /link في FiveM.",
+        "liveMapPermissionNote": "للبدء في الظهور على الخريطة التفاعلية، يحتاج الأعضاء إلى إذن الخريطة المباشرة ويجب عليهم تشغيل /link في FiveM.",
         "liveMapServerUrl": "رابط خريطة {server}",
         "liveMapStatic": "عنوان يو ار ال ثابت",
         "liveMapStatus": "الخريطة الحيه",
@@ -1127,6 +1149,12 @@
         "manualBody": "حمّل المورد المُهيأ مسبقًا وارفعه إلى مضيفك الخاص.",
         "manualDownloadBody": "قم بتنزيل مورد Sonoran CAD، ثم انقله إلى مجلد الموارد الموجود لديك في خادم FiveM.",
         "manualTitle": "التثبيت اليدوي",
+        "mapStyles": {
+          "custom": "مخصص",
+          "normal": "عادي",
+          "ocrpPostal": "OCRP الرمز البريدي",
+          "postal": "رمز بريدي"
+        },
         "oneClickBody": "تتضمن Sonoran One استضافة FiveM من RocketNode مع تثبيت بنقرة واحدة.",
         "oneClickInstallerBody": "افتح مثبت Sonoran في لوحة لعبة RocketNode، ثم اختر CAD، ثم شغّل المثبت.",
         "oneClickInstallerTitle": "شغّل مُثبّت RocketNode",
@@ -2134,6 +2162,7 @@
   },
   "fiveMServerConfig": {
     "add": "إضافة عنصر",
+    "addServer": "إضافة سيرفر",
     "conflict": "قام مسؤول آخر بحفظ هذا الخادم. تجاهل تغييراتك وأعد التحديث لتحميل أحدث إصدار.",
     "copyCommandFailed": "تعذر نسخ الأمر. حاول مرة أخرى.",
     "copyMigrationCommand": "نسخ أمر الترحيل",
@@ -2141,6 +2170,8 @@
     "dependency": "يتطلب {plugins}",
     "disabled": "معطّل",
     "discard": "تجاهل التغييرات",
+    "downloadCallType": "تنزيل نوع البلاغ",
+    "downloadCallTypeFailed": "تعذر تنزيل نوع البلاغ. حاول مرة أخرى.",
     "empty": "لا توجد عناصر",
     "enabled": "ممكن",
     "fields": {
@@ -2167,6 +2198,7 @@
       "ambulance": "الإسعاف",
       "apiId": "اي دي API",
       "apiSendEnabled": "إرسال تحديثات API",
+      "apiUrl": "يو ار ال",
       "attachButton": "زر إرفاق",
       "attachingSubMenu": "إرفاق القائمة الفرعية",
       "attachMenuButton": "زر إرفاق القائمة",
@@ -2611,6 +2643,7 @@
     "loadError": "تعذر تحميل إعدادات هذا الخادم.",
     "next": "الصفحة التالية",
     "noMatch": "لا توجد إضافات تطابق بحثك.",
+    "noSavedCallTypes": "لا توجد أنواع نداء محفوظة على هذا الجهاز. احفظ واحدًا في محرر نداءات الإرسال لتحديده هنا.",
     "noServers": "أضف خادماً في إعدادات الخادم لتكوين إضافات FiveM الخاصة به.",
     "off": "إيقاف",
     "on": "تشغيل",
@@ -2660,6 +2693,7 @@
     "pending": "حدّث مورد Sonoran CAD FiveM إذا كنت تستخدم إصدارًا أقدم. شغّل الأمر أدناه في وحدة تحكم خادم FiveM لترحيل إعداداتك إلى CAD، ثم انقر على تحديث.",
     "pendingTitle": "بانتظار إعدادات هذا الخادم",
     "plugins": "الإضافات",
+    "pluginStatus": "حالة {plugin}",
     "preview": "معاينة مع خوادم نموذجية. تبقى التغييرات في علامة التبويب هذه.",
     "previous": "الصفحة السابقة",
     "refresh": "تحديث",
@@ -2667,6 +2701,8 @@
     "restartNote": "تسري الإعدادات المحفوظة في المرة التالية التي تبدأ فيها موارد FiveM.",
     "save": "حفظ الإعدادات",
     "saved": "تم حفظ الإعدادات.",
+    "savedCallType": "نوع البلاغ المحفوظ",
+    "savedCallTypesHint": "اختر نوع بلاغ محفوظًا لأمر، ثم نزّله وضعه في دليل أنواع البلاغات على خادم FiveM الخاص بك.",
     "saveError": "تعذر حفظ إعدادات هذا الخادم.",
     "search": "ابحث عن مكوّن إضافي",
     "sections": {
@@ -2696,6 +2732,7 @@
     "serverNumber": "سيرفر {id}",
     "title": "إعدادات الخادم",
     "unsaved": "تغييرات غير محفوظة",
+    "useCallTypeFile": "اضغط على Enter لاستخدام اسم ملف هذا الخادم.",
     "value": "قيمة (JSON)"
   },
   "footer": {
@@ -3632,6 +3669,8 @@
     "copyCommunityId": "نسخ معرف المجتمع",
     "copyFailed": "تعذر النسخ إلى الحافظة. حاول مرة أخرى.",
     "current": "اللعبة",
+    "loadFailed": "تعذر تحميل إعدادات اللعبة.",
+    "ownerRequired": "اطلب من مالك المجتمع اختيار لعبة لفتح التكاملات.",
     "unselected": "غير محدد"
   },
   "integrationPanels": {
@@ -5603,6 +5642,7 @@
   "setupChecklist": {
     "addSync": "إضافة خطوة المزامنة",
     "allDone": "مكتمل",
+    "awaitingAdmin": "يحتاج مسؤول إلى إنهاء إعداد تكامل اللعبة.",
     "chooseFramework": "أي إطار عمل تستخدم؟",
     "configureSync": "فتح مزامنة قاعدة البيانات",
     "currentStep": "الخطوة {step} من {total}",
@@ -5611,6 +5651,7 @@
     "dismiss": "إغلاق قائمة التحقق من الإعداد",
     "done": "مكتمل",
     "editFramework": "تعديل",
+    "fivemDownloadRequired": "قم بتنزيل مورد FiveM لفتح بقية CAD.",
     "framework": "إطار عمل",
     "frameworks": {
       "esx": "إي إس إكس",
@@ -5644,6 +5685,7 @@
     "previewWebhook": "تم استلام Webhook",
     "refresh": "تحديث تقدّم الإعداد",
     "reopen": "قائمة التحقق من الإعداد",
+    "required": "أكمل إعداد تكامل اللعبة لفتح هذا المجتمع.",
     "saveFailed": "لم يتم حفظ تغيير قائمة التحقق الخاصة بك. يرجى المحاولة مرة أخرى.",
     "setUpSync": "إعداد",
     "shortTitle": "الإعداد",

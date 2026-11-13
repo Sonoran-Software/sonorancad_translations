@@ -132,6 +132,8 @@
     "askChatGpt": {
       "description": "Verwende die offizielle Sonoran Software App in ChatGPT, um Hilfe bei der Konfiguration deiner CAD-Community und beim Einrichten von Integrationen zu erhalten.",
       "open": "In ChatGPT öffnen",
+      "recordDescription": "Melde dich bei Sonoran CAD in ChatGPT an, um Formulare für deine Community zu erstellen.",
+      "recordTitle": "Datensatzvorlagen mit ChatGPT erstellen",
       "title": "ChatGPT fragen"
     },
     "authenticate": {
@@ -168,7 +170,11 @@
         "url": "URL"
       },
       "discordRpc": {
+        "application": "Discord-Anwendung",
         "btn2Failure": "Fehler: Ohne Pro kann die Schaltfläche Nr. 2 Benutzer nur zu einer Sonoran CAD- oder Sonoran CMS-Einladung weiterleiten.",
+        "buttonLabel": "Schaltfläche {number} Beschriftung",
+        "buttons": "Profilschaltflächen",
+        "buttonUrl": "Schaltfläche {number} URL",
         "clientId": "Client-ID",
         "discordRichPresence": "Discord Rich Presence",
         "iconName": "Symbolname",
@@ -460,14 +466,16 @@
         "addOption": "Option hinzufügen",
         "addQuestion": "Frage hinzufügen",
         "codeName": "Code-Name",
-        "codesHelp": "Antwortcodes verwalten. Die Code-ID wird in Flows verwendet und der Code-Name wird zur Weiterleitung angezeigt.",
+        "codesHelp": "Flows verwenden die Code-ID. Dispatch sieht den Codenamen.",
         "conditionsInOrder": "Bedingungen (in Reihenfolge)",
         "defaultQuestions": "Standardfragen",
         "defaultQuestionsHint": "Wähle aus, welche Fragen im Standardpfad enthalten sind.",
-        "defaultsHelp": "Wähle die Standardreihenfolge der Eröffnungsfrage.",
+        "defaultsHelp": "Wähle die Fragen aus, die Anrufer zuerst sehen. Ziehe, um die Reihenfolge zu ändern.",
+        "duplicateFlow": "Ablauf duplizieren",
+        "flowNumber": "Flow {number}",
         "flowPreview": "Flow-Vorschau",
-        "flowsHelp": "Erstelle Routing-Logik mit geordneten Bedingungen. Jeder Flow endet mit einem Ergebniscode.",
-        "headerHelp": "RapidIQ-Fragen, Antwortoptionen, Codes und Ablaufregeln konfigurieren.",
+        "flowsHelp": "Legen Sie den Antwortcode für jeden Antwortsatz fest. Ziehen Sie Flows, um die Reihenfolge zu ändern, in der sie ausgeführt werden.",
+        "headerHelp": "Legen Sie fest, was RapidIQ Anrufer fragt und wie es deren Antworten codiert.",
         "label": "Bezeichnung",
         "maskHint": "Beispiel: (###) ###-####",
         "maskOptional": "Maske (optional)",
@@ -477,9 +485,17 @@
         "options": "Optionen",
         "order": "Reihenfolge",
         "question": "Frage",
-        "questionsHelp": "Jede Frage erstellen und bearbeiten. Verwende Auswahlmöglichkeiten für schnelle Auswahl, oder Text/Zahl/Adresse für eingegebene Antworten.",
+        "questionsHelp": "Wählen Sie aus, was gefragt werden soll und wie Anrufer antworten können.",
         "questionText": "Fragetext",
-        "questionType": "Fragetyp",
+        "questionType": "Antworttyp",
+        "removeCode": "Code entfernen",
+        "removeCodeConfirm": "Code {id} und alle Flows, die ihn verwenden, entfernen?",
+        "removeCondition": "Bedingung entfernen",
+        "removeFlow": "Ablauf entfernen",
+        "removeFlowConfirm": "Diesen Ablauf entfernen?",
+        "removeOption": "Option entfernen",
+        "removeQuestion": "Frage entfernen",
+        "removeQuestionConfirm": "Die Frage „{id}“ und alle Flows, die sie verwenden, entfernen?",
         "resultCode": "Ergebniscode",
         "searchCodes": "Codes suchen",
         "searchFlows": "Flows suchen",
@@ -510,14 +526,19 @@
         "userAccountRestrictions": "Nutzeraccounteinschränkungen"
       },
       "servers": {
+        "addServer": "Server hinzufügen",
+        "confirmRemove": "{name} entfernen? Die verbleibenden Server erhalten möglicherweise neue IDs.",
         "description": "Beschreibung",
         "name": "Name",
         "newServer": "Neuer Server",
+        "removeServer": "Server entfernen",
+        "serverId": "Server-ID: {id}",
         "servers": "Server",
         "subtext1": "Nutzt deine Community mehrere Server?",
         "subtext2": "Sonoran CAD erlaubt dir, Onlineeinheiten und Leitstellen zwischen mehreren Servern zu teilen, aber dennoch dieselben Einträge zu teilen.",
         "subtext3": "Deine Community kann momentan bis zu ",
-        "subtext4": "Server unterstützen."
+        "subtext4": "Server unterstützen.",
+        "usage": "{count} von {limit} Servern in Benutzung"
       },
       "toneBoard": {
         "add": "Ton hinzufügen",
@@ -1082,6 +1103,7 @@
         "configureFeaturesTitle": "Funktionen konfigurieren",
         "configureResourceTitle": "Ressource konfigurieren",
         "configureServerTitle": "Server konfigurieren",
+        "customMapPro": "Benutzerdefinierte Karten sind in Pro verfügbar.",
         "downloadInstallTitle": "Herunterladen & Installieren",
         "featureBodycam": "Körperkamera",
         "featureCadDisplay": "CAD-Anzeige",
@@ -1101,7 +1123,7 @@
         "liveMapBody": "Zeige Live-Standorte von Einheiten aus FiveM oder verwende eine statische Karten-URL für jeden Server.",
         "liveMapInteractive": "Interaktiv",
         "liveMapMode": "Kartenart",
-        "liveMapPermissionNote": "Mitglieder benötigen Live-Map-Berechtigung. Um auf der interaktiven Karte angezeigt zu werden, müssen sie außerdem /link in FiveM ausführen.",
+        "liveMapPermissionNote": "Um auf der interaktiven Karte angezeigt zu werden, benötigen Mitglieder die Live-Map-Berechtigung und müssen /link in FiveM ausführen.",
         "liveMapServerUrl": "{server} Karten-URL",
         "liveMapStatic": "Statische URL",
         "liveMapStatus": "Live-Karte",
@@ -1127,6 +1149,12 @@
         "manualBody": "Lade die vorkonfigurierte Ressource herunter und lade sie auf deinen eigenen Host hoch.",
         "manualDownloadBody": "Lade die Sonoran CAD-Ressource herunter und verschiebe sie dann in den Ressourcen-Ordner deines bestehenden FiveM-Servers.",
         "manualTitle": "Manuelle Installation",
+        "mapStyles": {
+          "custom": "BENUTZERDEFINIERT",
+          "normal": "Normal",
+          "ocrpPostal": "OCRP-Postleitzahl",
+          "postal": "Postleitzahl"
+        },
         "oneClickBody": "Sonoran One beinhaltet RocketNode FiveM-Hosting mit One-Click-Installationen.",
         "oneClickInstallerBody": "Öffne den Sonoran Installer im RocketNode-Spielpanel, wähle CAD aus und führe dann den Installer aus.",
         "oneClickInstallerTitle": "Starte den RocketNode-Installer",
@@ -2134,6 +2162,7 @@
   },
   "fiveMServerConfig": {
     "add": "Eintrag hinzufügen",
+    "addServer": "Server hinzufügen",
     "conflict": "Ein anderer Administrator hat diesen Server gespeichert. Verwirf deine Änderungen und aktualisiere, um die neueste Version zu laden.",
     "copyCommandFailed": "Der Befehl konnte nicht kopiert werden. Bitte erneut versuchen.",
     "copyMigrationCommand": "Migrationsbefehl kopieren",
@@ -2141,6 +2170,8 @@
     "dependency": "Erfordert {plugins}",
     "disabled": "Deaktiviert",
     "discard": "Änderungen verwerfen",
+    "downloadCallType": "Download-Anruftyp",
+    "downloadCallTypeFailed": "Der Anruftyp konnte nicht heruntergeladen werden. Bitte erneut versuchen.",
     "empty": "Keine Einträge",
     "enabled": "Aktiviert",
     "fields": {
@@ -2167,6 +2198,7 @@
       "ambulance": "Krankenwagen",
       "apiId": "API-ID",
       "apiSendEnabled": "API-Updates senden",
+      "apiUrl": "API-URL",
       "attachButton": "Anhäng-Schaltfläche",
       "attachingSubMenu": "Untermenü anhängen",
       "attachMenuButton": "Menübutton anhängen",
@@ -2611,6 +2643,7 @@
     "loadError": "Diese Serverkonfiguration konnte nicht geladen werden.",
     "next": "Nächste Seite",
     "noMatch": "Keine Plugins entsprechen deiner Suche.",
+    "noSavedCallTypes": "Keine gespeicherten Anruftypen auf diesem Gerät. Speichere einen im Dispatch Call Editor, um ihn hier auszuwählen.",
     "noServers": "Füge in den Servereinstellungen einen Server hinzu, um seine FiveM-Plugins zu konfigurieren.",
     "off": "Aus",
     "on": "Ein",
@@ -2660,6 +2693,7 @@
     "pending": "Aktualisiere die Sonoran CAD FiveM-Ressource, wenn du eine ältere Version verwendest. Führe den untenstehenden Befehl in deiner FiveM-Serverkonsole aus, um deine Einstellungen zu CAD zu migrieren, und klicke dann auf Aktualisieren.",
     "pendingTitle": "Warten auf die Serverkonfiguration",
     "plugins": "Plugins",
+    "pluginStatus": "{plugin} Status",
     "preview": "Vorschau mit Beispielservern. Änderungen bleiben in diesem Tab.",
     "previous": "Vorherige Seite",
     "refresh": "Neu laden",
@@ -2667,6 +2701,8 @@
     "restartNote": "Gespeicherte Einstellungen werden beim nächsten Start der FiveM-Ressource wirksam.",
     "save": "Konfiguration speichern",
     "saved": "Konfiguration gespeichert.",
+    "savedCallType": "Gespeicherter Anruftyp",
+    "savedCallTypesHint": "Wähle für einen Befehl einen gespeicherten Einsatztyp aus, lade ihn dann herunter und lege ihn im Einsatztyp-Verzeichnis auf deinem FiveM-Server ab.",
     "saveError": "Diese Serverkonfiguration konnte nicht gespeichert werden.",
     "search": "Ein Plugin finden",
     "sections": {
@@ -2696,6 +2732,7 @@
     "serverNumber": "Server {id}",
     "title": "Serverkonfiguration",
     "unsaved": "Nicht gespeicherte Änderungen",
+    "useCallTypeFile": "Drücke Enter, um diesen Server-Dateinamen zu verwenden.",
     "value": "Wert (JSON)"
   },
   "footer": {
@@ -3632,6 +3669,8 @@
     "copyCommunityId": "Community-ID kopieren",
     "copyFailed": "In die Zwischenablage konnte nicht kopiert werden. Bitte erneut versuchen.",
     "current": "Spiel",
+    "loadFailed": "Die Spieleinstellungen konnten nicht geladen werden.",
+    "ownerRequired": "Bitte den Community-Besitzer, ein Spiel auszuwählen, um Integrationen zu öffnen.",
     "unselected": "Nicht ausgewählt"
   },
   "integrationPanels": {
@@ -5603,6 +5642,7 @@
   "setupChecklist": {
     "addSync": "Synchronisierungsschritt hinzufügen",
     "allDone": "Abgeschlossen",
+    "awaitingAdmin": "Ein Administrator muss die Einrichtung der Spielintegration abschließen.",
     "chooseFramework": "Welches Framework verwendest du?",
     "configureSync": "Datenbank-Sync öffnen",
     "currentStep": "Schritt {step} von {total}",
@@ -5611,6 +5651,7 @@
     "dismiss": "Einrichtungs-Checkliste schließen",
     "done": "Abgeschlossen",
     "editFramework": "Bearbeiten",
+    "fivemDownloadRequired": "Lade die FiveM-Ressource herunter, um den Rest von CAD freizuschalten.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5644,6 +5685,7 @@
     "previewWebhook": "Webhook empfangen",
     "refresh": "Einrichtungsfortschritt aktualisieren",
     "reopen": "Einrichtungs-Checkliste",
+    "required": "Schließe die Einrichtung der Spielintegration ab, um diese Community freizuschalten.",
     "saveFailed": "Ihre Checklistenänderung wurde nicht gespeichert. Bitte versuchen Sie es erneut.",
     "setUpSync": "Einrichten",
     "shortTitle": "Einrichtung",
