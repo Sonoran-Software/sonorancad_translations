@@ -132,6 +132,8 @@
     "askChatGpt": {
       "description": "Brug den officielle Sonoran Software-app i ChatGPT til hjælp med at konfigurere dit CAD-fællesskab og opsætte integrationer.",
       "open": "Åbn i ChatGPT",
+      "recordDescription": "Log ind på Sonoran CAD i ChatGPT for at generere formularer til dit community.",
+      "recordTitle": "Opret record-skabeloner med ChatGPT",
       "title": "Spørg ChatGPT"
     },
     "authenticate": {
@@ -168,11 +170,15 @@
         "url": "URL"
       },
       "discordRpc": {
+        "application": "Discord-applikation",
         "btn2Failure": "Fejl: Uden Pro må knap #2 kun henvise brugere til en Sonoran CAD- eller Sonoran CMS-invitation.",
+        "buttonLabel": "Knap {number} label",
+        "buttons": "Profilknapper",
+        "buttonUrl": "Knap {number} URL",
         "clientId": "Klient-id",
         "discordRichPresence": "Discord Rich Presence",
         "iconName": "Ikonnavn",
-        "info1": "Skrivebordsbrugere får vist en invitationsknap i Discord. Denne kan linkes til din CAD- eller CMS-applikation."
+        "info1": "Vis invitationsknapper på medlemmers Discord-profiler, mens de bruger CAD-desktopappen."
       },
       "dispatchLayouts": {
         "activeBehavior": "Aktiv (synlig som et aktivt opkald)",
@@ -460,14 +466,16 @@
         "addOption": "Tilføj mulighed",
         "addQuestion": "Tilføj spørgsmål",
         "codeName": "Kodenavn",
-        "codesHelp": "Administrer svartkoder. Kode-ID bruges i flows, og kodenavn vises til dispatch.",
+        "codesHelp": "Flows bruger kode-ID'et. Dispatch ser kodenavnet.",
         "conditionsInOrder": "Betingelser (i rækkefølge)",
         "defaultQuestions": "Standardspørgsmål",
         "defaultQuestionsHint": "Vælg, hvilke spørgsmål der er i standardstien.",
-        "defaultsHelp": "Vælg standardrækkefølgen for åbning af spørgsmål.",
+        "defaultsHelp": "Vælg de spørgsmål, opkalderne ser først. Træk for at omarrangere.",
+        "duplicateFlow": "Duplikér flow",
+        "flowNumber": "Flow {number}",
         "flowPreview": "Flow-forhåndsvisning",
-        "flowsHelp": "Byg routinglogik med ordnede betingelser. Hver flow slutter med en resultatkode.",
-        "headerHelp": "Konfigurer RapidIQ-spørgsmål, svarmuligheder, koder og flowregler.",
+        "flowsHelp": "Indstil svarkoden for hvert sæt svar. Træk flows for at ændre, hvilket der køres først.",
+        "headerHelp": "Angiv, hvad RapidIQ spørger opkaldere om, og hvordan det koder deres svar.",
         "label": "Etiket",
         "maskHint": "Eksempel: (###) ###-####",
         "maskOptional": "Maske (Valgfri)",
@@ -477,9 +485,17 @@
         "options": "Indstillinger",
         "order": "Rækkefølge",
         "question": "Spørgsmål",
-        "questionsHelp": "Opret og rediger hvert spørgsmål. Brug valgmuligheder til hurtige valg eller tekst/tal/adresse til skrevne svar.",
+        "questionsHelp": "Vælg hvad der skal spørges om, og hvordan opkaldere kan svare.",
         "questionText": "Spørgsmålstekst",
-        "questionType": "Spørgsmålstype",
+        "questionType": "Svarstype",
+        "removeCode": "Fjern kode",
+        "removeCodeConfirm": "Fjern koden {id} og eventuelle flows, der bruger den?",
+        "removeCondition": "Fjern betingelse",
+        "removeFlow": "Fjern flow",
+        "removeFlowConfirm": "Fjern denne flow?",
+        "removeOption": "Fjern valgmulighed",
+        "removeQuestion": "Fjern spørgsmål",
+        "removeQuestionConfirm": "Fjern spørgsmålet “{id}” og eventuelle flows, der bruger det?",
         "resultCode": "Resultatkode",
         "searchCodes": "Søg koder",
         "searchFlows": "Søg flows",
@@ -510,14 +526,19 @@
         "userAccountRestrictions": "Brugerkonto-restriktioner"
       },
       "servers": {
+        "addServer": "Tilføj server",
+        "confirmRemove": "Fjern {name}? De resterende servere kan få nye ID'er.",
         "description": "Beskrivelse",
         "name": "Navn",
         "newServer": "Ny server",
+        "removeServer": "Fjern server",
+        "serverId": "Server-ID: {id}",
         "servers": "Servere",
         "subtext1": "Bruger dit fællesskab flere servere?",
-        "subtext2": "Sonoran CAD giver dig mulighed for at adskille online enheder og dispatch mellem flere servere, mens de stadig deler de samme poster.",
+        "subtext2": "Servere holder enheder og disponering adskilt, mens de deler fællesskabsregistre.",
         "subtext3": "Dit fællesskab kan i øjeblikket understøtte op til",
-        "subtext4": "servere."
+        "subtext4": "servere.",
+        "usage": "{count} af {limit} servere i brug"
       },
       "toneBoard": {
         "add": "Tilføj tone",
@@ -1082,6 +1103,7 @@
         "configureFeaturesTitle": "Konfigurer funktioner",
         "configureResourceTitle": "Konfigurer ressource",
         "configureServerTitle": "Konfigurer server",
+        "customMapPro": "Brugerdefinerede kort er tilgængelige på Pro.",
         "downloadInstallTitle": "Download og installer",
         "featureBodycam": "Bodycam",
         "featureCadDisplay": "CAD-visning",
@@ -1101,7 +1123,7 @@
         "liveMapBody": "Vis live enhedsplaceringer fra FiveM eller brug en statisk map-URL for hver server.",
         "liveMapInteractive": "Interaktiv",
         "liveMapMode": "Korttype",
-        "liveMapPermissionNote": "Medlemmer skal have tilladelse til Live Map. For at vises på det interaktive kort skal de også køre /link i FiveM.",
+        "liveMapPermissionNote": "For at vises på det interaktive kort skal medlemmer have Live Map-tilladelse og køre /link i FiveM.",
         "liveMapServerUrl": "{server} kort-URL",
         "liveMapStatic": "Statisk URL",
         "liveMapStatus": "Live-kort",
@@ -1127,6 +1149,12 @@
         "manualBody": "Download den forudkonfigurerede ressource og upload den til din egen host.",
         "manualDownloadBody": "Download Sonoran CAD-resourceen, og flyt den derefter til din eksisterende FiveM-servers resources-mappe.",
         "manualTitle": "Manuel installation",
+        "mapStyles": {
+          "custom": "TILPASSET",
+          "normal": "Normal",
+          "ocrpPostal": "OCRP Postnummer",
+          "postal": "Postnummer"
+        },
         "oneClickBody": "Sonoran One inkluderer RocketNode FiveM-hosting med one-click-installationer.",
         "oneClickInstallerBody": "Åbn Sonoran Installer i RocketNode-spilpanelet, vælg CAD, og kør derefter installatøren.",
         "oneClickInstallerTitle": "Kør RocketNode-installationsprogrammet",
@@ -2133,6 +2161,7 @@
   },
   "fiveMServerConfig": {
     "add": "Tilføj element",
+    "addServer": "Tilføj server",
     "conflict": "En anden administrator gemte denne server. Kassér dine ændringer, og opdater for at indlæse den seneste version.",
     "copyCommandFailed": "Kunne ikke kopiere kommandoen. Prøv igen.",
     "copyMigrationCommand": "Kopiér migreringskommando",
@@ -2140,6 +2169,8 @@
     "dependency": "Kræver {plugins}",
     "disabled": "Deaktiveret",
     "discard": "Kassér ændringer",
+    "downloadCallType": "Download opkaldstype",
+    "downloadCallTypeFailed": "Kunne ikke downloade opkaldstypen. Prøv igen.",
     "empty": "Ingen elementer",
     "enabled": "Aktiveret",
     "fields": {
@@ -2166,6 +2197,7 @@
       "ambulance": "Ambulance",
       "apiId": "API-id",
       "apiSendEnabled": "Send API-opdateringer",
+      "apiUrl": "API-URL",
       "attachButton": "Vedhæft knap",
       "attachingSubMenu": "Tilknytning undermenu",
       "attachMenuButton": "Vedhæft menuknap",
@@ -2610,6 +2642,7 @@
     "loadError": "Kunne ikke indlæse denne servers konfiguration.",
     "next": "Næste side",
     "noMatch": "Ingen plugins matcher din søgning.",
+    "noSavedCallTypes": "Ingen gemte opkaldstyper på denne enhed. Gem en i Dispatch Call Editor for at vælge den her.",
     "noServers": "Tilføj en server i serverindstillinger for at konfigurere dens FiveM-plugins.",
     "off": "Fra",
     "on": "Til",
@@ -2659,6 +2692,7 @@
     "pending": "Opdater Sonoran CAD FiveM-ressourcen, hvis du bruger en ældre version. Kør kommandoen nedenfor i din FiveM-serverkonsol for at migrere dine indstillinger til CAD, og klik derefter på Opdater.",
     "pendingTitle": "Venter på denne servers konfiguration",
     "plugins": "Plugins",
+    "pluginStatus": "{plugin} status",
     "preview": "Forhåndsvisning med eksempelservere. Ændringer bliver i denne fane.",
     "previous": "Forrige side",
     "refresh": "Opdater",
@@ -2666,6 +2700,8 @@
     "restartNote": "Gemte indstillinger træder i kraft næste gang FiveM-ressourcen starter.",
     "save": "Gem konfiguration",
     "saved": "Konfiguration gemt.",
+    "savedCallType": "Gemt kaldetype",
+    "savedCallTypesHint": "Vælg en gemt opkaldstype til en kommando, download den derefter og placer den i opkaldstype-mappen på din FiveM-server.",
     "saveError": "Kunne ikke gemme denne servers konfiguration.",
     "search": "Find et plugin",
     "sections": {
@@ -2695,6 +2731,7 @@
     "serverNumber": "Server {id}",
     "title": "Serverkonfiguration",
     "unsaved": "Ikke-gemte ændringer",
+    "useCallTypeFile": "Tryk på Enter for at bruge dette serverfilnavn.",
     "value": "Værdi (JSON)"
   },
   "footer": {
@@ -3631,6 +3668,8 @@
     "copyCommunityId": "Kopiér fællesskabs-ID",
     "copyFailed": "Kunne ikke kopiere til udklipsholderen. Prøv igen.",
     "current": "Spil",
+    "loadFailed": "Kunne ikke indlæse spilindstillingerne.",
+    "ownerRequired": "Bed fællesskabets ejer om at vælge et spil for at åbne Integrationer.",
     "unselected": "Ikke valgt"
   },
   "integrationPanels": {
@@ -5593,6 +5632,7 @@
   "setupChecklist": {
     "addSync": "Tilføj synkroniseringstrin",
     "allDone": "Fuldført",
+    "awaitingAdmin": "En admin skal færdiggøre opsætningen af spilintegration.",
     "chooseFramework": "Hvilket framework bruger du?",
     "configureSync": "Åbn databasesynkronisering",
     "currentStep": "Trin {step} af {total}",
@@ -5601,6 +5641,7 @@
     "dismiss": "Luk opsætningscheckliste",
     "done": "Fuldført",
     "editFramework": "Rediger",
+    "fivemDownloadRequired": "Download FiveM-ressourcen for at låse op for resten af CAD.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5634,6 +5675,7 @@
     "previewWebhook": "Webhook modtaget",
     "refresh": "Opdater opsætningsforløb",
     "reopen": "Opsætningscheckliste",
+    "required": "Færdiggør opsætningen af spilintegration for at låse dette community op.",
     "saveFailed": "Din ændring på tjeklisten blev ikke gemt. Prøv igen.",
     "setUpSync": "Opsæt",
     "shortTitle": "Opsætning",
