@@ -5805,6 +5805,18 @@
     "eyebrow": "New in Sonoran CAD",
     "features": "Release features",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "Redesigned administration navigation with People and access, Customization, Records and codes, Integrations, and System categories.",
+        "benefits": {
+          "first": "Find settings in five clear categories.",
+          "second": "See what each section does before opening it.",
+          "third": "Return to the parent category with a single back action."
+        },
+        "description": "Admin settings are organized into five categories, with separate pages for each tool.",
+        "label": "Updated admin navigation",
+        "location": "Community menu → Admin",
+        "title": "Updated admin navigation"
+      },
       "automations": {
         "alt": "Record automation editor with an incident-report rule that sets Review status to Supervisor review when priority is High.",
         "description": "When a record is saved, check the fields you choose and update another field automatically. Match all conditions or any one of them.",
@@ -5819,6 +5831,66 @@
         "location": "Customization → CentralCircle",
         "title": "A familiar feel. A fresh look."
       },
+      "communityMenus": {
+        "alt": "FiveM community menu with illustrated role cards.",
+        "benefits": {
+          "first": "Distinct character artwork for FiveM and ERLC.",
+          "second": "A shared community header across every style.",
+          "third": "Choose FiveM, ERLC, or Classic in customization."
+        },
+        "description": "New FiveM and ERLC character menus, plus an updated Classic style. Choose your community’s style in Customization.",
+        "images": {
+          "erlc": {
+            "alt": "Liberty County Roleplay community menu with Roblox-style civilian, dispatch, police, fire, EMS, law, DMV, and admin character cards.",
+            "label": "ERLC"
+          },
+          "fivem": {
+            "alt": "San Andreas Roleplay community menu with FiveM civilian, police, fire, EMS, dispatch, DMV, law, and admin character cards.",
+            "label": "FiveM"
+          }
+        },
+        "label": "New community menus",
+        "location": "Community menu · Administration → Customization → Community menu",
+        "title": "New community menus"
+      },
+      "contextMenus": {
+        "alt": "Updated unit context menu showing Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, and Kick Unit.",
+        "benefits": {
+          "first": "Recognizable icons alongside each action.",
+          "second": "Consistent styling across menus and submenus.",
+          "third": "Consequential actions stand out from routine controls."
+        },
+        "description": "Call and unit menus now use rounded corners, consistent spacing, and clearer action icons.",
+        "images": {
+          "calls": {
+            "alt": "Call action menu with Attach to Call, Copy Record Link, Tone Board, and Close Call.",
+            "label": "Calls"
+          },
+          "units": {
+            "alt": "Updated unit context menu showing Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, and Kick Unit.",
+            "label": "Units"
+          },
+          "windows": {
+            "alt": "Window action menu with Lock Window, Quick Resize, Change Desktop, Bring to Top, Minimize, and Close.",
+            "label": "Windows"
+          }
+        },
+        "label": "Updated action menus",
+        "location": "Police, Fire, EMS & Dispatch → Action menus",
+        "title": "Updated action menus"
+      },
+      "fiveMManagement": {
+        "alt": "FiveM integration panel with a server selector, plugin navigation, framework choices, and fine settings.",
+        "benefits": {
+          "first": "Switch between your FiveM servers.",
+          "second": "Enable plugins and edit their settings in one place.",
+          "third": "Use labeled controls instead of editing config files."
+        },
+        "description": "After installing the FiveM resource, configure servers and plugins directly in CAD without editing config files.",
+        "label": "Manage FiveM resource via CAD",
+        "location": "Administration → Integrations → In-Game Integration",
+        "title": "Manage FiveM resource via CAD"
+      },
       "permissions": {
         "alt": "Granular record permissions for Incident Report, including view, create, edit own, edit any, delete, and supervisor fields.",
         "description": "Choose who can view, create, edit, and delete each record type. Separate access to a member’s own records from access to everyone’s.",
@@ -5832,78 +5904,6 @@
         "label": "Visual record editor",
         "location": "Administration → Custom records",
         "title": "Build it the way you see it."
-      },
-      "fiveMManagement": {
-        "label": "Manage FiveM resource via CAD",
-        "title": "Manage FiveM resource via CAD",
-        "description": "After installing the FiveM resource, configure servers and plugins directly in CAD without editing config files.",
-        "location": "Administration → Integrations → In-Game Integration",
-        "alt": "FiveM integration panel with a server selector, plugin navigation, framework choices, and fine settings.",
-        "benefits": {
-          "first": "Switch between your FiveM servers.",
-          "second": "Enable plugins and edit their settings in one place.",
-          "third": "Use labeled controls instead of editing config files."
-        }
-      },
-      "communityMenus": {
-        "label": "New community menus",
-        "title": "New community menus",
-        "description": "New FiveM and ERLC character menus, plus an updated Classic style. Choose your community’s style in Customization.",
-        "location": "Community menu · Administration → Customization → Community menu",
-        "alt": "FiveM community menu with illustrated role cards.",
-        "benefits": {
-          "first": "Distinct character artwork for FiveM and ERLC.",
-          "second": "A shared community header across every style.",
-          "third": "Choose FiveM, ERLC, or Classic in customization."
-        },
-        "images": {
-          "fivem": {
-            "label": "FiveM",
-            "alt": "San Andreas Roleplay community menu with FiveM civilian, police, fire, EMS, dispatch, DMV, law, and admin character cards."
-          },
-          "erlc": {
-            "label": "ERLC",
-            "alt": "Liberty County Roleplay community menu with Roblox-style civilian, dispatch, police, fire, EMS, law, DMV, and admin character cards."
-          }
-        }
-      },
-      "contextMenus": {
-        "label": "Updated action menus",
-        "title": "Updated action menus",
-        "description": "Call and unit menus now use rounded corners, consistent spacing, and clearer action icons.",
-        "location": "Police, Fire, EMS & Dispatch → Action menus",
-        "alt": "Updated unit context menu showing Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, and Kick Unit.",
-        "benefits": {
-          "first": "Recognizable icons alongside each action.",
-          "second": "Consistent styling across menus and submenus.",
-          "third": "Consequential actions stand out from routine controls."
-        },
-        "images": {
-          "units": {
-            "label": "Units",
-            "alt": "Updated unit context menu showing Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, and Kick Unit."
-          },
-          "calls": {
-            "label": "Calls",
-            "alt": "Call action menu with Attach to Call, Copy Record Link, Tone Board, and Close Call."
-          },
-          "windows": {
-            "label": "Windows",
-            "alt": "Window action menu with Lock Window, Quick Resize, Change Desktop, Bring to Top, Minimize, and Close."
-          }
-        }
-      },
-      "adminNavigation": {
-        "label": "Updated admin navigation",
-        "title": "Updated admin navigation",
-        "description": "Admin settings are organized into five categories, with separate pages for each tool.",
-        "location": "Community menu → Admin",
-        "alt": "Redesigned administration navigation with People and access, Customization, Records and codes, Integrations, and System categories.",
-        "benefits": {
-          "first": "Find settings in five clear categories.",
-          "second": "See what each section does before opening it.",
-          "third": "Return to the parent category with a single back action."
-        }
       }
     },
     "menu": "What’s new",
@@ -5912,6 +5912,12 @@
     "preview": "Coming next · Preview",
     "previous": "Previous feature",
     "releases": {
+      "cad-3-45-0": {
+        "description": "Manage your FiveM integration inside CAD. Meet new character menus, cleaner actions, and an easier-to-navigate admin panel.",
+        "shortTitle": "What’s new in 3.45.0",
+        "teaser": "FiveM settings inside CAD, new character menus, and clearer controls throughout your community.",
+        "title": "A simpler way to run your community."
+      },
       "central-circle": {
         "description": "A new built-in theme brings light tables and dark headers to your CAD workspace.",
         "shortTitle": "Meet CentralCircle",
@@ -5923,12 +5929,6 @@
         "shortTitle": "A new era for records",
         "teaser": "Record automations, granular permissions, and a new visual record editor.",
         "title": "Your community. Your workflow."
-      },
-      "cad-3-45-0": {
-        "title": "A simpler way to run your community.",
-        "shortTitle": "What’s new in 3.45.0",
-        "teaser": "FiveM settings inside CAD, new character menus, and clearer controls throughout your community.",
-        "description": "Manage your FiveM integration inside CAD. Meet new character menus, cleaner actions, and an easier-to-navigate admin panel."
       }
     }
   },
