@@ -132,6 +132,8 @@
     "askChatGpt": {
       "description": "Použijte oficiální aplikaci Sonoran Software v ChatGPT pro pomoc s konfigurací vaší CAD komunity a nastavením integrací.",
       "open": "Otevřít v ChatGPT",
+      "recordDescription": "Přihlaste se do Sonoran CAD v ChatGPT a generujte formuláře pro vaši komunitu.",
+      "recordTitle": "Vytvářejte šablony záznamů s ChatGPT",
       "title": "Zeptejte se ChatGPT"
     },
     "authenticate": {
@@ -168,11 +170,15 @@
         "url": "URL"
       },
       "discordRpc": {
+        "application": "Aplikace Discord",
         "btn2Failure": "Chyba: Bez Pro může tlačítko č. 2 uživatele směrovat pouze na pozvánku do Sonoran CAD nebo Sonoran CMS.",
+        "buttonLabel": "Popisek tlačítka {number}",
+        "buttons": "Tlačítka profilu",
+        "buttonUrl": "URL tlačítka {number}",
         "clientId": "ID klienta",
         "discordRichPresence": "Discord Rich Presence",
         "iconName": "Název ikony",
-        "info1": "Uživatelům na desktopu se v Discordu zobrazuje tlačítko pro pozvánku. To lze propojit s vaší aplikací CAD nebo CMS."
+        "info1": "Zobrazovat tlačítka pozvánky na profilech členů na Discordu, když používají desktopovou aplikaci CAD."
       },
       "dispatchLayouts": {
         "activeBehavior": "Aktivní (zobrazeno jako aktivní hovor)",
@@ -460,14 +466,16 @@
         "addOption": "Přidat možnost",
         "addQuestion": "Přidat otázku",
         "codeName": "Název kódu",
-        "codesHelp": "Spravujte kódy odpovědí. ID kódu se používá ve flow a název kódu se zobrazuje pro odeslání.",
+        "codesHelp": "Toky používají ID kódu. Dispečink vidí název kódu.",
         "conditionsInOrder": "Podmínky (v pořadí)",
         "defaultQuestions": "Výchozí otázky",
         "defaultQuestionsHint": "Vyberte, které otázky jsou ve výchozí cestě.",
-        "defaultsHelp": "Vyberte výchozí pořadí úvodní otázky.",
+        "defaultsHelp": "Vyberte otázky, které volající uvidí jako první. Přetáhněte pro změnu pořadí.",
+        "duplicateFlow": "Duplikovat tok",
+        "flowNumber": "Tok {number}",
         "flowPreview": "Náhled toku",
-        "flowsHelp": "Sestavte směrovací logiku s uspořádanými podmínkami. Každý tok končí jedním výsledným kódem.",
-        "headerHelp": "Nastavte otázky RapidIQ, možnosti odpovědí, kódy a pravidla toku.",
+        "flowsHelp": "Nastavte kód odpovědi pro každou sadu odpovědí. Přetáhněte průběhy, abyste změnili, který poběží jako první.",
+        "headerHelp": "Nastavte, na co se RapidIQ ptá volajících a jak kóduje jejich odpovědi.",
         "label": "Popisek",
         "maskHint": "Příklad: (###) ###-####",
         "maskOptional": "Maska (Volitelné)",
@@ -477,9 +485,17 @@
         "options": "Možnosti",
         "order": "Pořadí",
         "question": "Otázka",
-        "questionsHelp": "Vytvořte a upravte každou otázku. Použijte možnosti pro rychlý výběr nebo text/číslo/adresu pro odpovědi psané.",
+        "questionsHelp": "Vyberte, na co se chcete ptát a jak mohou volající odpovědět.",
         "questionText": "Text otázky",
-        "questionType": "Typ otázky",
+        "questionType": "Typ odpovědi",
+        "removeCode": "Odstranit kód",
+        "removeCodeConfirm": "Odebrat kód {id} a všechny procesy, které jej používají?",
+        "removeCondition": "Odstranit podmínku",
+        "removeFlow": "Odstranit tok",
+        "removeFlowConfirm": "Odstranit tento tok?",
+        "removeOption": "Odstranit možnost",
+        "removeQuestion": "Odstranit otázku",
+        "removeQuestionConfirm": "Odebrat otázku „{id}“ a všechny procesy, které ji používají?",
         "resultCode": "Kód výsledku",
         "searchCodes": "Hledat kódy",
         "searchFlows": "Hledat toky",
@@ -510,14 +526,19 @@
         "userAccountRestrictions": "Omezení uživatelského účtu"
       },
       "servers": {
+        "addServer": "Přidat server",
+        "confirmRemove": "Odebrat {name}? Zbývající servery mohou dostat nová ID.",
         "description": "Popis",
         "name": "Jméno",
         "newServer": "Nový server",
+        "removeServer": "Odstranit server",
+        "serverId": "ID serveru: {id}",
         "servers": "Servery",
         "subtext1": "Používá vaše komunita více serverů?",
-        "subtext2": "Sonoran CAD vám umožňuje oddělit online jednotky a dispečink mezi více servery a zároveň sdílet stejné záznamy.",
+        "subtext2": "Servery udržují jednotky a dispečink odděleně a zároveň sdílejí komunitní záznamy.",
         "subtext3": "Vaše komunita v současnosti může podporovat až",
-        "subtext4": "servery."
+        "subtext4": "servery.",
+        "usage": "{count} z {limit} serverů v použití"
       },
       "toneBoard": {
         "add": "Přidat tón",
@@ -1082,6 +1103,7 @@
         "configureFeaturesTitle": "Nastavit funkce",
         "configureResourceTitle": "Nastavit zdroj",
         "configureServerTitle": "Nastavit server",
+        "customMapPro": "Vlastní mapy jsou k dispozici v Pro.",
         "downloadInstallTitle": "Stáhnout a nainstalovat",
         "featureBodycam": "Tělová kamera",
         "featureCadDisplay": "Zobrazení CAD",
@@ -1101,7 +1123,7 @@
         "liveMapBody": "Zobrazit živé polohy jednotek z FiveM nebo použít statickou URL mapy pro každý server.",
         "liveMapInteractive": "Interaktivní",
         "liveMapMode": "Typ mapy",
-        "liveMapPermissionNote": "Členové potřebují oprávnění Live Map. Aby se zobrazili na interaktivní mapě, musí také v FiveM spustit /link.",
+        "liveMapPermissionNote": "Aby se zobrazili na interaktivní mapě, členové potřebují oprávnění Live Map a musí spustit /link ve FiveM.",
         "liveMapServerUrl": "URL mapy {server}",
         "liveMapStatic": "Statická URL",
         "liveMapStatus": "Živá mapa",
@@ -1127,6 +1149,12 @@
         "manualBody": "Stáhněte předkonfigurovaný zdroj a nahrajte jej na svůj vlastní hostitel.",
         "manualDownloadBody": "Stáhněte zdroj Sonoran CAD a poté jej přesuňte do existující složky resources vašeho serveru FiveM.",
         "manualTitle": "Ruční instalace",
+        "mapStyles": {
+          "custom": "VLASTNÍ",
+          "normal": "Normální",
+          "ocrpPostal": "OCRP Poštovní",
+          "postal": "Poštovní"
+        },
         "oneClickBody": "Sonoran One zahrnuje RocketNode FiveM hosting s instalací na jedno kliknutí.",
         "oneClickInstallerBody": "Otevřete instalátor Sonoran v herním panelu RocketNode, vyberte CAD a poté spusťte instalátor.",
         "oneClickInstallerTitle": "Spustit instalátor RocketNode",
@@ -2134,6 +2162,7 @@
   },
   "fiveMServerConfig": {
     "add": "Přidat položku",
+    "addServer": "Přidat server",
     "conflict": "Tento server uložil jiný správce. Zahoďte své změny a obnovte stránku, abyste načetli nejnovější verzi.",
     "copyCommandFailed": "Nepodařilo se zkopírovat příkaz. Zkuste to prosím znovu.",
     "copyMigrationCommand": "Kopírovat příkaz migrace",
@@ -2141,6 +2170,8 @@
     "dependency": "Vyžaduje {plugins}",
     "disabled": "Zakázáno",
     "discard": "Zahodit změny",
+    "downloadCallType": "Typ stažení hovoru",
+    "downloadCallTypeFailed": "Nepodařilo se stáhnout typ volání. Zkuste to znovu.",
     "empty": "Žádné položky",
     "enabled": "Povoleno",
     "fields": {
@@ -2167,6 +2198,7 @@
       "ambulance": "Ambulance",
       "apiId": "ID API",
       "apiSendEnabled": "Odesílat aktualizace API",
+      "apiUrl": "URL API",
       "attachButton": "Tlačítko připojit",
       "attachingSubMenu": "Připojování podmenu",
       "attachMenuButton": "Tlačítko připojení menu",
@@ -2611,6 +2643,7 @@
     "loadError": "Nepodařilo se načíst konfiguraci tohoto serveru.",
     "next": "Další stránka",
     "noMatch": "Žádné pluginy neodpovídají vašemu hledání.",
+    "noSavedCallTypes": "Na tomto zařízení nejsou žádné uložené typy volání. Uložte jeden v Editoru dispečerského volání, abyste jej mohli vybrat zde.",
     "noServers": "Přidejte server v Nastavení serveru pro konfiguraci jeho FiveM pluginů.",
     "off": "Vypnuto",
     "on": "Zapnuto",
@@ -2660,6 +2693,7 @@
     "pending": "Aktualizujte zdroj Sonoran CAD FiveM, pokud používáte starší verzi. Spusťte níže uvedený příkaz v konzoli vašeho FiveM serveru, abyste převedli svá nastavení do CAD, potom klikněte na Obnovit.",
     "pendingTitle": "Čekání na konfiguraci tohoto serveru",
     "plugins": "Pluginy",
+    "pluginStatus": "Stav {plugin}",
     "preview": "Náhled s ukázkovými servery. Změny zůstanou na této kartě.",
     "previous": "Předchozí stránka",
     "refresh": "Obnovit",
@@ -2667,6 +2701,8 @@
     "restartNote": "Uložená nastavení se projeví při příštím spuštění FiveM resource.",
     "save": "Uložit konfiguraci",
     "saved": "Konfigurace uložena.",
+    "savedCallType": "Uložený typ hovoru",
+    "savedCallTypesHint": "Vyberte uložený typ zásahu pro příkaz, poté jej stáhněte a umístěte do adresáře typů zásahů na vašem serveru FiveM.",
     "saveError": "Nepodařilo se uložit konfiguraci tohoto serveru.",
     "search": "Najít plugin",
     "sections": {
@@ -2696,6 +2732,7 @@
     "serverNumber": "Server {id}",
     "title": "Konfigurace serveru",
     "unsaved": "Neuložené změny",
+    "useCallTypeFile": "Stisknutím Enter použijete tento název souboru serveru.",
     "value": "Hodnota (JSON)"
   },
   "footer": {
@@ -3632,6 +3669,8 @@
     "copyCommunityId": "Kopírovat ID komunity",
     "copyFailed": "Nepodařilo se zkopírovat do schránky. Zkuste to prosím znovu.",
     "current": "Hra",
+    "loadFailed": "Nepodařilo se načíst nastavení hry.",
+    "ownerRequired": "Požádejte vlastníka komunity, aby vybral hru pro otevření Integrací.",
     "unselected": "Nevybráno"
   },
   "integrationPanels": {
@@ -5594,6 +5633,7 @@
   "setupChecklist": {
     "addSync": "Přidat krok synchronizace",
     "allDone": "Dokončeno",
+    "awaitingAdmin": "Administrátor musí dokončit nastavení integrace hry.",
     "chooseFramework": "Jaký framework používáte?",
     "configureSync": "Otevřít synchronizaci databáze",
     "currentStep": "Krok {step} z {total}",
@@ -5602,6 +5642,7 @@
     "dismiss": "Zavřít kontrolní seznam nastavení",
     "done": "Dokončeno",
     "editFramework": "Upravit",
+    "fivemDownloadRequired": "Stáhněte zdroj FiveM pro odemčení zbytku CAD.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5635,6 +5676,7 @@
     "previewWebhook": "Webhook přijat",
     "refresh": "Obnovit průběh nastavení",
     "reopen": "Kontrolní seznam nastavení",
+    "required": "Dokončete nastavení integrace hry, abyste odemkli tuto komunitu.",
     "saveFailed": "Vaše změna kontrolního seznamu nebyla uložena. Zkuste to prosím znovu.",
     "setUpSync": "Nastavit",
     "shortTitle": "Nastavení",
