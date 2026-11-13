@@ -132,6 +132,8 @@
     "askChatGpt": {
       "description": "Use the official Sonoran Software app in ChatGPT for help configuring your CAD community and setting up integrations.",
       "open": "Open in ChatGPT",
+      "recordDescription": "Sign in to Sonoran CAD in ChatGPT to generate forms for your community.",
+      "recordTitle": "Create record templates with ChatGPT",
       "title": "Ask ChatGPT"
     },
     "authenticate": {
@@ -168,11 +170,15 @@
         "url": "URL"
       },
       "discordRpc": {
+        "application": "Discord application",
         "btn2Failure": "Error: Without Pro, button #2 may only direct users to a Sonoran CAD or Sonoran CMS invite.",
+        "buttonLabel": "Button {number} label",
+        "buttons": "Profile buttons",
+        "buttonUrl": "Button {number} URL",
         "clientId": "Client ID",
         "discordRichPresence": "Discord Rich Presence",
         "iconName": "Icon Name",
-        "info1": "Desktop users display an invite button in Discord. This can be linked to your CAD or CMS application."
+        "info1": "Show invite buttons on members’ Discord profiles while they use the CAD desktop app."
       },
       "dispatchLayouts": {
         "activeBehavior": "Active (visible as an active call)",
@@ -460,14 +466,16 @@
         "addOption": "Add Option",
         "addQuestion": "Add Question",
         "codeName": "Code Name",
-        "codesHelp": "Manage response codes. Code ID is used in flows and Code Name is shown to dispatch.",
+        "codesHelp": "Flows use the code ID. Dispatch sees the code name.",
         "conditionsInOrder": "Conditions (in order)",
         "defaultQuestions": "Default Questions",
         "defaultQuestionsHint": "Select which questions are in the default path.",
-        "defaultsHelp": "Pick the default opening question order.",
+        "defaultsHelp": "Choose the questions callers see first. Drag to reorder.",
+        "duplicateFlow": "Duplicate flow",
+        "flowNumber": "Flow {number}",
         "flowPreview": "Flow Preview",
-        "flowsHelp": "Build routing logic with ordered conditions. Each flow ends with one result code.",
-        "headerHelp": "Configure RapidIQ questions, response options, codes, and flow rules.",
+        "flowsHelp": "Set the response code for each set of answers. Drag flows to change which runs first.",
+        "headerHelp": "Set what RapidIQ asks callers and how it codes their answers.",
         "label": "Label",
         "maskHint": "Example: (###) ###-####",
         "maskOptional": "Mask (Optional)",
@@ -477,9 +485,17 @@
         "options": "Options",
         "order": "Order",
         "question": "Question",
-        "questionsHelp": "Create and edit each question. Use choices for fast selections, or text/number/address for typed answers.",
-        "questionText": "Question Text",
-        "questionType": "Question Type",
+        "questionsHelp": "Choose what to ask and how callers can answer.",
+        "questionText": "Question text",
+        "questionType": "Answer type",
+        "removeCode": "Remove code",
+        "removeCodeConfirm": "Remove code {id} and any flows that use it?",
+        "removeCondition": "Remove condition",
+        "removeFlow": "Remove flow",
+        "removeFlowConfirm": "Remove this flow?",
+        "removeOption": "Remove option",
+        "removeQuestion": "Remove question",
+        "removeQuestionConfirm": "Remove the question “{id}” and any flows that use it?",
         "resultCode": "Result Code",
         "searchCodes": "Search Codes",
         "searchFlows": "Search Flows",
@@ -510,14 +526,19 @@
         "userAccountRestrictions": "User Account Restrictions"
       },
       "servers": {
+        "addServer": "Add server",
+        "confirmRemove": "Remove {name}? The remaining servers may get new IDs.",
         "description": "Description",
         "name": "Name",
         "newServer": "New Server",
+        "removeServer": "Remove server",
+        "serverId": "Server ID: {id}",
         "servers": "Servers",
         "subtext1": "Does your community use multiple servers?",
-        "subtext2": "Sonoran CAD allows you to separate online units and dispatching between multiple servers while still sharing the same records.",
+        "subtext2": "Servers keep units and dispatch separate while sharing community records.",
         "subtext3": "Your community can currently support up to",
-        "subtext4": "servers."
+        "subtext4": "servers.",
+        "usage": "{count} of {limit} servers in use"
       },
       "toneBoard": {
         "add": "Add tone",
@@ -1082,6 +1103,7 @@
         "configureFeaturesTitle": "Configure Features",
         "configureResourceTitle": "Configure Resource",
         "configureServerTitle": "Configure Server",
+        "customMapPro": "Custom maps are available on Pro.",
         "downloadInstallTitle": "Download & Install",
         "featureBodycam": "Body Camera",
         "featureCadDisplay": "CAD Display",
@@ -1101,7 +1123,7 @@
         "liveMapBody": "Show live unit locations from FiveM or use a static map URL for each server.",
         "liveMapInteractive": "Interactive",
         "liveMapMode": "Map type",
-        "liveMapPermissionNote": "Members need Live Map permission. To appear on the interactive map, they also need to run /link in FiveM.",
+        "liveMapPermissionNote": "To appear on the interactive map, members need Live Map permission and must run /link in FiveM.",
         "liveMapServerUrl": "{server} map URL",
         "liveMapStatic": "Static URL",
         "liveMapStatus": "Status",
@@ -1127,6 +1149,12 @@
         "manualBody": "Download the preconfigured resource and upload it to your own host.",
         "manualDownloadBody": "Download the Sonoran CAD resource, then move it into your existing FiveM server resources folder.",
         "manualTitle": "Manual Installation",
+        "mapStyles": {
+          "custom": "Custom",
+          "normal": "Normal",
+          "ocrpPostal": "OCRP Postal",
+          "postal": "Postal"
+        },
         "oneClickBody": "Sonoran One includes RocketNode FiveM hosting with one-click installs.",
         "oneClickInstallerBody": "Open the Sonoran Installer in the RocketNode game panel, select CAD, then run the installer.",
         "oneClickInstallerTitle": "Run the RocketNode installer",
@@ -2134,6 +2162,7 @@
   },
   "fiveMServerConfig": {
     "add": "Add item",
+    "addServer": "Add server",
     "conflict": "Another administrator saved this server. Discard your changes and refresh to load the latest version.",
     "copyCommandFailed": "Could not copy the command. Try again.",
     "copyMigrationCommand": "Copy migration command",
@@ -2141,6 +2170,8 @@
     "dependency": "Requires {plugins}",
     "disabled": "Disabled",
     "discard": "Discard changes",
+    "downloadCallType": "Download call type",
+    "downloadCallTypeFailed": "Could not download the call type. Try again.",
     "empty": "No items",
     "enabled": "Enabled",
     "fields": {
@@ -2167,6 +2198,7 @@
       "ambulance": "Ambulance",
       "apiId": "API ID",
       "apiSendEnabled": "Send API updates",
+      "apiUrl": "API URL",
       "attachButton": "Attach button",
       "attachingSubMenu": "Attaching sub menu",
       "attachMenuButton": "Attach menu button",
@@ -2611,6 +2643,7 @@
     "loadError": "Could not load this server’s configuration.",
     "next": "Next page",
     "noMatch": "No plugins match your search.",
+    "noSavedCallTypes": "No saved call types on this device. Save one in the Dispatch Call Editor to select it here.",
     "noServers": "Add a server in Server Settings to configure its FiveM plugins.",
     "off": "Off",
     "on": "On",
@@ -2660,6 +2693,7 @@
     "pending": "Update the Sonoran CAD FiveM resource if you’re on an older version. Run the command below in your FiveM server console to migrate your settings to CAD, then click Refresh.",
     "pendingTitle": "Waiting for this server’s configuration",
     "plugins": "Plugins",
+    "pluginStatus": "{plugin} status",
     "preview": "Preview with sample servers. Changes stay in this tab.",
     "previous": "Previous page",
     "refresh": "Refresh",
@@ -2667,6 +2701,8 @@
     "restartNote": "Saved settings take effect the next time the FiveM resource starts.",
     "save": "Save configuration",
     "saved": "Configuration saved.",
+    "savedCallType": "Saved call type",
+    "savedCallTypesHint": "Choose a saved call type for a command, then download it and place it in the call type directory on your FiveM server.",
     "saveError": "Could not save this server’s configuration.",
     "search": "Find a plugin",
     "sections": {
@@ -2696,6 +2732,7 @@
     "serverNumber": "Server {id}",
     "title": "Server configuration",
     "unsaved": "Unsaved changes",
+    "useCallTypeFile": "Press Enter to use this server filename.",
     "value": "Value (JSON)"
   },
   "footer": {
@@ -3632,6 +3669,8 @@
     "copyCommunityId": "Copy community ID",
     "copyFailed": "Could not copy to the clipboard. Try again.",
     "current": "Game",
+    "loadFailed": "Couldn’t load the game settings.",
+    "ownerRequired": "Ask the community owner to choose a game to open Integrations.",
     "unselected": "Not selected"
   },
   "integrationPanels": {
@@ -5594,6 +5633,7 @@
   "setupChecklist": {
     "addSync": "Add sync step",
     "allDone": "Complete",
+    "awaitingAdmin": "An admin needs to finish game integration setup.",
     "chooseFramework": "Which framework do you use?",
     "configureSync": "Open database sync",
     "currentStep": "Step {step} of {total}",
@@ -5602,6 +5642,7 @@
     "dismiss": "Dismiss setup checklist",
     "done": "Complete",
     "editFramework": "Edit",
+    "fivemDownloadRequired": "Download the FiveM resource to unlock the rest of CAD.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5635,6 +5676,7 @@
     "previewWebhook": "Webhook received",
     "refresh": "Refresh setup progress",
     "reopen": "Setup checklist",
+    "required": "Finish game integration setup to unlock this community.",
     "saveFailed": "Your checklist change wasn’t saved. Please try again.",
     "setUpSync": "Set up",
     "shortTitle": "Setup",
