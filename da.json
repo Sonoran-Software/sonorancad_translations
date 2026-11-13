@@ -1012,6 +1012,11 @@
         "notifyOnlyOnFailureTooltip": "Spilleren vil kun modtage en privat besked, hvis kommandoen mislykkes.",
         "officialRobloxMap": "Officielt ER:LC-kort",
         "openDiscord": "Åbn Discord-integration",
+        "pluginTitles": {
+          "characterCreation": "Karakteroprettelse",
+          "liveMap": "3D Live-kort",
+          "locationNotifications": "3D-lokationswebhooks"
+        },
         "previewDiscord": "Forhåndsvis Discord-notifikationer",
         "previousScreenshot": "Forrige skærmbillede",
         "registerCommand": "Registreringskommando",
@@ -2162,6 +2167,7 @@
   "fiveMServerConfig": {
     "add": "Tilføj element",
     "addServer": "Tilføj server",
+    "commandCallTitle": "Opkaldstitel",
     "conflict": "En anden administrator gemte denne server. Kassér dine ændringer, og opdater for at indlæse den seneste version.",
     "copyCommandFailed": "Kunne ikke kopiere kommandoen. Prøv igen.",
     "copyMigrationCommand": "Kopiér migreringskommando",
@@ -2173,6 +2179,12 @@
     "downloadCallTypeFailed": "Kunne ikke downloade opkaldstypen. Prøv igen.",
     "empty": "Ingen elementer",
     "enabled": "Aktiveret",
+    "fieldGroups": {
+      "bodycamRecording": "Optagelse",
+      "displayPermissions": "Tilladelser",
+      "framework": "Framework",
+      "language": "Sprog"
+    },
     "fields": {
       "acceptShareCommand": "Accepter delingskommando",
       "aceObjectAdminUseMenu": "ACE-objektadministratorbrugsmenu",
@@ -2634,6 +2646,13 @@
       "zip": "Postnummer",
       "zOffset": "Z-forskel"
     },
+    "frameworkChoices": {
+      "customInventory": "TILPASSET",
+      "esx": "ESX",
+      "legacyEsx": "Legacy ESX",
+      "qbcore": "QB core"
+    },
+    "frameworkSelectorLabel": "Framework",
     "invalid": "Nogle indstillinger har ugyldige værdier.",
     "invalidItem": "Indtast gyldig JSON og en unik nøgle, hvor det kræves.",
     "item": "Element {number}",
@@ -2651,6 +2670,7 @@
       "auto": "Automatisk",
       "bottom-left": "Nederst til venstre",
       "bottom-right": "Nederst til højre",
+      "Center": "Centrér",
       "chat": "Chat",
       "custom": "TILPASSET",
       "discord": "Discord",
@@ -2680,9 +2700,11 @@
       "permissions": "ACE-tilladelse",
       "pnotify": "pNotify",
       "postal": "Nærmeste post",
+      "qb-core": "QB core",
       "qbcore": "QBCore",
       "resource": "Nærmeste postressource",
       "steam": "Steam",
+      "Top": "Top",
       "top-left": "Øverst til venstre",
       "top-right": "ØVERST TIL HØJRE",
       "us": "DD/MM/ÅÅÅÅ",
@@ -2713,20 +2735,20 @@
       "civintegration": "Borgerintegration",
       "civreg": "Civil registrering",
       "core": "Kerneindstillinger",
-      "dispatchnotify": "Afsendelsesnotifikationer",
+      "dispatchnotify": "Afsendelsesnotifikation",
       "ersintegration": "Beredskabsrespons-simulator",
       "forcereg": "Kontotilknytning",
       "frameworksupport": "Frameworksupport",
       "kick": "Spillerudsmidning",
       "localcallers": "Lokale kaldere",
       "locations": "Spillerplaceringer",
-      "lookups": "In-game opslag",
+      "lookups": "Opslag",
       "postals": "Postnumre",
       "recordPrinter": "Registreringsprinter",
       "sonrad": "Sonoran Radio",
       "unitstatus": "Enhedsstatus",
       "vehreg": "Køretøjsregistrering",
-      "wraithv2": "Wraith ARS 2X"
+      "wraithv2": "WraithV2"
     },
     "server": "FiveM-server",
     "serverNumber": "Server {id}",
@@ -5203,6 +5225,29 @@
         "label": "CentralCirkel tema",
         "location": "Tilpasning → CentralCirkel",
         "title": "Et velkendt udtryk. Et friskt look."
+      },
+      "chatGptPlugin": {
+        "action": "Åbn i ChatGPT"
+      },
+      "communityMenus": {
+        "images": {
+          "fivem": {
+            "label": "FiveM"
+          }
+        }
+      },
+      "contextMenus": {
+        "images": {
+          "calls": {
+            "label": "Opkald"
+          },
+          "units": {
+            "label": "Enheder"
+          },
+          "windows": {
+            "label": "Windows"
+          }
+        }
       },
       "permissions": {
         "alt": "Granulære rettigheder for poster for hændelsesrapport, inklusive visning, oprettelse, rediger egne, rediger alle, slet og supervisorfelter.",
