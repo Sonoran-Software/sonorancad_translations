@@ -2165,16 +2165,39 @@
     "goBack": "Ga terug"
   },
   "evidence": {
+    "addLink": "Bestands-URL toevoegen",
+    "attach": "Bestand bijvoegen",
+    "attachSelected": "Geselecteerde ({count}) toevoegen",
+    "empty": "Geen bewijsmateriaal toegevoegd.",
+    "externalLink": "Open dit bestand om het te bekijken.",
+    "fileType": "Bestandstype",
+    "invalidUrl": "Voer een geldige HTTPS-URL in zonder ingesloten referenties.",
+    "name": "Naam (optioneel)",
+    "noResults": "Geen overeenkomende bestanden.",
+    "openFile": "Bestand openen",
     "removeFile": "Verwijder {name}",
-    "select": "Selecteer"
+    "search": "Zoek bestanden",
+    "select": "Selecteer",
+    "selectEvidence": "Selecteer bewijs",
+    "title": "Bewijs",
+    "types": {
+      "all": "Alles",
+      "audio": "Audio",
+      "image": "Foto's",
+      "link": "Links",
+      "pdf": "Documenten",
+      "video": "Video"
+    },
+    "url": "HTTPS-bestands-URL"
   },
   "fiveMServerConfig": {
     "add": "Item toevoegen",
     "addServer": "Server toevoegen",
     "commandCallTitle": "Meldingtitel",
-    "conflict": "Een andere beheerder heeft deze server opgeslagen. Verwerp je wijzigingen en vernieuw om de nieuwste versie te laden.",
+    "conflict": "Een andere beheerder heeft deze server opgeslagen. Laad de nieuwste configuratie opnieuw om door te gaan; dit vervangt je niet-opgeslagen wijzigingen.",
     "copyCommandFailed": "Kon het commando niet kopiëren. Probeer opnieuw.",
     "copyMigrationCommand": "Migratiecommando kopiëren",
+    "copyRestartCommand": "Herstartcommando kopiëren",
     "customCallback": "Beheerd in de FiveM-resource",
     "dependency": "Vereist {plugins}",
     "disabled": "Uitgeschakeld",
@@ -2722,8 +2745,11 @@
     "preview": "Voorbeeld met voorbeeldservers. Wijzigingen blijven in dit tabblad.",
     "previous": "Vorige pagina",
     "refresh": "Vernieuwen",
+    "reloadLatest": "Laad laatste opnieuw",
     "remove": "Verwijder {item}",
+    "resetPluginMessage": "Herstel de standaardinstellingen voor {plugin} op deze server. Wijzigingen worden automatisch opgeslagen.",
     "restartNote": "Opgeslagen instellingen worden van kracht de volgende keer dat de FiveM-resource start.",
+    "restartRequired": "Start de FiveM-resource opnieuw op om je wijzigingen toe te passen.",
     "retrySave": "Opnieuw proberen",
     "save": "Configuratie opslaan",
     "saved": "Configuratie opgeslagen.",
@@ -5192,16 +5218,16 @@
   },
   "recentPhotos": {
     "choose": "Kies foto",
-    "copyFailed": "Kon de foto-URL niet kopiëren.",
-    "copyUrl": "Foto-URL kopiëren",
-    "empty": "Nog geen foto's ontvangen.",
+    "copyFailed": "Kon de bestands-URL niet kopiëren.",
+    "copyUrl": "Bestands-URL kopiëren",
+    "empty": "Nog geen bestanden ontvangen.",
     "receivedAt": "Ontvangen {time}",
     "replacePhoto": "Foto vervangen",
-    "title": "Foto's",
-    "unavailable": "Deze foto kon niet worden geladen.",
+    "title": "Recente bestanden",
+    "unavailable": "Dit bestand kon niet worden bekeken.",
     "unknownTime": "Tijd onbekend",
-    "unreadLabel": "Foto's, {count} ongelezen",
-    "urlCopied": "Foto-URL gekopieerd.",
+    "unreadLabel": "Recente bestanden, {count} ongelezen",
+    "urlCopied": "Bestands-URL gekopieerd.",
     "usePhoto": "Foto gebruiken"
   },
   "recordEditing": {
@@ -5213,7 +5239,7 @@
     "selectedLabel": "Bewerk geselecteerde velden in records van anderen"
   },
   "releaseHighlights": {
-    "archive": "Ontdek releases",
+    "archive": "Vorige releases",
     "brand": "Sonoran CAD",
     "changelog": "Volledig wijzigingslog",
     "close": "Sluit",
@@ -5225,6 +5251,18 @@
     "eyebrow": "Nieuw in Sonoran CAD",
     "features": "Functies van de release",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "Herontworpen administratie-navigatie met categorieën Personen en toegang, Aanpassing, Records en codes, Integraties en Systeem.",
+        "benefits": {
+          "first": "Vind instellingen in vijf duidelijke categorieën.",
+          "second": "Zie wat elke sectie doet voordat je ze opent.",
+          "third": "Keer terug naar de bovenliggende categorie met één terugactie."
+        },
+        "description": "Beheerdersinstellingen zijn georganiseerd in vijf categorieën, met aparte pagina's voor elk hulpmiddel.",
+        "label": "Bijgewerkte admin-navigatie",
+        "location": "Communitymenu → Beheer",
+        "title": "Bijgewerkte admin-navigatie"
+      },
       "automations": {
         "alt": "Editor voor recordautomatisering met een incidentrapportregel die de beoordelingsstatus instelt op Supervisorsbeoordeling wanneer de prioriteit Hoog is.",
         "description": "Wanneer een record wordt opgeslagen, controleer de velden die je kiest en werk automatisch een ander veld bij. Voldoet aan alle voorwaarden of aan een van de voorwaarden.",
@@ -5240,27 +5278,73 @@
         "title": "Een vertrouwde uitstraling. Een frisse look."
       },
       "chatGptPlugin": {
-        "action": "Openen in ChatGPT"
+        "action": "Openen in ChatGPT",
+        "alt": "ChatGPT-logo",
+        "description": "Verbind Sonoran CAD met de Sonoran Software-app in ChatGPT voor hulp bij het configureren van je community, het instellen van integraties en het maken van aangepaste recordsjablonen.",
+        "label": "ChatGPT-plug-in",
+        "location": "Administratie → Vraag ChatGPT",
+        "title": "ChatGPT-plug-in",
+        "visualTitle": "Sonoran CAD + ChatGPT"
       },
       "communityMenus": {
+        "alt": "FiveM-communitymenu met geïllustreerde rolkaarten.",
+        "benefits": {
+          "first": "Unieke karakterillustraties voor FiveM en ERLC.",
+          "second": "Een gedeelde communityheader in elke stijl.",
+          "third": "Kies FiveM, ERLC of Classic in aanpassing."
+        },
+        "description": "Nieuwe FiveM- en ERLC-personagemenu’s, plus een bijgewerkte Classic-stijl. Kies de stijl van je community in Customization.",
         "images": {
+          "erlc": {
+            "alt": "Liberty County Roleplay communitymenu met Roblox-stijl civiele, dispatch-, politie-, brandweer-, MUG-, wetshandhaving-, DMV- en adminpersonages.",
+            "label": "ERLC"
+          },
           "fivem": {
+            "alt": "San Andreas Roleplay communitymenu met FiveM-kaarten voor civiele, politie-, brandweer-, MUG-, dispatch-, DMV-, wetshandhaving- en adminpersonages.",
             "label": "FiveM"
           }
-        }
+        },
+        "label": "Nieuwe communitymenu's",
+        "location": "Communitymenu · Beheer → Aanpassing → Communitymenu",
+        "title": "Nieuwe communitymenu's"
       },
       "contextMenus": {
+        "alt": "Bijgewerkt contextmenu van een eenheid met Toevoegen aan oproep, Toevoegen aan groep, Opzoeken, Chat, Toonbord, Status, Eenheid bewerken, Paniek omschakelen en Eenheid verwijderen.",
+        "benefits": {
+          "first": "Herkenbare iconen naast elke actie.",
+          "second": "Consistente opmaak over menu's en submenu's.",
+          "third": "Gevolgacties springen eruit tussen routinebediening."
+        },
+        "description": "Bel- en eenheidsmenu's gebruiken nu afgeronde hoeken, consistente spatiëring en duidelijkere actiepictogrammen.",
         "images": {
           "calls": {
+            "alt": "Belmenu met Aan oproep koppelen, Recordlink kopiëren, Toonbord en Oproep sluiten.",
             "label": "Meldingen"
           },
           "units": {
+            "alt": "Bijgewerkt contextmenu van een eenheid met Toevoegen aan oproep, Toevoegen aan groep, Opzoeken, Chat, Toonbord, Status, Eenheid bewerken, Paniek omschakelen en Eenheid verwijderen.",
             "label": "Eenheden"
           },
           "windows": {
+            "alt": "Vensteractiemenu met Venster vergrendelen, Snel van grootte wijzigen, Bureaublad wijzigen, Naar voren brengen, Minimaliseren en Sluiten.",
             "label": "Windows"
           }
-        }
+        },
+        "label": "Bijgewerkte actiemenu's",
+        "location": "Politie, brandweer, EMS & dispatch → Actiemenu's",
+        "title": "Bijgewerkte actiemenu's"
+      },
+      "fiveMManagement": {
+        "alt": "FiveM-integratiepaneel met een serverselector, pluginnavigatie, frameworkkeuzes en fijne instellingen.",
+        "benefits": {
+          "first": "Wissel tussen je FiveM-servers.",
+          "second": "Plugins inschakelen en hun instellingen op één plek bewerken.",
+          "third": "Gebruik gelabelde bedieningselementen in plaats van configuratiebestanden te bewerken."
+        },
+        "description": "Na het installeren van de FiveM-resource, configureer servers en plugins rechtstreeks in CAD zonder configuratiebestanden te bewerken.",
+        "label": "Beheer FiveM-resource via CAD",
+        "location": "Administratie → Integraties → In-Game Integratie",
+        "title": "Beheer FiveM-resource via CAD"
       },
       "permissions": {
         "alt": "Granulaire recordrechten voor Incident Report, inclusief bekijken, aanmaken, eigen bewerken, alles bewerken, verwijderen en supervisorvelden.",
@@ -5283,6 +5367,12 @@
     "preview": "Binnenkort · Voorvertoning",
     "previous": "Vorige functie",
     "releases": {
+      "cad-3-45-0": {
+        "description": "Beheer je FiveM-integratie binnen CAD. Ontdek nieuwe karaktermenu's, duidelijkere acties en een adminpaneel dat makkelijker te navigeren is.",
+        "shortTitle": "Wat is er nieuw in 3.45.0",
+        "teaser": "FiveM-instellingen in CAD, nieuwe karaktermenu's en duidelijkere bediening overal in je community.",
+        "title": "Een eenvoudigere manier om je gemeenschap te beheren."
+      },
       "central-circle": {
         "description": "Een nieuw ingebouwd thema brengt lichte tabellen en donkere kopteksten naar je CAD-werkruimte.",
         "shortTitle": "Maak kennis met Centraalcirkel",
@@ -5691,7 +5781,7 @@
   "setupChecklist": {
     "addSync": "Synchronisatiestap toevoegen",
     "allDone": "Voltooid",
-    "awaitingAdmin": "Een admin moet de game-integratieconfiguratie voltooien.",
+    "awaitingAdmin": "Een beheerder moet de game-integratie instellen of overslaan.",
     "chooseFramework": "Welk framework gebruikt u?",
     "configureSync": "Open databasesynchronisatie",
     "currentStep": "Stap {step} van {total}",
@@ -5700,7 +5790,7 @@
     "dismiss": "Instellingenchecklist sluiten",
     "done": "Voltooid",
     "editFramework": "Aanpassen",
-    "fivemDownloadRequired": "Download de FiveM-bron om de rest van CAD te ontgrendelen.",
+    "fivemDownloadRequired": "Download de FiveM-resource om verbinding te maken met je server.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5734,10 +5824,13 @@
     "previewWebhook": "Webhook ontvangen",
     "refresh": "Instelvoortgang vernieuwen",
     "reopen": "Instellingenchecklist",
-    "required": "Voltooi de integratieconfiguratie van het spel om deze community te ontgrendelen.",
+    "required": "Stel de game-integratie in of sla deze over om deze community vrij te schakelen.",
     "saveFailed": "Je checklistwijziging werd niet opgeslagen. Probeer het opnieuw.",
     "setUpSync": "Stel in",
     "shortTitle": "Setup",
+    "skipIntegration": "Overslaan",
+    "skipIntegrationFailed": "Integratie-instelling kon niet worden overgeslagen. Probeer opnieuw.",
+    "skipIntegrationHint": "Gebruik CAD nu en stel de integratie later in.",
     "skipSetup": "Setup overslaan",
     "skipSync": "Databasesynchronisatie overslaan",
     "steps": {

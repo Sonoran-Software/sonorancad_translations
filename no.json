@@ -2165,16 +2165,39 @@
     "goBack": "Gå tilbake"
   },
   "evidence": {
+    "addLink": "Legg til fil-URL",
+    "attach": "Legg ved fil",
+    "attachSelected": "Koble til valgte ({count})",
+    "empty": "Ingen bevis vedlagt.",
+    "externalLink": "Åpne denne filen for å se den.",
+    "fileType": "Filtype",
+    "invalidUrl": "Skriv inn en gyldig HTTPS-URL uten innebygde legitimasjonsopplysninger.",
+    "name": "Navn (valgfritt)",
+    "noResults": "Ingen samsvarende filer.",
+    "openFile": "Åpne fil",
     "removeFile": "Fjern {name}",
-    "select": "Velg"
+    "search": "Søk filer",
+    "select": "Velg",
+    "selectEvidence": "Velg bevis",
+    "title": "Bevis",
+    "types": {
+      "all": "Alle",
+      "audio": "Lyd",
+      "image": "Bilder",
+      "link": "Lenker",
+      "pdf": "Dokumenter",
+      "video": "Video"
+    },
+    "url": "HTTPS-fil-URL"
   },
   "fiveMServerConfig": {
     "add": "Legg til element",
     "addServer": "Legg til server",
     "commandCallTitle": "Oppdragstittel",
-    "conflict": "En annen administrator lagret denne serveren. Kast endringene dine og oppdater for å laste inn den nyeste versjonen.",
+    "conflict": "En annen administrator lagret denne serveren. Last inn den nyeste konfigurasjonen på nytt for å fortsette; dette erstatter de ulagrede endringene dine.",
     "copyCommandFailed": "Kunne ikke kopiere kommandoen. Prøv igjen.",
     "copyMigrationCommand": "Kopier migreringskommando",
+    "copyRestartCommand": "Kopier omstartskommando",
     "customCallback": "Administrert i FiveM-ressursen",
     "dependency": "Krever {plugins}",
     "disabled": "Avskrudd",
@@ -2722,8 +2745,11 @@
     "preview": "Forhåndsvisning med eksempelservere. Endringer forblir i denne fanen.",
     "previous": "Forrige side",
     "refresh": "Oppdater",
+    "reloadLatest": "Last inn siste",
     "remove": "Fjern {item}",
+    "resetPluginMessage": "Gjenopprett standardinnstillingene for {plugin} på denne serveren. Endringer lagres automatisk.",
     "restartNote": "Lagrede innstillinger trer i kraft neste gang FiveM-ressursen starter.",
+    "restartRequired": "Start FiveM-ressursen på nytt for å bruke endringene.",
     "retrySave": "Prøv på nytt",
     "save": "Lagre konfigurasjon",
     "saved": "Konfigurasjon lagret.",
@@ -5192,16 +5218,16 @@
   },
   "recentPhotos": {
     "choose": "Velg bilde",
-    "copyFailed": "Kunne ikke kopiere bilde-URL-en.",
-    "copyUrl": "Kopier bilde-URL",
-    "empty": "Ingen bilder mottatt ennå.",
+    "copyFailed": "Kunne ikke kopiere fil-URL-en.",
+    "copyUrl": "Kopier fil-URL",
+    "empty": "Ingen filer mottatt ennå.",
     "receivedAt": "Mottatt {time}",
     "replacePhoto": "Erstatt bilde",
     "title": "Bilder",
-    "unavailable": "Dette bildet kunne ikke lastes inn.",
+    "unavailable": "Denne filen kunne ikke forhåndsvises.",
     "unknownTime": "Tid ukjent",
     "unreadLabel": "Bilder, {count} ulest",
-    "urlCopied": "Foto-URL kopiert.",
+    "urlCopied": "Fil-URL kopiert.",
     "usePhoto": "Bruk bilde"
   },
   "recordEditing": {
@@ -5213,7 +5239,7 @@
     "selectedLabel": "Rediger valgte felter på andres oppføringer"
   },
   "releaseHighlights": {
-    "archive": "Utforsk utgivelser",
+    "archive": "Tidligere utgivelser",
     "brand": "Sonoran CAD",
     "changelog": "Full endringslogg",
     "close": "Lukk",
@@ -5225,6 +5251,18 @@
     "eyebrow": "Nytt i Sonoran CAD",
     "features": "Utgivelsesfunksjoner",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "Redesignet administrasjonsnavigasjon med kategoriene Personer og tilgang, Tilpasning, Journaler og koder, Integrasjoner og System.",
+        "benefits": {
+          "first": "Finn innstillinger i fem klare kategorier.",
+          "second": "Se hva hver seksjon gjør før du åpner den.",
+          "third": "Gå tilbake til overkategorien med én tilbakehandling."
+        },
+        "description": "Administratorinnstillinger er organisert i fem kategorier, med egne sider for hvert verktøy.",
+        "label": "Oppdatert adminnavigasjon",
+        "location": "Samfunnsmeny → Admin",
+        "title": "Oppdatert adminnavigasjon"
+      },
       "automations": {
         "alt": "Redigeringsverktøy for journalautomatisering med en hendelsesrapporteringsregel som setter statusen Gjennomgang til Supervisor review når prioriteten er Høy.",
         "description": "Når en post lagres, kontroller feltene du velger, og oppdater et annet felt automatisk. Oppfyll alle betingelser eller bare én av dem.",
@@ -5240,27 +5278,73 @@
         "title": "Et kjent uttrykk. Et friskt utseende."
       },
       "chatGptPlugin": {
-        "action": "Åpne i ChatGPT"
+        "action": "Åpne i ChatGPT",
+        "alt": "ChatGPT-logo",
+        "description": "Koble Sonoran CAD til Sonoran Software-appen i ChatGPT for hjelp med å konfigurere fellesskapet ditt, sette opp integrasjoner og lage tilpassede rekordmaler.",
+        "label": "ChatGPT-plugin",
+        "location": "Administrasjon → Spør ChatGPT",
+        "title": "ChatGPT-plugin",
+        "visualTitle": "Sonoran CAD + ChatGPT"
       },
       "communityMenus": {
+        "alt": "FiveM-fellesskapsmeny med illustrerte rollekort.",
+        "benefits": {
+          "first": "Unike karakterillustrasjoner for FiveM og ERLC.",
+          "second": "En delt fellestopptekst på tvers av alle stiler.",
+          "third": "Velg FiveM, ERLC eller Classic i tilpasningen."
+        },
+        "description": "Nye FiveM- og ERLC-karaktermenyer, pluss en oppdatert klassisk stil. Velg fellesskapets stil i Tilpasning.",
         "images": {
+          "erlc": {
+            "alt": "Liberty County Roleplay fellesskapsmeny med Roblox-stil kort for sivile, dispatch, politi, brannvesen, EMS, lov, DMV og administrasjon.",
+            "label": "ERLC"
+          },
           "fivem": {
+            "alt": "San Andreas Roleplay fellesskapsmeny med FiveM-kort for sivile, politi, brannvesen, EMS, dispatch, DMV, lov og administrasjon.",
             "label": "FiveM"
           }
-        }
+        },
+        "label": "Nye samfunnsmenyer",
+        "location": "Samfunnsmeny · Administrasjon → Tilpasning → Samfunnsmeny",
+        "title": "Nye samfunnsmenyer"
       },
       "contextMenus": {
+        "alt": "Oppdatert enhets-kontekstmeny som viser Legg til i samtale, Legg til i gruppe, Oppslag, Chat, Tonebrett, Status, Rediger enhet, Veksle panikk, og Koble fra enhet.",
+        "benefits": {
+          "first": "Gjenkjennelige ikoner ved siden av hver handling.",
+          "second": "Konsistent stil på tvers av menyer og undermenyer.",
+          "third": "Konsekvenshandlinger skiller seg ut fra rutinekontroller."
+        },
+        "description": "Anrops- og enhetsmenyer bruker nå avrundede hjørner, jevn avstand og tydeligere handlingsikoner.",
         "images": {
           "calls": {
+            "alt": "Anropsmeny med Knyt til samtale, Kopier postlenke, Tonebrett og Lukk samtale.",
             "label": "Anrop"
           },
           "units": {
+            "alt": "Oppdatert enhets-kontekstmeny som viser Legg til i samtale, Legg til i gruppe, Oppslag, Chat, Tonebrett, Status, Rediger enhet, Veksle panikk, og Koble fra enhet.",
             "label": "Enheter"
           },
           "windows": {
+            "alt": "Vinduhandlingsmeny med Lås vindu, Hurtig endring av størrelse, Endre skrivebord, Bring til toppen, Minimer og Lukk.",
             "label": "Windows"
           }
-        }
+        },
+        "label": "Oppdaterte handlingsmenyer",
+        "location": "Politi, brann, ambulanse og dispatch → handlingsmenyer",
+        "title": "Oppdaterte handlingsmenyer"
+      },
+      "fiveMManagement": {
+        "alt": "FiveM-integrasjonspanel med en servervelger, plugin-navigasjon, rammeverksvalg og fine innstillinger.",
+        "benefits": {
+          "first": "Bytt mellom FiveM-serverne dine.",
+          "second": "Aktiver plugins og rediger innstillingene deres på ett sted.",
+          "third": "Bruk merkede kontroller i stedet for å redigere konfigurasjonsfiler."
+        },
+        "description": "Etter å ha installert FiveM-ressursen, konfigurer servere og plugins direkte i CAD uten å redigere konfigurasjonsfiler.",
+        "label": "Administrer FiveM-ressurs via CAD",
+        "location": "Administrasjon → Integrasjoner → Integrasjon i spillet",
+        "title": "Administrer FiveM-ressurs via CAD"
       },
       "permissions": {
         "alt": "Detaljerte rekordtillatelser for hendelsesrapport, inkludert visning, oppretting, rediger egen, rediger alle, sletting og veilederfelt.",
@@ -5283,6 +5367,12 @@
     "preview": "Kommer snart · Forhåndsvisning",
     "previous": "Forrige funksjon",
     "releases": {
+      "cad-3-45-0": {
+        "description": "Administrer FiveM-integrasjonen din i CAD. Møt nye karaktermenyer, ryddigere handlinger og et enklere å navigere adminpanel.",
+        "shortTitle": "Hva er nytt i 3.45.0",
+        "teaser": "FiveM-innstillinger i CAD, nye karaktermenyer og tydeligere kontroller gjennom hele fellesskapet.",
+        "title": "En enklere måte å drifte lokalsamfunnet ditt."
+      },
       "central-circle": {
         "description": "Et nytt innebygd tema gir lyse tabeller og mørke topptekster til CAD-arbeidsområdet ditt.",
         "shortTitle": "Møt Sentrumssirkel",
@@ -5691,7 +5781,7 @@
   "setupChecklist": {
     "addSync": "Legg til synkroniseringstrinn",
     "allDone": "Fullført",
-    "awaitingAdmin": "En admin må fullføre oppsettet for spillintegrasjon.",
+    "awaitingAdmin": "En administrator må sette opp eller hoppe over spillintegrasjonen.",
     "chooseFramework": "Hvilket rammeverk bruker du?",
     "configureSync": "Åpne databasesynkronisering",
     "currentStep": "Trinn {step} av {total}",
@@ -5700,7 +5790,7 @@
     "dismiss": "Lukk oppsettssjekkliste",
     "done": "Fullført",
     "editFramework": "Rediger",
-    "fivemDownloadRequired": "Last ned FiveM-ressursen for å låse opp resten av CAD.",
+    "fivemDownloadRequired": "Last ned FiveM-ressursen for å koble til serveren din.",
     "framework": "Rammeverk",
     "frameworks": {
       "esx": "ESX",
@@ -5734,10 +5824,13 @@
     "previewWebhook": "Webhook mottatt",
     "refresh": "Oppdater oppsettets fremdrift",
     "reopen": "Oppsettssjekkliste",
-    "required": "Fullfør oppsettet av spillintegrasjonen for å låse opp dette fellesskapet.",
+    "required": "Sett opp eller hopp over spillintegrasjonen for å låse opp dette fellesskapet.",
     "saveFailed": "Endringen i sjekklisten ble ikke lagret. Prøv igjen.",
     "setUpSync": "Sett opp",
     "shortTitle": "Oppsett",
+    "skipIntegration": "Hopp over",
+    "skipIntegrationFailed": "Kunne ikke hoppe over integrasjonsoppsettet. Prøv igjen.",
+    "skipIntegrationHint": "Bruk CAD nå og sett opp integrasjonen senere.",
     "skipSetup": "Hopp over oppsett",
     "skipSync": "Hopp over databasesynkronisering",
     "steps": {

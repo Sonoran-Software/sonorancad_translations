@@ -2166,16 +2166,39 @@
     "goBack": "戻る"
   },
   "evidence": {
+    "addLink": "ファイルURLを追加",
+    "attach": "ファイルを添付",
+    "attachSelected": "選択したものを添付 ({count})",
+    "empty": "証拠が添付されていません。",
+    "externalLink": "このファイルを開いて表示します",
+    "fileType": "ファイルタイプ",
+    "invalidUrl": "埋め込み認証情報なしの有効なHTTPS URLを入力してください。",
+    "name": "名前（任意）",
+    "noResults": "一致するファイルはありません。",
+    "openFile": "ファイルを開く",
     "removeFile": "{name} を削除",
-    "select": "選択"
+    "search": "ファイルを検索",
+    "select": "選択",
+    "selectEvidence": "証拠を選択",
+    "title": "証拠",
+    "types": {
+      "all": "すべて",
+      "audio": "音声",
+      "image": "写真",
+      "link": "リンク",
+      "pdf": "書類",
+      "video": "動画"
+    },
+    "url": "HTTPS ファイル URL"
   },
   "fiveMServerConfig": {
     "add": "アイテムを追加",
     "addServer": "サーバーを追加",
     "commandCallTitle": "通話タイトル",
-    "conflict": "別の管理者がこのサーバーを保存しました。変更を破棄して更新し、最新バージョンを読み込みます。",
+    "conflict": "別の管理者がこのサーバーを保存しました。続行するには最新の設定を再読み込みしてください; これにより、保存されていない編集内容が置き換えられます。",
     "copyCommandFailed": "コマンドをコピーできませんでした。もう一度お試しください。",
     "copyMigrationCommand": "移行コマンドをコピー",
+    "copyRestartCommand": "再起動コマンドをコピー",
     "customCallback": "FiveMリソースで管理",
     "dependency": "{plugins} が必要です",
     "disabled": "無効",
@@ -2723,8 +2746,11 @@
     "preview": "サンプルサーバーでプレビューします。変更はこのタブに残ります。",
     "previous": "前のページ",
     "refresh": "更新",
+    "reloadLatest": "最新を再読み込み",
     "remove": "{item}を削除",
+    "resetPluginMessage": "このサーバーで {plugin} のデフォルト設定を復元します。変更は自動保存されます。",
     "restartNote": "保存した設定は次回 FiveM リソース起動時に反映されます。",
+    "restartRequired": "変更を適用するには FiveM リソースを再起動してください。",
     "retrySave": "再試行",
     "save": "設定を保存",
     "saved": "設定を保存しました。",
@@ -5184,16 +5210,16 @@
   },
   "recentPhotos": {
     "choose": "写真を選択",
-    "copyFailed": "写真URLをコピーできませんでした。",
-    "copyUrl": "写真URLをコピー",
-    "empty": "まだ写真は届いていません。",
+    "copyFailed": "ファイルURLをコピーできませんでした。",
+    "copyUrl": "ファイルURLをコピー",
+    "empty": "まだファイルを受信していません。",
     "receivedAt": "{time}に受信",
     "replacePhoto": "写真を差し替え",
-    "title": "写真",
-    "unavailable": "この写真を読み込めませんでした。",
+    "title": "最近のファイル",
+    "unavailable": "このファイルはプレビューできませんでした。",
     "unknownTime": "時刻不明",
-    "unreadLabel": "写真、{count}件未読",
-    "urlCopied": "写真URLをコピーしました。",
+    "unreadLabel": "最近のファイル、未読{count}件",
+    "urlCopied": "ファイルURLをコピーしました。",
     "usePhoto": "写真を使用"
   },
   "recordEditing": {
@@ -5205,7 +5231,7 @@
     "selectedLabel": "他人のレコードの選択した項目を編集"
   },
   "releaseHighlights": {
-    "archive": "リリースを確認",
+    "archive": "前回のリリース",
     "brand": "Sonoran CAD",
     "changelog": "完全な変更履歴",
     "close": "閉じる",
@@ -5217,6 +5243,18 @@
     "eyebrow": "Sonoran CAD に新登場",
     "features": "リリース機能",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "Peopleとaccess、Customization、Recordsとcodes、Integrations、Systemのカテゴリを備えた管理ナビゲーションを再設計しました。",
+        "benefits": {
+          "first": "5つのわかりやすいカテゴリで設定を見つける。",
+          "second": "開く前に各セクションが何をするかを確認します。",
+          "third": "単一の戻る操作で親カテゴリに戻る。"
+        },
+        "description": "管理者設定は5つのカテゴリに整理されており、各ツールごとに個別のページがあります。",
+        "label": "更新された管理者ナビゲーション",
+        "location": "コミュニティメニュー → 管理",
+        "title": "更新された管理者ナビゲーション"
+      },
       "automations": {
         "alt": "インシデント報告ルール付きの記録自動化エディターで、優先度が高の場合に Review ステータスを Supervisor review に設定します。",
         "description": "レコードが保存されたら、選択したフィールドをチェックし、別のフィールドを自動的に更新します。すべての条件に一致するか、いずれか1つに一致します。",
@@ -5232,27 +5270,73 @@
         "title": "なじみのある感覚。新しい見た目。"
       },
       "chatGptPlugin": {
-        "action": "ChatGPT で開く"
+        "action": "ChatGPT で開く",
+        "alt": "ChatGPT ロゴ",
+        "description": "ChatGPT で Sonoran CAD を Sonoran Software アプリに接続して、コミュニティの設定、統合の構成、カスタムレコードテンプレートの作成をサポートします。",
+        "label": "ChatGPT プラグイン",
+        "location": "管理 → ChatGPTに質問",
+        "title": "ChatGPT プラグイン",
+        "visualTitle": "Sonoran CAD + ChatGPT"
       },
       "communityMenus": {
+        "alt": "イラスト付き役割カードのFiveMコミュニティメニュー。",
+        "benefits": {
+          "first": "FiveMとERLC向けの独自キャラクターアートワーク。",
+          "second": "すべてのスタイルで共有されるコミュニティヘッダー。",
+          "third": "カスタマイズで FiveM、ERLC、または Classic を選択してください。"
+        },
+        "description": "新しい FiveM と ERLC のキャラクターメニュー、さらに更新された Classic スタイル。Customization であなたのコミュニティのスタイルを選択できます。",
         "images": {
+          "erlc": {
+            "alt": "Liberty County Roleplayのコミュニティメニュー、Roblox風の市民、ディスパッチ、警察、消防、EMS、法務、DMV、管理者のキャラクターカード。",
+            "label": "ERLC"
+          },
           "fivem": {
+            "alt": "San Andreas Roleplayのコミュニティメニュー、FiveMの市民、警察、消防、EMS、ディスパッチ、DMV、法務、管理者のキャラクターカード。",
             "label": "FiveM"
           }
-        }
+        },
+        "label": "新しいコミュニティメニュー",
+        "location": "コミュニティメニュー · 管理 → カスタマイズ → コミュニティメニュー",
+        "title": "新しいコミュニティメニュー"
       },
       "contextMenus": {
+        "alt": "更新されたユニット コンテキストメニューには、通話に追加、グループに追加、検索、チャット、トーンボード、ステータス、ユニットを編集、パニックを切り替え、ユニットをキックが表示されます。",
+        "benefits": {
+          "first": "各アクションの横にある識別しやすいアイコン。",
+          "second": "メニューとサブメニュー全体で一貫したスタイル。",
+          "third": "重要なアクションは通常の操作と区別されます。"
+        },
+        "description": "通話メニューとユニットメニューは、現在、角丸、統一された間隔、よりわかりやすいアクションアイコンを使用しています。",
         "images": {
           "calls": {
+            "alt": "通話への添付、レコードリンクをコピー、トーンボード、通話終了を含む通話アクションメニュー。",
             "label": "通話"
           },
           "units": {
+            "alt": "更新されたユニット コンテキストメニューには、通話に追加、グループに追加、検索、チャット、トーンボード、ステータス、ユニットを編集、パニックを切り替え、ユニットをキックが表示されます。",
             "label": "単位"
           },
           "windows": {
+            "alt": "ロックウィンドウ、クイックリサイズ、デスクトップ変更、最前面へ移動、最小化、閉じるを含むウィンドウ操作メニュー。",
             "label": "Windows"
           }
-        }
+        },
+        "label": "更新されたアクションメニュー",
+        "location": "警察、消防、EMS ＆ ディスパッチ → アクションメニュー",
+        "title": "更新されたアクションメニュー"
+      },
+      "fiveMManagement": {
+        "alt": "サーバーセレクター、プラグインナビゲーション、フレームワーク選択、詳細設定付きの FiveM 統合パネル",
+        "benefits": {
+          "first": "FiveM サーバー間を切り替えます。",
+          "second": "プラグインを有効にして設定を1か所で編集できます。",
+          "third": "設定ファイルを編集する代わりにラベル付きコントロールを使用します。"
+        },
+        "description": "FiveM リソースをインストールした後、設定ファイルを編集せずに CAD で直接サーバーとプラグインを設定します。",
+        "label": "CAD経由でFiveMリソースを管理",
+        "location": "管理 → 統合 → ゲーム内 統合",
+        "title": "CAD経由でFiveMリソースを管理"
       },
       "permissions": {
         "alt": "Incident Report の詳細なレコード権限。閲覧、新規作成、自己編集、すべて編集、削除、監督者フィールドを含みます。",
@@ -5275,6 +5359,12 @@
     "preview": "次に登場 · プレビュー",
     "previous": "前の機能",
     "releases": {
+      "cad-3-45-0": {
+        "description": "CAD 内で FiveM 連携を管理。新しいキャラクターメニュー、よりすっきりしたアクション、そしてより使いやすい管理パネルをお試しください。",
+        "shortTitle": "3.45.0 の新機能",
+        "teaser": "CAD内のFiveM設定、新しいキャラクターメニュー、そしてコミュニティ全体でよりわかりやすい操作",
+        "title": "コミュニティを運営する、より簡単な方法。"
+      },
       "central-circle": {
         "description": "新しい組み込みテーマで CAD ワークスペースに明るいテーブルと暗いヘッダーを導入します。",
         "shortTitle": "CentralCircle に会う",
@@ -5683,7 +5773,7 @@
   "setupChecklist": {
     "addSync": "同期ステップを追加",
     "allDone": "完了",
-    "awaitingAdmin": "管理者がゲーム統合の設定を完了する必要があります。",
+    "awaitingAdmin": "管理者がゲーム統合を設定するかスキップする必要があります。",
     "chooseFramework": "どのフレームワークを使っていますか？",
     "configureSync": "データベース 同期 を開く",
     "currentStep": "ステップ {step} / {total}",
@@ -5692,7 +5782,7 @@
     "dismiss": "セットアップチェックリストを閉じる",
     "done": "完了",
     "editFramework": "編集",
-    "fivemDownloadRequired": "FiveMリソースをダウンロードして、CADの残りを解放してください。",
+    "fivemDownloadRequired": "FiveM リソースをダウンロードしてサーバーを接続してください。",
     "framework": "フレームワーク",
     "frameworks": {
       "esx": "ESX",
@@ -5726,10 +5816,13 @@
     "previewWebhook": "Webhookを受信しました",
     "refresh": "セットアップ進行状況を更新",
     "reopen": "セットアップチェックリスト",
-    "required": "このコミュニティを解放するには、ゲーム統合の設定を完了してください。",
+    "required": "このコミュニティを解放するには、ゲーム統合を設定するかスキップしてください。",
     "saveFailed": "チェックリストの変更は保存されませんでした。もう一度お試しください。",
     "setUpSync": "設定",
     "shortTitle": "セットアップ",
+    "skipIntegration": "スキップ",
+    "skipIntegrationFailed": "統合設定をスキップできませんでした。もう一度お試しください。",
+    "skipIntegrationHint": "CADを今すぐ使用して、連携は後で設定してください。",
     "skipSetup": "セットアップをスキップ",
     "skipSync": "データベース 同期 を スキップ",
     "steps": {
