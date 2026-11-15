@@ -2166,16 +2166,39 @@
     "goBack": "뒤로 가기"
   },
   "evidence": {
+    "addLink": "파일 URL 추가",
+    "attach": "파일 붙이기",
+    "attachSelected": "선택 항목 첨부 ({count})",
+    "empty": "첨부된 증거가 없습니다.",
+    "externalLink": "이 파일을 열어 확인하세요.",
+    "fileType": "파일 유형",
+    "invalidUrl": "자격 증명이 포함되지 않은 유효한 HTTPS URL을 입력하세요.",
+    "name": "이름 (선택 사항)",
+    "noResults": "일치하는 파일 없음.",
+    "openFile": "파일 열기",
     "removeFile": "{name} 제거하다",
-    "select": "선택"
+    "search": "파일 찾다",
+    "select": "선택",
+    "selectEvidence": "증거 선택",
+    "title": "증거",
+    "types": {
+      "all": "전체",
+      "audio": "오디오",
+      "image": "사진",
+      "link": "링크",
+      "pdf": "문서",
+      "video": "비디오"
+    },
+    "url": "HTTPS 파일 URL"
   },
   "fiveMServerConfig": {
     "add": "항목 추가",
     "addServer": "서버 추가",
     "commandCallTitle": "통화 제목",
-    "conflict": "다른 관리자에게서 이 서버가 저장되었습니다. 변경 사항을 버리고 새로 고침하여 최신 버전을 불러오세요.",
+    "conflict": "다른 관리자가 이 서버를 저장했습니다. 계속하려면 최신 구성을 다시 불러오세요; 이로 인해 저장하지 않은 편집 내용이 대체됩니다.",
     "copyCommandFailed": "명령을 복사할 수 없습니다. 다시 시도해 주세요.",
     "copyMigrationCommand": "마이그레이션 명령어 복사",
+    "copyRestartCommand": "재시작 명령어 복사",
     "customCallback": "FiveM 리소스에서 관리됨",
     "dependency": "{plugins} 이 필요합니다",
     "disabled": "비활성화됨",
@@ -2723,8 +2746,11 @@
     "preview": "샘플 서버로 미리 보기. 변경 사항은 이 탭에 유지됩니다.",
     "previous": "이전 페이지",
     "refresh": "새로 고치다",
+    "reloadLatest": "최신 내용 다시 불러오기",
     "remove": "제거 {item}",
+    "resetPluginMessage": "이 서버에서 {plugin}의 기본 설정을 복원합니다. 변경 사항은 자동으로 저장됩니다.",
     "restartNote": "저장된 설정은 FiveM 리소스가 다음에 시작될 때 적용됩니다.",
+    "restartRequired": "변경 사항을 적용하려면 FiveM 리소스를 다시 시작하세요.",
     "retrySave": "다시 시도",
     "save": "구성 저장",
     "saved": "구성 저장됨.",
@@ -5184,16 +5210,16 @@
   },
   "recentPhotos": {
     "choose": "사진 선택",
-    "copyFailed": "사진 URL을 복사할 수 없습니다.",
-    "copyUrl": "사진 URL 복사",
-    "empty": "아직 받은 사진이 없습니다.",
+    "copyFailed": "파일 URL을 복사할 수 없습니다.",
+    "copyUrl": "파일 URL 복사",
+    "empty": "아직 파일을 받지 못했습니다.",
     "receivedAt": "{time} 에 수신됨",
     "replacePhoto": "사진 바꾸기",
-    "title": "사진",
-    "unavailable": "이 사진을 불러올 수 없습니다.",
+    "title": "최근 파일",
+    "unavailable": "이 파일은 미리 볼 수 없습니다.",
     "unknownTime": "시간을 알 수 없음",
-    "unreadLabel": "사진, {count}개 읽지 않음",
-    "urlCopied": "사진 URL 복사됨.",
+    "unreadLabel": "최근 파일, 읽지 않음 {count}개",
+    "urlCopied": "파일 URL 복사됨.",
     "usePhoto": "사진 사용"
   },
   "recordEditing": {
@@ -5205,7 +5231,7 @@
     "selectedLabel": "다른 사람의 기록에서 선택한 필드 편집"
   },
   "releaseHighlights": {
-    "archive": "릴리스를 탐색",
+    "archive": "이전 릴리스",
     "brand": "Sonoran CAD",
     "changelog": "전체 변경 내역",
     "close": "닫다",
@@ -5217,6 +5243,18 @@
     "eyebrow": "Sonoran CAD의 새로운 기능",
     "features": "출시 기능",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "People 및 access, Customization, Records 및 codes, Integrations, System 카테고리로 재설계된 administration navigation.",
+        "benefits": {
+          "first": "설정을 다섯 개의 명확한 카테고리에서 찾으세요.",
+          "second": "각 섹션이 무엇을 하는지 열기 전에 확인하세요.",
+          "third": "한 번의 뒤로 가기 동작으로 상위 카테고리로 돌아갑니다."
+        },
+        "description": "관리자 설정은 다섯 개의 카테고리로 구성되며, 각 도구마다 별도의 페이지가 있습니다.",
+        "label": "업데이트된 관리자 내비게이션",
+        "location": "커뮤니티 메뉴 → 관리자",
+        "title": "업데이트된 관리자 내비게이션"
+      },
       "automations": {
         "alt": "우선순위가 High일 때 Review 상태를 Supervisor review로 설정하는 사고 보고 규칙이 있는 Record automation 편집기.",
         "description": "레코드가 저장되면, 선택한 필드를 확인하고 다른 필드를 자동으로 업데이트합니다. 모든 조건 또는 그중 하나를 일치시키세요.",
@@ -5232,27 +5270,73 @@
         "title": "익숙한 느낌. 새로운 모습."
       },
       "chatGptPlugin": {
-        "action": "ChatGPT에서 열기"
+        "action": "ChatGPT에서 열기",
+        "alt": "ChatGPT 로고",
+        "description": "ChatGPT에서 도움을 받아 커뮤니티를 구성하고 통합을 설정하고 맞춤 기록 템플릿을 만들려면 Sonoran CAD를 Sonoran Software 앱에 연결하세요.",
+        "label": "ChatGPT 플러그인",
+        "location": "관리 → ChatGPT에 묻기",
+        "title": "ChatGPT 플러그인",
+        "visualTitle": "Sonoran CAD + ChatGPT"
       },
       "communityMenus": {
+        "alt": "일러스트 역할 카드가 있는 FiveM 커뮤니티 메뉴.",
+        "benefits": {
+          "first": "FiveM과 ERLC를 위한 독특한 캐릭터 아트워크.",
+          "second": "모든 스타일에 공통으로 적용되는 커뮤니티 헤더.",
+          "third": "커스터마이징에서 FiveM, ERLC, 또는 Classic을 선택하세요."
+        },
+        "description": "새로운 FiveM 및 ERLC 캐릭터 메뉴와 업데이트된 클래식 스타일. Customization에서 커뮤니티 스타일을 선택하세요.",
         "images": {
+          "erlc": {
+            "alt": "Roblox 스타일 민간인, 디스패치, 경찰, 소방, EMS, 법률, DMV, 관리자 캐릭터 카드가 있는 Liberty County Roleplay 커뮤니티 메뉴.",
+            "label": "ERLC"
+          },
           "fivem": {
+            "alt": "FiveM 민간인, 경찰, 소방, EMS, 디스패치, DMV, 법률, 관리자 캐릭터 카드가 있는 San Andreas Roleplay 커뮤니티 메뉴.",
             "label": "FiveM"
           }
-        }
+        },
+        "label": "새 커뮤니티 메뉴",
+        "location": "커뮤니티 메뉴 · 관리 → 커스터마이징 → 커뮤니티 메뉴",
+        "title": "새 커뮤니티 메뉴"
       },
       "contextMenus": {
+        "alt": "업데이트된 유닛 컨텍스트 메뉴로 Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, 및 Kick Unit이 표시됩니다.",
+        "benefits": {
+          "first": "각 작업 옆의 인식하기 쉬운 아이콘.",
+          "second": "메뉴와 하위 메뉴 전반의 일관된 스타일링.",
+          "third": "중요한 작업은 일반적인 제어와 구별됩니다."
+        },
+        "description": "통화 및 유닛 메뉴가 이제 둥근 모서리, 일관된 간격, 더 명확한 작업 아이콘을 사용합니다.",
         "images": {
           "calls": {
+            "alt": "통화 메뉴 첨부, 기록 링크 복사, 톤 보드, 통화 종료 포함",
             "label": "통화"
           },
           "units": {
+            "alt": "업데이트된 유닛 컨텍스트 메뉴로 Add to Call, Add to Group, Lookup, Chat, Tone Board, Status, Edit Unit, Toggle Panic, 및 Kick Unit이 표시됩니다.",
             "label": "단위"
           },
           "windows": {
+            "alt": "창 잠금, 빠른 크기 조정, 데스크톱 변경, 맨 위로 가져오기, 최소화, 닫기 기능이 있는 창 작업 메뉴.",
             "label": "윈도우"
           }
-        }
+        },
+        "label": "업데이트된 작업 메뉴",
+        "location": "경찰, 소방, EMS 및 디스패치 → 작업 메뉴",
+        "title": "업데이트된 작업 메뉴"
+      },
+      "fiveMManagement": {
+        "alt": "서버 선택기, 플러그인 탐색, 프레임워크 선택, 세부 설정이 있는 FiveM 연동 패널.",
+        "benefits": {
+          "first": "FiveM 서버 간 전환.",
+          "second": "플러그인을 활성화하고 한 곳에서 설정을 편집하세요.",
+          "third": "구성 파일을 편집하는 대신 레이블이 지정된 컨트롤을 사용하세요."
+        },
+        "description": "FiveM 리소스를 설치한 후 config 파일을 수정하지 않고 CAD에서 바로 서버와 플러그인을 구성하세요.",
+        "label": "CAD를 통해 FiveM 리소스 관리",
+        "location": "관리 → 통합 → 게임 내 통합",
+        "title": "CAD를 통해 FiveM 리소스 관리"
       },
       "permissions": {
         "alt": "Incident Report에 대한 세부적인 레코드 권한, 보기, 생성, 내 것 수정, 모든 것 수정, 삭제, 그리고 감독자 필드 포함.",
@@ -5275,6 +5359,12 @@
     "preview": "곧 공개 · 미리보기",
     "previous": "이전 기능",
     "releases": {
+      "cad-3-45-0": {
+        "description": "CAD 안에서 FiveM 통합을 관리하세요. 새로운 캐릭터 메뉴, 더 깔끔한 액션, 더 쉽게 탐색할 수 있는 관리자 패널을 만나보세요.",
+        "shortTitle": "3.45.0의 새로운 기능",
+        "teaser": "CAD 내부의 FiveM 설정, 새로운 캐릭터 메뉴, 그리고 커뮤니티 전반의 더 명확한 컨트롤.",
+        "title": "커뮤니티를 운영하는 더 간단한 방법."
+      },
       "central-circle": {
         "description": "새로운 내장 테마는 CAD 작업 공간에 밝은 테이블과 어두운 헤더를 제공합니다.",
         "shortTitle": "중앙 원 만나기",
@@ -5683,7 +5773,7 @@
   "setupChecklist": {
     "addSync": "동기화 단계 추가",
     "allDone": "완료",
-    "awaitingAdmin": "관리자가 게임 통합 설정을 완료해야 합니다.",
+    "awaitingAdmin": "관리자가 게임 통합을 설정하거나 건너뛰어야 합니다.",
     "chooseFramework": "어떤 프레임워크를 사용하시나요?",
     "configureSync": "데이터베이스 동기화 열기",
     "currentStep": "{step}단계 / {total}단계",
@@ -5692,7 +5782,7 @@
     "dismiss": "설정 체크리스트 닫기",
     "done": "완료",
     "editFramework": "편집하다",
-    "fivemDownloadRequired": "나머지 CAD를 잠금 해제하려면 FiveM 리소스를 다운로드하세요.",
+    "fivemDownloadRequired": "FiveM 리소스를 다운로드하여 서버를 연결하세요.",
     "framework": "프레임워크",
     "frameworks": {
       "esx": "ESX",
@@ -5726,10 +5816,13 @@
     "previewWebhook": "Webhook 수신됨",
     "refresh": "설정 진행 상황 새로고침",
     "reopen": "설정 체크리스트",
-    "required": "이 커뮤니티를 잠금 해제하려면 게임 통합 설정을 완료하세요.",
+    "required": "게임 통합을 설정하거나 건너뛰어 이 커뮤니티를 잠금 해제하세요.",
     "saveFailed": "체크리스트 변경 사항이 저장되지 않았습니다. 다시 시도해 주세요.",
     "setUpSync": "설정",
     "shortTitle": "설정",
+    "skipIntegration": "건너뛰기",
+    "skipIntegrationFailed": "통합 설정을 건너뛸 수 없었습니다. 다시 시도하세요.",
+    "skipIntegrationHint": "지금 CAD를 사용하고 통합은 나중에 설정하세요.",
     "skipSetup": "설정 건너뛰기",
     "skipSync": "데이터베이스 동기화 건너뛰기",
     "steps": {

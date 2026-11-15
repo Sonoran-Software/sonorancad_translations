@@ -2166,16 +2166,39 @@
     "goBack": "Wróć"
   },
   "evidence": {
+    "addLink": "Dodaj URL pliku",
+    "attach": "Dołącz plik",
+    "attachSelected": "Dołącz zaznaczone ({count})",
+    "empty": "Brak dołączonych dowodów.",
+    "externalLink": "Otwórz ten plik, aby go wyświetlić.",
+    "fileType": "Typ pliku",
+    "invalidUrl": "Wprowadź prawidłowy adres URL HTTPS bez osadzonych danych uwierzytelniających.",
+    "name": "Nazwa (opcjonalnie)",
+    "noResults": "Brak pasujących plików.",
+    "openFile": "Otwórz plik",
     "removeFile": "Usuń {name}",
-    "select": "Wybierz"
+    "search": "Szukaj plików",
+    "select": "Wybierz",
+    "selectEvidence": "Wybierz dowody",
+    "title": "Dowody",
+    "types": {
+      "all": "Wszystkie",
+      "audio": "Audio",
+      "image": "Zdjęcia",
+      "link": "Linki",
+      "pdf": "Dokumenty",
+      "video": "Wideo"
+    },
+    "url": "Adres URL pliku HTTPS"
   },
   "fiveMServerConfig": {
     "add": "Dodaj element",
     "addServer": "Dodaj serwer",
     "commandCallTitle": "Tytuł wezwania",
-    "conflict": "Inny administrator zapisał ten serwer. Odrzuć swoje zmiany i odśwież, aby wczytać najnowszą wersję.",
+    "conflict": "Inny administrator zapisał ten serwer. Załaduj najnowszą konfigurację, aby kontynuować; zastąpi to Twoje niezapisane zmiany.",
     "copyCommandFailed": "Nie można skopiować polecenia. Spróbuj ponownie.",
     "copyMigrationCommand": "Skopiuj polecenie migracji",
+    "copyRestartCommand": "Skopiuj polecenie restartu",
     "customCallback": "Zarządzane w zasobie FiveM",
     "dependency": "Wymaga {plugins}",
     "disabled": "Wyłączone",
@@ -2723,8 +2746,11 @@
     "preview": "Podgląd z przykładowymi serwerami. Zmiany pozostają w tej zakładce.",
     "previous": "Poprzednia strona",
     "refresh": "Odśwież",
+    "reloadLatest": "Przeładuj najnowsze",
     "remove": "Usuń {item}",
+    "resetPluginMessage": "Przywróć domyślne ustawienia dla {plugin} na tym serwerze. Zmiany zapisują się automatycznie.",
     "restartNote": "Zapisane ustawienia zaczną obowiązywać przy następnym uruchomieniu zasobu FiveM.",
+    "restartRequired": "Uruchom ponownie zasób FiveM, aby zastosować zmiany.",
     "retrySave": "Spróbuj ponownie",
     "save": "Zapisz konfigurację",
     "saved": "Konfiguracja została zapisana.",
@@ -5193,16 +5219,16 @@
   },
   "recentPhotos": {
     "choose": "Wybierz zdjęcie",
-    "copyFailed": "Nie można skopiować URL zdjęcia.",
-    "copyUrl": "Skopiuj URL zdjęcia",
-    "empty": "Nie otrzymano jeszcze żadnych zdjęć.",
+    "copyFailed": "Nie można skopiować URL pliku.",
+    "copyUrl": "Skopiuj URL pliku",
+    "empty": "Nie otrzymano jeszcze żadnych plików.",
     "receivedAt": "Odebrano {time}",
     "replacePhoto": "Zamień zdjęcie",
-    "title": "Zdjęcia",
-    "unavailable": "Tego zdjęcia nie można było wczytać.",
+    "title": "Ostatnie pliki",
+    "unavailable": "Nie można było wyświetlić podglądu tego pliku.",
     "unknownTime": "Czas nieznany",
-    "unreadLabel": "Zdjęcia, {count} nieprzeczytane",
-    "urlCopied": "URL zdjęcia skopiowany.",
+    "unreadLabel": "Ostatnie pliki, {count} nieprzeczytane",
+    "urlCopied": "URL pliku skopiowany.",
     "usePhoto": "Użyj zdjęcia"
   },
   "recordEditing": {
@@ -5214,7 +5240,7 @@
     "selectedLabel": "Edytuj wybrane pola w rekordach innych osób"
   },
   "releaseHighlights": {
-    "archive": "Przeglądaj wydania",
+    "archive": "Poprzednie wydania",
     "brand": "Sonoran CAD",
     "changelog": "Pełny dziennik zmian",
     "close": "Zamknij",
@@ -5226,6 +5252,18 @@
     "eyebrow": "Nowości w Sonoran CAD",
     "features": "Funkcje wydania",
     "featuresCopy": {
+      "adminNavigation": {
+        "alt": "Przeprojektowana nawigacja administracyjna z kategoriami Ludzie i dostęp, Dostosowanie, Rekordy i kody, Integracje oraz System.",
+        "benefits": {
+          "first": "Znajdź ustawienia w pięciu przejrzystych kategoriach.",
+          "second": "Zobacz, co robi każda sekcja, zanim ją otworzysz.",
+          "third": "Wróć do kategorii nadrzędnej jednym działaniem wstecz."
+        },
+        "description": "Ustawienia administratora są zorganizowane w pięć kategorii, z oddzielnymi stronami dla każdego narzędzia.",
+        "label": "Zaktualizowana nawigacja administracyjna",
+        "location": "Menu społeczności → Administracja",
+        "title": "Zaktualizowana nawigacja administracyjna"
+      },
       "automations": {
         "alt": "Edytor automatyzacji rekordów z regułą raportu incydentu, która ustawia status Przegląd na Do weryfikacji przez przełożonego, gdy priorytet jest Wysoki.",
         "description": "Gdy rekord zostanie zapisany, sprawdź wybrane pola i automatycznie zaktualizuj inne pole. Dopasuj wszystkie warunki albo jeden z nich.",
@@ -5241,27 +5279,73 @@
         "title": "Znajomy wygląd. Świeże spojrzenie."
       },
       "chatGptPlugin": {
-        "action": "Otwórz w ChatGPT"
+        "action": "Otwórz w ChatGPT",
+        "alt": "logo ChatGPT",
+        "description": "Połącz Sonoran CAD z aplikacją Sonoran Software w ChatGPT, aby uzyskać pomoc w konfiguracji społeczności, ustawianiu integracji i tworzeniu niestandardowych szablonów rekordów.",
+        "label": "Wtyczka ChatGPT",
+        "location": "Administracja → Zapytaj ChatGPT",
+        "title": "Wtyczka ChatGPT",
+        "visualTitle": "Sonoran CAD + ChatGPT"
       },
       "communityMenus": {
+        "alt": "Menu społeczności FiveM z ilustrowanymi kartami ról.",
+        "benefits": {
+          "first": "Unikalna grafika postaci dla FiveM i ERLC.",
+          "second": "Wspólny nagłówek społeczności dla każdego stylu.",
+          "third": "Wybierz FiveM, ERLC lub Classic w personalizacji."
+        },
+        "description": "Nowe menu postaci FiveM i ERLC oraz zaktualizowany styl Classic. Wybierz styl swojej społeczności w Dostosowywaniu.",
         "images": {
+          "erlc": {
+            "alt": "Menu społeczności Liberty County Roleplay z kartami postaci cywilnych, dyspozytorni, policji, straży pożarnej, EMS, prawa, DMV i administracji w stylu Roblox.",
+            "label": "ERLC"
+          },
           "fivem": {
+            "alt": "Menu społeczności San Andreas Roleplay z kartami postaci cywilnych, policji, straży pożarnej, EMS, dyspozytorni, DMV, prawa i administracji FiveM.",
             "label": "FiveM"
           }
-        }
+        },
+        "label": "Nowe menu społeczności",
+        "location": "Menu społeczności · Administracja → Dostosowywanie → Menu społeczności",
+        "title": "Nowe menu społeczności"
       },
       "contextMenus": {
+        "alt": "Zaktualizowane menu kontekstowe jednostki pokazujące Dodaj do zgłoszenia, Dodaj do grupy, Wyszukaj, Czat, Tone Board, Status, Edytuj jednostkę, Przełącz panikę i Wyrzuć jednostkę.",
+        "benefits": {
+          "first": "Rozpoznawalne ikony przy każdej akcji.",
+          "second": "Spójny styl we wszystkich menu i podmenu.",
+          "third": "Działania o konsekwencjach wyróżniają się na tle rutynowych kontrolek."
+        },
+        "description": "Menu połączeń i jednostek teraz używają zaokrąglonych rogów, spójnych odstępów i czytelniejszych ikon akcji.",
         "images": {
           "calls": {
+            "alt": "Menu akcji połączenia z Dołącz do połączenia, Kopiuj link do rekordu, Tablica tonów i Zamknij połączenie.",
             "label": "Wezwania"
           },
           "units": {
+            "alt": "Zaktualizowane menu kontekstowe jednostki pokazujące Dodaj do zgłoszenia, Dodaj do grupy, Wyszukaj, Czat, Tone Board, Status, Edytuj jednostkę, Przełącz panikę i Wyrzuć jednostkę.",
             "label": "Jednostki"
           },
           "windows": {
+            "alt": "Menu akcji okna z Zablokuj okno, Szybka zmiana rozmiaru, Zmień pulpit, Przenieś na wierzch, Minimalizuj i Zamknij.",
             "label": "Windows"
           }
-        }
+        },
+        "label": "Zaktualizowane menu akcji",
+        "location": "Policja, Straż Pożarna, EMS i Dyspozytornia → Menu akcji",
+        "title": "Zaktualizowane menu akcji"
+      },
+      "fiveMManagement": {
+        "alt": "Panel integracji FiveM z selektorem serwera, nawigacją po wtyczkach, wyborami frameworków i precyzyjnymi ustawieniami.",
+        "benefits": {
+          "first": "Przełączaj się między swoimi serwerami FiveM.",
+          "second": "Włącz wtyczki i edytuj ich ustawienia w jednym miejscu.",
+          "third": "Używaj oznaczonych kontrolek zamiast edytować pliki konfiguracyjne."
+        },
+        "description": "Po zainstalowaniu zasobu FiveM skonfiguruj serwery i wtyczki bezpośrednio w CAD bez edytowania plików konfiguracyjnych.",
+        "label": "Zarządzaj zasobem FiveM przez CAD",
+        "location": "Administracja → Integracje → Integracja w grze",
+        "title": "Zarządzaj zasobem FiveM przez CAD"
       },
       "permissions": {
         "alt": "Szczegółowe uprawnienia do rekordów dla Incident Report, obejmujące podgląd, tworzenie, edycję własnych, edycję dowolnych, usuwanie i pola przełożonego.",
@@ -5284,6 +5368,12 @@
     "preview": "Wkrótce · Podgląd",
     "previous": "Poprzednia funkcja",
     "releases": {
+      "cad-3-45-0": {
+        "description": "Zarządzaj integracją FiveM w CAD. Poznaj nowe menu postaci, czytelniejsze akcje i łatwiejszy w nawigacji panel administracyjny.",
+        "shortTitle": "Co nowego w 3.45.0",
+        "teaser": "Ustawienia FiveM w CAD, nowe menu postaci i bardziej przejrzyste sterowanie w całej twojej społeczności.",
+        "title": "Prostszy sposób na prowadzenie swojej społeczności."
+      },
       "central-circle": {
         "description": "Nowy wbudowany motyw wprowadza jasne tabele i ciemne nagłówki do Twojego obszaru roboczego CAD.",
         "shortTitle": "Poznaj Centrum",
@@ -5692,7 +5782,7 @@
   "setupChecklist": {
     "addSync": "Dodaj krok synchronizacji",
     "allDone": "Zakończone",
-    "awaitingAdmin": "Administrator musi dokończyć konfigurację integracji gry.",
+    "awaitingAdmin": "Administrator musi skonfigurować lub pominąć integrację gry.",
     "chooseFramework": "Z jakiego frameworka korzystasz?",
     "configureSync": "Otwórz synchronizację bazy danych",
     "currentStep": "Krok {step} z {total}",
@@ -5701,7 +5791,7 @@
     "dismiss": "Odrzuć listę kontrolną konfiguracji",
     "done": "Zakończone",
     "editFramework": "Edytuj",
-    "fivemDownloadRequired": "Pobierz zasób FiveM, aby odblokować resztę CAD.",
+    "fivemDownloadRequired": "Pobierz zasób FiveM, aby połączyć swój serwer.",
     "framework": "Framework",
     "frameworks": {
       "esx": "ESX",
@@ -5735,10 +5825,13 @@
     "previewWebhook": "Webhook odebrany",
     "refresh": "Odśwież postęp konfiguracji",
     "reopen": "Lista kontrolna konfiguracji",
-    "required": "Zakończ konfigurację integracji z grą, aby odblokować tę społeczność.",
+    "required": "Skonfiguruj lub pomiń integrację gry, aby odblokować tę społeczność.",
     "saveFailed": "Twoja zmiana listy kontrolnej nie została zapisana. Spróbuj ponownie.",
     "setUpSync": "Skonfiguruj",
     "shortTitle": "Konfiguracja",
+    "skipIntegration": "Pomiń",
+    "skipIntegrationFailed": "Nie udało się pominąć konfiguracji integracji. Spróbuj ponownie.",
+    "skipIntegrationHint": "Użyj CAD teraz i skonfiguruj integrację później.",
     "skipSetup": "Pomiń konfigurację",
     "skipSync": "Pomiń synchronizację bazy danych",
     "steps": {
