@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "在 ChatGPT 中使用官方 Sonoran Software 應用程式以協助設定您的 CAD 社群和整合。",
       "open": "在 ChatGPT 中開啟",
+      "penalCodesDescription": "登入 Sonoran CAD 於 ChatGPT 以為您的社群產生刑法代碼。",
+      "penalCodesTitle": "使用 ChatGPT 建立刑罰代碼",
       "recordDescription": "登入 Sonoran CAD 於 ChatGPT 以為您的社群產生表單。",
       "recordTitle": "使用 ChatGPT 建立紀錄範本",
+      "tenCodesDescription": "登入 Sonoran CAD 於 ChatGPT 以為您的社群產生 10 代碼。",
+      "tenCodesTitle": "使用 ChatGPT 建立 10 碼",
       "title": "詢問 ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "桌面",
       "discordIntegration": "DIscord整合功能",
       "documentation": "文件",
-      "identifiers": "員警身份",
+      "identifiers": "單位識別碼",
       "inGameIntegration": "遊戲內整合功能",
       "limits": "限制",
       "logs": "記錄",
@@ -1722,6 +1726,93 @@
       "message": "體驗全新 Beta"
     }
   },
+  "audioNotifications": {
+    "appearance": "外觀",
+    "customTone": "自訂音調",
+    "customToneHint": "為任何通知上傳自訂音調。將欄位留空以使用預設音調。成員可選擇自己的通知模式。",
+    "description": "選擇每個事件要聽到的內容。這些偏好會儲存在此裝置上。社群自訂音調在可用時會使用。",
+    "dynamicSpeech": "動態語音",
+    "dynamicSpeechHint": "讀出查詢警告、可選聊天訊息，以及音調板文字。錄製通知可在 自訂 / 音訊通知 中控制。",
+    "events": {
+      "callAssigned": {
+        "hint": "當您的單位被指派派遣通話時。",
+        "label": "已指派通話"
+      },
+      "callClose": {
+        "hint": "當您螢幕上的通話被關閉時。",
+        "label": "呼叫已關閉"
+      },
+      "callEdit": {
+        "hint": "您螢幕上開啟的通話的其他更新。",
+        "label": "排程更新"
+      },
+      "callOpen": {
+        "hint": "指揮中心或自助派遣收到的新通話。",
+        "label": "新建調度呼叫"
+      },
+      "callPriority": {
+        "hint": "您螢幕上開啟的通話優先順序會變更。",
+        "label": "通話優先順序已變更"
+      },
+      "callRemoved": {
+        "hint": "當你的單位被解除編組或重新指派時。",
+        "label": "已從通話中移除"
+      },
+      "chat": {
+        "hint": "來自其他單位的新聊天訊息。",
+        "label": "進線單位訊息"
+      },
+      "dispatchNote": {
+        "hint": "您螢幕上開啟的通話的新註記。",
+        "label": "已新增排程備註"
+      },
+      "emergencyCall": {
+        "hint": "調度收到的緊急來電",
+        "label": "來電緊急呼叫"
+      },
+      "panic": {
+        "hint": "當單位啟動其恐慌警報時。",
+        "label": "單位緊急狀態"
+      },
+      "signalClear": {
+        "hint": "當緊急訊號被解除時。",
+        "label": "訊號已清除"
+      },
+      "signal": {
+        "hint": "當緊急訊號生效時。",
+        "label": "訊號已啟動"
+      },
+      "statusChange": {
+        "hint": "回應您的快速狀態變更。",
+        "label": "狀態已更新"
+      },
+      "timer": {
+        "hint": "當倒數計時器結束時。",
+        "label": "計時器已過期"
+      }
+    },
+    "groups": {
+      "activity": "訊息與活動",
+      "calls": "您的呼叫",
+      "dispatch": "排程"
+    },
+    "lookupWarnings": "查詢警告",
+    "modes": {
+      "both": "音調 + 語音",
+      "off": "關閉",
+      "tone": "語氣",
+      "voice": "語音"
+    },
+    "preview": "預覽 {event}",
+    "previewError": "無法播放此通知。請再試一次。",
+    "resetTone": "使用預設鈴聲",
+    "retry": "重試",
+    "saveError": "無法儲存您的音訊偏好設定。請再試一次。",
+    "stopPreview": "停止預覽",
+    "title": "音訊通知",
+    "voiceHint": "語音通知使用已錄製的英文公告。查詢警示、可選訊息朗讀與音板語音會使用您現有的語音設定。",
+    "volume": "CAD 音量"
+  },
   "automations": {
     "actionMode": "操作",
     "actions": {
@@ -2054,6 +2145,10 @@
     "setCustomDomain": "設定 自訂 網域",
     "txt": "TXT",
     "youMustOwnYourDomainName": "您必須擁有您的網域才能設定自訂網域。"
+  },
+  "customizationNavigation": {
+    "audio": "音訊",
+    "workspace": "工作區"
   },
   "desktopOverlay": {
     "adjustOpacity": "調整 遮蔽 不透明度",

@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "Gebruik de officiële Sonoran Software-app in ChatGPT voor hulp bij het configureren van je CAD-community en het instellen van integraties.",
       "open": "Openen in ChatGPT",
+      "penalCodesDescription": "Meld je aan bij Sonoran CAD in ChatGPT om strafcodes voor je community te genereren.",
+      "penalCodesTitle": "Maak strafcodes aan met ChatGPT",
       "recordDescription": "Meld je aan bij Sonoran CAD in ChatGPT om formulieren voor je community te genereren.",
       "recordTitle": "Maak recordsjablonen met ChatGPT",
+      "tenCodesDescription": "Meld je aan bij Sonoran CAD in ChatGPT om 10-codes voor je community te genereren.",
+      "tenCodesTitle": "Maak 10 codes aan met ChatGPT",
       "title": "Vraag ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "Bureaubladen",
       "discordIntegration": "Discord Integratie",
       "documentation": "Documentatie",
-      "identifiers": "Identificaties",
+      "identifiers": "Eenheids-ID's",
       "inGameIntegration": "In-Game Integratie",
       "limits": "Limieten",
       "logs": "Logboeken",
@@ -1723,54 +1727,90 @@
     }
   },
   "audioNotifications": {
+    "appearance": "Uiterlijk",
     "customTone": "Aangepaste toon",
+    "customToneHint": "Upload een aangepaste toon voor elke melding. Laat een veld leeg om de standaardtoon te gebruiken. Leden kiezen hun eigen meldingsmodi.",
     "description": "Kies wat je hoort voor elk evenement. Deze voorkeuren worden op dit apparaat opgeslagen. Aangepaste community-tonen worden gebruikt wanneer beschikbaar.",
+    "dynamicSpeech": "Dynamische spraak",
     "dynamicSpeechHint": "Leest opzoekwaarschuwingen, optionele chatberichten en tone-boardtekst. Opgenomen meldingen worden beheerd in Aanpassing / Audiomeldingen.",
     "events": {
       "callAssigned": {
-        "hint": "Wanneer jouw eenheid een dispatchoproep krijgt toegewezen."
+        "hint": "Wanneer jouw eenheid een dispatchoproep krijgt toegewezen.",
+        "label": "Toegewezen aan een oproep"
       },
       "callClose": {
-        "hint": "Wanneer een oproep die op je scherm openstaat wordt gesloten."
+        "hint": "Wanneer een oproep die op je scherm openstaat wordt gesloten.",
+        "label": "Melding gesloten"
+      },
+      "callEdit": {
+        "hint": "Andere updates aan een oproep die op uw scherm openstaat.",
+        "label": "Dispatch geupdate"
       },
       "callOpen": {
-        "hint": "Nieuwe oproepen ontvangen door dispatch of zelfdispatch."
+        "hint": "Nieuwe oproepen ontvangen door dispatch of zelfdispatch.",
+        "label": "Nieuwe meldingsoproep"
       },
       "callPriority": {
+        "hint": "Prioriteit wijzigt naar een oproep die op uw scherm openstaat.",
         "label": "Oproepprioriteit gewijzigd"
       },
       "callRemoved": {
+        "hint": "Wanneer je eenheid wordt losgekoppeld of opnieuw toegewezen.",
         "label": "Verwijderd uit een melding"
       },
       "chat": {
+        "hint": "Nieuwe chatberichten van andere eenheden.",
         "label": "Inkomend eenheidsbericht"
       },
+      "dispatchNote": {
+        "hint": "Nieuwe notities bij een oproep die op uw scherm openstaat.",
+        "label": "Dispatch notitie toegevoegd"
+      },
       "emergencyCall": {
-        "hint": "Inkomende noodoproepen ontvangen door dispatch."
+        "hint": "Inkomende noodoproepen ontvangen door dispatch.",
+        "label": "Binnenkomende noodmelding"
       },
       "panic": {
-        "hint": "Wanneer een eenheid zijn paniekalarm activeert."
+        "hint": "Wanneer een eenheid zijn paniekalarm activeert.",
+        "label": "Noodknop"
       },
       "signalClear": {
-        "hint": "Wanneer een noodsignaal wordt opgeheven."
+        "hint": "Wanneer een noodsignaal wordt opgeheven.",
+        "label": "Signaal gewist"
       },
       "signal": {
+        "hint": "Wanneer een noodsignaal van kracht wordt.",
         "label": "Signaal geactiveerd"
       },
       "statusChange": {
-        "hint": "Bevestigt je snelle statuswijzigingen."
+        "hint": "Bevestigt je snelle statuswijzigingen.",
+        "label": "Status bijgewerkt"
       },
       "timer": {
         "hint": "Wanneer een afteltimer is afgelopen.",
         "label": "Timer verlopen"
       }
     },
+    "groups": {
+      "activity": "Berichten en activiteit",
+      "calls": "Uw meldingen",
+      "dispatch": "Dispatch"
+    },
     "lookupWarnings": "Opzoekwaarschuwingen",
     "modes": {
       "both": "Toon + spraak",
       "off": "Uit",
+      "tone": "Toon",
       "voice": "Spraak"
     },
+    "preview": "Voorbeeld {event}",
+    "previewError": "Kon deze melding niet afspelen. Probeer opnieuw.",
+    "resetTone": "Gebruik standaardtoon",
+    "retry": "Opnieuw proberen",
+    "saveError": "Uw audio-instellingen konden niet worden opgeslagen. Probeer het opnieuw.",
+    "stopPreview": "Stop voorvertoning",
+    "title": "Audionotificaties",
+    "voiceHint": "Spraakmeldingen gebruiken opgenomen Engelse aankondigingen. Opzoekwaarschuwingen, optionele voorleesberichten en spraak van het toonbord gebruiken je bestaande steminstellingen.",
     "volume": "CAD-volume"
   },
   "automations": {
@@ -2104,6 +2144,10 @@
     "setCustomDomain": "Aangepast domein instellen",
     "txt": "TXT",
     "youMustOwnYourDomainName": "Je moet je domein bezitten om een aangepast domein in te stellen."
+  },
+  "customizationNavigation": {
+    "audio": "Audio",
+    "workspace": "Werkruimte"
   },
   "desktopOverlay": {
     "adjustOpacity": "Pas overlay-dekking aan",

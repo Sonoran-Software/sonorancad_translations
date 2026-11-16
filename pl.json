@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "Użyj oficjalnej aplikacji Sonoran Software w ChatGPT, aby uzyskać pomoc w konfiguracji społeczności CAD i ustawianiu integracji.",
       "open": "Otwórz w ChatGPT",
+      "penalCodesDescription": "Zaloguj się do Sonoran CAD w ChatGPT, aby generować kody karne dla swojej społeczności.",
+      "penalCodesTitle": "Twórz kody karne z ChatGPT",
       "recordDescription": "Zaloguj się do Sonoran CAD w ChatGPT, aby generować formularze dla swojej społeczności.",
       "recordTitle": "Twórz szablony rekordów za pomocą ChatGPT",
+      "tenCodesDescription": "Zaloguj się do Sonoran CAD w ChatGPT, aby generować kody 10 dla swojej społeczności.",
+      "tenCodesTitle": "Twórz 10 kodów z ChatGPT",
       "title": "Zapytaj ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "Pulpity",
       "discordIntegration": "Integracja z Discordem",
       "documentation": "Dokumentacja",
-      "identifiers": "Kryptonimy",
+      "identifiers": "Kryptonimy jednostek",
       "inGameIntegration": "Integracja w grze",
       "limits": "Limity",
       "logs": "Logi",
@@ -1722,6 +1726,93 @@
       "message": "Wypróbuj nową wersję beta"
     }
   },
+  "audioNotifications": {
+    "appearance": "Wygląd",
+    "customTone": "Niestandardowy dźwięk",
+    "customToneHint": "Prześlij niestandardowy dźwięk dla dowolnego powiadomienia. Pozostaw pole puste, aby użyć standardowego dźwięku. Członkowie wybierają własne tryby powiadomień.",
+    "description": "Wybierz, co słyszysz dla każdego zdarzenia. Te preferencje są zapisywane na tym urządzeniu. Gdy są dostępne, używane są niestandardowe dźwięki społeczności.",
+    "dynamicSpeech": "Dynamiczna mowa",
+    "dynamicSpeechHint": "Odczytuje ostrzeżenia wyszukiwania, opcjonalne wiadomości czatu i tekst tablicy sygnałowej. Nagrania powiadomień są kontrolowane w Dostosowanie / Powiadomienia audio.",
+    "events": {
+      "callAssigned": {
+        "hint": "Gdy twoja jednostka zostanie przydzielona do zgłoszenia.",
+        "label": "Przypisano do połączenia"
+      },
+      "callClose": {
+        "hint": "Gdy połączenie otwarte na Twoim ekranie zostanie zamknięte.",
+        "label": "Połączenie zamknięte"
+      },
+      "callEdit": {
+        "hint": "Inne zmiany w połączeniu otwartym na ekranie.",
+        "label": "Zgłoszenie zaktualizowane"
+      },
+      "callOpen": {
+        "hint": "Nowe połączenia odebrane przez dyspozytora lub samodyspozycję.",
+        "label": "Nowe wezwanie dyspozytorskie"
+      },
+      "callPriority": {
+        "hint": "Priorytet zmienia się dla połączenia otwartego na ekranie.",
+        "label": "Priorytet zgłoszenia zmieniony"
+      },
+      "callRemoved": {
+        "hint": "Gdy Twoja jednostka zostanie odłączona lub przypisana ponownie.",
+        "label": "Usunięto z wezwania"
+      },
+      "chat": {
+        "hint": "Nowe wiadomości na czacie od innych jednostek.",
+        "label": "Komunikat o nadchodzącej jednostce"
+      },
+      "dispatchNote": {
+        "hint": "Nowe notatki w połączeniu otwartym na Twoim ekranie.",
+        "label": "Dodano notatkę dyspozytorską"
+      },
+      "emergencyCall": {
+        "hint": "Przychodzące połączenia alarmowe odebrane przez dyspozytornię.",
+        "label": "Przychodzące połączenie alarmowe"
+      },
+      "panic": {
+        "hint": "Gdy jednostka aktywuje alarm paniki.",
+        "label": "Panika jednostki"
+      },
+      "signalClear": {
+        "hint": "Gdy sygnał alarmowy zostaje skasowany.",
+        "label": "Sygnał wyczyszczony"
+      },
+      "signal": {
+        "hint": "Gdy sygnał alarmowy zaczyna obowiązywać.",
+        "label": "Sygnał aktywowany"
+      },
+      "statusChange": {
+        "hint": "Potwierdza Twoje szybkie zmiany statusu.",
+        "label": "Status zaktualizowany"
+      },
+      "timer": {
+        "hint": "Gdy timer odliczania dobiega końca.",
+        "label": "Minął czas"
+      }
+    },
+    "groups": {
+      "activity": "Wiadomości i aktywność",
+      "calls": "Twoje wezwania",
+      "dispatch": "Wezwanie"
+    },
+    "lookupWarnings": "Ostrzeżenia wyszukiwania",
+    "modes": {
+      "both": "Dźwięk + głos",
+      "off": "Wyłączone",
+      "tone": "Ton",
+      "voice": "Głos"
+    },
+    "preview": "Podgląd {event}",
+    "previewError": "Nie można odtworzyć tego powiadomienia. Spróbuj ponownie.",
+    "resetTone": "Użyj domyślnego tonu",
+    "retry": "Spróbuj ponownie",
+    "saveError": "Nie można zapisać Twoich ustawień dźwięku. Spróbuj ponownie.",
+    "stopPreview": "Zatrzymaj podgląd",
+    "title": "Powiadomienia dźwiękowe",
+    "voiceHint": "Powiadomienia głosowe używają nagranych angielskich komunikatów. Ostrzeżenia Lookup, opcjonalne odczyty wiadomości i komunikaty z tonowej tablicy korzystają z Twoich istniejących ustawień głosu.",
+    "volume": "Głośność CAD"
+  },
   "automations": {
     "actionMode": "Akcja",
     "actions": {
@@ -2054,6 +2145,10 @@
     "setCustomDomain": "Ustaw własną domenę",
     "txt": "TXT",
     "youMustOwnYourDomainName": "Musisz posiadać własną domenę, aby skonfigurować domenę niestandardową."
+  },
+  "customizationNavigation": {
+    "audio": "Audio",
+    "workspace": "Obszar roboczy"
   },
   "desktopOverlay": {
     "adjustOpacity": "Dostosuj krycie nakładki",

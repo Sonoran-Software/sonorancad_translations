@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "Bruk den offisielle Sonoran Software-appen i ChatGPT for hjelp med å konfigurere CAD-fellesskapet ditt og sette opp integrasjoner.",
       "open": "Åpne i ChatGPT",
+      "penalCodesDescription": "Logg inn på Sonoran CAD i ChatGPT for å generere straffelover for lokalsamfunnet ditt.",
+      "penalCodesTitle": "Opprett straffekoder med ChatGPT",
       "recordDescription": "Logg inn på Sonoran CAD i ChatGPT for å generere skjemaer for lokalsamfunnet ditt.",
       "recordTitle": "Opprett maler for registrering med ChatGPT",
+      "tenCodesDescription": "Logg inn på Sonoran CAD i ChatGPT for å generere 10-koder for lokalsamfunnet ditt.",
+      "tenCodesTitle": "Opprett 10-koder med ChatGPT",
       "title": "Spør ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "Skrivebord",
       "discordIntegration": "Discord integrasjon",
       "documentation": "Dokumentasjon",
-      "identifiers": "Kallesignaler",
+      "identifiers": "Enhetskallesignaler",
       "inGameIntegration": "Integrasjon i spillet",
       "limits": "Grenser",
       "logs": "Logger",
@@ -1722,6 +1726,93 @@
       "message": "Opplev den nye betaversjonen"
     }
   },
+  "audioNotifications": {
+    "appearance": "Utseende",
+    "customTone": "Tilpasset tone",
+    "customToneHint": "Last opp en egendefinert tone for ethvert varsel. La et felt stå tomt for å bruke standardtonen. Medlemmer velger sine egne varslingsmoduser.",
+    "description": "Velg hva du hører for hver hendelse. Disse innstillingene lagres på denne enheten. Egendefinerte fellesskapstoner brukes når de er tilgjengelige.",
+    "dynamicSpeech": "Dynamisk tale",
+    "dynamicSpeechHint": "Leser oppslagvarsler, valgfrie chatmeldinger og toneboard-tekst. Innspilte varsler styres i Tilpasning / Lydvarsler.",
+    "events": {
+      "callAssigned": {
+        "hint": "Når din enhet blir tildelt en utkallingsoppdrag.",
+        "label": "Tildelt et anrop"
+      },
+      "callClose": {
+        "hint": "Når en samtale som er åpen på skjermen din, lukkes.",
+        "label": "Samtale avsluttet"
+      },
+      "callEdit": {
+        "hint": "Andre oppdateringer til en samtale som er åpen på skjermen din.",
+        "label": "Oppdrag oppdatert"
+      },
+      "callOpen": {
+        "hint": "Nye anrop mottatt av dispatch eller selv-dispatch.",
+        "label": "Ny utalarmering"
+      },
+      "callPriority": {
+        "hint": "Prioritet endres til en samtale som er åpen på skjermen din.",
+        "label": "Anropsprioritet endret"
+      },
+      "callRemoved": {
+        "hint": "Når enheten din blir frakoblet eller omplassert.",
+        "label": "Fjernet fra et anrop"
+      },
+      "chat": {
+        "hint": "Nye chattmeldinger fra andre enheter.",
+        "label": "Innkommende enhetsmelding"
+      },
+      "dispatchNote": {
+        "hint": "Nye notater på en samtale som er åpen på skjermen din.",
+        "label": "Oppdragsnotat lagt til"
+      },
+      "emergencyCall": {
+        "hint": "Innkommende nødanrop mottatt av sentralen.",
+        "label": "Innkommende nødanrop"
+      },
+      "panic": {
+        "hint": "Når en enhet aktiverer panikalarmen.",
+        "label": "Panikknapp for enhet"
+      },
+      "signalClear": {
+        "hint": "Når et nødsignal er opphevet.",
+        "label": "Signal fjernet"
+      },
+      "signal": {
+        "hint": "Når et nødsignal trer i kraft.",
+        "label": "Signal aktivert"
+      },
+      "statusChange": {
+        "hint": "Bekrefter dine raske statusendringer.",
+        "label": "Status oppdatert"
+      },
+      "timer": {
+        "hint": "Når en nedtellings-timer er ferdig.",
+        "label": "Tidsuret er utløpt"
+      }
+    },
+    "groups": {
+      "activity": "Meldinger og aktivitet",
+      "calls": "Dine anrop",
+      "dispatch": "Oppdrag"
+    },
+    "lookupWarnings": "Oppslagsadvarsler",
+    "modes": {
+      "both": "Tone + stemme",
+      "off": "Av",
+      "tone": "Tone",
+      "voice": "Stemme"
+    },
+    "preview": "Forhåndsvis {event}",
+    "previewError": "Kunne ikke spille av dette varselet. Prøv igjen.",
+    "resetTone": "Bruk standardtone",
+    "retry": "Prøv på nytt",
+    "saveError": "Kunne ikke lagre lydinnstillingene dine. Prøv igjen.",
+    "stopPreview": "Stopp forhåndsvisning",
+    "title": "Lydvarsler",
+    "voiceHint": "Talemeldinger bruker innspilte engelske kunngjøringer. Oppslagsvarsler, valgfrie meldingsopplesninger og tale fra tonebrettet bruker dine eksisterende taleinnstillinger.",
+    "volume": "CAD-volum"
+  },
   "automations": {
     "actionMode": "Handling",
     "actions": {
@@ -2053,6 +2144,10 @@
     "setCustomDomain": "Angi egendefinert domene",
     "txt": "TXT",
     "youMustOwnYourDomainName": "Du må eie domenet ditt for å konfigurere et egendefinert domene."
+  },
+  "customizationNavigation": {
+    "audio": "Lyd",
+    "workspace": "Arbeidsområde"
   },
   "desktopOverlay": {
     "adjustOpacity": "Juster overleggsgjennomsiktighet",
