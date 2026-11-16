@@ -1,4 +1,92 @@
 {
+  "customizationNavigation": { "workspace": "Workspace", "audio": "Audio" },
+  "audioNotifications": {
+    "lookupWarnings": "Lookup warnings",
+    "resetTone": "Use default tone",
+    "title": "Audio notifications",
+    "dynamicSpeech": "Dynamic speech",
+    "dynamicSpeechHint": "Reads lookup warnings, optional chat messages, and tone-board text. Recorded notifications are controlled in Customization / Audio notifications.",
+    "appearance": "Appearance",
+    "description": "Choose what you hear for each event. These preferences are saved on this device. Community custom tones are used when available.",
+    "volume": "CAD volume",
+    "groups": {
+      "calls": "Your calls",
+      "dispatch": "Dispatch",
+      "activity": "Messages and activity"
+    },
+    "modes": {
+      "off": "Off",
+      "tone": "Tone",
+      "voice": "Voice",
+      "both": "Tone + voice"
+    },
+    "events": {
+      "callAssigned": {
+        "label": "Assigned to a call",
+        "hint": "When your unit is assigned a dispatch call."
+      },
+      "callRemoved": {
+        "label": "Removed from a call",
+        "hint": "When your unit is detached or reassigned."
+      },
+      "callPriority": {
+        "label": "Call priority changed",
+        "hint": "Priority changes to a call open on your screen."
+      },
+      "callEdit": {
+        "label": "Dispatch updated",
+        "hint": "Other updates to a call open on your screen."
+      },
+      "callClose": {
+        "label": "Call closed",
+        "hint": "When a call open on your screen is closed."
+      },
+      "dispatchNote": {
+        "label": "Dispatch note added",
+        "hint": "New notes on a call open on your screen."
+      },
+      "callOpen": {
+        "label": "New dispatch call",
+        "hint": "New calls received by dispatch or self-dispatch."
+      },
+      "emergencyCall": {
+        "label": "Incoming emergency call",
+        "hint": "Incoming emergency calls received by dispatch."
+      },
+      "chat": {
+        "label": "Incoming unit message",
+        "hint": "New chat messages from other units."
+      },
+      "panic": {
+        "label": "Unit panic",
+        "hint": "When a unit activates its panic alert."
+      },
+      "signal": {
+        "label": "Signal activated",
+        "hint": "When an emergency signal takes effect."
+      },
+      "signalClear": {
+        "label": "Signal cleared",
+        "hint": "When an emergency signal is cleared."
+      },
+      "statusChange": {
+        "label": "Status updated",
+        "hint": "Acknowledges your quick status changes."
+      },
+      "timer": {
+        "label": "Timer expired",
+        "hint": "When a countdown timer finishes."
+      }
+    },
+    "preview": "Preview {event}",
+    "stopPreview": "Stop preview",
+    "saveError": "Could not save your audio preferences. Try again.",
+    "previewError": "Could not play this notification. Try again.",
+    "retry": "Retry",
+    "voiceHint": "Voice notifications use recorded English announcements. Lookup warnings, optional message readouts, and tone-board speech use your existing voice settings.",
+    "customToneHint": "Upload a custom tone for any notification. Leave a field empty to use the stock tone. Members choose their own notification modes.",
+    "customTone": "Custom tone"
+  },
   "account": {
     "adMeasurement": {
       "close": "Close",
@@ -133,6 +221,10 @@
       "description": "Use the official Sonoran Software app in ChatGPT for help configuring your CAD community and setting up integrations.",
       "open": "Open in ChatGPT",
       "recordDescription": "Sign in to Sonoran CAD in ChatGPT to generate forms for your community.",
+      "tenCodesTitle": "Create 10 codes with ChatGPT",
+      "tenCodesDescription": "Sign in to Sonoran CAD in ChatGPT to generate 10 codes for your community.",
+      "penalCodesTitle": "Create penal codes with ChatGPT",
+      "penalCodesDescription": "Sign in to Sonoran CAD in ChatGPT to generate penal codes for your community.",
       "recordTitle": "Create record templates with ChatGPT",
       "title": "Ask ChatGPT"
     },
@@ -784,7 +876,7 @@
       "desktops": "Desktops",
       "discordIntegration": "Discord Integration",
       "documentation": "Documentation",
-      "identifiers": "Identifiers",
+      "identifiers": "Unit Identifiers",
       "inGameIntegration": "In-Game Integration",
       "limits": "Limits",
       "logs": "Logs",
