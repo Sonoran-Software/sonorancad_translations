@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "Use o app oficial da Sonoran Software no ChatGPT para ajuda na configuração da sua comunidade CAD e na configuração de integrações.",
       "open": "Abrir no ChatGPT",
+      "penalCodesDescription": "Inicie sessão no Sonoran CAD no ChatGPT para gerar códigos penais para a sua comunidade.",
+      "penalCodesTitle": "Criar códigos penais com o ChatGPT",
       "recordDescription": "Inicie sessão no Sonoran CAD no ChatGPT para gerar formulários para a sua comunidade.",
       "recordTitle": "Criar modelos de registro com o ChatGPT",
+      "tenCodesDescription": "Inicie sessão no Sonoran CAD no ChatGPT para gerar códigos 10 para a sua comunidade.",
+      "tenCodesTitle": "Criar 10 códigos com o ChatGPT",
       "title": "Perguntar ao ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "Ambientes de trabalho",
       "discordIntegration": "Integração com o Discord",
       "documentation": "Documentação",
-      "identifiers": "Identificadores",
+      "identifiers": "Identificadores da Unidade",
       "inGameIntegration": "Integração com o Jogo",
       "limits": "Limites",
       "logs": "Registros",
@@ -1722,6 +1726,93 @@
       "message": "Experimente a nova Beta"
     }
   },
+  "audioNotifications": {
+    "appearance": "Aparência",
+    "customTone": "Tom personalizado",
+    "customToneHint": "Envie um tom personalizado para qualquer notificação. Deixe um campo vazio para usar o tom padrão. Os membros escolhem seus próprios modos de notificação.",
+    "description": "Escolha o que você ouve para cada evento. Essas preferências são salvas neste dispositivo. Tons personalizados da comunidade são usados quando disponíveis.",
+    "dynamicSpeech": "Fala dinâmica",
+    "dynamicSpeechHint": "Lê avisos de consulta, mensagens opcionais do chat e texto do painel de tons. As notificações gravadas são controladas em Personalização / Notificações de áudio.",
+    "events": {
+      "callAssigned": {
+        "hint": "Quando sua unidade é designada para uma chamada de despacho.",
+        "label": "Atribuído a uma chamada"
+      },
+      "callClose": {
+        "hint": "Quando uma chamada aberta na sua tela é encerrada.",
+        "label": "Chamada fechada"
+      },
+      "callEdit": {
+        "hint": "Outras atualizações para uma chamada aberta na sua tela.",
+        "label": "Despacho atualizado"
+      },
+      "callOpen": {
+        "hint": "Novas chamadas recebidas pelo despacho ou autoatendimento.",
+        "label": "Nova chamada de despacho"
+      },
+      "callPriority": {
+        "hint": "A prioridade muda para uma chamada aberta na sua tela.",
+        "label": "Prioridade da chamada alterada"
+      },
+      "callRemoved": {
+        "hint": "Quando sua unidade for destacada ou reatribuída.",
+        "label": "Removido de uma chamada"
+      },
+      "chat": {
+        "hint": "Novas mensagens de chat de outras unidades.",
+        "label": "Mensagem de unidade recebida"
+      },
+      "dispatchNote": {
+        "hint": "Novas notas em uma chamada aberta na sua tela.",
+        "label": "Nota de Despacho adicionada"
+      },
+      "emergencyCall": {
+        "hint": "Chamadas de emergência recebidas pela central.",
+        "label": "Chamada de emergência recebida"
+      },
+      "panic": {
+        "hint": "Quando uma unidade ativa o seu alerta de pânico.",
+        "label": "Pânico da unidade"
+      },
+      "signalClear": {
+        "hint": "Quando um sinal de emergência é cancelado.",
+        "label": "Sinal limpo"
+      },
+      "signal": {
+        "hint": "Quando um sinal de emergência entra em vigor.",
+        "label": "Sinal ativado"
+      },
+      "statusChange": {
+        "hint": "Reconhece suas mudanças rápidas de status.",
+        "label": "Status atualizado"
+      },
+      "timer": {
+        "hint": "Quando um temporizador regressivo termina.",
+        "label": "Tempo expirado"
+      }
+    },
+    "groups": {
+      "activity": "Mensagens e atividade",
+      "calls": "Suas chamadas",
+      "dispatch": "Central"
+    },
+    "lookupWarnings": "Avisos de consulta",
+    "modes": {
+      "both": "Tom + voz",
+      "off": "Desativado",
+      "tone": "Tom",
+      "voice": "Voz"
+    },
+    "preview": "Pré-visualização {event}",
+    "previewError": "Não foi possível reproduzir esta notificação. Tente novamente.",
+    "resetTone": "Usar tom padrão",
+    "retry": "Tentar novamente",
+    "saveError": "Não foi possível salvar suas preferências de áudio. Tente novamente.",
+    "stopPreview": "Parar pré-visualização",
+    "title": "Notificações de áudio",
+    "voiceHint": "As notificações de voz usam anúncios gravados em inglês. Os avisos de pesquisa, as leituras opcionais de mensagens e a fala do quadro de tons usam as suas definições de voz existentes.",
+    "volume": "Volume do CAD"
+  },
   "automations": {
     "actionMode": "Ação",
     "actions": {
@@ -2054,6 +2145,10 @@
     "setCustomDomain": "Definir Domínio Personalizado",
     "txt": "TXT",
     "youMustOwnYourDomainName": "Você deve ser o proprietário do seu domínio para configurar um domínio personalizado."
+  },
+  "customizationNavigation": {
+    "audio": "Áudio",
+    "workspace": "Área de trabalho"
   },
   "desktopOverlay": {
     "adjustOpacity": "Ajustar opacidade da sobreposição",

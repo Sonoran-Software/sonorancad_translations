@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "CAD topluluğunuzu yapılandırma ve entegrasyonları kurma konusunda yardım almak için ChatGPT'de resmi Sonoran Software uygulamasını kullanın",
       "open": "ChatGPT'de Aç",
+      "penalCodesDescription": "Topluluğunuz için ceza kodları oluşturmak üzere ChatGPT'de Sonoran CAD'ye giriş yapın.",
+      "penalCodesTitle": "ChatGPT ile ceza kodları oluşturun",
       "recordDescription": "Topluluğunuz için formlar oluşturmak üzere ChatGPT'de Sonoran CAD'ye giriş yapın.",
       "recordTitle": "ChatGPT ile kayıt şablonları oluşturun",
+      "tenCodesDescription": "Topluluğunuz için 10 kodları oluşturmak üzere ChatGPT'de Sonoran CAD'ye giriş yapın.",
+      "tenCodesTitle": "ChatGPT ile 10 kod oluşturun",
       "title": "ChatGPT'ye Sor"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "Masaüstleri",
       "discordIntegration": "Anlaşmazlık Entegrasyonu",
       "documentation": "Dokümantasyon",
-      "identifiers": "Tanımlayıcılar",
+      "identifiers": "Birim Tanımlayıcıları",
       "inGameIntegration": "Oyun İçi Entegrasyon",
       "limits": "Sınırlar",
       "logs": "Kütükler",
@@ -1722,6 +1726,93 @@
       "message": "Yeni Beta'yı deneyimleyin"
     }
   },
+  "audioNotifications": {
+    "appearance": "Görünüm",
+    "customTone": "Özel ton",
+    "customToneHint": "Herhangi bir bildirim için özel bir ton yükleyin. Varsayılan tonu kullanmak için bir alanı boş bırakın. Üyeler kendi bildirim modlarını seçer.",
+    "description": "Her olay için ne duyacağınızı seçin. Bu tercihler bu cihazda kaydedilir. Mevcut olduğunda topluluk özel tonları kullanılır.",
+    "dynamicSpeech": "Dinamik konuşma",
+    "dynamicSpeechHint": "Arama uyarılarını, isteğe bağlı sohbet mesajlarını ve ton panosu metnini okur. Kaydedilmiş bildirimler Özelleştirme / Ses bildirimleri bölümünden yönetilir.",
+    "events": {
+      "callAssigned": {
+        "hint": "Birimine bir sevk çağrısı atandığında.",
+        "label": "Bir Aramaya Atandı"
+      },
+      "callClose": {
+        "hint": "Ekranınızda açık olan bir çağrı kapatıldığında.",
+        "label": "Çağrı kapandı"
+      },
+      "callEdit": {
+        "hint": "Ekranınızda açık olan bir çağrıya yönelik diğer güncellemeler.",
+        "label": "Sevkiyat güncellendi"
+      },
+      "callOpen": {
+        "hint": "Yeni çağrılar sevk tarafından veya kendi kendine sevk ile alındı.",
+        "label": "Yeni sevk çağrısı"
+      },
+      "callPriority": {
+        "hint": "Öncelik ekranınızda açık olan bir çağrıda değişir.",
+        "label": "Çağrı önceliği değişti"
+      },
+      "callRemoved": {
+        "hint": "Birimleriniz ayrıldığında veya yeniden atandığında.",
+        "label": "Aramadan Kaldırıldı"
+      },
+      "chat": {
+        "hint": "Diğer birimlerden yeni sohbet mesajları.",
+        "label": "Gelen birim mesajı"
+      },
+      "dispatchNote": {
+        "hint": "Ekranınızda açık olan bir çağrıya yeni notlar eklendi.",
+        "label": "Sevk notu eklendi"
+      },
+      "emergencyCall": {
+        "hint": "Çağrı merkezine gelen acil çağrılar.",
+        "label": "Gelen acil çağrı"
+      },
+      "panic": {
+        "hint": "Bir birim panik alarmını etkinleştirdiğinde.",
+        "label": "Birim Paniği"
+      },
+      "signalClear": {
+        "hint": "Acil durum sinyali temizlendiğinde.",
+        "label": "Sinyal temizlendi"
+      },
+      "signal": {
+        "hint": "Bir acil durum sinyali yürürlüğe girdiğinde.",
+        "label": "Sinyal etkinleştirildi"
+      },
+      "statusChange": {
+        "hint": "Hızlı durum değişikliklerinizi onaylar.",
+        "label": "Durum güncellendi"
+      },
+      "timer": {
+        "hint": "Geri sayım sayacı sona erdiğinde.",
+        "label": "Süre doldu"
+      }
+    },
+    "groups": {
+      "activity": "Mesajlar ve etkinlik",
+      "calls": "Aramalarınız",
+      "dispatch": "Sevk etmek"
+    },
+    "lookupWarnings": "Arama uyarıları",
+    "modes": {
+      "both": "Ton + ses",
+      "off": "Kapalı",
+      "tone": "Ton",
+      "voice": "Ses"
+    },
+    "preview": "Önizleme {event}",
+    "previewError": "Bu bildirim oynatılamadı. Tekrar deneyin.",
+    "resetTone": "Varsayılan tonu kullan",
+    "retry": "Tekrar dene",
+    "saveError": "Ses tercihlerinizi kaydedemedik. Tekrar deneyin.",
+    "stopPreview": "Önizlemeyi Durdur",
+    "title": "Ses bildirimleri",
+    "voiceHint": "Ses bildirimleri kaydedilmiş İngilizce duyurular kullanır. Lookup uyarıları, isteğe bağlı mesaj okumaları ve tone-board konuşması mevcut ses ayarlarınızı kullanır.",
+    "volume": "CAD ses seviyesi"
+  },
   "automations": {
     "actionMode": "Aksiyon",
     "actions": {
@@ -2054,6 +2145,10 @@
     "setCustomDomain": "Özel Alan Adını Ayarla",
     "txt": "TXT",
     "youMustOwnYourDomainName": "Özel bir alan adı ayarlamak için alan adının sahibi olmalısınız."
+  },
+  "customizationNavigation": {
+    "audio": "Ses",
+    "workspace": "Çalışma Alanı"
   },
   "desktopOverlay": {
     "adjustOpacity": "Kaplama opaklığını ayarla",

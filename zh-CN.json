@@ -132,8 +132,12 @@
     "askChatGpt": {
       "description": "在 ChatGPT 中使用官方 Sonoran Software 应用来帮助配置您的 CAD 社区并设置集成。",
       "open": "在 ChatGPT 中打开",
+      "penalCodesDescription": "在 ChatGPT 中登录 Sonoran CAD 以为你的社区生成刑法代码。",
+      "penalCodesTitle": "使用 ChatGPT 创建处罚代码",
       "recordDescription": "在 ChatGPT 中登录 Sonoran CAD 以为你的社区生成表单。",
       "recordTitle": "使用 ChatGPT 创建记录模板",
+      "tenCodesDescription": "在 ChatGPT 中登录 Sonoran CAD 以为你的社区生成 10 代码。",
+      "tenCodesTitle": "使用 ChatGPT 创建 10 代码",
       "title": "询问 ChatGPT"
     },
     "authenticate": {
@@ -784,7 +788,7 @@
       "desktops": "桌面",
       "discordIntegration": "DIscord集成功能",
       "documentation": "文档",
-      "identifiers": "警员身份",
+      "identifiers": "单位标识",
       "inGameIntegration": "游戏内集成功能",
       "limits": "限制",
       "logs": "日志",
@@ -1722,6 +1726,93 @@
       "message": "体验新的 Beta 版"
     }
   },
+  "audioNotifications": {
+    "appearance": "外观",
+    "customTone": "自定义铃声",
+    "customToneHint": "为任何通知上传自定义铃声。留空字段以使用默认铃声。成员选择自己的通知模式。",
+    "description": "选择每个事件的听觉提示。这些偏好会保存在此设备上。可用时将使用社区自定义提示音。",
+    "dynamicSpeech": "动态语音",
+    "dynamicSpeechHint": "朗读查询警告、可选聊天消息和音板文本。录制的通知在“自定义/音频通知”中控制。",
+    "events": {
+      "callAssigned": {
+        "hint": "当你的单位被分配到调度呼叫时。",
+        "label": "分配到通话"
+      },
+      "callClose": {
+        "hint": "当你屏幕上的通话被关闭时。",
+        "label": "呼叫已关闭"
+      },
+      "callEdit": {
+        "hint": "屏幕上打开的呼叫的其他更新。",
+        "label": "调度更新"
+      },
+      "callOpen": {
+        "hint": "调度或自调度接收的新呼叫。",
+        "label": "新调度呼叫"
+      },
+      "callPriority": {
+        "hint": "屏幕上打开的呼叫优先级会改变。",
+        "label": "呼叫优先级已更改"
+      },
+      "callRemoved": {
+        "hint": "当你的单位被解除编组或重新分配时。",
+        "label": "已从呼叫中移除"
+      },
+      "chat": {
+        "hint": "来自其他单位的新聊天消息。",
+        "label": "单位来消息"
+      },
+      "dispatchNote": {
+        "hint": "屏幕上打开的呼叫的新备注。",
+        "label": "已添加调度备注"
+      },
+      "emergencyCall": {
+        "hint": "调度收到的紧急来电。",
+        "label": "传入紧急呼叫"
+      },
+      "panic": {
+        "hint": "当单位触发其紧急警报时。",
+        "label": "单位紧急状态"
+      },
+      "signalClear": {
+        "hint": "当紧急信号被清除时。",
+        "label": "信号已清除"
+      },
+      "signal": {
+        "hint": "当紧急信号生效时。",
+        "label": "信号已激活"
+      },
+      "statusChange": {
+        "hint": "确认您的快速状态更改。",
+        "label": "状态已更新"
+      },
+      "timer": {
+        "hint": "当倒计时结束时。",
+        "label": "计时器已过期"
+      }
+    },
+    "groups": {
+      "activity": "消息和活动",
+      "calls": "您的呼叫",
+      "dispatch": "调度"
+    },
+    "lookupWarnings": "查询警告",
+    "modes": {
+      "both": "提示音 + 语音",
+      "off": "关闭",
+      "tone": "语气",
+      "voice": "语音"
+    },
+    "preview": "预览 {event}",
+    "previewError": "无法播放此通知。请重试。",
+    "resetTone": "使用默认提示音",
+    "retry": "重试",
+    "saveError": "无法保存您的音频偏好设置。请重试。",
+    "stopPreview": "停止预览",
+    "title": "音频通知",
+    "voiceHint": "语音通知使用录制的英文播报。查找警告、可选消息朗读和音板语音使用您现有的语音设置。",
+    "volume": "CAD 音量"
+  },
   "automations": {
     "actionMode": "操作",
     "actions": {
@@ -2054,6 +2145,10 @@
     "setCustomDomain": "设置自定义域名",
     "txt": "TXT",
     "youMustOwnYourDomainName": "您必须拥有您的域名才能设置自定义域名。"
+  },
+  "customizationNavigation": {
+    "audio": "音频",
+    "workspace": "工作区"
   },
   "desktopOverlay": {
     "adjustOpacity": "调整遮蔽不透明度",

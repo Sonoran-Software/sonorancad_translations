@@ -3558,6 +3558,13 @@
     "startTitle": "Set up your community"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Subtle red",
+      "diagonal": "Diagonal wash",
+      "flat": "Flat",
+      "spotlight": "Soft spotlight",
+      "title": "Background preview"
+    },
     "bottomCta": {
       "description": "Join thousands of communities using Sonoran CAD for the best RP experience.",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "Developers."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Radio switched to Alpha Squad",
+          "breach": "Breach timer started · 01:00",
+          "miller": "Sergeant Miller moved to your frequency",
+          "pit": "PIT timer started · 05:00",
+          "plate": "Traffic stop created in Sonoran CAD",
+          "platoon": "1st Platoon added to scanned channels",
+          "robbery": "Unit attached to the Sonoran CAD call",
+          "run-plate": "Plate search sent to Sonoran CAD",
+          "tac-1": "Radio switched to TAC 1"
+        },
+        "description": "Talk to Dispatch AI over the radio to control your channels and connected Sonoran CAD.",
+        "examples": "Dispatch AI examples",
+        "handheldAlt": "Custom handheld radio overlay with a Sheriff Dispatch screen",
+        "items": {
+          "alpha": {
+            "request": "\"Command, switch me to Alpha Squad.\"",
+            "response": "Copy, switching you to Alpha Squad.",
+            "result": "Squad switch · Alpha Squad"
+          },
+          "breach": {
+            "request": "\"Command, start a breach timer for 60 seconds.\"",
+            "response": "Copy, 60-second breach timer started.",
+            "result": "Breach timer started · 01:00"
+          },
+          "miller": {
+            "request": "\"Command, push Sergeant Miller to my frequency.\"",
+            "response": "Copy, pushing Sergeant Miller to your frequency.",
+            "result": "Frequency push · Sergeant Miller"
+          },
+          "pit": {
+            "request": "\"Dispatch, set a PIT timer for five minutes.\"",
+            "response": "Copy, five-minute PIT timer started.",
+            "result": "PIT timer started · 05:00"
+          },
+          "plate": {
+            "request": "\"Dispatch, show me out on traffic with a blue sedan, plate ABC123.\"",
+            "response": "Copy, created a traffic stop call with a blue sedan, ABC123.",
+            "result": "Traffic stop created in Sonoran CAD"
+          },
+          "platoon": {
+            "request": "\"Command, add 1st Platoon to my scanned channels.\"",
+            "response": "Copy, adding 1st Platoon to your scanned channels.",
+            "result": "Channel added · 1st Platoon"
+          },
+          "robbery": {
+            "request": "\"Dispatch, attach me to the robbery in progress.\"",
+            "response": "Copy, attaching your unit to the robbery in progress.",
+            "result": "Unit attached to the Sonoran CAD call"
+          },
+          "runPlate": {
+            "request": "\"Dispatch, run the plate ABC123.\"",
+            "response": "Copy, standby for the return on ABC123.",
+            "result": "Plate search sent to Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "\"Dispatch, switch me to TAC 1.\"",
+            "response": "Copy, switching you to TAC 1.",
+            "result": "Radio switched to TAC 1"
+          }
+        },
+        "radioDescription": "Talk to Dispatch AI over the radio to switch channels, scan squads, and start timers.",
+        "vehicleAlt": "Matching vehicle radio overlay with a Sheriff Dispatch screen",
+        "you": "You"
+      },
       "description": "Connect Sonoran CAD with Sonoran Radio so your community can talk to an AI dispatcher over the radio and keep CAD activity moving automatically.",
+      "examples": "Dispatch AI examples",
       "eyebrow": "Dispatch AI",
       "features": {
         "createCalls": "Creates and updates dispatch calls from radio traffic",
@@ -4318,14 +4392,17 @@
           "title": "Custom"
         },
         "metro": {
+          "caption": "Inspired by CentralSquare Enterprise CAD.",
           "description": "Light call grids, dark title bars, and blue controls inspired by CentralSquare Enterprise CAD.",
           "title": "CentralCircle"
         },
         "mike19": {
+          "caption": "Inspired by Mark43 CAD.",
           "description": "A compact, icon-driven workspace inspired by Mark43 CAD.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Sonoran’s own modern dispatch interface.",
           "description": "Sharp panels, compact controls, and high-contrast views for active dispatch.",
           "title": "Modern"
         },
@@ -4334,10 +4411,12 @@
           "title": "Retro"
         },
         "spillboy": {
+          "caption": "Inspired by Motorola Solutions Spillman Flex.",
           "description": "Classic dispatch styling inspired by Motorola Solutions Spillman Flex CAD.",
           "title": "Spillboy"
         },
         "trevor": {
+          "caption": "Inspired by Tyler Technologies Enterprise CAD.",
           "description": "A dense enterprise workspace inspired by Tyler Technologies Enterprise CAD.",
           "title": "Trevor"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "Customize layouts, resize panels, and drag-and-drop controls",
         "workflows": "Span layouts across multiple monitors for maximum efficiency"
       },
-      "title": "Your CAD, Your Style"
+      "fontPreview": "Headline font preview",
+      "pause": "Pause theme previews",
+      "play": "Play theme previews",
+      "title": "Your CAD, Your Style",
+      "visualDescription": "Real-world dispatch inspiration. A workspace that feels like yours."
     },
     "tiktokCampaign": {
       "communityDescription": "Choose your game and see how it works.",
@@ -5938,6 +6021,13 @@
         "location": "Community menu → Admin",
         "title": "Updated admin navigation"
       },
+      "audioRefresh": {
+        "alt": "Audio notification settings with per-event modes and preview buttons",
+        "description": "Hear all-new tones and voice announcements, with more alerts for call updates, dispatch, messages, and activity. In Customization → Audio, preview each notification and choose Off, Tone, Voice, or Tone + voice.",
+        "label": "New audio notifications",
+        "location": "Customization → Audio",
+        "title": "New audio notifications"
+      },
       "automations": {
         "alt": "Record automation editor with an incident-report rule that sets Review status to Supervisor review when priority is High.",
         "description": "When a record is saved, check the fields you choose and update another field automatically. Match all conditions or any one of them.",
@@ -5960,6 +6050,14 @@
         "location": "Administration → Ask ChatGPT",
         "title": "ChatGPT plugin",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Open Sonoran CAD GPT",
+        "alt": "Sonoran CAD and ChatGPT",
+        "description": "New ChatGPT banners in the 10 Codes and Penal Codes admin pages take you straight to the Sonoran CAD GPT to help generate codes for your community.",
+        "label": "Generate codes with ChatGPT",
+        "location": "Admin → 10 Codes / Penal Codes",
+        "title": "Generate codes with ChatGPT"
       },
       "communityMenus": {
         "alt": "FiveM community menu with illustrated role cards.",
@@ -6009,6 +6107,13 @@
         "location": "Police, Fire, EMS & Dispatch → Action menus",
         "title": "Updated action menus"
       },
+      "customizationRefresh": {
+        "alt": "Customization menu with grouped appearance settings and four tabs",
+        "description": "Find your settings in four focused tabs: Themes, Appearance, Workspace, and Audio. Collapsible groups keep the menu easier to scan, with language selection beside the tabs.",
+        "label": "Simpler customization",
+        "location": "Customization",
+        "title": "Simpler customization"
+      },
       "fiveMManagement": {
         "alt": "FiveM integration panel with a server selector, plugin navigation, framework choices, and fine settings.",
         "benefits": {
@@ -6047,6 +6152,12 @@
         "shortTitle": "What’s new in 3.45.0",
         "teaser": "FiveM settings inside CAD, new character menus, and clearer controls throughout your community.",
         "title": "A simpler way to run your community."
+      },
+      "cad-3-46-5": {
+        "description": "New audio cues, clearer customization, and shortcuts to generate codes with ChatGPT.",
+        "shortTitle": "What’s new in 3.46.5",
+        "teaser": "All-new notification tones and voices, simpler customization, and ChatGPT shortcuts for 10 Codes and Penal Codes.",
+        "title": "Audio notifications and customization"
       },
       "central-circle": {
         "description": "A new built-in theme brings light tables and dark headers to your CAD workspace.",
