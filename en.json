@@ -1722,6 +1722,93 @@
       "message": "Experience the new Beta"
     }
   },
+  "audioNotifications": {
+    "appearance": "Appearance",
+    "customTone": "Custom tone",
+    "customToneHint": "Upload a custom tone for any notification. Leave a field empty to use the stock tone. Members choose their own notification modes.",
+    "description": "Choose what you hear for each event. These preferences are saved on this device. Community custom tones are used when available.",
+    "dynamicSpeech": "Dynamic speech",
+    "dynamicSpeechHint": "Reads lookup warnings, optional chat messages, and tone-board text. Recorded notifications are controlled in Customization / Audio notifications.",
+    "events": {
+      "callAssigned": {
+        "hint": "When your unit is assigned a dispatch call.",
+        "label": "Assigned to a call"
+      },
+      "callClose": {
+        "hint": "When a call open on your screen is closed.",
+        "label": "Call closed"
+      },
+      "callEdit": {
+        "hint": "Other updates to a call open on your screen.",
+        "label": "Dispatch updated"
+      },
+      "callOpen": {
+        "hint": "New calls received by dispatch or self-dispatch.",
+        "label": "New dispatch call"
+      },
+      "callPriority": {
+        "hint": "Priority changes to a call open on your screen.",
+        "label": "Call priority changed"
+      },
+      "callRemoved": {
+        "hint": "When your unit is detached or reassigned.",
+        "label": "Removed from a call"
+      },
+      "chat": {
+        "hint": "New chat messages from other units.",
+        "label": "Incoming unit message"
+      },
+      "dispatchNote": {
+        "hint": "New notes on a call open on your screen.",
+        "label": "Dispatch note added"
+      },
+      "emergencyCall": {
+        "hint": "Incoming emergency calls received by dispatch.",
+        "label": "Incoming emergency call"
+      },
+      "panic": {
+        "hint": "When a unit activates its panic alert.",
+        "label": "Unit panic"
+      },
+      "signalClear": {
+        "hint": "When an emergency signal is cleared.",
+        "label": "Signal cleared"
+      },
+      "signal": {
+        "hint": "When an emergency signal takes effect.",
+        "label": "Signal activated"
+      },
+      "statusChange": {
+        "hint": "Acknowledges your quick status changes.",
+        "label": "Status updated"
+      },
+      "timer": {
+        "hint": "When a countdown timer finishes.",
+        "label": "Timer expired"
+      }
+    },
+    "groups": {
+      "activity": "Messages and activity",
+      "calls": "Your calls",
+      "dispatch": "Dispatch"
+    },
+    "lookupWarnings": "Lookup warnings",
+    "modes": {
+      "both": "Tone + voice",
+      "off": "Off",
+      "tone": "Tone",
+      "voice": "Voice"
+    },
+    "preview": "Preview {event}",
+    "previewError": "Could not play this notification. Try again.",
+    "resetTone": "Use default tone",
+    "retry": "Retry",
+    "saveError": "Could not save your audio preferences. Try again.",
+    "stopPreview": "Stop preview",
+    "title": "Audio notifications",
+    "voiceHint": "Voice notifications use recorded English announcements. Lookup warnings, optional message readouts, and tone-board speech use your existing voice settings.",
+    "volume": "CAD volume"
+  },
   "automations": {
     "actionMode": "Action",
     "actions": {
@@ -2054,6 +2141,10 @@
     "setCustomDomain": "Set Custom Domain",
     "txt": "TXT",
     "youMustOwnYourDomainName": "You must own your domain to set up a custom domain."
+  },
+  "customizationNavigation": {
+    "audio": "Audio",
+    "workspace": "Workspace"
   },
   "desktopOverlay": {
     "adjustOpacity": "Adjust overlay opacity",
