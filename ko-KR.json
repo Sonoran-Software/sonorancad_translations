@@ -1722,6 +1722,93 @@
       "message": "새로운 Beta를 경험해 보세요"
     }
   },
+  "audioNotifications": {
+    "appearance": "외형",
+    "customTone": "맞춤 벨소리",
+    "customToneHint": "모든 알림에 대해 사용자 지정 벨소리를 업로드하세요. 기본 벨소리를 사용하려면 필드를 비워 두세요. 구성원은 자신의 알림 모드를 선택합니다.",
+    "description": "각 이벤트마다 들을 항목을 선택하세요. 이 환경설정은 이 기기에 저장됩니다. 사용 가능하면 커뮤니티 사용자 지정 톤이 사용됩니다.",
+    "dynamicSpeech": "동적 음성",
+    "dynamicSpeechHint": "조회 경고, 선택적 채팅 메시지, 및 톤 보드 텍스트를 읽습니다. 녹음된 알림은 Customization / Audio notifications에서 제어됩니다.",
+    "events": {
+      "callAssigned": {
+        "hint": "귀하의 부서에 출동 호출이 배정되었을 때",
+        "label": "통화에 할당됨"
+      },
+      "callClose": {
+        "hint": "화면에서 열려 있는 통화가 종료될 때.",
+        "label": "통화 종료됨"
+      },
+      "callEdit": {
+        "hint": "화면에 열려 있는 통화의 기타 업데이트.",
+        "label": "디스패치 업데이트됨"
+      },
+      "callOpen": {
+        "hint": "디스패치 또는 셀프 디스패치로 접수된 새 호출",
+        "label": "새 파견 통화"
+      },
+      "callPriority": {
+        "hint": "화면에 열려 있는 통화의 우선순위가 변경됩니다.",
+        "label": "호출 우선 사항이 변경됨"
+      },
+      "callRemoved": {
+        "hint": "부대가 해제되거나 재배정될 때.",
+        "label": "통화에서 제거됨"
+      },
+      "chat": {
+        "hint": "다른 유닛의 새 채팅 메시지.",
+        "label": "수신 유닛 메시지"
+      },
+      "dispatchNote": {
+        "hint": "화면에 열려 있는 통화의 새 메모.",
+        "label": "파견 노트 추가됨"
+      },
+      "emergencyCall": {
+        "hint": "디스패치에서 수신된 긴급 통화",
+        "label": "긴급전화 수신"
+      },
+      "panic": {
+        "hint": "유닛이 패닉 알림을 활성화할 때.",
+        "label": "유닛 패닉"
+      },
+      "signalClear": {
+        "hint": "비상 신호가 해제되면",
+        "label": "신호 해제됨"
+      },
+      "signal": {
+        "hint": "비상 신호가 적용되면",
+        "label": "신호 활성화됨"
+      },
+      "statusChange": {
+        "hint": "빠른 상태 변경을 확인합니다.",
+        "label": "상태가 업데이트됨"
+      },
+      "timer": {
+        "hint": "카운트다운 타이머가 끝날 때.",
+        "label": "타이머 만료"
+      }
+    },
+    "groups": {
+      "activity": "메시지 및 활동",
+      "calls": "통화",
+      "dispatch": "보내다"
+    },
+    "lookupWarnings": "조회 경고",
+    "modes": {
+      "both": "음성 + 목소리",
+      "off": "끔",
+      "tone": "톤",
+      "voice": "목소리"
+    },
+    "preview": "미리 보기 {event}",
+    "previewError": "이 알림을 재생할 수 없습니다. 다시 시도하세요.",
+    "resetTone": "기본 벨소리 사용",
+    "retry": "다시 시도",
+    "saveError": "오디오 환경설정을 저장할 수 없습니다. 다시 시도하세요.",
+    "stopPreview": "미리보기 중지",
+    "title": "오디오 알림",
+    "voiceHint": "음성 알림은 녹음된 영어 안내를 사용합니다. 검색 경고, 선택적 메시지 읽기, 그리고 톤 보드 음성은 기존 음성 설정을 사용합니다.",
+    "volume": "CAD 볼륨"
+  },
   "automations": {
     "actionMode": "행동",
     "actions": {
@@ -2054,6 +2141,10 @@
     "setCustomDomain": "사용자 지정 도메인 설정",
     "txt": "TXT",
     "youMustOwnYourDomainName": "사용자 지정 도메인을 설정하려면 도메인을 소유해야 합니다."
+  },
+  "customizationNavigation": {
+    "audio": "오디오",
+    "workspace": "작업 공간"
   },
   "desktopOverlay": {
     "adjustOpacity": "오버레이 불투명도 조정",

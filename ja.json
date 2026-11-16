@@ -1722,6 +1722,93 @@
       "message": "新しい Beta を体験"
     }
   },
+  "audioNotifications": {
+    "appearance": "外観",
+    "customTone": "カスタム音",
+    "customToneHint": "任意の通知用にカスタムトーンをアップロードします。フィールドを空欄のままにすると、標準のトーンを使用します。メンバーは自分の通知モードを選択します。",
+    "description": "各イベントで聞く内容を選択します。これらの設定はこのデバイスに保存されます。利用可能な場合はコミュニティのカスタムトーンが使用されます。",
+    "dynamicSpeech": "動的音声",
+    "dynamicSpeechHint": "ルックアップ警告、任意のチャットメッセージ、トーンボードのテキストを読み上げます。録音された通知は カスタマイズ / オーディオ通知 で管理されます。",
+    "events": {
+      "callAssigned": {
+        "hint": "あなたの部隊に出動通報が割り当てられたとき",
+        "label": "通話に割り当てられた"
+      },
+      "callClose": {
+        "hint": "画面上で開いている通話が閉じられたとき",
+        "label": "通話を閉じました"
+      },
+      "callEdit": {
+        "hint": "画面上で開いている通話へのその他の更新",
+        "label": "出荷を更新しました"
+      },
+      "callOpen": {
+        "hint": "ディスパッチまたはセルフディスパッチで受信した新しい通話。",
+        "label": "新規出荷要請"
+      },
+      "callPriority": {
+        "hint": "画面上で開いている通話の優先度が変更されます",
+        "label": "通話優先度が変更されました"
+      },
+      "callRemoved": {
+        "hint": "あなたのユニットが解除または再割り当てされたとき。",
+        "label": "通話から削除されました"
+      },
+      "chat": {
+        "hint": "他のユニットからの新しいチャットメッセージ",
+        "label": "着信部隊メッセージ"
+      },
+      "dispatchNote": {
+        "hint": "画面上で開いている通話への新しいメモ",
+        "label": "出荷メモを追加しました"
+      },
+      "emergencyCall": {
+        "hint": "指令室が受信した緊急通報",
+        "label": "緊急通報着信"
+      },
+      "panic": {
+        "hint": "ユニットがパニックアラートを作動させたとき",
+        "label": "ユニットパニック"
+      },
+      "signalClear": {
+        "hint": "緊急信号が解除されたとき。",
+        "label": "信号を解除しました"
+      },
+      "signal": {
+        "hint": "緊急信号が発生したとき。",
+        "label": "信号が有効になりました"
+      },
+      "statusChange": {
+        "hint": "素早いステータス変更に応答します。",
+        "label": "ステータスを更新しました"
+      },
+      "timer": {
+        "hint": "カウントダウンタイマーが終了したとき",
+        "label": "タイマーの有効期限切れ"
+      }
+    },
+    "groups": {
+      "activity": "メッセージとアクティビティ",
+      "calls": "あなたの通話",
+      "dispatch": "出荷"
+    },
+    "lookupWarnings": "ルックアップ警告",
+    "modes": {
+      "both": "音＋音声",
+      "off": "オフ",
+      "tone": "トーン",
+      "voice": "音声"
+    },
+    "preview": "プレビュー {event}",
+    "previewError": "この通知を再生できませんでした。もう一度お試しください。",
+    "resetTone": "デフォルトのトーンを使用",
+    "retry": "再試行",
+    "saveError": "音声設定を保存できませんでした。もう一度お試しください。",
+    "stopPreview": "プレビューを停止",
+    "title": "音声通知",
+    "voiceHint": "音声通知は録音された英語の案内を使用します。Lookup warnings、オプションのメッセージ読み上げ、tone-board の発話は、既存の音声設定を使用します。",
+    "volume": "CAD 音量"
+  },
   "automations": {
     "actionMode": "操作",
     "actions": {
@@ -2054,6 +2141,10 @@
     "setCustomDomain": "カスタムドメインを設定",
     "txt": "TXT",
     "youMustOwnYourDomainName": "カスタムドメインを設定するには、ドメインを所有している必要があります。"
+  },
+  "customizationNavigation": {
+    "audio": "音声",
+    "workspace": "ワークスペース"
   },
   "desktopOverlay": {
     "adjustOpacity": "オーバーレイの不透明度を調整",
