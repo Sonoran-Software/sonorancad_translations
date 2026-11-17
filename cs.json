@@ -3558,6 +3558,13 @@
     "startTitle": "Nastavte svou komunitu"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Jemná červená",
+      "diagonal": "Diagonální přeliv",
+      "flat": "Ploché",
+      "spotlight": "Měkké bodové světlo",
+      "title": "Náhled pozadí"
+    },
     "bottomCta": {
       "description": "Přidejte se ke komunitám, které používají Sonoran CAD pro ten nejlepší RP zážitek.",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "Vývojáři."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Rádio přepnuto na tým Alpha",
+          "breach": "Časovač narušení spuštěn · 01:00",
+          "miller": "Seržant Miller byl přepnut na vaši frekvenci",
+          "pit": "Časovač PIT spuštěn · 05:00",
+          "plate": "Zastavení provozu vytvořeno v Sonoran CAD",
+          "platoon": "1. četa přidána ke skenovaným kanálům",
+          "robbery": "Jednotka připojená k hovoru Sonoran CAD",
+          "run-plate": "Hledání SPZ odesláno do Sonoran CAD",
+          "tac-1": "Rádio přepnuto na TAC 1"
+        },
+        "description": "Mluvte s Dispatch AI přes rádio a ovládejte své kanály a připojený Sonoran CAD.",
+        "examples": "Příklady AI výjezdu",
+        "handheldAlt": "Vlastní překryv přenosné vysílačky s obrazovkou dispečinku šerifa",
+        "items": {
+          "alpha": {
+            "request": "\"Přepnout mě na tým Alpha.\"",
+            "response": "Kopíruji, přepínám vás na tým Alpha.",
+            "result": "Přepnutí týmu · tým Alpha"
+          },
+          "breach": {
+            "request": "\"Povel, spusť 60sekundový časovač narušení.\"",
+            "response": "Kopie, 60sekundový časovač narušení spuštěn.",
+            "result": "Časovač narušení spuštěn · 01:00"
+          },
+          "miller": {
+            "request": "\"Veliteli, přepněte seržanta Millera na moji frekvenci.\"",
+            "response": "Rozumím, přepínám seržanta Millera na vaši frekvenci.",
+            "result": "Frekvence push · seržant Miller"
+          },
+          "pit": {
+            "request": "\"Dispečinku, nastavte časovač PIT na pět minut.\"",
+            "response": "Kopírovat, spuštěn pětiminutový PIT časovač.",
+            "result": "Časovač PIT spuštěn · 05:00"
+          },
+          "plate": {
+            "request": "\"Dispečinku, ukaž mi výjezd do provozu s modrým sedanem, SPZ ABC123.\"",
+            "response": "Kopie, vytvořil hovor o dopravní kontrole s modrým sedanem, ABC123.",
+            "result": "Zastavení provozu vytvořeno v Sonoran CAD"
+          },
+          "platoon": {
+            "request": "\"Velitelství, přidejte 1. četu do mých skenovaných kanálů.\"",
+            "response": "Kopírování, přidávání 1. čety do vašich skenovaných kanálů.",
+            "result": "Kanál přidán · 1. četa"
+          },
+          "robbery": {
+            "request": "\"Dispečinku, připoj mě k probíhající loupeži.\"",
+            "response": "Kopíruji, připojuji vaši jednotku k probíhající loupeži.",
+            "result": "Jednotka připojená k hovoru Sonoran CAD"
+          },
+          "runPlate": {
+            "request": "\"Dispečinku, prověř SPZ ABC123.\"",
+            "response": "Kopírujte, vyčkejte na návrat ABC123.",
+            "result": "Hledání SPZ odesláno do Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "„Dispečinku, přepněte mě na TAC 1.“",
+            "response": "Kopíruji, přepínám vás na TAC 1.",
+            "result": "Rádio přepnuto na TAC 1"
+          }
+        },
+        "radioDescription": "Mluvte s Dispatch AI přes rádio a přepínejte kanály, skenujte jednotky a spouštějte časovače.",
+        "vehicleAlt": "Přizpůsobený překryv palubní vysílačky s obrazovkou dispečinku šerifa",
+        "you": "Ty"
+      },
       "description": "Propojte Sonoran CAD se Sonoran Radio, aby vaše komunita mohla přes rádio komunikovat s AI dispečerem a udržovat aktivitu v CAD automaticky v pohybu.",
+      "examples": "Příklady AI výjezdu",
       "eyebrow": "AI výjezd",
       "features": {
         "createCalls": "Vytváří a aktualizuje výjezdové hovory z rádiového provozu",
@@ -4318,14 +4392,17 @@
           "title": "VLASTNÍ"
         },
         "metro": {
+          "caption": "Inspirováno CentralSquare Enterprise CAD.",
           "description": "Světlé mřížky hovorů, tmavé titulní lišty a modré ovládací prvky inspirované CentralSquare Enterprise CAD.",
           "title": "Centrální kruh"
         },
         "mike19": {
+          "caption": "Inspirace Mark43 CAD.",
           "description": "Kompaktní pracovní prostor řízený ikonami inspirovaný Mark43 CAD.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Vlastní moderní dispečerské rozhraní Sonoran.",
           "description": "Ostré panely, kompaktní ovládací prvky a vysoce kontrastní zobrazení pro aktivní dispečink.",
           "title": "Moderní"
         },
@@ -4334,10 +4411,12 @@
           "title": "Retro"
         },
         "spillboy": {
+          "caption": "Inspirováno Motorola Solutions Spillman Flex",
           "description": "Klasický styl dispečinku inspirovaný systémem Motorola Solutions Spillman Flex CAD.",
           "title": "Retro"
         },
         "trevor": {
+          "caption": "Inspirováno systémem Tyler Technologies Enterprise CAD.",
           "description": "Husté podnikové pracovní prostředí inspirované systémem Tyler Technologies Enterprise CAD.",
           "title": "Trevor"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "Přizpůsobte rozvržení, změňte velikost panelů a přetahujte ovládací prvky",
         "workflows": "Rozprostřete rozložení přes více monitorů pro maximální efektivitu"
       },
-      "title": "Váš CAD, váš styl"
+      "fontPreview": "Náhled nadpisového písma",
+      "pause": "Pozastavit ukázky motivů",
+      "play": "Přehrát ukázky motivů",
+      "title": "Váš CAD, váš styl",
+      "visualDescription": "Inspirace pro reálné dispečerské použití. Pracovní prostor, který působí jako váš."
     },
     "tiktokCampaign": {
       "communityDescription": "Vyber si svou hru a uvidíš, jak to funguje.",
@@ -5938,6 +6021,13 @@
         "location": "Nabídka komunity → Administrace",
         "title": "Aktualizovaná administrátorská navigace"
       },
+      "audioRefresh": {
+        "alt": "Nastavení zvukových upozornění s režimy pro jednotlivé události a tlačítky náhledu",
+        "description": "Poslouchejte zcela nové tóny a hlasová hlášení s více upozorněními na aktualizace hovorů, vysílání, zprávy a aktivitu. V Přizpůsobení → Zvuk si můžete každé oznámení poslechnout a vybrat Vypnuto, Tón, Hlas nebo Tón + hlas.",
+        "label": "Nová zvuková oznámení",
+        "location": "Přizpůsobení → Zvuk",
+        "title": "Nová zvuková oznámení"
+      },
       "automations": {
         "alt": "Editor automatizace záznamů s pravidlem pro hlášení incidentu, které nastaví stav Kontrola na Kontrola supervizorem, když je priorita Vysoká.",
         "description": "Když je záznam uložen, zkontrolujte pole, která vyberete, a automaticky aktualizujte jiné pole. Splňte všechny podmínky nebo kteroukoli z nich.",
@@ -5960,6 +6050,14 @@
         "location": "Administrace → Zeptat se ChatGPT",
         "title": "Plugin ChatGPT",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Otevřít Sonoran CAD GPT",
+        "alt": "Sonoran CAD a ChatGPT",
+        "description": "Nové bannery ChatGPT na administračních stránkách 10 Codes a Penal Codes vás zavedou přímo do Sonoran CAD GPT, aby vám pomohly generovat kódy pro vaši komunitu.",
+        "label": "Vytvořit kódy pomocí ChatGPT",
+        "location": "Admin → 10 kódů / trestních zákoníků",
+        "title": "Vytvořit kódy pomocí ChatGPT"
       },
       "communityMenus": {
         "alt": "Komunitní menu FiveM s ilustrovanými kartami rolí.",
@@ -6009,6 +6107,13 @@
         "location": "Policie, hasiči, EMS a dispečink → Akční nabídky",
         "title": "Aktualizované nabídky akcí"
       },
+      "customizationRefresh": {
+        "alt": "Menu přizpůsobení se seskupenými nastaveními vzhledu a čtyřmi kartami",
+        "description": "Najděte svá nastavení ve čtyřech přehledných záložkách: Témata, Vzhled, Pracovní prostor a Zvuk. Sbalitelné skupiny udržují nabídku přehlednější, přičemž výběr jazyka je vedle záložek.",
+        "label": "Jednodušší přizpůsobení",
+        "location": "Přizpůsobení",
+        "title": "Jednodušší přizpůsobení"
+      },
       "fiveMManagement": {
         "alt": "Integrační panel FiveM s výběrem serveru, navigací pluginů, volbami frameworku a jemným nastavením.",
         "benefits": {
@@ -6047,6 +6152,12 @@
         "shortTitle": "Co je nového ve verzi 3.45.0",
         "teaser": "Nastavení FiveM v CAD, nová menu postav a přehlednější ovládání napříč vaší komunitou.",
         "title": "Jednodušší způsob, jak vést vaši komunitu."
+      },
+      "cad-3-46-5": {
+        "description": "Nové zvukové signály, přehlednější přizpůsobení a zkratky pro generování kódů pomocí ChatGPT.",
+        "shortTitle": "Co je nového ve verzi 3.46.5",
+        "teaser": "Zcela nové tóny a hlasy oznámení, jednodušší přizpůsobení a zkratky ChatGPT pro 10-kódy a trestní kódy.",
+        "title": "Zvuková oznámení a přizpůsobení"
       },
       "central-circle": {
         "description": "Nové vestavěné téma přináší světlé tabulky a tmavé záhlaví do vašeho CAD pracovního prostoru.",

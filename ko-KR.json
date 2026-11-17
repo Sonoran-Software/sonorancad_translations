@@ -3558,6 +3558,13 @@
     "startTitle": "커뮤니티 설정"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "은은한 빨강",
+      "diagonal": "대각선 워시",
+      "flat": "플랫",
+      "spotlight": "부드러운 스포트라이트",
+      "title": "배경 미리보기"
+    },
     "bottomCta": {
       "description": "수천 개의 커뮤니티가 최고의 RP 경험을 위해 Sonoran CAD를 사용하고 있습니다.",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "개발자."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "라디오가 Alpha Squad로 전환됨",
+          "breach": "Breach 타이머 시작됨 · 01:00",
+          "miller": "밀러 경사가 당신의 주파수로 이동했습니다",
+          "pit": "PIT 타이머 시작됨 · 05:00",
+          "plate": "Sonoran CAD에서 교통 정지 생성됨",
+          "platoon": "스캔된 채널에 1기 추가됨",
+          "robbery": "Sonoran CAD 호출에 연결된 부대",
+          "run-plate": "번호판 검색이 Sonoran CAD로 전송됨",
+          "tac-1": "라디오가 TAC 1로 전환됨"
+        },
+        "description": "무전을 통해 Dispatch AI와 대화하여 채널과 연결된 Sonoran CAD를 제어하세요.",
+        "examples": "파견 AI 예시",
+        "handheldAlt": "보안관 디스패치 화면이 있는 맞춤형 핸드헬드 라디오 오버레이",
+        "items": {
+          "alpha": {
+            "request": "\"Command, Alpha Squad로 전환해 줘.\"",
+            "response": "복사 중, Alpha Squad로 전환합니다.",
+            "result": "Squad 전환 · Alpha Squad"
+          },
+          "breach": {
+            "request": "\"명령, 60초 동안 Breach 타이머 시작.\"",
+            "response": "복사됨, 60초 Breach 타이머 시작됨.",
+            "result": "Breach 타이머 시작됨 · 01:00"
+          },
+          "miller": {
+            "request": "\"밀러 경사를 내 주파수로 연결하세요.\"",
+            "response": "복사, 밀러 경사를 당신의 주파수로 이동합니다.",
+            "result": "주파수 푸시 · 밀러 경사"
+          },
+          "pit": {
+            "request": "\"디스패치, 5분 PIT 타이머 설정해 줘.\"",
+            "response": "복사됨, 5분 PIT 타이머가 시작되었습니다.",
+            "result": "PIT 타이머 시작됨 · 05:00"
+          },
+          "plate": {
+            "request": "\"디스패치, 파란색 세단, 번호판 ABC123 차량을 교통 출동으로 보여줘.\"",
+            "response": "복사됨, 파란 세단, ABC123 차량으로 교통 정지 호출을 생성했습니다.",
+            "result": "Sonoran CAD에서 교통 정지 생성됨"
+          },
+          "platoon": {
+            "request": "\"명령, 내 스캔된 채널에 1기 추가.\"",
+            "response": "복사, 스캔된 채널에 1기 추가 중.",
+            "result": "채널 추가됨 · 1기"
+          },
+          "robbery": {
+            "request": "\"디스패치, 진행 중인 강도 사건에 저를 연결해 주세요.\"",
+            "response": "복사, 진행 중인 강도 사건에 귀하의 유닛을 연결합니다.",
+            "result": "Sonoran CAD 호출에 연결된 부대"
+          },
+          "runPlate": {
+            "request": "\"디스패치, 번호판 ABC123 조회해.\"",
+            "response": "복사, ABC123의 복귀 대기.",
+            "result": "번호판 검색이 Sonoran CAD로 전송됨"
+          },
+          "tacOne": {
+            "request": "\"디스패치, TAC 1로 바꿔줘.\"",
+            "response": "복사 중, TAC 1로 전환합니다.",
+            "result": "라디오가 TAC 1로 전환됨"
+          }
+        },
+        "radioDescription": "무전기로 Dispatch AI와 대화하여 채널을 전환하고, 분대를 스캔하고, 타이머를 시작하세요.",
+        "vehicleAlt": "보안관 디스패치 화면이 있는 일치하는 차량 라디오 오버레이",
+        "you": "당신"
+      },
       "description": "Sonoran CAD를 Sonoran Radio와 연결하여 커뮤니티가 라디오를 통해 AI 디스패처와 대화하고 CAD 활동이 자동으로 계속 진행되도록 하세요.",
+      "examples": "파견 AI 예시",
       "eyebrow": "파견 AI",
       "features": {
         "createCalls": "라디오 교신에서 디스패치 호출을 생성하고 업데이트합니다",
@@ -4318,14 +4392,17 @@
           "title": "맞춤"
         },
         "metro": {
+          "caption": "CentralSquare Enterprise CAD에서 영감을 받음.",
           "description": "밝은 호출 그리드, 어두운 제목 바, 그리고 CentralSquare Enterprise CAD에서 영감을 받은 파란 컨트롤.",
           "title": "중앙 원"
         },
         "mike19": {
+          "caption": "Mark43 CAD에서 영감을 받음.",
           "description": "Mark43 CAD에서 영감을 받은, 아이콘 중심의 컴팩트한 작업 공간.",
           "title": "마이크19"
         },
         "modern": {
+          "caption": "Sonoran의 자체 현대적인 디스패치 인터페이스.",
           "description": "선명한 패널, 컴팩트한 컨트롤, 그리고 높은 대비의 뷰로 능동적인 디스패치를 위해.",
           "title": "모던"
         },
@@ -4334,10 +4411,12 @@
           "title": "레트로"
         },
         "spillboy": {
+          "caption": "Motorola Solutions Spillman Flex에서 영감을 받은",
           "description": "Motorola Solutions Spillman Flex CAD에서 영감을 받은 클래식한 파견 스타일",
           "title": "레트로"
         },
         "trevor": {
+          "caption": "Tyler Technologies Enterprise CAD에서 영감을 받음.",
           "description": "Tyler Technologies Enterprise CAD에서 영감을 받은 밀집된 엔터프라이즈 작업 공간.",
           "title": "트레버"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "레이아웃을 사용자 지정하고, 패널 크기를 조정하고, 드래그 앤 드롭 컨트롤",
         "workflows": "최대 효율을 위해 여러 모니터에 걸쳐 레이아웃을 펼치기"
       },
-      "title": "당신의 CAD, 당신의 스타일"
+      "fontPreview": "헤드라인 글꼴 미리보기",
+      "pause": "테마 미리보기 일시 정지",
+      "play": "테마 미리보기 재생",
+      "title": "당신의 CAD, 당신의 스타일",
+      "visualDescription": "실제 현장 파견에서 영감을 받은. 내 것처럼 느껴지는 작업 공간."
     },
     "tiktokCampaign": {
       "communityDescription": "게임을 선택하고 어떻게 작동하는지 확인하세요.",
@@ -5938,6 +6021,13 @@
         "location": "커뮤니티 메뉴 → 관리자",
         "title": "업데이트된 관리자 내비게이션"
       },
+      "audioRefresh": {
+        "alt": "이벤트별 모드와 미리보기 버튼이 있는 오디오 알림 설정",
+        "description": "새로운 톤과 음성 안내를 듣고, 통화 업데이트, 출동, 메시지, 활동에 대한 더 많은 알림을 받아보세요. 사용자 지정 → 오디오에서 각 알림을 미리 듣고 끔, 톤, 음성, 또는 톤 + 음성을 선택하세요.",
+        "label": "새로운 오디오 알림",
+        "location": "맞춤화 → 오디오",
+        "title": "새로운 오디오 알림"
+      },
       "automations": {
         "alt": "우선순위가 High일 때 Review 상태를 Supervisor review로 설정하는 사고 보고 규칙이 있는 Record automation 편집기.",
         "description": "레코드가 저장되면, 선택한 필드를 확인하고 다른 필드를 자동으로 업데이트합니다. 모든 조건 또는 그중 하나를 일치시키세요.",
@@ -5960,6 +6050,14 @@
         "location": "관리 → ChatGPT에 묻기",
         "title": "ChatGPT 플러그인",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Sonoran CAD GPT 열기",
+        "alt": "Sonoran CAD 및 ChatGPT",
+        "description": "10 코드와 형법 코드 관리자 페이지의 새로운 ChatGPT 배너는 커뮤니티를 위한 코드 생성을 돕기 위해 바로 Sonoran CAD GPT로 이동시켜 줍니다.",
+        "label": "ChatGPT로 코드 생성",
+        "location": "관리자 → 10 코드 / 형법",
+        "title": "ChatGPT로 코드 생성"
       },
       "communityMenus": {
         "alt": "일러스트 역할 카드가 있는 FiveM 커뮤니티 메뉴.",
@@ -6009,6 +6107,13 @@
         "location": "경찰, 소방, EMS 및 디스패치 → 작업 메뉴",
         "title": "업데이트된 작업 메뉴"
       },
+      "customizationRefresh": {
+        "alt": "그룹화된 외관 설정과 네 개의 탭이 있는 사용자 지정 메뉴",
+        "description": "설정을 네 개의 집중된 탭에서 찾으세요: Themes, Appearance, Workspace, 그리고 Audio. 접을 수 있는 그룹으로 메뉴를 더 쉽게 훑어볼 수 있고, 언어 선택은 탭 옆에 있습니다.",
+        "label": "더 간단한 맞춤화",
+        "location": "맞춤화",
+        "title": "더 간단한 맞춤화"
+      },
       "fiveMManagement": {
         "alt": "서버 선택기, 플러그인 탐색, 프레임워크 선택, 세부 설정이 있는 FiveM 연동 패널.",
         "benefits": {
@@ -6047,6 +6152,12 @@
         "shortTitle": "3.45.0의 새로운 기능",
         "teaser": "CAD 내부의 FiveM 설정, 새로운 캐릭터 메뉴, 그리고 커뮤니티 전반의 더 명확한 컨트롤.",
         "title": "커뮤니티를 운영하는 더 간단한 방법."
+      },
+      "cad-3-46-5": {
+        "description": "새로운 오디오 신호, 더 명확한 사용자 지정, 그리고 ChatGPT로 코드를 생성하는 바로가기.",
+        "shortTitle": "3.46.5의 새로운 기능",
+        "teaser": "새로운 알림 톤과 음성, 더 간단해진 사용자 지정, 그리고 10 코드와 형법 코드용 ChatGPT 바로가기.",
+        "title": "오디오 알림 및 사용자 지정"
       },
       "central-circle": {
         "description": "새로운 내장 테마는 CAD 작업 공간에 밝은 테이블과 어두운 헤더를 제공합니다.",
