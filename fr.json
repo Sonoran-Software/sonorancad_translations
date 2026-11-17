@@ -3558,6 +3558,13 @@
     "startTitle": "Configurer votre communauté"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Rouge subtil",
+      "diagonal": "Lavage diagonal",
+      "flat": "Plat",
+      "spotlight": "Projecteur doux",
+      "title": "Aperçu de l'arrière-plan"
+    },
     "bottomCta": {
       "description": "Rejoignez des milliers de communautés utilisant Sonoran CAD pour la meilleure expérience RP.",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "Développeurs."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Radio basculée sur l'équipe Alpha",
+          "breach": "Minuteur d’effraction démarré · 01:00",
+          "miller": "Le sergent Miller a été déplacé sur votre fréquence",
+          "pit": "Minuteur PIT démarré · 05:00",
+          "plate": "Arrêt de circulation créé dans Sonoran CAD",
+          "platoon": "1er peloton ajouté aux canaux scannés",
+          "robbery": "Unité rattachée à l'appel Sonoran CAD",
+          "run-plate": "Recherche de plaque envoyée à Sonoran CAD",
+          "tac-1": "Radio basculée sur TAC 1"
+        },
+        "description": "Parlez à Dispatch AI par radio pour contrôler vos canaux et Sonoran CAD connecté.",
+        "examples": "Exemples de Répartition IA",
+        "handheldAlt": "Superposition radio portable personnalisée avec un écran de répartition du shérif",
+        "items": {
+          "alpha": {
+            "request": "\"Commande, basculez-moi sur l'équipe Alpha.\"",
+            "response": "Copie, basculement vers l'équipe Alpha.",
+            "result": "Changement d'équipe · équipe Alpha"
+          },
+          "breach": {
+            "request": "\"Command, démarrer un minuteur d’effraction de 60 secondes.\"",
+            "response": "Copie, minuteur d’effraction de 60 secondes démarré.",
+            "result": "Minuteur d’effraction démarré · 01:00"
+          },
+          "miller": {
+            "request": "\"Commande, envoyez le sergent Miller sur ma fréquence.\"",
+            "response": "Reçu, envoi du sergent Miller sur votre fréquence.",
+            "result": "Fréquence push · Sergent Miller"
+          },
+          "pit": {
+            "request": "« Déployer, lance un minuteur PIT de cinq minutes. »",
+            "response": "Copie, minuteur PIT de cinq minutes démarré.",
+            "result": "Minuteur PIT démarré · 05:00"
+          },
+          "plate": {
+            "request": "\"Dispatch, montrez-moi en patrouille sur la voie publique avec une berline bleue, plaque ABC123.\"",
+            "response": "Copié, appel d'arrêt de circulation créé avec une berline bleue, ABC123.",
+            "result": "Arrêt de circulation créé dans Sonoran CAD"
+          },
+          "platoon": {
+            "request": "\"Command, ajoutez le 1er peloton à mes canaux scannés.\"",
+            "response": "Copie, ajout du 1er peloton à vos canaux scannés.",
+            "result": "Canal ajouté · 1er peloton"
+          },
+          "robbery": {
+            "request": "\"Dispatch, attachez-moi au vol en cours.\"",
+            "response": "Copie, rattachant votre unité au vol en cours.",
+            "result": "Unité rattachée à l'appel Sonoran CAD"
+          },
+          "runPlate": {
+            "request": "\"Dispatchez, lancez la plaque ABC123.\"",
+            "response": "Copiez, en attente du retour sur ABC123.",
+            "result": "Recherche de plaque envoyée à Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "\"Dispatch, passe-moi sur TAC 1.\"",
+            "response": "Copie, basculement vers le TAC 1.",
+            "result": "Radio basculée sur TAC 1"
+          }
+        },
+        "radioDescription": "Parlez à Dispatch AI par radio pour changer de canal, scanner les équipes et lancer des minuteries.",
+        "vehicleAlt": "Superposition radio véhicule assortie avec un écran de répartition du shérif",
+        "you": "Vous"
+      },
       "description": "Connectez Sonoran CAD à Sonoran Radio afin que votre communauté puisse parler à un répartiteur IA par radio et maintenir automatiquement l'activité CAD en cours.",
+      "examples": "Exemples de Répartition IA",
       "eyebrow": "Répartition IA",
       "features": {
         "createCalls": "Crée et met à jour des appels de dispatch à partir du trafic radio",
@@ -4318,14 +4392,17 @@
           "title": "PERSONNALISÉ"
         },
         "metro": {
+          "caption": "Inspiré par CentralSquare Enterprise CAD.",
           "description": "Grilles d'appel claires, barres de titre sombres et commandes bleues inspirées de CentralSquare Enterprise CAD.",
           "title": "CercleCentral"
         },
         "mike19": {
+          "caption": "Inspiré par Mark43 CAD.",
           "description": "Un espace de travail compact, axé sur les icônes et inspiré de Mark43 CAD.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "L’interface de dispatch moderne propre à Sonoran.",
           "description": "Panneaux nets, commandes compactes et vues à contraste élevé pour une répartition active.",
           "title": "Moderne"
         },
@@ -4334,10 +4411,12 @@
           "title": "Rétro"
         },
         "spillboy": {
+          "caption": "Inspiré par Motorola Solutions Spillman Flex.",
           "description": "Style de dispatch classique inspiré par Motorola Solutions Spillman Flex CAD.",
           "title": "Rétro"
         },
         "trevor": {
+          "caption": "Inspiré par Tyler Technologies Enterprise CAD.",
           "description": "Un espace de travail d'entreprise dense inspiré par Tyler Technologies Enterprise CAD.",
           "title": "Trevor"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "Personnaliser les mises en page, redimensionner les panneaux et faire glisser-déposer des contrôles",
         "workflows": "Répartissez les mises en page sur plusieurs moniteurs pour une efficacité maximale"
       },
-      "title": "Votre CAO, votre style"
+      "fontPreview": "Aperçu de la police du titre",
+      "pause": "Mettre en pause les aperçus de thème",
+      "play": "Lire les aperçus de thème",
+      "title": "Votre CAO, votre style",
+      "visualDescription": "Inspiration de dispatch du monde réel. Un espace de travail qui vous ressemble."
     },
     "tiktokCampaign": {
       "communityDescription": "Choisissez votre jeu et voyez comment cela fonctionne.",
@@ -5947,6 +6030,13 @@
         "location": "Menu de la communauté → Admin",
         "title": "Navigation d'administration mise à jour"
       },
+      "audioRefresh": {
+        "alt": "Paramètres des notifications audio avec modes par événement et boutons d'aperçu",
+        "description": "Découvrez de toutes nouvelles tonalités et annonces vocales, avec davantage d'alertes pour les mises à jour d'appel, les interventions, les messages et l'activité. Dans Personnalisation → Audio, prévisualisez chaque notification et choisissez Désactivé, Tonalité, Voix ou Tonalité + voix.",
+        "label": "Nouvelles notifications audio",
+        "location": "Personnalisation → Audio",
+        "title": "Nouvelles notifications audio"
+      },
       "automations": {
         "alt": "Éditeur d'automatisation des dossiers avec une règle de rapport d'incident qui définit le statut Revue à Revue du superviseur lorsque la priorité est Élevée.",
         "description": "Lorsqu'un enregistrement est enregistré, vérifiez les champs que vous choisissez et mettez à jour automatiquement un autre champ. Faites correspondre toutes les conditions ou l'une d'elles.",
@@ -5969,6 +6059,14 @@
         "location": "Administration → Demander à ChatGPT",
         "title": "plugin ChatGPT",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Ouvrir Sonoran CAD GPT",
+        "alt": "Sonoran CAD et ChatGPT",
+        "description": "Nouvelles bannières ChatGPT sur les pages d'administration Codes 10 et Codes pénaux vous mènent directement au GPT Sonoran CAD pour aider à générer des codes pour votre communauté.",
+        "label": "Générer des codes avec ChatGPT",
+        "location": "Admin → 10 Codes / Codes pénaux",
+        "title": "Générer des codes avec ChatGPT"
       },
       "communityMenus": {
         "alt": "Menu communautaire FiveM avec cartes de rôle illustrées.",
@@ -6018,6 +6116,13 @@
         "location": "Police, pompiers, EMS et répartition → Menus d'action",
         "title": "Menus d'actions mis à jour"
       },
+      "customizationRefresh": {
+        "alt": "Menu de personnalisation avec paramètres d’apparence groupés et quatre onglets",
+        "description": "Trouvez vos paramètres dans quatre onglets ciblés : Thèmes, Apparence, Espace de travail et Audio. Des groupes repliables rendent le menu plus facile à parcourir, avec la sélection de la langue à côté des onglets.",
+        "label": "Personnalisation plus simple",
+        "location": "Personnalisation",
+        "title": "Personnalisation plus simple"
+      },
       "fiveMManagement": {
         "alt": "Panneau d'intégration FiveM avec un sélecteur de serveur, une navigation des plugins, des choix de framework et des réglages fins.",
         "benefits": {
@@ -6056,6 +6161,12 @@
         "shortTitle": "Nouveautés de la version 3.45.0",
         "teaser": "Paramètres FiveM dans le CAD, nouveaux menus de personnage, et commandes plus claires dans toute votre communauté.",
         "title": "Une façon plus simple de gérer votre communauté."
+      },
+      "cad-3-46-5": {
+        "description": "Nouveaux signaux audio, personnalisation plus claire et raccourcis pour générer des codes avec ChatGPT.",
+        "shortTitle": "Nouveautés de la version 3.46.5",
+        "teaser": "Nouveaux tons et voix de notification, personnalisation plus simple et raccourcis ChatGPT pour les codes 10 et les codes pénaux.",
+        "title": "Notifications audio et personnalisation"
       },
       "central-circle": {
         "description": "Un nouveau thème intégré apporte des tables claires et des en-têtes sombres à votre espace de travail CAD.",

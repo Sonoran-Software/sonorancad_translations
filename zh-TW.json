@@ -3558,6 +3558,13 @@
     "startTitle": "設定您的社群"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "柔和紅色",
+      "diagonal": "對角線襯底",
+      "flat": "扁平",
+      "spotlight": "柔和聚光燈",
+      "title": "背景預覽"
+    },
     "bottomCta": {
       "description": "加入數千個社群，使用 Sonoran CAD 享受最佳 RP 體驗。",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "開發者。"
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "電台已切換至 Alpha 分隊",
+          "breach": "突破 計時器已啟動 · 01:00",
+          "miller": "米勒警佐已移至您的頻率",
+          "pit": "PIT 計時器已啟動 · 05:00",
+          "plate": "Sonoran CAD 中建立的交通攔查",
+          "platoon": "第 1 排已加入掃描頻道",
+          "robbery": "已附加至 Sonoran CAD 通話的單位",
+          "run-plate": "車牌搜尋已傳送至 Sonoran CAD",
+          "tac-1": "電台已切換至 TAC 1"
+        },
+        "description": "透過無線電與 Dispatch AI 對話，以控制您的頻道和已連接的 Sonoran CAD。",
+        "examples": "排程 AI 範例",
+        "handheldAlt": "具自訂的手持無線電疊加層，內含警長派遣畫面",
+        "items": {
+          "alpha": {
+            "request": "\"指令，將我切換到 Alpha 分隊。\"",
+            "response": "已複製，切換至 Alpha 分隊。",
+            "result": "分隊切換 · Alpha 分隊"
+          },
+          "breach": {
+            "request": "「指揮台，啟動 60 秒突破計時器。」",
+            "response": "已複製，60 秒突破計時器已啟動。",
+            "result": "突破 計時器已啟動 · 01:00"
+          },
+          "miller": {
+            "request": "「指揮中心，請將米勒警佐推送到我的頻率。」",
+            "response": "收到，正在將米勒警佐推送到您的頻率。",
+            "result": "頻率推送 · 米勒警佐"
+          },
+          "pit": {
+            "request": "\"派遣，設定 PIT 計時器為五分鐘。\"",
+            "response": "已複製，五分鐘 PIT 計時器已啟動。",
+            "result": "PIT 計時器已啟動 · 05:00"
+          },
+          "plate": {
+            "request": "「調度，幫我顯示一輛藍色轎車外出執勤，車牌 ABC123。」",
+            "response": "已複製，已建立一個有藍色轎車、ABC123 的交通攔截通報。",
+            "result": "Sonoran CAD 中建立的交通攔查"
+          },
+          "platoon": {
+            "request": "「指揮，將第 1 排加入我的掃描頻道。」",
+            "response": "複製，正在將第 1 排加入你的掃描頻道。",
+            "result": "頻道已加入 · 第 1 排"
+          },
+          "robbery": {
+            "request": "\"調度，將我附加到正在進行的搶劫。\"",
+            "response": "複製，將您的單位附加到正在進行的搶劫。",
+            "result": "已附加至 Sonoran CAD 通話的單位"
+          },
+          "runPlate": {
+            "request": "「調度，查詢車牌 ABC123。\"",
+            "response": "複製，待命，等待 ABC123 返回。",
+            "result": "車牌搜尋已傳送至 Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "「調度，將我切換到 TAC 1。」",
+            "response": "已複製，切換至 TAC 1。",
+            "result": "電台已切換至 TAC 1"
+          }
+        },
+        "radioDescription": "透過無線電與 Dispatch AI 對話以切換頻道、掃描小隊並啟動計時器。",
+        "vehicleAlt": "相符的車載無線電疊加層，內含警長派遣畫面",
+        "you": "你"
+      },
       "description": "將 Sonoran CAD 與 Sonoran Radio 連結，讓你的社群可以透過無線電與 AI 調度員對話，並讓 CAD 活動自動持續進行。",
+      "examples": "排程 AI 範例",
       "eyebrow": "排程 AI",
       "features": {
         "createCalls": "從無線電通訊建立並更新派遣呼叫",
@@ -4318,14 +4392,17 @@
           "title": "自訂"
         },
         "metro": {
+          "caption": "靈感來自 CentralSquare Enterprise CAD。",
           "description": "淺色呼叫網格、深色標題列，以及受 CentralSquare Enterprise CAD 啟發的藍色控制項。",
           "title": "中央圓形"
         },
         "mike19": {
+          "caption": "靈感來自 Mark43 CAD。",
           "description": "受 Mark43 CAD 啟發的精巧、以圖示驅動的工作區。",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Sonoran 自有的現代派遣介面。",
           "description": "銳利面板、緊湊控制項，以及高對比視圖，適合主動調度。",
           "title": "現代"
         },
@@ -4334,10 +4411,12 @@
           "title": "復古"
         },
         "spillboy": {
+          "caption": "受 Motorola Solutions Spillman Flex 啟發",
           "description": "受 Motorola Solutions Spillman Flex CAD 啟發的經典派遣風格。",
           "title": "復古"
         },
         "trevor": {
+          "caption": "靈感來自 Tyler Technologies Enterprise CAD。",
           "description": "受 Tyler Technologies Enterprise CAD 啟發的密集企業工作區。",
           "title": "Trevor"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "自訂版面、調整面板大小，並拖放控制項",
         "workflows": "跨越多個螢幕顯示版面以獲得最高效率"
       },
-      "title": "您的 CAD，您的風格"
+      "fontPreview": "標題字體預覽",
+      "pause": "暫停主題預覽",
+      "play": "播放主題預覽",
+      "title": "您的 CAD，您的風格",
+      "visualDescription": "真實世界派遣靈感。像屬於您的工作空間。"
     },
     "tiktokCampaign": {
       "communityDescription": "選擇你的遊戲並看看它如何運作。",
@@ -5947,6 +6030,13 @@
         "location": "社群選單 → 管理",
         "title": "更新後的管理員導覽"
       },
+      "audioRefresh": {
+        "alt": "音訊通知設定，含各事件模式與預覽按鈕",
+        "description": "聆聽全新提示音和語音播報，並獲得更多來電更新、派遣、訊息和活動提醒。在自訂化 → 音訊中，預覽每個通知並選擇關閉、提示音、語音或提示音 + 語音。",
+        "label": "新的音訊通知",
+        "location": "自定義 → 音訊",
+        "title": "新的音訊通知"
+      },
       "automations": {
         "alt": "具備事故報告規則的記錄自動化編輯器，當優先級為高時會將審核狀態設為主管審核。",
         "description": "當記錄儲存時，檢查您選擇的欄位並自動更新另一個欄位。符合所有條件或其中任一條件。",
@@ -5969,6 +6059,14 @@
         "location": "管理 → 詢問 ChatGPT",
         "title": "ChatGPT 外掛程式",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "開啟 Sonoran CAD GPT",
+        "alt": "Sonoran CAD 和 ChatGPT",
+        "description": "10 Codes 和 Penal Codes 管理頁面中的新 ChatGPT 橫幅會直接帶您前往 Sonoran CAD GPT，協助為您的社群產生代碼。",
+        "label": "使用 ChatGPT 產生代碼",
+        "location": "管理員 → 10 代碼 / 法律",
+        "title": "使用 ChatGPT 產生代碼"
       },
       "communityMenus": {
         "alt": "FiveM 社群選單，附插圖角色卡。",
@@ -6018,6 +6116,13 @@
         "location": "警察、消防、EMS 與派遣 → 動作選單",
         "title": "已更新的動作選單"
       },
+      "customizationRefresh": {
+        "alt": "具分組外觀設定與四個分頁的自訂選單",
+        "description": "在四個專注分頁中找到您的設定：主題、外觀、工作區和音訊。可摺疊群組讓選單更容易掃描，語言選擇則放在分頁旁。",
+        "label": "更簡單的自定義",
+        "location": "自定義",
+        "title": "更簡單的自定義"
+      },
       "fiveMManagement": {
         "alt": "FiveM 整合面板，包含伺服器選擇器、外掛導覽、框架選項，以及精細設定。",
         "benefits": {
@@ -6056,6 +6161,12 @@
         "shortTitle": "3.45.0 有什麼新功能",
         "teaser": "CAD 內的 FiveM 設定、新角色選單，以及更清楚的整體社群控制。",
         "title": "更簡單的方式來執行您的社群。"
+      },
+      "cad-3-46-5": {
+        "description": "新的音效提示、更清晰的自訂化，以及使用 ChatGPT 產生代碼的捷徑。",
+        "shortTitle": "3.46.5 有什麼新功能",
+        "teaser": "全新通知音效與語音、更簡單的自訂，以及用於 10 碼與刑法代碼的 ChatGPT 捷徑。",
+        "title": "音訊通知和自訂"
       },
       "central-circle": {
         "description": "全新的內建主題為您的 CAD 工作區帶來淺色表格和深色標題。",

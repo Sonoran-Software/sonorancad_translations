@@ -3557,6 +3557,13 @@
     "startTitle": "Sett opp ditt samfunn"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Dempet rød",
+      "diagonal": "Diagonal vask",
+      "flat": "Flat",
+      "spotlight": "Mykt spotlight",
+      "title": "Forhåndsvisning av bakgrunn"
+    },
     "bottomCta": {
       "description": "Bli med i tusenvis av fellesskap som bruker Sonoran CAD for den beste RP-opplevelsen.",
       "notes": {
@@ -3835,7 +3842,74 @@
       "titleSuffix": "Utviklere."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Radio byttet til Alpha-laget",
+          "breach": "Breach-timer startet · 01:00",
+          "miller": "Sersjant Miller flyttet til din frekvens",
+          "pit": "PIT-timer startet · 05:00",
+          "plate": "Trafikkstopp opprettet i Sonoran CAD",
+          "platoon": "1. tropp lagt til skannede kanaler",
+          "robbery": "Enhet tilknyttet Sonoran CAD-oppkallet",
+          "run-plate": "Skiltsøk sendt til Sonoran CAD",
+          "tac-1": "Radio byttet til TAC 1"
+        },
+        "description": "Snakk med Dispatch AI over radioen for å styre kanalene dine og tilkoblede Sonoran CAD.",
+        "examples": "Oppdrags-AI-eksempler",
+        "handheldAlt": "Egendefinert håndholdt radiooverlay med en Sheriff Dispatch-skjerm",
+        "items": {
+          "alpha": {
+            "request": "\"Kommando, bytt meg til Alpha-laget.\"",
+            "response": "Kopierer, bytter deg til Alpha-laget.",
+            "result": "Squad bytt · Alpha-laget"
+          },
+          "breach": {
+            "request": "\"Kommando, start en breach-timer for 60 sekunder.\"",
+            "response": "Kopier, 60-sekunders breach-timer startet.",
+            "result": "Breach-timer startet · 01:00"
+          },
+          "miller": {
+            "request": "\"Kommandot, sett Sersjant Miller på min frekvens.\"",
+            "response": "Kopi, flytter Sersjant Miller til din frekvens.",
+            "result": "Frekvenspress · Sersjant Miller"
+          },
+          "pit": {
+            "request": "\"Dispatch, sett en PIT-timer på fem minutter.\"",
+            "response": "Kopi, fem minutters PIT-timer startet.",
+            "result": "PIT-timer startet · 05:00"
+          },
+          "plate": {
+            "request": "\"Dispatch, vis meg ute på trafikk med en blå sedan, skilt ABC123.\"",
+            "response": "Kopi, opprettet en trafikkstopp-forespørsel med en blå sedan, ABC123.",
+            "result": "Trafikkstopp opprettet i Sonoran CAD"
+          },
+          "platoon": {
+            "request": "\"Kommando, legg til 1. tropp til mine skannede kanaler.\"",
+            "response": "Kopier, legger til 1. tropp til de skannede kanalene dine.",
+            "result": "Kanal lagt til · 1. tropp"
+          },
+          "robbery": {
+            "request": "\"Dispatch, koble meg til pågående ran.\"",
+            "response": "Kopierer, kobler enheten din til pågående ran.",
+            "result": "Enhet tilknyttet Sonoran CAD-oppkallet"
+          },
+          "runPlate": {
+            "request": "\"Dispatch, kjør skiltet ABC123.\"",
+            "response": "Kopiér, vent på tilbakemelding om ABC123.",
+            "result": "Skiltsøk sendt til Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "\"Dispatch, bytt meg til TAC 1.\"",
+            "response": "Kopierer, bytter deg til TAC 1.",
+            "result": "Radio byttet til TAC 1"
+          }
+        },
+        "radioDescription": "Snakk med Dispatch AI over radioen for å bytte kanaler, skanne lag og starte timere.",
+        "vehicleAlt": "Matchende kjøretøyradiooverlay med en Sheriff Dispatch-skjerm",
+        "you": "Du"
+      },
       "description": "Koble Sonoran CAD med Sonoran Radio slik at fellesskapet ditt kan snakke med en AI-dispatcher over radioen og holde CAD-aktiviteten i gang automatisk.",
+      "examples": "Oppdrags-AI-eksempler",
       "eyebrow": "Oppdrags-AI",
       "features": {
         "createCalls": "Oppretter og oppdaterer utrykninger fra radiotrafikk",
@@ -4317,14 +4391,17 @@
           "title": "Tilpasset"
         },
         "metro": {
+          "caption": "Inspirert av CentralSquare Enterprise CAD.",
           "description": "Lyse samtaleruter, mørke tittellinjer og blå kontroller inspirert av CentralSquare Enterprise CAD.",
           "title": "Sentrumssirkel"
         },
         "mike19": {
+          "caption": "Inspirert av Mark43 CAD.",
           "description": "Et kompakt, ikonstyrt arbeidsområde inspirert av Mark43 CAD.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Sonorans egen moderne dispatch-grensesnitt.",
           "description": "Skarpe paneler, kompakte kontroller og visninger med høy kontrast for aktiv utsending.",
           "title": "Moderne"
         },
@@ -4333,10 +4410,12 @@
           "title": "Retro"
         },
         "spillboy": {
+          "caption": "Inspirert av Motorola Solutions Spillman Flex.",
           "description": "Klassisk dispatch-stil inspirert av Motorola Solutions Spillman Flex CAD.",
           "title": "Retro"
         },
         "trevor": {
+          "caption": "Inspirert av Tyler Technologies Enterprise CAD.",
           "description": "Et tett bedriftsarbeidsområde inspirert av Tyler Technologies Enterprise CAD.",
           "title": "Trevor"
         }
@@ -4348,7 +4427,11 @@
         "layouts": "Tilpass layouter, endre størrelse på paneler og dra-og-slipp-kontroller",
         "workflows": "Fordel oppsett over flere skjermer for maksimal effektivitet"
       },
-      "title": "Din CAD, din stil"
+      "fontPreview": "Forhåndsvisning av overskriftsfont",
+      "pause": "Sett på pause temaforhåndsvisninger",
+      "play": "Spill av temaforhåndsvisninger",
+      "title": "Din CAD, din stil",
+      "visualDescription": "Inspirasjon fra virkelig nødetat-disponering. En arbeidsplass som føles som din."
     },
     "tiktokCampaign": {
       "communityDescription": "Velg spillet ditt og se hvordan det fungerer.",
@@ -5946,6 +6029,13 @@
         "location": "Samfunnsmeny → Admin",
         "title": "Oppdatert adminnavigasjon"
       },
+      "audioRefresh": {
+        "alt": "Lydvarslingsinnstillinger med moduser per hendelse og forhåndsvisningsknapper",
+        "description": "Hør helt nye toner og talevarsler, med flere varsler for anropsoppdateringer, utrykning, meldinger og aktivitet. I Tilpasning → Lyd kan du forhåndsvise hvert varsel og velge Av, Tone, Tale eller Tone + tale.",
+        "label": "Nye lydvarsler",
+        "location": "Tilpasning → Lyd",
+        "title": "Nye lydvarsler"
+      },
       "automations": {
         "alt": "Redigeringsverktøy for journalautomatisering med en hendelsesrapporteringsregel som setter statusen Gjennomgang til Supervisor review når prioriteten er Høy.",
         "description": "Når en post lagres, kontroller feltene du velger, og oppdater et annet felt automatisk. Oppfyll alle betingelser eller bare én av dem.",
@@ -5968,6 +6058,14 @@
         "location": "Administrasjon → Spør ChatGPT",
         "title": "ChatGPT-plugin",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Åpne Sonoran CAD GPT",
+        "alt": "Sonoran CAD og ChatGPT",
+        "description": "Nye ChatGPT-bannere på adminsidene for 10-koder og straffelover tar deg rett til Sonoran CAD GPT for å hjelpe med å generere koder for lokalsamfunnet ditt.",
+        "label": "Generer koder med ChatGPT",
+        "location": "Admin → 10 koder / straffelover",
+        "title": "Generer koder med ChatGPT"
       },
       "communityMenus": {
         "alt": "FiveM-fellesskapsmeny med illustrerte rollekort.",
@@ -6017,6 +6115,13 @@
         "location": "Politi, brann, ambulanse og dispatch → handlingsmenyer",
         "title": "Oppdaterte handlingsmenyer"
       },
+      "customizationRefresh": {
+        "alt": "Tilpasningsmeny med grupperte utseendeinnstillinger og fire faner",
+        "description": "Finn innstillingene dine i fire fokuserte faner: Temaer, Utseende, Arbeidsområde og Lyd. Sammenleggbare grupper gjør menyen enklere å skanne, med språkvalg ved siden av fanene.",
+        "label": "Enklere tilpasning",
+        "location": "Tilpasning",
+        "title": "Enklere tilpasning"
+      },
       "fiveMManagement": {
         "alt": "FiveM-integrasjonspanel med en servervelger, plugin-navigasjon, rammeverksvalg og fine innstillinger.",
         "benefits": {
@@ -6055,6 +6160,12 @@
         "shortTitle": "Hva er nytt i 3.45.0",
         "teaser": "FiveM-innstillinger i CAD, nye karaktermenyer og tydeligere kontroller gjennom hele fellesskapet.",
         "title": "En enklere måte å drifte lokalsamfunnet ditt."
+      },
+      "cad-3-46-5": {
+        "description": "Nye lydsignaler, tydeligere tilpasning og snarveier for å generere koder med ChatGPT.",
+        "shortTitle": "Hva er nytt i 3.46.5",
+        "teaser": "Helt nye varseltoner og stemmer, enklere tilpasning og ChatGPT-snarveier for 10-koder og straffekoder.",
+        "title": "Lydvarsler og tilpasning"
       },
       "central-circle": {
         "description": "Et nytt innebygd tema gir lyse tabeller og mørke topptekster til CAD-arbeidsområdet ditt.",

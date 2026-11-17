@@ -3557,6 +3557,13 @@
     "startTitle": "Stel je community in"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Subtiel rood",
+      "diagonal": "Diagonaal wassen",
+      "flat": "Plat",
+      "spotlight": "Zachte spotverlichting",
+      "title": "Achtergrondvoorbeeld"
+    },
     "bottomCta": {
       "description": "Sluit je aan bij duizenden communities die Sonoran CAD gebruiken voor de beste RP-ervaring.",
       "notes": {
@@ -3835,7 +3842,74 @@
       "titleSuffix": "Ontwikkelaars."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Radio overgeschakeld naar Alpha Squad",
+          "breach": "Breach-timer gestart · 01:00",
+          "miller": "Sergeant Miller is naar uw frequentie verplaatst",
+          "pit": "PIT-timer gestart · 05:00",
+          "plate": "Verkeersstop aangemaakt in Sonoran CAD",
+          "platoon": "1e peloton toegevoegd aan gescande kanalen",
+          "robbery": "Eenheid gekoppeld aan de Sonoran CAD-oproep",
+          "run-plate": "Kentekenzoekopdracht verzonden naar Sonoran CAD",
+          "tac-1": "Radio overgeschakeld naar TAC 1"
+        },
+        "description": "Praat met Dispatch AI via de radio om je kanalen en verbonden Sonoran CAD te beheren.",
+        "examples": "Dispatch AI-voorbeelden",
+        "handheldAlt": "Aangepaste handheld radio-overlay met een Sheriff Dispatch-scherm",
+        "items": {
+          "alpha": {
+            "request": "\"Command, schakel me over naar Alpha Squad.\"",
+            "response": "Kopiëren, u schakelt over naar Alpha Squad.",
+            "result": "Squad switch · Alpha Squad"
+          },
+          "breach": {
+            "request": "\"Command, start een breach-timer van 60 seconden.\"",
+            "response": "Kopie, 60-seconden breach-timer gestart.",
+            "result": "Breach-timer gestart · 01:00"
+          },
+          "miller": {
+            "request": "\"Command, zet Sergeant Miller op mijn frequentie.\"",
+            "response": "Begrepen, Sergeant Miller wordt naar uw frequentie verplaatst.",
+            "result": "Frequentie duw · Sergeant Miller"
+          },
+          "pit": {
+            "request": "\"Dispatch, zet een PIT-timer voor vijf minuten.\"",
+            "response": "Kopiëren, vijfminuten PIT-timer gestart.",
+            "result": "PIT-timer gestart · 05:00"
+          },
+          "plate": {
+            "request": "\"Dispatch, zet me op het verkeer met een blauwe sedan, nummerplaat ABC123.\"",
+            "response": "Kopie, verkeersstop aangemaakt met een blauwe sedan, ABC123.",
+            "result": "Verkeersstop aangemaakt in Sonoran CAD"
+          },
+          "platoon": {
+            "request": "\"Command, 1e peloton toevoegen aan mijn gescande kanalen.\"",
+            "response": "Kopie, 1e peloton toevoegen aan je gescande kanalen.",
+            "result": "Kanaal toegevoegd · 1e peloton"
+          },
+          "robbery": {
+            "request": "\"Dispatch, koppel mij aan de lopende overval.\"",
+            "response": "Kopie, uw eenheid wordt gekoppeld aan de lopende overval.",
+            "result": "Eenheid gekoppeld aan de Sonoran CAD-oproep"
+          },
+          "runPlate": {
+            "request": "\"Dispatch, controleer kenteken ABC123.\"",
+            "response": "Kopieer, stand-by voor de terugkeer van ABC123.",
+            "result": "Kentekenzoekopdracht verzonden naar Sonoran CAD"
+          },
+          "tacOne": {
+            "request": "\"Dispatch, schakel mij over naar TAC 1.\"",
+            "response": "Kopiëren, u schakelt naar TAC 1.",
+            "result": "Radio overgeschakeld naar TAC 1"
+          }
+        },
+        "radioDescription": "Praat met Dispatch AI via de radio om van kanaal te wisselen, ploegen te scannen en timers te starten.",
+        "vehicleAlt": "Bijpassende radio-overlay voor voertuig met een Sheriff Dispatch-scherm",
+        "you": "Jij"
+      },
       "description": "Verbind Sonoran CAD met Sonoran Radio zodat je community via de radio met een AI-dispatcher kan praten en CAD-activiteit automatisch kan blijven doorlopen.",
+      "examples": "Dispatch AI-voorbeelden",
       "eyebrow": "Dispatch AI",
       "features": {
         "createCalls": "Maakt dispatchoproepen aan en werkt ze bij op basis van radioverkeer",
@@ -4317,14 +4391,17 @@
           "title": "Aangepast"
         },
         "metro": {
+          "caption": "Geïnspireerd door CentralSquare Enterprise CAD.",
           "description": "Lichte oproepnetten, donkere titelbalken en blauwe bedieningselementen geïnspireerd door CentralSquare Enterprise CAD.",
           "title": "Centraalcirkel"
         },
         "mike19": {
+          "caption": "Geïnspireerd door Mark43 CAD.",
           "description": "Een compacte, op pictogrammen gebaseerde werkruimte geïnspireerd op Mark43 CAD.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Sonorans eigen moderne dispatchinterface.",
           "description": "Strakke panelen, compacte bediening en hoogcontrastweergaven voor actieve dispatch.",
           "title": "Modern"
         },
@@ -4333,10 +4410,12 @@
           "title": "Retro"
         },
         "spillboy": {
+          "caption": "Geïnspireerd door Motorola Solutions Spillman Flex.",
           "description": "Klassieke dispatch-styling geïnspireerd op Motorola Solutions Spillman Flex CAD.",
           "title": "Retro"
         },
         "trevor": {
+          "caption": "Geïnspireerd door Tyler Technologies Enterprise CAD.",
           "description": "Een compacte enterprise-werkruimte geïnspireerd door Tyler Technologies Enterprise CAD",
           "title": "Trevor"
         }
@@ -4348,7 +4427,11 @@
         "layouts": "Lay-outs aanpassen, panelen van grootte wijzigen en bedieningselementen slepen en neerzetten",
         "workflows": "Span lay-outs over meerdere monitoren voor maximale efficiëntie"
       },
-      "title": "Jouw CAD, jouw stijl"
+      "fontPreview": "Voorbeeld koplettertype",
+      "pause": "Thema-voorbeelden pauzeren",
+      "play": "Thema-voorbeelden afspelen",
+      "title": "Jouw CAD, jouw stijl",
+      "visualDescription": "Inspiraie uit de praktijk voor dispatching. Een werkruimte die aanvoelt als de jouwe."
     },
     "tiktokCampaign": {
       "communityDescription": "Kies je spel en zie hoe het werkt.",
@@ -5946,6 +6029,13 @@
         "location": "Communitymenu → Beheer",
         "title": "Bijgewerkte admin-navigatie"
       },
+      "audioRefresh": {
+        "alt": "Audiomeldingsinstellingen met modi per gebeurtenis en voorbeeldknoppen",
+        "description": "Hoor gloednieuwe tonen en gesproken meldingen, met meer waarschuwingen voor oproepupdates, dispatch, berichten en activiteit. In Aanpassing → Audio kun je elke melding vooraf beluisteren en kiezen tussen Uit, Toon, Spraak of Toon + spraak.",
+        "label": "Nieuwe audionotificaties",
+        "location": "Personaliseren → Audio",
+        "title": "Nieuwe audionotificaties"
+      },
       "automations": {
         "alt": "Editor voor recordautomatisering met een incidentrapportregel die de beoordelingsstatus instelt op Supervisorsbeoordeling wanneer de prioriteit Hoog is.",
         "description": "Wanneer een record wordt opgeslagen, controleer de velden die je kiest en werk automatisch een ander veld bij. Voldoet aan alle voorwaarden of aan een van de voorwaarden.",
@@ -5968,6 +6058,14 @@
         "location": "Administratie → Vraag ChatGPT",
         "title": "ChatGPT-plug-in",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Open Sonoran CAD GPT",
+        "alt": "Sonoran CAD en ChatGPT",
+        "description": "Nieuwe ChatGPT-banners op de 10-codes- en strafcodes-adminpagina's brengen je rechtstreeks naar de Sonoran CAD GPT om codes voor je community te genereren.",
+        "label": "Genereer codes met ChatGPT",
+        "location": "Admin → 10 Codes / Strafwetboeken",
+        "title": "Genereer codes met ChatGPT"
       },
       "communityMenus": {
         "alt": "FiveM-communitymenu met geïllustreerde rolkaarten.",
@@ -6017,6 +6115,13 @@
         "location": "Politie, brandweer, EMS & dispatch → Actiemenu's",
         "title": "Bijgewerkte actiemenu's"
       },
+      "customizationRefresh": {
+        "alt": "Aanpassingsmenu met gegroepeerde weergave-instellingen en vier tabbladen",
+        "description": "Vind je instellingen in vier gerichte tabbladen: Thema's, Weergave, Werkruimte en Audio. Inklapbare groepen maken het menu makkelijker te bekijken, met taalkeuze naast de tabbladen.",
+        "label": "Eenvoudigere aanpassing",
+        "location": "Personaliseren",
+        "title": "Eenvoudigere aanpassing"
+      },
       "fiveMManagement": {
         "alt": "FiveM-integratiepaneel met een serverselector, pluginnavigatie, frameworkkeuzes en fijne instellingen.",
         "benefits": {
@@ -6055,6 +6160,12 @@
         "shortTitle": "Wat is er nieuw in 3.45.0",
         "teaser": "FiveM-instellingen in CAD, nieuwe karaktermenu's en duidelijkere bediening overal in je community.",
         "title": "Een eenvoudigere manier om je gemeenschap te beheren."
+      },
+      "cad-3-46-5": {
+        "description": "Nieuwe audiocues, duidelijkere personalisatie en snelkoppelingen om codes te genereren met ChatGPT.",
+        "shortTitle": "Wat is er nieuw in 3.46.5",
+        "teaser": "Volledig nieuwe meldingsgeluiden en stemmen, eenvoudigere aanpassing en ChatGPT-snelkoppelingen voor 10-codes en strafcodes.",
+        "title": "Audionotificaties en aanpassing"
       },
       "central-circle": {
         "description": "Een nieuw ingebouwd thema brengt lichte tabellen en donkere kopteksten naar je CAD-werkruimte.",

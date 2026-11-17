@@ -3558,6 +3558,13 @@
     "startTitle": "コミュニティを設定"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "控えめな赤",
+      "diagonal": "斜めのウォッシュ",
+      "flat": "フラット",
+      "spotlight": "ソフトスポットライト",
+      "title": "背景プレビュー"
+    },
     "bottomCta": {
       "description": "Sonoran CADを使って最高のRP体験を楽しむ何千ものコミュニティに参加しよう。",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "開発者。"
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "無線をアルファ班に切り替えました",
+          "breach": "ブリーチタイマー開始 · 01:00",
+          "miller": "ミラー巡査部長はあなたの周波数に移動しました",
+          "pit": "PITタイマー開始 · 05:00",
+          "plate": "Sonoran CAD で交通停止を作成しました",
+          "platoon": "1分隊がスキャン済みチャネルに追加されました",
+          "robbery": "Sonoran CAD通報に付属するユニット",
+          "run-plate": "ナンバープレート検索をSonoran CADに送信しました",
+          "tac-1": "無線をTAC 1に切り替えました"
+        },
+        "description": "無線で Dispatch AI と話して、チャンネルと接続された Sonoran CAD を操作します。",
+        "examples": "Dispatch AI の例",
+        "handheldAlt": "シャリフ配車画面付きのカスタム携帯無線オーバーレイ",
+        "items": {
+          "alpha": {
+            "request": "\"コマンド、私をアルファ班に切り替えて。\"",
+            "response": "コピーしました、アルファ班に切り替えます。",
+            "result": "班切替 · アルファ班"
+          },
+          "breach": {
+            "request": "\"コマンド、60秒のブリーチタイマーを開始。\"",
+            "response": "コピー、60秒のブリーチタイマー開始。",
+            "result": "ブリーチタイマー開始 · 01:00"
+          },
+          "miller": {
+            "request": "「ミラー巡査部長を私の周波数にプッシュしてください。」",
+            "response": "了解、ミラー巡査部長をあなたの周波数にプッシュします。",
+            "result": "頻度プッシュ · ミラー巡査部長"
+          },
+          "pit": {
+            "request": "「ディスパッチ、PITタイマーを5分に設定してください。」",
+            "response": "コピー、5分間のPITタイマーを開始しました。",
+            "result": "PITタイマー開始 · 05:00"
+          },
+          "plate": {
+            "request": "「出動、青いセダン、ナンバープレート ABC123 で交通対応に出して」",
+            "response": "コピー、青いセダン、ABC123で交通停止通報を作成しました。",
+            "result": "Sonoran CAD で交通停止を作成しました"
+          },
+          "platoon": {
+            "request": "\"コマンド、1分隊を私のスキャン済みチャネルに追加してください。\"",
+            "response": "コピー、1分隊をスキャン済みチャネルに追加しています。",
+            "result": "チャネルが追加されました · 1分隊"
+          },
+          "robbery": {
+            "request": "\"管制、進行中の強盗に私を付けて。\"",
+            "response": "コピー、あなたの部隊を進行中の強盗に付けます。",
+            "result": "Sonoran CAD通報に付属するユニット"
+          },
+          "runPlate": {
+            "request": "「ナンバープレート ABC123 を照会してください。」",
+            "response": "ABC123の照会をコピー、待機してください。",
+            "result": "ナンバープレート検索をSonoran CADに送信しました"
+          },
+          "tacOne": {
+            "request": "「ディスパッチ、TAC 1 に切り替えて。」",
+            "response": "コピーしました、TAC 1に切り替えます。",
+            "result": "無線をTAC 1に切り替えました"
+          }
+        },
+        "radioDescription": "Dispatch AI とラジオで会話して、チャンネルを切り替え、部隊をスキャンし、タイマーを開始します。",
+        "vehicleAlt": "シャリフ配車画面付きの一致する車載無線オーバーレイ",
+        "you": "あなた"
+      },
       "description": "Sonoran CADをSonoran Radioに接続して、コミュニティが無線でAIディスパッチャーと会話し、CADの活動を自動的に進められるようにします。",
+      "examples": "Dispatch AI の例",
       "eyebrow": "出荷 AI",
       "features": {
         "createCalls": "ラジオ通信からdispatch callsを作成し更新します",
@@ -4318,14 +4392,17 @@
           "title": "カスタム"
         },
         "metro": {
+          "caption": "CentralSquare Enterprise CAD に着想を得た",
           "description": "CentralSquare Enterprise CAD に着想を得た、明るい通話グリッド、暗いタイトルバー、青いコントロール。",
           "title": "中央円"
         },
         "mike19": {
+          "caption": "Mark43 CAD に着想を得た。",
           "description": "Mark43 CADに着想を得た、コンパクトでアイコン中心のワークスペース。",
           "title": "マイク19"
         },
         "modern": {
+          "caption": "Sonoran独自のモダンな dispatch インターフェース。",
           "description": "シャープなパネル、コンパクトなコントロール、高コントラストなビューで、アクティブなディスパッチに対応。",
           "title": "モダン"
         },
@@ -4334,10 +4411,12 @@
           "title": "レトロ"
         },
         "spillboy": {
+          "caption": "Motorola Solutions Spillman Flex に着想を得た",
           "description": "Motorola Solutions Spillman Flex CAD に着想を得たクラシックなディスパッチスタイル。",
           "title": "レトロ"
         },
         "trevor": {
+          "caption": "Tyler Technologies Enterprise CAD に着想を得た。",
           "description": "Tyler Technologies Enterprise CAD に着想を得た高密度なエンタープライズ ワークスペース。",
           "title": "トレバー"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "レイアウトをカスタマイズし、パネルのサイズを変更し、コントロールをドラッグ＆ドロップ",
         "workflows": "複数のモニターにレイアウトをまたがせて最大限の効率を実現"
       },
-      "title": "あなたのCAD、あなたのスタイル"
+      "fontPreview": "見出しフォントのプレビュー",
+      "pause": "テーマのプレビューを一時停止",
+      "play": "テーマのプレビューを再生",
+      "title": "あなたのCAD、あなたのスタイル",
+      "visualDescription": "現実の運用を参考にした配車イメージ。自分らしく感じるワークスペース。"
     },
     "tiktokCampaign": {
       "communityDescription": "ゲームを選んで、仕組みを見てください。",
@@ -5938,6 +6021,13 @@
         "location": "コミュニティメニュー → 管理",
         "title": "更新された管理者ナビゲーション"
       },
+      "audioRefresh": {
+        "alt": "イベントごとのモードとプレビューボタン付きの音声通知設定",
+        "description": "新しいトーンと音声アナウンスを聞き、通話の更新、出動、メッセージ、アクティビティのアラートをさらに受け取れます。Customization → Audio で各通知をプレビューし、Off、Tone、Voice、Tone + voice から選択します。",
+        "label": "新しい音声通知",
+        "location": "カスタマイズ → 音声",
+        "title": "新しい音声通知"
+      },
       "automations": {
         "alt": "インシデント報告ルール付きの記録自動化エディターで、優先度が高の場合に Review ステータスを Supervisor review に設定します。",
         "description": "レコードが保存されたら、選択したフィールドをチェックし、別のフィールドを自動的に更新します。すべての条件に一致するか、いずれか1つに一致します。",
@@ -5960,6 +6050,14 @@
         "location": "管理 → ChatGPTに質問",
         "title": "ChatGPT プラグイン",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Sonoran CAD GPT を開く",
+        "alt": "Sonoran CAD と ChatGPT",
+        "description": "10コードと刑法コードの管理ページの新しいChatGPTバナーから、Sonoran CAD GPTへ直接移動して、コミュニティ向けのコード生成を支援します。",
+        "label": "ChatGPTでコードを生成",
+        "location": "管理者 → 10 コード / 刑法",
+        "title": "ChatGPTでコードを生成"
       },
       "communityMenus": {
         "alt": "イラスト付き役割カードのFiveMコミュニティメニュー。",
@@ -6009,6 +6107,13 @@
         "location": "警察、消防、EMS ＆ ディスパッチ → アクションメニュー",
         "title": "更新されたアクションメニュー"
       },
+      "customizationRefresh": {
+        "alt": "外観設定をグループ化したカスタマイズメニューと4つのタブ",
+        "description": "テーマ、外観、ワークスペース、オーディオの4つのタブで設定を見つけられます。折りたたみ可能なグループでメニューを見やすくし、タブの横に言語選択を配置しています。",
+        "label": "よりシンプルなカスタマイズ",
+        "location": "カスタマイズ",
+        "title": "よりシンプルなカスタマイズ"
+      },
       "fiveMManagement": {
         "alt": "サーバーセレクター、プラグインナビゲーション、フレームワーク選択、詳細設定付きの FiveM 統合パネル",
         "benefits": {
@@ -6047,6 +6152,12 @@
         "shortTitle": "3.45.0 の新機能",
         "teaser": "CAD内のFiveM設定、新しいキャラクターメニュー、そしてコミュニティ全体でよりわかりやすい操作",
         "title": "コミュニティを運営する、より簡単な方法。"
+      },
+      "cad-3-46-5": {
+        "description": "新しい音声キュー、より明確なカスタマイズ、そして ChatGPT でコードを生成するショートカット。",
+        "shortTitle": "3.46.5 の新機能",
+        "teaser": "一新された通知音と音声、より簡単なカスタマイズ、そして10コードと刑法コードのための ChatGPT ショートカット。",
+        "title": "音声通知とカスタマイズ"
       },
       "central-circle": {
         "description": "新しい組み込みテーマで CAD ワークスペースに明るいテーブルと暗いヘッダーを導入します。",

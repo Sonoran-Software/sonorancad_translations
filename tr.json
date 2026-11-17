@@ -3558,6 +3558,13 @@
     "startTitle": "Topluluğunuzu kurun"
   },
   "homepage": {
+    "backgroundPreview": {
+      "brand": "Soluk kırmızı",
+      "diagonal": "Çapraz yıkama",
+      "flat": "Düz",
+      "spotlight": "Yumuşak spot ışığı",
+      "title": "Arka plan önizlemesi"
+    },
     "bottomCta": {
       "description": "En iyi RP deneyimi için Sonoran CAD kullanan binlerce topluluğa katılın.",
       "notes": {
@@ -3836,7 +3843,74 @@
       "titleSuffix": "Geliştiriciler."
     },
     "dispatchAi": {
+      "demo": {
+        "actions": {
+          "alpha": "Radyo Alpha Ekibine geçirildi",
+          "breach": "İhlal zamanlayıcısı başlatıldı · 01:00",
+          "miller": "Çavuş Miller frekansınıza geçti",
+          "pit": "PIT zamanlayıcısı başlatıldı · 05:00",
+          "plate": "Sonoran CAD'de trafik durdurma oluşturuldu",
+          "platoon": "1. Bölük taranan kanallara eklendi",
+          "robbery": "Sonoran CAD çağrısına bağlı birim",
+          "run-plate": "Plaka araması Sonoran CAD'e gönderildi",
+          "tac-1": "Radyo TAC 1'e geçirildi"
+        },
+        "description": "Kanalınızı ve bağlı Sonoran CAD'i kontrol etmek için Dispatch AI ile radyodan konuşun.",
+        "examples": "Yapay Zekâ Sevk örnekleri",
+        "handheldAlt": "Şerif Sevk ekranlı özel el telsizi kaplaması",
+        "items": {
+          "alpha": {
+            "request": "\"Komut, beni Alpha Ekibine geçir.\"",
+            "response": "Kopyalanıyor, sizi Alpha Ekibine geçiriyorum.",
+            "result": "Ekip değişimi · Alpha Ekibi"
+          },
+          "breach": {
+            "request": "\"Komut, 60 saniyelik bir ihlal zamanlayıcısı başlat.\"",
+            "response": "Kopyalandı, 60 saniyelik ihlal zamanlayıcısı başlatıldı.",
+            "result": "İhlal zamanlayıcısı başlatıldı · 01:00"
+          },
+          "miller": {
+            "request": "\"Çavuş Miller, beni kendi frekansına gönder.\"",
+            "response": "Kopyala, Çavuş Miller'ı frekansınıza gönderiyorum.",
+            "result": "Frekans gönderimi · Çavuş Miller"
+          },
+          "pit": {
+            "request": "\"PIT, beş dakika için bir PIT zamanlayıcısı ayarla.\"",
+            "response": "Kopya, beş dakikalık PIT zamanlayıcısı başlatıldı.",
+            "result": "PIT zamanlayıcısı başlatıldı · 05:00"
+          },
+          "plate": {
+            "request": "\"Sevk et, beni mavi bir sedanla trafikte göster, plaka ABC123.\"",
+            "response": "Kopyala, mavi bir sedan, ABC123 ile bir trafik durdurma çağrısı oluşturdu.",
+            "result": "Sonoran CAD'de trafik durdurma oluşturuldu"
+          },
+          "platoon": {
+            "request": "\"Komut, 1. Bölük'ü taranan kanallarıma ekle.\"",
+            "response": "Kopyala, 1. Bölük'ü taranan kanallarınıza ekleyerek.",
+            "result": "Kanal eklendi · 1. Bölük"
+          },
+          "robbery": {
+            "request": "\"Merkez, beni devam eden soyguna bağla.\"",
+            "response": "Kopyala, biriminizi devam eden soyguna bağlıyor.",
+            "result": "Sonoran CAD çağrısına bağlı birim"
+          },
+          "runPlate": {
+            "request": "\"ABC123 plakasını sorgula, sevk et.\"",
+            "response": "Kopyala, ABC123'ün dönüşü için beklemede kal.",
+            "result": "Plaka araması Sonoran CAD'e gönderildi"
+          },
+          "tacOne": {
+            "request": "\"Merkez, beni TAC 1'e aktar.\"",
+            "response": "Kopyalanıyor, sizi TAC 1'e geçiriyorum.",
+            "result": "Radyo TAC 1'e geçirildi"
+          }
+        },
+        "radioDescription": "Kanalları değiştirmek, timleri taramak ve zamanlayıcıları başlatmak için telsiz üzerinden Dispatch AI ile konuşun.",
+        "vehicleAlt": "Şerif Sevk ekranlı uyumlu araç telsizi kaplaması",
+        "you": "Sen"
+      },
       "description": "Sonoran CAD'i Sonoran Radio ile bağlayın, böylece topluluğunuz radyodan bir AI sevk görevlisiyle konuşabilir ve CAD etkinliğinin otomatik olarak ilerlemesini sağlayabilir.",
+      "examples": "Yapay Zekâ Sevk örnekleri",
       "eyebrow": "Yapay Zekâ Sevk",
       "features": {
         "createCalls": "Radyo trafiğinden sevk çağrıları oluşturur ve günceller",
@@ -4318,14 +4392,17 @@
           "title": "Özel"
         },
         "metro": {
+          "caption": "CentralSquare Enterprise CAD'den esinlenilmiştir.",
           "description": "CentralSquare Enterprise CAD'den ilham alan açık çağrı ızgaraları, koyu başlık çubukları ve mavi kontroller.",
           "title": "MerkezDaire"
         },
         "mike19": {
+          "caption": "Mark43 CAD'den esinlenilmiştir.",
           "description": "Mark43 CAD'den ilham alan, kompakt ve simge odaklı bir çalışma alanı.",
           "title": "Mike19"
         },
         "modern": {
+          "caption": "Sonoran’ın kendi modern sevk arayüzü.",
           "description": "Keskin paneller, kompakt kontroller ve aktif sevk için yüksek kontrastlı görünümler.",
           "title": "Modern"
         },
@@ -4334,10 +4411,12 @@
           "title": "Retro"
         },
         "spillboy": {
+          "caption": "Motorola Solutions Spillman Flex'den ilham alan",
           "description": "Motorola Solutions Spillman Flex CAD'den ilham alan klasik sevk stilizasyonu.",
           "title": "Retro"
         },
         "trevor": {
+          "caption": "Tyler Technologies Enterprise CAD'den esinlenilmiştir.",
           "description": "Tyler Technologies Enterprise CAD'den esinlenilmiş yoğun bir kurumsal çalışma alanı.",
           "title": "Trevor"
         }
@@ -4349,7 +4428,11 @@
         "layouts": "Düzenleri özelleştirin, panelleri yeniden boyutlandırın ve sürükle-bırak kontrolleri",
         "workflows": "En yüksek verimlilik için düzenleri birden çok monitöre yayın"
       },
-      "title": "Sizin CAD'iniz, Sizin Tarzınız"
+      "fontPreview": "Başlık yazı tipi önizlemesi",
+      "pause": "Tema önizlemelerini duraklat",
+      "play": "Tema önizlemelerini oynat",
+      "title": "Sizin CAD'iniz, Sizin Tarzınız",
+      "visualDescription": "Gerçek dünya sevk ilhamı. Sana ait gibi hissettiren bir çalışma alanı."
     },
     "tiktokCampaign": {
       "communityDescription": "Oyununuzu seçin ve nasıl çalıştığını görün.",
@@ -5947,6 +6030,13 @@
         "location": "Topluluk menüsü → Yönetim",
         "title": "Güncellenmiş yönetici gezintisi"
       },
+      "audioRefresh": {
+        "alt": "Olay başına modlar ve önizleme düğmeleriyle sesli bildirim ayarları",
+        "description": "Çağrı güncellemeleri, sevk, mesajlar ve etkinlik için daha fazla uyarıyla birlikte yepyeni sesleri ve sesli anonsları duyun. Özelleştirme → Ses bölümünde her bildirimi önizleyin ve Kapalı, Ton, Ses veya Ton + ses seçeneklerinden birini seçin.",
+        "label": "Yeni ses bildirimleri",
+        "location": "Özelleştirme → Ses",
+        "title": "Yeni ses bildirimleri"
+      },
       "automations": {
         "alt": "Bir olay raporu kuralı içeren kayıt otomasyonu düzenleyicisi; önceliği Yüksek olduğunda İnceleme durumunu Amir incelemesi olarak ayarlar.",
         "description": "Bir kayıt kaydedildiğinde, seçtiğiniz alanları kontrol edin ve başka bir alanı otomatik olarak güncelleyin. Tüm koşulları veya bunlardan herhangi birini eşleştirin.",
@@ -5969,6 +6059,14 @@
         "location": "Yönetim → ChatGPT'ye Sor",
         "title": "ChatGPT eklentisi",
         "visualTitle": "Sonoran CAD + ChatGPT"
+      },
+      "codeGeneration": {
+        "action": "Sonoran CAD GPT'yi Aç",
+        "alt": "Sonoran CAD ve ChatGPT",
+        "description": "10 Kodlar ve Ceza Kodları yönetici sayfalarındaki yeni ChatGPT afişleri, topluluğunuz için kodlar oluşturmaya yardımcı olmak üzere sizi doğrudan Sonoran CAD GPT’ye götürür.",
+        "label": "ChatGPT ile kod oluşturun",
+        "location": "Yönetim → 10 Kod / Ceza kodları",
+        "title": "ChatGPT ile kod oluşturun"
       },
       "communityMenus": {
         "alt": "İllüstrasyonlu rol kartlarına sahip FiveM topluluk menüsü.",
@@ -6018,6 +6116,13 @@
         "location": "Polis, İtfaiye, EMS ve Sevk → Eylem menüleri",
         "title": "Güncellenmiş eylem menüleri"
       },
+      "customizationRefresh": {
+        "alt": "Gruplandırılmış görünüm ayarları ve dört sekme içeren özelleştirme menüsü",
+        "description": "Ayarlarınızı dört odaklı sekmede bulun: Temalar, Görünüm, Çalışma Alanı ve Ses. Daraltılabilir gruplar menüyü taramayı kolaylaştırır, dil seçimi sekmelerin yanında yer alır.",
+        "label": "Daha basit özelleştirme",
+        "location": "Özelleştirme",
+        "title": "Daha basit özelleştirme"
+      },
       "fiveMManagement": {
         "alt": "Sunucu seçici, eklenti gezintisi, çerçeve seçenekleri ve ince ayarlarla FiveM entegrasyon paneli.",
         "benefits": {
@@ -6056,6 +6161,12 @@
         "shortTitle": "3.45.0'da yenilikler",
         "teaser": "CAD içinde FiveM ayarları, yeni karakter menüleri ve topluluğunuz genelinde daha net kontroller.",
         "title": "Topluluğunuzu yönetmenin daha basit bir yolu."
+      },
+      "cad-3-46-5": {
+        "description": "Yeni sesli uyarılar, daha net özelleştirme ve ChatGPT ile kod oluşturmak için kısayollar.",
+        "shortTitle": "3.46.5'da yenilikler",
+        "teaser": "Tamamen yeni bildirim tonları ve sesler, daha basit özelleştirme ve 10 Kodları ile Ceza Kodları için ChatGPT kısayolları.",
+        "title": "Ses bildirimleri ve özelleştirme"
       },
       "central-circle": {
         "description": "Yeni yerleşik tema, CAD çalışma alanınıza açık renk tablolar ve koyu başlıklar getiriyor.",
