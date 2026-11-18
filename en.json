@@ -3578,10 +3578,6 @@
       },
       "title": "Start free. Upgrade when your community grows."
     },
-    "imagePreview": {
-      "close": "Close image preview",
-      "open": "Open image preview"
-    },
     "chooseGameTitle": "Choose your game",
     "comparisons": {
       "homeHeading": "Compare with other providers",
@@ -3943,6 +3939,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "For Gaming Communities",
     "heroTitleMain": "The #1 Dispatch Platform",
+    "imagePreview": {
+      "close": "Close image preview",
+      "open": "Open image preview"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4095,37 +4095,37 @@
         "name": "ER:LC"
       },
       "fivem": {
-        "description": "Official FiveM resource with dozens of deep integration points.",
         "bodycamPage": {
           "description": "View live FiveM unit cameras in Sonoran CAD.",
-          "featuresLabel": "FiveM bodycam features",
-          "productCapturesLabel": "Bodycam recordings in Sonoran CAD",
-          "productCaptures": {
-            "clipPickerTitle": "Attach clips to records",
-            "clipPickerDescription": "Add a Bodycam clips field to a custom record, then select and attach a saved clip from the record editor. You can play the clip directly in the record.",
-            "clipPickerAlt": "Official Sonoran CAD clip picker showing a FiveM recording being attached to a custom record.",
-            "recordingsPanelTitle": "Review saved recordings",
-            "recordingsPanelDescription": "Review footage in CAD’s Body Cam Recordings panel. CAD-hosted clips expire after 24 hours.",
-            "recordingsPanelAlt": "Official Sonoran CAD Bodycam Clips panel showing recorded unit footage."
-          },
           "features": {
             "activation": {
-              "title": "Activate bodycams in game",
               "description": "Link to CAD and sign in to a dispatch, police, fire, or EMS panel. Start with /bodycam or a keybind; admins can also configure automatic activation for emergency lights or drawn weapons.",
-              "imageAlt": "Illustrative FiveM gameplay from a body-camera view beside a roadside stop."
+              "imageAlt": "Illustrative FiveM gameplay from a body-camera view beside a roadside stop.",
+              "title": "Activate bodycams in game"
             },
             "live": {
-              "title": "View a live feed",
               "description": "Preview feeds from Active Units or the live map, and open a dedicated viewer for a larger view.",
-              "imageAlt": "Illustrative FiveM body-camera view approaching a stopped car in a city neighborhood."
+              "imageAlt": "Illustrative FiveM body-camera view approaching a stopped car in a city neighborhood.",
+              "title": "View a live feed"
             },
             "recordings": {
-              "title": "Record and review clips",
               "description": "Record with a keybind or configured event, then review or attach clips in Unit Management. CAD-hosted clips expire after 24 hours.",
-              "imageAlt": "Illustrative nighttime FiveM roadside scene seen from a body camera."
+              "imageAlt": "Illustrative nighttime FiveM roadside scene seen from a body camera.",
+              "title": "Record and review clips"
             }
-          }
+          },
+          "featuresLabel": "FiveM bodycam features",
+          "productCaptures": {
+            "clipPickerAlt": "Official Sonoran CAD clip picker showing a FiveM recording being attached to a custom record.",
+            "clipPickerDescription": "Add a Bodycam clips field to a custom record, then select and attach a saved clip from the record editor. You can play the clip directly in the record.",
+            "clipPickerTitle": "Attach clips to records",
+            "recordingsPanelAlt": "Official Sonoran CAD Bodycam Clips panel showing recorded unit footage.",
+            "recordingsPanelDescription": "Review footage in CAD’s Body Cam Recordings panel. CAD-hosted clips expire after 24 hours.",
+            "recordingsPanelTitle": "Review saved recordings"
+          },
+          "productCapturesLabel": "Bodycam recordings in Sonoran CAD"
         },
+        "description": "Official FiveM resource with dozens of deep integration points.",
         "featurePages": {
           "callers": {
             "description": "Nearby witnesses can trigger configured emergency calls that send useful details to dispatch.",
