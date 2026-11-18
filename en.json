@@ -3939,6 +3939,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "For Gaming Communities",
     "heroTitleMain": "The #1 Dispatch Platform",
+    "imagePreview": {
+      "close": "Close image preview",
+      "open": "Open image preview"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "View live FiveM unit cameras in Sonoran CAD.",
+          "features": {
+            "activation": {
+              "description": "Link to CAD and sign in to a dispatch, police, fire, or EMS panel. Start with /bodycam or a keybind; admins can also configure automatic activation for emergency lights or drawn weapons.",
+              "imageAlt": "Illustrative FiveM gameplay from a body-camera view beside a roadside stop.",
+              "title": "Activate bodycams in game"
+            },
+            "live": {
+              "description": "Preview feeds from Active Units or the live map, and open a dedicated viewer for a larger view.",
+              "imageAlt": "Illustrative FiveM body-camera view approaching a stopped car in a city neighborhood.",
+              "title": "View a live feed"
+            },
+            "recordings": {
+              "description": "Record with a keybind or configured event, then review or attach clips in Unit Management. CAD-hosted clips expire after 24 hours.",
+              "imageAlt": "Illustrative nighttime FiveM roadside scene seen from a body camera.",
+              "title": "Record and review clips"
+            }
+          },
+          "featuresLabel": "FiveM bodycam features",
+          "productCaptures": {
+            "clipPickerAlt": "Official Sonoran CAD clip picker showing a FiveM recording being attached to a custom record.",
+            "clipPickerDescription": "Add a Bodycam clips field to a custom record, then select and attach a saved clip from the record editor. You can play the clip directly in the record.",
+            "clipPickerTitle": "Attach clips to records",
+            "recordingsPanelAlt": "Official Sonoran CAD Bodycam Clips panel showing recorded unit footage.",
+            "recordingsPanelDescription": "Review footage in CAD’s Body Cam Recordings panel. CAD-hosted clips expire after 24 hours.",
+            "recordingsPanelTitle": "Review saved recordings"
+          },
+          "productCapturesLabel": "Bodycam recordings in Sonoran CAD"
+        },
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "featurePages": {
+          "callers": {
+            "description": "Nearby witnesses can trigger configured emergency calls that send useful details to dispatch.",
+            "featureDescription": "Nearby pedestrians can call when they witness configured events. Adjust call types, timing and cooldowns, caller descriptions, and excluded zones in the resource configuration.",
+            "featureTitle": "Calls from nearby witnesses",
+            "imageAlt": "Illustrative FiveM scene of a pedestrian calling from a Los Santos sidewalk as a patrol car approaches."
+          },
+          "civilian": {
+            "captureAlt": "In-game /civid help prompt listing the Civilian Integration commands.",
+            "description": "Fetch a linked player's selected CAD character and show its ID in game.",
+            "featureDescription": "Use /civid show to share the selected CAD character with a nearby player. The optional ID card view uses the sonoran_idcard resource, which must start before sonorancad.",
+            "featureTitle": "CAD character IDs in game",
+            "imageAlt": "Illustrative FiveM roleplay scene of an officer receiving a civilian's ID card beside a patrol car."
+          },
+          "commands": {
+            "captureAlt": "In-game command prompt showing the /panic command and its panic signal description.",
+            "description": "Send emergency and non-emergency calls to CAD from in-game commands, with a panic status command and customizable keybind.",
+            "featureDescription": "Use /911, /311, or /511 to send calls to CAD, and /panic to activate unit panic status. Players must link CAD; location data relies on the enabled Locations submodule.",
+            "featureTitle": "Calls and panic status in game",
+            "imageAlt": "Illustrative FiveM roleplay scene of an officer speaking with a driver beside a patrol car."
+          },
+          "dispatch": {
+            "captureAlt": "Sonoran CAD dispatch call with A-10 assigned as the primary unit and GPS tracking enabled.",
+            "description": "Receive in-game alerts for CAD calls, respond from FiveM, and follow live routing to the scene.",
+            "featureDescription": "Linked, eligible units receive call alerts and attach with /dn respond. GPS guidance follows the call postal, and dispatch can track the primary unit during a pursuit. Keep Locations and Call Commands enabled; Postals is optional.",
+            "featureTitle": "Call alerts and GPS response",
+            "imageAlt": "Illustrative FiveM gameplay of two marked patrol cars traveling in sequence through Los Santos."
+          },
+          "display": {
+            "captureAlt": "Official CAD Display screenshot showing Sonoran CAD open on an in-vehicle laptop, with an Exit computer control below the screen.",
+            "description": "Open CAD on a vehicle or station laptop and let nearby players see the current display.",
+            "featureDescription": "Press G to use a nearby display while the tablet resource is running. Nearby players see a periodically refreshed screen and can request control to use their own CAD session.",
+            "featureTitle": "CAD on in-game laptops",
+            "imageAlt": "Illustrative FiveM scene inside a patrol SUV, with an officer using a mounted laptop on a Los Santos-style street."
+          },
+          "ers": {
+            "captureAlt": "Sonoran CAD live map with the ERS callout tool on its toolbar; the animation demonstrates placing a callout.",
+            "description": "Create ERS incidents from the CAD live map and connect accepted callouts to dispatch.",
+            "featureDescription": "Place an ERS callout from the CAD live map. When a linked player with an active CAD unit accepts it in ERS, configured settings can create a CAD dispatch call and attach responders. Assigned callouts require an ERS shift and service selection; Night ERS 1.8.16 or newer is required.",
+            "featureTitle": "Callouts connected to CAD",
+            "imageAlt": "Illustrative FiveM scene of police and EMS responding together to a roadside collision in Los Santos."
+          },
+          "forceRegister": {
+            "captureAlt": "In-game CAD Link menu with a one-time linking code and a Link CAD control.",
+            "description": "Prompt players to link their CAD account with a reminder or a required in-game linking screen.",
+            "featureDescription": "Use Nag mode to tell players to run /link, or Freeze mode to keep the CAD link menu open until they link. Limit notifications to configured QBCore or ESX jobs or ACE permissions; Tablet Auto Link can fill in the link step.",
+            "featureTitle": "Choose how linking is enforced",
+            "imageAlt": "Illustrative FiveM scene outside a Los Santos police station with two officers talking beside a patrol cruiser."
+          },
+          "framework": {
+            "description": "Connect QBCore or supported ESX servers to CAD and issue in-game fines from selected records.",
+            "featureDescription": "Select QBCore, ESX, or Legacy ESX and link your players. List the exact CAD form names that may issue fines; amounts come from the record’s Charges or Speed section. ESX v2 is not supported.",
+            "featureTitle": "Fines from selected CAD records",
+            "imageAlt": "Illustrative FiveM traffic stop with an officer writing a citation beside a patrol cruiser."
+          },
+          "kick": {
+            "description": "Clear a linked public-safety user's CAD unit automatically when they disconnect from FiveM.",
+            "featureDescription": "When linked police, fire, EMS, or dispatch players leave the server, their active units disconnect from CAD automatically. Kick is enabled by default with the FiveM resource; players still need to link their CAD accounts.",
+            "featureTitle": "Automatic unit disconnect",
+            "imageAlt": "Illustrative FiveM scene of an officer returning a patrol cruiser to a Los Santos station."
+          },
+          "map": {
+            "accessCardDescription": "The Live Map is built into the FiveM resource and needs no additional setup. Members must link their CAD account in game with /link and have permission to view the map. Postal search requires CAD Pro and the Postals submodule.",
+            "accessCardTitle": "Link accounts and grant access",
+            "description": "View linked unit locations and emergency calls together on Sonoran CAD’s interactive GTA map.",
+            "mapCardDescription": "View linked police, fire, EMS, and dispatch units alongside emergency calls on a 2D GTA map. Select unit markers for details and map actions.",
+            "mapCardTitle": "2D live map",
+            "mapRegionLabel": "Sonoran CAD 2D GTA map with fictional unit and call markers.",
+            "sampleCallDescription": "Traffic collision",
+            "sampleCaller": "Anonymous caller",
+            "sampleDataNote": "Unit names, positions, and the call shown here are fictional static examples.",
+            "sampleFireLocation": "Strawberry",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "Mission Row",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "Illustrative FiveM roleplay scene with a marked patrol cruiser, officer, and stopped vehicle on a Los Santos street.",
+            "showcaseLabel": "Live Map features"
+          },
+          "pagers": {
+            "captureAlt": "Sonoran CAD Pager Reborn panel with Emergency page type, recipient nodes, selected units, and a message body.",
+            "description": "Send Emergency, Non-Emergency, or Administrative pages from CAD to selected pager nodes and linked FiveM units.",
+            "featureDescription": "Choose the pager nodes and optional active units that should receive a page, select its type, and enter the message in CAD. Linked FiveM units receive the page with an audio alert. The Pager Reborn resource is a separate third-party download included at no extra cost with CAD Pro; other communities can purchase it from Inferno.",
+            "featureTitle": "Send pages to units in game",
+            "imageAlt": "Illustrative FiveM scene of a firefighter checking a small clipped pager inside a fire station."
+          },
+          "phone": {
+            "appAlt": "The installed Sonoran CAD icon on an in-game LB Phone home screen.",
+            "appDescription": "LB Phone lets communities add Sonoran CAD as a custom app, so players can open CAD from the phone they already use in game. LB Phone is a paid third-party resource from LB Scripts.",
+            "appTitle": "Open CAD from the in-game phone",
+            "featuresLabel": "LB Phone App features",
+            "sceneAlt": "Illustrative FiveM scene of an officer checking a phone beside a marked patrol SUV.",
+            "setupDescription": "Add the Sonoran CAD entry to Config.CustomApps in lb-phone/config/config.lua, restart LB Phone, then install CAD from the in-game App Store.",
+            "setupTitle": "Configure and install the app"
+          },
+          "plugins": {
+            "captureAlt": "Official Sonoran Radio plugin configuration example with an enable setting and radio integration options.",
+            "description": "Configure independent FiveM integrations for dispatch, records, live maps, communications, and server workflows.",
+            "featureDescription": "Each submodule has its own configuration file in the FiveM resource. Enable, disable, and tune the integrations your server needs, then restart the Sonoran CAD resource to apply the changes.",
+            "featureTitle": "Enable the integrations your server needs",
+            "imageAlt": "Illustrative FiveM scene of police and fire responders coordinating outside a station."
+          },
+          "printer": {
+            "cadAlt": "Sonoran CAD record editor with the PDF menu open and Print In-Game selected.",
+            "cadDescription": "In CAD’s Records section, open the record’s PDF menu and select Print In-Game. The linked user must be active in a dispatch, police, fire, or EMS panel.",
+            "cadTitle": "Send a record from CAD",
+            "description": "Send CAD records to configured printers or vehicles so responders can view and share them in FiveM.",
+            "featuresLabel": "Record Printer workflow",
+            "gameDescription": "Use /printer queue to check available PDFs, then /printer print [id] near a configured printer or supported vehicle. Printed records can be handed to nearby players or shared as inventory items.",
+            "gameTitle": "Print and share in game",
+            "sceneAlt": "Illustrative FiveM scene of an officer reviewing a printed record beside a marked patrol SUV."
+          },
+          "radio": {
+            "callAlt": "Sonoran Radio handheld displaying a linked CAD call alert and unit information.",
+            "callDescription": "When attached to a CAD dispatch call, Sonoran Radio shows the call details on the handheld. Select the call title to expand or collapse the information.",
+            "callTitle": "CAD call details on the radio",
+            "description": "Connect Sonoran Radio to CAD so call details, panic status, and unit names stay linked in game.",
+            "featuresLabel": "Sonoran Radio integration",
+            "sceneAlt": "Illustrative FiveM scene of a patrol officer speaking into a handheld radio beside a marked SUV.",
+            "syncDescription": "Enable the sonrad submodule and link player accounts. Optional name sync uses the CAD unit number and name; pressing Sonoran Radio’s panic control also toggles CAD panic status.",
+            "syncTitle": "Sync unit names and panic status"
+          },
+          "registration": {
+            "description": "Register civilian character records in game or sync portraits automatically on supported framework servers.",
+            "featuresLabel": "Civilian Registration features",
+            "standaloneAlt": "Sonoran CAD character registration form with a portrait capture area and Register Character button.",
+            "standaloneDescription": "Players open /civreg or the configured command, complete the custom character form, and submit the record to CAD. Image fields can capture a live selfie.",
+            "standaloneTitle": "Register characters in game",
+            "syncAlt": "Illustrative FiveM gameplay portrait of a civilian character on a Los Santos residential street.",
+            "syncDescription": "With civilian Database Sync enabled, CivReg switches to portrait sync automatically. Once a character’s appearance stays unchanged for 10 seconds, it saves a fresh portrait to the existing record.",
+            "syncTitle": "Sync portraits with Database Sync"
+          },
+          "signs": {
+            "cadAlt": "Illustrative FiveM gameplay view of an overhead Los Santos freeway sign showing DRIVE SAFE.",
+            "cadDescription": "With the optional CAD integration, open all signs from the overview or select a sign on Live Map to update its message remotely.",
+            "cadTitle": "Manage messages from CAD",
+            "description": "Connect CAD to update sign messages from the overview or Live Map, and edit them in game.",
+            "featuresLabel": "Street Signs features",
+            "gameAlt": "Illustrative FiveM gameplay view of an overhead freeway sign showing DETOUR AHEAD near roadwork.",
+            "gameDescription": "Use /sign to edit text and road icons, adjust brightness or Auto-Dim, and schedule messages. In-game saves require you to be within 3 meters of the control panel; saved signs persist through restarts.",
+            "gameTitle": "Edit and schedule signs in game"
+          },
+          "station": {
+            "alertAlt": "Illustrative FiveM gameplay scene of a fire engine outside an open fire station with emergency lights active.",
+            "alertDescription": "Choose station lights, tones, or a text-to-speech message from the Live Map or alert builder. The dedicated panel can filter and select multiple stations.",
+            "alertTitle": "Set lights and send alerts",
+            "description": "Control Inferno Collection Station Alert doors, lights, tones, and speech from CAD. The third-party resource is included with CAD Pro or sold separately by Inferno.",
+            "doorsAlt": "Illustrative FiveM gameplay scene of a fire engine exiting a fire station as the bay doors open.",
+            "doorsDescription": "Select a station on the Live Map to open or close its configured bay doors. From an emergency call, Nearby Stations can prefill a target for the alert builder.",
+            "doorsTitle": "Control station doors from CAD",
+            "featuresLabel": "Station Alert features"
+          },
+          "status": {
+            "commandAlt": "Official Unit Status feature graphic showing the /setstatus command and a CAD unit marked AVAILABLE.",
+            "commandDescription": "Run /setstatus [status] in game with one of your community’s configured status labels or numeric codes. The linked unit’s status updates in CAD.",
+            "commandTitle": "Change status with a command",
+            "description": "Update a linked CAD unit from FiveM with /setstatus [status], using your community’s configured labels or numeric status codes.",
+            "featuresLabel": "Unit Status features",
+            "setupAlt": "Illustrative FiveM gameplay scene of a patrol officer beside a marked car outside a station at shift start.",
+            "setupDescription": "Unit Status is enabled by default with the FiveM resource. Configure status choices in CAD under Admin > Customization > Unit Status Codes. Players must link their CAD account and, by default, have the command.setstatus ACE permission.",
+            "setupTitle": "Use your community’s status codes"
+          },
+          "sync": {
+            "description": "Search FiveM character, license, and vehicle records directly in CAD. Database Sync requires Plus or higher; Database Merge and Friendly Mapping require Pro.",
+            "featuresLabel": "Database Sync features",
+            "lookupAlt": "Database Sync result panel showing character and vehicle registration fields.",
+            "lookupDescription": "CAD queries your connected FiveM framework database during lookups, then displays available character, license, and vehicle registration fields through your community’s custom record templates.",
+            "lookupTitle": "Search framework records in CAD",
+            "mergeAlt": "Illustrative FiveM gameplay scene of an officer checking documents during a traffic stop.",
+            "mergeDescription": "Database Sync is read-only. Pro adds Database Merge to save extra details separately in CAD, plus Friendly Mapping to replace raw database values with readable labels.",
+            "mergeTitle": "Keep lookups clear and complete"
+          },
+          "tablet": {
+            "description": "Open full CAD on an in-game tablet or use Mini-CAD to review calls and attach from a compact overlay.",
+            "featuresLabel": "Tablet & Mini-CAD features",
+            "miniCadAlt": "Official Mini-CAD screenshot showing an active call, assigned units, and controls to attach or view details.",
+            "miniCadDescription": "Mini-CAD shows current calls and assigned units in a compact overlay. Use the left and right arrow keys to switch calls, K to attach or detach, and L to expand details. Its optional keybind is unbound by default and can be configured in FiveM settings.",
+            "miniCadTitle": "Review calls in Mini-CAD",
+            "tabletAlt": "Sonoran CAD tablet and Mini-CAD interfaces showing an active traffic stop.",
+            "tabletDescription": "Run /tablet open to view your linked police, fire, EMS, or dispatch CAD panel in game. Signing into CAD through the tablet can link your account automatically. The tablet resource is enabled by default with the FiveM installation.",
+            "tabletTitle": "Open full CAD in game"
+          },
+          "templates": {
+            "commandAlt": "Official Call Templates feature screenshot showing a FiveM /ts command, confirmation message, and resulting Traffic Stop call in CAD.",
+            "commandDescription": "Run a built-in command such as /ts for a traffic stop or /towreq for a tow request. The template fills in the call presets, while your in-game position supplies the address and postal location. Players need to link CAD and keep Locations enabled; Postals is optional.",
+            "commandTitle": "Create dispatch calls in game",
+            "description": "Create dispatch calls from FiveM commands using templates exported from your community’s CAD.",
+            "featuresLabel": "Call Templates features",
+            "sceneAlt": "Illustrative FiveM gameplay scene of officers handling a traffic stop beside a patrol SUV at dusk.",
+            "setupDescription": "Configure calltemplates_config.lua and JSON call-type files to define each command, description prefix, included unit, and optional Wraith plate. The shipped /ts and /towreq commands use ACE permissions by default.",
+            "setupTitle": "Shape each command to your workflow"
+          },
+          "vehicles": {
+            "customizeDescription": "Adjust the command, default registration status, and expiry date in vehreg_config.lua. For a customized Vehicle Registration record, map recordData field UIDs to match its CAD template. customData can supply preset details for add-on vehicles whose names are not present.",
+            "customizeTitle": "Match registration to your CAD template",
+            "description": "Register the vehicle you are sitting in to your selected CAD character with one in-game command.",
+            "featuresLabel": "Vehicle Register features",
+            "registerAlt": "Official Vehicle Register feature graphic showing the /reg command and a saved vehicle registration record in Sonoran CAD.",
+            "registerDescription": "Sit in the vehicle and run /reg to add it to your currently selected CAD character as a Vehicle Registration record. Players must link their CAD accounts, and the default /reg command can be changed.",
+            "registerTitle": "Register a vehicle in one command",
+            "sceneAlt": "Illustrative FiveM gameplay scene of an officer checking a sedan during a vehicle inspection at dusk."
+          },
+          "wraith": {
+            "alertsDescription": "Choose which registration statuses trigger alerts and configure status and expiration field UIDs in wraithv2_config.lua. Matching plates can also surface active BOLO or warrant records. Extra record fields and alert durations are configurable.",
+            "alertsTitle": "Alert on flagged records",
+            "description": "Connect the Wraith ARS 2X plate reader to CAD for automatic plate lookups and configurable record alerts.",
+            "featuresLabel": "Wraith Plate Reader features",
+            "radarAlt": "Official Wraith V2 feature graphic showing the ARS 2X radar, plate reader, and remote controller in FiveM.",
+            "radarDescription": "The WraithV2 submodule works with the Sonoran version of Wraith ARS 2X bundled with the FiveM resource. It checks plates against CAD and sends the full lookup to CAD when you lock a plate. Players must link their CAD accounts and keep Locations enabled.",
+            "radarTitle": "Read and lock plates in game",
+            "sceneAlt": "Illustrative FiveM gameplay scene of a marked patrol sedan scanning traffic on a city road at dusk."
+          }
+        },
         "landing": {
           "ctaDocs": "View Docs",
           "ctaPrimary": "Sign Up Today",
