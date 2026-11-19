@@ -3938,6 +3938,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "Voor gaminggemeenschappen",
     "heroTitleMain": "Het #1 Dispatch Platform",
+    "imagePreview": {
+      "close": "Sluit afbeeldingsvoorbeeld",
+      "open": "Open afbeeldingsvoorbeeld"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4090,7 +4094,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "Bekijk live FiveM-eenheidscamera's in Sonoran CAD.",
+          "features": {
+            "activation": {
+              "description": "Koppel aan CAD en meld je aan bij een dispatch-, politie-, brandweer- of EMS-paneel. Start met /bodycam of een sneltoets; beheerders kunnen ook automatische activatie instellen voor noodlichten of getrokken wapens.",
+              "imageAlt": "Illustratieve FiveM-gameplay vanuit bodycam-oogpunt naast een verkeersstop.",
+              "title": "Bodycams in game activeren"
+            },
+            "live": {
+              "description": "Previewfeeds van actieve eenheden of de live kaart, en open een speciale viewer voor een groter beeld.",
+              "imageAlt": "Illustratieve FiveM bodycamweergave die een stilstaande auto in een stadswijk benadert.",
+              "title": "Bekijk een live feed"
+            },
+            "recordings": {
+              "description": "Neem op met een toetsencombinatie of geconfigureerde gebeurtenis, en bekijk of voeg daarna clips toe in Unit Management. CAD-gehoste clips verlopen na 24 uur.",
+              "imageAlt": "Illustratieve nachtelijke FiveM-wegsituatie gezien vanuit een bodycam.",
+              "title": "Clips opnemen en bekijken"
+            }
+          },
+          "featuresLabel": "FiveM bodycam-functies",
+          "productCaptures": {
+            "clipPickerAlt": "Officiële Sonoran CAD clipkiezer die een FiveM-opname toont die aan een aangepast dossier wordt gekoppeld.",
+            "clipPickerDescription": "Voeg een veld Bodycam-clips toe aan een aangepast record, selecteer vervolgens een opgeslagen clip en koppel die vanuit de recordeditor. Je kunt de clip rechtstreeks in het record afspelen.",
+            "clipPickerTitle": "Clips koppelen aan records",
+            "recordingsPanelAlt": "Officieel Sonoran CAD Bodycam Clips-paneel met opgenomen eenheidsbeelden.",
+            "recordingsPanelDescription": "Bekijk beelden in het Body Cam-opnamenpaneel van CAD. CAD-gehoste clips verlopen na 24 uur.",
+            "recordingsPanelTitle": "Opgeslagen opnames bekijken"
+          },
+          "productCapturesLabel": "Bodycamopnames in Sonoran CAD"
+        },
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "featurePages": {
+          "callers": {
+            "description": "Getuigen in de buurt kunnen geconfigureerde noodoproepen activeren die nuttige details naar de dispatch sturen.",
+            "featureDescription": "Omstanders in de buurt kunnen bellen wanneer ze geconfigureerde gebeurtenissen zien. Pas oproeptypes, timing en cooldowns, bellerbeschrijvingen en uitgesloten zones aan in de resourceconfiguratie.",
+            "featureTitle": "Oproepen van nabijgelegen getuigen",
+            "imageAlt": "Illustratieve FiveM-scène van een voetganger die belt vanaf een stoep in Los Santos terwijl een patrouillewagen nadert."
+          },
+          "civilian": {
+            "captureAlt": "In-game /civid-help prompt met een lijst van de Civilian Integration-commando's.",
+            "description": "Haal het geselecteerde CAD-personage van een gekoppelde speler op en toon de ID in de game.",
+            "featureDescription": "Gebruik /civid show om het geselecteerde CAD-personage te delen met een speler in de buurt. De optionele ID-kaartweergave gebruikt de sonoran_idcard-resource, die moet opstarten vóór sonorancad.",
+            "featureTitle": "CAD-karakter-ID's in de game",
+            "imageAlt": "Illustratieve FiveM-roleplay met een agent die een identiteitskaart van een burger ontvangt naast een patrouillewagen."
+          },
+          "commands": {
+            "captureAlt": "Spelcommando-venster met het /panic-commando en de beschrijving van het panieksignaal.",
+            "description": "Stuur nood- en niet-noodoproepen naar CAD vanuit in-game commando's, met een paniekstatuscommando en aanpasbare sneltoets.",
+            "featureDescription": "Gebruik /911, /311 of /511 om oproepen naar CAD te sturen, en /panic om de paniekstatus van de eenheid te activeren. Spelers moeten CAD koppelen; locatiegegevens zijn afhankelijk van de ingeschakelde Locations-submodule.",
+            "featureTitle": "Oproepen en paniekstatus in de game",
+            "imageAlt": "Sfeerbeeld van FiveM-roleplay met een agent die met een bestuurder spreekt naast een patrouillewagen."
+          },
+          "dispatch": {
+            "captureAlt": "Sonoran CAD-dispatchoproep met A-10 toegewezen als primaire eenheid en GPS-tracking ingeschakeld.",
+            "description": "Ontvang in-game meldingen voor CAD-oproepen, reageer vanuit FiveM en volg live navigatie naar de locatie.",
+            "featureDescription": "Gekoppelde, in aanmerking komende eenheden ontvangen oproepmeldingen en koppelen zich met /dn respond. GPS-begeleiding volgt de call postal, en dispatch kan de primaire eenheid volgen tijdens een achtervolging. Houd Locations en Call Commands ingeschakeld; Postals is optioneel.",
+            "featureTitle": "Oproepmeldingen en GPS-respons",
+            "imageAlt": "Illustratieve FiveM-gameplay van twee gemarkeerde patrouillewagens die in formatie door Los Santos rijden."
+          },
+          "display": {
+            "captureAlt": "Officiële CAD-weergave-screenshot met Sonoran CAD geopend op een laptop in een voertuig, met daaronder een computerbedieningsknop Afsluiten.",
+            "description": "Open CAD op een voertuig- of stationlaptop en laat spelers in de buurt het huidige scherm zien.",
+            "featureDescription": "Druk op G om een nabijgelegen scherm te gebruiken terwijl de tabletresource actief is. Nabije spelers zien een scherm dat periodiek wordt vernieuwd en kunnen controle aanvragen om hun eigen CAD-sessie te gebruiken.",
+            "featureTitle": "CAD op in-game laptops",
+            "imageAlt": "Illustratieve FiveM-scène in een patrouille-SUV, met een agent die een gemonteerde laptop gebruikt op een straat in Los Santos-stijl."
+          },
+          "ers": {
+            "captureAlt": "Sonoran CAD live kaart met de ERS-callouttool op de werkbalk; de animatie toont het plaatsen van een callout.",
+            "description": "Maak ERS-incidenten aan vanuit de CAD-livekaart en koppel geaccepteerde callouts aan dispatch.",
+            "featureDescription": "Plaats een ERS-uitschakeling vanuit de CAD-livekaart. Wanneer een gekoppelde speler met een actieve CAD-eenheid deze in ERS accepteert, kunnen geconfigureerde instellingen een CAD-dispatch oproep aanmaken en responders koppelen. Toegekende uitschakelingen vereisen een ERS-shift en serviceselectie; Night ERS 1.8.16 of nieuwer is vereist.",
+            "featureTitle": "Oproepen verbonden met CAD",
+            "imageAlt": "Illustratieve FiveM-scène van politie en MUG die samen reageren op een aanrijding langs de weg in Los Santos."
+          },
+          "forceRegister": {
+            "captureAlt": "In-game CAD-linkmenu met een eenmalige koppelcode en een CAD koppelen-knop.",
+            "description": "Spelers vragen om hun CAD-account te koppelen met een herinnering of een verplicht koppelingsscherm in de game.",
+            "featureDescription": "Gebruik Nag mode om spelers te laten /linken, of Freeze mode om het CAD-linkmenu open te houden tot ze linken. Beperk meldingen tot geconfigureerde QBCore- of ESX-jobs of ACE-permissies; Tablet Auto Link kan de linkstap invullen.",
+            "featureTitle": "Kies hoe koppeling wordt afgedwongen",
+            "imageAlt": "Illustratieve FiveM-scène buiten een politiebureau in Los Santos met twee agenten die praten naast een patrouillewagen."
+          },
+          "framework": {
+            "description": "Koppel QBCore- of ondersteunde ESX-servers aan CAD en geef in-game boetes uit vanuit geselecteerde dossiers.",
+            "featureDescription": "Selecteer QBCore, ESX of Legacy ESX en koppel je spelers. Vermeld de exacte CAD-formuliernamen die boetes mogen opleggen; bedragen komen uit de Charges- of Speed-sectie van het record. ESX v2 wordt niet ondersteund.",
+            "featureTitle": "Boetes uit geselecteerde CAD-records",
+            "imageAlt": "Illustratieve FiveM-verkeerscontrole met een agent die een boete uitschrijft naast een patrouillewagen."
+          },
+          "kick": {
+            "description": "Wis automatisch de gekoppelde CAD-eenheid van een gebruiker in openbare veiligheid wanneer die verbinding verbreekt met FiveM.",
+            "featureDescription": "Wanneer gekoppelde politie-, brandweer-, EMS- of dispatchspelers de server verlaten, worden hun actieve eenheden automatisch losgekoppeld van CAD. Kick is standaard ingeschakeld met de FiveM-resource; spelers moeten nog steeds hun CAD-accounts koppelen.",
+            "featureTitle": "Automatische eenheidsontkoppeling",
+            "imageAlt": "Illustratieve FiveM-scène van een agent die een patrouillewagen terugbrengt naar een station in Los Santos."
+          },
+          "map": {
+            "accessCardDescription": "De Live Map is ingebouwd in de FiveM-resource en vereist geen extra configuratie. Leden moeten hun CAD-account in het spel koppelen met /link en toestemming hebben om de kaart te bekijken. Postcodezoekopdracht vereist CAD Pro en de Postals-submodule.",
+            "accessCardTitle": "Koppel accounts en geef toegang",
+            "description": "Bekijk gekoppelde eenheidslocaties en noodoproepen samen op Sonoran CAD's interactieve GTA-kaart.",
+            "mapCardDescription": "Bekijk gekoppelde politie-, brandweer-, MUG- en dispatch-eenheden naast noodoproepen op een 2D GTA-kaart. Selecteer eenheidmarkers voor details en kaartacties.",
+            "mapCardTitle": "2D Live Kaart",
+            "mapRegionLabel": "Sonoran CAD 2D GTA-kaart met fictieve eenheids- en oproepmarkeringen.",
+            "sampleCallDescription": "Verkeersongeval",
+            "sampleCaller": "Anonieme beller",
+            "sampleDataNote": "Eenheidsnamen, posities en de hier getoonde oproep zijn fictieve statische voorbeelden.",
+            "sampleFireLocation": "Aardbeien",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "Mission Row",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "Illustratieve FiveM roleplay-scène met een gemarkeerde patrouillewagen, een agent en een gestopt voertuig op een straat in Los Santos.",
+            "showcaseLabel": "Live Kaart-functies"
+          },
+          "pagers": {
+            "captureAlt": "Sonoran CAD Pager Reborn-paneel met noodpaginatype, ontvangersnodes, geselecteerde eenheden en een berichtinhoud.",
+            "description": "Stuur nood-, niet-nood- of administratieve oproepen van CAD naar geselecteerde pagernodes en gekoppelde FiveM-eenheden.",
+            "featureDescription": "Kies de pagerknooppunten en optionele actieve eenheden die een pagemelding moeten ontvangen, selecteer het type en voer het bericht in CAD in. Gekoppelde FiveM-eenheden ontvangen de pagemelding met een audioalarm. De Pager Reborn-resource is een afzonderlijke download van een derde partij die zonder extra kost is inbegrepen bij CAD Pro; andere gemeenschappen kunnen het aanschaffen bij Inferno.",
+            "featureTitle": "Stuur berichten naar eenheden in het spel",
+            "imageAlt": "Illustratieve FiveM-scène van een brandweerman die een kleine pager met clip controleert in een brandweerkazerne."
+          },
+          "phone": {
+            "appAlt": "Het geïnstalleerde Sonoran CAD-pictogram op het startscherm van een LB Phone in-game.",
+            "appDescription": "LB Phone laat gemeenschappen Sonoran CAD toevoegen als een aangepaste app, zodat spelers CAD kunnen openen vanaf de telefoon die ze al in de game gebruiken. LB Phone is een betaalde externe resource van LB Scripts.",
+            "appTitle": "Open CAD via de telefoon in de game",
+            "featuresLabel": "LB Phone-app functies",
+            "sceneAlt": "Illustratieve FiveM-scène van een agent die een telefoon bekijkt naast een gemarkeerde patrouille-SUV.",
+            "setupDescription": "Voeg het Sonoran CAD-item toe aan Config.CustomApps in lb-phone/config/config.lua, herstart LB Phone, en installeer daarna CAD vanuit de App Store in de game.",
+            "setupTitle": "Configureer en installeer de app"
+          },
+          "plugins": {
+            "captureAlt": "Officieel Sonoran Radio-pluginconfiguratievoorbeeld met een inschakelinstelling en radio-integratieopties.",
+            "description": "Configureer onafhankelijke FiveM-integraties voor dispatch, records, live kaarten, communicatie en serverworkflows.",
+            "featureDescription": "Elke submodule heeft zijn eigen configuratiebestand in de FiveM-resource. Schakel de integraties die je server nodig heeft in, uit en stem ze af, en herstart daarna de Sonoran CAD-resource om de wijzigingen toe te passen.",
+            "featureTitle": "Schakel de integraties in die uw server nodig heeft",
+            "imageAlt": "Illustratieve FiveM-scène van politie- en brandweerlieden die buiten een station coördineren."
+          },
+          "printer": {
+            "cadAlt": "Sonoran CAD-recordeditor met het PDF-menu geopend en Print In-Game geselecteerd.",
+            "cadDescription": "Open in de sectie Records van CAD het PDF-menu van het record en selecteer Print In-Game. De gekoppelde gebruiker moet actief zijn in een dispatch-, politie-, brandweer- of EMS-paneel.",
+            "cadTitle": "Stuur een record vanuit CAD",
+            "description": "Stuur CAD-records naar geconfigureerde printers of voertuigen zodat hulpverleners ze kunnen bekijken en delen in FiveM.",
+            "featuresLabel": "Recordprinterworkflow",
+            "gameDescription": "Gebruik /printer queue om beschikbare pdf's te controleren, gebruik daarna /printer print [id] in de buurt van een geconfigureerde printer of ondersteund voertuig. Geprinte records kunnen aan spelers in de buurt worden gegeven of gedeeld als inventory-items.",
+            "gameTitle": "Afdrukken en delen in de game",
+            "sceneAlt": "Illustratieve FiveM-scène van een agent die een afgedrukt dossier bekijkt naast een gemarkeerde patrouille-SUV."
+          },
+          "radio": {
+            "callAlt": "Sonoran Radio-handset met een gekoppelde CAD-oproepmelding en eenheidsinformatie.",
+            "callDescription": "Wanneer gekoppeld aan een CAD-dispatchoproep toont Sonoran Radio de oproepdetails op de handheld. Selecteer de oproeptitel om de informatie uit te vouwen of in te klappen.",
+            "callTitle": "CAD-oproepdetails op de radio",
+            "description": "Verbind Sonoran Radio met CAD zodat gespreksdetails, paniekstatus en eenheidsnamen in de game gekoppeld blijven.",
+            "featuresLabel": "Sonoran Radio-integratie",
+            "sceneAlt": "Illustratieve FiveM-scène van een patrouilleagent die in een draagbare radio spreekt naast een gemarkeerde SUV.",
+            "syncDescription": "Schakel de sonrad-submodule in en koppel spelersaccounts. Optionele naamsynchronisatie gebruikt het CAD-eenheidsnummer en de naam; door op Sonoran Radio’s paniekknop te drukken wordt ook de CAD-panicstatus omgeschakeld.",
+            "syncTitle": "Synchroniseer eenheidsnamen en paniekstatus"
+          },
+          "registration": {
+            "description": "Registreer civiele karakterrecords in de game of synchroniseer portretten automatisch op ondersteunde frameworkservers.",
+            "featuresLabel": "Burgerregistratiefuncties",
+            "standaloneAlt": "Sonoran CAD-karakterregistratieformulier met een portret-opnamegebied en knop Karakter registreren.",
+            "standaloneDescription": "Spelers openen /civreg of het geconfigureerde commando, vullen het aangepaste karakterformulier in en dienen het dossier in bij CAD. Beeldvelden kunnen een live selfie vastleggen.",
+            "standaloneTitle": "Registreer personages in de game",
+            "syncAlt": "Illustratieve FiveM gameplayportret van een burgerpersonage op een residentiële straat in Los Santos.",
+            "syncDescription": "Als Civiele Database Sync is ingeschakeld, schakelt CivReg automatisch over naar portretsynchronisatie. Zodra het uiterlijk van een personage 10 seconden onveranderd blijft, wordt een nieuw portret opgeslagen bij het bestaande record.",
+            "syncTitle": "Synchroniseer portretten met Database Sync"
+          },
+          "signs": {
+            "cadAlt": "Illustratieve FiveM-gameplayweergave van een bovenliggend snelwegbord in Los Santos met DRIVE SAFE.",
+            "cadDescription": "Met de optionele CAD-integratie open je alle borden vanuit het overzicht of selecteer je een bord op de Live Map om het bericht op afstand bij te werken.",
+            "cadTitle": "Beheer berichten van CAD",
+            "description": "Verbind CAD om bordberichten bij te werken vanuit het overzicht of de Live Map, en bewerk ze in game.",
+            "featuresLabel": "Straatborden functies",
+            "gameAlt": "Illustratieve FiveM-gameplayweergave van een bovenliggend snelwegbord met DETOUR AHEAD bij wegenwerken.",
+            "gameDescription": "Gebruik /sign om tekst en wegiconen te bewerken, de helderheid of Auto-Dim aan te passen en berichten te plannen. Opslaan in-game vereist dat je binnen 3 meter van het bedieningspaneel bent; opgeslagen borden blijven behouden na herstarts.",
+            "gameTitle": "Borden in game bewerken en plannen"
+          },
+          "station": {
+            "alertAlt": "Illustratieve FiveM-gameplayscène van een brandweerwagen buiten een open brandweerkazerne met actieve noodlichten.",
+            "alertDescription": "Kies stationlichten, tonen of een tekst-naar-spraakbericht vanuit de Live Map of de waarschuwingsbouwer. Het toegewijde paneel kan meerdere stations filteren en selecteren.",
+            "alertTitle": "Stel lichten in en verstuur meldingen",
+            "description": "Bedien Inferno Collection Station-alertdeuren, lichten, tonen en spraak vanuit CAD. De externe resource is inbegrepen bij CAD Pro of afzonderlijk verkocht door Inferno.",
+            "doorsAlt": "Illustratieve FiveM-gameplayscène van een brandweerwagen die een brandweerkazerne verlaat terwijl de poortdeuren opengaan.",
+            "doorsDescription": "Selecteer een station op de Live Map om de geconfigureerde hangardeuren te openen of te sluiten. Vanuit een noodoproep kunnen Nearby Stations een doel voor de alert builder vooraf invullen.",
+            "doorsTitle": "Bedien stationdeuren vanuit CAD",
+            "featuresLabel": "Station Alert-functies"
+          },
+          "status": {
+            "commandAlt": "Officiële Unit Status-functiegrafiek met het /setstatus-commando en een CAD-eenheid gemarkeerd als BESCHIKBAAR.",
+            "commandDescription": "Voer /setstatus [status] in de game uit met een van de geconfigureerde statuslabels of numerieke codes van uw community. De status van de gekoppelde eenheid wordt bijgewerkt in CAD.",
+            "commandTitle": "Wijzig status met een commando",
+            "description": "Werk een gekoppelde CAD-eenheid vanuit FiveM bij met /setstatus [status], met behulp van de geconfigureerde labels of numerieke statuscodes van uw community.",
+            "featuresLabel": "Eenheid Status functies",
+            "setupAlt": "Sfeerbeeld van FiveM-gameplay met een patrouilleagent naast een gemarkeerde wagen buiten een station aan het begin van de shift.",
+            "setupDescription": "Unit Status is standaard ingeschakeld met de FiveM-resource. Stel statuskeuzes in in CAD onder Admin > Customization > Unit Status Codes. Spelers moeten hun CAD-account koppelen en hebben standaard de command.setstatus ACE-permissie.",
+            "setupTitle": "Gebruik de statuscodes van je community"
+          },
+          "sync": {
+            "description": "Zoek FiveM-personage-, licentie- en voertuigrecords rechtstreeks in CAD. Database Sync vereist Plus of hoger; Database Merge en Friendly Mapping vereisen Pro.",
+            "featuresLabel": "Databasesynchronisatie-functies",
+            "lookupAlt": "Database-synchronisatieresultaatpaneel dat registratievelden voor personages en voertuigen toont.",
+            "lookupDescription": "CAD doorzoekt tijdens opzoekingen de database van je gekoppelde FiveM-framework en toont vervolgens beschikbare velden voor personages, rijbewijzen en voertuigregistraties via de aangepaste recordsjablonen van je community.",
+            "lookupTitle": "Zoek frameworkrecords in CAD",
+            "mergeAlt": "Illustratieve FiveM-spelscène van een agent die documenten controleert tijdens een verkeerscontrole.",
+            "mergeDescription": "Database Sync is alleen-lezen. Pro voegt Database Merge toe om extra details apart op te slaan in CAD, plus Friendly Mapping om ruwe databasewaarden te vervangen door leesbare labels.",
+            "mergeTitle": "Houd opzoekingen duidelijk en volledig"
+          },
+          "tablet": {
+            "description": "Open volledige CAD op een in-game tablet of gebruik Mini-CAD om oproepen te bekijken en eraan te koppelen via een compacte overlay.",
+            "featuresLabel": "Tablet- en Mini-CAD-functies",
+            "miniCadAlt": "Officiële Mini-CAD-screenshot die een actief gesprek, toegewezen eenheden en knoppen toont om details toe te voegen of te bekijken.",
+            "miniCadDescription": "Mini-CAD toont huidige oproepen en toegewezen eenheden in een compacte overlay. Gebruik de linker- en rechterpijltoetsen om tussen oproepen te schakelen, K om te koppelen of los te koppelen, en L om details uit te vouwen. De optionele sneltoets is standaard niet toegewezen en kan worden geconfigureerd in de FiveM-instellingen.",
+            "miniCadTitle": "Beoordeel oproepen in Mini-CAD",
+            "tabletAlt": "Sonoran CAD-tablet- en Mini-CAD-interfaces met een lopende verkeerscontrole.",
+            "tabletDescription": "Voer /tablet open uit om je gekoppelde politie-, brandweer-, EMS- of dispatch CAD-paneel in het spel te bekijken. Inloggen op CAD via de tablet kan je account automatisch koppelen. De tabletbron is standaard ingeschakeld met de FiveM-installatie.",
+            "tabletTitle": "Open volledige CAD in de game"
+          },
+          "templates": {
+            "commandAlt": "Officiële screenshot van de Call Templates-functie met een FiveM /ts-commando, bevestigingsbericht en resulterende Traffic Stop-oproep in CAD.",
+            "commandDescription": "Voer een ingebouwd commando uit zoals /ts voor een verkeersstop of /towreq voor een takelverzoek. Het sjabloon vult de oproepvoorinstellingen in, terwijl je positie in de game het adres en de postallocatie aanlevert. Spelers moeten CAD koppelen en Locaties ingeschakeld houden; Postals is optioneel.",
+            "commandTitle": "Maak dispatch-oproepen in het spel",
+            "description": "Maak dispatch-oproepen aan vanuit FiveM-commando's met behulp van sjablonen die geëxporteerd zijn uit de CAD van je community.",
+            "featuresLabel": "Oproepsjablonen-functies",
+            "sceneAlt": "Illustratieve FiveM-spelscène van agenten die een verkeerscontrole afhandelen naast een patrouille-SUV bij schemering.",
+            "setupDescription": "Configureer calltemplates_config.lua en JSON call-type-bestanden om elk commando, beschrijvingsprefix, opgenomen eenheid en optioneel Wraith-kenteken te definiëren. De meegeleverde /ts- en /towreq-commando's gebruiken standaard ACE-rechten.",
+            "setupTitle": "Pas elk commando aan je workflow aan"
+          },
+          "vehicles": {
+            "customizeDescription": "Pas het commando, de standaardregistratiestatus en de vervaldatum aan in vehreg_config.lua. Voor een aangepast Vehicle Registration-record, koppel de recordData veld-UID's zodat ze overeenkomen met het CAD-sjabloon. customData kan vooraf ingestelde details leveren voor add-on voertuigen waarvan de namen niet aanwezig zijn.",
+            "customizeTitle": "Stem registratie af op je CAD-sjabloon",
+            "description": "Registreer het voertuig waarin u zit voor uw geselecteerde CAD-personage met één in-game commando.",
+            "featuresLabel": "Voertuigregister functies",
+            "registerAlt": "Officiële grafiek van de functie Voertuigregister met het /reg-commando en een opgeslagen voertuigregistratie in Sonoran CAD.",
+            "registerDescription": "Ga in het voertuig zitten en voer /reg uit om het toe te voegen aan je momenteel geselecteerde CAD-personage als een Vehicle Registration-record. Spelers moeten hun CAD-accounts koppelen, en het standaard /reg-commando kan worden gewijzigd.",
+            "registerTitle": "Registreer een voertuig met één commando",
+            "sceneAlt": "Illustratieve FiveM-spelscène van een agent die een sedan controleert tijdens een voertuiginspectie bij schemering."
+          },
+          "wraith": {
+            "alertsDescription": "Kies welke registratie statussen waarschuwingen activeren en configureer status- en vervalveld-UID's in wraithv2_config.lua. Overeenkomende kentekens kunnen ook actieve BOLO- of aanhoudingsbevelrecords tonen. Extra recordvelden en waarschuwingsduur zijn configureerbaar.",
+            "alertsTitle": "Melding bij gemarkeerde records",
+            "description": "Verbind de Wraith ARS 2X-kentekenlezer met CAD voor automatische kentekenopvragingen en configureerbare recordwaarschuwingen.",
+            "featuresLabel": "Wraith kentekenlezer functies",
+            "radarAlt": "Officiële Wraith V2-featureafbeelding met de ARS 2X-radar, kentekenlezer en afstandsbediening in FiveM.",
+            "radarDescription": "De WraithV2-submodule werkt met de Sonoran-versie van Wraith ARS 2X, meegeleverd met de FiveM-resource. Het controleert nummerplaten tegen CAD en stuurt de volledige lookup naar CAD wanneer je een nummerplaat vastzet. Spelers moeten hun CAD-accounts koppelen en Locations ingeschakeld houden.",
+            "radarTitle": "Lees en vergrendel nummerplaten in het spel",
+            "sceneAlt": "Illustratieve FiveM-spelscène van een gemarkeerde patrouillesedan die verkeer scant op een stadsweg bij schemering."
+          }
+        },
         "landing": {
           "ctaDocs": "Bekijk docs",
           "ctaPrimary": "Schrijf je vandaag nog in",

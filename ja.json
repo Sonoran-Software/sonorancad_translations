@@ -3939,6 +3939,10 @@
     "heroTitle": "ゲーム向けの第1位のディスパッチプラットフォーム",
     "heroTitleAudience": "ゲームコミュニティ向け",
     "heroTitleMain": "第1位のディスパッチプラットフォーム",
+    "imagePreview": {
+      "close": "画像プレビューを閉じる",
+      "open": "画像プレビューを開く"
+    },
     "integrateButton": "統合",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "Sonoran CADでFiveMの車載カメラをライブ表示",
+          "features": {
+            "activation": {
+              "description": "CAD にリンクして、dispatch、police、fire、または EMS パネルにサインインします。/bodycam または keybind から開始できます。admins は emergency lights または drawn weapons に対する automatic activation も設定できます。",
+              "imageAlt": "ボディカメラ視点の路肩停止横のFiveMのイメージ画像。",
+              "title": "ゲーム内でボディカムを有効化"
+            },
+            "live": {
+              "description": "Active Units またはライブマップからプレビュー映像を表示し、専用ビューアーを開いてより大きな表示で確認します。",
+              "imageAlt": "都市の住宅街で停止中の車に接近する FiveM ボディカメラのイメージ図。",
+              "title": "ライブ映像を表示"
+            },
+            "recordings": {
+              "description": "キー割り当てまたは設定済みイベントで録画し、その後 Unit Management でクリップを確認または添付します。CAD ホストのクリップは 24 時間後に期限切れになります。",
+              "imageAlt": "ボディカメラから見たFiveMの夜間の路肩のイメージ画像。",
+              "title": "クリップを録画して確認"
+            }
+          },
+          "featuresLabel": "FiveM ボディカム機能",
+          "productCaptures": {
+            "clipPickerAlt": "Sonoran CAD 公式クリップピッカーで、FiveM の録画がカスタム記録に添付されている様子を表示しています。",
+            "clipPickerDescription": "カスタムレコードに Bodycam クリップフィールドを追加し、レコードエディタから保存済みクリップを選択して添付します。クリップはレコード内で直接再生できます。",
+            "clipPickerTitle": "記録にクリップを添付",
+            "recordingsPanelAlt": "Sonoran CAD 公式 Bodycam クリップパネル、録画されたユニット映像を表示。",
+            "recordingsPanelDescription": "CADのボディカム録画パネルで映像を確認します。CADでホストされたクリップは24時間後に期限切れになります。",
+            "recordingsPanelTitle": "保存済み録画を確認"
+          },
+          "productCapturesLabel": "Sonoran CAD のボディカム録画"
+        },
         "description": "多数の深い統合ポイントを備えた公式 FiveM リソース。",
+        "featurePages": {
+          "callers": {
+            "description": "近くの目撃者は、設定された緊急通報を発動でき、ディスパッチに役立つ詳細を送信します。",
+            "featureDescription": "近くにいる通行人は、設定されたイベントを目撃したときに通報できます。通報タイプ、タイミング、クールダウン、通報者の説明、および除外ゾーンはリソース設定で調整してください。",
+            "featureTitle": "近くの目撃者からの通報",
+            "imageAlt": "歩行者がロスサントスの歩道から通話し、パトカーが近づく FiveM のイメージ図。"
+          },
+          "civilian": {
+            "captureAlt": "ゲーム内 /civid ヘルプ案内でCivilian Integrationのコマンド一覧を表示",
+            "description": "リンクされたプレイヤーの選択したCADキャラクターを取得し、ゲーム内でそのIDを表示します。",
+            "featureDescription": "選択した CAD キャラクターを近くのプレイヤーと共有するには /civid show を使用します。オプションの ID カード表示は sonoran_idcard リソースを使用し、sonorancad より前に起動する必要があります。",
+            "featureTitle": "ゲーム内の CAD キャラクター ID",
+            "imageAlt": "パトカーのそばで警察官が市民の身分証を受け取る FiveM ロールプレイのイメージシーン。"
+          },
+          "commands": {
+            "captureAlt": "ゲーム内コマンドプロンプトで /panic コマンドとその panic シグナルの説明を表示",
+            "description": "ゲーム内コマンドからCADに緊急通報と非緊急通報を送信し、パニックステータスコマンドとカスタマイズ可能なキーバインドを利用できます。",
+            "featureDescription": "/911、/311、または /511 を使用して通報を CAD に送信し、/panic でユニットのパニック状態を有効化します。プレイヤーは CAD をリンクする必要があります。位置情報データは有効化された Locations サブモジュールに依存します。",
+            "featureTitle": "ゲーム内の通報とパニック状態",
+            "imageAlt": "パトカーのそばで運転者と話す警察官の FiveM ロールプレイのイメージシーン。"
+          },
+          "dispatch": {
+            "captureAlt": "GPS追跡が有効で、A-10が主要ユニットとして割り当てられたSonoran CADのディスパッチ通話。",
+            "description": "CAD 通報のゲーム内アラートを受信し、FiveM から応答し、現場までのライブ ルーティングに従います。",
+            "featureDescription": "連携済みの対象ユニットはコールアラートを受信し、/dn respondでアタッチします。GPS誘導はコール郵便番号に従い、dispatchは追跡中の主ユニットを追跡できます。LocationsとCall Commandsは有効のままにし、Postalsは任意です。",
+            "featureTitle": "通報アラートと GPS 対応",
+            "imageAlt": "Los Santos を順番に走行する 2 台のマーキング入りパトロールカーの FiveM ゲームプレイのイメージ"
+          },
+          "display": {
+            "captureAlt": "Sonoran CAD を表示している公式 CAD 表示のスクリーンショット。車載ノートパソコン上で Sonoran CAD が開かれており、画面下にコンピューター終了コントロールがあります。",
+            "description": "車両またはステーションのラップトップで Open CAD を開き、近くのプレイヤーに現在の表示を見せます。",
+            "featureDescription": "タブレット リソースが実行中の間、近くのディスプレイを使用するには G を押してください。近くのプレイヤーは定期的に更新される画面を見て、自分の CAD セッションを使用するために制御を要求できます。",
+            "featureTitle": "ゲーム内ラップトップでのCAD",
+            "imageAlt": "Los Santos風の通りで、巡回SUV内にいる警察官が搭載型ノートパソコンを使用しているFiveMのイメージ画像。"
+          },
+          "ers": {
+            "captureAlt": "ツールバーに ERS 通報ツールがある Sonoran CAD ライブマップ。アニメーションは通報の配置を示しています。",
+            "description": "CAD ライブマップから ERS インシデントを作成し、受理したコールアウトをディスパッチに接続します。",
+            "featureDescription": "CAD ライブマップから ERS コールアウトを配置します。アクティブな CAD ユニットを持つリンク済みプレイヤーが ERS で承認すると、設定済みの構成で CAD ディスパッチ通話を作成し、レスポンダーを割り当てることができます。割り当て済みコールアウトには ERS シフトとサービス選択が必要です。Night ERS 1.8.16 以降が必要です。",
+            "featureTitle": "CADに接続されたコールアウト",
+            "imageAlt": "ロサントスの路上衝突事故に警察と EMS が一緒に対応する FiveM のイメージ図。"
+          },
+          "forceRegister": {
+            "captureAlt": "ゲーム内 CAD リンクメニュー、ワンタイムリンクコードと CAD をリンクするコントロール。",
+            "description": "リマインダーまたは必須のゲーム内リンク画面で、プレイヤーに CAD アカウントの連携を促します。",
+            "featureDescription": "Nag mode を使ってプレイヤーに /link を実行するよう伝えるか、Freeze mode で CAD link メニューをリンクするまで開いたままにします。通知は設定済みの QBCore または ESX jobs、あるいは ACE permissions に制限できます。Tablet Auto Link は link 手順を自動で補完できます。",
+            "featureTitle": "リンクの強制方法を選択",
+            "imageAlt": "ロスサントス警察署の外で巡洋車の横にいる2人の警察官が話している FiveM のイメージ図。"
+          },
+          "framework": {
+            "description": "QBCore または対応済みの ESX サーバーを CAD に接続し、選択したレコードからゲーム内の罰金を発行します。",
+            "featureDescription": "QBCore、ESX、または Legacy ESX を選択して、プレイヤーをリンクします。罰金を科す可能性がある正確な CAD フォーム名を一覧表示します。金額はレコードの Charges または Speed セクションから取得されます。ESX v2 はサポートされていません。",
+            "featureTitle": "選択した CAD レコードの罰金",
+            "imageAlt": "警察官がパトロール巡洋車の横で切符を書いている FiveM の交通停止のイメージ図。"
+          },
+          "kick": {
+            "description": "FiveM から切断したときに、リンクされた公共安全ユーザーの CAD ユニットを自動的にクリアします。",
+            "featureDescription": "警察、消防、EMS、またはディスパッチのプレイヤーがサーバーを離れると、リンクされたアクティブなユニットはCADから自動的に切断されます。KickはFiveMリソースでデフォルトで有効です。プレイヤーは引き続きCADアカウントをリンクする必要があります。",
+            "featureTitle": "自動ユニット切断",
+            "imageAlt": "ロスサントス署にパトロール巡洋車を戻す警察官の FiveM のイメージ図。"
+          },
+          "map": {
+            "accessCardDescription": "Live MapはFiveMリソースに組み込まれており、追加設定は不要です。メンバーはゲーム内で /link を使用してCADアカウントをリンクし、マップを表示する権限を持っている必要があります。郵便番号検索にはCAD ProとPostalsサブモジュールが必要です。",
+            "accessCardTitle": "アカウントをリンクしてアクセス権を付与",
+            "description": "Sonoran CAD のインタラクティブな GTA マップで、連携したユニットの位置と緊急通報をまとめて表示します。",
+            "mapCardDescription": "リンクされた警察、消防、EMS、ディスパッチユニットを緊急通報と並べて 2D GTA マップで表示します。ユニットマーカーを選択して詳細とマップ操作を確認します。",
+            "mapCardTitle": "2D ライブマップ",
+            "mapRegionLabel": "Sonoran CAD 2D GTA マップと架空のユニットとコールマーカー。",
+            "sampleCallDescription": "交通事故",
+            "sampleCaller": "匿名の通報者",
+            "sampleDataNote": "ここに表示される部署名、役職、通報は架空の静的な例です。",
+            "sampleFireLocation": "ストロベリー",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "ミッション・ロウ",
+            "samplePoliceName": "M. レイエス",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "ロスサントスの通りで、マーキングされたパトロールクルーザー、警察官、停止した車両がある FiveM のイメージ図。",
+            "showcaseLabel": "ライブマップ機能"
+          },
+          "pagers": {
+            "captureAlt": "緊急ページ種別、受信者ノード、選択済みユニット、メッセージ本文を備えた Sonoran CAD Pager Reborn パネル。",
+            "description": "CAD から選択した pager ノードと連携した FiveM ユニットに、緊急、非緊急、または管理の page を送信します。",
+            "featureDescription": "ページを受信するペジャーノードと、任意のアクティブユニットを選択し、タイプを選び、CADでメッセージを入力してください。リンクされた FiveM ユニットは、音声アラート付きでページを受信します。Pager Reborn リソースは別のサードパーティ製ダウンロードで、CAD Pro には追加費用なしで含まれています。ほかのコミュニティは Inferno から購入できます。",
+            "featureTitle": "ゲーム内のユニットにページを送信",
+            "imageAlt": "消防署内で消防士が小型のクリップ式ページャーを確認しているFiveMのイメージ図。"
+          },
+          "phone": {
+            "appAlt": "ゲーム内の LB Phone ホーム画面にインストールされた Sonoran CAD のアイコン。",
+            "appDescription": "LB Phone では、コミュニティが Sonoran CAD をカスタムアプリとして追加でき、プレイヤーはゲーム内で普段使っている電話から CAD を開けます。LB Phone は LB Scripts の有料サードパーティ製リソースです。",
+            "appTitle": "ゲーム内の電話から CAD を開く",
+            "featuresLabel": "LB Phone App の機能",
+            "sceneAlt": "マーキングされたパトロールSUVの横でスマホを確認する警察官の FiveM のイメージ図。",
+            "setupDescription": "lb-phone/config/config.luaのConfig.CustomAppsにSonoran CADエントリを追加し、LB Phoneを再起動してから、ゲーム内のApp StoreからCADをインストールしてください。",
+            "setupTitle": "アプリを設定してインストール"
+          },
+          "plugins": {
+            "captureAlt": "有効化設定と ラジオ統合オプションを含む公式 Sonoran Radio プラグイン設定例。",
+            "description": "dispatch、records、live maps、communications、server workflows 用の独立した FiveM 統合を構成します。",
+            "featureDescription": "各サブモジュールには、FiveM リソース内に独自の設定ファイルがあります。サーバーに必要な統合を有効化、無効化、調整し、変更を適用するには Sonoran CAD リソースを再起動してください。",
+            "featureTitle": "サーバーに必要な統合を有効にする",
+            "imageAlt": "警察と消防の隊員が署の外で連携する FiveM のイメージシーン。"
+          },
+          "printer": {
+            "cadAlt": "PDF メニューを開き、ゲーム内印刷が選択された Sonoran CAD レコード編集画面。",
+            "cadDescription": "CADのレコードセクションで、レコードのPDFメニューを開き、ゲーム内で印刷を選択します。リンクされたユーザーは、ディスパッチ、警察、消防、またはEMSパネルでアクティブである必要があります。",
+            "cadTitle": "CADから記録を送信",
+            "description": "CAD記録を設定済みのプリンターまたは車両に送信して、対応者がFiveM内で閲覧・共有できるようにします。",
+            "featuresLabel": "レコードプリンター ワークフロー",
+            "gameDescription": "/printer queue で利用可能な PDF を確認し、次に設定済みのプリンターまたは対応車両の近くで /printer print [id] を使用します。印刷された記録は近くのプレイヤーに渡すか、インベントリアイテムとして共有できます。",
+            "gameTitle": "ゲーム内で印刷して共有",
+            "sceneAlt": "マーキングされたパトロールSUVの横で印刷された記録を確認する警察官の FiveM のイメージ図。"
+          },
+          "radio": {
+            "callAlt": "リンクされたCAD通報アラートとユニット情報を表示するSonoran Radioの携帯端末。",
+            "callDescription": "CADディスパッチ通話に接続すると、Sonoran Radioはハンドヘルドに通話詳細を表示します。通話タイトルを選択して情報を展開または折りたたみます。",
+            "callTitle": "ラジオでの CAD 通話詳細",
+            "description": "Sonoran Radio を CAD に接続して、通報詳細、パニック状態、部隊名をゲーム内で連携させます。",
+            "featuresLabel": "ソノラン Radio 統合",
+            "sceneAlt": "パトカーの横でハンドヘルド無線に向かって話す制服警察官の FiveM のイメージ図。",
+            "syncDescription": "sonrad サブモジュールを有効にして、プレイヤーアカウントをリンクします。オプションの名前同期では CAD のユニット番号と名前を使用します。Sonoran Radio の panic コントロールを押すと、CAD の panic ステータスも切り替わります。",
+            "syncTitle": "ユニット名とパニック状態を同期"
+          },
+          "registration": {
+            "description": "対応フレームワークサーバーでゲーム内の市民キャラクターレコードを登録するか、ポートレートを自動同期します。",
+            "featuresLabel": "民間人登録機能",
+            "standaloneAlt": "ポートレート撮影エリアとキャラクター登録ボタン付きのSonoran CADキャラクター登録フォーム。",
+            "standaloneDescription": "プレイヤーは /civreg または設定されたコマンドを開き、カスタムキャラクターのフォームを入力して、レコードを CAD に送信します。画像フィールドではライブセルフィーを撮影できます。",
+            "standaloneTitle": "ゲーム内でキャラクターを登録",
+            "syncAlt": "ロスサントスの住宅街にいる市民キャラクターのFiveMゲームプレイを示すイメージ画像。",
+            "syncDescription": "民間人データベース同期が有効な場合、CivReg は自動的にポートレート同期に切り替わります。キャラクターの外見が10秒間変わらないと、既存のレコードに新しいポートレートを保存します。",
+            "syncTitle": "Database Sync とプロフィール画像を同期"
+          },
+          "signs": {
+            "cadAlt": "高架のロスサントス高速道路標識に DRIVE SAFE と表示された FiveM ゲームプレイのイメージビュー",
+            "cadDescription": "オプションの CAD 連携により、概要からすべてのサインを開くか、Live Map でサインを選択してメッセージを遠隔で更新できます。",
+            "cadTitle": "CADからのメッセージを管理",
+            "description": "CAD を接続して、概要または Live Map から看板メッセージを更新し、ゲーム内で編集します。",
+            "featuresLabel": "道路標識の機能",
+            "gameAlt": "道路工事の近くで DETOUR AHEAD と表示された高架高速道路標識の FiveM ゲームプレイのイメージビュー",
+            "gameDescription": "/sign を使ってテキストと道路アイコンを編集し、明るさや 自動減光 を調整し、メッセージをスケジュールできます。ゲーム内での保存には、制御パネルから 3 メートル以内にいる必要があります。保存された標識は再起動後も保持されます。",
+            "gameTitle": "ゲーム内で看板を編集し、スケジュール設定する"
+          },
+          "station": {
+            "alertAlt": "非常灯が点灯した開放された消防署の外にある消防車の FiveM ゲームプレイのイメージシーン。",
+            "alertDescription": "Live Map またはアラートビルダーから、ステーションのライト、トーン、またはテキスト読み上げメッセージを選択します。専用パネルでは複数のステーションをフィルタリングして選択できます。",
+            "alertTitle": "ライトを設定してアラートを送信",
+            "description": "CADから駅のアラートのドア、ライト、トーン、音声を制御。サードパーティ製リソースはCAD Proに含まれるか、Infernoから別売り。",
+            "doorsAlt": "開いた車庫の扉から消防署を出る消防車の FiveM ゲームプレイのイメージシーン。",
+            "doorsDescription": "Live Map で駅を選択して、設定済みのベイドアを開閉します。緊急通報から、Nearby Stations はアラートビルダーの対象を事前入力できます。",
+            "doorsTitle": "CADからステーションドアを制御",
+            "featuresLabel": "駅アラート機能"
+          },
+          "status": {
+            "commandAlt": "公式なユニットステータス機能のグラフィックで、/setstatus コマンドと AVAILABLE とマークされた CAD ユニットを表示しています。",
+            "commandDescription": "ゲーム内で /setstatus [status] を実行し、コミュニティで設定されたステータスラベルまたは数値コードのいずれかを使用します。連携済みユニットのステータスが CAD で更新されます。",
+            "commandTitle": "コマンドでステータスを変更",
+            "description": "FiveM の連携済み CAD ユニットを /setstatus [status] で更新し、コミュニティで設定されたラベルまたは数値のステータスコードを使用します。",
+            "featuresLabel": "部隊ステータス機能",
+            "setupAlt": "勤務開始時の、駅舎の外でパトカーのそばに立つ警察官の FiveM ゲームプレイのイメージシーン。",
+            "setupDescription": "ユニットステータスは FiveM リソースでデフォルトで有効です。CAD の Admin > Customization > Unit Status Codes でステータスの選択肢を設定してください。プレイヤーは CAD アカウントをリンクする必要があり、デフォルトで command.setstatus ACE 権限を持っている必要があります。",
+            "setupTitle": "コミュニティのステータスコードを使用する"
+          },
+          "sync": {
+            "description": "CAD で FiveM のキャラクター、ライセンス、車両レコードを直接検索できます。Database Sync には Plus 以上が必要です。Database Merge と Friendly Mapping には Pro が必要です。",
+            "featuresLabel": "データベース 同期 機能",
+            "lookupAlt": "キャラクターと車両の登録フィールドを表示するデータベース同期結果パネル。",
+            "lookupDescription": "CAD はルックアップ時に接続済みの FiveM フレームワーク データベースを参照し、その後コミュニティのカスタム レコード テンプレートを通じて利用可能なキャラクター、ライセンス、車両登録のフィールドを表示します。",
+            "lookupTitle": "CAD内のフレームワーク記録を検索",
+            "mergeAlt": "交通停止中に警官が書類を確認している FiveM のゲームプレイのイメージシーン。",
+            "mergeDescription": "Database Sync は読み取り専用です。Pro では Database Merge が追加され、CAD に追加詳細を別々に保存でき、さらに Friendly Mapping により生のデータベース値を読みやすいラベルに置き換えられます。",
+            "mergeTitle": "検索を明確かつ完全に保つ"
+          },
+          "tablet": {
+            "description": "ゲーム内のタブレットでフル CAD を開くか、Mini-CAD で通報を確認し、コンパクトなオーバーレイから参加します。",
+            "featuresLabel": "タブレットとミニCADの機能",
+            "miniCadAlt": "アクティブな通報、割り当て済みの部隊、詳細を添付または表示するための操作を示す公式 Mini-CAD のスクリーンショット。",
+            "miniCadDescription": "Mini-CAD は現在の通報と割り当てられたユニットをコンパクトなオーバーレイで表示します。左矢印キーと右矢印キーで通報を切り替え、K で接続または切断し、L で詳細を展開します。任意のキーバインドはデフォルトでは未割り当てで、FiveM 設定で構成できます。",
+            "miniCadTitle": "Mini-CADで通話を確認",
+            "tabletAlt": "Sonoran CAD タブレットと Mini-CAD インターフェースがアクティブな交通停止を表示しています。",
+            "tabletDescription": "ゲーム内でリンク済みの警察、消防、EMS、またはディスパッチCADパネルを表示するには、/tablet open を実行してください。タブレットを通じてCADにサインインすると、アカウントを自動的にリンクできます。タブレットリソースは FiveM のインストール時にデフォルトで有効になっています。",
+            "tabletTitle": "ゲーム内でフル CAD を開く"
+          },
+          "templates": {
+            "commandAlt": "FiveM の /ts コマンド、確認メッセージ、そして CAD に表示される結果の Traffic Stop 通報を示す Official Call Templates 機能のスクリーンショット。",
+            "commandDescription": "/ts のような交通停止や /towreq のようなレッカー依頼用の組み込みコマンドを実行します。テンプレートが通話プリセットを入力し、ゲーム内の位置が住所と郵便番号位置を提供します。プレイヤーは CAD をリンクし、Locations を有効にしておく必要があります。Postals は任意です。",
+            "commandTitle": "ゲーム内で出動要請を作成",
+            "description": "コミュニティのCADからエクスポートしたテンプレートを使って FiveM コマンドからディスパッチコールを作成",
+            "featuresLabel": "コールテンプレート機能",
+            "sceneAlt": "夕暮れ時にパトロール SUV のそばで警官たちが交通停止を対応している FiveM ゲームプレイのイメージシーン。",
+            "setupDescription": "calltemplates_config.lua と JSON の call-type ファイルを設定して、各コマンド、説明プレフィックス、含まれるユニット、任意の Wraith plate を定義します。付属の /ts と /towreq コマンドはデフォルトで ACE 権限を使用します。",
+            "setupTitle": "各コマンドをワークフローに合わせて調整"
+          },
+          "vehicles": {
+            "customizeDescription": "vehreg_config.lua でコマンド、デフォルトの登録ステータス、有効期限を調整します。カスタマイズした Vehicle Registration レコードでは、recordData フィールド UID を CAD テンプレートに合わせてマップします。customData は、名前が存在しない追加車両のプリセット詳細を提供できます。",
+            "customizeTitle": "登録をCADテンプレートに一致させる",
+            "description": "座っている車両を選択したCADキャラクターにゲーム内コマンド1つで登録します。",
+            "featuresLabel": "車両登録機能",
+            "registerAlt": "Sonoran CADで /reg コマンドと保存された車両登録記録を表示する公式車両登録機能グラフィック。",
+            "registerDescription": "車両に乗り込み /reg を実行して、現在選択中の CAD キャラクターに Vehicle Registration 記録として追加してください。プレイヤーは CAD アカウントをリンクする必要があり、デフォルトの /reg コマンドは変更できます。",
+            "registerTitle": "1つのコマンドで車両を登録",
+            "sceneAlt": "薄暗い時間帯に車両検査で警官がセダンを確認している FiveM のゲームプレイのイメージシーン。"
+          },
+          "wraith": {
+            "alertsDescription": "どの登録ステータスでアラートを発生させるかを選択し、wraithv2_config.lua でステータスと有効期限フィールドの UID を設定します。一致するナンバープレートは、アクティブな BOLO または warrant レコードも表示できます。追加のレコードフィールドとアラート継続時間は設定可能です。",
+            "alertsTitle": "フラグ付きレコードに警告",
+            "description": "Wraith ARS 2X ナンバープレートリーダーを CAD に接続して自動プレート照会と設定可能なレコード警報を実行。",
+            "featuresLabel": "Wraith プレート リーダーの機能",
+            "radarAlt": "FiveM で ARS 2X レーダー、プレートリーダー、リモートコントローラーを表示する公式 Wraith V2 機能グラフィック。",
+            "radarDescription": "WraithV2 サブモジュールは、FiveM リソースに同梱されている Sonoran 版 Wraith ARS 2X と連携します。プレートを CAD と照合し、プレートをロックするとフル検索結果を CAD に送信します。プレイヤーは CAD アカウントをリンクし、Locations を有効にしておく必要があります。",
+            "radarTitle": "ゲーム内でナンバープレートを読み取り、ロックする",
+            "sceneAlt": "夕暮れ時に市街道路でマーキングされたパトロールセダンが交通を監視している FiveM ゲームプレイのイメージシーン。"
+          }
+        },
         "landing": {
           "ctaDocs": "ドキュメントを見る",
           "ctaPrimary": "今すぐ登録",

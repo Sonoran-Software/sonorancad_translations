@@ -3939,6 +3939,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "Pour les communautés de jeu",
     "heroTitleMain": "La plateforme de dispatch n°1",
+    "imagePreview": {
+      "close": "Fermer l'aperçu de l'image",
+      "open": "Ouvrir l'aperçu de l'image"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "Voir les caméras d’unité FiveM en direct dans Sonoran CAD.",
+          "features": {
+            "activation": {
+              "description": "Lier au CAD et se connecter à un panneau de dispatch, police, pompiers ou EMS. Commencer avec /bodycam ou un raccourci clavier; les admins peuvent aussi configurer l'activation automatique des feux d'urgence ou des armes dégainées.",
+              "imageAlt": "Scène illustrative de gameplay FiveM vue depuis une caméra corporelle à côté d'un contrôle routier.",
+              "title": "Activer les bodycams en jeu"
+            },
+            "live": {
+              "description": "Prévisualisez les flux des unités actives ou de la carte en direct, et ouvrez un visionneur dédié pour une vue plus large.",
+              "imageAlt": "Vue illustrative de caméra corporelle FiveM s'approchant d'une voiture arrêtée dans un quartier urbain.",
+              "title": "Voir un flux en direct"
+            },
+            "recordings": {
+              "description": "Enregistrez avec un raccourci clavier ou un événement configuré, puis examinez ou joignez des clips dans Unit Management. Les clips hébergés dans le CAD expirent après 24 heures.",
+              "imageAlt": "Scène routière nocturne illustrative de FiveM vue depuis une caméra corporelle.",
+              "title": "Enregistrer et revoir les clips"
+            }
+          },
+          "featuresLabel": "Fonctionnalités bodycam FiveM",
+          "productCaptures": {
+            "clipPickerAlt": "Sélecteur de clip officiel Sonoran CAD montrant un enregistrement FiveM en cours d'attachement à un enregistrement personnalisé.",
+            "clipPickerDescription": "Ajoutez un champ de clips Bodycam à un enregistrement personnalisé, puis sélectionnez et joignez un clip enregistré depuis l'éditeur d'enregistrement. Vous pouvez lire le clip directement dans l'enregistrement.",
+            "clipPickerTitle": "Joindre des clips aux dossiers",
+            "recordingsPanelAlt": "Panneau officiel des clips Bodycam de Sonoran CAD affichant les images enregistrées des unités.",
+            "recordingsPanelDescription": "Consultez les images dans le panneau Enregistrements de Body Cam de CAD. Les clips hébergés par CAD expirent après 24 heures.",
+            "recordingsPanelTitle": "Consulter les enregistrements enregistrés"
+          },
+          "productCapturesLabel": "Enregistrements de caméra corporelle dans Sonoran CAD"
+        },
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "featurePages": {
+          "callers": {
+            "description": "Les témoins à proximité peuvent déclencher les appels d'urgence configurés qui envoient des détails utiles à la centralisation.",
+            "featureDescription": "Les passants à proximité peuvent appeler lorsqu'ils sont témoins d'événements configurés. Ajustez les types d'appel, le timing et les temps de recharge, les descriptions des appelants et les zones exclues dans la configuration de la ressource.",
+            "featureTitle": "Appels de témoins à proximité",
+            "imageAlt": "Scène illustrative FiveM d'un piéton appelant depuis un trottoir de Los Santos tandis qu'une voiture de patrouille s'approche."
+          },
+          "civilian": {
+            "captureAlt": "Invite d’aide /civid en jeu listant les commandes d’intégration civile.",
+            "description": "Récupère le personnage CAD sélectionné d'un joueur lié et affiche sa carte d'identité en jeu.",
+            "featureDescription": "Utilisez /civid show pour partager le personnage CAD sélectionné avec un joueur à proximité. L'affichage facultatif de la carte d'identité utilise la ressource sonoran_idcard, qui doit démarrer avant sonorancad.",
+            "featureTitle": "IDs du personnage du CAD en jeu",
+            "imageAlt": "Scène illustrative de rôleplay FiveM d'un agent recevant la carte d'identité d'un civil à côté d'une voiture de patrouille."
+          },
+          "commands": {
+            "captureAlt": "Invite de commande en jeu montrant la commande /panic et sa description de signal de panique.",
+            "description": "Envoyer des appels d'urgence et non urgents au CAD depuis des commandes en jeu, avec une commande d'état de panique et une touche de raccourci personnalisable.",
+            "featureDescription": "Utilisez /911, /311 ou /511 pour envoyer des appels vers le CAD, et /panic pour activer l'état de panique de l'unité. Les joueurs doivent lier le CAD; les données de localisation dépendent du sous-module Locations activé.",
+            "featureTitle": "Appels et statut de panique en jeu",
+            "imageAlt": "Scène illustrative de rôleplay FiveM d'un agent parlant avec un conducteur à côté d'une voiture de patrouille."
+          },
+          "dispatch": {
+            "captureAlt": "Appel de dispatch Sonoran CAD avec A-10 assigné comme unité principale et suivi GPS activé.",
+            "description": "Recevez des alertes en jeu pour les appels CAD, répondez depuis FiveM et suivez l'itinéraire en direct vers la scène.",
+            "featureDescription": "Les unités liées et éligibles reçoivent les alertes d'appel et se rattachent avec /dn respond. Le guidage GPS suit le code postal de l'appel, et la répartition peut suivre l'unité principale pendant une poursuite. Gardez Locations et Call Commands activés ; Postals est facultatif.",
+            "featureTitle": "Alertes d'appel et réponse GPS",
+            "imageAlt": "Illustration du gameplay FiveM de deux voitures de patrouille marquées roulant en file dans Los Santos."
+          },
+          "display": {
+            "captureAlt": "Capture d'écran officielle de l'affichage CAD montrant Sonoran CAD ouvert sur un ordinateur portable embarqué, avec un contrôle Quitter l'ordinateur sous l'écran.",
+            "description": "Ouvrez CAD sur un véhicule ou l’ordinateur portable d’une station et laissez les joueurs à proximité voir l’affichage actuel.",
+            "featureDescription": "Appuyez sur G pour utiliser un écran à proximité pendant que la ressource tablette est en cours d'exécution. Les joueurs à proximité voient un écran actualisé périodiquement et peuvent demander le contrôle pour utiliser leur propre session CAD.",
+            "featureTitle": "CAD sur les ordinateurs portables en jeu",
+            "imageAlt": "Scène illustrative FiveM à l’intérieur d’un SUV de patrouille, avec un officier utilisant un ordinateur portable monté sur une rue de style Los Santos."
+          },
+          "ers": {
+            "captureAlt": "Carte en direct Sonoran CAD avec l'outil d'appel ERS dans sa barre d'outils; l'animation montre le placement d'un appel.",
+            "description": "Créez des incidents ERS depuis la carte en direct du CAD et connectez les interventions acceptées à la répartition.",
+            "featureDescription": "Placez une intervention ERS depuis la carte en direct du CAD. Lorsqu'un joueur lié avec une unité CAD active l'accepte dans ERS, les paramètres configurés peuvent créer un appel de répartition CAD et y associer des intervenants. Les interventions attribuées nécessitent un service et un quart ERS ; Night ERS 1.8.16 ou plus récent est requis.",
+            "featureTitle": "Interventions connectées au CAD",
+            "imageAlt": "Scène illustrative FiveM de police et d'EMS intervenant ensemble sur une collision routière à Los Santos."
+          },
+          "forceRegister": {
+            "captureAlt": "Menu de liaison CAD en jeu avec un code de liaison à usage unique et un contrôle Lier le CAD.",
+            "description": "Invitez les joueurs à lier leur compte CAD avec un rappel ou un écran de liaison en jeu obligatoire.",
+            "featureDescription": "Utilisez le mode Nag pour indiquer aux joueurs d’exécuter /link, ou le mode Freeze pour garder le menu de liaison CAD ouvert jusqu’à ce qu’ils le fassent. Limitez les notifications aux jobs QBCore ou ESX configurés, ou aux permissions ACE; le lien automatique sur tablette peut remplir l’étape de liaison.",
+            "featureTitle": "Choisissez comment l'association est imposée",
+            "imageAlt": "Illustration d'une scène FiveM devant un commissariat de Los Santos avec deux agents discutant à côté d'une voiture de patrouille."
+          },
+          "framework": {
+            "description": "Connectez les serveurs QBCore ou ESX pris en charge au CAD et émettez des amendes en jeu à partir des dossiers sélectionnés.",
+            "featureDescription": "Sélectionnez QBCore, ESX ou Legacy ESX et liez vos joueurs. Listez les noms exacts des formulaires CAD pouvant émettre des amendes; les montants proviennent de la section Charges ou Speed du dossier. ESX v2 n'est pas pris en charge.",
+            "featureTitle": "Amendes des dossiers CAD sélectionnés",
+            "imageAlt": "Illustration d'un contrôle routier FiveM avec un agent rédigeant une contravention à côté d'une voiture de patrouille."
+          },
+          "kick": {
+            "description": "Effacer automatiquement l'unité CAD d'un utilisateur de sécurité publique lié lorsqu'il se déconnecte de FiveM.",
+            "featureDescription": "Lorsque les joueurs liés de la police, des pompiers, des EMS ou de la centrale quittent le serveur, leurs unités actives se déconnectent automatiquement du CAD. Kick est activé par défaut avec la ressource FiveM ; les joueurs doivent toujours lier leurs comptes CAD.",
+            "featureTitle": "Déconnexion automatique d'unité",
+            "imageAlt": "Illustration d'une scène FiveM avec un agent ramenant une voiture de patrouille à un commissariat de Los Santos."
+          },
+          "map": {
+            "accessCardDescription": "La carte en direct est intégrée à la ressource FiveM et ne nécessite aucune configuration supplémentaire. Les membres doivent lier leur compte CAD en jeu avec /link et avoir l'autorisation de voir la carte. La recherche par code postal nécessite CAD Pro et le sous-module Postals.",
+            "accessCardTitle": "Lier les comptes et accorder l’accès",
+            "description": "Afficher les emplacements des unités liées et les appels d’urgence ensemble sur la carte GTA interactive de Sonoran CAD.",
+            "mapCardDescription": "Affichez les unités de police, de pompiers, de EMS et de dispatch liées ainsi que les appels d'urgence sur une carte GTA 2D. Sélectionnez les marqueurs d'unité pour les détails et les actions sur la carte.",
+            "mapCardTitle": "Carte 2D en direct",
+            "mapRegionLabel": "Carte GTA 2D Sonoran CAD avec marqueurs d'unités et d'appels fictifs.",
+            "sampleCallDescription": "Collision de la circulation",
+            "sampleCaller": "Appelant anonyme",
+            "sampleDataNote": "Les noms d’unité, les positions et l’appel affiché ici sont des exemples fictifs statiques.",
+            "sampleFireLocation": "Fraise",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "Mission Row",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "Scène illustrative de jeu de rôle FiveM avec une voiture de patrouille marquée, un agent et un véhicule arrêté dans une rue de Los Santos.",
+            "showcaseLabel": "Fonctionnalités de la carte interactive"
+          },
+          "pagers": {
+            "captureAlt": "Panneau Sonoran CAD Pager Reborn avec type de page d'urgence, nœuds de destinataires, unités sélectionnées et corps du message.",
+            "description": "Envoyez des pages d'urgence, non urgentes ou administratives depuis le CAD vers les nœuds de pagers sélectionnés et les unités FiveM liées.",
+            "featureDescription": "Choisissez les nœuds pager et les unités actives facultatives qui doivent recevoir une page, sélectionnez son type et saisissez le message dans CAD. Les unités FiveM liées reçoivent la page avec une alerte audio. La ressource Pager Reborn est un téléchargement tiers séparé inclus sans frais supplémentaires avec CAD Pro ; les autres communautés peuvent l'acheter auprès d'Inferno.",
+            "featureTitle": "Envoyer des pages aux unités en jeu",
+            "imageAlt": "Scène illustrative FiveM d'un pompier consultant un petit pager clipsé dans une caserne de pompiers."
+          },
+          "phone": {
+            "appAlt": "L’icône Sonoran CAD installée sur l’écran d’accueil d’un téléphone LB en jeu.",
+            "appDescription": "LB Phone permet aux communautés d'ajouter Sonoran CAD comme application personnalisée, afin que les joueurs puissent ouvrir le CAD depuis le téléphone qu'ils utilisent déjà en jeu. LB Phone est une ressource tierce payante de LB Scripts.",
+            "appTitle": "Ouvrir le CAD depuis le téléphone en jeu",
+            "featuresLabel": "Fonctionnalités de l'application LB Phone",
+            "sceneAlt": "Scène illustrative FiveM d'un agent vérifiant un téléphone à côté d'un SUV de patrouille marqué.",
+            "setupDescription": "Ajoutez l'entrée Sonoran CAD à Config.CustomApps dans lb-phone/config/config.lua, redémarrez LB Phone, puis installez CAD depuis l'App Store en jeu.",
+            "setupTitle": "Configurer et installer l'application"
+          },
+          "plugins": {
+            "captureAlt": "Exemple officiel de configuration du plugin Sonoran Radio avec un paramètre d’activation et des options d’intégration radio.",
+            "description": "Configurez des intégrations FiveM indépendantes pour la répartition, les dossiers, les cartes en direct, les communications et les workflows serveur.",
+            "featureDescription": "Chaque sous-module dispose de son propre fichier de configuration dans la ressource FiveM. Activez, désactivez et ajustez les intégrations dont votre serveur a besoin, puis redémarrez la ressource Sonoran CAD pour appliquer les modifications.",
+            "featureTitle": "Activez les intégrations dont votre serveur a besoin",
+            "imageAlt": "Scène illustrative FiveM de policiers et de pompiers coordonnant leurs actions devant un poste."
+          },
+          "printer": {
+            "cadAlt": "Éditeur d'enregistrement Sonoran CAD avec le menu PDF ouvert et Imprimer en jeu sélectionné.",
+            "cadDescription": "Dans la section Records de CAD, ouvrez le menu PDF du dossier et sélectionnez Print In-Game. L'utilisateur lié doit être actif dans un panneau dispatch, police, fire ou EMS.",
+            "cadTitle": "Envoyer un enregistrement depuis le CAD",
+            "description": "Envoyer les dossiers CAD vers les imprimantes ou véhicules configurés afin que les intervenants puissent les consulter et les partager dans FiveM.",
+            "featuresLabel": "Workflow de l'imprimante d'enregistrement",
+            "gameDescription": "Utilisez /printer queue pour vérifier les PDF disponibles, puis /printer print [id] près d'une imprimante configurée ou d'un véhicule pris en charge. Les documents imprimés peuvent être remis aux joueurs à proximité ou partagés comme objets d'inventaire.",
+            "gameTitle": "Imprimer et partager en jeu",
+            "sceneAlt": "Scène illustrative FiveM d'un agent examinant un dossier imprimé à côté d'un SUV de patrouille marqué."
+          },
+          "radio": {
+            "callAlt": "Radio portable Sonoran affichant une alerte d'appel CAD liée et les informations d'unité.",
+            "callDescription": "Lorsqu'il est attaché à un appel de répartition CAD, Sonoran Radio affiche les détails de l'appel sur le terminal portable. Sélectionnez le titre de l'appel pour développer ou réduire les informations.",
+            "callTitle": "Détails de l'appel CAD sur la radio",
+            "description": "Connectez Sonoran Radio au CAD pour que les détails des appels, le statut de panique et les noms des unités restent liés en jeu.",
+            "featuresLabel": "Intégration Sonoran Radio",
+            "sceneAlt": "Scène illustrative FiveM d'un agent de patrouille parlant dans une radio portative à côté d'un SUV marqué.",
+            "syncDescription": "Activez le sous-module sonrad et liez les comptes joueurs. La synchronisation facultative du nom utilise le numéro d'unité CAD et le nom; appuyer sur la commande de panique de Sonoran Radio bascule aussi l'état de panique CAD.",
+            "syncTitle": "Synchroniser les noms des unités et le statut de panique"
+          },
+          "registration": {
+            "description": "Enregistrez les fiches de personnages civils en jeu ou synchronisez automatiquement les portraits sur les serveurs compatibles du framework.",
+            "featuresLabel": "Fonctionnalités de l'immatriculation civile",
+            "standaloneAlt": "Formulaire d'inscription de personnage Sonoran CAD avec une zone de capture de portrait et un bouton Enregistrer le personnage.",
+            "standaloneDescription": "Les joueurs ouvrent /civreg ou la commande configurée, remplissent le formulaire de personnage personnalisé et soumettent l'enregistrement au CAD. Les champs image peuvent capturer un selfie en direct.",
+            "standaloneTitle": "Enregistrer les personnages en jeu",
+            "syncAlt": "Portrait illustratif de gameplay FiveM d’un personnage civil dans une rue résidentielle de Los Santos.",
+            "syncDescription": "Avec la synchronisation de la base de données civile activée, CivReg passe automatiquement à la synchronisation des portraits. Une fois que l’apparence d’un personnage reste inchangée pendant 10 secondes, il enregistre un nouveau portrait dans l’enregistrement existant.",
+            "syncTitle": "Synchroniser les portraits avec Database Sync"
+          },
+          "signs": {
+            "cadAlt": "Vue illustrative de gameplay FiveM d'un panneau d'autoroute aérien de Los Santos indiquant CONDUISEZ PRUDEMMENT.",
+            "cadDescription": "Avec l’intégration CAD optionnelle, ouvrez tous les panneaux depuis l’aperçu ou sélectionnez un panneau sur la carte en direct pour mettre son message à jour à distance.",
+            "cadTitle": "Gérer les messages du CAD",
+            "description": "Connectez le CAD pour mettre à jour les messages des panneaux depuis la vue d'ensemble ou la carte en direct, et les modifier en jeu.",
+            "featuresLabel": "Fonctionnalités des panneaux d'affichage interactif",
+            "gameAlt": "Vue illustrative de gameplay FiveM d'un panneau d'autoroute suspendu indiquant DÉTOUR À VENIR près de travaux routiers.",
+            "gameDescription": "Utilisez /sign pour modifier le texte et les icônes routières, régler la luminosité ou l'Auto-Dim, et programmer des messages. Les sauvegardes en jeu nécessitent que vous soyez à moins de 3 mètres du panneau de commande; les panneaux sauvegardés persistent après les redémarrages.",
+            "gameTitle": "Modifier et planifier des panneaux en jeu"
+          },
+          "station": {
+            "alertAlt": "Scène de gameplay FiveM illustrative d'un camion de pompiers à l'extérieur d'une caserne de pompiers ouverte avec les feux d'urgence allumés",
+            "alertDescription": "Choisissez les lumières de station, les tonalités ou un message de synthèse vocale depuis la carte en direct ou le générateur d'alerte. Le panneau dédié peut filtrer et sélectionner plusieurs stations.",
+            "alertTitle": "Régler les lumières et envoyer des alertes",
+            "description": "Contrôlez les portes, les lumières, les tonalités et la synthèse vocale de l'alerte Station de la collection Inferno depuis le CAD. La ressource tierce est incluse avec CAD Pro ou vendue séparément par Inferno.",
+            "doorsAlt": "Scène de gameplay FiveM illustrative d'un camion de pompiers quittant une caserne de pompiers alors que les portes de la remise s'ouvrent",
+            "doorsDescription": "Sélectionnez une station sur la carte en direct pour ouvrir ou fermer ses portes de quai configurées. Depuis un appel d'urgence, les stations à proximité peuvent préremplir une cible pour le générateur d'alerte.",
+            "doorsTitle": "Contrôler les portes de la station depuis le CAD",
+            "featuresLabel": "Fonctionnalités de l'alerte station"
+          },
+          "status": {
+            "commandAlt": "Graphique officiel de la fonctionnalité Statut d'unité montrant la commande /setstatus et une unité CAD marquée DISPONIBLE.",
+            "commandDescription": "Exécuter /setstatus [status] en jeu avec l'un des libellés d'état configurés de votre communauté ou des codes numériques. Le statut de l'unité liée se met à jour dans le CAD.",
+            "commandTitle": "Changer le statut avec une commande",
+            "description": "Mettre à jour une unité CAD liée depuis FiveM avec /setstatus [status], en utilisant les libellés configurés de votre communauté ou des codes d'état numériques.",
+            "featuresLabel": "Fonctionnalités du statut de l'unité",
+            "setupAlt": "Scène illustrative de gameplay FiveM d'un agent de patrouille à côté d'une voiture de police marquée devant un poste au début de service.",
+            "setupDescription": "Unit Status est activé par défaut avec la ressource FiveM. Configurez les choix de statut dans le CAD sous Admin > Customization > Unit Status Codes. Les joueurs doivent lier leur compte CAD et, par défaut, disposer de l'autorisation ACE command.setstatus.",
+            "setupTitle": "Utilisez les codes de statut de votre communauté"
+          },
+          "sync": {
+            "description": "Recherchez directement dans le CAD les dossiers de personnage FiveM, de licence et de véhicule. La synchronisation de base de données nécessite Plus ou supérieur; la fusion de bases de données et le mappage convivial nécessitent Pro.",
+            "featuresLabel": "Fonctionnalités de synchronisation de la base de données",
+            "lookupAlt": "Panneau de résultat de synchronisation de base de données affichant les champs d'enregistrement des personnages et des véhicules.",
+            "lookupDescription": "CAD interroge la base de données de votre framework FiveM connecté lors des recherches, puis affiche les champs disponibles de personnage, de permis et d'immatriculation de véhicule via les modèles d'enregistrements personnalisés de votre communauté.",
+            "lookupTitle": "Rechercher des enregistrements de framework dans le CAD",
+            "mergeAlt": "Scène de jeu FiveM illustrative d'un agent vérifiant des documents lors d'un contrôle routier.",
+            "mergeDescription": "La synchronisation de la base de données est en lecture seule. Pro ajoute la fusion de la base de données pour enregistrer séparément des détails supplémentaires dans le CAD, ainsi que le mappage convivial pour remplacer les valeurs brutes de la base de données par des libellés lisibles.",
+            "mergeTitle": "Garder les recherches claires et complètes"
+          },
+          "tablet": {
+            "description": "Ouvrez le CAD complet sur une tablette en jeu ou utilisez Mini-CAD pour consulter les appels et vous y attacher depuis une superposition compacte.",
+            "featuresLabel": "Fonctionnalités Tablette et Mini-CAD",
+            "miniCadAlt": "Capture d'écran officielle du Mini-CAD montrant un appel actif, des unités assignées et des contrôles pour joindre ou afficher les détails.",
+            "miniCadDescription": "Mini-CAD affiche les appels en cours et les unités assignées dans une superposition compacte. Utilisez les touches flèche gauche et flèche droite pour changer d'appel, K pour attacher ou détacher, et L pour développer les détails. Son raccourci optionnel n'est pas attribué par défaut et peut être configuré dans les paramètres FiveM.",
+            "miniCadTitle": "Consulter les appels dans Mini-CAD",
+            "tabletAlt": "Interfaces tablette Sonoran CAD et Mini-CAD montrant un contrôle routier en cours.",
+            "tabletDescription": "Exécutez /tablet open pour afficher dans le jeu votre panneau CAD police, incendie, EMS ou dispatch lié. La connexion au CAD via la tablette peut lier votre compte automatiquement. La ressource tablette est activée par défaut avec l'installation FiveM.",
+            "tabletTitle": "Ouvrir le CAD complet en jeu"
+          },
+          "templates": {
+            "commandAlt": "Capture d’écran de la fonctionnalité Modèles d’appels officiels montrant une commande FiveM /ts, un message de confirmation et l’appel Traffic Stop résultant dans CAD.",
+            "commandDescription": "Exécutez une commande intégrée comme /ts pour un contrôle routier ou /towreq pour une demande de remorquage. Le modèle renseigne les préréglages de l'appel, tandis que votre position en jeu fournit l'adresse et la localisation postale. Les joueurs doivent lier le CAD et garder Locations activé; Postals est facultatif.",
+            "commandTitle": "Créer des appels de dispatch en jeu",
+            "description": "Créez des appels de dispatch à partir de commandes FiveM en utilisant des modèles exportés depuis le CAD de votre communauté.",
+            "featuresLabel": "Fonctionnalités des modèles d'appel",
+            "sceneAlt": "Scène de jeu FiveM illustrative d'agents gérant un contrôle routier à côté d'un SUV de patrouille au crépuscule.",
+            "setupDescription": "Configurez calltemplates_config.lua et les fichiers JSON de type d'appel pour définir chaque commande, préfixe de description, unité incluse et plaque Wraith facultative. Les commandes /ts et /towreq fournies utilisent les permissions ACE par défaut.",
+            "setupTitle": "Adaptez chaque commande à votre flux de travail"
+          },
+          "vehicles": {
+            "customizeDescription": "Ajustez la commande, le statut d'enregistrement par défaut et la date d'expiration dans vehreg_config.lua. Pour un dossier d'immatriculation de véhicule personnalisé, mappez les UID du champ recordData pour correspondre à son modèle CAD. customData peut fournir des détails prédéfinis pour les véhicules additionnels dont les noms ne sont pas présents.",
+            "customizeTitle": "Associer l'immatriculation à votre modèle CAD",
+            "description": "Enregistrez le véhicule dans lequel vous êtes assis sur le personnage CAD sélectionné avec une seule commande en jeu.",
+            "featuresLabel": "Fonctionnalités du registre des véhicules",
+            "registerAlt": "Visuel officiel de la fonctionnalité Registre des véhicules montrant la commande /reg et un dossier d'immatriculation de véhicule enregistré dans Sonoran CAD.",
+            "registerDescription": "Asseyez-vous dans le véhicule et utilisez /reg pour l’ajouter à votre personnage CAD actuellement sélectionné en tant qu’enregistrement d’immatriculation de véhicule. Les joueurs doivent lier leurs comptes CAD, et la commande /reg par défaut peut être modifiée.",
+            "registerTitle": "Enregistrer un véhicule en une commande",
+            "sceneAlt": "Scène de jeu FiveM illustrative d'un agent vérifiant une berline lors d'une inspection de véhicule au crépuscule."
+          },
+          "wraith": {
+            "alertsDescription": "Choisissez quels statuts d'enregistrement déclenchent des alertes et configurez les UID des champs de statut et d'expiration dans wraithv2_config.lua. Les plaques correspondantes peuvent aussi afficher des dossiers BOLO ou de mandat actifs. Les champs supplémentaires des dossiers et les durées des alertes sont configurables.",
+            "alertsTitle": "Alerte sur les dossiers signalés",
+            "description": "Connectez le lecteur de plaques Wraith ARS 2X au CAD pour des recherches automatiques de plaques et des alertes d'enregistrement configurables.",
+            "featuresLabel": "Fonctionnalités du lecteur de plaques Wraith",
+            "radarAlt": "Graphique officiel des fonctionnalités de Wraith V2 montrant le radar ARS 2X, le lecteur de plaques et la télécommande dans FiveM.",
+            "radarDescription": "Le sous-module WraithV2 fonctionne avec la version Sonoran de Wraith ARS 2X fournie avec la ressource FiveM. Il vérifie les plaques par rapport au CAD et envoie la recherche complète au CAD lorsque vous verrouillez une plaque. Les joueurs doivent lier leurs comptes CAD et garder les Locations activées.",
+            "radarTitle": "Lire et verrouiller les plaques en jeu",
+            "sceneAlt": "Scène de jeu FiveM illustrative d'une berline de patrouille marquée surveillant la circulation sur une route urbaine au crépuscule."
+          }
+        },
         "landing": {
           "ctaDocs": "Voir la documentation",
           "ctaPrimary": "Inscrivez-vous aujourd'hui",

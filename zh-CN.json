@@ -3939,6 +3939,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "面向游戏社区",
     "heroTitleMain": "第 1 的分发平台",
+    "imagePreview": {
+      "close": "关闭图片预览",
+      "open": "打开图片预览"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "在 Sonoran CAD 中查看 FiveM 载具实况摄像头。",
+          "features": {
+            "activation": {
+              "description": "链接到 CAD 并登录调度、警务、消防或 EMS 面板。可使用 /bodycam 或快捷键开始；管理员也可配置在紧急灯或拔枪时自动激活。",
+              "imageAlt": "从执法记录仪视角看到的 FiveM 路边拦停示意图。",
+              "title": "在游戏中启用执法记录仪"
+            },
+            "live": {
+              "description": "预览来自活动单元或实时地图的画面，并打开专用查看器以获得更大视图。",
+              "imageAlt": "FiveM 执法记录仪示意图，接近城市街区中一辆停下的车。",
+              "title": "查看实时画面"
+            },
+            "recordings": {
+              "description": "可使用按键绑定或已配置事件进行录制，然后在单位管理中查看或附加片段。CAD 托管的片段将在 24 小时后过期。",
+              "imageAlt": "从执法记录仪看到的 FiveM 夜间路边场景示意图。",
+              "title": "录制并回看片段"
+            }
+          },
+          "featuresLabel": "FiveM执法记录仪功能",
+          "productCaptures": {
+            "clipPickerAlt": "官方 Sonoran CAD 片段选择器，显示正在将一段 FiveM 录制附件添加到自定义记录。",
+            "clipPickerDescription": "在自定义记录中添加一个执法记录仪片段字段，然后从记录编辑器中选择并附加已保存的片段。你可以直接在记录中播放该片段。",
+            "clipPickerTitle": "将片段附加到记录",
+            "recordingsPanelAlt": "官方 Sonoran CAD 行车记录仪片段面板，显示已录制的单元画面。",
+            "recordingsPanelDescription": "在 CAD 的执法记录仪录像面板中查看录像。CAD 托管的片段会在 24 小时后过期。",
+            "recordingsPanelTitle": "查看已保存的录像"
+          },
+          "productCapturesLabel": "Sonoran CAD 中的执法记录仪录像"
+        },
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "featurePages": {
+          "callers": {
+            "description": "附近的目击者可以触发已配置的紧急呼叫，向调度发送有用的详细信息。",
+            "featureDescription": "附近行人可在目击到已配置事件时拨打电话。可在资源配置中调整呼叫类型、时机和冷却时间、呼叫者描述以及排除区域。",
+            "featureTitle": "来自附近目击者的呼叫",
+            "imageAlt": "洛圣都人行道上一名行人在巡逻车驶近时打电话的 FiveM 示意场景"
+          },
+          "civilian": {
+            "captureAlt": "游戏内 /civid 帮助提示，列出平民集成命令。",
+            "description": "获取已关联玩家所选的 CAD 角色，并在游戏中显示其 ID。",
+            "featureDescription": "使用 /civid show 与附近玩家共享所选 CAD 角色。可选的 ID 卡视图使用 sonoran_idcard 资源，必须在 sonorancad 之前启动。",
+            "featureTitle": "游戏内 CAD 市民 ID",
+            "imageAlt": "FiveM 示意角色扮演场景：一名警员在巡逻车旁接收一名平民的身份证。"
+          },
+          "commands": {
+            "captureAlt": "游戏内命令提示，显示 /panic 命令及其紧急信号说明。",
+            "description": "通过游戏内命令向 CAD 发送紧急和非紧急呼叫，支持 panic 状态命令和可自定义按键绑定。",
+            "featureDescription": "使用 /911、/311 或 /511 将呼叫发送到 CAD，使用 /panic 激活单位紧急状态。玩家必须链接 CAD；位置数据依赖于已启用的位置子模块。",
+            "featureTitle": "游戏内 呼叫和 紧急状态",
+            "imageAlt": "FiveM 示意角色扮演场景：一名警员在巡逻车旁与一名司机交谈。"
+          },
+          "dispatch": {
+            "captureAlt": "带有 A-10 被指定为主单位且已启用 GPS 跟踪的 Sonoran CAD 调度呼叫。",
+            "description": "接收 CAD 呼叫的游戏内警报，从 FiveM 响应，并跟随实时路由前往现场。",
+            "featureDescription": "已链接且符合条件的单位会接收呼叫警报，并通过 /dn respond 连接。GPS 导航会跟随呼叫邮编，调度可在追逐过程中跟踪主单位。保持 Locations 和 Call Commands 启用；Postals 为可选。",
+            "featureTitle": "呼叫警报和 GPS 响应",
+            "imageAlt": "两辆标识巡逻车依次行驶穿过 Los Santos 的 FiveM 游戏示意图。"
+          },
+          "display": {
+            "captureAlt": "官方 CAD 显示截图，展示 Sonoran CAD 在车载笔记本电脑上打开，屏幕下方有一个退出电脑控件。",
+            "description": "在车辆或站点笔记本上打开 CAD，让附近的玩家看到当前显示内容。",
+            "featureDescription": "按 G 使用附近的显示屏，前提是平板资源正在运行。附近玩家会看到一个定期刷新的屏幕，并可请求控制以使用自己的 CAD 会话。",
+            "featureTitle": "游戏内笔记本上的 CAD",
+            "imageAlt": "FiveM 示意场景：一辆巡逻 SUV 内，一名警员正在洛圣都风格的街道上使用车载笔记本电脑。"
+          },
+          "ers": {
+            "captureAlt": "Sonoran CAD 实时地图，工具栏上带有 ERS 呼叫工具；动画演示了放置呼叫。",
+            "description": "从 CAD 实时地图创建 ERS 事件并将已接受的出警请求连接到调度。",
+            "featureDescription": "从 CAD 实时地图发起 ERS 呼叫单。当一个具有活跃 CAD 单元的关联玩家在 ERS 中接受后，已配置的设置可以创建 CAD 调度呼叫并添加响应人员。已分配的呼叫单需要 ERS 班次和服务选择；需要 Night ERS 1.8.16 或更新版本。",
+            "featureTitle": "与 CAD 连接的呼叫",
+            "imageAlt": "展示警察和EMS共同响应洛圣都路边碰撞事故的FiveM示意场景。"
+          },
+          "forceRegister": {
+            "captureAlt": "游戏内 CAD 链接菜单，包含一次性链接代码和“链接 CAD”控件。",
+            "description": "提示玩家将他们的 CAD 账户与提醒或必需的游戏内绑定界面进行关联。",
+            "featureDescription": "使用 Nag 模式提示玩家执行 /link，或使用 Freeze 模式让 CAD 链接菜单保持打开状态，直到他们完成链接。可将通知限制为已配置的 QBCore 或 ESX 工作岗位或 ACE 权限；Tablet Auto Link 可自动完成链接步骤。",
+            "featureTitle": "选择如何强制关联",
+            "imageAlt": "五M 洛圣都警局外示意图，两名警员在巡逻车旁交谈。"
+          },
+          "framework": {
+            "description": "将 QBCore 或受支持的 ESX 服务器连接到 CAD，并根据所选记录发出游戏内罚款。",
+            "featureDescription": "选择 QBCore、ESX 或 Legacy ESX 并链接你的玩家。列出可开具罚款的确切 CAD 表单名称；金额来自记录的 Charges 或 Speed 部分。ESX v2 不受支持。",
+            "featureTitle": "所选 CAD 记录的罚款",
+            "imageAlt": "五M 交通拦截示意图，一名警员在巡逻车旁开罚单。"
+          },
+          "kick": {
+            "description": "当已关联的公共安全用户从 FiveM 断开连接时，自动清除其 CAD 单位。",
+            "featureDescription": "当已关联的警察、消防、EMS 或调度玩家离开服务器时，他们的活动单元会自动从 CAD 断开。FiveM 资源默认启用踢出；玩家仍需关联其 CAD 账号。",
+            "featureTitle": "自动单位断开连接",
+            "imageAlt": "五M 警员将巡逻车开回洛圣都警局的示意图。"
+          },
+          "map": {
+            "accessCardDescription": "实时地图已内置于 FiveM 资源中，无需额外设置。成员必须在游戏中使用 /link 关联其 CAD 账户，并拥有查看地图的权限。邮政编码搜索需要 CAD Pro 和 Postals 子模块。",
+            "accessCardTitle": "关联账户并授予访问权限",
+            "description": "在 Sonoran CAD 的交互式 GTA 地图上一起查看关联的单位位置和紧急呼叫。",
+            "mapCardDescription": "在二维 GTA 地图上查看关联的警察、消防、EMS 和调度单位以及紧急呼叫。选择单位标记以查看详情和地图操作。",
+            "mapCardTitle": "2D 实时地图",
+            "mapRegionLabel": "Sonoran CAD 二维 GTA 地图，包含虚构单位和呼叫标记。",
+            "sampleCallDescription": "交通事故",
+            "sampleCaller": "匿名来电者",
+            "sampleDataNote": "此处显示的单位名称、位置和呼叫均为虚构的静态示例。",
+            "sampleFireLocation": "草莓",
+            "sampleFireName": "陈 R.",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "任务街",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "FiveM 示意角色扮演场景：一辆带标识的巡逻车、一名警员和一辆停靠车辆位于洛圣都街道上。",
+            "showcaseLabel": "实时地图功能"
+          },
+          "pagers": {
+            "captureAlt": "带有紧急页面类型、接收节点、所选单位和消息正文的 Sonoran CAD Pager Reborn 面板。",
+            "description": "从 CAD 向所选呼叫器节点和已关联的 FiveM 单位发送紧急、非紧急或行政呼叫。",
+            "featureDescription": "选择应接收传呼的传呼节点和可选的在线单位，选择其类型，并在 CAD 中输入消息。关联的 FiveM 单位将接收带有音频提醒的传呼。Pager Reborn 资源是一个单独的第三方下载内容，随 CAD Pro 免费提供；其他社区可以从 Inferno 购买。",
+            "featureTitle": "向游戏中的单位发送传呼",
+            "imageAlt": "消防站内消防员查看一个小型夹式传呼机的 FiveM 示意场景。"
+          },
+          "phone": {
+            "appAlt": "游戏内 LB 手机主屏幕上已安装的 Sonoran CAD 图标",
+            "appDescription": "LB Phone 让社区可以将 Sonoran CAD 添加为自定义应用，这样玩家就能从他们在游戏中已经使用的手机打开 CAD。LB Phone 是来自 LB Scripts 的付费第三方资源。",
+            "appTitle": "从游戏内手机打开 CAD",
+            "featuresLabel": "LB 电话应用功能",
+            "sceneAlt": "FiveM 示意场景：一名警官在标有标识的巡逻 SUV 旁查看手机。",
+            "setupDescription": "将 Sonoran CAD 条目添加到 lb-phone/config/config.lua 中的 Config.CustomApps，重启 LB Phone，然后从游戏内 App Store 安装 CAD。",
+            "setupTitle": "配置并安装应用"
+          },
+          "plugins": {
+            "captureAlt": "官方 Sonoran Radio 插件配置示例，包含启用设置和电台集成选项。",
+            "description": "配置用于调度、记录、实时地图、通信和服务器工作流的独立 FiveM 集成。",
+            "featureDescription": "FiveM 资源中的每个子模块都有自己的配置文件。启用、禁用并调整你的服务器所需的集成，然后重启 Sonoran CAD 资源以应用更改。",
+            "featureTitle": "启用你的服务器需要的集成",
+            "imageAlt": "警察和消防员在站外协调的示意 FiveM 场景。"
+          },
+          "printer": {
+            "cadAlt": "Sonoran CAD 记录编辑器，PDF 菜单已打开并选择了游戏内打印。",
+            "cadDescription": "在 CAD 的记录部分，打开该记录的 PDF 菜单并选择游戏内打印。关联用户必须在调度、警察、消防或 EMS 面板中处于活动状态。",
+            "cadTitle": "从 CAD 发送记录",
+            "description": "将 CAD 记录发送到已配置的打印机或车辆，以便响应人员在 FiveM 中查看和共享。",
+            "featuresLabel": "记录打印机工作流",
+            "gameDescription": "使用 /printer queue 检查可用 PDF，然后在配置好的打印机或受支持的车辆附近使用 /printer print [id]。打印的记录可以交给附近玩家或作为物品共享。",
+            "gameTitle": "游戏内打印和分享",
+            "sceneAlt": "FiveM 示意场景：一名警官在标有标识的巡逻 SUV 旁查看打印记录。"
+          },
+          "radio": {
+            "callAlt": "Sonoran Radio 手持设备显示已链接的 CAD 呼叫警报和单位信息。",
+            "callDescription": "当附加到 CAD 调度呼叫时，Sonoran Radio 会在手持设备上显示呼叫详情。选择呼叫标题以展开或折叠信息。",
+            "callTitle": "电台上的 CAD 呼叫详情",
+            "description": "将 Sonoran Radio 连接到 CAD，以便通话详情、恐慌状态和单位名称在游戏中保持关联。",
+            "featuresLabel": "Sonoran Radio 集成",
+            "sceneAlt": "FiveM 示意场景：一名巡逻警官站在标有标识的 SUV 旁，对着手持无线电说话。",
+            "syncDescription": "启用 Sonrad 子模块并关联玩家账户。可选名称同步使用 CAD 单位编号和姓名；按下 Sonoran Radio 的 panic 控件也会切换 CAD panic 状态。",
+            "syncTitle": "同步单元名称和紧急状态"
+          },
+          "registration": {
+            "description": "在游戏中注册平民角色记录，或在支持的框架服务器上自动同步头像。",
+            "featuresLabel": "平民注册功能",
+            "standaloneAlt": "带有头像捕获区域和“注册角色”按钮的 Sonoran CAD 角色注册表单。",
+            "standaloneDescription": "玩家打开 /civreg 或已配置的命令，填写自定义角色表单，并将记录提交到 CAD。图像字段可捕获实时自拍。",
+            "standaloneTitle": "游戏内登记角色",
+            "syncAlt": "洛圣都市住宅街道上一名平民角色的 FiveM 玩法示意竖版图像。",
+            "syncDescription": "启用平民数据库同步后，CivReg 会自动切换为头像同步。一旦角色的外观保持不变 10 秒，它就会将新的头像保存到现有记录中。",
+            "syncTitle": "将肖像与数据库同步"
+          },
+          "signs": {
+            "cadAlt": "FiveM 游戏示意图：洛圣都高速公路上方路牌显示安全驾驶。",
+            "cadDescription": "通过可选的 CAD 集成，可从概览中打开所有标志，或在实时地图上选择一个标志以远程更新其消息。",
+            "cadTitle": "管理来自 CAD 的消息",
+            "description": "连接 CAD 以从概览或实时地图更新标牌消息，并在游戏中编辑它们。",
+            "featuresLabel": "街道标识功能",
+            "gameAlt": "FiveM 游戏示意图：高速公路上方路牌显示前方绕行，附近有道路施工。",
+            "gameDescription": "使用 /sign 来编辑文本和道路图标，调整亮度或自动调光，并安排消息。游戏内保存需要你在控制面板 3 米范围内；已保存的标志会在重启后保留。",
+            "gameTitle": "在游戏中编辑和安排标牌"
+          },
+          "station": {
+            "alertAlt": "五M游戏场景示意图：一辆消防车停在敞开的消防站外，警示灯亮起。",
+            "alertDescription": "从实时地图或警报生成器中选择站点灯光、音调或文本转语音消息。专用面板可筛选并选择多个站点。",
+            "alertTitle": "设置灯光并发送警报",
+            "description": "从 CAD 控制 Inferno Collection Station 的警报门、灯光、提示音和语音。第三方资源随 CAD Pro 一起包含，或可由 Inferno 单独出售。",
+            "doorsAlt": "五M游戏场景示意图：一辆消防车在车库门打开时驶出消防站。",
+            "doorsDescription": "在实时地图上选择一个站点以打开或关闭其已配置的车库门。从紧急呼叫中，附近站点可以为警报构建器预填目标。",
+            "doorsTitle": "从 CAD 控制警局门",
+            "featuresLabel": "站点警报功能"
+          },
+          "status": {
+            "commandAlt": "官方单位状态功能图，展示 /setstatus 命令和标记为可用的 CAD 单位。",
+            "commandDescription": "在游戏中使用你社区已配置的状态标签或数字代码运行 /setstatus [status]。关联单位的状态会在 CAD 中更新。",
+            "commandTitle": "使用命令更改状态",
+            "description": "使用 /setstatus [status] 从 FiveM 更新关联的 CAD 单位，使用你的社区已配置标签或数字状态代码。",
+            "featuresLabel": "单位状态功能",
+            "setupAlt": "FiveM 示意游戏场景：执勤开始时，一名巡逻警官站在一辆标志警车旁，位于警局外。",
+            "setupDescription": "Unit Status 默认随 FiveM 资源启用。在 CAD 中通过 Admin > Customization > Unit Status Codes 配置状态选项。玩家必须绑定他们的 CAD 账户，并且默认需要 command.setstatus ACE 权限。",
+            "setupTitle": "使用您社区的状态代码"
+          },
+          "sync": {
+            "description": "在 CAD 中直接搜索 FiveM 角色、驾照和车辆记录。数据库同步需要 Plus 或更高版本；数据库合并和友好映射需要 Pro。",
+            "featuresLabel": "数据库同步功能",
+            "lookupAlt": "数据库同步结果面板，显示角色和车辆注册字段。",
+            "lookupDescription": "CAD 在查询时会检索你已连接的 FiveM 框架数据库，然后通过你社区的自定义记录模板显示可用的角色、驾照和车辆注册字段。",
+            "lookupTitle": "在 CAD 中搜索框架记录",
+            "mergeAlt": "警员在交通拦截时检查证件的 FiveM 游戏示意场景。",
+            "mergeDescription": "数据库同步为只读。Pro 版增加了数据库合并，可在 CAD 中单独保存额外详情，还提供友好映射，用可读标签替换原始数据库值。",
+            "mergeTitle": "保持查找清晰完整"
+          },
+          "tablet": {
+            "description": "在游戏内平板上打开完整 CAD，或使用 Mini-CAD 在紧凑悬浮层中查看呼叫并附加。",
+            "featuresLabel": "平板和 Mini-CAD 功能",
+            "miniCadAlt": "官方 Mini-CAD 截图，显示正在进行的呼叫、已分配单位，以及用于附加或查看详情的控件。",
+            "miniCadDescription": "Mini-CAD以紧凑悬浮层显示当前呼叫和已分配单位。使用左、右方向键切换呼叫，按K附加或分离，按L展开详情。其可选按键绑定默认未设置，可在FiveM设置中配置。",
+            "miniCadTitle": "在 Mini-CAD 中查看通话",
+            "tabletAlt": "Sonoran CAD 平板和 Mini-CAD 接口显示一次进行中的交通拦截。",
+            "tabletDescription": "在游戏中运行 /tablet open 以查看你关联的 police、fire、EMS 或 dispatch CAD 面板。通过平板登录 CAD 可自动关联你的账户。平板资源在 FiveM 安装中默认启用。",
+            "tabletTitle": "在游戏中打开完整 CAD"
+          },
+          "templates": {
+            "commandAlt": "官方呼叫模板功能截图，展示 FiveM /ts 命令、确认消息以及 CAD 中生成的交通拦截呼叫。",
+            "commandDescription": "运行内置命令，例如 /ts 用于交通拦截或 /towreq 用于拖车请求。模板会填充呼叫预设，而你在游戏中的位置会提供地址和邮政位置。玩家需要连接 CAD 并保持 Locations 启用；Postals 可选。",
+            "commandTitle": "在游戏中创建调度呼叫",
+            "description": "使用从您的社区 CAD 导出的模板，通过 FiveM 命令创建调度呼叫。",
+            "featuresLabel": "呼叫模板功能",
+            "sceneAlt": "FiveM 示意游戏场景：黄昏时分，警员在一辆巡逻 SUV 旁处理交通拦截。",
+            "setupDescription": "配置 calltemplates_config.lua 和 JSON 呼叫类型文件，以定义每个命令、描述前缀、包含的单位以及可选的 Wraith 车牌。随附的 /ts 和 /towreq 命令默认使用 ACE 权限。",
+            "setupTitle": "让每个指令适配你的工作流"
+          },
+          "vehicles": {
+            "customizeDescription": "在 vehreg_config.lua 中调整命令、默认注册状态和到期日期。对于自定义车辆注册记录，将 recordData 字段 UID 映射以匹配其 CAD 模板。customData 可为名称未出现的附加车辆提供预设详情。",
+            "customizeTitle": "将注册信息匹配到您的 CAD 模板",
+            "description": "使用一个游戏内命令将您当前坐着的车辆登记到您选择的 CAD 角色。",
+            "featuresLabel": "车辆登记功能",
+            "registerAlt": "官方车辆登记功能图，显示 /reg 命令和 Sonoran CAD 中保存的车辆登记记录。",
+            "registerDescription": "坐在车辆内并运行 /reg，即可将其添加到你当前选定的 CAD 角色中，作为车辆登记记录。玩家必须关联他们的 CAD 账户，且默认的 /reg 命令可以更改。",
+            "registerTitle": "一条命令注册车辆",
+            "sceneAlt": "警员在黄昏进行车辆检查时查看一辆轿车的 FiveM 游戏示意场景。"
+          },
+          "wraith": {
+            "alertsDescription": "选择哪些注册状态触发警报，并在 wraithv2_config.lua 中配置状态和过期字段 UID。匹配的车牌也可以显示活跃的 BOLO 或通缉记录。额外记录字段和警报持续时间可配置。",
+            "alertsTitle": "标记记录提醒",
+            "description": "将 Wraith ARS 2X 车牌读取器连接到 CAD，以进行自动车牌查询和可配置的记录警报。",
+            "featuresLabel": "Wraith 车牌识别器功能",
+            "radarAlt": "官方 Wraith V2 功能图，展示 FiveM 中的 ARS 2X 雷达、车牌识别器和远程控制器。",
+            "radarDescription": "WraithV2 子模块与随 FiveM 资源捆绑的 Sonoran 版 Wraith ARS 2X 配合工作。它会将车牌与 CAD 进行比对，并在你锁定车牌时将完整查询发送到 CAD。玩家必须关联他们的 CAD 账户并保持 Locations 启用。",
+            "radarTitle": "游戏中读取并锁定车牌",
+            "sceneAlt": "FiveM 示意游戏场景：黄昏时分，一辆有标识的巡逻轿车在城市道路上巡查交通。"
+          }
+        },
         "landing": {
           "ctaDocs": "查看文档",
           "ctaPrimary": "立即注册",
