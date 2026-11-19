@@ -3939,6 +3939,10 @@
     "heroTitle": "#1 platforma pro dispečink her",
     "heroTitleAudience": "Pro herní komunity",
     "heroTitleMain": "#1 platforma pro dispečink",
+    "imagePreview": {
+      "close": "Zavřít náhled obrázku",
+      "open": "Otevřít náhled obrázku"
+    },
     "integrateButton": "Integrovat",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "Zobrazit živé kamery jednotek FiveM v Sonoran CAD.",
+          "features": {
+            "activation": {
+              "description": "Propojte s CAD a přihlaste se do dispečerského, policejního, hasičského nebo EMS panelu. Začněte pomocí /bodycam nebo klávesové zkratky; administrátoři mohou také nakonfigurovat automatickou aktivaci při zapnutí nouzových světel nebo při tasení zbraně.",
+              "imageAlt": "Ilustrační FiveM gameplay z pohledu tělesné kamery vedle silniční zastávky.",
+              "title": "Aktivujte tělesné kamery ve hře"
+            },
+            "live": {
+              "description": "Náhledy přenosů z aktivních jednotek nebo živé mapy a otevření samostatného prohlížeče pro větší zobrazení.",
+              "imageAlt": "Ilustrační pohled z body kamery FiveM při přibližování ke stojícímu autu v městské čtvrti.",
+              "title": "Zobrazit živý přenos"
+            },
+            "recordings": {
+              "description": "Nahrávejte pomocí klávesové zkratky nebo nakonfigurované události, poté si klipy zkontrolujte nebo je připojte ve Správě jednotek. Klipy hostované v CAD vyprší po 24 hodinách.",
+              "imageAlt": "Ilustrační noční silniční scéna FiveM z pohledu tělesné kamery.",
+              "title": "Nahrávejte a prohlížejte klipy"
+            }
+          },
+          "featuresLabel": "Funkce bodycam pro FiveM",
+          "productCaptures": {
+            "clipPickerAlt": "Oficiální výběr klipů Sonoran CAD zobrazující nahrávku FiveM připojovanou k vlastnímu záznamu.",
+            "clipPickerDescription": "Přidejte pole klipů z tělesné kamery do vlastního záznamu a poté vyberte a připojte uložený klip z editoru záznamu. Klip můžete přehrát přímo v záznamu.",
+            "clipPickerTitle": "Připojit klipy k záznamům",
+            "recordingsPanelAlt": "Oficiální panel klipů Sonoran CAD Bodycam zobrazující nahrané záběry jednotky.",
+            "recordingsPanelDescription": "Prohlížejte si záznamy v panelu Body Cam Recordings v CAD. Klipy hostované v CAD vyprší po 24 hodinách.",
+            "recordingsPanelTitle": "Zkontrolujte uložené záznamy"
+          },
+          "productCapturesLabel": "Záznamy z tělesné kamery v Sonoran CAD"
+        },
         "description": "Oficiální FiveM zdroj s desítkami hlubokých integračních bodů.",
+        "featurePages": {
+          "callers": {
+            "description": "Blízcí svědci mohou spustit nakonfigurovaná tísňová volání, která odešlou užitečné údaje na dispečink.",
+            "featureDescription": "Blízcí chodci mohou zavolat, když jsou svědky nakonfigurovaných událostí. Upravte typy hovorů, časování a cooldowny, popisy volajících a vyloučené zóny v konfiguraci zdroje.",
+            "featureTitle": "Volání od blízkých svědků",
+            "imageAlt": "Ilustrační scéna FiveM s chodcem volajícím z chodníku v Los Santos, zatímco se blíží policejní vůz."
+          },
+          "civilian": {
+            "captureAlt": "Nápověda /civid ve hře se seznamem příkazů integrace pro civilisty.",
+            "description": "Načíst vybranou CAD postavu propojeného hráče a zobrazit její ID ve hře.",
+            "featureDescription": "Použij /civid show pro sdílení vybrané CAD postavy s blízkým hráčem. Volitelné zobrazení průkazu využívá resource sonoran_idcard, které musí být spuštěno před sonorancad.",
+            "featureTitle": "CAD ID postav ve hře",
+            "imageAlt": "Ilustrační FiveM roleplay scéna s policistou, který přebírá občanský průkaz od civilisty vedle hlídkového auta."
+          },
+          "commands": {
+            "captureAlt": "Výzva příkazu ve hře zobrazující příkaz /panic a jeho popis tísňového signálu.",
+            "description": "Posílejte nouzová i ne-nouzová volání do CAD z herních příkazů, s příkazem stavu paniky a přizpůsobitelnou klávesovou zkratkou.",
+            "featureDescription": "Použijte /911, /311 nebo /511 k odeslání hovorů do CAD a /panic k aktivaci stavu paniky jednotky. Hráči musí propojit CAD; údaje o poloze závisí na povoleném podmodulu Locations.",
+            "featureTitle": "Hovory a stav paniky ve hře",
+            "imageAlt": "Ilustrační FiveM roleplay scéna s policistou, který mluví s řidičem vedle hlídkového auta."
+          },
+          "dispatch": {
+            "captureAlt": "Sonoran CAD dispečerský hovor s A-10 přiřazenou jako primární jednotka a s povoleným sledováním GPS.",
+            "description": "Dostávejte ve hře upozornění na hovory v CAD, reagujte z FiveM a sledujte živé navádění k místu zásahu.",
+            "featureDescription": "Propojené způsobilé jednotky dostávají upozornění na výjezdy a připojují se pomocí /dn respond. GPS navigace sleduje call postal a dispečink může během pronásledování sledovat primární jednotku. Ponechte Zapnuto Locations a Call Commands; Postals je volitelné.",
+            "featureTitle": "Výstrahy volání a GPS reakce",
+            "imageAlt": "Ilustrační ukázka hraní FiveM dvou označených hlídkových vozů jedoucích v koloně přes Los Santos."
+          },
+          "display": {
+            "captureAlt": "Oficiální screenshot CAD displeje zobrazující Sonoran CAD otevřený na palubním notebooku, s ovládáním Ukončit počítač pod obrazovkou.",
+            "description": "Otevřete CAD na vozidle nebo na služebním notebooku a nechte blízké hráče zobrazit aktuální displej.",
+            "featureDescription": "Stiskněte G pro použití blízkého displeje, zatímco běží resource tabletu. Okolní hráči vidí pravidelně obnovovanou obrazovku a mohou požádat o kontrolu, aby mohli použít svou vlastní CAD relaci.",
+            "featureTitle": "CAD na herních laptopech",
+            "imageAlt": "Ilustrační scéna FiveM uvnitř hlídkového SUV, s policistou používajícím namontovaný notebook na ulici ve stylu Los Santos."
+          },
+          "ers": {
+            "captureAlt": "Živá mapa Sonoran CAD s nástrojem pro výjezdy ERS na jejím panelu nástrojů; animace ukazuje umístění výjezdu.",
+            "description": "Vytvářejte incidenty ERS z živé mapy CAD a propojujte přijaté výjezdy s dispečinkem.",
+            "featureDescription": "Umístěte výjezd ERS z živé mapy CAD. Když jej propojený hráč s aktivní jednotkou CAD v ERS přijme, nakonfigurovaná nastavení mohou vytvořit dispečerský zásah CAD a připojit zasahující. Přiřazené výjezdy vyžadují směnu ERS a výběr služby; vyžaduje se Night ERS 1.8.16 nebo novější.",
+            "featureTitle": "Výjezdy propojené s CAD",
+            "imageAlt": "Ilustrační scéna FiveM, kde policie a EMS společně zasahují u dopravní nehody u silnice v Los Santos."
+          },
+          "forceRegister": {
+            "captureAlt": "Menu propojení CAD ve hře s jednorázovým kódem pro propojení a ovládáním Propojit CAD.",
+            "description": "Vyzvěte hráče, aby propojili svůj CAD účet připomenutím nebo povinnou obrazovkou propojení ve hře.",
+            "featureDescription": "Použijte režim Nag k vyzvání hráčů, aby spustili /link, nebo režim Freeze k udržení nabídky propojení CAD otevřené, dokud ji nepropojí. Omezte oznámení na nakonfigurované QBCore nebo ESX joby nebo ACE oprávnění; Tablet Auto Link může vyplnit krok propojení.",
+            "featureTitle": "Zvolte, jak je vynuceno propojení",
+            "imageAlt": "Ilustrativní scéna ve FiveM před policejní stanicí v Los Santos se dvěma policisty, kteří spolu hovoří vedle služebního vozu."
+          },
+          "framework": {
+            "description": "Propojte servery QBCore nebo podporované servery ESX s CAD a vystavujte herní pokuty z vybraných záznamů.",
+            "featureDescription": "Vyberte QBCore, ESX nebo Legacy ESX a propojte své hráče. Uveďte přesné názvy formulářů CAD, které mohou ukládat pokuty; částky vycházejí z části Charges nebo Speed v záznamu. ESX v2 není podporováno.",
+            "featureTitle": "Pokuty z vybraných CAD záznamů",
+            "imageAlt": "Ilustrativní dopravní zastavení ve FiveM s policistou, který u služebního vozu vypisuje pokutu."
+          },
+          "kick": {
+            "description": "Automaticky vymaže propojenou CAD jednotku veřejně-bezpečnostního uživatele, když se odpojí z FiveM.",
+            "featureDescription": "Když propojení hráči policie, hasičů, EMS nebo dispečinku opustí server, jejich aktivní jednotky se od CAD odpojí automaticky. Kick je s prostředkem FiveM ve výchozím nastavení povolen; hráči si stále musí propojit své CAD účty.",
+            "featureTitle": "Automatické odpojení jednotky",
+            "imageAlt": "Ilustrativní scéna ve FiveM s policistou, který vrací služební vůz na stanici v Los Santos."
+          },
+          "map": {
+            "accessCardDescription": "Live mapa je zabudovaná v prostředku FiveM a nevyžaduje žádné další nastavení. Členové si musí ve hře propojit svůj účet CAD pomocí /link a mít oprávnění k zobrazení mapy. Vyhledávání poštovních směrovacích čísel vyžaduje CAD Pro a podmodul Postals.",
+            "accessCardTitle": "Propojit účty a udělit přístup",
+            "description": "Zobrazit propojené polohy jednotek a tísňové hovory společně na interaktivní GTA mapě Sonoran CAD.",
+            "mapCardDescription": "Zobrazte propojené policejní, hasičské, EMS a dispečerské jednotky spolu s tísňovými voláními na 2D mapě GTA. Vyberte značky jednotek pro podrobnosti a akce na mapě.",
+            "mapCardTitle": "2D živá mapa",
+            "mapRegionLabel": "2D mapa Sonoran CAD pro GTA s fiktivními značkami jednotek a výjezdů.",
+            "sampleCallDescription": "Dopravní nehoda",
+            "sampleCaller": "Anonymní volající",
+            "sampleDataNote": "Názvy jednotek, pozice a zobrazený hovor jsou smyšlené statické příklady.",
+            "sampleFireLocation": "Strawberry",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "Mission Row",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "Ilustrační FiveM roleplay scéna s označeným hlídkovým vozem, policistou a zastaveným vozidlem na ulici ve Los Santos.",
+            "showcaseLabel": "Funkce živé mapy"
+          },
+          "pagers": {
+            "captureAlt": "Panel Sonoran CAD Pager Reborn s typem nouzové stránky, uzly příjemců, vybranými jednotkami a textem zprávy.",
+            "description": "Odesílejte nouzové, ne nouzové nebo administrativní stránky z CAD na vybrané pagerové uzly a propojené jednotky FiveM.",
+            "featureDescription": "Vyberte pagerové uzly a volitelné aktivní jednotky, které mají obdržet stránku, vyberte její typ a zadejte zprávu v CAD. Propojené jednotky FiveM obdrží stránku se zvukovým upozorněním. Zdroj Pager Reborn je samostatné stažení od třetí strany, které je součástí CAD Pro bez dalších nákladů; ostatní komunity si jej mohou zakoupit od Inferno.",
+            "featureTitle": "Posílat stránky jednotkám ve hře",
+            "imageAlt": "Ilustrační scéna FiveM hasiče kontrolujícího malý připnutý pager na hasičské stanici."
+          },
+          "phone": {
+            "appAlt": "Nainstalovaná ikona Sonoran CAD na domovské obrazovce telefonu LB ve hře.",
+            "appDescription": "LB Phone umožňuje komunitám přidat Sonoran CAD jako vlastní aplikaci, takže si hráči mohou otevřít CAD z telefonu, který už ve hře používají. LB Phone je placený ресурс třetí strany od LB Scripts.",
+            "appTitle": "Otevřít CAD z herního telefonu",
+            "featuresLabel": "Funkce aplikace LB Phone",
+            "sceneAlt": "Ilustrační scéna FiveM, kde policista kontroluje telefon vedle označeného hlídkového SUV.",
+            "setupDescription": "Přidejte záznam Sonoran CAD do Config.CustomApps v lb-phone/config/config.lua, restartujte LB Phone a potom nainstalujte CAD z herního App Storu.",
+            "setupTitle": "Nastavte a nainstalujte aplikaci"
+          },
+          "plugins": {
+            "captureAlt": "Oficiální příklad konfigurace pluginu Sonoran Radio s nastavením povolení a možnostmi integrace rádia.",
+            "description": "Nastavte nezávislé integrace FiveM pro dispatch, záznamy, živé mapy, komunikaci a serverové workflow.",
+            "featureDescription": "Každý podmodul má vlastní konfigurační soubor v prostředku FiveM. Zapněte, vypněte a dolaďte integrace, které váš server potřebuje, a poté restartujte prostředek Sonoran CAD, aby se změny projevily.",
+            "featureTitle": "Povolte integrace, které váš server potřebuje",
+            "imageAlt": "Ilustrační scéna FiveM s policisty a hasiči koordinujícími se před stanicí."
+          },
+          "printer": {
+            "cadAlt": "Editor záznamů Sonoran CAD s otevřenou nabídkou PDF a vybranou možností Print In-Game.",
+            "cadDescription": "V sekci Záznamy v CAD otevřete nabídku PDF záznamu a vyberte Tisk ve hře. Propojený uživatel musí být aktivní v panelu dispečinku, policie, hasičů nebo EMS.",
+            "cadTitle": "Odeslat záznam z CAD",
+            "description": "Odesílejte CAD záznamy na nakonfigurované tiskárny nebo do vozidel, aby si je zasahující mohli zobrazit a sdílet ve FiveM.",
+            "featuresLabel": "Tok tisku záznamů",
+            "gameDescription": "Použijte /printer queue ke kontrole dostupných PDF, poté /printer print [id] poblíž nakonfigurované tiskárny nebo podporovaného vozidla. Vytištěné záznamy lze předat hráčům poblíž nebo sdílet jako předměty v inventáři.",
+            "gameTitle": "Tiskněte a sdílejte ve hře",
+            "sceneAlt": "Ilustrační scéna FiveM, kde policista prohlíží vytištěný záznam vedle označeného hlídkového SUV."
+          },
+          "radio": {
+            "callAlt": "Ruční vysílačka Sonoran Radio zobrazující propojené upozornění na hovor v CAD a informace o jednotce.",
+            "callDescription": "Při připojení k CAD dispečerskému hovoru Sonoran Radio zobrazuje podrobnosti hovoru na ručním zařízení. Vyberte název hovoru pro rozbalení nebo sbalení informací.",
+            "callTitle": "Detaily CAD hovoru v rádiu",
+            "description": "Propojte Sonoran Radio s CAD, aby detaily hovorů, stav paniky a názvy jednotek zůstaly ve hře propojené.",
+            "featuresLabel": "Integrace Sonoran Radio",
+            "sceneAlt": "Ilustrační scéna FiveM s hlídkovým policistou, který mluví do ruční vysílačky vedle označeného SUV.",
+            "syncDescription": "Povolte podmodul sonrad a propojte účty hráčů. Volitelná synchronizace jmen používá číslo jednotky a jméno z CAD; stisknutí panikového ovládání Sonoran Radio také přepne stav paniky v CAD.",
+            "syncTitle": "Synchronizovat názvy jednotek a stav nouze"
+          },
+          "registration": {
+            "description": "Zaregistrujte v hře záznamy civilních postav nebo automaticky synchronizujte portréty na podporovaných serverech s frameworkem.",
+            "featuresLabel": "Funkce registrace civilistů",
+            "standaloneAlt": "Registrační formulář postavy Sonoran CAD s oblastí pro zachycení portrétu a tlačítkem Registrovat postavu.",
+            "standaloneDescription": "Hráči otevřou /civreg nebo nakonfigurovaný příkaz, vyplní vlastní formulář postavy a odešlou záznam do CAD. Pole pro obrázky mohou zachytit živé selfie.",
+            "standaloneTitle": "Registrovat postavy ve hře",
+            "syncAlt": "Ilustrační vertikální záběr z hraní FiveM s postavou civilisty na rezidenční ulici v Los Santos.",
+            "syncDescription": "S povolenou synchronizací databáze civilistů se CivReg automaticky přepne na synchronizaci portrétů. Jakmile vzhled postavy zůstane 10 sekund beze změny, uloží do existujícího záznamu nový portrét.",
+            "syncTitle": "Synchronizovat portréty s Database Sync"
+          },
+          "signs": {
+            "cadAlt": "Ilustrační pohled na hraní FiveM na nadzemní dálniční značku v Los Santos ukazující JEZDĚTE OPATRNĚ.",
+            "cadDescription": "S volitelnou integrací CAD můžete otevřít všechny značky z přehledu nebo vybrat značku na Živé mapě a aktualizovat její zprávu na dálku.",
+            "cadTitle": "Spravujte zprávy z CAD",
+            "description": "Propojte CAD pro aktualizaci zpráv na cedulích z přehledu nebo Live Map a upravujte je ve hře.",
+            "featuresLabel": "Funkce pouličních značek",
+            "gameAlt": "Ilustrační pohled na hraní FiveM na nadzemní dálniční značku ukazující OBJÍŽĎKA PŘED VÁMI poblíž silničních prací.",
+            "gameDescription": "Použij /sign k úpravě textu a ikon silnic, nastavení jasu nebo Auto-Dim a plánování zpráv. Ukládání ve hře vyžaduje, abys byl do 3 metrů od ovládacího panelu; uložené značky přetrvávají přes restarty.",
+            "gameTitle": "Upravujte a plánujte cedule ve hře"
+          },
+          "station": {
+            "alertAlt": "Ilustrační herní scéna FiveM s hasičským vozem před otevřenou hasičskou stanicí se zapnutými nouzovými světly.",
+            "alertDescription": "Vyberte světla stanice, tóny nebo zprávu převodu textu na řeč z Live Map nebo tvůrce upozornění. Vyhrazený panel může filtrovat a vybrat více stanic.",
+            "alertTitle": "Nastavte světla a odešlete upozornění",
+            "description": "Ovládejte dveře, světla, tóny a hlas z Alert doors, lights, tones, and speech from CAD. Zdroj od třetí strany je součástí CAD Pro nebo se prodává samostatně společností Inferno.",
+            "doorsAlt": "Ilustrační herní scéna FiveM s hasičským vozem vyjíždějícím z hasičské stanice, zatímco se otevírají vrata garáže.",
+            "doorsDescription": "Vyberte stanici na Živé mapě, abyste otevřeli nebo zavřeli její nakonfigurovaná vrata zálivu. Z nouzového volání mohou Nedaleké stanice předvyplnit cíl pro tvůrce upozornění.",
+            "doorsTitle": "Ovládejte dveře stanice z CAD",
+            "featuresLabel": "Funkce upozornění stanice"
+          },
+          "status": {
+            "commandAlt": "Oficiální grafika funkce stavu jednotky zobrazující příkaz /setstatus a jednotku CAD označenou jako DOSTUPNÁ.",
+            "commandDescription": "Spusťte v hře /setstatus [status] s jedním z vašich komunitou nakonfigurovaných štítků stavu nebo číselných kódů. Stav propojené jednotky se aktualizuje v CAD.",
+            "commandTitle": "Změňte stav příkazem",
+            "description": "Aktualizujte propojenou CAD jednotku z FiveM pomocí /setstatus [status], s využitím štítků nebo číselných stavových kódů nakonfigurovaných ve vaší komunitě.",
+            "featuresLabel": "Funkce stavu jednotky",
+            "setupAlt": "Ilustrační scéna hraní FiveM s hlídkovým důstojníkem vedle označeného auta před stanicí na začátku směny.",
+            "setupDescription": "Stav jednotky je ve zdroji FiveM ve výchozím nastavení povolen. Možnosti stavu nakonfigurujte v CAD v části Admin > Customization > Unit Status Codes. Hráči musí propojit svůj účet v CAD a ve výchozím nastavení mít oprávnění ACE command.setstatus.",
+            "setupTitle": "Používejte status kódy své komunity"
+          },
+          "sync": {
+            "description": "Vyhledávejte záznamy postavy, licence a vozidla FiveM přímo v CAD. Synchronizace databáze vyžaduje tarif Plus nebo vyšší; Sloučení databáze a Friendly Mapping vyžadují Pro.",
+            "featuresLabel": "Funkce synchronizace databáze",
+            "lookupAlt": "Panel výsledků synchronizace databáze zobrazující pole registrace postavy a vozidla.",
+            "lookupDescription": "CAD během vyhledávání dotazuje připojenou databázi frameworku FiveM a poté zobrazuje dostupná pole pro postavu, řidičský průkaz a registraci vozidla prostřednictvím vlastních šablon záznamů vaší komunity.",
+            "lookupTitle": "Vyhledávat záznamy frameworku v CAD",
+            "mergeAlt": "Ilustrační herní scéna FiveM, kde policista kontroluje doklady během silniční kontroly.",
+            "mergeDescription": "Databázová synchronizace je pouze pro čtení. Pro přidává Databázové slučování pro ukládání doplňujících detailů zvlášť v CAD, plus Přátelské mapování pro nahrazení surových hodnot databáze čitelnými štítky.",
+            "mergeTitle": "Udržujte vyhledávání přehledná a úplná"
+          },
+          "tablet": {
+            "description": "Otevřete plné CAD na herním tabletu nebo použijte Mini-CAD k prohlížení hovorů a připojení z kompaktního překryvu.",
+            "featuresLabel": "Funkce Tabletu a Mini-CAD",
+            "miniCadAlt": "Oficiální snímek obrazovky Mini-CAD zobrazující aktivní hovor, přiřazené jednotky a ovládací prvky pro připojení nebo zobrazení detailů.",
+            "miniCadDescription": "Mini-CAD zobrazuje aktuální výjezdy a přidělené jednotky v kompaktní překryvné vrstvě. Pomocí kláves se šipkou vlevo a vpravo přepínejte výjezdy, klávesou K připojte nebo odpojte a klávesou L rozbalte podrobnosti. Jeho volitelná klávesová zkratka není ve výchozím nastavení přiřazena a lze ji nakonfigurovat v nastavení FiveM.",
+            "miniCadTitle": "Kontrolovat hovory v Mini-CAD",
+            "tabletAlt": "Rozhraní tabletu Sonoran CAD a Mini-CAD zobrazující aktivní dopravní zastavení.",
+            "tabletDescription": "Spusťte /tablet open pro zobrazení propojeného policejního, hasičského, EMS nebo dispečerského CAD panelu ve hře. Přihlášení do CAD přes tablet může váš účet propojit automaticky. Zdroj tabletu je ve výchozím nastavení povolen s instalací FiveM.",
+            "tabletTitle": "Otevřít plné CAD ve hře"
+          },
+          "templates": {
+            "commandAlt": "Oficiální ukázka funkce Call Templates zobrazující příkaz FiveM /ts, potvrzovací zprávu a výsledný hovor Traffic Stop v CAD.",
+            "commandDescription": "Spusť vestavěný příkaz jako /ts pro zastavení vozidla nebo /towreq pro žádost o odtah. Šablona doplní předvolby hovoru, zatímco tvoje herní poloha určí adresu a poštovní lokaci. Hráči si musí propojit CAD a mít zapnuté Locations; Postals je volitelné.",
+            "commandTitle": "Vytvářejte výjezdy ve hře",
+            "description": "Vytvářejte dispečerské hovory z příkazů FiveM pomocí šablon exportovaných z CAD vaší komunity.",
+            "featuresLabel": "Funkce šablon volání",
+            "sceneAlt": "Ilustrační herní scéna FiveM s policisty při silniční kontrole vedle hlídkového SUV za soumraku.",
+            "setupDescription": "Nakonfigurujte calltemplates_config.lua a JSON soubory typů hovorů pro definování každého příkazu, prefixu popisu, zahrnuté jednotky a volitelné Wraith značky. Dodávané příkazy /ts a /towreq používají ve výchozím nastavení oprávnění ACE.",
+            "setupTitle": "Přizpůsobte každý příkaz svému workflow"
+          },
+          "vehicles": {
+            "customizeDescription": "Upravte příkaz, výchozí stav registrace a datum vypršení v vehreg_config.lua. Pro přizpůsobený záznam Vehicle Registration namapujte UID polí recordData tak, aby odpovídala jeho CAD šabloně. customData může poskytnout přednastavené údaje pro doplňková vozidla, jejichž názvy nejsou uvedeny.",
+            "customizeTitle": "Přizpůsobte registraci své šabloně CAD",
+            "description": "Zaregistrujte vozidlo, ve kterém sedíte, vybrané postavě CAD jediným herním příkazem.",
+            "featuresLabel": "Funkce registru vozidel",
+            "registerAlt": "Oficiální grafika funkce Registr vozidel zobrazující příkaz /reg a uložený záznam registrace vozidla v Sonoran CAD.",
+            "registerDescription": "Sedněte si do vozidla a použijte /reg, abyste jej přidali ke své aktuálně vybrané postavě CAD jako záznam registrace vozidla. Hráči si musí propojit své účty CAD a výchozí příkaz /reg lze změnit.",
+            "registerTitle": "Zaregistrujte vozidlo jediným příkazem",
+            "sceneAlt": "Ilustrační herní scéna FiveM, kde policista kontroluje sedan během kontroly vozidla za soumraku."
+          },
+          "wraith": {
+            "alertsDescription": "Vyberte, které registrační stavy spouštějí upozornění, a nakonfigurujte UID polí stavu a vypršení platnosti v wraithv2_config.lua. Shodné SPZ mohou také zobrazit aktivní záznamy BOLO nebo zatykačů. Další pole záznamu a délky upozornění lze konfigurovat.",
+            "alertsTitle": "Upozornění na označené záznamy",
+            "description": "Propojte čtečku značek Wraith ARS 2X s CAD pro automatické vyhledávání registračních značek a konfigurovatelná upozornění na záznamy.",
+            "featuresLabel": "Funkce Rozpoznávání SPZ Wraith",
+            "radarAlt": "Oficiální grafika funkcí Wraith V2 zobrazující radar ARS 2X, čtečku SPZ a dálkový ovladač ve FiveM.",
+            "radarDescription": "Podmodul WraithV2 spolupracuje se Sonoran verzí Wraith ARS 2X dodávanou s FiveM resource. Kontroluje značky proti CAD a po zamčení značky odešle do CAD kompletní vyhledání. Hráči musí propojit své účty CAD a ponechat zapnuté Lokace.",
+            "radarTitle": "Čtení a zamykání SPZ ve hře",
+            "sceneAlt": "Ilustrační herní scéna FiveM s označeným hlídkovým sedanem monitorujícím provoz na městské silnici za soumraku."
+          }
+        },
         "landing": {
           "ctaDocs": "Zobrazit dokumentaci",
           "ctaPrimary": "Zaregistrujte se dnes",

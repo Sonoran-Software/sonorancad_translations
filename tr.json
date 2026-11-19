@@ -3939,6 +3939,10 @@
     "heroTitle": "The #1 Dispatch Platform for Gaming",
     "heroTitleAudience": "Oyun Toplulukları İçin",
     "heroTitleMain": "#1 Sevkiyat Platformu",
+    "imagePreview": {
+      "close": "Görüntü önizlemesini kapat",
+      "open": "Görüntü önizlemesini aç"
+    },
     "integrateButton": "Integrate",
     "integrations": {
       "erlc": {
@@ -4091,7 +4095,251 @@
         "name": "ER:LC"
       },
       "fivem": {
+        "bodycamPage": {
+          "description": "Sonoran CAD'de canlı FiveM birim kameralarını görüntüleyin.",
+          "features": {
+            "activation": {
+              "description": "CAD’ye bağlanın ve bir dispatch, police, fire veya EMS paneline giriş yapın. /bodycam veya bir keybind ile başlayın; yöneticiler emergency lights veya drawn weapons için otomatik activation da yapılandırabilir.",
+              "imageAlt": "Bir yol kenarı duruşunun yanında beden kamerası görünümünden örnek FiveM oynanışı.",
+              "title": "Oyunda vücut kameralarını etkinleştir"
+            },
+            "live": {
+              "description": "Aktif Birimler veya canlı haritadan ön izleme akışlarını görüntüleyin ve daha geniş bir görünüm için özel bir görüntüleyici açın.",
+              "imageAlt": "Bir şehir mahallesinde duran bir araca yaklaşan temsili FiveM vücut kamerası görüntüsü.",
+              "title": "Canlı yayını görüntüle"
+            },
+            "recordings": {
+              "description": "Bir tuş ataması veya yapılandırılmış bir etkinlikle kayıt yapın, ardından Unit Management içinde klipleri inceleyin veya ekleyin. CAD üzerinde barındırılan klipler 24 saat sonra sona erer.",
+              "imageAlt": "Beden kamerasından görülen gece vakti örnek FiveM yol kenarı sahnesi.",
+              "title": "Klipleri kaydet ve incele"
+            }
+          },
+          "featuresLabel": "FiveM bodycam özellikleri",
+          "productCaptures": {
+            "clipPickerAlt": "Resmi Sonoran CAD klip seçici, özel bir kayda eklenen FiveM kaydını gösteriyor.",
+            "clipPickerDescription": "Özel bir kayda bir Bodycam klipleri alanı ekleyin, ardından kayıt düzenleyicisinden kayıtlı bir klibi seçip ekleyin. Klibi doğrudan kayıtta oynatabilirsiniz.",
+            "clipPickerTitle": "Kayıtlara klip ekleyin",
+            "recordingsPanelAlt": "Resmi Sonoran CAD Bodycam Klipleri paneli, kaydedilmiş birim görüntülerini gösteriyor.",
+            "recordingsPanelDescription": "CAD’in Vücut Kamerası Kayıtları panelinde görüntüleri inceleyin. CAD’de barındırılan klipler 24 saat sonra sona erer.",
+            "recordingsPanelTitle": "Kaydedilen kayıtları incele"
+          },
+          "productCapturesLabel": "Sonoran CAD'deki bodycam kayıtları"
+        },
         "description": "Official FiveM resource with dozens of deep integration points.",
+        "featurePages": {
+          "callers": {
+            "description": "Yakındaki tanıklar, sevkiyata faydalı ayrıntılar gönderen yapılandırılmış acil çağrıları tetikleyebilir.",
+            "featureDescription": "Yakındaki yayalar yapılandırılmış olaylara tanık olduklarında arama yapabilir. Çağrı türlerini, zamanlamayı ve bekleme sürelerini, arayan açıklamalarını ve hariç tutulan bölgeleri kaynak yapılandırmasında ayarlayın.",
+            "featureTitle": "Yakındaki görgü tanıklarından gelen çağrılar",
+            "imageAlt": "Los Santos kaldıranında bir yaya arama yaparken bir devriye aracı yaklaşırken gösteren temsili FiveM sahnesi."
+          },
+          "civilian": {
+            "captureAlt": "Oyundaki /civid yardım istemi Sivil Entegrasyon komutlarını listeliyor.",
+            "description": "Bağlı bir oyuncunun seçili CAD karakterini alın ve oyun içinde kimliğini gösterin.",
+            "featureDescription": "Seçili CAD karakterini yakındaki bir oyuncuyla paylaşmak için /civid show kullanın. İsteğe bağlı kimlik kartı görünümü sonoran_idcard kaynağını kullanır ve bu kaynak sonorancad'den önce başlamalıdır.",
+            "featureTitle": "Oyundaki CAD karakter ID'leri",
+            "imageAlt": "Bir devriye aracının yanında bir memurun bir sivilin kimlik kartını aldığı temsili FiveM rol yapma sahnesi."
+          },
+          "commands": {
+            "captureAlt": "Oyun içi komut istemi, /panic komutunu ve panic sinyali açıklamasını gösteriyor.",
+            "description": "Oyun içi komutlardan CAD'ye acil ve acil olmayan çağrılar gönderin, panik durumu komutu ve özelleştirilebilir tuş ataması ile.",
+            "featureDescription": "Aramaları CAD'e göndermek için /911, /311 veya /511 kullanın ve birim panik durumunu etkinleştirmek için /panic kullanın. Oyuncular CAD'i bağlamalıdır; konum verileri etkinleştirilmiş Locations alt modülüne bağlıdır.",
+            "featureTitle": "Oyunda çağrılar ve panik durumu",
+            "imageAlt": "Bir devriye aracının yanında bir sürücüyle konuşan bir memurun temsili FiveM rol yapma sahnesi."
+          },
+          "dispatch": {
+            "captureAlt": "Birincil birim olarak A-10 atanmış ve GPS takibi etkinleştirilmiş Sonoran CAD sevk çağrısı.",
+            "description": "CAD çağrıları için oyun içi uyarılar alın, FiveM üzerinden yanıt verin ve olay yerine canlı yönlendirmeyi takip edin.",
+            "featureDescription": "Bağlı, uygun birimler çağrı uyarıları alır ve /dn respond ile bağlanır. GPS rehberliği çağrının postalını izler ve dispatch, bir kovalamaca sırasında birincil birimi takip edebilir. Locations ve Call Commands etkin bırakın; Postals isteğe bağlıdır.",
+            "featureTitle": "Çağrı uyarıları ve GPS yanıtı",
+            "imageAlt": "Los Santos'ta art arda ilerleyen iki işaretli devriye arabasının temsili FiveM oynanışı."
+          },
+          "display": {
+            "captureAlt": "Sonoran CAD'nin araç içi bir dizüstü bilgisayarda açık olduğunu, ekranın altında Çıkış bilgisayarı denetimini gösteren resmi CAD Görüntüsü ekran görüntüsü.",
+            "description": "Bir araç veya istasyon dizüstü bilgisayarında Open CAD açın ve yakındaki oyuncuların mevcut ekranı görmesine izin verin.",
+            "featureDescription": "Tablet kaynağı çalışırken yakındaki bir ekranı kullanmak için G'ye basın. Yakındaki oyuncular periyodik olarak yenilenen bir ekran görür ve kendi CAD oturumlarını kullanmak için kontrol talep edebilir.",
+            "featureTitle": "Oyun içi dizüstü bilgisayarlarda CAD",
+            "imageAlt": "Bir devriye SUV'sinin içinde, monte edilmiş bir dizüstü bilgisayar kullanan bir memurun yer aldığı, Los Santos tarzı bir sokakta geçen temsili FiveM sahnesi."
+          },
+          "ers": {
+            "captureAlt": "Araç çubuğunda ERS çağrı aracı bulunan Sonoran CAD canlı haritası; animasyon bir çağrı yerleştirmeyi gösteriyor.",
+            "description": "CAD canlı haritasından ERS olayları oluşturun ve kabul edilen çağrıları sevkiyata bağlayın.",
+            "featureDescription": "CAD canlı haritasından bir ERS çağrısı gönderin. Aktif bir CAD birimi olan bağlı bir oyuncu bunu ERS'de kabul ettiğinde, yapılandırılan ayarlar bir CAD sevk çağrısı oluşturabilir ve müdahale ekiplerini ekleyebilir. Atanmış çağrılar için bir ERS vardiyası ve hizmet seçimi gerekir; Night ERS 1.8.16 veya daha yenisi gereklidir.",
+            "featureTitle": "CAD'ye bağlı çağrılar",
+            "imageAlt": "Los Santos’ta yol kenarındaki bir çarpışmaya polis ve EMS’nin birlikte müdahale ettiği temsili FiveM sahnesi."
+          },
+          "forceRegister": {
+            "captureAlt": "Tek seferlik bağlantı kodu ve CAD Bağlantısı kontrolü içeren oyun içi CAD Bağlantı menüsü.",
+            "description": "Oyuncuları CAD hesaplarını bir hatırlatma veya zorunlu bir oyun içi bağlama ekranıyla bağlamaya yönlendirin.",
+            "featureDescription": "Oyunculara /link komutunu çalıştırmalarını söylemek için Nag modunu, ya da bağlanana kadar CAD bağlantı menüsünü açık tutmak için Freeze modunu kullanın. Bildirimleri yapılandırılmış QBCore veya ESX işleriyle ya da ACE izinleriyle sınırlayın; Tablet Otomatik Bağlantı bağlantı adımını doldurabilir.",
+            "featureTitle": "Bağlantının nasıl zorunlu kılınacağını seçin",
+            "imageAlt": "Los Santos polis karakolu dışında devriye aracının yanında konuşan iki polis memurunun temsili FiveM sahnesi."
+          },
+          "framework": {
+            "description": "QBCore veya desteklenen ESX sunucularını CAD'e bağlayın ve seçili kayıtlardan oyun içi para cezaları uygulayın.",
+            "featureDescription": "QBCore, ESX veya Legacy ESX seçin ve oyuncularınızı bağlayın. Ceza kesebilecek CAD form adlarını tam olarak listeleyin; tutarlar kaydın Charges veya Speed bölümünden gelir. ESX v2 desteklenmez.",
+            "featureTitle": "Seçilen CAD kayıtlarından para cezaları",
+            "imageAlt": "Bir polis memurunun devriye aracının yanında ceza yazdığı temsili FiveM trafik durdurması."
+          },
+          "kick": {
+            "description": "FiveM'den bağlantılarını kestiklerinde bağlı bir kamu güvenliği kullanıcısının CAD birimini otomatik olarak temizle.",
+            "featureDescription": "Bağlı polis, itfaiye, EMS veya sevk oyuncuları sunucudan ayrıldığında, aktif birimleri CAD'den otomatik olarak bağlantıyı keser. Kick, FiveM kaynağıyla varsayılan olarak etkindir; oyuncuların yine de CAD hesaplarını bağlamaları gerekir.",
+            "featureTitle": "Otomatik birim bağlantı kesme",
+            "imageAlt": "Los Santos istasyonuna devriye aracını geri getiren bir polis memurunun temsili FiveM sahnesi."
+          },
+          "map": {
+            "accessCardDescription": "Canlı Harita FiveM kaynağına entegredir ve ek bir kurulum gerektirmez. Üyeler CAD hesaplarını oyun içinde /link ile bağlamalı ve haritayı görüntüleme iznine sahip olmalıdır. Posta kodu araması CAD Pro ve Postals alt modülünü gerektirir.",
+            "accessCardTitle": "Hesapları bağla ve erişim ver",
+            "description": "Bağlı birim konumlarını ve acil çağrıları Sonoran CAD’in etkileşimli GTA haritasında birlikte görüntüleyin.",
+            "mapCardDescription": "Bağlı polis, itfaiye, EMS ve sevk birimlerini acil çağrılarla birlikte 2D GTA haritasında görüntüleyin. Ayrıntılar ve harita işlemleri için birim işaretçilerini seçin.",
+            "mapCardTitle": "2D canlı harita",
+            "mapRegionLabel": "Kurgusal birim ve çağrı işaretçileriyle Sonoran CAD 2D GTA haritası.",
+            "sampleCallDescription": "Trafik kazası",
+            "sampleCaller": "Anonim arayan",
+            "sampleDataNote": "Burada gösterilen birim adları, konumlar ve çağrı kurgusal statik örneklerdir.",
+            "sampleFireLocation": "Çilek",
+            "sampleFireName": "R. Chen",
+            "sampleFireUnit": "F-2",
+            "samplePoliceLocation": "Mission Row",
+            "samplePoliceName": "M. Reyes",
+            "samplePoliceUnit": "A-10",
+            "sceneAlt": "İşaretli bir devriye aracı, memur ve durmuş bir araçla Los Santos sokaklarında temsili FiveM rol yapma sahnesi.",
+            "showcaseLabel": "Canlı harita özellikleri"
+          },
+          "pagers": {
+            "captureAlt": "Emergency sayfa türü, alıcı düğümler, seçili birimler ve bir mesaj gövdesi bulunan Sonoran CAD Pager Reborn paneli.",
+            "description": "CAD'den seçili çağrı cihazı düğümlerine ve bağlı FiveM birimlerine Acil, Acil Olmayan veya İdari sayfalar gönderin.",
+            "featureDescription": "Bir sayfa alması gereken pager düğümlerini ve isteğe bağlı aktif birimleri seçin, türünü belirleyin ve mesajı CAD içinde girin. Bağlı FiveM birimleri sayfayı sesli uyarıyla alır. Pager Reborn kaynağı, CAD Pro ile ek ücret olmadan dahil edilen ayrı bir üçüncü taraf indirmesidir; diğer topluluklar bunu Inferno'dan satın alabilir.",
+            "featureTitle": "Oyundaki birimlere çağrı gönderin",
+            "imageAlt": "Bir itfaiyecinin bir itfaiye istasyonunda küçük klipsli bir çağrı cihazını kontrol ettiği temsili FiveM sahnesi."
+          },
+          "phone": {
+            "appAlt": "Oyundaki LB Phone ana ekranına yüklenmiş Sonoran CAD simgesi.",
+            "appDescription": "LB Phone, toplulukların Sonoran CAD'i özel bir uygulama olarak eklemesine olanak tanır, böylece oyuncular oyunda zaten kullandıkları telefondan CAD'i açabilir. LB Phone, LB Scripts'ten ücretli bir üçüncü taraf kaynağıdır.",
+            "appTitle": "Oyundaki telefondan CAD'yi aç",
+            "featuresLabel": "LB Phone Uygulaması özellikleri",
+            "sceneAlt": "İşaretli bir devriye SUV'sunun yanında telefonunu kontrol eden bir memurun temsili FiveM sahnesi.",
+            "setupDescription": "Sonoran CAD girişini lb-phone/config/config.lua içindeki Config.CustomApps'e ekleyin, LB Phone'u yeniden başlatın, ardından oyun içi Uygulama Mağazası'ndan CAD'i yükleyin.",
+            "setupTitle": "Uygulamayı yapılandırın ve yükleyin"
+          },
+          "plugins": {
+            "captureAlt": "Etkinleştirme ayarı ve radyo entegrasyon seçenekleri içeren resmi Sonoran Radio eklenti yapılandırma örneği.",
+            "description": "Yönetim, kayıtlar, canlı haritalar, iletişim ve sunucu iş akışları için bağımsız FiveM entegrasyonlarını yapılandırın.",
+            "featureDescription": "Her alt modülün FiveM kaynağında kendi yapılandırma dosyası vardır. Sunucunuzun ihtiyaç duyduğu entegrasyonları etkinleştirin, devre dışı bırakın ve ayarlayın, ardından değişiklikleri uygulamak için Sonoran CAD kaynağını yeniden başlatın.",
+            "featureTitle": "Sunucunuzun ihtiyaç duyduğu entegrasyonları etkinleştirin",
+            "imageAlt": "İstasyon dışında koordinasyon sağlayan polis ve itfaiye ekiplerinin temsili FiveM sahnesi."
+          },
+          "printer": {
+            "cadAlt": "PDF menüsü açık ve Oyun İçi Yazdır seçili olan Sonoran CAD kayıt düzenleyicisi.",
+            "cadDescription": "CAD’nin Kayıtlar bölümünde, kaydın PDF menüsünü açın ve Oyunda Yazdır seçeneğini seçin. Bağlı kullanıcı bir dispatch, polis, itfaiye veya EMS panelinde aktif olmalıdır.",
+            "cadTitle": "CAD'den bir kayıt gönder",
+            "description": "CAD kayıtlarını yapılandırılmış yazıcılara veya araçlara gönderin, böylece müdahale ekipleri bunları FiveM içinde görüntüleyip paylaşabilir.",
+            "featuresLabel": "Kayıt Yazıcısı iş akışı",
+            "gameDescription": "Kullanılabilir PDF'leri kontrol etmek için /printer queue kullanın, ardından yapılandırılmış bir yazıcının veya desteklenen bir aracın yanında /printer print [id] kullanın. Yazdırılan kayıtlar yakındaki oyunculara verilebilir veya envanter öğeleri olarak paylaşılabilir.",
+            "gameTitle": "Oyunda yazdır ve paylaş",
+            "sceneAlt": "İşaretli bir devriye SUV'sunun yanında basılı bir kaydı inceleyen bir memurun temsili FiveM sahnesi."
+          },
+          "radio": {
+            "callAlt": "Sonoran Radio el cihazı, bağlı bir CAD çağrı uyarısını ve birim bilgilerini gösteriyor.",
+            "callDescription": "Bir CAD sevk çağrısına eklendiğinde, Sonoran Radio çağrı ayrıntılarını el cihazında gösterir. Bilgileri genişletmek veya daraltmak için çağrı başlığını seçin.",
+            "callTitle": "Radyoda CAD çağrı detayları",
+            "description": "Sonoran Radio'yu CAD'ye bağlayın, böylece çağrı ayrıntıları, panik durumu ve birim adları oyunda bağlantılı kalsın.",
+            "featuresLabel": "Sonoran Radyo entegrasyonu",
+            "sceneAlt": "Elinde taşınabilir bir telsizle işaretli bir SUV'nun yanında konuşan bir devriye memurunun temsili FiveM sahnesi.",
+            "syncDescription": "sonrad alt modülünü etkinleştirin ve oyuncu hesaplarını bağlayın. İsteğe bağlı ad senkronizasyonu CAD birim numarasını ve adı kullanır; Sonoran Radio’nun panik kontrolüne basmak CAD panik durumunu da değiştirir.",
+            "syncTitle": "Birim adlarını ve panik durumunu senkronize et"
+          },
+          "registration": {
+            "description": "Desteklenen framework sunucularında oyun içinde sivil karakter kayıtlarını oluşturun veya portreleri otomatik olarak senkronize edin.",
+            "featuresLabel": "Sivil Kayıt özellikleri",
+            "standaloneAlt": "Portre yakalama alanı ve Karakteri Kaydet düğmesi olan Sonoran CAD karakter kayıt formu.",
+            "standaloneDescription": "Oyuncular /civreg veya yapılandırılmış komutu açar, özel karakter formunu doldurur ve kaydı CAD'e gönderir. Görsel alanlar canlı bir selfie yakalayabilir.",
+            "standaloneTitle": "Oyunda karakter kaydı",
+            "syncAlt": "Los Santos'taki bir yerleşim sokağında bir sivil karakterin temsili FiveM oyun içi portresi.",
+            "syncDescription": "Sivil veritabanı eşitlemesi etkinleştirildiğinde, CivReg otomatik olarak portre eşitlemesine geçer. Bir karakterin görünümü 10 saniye boyunca değişmeden kaldığında, mevcut kayda yeni bir portre kaydeder.",
+            "syncTitle": "Portreleri Database Sync ile eşitle"
+          },
+          "signs": {
+            "cadAlt": "Los Santos üzerindeki otoyol tabelasında DRIVE SAFE yazan örnek FiveM oynanış görünümü.",
+            "cadDescription": "İsteğe bağlı CAD entegrasyonu ile, genel bakıştan tüm tabelaları açın veya mesajını uzaktan güncellemek için Canlı Harita'dan bir tabela seçin.",
+            "cadTitle": "CAD'den gelen mesajları yönet",
+            "description": "CAD'yi, genel bakış veya Canlı Harita üzerinden tabela mesajlarını güncellemek ve oyunda düzenlemek için bağlayın.",
+            "featuresLabel": "Sokak işaretleri özellikleri",
+            "gameAlt": "Yol çalışması yakınında DETOUR AHEAD yazan üst geçit otoyol tabelasının gösterildiği örnek FiveM oynanış görünümü.",
+            "gameDescription": "Metni ve yol simgelerini düzenlemek, parlaklığı veya Oto-Kısma’yı ayarlamak ve mesajları planlamak için /sign kullanın. Oyun içi kayıtlar için kontrol panelinin 3 metre yakınında olmanız gerekir; kaydedilen tabelalar yeniden başlatmalarda kalıcı olur.",
+            "gameTitle": "Oyunda tabelaları düzenle ve planla"
+          },
+          "station": {
+            "alertAlt": "Açık bir itfaiye istasyonunun dışında acil ışıkları açık bir itfaiye aracının gösterim amaçlı FiveM oynanış sahnesi.",
+            "alertDescription": "Live Map veya uyarı oluşturucudan istasyon ışıklarını, tonları veya bir metinden konuşma mesajını seçin. Özel panel birden fazla istasyonu filtreleyebilir ve seçebilir.",
+            "alertTitle": "Işıkları ayarla ve uyarılar gönder",
+            "description": "CAD'den Inferno Collection Station alarm kapılarını, ışıklarını, tonlarını ve konuşmasını kontrol edin. Üçüncü taraf kaynak CAD Pro ile birlikte dahildir veya Inferno tarafından ayrı olarak satılır.",
+            "doorsAlt": "Açılan hangar kapılarıyla bir itfaiye aracının itfaiye istasyonundan çıktığı gösterim amaçlı FiveM oynanış sahnesi.",
+            "doorsDescription": "Ayarlarını yapılandırılmış körfez kapılarını açmak veya kapatmak için Canlı Harita'da bir istasyon seçin. Bir acil durum çağrısından, Yakındaki İstasyonlar uyarı oluşturucu için bir hedefi önceden doldurabilir.",
+            "doorsTitle": "Kapılarını CAD'den kontrol edin",
+            "featuresLabel": "İstasyon Uyarısı özellikleri"
+          },
+          "status": {
+            "commandAlt": "Resmi Birim Durumu özellik görseli, /setstatus komutunu ve AVAILABLE olarak işaretlenmiş bir CAD birimini gösteriyor.",
+            "commandDescription": "Oyunda /setstatus [status] komutunu topluluğunuzun yapılandırılmış durum etiketlerinden veya sayısal kodlarından biriyle çalıştırın. Bağlı birimin durumu CAD'de güncellenir.",
+            "commandTitle": "Durumu bir komutla değiştirin",
+            "description": "Bağlı bir CAD birimini FiveM'den /setstatus [status] ile, topluluğunuzun yapılandırılmış etiketlerini veya sayısal durum kodlarını kullanarak güncelleyin.",
+            "featuresLabel": "Ünite Durumu özellikleri",
+            "setupAlt": "Vardiya başlangıcında, istasyon dışında işaretli bir aracın yanında duran bir devriye memurunun temsili FiveM oyun sahnesi.",
+            "setupDescription": "Unit Status, FiveM kaynağıyla varsayılan olarak etkindir. Durum seçeneklerini CAD içinde Admin > Customization > Unit Status Codes altında yapılandırın. Oyuncuların CAD hesaplarını bağlaması gerekir ve varsayılan olarak command.setstatus ACE iznine sahip olmaları gerekir.",
+            "setupTitle": "Topluluğunuzun durum kodlarını kullanın"
+          },
+          "sync": {
+            "description": "FiveM karakter, lisans ve araç kayıtlarını doğrudan CAD içinde arayın. Veritabanı Eşitleme için Plus veya üzeri gerekir; Veritabanı Birleştirme ve Dostça Eşleştirme için Pro gerekir.",
+            "featuresLabel": "Veritabanı senkronizasyonu özellikleri",
+            "lookupAlt": "Karakter ve araç kayıt alanlarını gösteren Veritabanı Senkronizasyonu sonuç paneli.",
+            "lookupDescription": "CAD, arama sırasında bağlı FiveM framework veritabanınızı sorgular, ardından topluluğunuzun özel kayıt şablonları aracılığıyla mevcut karakter, lisans ve araç tescil alanlarını gösterir.",
+            "lookupTitle": "CAD içindeki kayıtları ara",
+            "mergeAlt": "Bir memurun bir trafik durdurması sırasında belgeleri kontrol ettiği temsili FiveM oynanış sahnesi.",
+            "mergeDescription": "Veritabanı Senkronizasyonu salt okunurdur. Pro, ekstra ayrıntıları CAD'de ayrı olarak kaydetmek için Veritabanı Birleştirme ve ham veritabanı değerlerini okunabilir etiketlerle değiştirmek için Dostu Eşleme ekler.",
+            "mergeTitle": "Aramaları temiz ve eksiksiz tutun"
+          },
+          "tablet": {
+            "description": "Tam CAD'ini oyun içi bir tablette açın veya çağrıları incelemek ve kompakt bir kaplama üzerinden bağlanmak için Mini-CAD kullanın.",
+            "featuresLabel": "Tablet ve Mini-CAD özellikleri",
+            "miniCadAlt": "Aktif bir çağrıyı, atanmış birimleri ve ayrıntıları ekleme veya görüntüleme kontrollerini gösteren resmi Mini-CAD ekran görüntüsü.",
+            "miniCadDescription": "Mini-CAD mevcut çağrıları ve atanmış birimleri kompakt bir kaplama içinde gösterir. Çağrılar arasında geçiş yapmak için sol ve sağ ok tuşlarını, bağlamak veya ayırmak için K tuşunu ve ayrıntıları genişletmek için L tuşunu kullanın. İsteğe bağlı tuş ataması varsayılan olarak atanmamıştır ve FiveM ayarlarında yapılandırılabilir.",
+            "miniCadTitle": "Mini-CAD'de çağrıları inceleyin",
+            "tabletAlt": "Sonoran CAD tablet ve Mini-CAD arayüzleri etkin bir trafik durdurmasını gösteriyor.",
+            "tabletDescription": "Oyun içinde bağlı polis, itfaiye, EMS veya dispatch CAD panelinizi görüntülemek için /tablet open komutunu çalıştırın. Tabletten CAD'e giriş yapmak hesabınızı otomatik olarak bağlayabilir. Tablet kaynağı FiveM kurulumu ile varsayılan olarak etkindir.",
+            "tabletTitle": "Oyunda tam CAD'yi aç"
+          },
+          "templates": {
+            "commandAlt": "FiveM /ts komutunu, onay mesajını ve CAD'deki sonuçlanan Trafik Durdurma çağrısını gösteren resmi Çağrı Şablonları özellik ekran görüntüsü.",
+            "commandDescription": "Bir trafik durdurma için /ts veya çekici talebi için /towreq gibi yerleşik bir komut çalıştırın. Şablon, çağrı ön ayarlarını doldururken oyun içi konumunuz adresi ve posta konumunu sağlar. Oyuncuların CAD'i bağlaması ve Locations'u etkin tutması gerekir; Postals isteğe bağlıdır.",
+            "commandTitle": "Oyunda sevk çağrıları oluşturun",
+            "description": "Topluluğunuzun CAD'sinden dışa aktarılan şablonları kullanarak FiveM komutlarından çağrı oluşturun",
+            "featuresLabel": "Çağrı Şablonları Özellikleri",
+            "sceneAlt": "Alacakaranlıkta bir devriye SUV'sinin yanında bir trafik durdurmasını yöneten memurların temsili FiveM oynanış sahnesi.",
+            "setupDescription": "Her komut, açıklama öneki, dahil edilen birim ve isteğe bağlı Wraith plakası tanımlamak için calltemplates_config.lua ve JSON çağrı türü dosyalarını yapılandırın. Birlikte gelen /ts ve /towreq komutları varsayılan olarak ACE izinlerini kullanır.",
+            "setupTitle": "Her komutu iş akışınıza göre şekillendirin"
+          },
+          "vehicles": {
+            "customizeDescription": "Komutu, varsayılan kayıt durumunu ve son kullanma tarihini vehreg_config.lua içinde ayarlayın. Özelleştirilmiş bir Araç Kaydı kaydı için, recordData alan UID'lerini CAD şablonuyla eşleşecek şekilde eşleyin. customData, adları mevcut olmayan eklenti araçlar için önceden ayarlanmış ayrıntılar sağlayabilir.",
+            "customizeTitle": "Kayıtları CAD şablonunuzla eşleştirin",
+            "description": "Oturduğunuz aracı tek bir oyun içi komutla seçtiğiniz CAD karakterine kaydedin.",
+            "featuresLabel": "Araç Kaydı özellikleri",
+            "registerAlt": "/reg komutunu ve Sonoran CAD'de kaydedilmiş bir araç kayıt kaydını gösteren resmi Araç Kaydı özellik grafiği.",
+            "registerDescription": "Araca binin ve onu mevcut seçili CAD karakterinize bir Araç Kaydı kaydı olarak eklemek için /reg komutunu çalıştırın. Oyuncular CAD hesaplarını bağlamalıdır ve varsayılan /reg komutu değiştirilebilir.",
+            "registerTitle": "Bir komutla araç kaydet",
+            "sceneAlt": "Bir memurun alacakaranlıkta araç denetimi sırasında bir sedanı kontrol ettiği temsili FiveM oynanış sahnesi."
+          },
+          "wraith": {
+            "alertsDescription": "Hangi kayıt durumlarının uyarıları tetikleyeceğini seçin ve wraithv2_config.lua içinde durum ve son kullanma alanı UID'lerini yapılandırın. Eşleşen plakalar, aktif BOLO veya yakalama emri kayıtlarını da gösterebilir. Ek kayıt alanları ve uyarı süreleri yapılandırılabilir.",
+            "alertsTitle": "İşaretlenmiş kayıtlarda uyarı",
+            "description": "Wraith ARS 2X plaka okuyucusunu otomatik plaka sorguları ve yapılandırılabilir kayıt uyarıları için CAD'e bağlayın.",
+            "featuresLabel": "Wraith Plaka Okuyucu özellikleri",
+            "radarAlt": "FiveM'de ARS 2X radar, plaka okuyucu ve uzaktan kumandayı gösteren resmi Wraith V2 özellik grafiği.",
+            "radarDescription": "WraithV2 alt modülü, FiveM kaynağıyla birlikte gelen Wraith ARS 2X'in Sonoran sürümüyle çalışır. Plakaları CAD ile karşılaştırır ve bir plakayı kilitlediğinizde tam sorguyu CAD'e gönderir. Oyuncular CAD hesaplarını bağlamalı ve Konumlar özelliğini etkin tutmalıdır.",
+            "radarTitle": "Oyunda plakaları oku ve kilitle",
+            "sceneAlt": "Alacakaranlıkta şehir yolunda trafiği tarayan işaretli bir devriye sedanının temsili FiveM oynanış sahnesi."
+          }
+        },
         "landing": {
           "ctaDocs": "Belgeleri Görüntüle",
           "ctaPrimary": "Bugün Kaydol",
