@@ -3949,201 +3949,201 @@
         "description": "Official ER:LC in-game integration with live map and more.",
         "featurePages": {
           "alpr": {
-            "description": "Detect active BOLO plates at configured ER:LC camera locations and route the result to dispatch.",
-            "cardsLabel": "ALPR camera features",
             "cards": {
               "cameraLocations": {
-                "title": "Place cameras on the map",
                 "description": "Enable ALPR for a connected server, then use the default camera set or place cameras on the ER:LC map.",
-                "imageAlt": "Sonoran CAD ALPR settings with camera locations marked on the ER:LC map."
+                "imageAlt": "Sonoran CAD ALPR settings with camera locations marked on the ER:LC map.",
+                "title": "Place cameras on the map"
               },
               "cameraSettings": {
-                "title": "Set camera range and alerts",
                 "description": "Select a camera to edit its detection radius. Configure the alert description, call expiry, and repeat-detection cooldown.",
-                "imageAlt": "Sonoran CAD ALPR map with a selected camera and its detection-radius settings."
+                "imageAlt": "Sonoran CAD ALPR map with a selected camera and its detection-radius settings.",
+                "title": "Set camera range and alerts"
               }
-            }
+            },
+            "cardsLabel": "ALPR camera features",
+            "description": "Detect active BOLO plates at configured ER:LC camera locations and route the result to dispatch."
           },
           "bodycam": {
-            "description": "View ER:LC unit video in CAD, capture the moments before recording starts, and review saved footage.",
             "cardsLabel": "ER:LC bodycam features",
             "cards": {
               "liveMap": {
-                "title": "View bodycam beside the live map",
                 "description": "Keep a live unit feed and its location visible together in CAD. Open the Body Cam panel or use the unit’s map preview.",
-                "imageAlt": "Sonoran CAD Body Cam panel beside the Live Map, showing a sample ER:LC unit and its live video feed."
+                "imageAlt": "Sonoran CAD Body Cam panel beside the Live Map, showing a sample ER:LC unit and its live video feed.",
+                "title": "View bodycam beside the live map"
               },
               "recording": {
-                "title": "Start a recording when it matters",
                 "description": "Use a desktop hotkey or the viewer’s Start/Stop controls. Shadow recording can add up to 60 seconds of pre-roll to clips up to two minutes long.",
-                "imageAlt": "ER:LC bodycam viewer with the Start Recording control available in CAD."
+                "imageAlt": "ER:LC bodycam viewer with the Start Recording control available in CAD.",
+                "title": "Start a recording when it matters"
               },
               "review": {
-                "title": "Review saved footage in CAD",
                 "description": "Open Body Cam Recordings from the taskbar or add it to a custom layout. Recordings are kept for 24 hours.",
-                "imageAlt": "Sonoran CAD Body Cam Recordings panel with saved ER:LC footage alongside the live map."
+                "imageAlt": "Sonoran CAD Body Cam Recordings panel with saved ER:LC footage alongside the live map.",
+                "title": "Review saved footage in CAD"
               }
-            }
+            },
+            "description": "View ER:LC unit video in CAD, capture the moments before recording starts, and review saved footage."
           },
           "character": {
-            "description": "Create a persistent or temporary CAD civilian from an ER:LC command, without requiring a CAD account.",
-            "cardsLabel": "ER:LC character creation features",
             "cards": {
               "createCivilian": {
-                "title": "Create a civilian from in-game chat",
                 "description": "Players enter a first and last name with a configured command. The new CAD character is searchable and ready for vehicle registration.",
-                "imageAlt": "Illustrative ER:LC gameplay showing a civilian character on a town street."
+                "imageAlt": "Illustrative ER:LC gameplay showing a civilian character on a town street.",
+                "title": "Create a civilian from in-game chat"
               },
               "registrationCommands": {
-                "title": "Set persistent and temporary commands",
                 "description": "Configure both commands in ER:LC server settings and optionally notify the player. Temporary registrations are deleted after 24 hours.",
-                "imageAlt": "Sonoran CAD ER:LC server settings showing the persistent and temporary Civilian Registration command fields."
+                "imageAlt": "Sonoran CAD ER:LC server settings showing the persistent and temporary Civilian Registration command fields.",
+                "title": "Set persistent and temporary commands"
               }
-            }
+            },
+            "cardsLabel": "ER:LC character creation features",
+            "description": "Create a persistent or temporary CAD civilian from an ER:LC command, without requiring a CAD account."
           },
           "emergency": {
-            "description": "Send 911 calls from ER:LC or receive automatic event alerts in CAD, with location details on the live map.",
-            "cardsLabel": "ER:LC emergency call features",
             "cards": {
-              "phoneCall": {
-                "title": "Create a 911 call on the in-game phone",
-                "description": "Players can send a call with its location and description from the ER:LC 911 app. CAD shows the caller’s name when their character is registered.",
-                "imageAlt": "ER:LC in-game phone 911 app with a sample emergency description and location."
-              },
               "automaticEvents": {
-                "title": "See automatic event calls in CAD",
                 "description": "Events such as fires and robberies create calls on the live map and dispatch panel, with the event location and details.",
-                "imageAlt": "Sonoran CAD ER:LC live map showing emergency calls created by automatic fire alarm events."
+                "imageAlt": "Sonoran CAD ER:LC live map showing emergency calls created by automatic fire alarm events.",
+                "title": "See automatic event calls in CAD"
+              },
+              "phoneCall": {
+                "description": "Players can send a call with its location and description from the ER:LC 911 app. CAD shows the caller’s name when their character is registered.",
+                "imageAlt": "ER:LC in-game phone 911 app with a sample emergency description and location.",
+                "title": "Create a 911 call on the in-game phone"
               }
-            }
+            },
+            "cardsLabel": "ER:LC emergency call features",
+            "description": "Send 911 calls from ER:LC or receive automatic event alerts in CAD, with location details on the live map."
           },
           "idCheck": {
-            "description": "Request a nearby civilian’s ID from the ER:LC overlay and view the details saved in their Sonoran CAD character.",
-            "cardsLabel": "ER:LC ID Check features",
             "cards": {
-              "requestId": {
-                "title": "Request an ID from the overlay",
-                "description": "Approach a nearby Civilian and select Request ID when their username appears. The prompt is limited to players within five studs.",
-                "imageAlt": "ER:LC overlay showing a nearby civilian and a Request ID button."
-              },
               "characterCard": {
-                "title": "View the saved character ID",
                 "description": "Review the character’s photo and saved details, then use Run Lookup to search CAD by first and last name.",
-                "imageAlt": "Liberty County identification card for a sample ER:LC character with a Run Lookup button."
+                "imageAlt": "Liberty County identification card for a sample ER:LC character with a Run Lookup button.",
+                "title": "View the saved character ID"
+              },
+              "requestId": {
+                "description": "Approach a nearby Civilian and select Request ID when their username appears. The prompt is limited to players within five studs.",
+                "imageAlt": "ER:LC overlay showing a nearby civilian and a Request ID button.",
+                "title": "Request an ID from the overlay"
               }
-            }
+            },
+            "cardsLabel": "ER:LC ID Check features",
+            "description": "Request a nearby civilian’s ID from the ER:LC overlay and view the details saved in their Sonoran CAD character."
           },
           "map": {
-            "description": "Track linked ER:LC units and emergency calls in real time on an interactive map inside Sonoran CAD.",
             "cardsLabel": "ER:LC live map features",
             "cards": {
               "mapViews": {
-                "title": "Explore the map in 2D or 3D",
                 "description": "Switch between 2D, 2.5D, and 3D views, or search a postal to center the map on an area.",
-                "imageAlt": "Sonoran CAD Live Map showing a 3D ER:LC neighborhood, map mode controls, and postal search."
+                "imageAlt": "Sonoran CAD Live Map showing a 3D ER:LC neighborhood, map mode controls, and postal search.",
+                "title": "Explore the map in 2D or 3D"
               },
               "unitDetails": {
-                "title": "Select units and calls",
                 "description": "Select a unit marker or emergency-call blip to view its details and available map actions.",
-                "imageAlt": "Sonoran CAD Live Map with a selected ER:LC unit, unit details, and map controls."
+                "imageAlt": "Sonoran CAD Live Map with a selected ER:LC unit, unit details, and map controls.",
+                "title": "Select units and calls"
               }
-            }
+            },
+            "description": "Track linked ER:LC units and emergency calls in real time on an interactive map inside Sonoran CAD."
           },
           "overlay": {
-            "description": "Open a hotkey-controlled overlay in ER:LC to manage dispatch calls, view notes, and update unit status without leaving the game.",
-            "cardsLabel": "ER:LC in-game overlay features",
             "cards": {
-              "taskbarTab": {
-                "title": "Open the overlay from CAD",
-                "description": "Use the Overlay tab in the desktop app to activate it, or set a custom hotkey to show and hide it in-game.",
-                "imageAlt": "Sonoran CAD dispatch workspace with the Overlay tab highlighted in the taskbar."
-              },
               "emergencyCalls": {
-                "title": "Review emergency calls in-game",
                 "description": "With Self Dispatch and emergency calls enabled, view call details and press Enter to convert a call to dispatch and attach your unit.",
-                "imageAlt": "ER:LC overlay showing emergency call details with call navigation and an Enroute action."
+                "imageAlt": "ER:LC overlay showing emergency call details with call navigation and an Enroute action.",
+                "title": "Review emergency calls in-game"
+              },
+              "taskbarTab": {
+                "description": "Use the Overlay tab in the desktop app to activate it, or set a custom hotkey to show and hide it in-game.",
+                "imageAlt": "Sonoran CAD dispatch workspace with the Overlay tab highlighted in the taskbar.",
+                "title": "Open the overlay from CAD"
               }
-            }
+            },
+            "cardsLabel": "ER:LC in-game overlay features",
+            "description": "Open a hotkey-controlled overlay in ER:LC to manage dispatch calls, view notes, and update unit status without leaving the game."
           },
           "pin": {
-            "description": "Choose a location on the ER:LC map to fill a dispatch call’s street address and postal code.",
             "cardsLabel": "ER:LC call editor pin drop features",
             "cards": {
               "openPicker": {
-                "title": "Open the map from a dispatch call",
                 "description": "In the call editor, select the pin beside Address to open the 2D ER:LC location picker.",
-                "imageAlt": "Sonoran CAD dispatch call editor with the pin control highlighted beside the Address field."
+                "imageAlt": "Sonoran CAD dispatch call editor with the pin control highlighted beside the Address field.",
+                "title": "Open the map from a dispatch call"
               },
               "selectLocation": {
-                "title": "Select a spot to fill the call",
                 "description": "Pan or zoom, then click a map location. Sonoran CAD fills the nearest street name and postal in the call.",
-                "imageAlt": "ER:LC 2D map location picker showing labeled streets and postal codes."
+                "imageAlt": "ER:LC 2D map location picker showing labeled streets and postal codes.",
+                "title": "Select a spot to fill the call"
               }
-            }
+            },
+            "description": "Choose a location on the ER:LC map to fill a dispatch call’s street address and postal code."
           },
           "plateReader": {
-            "description": "Use a desktop hotkey to find the nearest occupied vehicle and open its plate search in Sonoran CAD.",
-            "cardsLabel": "ER:LC plate reader features",
             "cards": {
               "hotkey": {
-                "title": "Set a Plate Reader hotkey",
                 "description": "Configure the shortcut under Customization > Hotkeys > Plate Reader. Hotkeys require the Sonoran CAD desktop app.",
-                "imageAlt": "Sonoran CAD Hotkeys settings with the ER:LC Plate Reader shortcut highlighted."
+                "imageAlt": "Sonoran CAD Hotkeys settings with the ER:LC Plate Reader shortcut highlighted.",
+                "title": "Set a Plate Reader hotkey"
               },
               "lookup": {
-                "title": "Open the nearest vehicle lookup",
                 "description": "Press the hotkey near a vehicle with a player inside. CAD opens a plate search with matching vehicle registration details.",
-                "imageAlt": "Sonoran CAD plate lookup showing a license plate and matching vehicle registration record."
+                "imageAlt": "Sonoran CAD plate lookup showing a license plate and matching vehicle registration record.",
+                "title": "Open the nearest vehicle lookup"
               }
-            }
+            },
+            "cardsLabel": "ER:LC plate reader features",
+            "description": "Use a desktop hotkey to find the nearest occupied vehicle and open its plate search in Sonoran CAD."
           },
           "registration": {
-            "description": "Register ER:LC vehicles to a selected CAD character in-game, then review their saved details in Sonoran CAD.",
-            "cardsLabel": "ER:LC vehicle registration features",
             "cards": {
               "commands": {
-                "title": "Configure registration commands",
                 "description": "Set persistent and temporary commands in the ER:LC integration settings. Temporary registrations are automatically deleted after 24 hours.",
-                "imageAlt": "Sonoran CAD ER:LC integration settings with Vehicle Registration commands highlighted."
+                "imageAlt": "Sonoran CAD ER:LC integration settings with Vehicle Registration commands highlighted.",
+                "title": "Configure registration commands"
               },
               "savedRecord": {
-                "title": "Review the saved vehicle record",
                 "description": "Open Records in CAD to find the new registration. The record links the vehicle’s plate and details to the selected character.",
-                "imageAlt": "Sonoran CAD Vehicle Registration record with civilian and vehicle details, including the license plate, make, model, color, and year."
+                "imageAlt": "Sonoran CAD Vehicle Registration record with civilian and vehicle details, including the license plate, make, model, color, and year.",
+                "title": "Review the saved vehicle record"
               }
-            }
+            },
+            "cardsLabel": "ER:LC vehicle registration features",
+            "description": "Register ER:LC vehicles to a selected CAD character in-game, then review their saved details in Sonoran CAD."
           },
           "trafficStop": {
-            "description": "Create ER:LC traffic stop calls from a configurable command or desktop hotkey, with nearby vehicle details sent to CAD.",
-            "cardsLabel": "ER:LC traffic stop features",
             "cards": {
-              "configuration": {
-                "title": "Set up the stop command and call details",
-                "description": "Configure the command, dispatch description template, and 10-code in the ER:LC integration settings.",
-                "imageAlt": "Sonoran CAD ER:LC integration settings with Traffic Stops configuration highlighted."
-              },
               "callDetails": {
-                "title": "Send vehicle details to dispatch",
                 "description": "The call includes the unit, location, and vehicle details, then opens a plate lookup. Players need a linked Roblox account and Dispatch or Self Dispatch permission.",
-                "imageAlt": "Sonoran CAD showing an ER:LC vehicle registration beside a dispatch call with vehicle and location details."
+                "imageAlt": "Sonoran CAD showing an ER:LC vehicle registration beside a dispatch call with vehicle and location details.",
+                "title": "Send vehicle details to dispatch"
+              },
+              "configuration": {
+                "description": "Configure the command, dispatch description template, and 10-code in the ER:LC integration settings.",
+                "imageAlt": "Sonoran CAD ER:LC integration settings with Traffic Stops configuration highlighted.",
+                "title": "Set up the stop command and call details"
               }
-            }
+            },
+            "cardsLabel": "ER:LC traffic stop features",
+            "description": "Create ER:LC traffic stop calls from a configurable command or desktop hotkey, with nearby vehicle details sent to CAD."
           },
           "webhooks": {
-            "description": "Send ER:LC 911 and dispatch events to Discord with an aerial location image when available.",
-            "cardsLabel": "ER:LC 3D location webhook features",
             "cards": {
               "discordEvents": {
-                "title": "Choose which calls reach Discord",
                 "description": "Enable the call events you want, then choose a Discord server and channel for each. Dispatch calls need a postal code for 3D images; in-game 911 calls include their location automatically.",
-                "imageAlt": "Illustrative aerial view of an ER:LC city intersection, representing the location image added to Discord call alerts."
+                "imageAlt": "Illustrative aerial view of an ER:LC city intersection, representing the location image added to Discord call alerts.",
+                "title": "Choose which calls reach Discord"
               },
               "erlcSetup": {
-                "title": "Set up in-game 911 calls",
                 "description": "Connect Sonoran Bot to your CAD community. In-game 911 notifications also require ER:LC mode and completed ER:LC integration setup.",
-                "imageAlt": "ER:LC server settings showing the API and Event Log Webhook values used to connect the game with Sonoran CAD."
+                "imageAlt": "ER:LC server settings showing the API and Event Log Webhook values used to connect the game with Sonoran CAD.",
+                "title": "Set up in-game 911 calls"
               }
-            }
+            },
+            "cardsLabel": "ER:LC 3D location webhook features",
+            "description": "Send ER:LC 911 and dispatch events to Discord with an aerial location image when available."
           }
         },
         "landing": {
@@ -4479,8 +4479,8 @@
             "featuresLabel": "Station Alert features"
           },
           "status": {
-            "commandAlt": "CAD status panel showing a successful /setstatus update and a unit marked AVAILABLE.",
             "captureAlt": "In-game /setstatus command prompt showing its usage and available status labels.",
+            "commandAlt": "CAD status panel showing a successful /setstatus update and a unit marked AVAILABLE.",
             "commandDescription": "Run /setstatus [status] in game with one of your community’s configured status labels or numeric codes to update the linked unit in CAD. Unit Status is enabled by default with the FiveM resource. Configure status choices in CAD under Admin > Customization > Unit Status Codes. Players must link their CAD account and, by default, have the command.setstatus ACE permission.",
             "commandTitle": "Change status with a command",
             "description": "Update a linked CAD unit from FiveM with /setstatus [status], using your community’s configured labels or numeric status codes.",
