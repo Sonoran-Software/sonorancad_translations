@@ -3947,6 +3947,205 @@
     "integrations": {
       "erlc": {
         "description": "公式ER:LCゲーム内連携でライブマップなどを利用できます。",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "接続されたサーバーでALPRを有効にし、デフォルトのカメラセットを使用するか、ER:LCマップ上にカメラを配置してください。",
+                "imageAlt": "ER:LCマップにカメラ位置が示されたSonoran CAD ALPR設定。",
+                "title": "地図上にカメラを配置"
+              },
+              "cameraSettings": {
+                "description": "検出半径を編集するカメラを選択してください。警告の説明、通話の有効期限、再検出クールダウンを設定してください。",
+                "imageAlt": "選択されたカメラとその検知半径設定を表示するSonoran CAD ALPRマップ。",
+                "title": "カメラ範囲とアラートを設定"
+              }
+            },
+            "cardsLabel": "ALPR カメラ機能",
+            "description": "設定済みのER:LCカメラ設置場所で有効なBOLOナンバープレートを検出し、結果をディスパッチへ送信します。"
+          },
+          "bodycam": {
+            "cardsLabel": "ER:LC ボディカム機能",
+            "cards": {
+              "liveMap": {
+                "description": "CADでライブのユニットフィードとその位置を一緒に表示できます。Body Camパネルを開くか、ユニットの地図プレビューを使用してください。",
+                "imageAlt": "Sonoran CAD Body Cam パネルの横に Live Map が表示され、ER:LC のサンプル部隊とそのライブ映像フィードが表示されています。",
+                "title": "ライブマップの横でボディカムを見る"
+              },
+              "recording": {
+                "description": "デスクトップのホットキーまたはビューアーのStart/Stopコントロールを使用します。Shadow録画は、最大2分のクリップに最大60秒のプリロールを追加できます。",
+                "imageAlt": "CADで「録画開始」操作が利用できるER:LCボディカムビューア。",
+                "title": "必要なときに録画を開始"
+              },
+              "review": {
+                "description": "タスクバーから Body Cam の録画を開くか、カスタムレイアウトに追加します。録画は24時間保持されます。",
+                "imageAlt": "保存済みのER:LC映像とライブマップを並べて表示するSonoran CADのボディカム録画パネル。",
+                "title": "CADで保存済み映像を確認"
+              }
+            },
+            "description": "CADでER:LC部隊の映像を表示し、録画開始前の瞬間をキャプチャし、保存された映像を確認します。"
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "プレイヤーは設定済みのコマンドで名と姓を入力します。新しい CAD キャラクターは検索可能で、車両登録の準備が整っています。",
+                "imageAlt": "街の通りにいる市民キャラクターを示すER:LCのゲームプレイを表すイメージ画像。",
+                "title": "ゲーム内チャットから市民を作成"
+              },
+              "registrationCommands": {
+                "description": "ER:LC サーバー設定で両方のコマンドを設定し、必要に応じてプレイヤーに通知します。一時登録は24時間後に削除されます。",
+                "imageAlt": "Sonoran CAD ER:LC サーバー設定で、永続的および一時的な市民登録コマンド欄を表示しています。",
+                "title": "永続コマンドと一時コマンドを設定"
+              }
+            },
+            "cardsLabel": "ER:LC キャラクター作成機能",
+            "description": "ER:LCコマンドから、CADアカウントを必要とせずに、永続または一時のCAD市民を作成します。"
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "火災や強盗などのイベントは、ライブマップとディスパッチパネルに通報を作成し、イベントの場所と詳細を表示します。",
+                "imageAlt": "Sonoran CAD ER:LCライブマップで自動火災警報イベントによって作成された緊急通報を表示。",
+                "title": "CADで自動イベント通話を表示"
+              },
+              "phoneCall": {
+                "description": "プレイヤーはER:LC 911アプリから位置情報と説明付きの通報を送信できます。CADは、キャラクターが登録されている場合、発信者の名前を表示します。",
+                "imageAlt": "ER:LCゲーム内電話911アプリとサンプルの緊急説明と位置情報。",
+                "title": "ゲーム内の電話で911通報を作成"
+              }
+            },
+            "cardsLabel": "ER:LC 緊急通報機能",
+            "description": "ER:LCから911通報を送信したり、CADで自動イベントアラートを受信したりして、ライブマップで位置情報を確認できます。"
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "キャラクターの写真と保存済みの詳細を確認し、次に Run Lookup を使って CAD を名と姓で検索します。",
+                "imageAlt": "サンプルのER:LCキャラクター用のLiberty County身分証明カードとRun Lookupボタン。",
+                "title": "保存されたキャラクターIDを表示"
+              },
+              "requestId": {
+                "description": "近くの市民に接近し、ユーザー名が表示されたらID要求を選択してください。プロンプトは5スタッド以内のプレイヤーに限定されます。",
+                "imageAlt": "ER:LCオーバーレイに、近くの市民とRequest IDボタンが表示されている。",
+                "title": "オーバーレイからIDをリクエスト"
+              }
+            },
+            "cardsLabel": "ER:LC IDチェック機能",
+            "description": "ER:LC オーバーレイから近くの市民の ID を要求して、Sonoran CAD のキャラクターに保存された詳細を表示します。"
+          },
+          "map": {
+            "cardsLabel": "ER:LCライブマップ機能",
+            "cards": {
+              "mapViews": {
+                "description": "2D、2.5D、3Dビューを切り替えるか、郵便番号を検索して地図をエリアの中心に合わせます。",
+                "imageAlt": "3DのER:LC地域、地図モードのコントロール、郵便検索を表示するSonoran CADライブマップ。",
+                "title": "地図を2Dまたは3Dで探索"
+              },
+              "unitDetails": {
+                "description": "ユニットマーカーまたは緊急通報ブリップを選択して、その詳細と利用可能なマップ操作を表示します。",
+                "imageAlt": "選択されたER:LCユニット、ユニット詳細、地図コントロールを含むSonoran CAD Live Map。",
+                "title": "ユニットと通報を選択"
+              }
+            },
+            "description": "Sonoran CAD のインタラクティブなマップ内で、連携した ER:LC ユニットと緊急通報をリアルタイムで追跡します。"
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "Self Dispatchと緊急通報を有効にすると、通話の詳細を表示し、Enterを押して通話をディスパッチに変換し、あなたのユニットを割り当てます。",
+                "imageAlt": "ER:LCオーバーレイで緊急通報の詳細と通報ナビゲーション、Enrouteアクションを表示",
+                "title": "ゲーム内で緊急通報を確認"
+              },
+              "taskbarTab": {
+                "description": "デスクトップアプリのOverlayタブで有効化するか、カスタムホットキーを設定してゲーム内で表示と非表示を切り替えます。",
+                "imageAlt": "タスクバーでOverlayタブが強調表示されたSonoran CADの配車作業スペース。",
+                "title": "CADからオーバーレイを開く"
+              }
+            },
+            "cardsLabel": "ER:LC ゲーム内オーバーレイの機能",
+            "description": "ER:LCでホットキー操作のオーバーレイを開き、ゲームを離れずに配車通報の管理、メモの確認、ユニット状態の更新ができます。"
+          },
+          "pin": {
+            "cardsLabel": "ER:LC通話エディターのピンドロップ機能",
+            "cards": {
+              "openPicker": {
+                "description": "通話エディターで、Address の横にあるピンを選択して 2D ER:LC ロケーションピッカーを開きます。",
+                "imageAlt": "Addressフィールドの横でピンコントロールが強調表示されたSonoran CADのdispatch call editor。",
+                "title": "配車通報から地図を開く"
+              },
+              "selectLocation": {
+                "description": "パンまたはズームしてから、地図上の場所をクリックします。Sonoran CADは通話に最寄りの通り名と郵便番号を入力します。",
+                "imageAlt": "ER:LCの2Dマップの場所選択画面。通り名と郵便番号が表示されています。",
+                "title": "通報を埋めるスポットを選択"
+              }
+            },
+            "description": "ER:LCの地図上で位置を選択して、出動通報の通り住所と郵便番号を入力してください。"
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "カスタマイズ > ホットキー > Plate Reader でショートカットを設定してください。ホットキーには Sonoran CAD デスクトップアプリが必要です。",
+                "imageAlt": "ER:LC Plate Reader のショートカットが強調表示された Sonoran CAD ホットキー設定。",
+                "title": "プレート リーダーのホットキーを設定"
+              },
+              "lookup": {
+                "description": "車内にプレイヤーがいる車両の近くでホットキーを押します。CADが一致する車両登録情報でナンバープレート検索を開きます。",
+                "imageAlt": "Sonoran CAD のナンバープレート検索で、ナンバープレートと一致する車両登録記録を表示しています。",
+                "title": "最寄りの車両照会を開く"
+              }
+            },
+            "cardsLabel": "ER:LC プレート リーダーの機能",
+            "description": "デスクトップホットキーを使って、最寄りの占有車両を見つけ、Sonoran CADでそのナンバープレート検索を開きます。"
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "ER:LC 統合設定で永続コマンドと一時コマンドを設定します。一時登録は24時間後に自動的に削除されます。",
+                "imageAlt": "Sonoran CAD ER:LC統合設定でVehicle Registrationのコマンドが強調表示されています。",
+                "title": "登録コマンドを設定"
+              },
+              "savedRecord": {
+                "description": "CADで記録を開き、新規登録を見つけます。記録は車両のナンバープレートと詳細を選択したキャラクターにリンクします。",
+                "imageAlt": "市民と車両の詳細、ナンバープレート、メーカー、モデル、色、年式を含む Sonoran CAD 車両登録レコード。",
+                "title": "保存された車両記録を確認"
+              }
+            },
+            "cardsLabel": "ER:LC車両登録機能",
+            "description": "ER:LC の車両をゲーム内で選択した CAD キャラクターに登録し、その後 Sonoran CAD で保存された詳細を確認します。"
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "通報には、ユニット、場所、および車両の詳細が含まれ、その後ナンバープレート検索が開きます。プレイヤーには、連携された Roblox アカウントと Dispatch または Self Dispatch の権限が必要です。",
+                "imageAlt": "Sonoran CADでER:LCの車両登録が車両と位置情報の詳細を含む配車通報の横に表示されています。",
+                "title": "車両詳細をディスパッチへ送信"
+              },
+              "configuration": {
+                "description": "ER:LC統合設定で、コマンド、ディスパッチ説明テンプレート、10コードを設定します。",
+                "imageAlt": "Sonoran CAD ER:LC統合設定でTraffic Stopsの設定が強調表示されています。",
+                "title": "停止コマンドと通報詳細を設定"
+              }
+            },
+            "cardsLabel": "ER:LC 交通停止機能",
+            "description": "設定可能なコマンドまたはデスクトップホットキーからER:LCの交通停止通報を作成し、近くの車両詳細をCADに送信します。"
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "必要な通話イベントを有効にし、各イベントごとにDiscordサーバーとチャンネルを選択してください。Dispatch通話では3D画像用に郵便番号が必要です。ゲーム内の911通話には位置情報が自動的に含まれます。",
+                "imageAlt": "ER:LC の市街地交差点を示す俯瞰イメージ、Discord通話アラートに追加された位置画像を表しています。",
+                "title": "Discordに届く通話を選択"
+              },
+              "erlcSetup": {
+                "description": "Sonoran BotをCADコミュニティに接続します。ゲーム内の911通知には、ER:LCモードとER:LC連携設定の完了も必要です。",
+                "imageAlt": "ゲームとSonoran CADを接続するために使用するAPIとEvent Log Webhookの値を表示しているER:LCサーバー設定。",
+                "title": "ゲーム内911通報の設定"
+              }
+            },
+            "cardsLabel": "ER:LC 3D位置 Webhook 機能",
+            "description": "ER:LC の 911 と dispatch イベントを、利用可能な場合は aerial location 画像とともに Discord に送信します。"
+          }
+        },
         "landing": {
           "cmsLink": "Sonoran CMSでER:LCコミュニティを管理",
           "ctaDocs": "ドキュメントを見る",
@@ -4145,7 +4344,7 @@
             "description": "ゲーム内コマンドからCADに緊急通報と非緊急通報を送信し、パニックステータスコマンドとカスタマイズ可能なキーバインドを利用できます。",
             "featureDescription": "/911、/311、または /511 を使用して通報を CAD に送信し、/panic でユニットのパニック状態を有効化します。プレイヤーは CAD をリンクする必要があります。位置情報データは有効化された Locations サブモジュールに依存します。",
             "featureTitle": "ゲーム内の通報とパニック状態",
-            "imageAlt": "パトカーのそばで運転者と話す警察官の FiveM ロールプレイのイメージシーン。"
+            "imageAlt": "制服姿の警官がパトロール車両のそばで肩無線機の非常ボタンを押し、パニック信号を作動させる FiveM ゲームプレイのイメージ図。"
           },
           "dispatch": {
             "captureAlt": "GPS追跡が有効で、A-10が主要ユニットとして割り当てられたSonoran CADのディスパッチ通話。",
@@ -4179,13 +4378,13 @@
             "description": "QBCore または対応済みの ESX サーバーを CAD に接続し、選択したレコードからゲーム内の罰金を発行します。",
             "featureDescription": "QBCore、ESX、または Legacy ESX を選択して、プレイヤーをリンクします。罰金を科す可能性がある正確な CAD フォーム名を一覧表示します。金額はレコードの Charges または Speed セクションから取得されます。ESX v2 はサポートされていません。",
             "featureTitle": "選択した CAD レコードの罰金",
-            "imageAlt": "警察官がパトロール巡洋車の横で切符を書いている FiveM の交通停止のイメージ図。"
+            "imageAlt": "Sonoran CADの引用パネルで、Alex Morganに対する一般的な引用とJamie Reedにより発行された$250の罰金を表示しています。"
           },
           "kick": {
             "description": "FiveM から切断したときに、リンクされた公共安全ユーザーの CAD ユニットを自動的にクリアします。",
             "featureDescription": "警察、消防、EMS、またはディスパッチのプレイヤーがサーバーを離れると、リンクされたアクティブなユニットはCADから自動的に切断されます。KickはFiveMリソースでデフォルトで有効です。プレイヤーは引き続きCADアカウントをリンクする必要があります。",
             "featureTitle": "自動ユニット切断",
-            "imageAlt": "ロスサントス署にパトロール巡洋車を戻す警察官の FiveM のイメージ図。"
+            "imageAlt": "Sonoran CADキック通知とコミュニティ選択パネル、部門オプション付き。"
           },
           "map": {
             "accessCardDescription": "Live MapはFiveMリソースに組み込まれており、追加設定は不要です。メンバーはゲーム内で /link を使用してCADアカウントをリンクし、マップを表示する権限を持っている必要があります。郵便番号検索にはCAD ProとPostalsサブモジュールが必要です。",
@@ -4203,7 +4402,7 @@
             "samplePoliceLocation": "ミッション・ロウ",
             "samplePoliceName": "M. レイエス",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "ロスサントスの通りで、マーキングされたパトロールクルーザー、警察官、停止した車両がある FiveM のイメージ図。",
+            "sceneAlt": "ナビゲーションとカメラコントロール付きの3Dマップを表示するアニメーション付きLive Mapプレビュー。",
             "showcaseLabel": "ライブマップ機能"
           },
           "pagers": {
@@ -4214,7 +4413,7 @@
             "imageAlt": "消防署内で消防士が小型のクリップ式ページャーを確認しているFiveMのイメージ図。"
           },
           "phone": {
-            "appAlt": "ゲーム内の LB Phone ホーム画面にインストールされた Sonoran CAD のアイコン。",
+            "appAlt": "LB Phoneのホーム画面にSonoran CADアプリがインストールされたスマートフォンの3D製品レンダー。",
             "appDescription": "LB Phone では、コミュニティが Sonoran CAD をカスタムアプリとして追加でき、プレイヤーはゲーム内で普段使っている電話から CAD を開けます。LB Phone は LB Scripts の有料サードパーティ製リソースです。",
             "appTitle": "ゲーム内の電話から CAD を開く",
             "featuresLabel": "LB Phone App の機能",
@@ -4280,8 +4479,9 @@
             "featuresLabel": "駅アラート機能"
           },
           "status": {
-            "commandAlt": "公式なユニットステータス機能のグラフィックで、/setstatus コマンドと AVAILABLE とマークされた CAD ユニットを表示しています。",
-            "commandDescription": "ゲーム内で /setstatus [status] を実行し、コミュニティで設定されたステータスラベルまたは数値コードのいずれかを使用します。連携済みユニットのステータスが CAD で更新されます。",
+            "captureAlt": "ゲーム内の /setstatus コマンドプロンプト 使用方法と利用可能なステータスラベルを表示",
+            "commandAlt": "CAD ステータスパネルで成功した /setstatus 更新と AVAILABLE と表示されたユニットを示しています。",
+            "commandDescription": "ゲーム内で /setstatus [status] を実行し、コミュニティで設定したステータスラベルまたは数値コードのいずれかを使用して、CAD のリンク済みユニットを更新してください。ユニットステータスは FiveM リソースでデフォルトで有効です。CAD の Admin > Customization > Unit Status Codes でステータスの選択肢を設定してください。プレイヤーは CAD アカウントをリンクする必要があり、デフォルトで command.setstatus ACE 権限を持っている必要があります。",
             "commandTitle": "コマンドでステータスを変更",
             "description": "FiveM の連携済み CAD ユニットを /setstatus [status] で更新し、コミュニティで設定されたラベルまたは数値のステータスコードを使用します。",
             "featuresLabel": "部隊ステータス機能",
@@ -4334,7 +4534,7 @@
             "alertsTitle": "フラグ付きレコードに警告",
             "description": "Wraith ARS 2X ナンバープレートリーダーを CAD に接続して自動プレート照会と設定可能なレコード警報を実行。",
             "featuresLabel": "Wraith プレート リーダーの機能",
-            "radarAlt": "FiveM で ARS 2X レーダー、プレートリーダー、リモートコントローラーを表示する公式 Wraith V2 機能グラフィック。",
+            "radarAlt": "Wraithパトロールカー、ナンバープレートレーダー表示、Wraith ARS 2Xリモートを示すFiveMシーン。",
             "radarDescription": "WraithV2 サブモジュールは、FiveM リソースに同梱されている Sonoran 版 Wraith ARS 2X と連携します。プレートを CAD と照合し、プレートをロックするとフル検索結果を CAD に送信します。プレイヤーは CAD アカウントをリンクし、Locations を有効にしておく必要があります。",
             "radarTitle": "ゲーム内でナンバープレートを読み取り、ロックする",
             "sceneAlt": "夕暮れ時に市街道路でマーキングされたパトロールセダンが交通を監視している FiveM ゲームプレイのイメージシーン。"

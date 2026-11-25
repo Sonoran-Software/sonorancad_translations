@@ -3947,6 +3947,205 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "Activa ALPR para un servidor conectado y luego usa el conjunto de cámaras predeterminado o coloca cámaras en el mapa de ER:LC.",
+                "imageAlt": "Configuración de ALPR de Sonoran CAD con ubicaciones de cámaras marcadas en el mapa de ER:LC.",
+                "title": "Coloca cámaras en el mapa"
+              },
+              "cameraSettings": {
+                "description": "Seleccione una cámara para editar su radio de detección. Configure la descripción de la alerta, el vencimiento de la llamada y el tiempo de espera para la repetición de detección.",
+                "imageAlt": "Mapa ALPR de Sonoran CAD con una cámara seleccionada y sus ajustes de radio de detección.",
+                "title": "Configurar rango de cámara y alertas"
+              }
+            },
+            "cardsLabel": "Funciones de la cámara ALPR",
+            "description": "Detecta matrículas BOLO activas en ubicaciones de cámaras ER:LC configuradas y dirige el resultado al despacho."
+          },
+          "bodycam": {
+            "cardsLabel": "Funciones de la bodycam de ER:LC",
+            "cards": {
+              "liveMap": {
+                "description": "Mantén visibles juntos en CAD el feed en vivo de una unidad y su ubicación. Abre el panel Body Cam o usa la vista previa del mapa de la unidad.",
+                "imageAlt": "Panel de Body Cam de Sonoran CAD junto al Mapa en vivo, mostrando una unidad de ER:LC de ejemplo y su transmisión de video en vivo.",
+                "title": "Ver bodycam junto al mapa en vivo"
+              },
+              "recording": {
+                "description": "Usa una tecla rápida de escritorio o los controles de Inicio/Detención del visor. La grabación en sombra puede añadir hasta 60 segundos de pre-roll a clips de hasta dos minutos de duración.",
+                "imageAlt": "Visor de cámara corporal de ER:LC con el control Iniciar grabación disponible en CAD.",
+                "title": "Inicia una grabación cuando importa"
+              },
+              "review": {
+                "description": "Abre las grabaciones de la cámara corporal desde la barra de tareas o añádela a un diseño personalizado. Las grabaciones se conservan durante 24 horas.",
+                "imageAlt": "Panel de grabaciones de Body Cam de Sonoran CAD con metraje guardado de ER:LC junto al mapa en vivo.",
+                "title": "Revisar grabaciones guardadas en CAD"
+              }
+            },
+            "description": "Ver el video de la unidad ER:LC en CAD, capturar los momentos antes de que comience la grabación y revisar las grabaciones guardadas."
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "Los jugadores introducen un nombre y apellido con un comando configurado. El nuevo personaje del CAD es buscable y está listo para el registro de vehículos.",
+                "imageAlt": "Imagen ilustrativa de jugabilidad de ER:LC mostrando a un personaje civil en una calle de la ciudad.",
+                "title": "Crear un civil desde el chat del juego"
+              },
+              "registrationCommands": {
+                "description": "Configura ambos comandos en los ajustes del servidor de ER:LC y, opcionalmente, notifica al jugador. Los registros temporales se eliminan después de 24 horas.",
+                "imageAlt": "Configuración del servidor Sonoran CAD ER:LC que muestra los campos de comando de Registro Civilian persistente y temporal.",
+                "title": "Establecer comandos persistentes y temporales"
+              }
+            },
+            "cardsLabel": "Funciones de creación de personaje de ER:LC",
+            "description": "Crea un civil CAD permanente o temporal desde un comando de ER:LC, sin requerir una cuenta CAD."
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "Eventos como incendios y robos crean llamadas en el mapa en vivo y en el panel de despacho, con la ubicación y los detalles del evento.",
+                "imageAlt": "Mapa en vivo de Sonoran CAD ER:LC que muestra llamadas de emergencia creadas por eventos de alarma contra incendios automáticos.",
+                "title": "Ver llamadas de eventos automáticos en el CAD"
+              },
+              "phoneCall": {
+                "description": "Los jugadores pueden enviar una llamada con su ubicación y descripción desde la app ER:LC 911. CAD muestra el nombre del llamante cuando su personaje está registrado.",
+                "imageAlt": "Aplicación 911 del teléfono del juego ER:LC con una descripción y ubicación de emergencia de ejemplo.",
+                "title": "Crear una llamada al 911 en el teléfono del juego"
+              }
+            },
+            "cardsLabel": "Funciones de llamada de emergencia de ER:LC",
+            "description": "Envía llamadas al 911 desde ER:LC o recibe alertas automáticas de eventos en CAD, con detalles de ubicación en el mapa en vivo."
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "Revisa la foto del personaje y los detalles guardados, luego usa Ejecutar búsqueda para buscar en CAD por nombre y apellido.",
+                "imageAlt": "Tarjeta de identificación del condado de Liberty para un personaje de ejemplo de ER:LC con un botón de Búsqueda de registro.",
+                "title": "Ver el ID de personaje guardado"
+              },
+              "requestId": {
+                "description": "Acércate a un Civil y selecciona Solicitar identificación cuando aparezca su nombre de usuario. El aviso se limita a jugadores dentro de cinco studs.",
+                "imageAlt": "Superposición de ER:LC mostrando a un civil cercano y un botón Solicitar ID.",
+                "title": "Solicitar un ID desde la superposición"
+              }
+            },
+            "cardsLabel": "Funciones de verificación de ID de ER:LC",
+            "description": "Solicita el documento de identidad de un civil cercano desde la superposición de ER:LC y consulta los datos guardados en su personaje de Sonoran CAD."
+          },
+          "map": {
+            "cardsLabel": "Funciones del mapa en vivo de ER:LC",
+            "cards": {
+              "mapViews": {
+                "description": "Alterna entre vistas 2D, 2.5D y 3D, o busca un código postal para centrar el mapa en un área.",
+                "imageAlt": "Sonoran CAD Mapa en vivo mostrando un vecindario 3D de ER:LC, controles del modo de mapa y búsqueda postal.",
+                "title": "Explora el mapa en 2D o 3D"
+              },
+              "unitDetails": {
+                "description": "Selecciona un marcador de unidad o un blip de llamada de emergencia para ver sus detalles y las acciones disponibles en el mapa.",
+                "imageAlt": "Mapa en vivo de Sonoran CAD con una unidad ER:LC seleccionada, detalles de la unidad y controles del mapa.",
+                "title": "Seleccionar unidades y llamadas"
+              }
+            },
+            "description": "Seguimiento de unidades ER:LC vinculadas y llamadas de emergencia en tiempo real en un mapa interactivo dentro de Sonoran CAD."
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "Con Self Dispatch y las llamadas de emergencia habilitadas, vea los detalles de la llamada y presione Enter para convertir una llamada en despacho y adjuntar su unidad.",
+                "imageAlt": "Superposición de ER:LC mostrando detalles de una llamada de emergencia con navegación de llamadas y una acción En route.",
+                "title": "Revisar llamadas de emergencia en el juego"
+              },
+              "taskbarTab": {
+                "description": "Usa la pestaña Overlay en la app de escritorio para activarlo, o configura una tecla de acceso rápido personalizada para mostrarlo y ocultarlo en el juego.",
+                "imageAlt": "Espacio de trabajo de despacho de Sonoran CAD con la pestaña Overlay resaltada en la barra de tareas.",
+                "title": "Abre la superposición desde CAD"
+              }
+            },
+            "cardsLabel": "Funciones de superposición en el juego de ER:LC",
+            "description": "Abre una superposición controlada por una tecla de acceso rápido en ER:LC para gestionar llamadas de despacho, ver notas y actualizar el estado de la unidad sin salir del juego."
+          },
+          "pin": {
+            "cardsLabel": "Funciones de pin drop del editor de llamadas de ER:LC",
+            "cards": {
+              "openPicker": {
+                "description": "En el editor de llamadas, selecciona el pin junto a Address para abrir el selector de ubicación 2D de ER:LC.",
+                "imageAlt": "Editor de llamadas de despacho de Sonoran CAD con el control de pin resaltado junto al campo Dirección.",
+                "title": "Abrir el mapa desde una llamada de despacho"
+              },
+              "selectLocation": {
+                "description": "Desplaza o amplía, luego haz clic en una ubicación del mapa. Sonoran CAD completa el nombre de la calle más cercana y el código postal en la llamada.",
+                "imageAlt": "Selector de ubicación de mapa 2D de ER:LC que muestra calles y códigos postales etiquetados.",
+                "title": "Selecciona un lugar para atender la llamada"
+              }
+            },
+            "description": "Elige una ubicación en el mapa de ER:LC para completar la dirección y el código postal de una llamada de despacho."
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "Configura el atajo en Personalización > Teclas rápidas > Lector de matrículas. Las teclas rápidas requieren la app de escritorio de Sonoran CAD.",
+                "imageAlt": "Configuración de accesos directos de Sonoran CAD con el atajo del lector de matrículas ER:LC resaltado.",
+                "title": "Configurar un atajo para Lector de matrículas"
+              },
+              "lookup": {
+                "description": "Pulsa la tecla rápida cerca de un vehículo con un jugador dentro. El CAD abre una búsqueda de matrículas con detalles de registro del vehículo coincidentes.",
+                "imageAlt": "Consulta de placa de Sonoran CAD mostrando una matrícula y un registro de vehículo coincidente.",
+                "title": "Abrir la búsqueda del vehículo más cercano"
+              }
+            },
+            "cardsLabel": "Funciones del lector de matrículas de ER:LC",
+            "description": "Usa una tecla de acceso rápido de escritorio para encontrar el vehículo ocupado más cercano y abrir la búsqueda de matrícula en Sonoran CAD."
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "Configura comandos permanentes y temporales en los ajustes de integración de ER:LC. Los registros temporales se eliminan automáticamente después de 24 horas.",
+                "imageAlt": "Configuración de integración de Sonoran CAD ER:LC con los comandos de registro de vehículos resaltados.",
+                "title": "Configurar comandos de registro"
+              },
+              "savedRecord": {
+                "description": "Abre Records en CAD para encontrar la nueva inscripción. El registro vincula la matrícula del vehículo y los detalles al personaje seleccionado.",
+                "imageAlt": "registro de vehículo de Sonoran CAD con detalles del civil y del vehículo, incluyendo la matrícula, la marca, el modelo, el color y el año.",
+                "title": "Revisar el registro de vehículo guardado"
+              }
+            },
+            "cardsLabel": "Características de registro de vehículos de ER:LC",
+            "description": "Registra vehículos de ER:LC a un personaje CAD seleccionado en el juego, luego revisa sus detalles guardados en Sonoran CAD."
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "La llamada incluye la unidad, la ubicación y los detalles del vehículo, luego abre una búsqueda de matrícula. Los jugadores necesitan una cuenta de Roblox vinculada y permiso de Dispatch o Self Dispatch.",
+                "imageAlt": "Sonoran CAD mostrando un registro de vehículo de ER:LC junto a una llamada de despacho con detalles del vehículo y la ubicación.",
+                "title": "Enviar detalles del vehículo al despacho"
+              },
+              "configuration": {
+                "description": "Configura el comando, la plantilla de descripción de despacho y el código 10 en la configuración de la integración de ER:LC.",
+                "imageAlt": "Configuración de integración de Sonoran CAD ER:LC con la configuración de Traffic Stops resaltada.",
+                "title": "Configura el comando de detención y los detalles de la llamada"
+              }
+            },
+            "cardsLabel": "Funciones de parada de tráfico de ER:LC",
+            "description": "Crea llamadas de detención de tráfico de ER:LC desde un comando configurable o una tecla rápida de escritorio, con los detalles del vehículo cercano enviados al CAD."
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "Activa los eventos de llamada que quieras, luego elige un servidor y un canal de Discord para cada uno. Las llamadas de despacho necesitan un código postal para imágenes 3D; las llamadas al 911 dentro del juego incluyen su ubicación automáticamente.",
+                "imageAlt": "Vista aérea ilustrativa de una intersección de la ciudad de ER:LC, que representa la imagen de ubicación añadida a las alertas de llamada de Discord.",
+                "title": "Elige qué llamadas llegan a Discord"
+              },
+              "erlcSetup": {
+                "description": "Conecta Sonoran Bot a tu comunidad CAD. Las notificaciones 911 en el juego también requieren el modo ER:LC y haber completado la configuración de la integración ER:LC.",
+                "imageAlt": "Configuración del servidor ER:LC que muestra los valores de API y Webhook del registro de eventos usados para conectar el juego con Sonoran CAD.",
+                "title": "Configurar llamadas al 911 en el juego"
+              }
+            },
+            "cardsLabel": "Funciones de webhook de ubicación 3D de ER:LC",
+            "description": "Envía eventos de 911 y despacho de ER:LC a Discord con una imagen aérea de la ubicación cuando esté disponible."
+          }
+        },
         "landing": {
           "cmsLink": "Gestiona tu comunidad de ER:LC con Sonoran CMS",
           "ctaDocs": "Ver documentación",
@@ -4145,7 +4344,7 @@
             "description": "Envía llamadas de emergencia y no urgentes al CAD desde comandos del juego, con un comando de estado de pánico y una tecla configurable.",
             "featureDescription": "Usa /911, /311 o /511 para enviar llamadas a CAD, y /panic para activar el estado de pánico de la unidad. Los jugadores deben vincular CAD; los datos de ubicación dependen del submódulo Locations habilitado.",
             "featureTitle": "Llamadas y estado de pánico en el juego",
-            "imageAlt": "Escena ilustrativa de rol de FiveM de un agente hablando con un conductor junto a un coche patrulla."
+            "imageAlt": "Juego ilustrativo de FiveM de un oficial uniformado pulsando el botón de emergencia en una radio de hombro junto a un coche patrulla para activar una señal de pánico."
           },
           "dispatch": {
             "captureAlt": "Llamada de despacho de Sonoran CAD con A-10 asignado como unidad primaria y seguimiento GPS habilitado.",
@@ -4179,13 +4378,13 @@
             "description": "Conecta servidores QBCore o ESX compatibles a CAD y emite multas en el juego desde registros seleccionados.",
             "featureDescription": "Selecciona QBCore, ESX o Legacy ESX y vincula a tus jugadores. Enumera los nombres exactos de los formularios CAD que pueden emitir multas; los importes provienen de la sección Cargos o Velocidad del registro. ESX v2 no es compatible.",
             "featureTitle": "Multas de registros CAD seleccionados",
-            "imageAlt": "Parada de tráfico ilustrativa de FiveM con un oficial redactando una multa junto a un coche patrulla."
+            "imageAlt": "Panel de citación de Sonoran CAD que muestra una citación general para Alex Morgan y una multa de $250 emitida por Jamie Reed."
           },
           "kick": {
             "description": "Borra automáticamente la unidad CAD de un usuario de seguridad pública vinculado cuando se desconecta de FiveM.",
             "featureDescription": "Cuando los jugadores vinculados de policía, bomberos, EMS o despacho abandonan el servidor, sus unidades activas se desconectan del CAD automáticamente. Kick está habilitado por defecto con el recurso de FiveM; los jugadores aún necesitan vincular sus cuentas de CAD.",
             "featureTitle": "Desconexión automática de unidad",
-            "imageAlt": "Escena ilustrativa de FiveM de un oficial devolviendo un coche patrulla a una comisaría de Los Santos."
+            "imageAlt": "Panel de notificación de expulsión de Sonoran CAD y selección de comunidad con opciones de departamento."
           },
           "map": {
             "accessCardDescription": "El Mapa en Vivo está integrado en el recurso de FiveM y no necesita configuración adicional. Los miembros deben vincular su cuenta de CAD en el juego con /link y tener permiso para ver el mapa. La búsqueda de postales requiere CAD Pro y el submódulo de Postales.",
@@ -4203,7 +4402,7 @@
             "samplePoliceLocation": "Mission Row",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "Escena ilustrativa de rol de FiveM con un coche patrulla marcado, un oficial y un vehículo detenido en una calle de Los Santos.",
+            "sceneAlt": "Vista previa animada del mapa en vivo mostrando un mapa 3D con controles de navegación y cámara.",
             "showcaseLabel": "Funciones del mapa en vivo"
           },
           "pagers": {
@@ -4214,7 +4413,7 @@
             "imageAlt": "Escena ilustrativa de FiveM de un bombero revisando un pequeño buscapersonas sujeto con clip dentro de una estación de bomberos."
           },
           "phone": {
-            "appAlt": "El icono instalado de Sonoran CAD en la pantalla de inicio de LB Phone dentro del juego.",
+            "appAlt": "Renderizado 3D de un smartphone mostrando la pantalla de inicio de LB Phone con la app Sonoran CAD instalada.",
             "appDescription": "LB Phone permite a las comunidades añadir Sonoran CAD como una app personalizada, para que los jugadores puedan abrir el CAD desde el teléfono que ya usan en el juego. LB Phone es un recurso de terceros de pago de LB Scripts.",
             "appTitle": "Abrir CAD desde el teléfono del juego",
             "featuresLabel": "Funciones de la aplicación LB Phone",
@@ -4280,8 +4479,9 @@
             "featuresLabel": "Funciones de alerta de estación"
           },
           "status": {
-            "commandAlt": "Gráfico oficial de la función Estado de unidad que muestra el comando /setstatus y una unidad CAD marcada como DISPONIBLE.",
-            "commandDescription": "Ejecuta /setstatus [status] en el juego con una de las etiquetas de estado configuradas de tu comunidad o códigos numéricos. El estado de la unidad vinculada se actualiza en CAD.",
+            "captureAlt": "Indicador del comando /setstatus en el juego que muestra su uso y las etiquetas de estado disponibles.",
+            "commandAlt": "Panel de estado CAD mostrando una actualización exitosa de /setstatus y una unidad marcada como DISPONIBLE.",
+            "commandDescription": "Ejecuta /setstatus [status] en el juego con una de las etiquetas de estado configuradas por tu comunidad o códigos numéricos para actualizar la unidad vinculada en CAD. El estado de unidad está habilitado de forma predeterminada con el recurso FiveM. Configura las opciones de estado en CAD en Admin > Customization > Unit Status Codes. Los jugadores deben vincular su cuenta de CAD y, de forma predeterminada, tener el permiso ACE command.setstatus.",
             "commandTitle": "Cambiar estado con un comando",
             "description": "Actualiza una unidad CAD vinculada desde FiveM con /setstatus [status], usando las etiquetas configuradas de tu comunidad o códigos de estado numéricos.",
             "featuresLabel": "Funciones de estatus de unidad",
@@ -4334,7 +4534,7 @@
             "alertsTitle": "Alerta sobre registros marcados",
             "description": "Conecta el lector de matrículas Wraith ARS 2X a CAD para búsquedas automáticas de matrículas y alertas de registros configurables.",
             "featuresLabel": "Funciones del Lector de matrículas Wraith",
-            "radarAlt": "Gráfico oficial de funciones de Wraith V2 que muestra el radar ARS 2X, el lector de matrículas y el controlador remoto en FiveM.",
+            "radarAlt": "Escena de FiveM que muestra un coche patrulla Wraith, una pantalla de radar de matrícula y un Wraith ARS 2X remoto.",
             "radarDescription": "El submódulo WraithV2 funciona con la versión Sonoran de Wraith ARS 2X incluida con el recurso de FiveM. Comprueba las matrículas con CAD y envía la búsqueda completa a CAD cuando bloqueas una matrícula. Los jugadores deben vincular sus cuentas de CAD y mantener Ubicaciones activadas.",
             "radarTitle": "Leer y bloquear matrículas en el juego",
             "sceneAlt": "Escena ilustrativa de jugabilidad de FiveM de una berlina patrulla marcada vigilando el tráfico en una carretera urbana al atardecer."

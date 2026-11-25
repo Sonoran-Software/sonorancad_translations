@@ -3947,6 +3947,205 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "Bağlı bir sunucu için ALPR'yi etkinleştirin, ardından varsayılan kamera setini kullanın veya kameraları ER:LC haritasına yerleştirin.",
+                "imageAlt": "ER:LC haritasında kamera konumları işaretlenmiş Sonoran CAD ALPR ayarları.",
+                "title": "Haritaya kameraları yerleştirin"
+              },
+              "cameraSettings": {
+                "description": "Algılama yarıçapını düzenlemek için bir kamera seçin. Uyarı açıklamasını, çağrı süresinin dolmasını ve tekrar algılama bekleme süresini yapılandırın.",
+                "imageAlt": "Seçili bir kamera ve algılama yarıçapı ayarlarıyla Sonoran CAD ALPR haritası.",
+                "title": "Kamera aralığını ve uyarıları ayarlayın"
+              }
+            },
+            "cardsLabel": "ALPR kamera özellikleri",
+            "description": "Yapılandırılmış ER:LC kamera konumlarında aktif BOLO plakalarını tespit edin ve sonucu sevk sistemine yönlendirin."
+          },
+          "bodycam": {
+            "cardsLabel": "ER:LC bodycam özellikleri",
+            "cards": {
+              "liveMap": {
+                "description": "CAD'de canlı bir birim akışını ve konumunu birlikte görünür tutun. Body Cam panelini açın ya da birimin harita önizlemesini kullanın.",
+                "imageAlt": "Sonoran CAD Body Cam paneli, Canlı Harita'nın yanında, örnek bir ER:LC birimini ve canlı video akışını gösteriyor.",
+                "title": "Canlı haritanın yanında vücut kamerasını görüntüle"
+              },
+              "recording": {
+                "description": "Bir masaüstü kısayolu veya görüntüleyicinin Başlat/Durdur kontrollerini kullanın. Gölge kayıt, iki dakikaya kadar uzunluktaki kliplere 60 saniyeye kadar ön kayıt ekleyebilir.",
+                "imageAlt": "CAD'de Başlat Kayıt kontrolü mevcut ER:LC bodycam görüntüleyicisi.",
+                "title": "Önemli olduğunda kaydı başlat"
+              },
+              "review": {
+                "description": "Görev çubuğundan Body Cam kayıtlarını açın veya özel bir düzene ekleyin. Kayıtlar 24 saat saklanır.",
+                "imageAlt": "Kaydedilmiş ER:LC görüntüleriyle birlikte canlı haritanın yer aldığı Sonoran CAD Body Cam Kayıtları paneli.",
+                "title": "Kaydedilen görüntüleri CAD'de inceleyin"
+              }
+            },
+            "description": "CAD'de ER:LC birim videosunu görüntüleyin, kayıt başlamadan önceki anları yakalayın ve kaydedilen görüntüleri inceleyin."
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "Oyuncular yapılandırılmış bir komutla ad ve soyad girer. Yeni CAD karakteri aranabilir ve araç kaydı için hazırdır.",
+                "imageAlt": "Bir kasaba sokağında bir sivil karakteri gösteren temsili ER:LC oyun içi görüntüsü.",
+                "title": "Oyun içi sohbetten bir sivil oluştur"
+              },
+              "registrationCommands": {
+                "description": "ER:LC sunucu ayarlarında her iki komutu yapılandırın ve isteğe bağlı olarak oyuncuyu bilgilendirin. Geçici kayıtlar 24 saat sonra silinir.",
+                "imageAlt": "Sonoran CAD ER:LC sunucu ayarları, kalıcı ve geçici Sivil Kayıt komutu alanlarını gösteriyor.",
+                "title": "Kalıcı ve geçici komutları ayarla"
+              }
+            },
+            "cardsLabel": "ER:LC karakter oluşturma özellikleri",
+            "description": "Bir ER:LC komutundan kalıcı veya geçici bir CAD sivili oluşturun, CAD hesabı gerektirmeden."
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "Yangınlar ve soygunlar gibi olaylar, canlı harita ve sevk panelinde, olay konumu ve ayrıntılarıyla birlikte çağrılar oluşturur.",
+                "imageAlt": "Sonoran CAD ER:LC otomatik yangın alarmı olayları tarafından oluşturulan acil çağrıları gösteren canlı harita.",
+                "title": "CAD'de otomatik olay çağrılarını görün"
+              },
+              "phoneCall": {
+                "description": "Oyuncular, ER:LC 911 uygulamasından konumu ve açıklamasıyla bir çağrı gönderebilir. CAD, arayanın karakteri kayıtlıysa adını gösterir.",
+                "imageAlt": "Örnek acil durum açıklaması ve konumuyla ER:LC oyun içi telefon 911 uygulaması.",
+                "title": "Oyun içi telefonda 911 çağrısı oluşturun"
+              }
+            },
+            "cardsLabel": "ER:LC acil çağrı özellikleri",
+            "description": "ER:LC'den 911 çağrıları gönderin veya CAD'de konum ayrıntılarıyla birlikte canlı haritadaki otomatik olay uyarılarını alın."
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "Karakterin fotoğrafını ve kayıtlı bilgilerini inceleyin, ardından CAD’de ad ve soyadla arama yapmak için Run Lookup’u kullanın.",
+                "imageAlt": "Bir örnek ER:LC karakteri için Liberty County kimlik kartı ve Bir Arama Çalıştır düğmesi.",
+                "title": "Kaydedilen karakter kimliğini görüntüle"
+              },
+              "requestId": {
+                "description": "Yakındaki bir Sivile yaklaşın ve kullanıcı adı göründüğünde Kimlik İste seçeneğini seçin. İstem, beş stud içindeki oyuncularla sınırlıdır.",
+                "imageAlt": "Yakındaki bir sivili ve bir Kimlik İste düğmesini gösteren ER:LC kaplaması.",
+                "title": "Üst katmandan bir kimlik isteyin"
+              }
+            },
+            "cardsLabel": "ER:LC Kimlik Kontrolü özellikleri",
+            "description": "Yakındaki bir sivilin kimliğini ER:LC bindirmesinden isteyin ve Sonoran CAD karakterlerinde kayıtlı ayrıntıları görüntüleyin."
+          },
+          "map": {
+            "cardsLabel": "ER:LC canlı harita özellikleri",
+            "cards": {
+              "mapViews": {
+                "description": "2D, 2.5D ve 3D görünümler arasında geçiş yapın veya haritayı bir bölgeye ortalamak için bir posta kodu arayın.",
+                "imageAlt": "3D bir ER:LC mahallesini, harita modu kontrollerini ve posta kodu aramasını gösteren Sonoran CAD Canlı Harita.",
+                "title": "Haritayı 2D veya 3D olarak keşfedin"
+              },
+              "unitDetails": {
+                "description": "Ayrıntılarını ve kullanılabilir harita işlemlerini görüntülemek için bir birim işaretçisi veya acil çağrı blipi seçin.",
+                "imageAlt": "Seçili bir ER:LC birimi, birim detayları ve harita kontrolleri olan Sonoran CAD Canlı Haritası.",
+                "title": "Birimleri ve çağrıları seçin"
+              }
+            },
+            "description": "Bağlı ER:LC birimlerini ve acil çağrıları Sonoran CAD içindeki etkileşimli haritada gerçek zamanlı olarak takip edin."
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "Self Dispatch ve acil çağrılar etkinleştirildiğinde, çağrı ayrıntılarını görüntüleyin ve bir çağrıyı sevke dönüştürmek ve biriminizi eklemek için Enter tuşuna basın.",
+                "imageAlt": "ER:LC kaplamasında acil çağrı ayrıntıları, çağrı gezinmesi ve Enroute eylemi gösteriliyor.",
+                "title": "Oyun içinde acil çağrıları inceleyin"
+              },
+              "taskbarTab": {
+                "description": "Oyun içindeyken etkinleştirmek için masaüstü uygulamasındaki Overlay sekmesini kullanın veya göstermek ve gizlemek için özel bir kısayol ayarlayın.",
+                "imageAlt": "Görev çubuğunda Overlay sekmesi vurgulanmış Sonoran CAD sevk çalışma alanı.",
+                "title": "Overlayi CAD'den açın"
+              }
+            },
+            "cardsLabel": "ER:LC oyun içi kaplama özellikleri",
+            "description": "ER:LC'de, oyundan çıkmadan sevk çağrılarını yönetmek, notları görüntülemek ve birim durumunu güncellemek için bir kısayol tuşuyla kontrol edilen bir kaplama açın."
+          },
+          "pin": {
+            "cardsLabel": "ER:LC çağrı düzenleyici iğne bırakma özellikleri",
+            "cards": {
+              "openPicker": {
+                "description": "Çağrı düzenleyicisinde, 2D ER:LC konum seçiciyi açmak için Address yanındaki pini seçin.",
+                "imageAlt": "Adres alanının yanında pin denetimi vurgulanmış Sonoran CAD sevk çağrısı düzenleyicisi.",
+                "title": "Bir sevk çağrısından haritayı açın"
+              },
+              "selectLocation": {
+                "description": "Kaydırın veya yakınlaştırın, sonra bir harita konumuna tıklayın. Sonoran CAD en yakın cadde adını ve postal kodunu çağrıya doldurur.",
+                "imageAlt": "Etiketli sokakları ve posta kodlarını gösteren ER:LC 2D harita konum seçici.",
+                "title": "Çağrıyı doldurmak için bir yer seçin"
+              }
+            },
+            "description": "Bir sevk çağrısının sokak adresi ve posta kodunu doldurmak için ER:LC haritasında bir konum seçin."
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "Kısayolu Özelleştirme > Kısayollar > Plaka Okuyucu altında yapılandırın. Kısayollar için Sonoran CAD masaüstü uygulaması gerekir.",
+                "imageAlt": "ER:LC Plaka Okuyucu kısayolu vurgulanmış Sonoran CAD Kısayol ayarları.",
+                "title": "Plaka Okuyucu kısayolu ayarla"
+              },
+              "lookup": {
+                "description": "İçinde bir oyuncu bulunan bir aracın yakınındayken kısayol tuşuna basın. CAD, eşleşen araç kayıt ayrıntılarıyla bir plaka araması açar.",
+                "imageAlt": "Bir plaka ve eşleşen araç kayıt kaydını gösteren Sonoran CAD plaka araması.",
+                "title": "En yakın araç sorgulamasını açın"
+              }
+            },
+            "cardsLabel": "ER:LC plaka okuyucu özellikleri",
+            "description": "Sonoran CAD içinde en yakın dolu aracı bulmak ve plaka aramasını açmak için masaüstü kısayolu kullanın."
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "ER:LC entegrasyon ayarlarında kalıcı ve geçici komutlar ayarlayın. Geçici kayıtlar 24 saat sonra otomatik olarak silinir.",
+                "imageAlt": "Sonoran CAD ER:LC entegrasyon ayarları, Araç Kaydı komutları vurgulanmış halde.",
+                "title": "Kayıt komutlarını yapılandırın"
+              },
+              "savedRecord": {
+                "description": "Yeni kaydı bulmak için CAD'de Kayıtları Açın. Kayıt, aracın plakasını ve ayrıntılarını seçilen karaktere bağlar.",
+                "imageAlt": "Plaka, marka, model, renk ve yılı dahil olmak üzere sivil ve araç ayrıntılarını içeren Sonoran CAD Araç Kaydı kaydı.",
+                "title": "Kayıtlı araç kaydını incele"
+              }
+            },
+            "cardsLabel": "ER:LC araç tescili özellikleri",
+            "description": "ER:LC araçlarını oyunda seçilen bir CAD karakterine kaydedin, ardından kaydedilmiş ayrıntılarını Sonoran CAD'de inceleyin."
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "Çağrı, birimi, konumu ve araç bilgilerini içerir, ardından bir plaka sorgusu açar. Oyuncuların bağlı bir Roblox hesabına ve Dispatch veya Self Dispatch iznine ihtiyacı vardır.",
+                "imageAlt": "Sonoran CAD, araç ve konum detaylarıyla bir sevk çağrısının yanında bir ER:LC araç kaydını gösteriyor.",
+                "title": "Araç detaylarını merkeze gönder"
+              },
+              "configuration": {
+                "description": "ER:LC entegrasyon ayarlarında komutu, sevk açıklama şablonunu ve 10-kodu yapılandırın.",
+                "imageAlt": "Sonoran CAD ER:LC entegrasyon ayarları, Trafik Durdurmaları yapılandırması vurgulanmış halde.",
+                "title": "Durdurma komutunu ve çağrı ayrıntılarını ayarlayın"
+              }
+            },
+            "cardsLabel": "ER:LC trafik durdurma özellikleri",
+            "description": "Yapılandırılabilir bir komut veya masaüstü kısayolu ile ER:LC trafik durdurma çağrıları oluşturun, yakındaki araç ayrıntıları CAD'e gönderilsin."
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "İstediğiniz çağrı etkinliklerini etkinleştirin, ardından her biri için bir Discord sunucusu ve kanalı seçin. Dispatç çağrılarının 3B görseller için bir posta koduna ihtiyacı vardır; oyun içi 911 çağrıları konumlarını otomatik olarak içerir.",
+                "imageAlt": "Discord çağrı uyarılarına eklenen konum görselini temsil eden, bir ER:LC şehir kavşağının temsili hava görüntüsü.",
+                "title": "Discord'a hangi çağrıların ulaşacağını seçin"
+              },
+              "erlcSetup": {
+                "description": "Sonoran Bot'u CAD topluluğunuza bağlayın. Oyun içi 911 bildirimleri ayrıca ER:LC modu ve tamamlanmış ER:LC entegrasyon kurulumu gerektirir.",
+                "imageAlt": "ER:LC sunucu ayarları, oyunu Sonoran CAD ile bağlamak için kullanılan API ve Event Log Webhook değerlerini gösteriyor.",
+                "title": "Oyun içi 911 aramalarını ayarla"
+              }
+            },
+            "cardsLabel": "ER:LC 3D konum webhook özellikleri",
+            "description": "ER:LC 911 ve sevk olaylarını, mevcut olduğunda havai konum görüntüsüyle Discord'a gönderin."
+          }
+        },
         "landing": {
           "cmsLink": "ER:LC topluluğunuzu Sonoran CMS ile yönetin",
           "ctaDocs": "Belgeleri Görüntüle",
@@ -4145,7 +4344,7 @@
             "description": "Oyun içi komutlardan CAD'ye acil ve acil olmayan çağrılar gönderin, panik durumu komutu ve özelleştirilebilir tuş ataması ile.",
             "featureDescription": "Aramaları CAD'e göndermek için /911, /311 veya /511 kullanın ve birim panik durumunu etkinleştirmek için /panic kullanın. Oyuncular CAD'i bağlamalıdır; konum verileri etkinleştirilmiş Locations alt modülüne bağlıdır.",
             "featureTitle": "Oyunda çağrılar ve panik durumu",
-            "imageAlt": "Bir devriye aracının yanında bir sürücüyle konuşan bir memurun temsili FiveM rol yapma sahnesi."
+            "imageAlt": "Üniformalı bir memurun devriye aracının yanında omuz radyosundaki acil durum düğmesine basarak panik sinyali etkinleştirdiği örnek FiveM oynanışı."
           },
           "dispatch": {
             "captureAlt": "Birincil birim olarak A-10 atanmış ve GPS takibi etkinleştirilmiş Sonoran CAD sevk çağrısı.",
@@ -4179,13 +4378,13 @@
             "description": "QBCore veya desteklenen ESX sunucularını CAD'e bağlayın ve seçili kayıtlardan oyun içi para cezaları uygulayın.",
             "featureDescription": "QBCore, ESX veya Legacy ESX seçin ve oyuncularınızı bağlayın. Ceza kesebilecek CAD form adlarını tam olarak listeleyin; tutarlar kaydın Charges veya Speed bölümünden gelir. ESX v2 desteklenmez.",
             "featureTitle": "Seçilen CAD kayıtlarından para cezaları",
-            "imageAlt": "Bir polis memurunun devriye aracının yanında ceza yazdığı temsili FiveM trafik durdurması."
+            "imageAlt": "Sonoran CAD ceza paneli, Alex Morgan için genel bir ceza ve Jamie Reed tarafından verilen 250 $ para cezasını gösteriyor."
           },
           "kick": {
             "description": "FiveM'den bağlantılarını kestiklerinde bağlı bir kamu güvenliği kullanıcısının CAD birimini otomatik olarak temizle.",
             "featureDescription": "Bağlı polis, itfaiye, EMS veya sevk oyuncuları sunucudan ayrıldığında, aktif birimleri CAD'den otomatik olarak bağlantıyı keser. Kick, FiveM kaynağıyla varsayılan olarak etkindir; oyuncuların yine de CAD hesaplarını bağlamaları gerekir.",
             "featureTitle": "Otomatik birim bağlantı kesme",
-            "imageAlt": "Los Santos istasyonuna devriye aracını geri getiren bir polis memurunun temsili FiveM sahnesi."
+            "imageAlt": "Sonoran CAD kick bildirimi ve departman seçenekleriyle topluluk seçim paneli."
           },
           "map": {
             "accessCardDescription": "Canlı Harita FiveM kaynağına entegredir ve ek bir kurulum gerektirmez. Üyeler CAD hesaplarını oyun içinde /link ile bağlamalı ve haritayı görüntüleme iznine sahip olmalıdır. Posta kodu araması CAD Pro ve Postals alt modülünü gerektirir.",
@@ -4203,7 +4402,7 @@
             "samplePoliceLocation": "Mission Row",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "İşaretli bir devriye aracı, memur ve durmuş bir araçla Los Santos sokaklarında temsili FiveM rol yapma sahnesi.",
+            "sceneAlt": "Gezinme ve kamera kontrolleriyle 3D bir haritayı gösteren animasyonlu canlı harita önizlemesi.",
             "showcaseLabel": "Canlı harita özellikleri"
           },
           "pagers": {
@@ -4214,7 +4413,7 @@
             "imageAlt": "Bir itfaiyecinin bir itfaiye istasyonunda küçük klipsli bir çağrı cihazını kontrol ettiği temsili FiveM sahnesi."
           },
           "phone": {
-            "appAlt": "Oyundaki LB Phone ana ekranına yüklenmiş Sonoran CAD simgesi.",
+            "appAlt": "LB Phone ana ekranında Sonoran CAD uygulaması yüklü bir akıllı telefonun 3D ürün görselleştirmesi.",
             "appDescription": "LB Phone, toplulukların Sonoran CAD'i özel bir uygulama olarak eklemesine olanak tanır, böylece oyuncular oyunda zaten kullandıkları telefondan CAD'i açabilir. LB Phone, LB Scripts'ten ücretli bir üçüncü taraf kaynağıdır.",
             "appTitle": "Oyundaki telefondan CAD'yi aç",
             "featuresLabel": "LB Phone Uygulaması özellikleri",
@@ -4280,8 +4479,9 @@
             "featuresLabel": "İstasyon Uyarısı özellikleri"
           },
           "status": {
-            "commandAlt": "Resmi Birim Durumu özellik görseli, /setstatus komutunu ve AVAILABLE olarak işaretlenmiş bir CAD birimini gösteriyor.",
-            "commandDescription": "Oyunda /setstatus [status] komutunu topluluğunuzun yapılandırılmış durum etiketlerinden veya sayısal kodlarından biriyle çalıştırın. Bağlı birimin durumu CAD'de güncellenir.",
+            "captureAlt": "Oyun içi /setstatus komut istemi, kullanımını ve kullanılabilir durum etiketlerini gösteriyor.",
+            "commandAlt": "CAD durum paneli, başarılı bir /setstatus güncellemesini ve AVAILABLE olarak işaretlenmiş bir birimi gösteriyor.",
+            "commandDescription": "Topluluğunuzun yapılandırılmış durum etiketlerinden veya sayısal kodlarından biriyle oyunda /setstatus [status] çalıştırarak CAD'deki bağlı birimi güncelleyin. Unit Status, FiveM kaynağıyla varsayılan olarak etkindir. Durum seçeneklerini CAD içinde Admin > Customization > Unit Status Codes altında yapılandırın. Oyuncuların CAD hesaplarını bağlaması gerekir ve varsayılan olarak command.setstatus ACE iznine sahip olmaları gerekir.",
             "commandTitle": "Durumu bir komutla değiştirin",
             "description": "Bağlı bir CAD birimini FiveM'den /setstatus [status] ile, topluluğunuzun yapılandırılmış etiketlerini veya sayısal durum kodlarını kullanarak güncelleyin.",
             "featuresLabel": "Ünite Durumu özellikleri",
@@ -4334,7 +4534,7 @@
             "alertsTitle": "İşaretlenmiş kayıtlarda uyarı",
             "description": "Wraith ARS 2X plaka okuyucusunu otomatik plaka sorguları ve yapılandırılabilir kayıt uyarıları için CAD'e bağlayın.",
             "featuresLabel": "Wraith Plaka Okuyucu özellikleri",
-            "radarAlt": "FiveM'de ARS 2X radar, plaka okuyucu ve uzaktan kumandayı gösteren resmi Wraith V2 özellik grafiği.",
+            "radarAlt": "Wraith devriye arabasını, plaka radar ekranını ve Wraith ARS 2X uzaktan kumandasını gösteren FiveM sahnesi.",
             "radarDescription": "WraithV2 alt modülü, FiveM kaynağıyla birlikte gelen Wraith ARS 2X'in Sonoran sürümüyle çalışır. Plakaları CAD ile karşılaştırır ve bir plakayı kilitlediğinizde tam sorguyu CAD'e gönderir. Oyuncular CAD hesaplarını bağlamalı ve Konumlar özelliğini etkin tutmalıdır.",
             "radarTitle": "Oyunda plakaları oku ve kilitle",
             "sceneAlt": "Alacakaranlıkta şehir yolunda trafiği tarayan işaretli bir devriye sedanının temsili FiveM oynanış sahnesi."

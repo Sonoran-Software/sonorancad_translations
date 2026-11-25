@@ -3946,6 +3946,205 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "Schakel ALPR in voor een verbonden server en gebruik daarna de standaardcameraset of plaats camera's op de ER:LC-kaart.",
+                "imageAlt": "Sonoran CAD ALPR-instellingen met cameralocaties gemarkeerd op de ER:LC-kaart.",
+                "title": "Plaats camera's op de kaart"
+              },
+              "cameraSettings": {
+                "description": "Selecteer een camera om de detectiestraal te bewerken. Stel de waarschuwingbeschrijving, vervaltijd van de oproep en cooldown voor herhaalde detectie in.",
+                "imageAlt": "Sonoran CAD ALPR-kaart met een geselecteerde camera en de instellingen voor de detectieradius.",
+                "title": "Stel camera bereik en waarschuwingen in"
+              }
+            },
+            "cardsLabel": "ALPR-camerafuncties",
+            "description": "Detecteer actieve BOLO-kentekens op geconfigureerde ER:LC-cameralocaties en stuur het resultaat door naar dispatch."
+          },
+          "bodycam": {
+            "cardsLabel": "ER:LC bodycam-functies",
+            "cards": {
+              "liveMap": {
+                "description": "Houd een live-eenheidsfeed en de locatie ervan samen zichtbaar in CAD. Open het Body Cam-paneel of gebruik de kaartpreview van de eenheid.",
+                "imageAlt": "Sonoran CAD Bodycam-paneel naast de Live Map, met een voorbeeld van een ER:LC-eenheid en de live videofeed.",
+                "title": "Bekijk bodycam naast de live kaart"
+              },
+              "recording": {
+                "description": "Gebruik een sneltoets op het bureaublad of de Start/Stop-bediening van de viewer. Shadow recording kan tot 60 seconden pre-roll toevoegen aan clips tot twee minuten lang.",
+                "imageAlt": "ER:LC-bodycamviewer met de bedieningsknop Opname starten beschikbaar in CAD.",
+                "title": "Start een opname wanneer het ertoe doet"
+              },
+              "review": {
+                "description": "Open bodycamopnames vanaf de taakbalk of voeg ze toe aan een aangepast layout. Opnames worden 24 uur bewaard.",
+                "imageAlt": "Sonoran CAD Bodycam-opnamenpaneel met opgeslagen ER:LC-beelden naast de livekaart.",
+                "title": "Opgeslagen beelden bekijken in CAD"
+              }
+            },
+            "description": "Bekijk ER:LC-eenheidsvideo in CAD, leg de momenten vast vóór de opname start, en bekijk opgeslagen beelden."
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "Spelers voeren een voor- en achternaam in met een geconfigureerd commando. Het nieuwe CAD-personage is doorzoekbaar en klaar voor voertuigregistratie.",
+                "imageAlt": "Illustratieve ER:LC-gameplay met een burgerpersonage op een straat in de stad.",
+                "title": "Maak een burger aan vanuit de in-game chat"
+              },
+              "registrationCommands": {
+                "description": "Configureer beide opdrachten in de ER:LC-serverinstellingen en breng de speler optioneel op de hoogte. Tijdelijke registraties worden na 24 uur verwijderd.",
+                "imageAlt": "Sonoran CAD ER:LC-serverinstellingen met de permanente en tijdelijke velden voor het commando Civiele registratie.",
+                "title": "Stel permanente en tijdelijke commando's in"
+              }
+            },
+            "cardsLabel": "ER:LC karakteraanmaakfuncties",
+            "description": "Maak een permanente of tijdelijke CAD-burger aan vanuit een ER:LC-commando, zonder een CAD-account te vereisen."
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "Gebeurtenissen zoals branden en overvallen creëren oproepen op de livekaart en het dispatchpaneel, met de locatie en details van het incident.",
+                "imageAlt": "Sonoran CAD ER:LC live kaart met noodoproepen die zijn aangemaakt door automatische brandalarmgebeurtenissen.",
+                "title": "Zie automatische evenementmeldingen in CAD"
+              },
+              "phoneCall": {
+                "description": "Spelers kunnen een oproep sturen met de locatie en beschrijving ervan vanuit de ER:LC 911-app. CAD toont de naam van de beller wanneer hun personage geregistreerd is.",
+                "imageAlt": "ER:LC in-game telefoon 911-app met een voorbeeld van een noodsituatiebeschrijving en locatie.",
+                "title": "Maak een 911-oproep via de in-game telefoon"
+              }
+            },
+            "cardsLabel": "ER:LC noodmeldingsfuncties",
+            "description": "Verstuur 911-oproepen vanuit ER:LC of ontvang automatische gebeurteniswaarschuwingen in CAD, met locatiedetails op de live kaart."
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "Controleer de foto en opgeslagen gegevens van de persoon en gebruik vervolgens Run Lookup om CAD te doorzoeken op voor- en achternaam.",
+                "imageAlt": "Identiteitskaart van Liberty County voor een voorbeeldpersonage van ER:LC met een knop Opzoeken uitvoeren.",
+                "title": "Bekijk de opgeslagen karakter-ID"
+              },
+              "requestId": {
+                "description": "Benader een nabijgelegen burger en selecteer ID aanvragen wanneer hun gebruikersnaam verschijnt. De prompt is beperkt tot spelers binnen vijf studs.",
+                "imageAlt": "ER:LC-overlay met een nabijgelegen burger en een knop Verzoek-ID.",
+                "title": "Vraag een ID aan via de overlay"
+              }
+            },
+            "cardsLabel": "ER:LC ID-controlefuncties",
+            "description": "Vraag via de ER:LC-overlay het identiteitsbewijs van een nabijgelegen burger op en bekijk de details die in hun Sonoran CAD-personage zijn opgeslagen."
+          },
+          "map": {
+            "cardsLabel": "ER:LC live kaart-functies",
+            "cards": {
+              "mapViews": {
+                "description": "Schakel tussen 2D-, 2.5D- en 3D-weergaven, of zoek een postcode om de kaart op een gebied te centreren.",
+                "imageAlt": "Sonoran CAD Live Map toont een 3D ER:LC-omgeving, kaartmodusbediening en postzoekfunctie.",
+                "title": "Verken de kaart in 2D of 3D"
+              },
+              "unitDetails": {
+                "description": "Selecteer een eenheidsmarkering of noodoproep-blip om de details en beschikbare kaartacties te bekijken.",
+                "imageAlt": "Sonoran CAD Live Map met een geselecteerde ER:LC-eenheid, eenheidsdetails en kaartbedieningen.",
+                "title": "Selecteer eenheden en oproepen"
+              }
+            },
+            "description": "Volg gekoppelde ER:LC-eenheden en noodoproepen in realtime op een interactieve kaart in Sonoran CAD."
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "Met Zelfdispatch en noodoproepen ingeschakeld, bekijk je oproepdetails en druk je op Enter om een oproep om te zetten naar dispatch en je eenheid toe te voegen.",
+                "imageAlt": "ER:LC-overlay met details van noodoproepen, oproepnavigatie en een Enroute-actie.",
+                "title": "Bekijk noodmeldingen in-game"
+              },
+              "taskbarTab": {
+                "description": "Gebruik het tabblad Overlay in de desktopapp om het te activeren, of stel een aangepaste sneltoets in om het in de game te tonen en te verbergen.",
+                "imageAlt": "Sonoran CAD-dispatchwerkruimte met het tabblad Overlay gemarkeerd in de taakbalk.",
+                "title": "Open de overlay vanuit CAD"
+              }
+            },
+            "cardsLabel": "ER:LC overlay in de game-functies",
+            "description": "Open een overlay die via een sneltoets wordt bediend in ER:LC om dispatchoproepen te beheren, notities te bekijken en de status van een eenheid bij te werken zonder het spel te verlaten."
+          },
+          "pin": {
+            "cardsLabel": "ER:LC call editor pin-drop-functies",
+            "cards": {
+              "openPicker": {
+                "description": "Selecteer in de gesprekseditor de pin naast Adres om de 2D ER:LC-locatieselector te openen.",
+                "imageAlt": "Sonoran CAD dispatchoproep-editor met de pinbediening gemarkeerd naast het veld Adres.",
+                "title": "Open de kaart vanuit een dispatchoproep"
+              },
+              "selectLocation": {
+                "description": "Pan of zoom, en klik vervolgens op een kaartlocatie. Sonoran CAD vult de dichtstbijzijnde straatnaam en postcode in bij de oproep.",
+                "imageAlt": "ER:LC 2D-kaartlocatiekiezer met gelabelde straten en postcodes.",
+                "title": "Selecteer een locatie om de oproep te vullen"
+              }
+            },
+            "description": "Kies een locatie op de ER:LC-kaart om het straatadres en de postcode van de dispatchmelding in te vullen."
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "Configureer de snelkoppeling onder Aanpassing > Sneltoetsen > Kentekenlezer. Sneltoetsen vereisen de Sonoran CAD-desktopapp.",
+                "imageAlt": "Sonoran CAD-sneltoetseninstellingen met de ER:LC Plate Reader-snelkoppeling gemarkeerd.",
+                "title": "Stel een sneltoets voor Kentekenlezer in"
+              },
+              "lookup": {
+                "description": "Druk op de sneltoets naast een voertuig met een speler erin. CAD opent een kentekenzoekopdracht met overeenkomende voertuigregistratiegegevens.",
+                "imageAlt": "Sonoran CAD-kentekenopzoeking met een nummerplaat en bijbehorend voertuigregistratiebestand.",
+                "title": "Open de dichtstbijzijnde voertuigopzoeking"
+              }
+            },
+            "cardsLabel": "ER:LC kentekenlezer functies",
+            "description": "Gebruik een sneltoets op desktop om het dichtstbijzijnde bezette voertuig te vinden en de nummerplaatherkenning te openen in Sonoran CAD."
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "Stel permanente en tijdelijke opdrachten in de ER:LC-integratie-instellingen in. Tijdelijke registraties worden na 24 uur automatisch verwijderd.",
+                "imageAlt": "Sonoran CAD ER:LC-integratie-instellingen met voertuigregistratie-opdrachten gemarkeerd.",
+                "title": "Registratiecommando's configureren"
+              },
+              "savedRecord": {
+                "description": "Open Records in CAD om de nieuwe registratie te vinden. Het record koppelt de nummerplaat en details van het voertuig aan het geselecteerde personage.",
+                "imageAlt": "Sonoran CAD voertuigregistratie-record met burger- en voertuiggegevens, inclusief het nummerplaat, merk, model, kleur en jaar.",
+                "title": "Bekijk het opgeslagen voertuigrecord"
+              }
+            },
+            "cardsLabel": "ER:LC voertuigregistratie functies",
+            "description": "Registreer ER:LC-voertuigen aan een geselecteerd CAD-personage in de game en bekijk daarna hun opgeslagen gegevens in Sonoran CAD."
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "Het gesprek bevat de eenheid, locatie en voertuiggegevens, en opent daarna een kentekenopzoeking. Spelers hebben een gekoppeld Roblox-account en Dispatch- of Self Dispatch-rechten nodig.",
+                "imageAlt": "Sonoran CAD met een ER:LC-voertuigregistratie naast een dispatchoproep met voertuig- en locatiegegevens.",
+                "title": "Voertuiggegevens naar dispatch verzenden"
+              },
+              "configuration": {
+                "description": "Configureer het commando, het sjabloon voor de dispatchomschrijving en de 10-code in de ER:LC-integratie-instellingen.",
+                "imageAlt": "Sonoran CAD ER:LC-integratie-instellingen met de configuratie van verkeersstops gemarkeerd.",
+                "title": "Stel het stopcommando en de oproepdetails in"
+              }
+            },
+            "cardsLabel": "ER:LC-verkeersstopfuncties",
+            "description": "Maak ER:LC-verkeersstopoproepen aan via een configureerbaar commando of een sneltoets op het bureaublad, met gegevens van nabijgelegen voertuigen die naar CAD worden verzonden."
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "Schakel de call-events in die je wilt, en kies vervolgens voor elk een Discord-server en kanaal. Dispatch-calls hebben een postcode nodig voor 3D-afbeeldingen; 911-calls in de game bevatten automatisch hun locatie.",
+                "imageAlt": "Illustratieve luchtweergave van een ER:LC-stadsrondpunt, die de locatieafbeelding weergeeft die aan Discord-oproepmeldingen is toegevoegd.",
+                "title": "Kies welke oproepen Discord bereiken"
+              },
+              "erlcSetup": {
+                "description": "Verbind Sonoran Bot met je CAD-community. Ingame 911-meldingen vereisen ook ER:LC-modus en een voltooide ER:LC-integratieconfiguratie.",
+                "imageAlt": "ER:LC-serverinstellingen die de API- en Event Log Webhook-waarden tonen die worden gebruikt om het spel met Sonoran CAD te verbinden.",
+                "title": "Stel in-game 911-oproepen in"
+              }
+            },
+            "cardsLabel": "ER:LC 3D-locatiewebhookfuncties",
+            "description": "Stuur ER:LC 911- en dispatchgebeurtenissen naar Discord met een luchtfoto van de locatie wanneer beschikbaar."
+          }
+        },
         "landing": {
           "cmsLink": "Beheer je ER:LC-community met Sonoran CMS",
           "ctaDocs": "Bekijk docs",
@@ -4144,7 +4343,7 @@
             "description": "Stuur nood- en niet-noodoproepen naar CAD vanuit in-game commando's, met een paniekstatuscommando en aanpasbare sneltoets.",
             "featureDescription": "Gebruik /911, /311 of /511 om oproepen naar CAD te sturen, en /panic om de paniekstatus van de eenheid te activeren. Spelers moeten CAD koppelen; locatiegegevens zijn afhankelijk van de ingeschakelde Locations-submodule.",
             "featureTitle": "Oproepen en paniekstatus in de game",
-            "imageAlt": "Sfeerbeeld van FiveM-roleplay met een agent die met een bestuurder spreekt naast een patrouillewagen."
+            "imageAlt": "Illustratieve FiveM-gameplay van een geüniformeerde agent die op de noodknop op een schouderradio drukt naast een patrouillewagen om een panieksignaal te activeren."
           },
           "dispatch": {
             "captureAlt": "Sonoran CAD-dispatchoproep met A-10 toegewezen als primaire eenheid en GPS-tracking ingeschakeld.",
@@ -4178,13 +4377,13 @@
             "description": "Koppel QBCore- of ondersteunde ESX-servers aan CAD en geef in-game boetes uit vanuit geselecteerde dossiers.",
             "featureDescription": "Selecteer QBCore, ESX of Legacy ESX en koppel je spelers. Vermeld de exacte CAD-formuliernamen die boetes mogen opleggen; bedragen komen uit de Charges- of Speed-sectie van het record. ESX v2 wordt niet ondersteund.",
             "featureTitle": "Boetes uit geselecteerde CAD-records",
-            "imageAlt": "Illustratieve FiveM-verkeerscontrole met een agent die een boete uitschrijft naast een patrouillewagen."
+            "imageAlt": "Sonoran CAD-citatiescherm met een algemene boete voor Alex Morgan en een boete van $250 uitgeschreven door Jamie Reed."
           },
           "kick": {
             "description": "Wis automatisch de gekoppelde CAD-eenheid van een gebruiker in openbare veiligheid wanneer die verbinding verbreekt met FiveM.",
             "featureDescription": "Wanneer gekoppelde politie-, brandweer-, EMS- of dispatchspelers de server verlaten, worden hun actieve eenheden automatisch losgekoppeld van CAD. Kick is standaard ingeschakeld met de FiveM-resource; spelers moeten nog steeds hun CAD-accounts koppelen.",
             "featureTitle": "Automatische eenheidsontkoppeling",
-            "imageAlt": "Illustratieve FiveM-scène van een agent die een patrouillewagen terugbrengt naar een station in Los Santos."
+            "imageAlt": "Sonoran CAD kickmelding en communityselectiepaneel met afdelingsopties."
           },
           "map": {
             "accessCardDescription": "De Live Map is ingebouwd in de FiveM-resource en vereist geen extra configuratie. Leden moeten hun CAD-account in het spel koppelen met /link en toestemming hebben om de kaart te bekijken. Postcodezoekopdracht vereist CAD Pro en de Postals-submodule.",
@@ -4202,7 +4401,7 @@
             "samplePoliceLocation": "Mission Row",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "Illustratieve FiveM roleplay-scène met een gemarkeerde patrouillewagen, een agent en een gestopt voertuig op een straat in Los Santos.",
+            "sceneAlt": "Geanimeerde live kaartpreview met een 3D-kaart met navigatie- en camerabediening.",
             "showcaseLabel": "Live Kaart-functies"
           },
           "pagers": {
@@ -4213,7 +4412,7 @@
             "imageAlt": "Illustratieve FiveM-scène van een brandweerman die een kleine pager met clip controleert in een brandweerkazerne."
           },
           "phone": {
-            "appAlt": "Het geïnstalleerde Sonoran CAD-pictogram op het startscherm van een LB Phone in-game.",
+            "appAlt": "3D-productrender van een smartphone die het beginscherm van LB Phone toont met de Sonoran CAD-app geïnstalleerd.",
             "appDescription": "LB Phone laat gemeenschappen Sonoran CAD toevoegen als een aangepaste app, zodat spelers CAD kunnen openen vanaf de telefoon die ze al in de game gebruiken. LB Phone is een betaalde externe resource van LB Scripts.",
             "appTitle": "Open CAD via de telefoon in de game",
             "featuresLabel": "LB Phone-app functies",
@@ -4279,8 +4478,9 @@
             "featuresLabel": "Station Alert-functies"
           },
           "status": {
-            "commandAlt": "Officiële Unit Status-functiegrafiek met het /setstatus-commando en een CAD-eenheid gemarkeerd als BESCHIKBAAR.",
-            "commandDescription": "Voer /setstatus [status] in de game uit met een van de geconfigureerde statuslabels of numerieke codes van uw community. De status van de gekoppelde eenheid wordt bijgewerkt in CAD.",
+            "captureAlt": "Ingame /setstatus-opdrachtprompt met het gebruik en de beschikbare statuslabels.",
+            "commandAlt": "CAD-statuspaneel met een geslaagde /setstatus-update en een eenheid gemarkeerd als BESCHIKBAAR.",
+            "commandDescription": "Voer /setstatus [status] in game uit met een van de geconfigureerde statuslabels of numerieke codes van je community om de gekoppelde eenheid in CAD bij te werken. Unit Status is standaard ingeschakeld met de FiveM-resource. Stel statuskeuzes in in CAD onder Admin > Customization > Unit Status Codes. Spelers moeten hun CAD-account koppelen en hebben standaard de command.setstatus ACE-permissie.",
             "commandTitle": "Wijzig status met een commando",
             "description": "Werk een gekoppelde CAD-eenheid vanuit FiveM bij met /setstatus [status], met behulp van de geconfigureerde labels of numerieke statuscodes van uw community.",
             "featuresLabel": "Eenheid Status functies",
@@ -4333,7 +4533,7 @@
             "alertsTitle": "Melding bij gemarkeerde records",
             "description": "Verbind de Wraith ARS 2X-kentekenlezer met CAD voor automatische kentekenopvragingen en configureerbare recordwaarschuwingen.",
             "featuresLabel": "Wraith kentekenlezer functies",
-            "radarAlt": "Officiële Wraith V2-featureafbeelding met de ARS 2X-radar, kentekenlezer en afstandsbediening in FiveM.",
+            "radarAlt": "FiveM-scène met een Wraith-patrouillewagen, kentekenradardisplay en Wraith ARS 2X op afstand.",
             "radarDescription": "De WraithV2-submodule werkt met de Sonoran-versie van Wraith ARS 2X, meegeleverd met de FiveM-resource. Het controleert nummerplaten tegen CAD en stuurt de volledige lookup naar CAD wanneer je een nummerplaat vastzet. Spelers moeten hun CAD-accounts koppelen en Locations ingeschakeld houden.",
             "radarTitle": "Lees en vergrendel nummerplaten in het spel",
             "sceneAlt": "Illustratieve FiveM-spelscène van een gemarkeerde patrouillesedan die verkeer scant op een stadsweg bij schemering."
