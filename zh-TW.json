@@ -3947,6 +3947,205 @@
     "integrations": {
       "erlc": {
         "description": "Official ER:LC in-game integration with live map and more.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "為已連接的伺服器啟用 ALPR，然後使用預設攝影機組或將攝影機放置在 ER:LC 地圖上。",
+                "imageAlt": "Sonoran CAD ALPR 設定，ER:LC 地圖上已標示攝影機位置。",
+                "title": "在地圖上放置相機"
+              },
+              "cameraSettings": {
+                "description": "選擇一個攝影機來編輯其偵測半徑。設定警報描述、通話到期時間和重複偵測冷卻時間。",
+                "imageAlt": "Sonoran CAD ALPR 地圖，顯示已選取的攝影機及其偵測半徑設定。",
+                "title": "設定相機範圍和警示"
+              }
+            },
+            "cardsLabel": "ALPR 攝影機功能",
+            "description": "在已設定的 ER:LC 攝影機位置偵測啟用中的 BOLO 車牌，並將結果路由至派遣。"
+          },
+          "bodycam": {
+            "cardsLabel": "ER:LC 隨身攝影機功能",
+            "cards": {
+              "liveMap": {
+                "description": "在 CAD 中讓即時單位資訊流與其位置同時可見。開啟隨身攝影機面板或使用單位的地圖預覽。",
+                "imageAlt": "Sonoran CAD 行車記錄器面板位於即時地圖旁，顯示一個 ER:LC 範例單位及其即時影片串流。",
+                "title": "在即時地圖旁查看隨身攝影機"
+              },
+              "recording": {
+                "description": "使用桌面快速鍵或檢視器的開始/停止控制。影子錄影可為最長兩分鐘的片段加入最多 60 秒的前導錄影。",
+                "imageAlt": "ER:LC 隨身攝影機檢視器，CAD 中可使用開始錄製控制。",
+                "title": "在需要時開始錄影"
+              },
+              "review": {
+                "description": "可從工作列開啟執法記錄器錄影，或將其新增至自訂版面。錄影會保留 24 小時。",
+                "imageAlt": "Sonoran CAD 背心攝影機錄製面板，旁邊顯示已儲存的 ER:LC 片段與即時地圖。",
+                "title": "在 CAD 中檢視已儲存的畫面"
+              }
+            },
+            "description": "在 CAD 中檢視 ER:LC 單位影片，擷取錄製開始前的片段，並回顧已儲存的影像。"
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "玩家使用已設定的指令輸入名和姓。新的 CAD 角色可供搜尋，並可進行車輛註冊。",
+                "imageAlt": "示意性的 ER:LC 遊戲畫面，顯示一名平民角色在城鎮街道上。",
+                "title": "從遊戲內聊天建立平民"
+              },
+              "registrationCommands": {
+                "description": "在 ER:LC 伺服器設定中設定兩種指令，並可選擇通知玩家。暫時註冊會在 24 小時後刪除。",
+                "imageAlt": "顯示持久和臨時平民註冊指令欄位的 Sonoran CAD ER:LC 伺服器設定。",
+                "title": "設定永久和暫時指令"
+              }
+            },
+            "cardsLabel": "ER:LC 市民建立功能",
+            "description": "從 ER:LC 指令建立永久或臨時的 CAD 平民，無需 CAD 帳號。"
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "像火災和搶劫等事件會在即時地圖和派遣面板上建立通話，並顯示事件位置和詳細資訊。",
+                "imageAlt": "Sonoran CAD ER:LC 即時地圖顯示由自動火警事件建立的緊急通話。",
+                "title": "在 CAD 中查看自動事件通話"
+              },
+              "phoneCall": {
+                "description": "玩家可以從 ER:LC 911 應用程式傳送含有其位置和描述的通話。CAD 會在來電者的角色已註冊時顯示其姓名。",
+                "imageAlt": "ER:LC 遊戲內電話 911 應用程式，包含一則範例緊急描述與位置。",
+                "title": "在遊戲內電話上建立 911 通話"
+              }
+            },
+            "cardsLabel": "ER:LC 緊急呼叫功能",
+            "description": "從 ER:LC 發送 911 通話，或在 CAD 中接收自動事件警報，並在即時地圖上查看位置詳細資訊。"
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "檢視角色的照片和已儲存的詳細資料，然後使用 Run Lookup 依名字和姓氏搜尋 CAD。",
+                "imageAlt": "Liberty County 身分證卡，適用於一個範例 ER:LC 角色，附有 Run Lookup 按鈕。",
+                "title": "查看已儲存的角色 ID"
+              },
+              "requestId": {
+                "description": "接近附近的平民，當其使用者名稱出現時選擇請求 ID。提示僅限於五個 studs 內的玩家。",
+                "imageAlt": "ER:LC 疊加層顯示附近的一名平民和一個請求 ID 按鈕。",
+                "title": "從覆蓋層請求身分證"
+              }
+            },
+            "cardsLabel": "ER:LC ID 檢查功能",
+            "description": "從 ER:LC 覆蓋層向附近的平民索取身分證，並查看其儲存在 Sonoran CAD 角色中的詳細資訊。"
+          },
+          "map": {
+            "cardsLabel": "ER:LC 即時地圖功能",
+            "cards": {
+              "mapViews": {
+                "description": "在 2D、2.5D 和 3D 視圖之間切換，或搜尋郵遞區號以將地圖置中於某個區域。",
+                "imageAlt": "Sonoran CAD 即時地圖顯示 3D ER:LC 社區、地圖模式控制項，以及郵遞區號搜尋。",
+                "title": "以 2D 或 3D 探索地圖"
+              },
+              "unitDetails": {
+                "description": "選擇一個單位標記或緊急呼叫點以查看其詳細資料和可用的地圖操作。",
+                "imageAlt": "Sonoran CAD 即時地圖，包含已選取的 ER:LC 單位、單位詳細資料和地圖控制項。",
+                "title": "選擇單位和通話"
+              }
+            },
+            "description": "在 Sonoran CAD 內的互動式地圖上即時追蹤連結的 ER:LC 單位和緊急呼叫。"
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "啟用自動派遣和緊急呼叫後，檢視通話詳細資料並按 Enter 將通話轉換為派遣並附加您的單位。",
+                "imageAlt": "ER:LC 覆蓋層顯示緊急呼叫詳細資訊，包含呼叫導覽和 Enroute 動作。",
+                "title": "遊戲內查看緊急呼叫"
+              },
+              "taskbarTab": {
+                "description": "在桌面應用程式中使用「Overlay」分頁來啟用它，或設定自訂熱鍵以在遊戲中顯示和隱藏它。",
+                "imageAlt": "Sonoran CAD 派遣工作區，工作列中的 Overlay 分頁已醒目顯示。",
+                "title": "從 CAD 開啟疊加層"
+              }
+            },
+            "cardsLabel": "ER:LC 遊戲內覆蓋層功能",
+            "description": "在 ER:LC 中開啟受熱鍵控制的覆蓋層，以管理派遣呼叫、查看筆記，並在不離開遊戲的情況下更新單位狀態。"
+          },
+          "pin": {
+            "cardsLabel": "ER:LC 通話編輯器圖釘放置功能",
+            "cards": {
+              "openPicker": {
+                "description": "在通話編輯器中，選取地址旁邊的圖釘以開啟 2D ER:LC 位置選擇器。",
+                "imageAlt": "Sonoran CAD 派遣通話編輯器，釘選控制項在 Address 欄位旁高亮顯示。",
+                "title": "從派遣通話開啟地圖"
+              },
+              "selectLocation": {
+                "description": "平移或縮放，然後點擊地圖位置。Sonoran CAD 會自動填入通話中最近的街道名稱和郵遞區號。",
+                "imageAlt": "ER:LC 2D 地圖位置選擇器，顯示標示的街道與郵遞區號。",
+                "title": "選擇一個地點來填寫通話"
+              }
+            },
+            "description": "選擇 ER:LC 地圖上的一個位置以填入派遣通話的街道地址和郵遞區號。"
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "在 自訂 > 快捷鍵 > 車牌辨識 中 設定 此 捷徑。快捷鍵 需要 Sonoran CAD 桌面 應用程式。",
+                "imageAlt": "Sonoran CAD 快捷鍵設定，已突出顯示 ER:LC 車牌讀取器捷徑。",
+                "title": "設定車牌辨識器快速鍵"
+              },
+              "lookup": {
+                "description": "在載有玩家的車輛附近按下熱鍵。CAD 會開啟車牌搜尋，顯示符合的車輛登記資料。",
+                "imageAlt": "Sonoran CAD 車牌查詢，顯示車牌及相符的車輛註冊紀錄。",
+                "title": "開啟最近車輛查詢"
+              }
+            },
+            "cardsLabel": "ER:LC 車牌辨識器功能",
+            "description": "使用桌面快速鍵尋找最近的已佔用車輛，並在 Sonoran CAD 中開啟其車牌搜尋。"
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "在 ER:LC 整合設定中設定永久與暫時指令。暫時註冊會在 24 小時後自動刪除。",
+                "imageAlt": "Sonoran CAD ER:LC 整合設定，並突出顯示車輛註冊指令。",
+                "title": "設定註冊指令"
+              },
+              "savedRecord": {
+                "description": "在 CAD 中打開記錄以尋找新的註冊。該記錄會將車輛的車牌和詳細資料連結到所選角色。",
+                "imageAlt": "含有民用人員和車輛詳細資料的 Sonoran CAD 車輛登記紀錄，包括車牌、廠牌、型號、顏色和年份。",
+                "title": "查看已儲存的車輛記錄"
+              }
+            },
+            "cardsLabel": "ER:LC 車輛登記功能",
+            "description": "將 ER:LC 車輛註冊到遊戲中選定的 CAD 角色，然後在 Sonoran CAD 中查看其已儲存的詳細資料。"
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "通話包含單位、地點和車輛詳細資訊，然後會開啟車牌查詢。玩家需要已連結的 Roblox 帳號以及 Dispatch 或 Self Dispatch 權限。",
+                "imageAlt": "Sonoran CAD 顯示一個 ER:LC 車輛註冊，旁邊有一個包含車輛和位置詳細資訊的派遣通話。",
+                "title": "將車輛詳情傳送給派遣"
+              },
+              "configuration": {
+                "description": "在 ER:LC 整合設定中設定指令、派遣說明範本和 10-代碼。",
+                "imageAlt": "Sonoran CAD ER:LC 整合設定，並突出顯示交通攔查設定。",
+                "title": "設定攔停指令和通話詳細資訊"
+              }
+            },
+            "cardsLabel": "ER:LC 攔檢功能",
+            "description": "使用可設定的指令或桌面快速鍵建立 ER:LC 交通攔檢呼叫，並將附近車輛詳細資料傳送至 CAD。"
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "啟用你想要的通話事件，然後為每個事件選擇一個 Discord 伺服器和頻道。派遣通話的 3D 圖像需要郵遞區號；遊戲內 911 通話會自動包含其位置。",
+                "imageAlt": "ER:LC 城市路口的示意性空拍圖，代表新增至 Discord 通話警報的地點圖片。",
+                "title": "選擇哪些通話會傳送到 Discord"
+              },
+              "erlcSetup": {
+                "description": "將 Sonoran Bot 連接到您的 CAD 社群。遊戲內 911 通知也需要 ER:LC 模式和已完成的 ER:LC 整合設定。",
+                "imageAlt": "ER:LC 伺服器設定顯示用於將遊戲與 Sonoran CAD 連接的 API 和事件紀錄 Webhook 值。",
+                "title": "設定遊戲內 911 通話"
+              }
+            },
+            "cardsLabel": "ER:LC 3D 位置 Webhook 功能",
+            "description": "在可用時，將 ER:LC 911 和派遣事件連同空拍位置圖片傳送到 Discord。"
+          }
+        },
         "landing": {
           "cmsLink": "使用 Sonoran CMS 管理你的 ER:LC 社群",
           "ctaDocs": "查看文件",
@@ -4145,7 +4344,7 @@
             "description": "透過遊戲內指令將緊急和非緊急呼叫發送到 CAD，並提供恐慌狀態指令和可自訂按鍵綁定。",
             "featureDescription": "使用 /911、/311 或 /511 將呼叫傳送至 CAD，並使用 /panic 啟動單位驚慌狀態。玩家必須連結 CAD；位置資料依賴已啟用的 Locations 子模組。",
             "featureTitle": "遊戲內來電與恐慌狀態",
-            "imageAlt": "具示意性的 FiveM 角色扮演場景，一名員警站在巡邏車旁與駕駛交談。"
+            "imageAlt": "穿著制服的員警在巡邏車旁按下肩掛無線電上的緊急按鈕，以啟動求救信號的 FiveM 示意遊戲畫面。"
           },
           "dispatch": {
             "captureAlt": "Sonoran CAD 派遣通話，A-10 已指派為主要單位並已啟用 GPS 追蹤。",
@@ -4179,13 +4378,13 @@
             "description": "將 QBCore 或受支援的 ESX 伺服器連接到 CAD，並從所選紀錄開立遊戲內罰款。",
             "featureDescription": "選擇 QBCore、ESX 或 Legacy ESX，並連結您的玩家。列出可開罰單的精確 CAD 表單名稱；金額來自紀錄的 Charges 或 Speed 區段。ESX v2 不支援。",
             "featureTitle": "所選 CAD 記錄的罰款",
-            "imageAlt": "示意性的 FiveM 交通攔檢，員警在巡邏車旁開立罰單。"
+            "imageAlt": "Sonoran CAD 傳票面板，顯示 Alex Morgan 的一般傳票以及由 Jamie Reed 開出的 $250 罰款。"
           },
           "kick": {
             "description": "當連結的公共安全使用者從 FiveM 斷線時，自動清除其 CAD 單位。",
             "featureDescription": "當已連結的警察、消防、EMS 或派遣玩家離開伺服器時，他們的啟用單位會自動從 CAD 斷開連線。Kick 在 FiveM 資源中預設為啟用；玩家仍需連結他們的 CAD 帳號。",
             "featureTitle": "自動單位斷線",
-            "imageAlt": "示意性的 FiveM 場景，員警將巡邏車歸還到洛聖都警局。"
+            "imageAlt": "Sonoran CAD 踢出通知與社群選擇面板，包含部門選項。"
           },
           "map": {
             "accessCardDescription": "即時地圖已內建於 FiveM 資源中，無需額外設定。成員必須在遊戲中使用 /link 連結其 CAD 帳號，並具有檢視地圖的權限。郵遞區號搜尋需要 CAD Pro 和 Postals 子模組。",
@@ -4203,7 +4402,7 @@
             "samplePoliceLocation": "任務行",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "示意性的 FiveM 角色扮演場景，標記巡邏車、員警與停下的車輛在洛聖都街道上。",
+            "sceneAlt": "動態即時地圖預覽，顯示具有導覽和攝影機控制的 3D 地圖。",
             "showcaseLabel": "即時地圖功能"
           },
           "pagers": {
@@ -4214,7 +4413,7 @@
             "imageAlt": "消防員在消防局內查看一個小型夾式呼叫器的示意 FiveM 場景。"
           },
           "phone": {
-            "appAlt": "遊戲內 LB Phone 主畫面上已安裝的 Sonoran CAD 圖示。",
+            "appAlt": "顯示已安裝 Sonoran CAD 應用程式的 LB Phone 主畫面的智慧型手機 3D 產品渲染圖。",
             "appDescription": "LB Phone 讓社群可以將 Sonoran CAD 加為自訂應用程式，讓玩家能從他們在遊戲中已在使用的手機開啟 CAD。LB Phone 是 LB Scripts 的付費第三方資源。",
             "appTitle": "從遊戲內手機開啟 CAD",
             "featuresLabel": "LB 手機應用程式功能",
@@ -4280,8 +4479,9 @@
             "featuresLabel": "警報功能"
           },
           "status": {
-            "commandAlt": "官方單位狀態功能圖示，顯示 /setstatus 指令和標記為 AVAILABLE 的 CAD 單位。",
-            "commandDescription": "在遊戲中使用你們社群已設定的狀態標籤或數字代碼執行 /setstatus [status]。已連結單位的狀態會在 CAD 中更新。",
+            "captureAlt": "遊戲內 /setstatus 指令提示，顯示其用法和可用狀態標籤。",
+            "commandAlt": "CAD 狀態面板顯示成功的 /setstatus 更新以及一個單位標記為可用。",
+            "commandDescription": "在遊戲中使用 /setstatus [status]，並使用您的社群已設定的狀態標籤或數字代碼來更新 CAD 中連結的單位。FiveM 資源預設已啟用單位狀態。在 CAD 中透過 Admin > Customization > Unit Status Codes 設定狀態選項。玩家必須連結他們的 CAD 帳戶，且預設具有 command.setstatus ACE 權限。",
             "commandTitle": "使用指令變更狀態",
             "description": "使用 /setstatus [status] 從 FiveM 更新已連結的 CAD 單位，使用你們社群已設定的標籤或數字狀態代碼。",
             "featuresLabel": "單位狀態功能",
@@ -4334,7 +4534,7 @@
             "alertsTitle": "對已標記記錄發出警報",
             "description": "將 Wraith ARS 2X 車牌閱讀器連接至 CAD，以進行自動車牌查詢與可設定的紀錄警示。",
             "featuresLabel": "Wraith 車牌辨識器功能",
-            "radarAlt": "官方 Wraith V2 功能圖，顯示 FiveM 中的 ARS 2X 雷達、車牌讀取器和遙控器。",
+            "radarAlt": "FiveM 場景展示 Wraith 巡邏車、車牌雷達顯示與 Wraith ARS 2X 遠端。",
             "radarDescription": "WraithV2 子模組可搭配隨 FiveM 資源捆綁的 Sonoran 版本 Wraith ARS 2X 使用。它會將車牌與 CAD 比對，並在你鎖定車牌時將完整查詢傳送至 CAD。玩家必須連結他們的 CAD 帳號，並保持 Locations 啟用。",
             "radarTitle": "在遊戲中讀取並鎖定車牌",
             "sceneAlt": "黃昏時分，標示巡邏轎車在城市道路上掃描車流的 FiveM 遊戲示意場景。"

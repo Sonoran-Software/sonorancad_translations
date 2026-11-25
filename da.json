@@ -3946,6 +3946,205 @@
     "integrations": {
       "erlc": {
         "description": "Officiel ER:LC-spilintegration med livekort og mere.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "Aktivér ALPR for en tilsluttet server, og brug derefter standardkamerasættet eller placer kameraer på ER:LC-kortet.",
+                "imageAlt": "Sonoran CAD ALPR-indstillinger med kamerasteder markeret på ER:LC-kortet.",
+                "title": "Placer kameraer på kortet"
+              },
+              "cameraSettings": {
+                "description": "Vælg et kamera for at redigere dets detektionsradius. Konfigurer alarmbeskrivelsen, opkaldsudløb og cooldown for gentagen detektion.",
+                "imageAlt": "Sonoran CAD ALPR-kort med et valgt kamera og dets indstillinger for detektionsradius.",
+                "title": "Angiv kamerarækkevidde og alarmer"
+              }
+            },
+            "cardsLabel": "ALPR-kamerafunktioner",
+            "description": "Registrer aktive BOLO-nummerplader ved konfigurerede ER:LC-kameraplaceringer og send resultatet til dispatch."
+          },
+          "bodycam": {
+            "cardsLabel": "ER:LC bodycam-funktioner",
+            "cards": {
+              "liveMap": {
+                "description": "Hold et live enhedsfeed og dets placering synlige sammen i CAD. Åbn Body Cam-panelet eller brug enhedens kortforhåndsvisning.",
+                "imageAlt": "Sonoran CAD Body Cam-panelet ved siden af Live Map, der viser en eksempel ER:LC-enhed og dens live videofeed.",
+                "title": "Se bodycam ved siden af livekortet"
+              },
+              "recording": {
+                "description": "Brug en skrivebordshurtigtast eller fremviserens Start/Stop-kontroller. Skyggeoptagelse kan tilføje op til 60 sekunders forudgående optagelse til klip på op til to minutter.",
+                "imageAlt": "ER:LC-bodycamfremviser med Start Optagelse-kontrollen tilgængelig i CAD.",
+                "title": "Start en optagelse, når det gælder"
+              },
+              "review": {
+                "description": "Åbn Body Cam-optagelser fra proceslinjen eller føj det til et brugerdefineret layout. Optagelser gemmes i 24 timer.",
+                "imageAlt": "Sonoran CAD Body Cam-optagelser panel med gemt ER:LC-optagelse sammen med det live kort.",
+                "title": "Gennemgå gemte optagelser i CAD"
+              }
+            },
+            "description": "Se ER:LC-enhedsvideo i CAD, optag øjeblikkene før optagelsen starter, og gennemse gemt footage."
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "Spillere indtaster et fornavn og efternavn med en konfigureret kommando. Den nye CAD-karakter kan søges frem og er klar til køretøjsregistrering.",
+                "imageAlt": "Illustrativ ER:LC-gameplay, der viser en civil karakter på en bygade.",
+                "title": "Opret en civil fra chat i spillet"
+              },
+              "registrationCommands": {
+                "description": "Konfigurer begge kommandoer i ER:LC-serverindstillingerne og underret eventuelt spilleren. Midlertidige registreringer slettes efter 24 timer.",
+                "imageAlt": "Sonoran CAD ER:LC serverindstillinger, der viser felterne for vedvarende og midlertidige Civilian Registration-kommandoer.",
+                "title": "Angiv vedvarende og midlertidige kommandoer"
+              }
+            },
+            "cardsLabel": "ER:LC karakteroprettelsesfunktioner",
+            "description": "Opret en permanent eller midlertidig CAD-civilperson fra en ER:LC-kommando uden at kræve en CAD-konto."
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "Hændelser som brande og røverier opretter opkald på livekortet og dispatchpanelet, med hændelsesplaceringen og detaljerne.",
+                "imageAlt": "Sonoran CAD ER:LC livekort, der viser nødopkald oprettet af automatiske brandalarmhændelser.",
+                "title": "Se automatiske hændelsesopkald i CAD"
+              },
+              "phoneCall": {
+                "description": "Spillere kan sende et opkald med dets placering og beskrivelse fra ER:LC 911-appen. CAD viser opkalderens navn, når deres karakter er registreret.",
+                "imageAlt": "ER:LC 911-app til telefon i spillet med en eksempel-beredskabsbeskrivelse og placering.",
+                "title": "Opret et 911-opkald på den telefon i spillet"
+              }
+            },
+            "cardsLabel": "ER:LC nødopkaldsfunktioner",
+            "description": "Send 911-opkald fra ER:LC eller modtag automatiske hændelsesadvarsler i CAD med placeringsdetaljer på livekortet."
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "Gennemgå karakterens foto og gemte detaljer, og brug derefter Kør opslag til at søge i CAD efter for- og efternavn.",
+                "imageAlt": "Liberty County-identitetskort for en prøve-ER:LC-karakter med en Run Lookup-knap.",
+                "title": "Se det gemte karakter-ID"
+              },
+              "requestId": {
+                "description": "Gå hen til en Civilian i nærheden, og vælg Anmod om ID, når deres brugernavn vises. Prompten er begrænset til spillere inden for fem studs.",
+                "imageAlt": "ER:LC-overlay, der viser en civil i nærheden og en knap til Anmod om ID.",
+                "title": "Anmod om et ID fra overlayet"
+              }
+            },
+            "cardsLabel": "ER:LC ID-kontrolfunktioner",
+            "description": "Anmod om en civilpersons ID i nærheden fra ER:LC-overlayet og se detaljerne, der er gemt i deres Sonoran CAD-karakter."
+          },
+          "map": {
+            "cardsLabel": "ER:LC live-kortfunktioner",
+            "cards": {
+              "mapViews": {
+                "description": "Skift mellem 2D-, 2.5D- og 3D-visninger, eller søg efter et postnummer for at centrere kortet på et område.",
+                "imageAlt": "Sonoran CAD Live Map viser et 3D ER:LC-nabolag, korttilstandskontroller og postnummer-søgning.",
+                "title": "Udforsk kortet i 2D eller 3D"
+              },
+              "unitDetails": {
+                "description": "Vælg en enhedsmarkør eller nødkalds-blip for at se dens detaljer og tilgængelige korthandlinger.",
+                "imageAlt": "Sonoran CAD Live-kort med en valgt ER:LC-enhed, enhedsdetaljer og kortkontroller.",
+                "title": "Vælg enheder og opkald"
+              }
+            },
+            "description": "Følg linkede ER:LC-enheder og nødopkald i realtid på et interaktivt kort i Sonoran CAD."
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "Med Self Dispatch og nødopkald aktiveret kan du se opkaldsdetaljer og trykke på Enter for at konvertere et opkald til dispatch og tilknytte din enhed.",
+                "imageAlt": "ER:LC-overlay, der viser detaljer om nødopkald med opkaldsnavigation og en Undervejs-handling.",
+                "title": "Gennemgå nødopkald i spillet"
+              },
+              "taskbarTab": {
+                "description": "Brug Overlay-fanen i desktopappen til at aktivere den, eller angiv en brugerdefineret genvejstast til at vise og skjule den i spillet.",
+                "imageAlt": "Sonoran CAD-dispatcharbejdsområde med Overlay-fanen fremhævet i proceslinjen.",
+                "title": "Åbn overlayet fra CAD"
+              }
+            },
+            "cardsLabel": "ER:LC overlay i spillet-funktioner",
+            "description": "Åbn et hotkey-styret overlay i ER:LC for at administrere udrykninger, se noter og opdatere enhedsstatus uden at forlade spillet."
+          },
+          "pin": {
+            "cardsLabel": "ER:LC opkaldseditor pin-drop-funktioner",
+            "cards": {
+              "openPicker": {
+                "description": "I opkaldseditoren skal du vælge pinnen ved siden af Adresse for at åbne den 2D ER:LC-lokationsvælger.",
+                "imageAlt": "Sonoran CAD-dispatchopkaldseditor med pin-kontrollen fremhævet ved siden af Address-feltet.",
+                "title": "Åbn kortet fra et udkald"
+              },
+              "selectLocation": {
+                "description": "Panorér eller zoom, og klik derefter på en placering på kortet. Sonoran CAD udfylder det nærmeste gadenavn og postnummer i opkaldet.",
+                "imageAlt": "ER:LC 2D-kortlokationsvælger, der viser markerede gader og postnumre.",
+                "title": "Vælg et sted at udfylde opkaldet"
+              }
+            },
+            "description": "Vælg en placering på ER:LC-kortet for at udfylde en dispatch-opkalds gadeadresse og postnummer."
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "Konfigurer genvejen under Tilpasning > Genvejstaster > Nummerpladelæser. Genvejstaster kræver Sonoran CAD desktopappen.",
+                "imageAlt": "Sonoran CAD genvejstaster-indstillinger med ER:LC Plate Reader-genvejen fremhævet.",
+                "title": "Indstil en nummerpladelæser-genvejstast"
+              },
+              "lookup": {
+                "description": "Tryk på genvejstasten nær et køretøj med en spiller indeni. CAD åbner en nummerpladesøgning med matchende køretøjsregistreringsoplysninger.",
+                "imageAlt": "Sonoran CAD nummerpladeopslag, der viser en nummerplade og en matchende køretøjsregistrering.",
+                "title": "Åbn det nærmeste køretøjsopslag"
+              }
+            },
+            "cardsLabel": "ER:LC nummerpladelæser funktioner",
+            "description": "Brug en skrivebordshurtigtast til at finde det nærmeste besatte køretøj og åbne dets nummerpladesøgning i Sonoran CAD."
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "Angiv permanente og midlertidige kommandoer i ER:LC-integrationens indstillinger. Midlertidige registreringer slettes automatisk efter 24 timer.",
+                "imageAlt": "Sonoran CAD ER:LC-integrationsindstillinger med Køretøjsregistreringskommandoer fremhævet.",
+                "title": "Konfigurer registreringskommandoer"
+              },
+              "savedRecord": {
+                "description": "Åbn Records i CAD for at finde den nye registrering. Recorden knytter køretøjets nummerplade og detaljer til den valgte karakter.",
+                "imageAlt": "Sonoran CAD køretøjsregistreringspost med civile og køretøjsoplysninger, herunder nummerpladen, mærke, model, farve og årgang.",
+                "title": "Gennemgå den gemte køretøjsregistrering"
+              }
+            },
+            "cardsLabel": "ER:LC køretøjsregistreringsfunktioner",
+            "description": "Registrer ER:LC-køretøjer til en valgt CAD-karakter i spillet, og gennemgå derefter deres gemte detaljer i Sonoran CAD."
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "Opkaldet inkluderer enheden, placeringen og køretøjsoplysningerne, og åbner derefter et nummerpladesøgning. Spillere har brug for en tilknyttet Roblox-konto og Dispatch- eller Self Dispatch-tilladelse.",
+                "imageAlt": "Sonoran CAD, der viser en ER:LC-køretøjsregistrering ved siden af et udrykningsopkald med køretøjs- og placeringsoplysninger.",
+                "title": "Send køretøjsoplysninger til dispatch"
+              },
+              "configuration": {
+                "description": "Konfigurer kommandoen, dispatch-beskrivelse skabelonen og 10-koden i ER:LC-integrationsindstillingerne.",
+                "imageAlt": "Sonoran CAD ER:LC-integrationsindstillinger med Trafikstop-konfiguration fremhævet.",
+                "title": "Opsæt stop-kommandoen og opkaldsdetaljerne"
+              }
+            },
+            "cardsLabel": "ER:LC trafikstop-funktioner",
+            "description": "Opret ER:LC-trafikstopopkald fra en konfigurerbar kommando eller en genvejstast på skrivebordet, med detaljer om nærliggende køretøjer sendt til CAD."
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "Aktivér de opkaldshændelser, du ønsker, og vælg derefter en Discord-server og kanal for hver. Dispatch-opkald kræver et postnummer til 3D-billeder; 911-opkald i spillet inkluderer automatisk deres placering.",
+                "imageAlt": "Illustrativt luftfoto af et ER:LC-bykryds, der repræsenterer det lokationsbillede, der er tilføjet til Discord-opkaldsalarmer.",
+                "title": "Vælg hvilke opkald der når Discord"
+              },
+              "erlcSetup": {
+                "description": "Forbind Sonoran Bot til dit CAD-fællesskab. 911-notifikationer i spillet kræver også ER:LC-tilstand og fuldført ER:LC-integrationsopsætning.",
+                "imageAlt": "ER:LC-serverindstillinger, der viser API- og Event Log Webhook-værdierne, som bruges til at forbinde spillet med Sonoran CAD.",
+                "title": "Opsæt 911-opkald i spillet"
+              }
+            },
+            "cardsLabel": "ER:LC 3D-lokationswebhook-funktioner",
+            "description": "Send ER:LC 911- og dispatch-hændelser til Discord med et luftfoto af placeringen, når det er tilgængeligt."
+          }
+        },
         "landing": {
           "cmsLink": "Administrer dit ER:LC-fællesskab med Sonoran CMS",
           "ctaDocs": "Se dokumentation",
@@ -4144,7 +4343,7 @@
             "description": "Send nød- og ikke-nødopkald til CAD fra kommandoer i spillet, med en panikstatuskommando og brugerdefinerbar tastbinding.",
             "featureDescription": "Brug /911, /311 eller /511 til at sende kald til CAD, og /panic til at aktivere enhedens panikstatus. Spillere skal linke CAD; lokationsdata afhænger af det aktiverede Locations-submodul.",
             "featureTitle": "Opkald og panikstatus i spillet",
-            "imageAlt": "Illustrativ FiveM-rollespilsscene af en betjent, der taler med en bilist ved siden af en patruljevogn."
+            "imageAlt": "Illustrativ FiveM-gameplay af en uniformeret betjent, der trykker på nødknappen på en skulderradio ved siden af en patruljevogn for at aktivere et paniksignal."
           },
           "dispatch": {
             "captureAlt": "Sonoran CAD-dispatchopkald med A-10 tildelt som primær enhed og GPS-sporing aktiveret.",
@@ -4178,13 +4377,13 @@
             "description": "Kobl QBCore- eller understøttede ESX-servere til CAD og udsted bøder i spillet fra valgte poster.",
             "featureDescription": "Vælg QBCore, ESX eller Legacy ESX og link dine spillere. Angiv de præcise CAD-formnavne, der må udstede bøder; beløbene kommer fra postens Charges- eller Speed-sektion. ESX v2 understøttes ikke.",
             "featureTitle": "Bøder fra valgte CAD-poster",
-            "imageAlt": "Illustrativ FiveM-standsning med en betjent, der skriver en bøde ved siden af en patruljevogn."
+            "imageAlt": "Sonoran CAD bødepanel, der viser en generel bøde til Alex Morgan og en bøde på $250 udstedt af Jamie Reed."
           },
           "kick": {
             "description": "Ryd en tilknyttet offentlig-sikkerhedsbrugers CAD-enhed automatisk, når de afbryder forbindelsen til FiveM.",
             "featureDescription": "Når linkede politi-, brand-, EMS- eller dispatchspillere forlader serveren, afbrydes deres aktive enheder automatisk fra CAD. Kick er som standard aktiveret med FiveM-ressourcen; spillere skal stadig linke deres CAD-konti.",
             "featureTitle": "Automatisk enhedsfrakobling",
-            "imageAlt": "Illustrativ FiveM-scene med en betjent, der afleverer en patruljevogn på en Los Santos-station."
+            "imageAlt": "Sonoran CAD kick-notifikation og panel til valg af fællesskab med afdelingsmuligheder."
           },
           "map": {
             "accessCardDescription": "Live Map er indbygget i FiveM-ressourcen og kræver ingen yderligere opsætning. Medlemmer skal linke deres CAD-konto i spillet med /link og have tilladelse til at se kortet. Postalsøgning kræver CAD Pro og Postals-undermodulet.",
@@ -4202,7 +4401,7 @@
             "samplePoliceLocation": "Mission Row",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "Illustrativ FiveM-rollespilsscene med en markeret patruljevogn, betjent og standset køretøj på en Los Santos-gade.",
+            "sceneAlt": "Animeret livekort forhåndsvisning, der viser et 3D-kort med navigation og kamerakontroller.",
             "showcaseLabel": "Live-kortfunktioner"
           },
           "pagers": {
@@ -4213,7 +4412,7 @@
             "imageAlt": "Illustrativ FiveM-scene af en brandmand, der tjekker en lille pager fastgjort med en klips inde i en brandstation."
           },
           "phone": {
-            "appAlt": "Det installerede Sonoran CAD-ikon på en LB Phone-hjemskærm i spillet.",
+            "appAlt": "3D-produktgengivelse af en smartphone, der viser LB Phone-startskærmen med Sonoran CAD-appen installeret.",
             "appDescription": "LB Phone giver fællesskaber mulighed for at tilføje Sonoran CAD som en brugerdefineret app, så spillere kan åbne CAD fra den telefon, de allerede bruger i spillet. LB Phone er en betalt tredjepartsressource fra LB Scripts.",
             "appTitle": "Åbn CAD fra telefonen i spillet",
             "featuresLabel": "LB Phone App-funktioner",
@@ -4279,8 +4478,9 @@
             "featuresLabel": "Stationsalarmfunktioner"
           },
           "status": {
-            "commandAlt": "Officiel enhedsstatus-funktionsgrafik, der viser kommandoen /setstatus og en CAD-enhed markeret som TILGÆNGELIG.",
-            "commandDescription": "Kør /setstatus [status] i spillet med en af din communities konfigurerede statusetiketter eller numeriske koder. Den tilknyttede enheds status opdateres i CAD.",
+            "captureAlt": "/setstatus-kommando i spillet, der viser brugen og de tilgængelige statusetiketter.",
+            "commandAlt": "CAD-statuspanel, der viser en vellykket /setstatus-opdatering og en enhed markeret TILGÆNGELIG.",
+            "commandDescription": "Kør /setstatus [status] i spillet med en af dit fællesskabs konfigurerede statusetiketter eller numeriske koder for at opdatere den tilknyttede enhed i CAD. Unit Status er aktiveret som standard med FiveM-ressourcen. Konfigurer statusvalg i CAD under Admin > Tilpasning > Enhedsstatuskoder. Spillere skal linke deres CAD-konto og som standard have command.setstatus ACE-tilladelsen.",
             "commandTitle": "Skift status med en kommando",
             "description": "Opdater en tilknyttet CAD-enhed fra FiveM med /setstatus [status], ved at bruge din communities konfigurerede etiketter eller numeriske statuskoder.",
             "featuresLabel": "Enhedsstatusfunktioner",
@@ -4333,7 +4533,7 @@
             "alertsTitle": "Advarsel ved markerede poster",
             "description": "Forbind Wraith ARS 2X nummerpladelæseren til CAD for automatiske nummerpladesøgninger og konfigurerbare rekordadvarsler.",
             "featuresLabel": "Wraith nummerpladelæser funktioner",
-            "radarAlt": "Officiel Wraith V2-funktionsgrafik, der viser ARS 2X-radaren, nummerpladelæseren og fjernbetjeningen i FiveM.",
+            "radarAlt": "FiveM-scene, der viser en Wraith-patruljevogn, en nummerpladeradarvisning og en Wraith ARS 2X-fjernbetjening.",
             "radarDescription": "WraithV2-undermodulet fungerer med Sonoran-versionen af Wraith ARS 2X, som følger med FiveM-ressourcen. Det tjekker nummerplader mod CAD og sender hele opslaget til CAD, når du låser en nummerplade. Spillere skal linke deres CAD-konti og have Lokationer aktiveret.",
             "radarTitle": "Læs og lås nummerplader i spillet",
             "sceneAlt": "Illustrativ FiveM-gameplay-scene af en markeret patruljesedan, der scanner trafikken på en byvej i skumringen."

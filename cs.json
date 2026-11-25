@@ -3947,6 +3947,205 @@
     "integrations": {
       "erlc": {
         "description": "Oficiální herní integrace ER:LC s živou mapou a dalšími funkcemi.",
+        "featurePages": {
+          "alpr": {
+            "cards": {
+              "cameraLocations": {
+                "description": "Povolte ALPR pro připojený server a poté použijte výchozí sadu kamer nebo umístěte kamery na mapu ER:LC.",
+                "imageAlt": "Nastavení Sonoran CAD ALPR s vyznačenými umístěními kamer na mapě ER:LC.",
+                "title": "Umístěte kamery na mapu"
+              },
+              "cameraSettings": {
+                "description": "Vyberte kameru, abyste upravili její poloměr detekce. Nakonfigurujte popis upozornění, vypršení hovoru a prodlevu opakované detekce.",
+                "imageAlt": "Mapa Sonoran CAD ALPR s vybranou kamerou a nastavením jejího dosahu detekce.",
+                "title": "Nastavte rozsah kamery a upozornění"
+              }
+            },
+            "cardsLabel": "Funkce kamery ALPR",
+            "description": "Detekujte aktivní BOLO registrační značky na nakonfigurovaných kamerových místech ER:LC a předejte výsledek na dispečink."
+          },
+          "bodycam": {
+            "cardsLabel": "Funkce bodycam pro ER:LC",
+            "cards": {
+              "liveMap": {
+                "description": "Mějte živý přehled o jednotce a její poloze viditelný společně v CAD. Otevřete panel Body Cam nebo použijte náhled mapy jednotky.",
+                "imageAlt": "Panel Sonoran CAD Body Cam vedle Live Map ukazující ukázkovou jednotku ER:LC a její živý video přenos.",
+                "title": "Zobrazit bodycam vedle živé mapy"
+              },
+              "recording": {
+                "description": "Použijte klávesovou zkratku na počítači nebo ovládací prvky Start/Stop ve prohlížeči. Shadow recording může přidat až 60 sekund pre-rollu ke klipům dlouhým až dvě minuty.",
+                "imageAlt": "Prohlížeč tělesné kamery ER:LC s dostupným ovládáním Spustit nahrávání v CAD.",
+                "title": "Spusťte záznam, když na tom záleží"
+              },
+              "review": {
+                "description": "Otevřete záznamy z bodycam z hlavního panelu nebo je přidejte do vlastního rozložení. Záznamy se uchovávají 24 hodin.",
+                "imageAlt": "Panel záznamů z tělesné kamery Sonoran CAD s uloženými záběry ER:LC vedle živé mapy.",
+                "title": "Prohlížet uložené záznamy v CAD"
+              }
+            },
+            "description": "Zobrazte video jednotky ER:LC v CAD, zachyťte okamžiky před začátkem nahrávání a prohlédněte si uložené záznamy."
+          },
+          "character": {
+            "cards": {
+              "createCivilian": {
+                "description": "Hráči zadávají jméno a příjmení pomocí nakonfigurovaného příkazu. Nová CAD postava je vyhledatelná a připravená k registraci vozidla.",
+                "imageAlt": "Ilustrační záběr z hraní ER:LC s postavou civilisty na městské ulici.",
+                "title": "Vytvořte civilistu z herního chatu"
+              },
+              "registrationCommands": {
+                "description": "Nakonfigurujte oba příkazy v nastaveních serveru ER:LC a volitelně upozorněte hráče. Dočasné registrace se po 24 hodinách smažou.",
+                "imageAlt": "Nastavení serveru Sonoran CAD ER:LC zobrazující trvalá a dočasná pole příkazu registrace civilisty.",
+                "title": "Nastavit trvalé a dočasné příkazy"
+              }
+            },
+            "cardsLabel": "Funkce tvorby postavy ER:LC",
+            "description": "Vytvořte trvalého nebo dočasného civilistu CAD z příkazu ER:LC, bez nutnosti účtu CAD."
+          },
+          "emergency": {
+            "cards": {
+              "automaticEvents": {
+                "description": "Události jako požáry a loupeže vytvářejí hovory na živé mapě a dispečerském panelu s polohou události a podrobnostmi.",
+                "imageAlt": "Živá mapa Sonoran CAD ER:LC zobrazující nouzová volání vytvořená automatickými událostmi požárního alarmu.",
+                "title": "Zobrazit automatické volání událostí v CAD"
+              },
+              "phoneCall": {
+                "description": "Hráči mohou odeslat hovor s jeho polohou a popisem z aplikace ER:LC 911. CAD zobrazuje jméno volajícího, když je jeho postava registrovaná.",
+                "imageAlt": "In-game telefonní aplikace 911 v ER:LC se vzorovým popisem nouze a polohou.",
+                "title": "Vytvořit hovor na 911 v herním telefonu"
+              }
+            },
+            "cardsLabel": "Funkce nouzového volání ER:LC",
+            "description": "Posílejte hovory na 911 z ER:LC nebo přijímejte automatická upozornění na události v CAD, s detaily polohy na živé mapě."
+          },
+          "idCheck": {
+            "cards": {
+              "characterCard": {
+                "description": "Zkontrolujte fotografii a uložené údaje postavy, poté použijte Spustit vyhledání k vyhledání v CAD podle křestního a příjmení.",
+                "imageAlt": "Průkaz totožnosti Liberty County pro ukázkovou postavu ER:LC s tlačítkem Run Lookup.",
+                "title": "Zobrazit uložený průkaz postavy"
+              },
+              "requestId": {
+                "description": "Přistupte k blízkému civilistovi a vyberte Požádat o ID, až se objeví jeho uživatelské jméno. Výzva je omezena na hráče do pěti studů.",
+                "imageAlt": "Překrytí ER:LC zobrazující nedalekého civilistu a tlačítko Požádat o ID.",
+                "title": "Požádat o ID z overlaye"
+              }
+            },
+            "cardsLabel": "Funkce kontroly ID ER:LC",
+            "description": "Vyžádejte si průkaz totožnosti blízkého civilisty z překryvu ER:LC a zobrazte si údaje uložené v jeho postavě v Sonoran CAD."
+          },
+          "map": {
+            "cardsLabel": "Funkce živé mapy ER:LC",
+            "cards": {
+              "mapViews": {
+                "description": "Přepínejte mezi 2D, 2.5D a 3D zobrazeními nebo vyhledejte PSČ a vystřeďte mapu na oblast.",
+                "imageAlt": "Sonoran CAD Live Map zobrazující 3D čtvrť ER:LC, ovládací prvky režimu mapy a vyhledávání poštovních adres.",
+                "title": "Prozkoumejte mapu ve 2D nebo 3D"
+              },
+              "unitDetails": {
+                "description": "Vyberte značku jednotky nebo blip tísňového volání, abyste zobrazili její podrobnosti a dostupné akce na mapě.",
+                "imageAlt": "Sonoran CAD Live Map s vybranou jednotkou ER:LC, podrobnostmi jednotky a ovládacími prvky mapy.",
+                "title": "Vybrat jednotky a hovory"
+              }
+            },
+            "description": "Sledovat propojené jednotky ER:LC a tísňové hovory v reálném čase na interaktivní mapě v Sonoran CAD."
+          },
+          "overlay": {
+            "cards": {
+              "emergencyCalls": {
+                "description": "S povoleným Self Dispatch a nouzovými hovory zobrazte podrobnosti hovoru a stiskněte Enter pro převod hovoru na dispečink a připojení vaší jednotky.",
+                "imageAlt": "Překryv ER:LC zobrazující detaily tísňového volání s navigací mezi hovory a akcí Enroute.",
+                "title": "Prohlížet nouzová volání ve hře"
+              },
+              "taskbarTab": {
+                "description": "Použijte kartu Overlay v desktopové aplikaci k aktivaci, nebo nastavte vlastní klávesovou zkratku, abyste ji mohli ve hře zobrazovat a skrývat.",
+                "imageAlt": "Pracovní plocha dispečinku Sonoran CAD s kartou Overlay zvýrazněnou na hlavním panelu.",
+                "title": "Otevřete překryv z CAD"
+              }
+            },
+            "cardsLabel": "Funkce herní vrstvy ER:LC",
+            "description": "Otevřete překryvné okno ovládané klávesovou zkratkou v ER:LC pro správu dispečerských volání, zobrazení poznámek a aktualizaci stavu jednotky bez opuštění hry."
+          },
+          "pin": {
+            "cardsLabel": "Funkce pin-drop editoru hovorů ER:LC",
+            "cards": {
+              "openPicker": {
+                "description": "V editoru hovoru vyberte připínáček vedle Adresa, chcete-li otevřít 2D výběr polohy ER:LC.",
+                "imageAlt": "Sonoran CAD editor dispečerského hovoru se zvýrazněným ovládáním připnutí vedle pole Adresa.",
+                "title": "Otevřete mapu z výjezdu"
+              },
+              "selectLocation": {
+                "description": "Posuňte nebo přibližte mapu a pak klikněte na místo. Sonoran CAD doplní nejbližší název ulice a PSČ do hovoru.",
+                "imageAlt": "ER:LC 2D mapa pro výběr polohy zobrazující popsané ulice a poštovní směrovací čísla.",
+                "title": "Vyberte místo pro vyplnění hovoru"
+              }
+            },
+            "description": "Vyberte místo na mapě ER:LC pro vyplnění adresy ulice a PSČ dispečerského hovoru."
+          },
+          "plateReader": {
+            "cards": {
+              "hotkey": {
+                "description": "Nastavte zkratku v části Přizpůsobení > Klávesové zkratky > Čtečka SPZ. Klávesové zkratky vyžadují desktopovou aplikaci Sonoran CAD.",
+                "imageAlt": "Nastavení klávesových zkratek Sonoran CAD se zvýrazněnou zkratkou pro ER:LC Plate Reader.",
+                "title": "Nastavit klávesovou zkratku pro Rozpoznávání SPZ"
+              },
+              "lookup": {
+                "description": "Stiskněte klávesovou zkratku u vozidla s hráčem uvnitř. CAD otevře vyhledávání SPZ s odpovídajícími údaji o registraci vozidla.",
+                "imageAlt": "Vyhledání SPZ v Sonoran CAD zobrazující registrační značku a odpovídající záznam o registraci vozidla.",
+                "title": "Otevřít vyhledání nejbližšího vozidla"
+              }
+            },
+            "cardsLabel": "Funkce čtečky SPZ ER:LC",
+            "description": "Použijte klávesovou zkratku na ploše k nalezení nejbližší obsazené vozidlo a otevření vyhledávání SPZ v Sonoran CAD."
+          },
+          "registration": {
+            "cards": {
+              "commands": {
+                "description": "Nastavte trvalé a dočasné příkazy v nastaveních integrace ER:LC. Dočasné registrace se po 24 hodinách automaticky smažou.",
+                "imageAlt": "Nastavení integrace Sonoran CAD ER:LC s příkazy registrace vozidla zvýrazněnými.",
+                "title": "Nakonfigurujte registrační příkazy"
+              },
+              "savedRecord": {
+                "description": "Otevřete záznamy v CAD a najděte novou registraci. Záznam propojuje SPZ vozidla a údaje s vybranou postavou.",
+                "imageAlt": "Záznam registrace vozidla Sonoran CAD s údaji o civilistovi a vozidle, včetně registrační značky, značky, modelu, barvy a roku.",
+                "title": "Zkontrolujte uložený záznam vozidla"
+              }
+            },
+            "cardsLabel": "Funkce registrace vozidel ER:LC",
+            "description": "Zaregistrujte vozidla ER:LC k vybrané postavě CAD ve hře a poté si zkontrolujte jejich uložené údaje v Sonoran CAD."
+          },
+          "trafficStop": {
+            "cards": {
+              "callDetails": {
+                "description": "Hovor zahrnuje jednotku, lokaci a údaje o vozidle, poté otevře vyhledání SPZ. Hráči potřebují propojený účet Roblox a oprávnění Dispatch nebo Self Dispatch.",
+                "imageAlt": "Sonoran CAD zobrazující registraci vozidla ER:LC vedle dispečerského hovoru s údaji o vozidle a poloze.",
+                "title": "Odeslat údaje o vozidle na dispečink"
+              },
+              "configuration": {
+                "description": "Nastavte příkaz, šablonu popisu vyslání a 10-kód v nastaveních integrace ER:LC.",
+                "imageAlt": "Nastavení integrace Sonoran CAD ER:LC s konfigurací dopravních zastavení zvýrazněnou.",
+                "title": "Nastavte příkaz zastavení a detaily hovoru"
+              }
+            },
+            "cardsLabel": "Funkce dopravní zastávky ER:LC",
+            "description": "Vytvářejte hlášení o dopravních zastaveních ER:LC z konfigurovatelného příkazu nebo klávesové zkratky na ploše a podrobnosti o blízkém vozidle odesílejte do CAD."
+          },
+          "webhooks": {
+            "cards": {
+              "discordEvents": {
+                "description": "Povolte události hovorů, které chcete, a pak pro každou vyberte server Discordu a kanál. Hovory Dispatch potřebují pro 3D obrázky PSČ; tísňové hovory 911 ve hře obsahují svou polohu automaticky.",
+                "imageAlt": "Ilustrační letecký pohled na křižovatku města ER:LC, představující obrázek lokace přidaný k upozorněním na volání v Discordu.",
+                "title": "Vyberte, které hovory dorazí do Discordu"
+              },
+              "erlcSetup": {
+                "description": "Propojte Sonoran Bot se svou CAD komunitou. Oznámení 911 ve hře také vyžadují režim ER:LC a dokončené nastavení integrace ER:LC.",
+                "imageAlt": "Nastavení serveru ER:LC zobrazující hodnoty API a Event Log Webhook používané k propojení hry se Sonoran CAD.",
+                "title": "Nastavit herní hovory na 911"
+              }
+            },
+            "cardsLabel": "Funkce webhooks 3D polohy ER:LC",
+            "description": "Odesílejte události ER:LC 911 a dispečerské události do Discordu s leteckým snímkem polohy, je-li k dispozici."
+          }
+        },
         "landing": {
           "cmsLink": "Spravujte svou komunitu ER:LC s Sonoran CMS",
           "ctaDocs": "Zobrazit dokumentaci",
@@ -4145,7 +4344,7 @@
             "description": "Posílejte nouzová i ne-nouzová volání do CAD z herních příkazů, s příkazem stavu paniky a přizpůsobitelnou klávesovou zkratkou.",
             "featureDescription": "Použijte /911, /311 nebo /511 k odeslání hovorů do CAD a /panic k aktivaci stavu paniky jednotky. Hráči musí propojit CAD; údaje o poloze závisí na povoleném podmodulu Locations.",
             "featureTitle": "Hovory a stav paniky ve hře",
-            "imageAlt": "Ilustrační FiveM roleplay scéna s policistou, který mluví s řidičem vedle hlídkového auta."
+            "imageAlt": "Ilustrační záběr z hraní FiveM: uniformovaný policista mačká tísňové tlačítko na ramenní vysílačce vedle policejního hlídkového vozu, aby aktivoval tísňový signál."
           },
           "dispatch": {
             "captureAlt": "Sonoran CAD dispečerský hovor s A-10 přiřazenou jako primární jednotka a s povoleným sledováním GPS.",
@@ -4179,13 +4378,13 @@
             "description": "Propojte servery QBCore nebo podporované servery ESX s CAD a vystavujte herní pokuty z vybraných záznamů.",
             "featureDescription": "Vyberte QBCore, ESX nebo Legacy ESX a propojte své hráče. Uveďte přesné názvy formulářů CAD, které mohou ukládat pokuty; částky vycházejí z části Charges nebo Speed v záznamu. ESX v2 není podporováno.",
             "featureTitle": "Pokuty z vybraných CAD záznamů",
-            "imageAlt": "Ilustrativní dopravní zastavení ve FiveM s policistou, který u služebního vozu vypisuje pokutu."
+            "imageAlt": "Panel citací Sonoran CAD zobrazující obecnou citaci pro Alex Morgan a pokutu 250 $ vystavenou Jamie Reed."
           },
           "kick": {
             "description": "Automaticky vymaže propojenou CAD jednotku veřejně-bezpečnostního uživatele, když se odpojí z FiveM.",
             "featureDescription": "Když propojení hráči policie, hasičů, EMS nebo dispečinku opustí server, jejich aktivní jednotky se od CAD odpojí automaticky. Kick je s prostředkem FiveM ve výchozím nastavení povolen; hráči si stále musí propojit své CAD účty.",
             "featureTitle": "Automatické odpojení jednotky",
-            "imageAlt": "Ilustrativní scéna ve FiveM s policistou, který vrací služební vůz na stanici v Los Santos."
+            "imageAlt": "Panel oznámení o kicku v Sonoran CAD a výběru komunity s možnostmi oddělení."
           },
           "map": {
             "accessCardDescription": "Live mapa je zabudovaná v prostředku FiveM a nevyžaduje žádné další nastavení. Členové si musí ve hře propojit svůj účet CAD pomocí /link a mít oprávnění k zobrazení mapy. Vyhledávání poštovních směrovacích čísel vyžaduje CAD Pro a podmodul Postals.",
@@ -4203,7 +4402,7 @@
             "samplePoliceLocation": "Mission Row",
             "samplePoliceName": "M. Reyes",
             "samplePoliceUnit": "A-10",
-            "sceneAlt": "Ilustrační FiveM roleplay scéna s označeným hlídkovým vozem, policistou a zastaveným vozidlem na ulici ve Los Santos.",
+            "sceneAlt": "Animovaný náhled živé mapy zobrazující 3D mapu s ovládáním navigace a kamery.",
             "showcaseLabel": "Funkce živé mapy"
           },
           "pagers": {
@@ -4214,7 +4413,7 @@
             "imageAlt": "Ilustrační scéna FiveM hasiče kontrolujícího malý připnutý pager na hasičské stanici."
           },
           "phone": {
-            "appAlt": "Nainstalovaná ikona Sonoran CAD na domovské obrazovce telefonu LB ve hře.",
+            "appAlt": "3D render produktu smartphonu zobrazující domovskou obrazovku LB Phone s nainstalovanou aplikací Sonoran CAD.",
             "appDescription": "LB Phone umožňuje komunitám přidat Sonoran CAD jako vlastní aplikaci, takže si hráči mohou otevřít CAD z telefonu, který už ve hře používají. LB Phone je placený ресурс třetí strany od LB Scripts.",
             "appTitle": "Otevřít CAD z herního telefonu",
             "featuresLabel": "Funkce aplikace LB Phone",
@@ -4280,8 +4479,9 @@
             "featuresLabel": "Funkce upozornění stanice"
           },
           "status": {
-            "commandAlt": "Oficiální grafika funkce stavu jednotky zobrazující příkaz /setstatus a jednotku CAD označenou jako DOSTUPNÁ.",
-            "commandDescription": "Spusťte v hře /setstatus [status] s jedním z vašich komunitou nakonfigurovaných štítků stavu nebo číselných kódů. Stav propojené jednotky se aktualizuje v CAD.",
+            "captureAlt": "Výzva příkazu /setstatus ve hře zobrazující jeho použití a dostupné štítky stavu.",
+            "commandAlt": "CAD stavový panel zobrazující úspěšnou aktualizaci /setstatus a jednotku označenou jako DOSTUPNÁ.",
+            "commandDescription": "Spusťte /setstatus [status] ve hře s jedním z nakonfigurovaných štítků stavu nebo číselných kódů vaší komunity a aktualizujte propojenou jednotku v CAD. Stav jednotky je ve zdroji FiveM ve výchozím nastavení povolen. Možnosti stavu nakonfigurujte v CAD v části Admin > Customization > Unit Status Codes. Hráči musí propojit svůj účet v CAD a ve výchozím nastavení mít oprávnění ACE command.setstatus.",
             "commandTitle": "Změňte stav příkazem",
             "description": "Aktualizujte propojenou CAD jednotku z FiveM pomocí /setstatus [status], s využitím štítků nebo číselných stavových kódů nakonfigurovaných ve vaší komunitě.",
             "featuresLabel": "Funkce stavu jednotky",
@@ -4334,7 +4534,7 @@
             "alertsTitle": "Upozornění na označené záznamy",
             "description": "Propojte čtečku značek Wraith ARS 2X s CAD pro automatické vyhledávání registračních značek a konfigurovatelná upozornění na záznamy.",
             "featuresLabel": "Funkce Rozpoznávání SPZ Wraith",
-            "radarAlt": "Oficiální grafika funkcí Wraith V2 zobrazující radar ARS 2X, čtečku SPZ a dálkový ovladač ve FiveM.",
+            "radarAlt": "Scéna FiveM zobrazující hlídkové auto Wraith, zobrazení radarové poznávací značky a vzdálený Wraith ARS 2X.",
             "radarDescription": "Podmodul WraithV2 spolupracuje se Sonoran verzí Wraith ARS 2X dodávanou s FiveM resource. Kontroluje značky proti CAD a po zamčení značky odešle do CAD kompletní vyhledání. Hráči musí propojit své účty CAD a ponechat zapnuté Lokace.",
             "radarTitle": "Čtení a zamykání SPZ ve hře",
             "sceneAlt": "Ilustrační herní scéna FiveM s označeným hlídkovým sedanem monitorujícím provoz na městské silnici za soumraku."
